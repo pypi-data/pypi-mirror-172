@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>FIFA 18 Complete Player Dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="17k&#x2B; players, 70&#x2B; attributes extracted from the latest edition of FIFA" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="online communities,games,video games,football,popular culture" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="nWY58Zl5lMwwIXqBBCS/nA==" type="text/javascript">
+    window["pageRequestStartTime"] = 1662765454767;
+    window["pageRequestEndTime"] = 1662765454863;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="nWY58Zl5lMwwIXqBBCS/nA==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/datasets/thec03u5/fifa-18-demo-player-dataset" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=8a3d8387530957456cac" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=17be6e29bddcae4e6f77" />
+  
+    
+ 
+      <script nonce="nWY58Zl5lMwwIXqBBCS/nA==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="nWY58Zl5lMwwIXqBBCS/nA==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="nWY58Zl5lMwwIXqBBCS/nA==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta property="og:url" content="/datasets/thec03u5/fifa-18-demo-player-dataset" />
+    <meta property="og:title" content="FIFA 18 Complete Player Dataset" />
+    <meta property="og:description" content="17k&#x2B; players, 70&#x2B; attributes extracted from the latest edition of FIFA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/2547/4242/1d4b291c2a7bf4ac54dd5d6365509903/dataset-card.jpg" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="nWY58Zl5lMwwIXqBBCS/nA==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"FIFA 18 Complete Player Dataset","description":"**The Dataset you can play with.** \n\n\n----------\n\n\n### Context\n\nDataset for people who love data science and have grown up playing FIFA.\n\n\n----------\n\n\n### Content\n\n - Every player featuring in FIFA 18\n - 70+ attributes \n - Player and Flag Images\n - Playing Position Data\n - Attributes based on actual data of the latest  EA's FIFA 18 game\n - Attributes include on all player style statistics like Dribbling, Aggression, GK Skills etc.\n - Player personal data like Nationality, Photo, Club, Age, Wage, Salary etc.\n\n----------\n\n\n**Upcoming Update will Include :**\n\n - Team (National and Club) Data\n - Player Images in Zip folder\n - Betting Odds\n\nThe dataset contains all the statistics and playing attributes of all the players in the Full version of FIFA 18.\n\n\n----------\n\n\n### Data Source\n\nThe data is scraped from the website [https://sofifa.com][1] by extracting the Player personal data and Player Ids and then the playing and style statistics.\n\n\n----------\n![][2]\n\n----------\n\n\n### [Github Project][3]\n\n\n----------\n\n\n### Possible Explorations\n\n - Make your dream team\n - Analyse which Club or National Team has the best-rated players\n - Assess the strength of a team at a particular position\n - Analyse the team with the best dribbling speed\n - Co-relate between Age and Overall rating\n - Co-relate between Age and Nationality \n - Co-relate between Age and Potential \n\n*Could prove of immense value to Fantasy Premier League enthusiasts.*\n\nThese are just basic examples, sky is the limit. \n\n\n----------\n\n\n### Acknowledgements\n\nThe data has been crawled from the [https://sofifa.com][4] website.\n\n\n----------\n\n\n### Inspiration\n\nSeveral insights and correlations between player value, wage, age, and performance can be derived from the dataset. Furthermore, how do the players in this dataset compare against themselves in [last year's dataset](https://www.kaggle.com/artimous/complete-fifa-2017-player-dataset-global/data)?\n\n\n----------\n\n### Contributing\n\nChanges and Improvement suggestions are welcome. Feel free to comment new additions that you think are useful or drop a PR on the [github][5] project.\n\n\n  [1]: https://sofifa.com\n  [2]: https://wallpapershome.com/images/wallpapers/fifa-18-5120x2880-4k-screenshot-poster-e3-2017-13691.jpg\n  [3]: https://github.com/amanthedorkknight/fifa18-all-player-statistics\n  [4]: https://sofifa.com\n  [5]: https://github.com/amanthedorkknight/fifa18-all-player-statistics\n  [6]: https://www.paypal.me/AShrivastava961","url":"https://www.kaggle.com/thec03u5/fifa-18-demo-player-dataset","version":5,"keywords":["subject, science and technology, internet, online communities","subject, culture and humanities, games","subject, culture and humanities, games, video games","subject, health and fitness, exercise, sports, football","subject, culture and humanities, popular culture"],"license":{"@type":"CreativeWork","name":"CC BY-NC-SA 4.0","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/"},"identifier":["2547"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Aman Shrivastava","url":"https://www.kaggle.com/thec03u5","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/672472-fb.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/thec03u5/fifa-18-demo-player-dataset/download?datasetVersionNumber=5","contentSize":"4005705 bytes"}],"commentCount":20,"dateModified":"2017-10-30T11:58:44.953Z","discussionUrl":"https://www.kaggle.com/thec03u5/fifa-18-demo-player-dataset/discussion","alternateName":"17k+ players, 70+ attributes extracted from the latest edition of FIFA","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/2547/4242/1d4b291c2a7bf4ac54dd5d6365509903/dataset-card.jpg","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":20},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":26281},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":189740},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":399}]}</script>
+
+
+  
+    
+
+  
+    
+    
+<script nonce="nWY58Zl5lMwwIXqBBCS/nA==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        antiForgeryToken: 'CfDJ8CpxVlrQp8xAogku-5T5qggqHuxvkQev7QBV0A-c_0-MXVenA2fyFgVgVDioDRR-xjFDUQlQhrVcW14XOf74TBtcmnzaK_2uaW2Qx3_icDv9Vw',
+        isAnonymous: true,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjI3NjYzNTQsIlVzZXJJZCI6MH0.aX1UljJX9MlsGHhc1SpOLUhPJ3R5aim7YJEE5QjsQZU',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    const decodeUserProperty = function (escapedUserProperty) {
+        escapedUserProperty = escapedUserProperty || "";
+        try {
+            const textVersion = new DOMParser().parseFromString(escapedUserProperty, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserProperty;
+    }
+    Kaggle.Current.userDisplayName = decodeUserProperty(Kaggle.Current.userDisplayNameEscaped);
+    Kaggle.Current.userEmail = decodeUserProperty(Kaggle.Current.userEmailEscaped); 
+</script>
+
+    
+
+<script nonce="nWY58Zl5lMwwIXqBBCS/nA==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="nWY58Zl5lMwwIXqBBCS/nA==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="nWY58Zl5lMwwIXqBBCS/nA==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="nWY58Zl5lMwwIXqBBCS/nA==" src="/static/assets/runtime.js?v=0b050dccddc7641938db" data-turbolinks-track="reload"></script>
+  <script nonce="nWY58Zl5lMwwIXqBBCS/nA==" src="/static/assets/vendor.js?v=1c3ecd6c9d333a8b1797" data-turbolinks-track="reload"></script>
+  <script nonce="nWY58Zl5lMwwIXqBBCS/nA==" src="/static/assets/app.js?v=f62128e642211d304f21" data-turbolinks-track="reload"></script>
+    <script nonce="nWY58Zl5lMwwIXqBBCS/nA==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="nWY58Zl5lMwwIXqBBCS/nA==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="nWY58Zl5lMwwIXqBBCS/nA==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"basics":{"datasetId":2547,"slug":"fifa-18-demo-player-dataset","title":"FIFA 18 Complete Player Dataset","description":"**The Dataset you can play with.** \n\n\n----------\n\n\n### Context\n\nDataset for people who love data science and have grown up playing FIFA.\n\n\n----------\n\n\n### Content\n\n - Every player featuring in FIFA 18\n - 70\u002B attributes \n - Player and Flag Images\n - Playing Position Data\n - Attributes based on actual data of the latest  EA\u0027s FIFA 18 game\n - Attributes include on all player style statistics like Dribbling, Aggression, GK Skills etc.\n - Player personal data like Nationality, Photo, Club, Age, Wage, Salary etc.\n\n----------\n\n\n**Upcoming Update will Include :**\n\n - Team (National and Club) Data\n - Player Images in Zip folder\n - Betting Odds\n\nThe dataset contains all the statistics and playing attributes of all the players in the Full version of FIFA 18.\n\n\n----------\n\n\n### Data Source\n\nThe data is scraped from the website [https://sofifa.com][1] by extracting the Player personal data and Player Ids and then the playing and style statistics.\n\n\n----------\n![][2]\n\n----------\n\n\n### [Github Project][3]\n\n\n----------\n\n\n### Possible Explorations\n\n - Make your dream team\n - Analyse which Club or National Team has the best-rated players\n - Assess the strength of a team at a particular position\n - Analyse the team with the best dribbling speed\n - Co-relate between Age and Overall rating\n - Co-relate between Age and Nationality \n - Co-relate between Age and Potential \n\n*Could prove of immense value to Fantasy Premier League enthusiasts.*\n\nThese are just basic examples, sky is the limit. \n\n\n----------\n\n\n### Acknowledgements\n\nThe data has been crawled from the [https://sofifa.com][4] website.\n\n\n----------\n\n\n### Inspiration\n\nSeveral insights and correlations between player value, wage, age, and performance can be derived from the dataset. Furthermore, how do the players in this dataset compare against themselves in [last year\u0027s dataset](https://www.kaggle.com/artimous/complete-fifa-2017-player-dataset-global/data)?\n\n\n----------\n\n### Contributing\n\nChanges and Improvement suggestions are welcome. Feel free to comment new additions that you think are useful or drop a PR on the [github][5] project.\n\n\n  [1]: https://sofifa.com\n  [2]: https://wallpapershome.com/images/wallpapers/fifa-18-5120x2880-4k-screenshot-poster-e3-2017-13691.jpg\n  [3]: https://github.com/amanthedorkknight/fifa18-all-player-statistics\n  [4]: https://sofifa.com\n  [5]: https://github.com/amanthedorkknight/fifa18-all-player-statistics\n  [6]: https://www.paypal.me/AShrivastava961","viewCount":189740,"downloadCount":26281,"scriptCount":131,"topicCount":20,"owner":{"id":672472,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/672472-fb.jpg","name":"Aman Shrivastava","profileUrl":"/thec03u5","slug":"thec03u5","userTier":"CONTRIBUTOR"},"license":{"id":3,"name":"CC BY-NC-SA 4.0","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/"},"overview":"17k\u002B players, 70\u002B attributes extracted from the latest edition of FIFA","collaboratorList":{"owner":{"userId":672472,"profileUrl":"/thec03u5","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/672472-fb.jpg","name":"Aman Shrivastava","slug":"thec03u5","userTier":"CONTRIBUTOR","type":"OWNER"}},"coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/2547/4242/1d4b291c2a7bf4ac54dd5d6365509903/dataset-cover.jpg","data":{"totalSize":4005705,"isFileset":true,"canSeeDownload":true,"firestorePath":"xfsPyukFEbeYnKhE1srq/versions/4KDlzULQSbicNDICUPiX","downloadUrl":"/datasets/thec03u5/thec03u5/download?datasetVersionNumber=5","versionId":5839,"id":2547},"voteCount":399,"medalUrl":"/static/images/medals/datasets/goldl@2x.png","downloadUrl":"/datasets/thec03u5/fifa-18-demo-player-dataset/download?datasetVersionNumber=5","lastUpdateTime":"2017-10-30T11:58:44.953Z","datasetVersionNumber":5,"creatorDisplayName":"Aman Shrivastava","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/2547/4242/1d4b291c2a7bf4ac54dd5d6365509903/dataset-card.jpg","categories":{"tags":[{"id":16489,"name":"online communities","fullPath":"subject \u003E science and technology \u003E internet \u003E online communities","listingUrl":"/datasets?group=public\u0026tagids=16489","description":"","datasetCount":6388,"competitionCount":2,"notebookCount":1228,"tagUrl":"/tags/online-communities","displayName":"Online Communities"},{"id":2500,"name":"games","fullPath":"subject \u003E culture and humanities \u003E games","listingUrl":"/datasets?group=public\u0026tagids=2500","description":"One of the hallmarks of intelligence is the use of games and toys to occupy free time and develop intellectually. Often stored in Mom\u0027s basement.","datasetCount":3454,"competitionCount":1,"notebookCount":34856,"tagUrl":"/tags/games-and-toys","displayName":"Games"},{"id":2507,"name":"video games","fullPath":"subject \u003E culture and humanities \u003E games \u003E video games","listingUrl":"/datasets?group=public\u0026tagids=2507","description":"Video games were originally created to prevent people from going to college and getting good jobs. That back-fired and now we have data centers full of GPUs training models to tell the difference between cats and dogs. All thanks to gamers.","datasetCount":2729,"competitionCount":4,"notebookCount":3840,"tagUrl":"/tags/video-games","displayName":"Video Games"},{"id":2603,"name":"football","fullPath":"subject \u003E health and fitness \u003E exercise \u003E sports \u003E football","listingUrl":"/datasets?group=public\u0026tagids=2603","description":"Some call it association football, some call it soccer, most call it sport ball. Come analyze the teams and players of the beautiful game.","datasetCount":1672,"competitionCount":6,"notebookCount":776,"tagUrl":"/tags/association-football","displayName":"Football"},{"id":2112,"name":"popular culture","fullPath":"subject \u003E culture and humanities \u003E popular culture","listingUrl":"/datasets?group=public\u0026tagids=2112","description":"Popular culture datasets and kernels are associated with topics like TV shows, movies, music, and video games. The greatest screenwriters come here to train their AI to write movie scripts.","datasetCount":204,"notebookCount":65,"tagUrl":"/tags/popular-culture","displayName":"Popular Culture"}]},"datasetExternalUrl":"https://www.kaggle.com/datasets/thec03u5/fifa-18-demo-player-dataset","forumId":6677,"datasetVersionId":5839,"canCreateTasks":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE","lastVersionNumber":5,"diffType":"VERSIONED"},"@wf": "Datasets.DatasetMaterialDtoWireFormat3"});performance && performance.mark && performance.mark("DatasetMaterialContainer.componentCouldBootstrap");</script><script nonce="nWY58Zl5lMwwIXqBBCS/nA==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: [],
+    });
+</script>
+<script type="text/javascript" nonce="nWY58Zl5lMwwIXqBBCS/nA==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
