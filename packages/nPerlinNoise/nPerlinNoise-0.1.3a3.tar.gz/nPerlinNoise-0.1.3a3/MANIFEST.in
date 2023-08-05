@@ -1,0 +1,7 @@
+# MANIFEST.in
+
+include docs/*
+include src/nPerlinNoise/*
+include snaps/*
+include tests/*
+include README_EMBED.md
