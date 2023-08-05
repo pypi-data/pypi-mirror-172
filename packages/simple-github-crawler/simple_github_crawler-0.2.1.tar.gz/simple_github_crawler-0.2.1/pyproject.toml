@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "simple-github-crawler"
+version = "0.2.1"
+description = ""
+authors = ["JayJi <ckj9014@gmail.com>"]
+readme = "README.md"
+packages = [{include = "simple_github_crawler"}]
+homepage = "https://github.com/JAY-Chan9yu/simple_github_crawler"
+repository = "https://github.com/JAY-Chan9yu/simple_github_crawler"
+keywords = [
+    "github",
+    "streak",
+    "commit",
+    "crawler",
+]
+
+license = "MIT"
+include = [
+    "LICENSE", "simple_github_crawler"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+beautifulsoup4 = "^4.11.1"
+requests = "^2.28.1"
+lxml = "^4.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
