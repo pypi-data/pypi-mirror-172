@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions_t238/Binomialdistribution.py
+distributions_t238/Gaussiandistribution.py
+distributions_t238/Generaldistribution.py
+distributions_t238/__init__.py
+distributions_t238.egg-info/PKG-INFO
+distributions_t238.egg-info/SOURCES.txt
+distributions_t238.egg-info/dependency_links.txt
+distributions_t238.egg-info/not-zip-safe
+distributions_t238.egg-info/top_level.txt
