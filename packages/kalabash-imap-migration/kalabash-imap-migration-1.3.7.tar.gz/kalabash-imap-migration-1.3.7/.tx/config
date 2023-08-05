@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[kalabash.kalabash-imap-migration-djangopo]
+file_filter = kalabash_imap_migration/locale/<lang>/LC_MESSAGES/django.po
+source_file = kalabash_imap_migration/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type = PO
