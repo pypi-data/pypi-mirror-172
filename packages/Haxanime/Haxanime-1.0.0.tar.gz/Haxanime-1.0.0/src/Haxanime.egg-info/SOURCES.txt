@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/Haxanime/__init__.py
+src/Haxanime/getanime.py
+src/Haxanime.egg-info/PKG-INFO
+src/Haxanime.egg-info/SOURCES.txt
+src/Haxanime.egg-info/dependency_links.txt
+src/Haxanime.egg-info/top_level.txt
