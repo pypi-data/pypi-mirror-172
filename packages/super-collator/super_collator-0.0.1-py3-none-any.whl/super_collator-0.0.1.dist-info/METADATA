@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: super-collator
+Version: 0.0.1
+Summary: Collate textual sources with relaxed spelling.
+Project-URL: Homepage, https://github.com/cceh/super-collator
+Project-URL: Bug Tracker, https://github.com/cceh/super-collator/issues
+Author-email: Marcello Perathoner <marcello@perathoner.de>
+License-File: LICENSE
+Keywords: collator,needleman-wunsch,python
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+
+==============
+Super Collator
+==============
+
+Collates textual sources with relaxed spelling.  Uses Gotoh's variant of the
+Needleman-Wunsch sequence alignment algorithm.
