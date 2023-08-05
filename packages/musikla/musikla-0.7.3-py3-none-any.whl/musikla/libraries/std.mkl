@@ -1,0 +1,23 @@
+fun pymodule ( $module, $variables = none ) {
+    $module_name = $module::split( '.' )::[ -1 ];
+
+    if $variables is none {
+        $python_src =
+            "import " + $module + "\n" +
+            "export( 'module_ref' )( " + $module + " )";
+    } else if $variables is $str {
+        $python_src =
+            "from " + $module + " import " + $variables + "\n" +
+            "export( 'module_ref' )( " + $variables + " )";
+    } else if $variables is $list {
+        $variables_joined = ", "::join( $variables );
+
+        $python_src =
+            "from " + $module + " import " + $variables_joined + "\n" +
+            "export( 'module_ref' )( ( " + $variables_joined + ", ) )";
+    };
+
+    pyexec( $python_src );
+
+    return $module_ref;
+};
