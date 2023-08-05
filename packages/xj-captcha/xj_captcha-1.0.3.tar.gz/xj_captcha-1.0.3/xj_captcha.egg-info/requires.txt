@@ -1,0 +1,2 @@
+python-alipay-sdk
+qcloudsms_py
