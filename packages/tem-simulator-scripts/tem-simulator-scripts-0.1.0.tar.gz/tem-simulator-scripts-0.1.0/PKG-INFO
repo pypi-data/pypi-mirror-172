@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tem-simulator-scripts
+Version: 0.1.0
+Summary: Support scripts for the TEM Simulator (V1.3)
+Home-page: https://github.com/MPI-Dortmund/tem-simulator-scripts
+Author: Thorsten Wagner, Markus Stabrin, Gavin Rice
+Author-email: thorsten.wagner@mpi-dortmund.mpg.de
+License: Mozilla Public License Version 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.7.0, <3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+

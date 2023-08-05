@@ -1,0 +1,7 @@
+numpy>=1.20.0
+mrcfile
+scipy
+tqdm
+pandas
+biotite
+scikit-image
