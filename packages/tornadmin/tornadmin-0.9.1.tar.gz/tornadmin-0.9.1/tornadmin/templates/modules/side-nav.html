@@ -1,0 +1,19 @@
+<ul class="nav flex-column">
+    <li class="nav-item{% if active_item is None %} active{% end %}">
+        <a href="{{ reverse_url('admin:index') }}" class="nav-link">
+            Home
+        </a>
+    </li>
+    {% for app in menu %}
+        <li>
+            <span class="menu-header">{{ app }}</span>
+        </li>
+        {% for admin in menu[app] %}
+            <li class="nav-item{% if active_item is admin %} active{% end %}">
+                <a href="{{ reverse_url('admin:list', admin.app_slug, admin.slug) }}">
+                    {{ admin.name }}
+                </a>
+            </li>
+        {% end %}
+    {% end %}
+</ul>

@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% autoescape conditional_xhtml_escape %}
+
+{% block content %}
+
+{% include 'modules/flash.html' %}
+
+{% module Template(
+        'modules/header.html',
+        admin=admin,
+        heading='%s / %s' % (admin.name, 'Edit' if obj else 'Add new'),
+        back_button=True,
+        add_button=True,
+        absolute_url=admin.get_absolute_url(handler, obj) if obj else False
+    ) 
+%}
+
+<div class="content">
+    {% if form.errors %}
+    <div class="alert alert-danger form-error">
+        <p><strong><i class="bi bi-exclamation-circle"></i> Error</strong></p>
+        <p>
+            Please correct the errors in the form before saving
+        </p>
+    </div>
+    {% end %}
+    <form method="POST">
+        {% module xsrf_form_html() %}
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-6">
+                {% for field in form %}
+                <div class="form-group">
+                    {% if field.type == 'BooleanField' %}
+                        {% set input_class = 'custom-control custom-checkbox' %}
+                    {% elif field.type == 'RadioField' %}
+                        {% set input_class = 'custom-control custom-radio' %}
+                    {% elif field.type == 'SelectField'  %}
+                        {% set input_class = 'custom-select' %}
+                    {% else %}
+                        {% set input_class = 'form-control' %}
+                    {% end %}
+
+                    {% if field.type in ['BooleanField', 'RadioField'] %}
+                        <div class="{{ input_class }}">
+                            {% if field.errors %}
+                                {{ mark_safe(field(class_='custom-control-input is-invalid')) }}
+                                {{ mark_safe(field.label(class_='custom-control-label')) }}
+                                <div class="invalid-feedback">{{ field.errors[0] }}</div>
+                            {% else %}
+                                {{ mark_safe(field(class_='custom-control-input')) }}
+                                {{ mark_safe(field.label(class_='custom-control-label')) }}
+                            {% end %}
+                        </div>
+                    {% else %}
+                        {{ mark_safe(field.label) }}
+                        {% if field.errors %}
+                            {{ mark_safe(field(class_=input_class + ' is-invalid')) }}
+                            <div class="invalid-feedback">{{ field.errors[0] }}</div>
+                        {% else %}
+                            {{ mark_safe(field(class_=input_class)) }}
+                        {% end %}
+                    {% end %}
+                </div>
+                {% end %}
+            </div>
+            <div class="col-12 form-footer">
+                <input type="submit" class="btn btn-primary mr-0 mr-sm-1" name="_save" value="Save">
+                <input type="submit" class="btn btn-outline-primary" name="_addanother" value="Save and add another">
+                {% if obj %}
+                <button type="button" class="btn btn-outline-danger float-none float-sm-right" data-toggle="modal" data-target="#deleteModal">Delete</button>
+                {% end %}
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- Delete Modal -->
+<div class="modal fade scale" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete this?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="bi bi-x"></i></span>
+                </button>
+            </div>
+        
+            <div class="modal-body py-4">
+                Are you sure you want to <strong>permanently delete</strong> this object?
+            </div>
+
+            <div class="modal-footer">
+                {% if obj %}
+                <form action="{{ reverse_url('admin:delete', admin.app_slug, admin.slug, obj.id) }}" method="POST">
+                    {% module xsrf_form_html() %}
+                    <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-outline-danger">Delete</button>
+                </form>
+                {% end %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% end %}
