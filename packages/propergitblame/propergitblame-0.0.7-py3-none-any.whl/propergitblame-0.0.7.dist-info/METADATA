@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: propergitblame
+Version: 0.0.7
+Summary: a better git blame
+Author: chua qi wang
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: numba
+
+# Propergitblame installation
+  Navigate to your project folder first
+```bash
+  $ cd project-to-test
+  $ pip install propergitblame
+  $ git clone https://github.com/qwchua/propergitblame
+  $ cd propergitblame  
+  $ pip install -e . 
+  $ cd .. 
+```
+# Sample Usage
+```bash
+$ propergitblame -f js/game_manager.js      
+$ propergitblame -f js/game_manager.js -n 200
+$ propergitblame -f js/game_manager.js -n 200 -o piechart
+$ propergitblame -f all
+```
