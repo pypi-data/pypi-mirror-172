@@ -1,0 +1,15 @@
+ayaka_games/__init__.py,sha256=3NByWfXwtp-_nzjcTGTezmcX92qF7fV4gGDuxqz5cNM,138
+ayaka_games/bag.py,sha256=Jdo0SoM4clrOQYJrJeU7PQyrPNbdiJ95YtdMv3opJ9M,2167
+ayaka_games/bili_dy.py,sha256=8LDT_20-kwtTE97VYz1MPVP2rhMNbCZNbKsL9uT0G6A,4743
+ayaka_games/bili_url.py,sha256=WNGt5QHmUPwOHbvegGI1oS9Ri9V1faGjoNlilzUUzBs,2398
+ayaka_games/bingo.py,sha256=Ca-woJlZnWi7Pl_YnzJD3uEMmCyEGX74SyxbdBblZfE,4298
+ayaka_games/blur_text.py,sha256=VqFXlAFFoclpTvtcFA9_UyvfFFynxwCcEPfpBBxNroc,1030
+ayaka_games/checkin.py,sha256=djVTn3Ohv3XxkH5FnoTL_3Rf-P8ZurquIcuxuIib7nI,734
+ayaka_games/chengyu.py,sha256=5RCzPNzxZuDrZd5cLR2KA4KtbgkaT52aQB7irwYXg3A,4341
+ayaka_games/fanyi.py,sha256=u2gUlLKwU2XeqnTMWdBi2tqX--kzCpmGFX7e0jvQzqk,872
+ayaka_games/gs_dragon.py,sha256=Fr8BHYcKgwE5QeyiDzJ4KognX10CtUfCTniSRtpmb0s,744
+ayaka_games/incan.py,sha256=Irx2ZQe9T0woTXcxMipCMjm0102m0l8SOo9Ij30jRDU,14278
+nonebot_plugin_ayaka_games-0.1.3.dist-info/LICENSE,sha256=h46uoeNi_0PH0Yf6KOy7LyUwd9ONUAFKN1DVpfE5rdA,1091
+nonebot_plugin_ayaka_games-0.1.3.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+nonebot_plugin_ayaka_games-0.1.3.dist-info/METADATA,sha256=lyKLvBrvDHgGmttJh7l8k-HkFXCEFXTCCbAVvdJzYwA,2308
+nonebot_plugin_ayaka_games-0.1.3.dist-info/RECORD,,
