@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+assimpdf/__init__.py
+assimpdf/pdf2image.py
+assimpdf/pdf2text.py
+assimpdf.egg-info/PKG-INFO
+assimpdf.egg-info/SOURCES.txt
+assimpdf.egg-info/dependency_links.txt
+assimpdf.egg-info/top_level.txt
