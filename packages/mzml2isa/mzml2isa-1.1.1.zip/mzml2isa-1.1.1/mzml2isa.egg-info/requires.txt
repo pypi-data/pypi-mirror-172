@@ -1,0 +1,12 @@
+fs~=2.4
+pronto~=2.0
+openpyxl>=2.5
+
+[:python_version < "3.8"]
+cached-property~=1.4
+
+[:python_version < "3.9"]
+importlib-resources>=1.0
+
+[pb]
+tqdm~=4.25
