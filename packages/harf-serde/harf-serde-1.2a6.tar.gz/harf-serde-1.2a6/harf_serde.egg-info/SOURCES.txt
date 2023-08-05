@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+harf_serde.py
+py.typed
+pyproject.toml
+harf_serde.egg-info/PKG-INFO
+harf_serde.egg-info/SOURCES.txt
+harf_serde.egg-info/dependency_links.txt
+harf_serde.egg-info/not-zip-safe
+harf_serde.egg-info/requires.txt
+harf_serde.egg-info/top_level.txt
