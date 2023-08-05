@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ezface/__init__.py
+ezface/face_recognition.py
+ezface.egg-info/PKG-INFO
+ezface.egg-info/SOURCES.txt
+ezface.egg-info/dependency_links.txt
+ezface.egg-info/top_level.txt
