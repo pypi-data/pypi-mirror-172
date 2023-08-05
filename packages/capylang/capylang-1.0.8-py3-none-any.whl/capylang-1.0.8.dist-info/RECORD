@@ -1,0 +1,9 @@
+capylang/__init__.py,sha256=vWb8cSSD3aWAijWKyooQahM4drqWe23L5HQuB4Bwp5Q,89
+capylang/core/__init__.py,sha256=1TTjG-mupOiixldR-xIX_iWqnbcyPz1jgrXSwB4mMOc,2075
+capylang/date/__init__.py,sha256=EmPjEmNwOSqxLBIIbFgeXCRGkbe5Mfr4uneTQNyWUmM,299
+capylang/decorators/__init__.py,sha256=V8PRVBBFAXmY71crg5xPZjepxaTWV4Y1MKyF5gmUpBM,2219
+capylang/http/__init__.py,sha256=TjRkiNj3h0FOCcK0-4QMx5_gLw9TSY9kXALQSjMr0bo,583
+capylang/terminal/__init__.py,sha256=a8dpvyPO9DjYmXkyzFhrp3EXjslMcBuIG-mIQDWueAM,321
+capylang-1.0.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+capylang-1.0.8.dist-info/METADATA,sha256=B0QOn1rFQIWREWaTXY89eyvDiN2w9yHZPWAWQfZoECc,2777
+capylang-1.0.8.dist-info/RECORD,,
