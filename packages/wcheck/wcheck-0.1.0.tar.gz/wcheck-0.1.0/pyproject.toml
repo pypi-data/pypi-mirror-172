@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "wcheck"
+version = "0.1.0"
+description = "Compares different versions of git repositories and reports their differences. Possible options of workspace:"
+authors = ["Daniel Pastor"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.11"
+rich = "^12.6.0"
+pendulum = "^2.1.2"
+gitpython = "^3.1.29"
+pyyaml = "^6.0"
+pyside6 = "^6.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
