@@ -1,0 +1,12 @@
+include system;
+
+var = 42;
+console(var);
+var = 3.14;
+console(var);
+var = 'This is a string.';
+console(var);
+var = true;
+console(var);
+var = nil;
+console(var);

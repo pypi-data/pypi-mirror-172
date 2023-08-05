@@ -1,0 +1,8 @@
+include aor, system;
+select distinct title, Author from var where author == 'J.R.R. Tolkien' into y;
+select distinct author from var where author == 'J.R.R. Tolkien' merge into y["Author"];
+
+
+foreach y {
+	console(it, ":" , y[it]);
+}

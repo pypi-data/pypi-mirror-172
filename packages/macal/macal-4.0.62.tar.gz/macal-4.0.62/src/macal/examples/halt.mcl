@@ -1,0 +1,10 @@
+include system;
+console("Test halt");
+console();
+var = "a";
+if var == "a" {
+	console("This is shown.");
+	halt 1;
+	console("This does not show.");
+}
+console("This also is not shown.");
