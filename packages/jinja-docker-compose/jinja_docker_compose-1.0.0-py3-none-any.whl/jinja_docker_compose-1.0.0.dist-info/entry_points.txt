@@ -1,0 +1,3 @@
+[console_scripts]
+jinja-docker-compose=jinja_docker_compose.main:main
+
