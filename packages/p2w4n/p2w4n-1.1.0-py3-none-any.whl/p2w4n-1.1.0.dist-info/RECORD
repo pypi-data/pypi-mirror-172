@@ -1,0 +1,10 @@
+p2w4n/__init__.py,sha256=Hd4SST95dOoD9lx3JFNpxyVWrHxfqefFdGdEryYuXkg,19
+p2w4n/__main__.py,sha256=RWkSsuy2vStpWs-wwn2sHHuNjEXhRAhCwAykAEsaL3M,4740
+p2w4n/pdf2word.py,sha256=naQPV4frimnQUDBsjGAwm6eEmuImoBMOk4XnGcQL2ww,2271
+p2w4n/pptx2word.py,sha256=CHDdHhadhr2sAyQq2FQCxyQFYYJMsn4X8G7mOgRB3d8,2880
+p2w4n/word.py,sha256=uncc2uelPWKS1UTTqkWVDCspAxVt8ALViQkAfJ9bHVs,546
+p2w4n-1.1.0.dist-info/METADATA,sha256=82gFokrKPAMqkTyI3OTF-UkUVbd5VHmKTwWpDOz6lzw,629
+p2w4n-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+p2w4n-1.1.0.dist-info/entry_points.txt,sha256=SLIEisxkfMPmJBljs6ruJNO5Oi61xUm8-thn4Qtm6-Y,46
+p2w4n-1.1.0.dist-info/top_level.txt,sha256=xyswrrhydqK9DWXXdFSX0aoN38aTFGvAjZMsHbqI-rU,6
+p2w4n-1.1.0.dist-info/RECORD,,
