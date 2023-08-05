@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: rawtools
+Version: 0.5.0
+Summary: Utility library for consuming and manipulating x-ray data in RAW format
+Home-page: https://github.com/Topp-Roots-Lab/python-rawtools
+Author: Tim Parker
+Author-email: tparker@danforthcenter.com
+Keywords: rawtools
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+
+RAW Tools
+=========
+
+Utility library for consuming and manipulating x-ray volume data in ``.raw`` format.
+
+Features
+--------
+
+
+* Convert float32, uint16, and uint8 versions of ``.raw`` XRT volume data
+* Extract image slices from ``.raw`` files
+* Read, parse, and generate metadata files (\ ``.dat``\ ) for XRT data
+* Convert proprietary ``.nsihdr`` files into ``.raw`` format (Windows only). Batch conversion supported as CLI and minimal GUI.
+* Generate previews of XRT volumes for quality control (e.g., maximum density projections, midslice extraction, etc.)
+
+Planned Features
+----------------
+
+
+* Generate dummy ``.raw`` files for testing downstream pipelines
+* Batch conversion of ``.nsihdr`` on Linux systems
+* Density adjustment (similar to automated adjustment MATLAB scripts for ``rootseg``\ )
+
+Related Projects
+----------------
+
+
+* `xrcap <https://github.com/Topp-Roots-Lab/3d-root-crown-analysis-pipeline>`_\ : root crown image analysis pipeline
+* `DynamicRoots <https://github.com/Topp-Roots-Lab/DynamicRoots>`_\ : tool for reconstructing and analyzing the growth of a plant root system
+* `TopoRoot <https://github.com/danzeng8/TopoRoot>`_\ : high-throughput computational method that computes fine-grained architectural traits from 3D CT images of excavated maize root crowns
+* `rootseg <https://github.com/Topp-Roots-Lab/rootseg>`_\ : ML-based segmentation for soil rich samples
+* `xrt-dmt <https://github.com/Topp-Roots-Lab/xrt-dmt>`_\ : data management tool for tracking and archiving XRT (meta)data
+
+Credits
+-------
+
+This package was created with `Cookiecutter <https://github.com/audreyr/cookiecutter-pypackage>`_ and the `audreyr/cookiecutter-pypackage <https://github.com/audreyr/cookiecutter-pypackage>`_ project template.
+
+
+=======
+History
+=======
+
+------------------
+0.3.0 (2021-07-18)
+------------------
+
+Added
+^^^^^
+
+* License
+* Basic tests on core functionality for scaling data
+
+Changed
+^^^^^^^
+
+* Updated URL for any references to GitHub repo
+* Updated docstring header for `raw2img` module
+* Updated README to be more descriptive
+
+
+0.2.0 (2021-01-04)
+------------------
+
+* Added efX-SDK library
+* Added module to export/convert `nsihdr` files to uint `raw` files using the efX-SDK (Windows only)
+* Tentatively implemented a GUI for the nsihdr2raw export tool
+* Tweaked logging path for log files generated relative to input data for `nsihdr2raw`
+
+0.1.4 (2020-10-27)
+------------------
+
+* Code clean up, remove unnecessary transposing of data, improved debug statements and logging
+
+0.1.3 (2020-10-26)
+------------------
+
+* Fixed font file missing when installing via pip
+
+0.1.2 (2020-09-25)
+------------------
+
+* Fix typo in log messages when checking expected file size to actual file size (.raw)
+
+0.1.0 (2020-06-19)
+------------------
+
+* Initial version
