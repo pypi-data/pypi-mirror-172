@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ezfacesys/__init__.py
+ezfacesys/drill_data.py
+ezfacesys/face_recognition.py
+ezfacesys/face_save.py
+ezfacesys.egg-info/PKG-INFO
+ezfacesys.egg-info/SOURCES.txt
+ezfacesys.egg-info/dependency_links.txt
+ezfacesys.egg-info/requires.txt
+ezfacesys.egg-info/top_level.txt
