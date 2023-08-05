@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: availability
+Version: 0.0.2
+Summary: A custom python type for working with sparse ranges of padded timedate intervals
+Project-URL: Homepage, https://github.com/calendim/availibility
+Project-URL: Bug Tracker, https://github.com/calendim/availibility/issues
+Author-email: Paul Stenius <stenius@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Availability
+Python type for working with ranges of datetimes
+
+
+Use Availability to calculate ranges of datetimes.  A range consists of a start and end time that can be added or subtracted from another range.
+
+```
+availability = Availabilty([
+AvailabilityRange(start_time=datetime.datetime(2022,11,1), end_time=datetime.datetime(2022,11,31,23,59,59)),
+], padding_time_before=5, padding_time_after=10)
+
+availability -= AvailabilityRange(start_time=datetime.datetime(2022,11,8), end_time=datetime.datetime(2022,11,10))
+```
