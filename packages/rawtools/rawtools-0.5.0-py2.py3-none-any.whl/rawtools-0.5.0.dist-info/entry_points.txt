@@ -1,0 +1,6 @@
+[console_scripts]
+nsihdr2raw = rawtools.cli:raw_nsihdr
+raw-convert = rawtools.cli:raw_convert
+raw-generate = rawtools.cli:raw_generate
+raw-qc = rawtools.cli:raw_qc
+raw2img = rawtools.cli:raw_image
