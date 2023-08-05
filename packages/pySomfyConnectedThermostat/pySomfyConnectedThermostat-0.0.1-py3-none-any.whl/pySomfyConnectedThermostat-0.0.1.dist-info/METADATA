@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pySomfyConnectedThermostat
+Version: 0.0.1
+Summary: A python3 library to communicate with Somfy connected thermostat
+Home-page: https://github.com/GuillaumeNury/pySomfyConnectedThermostat
+Author: Guillaume Nury
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5.3
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.8.3)
+
+# pySomfyConnectedThermostat
+
+Python library to communicate with Somfy connected thermostat.
