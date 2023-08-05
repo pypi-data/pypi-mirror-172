@@ -1,0 +1,4 @@
+[console_scripts]
+ApachecnJavawebZhPt3 = ApachecnJavawebZhPt3.__main__:main
+apachecn-javaweb-zh-pt3 = ApachecnJavawebZhPt3.__main__:main
+
