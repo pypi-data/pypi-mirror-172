@@ -1,0 +1,13 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind: MultiLineSummaryFirstLine
+  location:
+    row: 124
+    column: 5
+  end_location:
+    row: 126
+    column: 8
+  fix: ~
+
