@@ -1,0 +1,17 @@
+asana>=1.0.0
+requests
+loguru
+pandas
+streamlit>=1.0.0
+plotly
+
+[dev]
+black
+flake8
+ipykernel
+nbformat>=4.2.0
+isort
+pre-commit
+pydocstyle
+build
+twine
