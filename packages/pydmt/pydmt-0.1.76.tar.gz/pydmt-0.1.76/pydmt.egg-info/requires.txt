@@ -1,0 +1,9 @@
+gitpython
+jsonschema
+mako
+pyfakeuse
+pylogconf
+pytconf
+pyyaml
+sphinx
+venv-run
