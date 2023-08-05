@@ -1,0 +1,5 @@
+include README.rst
+include LICENSE
+include requirements.txt
+recursive-include ckanext/lapaz *.html *.json *.js *.less *.css *.mo *.yml *.png *.woff *.woff2
+recursive-include ckanext/lapaz/migration *.ini *.py *.mako

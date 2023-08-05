@@ -1,0 +1,7 @@
+
+        [ckan.plugins]
+        lapaz=ckanext.lapaz.plugin:LapazPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    
