@@ -1,0 +1,18 @@
+keyborad
+cn2an
+black
+uvicorn>=0.16.0
+fastapi
+gradio
+textdistance[extras]
+wordfreq
+protobuf>=3.19.1
+grpcio>=1.46.3
+grpcio-tools>=1.46.3
+grpcio-reflection>=1.46.3
+pyzmq
+arrayfire
+#arrayfire==3.8.0+cu112 -f https://repo.arrayfire.com/python/wheels/3.8.0/
+awkward
+objprint
+#sh # for unix
