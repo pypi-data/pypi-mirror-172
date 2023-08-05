@@ -1,0 +1,31 @@
+default = "en"
+
+[blocks.redis]
+engine.created = "Redis engine created: {name}"
+engine.started = "Redis engine started"
+engine.stopped = "Redis engine stopped"
+
+[blocks.rmq]
+engine.created = "RabbitMQ engine created: {name}"
+engine.started = "RabbitMQ engine started"
+engine.stopped = "RabbitMQ engine stopped"
+
+[blocks.sql]
+engine.created = "Sql engine created for db type '{db_type}' ({async_})"
+engine.started = "Sql engine started for db type '{db_type}' ({async_})"
+engine.stopped = "Sql engine stopped for db type '{db_type}' ({async_})"
+
+[blocks.scheduler]
+created = "Scheduler created"
+create.local = "Create scheduler: local"
+create.remote = "Create scheduler: remote"
+started = "Scheduler started"
+stopped = "Scheduler stopped"
+
+[blocks.scheduler.service]
+exception = "Exception in the worker service"
+start = "Start the worker service"
+stop = "Stop the worker service"
+rpc-connected = "Worker RPC connected to '{host}:{port}'"
+rpc-disconnected = "Worker RPC disconnected from '{host}:{port}'"
+rpc-exception = "Worker RPC execution faced with exception (attempt_num={attempt_num}): {e}"
