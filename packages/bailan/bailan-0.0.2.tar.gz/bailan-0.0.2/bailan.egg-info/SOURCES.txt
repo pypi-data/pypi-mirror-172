@@ -1,0 +1,7 @@
+setup.py
+bailan/__init__.py
+bailan/bad_recognition.py
+bailan.egg-info/PKG-INFO
+bailan.egg-info/SOURCES.txt
+bailan.egg-info/dependency_links.txt
+bailan.egg-info/top_level.txt
