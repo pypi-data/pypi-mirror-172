@@ -1,0 +1,2 @@
+[console_scripts]
+p2w4n = p2w4n.__main__:main

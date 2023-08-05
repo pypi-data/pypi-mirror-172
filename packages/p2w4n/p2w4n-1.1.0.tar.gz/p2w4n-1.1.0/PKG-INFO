@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: p2w4n
+Version: 1.1.0
+Summary: Convert PDF/PPT(X) file word document readfy for import into Notion.
+Home-page: https://www.3thinking.cn/p2w4n/
+Author: Learner Chen
+Author-email: learner.chen@icloud.com
+License: NO-DISTRIBUTION
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# P2W4Notion
+
+a tool for convert PPTX/PDF files into word document ready (< 5 mbyte) to import into Notion, for further reading, organization or comments.
+
+
+
