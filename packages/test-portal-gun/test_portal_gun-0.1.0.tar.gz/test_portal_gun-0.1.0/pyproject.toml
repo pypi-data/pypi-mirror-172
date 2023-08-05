@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "test-portal-gun"
+version = "0.1.0"
+description = ""
+authors = ["Alireza <alirezaaraby5@gmail.com>"]
+readme = "README.md"
+packages = [{include = "test_portal_gun"}]
+
+[tool.poetry.scripts]
+test-portal-gun = "test_portal_gun.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
