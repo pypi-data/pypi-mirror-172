@@ -1,0 +1,8 @@
+rdkit
+numpy
+pandas
+scikit-learn
+
+[dev]
+pytest>=6
+pytest-cov
