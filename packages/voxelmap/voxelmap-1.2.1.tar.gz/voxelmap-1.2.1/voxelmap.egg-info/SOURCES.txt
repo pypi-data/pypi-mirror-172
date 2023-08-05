@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+voxelmap/__init__.py
+voxelmap/goxel.py
+voxelmap/main.py
+voxelmap/mapto3d.py
+voxelmap.egg-info/PKG-INFO
+voxelmap.egg-info/SOURCES.txt
+voxelmap.egg-info/dependency_links.txt
+voxelmap.egg-info/requires.txt
+voxelmap.egg-info/top_level.txt
