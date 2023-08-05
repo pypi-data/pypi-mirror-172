@@ -1,0 +1,13 @@
+img2texture/__init__.py,sha256=bNqWHBcjwCVsQrlUcS32dvrfRUhwb_UkntEm7GPImZE,55
+img2texture/__main__.py,sha256=k9CgQa-3xvfVcIK_ja2WKsKtwjQma9kYJyQY7LagNe4,56
+img2texture/_cli.py,sha256=8iFtdj6Hwk-Mj1PbhWD1D-v0PcxYoynBmqR9Rsp6gOY,4374
+img2texture/_common.py,sha256=uOiCF4vSCXDZRRrgxaRpBkrQSyiqhbppj4QUgItU5bc,256
+img2texture/_constants.py,sha256=uOKW_HV5hjRmWrHYMYvExvgzgcScIe4jCVZjELPs16o,141
+img2texture/_texturizing.py,sha256=GrLdzonozw69Z5vMbq2HHMNw49VRwsP9Ndy2DC7v348,4469
+img2texture/_tiling.py,sha256=QG0uBnp7yFbRMFeyskOCyWfJLhhuwB_5aVf-V_yRPio,694
+img2texture-1.0.6.dist-info/LICENSE,sha256=oy2gOOvplU8YkhW6wj9CP-TtU53DDQN5ZK--5HACGqQ,1087
+img2texture-1.0.6.dist-info/METADATA,sha256=6mzILxuPKFY9CpBQuz9QJ9eVXfH1vQTldiIr7hC0h68,3852
+img2texture-1.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+img2texture-1.0.6.dist-info/entry_points.txt,sha256=N18QNIZnMZVvmRSCANZV7VrRxL7kk0pHvuaRelIqwyk,48
+img2texture-1.0.6.dist-info/top_level.txt,sha256=Nmwhw53wnMuPHG8_LkfvL3-wh3H8DSSVS-Mk0BhCQ6A,12
+img2texture-1.0.6.dist-info/RECORD,,
