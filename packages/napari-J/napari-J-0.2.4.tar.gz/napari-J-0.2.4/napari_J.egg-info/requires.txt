@@ -1,0 +1,9 @@
+JPype1>=1.2.1
+matplotlib
+imageio_ffmpeg
+
+[testing]
+matplotlib
+imageio_ffmpeg
+python-matplotlib-qt5
+pytest-qt
