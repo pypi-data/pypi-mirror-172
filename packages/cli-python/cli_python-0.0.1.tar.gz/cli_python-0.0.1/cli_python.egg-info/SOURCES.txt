@@ -1,0 +1,9 @@
+README.md
+setup.py
+cli_python.egg-info/PKG-INFO
+cli_python.egg-info/SOURCES.txt
+cli_python.egg-info/dependency_links.txt
+cli_python.egg-info/top_level.txt
+clisrc/__init__.py
+clisrc/clipython.py
+clisrc/commandLineInterface.py
