@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: corgiweb
+Version: 0.2
+Summary: UNKNOWN
+Home-page: https://dev.azure.com/joseaenriqueza/_git/groupcrawler
+Author: Jose Enriquez
+Author-email: joseaenriqueza@hotmail.com
+License: MIT
+Keywords: Demo with testing,send email to get access to repo
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+
+Example Project
+===============
+
+
+Installing
+============
+
+.. code-block:: bash
+
+    pip install corgiweb
+
+Usage
+=====
+
+.. code-block:: bash
+
+
+
+

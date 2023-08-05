@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+corgiweb/corgiweb.egg-info/PKG-INFO
+corgiweb/corgiweb.egg-info/SOURCES.txt
+corgiweb/corgiweb.egg-info/dependency_links.txt
+corgiweb/corgiweb.egg-info/requires.txt
+corgiweb/corgiweb.egg-info/top_level.txt
+corgiweb/crawler/__init__.py
+corgiweb/setup/Start.py
+corgiweb/setup/__init__.py
