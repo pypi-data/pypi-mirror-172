@@ -1,0 +1,11 @@
+numpy
+tqdm
+opencv_python
+
+[full]
+apscheduler
+numexpr
+h5py
+yaml
+
+[light]
