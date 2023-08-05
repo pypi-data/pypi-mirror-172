@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sort_zzk
+Version: 0.0.1
+Summary: This is a package that sorts by the key of the dictionary in the list using sorted function
+Author: ZhangZhikun
+Author-email: 1304944085@qq.com
+License-File: LICENSE
