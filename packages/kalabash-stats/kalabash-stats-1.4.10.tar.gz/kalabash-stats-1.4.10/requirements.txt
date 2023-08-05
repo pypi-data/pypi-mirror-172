@@ -1,0 +1,3 @@
+kalabash>=1.15.0
+lxml
+rrdtool>=0.1.11

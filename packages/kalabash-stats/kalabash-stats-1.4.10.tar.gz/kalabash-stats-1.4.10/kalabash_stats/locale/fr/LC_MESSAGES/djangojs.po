@@ -1,0 +1,22 @@
+# Kalabash french translation
+# Copyright (C) 2009-2013
+# This file is distributed under the same license as the Kalabash package.
+# Alphamonak Solutions <amonak@alphamonak.com>, 2009-2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kalabash-1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-03 09:37+0100\n"
+"PO-Revision-Date: 2011-01-07 10:00+0100\n"
+"Last-Translator: Alphamonak Solutions <amonak@alphamonak.com>\n"
+"Language-Team: FR <amonak@alphamonak.com>\n"
+"Language: Français\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: static/kalabash_stats/js/stats.js:43
+msgid "Search a domain"
+msgstr "Checher un domaine"
