@@ -1,0 +1,6 @@
+#!python
+
+import simlin
+
+if __name__ == '__main__':
+    simlin.main()
