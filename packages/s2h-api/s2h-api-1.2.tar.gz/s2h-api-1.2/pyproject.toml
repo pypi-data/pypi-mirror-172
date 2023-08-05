@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "requests"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "s2h-api"
+version = "1.2"
+authors = [
+  { name="DataReset", email="datareset1000@gmail.com" },
+]
+description = "Simple api for s2h"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DataReset/s2h-api"
+"Bug Tracker" = "https://github.com/DataReset/s2h-api/issues"

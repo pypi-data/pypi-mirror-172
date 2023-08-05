@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: s2h-api
+Version: 1.2
+Summary: Simple api for s2h
+Author-email: DataReset <datareset1000@gmail.com>
+Project-URL: Homepage, https://github.com/DataReset/s2h-api
+Project-URL: Bug Tracker, https://github.com/DataReset/s2h-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## EN
+    Simple API for stand2hacks
+    Methods:
+        account:
+            Returns json containing all information about account
+        getKeys:
+            Returns json containing all keys on account
+        keyInfo:
+            Returns json containing information about specified key
+        unlinkKey:
+            Unlinks key from all devices. 1 key can be unlincked every 40 minutes.
+## RU
+    Простое API для stand2hacks
+    Методы:
+        account:
+            Возвращает json содержащий всю информацию об аккаунте
+        getKeys:
+            Возвращает json содержащий все ключи на аккаунте
+        keyInfo:
+            Возвращает json содержащий всю информацию об определённом ключе
+        unlinkKey:
+            Отвязывает определенный ключ. 1 ключ можно отвязать раз в 40 минут.
