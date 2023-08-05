@@ -1,0 +1,12 @@
+labtex/__init__.py,sha256=9Rz9LP4I-L6QgexIQ_zgxE5OfJAXyVrkZ_ZCrBDIRB0,296
+labtex/document.py,sha256=z4znIrFKa-qKRrY8ez2lOR7tdvS8nv_QCK-tFMtUKyg,12686
+labtex/linear.py,sha256=OPU0ZgeTKvm9q85g5em0L5OUfOKld5HTOYhVofMx584,3196
+labtex/measurement.py,sha256=aaHbwtpQR_jJVpFt-4iSmbRLINhlcoTWREvkJOC_XOs,12808
+labtex/measurementlist.py,sha256=F_3ZFKne-IbfDVla0wRIZy_Q_ZGb16vROEymsID-nSI,10264
+labtex/nonlinear.py,sha256=SLiLIioZzg8tZMbY4oL9kEsKPqNjxP6ODN4YozfukMQ,4160
+labtex/unit.py,sha256=PzJjC66o3yn4qnPI972cgVtrSUOE2xasarV1H-mfayc,9800
+labtex-0.6.1.dist-info/LICENSE,sha256=H2euEZRipGYvkx7mbBGi7HVHJOHd45XtqQ91D91UzAs,1054
+labtex-0.6.1.dist-info/METADATA,sha256=bHvzUKaE6csZJBZ55xpTGoIeacFjGQF76bm09qFf0bM,8993
+labtex-0.6.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+labtex-0.6.1.dist-info/top_level.txt,sha256=p05E-2IEHEJ0Hg9XBk2CUUne773okmTHj-vMWZzT7To,7
+labtex-0.6.1.dist-info/RECORD,,
