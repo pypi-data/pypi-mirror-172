@@ -1,0 +1,43 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-09-26T00:34:29.570309",
+    "startedAt": "2022-09-26T00:34:29.217337",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 3,
+    "cpu_count": 20,
+    "cuda": null,
+    "args": [
+        "compound",
+        "--logging.event-writer=wandb",
+        "--pipeline.datamanager.train-num-rays-per-batch",
+        "8192",
+        "--pipeline.model.eval-num-rays-per-chunk",
+        "2048",
+        "--pipeline.model.density-field-params.num-cascades",
+        "3",
+        "--viewer.num-rays-per-chunk",
+        "16000",
+        "--logging.local-writer.max-log-size=0",
+        "nerfactory-data",
+        "--pipeline.datamanager.dataparser.downscale-factor",
+        "2",
+        "--pipeline.datamanager.dataparser.data-directory",
+        "data/nerfactory/posterv2",
+        "--pipeline.datamanager.dataparser.scene-scale",
+        "3"
+    ],
+    "state": "running",
+    "program": "scripts/run_train.py",
+    "codePath": "scripts/run_train.py",
+    "git": {
+        "remote": "git@github.com:plenoptix/pyrad.git",
+        "commit": "e4982f7ed1edfa277f353af5a927de96b1bd1cc9"
+    },
+    "email": "tancik@berkeley.edu",
+    "root": "/projects/pyrad",
+    "host": "tracey",
+    "username": "tancik",
+    "executable": "/home/tancik/miniconda3/envs/nerfactory/bin/python"
+}

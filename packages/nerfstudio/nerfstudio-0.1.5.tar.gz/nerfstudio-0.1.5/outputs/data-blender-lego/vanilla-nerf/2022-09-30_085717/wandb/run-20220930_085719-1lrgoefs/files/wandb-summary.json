@@ -1,0 +1,1 @@
+{"Train Iter (time)": 0.08969861268997192, "_timestamp": 1664553469.2706954, "ETA (time)": 89682.28754246235, "Train Rays / Sec": 11420.359260189945, "Train Loss": 0.11196282505989075, "Train Loss Dict/rgb_loss_coarse": 0.057396989315748215, "Train Loss Dict/rgb_loss_fine": 0.054565832018852234, "_runtime": 30.102943420410156, "_step": 182, "_wandb": {"runtime": 29}}
