@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ezfacesys
+Version: 0.0.2
+Summary: Face entry, training and recognition library
+Home-page: https://gitee.com/hhslyyds/face_identification.git
+Author: HeShengLi
+Author-email: 2794404684@qq.com
+License-File: LICENSE
+Requires-Dist: certifi (==2022.9.24)
+Requires-Dist: charset-normalizer (==2.1.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: numpy (==1.21.6)
+Requires-Dist: opencv-contrib-python (==4.6.0.66)
+Requires-Dist: opencv-python (==4.6.0.66)
+Requires-Dist: PIL-Tools (==1.1.0)
+Requires-Dist: Pillow (==9.2.0)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: urllib3 (==1.26.12)
+
