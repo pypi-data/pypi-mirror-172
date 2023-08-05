@@ -1,0 +1,10 @@
+{% ckan_extends %}
+
+<!-- Navigation tabs -->
+{% block header_site_navigation_tabs %} {{ h.build_nav_main( ('home.index',
+_('Home')), ('dataset.search', _('Datasets')) ) }}
+
+<li><a href="http://ide.lapaz.bo">IDE</a></li>
+
+{{ h.build_nav_main( ('home.about',
+_('About')) ) }} {% endblock %}

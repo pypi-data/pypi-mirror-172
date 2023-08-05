@@ -1,0 +1,14 @@
+# lapaz-js:
+#   filter: rjsmin
+#   output: ckanext-lapaz/%(version)s-lapaz.js
+#   contents:
+#     - js/lapaz.js
+#   extra:
+#     preload:
+#       - base/main
+
+# lapaz-css:
+#   filter: cssrewrite
+#   output: ckanext-lapaz/%(version)s-lapaz.css
+#   contents:
+#     - css/lapaz.css
