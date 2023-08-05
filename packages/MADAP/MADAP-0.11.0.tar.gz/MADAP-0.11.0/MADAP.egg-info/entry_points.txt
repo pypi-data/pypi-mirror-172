@@ -1,0 +1,3 @@
+[console_scripts]
+madap_cli = madap_cli:main
+madap_gui = madap_gui:main
