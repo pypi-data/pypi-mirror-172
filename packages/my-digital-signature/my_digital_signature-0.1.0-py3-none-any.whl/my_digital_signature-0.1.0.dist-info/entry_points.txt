@@ -1,0 +1,3 @@
+[console_scripts]
+signature=my_digital_signature.SIGNATURE:create_signature
+
