@@ -1,0 +1,6 @@
+aslabs/dependencies/gcp/cloud_tasks/__init__.py,sha256=eo9xGZlTCOwODkDEcx6XJjXGLX1qjI7sl2cyJi4zeDU,132
+aslabs/dependencies/gcp/cloud_tasks/cloud_tasks.py,sha256=gIHsH8ASHi2LuhKj8_UKFZrtllCMb0KeypM7xIBzkeU,4027
+aslabs/dependencies/gcp/cloud_tasks/resolver.py,sha256=SdavcasYo3snIYWUK99Jc8toX_Gk917HMKfMnR3rqcQ,672
+aslabs_dependencies_gcp_cloud_tasks-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aslabs_dependencies_gcp_cloud_tasks-0.0.1.dist-info/METADATA,sha256=rWsb_O93y0kqbfFOx7fyMV03XgiquMr45Pc9sKOcEVc,523
+aslabs_dependencies_gcp_cloud_tasks-0.0.1.dist-info/RECORD,,
