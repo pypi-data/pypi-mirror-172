@@ -1,0 +1,10 @@
+[console_scripts]
+cdt-cc = eoscdt:run_cdt_cc
+cdt-cpp = eoscdt:run_cdt_cpp
+cdt-get-dir = eoscdt:run_eos_cdt_get_dir
+cdt-get-root-dir = eoscdt:run_eos_cdt_get_root_dir
+cdt-init = eoscdt:run_cdt_init
+cdt-ld = eoscdt:run_cdt_ld
+cdt-pp = eoscdt:run_cdt_pp
+eoscdt = eoscdt:run_eos_cdt
+
