@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Giancarlo Gaifas <lallo@artiemestieri.tn.it>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-27 16:24+0200\n"
+"PO-Revision-Date: 2013-12-23 00:56+0100\n"
+"Last-Translator: Alberto Berti <alberto@metapensiero.it>\n"
+"Language-Team: ITALIANO <amonak@alphamonak.com>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app_settings.py:18
+msgid "General"
+msgstr "Generale"
+
+#: app_settings.py:21
+msgid "Postfix's master.cf path"
+msgstr "Percorso del file master.cf di Postfix"
+
+#: app_settings.py:23
+msgid "Path to the master.cf configuration file"
+msgstr "Percorso del file di configurazione master.cf"
+
+#: forms.py:26
+msgid "Name"
+msgstr ""
+
+#: forms.py:27
+#, fuzzy
+#| msgid "The domain name"
+msgid "The relay domain name"
+msgstr "Il nome del dominio"
+
+#: general_callbacks.py:56 general_callbacks.py:63
+#, fuzzy
+#| msgid "Relay domains"
+msgid "Relay domain"
+msgstr "Domini relè"
+
+#: general_callbacks.py:76
+#, fuzzy
+#| msgid "Relay domains"
+msgid "Relay settings"
+msgstr "Domini relè"
+
+#: general_callbacks.py:112
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "<li><em>relaydomain; name; target host; service; enabled; verify "
+#| "recipients</em></li>\n"
+#| "<li><em>relaydomainalias; name; target; enabled</em></li>\n"
+msgid ""
+"\n"
+"<li><em>relaydomain; name; target host; service; enabled; verify recipients</"
+"em></li>\n"
+msgstr ""
+"\n"
+"<li><em>dominio relè; nome; host di destinazione; servizio; abilitato; "
+"verifica caselle</em></li>\n"
+"<li><em> alias dominio relè; nome; destinazione; abilitato</em></li>\n"
+
+#: models.py:62
+msgid "name"
+msgstr "nome"
+
+#: models.py:63
+msgid "The service name"
+msgstr "Il nome del servizio"
+
+#: models.py:85
+msgid "target host"
+msgstr "destinazione"
+
+#: models.py:86
+msgid "Remote destination of this domain"
+msgstr "Destinazione remota per questo dominio"
+
+#: models.py:90
+msgid "verify recipients"
+msgstr "Verifica destinatari"
+
+#: models.py:91
+msgid "Check for valid recipients"
+msgstr "Verifica validità destinatari"
+
+#: models.py:104
+msgid "Relay Domain"
+msgstr "Dominio relè"
+
+#: models.py:131
+msgid "Invalid line"
+msgstr "Riga non valida"
+
+#: kalmonak_extension.py:29
+msgid "Relay domains support for Postfix"
+msgstr "Supporto ai \"domini relè\" per Postfix"
+
+#: kalmonak_extension.py:36
+msgid "Relay domains"
+msgstr "Domini relè"
+
+#: templates/kalabash_admin_relaydomains/service_field.html:3
+msgid "Scan"
+msgstr "Cerca"
+
+#~ msgid "Alias(es)"
+#~ msgstr "Alias"
+
+#~ msgid ""
+#~ "Alias(es) of this relay domain. Indicate only one name per input, press "
+#~ "ENTER to add a new input."
+#~ msgstr ""
+#~ "Alias per questo dominio relè. Inserisci un solo nome per casella, premi "
+#~ "INVIO per aggiungere un nuovo elemento."
+
+#~ msgid "domain"
+#~ msgstr "dominio"
+
+#~ msgid "domain alias"
+#~ msgstr "alias del dominio"
+
+#~ msgid "relay domain alias"
+#~ msgstr "Alias del dominio relè"
+
+#~ msgid "A %s with this name already exists"
+#~ msgstr "Un %s con questo nome esiste già"
+
+#~ msgid "relay domain"
+#~ msgstr "Dominio relè"
+
+#~ msgid "Relay domain modified"
+#~ msgstr "Dominio relè modificato"
+
+#~ msgid "Add relay domain"
+#~ msgstr "Aggiungi dominio relè"
+
+#~ msgid "Delete %s?"
+#~ msgstr "Eliminare %s?"
+
+#~ msgid "Maximum number of relay domains this user can create"
+#~ msgstr "Numero massimo di domini relè che questo utente può creare"
+
+#~ msgid "Relay domain aliases"
+#~ msgstr "Alias del dominio relè"
+
+#~ msgid "Maximum number of relay domain aliases this user can create"
+#~ msgstr ""
+#~ "Numero massimo di alias di un dominio relè che questo utente può creare"
+
+#~ msgid "Maximum number of allowed relay domains for a new administrator"
+#~ msgstr ""
+#~ "Numero massimo di domini relè consentiti per un nuovo amministratore"
+
+#~ msgid ""
+#~ "Maximum number of allowed relay domain aliases for a new administrator"
+#~ msgstr ""
+#~ "Numero massimo di alias di dominio relè consentiti per un nuovo "
+#~ "amministratore"
+
+#~ msgid "enabled"
+#~ msgstr "Attivato"
+
+#~ msgid "Check to activate this domain"
+#~ msgstr "Seleziona per attivare questo dominio"
+
+#~ msgid "The alias name"
+#~ msgstr "Il nome dell'alias"
+
+#~ msgid "target"
+#~ msgstr "destinazione"
+
+#~ msgid "The relay domain this alias points to"
+#~ msgstr "Il dominio relè a cui punta questo alias"
+
+#~ msgid "Check to activate this alias"
+#~ msgstr "Seleziona per attivare questo alias"
+
+#~ msgid "Relay domain %s does not exist"
+#~ msgstr "Il dominio relè '%s' non esiste"
+
+#~ msgid "Relay domain created"
+#~ msgstr "Dominio relè creato"
+
+#~ msgid "New relay domain"
+#~ msgstr "Nuovo dominio relè"
+
+#~ msgid "Create"
+#~ msgstr "Crea"
+
+#~ msgid "Relay domain deleted"
+#~ msgstr "Dominio relè cancellato"
