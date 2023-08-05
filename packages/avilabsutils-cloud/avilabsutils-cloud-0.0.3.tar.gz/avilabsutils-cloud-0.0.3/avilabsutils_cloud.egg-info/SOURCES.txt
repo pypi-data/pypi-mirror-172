@@ -1,0 +1,9 @@
+cloud.py
+pyproject.toml
+setup.cfg
+avilabsutils_cloud.egg-info/PKG-INFO
+avilabsutils_cloud.egg-info/SOURCES.txt
+avilabsutils_cloud.egg-info/dependency_links.txt
+avilabsutils_cloud.egg-info/entry_points.txt
+avilabsutils_cloud.egg-info/requires.txt
+avilabsutils_cloud.egg-info/top_level.txt
