@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+site_cloner/__init__.py
+site_cloner/main.py
+site_cloner.egg-info/PKG-INFO
+site_cloner.egg-info/SOURCES.txt
+site_cloner.egg-info/dependency_links.txt
+site_cloner.egg-info/top_level.txt
