@@ -1,0 +1,10 @@
+CITATION.md,sha256=O2aB69obQrkXpi9J03Yf-4ws6T4bkpORKAVB7mZyY7M,487
+LICENSE,sha256=JXelf5SihDI9rjW2QyGaUn6X4bpehJ2pii5ofkzsJ38,1069
+niaclass/__init__.py,sha256=Wjcca5nTm6DYQCgGEPsTy52dL_Wxr94XhottsU4jmiI,86
+niaclass/feature_info.py,sha256=uO4US4Y-3ISBoam0Wt4nk_S8xwLY4Wvd4k64Vzx8Vgg,992
+niaclass/niaclass.py,sha256=oqMfQICgpD0FmKPp5z8lboPXZEEGzaEfnlg7p5OVsg0,16459
+niaclass/rule.py,sha256=LmTk3Sa-a47xOgR2uHWnyY_YfrTjR1dydA6jS8CX-uQ,805
+niaclass-0.1.3.dist-info/LICENSE,sha256=JXelf5SihDI9rjW2QyGaUn6X4bpehJ2pii5ofkzsJ38,1069
+niaclass-0.1.3.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+niaclass-0.1.3.dist-info/METADATA,sha256=P2_8jpmjUcNND2mCIMVhTKGE-JE4nJy_dfAAtHYKaWk,1858
+niaclass-0.1.3.dist-info/RECORD,,
