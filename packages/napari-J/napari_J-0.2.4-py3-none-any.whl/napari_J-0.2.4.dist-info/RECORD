@@ -1,0 +1,22 @@
+napari_j/__init__.py,sha256=83O_g_JijTHYUFwrSRm1nmYGALEROFgg2mm_kW406I0,174
+napari_j/_dock_widget.py,sha256=8LYvVcYruA6JtB6I0xnpOOhPx-UNvOBRfjuq9PeboOA,718
+napari_j/bridge.py,sha256=p5hNH6CxeDarwIkHM7Tc9IoD3FhPWAptcWgf1UtqYgE,13394
+napari_j/connection.py,sha256=y5zeXov6zK2dThBpX5u4bCOAMQXqWCj6GRjJsJ6QYCE,7734
+napari_j/image.py,sha256=VSsmlQKDI0ARx2ls8OLQxG9mNF3QDGXFtdZQfnAvuuk,4020
+napari_j/napari.yaml,sha256=ZPpcBpG8YLuriV0NCNI5kTnamDDfZOAN_cSzsPS2IVE,537
+napari_j/points.py,sha256=faPX8vEFqwk2Ia4Mf6pSbsUpnWnVToyoZ7qVofW1604,11155
+napari_j/surfaces.py,sha256=idkt9tlm0x0ePecXDYZCX37jb2v4MNUpbbuCZTlfL_Q,725
+napari_j/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_j/_tests/bridge_unit_test.py,sha256=j6kxfkeF8Co5LUGzsYuwiM55NuJp17AIPDhhejUPUsc,8089
+napari_j/_tests/test_dock_widget.py,sha256=28EHcr31WzN19Trenu8RC2SQW2nY_znbBKK0WuMtJnA,670
+napari_j/_tests/surrogate/.gitignore,sha256=87zbhaOo0zWoTz1LL7qm_SSyJpl2gzdpZ9kcq75n6Pk,7
+napari_j/_tests/surrogate/README.rst,sha256=2XpWImwxVmaFWSC30UjBAL4eEwfCHlCNpg2cGdQcEtw,1908
+napari_j/_tests/surrogate/__init__ (copy).py,sha256=TMMCoshgB9FSwGX3YbNBQG80dsr7EDW-V5hYYL2niE4,125
+napari_j/_tests/surrogate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_j/_tests/surrogate/surrogate.py,sha256=VH0zAWhxhfP8ffleGabnr4rHzfJgq02i_bG_EfqH2l8,5366
+napari_J-0.2.4.dist-info/LICENSE,sha256=_de7dDcTyHkrHWcVyiYXsYxnyw_fT5fflVA4aog9m34,1082
+napari_J-0.2.4.dist-info/METADATA,sha256=5vo4JRJ6Ky20I2qRwrSu5ztIUzzsUmquX2ohgo4-1aY,4698
+napari_J-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_J-0.2.4.dist-info/entry_points.txt,sha256=7PppFw6jxjDUqnSf6yqQuvnvmpFGx0HA3pu9iP907xA,35
+napari_J-0.2.4.dist-info/top_level.txt,sha256=_OI5i8riBoHmpky1QUxp0pKVscpARMTg15AVAjllyhA,9
+napari_J-0.2.4.dist-info/RECORD,,
