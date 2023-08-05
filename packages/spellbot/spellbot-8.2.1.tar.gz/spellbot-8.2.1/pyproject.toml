@@ -1,0 +1,141 @@
+[tool.black]
+include = '\.pyi?$'
+line-length = 100
+
+[tool.isort]
+ensure_newline_before_comments = true
+include_trailing_comma = true
+line_length = 100
+multi_line_output = 3
+use_parentheses = true
+
+[tool.pylint]
+max-line-length = 100
+
+[tool.pyright]
+enableTypeIgnoreComments = true
+reportMissingParameterType = true
+reportMissingTypeArgument = true
+typeCheckingMode = "basic"
+
+[tool.pylic]
+ignore_packages = [
+  # only install these as part of dev tools to avoid GPL usage in main application
+  "astroid",
+  "pylint",
+]
+safe_licenses = [
+  "3-Clause BSD License",
+  "Apache Software License",
+  "BSD License",
+  "BSD-derived (http://www.repoze.org/LICENSE.txt)",
+  "BSD",
+  "GNU Library or Lesser General Public License (LGPL)",
+  "ISC License (ISCL)",
+  "MIT License",
+  "MIT",
+  "Mozilla Public License 2.0 (MPL 2.0)",
+  "Public Domain",
+  "Python Software Foundation License",
+]
+
+[tool.pytest.ini_options]
+addopts = """
+    -W ignore::DeprecationWarning --no-header --cov --cov-report=html -vv
+"""
+
+[tool.poetry]
+authors = [
+  'Amy Troschinetz <spellbot@lexicalunit.com>',
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: End Users/Desktop",
+  "Topic :: Communications :: Chat",
+  "Topic :: Games/Entertainment :: Board Games",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+]
+description = 'The Discord bot for SpellTable'
+homepage = 'http://spellbot.io/'
+keywords = ['discord', 'magic', 'bot', 'mtg', 'SpellTable']
+license = 'MIT'
+name = 'spellbot'
+packages = [
+  {include = "spellbot", from = "src"},
+]
+readme = 'README.md'
+repository = 'https://github.com/lexicalunit/spellbot'
+version = "8.2.1"
+
+[tool.poetry.dependencies]
+Babel = "^2.10.3"
+PyYAML = "^6.0"
+SQLAlchemy = "^1.4.41"
+SQLAlchemy-Utils = "^0.38.3"
+aiohttp = "^3.8.1"
+aiohttp-jinja2 = "^1.5"
+aiohttp-retry = "^2.8.3"
+alembic = "^1.8.0"
+asgiref = "^3.5.2"
+charset-normalizer = "2.1.1"
+click = "^8.1.3"
+coloredlogs = "^15.0.1"
+datadog = "^0.44.0"
+ddtrace = "^1.4.4"
+"discord.py" = "^2.0.0"
+dunamai = "^1.13.2"
+expiringdict = "^1.2.2"
+gunicorn = "^20.1.0"
+humanize = "^4.3.0"
+hupper = "^1.10.3"
+importlib-resources = "^5.8.0"
+packaging = "21.3"
+psycopg2-binary = "^2.9.3"
+python = '>=3.10,<4'
+python-dateutil = "^2.8.2"
+python-dotenv = "^0.21.0"
+pytz = "^2022.2.1"
+requests = "2.28.1"
+supervisor = "^4.2.4"
+toml = "^0.10.2"
+uvloop = ">=0.16,<0.18"
+wrapt = "^1.14.1"
+
+[tool.poetry.dev-dependencies]
+Faker = "^15.1.1"
+GitPython = "^3.1.27"
+black = "^22.6.0"
+callee = "^0.3.1"
+coverage = "^6.4.3"
+factory-boy = "^3.2.1"
+flake8 = "^5.0.4"
+flake8-print = "^5.0.0"
+isort = "^5.10.1"
+pexpect = "^4.8.0"
+ptyprocess = "^0.7.0"
+pylic = "^3.1.1"
+pylint = "2.15.4"
+pyright = "^1.1.272"
+pytest = "^7.1.2"
+pytest-aiohttp = "^1.0.4"
+pytest-asyncio = "^0.19.0"
+pytest-cov = "^4.0.0"
+pytest-freezegun = "^0.4.2"
+pytest-mock = "^3.8.2"
+shellingham = "^1.4.0"
+sqlalchemy-stubs = "^0.4"
+syrupy = "^3.0.2"
+types-PyYAML = "^6.0.8"
+types-freezegun = "^1.1.9"
+types-python-dateutil = "^2.8.17"
+types-pytz = "^2022.1.2"
+types-toml = "^0.10.7"
+virtualenv = "^20.16.5"
+
+[tool.poetry.scripts]
+spellbot = 'spellbot:main'
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.8"]
