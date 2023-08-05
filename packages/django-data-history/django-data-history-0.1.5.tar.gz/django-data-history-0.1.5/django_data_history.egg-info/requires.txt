@@ -1,0 +1,6 @@
+django
+django-middleware-global-request
+django-middleware-request-id
+django-static-jquery-ui
+fastutils
+magic-import
