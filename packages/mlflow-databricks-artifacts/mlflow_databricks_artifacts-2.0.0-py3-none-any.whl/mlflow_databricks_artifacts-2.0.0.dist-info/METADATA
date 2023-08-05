@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mlflow-databricks-artifacts
+Version: 2.0.0
+Summary: Plugin to create and access MLflow-managed artifacts on Databricks
+Author: Databricks
+Description-Content-Type: text/markdown
+Requires-Dist: mlflow-skinny (>1.10.0)
+
+# mlflow-databricks-artifacts
+An artifact repository plugin for MLflow that extends ACL'ed artifacts support to older MLflow versions
+### Version 2.0
+Backport SSE-CPK support to older version Mlflow.
+
+Related PR https://github.com/mlflow/mlflow/pull/6927/files
+
+Doc https://docs.google.com/document/d/1EXrv4-bYoAWl5vRQ1ksRgwqUjheNYgIgeKhfLZQOtRQ/edit#
+
+The mlflow-databricks-artifacts is based on mlflow version v1.29.0
