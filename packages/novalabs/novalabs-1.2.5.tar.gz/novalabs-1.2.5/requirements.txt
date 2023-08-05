@@ -1,0 +1,6 @@
+pandas~=0.24.1
+requests~=2.21.0
+numpy~=1.14.6
+pytz~=2018.9
+setuptools~=40.8.0
+decouple
