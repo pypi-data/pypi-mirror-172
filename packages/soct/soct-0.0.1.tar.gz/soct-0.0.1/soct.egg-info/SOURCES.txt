@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+soct.egg-info/PKG-INFO
+soct.egg-info/SOURCES.txt
+soct.egg-info/dependency_links.txt
+soct.egg-info/top_level.txt
