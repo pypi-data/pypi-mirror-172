@@ -1,0 +1,85 @@
+#: bambu/settings.py:86
+msgid "English"
+msgstr ""
+
+#: bambu/settings.py:87
+msgid "Tetum"
+msgstr ""
+
+#: vizitor/templates/baze.html:137
+msgid "MenuInisiu"
+msgstr "Inisiu"
+
+#: vizitor/templates/baze.html:141 vizitor/templates/baze.html:143
+msgid "MenuKonaBaAmi"
+msgstr "Kona Ba Ami"
+
+#: vizitor/templates/baze.html:152 vizitor/templates/index.html:119
+#: vizitor/templates/produtu.html:64
+msgid "MenuProdutu"
+msgstr "Produtu"
+
+#: vizitor/templates/baze.html:153 vizitor/templates/index.html:201
+#: vizitor/templates/informasaun.html:8
+msgid "MenuActividade"
+msgstr "Atividade"
+
+#: vizitor/templates/baze.html:154 vizitor/templates/index.html:162
+msgid "MenuMapamentu"
+msgstr "Mapamentu"
+
+#: vizitor/templates/detalluinformasaun.html:85
+msgid "InformasaunShare"
+msgstr "Fahe Informasaun Ne'e ba Iha Social Media"
+
+#: vizitor/templates/detalluprodutu.html:56
+msgid "ImagenSeluk"
+msgstr "Imagen Seluk"
+
+#: vizitor/templates/detalluprodutu.html:77
+msgid "ProdutuShare"
+msgstr "Share Produtu Ida Ne'e ba Iha Social Media"
+
+#: vizitor/templates/index.html:57
+msgid "LeDetallu"
+msgstr "Le Detallu"
+
+#: vizitor/templates/index.html:93 vizitor/templates/index.html:192
+msgid "HareDetallu"
+msgstr "Hare Detallu"
+
+#: vizitor/templates/index.html:120 vizitor/templates/produtu.html:68
+msgid "DeskrisaunProdutu"
+msgstr "Ami iha produtu oioin ne'ebe produz husi timor  ho qualidade ass"
+
+#: vizitor/templates/index.html:147 vizitor/templates/index.html:234
+msgid "HareSeluk"
+msgstr "Hare Seluk"
+
+#: vizitor/templates/index.html:163
+msgid "DeskrisaunMapamentu"
+msgstr ""
+"Kuantidade   Grupu Pre Fabrika, Grupu Viveirus no  Area Plantasaun sira iha "
+"timor leste ,  bele hare iha okos "
+
+#: vizitor/templates/index.html:202
+msgid "DeskrisaunAtividade"
+msgstr "Atividade no eventu ne'ebe ami realiza , ona Durante Ne'e"
+
+#: vizitor/templates/index.html:255
+msgid "TituluParceiru"
+msgstr "Parceiru Servisu"
+
+#: vizitor/templates/index.html:256
+msgid "DeskrisaunParceiru"
+msgstr ""
+"Tuir Mai maka Ami nia parceiru nasiona no internasional sira, husi parte "
+"setor publiku no privadu"
+
+#: vizitor/templates/produtu.html:85 vizitor/templates/produtu.html:96
+msgid "ProdutuFoun"
+msgstr "Produtu Foun"
+
+#: vizitor/templates/produtu.html:111
+msgid "Pressu"
+msgstr "Pressu"
