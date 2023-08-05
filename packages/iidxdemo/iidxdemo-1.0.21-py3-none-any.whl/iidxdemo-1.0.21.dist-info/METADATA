@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: iidxdemo
+Version: 1.0.21
+Summary: demo template for package
+Home-page: https://www.iidx.cn
+Author: iidx
+Author-email: 15110276321@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+

@@ -1,0 +1,11 @@
+iidxdemo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iidxdemo/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iidxdemo/cfg/version.txt,sha256=jKWo_Fyz5encoM8_aaeZoVpSpjzjPKzt1-pOMe0RmMQ,6
+iidxdemo/clis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iidxdemo/clis/cli.py,sha256=Ru1kQQHvH3Tx6oAULWiJ50WxAjXc7b1siuaeIdwdmIM,484
+iidxdemo-1.0.21.data/scripts/iidxdemo.sub.sh,sha256=hV3-l5VKkJF19eUO-BWP_rPo3mRW6immBJWNxPaMujs,33
+iidxdemo-1.0.21.dist-info/METADATA,sha256=42DlwV7ghHuULBe_XtwjNQ4NpZWivOiEhENIO6_M1OI,456
+iidxdemo-1.0.21.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+iidxdemo-1.0.21.dist-info/entry_points.txt,sha256=H9EpLZ02XZGMNjuYSq2r-MQLIxv95YpXOTgTSHrxeXg,56
+iidxdemo-1.0.21.dist-info/top_level.txt,sha256=GcEl_4ugvI0Hb62K33RexCm1kunX7uGCcQDAhUOw5LA,9
+iidxdemo-1.0.21.dist-info/RECORD,,
