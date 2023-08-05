@@ -1,0 +1,4 @@
+include COPYING
+recursive-include fonts *.ttf
+include fonts/Symbola.ttf
+
