@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: peltak-todos
+Version: 0.0.8
+Summary: 
+Home-page: https://novopl.github.io/peltak-todos
+License: Proprietary
+Author: Mateusz Klos
+Author-email: novopl@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: peltak (>=0.27.5,<0.28.0)
+Project-URL: Documentation, https://novopl.github.io/peltak-todos
+Project-URL: Repository, https://github.com/novopl/peltak-todos
