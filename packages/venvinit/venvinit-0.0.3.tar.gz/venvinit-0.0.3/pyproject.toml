@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "venvinit"
+dynamic = ["version"]
+description = "venvinit is a tool to create a virtual environment and install packages from a requirements file."
+readme = "README.md"
+license = ""
+requires-python = ">=3.6"
+authors = [
+    { name = "Lux Luth", email = "luxusluth@gmail.com" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "certifi==2022.9.24",
+    "charset-normalizer==2.1.1",
+    "idna==3.4",
+    "requests==2.28.1",
+    "urllib3==1.26.12",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/luxluth/venvinit/issues"
+Homepage = "https://github.com/luxluth/venvinit"
+
+[project.scripts]
+venvinit = "venvinit:venvinit.main"
+
+[tool.hatch.version]
+path = "venvinit/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/venvinit",
+]
