@@ -1,0 +1,150 @@
+{% extends 'main/dashboard.html' %}
+{% block content %}
+
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-3 mb-4">
+    <span class="text-muted fw-light">Informasaun  / <b><a href="{% url 'informasaun:perfil' %}">Perfil</a></b> /  Konteudu  {{pajinakontedu2}} </span>  
+
+  
+  
+
+  </h4>
+                <div class="row">
+   
+  
+                  <div class="card">
+                    <h5 class="card-header">Konteudu Dadus</h5>
+                    <div class="table-responsive text-nowrap">
+
+
+
+                      
+         
+
+                      {% if messages %}
+                      {% for message in messages %}
+                      <div class="alert alert-{{ message.tags }}">
+                        <font color="gray">  {{ message }}</font>
+                      </div>
+                      {% endfor %}
+                  {% endif %}
+            
+
+                      <table class="table table-sm">
+                        <thead>
+                          <tr class="text-nowrap">
+    
+                            <th>Nu</th>
+                            <th>Lingua</th>
+                            <th>Titulu</th>
+                            <th>imgen</th>
+                            <th>File</th>
+                            <th>Data Kria</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+             
+                           {% for dados in pajinakontedu %}
+
+                          <tr>
+                            <th>{{forloop.counter}}</th>
+                            <td style="font-size: 13px;"><img src="{{dados.linguaicon.url}}" width="20px"> &nbsp; {{dados.lingua}}</td>
+                            <th>{{dados.titulu}}</th>
+                            <th><img src='{{dados.imagen.url}}' style='width:100px'></th>
+                            <th>{{dados.file_pdf}}</th>
+                            <th>{{dados.date_created}}</th>
+                            <th></th>
+                           
+  
+                                <td>
+
+                                  {% if dados.status == 'iha' %}
+
+                                  <a href="{% url 'informasaun:editkonteuduperfil'  dados.id  dados.linguaid %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-edit"></span>&nbsp; </a>
+                                  <!-- <a href="{% url 'informasaun:apagakonteuduperfil' dados.id %}"  onclick="return confirm('Ita Boot hakarak apaga dados ?')" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-trash"></span>&nbsp; </a> -->
+                           
+                              
+                                  {% elif dados.status == 'laiha' %}
+                                  <a href="{% url 'informasaun:inputkonteuduperfil' dados.id  dados.linguaid %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-plush"></span>&nbsp; Maneza Konteudu</a>
+                                  {% endif %}
+  
+
+                       
+                            </td> 
+                
+                          </tr>
+
+                          {% endfor %}
+
+
+
+
+
+  
+                        
+                        </tbody>
+                      </table>
+
+
+                      <br><br>
+
+
+                      <hr>
+                      <div class='float-right'>
+
+            <table align="center">
+              <tr><td>
+                <div class="row" style="margin-left: 5px">
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item">
+      
+                      {% if areabambu.has_previous %}
+                        <a class="page-link" href="{% url 'mapa:areabambu' %}?page={{areabambu.previous_page_number}}" tabindex="-1">Previous</a>
+                      {% else %}
+                        <a class="page-link" href="#" tabindex="-1" style="color:black">Previous</a>
+                      {% endif %}
+      
+                      </li>
+      
+      
+      
+                      {% for i in page_range %}
+                           {% if i == current_page %}
+                              <li class="page-item active">
+                                <a class="page-link" href="#">{{i}}<span class="sr-only">(current)</span></a>
+                              </li>
+                          {% elif i > current_page|add:'-2' and i < current_page|add:'2' %}
+                              <li class="page-item"><a class="page-link" href="{% url 'mapa:areabambu' %}?page={{i}}">{{i}}</a></li>
+                          {% endif %}
+                      {% endfor %}
+      
+      
+                      <li class="page-item">
+      
+                      {% if areabambu.has_next %}
+                        <a class="page-link" href="{% url 'mapa:areabambu' %}?page={{areabambu.next_page_number}}" tabindex="-1">next</a>
+                      {% else %}
+                        <a class="page-link" href="#" tabindex="-1" style="color:black">next</a>
+                      {% endif %}
+      
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+              </td></tr>
+            </table>
+            </div>
+          
+<hr>
+
+                        <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / Content -->
+
+
+{% endblock content %}

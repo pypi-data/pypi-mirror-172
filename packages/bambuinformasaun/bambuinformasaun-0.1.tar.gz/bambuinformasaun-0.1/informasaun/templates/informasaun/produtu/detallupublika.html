@@ -1,0 +1,173 @@
+{% extends 'main/dashboard.html' %}
+
+
+{% load static %}
+{% block content %}
+         
+
+{% load crispy_forms_tags %} 
+
+
+
+
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-3 mb-4">
+    <span class="text-muted fw-light">Mapa / Grupu Bambu / </span> Detallu
+  
+    <button style="float: right ;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Upload Imagen
+    </button>
+
+
+  </h4>
+              
+  
+  <div class="row">
+
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }}">
+      <font color="gray">  {{ message }}</font>
+    </div>
+    {% endfor %}
+{% endif %}
+
+
+
+    <div class="row">
+
+
+ 
+
+   
+      
+ 
+
+
+
+
+  <div class="col-lg-12 mb-4">
+
+    <div class="col-xxl">
+      <div class="card mb-4">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <h5 class="mb-0"> Detallu Informasaun </h5>
+        </div>
+        <div class="card-body"> 
+
+
+
+          
+     
+
+        <hr>
+        <div class="row">
+
+          {% for dados in informasaun %}
+
+
+          <div class="col-lg-12">
+
+            <div class="col-xxl">
+              <div class="card">
+          
+                <div class="card-body">
+
+                  <center><h1>{{dados.titulu}}</h1></center>
+              <img src="{{dados.imagen_main.url}}" style="width: 100%; height: 500px; object-fit: cover;"> 
+              <hr>
+             <center>{{dados.data}}</center>
+         
+              <hr>
+       
+   
+
+              {{dados.konteudu}}
+
+
+<br>
+<br>
+
+
+              <div class="row">
+
+                {% for dados2 in imageinformasaun %}
+      
+      
+                
+              
+           
+                
+                    
+                    {% if dados.imagen_main == dados2.imagen %}
+          
+                    {% else %}
+
+                
+                    <hr>
+                    <div class="col-lg-4 mb-4">
+      
+                      <div class="col-xxl">
+                        <div class="card mb-4">
+                    
+                          <div class="card-body">
+
+
+                    <img src="{{dados2.imagen.url}}" style="width: 100%; height: 200px; object-fit: cover;"> 
+                    <hr>
+                    {{dados2.deskrisaun}} 
+                        
+                  </div>
+                </div>
+              </div>
+      </div>
+
+
+                    {% endif %}
+       
+      
+      
+               {% endfor %}
+       
+      
+             </div> 
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+</div>
+
+
+         {% endfor %}
+ 
+
+       </div> 
+      </hr>
+
+     
+
+
+        </div>
+      </div>
+    </div>
+
+
+</div>
+  
+  
+    
+
+
+
+{% endblock content %}
+
+
+               
+              
+

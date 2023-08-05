@@ -1,0 +1,71 @@
+LICENCE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+bambuinformasaun.egg-info/PKG-INFO
+bambuinformasaun.egg-info/SOURCES.txt
+bambuinformasaun.egg-info/dependency_links.txt
+bambuinformasaun.egg-info/requires.txt
+bambuinformasaun.egg-info/top_level.txt
+informasaun/__init__.py
+informasaun/admin.py
+informasaun/apps.py
+informasaun/forms.py
+informasaun/models.py
+informasaun/tests.py
+informasaun/urls.py
+informasaun/utils.py
+informasaun/views.py
+informasaun/migrations/0001_initial.py
+informasaun/migrations/0002_alter_konteuduprodutu_data_produsaun_and_more.py
+informasaun/migrations/__init__.py
+informasaun/templates/informasaun/informasaun/detallu copy.html
+informasaun/templates/informasaun/informasaun/detallu.html
+informasaun/templates/informasaun/informasaun/detallupublika.html
+informasaun/templates/informasaun/informasaun/django.code-workspace
+informasaun/templates/informasaun/informasaun/input.html
+informasaun/templates/informasaun/informasaun/inputkonteuduinformasaun.html
+informasaun/templates/informasaun/informasaun/inputkonteuduperfil.html
+informasaun/templates/informasaun/informasaun/lista.html
+informasaun/templates/informasaun/informasaun/maneza_konteudu.html
+informasaun/templates/informasaun/informasaun/manezakonteudu.html
+informasaun/templates/informasaun/informasaun/update copy.html
+informasaun/templates/informasaun/informasaun/update.html
+informasaun/templates/informasaun/parceiru/detallu copy.html
+informasaun/templates/informasaun/parceiru/detallu.html
+informasaun/templates/informasaun/parceiru/detallupublika.html
+informasaun/templates/informasaun/parceiru/django.code-workspace
+informasaun/templates/informasaun/parceiru/input.html
+informasaun/templates/informasaun/parceiru/inputkonteuduperfil.html
+informasaun/templates/informasaun/parceiru/inputkonteuduprodutu.html
+informasaun/templates/informasaun/parceiru/lista.html
+informasaun/templates/informasaun/parceiru/maneza_konteudu.html
+informasaun/templates/informasaun/parceiru/manezakonteudu.html
+informasaun/templates/informasaun/parceiru/update copy.html
+informasaun/templates/informasaun/parceiru/update.html
+informasaun/templates/informasaun/perfil/detallu.html
+informasaun/templates/informasaun/perfil/django.code-workspace
+informasaun/templates/informasaun/perfil/input.html
+informasaun/templates/informasaun/perfil/inputkonteuduperfil.html
+informasaun/templates/informasaun/perfil/lista.html
+informasaun/templates/informasaun/perfil/manezakonteudu.html
+informasaun/templates/informasaun/perfil/update copy.html
+informasaun/templates/informasaun/perfil/update.html
+informasaun/templates/informasaun/produtu/detallu copy.html
+informasaun/templates/informasaun/produtu/detallu.html
+informasaun/templates/informasaun/produtu/detallupublika.html
+informasaun/templates/informasaun/produtu/django.code-workspace
+informasaun/templates/informasaun/produtu/input.html
+informasaun/templates/informasaun/produtu/inputkonteuduperfil.html
+informasaun/templates/informasaun/produtu/inputkonteuduprodutu.html
+informasaun/templates/informasaun/produtu/lista.html
+informasaun/templates/informasaun/produtu/maneza_konteudu.html
+informasaun/templates/informasaun/produtu/manezakonteudu.html
+informasaun/templates/informasaun/produtu/update copy.html
+informasaun/templates/informasaun/produtu/update.html
+informasaun/views/__init__.py
+informasaun/views/view_informasaun.py
+informasaun/views/view_parceiru.py
+informasaun/views/view_perfil.py
+informasaun/views/view_produtu.py

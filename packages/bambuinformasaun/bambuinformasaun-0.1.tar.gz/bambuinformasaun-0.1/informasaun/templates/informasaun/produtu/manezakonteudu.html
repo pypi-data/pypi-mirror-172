@@ -1,0 +1,255 @@
+{% extends 'main/dashboard.html' %}
+{% block content %}
+         
+
+{% load crispy_forms_tags %} 
+
+<div class="container-xxl flex-grow-1 container-p-y">
+
+  <h4 class="fw-bold py-3 mb-4">
+    <span class="text-muted fw-light">Informasaun / <b><a href="{% url 'informasaun:produtu' %}">Produtu</a></b> / Konteudu Produtu </span>
+    
+
+  
+
+  </h4>
+                <div class="row">
+                  <div class="card">
+                    <h5 class="card-header">Konteudu Dadus</h5>
+                    <div class="table-responsive text-nowrap">
+
+
+
+                      
+         
+
+                      {% if messages %}
+                      {% for message in messages %}
+                      <div class="alert alert-{{ message.tags }}">
+                        <font color="gray">  {{ message }}</font>
+                      </div>
+                      {% endfor %}
+                      {% endif %}
+            
+
+                      <table class="table table-sm">
+                        <thead>
+                          <tr class="text-nowrap">
+    
+                            <th>Nu</th>
+                            <th>Lingua</th>
+                            <th>Titulu</th>
+                     
+                          </tr>
+                        </thead>
+                        <tbody>
+
+             
+                           {% for dados in konteuduprodutu %}
+
+                          <tr>
+                            <td style="font-size: 13px;">{{forloop.counter}}</td>
+                            <td style="font-size: 13px;"><img src="{{dados.linguaicon.url}}" width="20px"> &nbsp; {{dados.lingua}}</td>
+                            <td style="font-size: 13px;">
+                              {% if dados.status == 'iha' %}
+                              {{dados.titulu}}
+                              {% elif dados.status == 'laiha' %}
+                              <font color="red">
+                                {{dados.titulu}}
+                              </font>
+                              {% endif %}
+
+
+                            </td>
+                      
+                           
+  
+                                <td>
+
+                                  {% if dados.status == 'iha' %}
+
+                                  <a href="{% url 'informasaun:editkonteuduprodutu'  dados.id  dados.linguaid %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-edit"></span>&nbsp; </a>
+                                  <a href="{% url 'informasaun:apagakonteuduprodutu' dados.id %}" onclick="return confirm('Ita Boot hakarak apaga dados ?')" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-trash"></span>&nbsp; </a>
+                                  <!-- <a href="{% url 'mapa:detalluareabambu' dados.id %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-detail">Ativu</span>&nbsp; </a> -->
+  
+                              
+                                  {% elif dados.status == 'laiha' %}
+                                  <a href="{% url 'informasaun:inputkonteuduprodutu' dados.id  dados.linguaid %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-plush"></span>&nbsp; Maneza Konteudu</a>
+                                  {% endif %}
+
+
+                     
+                       
+                            </td> 
+                
+                          </tr>
+
+                          {% endfor %}
+
+
+
+
+
+  
+                        
+                        </tbody>
+                      </table>
+<br><br>
+
+            
+                        
+                    </div>
+                  </div>
+
+
+                  
+                </div>
+
+
+
+
+      
+ 
+
+
+
+
+          
+              
+                    
+                <!-- Button trigger modal -->
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                   Upload Imagen
+                      </div>
+                      <div class="modal-body">
+                        <center>
+                          <img src="" id="output" style="width: 200px ; height: 200px  px; object-fit: cover;">
+                        </center>
+                
+                        {% crispy forms %}
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <script>
+                  function myFunction() {
+                    var image = document.getElementById("output");
+                    image.src = URL.createObjectURL(event.target.files[0]);
+                  }
+                      
+                    </script>
+
+
+
+</div>
+
+
+<div class="container-xxl flex-grow-1 container-p-y" style="padding-top: 0px;">
+
+  <div class="row">
+    <div class="card">
+
+                <div class="col-lg-12">
+                  <div class="col-xxl">
+                    <div class="card mb-4">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">Upload Imagen</h5>
+ 
+                      </div>
+                      <div class="card-body"> 
+              
+                      <div class="row">
+              
+                        {% for dados in imagenprodutu %}
+              
+              
+                        <div class="col-lg-3">
+              
+                          <div class="col-xxl">
+                            <div class="card">
+                        
+                              <div class="card-body">
+                            <img src="{{dados.imagen.url}}" style="width: 100%; height: 100px; object-fit: cover; border-radius: 10px;"> 
+                            <hr>
+                            {{dados.deskrisaun}} {{dados.deskrisaun}}{{dados.deskrisaun}}{{dados.deskrisaun}}
+                         
+                        
+      
+                            {% if mainimagen == dados.imagen %}
+                            <button class="btn btn-default btn-sm"> <center>Hili ona Hanesan thumbnails </center></button>
+                            {% else %}
+                            <center>
+
+                          
+                            <a href="{% url 'informasaun:apagaimagenprodutu' dados.id %}" class="btn btn-primary btn-sm"><span class="tf-icons bx bx-trash"></span></a>
+                         <hr>
+                            <a href="{% url 'informasaun:setimagenprodutu' dados.id %}" class="btn btn-primary btn-sm"> Hili Hanesan thumbnails</a>
+                          </center>
+                            {% endif %}
+                            <hr>
+                   
+                   
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              
+              
+                       {% endfor %}
+
+
+
+
+
+                       <div class="col-lg-3">
+                        <a href = "" data-toggle="modal" data-target="#exampleModal">
+              
+                        <div class="col-xxl">
+                          <div class="card">
+                      
+                            <div class="card-body">
+                           
+                         <center>
+                          <span style="font-size: 60px;" class="tf-icons bx bx-plus"></span> <br> Upload Imagen
+                         </center>
+                                 
+                             
+                      
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+     
+            
+
+
+               
+              
+                     </div> 
+              
+                   
+                  </div>
+                </div>
+              
+                      </div>
+                    </div>
+                  </div>
+              
+              
+              </div>
+
+
+</div>
+
+       
+
+{% endblock content %}

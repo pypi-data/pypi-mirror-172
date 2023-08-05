@@ -1,0 +1,99 @@
+{% extends 'main/dashboard.html' %}
+{% block content %}
+
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-3 mb-4">
+ 
+    <span class="text-muted fw-light">Informasaun  / Perfil</span>  
+
+ 
+    <!-- <a href="{% url 'informasaun:inputperfil' %}" class="btn btn-primary" style="float:right;"> <span class="tf-icons bx bx-plush"></span>&nbsp;  <span class="tf-icons bx bx-plus"> </span> Rejistu Perfil</a> -->
+  
+
+  </h4>
+                <div class="row">
+   
+  
+                  <div class="card">
+                    <h5 class="card-header">Dadus Grupu</h5>
+                    <div class="table-responsive text-nowrap">
+
+
+                  
+
+                      {% if messages %}
+                      {% for message in messages %}
+                      <div class="alert alert-{{ message.tags }}">
+                        <font color="gray">  {{ message }}</font>
+                      </div>
+                      {% endfor %}
+                  {% endif %}
+            
+
+                      <table class="table table-sm">
+                        <thead>
+                          <tr class="text-nowrap">
+    
+                            <th>Nu</th>
+                            <th>Data</th>
+                            <th>Lingua</th>
+                            <th>Asaun</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+             
+                           {% for dados in perfil %}
+
+                          <tr>
+                            <td>{{forloop.counter}}</td>
+                        
+                            <td>{{dados.data}}</td>
+
+                            <td>   {{dados.statuslingua|safe}}</td>
+                    
+                           
+  
+                                <td>
+  
+                        
+                               <!-- <a href="{% url 'informasaun:deleteperfil' dados.id %}" onclick="return confirm('Ita Boot hakarak apaga dados ?')" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-trash"></span>&nbsp; </a> -->
+  
+                               <a href="{% url 'informasaun:manezakonteuduperfil' dados.id %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-detail">Maneza Konteudu</span>&nbsp; </a>
+  
+                       
+                            </td> 
+                
+                          </tr>
+
+                          {% endfor %}
+
+
+
+
+
+  
+                        
+                        </tbody>
+                      </table>
+
+
+                      <br><br>
+
+
+                      <hr>
+                      <div class='float-right'>
+
+            </div>
+          
+<hr>
+
+                        <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / Content -->
+
+
+{% endblock content %}
