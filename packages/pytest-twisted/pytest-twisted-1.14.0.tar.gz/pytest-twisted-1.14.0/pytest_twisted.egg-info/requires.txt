@@ -1,0 +1,13 @@
+greenlet
+pytest>=2.3
+decorator
+
+[dev]
+pre-commit
+black
+
+[pyqt5]
+qt5reactor[pyqt5]>=0.6.2
+
+[pyside2]
+qt5reactor[pyside2]>=0.6.3
