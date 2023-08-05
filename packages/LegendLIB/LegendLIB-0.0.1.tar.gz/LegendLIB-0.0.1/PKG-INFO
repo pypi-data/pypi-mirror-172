@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: LegendLIB
+Version: 0.0.1
+Summary: For developers
+Home-page: https://t.me/LegendsLIB
+Author: Legend
+Author-email: Alaaposhnaq@gmail.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Keywords: LegendsLIB
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+<h1 align="center">LegendLIB</h1>
+<p align="center">It's a Usefull Project for Developers ... It checkers Emails Found Or Not Found</p>
+
+<p align="center"> • DevVlopered The Lib BY ALAA7C • </p>
+
+
+## Installing :
+```
+pip install LegendLIB
+
+```
+```
+INFO:  https://t.me/LegendsLIB
+```
