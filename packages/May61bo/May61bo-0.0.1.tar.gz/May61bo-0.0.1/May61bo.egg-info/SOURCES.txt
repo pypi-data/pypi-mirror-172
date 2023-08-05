@@ -1,0 +1,8 @@
+LICENSE
+README
+setup.py
+May61bo/__init__.py
+May61bo.egg-info/PKG-INFO
+May61bo.egg-info/SOURCES.txt
+May61bo.egg-info/dependency_links.txt
+May61bo.egg-info/top_level.txt
