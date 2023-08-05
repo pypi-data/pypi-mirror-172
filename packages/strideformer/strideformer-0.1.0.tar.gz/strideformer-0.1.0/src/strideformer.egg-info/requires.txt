@@ -1,0 +1,17 @@
+transformers>=4.21.0
+
+[dev]
+tabulate
+flake8
+hydra-core>=1.2.0
+isort
+black
+
+[quality]
+black
+flake8
+isort
+tabulate
+
+[train]
+hydra-core>=1.2.0

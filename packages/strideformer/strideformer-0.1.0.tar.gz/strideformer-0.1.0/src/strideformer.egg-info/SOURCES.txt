@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/strideformer/__init__.py
+src/strideformer/config.py
+src/strideformer/model.py
+src/strideformer.egg-info/PKG-INFO
+src/strideformer.egg-info/SOURCES.txt
+src/strideformer.egg-info/dependency_links.txt
+src/strideformer.egg-info/requires.txt
+src/strideformer.egg-info/top_level.txt
