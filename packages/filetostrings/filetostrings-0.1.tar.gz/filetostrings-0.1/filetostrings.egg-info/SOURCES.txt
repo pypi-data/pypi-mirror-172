@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+filetostrings/filetostrings.py
+filetostrings.egg-info/PKG-INFO
+filetostrings.egg-info/SOURCES.txt
+filetostrings.egg-info/dependency_links.txt
+filetostrings.egg-info/not-zip-safe
+filetostrings.egg-info/top_level.txt
