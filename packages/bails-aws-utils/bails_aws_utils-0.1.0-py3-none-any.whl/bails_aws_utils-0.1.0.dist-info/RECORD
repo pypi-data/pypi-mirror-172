@@ -1,0 +1,11 @@
+bails_aws_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bails_aws_utils/misc/__init__.py,sha256=-tO1N9fcFg0EClNqVHiq_hH2IiIWIufT0O-D6DrRDE0,79
+bails_aws_utils/misc/cron_helper.py,sha256=EvG-hgXeQgQQpiSFnldOhf1op28CB4H1X8TyI1RK7fs,328
+bails_aws_utils/misc/log_helper.py,sha256=EqUAoBMx2DOifDjpssGIIJZ5EFYzWEaYl7P24GMABkc,233
+bails_aws_utils/route53/__init__.py,sha256=UTlgSNEmFDgK5qo6g36gFZEEWgG0IcFNGRfMOh_jBMA,45
+bails_aws_utils/route53/dynamic_dns_tool.py,sha256=Y6hHqZcLPhPxyLT0sElqjFBQQ6yTh-ugn8GIBr8uOOQ,1851
+bails_aws_utils-0.1.0.data/scripts/dynamic-dns,sha256=fVnDWK39Ny5U-4iCvxLnQdayKtNE85QyhS5_CEolCOU,1768
+bails_aws_utils-0.1.0.dist-info/METADATA,sha256=hccYFlRk39m2MLxgxYlsWKGW6-Dl5RRPZ2mRPPLmB20,742
+bails_aws_utils-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bails_aws_utils-0.1.0.dist-info/top_level.txt,sha256=Et4bo9WPv30YgxC_faPYLrY3XM1qbvQRAayK7nhsiZI,16
+bails_aws_utils-0.1.0.dist-info/RECORD,,
