@@ -1,0 +1,5 @@
+alphawaves
+
+[tests]
+pytest
+flake8
