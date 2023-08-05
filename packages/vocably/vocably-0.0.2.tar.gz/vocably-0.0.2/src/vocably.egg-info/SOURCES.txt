@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+src/vocably/__init__.py
+src/vocably/constants.py
+src/vocably.egg-info/PKG-INFO
+src/vocably.egg-info/SOURCES.txt
+src/vocably.egg-info/dependency_links.txt
+src/vocably.egg-info/entry_points.txt
+src/vocably.egg-info/requires.txt
+src/vocably.egg-info/top_level.txt
+src/vocably/Preprocessing/__init__.py
+src/vocably/Preprocessing/text.py
+src/vocably/cli/__init__.py
+src/vocably/cli/main.py
