@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: pmtw
+Version: 1.1.0
+Summary: PMTW allows for simple access to Reddit Moderator Toolbox
+Author-email: adhesiveCheese <adhesiveCheese@gmail.com>
+License: Copyright (c) 2021. 2022 adhesiveCheese
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Project-URL: Homepage, https://github.com/adhesivecheese/pmtw
+Keywords: Reddit,Moderator_Toolbox,Web Wrapper
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Installation
+
+PMTW requires Python 3.7+. The recommended way to install PMTW is via [pip](https://pypi.python.org/pypi/pip)
+
+```bash
+pip install pmtw
+```
+
+For instructions on installing Python and pip see "The Hitchhiker's Guide to Python"
+[Installation Guides](https://docs.python-guide.org/en/latest/starting/installation/)
+
+# Quickstart
+
+A `Toolbox` instance is the recommended way of interacting with Toolbox through
+PMTW. A `Toolbox` instance provides access to both Toolbox's settings and 
+usernotes through `toolbox.settings` and `toolbox.usernotes` respectively.
+
+A `Toolbox` instance is instantiated with a praw `Subreddit` instance.
+For Example:
+
+```py
+import praw
+import pmtw
+
+reddit = praw.Reddit(
+    client_id="my client id",
+    client_secret="my client secret",
+    password="my password",
+    user_agent="my user agent",
+    username="my username",
+)
+
+toolbox = pmtw.Toolbox(
+	reddit.subreddit("my moderated subreddit")
+)
+```
+
+Once you have a `toolbox` instance, you can interact with usernotes through
+`toolbox.usernotes` and settings through `toolbox.settings`
+
+# Documentation
+
+PMTW's documentation is located at https://pmtw.readthedocs.io/
+
+# License
+
+PMTW's source is provided under the [Simplified BSD License](https://github.com/praw-dev/praw/blob/0860c11a9309c80621c267af7caeb6a993933744/LICENSE.txt)
+
+- Copyright ©, 2021, 2022 adhesiveCheese
