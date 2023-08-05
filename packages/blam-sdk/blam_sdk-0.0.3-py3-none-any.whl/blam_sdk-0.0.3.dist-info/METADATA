@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: blam-sdk
+Version: 0.0.3
+Summary: Blam
+Author: Bailey Everts
+Author-email: me@baileyeverts.net
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: boto3
+Requires-Dist: jsonschema
+Requires-Dist: requests
+
+Blam
+
