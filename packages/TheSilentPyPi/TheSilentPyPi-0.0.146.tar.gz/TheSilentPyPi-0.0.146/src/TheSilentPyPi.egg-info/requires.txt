@@ -1,0 +1,5 @@
+cryptography
+numpy
+pillow
+requests
+urllib3
