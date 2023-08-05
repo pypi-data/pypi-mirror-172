@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abbreviation-uhh-what-is-word-for-tearing-apart-an-abbreviation"
+version = "2.3.0"
+authors = [
+    { name="sqdnoises" }
+]
+description = "no, this page doesn't exist"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
