@@ -1,0 +1,9 @@
+README.md
+setup.py
+skarpdf/__init__.py
+skarpdf/pdf2image.py
+skarpdf/pdf2text.py
+skarpdf.egg-info/PKG-INFO
+skarpdf.egg-info/SOURCES.txt
+skarpdf.egg-info/dependency_links.txt
+skarpdf.egg-info/top_level.txt
