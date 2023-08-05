@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: kalabash-admin-limits
+Version: 1.0.4
+Summary: Per administrator limits for Kalabash
+Home-page: https://alphamonak.com/
+Author: Alphamonak Solutions
+Author-email: amonak@alphamonak.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+License-File: LICENSE
+
+####################################
+`Kalabash <https://monakmail.com/>`_
+####################################
+
+********
+Kalabash
+********
+
+
+*************
+External code
+*************
+
+External libraries provided with Kalabash:
+
+* `jQuery version 1.9.1 <http://www.jquery.org/>`_
+* `jQuery-UI 1.10+ <http://jqueryui.com/>`_
+* `Bootstrap version 3.3.7 <http://getbootstrap.com/>`_
+* `Bootstrap datetimepicker <http://eonasdan.github.io/bootstrap-datetimepicker/>`_
+
+
