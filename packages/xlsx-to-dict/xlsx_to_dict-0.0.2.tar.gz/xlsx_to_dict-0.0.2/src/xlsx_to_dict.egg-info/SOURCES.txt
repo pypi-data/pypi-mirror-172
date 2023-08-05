@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/xlsx_to_dict/__init__.py
+src/xlsx_to_dict/xlsx_to_dict.py
+src/xlsx_to_dict.egg-info/PKG-INFO
+src/xlsx_to_dict.egg-info/SOURCES.txt
+src/xlsx_to_dict.egg-info/dependency_links.txt
+src/xlsx_to_dict.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xlsx_to_dict
+Version: 0.0.2
+Summary: Convert xlsx to dict
+Author-email: Jonatan Rodrigues <jonatanjrss@gmail.com>
+Project-URL: Homepage, https://gitlab.com/jonatanjrss/xlsx-to-dict
+Project-URL: Bug Tracker, https://gitlab.com/jonatanjrss/xlsx-to-dict/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# XLSX to DICT
+
+Convert xlsx file to dict python object
