@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Bubot-Core
+Version: 0.1.1
+Summary: iot framework based on OCF specification
+Home-page: https://github.com/businka/Bubot_Core
+Author: Razgovorov Mikhail
+Author-email: 1338833@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: AsyncIO
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+sudo docker build -t ru-bubot-telegram .
+sudo docker image rm ru-bubot-telegram
+
+sudo docker run --detach --name ru-bubot-telegram -it -p 8081:8080 --rm ru-bubot-telegram
+ 
+sudo docker run --name ru-bubot-telegram --rm \
+  --publish 8081:8080 \
+  --volume /home/businka/project/ru-bubot-telegram/conf/device:/var/ru-bubot-telegram/conf/device \
+  ru-bubot-telegram 
+
+sudo docker logs ru-bubot-telegram
