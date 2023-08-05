@@ -1,0 +1,12 @@
+freeze_transitive/__init__.py,sha256=MVtVCT-b01z6f8XUlOsWWZynQ9Wv001Mk-_erJHty6Y,24
+freeze_transitive/__main__.py,sha256=IiY16d5Ff8aatDwNOk9j3URO36PMLOC-iLonbrIyfJw,1501
+freeze_transitive/api.py,sha256=Vcx3TNM-uqS-FTzbH24LQH5cooD5OyKda2v_D7h0plc,7448
+freeze_transitive/errors.py,sha256=Wn-PpvVzYcAxd8WO2Q9Tvf4Mc0CFNsqVcWmZZHJfB4k,236
+freeze_transitive/parsers.py,sha256=kZcdJ7feAuMsmq_L4xuqbvawpb36bKqJu6EvzeKBIVI,1102
+freeze_transitive/schema.py,sha256=erAov9yw-zihT7b_ZBGOiX9EPzeTJY4g_h9MyKH1b-k,1874
+freeze_transitive/state_cache.py,sha256=R53nApzERdffQSBTEVHstBo_KbasELBgzQRoXWxoCjY,1761
+freeze_transitive-0.0.0a0.dist-info/LICENSE,sha256=6O8cHL6BbDHt1r1trnU3SrHIjJwk14Iv19c5fiESCKs,1521
+freeze_transitive-0.0.0a0.dist-info/METADATA,sha256=EEag1p1hHlm0buEQAFOz-FsvF7_cP0UxRO62usNZ0mU,1900
+freeze_transitive-0.0.0a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+freeze_transitive-0.0.0a0.dist-info/top_level.txt,sha256=o2jRuCsmbumeN9iNESOJJbH1uv1tc4xtoZu5-CwohO8,18
+freeze_transitive-0.0.0a0.dist-info/RECORD,,
