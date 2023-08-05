@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aslabs-utils"
+version = "0.0.1"
+description = ""
+authors = ["Titusz Ban <tituszban@antisociallabs.io>"]
+readme = "README.md"
+packages = [
+    { include = "aslabs" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
