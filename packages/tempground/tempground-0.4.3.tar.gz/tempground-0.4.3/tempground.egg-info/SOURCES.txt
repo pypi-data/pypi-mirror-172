@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tempground/__init__.py
+tempground/_dir_from_template.py
+tempground/_errors.py
+tempground/_files.py
+tempground/_temp_project.py
+tempground/py.typed
+tempground.egg-info/PKG-INFO
+tempground.egg-info/SOURCES.txt
+tempground.egg-info/dependency_links.txt
+tempground.egg-info/top_level.txt
