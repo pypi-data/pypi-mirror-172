@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+dist/
+.tox/
+.env/
+env/
+docs/build
+.vscode/
