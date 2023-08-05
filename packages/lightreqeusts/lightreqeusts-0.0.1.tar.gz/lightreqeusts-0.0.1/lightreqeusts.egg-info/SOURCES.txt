@@ -1,0 +1,7 @@
+README.md
+setup.py
+lightreqeusts.egg-info/PKG-INFO
+lightreqeusts.egg-info/SOURCES.txt
+lightreqeusts.egg-info/dependency_links.txt
+lightreqeusts.egg-info/requires.txt
+lightreqeusts.egg-info/top_level.txt
