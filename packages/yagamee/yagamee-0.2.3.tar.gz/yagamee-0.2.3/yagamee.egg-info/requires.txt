@@ -1,0 +1,4 @@
+matplotlib
+japanize_matplotlib
+pandas
+sigfig
