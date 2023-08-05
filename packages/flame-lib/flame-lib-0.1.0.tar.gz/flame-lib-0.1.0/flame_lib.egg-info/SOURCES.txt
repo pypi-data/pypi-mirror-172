@@ -1,0 +1,8 @@
+README.md
+setup.py
+flame_lib/__init__.py
+flame_lib/flamegame.py
+flame_lib.egg-info/PKG-INFO
+flame_lib.egg-info/SOURCES.txt
+flame_lib.egg-info/dependency_links.txt
+flame_lib.egg-info/top_level.txt
