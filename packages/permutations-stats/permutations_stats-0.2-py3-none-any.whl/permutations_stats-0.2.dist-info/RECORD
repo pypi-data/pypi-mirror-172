@@ -1,0 +1,16 @@
+permutations_stats/__about__.py,sha256=3HjsdodwV_3BV-0b9A84-6geku2mbn5N0yeNvlad7IU,256
+permutations_stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+permutations_stats/bootstrap.py,sha256=GMUCT3mwiLbi_vWHTQyhhBIp5yckB54pbfQxecmQ_kc,6758
+permutations_stats/permutations.py,sha256=s6JR2rcpA6j_PaAmOhSo74-QaGyEMqyN6y2m4a49gsk,11917
+permutations_stats/utils.py,sha256=30FVVj_-gXLq5XbHaim64Y_esxeSHO7ZoroxLRms2rc,4263
+permutations_stats/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+permutations_stats/tests/brunner_munzel.py,sha256=O3R2GpiToRhyrrwePoPKDRHjKeOsg5yicE2ciMf2Y74,2287
+permutations_stats/tests/friedman.py,sha256=W2o9B2eCoD5YbrpoFcm8zmLHa1xEfWT4_vmnulMu5Us,3265
+permutations_stats/tests/mann_whitney.py,sha256=XsaaCdS9x0-qez0sK_Opj_0dpmoq6NWPXnnPlRjpnmI,1501
+permutations_stats/tests/tests.py,sha256=YN2fAY9VSOJe3Dzx9X8quR12cdLq2F8OpA93_NgFwUA,2318
+permutations_stats/tests/wilcoxon.py,sha256=7S6aTTzCSVWsN6WDVEhGjfsEkayTIhTioZ6Mv5zdC8o,2161
+permutations_stats-0.2.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+permutations_stats-0.2.dist-info/METADATA,sha256=Vk8Tig2knOHHscHxim0lUkgHepXVwCP7oZtcNhcGQYQ,4733
+permutations_stats-0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+permutations_stats-0.2.dist-info/top_level.txt,sha256=-LoIkeaV7W6o6YcJj35gMtbuK38jEPmr5vPRcYDZBHw,19
+permutations_stats-0.2.dist-info/RECORD,,
