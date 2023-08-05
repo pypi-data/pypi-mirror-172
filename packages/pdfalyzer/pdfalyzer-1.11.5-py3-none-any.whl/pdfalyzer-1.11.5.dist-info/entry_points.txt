@@ -1,0 +1,4 @@
+[console_scripts]
+pdfalyze=pdfalyzer:pdfalyze
+pdfalyzer_show_color_theme=pdfalyzer.helpers.rich_text_helper:pdfalyzer_show_color_theme
+
