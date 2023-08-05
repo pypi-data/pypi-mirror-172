@@ -1,0 +1,10 @@
+LICENSE
+README
+setup.py
+May61bo/Download_the_song_kugou.py
+May61bo/__init__.py
+May61bo/may61bo.py
+May61bo.egg-info/PKG-INFO
+May61bo.egg-info/SOURCES.txt
+May61bo.egg-info/dependency_links.txt
+May61bo.egg-info/top_level.txt
