@@ -1,0 +1,12 @@
+aslabs/dependencies/__init__.py,sha256=6t-wPnAwfFd7lsXFj30KpGLlGMWKOCAfapFGhYAvCXY,184
+aslabs/dependencies/dependencies.py,sha256=CLlgm8FG7nWADfzN0vgR8Dd4Q5V_18wlQjJXvbF_67g,2285
+aslabs/dependencies/dependencies_abc.py,sha256=_hvA3kEOxLlohKRrAWlRQfBziTm6mxDTJwOPeCfkzIs,257
+aslabs/dependencies/resolvers/__init__.py,sha256=0eDddVobve9-MO2hmi1KuJtlFaacwkFtJOZzckpKQ1M,295
+aslabs/dependencies/resolvers/direct_resolver.py,sha256=Q07AGJmL--zSVOYMcrcmBMBJv34XP9W6L8WHXvDNluY,747
+aslabs/dependencies/resolvers/hollow_resolver.py,sha256=ioA2-U7bW1pfCT4VBcso48dJzy_Q4Y8Oz59D5IEf6WE,578
+aslabs/dependencies/resolvers/instance_resolver.py,sha256=UAi4x54KnJdgBkOgz8bPFAe11CiPlypCzapkPIB3Pos,475
+aslabs/dependencies/resolvers/resolver_abc.py,sha256=5DD1l0hLpzsojVnK2gIX_2_EEUNWiuKHukAK8_fMoqQ,395
+aslabs/dependencies/resolvers/singleton_resolver_wrapper.py,sha256=UZ9N07jSaJild6XhzA2k6XyiR6S_IChk3V0vMOtjJ1g,619
+aslabs_dependencies-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aslabs_dependencies-0.0.1.dist-info/METADATA,sha256=fyeVmySH1or36st7_hy7-tcPq3k6F48AXga04OxMtso,404
+aslabs_dependencies-0.0.1.dist-info/RECORD,,
