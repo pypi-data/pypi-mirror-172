@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: kalsievelib
+Version: 1.1.10
+Summary: Client-side SIEVE library
+Home-page: https://github.com/amonak/kalsievelib
+Author: Alphamonak Solutions
+Author-email: amonak@alphamonak.com
+License: MIT
+Keywords: sieve,managesieve,parser,client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Email :: Filters
+License-File: COPYING
+
+kalsievelib
+===========
+
+Client-side Sieve and Managesieve library written in Python.
+
+* Sieve : An Email Filtering Language
+  (`RFC 5228 <http://tools.ietf.org/html/rfc5228>`_)
+* ManageSieve : A Protocol for Remotely Managing Sieve Scripts
+  (`RFC 5804 <http://tools.ietf.org/html/rfc5804>`_)
+
+Installation
+------------
+
+To install ``kalsievelib`` from PyPI::
+
+  pip install kalsievelib
+
+To install kalsievelib from git::
+
+  git clone git@github.com:tonioo/kalsievelib.git
+  cd kalsievelib
+  python ./setup.py install
+
+

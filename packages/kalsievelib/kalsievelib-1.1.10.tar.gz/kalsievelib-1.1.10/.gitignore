@@ -1,0 +1,4 @@
+.*~$
+*.pyc
+dist
+kalsievelib.egg-info
