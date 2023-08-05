@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: python-connect
+Version: 0.1.1
+Summary: python database manipulation with advanced features
+Author: Thompson
+Author-email: 51963680+thompson0012@users.noreply.github.com
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: aws
+Provides-Extra: google
+Provides-Extra: mysql
+Provides-Extra: pgsql
+Requires-Dist: Humre (>=0.2.0,<0.3.0)
+Requires-Dist: addict (>=2.4.0,<3.0.0)
+Requires-Dist: aiomysql (>=0.1.1,<0.2.0); extra == "mysql"
+Requires-Dist: asyncpg (>=0.26.0,<0.27.0); extra == "pgsql"
+Requires-Dist: boto3 (>=1.24.69,<2.0.0); extra == "aws"
+Requires-Dist: google-cloud-bigquery (>=3.3.2,<4.0.0); extra == "google"
+Requires-Dist: google-cloud-storage (>=2.5.0,<3.0.0); extra == "google"
+Requires-Dist: pampy (>=0.3.0,<0.4.0)
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: psycopg[binary] (>=3.1.2,<4.0.0); extra == "pgsql"
+Requires-Dist: pydantic (>=1.10.1,<2.0.0)
+Requires-Dist: s3 (>=3.0.0,<4.0.0); extra == "aws"
+Requires-Dist: sqlmodel (>=0.0.8,<0.0.9)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
