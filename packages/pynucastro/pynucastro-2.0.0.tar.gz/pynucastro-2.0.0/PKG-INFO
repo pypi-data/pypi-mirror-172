@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pynucastro
+Version: 2.0.0
+Summary: Python Interfaces to nuclear reaction rate databases
+Home-page: https://github.com/pynucastro/nucastro
+Author: pynucastro development group
+Author-email: michael.zingale@stonybrook.edu
+License: BSD
+Provides-Extra: numba
+License-File: LICENSE
