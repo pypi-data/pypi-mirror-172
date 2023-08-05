@@ -1,0 +1,3 @@
+py-xmltv
+typer[all]
+pyyaml
