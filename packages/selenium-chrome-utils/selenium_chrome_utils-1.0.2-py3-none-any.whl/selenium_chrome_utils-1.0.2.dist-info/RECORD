@@ -1,0 +1,17 @@
+selenium_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selenium_project/academic_site/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selenium_project/academic_site/dbutils.py,sha256=UTF2rIvWaYk9zdX4U5QDaYBeMmyE5hBNFQjcmGxiu18,4584
+selenium_project/academic_site/main.py,sha256=-pd34rXHR0NQ7NXpH7bhJY4_kykxShAVfbo0B6TMaWk,6239
+selenium_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selenium_utils/browser_utils.py,sha256=bgJlfuWlySWEYL7Y38FFahu4zB2_Jgyfouto9u3f0D8,8455
+selenium_utils/colors.py,sha256=6wGz7c-iW95vIV4Nqdp9U4kHxkjTYHNo6YAhtOkge9k,1963
+selenium_utils/image_bytes.py,sha256=WJI-oAH3AbEAdyoYZIF5Eeg3kIxEL021efIimo907yE,256406
+selenium_utils/logo.py,sha256=E2gX-Jnk1NyfKmNvxpdUZ0BAeQA3Z3eIKA7XX9Qccvg,1982
+selenium_utils/multiple_chrome_utils.py,sha256=Y3uSkKK_amcEtfO7UdCkbKnWFKIbAJ-TWOmknYMBJGk,4923
+selenium_utils/seleniumObject.py,sha256=y4yx0FTbTJX6ai1GqgkZL18knZSzciQt4nQTEC5HAXo,7018
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/mytest.py,sha256=N9a2DpYNntxa-MGeP5iYsXJ8xO5ORxRGFT5F3bZMpH4,214
+selenium_chrome_utils-1.0.2.dist-info/METADATA,sha256=VGU5bB7Q_HyTB5ZOhj8kUv-I6zFLFf2VT3l3FItzyAw,287
+selenium_chrome_utils-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+selenium_chrome_utils-1.0.2.dist-info/top_level.txt,sha256=kGR9yRV8Y7blZzSV2FFCVvxMzVIdqRBq1aD4YyKWLU4,15
+selenium_chrome_utils-1.0.2.dist-info/RECORD,,
