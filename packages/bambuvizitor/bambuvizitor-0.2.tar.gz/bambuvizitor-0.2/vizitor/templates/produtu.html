@@ -1,0 +1,285 @@
+
+
+
+
+	{% extends 'baze.html' %}
+  {% load i18n%}
+
+    {% block content %}
+
+
+  
+
+
+
+    <style>
+  
+        
+        /* Style the tab */
+        .tab {
+          float: left;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+          width: 20%;
+          height: 100%;
+        }
+        
+        /* Style the buttons inside the tab */
+        .tab button {
+          display: block;
+          background-color: inherit;
+          color: black;
+          padding: 22px 16px;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+        
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+        
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+        
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            /* border: 1px solid #ccc; */
+            width: 80%;
+            height: 100%;
+            padding: 20px;
+        }
+        </style>
+
+
+    <div id="about" class="section wb">
+        <div class="container-fluid">
+
+                 <div class="section-title text-center">
+                <h3>{% trans "MenuProdutu" %}</h3>
+
+
+
+          
+
+        
+
+
+                <p class="lead">{% trans "DeskrisaunProdutu" %}</p>
+            </div><!-- end title -->
+
+
+
+            <div class="row">
+            <div class="col-md-12">
+
+
+                <div class="container my-4">
+
+    <div class="row">
+
+  
+     
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'p00')" id="defaultOpen">{% trans "ProdutuFoun" %} </button>
+   
+            {% for dados in  kategoriaprodutu %}
+          <button class="tablinks" onclick="openCity(event, 'p{{forloop.counter}}')" id="defaultOpen">{{dados.titulu}}</button>
+   
+          {% endfor %}
+        </div>
+
+
+
+        <div id="p00" class="tabcontent">
+            <h3>{% trans "ProdutuFoun" %} </h3>
+            <p>
+              <div class="row">
+
+  {% for xxx in produtufoun %}
+                  <div class="col-md-4">
+                             <div class="service-widget">
+                              <div class="post-media " style="visibility: visible;">
+                                  <img src="{{xxx.produtu.imagen_main.url}}" style="width:100%; height: 200px;  object-fit: cover;" alt="" class="img-responsive img-rounded">
+                              </div>
+                              <div class="service-dit">
+                                <center>
+                                
+                                <a href='#' data-toggle='modal' data-id="{{xxx.produtu.id}}" id='butaun_modal_detallu'  data-target= '#modal_detallu' ><h5>  {{xxx.titulu}} </h5></a> 
+                               <h3 style="padding: 0px 0 12px;">
+                                <a href='#' data-toggle='modal' data-id="{{xxx.produtu.id}}" id='butaun_modal_detallu'  data-target= '#modal_detallu' >{% trans "Pressu" %}  $ {{xxx.produtu.presu}}</a>
+        
+                         
+                              </h3>
+        
+                          </center>
+                            </div>
+                       </div>
+                   </div>
+
+    {% endfor %}
+
+
+  
+               
+              </div>
+            </p>
+  
+  
+          
+          </div>
+
+
+        
+
+        {% for dados in  kategoriaprodutu %}
+        <div id="p{{forloop.counter}}" class="tabcontent">
+          <h3>{{dados.titulu}}</h3>
+          <p>
+            <div class="row">
+            {% for dados1 in  produtu %}
+
+            {% if dados.id == dados1.produtu.kategoriaprodutu.id %}
+
+                <div class="col-md-4">
+                           <div class="service-widget">
+                            <div class="post-media " style="visibility: visible;">
+
+                                <img src="{{dados1.produtu.imagen_main.url}}" style="width:100%; height: 200px; object-fit: cover;" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="service-dit">
+                              <center>
+                              
+                              <a href='#' data-toggle='modal' data-id="{{dados1.produtu.id}}" id='butaun_modal_detallu'  data-target= '#modal_detallu' ><h5>  {{dados1.titulu}} </h5></a> 
+                             <h3 style="padding: 0px 0 12px;">
+                              <a href='#' data-toggle='modal' data-id="{{dados1.produtu.id}}" id='butaun_modal_detallu'  data-target= '#modal_detallu' >{% trans "Pressu" %}  $ {{dados1.produtu.presu}}</a>
+      
+                       
+                            </h3>
+      
+                        </center>
+                          </div>
+                     </div>
+                 </div>
+
+                 {% endif  %}
+        
+
+            {% endfor %}  
+            </div>
+          </p>
+
+
+        
+        </div>
+    
+        {% endfor %}
+        
+   
+
+
+
+
+
+
+
+  </div>
+
+ <br><br>
+
+
+            </div><!-- end col -->
+
+            
+            </div><!-- end row -->
+
+     
+        </div><!-- end container -->
+ 
+
+
+    </div><!-- end section -->
+   
+
+
+
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+          
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+
+
+
+
+<div class="modal fade" tabindex="-1" id="modal_detallu" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class='form_altera_zona'></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+              $('#modal_detallu').on('show.bs.modal', function (e) {
+              var rowid = $(e.relatedTarget).data('id');
+              //menggunakan fungsi ajax untuk pengambilan data
+              // alert(rowid);
+              $.ajax({
+                  type : 'GET',
+                  url : "{% url 'vizitor:detalluprodutu2' %}",
+                  data :  'id='+ rowid,
+                  success : function(data){
+                  $('.form_altera_zona').html(data);//menampilkan data ke dalam modal
+                  }
+              });
+           });
+      });
+    </script>
+
+{% endblock content %}

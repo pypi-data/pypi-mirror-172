@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include vizitor/static *
+recursive-include vizitor/templates *

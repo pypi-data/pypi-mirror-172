@@ -1,0 +1,112 @@
+
+	{% extends 'baze.html' %}
+  {% load i18n%}
+    {% block content %}
+    <div id="services" class="parallax section lb">
+      <div class="container">
+          <div class="section-title text-center">
+              <h3>{% trans "MenuActividade" %}</h3>
+              <!-- <p class="lead">Our Service unlimited solutions to all your business needs. in the installation package we prepare search engine optimization, social media support, we provide corporate identity and graphic design services.</p> -->
+          </div><!-- end title -->
+
+          <!-- <div class="owl-services owl-carousel owl-theme"> -->
+
+              <div class="row">
+
+
+
+                {% for dados in informasaun %}
+              
+
+
+                <div class="col-md-4 col-sm-4" style="padding: 20px ;">
+                    <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                       <img src="{{dados.imagen.url}}" style='width: 100%; height: 200px;  object-fit: cover;' alt="" class="img-responsive img-rounded">
+                        </div>
+                        <div class="service-dit">
+                          <center>
+                           <h4> <a href="{% url 'vizitor:detalluinformasaun' dados.id %}">{{dados.titulu}} </a></h4>
+                           <h5>{{dados.konteudu}}</h5>
+                          </center>
+ 
+                            <!-- <p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p> -->
+                        </div>
+                    </div>
+                    <!-- end service -->
+                </div>
+
+
+
+
+            
+
+
+
+                <!-- end service -->
+          
+
+            {% endfor %}
+
+
+
+ 
+
+
+  
+
+</div>
+         
+              <!-- end service -->
+          <!-- </div> -->
+
+          <hr class="hr1">
+
+ 
+      </div><!-- end container -->
+  </div><!-- end section -->
+
+            <table align="center">
+              <tr><td>
+                <div class="row" style="margin-left: 5px">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item">
+      
+                      {% if informasaun.has_previous %}
+                        <a class="page-link" href="{% url 'vizitor:informasaun' %}?page={{informasaun.previous_page_number}}" tabindex="-1">Previous</a>
+                      {% else %}
+                        <a class="page-link" href="#" tabindex="-1" style="color:black">Previous</a>
+                      {% endif %}
+      
+                      </li>
+      
+      
+      
+                      {% for i in page_range %}
+                           {% if i == current_page %}
+                              <li class="page-item active">
+                                <a class="page-link" href="#">{{i}}<span class="sr-only">(current)</span></a>
+                              </li>
+                          {% elif i > current_page|add:'-2' and i < current_page|add:'2' %}
+                              <li class="page-item"><a class="page-link" href="{% url 'vizitor:informasaun' %}?page={{i}}">{{i}}</a></li>
+                          {% endif %}
+                      {% endfor %}
+      
+      
+                      <li class="page-item">
+      
+                      {% if informasaun.has_next %}
+                        <a class="page-link" href="{% url 'vizitor:informasaun' %}?page={{informasaun.next_page_number}}" tabindex="-1">next</a>
+                      {% else %}
+                        <a class="page-link" href="#" tabindex="-1" style="color:black">next</a>
+                      {% endif %}
+      
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+              </td></tr>
+            </table>
+
+{% endblock content %}

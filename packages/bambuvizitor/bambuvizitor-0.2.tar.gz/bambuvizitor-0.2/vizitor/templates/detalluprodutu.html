@@ -1,0 +1,91 @@
+
+ 	 {% extends 'baze.html' %}
+     {% load i18n%}
+     {% block content %}
+
+
+
+      <div id="services" class="parallax section lb">
+        <div class="container">
+
+
+
+
+
+
+            {% for dados in konteuduprodutu %}
+                     <div class="section-title text-center">
+                <h3>{{dados.titulu}} , Pressu : $ {{dados.produtu.presu}}</h3>
+     
+            </div><!-- end title -->
+
+
+
+            <div class="row">
+
+  <div class="col-md-4">
+    <img src="{{dados.produtu.imagen_main.url}}" alt=""  style ="width: 100%; height: 400px; object-fit: cover ;" class="img-responsive img-rounded">
+
+    
+					
+    </div><!-- end media -->
+
+
+    <div class="col-md-8">
+    
+        <p>{{dados.konteudu|safe}}</p>
+
+
+
+  </div>
+
+
+
+  </div>
+
+
+
+
+  {% endfor %}
+
+
+              
+
+
+        <hr>
+        <center> {% trans "ImagenSeluk" %} :    </center>
+        <hr>
+            <div class="owl-services owl-carousel owl-theme">
+
+
+
+                {% for dados in imagenprodutu %}
+                <div class="service-widget">
+                    <div class="post-media">
+                        <a href="{{dados.imagen.url}}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="{{dados.imagen.url}}"  style='width: 100%; object-fit: cover  ;' alt="" class="img-responsive img-rounded">
+                    </div>
+                </div>
+                {% endfor %}
+    
+
+            </div><!-- end row -->
+
+
+
+            <hr>
+            <center>{% trans "ProdutuShare" %}  </center>
+          <hr>
+          
+          
+          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+          <div class="elfsight-app-abec5393-604f-457d-a706-bc7896e0c162"></div>
+          
+          
+            <hr>
+
+
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    {% endblock content %}
