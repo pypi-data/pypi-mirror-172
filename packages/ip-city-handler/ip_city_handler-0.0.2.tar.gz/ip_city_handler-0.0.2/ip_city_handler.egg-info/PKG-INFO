@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ip-city-handler
+Version: 0.0.2
+Summary: A Tool deals with IpCity Data
+Home-page: https://www.oren.ink/
+Author: Oren Zhang
+Author-email: oren_zhang@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+## Ip City Handler
+
+Use this tool to parse your ip city data.
+
+
