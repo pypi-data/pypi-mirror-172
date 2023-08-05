@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pythonGateway/Api.py
+pythonGateway/__init__.py
+pythonGateway.egg-info/PKG-INFO
+pythonGateway.egg-info/SOURCES.txt
+pythonGateway.egg-info/dependency_links.txt
+pythonGateway.egg-info/requires.txt
+pythonGateway.egg-info/top_level.txt
