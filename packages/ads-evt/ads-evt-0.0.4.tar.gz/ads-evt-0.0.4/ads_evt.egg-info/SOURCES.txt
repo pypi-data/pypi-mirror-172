@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ads_evt/__init__.py
+ads_evt/spot.py
+ads_evt.egg-info/PKG-INFO
+ads_evt.egg-info/SOURCES.txt
+ads_evt.egg-info/dependency_links.txt
+ads_evt.egg-info/requires.txt
+ads_evt.egg-info/top_level.txt
