@@ -1,0 +1,120 @@
+{% extends 'main/dashboard.html' %}
+{% block content %}
+
+
+
+
+
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-0 mb-0">
+
+         
+                
+
+
+
+    
+  </h4>
+                <div class="row">
+
+
+
+                
+                
+                  <div class="row">
+                    <div class="col-lg-12 mb-4">
+              
+                                <div class="col-xxl">
+                                  <div class="card mb-4">
+                                    <div class="card-header d-flex align-items-center justify-content-between">
+                                      <h5 class="mb-0">Quantidade Grupu Pre - Fabrika Iha Kada munisipiu</h5>
+                                
+                                    </div>
+                                    <div class="card-body">
+                            
+                                      <canvas id="chartJSContainer" width="600" height="200"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.js"></script>
+
+  
+                                    <script type='text/javascript'>
+                                      var options = {
+                                        type: 'bar',
+                                        data: {
+                                          labels: [
+                                            
+                                          {% for dados in kontaprefabrika %}
+                                          '{{dados.munisipiu}}', 
+                                          {% endfor %}
+                                        
+                                        ],
+                                          datasets: [{
+                                              label: 'Total Grupu Pre - Fabrika',
+                                              data: [
+
+                                          {% for dados in kontaprefabrika %}
+                                          {{dados.total}},
+                                          {% endfor %}
+                                              
+                                              
+                                              ],
+                                              backgroundColor: "red",
+                                              borderWidth: 1
+                                            },
+                                      
+                                            {
+                                              label: 'Total Grupu Viveirus',
+                                              data: [
+                                          {% for dados in kontagrupuviveirus %}
+                                          {{dados.total}},
+                                          {% endfor %}
+                                              ],
+                                              backgroundColor: "yellow",
+                                              borderWidth: 1
+                                            },
+
+
+                                            {
+                                              label: 'Total Area Bambu',
+                                              data: [
+                                          {% for dados in kontaareabambu %}
+                                          {{dados.total}},
+                                          {% endfor %}
+                                              ],
+                                              backgroundColor: "orange",
+                                              borderWidth: 1
+                                            },
+                                      
+                                           
+                                          ]
+                                        },
+                                      
+                                      
+                                      }
+                                      
+                                      var ctx = document.getElementById('chartJSContainer').getContext('2d');
+                                      new Chart(ctx, options);
+                                          </script>
+
+
+                                    </div>
+                                  </div>
+                                </div>
+                </div>
+              
+ 
+
+
+
+
+
+                
+              </div>
+                
+                
+                
+                </div>
+              </div>
+              <!-- / Content -->
+
+{% endblock content %}
