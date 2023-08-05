@@ -1,0 +1,25 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sql-dependency-resolver"
+version = "1.0.0"
+description = "A dependency resolution library that performs conflict resolution to create a topological ordering for creating and destroying SQL objects such as views, functions and indexes."
+readme = "README.md"
+authors = [{ name = "Mustafa Mustafa", email = "mustafaymustafa@icloud.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["sql", "views", "topological sort"]
+
+[project.optional-dependencies]
+dev = ["black", "pytest", "pytest-cov"]
+
+[project.urls]
+Homepage = "https://github.com/MustafayMustafa/sql-dependency-resolution"
