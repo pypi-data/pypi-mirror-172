@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lbrlabs_pulumi_aws_tailscalebastion
+Version: 0.0.3a1665970539
+Summary: A Pulumi package for creating a tailscale bastion in AWS.
+Home-page: UNKNOWN
+License: UNKNOWN
+Project-URL: Repository, https://github.com/lbrlabs/pulumi-aws-tailscalebastion
+Description: # Pulumi AWS Tailscale Bastion
+        
+        Coming soon
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
