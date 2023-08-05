@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+filter_pyspark/__init__.py
+filter_pyspark/filter.py
+filter_pyspark.egg-info/PKG-INFO
+filter_pyspark.egg-info/SOURCES.txt
+filter_pyspark.egg-info/dependency_links.txt
+filter_pyspark.egg-info/not-zip-safe
+filter_pyspark.egg-info/top_level.txt
