@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: vocably
+Version: 0.0.2
+Summary: Vocably is a Natural Language Framework written in Python for Language based Tasks.
+Home-page: https://github.com/Nandhini25S/Vocably
+Author: Nandhini
+Author-email: nandhinisiva2561@gmail.com
+License: MIT
+Requires-Python: >=3.7,<4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (~=1.23.3)
+Requires-Dist: pandas (~=1.5.0)
+Requires-Dist: click (~=7.1.2)
+Requires-Dist: torch (~=1.12.1)
+Requires-Dist: gensim (~=4.2.0)
+Requires-Dist: nltk (~=3.7)
+Requires-Dist: scipy (==1.9.1)
+Requires-Dist: scikit-learn (==1.1.2)
+Requires-Dist: transformers (==4.22.1)
+Requires-Dist: rich (~=12.6.0)
+Requires-Dist: spacy (~=3.4.1)
+Requires-Dist: smart-open (==5.2.1)
+
+# Vocably
+Vocably is a Natural Language Processing (NLP) Framework written with the purpose to increase the flow of our development in daily basis.
+## Quick Installation
+
+```bash
+$ pip install vocably
+```
+## Installation from source 
+```bash
+$ git clone https://github.com/Nandhini25S/Vocably.git
+$ cd Vocably
+$ conda env create -f environment.yml
+$ export PYTHONPATH=./src
+$ python3 setup.py install
+```
+
+## Using Makefile (for Linux or Mac Users)
+```bash
+$ git clone https://github.com/Nandhini25S/Vocably.git
+$ cd Vocably
+$ conda env create -f environment.yml
+```
+now we will activate this environment
+```bash
+$ conda activate vocably
+```
+to install and config
+
+```bash
+$ export PYTHONPATH=./src
+$ make install
+$ make configure
+```
+or 
+```bash
+$ make all
+```
+## Using batch file (for Windows users)
+
+```bash
+$ git clone https://github.com/Nandhini25S/Vocably.git
+$ cd Vocably
+$ conda env create -f environment.yml
+```
+now we will activate this environment
+```bash
+$ conda activate vocably
+```
+to install and config
+
+```bash
+$ Scripts/install.bat
+$ Scripts/config.bat
+```
