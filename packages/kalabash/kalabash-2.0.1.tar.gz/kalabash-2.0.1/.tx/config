@@ -1,0 +1,56 @@
+[kalabash.djangojspo]
+file_filter = kalabash/locale/<lang>/LC_MESSAGES/djangojs.po
+source_file = kalabash/locale/en/LC_MESSAGES/djangojs.po
+source_lang = en
+type = PO
+
+[main]
+host = https://www.transifex.com
+
+[kalabash.djangopo]
+file_filter = kalabash/locale/<lang>/LC_MESSAGES/django.po
+source_file = kalabash/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type = PO
+
+[kalabash.kalabash-admin-relaydomains-djangopo]
+file_filter = kalabash/relaydomains/locale/<lang>/LC_MESSAGES/django.po
+source_file = kalabash/relaydomains/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type = PO
+
+[kalabash.kalabash-admin-relaydomains-djangojspo]
+file_filter = kalabash/relaydomains/locale/<lang>/LC_MESSAGES/djangojs.po
+source_file = kalabash/relaydomains/locale/en/LC_MESSAGES/djangojs.po
+source_lang = en
+type = PO
+
+[kalabash.kalabash-admin-limits-djangopo]
+file_filter = kalabash/limits/locale/<lang>/LC_MESSAGES/django.po
+source_file = kalabash/limits/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type = PO
+
+[kalabash.kalabash-admin-djangopo]
+file_filter = kalabash/admin/locale/<lang>/LC_MESSAGES/django.po
+source_file = kalabash/admin/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type = PO
+
+[kalabash.kalabash-admin-djangojspo]
+file_filter = kalabash/admin/locale/<lang>/LC_MESSAGES/djangojs.po
+source_file = kalabash/admin/locale/en/LC_MESSAGES/djangojs.po
+source_lang = en
+type = PO
+
+[kalabash.transport-djangopo]
+file_filter = kalabash/transport/locale/<lang>/LC_MESSAGES/django.po
+source_file = kalabash/transport/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type = PO
+
+[kalabash.transport-djangojspo]
+file_filter = kalabash/transport/locale/<lang>/LC_MESSAGES/djangojs.po
+source_file = kalabash/transport/locale/en/LC_MESSAGES/djangojs.po
+source_lang = en
+type = PO

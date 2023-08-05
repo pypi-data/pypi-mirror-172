@@ -1,0 +1,30 @@
+.*~$
+*.pyc
+*.mo
+*.db
+kalabash.egg-info
+doc/.build
+doc/.static
+doc/.templates
+DEV
+.idea
+.ropeproject
+kalabash.iml
+.tox
+.eggs/
+kalabash_test
+bin/instance
+.coverage
+./build/
+dist/
+
+# JS stuff
+node_modules
+/static/dist
+/frontend/webpack-stats.json
+
+# TOX stuff
+test_project/kalabash.db
+
+/.project
+/.pydevproject
