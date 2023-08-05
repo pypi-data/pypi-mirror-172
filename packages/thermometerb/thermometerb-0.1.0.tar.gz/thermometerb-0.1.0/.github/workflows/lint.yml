@@ -1,0 +1,16 @@
+name: lint
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    name: Python Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Black style Lint
+        uses: psf/black@stable
+      - name: python-flake8
+        uses: julianwachholz/flake8-action@v2.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
