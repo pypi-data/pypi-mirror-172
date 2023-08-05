@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sqaureandcube.egg-info/PKG-INFO
+sqaureandcube.egg-info/SOURCES.txt
+sqaureandcube.egg-info/dependency_links.txt
+sqaureandcube.egg-info/top_level.txt
+tests/__init__.py
+tests/cubetest.py
+tests/squaretest.py
