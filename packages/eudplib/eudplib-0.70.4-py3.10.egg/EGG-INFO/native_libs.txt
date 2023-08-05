@@ -1,0 +1,4 @@
+eudplib/core/mapdata/StormLib32.dll
+eudplib/core/mapdata/StormLib64.dll
+eudplib/epscript/libepScriptLib.dll
+eudplib/epscript/libepScriptLib.dylib
