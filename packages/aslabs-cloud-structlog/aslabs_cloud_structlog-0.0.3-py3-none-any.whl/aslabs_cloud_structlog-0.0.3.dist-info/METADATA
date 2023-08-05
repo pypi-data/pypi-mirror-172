@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aslabs-cloud-structlog
+Version: 0.0.3
+Summary: Cloud ready configuration of structlog
+Author: Titusz Ban
+Author-email: tituszban@antisociallabs.io
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: structlog (>=22.1.0,<23.0.0)
+Description-Content-Type: text/markdown
+
+

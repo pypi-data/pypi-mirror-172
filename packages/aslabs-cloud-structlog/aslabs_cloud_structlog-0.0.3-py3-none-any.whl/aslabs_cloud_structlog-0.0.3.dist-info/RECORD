@@ -1,0 +1,7 @@
+aslabs/cloud_structlog/__init__.py,sha256=VUSlXAMKLUcN0BH-4FPWpTvjNZm8MwlxT4H_35Lz4Rs,85
+aslabs/cloud_structlog/cloud_json_renderer.py,sha256=7r0gw9MkSByzxXlZbsGUTk_CHh3VY4BJKJDgo9U_4dA,1158
+aslabs/cloud_structlog/logger_config.py,sha256=YTzzXj9v-BdsyUqyu4YpoZSK-_G8iWWw_33sIsBrSuM,91
+aslabs/cloud_structlog/logger_factory.py,sha256=A-OAC5hse-GpEKXU7jKQXVL7bX-C2qGpErf4Ffh2zJ0,904
+aslabs_cloud_structlog-0.0.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aslabs_cloud_structlog-0.0.3.dist-info/METADATA,sha256=FC3LNVz8_YJDxxlfQ0Zr_kBUfBu6IBq7PIwXYdhM-2I,489
+aslabs_cloud_structlog-0.0.3.dist-info/RECORD,,
