@@ -1,0 +1,11 @@
+nginxproxymanager/__init__.py,sha256=ze1NPbsz3uYDN4yNqCqQGod62L6VICVifPicgzJNpCc,65
+nginxproxymanager/client.py,sha256=8FRN8DpdtnuLGdEKtW_hKT3UoMFAx45GJ4cvZlHGUDo,19046
+nginxproxymanager/nginx.py,sha256=phOJbRhSeUfMw6-yQ10ILPU88zmmkXcGexG2HaYbg-c,16290
+nginxproxymanager/types/__init__.py,sha256=WuJ-mdLz-7QrjJYRCoQNttTGautPKYbFg3s3cQu3sZk,49
+nginxproxymanager/types/proxy_hosts.py,sha256=e2fjmXylM3t2vKRLo5YH_KOEC_LmjzlFmLvfFba2Af8,1439
+nginxproxymanager/types/root.py,sha256=xMxxKCLZU4k_IECfvAVRfCYW27zHSB9DRXeiIxZYOiU,1835
+nginxproxymanager/utils.py,sha256=3SLyXP-NbTCkOoUOeAsrw3kNcRgy7rqyVv8E15I-5VQ,173
+nginxproxymanager-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nginxproxymanager-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+nginxproxymanager-0.1.0.dist-info/METADATA,sha256=3amYCrCsLTO7zDsy3kB4lgey95hBZRzCiIzWLyqPmrE,1243
+nginxproxymanager-0.1.0.dist-info/RECORD,,
