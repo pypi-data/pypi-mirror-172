@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+zentra/__init__.py
+zentra/client.py
+zentra/message.py
+zentra.egg-info/PKG-INFO
+zentra.egg-info/SOURCES.txt
+zentra.egg-info/dependency_links.txt
+zentra.egg-info/requires.txt
+zentra.egg-info/top_level.txt
