@@ -1,0 +1,5 @@
+include fxxkpy\enigma\static\*
+include fxxkpy\game\AircraftWar\*
+include fxxkpy\game\HeartWar\*
+include fxxkpy\wallpaper\*
+include fxxkpy\wallpaper\ffplay\*
