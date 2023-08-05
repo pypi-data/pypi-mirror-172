@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: moralis-streams-client
+Version: 0.3.5
+Summary: Top-level package for moralis-streams-client.
+Keywords: moralis_streams_client
+Author-email: Matt Krueger <mkrueger@rstms.net>
+Description-Content-Type: text/markdown
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: attrs
+Requires-Dist: certifi
+Requires-Dist: click
+Requires-Dist: eth-hash
+Requires-Dist: eth-utils
+Requires-Dist: flask
+Requires-Dist: gunicorn
+Requires-Dist: httpx
+Requires-Dist: pyngrok
+Requires-Dist: python_dateutil
+Requires-Dist: requests
+Requires-Dist: toml
+Requires-Dist: ape-apeman ; extra == "dev"
+Requires-Dist: backoff ; extra == "dev"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: bump2version ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: flake8-length ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: MoralisSDK ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-datadir ; extra == "dev"
+Requires-Dist: python-box ; extra == "dev"
+Requires-Dist: ratelimit ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: m2r2 ; extra == "docs"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-click ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme ; extra == "docs"
+Project-URL: Home, https://github.com/rstms/moralis_streams_client
+Provides-Extra: dev
+Provides-Extra: docs
+
+moralis-streams-client
+======================
+
+OpenAPI client module for moralis streams API
+
+![Image](https://img.shields.io/github/license/rstms/moralis_streams_client)
+
+![Image](https://img.shields.io/pypi/v/moralis_streams_client.svg)
+
+
+![Image](https://circleci.com/gh/rstms/moralis_streams_client/tree/master.svg?style=shield)
+
+![Image](https://readthedocs.org/projects/moralis-streams-client/badge/?version=latest)
+
+![Image](https://pyup.io/repos/github/rstms/moralis_streams_client/shield.svg)
+
+Client module and CLI for the Moralis Streams API
+
+
+* Free software: MIT license
+* Documentation: https://moralis-streams-client.readthedocs.io.
+
+
+
+Credits
+-------
+
+This package was created with Cookiecutter and `rstms/cookiecutter-python-cli`, a fork of the `audreyr/cookiecutter-pypackage` project template.
+
+[audreyr/cookiecutter](https://github.com/audreyr/cookiecutter)
+[audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+[rstms/cookiecutter-python-cli](https://github.com/rstms/cookiecutter-python-cli)
+
