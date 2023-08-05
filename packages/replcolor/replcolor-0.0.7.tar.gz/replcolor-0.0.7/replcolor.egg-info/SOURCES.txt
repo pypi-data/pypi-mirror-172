@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+replcolor/__init__.py
+replcolor.egg-info/PKG-INFO
+replcolor.egg-info/SOURCES.txt
+replcolor.egg-info/dependency_links.txt
+replcolor.egg-info/top_level.txt

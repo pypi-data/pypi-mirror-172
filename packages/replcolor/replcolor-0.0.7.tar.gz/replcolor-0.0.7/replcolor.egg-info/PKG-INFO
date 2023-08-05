@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: replcolor
+Version: 0.0.7
+Summary: rgb colors for replit
+Home-page: https://github.com/sk337/replcolor
+Author: Nathan T
+Author-email: self@dreamclient.us
+License: UNKNOWN
+Description: # replcolor
+        
+        repl color is a simple paclage i made to allow replers to use rbg colors in their consoles
+        
+        \* No support outside of replit envrionment but it *should* work on any true color compatable terminal
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
