@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+addressValidator/__init__.py
+addressValidator/mealy.py
+addressValidator/validator.py
+addressValidator.egg-info/PKG-INFO
+addressValidator.egg-info/SOURCES.txt
+addressValidator.egg-info/dependency_links.txt
+addressValidator.egg-info/top_level.txt
