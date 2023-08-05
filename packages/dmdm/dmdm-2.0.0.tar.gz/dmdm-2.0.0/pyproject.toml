@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "dmdm"
+version = "2.0.0"
+description = "Django MarkDown Mails"
+authors = ["Guilhem Saurel <guilhem.saurel@laas.fr>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+homepage = "https://github.com/nim65s/dmdm"
+repository = "https://github.com/nim65s/dmdm.git"
+
+[tool.poetry.urls]
+changelog = "https://github.com/nim65s/dmdm/blob/master/CHANGELOG.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+nmdmail = "^0.3.0"
+Django = ">=2.2,<5.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^3.9.0"
+safety = "^1.10.3"
+mypy = "^0.812"
+django-stubs = "^1.7.0"
+pydocstyle = "^6.0.0"
+pre-commit = "^2.11.1"
+Sphinx = "^3.5.3"
+coverage = "^5.5"
+myst-parser = "^0.15.1"
+types-toml = "^0.10.1"
+black = "^21.12b0"
+pyupgrade = "^2.31.0"
+
+[tool.coverage.run]
+source = ["dmdm"]
+omit = ["*/migrations/*", "*/wsgi.py", "*/apps.py"]
+
+[tool.django-stubs]
+django_settings_module = "testproject.settings"
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main"]
+
+[tool.pydocstyle]
+ignore = "D203,D204"  # https://github.com/google/yapf/issues/744
+match_dir = "(?=[^\\.])(?!migrations).*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
