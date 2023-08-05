@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pfirsich"
+version = "0.1.0"
+description = ""
+authors = ["Yixuan-Wang <tom-yixuan_wang@qq.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
