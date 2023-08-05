@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyfilemv
+Version: 1.0.0
+Summary: Alternative for unix mv, which searches through your files and updates any references to the file that you just moved.
+Home-page: UNKNOWN
+Author: nickhir
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,filesystem,move,renaming,organization
+Platform: UNKNOWN
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/pymv
+pyfilemv/__init__.py
+pyfilemv/pymv.py
+pyfilemv.egg-info/PKG-INFO
+pyfilemv.egg-info/SOURCES.txt
+pyfilemv.egg-info/dependency_links.txt
+pyfilemv.egg-info/requires.txt
+pyfilemv.egg-info/top_level.txt
