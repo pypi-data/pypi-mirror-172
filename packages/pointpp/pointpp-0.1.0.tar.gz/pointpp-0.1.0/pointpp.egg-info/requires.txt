@@ -1,0 +1,11 @@
+numpy>=1.7
+matplotlib
+scipy
+netCDF4
+verif>=1.0.0
+sklearn
+gridpp>=0.6.0
+
+[test]
+coverage
+pep8
