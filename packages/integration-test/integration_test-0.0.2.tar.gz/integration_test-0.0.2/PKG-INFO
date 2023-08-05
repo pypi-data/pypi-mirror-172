@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: integration-test
+Version: 0.0.2
+Summary: Collection of automated test cases
+Project-URL: Documentation, https://gitlab.iavgroup.local/In-CarApps/test-automation/oru/integration_test#readme
+Project-URL: Issues, https://gitlab.iavgroup.local/In-CarApps/test-automation/oru/integration_test/issues
+Project-URL: Source, https://gitlab.iavgroup.local/In-CarApps/test-automation/oru/integration-test
+Author-email: Sven Siegmund <sven.siegmund@iav.de>
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: tamarisk
+Requires-Dist: wattle
+Description-Content-Type: text/markdown
+
+# integration_test
+
+[![PyPI - Version](https://img.shields.io/pypi/v/integration-test.svg)](https://pypi.org/project/integration-test)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/integration-test.svg)](https://pypi.org/project/integration-test)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install integration-test
+```
+
+## Usage
+
+```console
+tamarisk clone oru-integration-test
+tamarisk run oru-integration-test
+```
+
+## License
+
+`integration-test` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
