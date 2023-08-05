@@ -1,0 +1,14 @@
+README.md
+setup.py
+Rilton-processamento-imagem/__init__.py
+Rilton-processamento-imagem/processamento/__init__.py
+Rilton-processamento-imagem/processamento/combinação.py
+Rilton-processamento-imagem/processamento/transformação.py
+Rilton-processamento-imagem/utils/__init__.py
+Rilton-processamento-imagem/utils/io.py
+Rilton-processamento-imagem/utils/plot.py
+Rilton_processamento_imagem.egg-info/PKG-INFO
+Rilton_processamento_imagem.egg-info/SOURCES.txt
+Rilton_processamento_imagem.egg-info/dependency_links.txt
+Rilton_processamento_imagem.egg-info/requires.txt
+Rilton_processamento_imagem.egg-info/top_level.txt
