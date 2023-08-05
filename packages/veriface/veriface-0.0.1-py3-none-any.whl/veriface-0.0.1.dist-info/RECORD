@@ -1,0 +1,10 @@
+eaface/__init__.py,sha256=dpPAVzwlKdBAA48OXeDebWIPtQFQV-1x037UiZR2KDw,88
+eaface/face_recognition.py,sha256=5Mv_64V8QnLRti8ehJay4SvcSkVpfCl_Oo0XxJWXBng,490
+stu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stu/settings.py,sha256=8oUODzkbW4dF_1qhOExmXmf0mQtn6vha_kW8XMZ_2Ao,2883
+stu/urls.py,sha256=aTIybOrsPjaj7gWtIP_qsRDqH8c8kzjI1PnTsjYch_w,766
+stu/wsgi.py,sha256=eYAej6kcwUsTsnkEa8ea2U16XnG7nAfA03vY97xBMFE,399
+veriface-0.0.1.dist-info/METADATA,sha256=n__sgfmNw6y3ubeVUHXFiLXAVsushDDLuMat9w11hUM,220
+veriface-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+veriface-0.0.1.dist-info/top_level.txt,sha256=v5SmvTiK2hyldt6BHBNKoQqolOsGeTNbrLCm-D79nAU,11
+veriface-0.0.1.dist-info/RECORD,,
