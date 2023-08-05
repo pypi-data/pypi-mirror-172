@@ -1,0 +1,2 @@
+[console_scripts]
+shooker = shooker.__main__:main
