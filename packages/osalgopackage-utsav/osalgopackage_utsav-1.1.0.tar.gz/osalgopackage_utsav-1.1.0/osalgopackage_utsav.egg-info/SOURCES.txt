@@ -1,0 +1,8 @@
+Licence.txt
+Readme.md
+setup.py
+osalgopackage_utsav/__init__.py
+osalgopackage_utsav.egg-info/PKG-INFO
+osalgopackage_utsav.egg-info/SOURCES.txt
+osalgopackage_utsav.egg-info/dependency_links.txt
+osalgopackage_utsav.egg-info/top_level.txt
