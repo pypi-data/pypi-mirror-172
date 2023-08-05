@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+squareandcube/__init__.py
+squareandcube.egg-info/PKG-INFO
+squareandcube.egg-info/SOURCES.txt
+squareandcube.egg-info/dependency_links.txt
+squareandcube.egg-info/top_level.txt
+squareandcube/cube/__init__.py
+squareandcube/cube/cube.py
+squareandcube/square/__init__.py
+squareandcube/square/square.py

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: squareandcube
+Version: 0.0.3
+Summary: My First Python Package
+Home-page: UNKNOWN
+Author: Vishnu Nagineni
+Author-email: <vishnunagineni3@gmail.com>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+My First Python Package for finding Sqaure and Cube of a Number with number as parameter
+
