@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+lotr_api/__init__.py
+lotr_api/api.py
+lotr_api/exceptions.py
+lotr_api/response.py
+lotr_api/utils.py
+rimvydas_zilinskas_lotr_api.egg-info/PKG-INFO
+rimvydas_zilinskas_lotr_api.egg-info/SOURCES.txt
+rimvydas_zilinskas_lotr_api.egg-info/dependency_links.txt
+rimvydas_zilinskas_lotr_api.egg-info/requires.txt
+rimvydas_zilinskas_lotr_api.egg-info/top_level.txt
