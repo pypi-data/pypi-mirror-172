@@ -1,0 +1,15 @@
+include io, time, system;
+
+text = loadTextFile('../examples/helloworld.mcl');
+console(text);
+console();
+
+now = isonow();
+console(now);
+t = getLastRun('io_test', now);
+console(t);
+
+if now == t {
+    console('getLastRun returned the default time.');
+}
+

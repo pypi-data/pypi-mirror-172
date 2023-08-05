@@ -1,0 +1,6 @@
+include aor, system, csv;
+console(headersToCsv(var[0]));
+console(valuesToCsv(var[0]));
+arr = Array("test", "array", "to", "csv");
+console(arr);
+console(arrayToCsv(arr));

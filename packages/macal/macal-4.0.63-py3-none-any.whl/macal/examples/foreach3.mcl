@@ -1,0 +1,5 @@
+include system;
+var = "Runtime test";
+foreach var {
+	console(it);
+}

@@ -1,0 +1,13 @@
+include strings, system;
+
+strng = "Testing String Functions";
+
+console(len(strng));
+console(left(strng, 5));
+console(mid(strng, 3, 5));
+console(toString(5));
+console(contains("String", strng));
+console(replace(strng, "String", "1,2,3"));
+console(startsWith("Testing", strng));
+console(padLeft("padded", ".", 15));
+console(padRight("padded", ".", 15));

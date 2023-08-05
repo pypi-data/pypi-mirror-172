@@ -1,0 +1,8 @@
+include meraki, system, debug, strings, aor;
+
+select * from var where id == 3 into book;
+
+console(replaceEx(book["title"], "t", "7"));
+
+
+

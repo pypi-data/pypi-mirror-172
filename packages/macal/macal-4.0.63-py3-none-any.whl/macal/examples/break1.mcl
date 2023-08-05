@@ -1,0 +1,8 @@
+include aor, system;
+foreach var {
+	console(it["title"]);
+	break;
+	console("this doesn’t show");
+}
+
+console("J.R.R. Tolkien wrote this book.");

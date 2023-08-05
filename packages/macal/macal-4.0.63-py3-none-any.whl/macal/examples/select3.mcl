@@ -1,0 +1,3 @@
+include aor, system;
+select distinct author as Author, title as Title from var where author == 'J.R.R. Tolkien' into y;
+console(y);
