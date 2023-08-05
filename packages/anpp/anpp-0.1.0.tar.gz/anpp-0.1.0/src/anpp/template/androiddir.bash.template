@@ -1,0 +1,284 @@
+#!/bin/bash
+
+##### ANPP CONFIG START #####
+# default Workspace dir, all projects are here
+export defaultPath=~/zengjf/
+
+# android project
+projects=(
+    M0-project
+    A00-project
+    M8-project
+    L00-project
+)
+
+# android product
+products=(
+    M0
+    k61v1_64_bsp
+    k62v1_64
+    s138
+)
+
+# android product kernel dir name, relative to project dir
+kernels=(
+    kernel-4.9
+    kernel-4.9
+    kernel-4.19
+    android/kernel/msm-4.14
+)
+
+# android product kernel dts dir name
+dtss=(
+    arch/arm64/boot/dts/mediatek/
+    arch/arm64/boot/dts/mediatek/
+    arch/arm64/boot/dts/mediatek/
+    arch/arm64/boot/dts/qcom
+)
+
+# android product bootloader stage 1th dir name, relative to project dir
+#   1. mtk: preloader
+#   2. qcom: xbl
+bootloaderStage1s=(
+    vendor/mediatek/proprietary/bootable/bootloader/preloader
+    vendor/mediatek/proprietary/bootable/bootloader/preloader
+    vendor/mediatek/proprietary/bootable/bootloader/preloader
+    android/fibo/bp_code/boot_images
+)
+
+# android product bootloader stage 2th dir name, relative to project dir
+#   1. mtk: lk
+#   2. qcom: edk2
+bootloaderStage2s=(
+    vendor/mediatek/proprietary/bootable/bootloader/lk
+    vendor/mediatek/proprietary/bootable/bootloader/lk
+    vendor/mediatek/proprietary/bootable/bootloader/lk
+    android/bootable/bootloader/edk2
+)
+
+# android product out dir, relative to project dir
+outs=(
+    out/target/product
+    out/target/product
+    out/target/product
+    android/out/target/product
+)
+
+# efuse sign dir, relative to project dir
+efuses=(
+    vendor/mediatek/proprietary/scripts/sign-image_v2
+    vendor/mediatek/proprietary/scripts/sign-image_v2
+    vendor/mediatek/proprietary/scripts/sign-image_v2
+    sc13x_download_images_v2/qcm6125-la-2-0/common/sectools
+)
+
+##### ANPP CONFIG END #####
+
+##### ANPP CUSTOM START #####
+# 1. argv: refer to config.json "project_keys" array order
+#     ${1}: cmd
+#     ${2}: defaultPath
+#     ${3}: project
+#     ${4}: product
+#     ${5}: kernel
+#     ${6}: dts
+#     ${7}: bootloaderStage1
+#     ${8}: bootloaderStage2
+#     ${9}: out
+#     ${10}: efuse
+# 2. return:
+#     0: function run success
+function project_product_custom() {
+    return 0
+}
+##### ANPP CUSTOM END #####
+
+##### ANPP COMPONENT START #####
+# for pp command alias
+components=(
+    android
+    dts
+    kernel
+    out
+    bs2
+    bs1
+    efuse
+)
+##### ANPP COMPONENT END #####
+
+# pp function
+function project_product() {
+    project=
+    product=
+    kernel=
+    currentpath=`pwd`
+
+    # jump command
+    if [ $# -lt 1 ]; then
+        for i in "${!projects[@]}"
+        do
+            echo $i: ${projects[i]} -- ${products[i]} -- ${kernels[i]}
+        done
+
+        echo
+        cd $defaultPath
+    elif [ $1 == "workspace" ]; then
+        cd $defaultPath
+    else
+
+        # jump to project
+        for i in "${!projects[@]}"
+        do
+            project_lowercase=${projects[i]%%-*}
+            project_lowercase=${project_lowercase,,}
+            if [ ${1,,} == "${project_lowercase}" ]; then
+                project=${projects[i]}
+                product=${products[i]}
+
+                cd ${defaultPath}/${projects[i]}
+
+                if [ $# -eq 1 ]; then
+                    pwd
+                    return
+                else
+                    shift
+                fi
+
+                break
+            fi
+        done
+
+        currentpath=`pwd`
+        # jump to component
+        for i in "${!projects[@]}"
+        do
+            if [[ ${currentpath} =~ "${projects[i]}" ]]; then
+                ##### ANPP COMMAND START #####
+                project=${projects[i]}
+                product=${products[i]}
+                kernel=${kernels[i]}
+                dts=${dtss[i]}
+                bootloaderStage1=${bootloaderStage1s[i]}
+                bootloaderStage2=${bootloaderStage2s[i]}
+                out=${outs[i]}
+                efuse=${efuses[i]}
+
+                returnData=0
+                if [ -f "$HOME/.anpp/custom.py" ]; then
+                    python3 $HOME/.anpp/custom.py $1 ${defaultPath} ${project} ${product} ${kernel} ${dts} ${bootloaderStage1} ${bootloaderStage2} ${out} ${efuse}
+                    returnData=$?
+                fi
+
+                if [ ${returnData} -ne 0 ]; then
+                    if [ $1 == "android" ]; then
+                        cd ${defaultPath}/${project}
+                    elif [ $1 == "kernel" ]; then
+                        cd ${defaultPath}/${project}/${kernel}
+                    elif [ $1 == "dts" ]; then
+                        cd ${defaultPath}/${project}/${kernel}/${dts}
+                    elif [ $1 == "bs1" ]; then
+                        cd ${defaultPath}/${project}/${bootloaderStage1}
+                    elif [ $1 == "bs2" ]; then
+                        cd ${defaultPath}/${project}/${bootloaderStage2}
+                    elif [ $1 == "out" ]; then
+                        cd ${defaultPath}/${project}/${out}/${product}
+                    elif [ $1 == "efuse" ]; then
+                        cd ${defaultPath}/${project}/${efuse}
+                    else
+                        project_product_custom $1 ${defaultPath} ${project} ${product} ${kernel} ${dts} ${bootloaderStage1} ${bootloaderStage2} ${out} ${efuse}
+                        returnData=$?
+                        if [ ${returnData} -ne 0 ]; then
+                            echo "error: $1 returned with value: ${returnData}"
+                            return
+                        fi
+                    fi
+                fi
+                ##### ANPP COMMAND END #####
+
+                break
+            fi
+        done
+
+        if [ "${project}" == "" ]; then
+            echo "please jump to your android project at first"
+            cd ${defaultPath}
+        fi
+    fi
+    pwd
+}
+
+##### ANPP ALIAS START #####
+# command alias
+alias anpp="project_product"           # just for project_product function alias
+alias anppc="project_product_custom"   # just for project_product_custom function alias
+##### ANPP ALIAS END #####
+
+# component alias
+for i in "${!components[@]}"
+do
+    component=${components[i]}
+
+    alias ${component}="project_product ${component}"
+done
+
+# project_product completion
+projectStrings=""
+componentStrings=""
+
+function _project_product_completions()
+{
+
+    # get project string
+    for i in "${!projects[@]}"
+    do
+        project_lowercase=${projects[i]%%-*}
+        project_lowercase=${project_lowercase,,}
+
+        projectStrings="${projectStrings} ${project_lowercase}"
+    done
+
+    # get project component string
+    for i in "${!components[@]}"
+    do
+        component=${components[i]}
+        componentStrings="${componentStrings} ${component}"
+    done
+
+    # completion
+    if [ "${#COMP_WORDS[@]}" == "2" ]; then
+        COMPREPLY=($(compgen -W "${projectStrings}" "${COMP_WORDS[1]}"))
+    elif [ "${#COMP_WORDS[@]}" == "3" ]; then
+        COMPREPLY=($(compgen -W "${componentStrings}" "${COMP_WORDS[2]}"))
+    fi
+}
+
+complete -F _project_product_completions anpp
+
+# project completion
+componentStrings=""
+
+function _project_completions()
+{
+
+    # get project component string
+    for i in "${!components[@]}"
+    do
+        component=${components[i]}
+        componentStrings="${componentStrings} ${component}"
+    done
+
+    # completion
+    if [ "${#COMP_WORDS[@]}" == "2" ]; then
+        COMPREPLY=($(compgen -W "${componentStrings}" "${COMP_WORDS[1]}"))
+    fi
+}
+
+# project alias and completion
+for i in "${!projects[@]}"
+do
+    project_lowercase=${projects[i]%%-*}
+    project_lowercase=${project_lowercase,,}
+
+    alias ${project_lowercase}="project_product ${project_lowercase}"
+    complete -F _project_completions ${project_lowercase}
+done

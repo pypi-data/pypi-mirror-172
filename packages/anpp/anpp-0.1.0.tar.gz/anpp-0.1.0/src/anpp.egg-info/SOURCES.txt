@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+src/anpp/__init__.py
+src/anpp.egg-info/PKG-INFO
+src/anpp.egg-info/SOURCES.txt
+src/anpp.egg-info/dependency_links.txt
+src/anpp.egg-info/entry_points.txt
+src/anpp.egg-info/top_level.txt
+src/anpp/template/LICENSE
+src/anpp/template/Makefile
+src/anpp/template/androiddir.bash
+src/anpp/template/androiddir.bash.template
+src/anpp/template/config.json
+src/anpp/template/custom.sh
+src/anpp/template/generator.py
+src/anpp/template/tools/custom.py
