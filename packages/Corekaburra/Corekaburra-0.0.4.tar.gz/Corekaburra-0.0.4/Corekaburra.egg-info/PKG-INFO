@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Corekaburra
+Version: 0.0.4
+Summary: A commandline bioinformatics tool to utilize syntenic information from genomes in the context of pan-genomes
+Home-page: https://github.com/milnus/Corekaburra
+Author: Magnus Ganer Jespersen
+Author-email: magnus.ganer.j@gmail.com
+License: LICENSE
+Keywords: Genomics,pan-genome,bacteria,prokaryotes,bioinformatics
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Development Status :: 4 - Beta
+License-File: LICENSE
+
+Corekaburra looks at the gene synteny across genomes used to build a pan-genome. Using syntenic information Corekaburra 
+identifies regions between core gene clusters. Regions are described in terms of their content of accessory gene clusters 
+and distance between core genes. Information from neighboring core genes is further used to identify stretches of core  
+gene clusters throughout the pan-genome that appear in all genomes given as input. Corekaburra is compatible with outputs 
+from standard pan-genome pipelines: Roary and Panaroo.
