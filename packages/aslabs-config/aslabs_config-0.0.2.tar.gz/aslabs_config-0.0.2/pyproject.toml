@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aslabs-config"
+version = "0.0.2"
+description = "Universal configuration system, that maps your env vars, json file and dotenv to dataclass configs"
+authors = ["Titusz Ban <tituszban@antisociallabs.io>"]
+readme = "README.md"
+packages = [
+    { include = "config" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-dotenv = "^0.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
