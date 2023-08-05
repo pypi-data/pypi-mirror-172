@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+setup.py
+src/wagtail_secret_sharing/__init__.py
+src/wagtail_secret_sharing/models.py
+src/wagtail_secret_sharing/settings.py
+src/wagtail_secret_sharing/templates/wagtail_secret_sharing/create.html
+src/wagtail_secret_sharing/templates/wagtail_secret_sharing/retrieve.html
+src/wagtail_secret_sharing/templates/wagtail_secret_sharing/view.html
