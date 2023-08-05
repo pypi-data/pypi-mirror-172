@@ -1,0 +1,14 @@
+pipda/__init__.py,sha256=hoMNOqSJ4xz6Gq1QJi4GYU0Sn9H9oxxJx7C2RUe4KSk,441
+pipda/context.py,sha256=aABmhwFvBNRfvNWCom5Eif8I67EU8qDYgx5qe51-LMw,3434
+pipda/expression.py,sha256=213tJKkAbcTvc2djzd_5Ircb5nvS-tzO30q-dO-f4t0,6636
+pipda/function.py,sha256=wokWRnx2UL1CtEcxk0vAuZTGyiTo_GBIhw102dkqLmA,6328
+pipda/operator.py,sha256=9RojWmckF7TBdINIEl2RAiiT9E4LZHlSVMK2h2N0b9I,2452
+pipda/piping.py,sha256=Dalkpn5pXEP0WzAY1qJMWwi-qP2OiXj5pcpigq9C3TQ,4802
+pipda/reference.py,sha256=C8fvqjd35hMDoZ55dyUEjFxioc_BJoBOblZXtmlI9Fs,3233
+pipda/symbolic.py,sha256=M08Wzt6dA3MhKKvQLFtLIKa1pp42Dids4vzbDt1gVRw,831
+pipda/utils.py,sha256=KLrbUBaQRb-lN2xOrcBsjFYiM8EA7iqx6YEr4ZkouGs,4354
+pipda/verb.py,sha256=oVJm8tvKooWreT5dpsHZUuTKjjrkOvRpjAodZtcO1o0,9936
+pipda-0.8.2.dist-info/LICENSE,sha256=ELPDjEiFK7iQQ-_n2Yy-lwJWkCgPVCftufAcwg7xmH8,1063
+pipda-0.8.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pipda-0.8.2.dist-info/METADATA,sha256=efJWUNN3CERG6kGQys3_AeLF-a1NpmBwKIayL0Xp6VI,5739
+pipda-0.8.2.dist-info/RECORD,,
