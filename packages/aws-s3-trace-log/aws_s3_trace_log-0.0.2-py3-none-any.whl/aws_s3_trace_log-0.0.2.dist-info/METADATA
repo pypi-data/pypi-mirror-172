@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: aws-s3-trace-log
+Version: 0.0.2
+Requires-Dist: requests
+Requires-Dist: importlib ; python_version == "3.8"
+

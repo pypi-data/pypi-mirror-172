@@ -1,0 +1,7 @@
+aws-s3/__init__.py,sha256=Tmv621oWK6VMYJGb9auK-K0rZhzwreeCwoVdUnPA-W8,133
+aws-s3/function.py,sha256=jJbwty_1Vvug3Cwow9fbYXSOeRf1_P5n85lJVcJ_TVU,183
+aws-s3/main.py,sha256=6D2OegHzoISFxPtfXAnSVQ8n-9psWdF1rZn8QSzl02I,56
+aws_s3_trace_log-0.0.2.dist-info/METADATA,sha256=EAIc-ND8H9sOi2S3qloMUhlQkdfsPFXLvAmrh7zwg3I,136
+aws_s3_trace_log-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_s3_trace_log-0.0.2.dist-info/top_level.txt,sha256=ZKN9r2XGWON-SSwmlmlkRWej79x35OnQfzdyuUPOKS8,7
+aws_s3_trace_log-0.0.2.dist-info/RECORD,,
