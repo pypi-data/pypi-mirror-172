@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rmopv2
+Version: 0.0.1
+Summary: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+Home-page: UNKNOWN
+Author: LIPENGCHENG
+Author-email: pengcheng.li@rakuten.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Provides-Extra: argon2
+Provides-Extra: bcrypt
+
+UNKNOWN
+
