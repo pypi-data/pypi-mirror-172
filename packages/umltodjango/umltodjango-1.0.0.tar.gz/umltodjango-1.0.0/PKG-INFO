@@ -1,0 +1,32 @@
+Metadata-Version: 1.0
+Name: umltodjango
+Version: 1.0.0
+Summary: An awesome package to conver UML Diagrams to Django Models
+Home-page: https://gitlab.com/albertosanmartinmartinez/umltodjango
+Author: Alberto Sanmartin Martinez
+Author-email: info@albertosanmartinmartinez.es
+License: LICENSE.txt
+Description: # UML2DJANGO
+        
+        
+        # Introduction
+        
+        # Dependencies
+        - XML 
+        https://docs.python.org/3.8/library/xml.etree.elementtree.html#module-xml.etree.ElementTree 
+        - UML
+        https://github.com/jgraph/drawio-desktop/releases/tag/v20.3.0
+        
+        # Features
+        - model inheritance tree dependencies
+        
+        # Installation
+        
+        # Usage
+        
+        # TODO's
+        - attributes params
+        - write relations
+        - django model type relations
+        - parse from draw.io xml or plantuml
+Platform: UNKNOWN

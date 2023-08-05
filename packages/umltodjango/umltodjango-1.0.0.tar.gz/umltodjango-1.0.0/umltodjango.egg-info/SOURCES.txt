@@ -1,0 +1,8 @@
+README.md
+setup.py
+umltodjango/__init__.py
+umltodjango/main.py
+umltodjango.egg-info/PKG-INFO
+umltodjango.egg-info/SOURCES.txt
+umltodjango.egg-info/dependency_links.txt
+umltodjango.egg-info/top_level.txt
