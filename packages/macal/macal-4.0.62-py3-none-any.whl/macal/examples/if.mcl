@@ -1,0 +1,26 @@
+include system;
+var = "a";
+b = "a";
+c = 1;
+d = 2;
+if var == "a" and b == "a" {
+	console("both var and b contain the string 'a'.");
+}
+elif var == nil or var == '' {
+	console("Empty.");
+}
+elif c == 2 {
+	console("c is 2.");
+}
+elif c != 1 {
+	console("c is not 1");
+}
+elif d >= c {
+	console("d is larger or equal than c.");
+}
+elif c + d == 3 {
+	console("c + d equals 3");
+}
+else {
+	console("not a");
+}

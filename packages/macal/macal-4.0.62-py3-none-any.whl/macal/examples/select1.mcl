@@ -1,0 +1,5 @@
+include aor, system;
+select * from var into y;
+foreach y {
+	console(it);
+}

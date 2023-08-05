@@ -1,0 +1,7 @@
+include ext_lib, system;
+
+str = "This is the test string.";
+
+console(right(str, 7));
+
+console(sysargv);

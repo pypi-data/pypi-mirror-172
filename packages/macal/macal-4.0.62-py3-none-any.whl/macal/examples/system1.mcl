@@ -1,0 +1,16 @@
+include aor, system;
+
+v = items(var[1]);
+console(v);
+print(key(v[0]));
+console(value(v[0]));
+console(keys(var[1]));
+console(values(var[1]));
+console(type(var[1]));
+console(Array("test1", 2 "test3"));
+console(record_has_field(var[1], 'id'));
+console(isRecord(var[1]));
+console(platform());
+showVersion();
+
+

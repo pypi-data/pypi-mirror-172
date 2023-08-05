@@ -1,0 +1,6 @@
+include aor, system;
+select author as Author, title as Title from var where author == 'J.R.R. Tolkien' into y;
+
+foreach y {
+	console(it);
+}

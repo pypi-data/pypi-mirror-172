@@ -1,0 +1,19 @@
+/*
+This is the system library for Macal
+You can use it by issuing this command:
+include system;
+Author:    Marco Caspers
+Date:      27-09-2022
+*/
+
+
+date_to_unix=> (date_str) external "ext_time", "DateToUnix";
+iso_to_unix=> (date_str) external "ext_time", "IsoToUnix";
+date_from_unix=> (seconds) external "ext_time", "DateFromUnix";
+iso_from_unix=> (seconds) external "ext_time", "IsoFromUnix";
+utcnow=> () external "ext_time", "UtcNow";
+utcisonow=> () external "ext_time", "UtcIsoNow";
+isonow=> () external "ext_time", "IsoNow";
+now=> () external "ext_time", "Now";
+perf_counter=> () external "ext_time", "PerfCounter";
+        

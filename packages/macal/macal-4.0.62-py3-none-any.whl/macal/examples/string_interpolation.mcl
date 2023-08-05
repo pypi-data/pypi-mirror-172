@@ -1,0 +1,6 @@
+include math, system;
+
+val1 = PI;
+str = $"This is a string with interpolated values like PI ({val1}) or an integer like three {2+1}.";
+
+console(str);
