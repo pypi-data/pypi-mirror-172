@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+notion_objects/__init__.py
+notion_objects/database.py
+notion_objects/encode.py
+notion_objects/objects.py
+notion_objects/properties.py
+notion_objects/values.py
+notion_objects.egg-info/PKG-INFO
+notion_objects.egg-info/SOURCES.txt
+notion_objects.egg-info/dependency_links.txt
+notion_objects.egg-info/not-zip-safe
+notion_objects.egg-info/requires.txt
+notion_objects.egg-info/top_level.txt
