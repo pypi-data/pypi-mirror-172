@@ -1,0 +1,9 @@
+setup.py
+tracelog/__init__.py
+tracelog/function.py
+tracelog/main.py
+tracelog.egg-info/PKG-INFO
+tracelog.egg-info/SOURCES.txt
+tracelog.egg-info/dependency_links.txt
+tracelog.egg-info/requires.txt
+tracelog.egg-info/top_level.txt
