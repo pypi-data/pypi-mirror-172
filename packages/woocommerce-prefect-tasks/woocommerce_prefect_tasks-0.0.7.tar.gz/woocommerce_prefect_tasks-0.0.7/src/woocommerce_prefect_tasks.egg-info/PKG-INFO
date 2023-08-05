@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: woocommerce-prefect-tasks
+Version: 0.0.7
+Home-page: https://github.com/aporacloudmobile/woocommerce_prefect_tasks
+Author: Carlos Paiva
+Author-email: carlospaiva87@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+WooCommerce Tasks for Prefect
