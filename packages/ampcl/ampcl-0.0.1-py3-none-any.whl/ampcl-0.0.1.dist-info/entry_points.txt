@@ -1,0 +1,2 @@
+[console_scripts]
+o3d_viewer = pointcloud_utils.visualization.o3d_viewer:main
