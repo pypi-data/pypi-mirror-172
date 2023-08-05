@@ -1,0 +1,16 @@
+numpy
+wurst
+bw2io>=0.8.6
+bw2calc==1.8.1
+pandas
+bw2data
+brightway2
+xarray
+prettytable
+pycountry
+cryptography
+premise_gwp
+pyYaml
+sparse
+schema
+datapackage
