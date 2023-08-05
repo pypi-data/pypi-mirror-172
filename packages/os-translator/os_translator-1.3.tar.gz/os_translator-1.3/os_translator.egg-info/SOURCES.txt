@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+os_translator/__init__.py
+os_translator/translator.py
+os_translator.egg-info/PKG-INFO
+os_translator.egg-info/SOURCES.txt
+os_translator.egg-info/dependency_links.txt
+os_translator.egg-info/requires.txt
+os_translator.egg-info/top_level.txt
+os_translator/modules/translator_boilerplate.py
