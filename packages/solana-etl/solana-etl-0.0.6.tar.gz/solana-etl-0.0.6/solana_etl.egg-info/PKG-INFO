@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: solana-etl
+Version: 0.0.6
+Summary: Tools for exporting Solana blockchain data to CSV or JSON
+Home-page: https://github.com/blockchain-etl/solana-etl
+Author: Gamejam.com
+Author-email: info@gamejam.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/blockchain-etl/solana-etl/issues
+Project-URL: Source, https://github.com/blockchain-etl/solana-etl
+Description: # Solana ETL CLI
+        
+        Solana ETL lets you convert blockchain data into convenient formats like CSVs and relational databases.
+        
+        ## Quickstart
+        
+        Install Solana ETL CLI:
+        
+        ```bash
+        cd cli
+        python setup.py install
+        ```
+        
+        ---
+        Environment:
+        
+        ```bash
+        > export SERUM_DEX_V3 = "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+        > export METADATA_PROGRAM_ID = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+        ```
+        
+        ---
+        
+        Export all
+        
+        ```bash
+        > solanaetl export_all \
+            --start 138802069 \
+            --end 138802069 \
+            --output-dir=./output
+        ```
+        
+        ---
+        
+        Export blocks and transactions (include input accounts, instructions):
+        
+        ```bash
+        > solanaetl export_blocks_and_transactions --start-block 0 --end-block 500000 \
+            --blocks-output blocks.csv \
+            --transactions-output transactions.csv \
+            --instructions-output instructions.csv
+        ```
+        
+        ---
+        
+        Export instructions:
+        
+        ```bash
+        > solanaetl extract_field -i transactions.csv -o transaction_signatures.txt -f signature
+        > solanaetl export_instructions \
+            -t ./transaction_signatures.txt \
+            -o instructions.csv
+        ```
+        
+        ---
+        
+        Extract token transfer:
+        
+        ```bash
+        > solanaetl extract_token_transfers \
+            -i ./instructions.csv \
+            -o token_transfers.csv
+        ```
+        
+        ---
+        
+        Export accounts:
+        
+        ```bash
+        > solanaetl extract_accounts \
+            -t ./transactions.csv \
+            -o accounts.csv
+        ```
+        
+        ---
+        
+        Export tokens:
+        
+        ```bash
+        > solanaetl extract_tokens \
+            -a ./accounts.csv \
+            -o tokens.csv
+        ```
+        
+        ## Test
+        
+        ```bash
+        > python -m pip install -r requirements_test.txt
+        > python -m pytest
+        ```
+        
+Keywords: solana
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6,<3.10
+Description-Content-Type: text/markdown
