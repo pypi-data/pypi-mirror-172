@@ -1,0 +1,62 @@
+#!python
+import logging
+import sys
+from argparse import ArgumentParser
+
+from bails_aws_utils.misc import configure_logging
+from bails_aws_utils.route53 import DynamicDnsTool, Route53Utils
+
+configure_logging()
+
+parser = ArgumentParser(description="Creates an A record for the current public IP.")
+parser.add_argument(
+    "-p", "--prefix", required=True, help="The prefix of the A record to create"
+)
+parser.add_argument(
+    "-d", "--domain", required=True, help="The domain of the A record to create"
+)
+parser.add_argument(
+    "-c",
+    "--cron",
+    help="Cron schedule, overrides interval if set, if save is not passed this will be ignored",
+    default=None,
+)
+parser.add_argument(
+    "-i",
+    "--interval",
+    help="Interval in minutes to run the cron job, if save is not passed this will be ignored",
+    default=60,
+)
+parser.add_argument(
+    "-s", "--save", help="Save the cron job to the crontab", action="store_true"
+)
+
+args = parser.parse_args()
+args.domain = Route53Utils.format_domain(args.domain)
+
+
+try:
+    ip = DynamicDnsTool.get_public_ip()
+except Exception as e:
+    logging.error("Failed to get public IP")
+    logging.error(e)
+    sys.exit(1)
+
+logging.info(f"Public IP: {ip}")
+logging.info(f"Creating A Record for {args.prefix}.{args.domain} -> {ip}")
+try:
+    DynamicDnsTool.set_record(ip, args.prefix, args.domain)
+except Exception as e:
+    logging.error("Failed to create DNS record")
+    logging.error(e)
+    sys.exit(1)
+logging.info("Success creating/updating record")
+
+if args.save:
+    logging.info("Configuring cron job")
+    try:
+        DynamicDnsTool.setup_cron(args.domain, args.prefix, args.interval, args.cron)
+    except Exception as e:
+        logging.error("Failed to create cron job")
+        logging.error(e)
+        sys.exit(1)

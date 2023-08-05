@@ -1,0 +1,23 @@
+#!python
+import logging
+import sys
+from argparse import ArgumentParser
+
+from bails_aws_utils.misc import configure_logging
+from bails_aws_utils.route53 import create_gmail_mx_record
+
+configure_logging()
+
+parser = ArgumentParser(description="Creates an A record for the current public IP.")
+parser.add_argument(
+    "-d", "--domain", required=True, help="The domain of the MX record at"
+)
+args = parser.parse_args()
+
+try:
+    create_gmail_mx_record(args.domain)
+except Exception as e:
+    logging.error("Failed to create DNS record")
+    logging.error(e)
+    sys.exit(1)
+logging.info("Success creating/updating record")
