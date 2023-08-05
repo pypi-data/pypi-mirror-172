@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/microdatasets/__init__.py
+src/microdatasets/__main__.py
+src/microdatasets/version.py
+src/microdatasets.egg-info/PKG-INFO
+src/microdatasets.egg-info/SOURCES.txt
+src/microdatasets.egg-info/dependency_links.txt
+src/microdatasets.egg-info/requires.txt
+src/microdatasets.egg-info/top_level.txt
+src/microdatasets/assets/dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz
+src/microdatasets/dsprites/__init__.py
+src/microdatasets/dsprites/dsprites.py
+src/microdatasets/dsprites/shape_generator.py
