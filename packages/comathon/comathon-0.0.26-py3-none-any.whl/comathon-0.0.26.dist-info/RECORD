@@ -1,0 +1,15 @@
+comathon/__init__.py,sha256=celaD8lkj4RTNXrrD9vpwcDh0UXG5_Eyha65otBD0Og,983
+comathon/cmt_exchange.py,sha256=Ondtf2xlDaMNUgcaFV2VbqEDLK8dfoie5HsdAYqpjRI,31558
+comathon/cmt_quotation.py,sha256=eZ9x2HNx2toWNN_n6F7xCXyZNu0GnaGesbdWYB1jW8Q,15272
+comathon/cmt_test.py,sha256=3-3Lmzq_cNEluEQufLcOfbAFdtDhzDmpgkVlcduqn-g,6255
+comathon/cmt_test_obsolete.py,sha256=3-3Lmzq_cNEluEQufLcOfbAFdtDhzDmpgkVlcduqn-g,6255
+comathon/comathon_template.py,sha256=svuJEpBT1jDelg3bK7_WUbqvd0GKt80sm3DaK3-SHSQ,1269
+comathon/test_algo.py,sha256=SMt17iKo2pCLtYyeEDqF3eRfuQWQgThpmS88-ZTsuKU,6878
+comathon/test_algo_python_0821.py,sha256=aBR_RyV8p_0wV5rKDeSc0qr31VzVdoLLvPNOLJt_WaI,8921
+comathon_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+comathon_test/test_myfunctions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+comathon-0.0.26.dist-info/LICENSE.rst,sha256=ogqZImH5e0QPxVcwonCtLUGKEFUxFIifb3aK9JHysE8,1088
+comathon-0.0.26.dist-info/METADATA,sha256=fHiK31w_dtuozRcCnmA7cSYtDqv0FANzp8_fgH5U77s,290
+comathon-0.0.26.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+comathon-0.0.26.dist-info/top_level.txt,sha256=yoNhE8mDf5F4aOmVsKykTN51Rj-zX6PCF_m2DmHe7EE,23
+comathon-0.0.26.dist-info/RECORD,,
