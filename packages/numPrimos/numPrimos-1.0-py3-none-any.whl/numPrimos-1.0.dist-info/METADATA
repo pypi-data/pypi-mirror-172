@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: numPrimos
+Version: 1.0
+Summary: herramienta para ver los numeros primos
+Author: Harol Jorge
+Author-email: haroljorgelopez@gmail.com
+License: GNU GPLv3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+Operaciones
+-------------
+este programa calcula los mumeros primos.
+
+
+this program is free software: you can redistribute.
+
