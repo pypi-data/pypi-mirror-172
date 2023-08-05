@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+defparse/__init__.py
+defparse/parser.py
+defparse/typehints.py
+defparse.egg-info/PKG-INFO
+defparse.egg-info/SOURCES.txt
+defparse.egg-info/dependency_links.txt
+defparse.egg-info/requires.txt
+defparse.egg-info/top_level.txt

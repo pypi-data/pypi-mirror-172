@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: defparse
+Version: 0.1.1
+Summary: Command Line Arguments from Callable Signatures and Docstrings
+Home-page: https://github.com/ndoll1998/defparse/tree/master
+Author: Niclas Doll
+Author-email: niclas@amazonis.net
+Classifier: License :: Freely Distributable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# defparse
+
+![Tests Master](https://github.com/ndoll1998/defparse/workflows/Tests/badge.svg)
+![Publish PyPI](https://github.com/ndoll1998/defparse/workflows/PyPI/badge.svg)
+
+Command Line Arguments from Callable Signatures and Docstrings
