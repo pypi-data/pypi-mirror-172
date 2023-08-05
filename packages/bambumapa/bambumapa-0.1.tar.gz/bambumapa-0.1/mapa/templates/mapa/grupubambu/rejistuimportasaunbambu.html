@@ -1,0 +1,123 @@
+{% extends 'main/dashboard.html' %}
+
+
+{% load static %}
+{% block content %}
+         
+
+{% load crispy_forms_tags %} 
+
+
+
+
+
+
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-3 mb-4">
+
+  
+
+    <span class="text-muted fw-light">Mapamentu /</span>  <a href="{% url 'mapa:grupubambu' %}">Dados Grupu Pre - Fabrica </a> <span class="text-muted fw-light">  / Dados Inportasaun {{naran_grupu}}</span> 
+  
+    <div style="float:right;">
+      <a class="btn btn-primary"   onclick=self.history.back()> <span class="tf-icons bx bx-back"></span>&nbsp; <font color='white'>Fila</font></a>   
+      <a href="{% url 'mapa:inputimportasaunbambu' idgrupubambu %}" class="btn btn-primary" > <span class="tf-icons bx bx-plush"></span>&nbsp; Rejistu Dadus</a>
+    
+    </div>
+ 
+  </h4>
+
+  {% if messages %}
+  {% for message in messages %}
+  <div class="alert alert-{{ message.tags }}">
+    <font color="gray">  {{ message }}</font>
+  </div>
+  {% endfor %}
+{% endif %}
+
+              
+  
+  <div class="row">
+
+
+
+
+      <div class="col-lg-12 mb-4">
+
+                  <div class="col-xxl">
+                    <div class="card mb-4">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">Dados Importasaun husi Husi {{naran_grupu}}</h5>
+                      </div>
+                      <div class="card-body">
+
+
+                        <table class="table table-sm">
+                          <thead>
+                            <tr class="text-nowrap">
+      
+                              <th>Nu</th>
+                              <th>Quatidade</th>
+                              <th>Data Importasaun</th>
+                
+                              <th>Deskrisaun</th>
+                        
+                              <th>#</th>
+            
+                            </tr>
+                          </thead>
+                          <tbody>
+
+
+                    {% for dados in grupubambuimportasaun %}    
+
+                    <tr>
+                      <th>{{forloop.counter}}</th>
+                      <th>{{dados.kuantidade}}</th>
+                      <td>{{dados.data_importasaun}}</td>
+                      <td>{{dados.deskrisaun|safe}}</td>
+           
+
+                          <td>
+
+                    <a href="{% url 'mapa:editimportasaungrupubambu' dados.id %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-edit"></span>&nbsp; </a>
+                         <a href="{% url 'mapa:deleteimportasaungrupubambu' dados.id %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-trash"></span>&nbsp; </a>
+
+             
+                      </td> 
+          
+                    </tr>
+                    
+                    {% endfor %}
+                               
+                    </tbody>
+                      </table>
+
+
+   
+                         
+                      </div>
+                    </div>
+                  </div>
+  </div>
+
+
+
+
+
+
+  
+  
+</div>
+                                    
+              
+
+                    
+{% endblock content %}
+
+
+               
+              
+

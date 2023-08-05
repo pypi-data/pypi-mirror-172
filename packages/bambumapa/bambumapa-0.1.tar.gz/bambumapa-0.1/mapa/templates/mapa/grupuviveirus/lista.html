@@ -1,0 +1,180 @@
+{% extends 'main/dashboard.html' %}
+{% block content %}
+
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-3 mb-4">
+    <span class="text-muted fw-light">Mapamentu /  Dados Viveirus</span> 
+    
+
+    <div style="float:right;">
+      <button type="button" class="btn  btn-primary" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">
+        <span class="tf-icons bx bx-search"></span>  Pesquiza Dados
+        </button>
+    
+      <a href="{% url 'mapa:inputgrupuviveirus' %}" class="btn btn-primary"> <span class="tf-icons bx bx-plush"></span>&nbsp; <span class="tf-icons bx bx-plus"></span>  Rejistu Dadus</a>
+    
+    </div>
+
+
+  </h4>
+                <div class="row">
+   
+  
+                  <div class="card">
+                    <h5 class="card-header">Dadus Grupu</h5>
+                    <div class="table-responsive text-nowrap">
+
+
+                      <center><h3>{% if bukatitle != 'mamuk' %} {{bukatitle|safe}} <a href="{% url 'mapa:grupuviveirus' %}"> &nbsp;   | &nbsp; Fila Ba Inisiu</a>  {% endif %}  </h3> </center> <br>
+                    
+
+                      {% if messages %}
+                      {% for message in messages %}
+                      <div class="alert alert-{{ message.tags }}">
+                        <font color="gray">  {{ message }}</font>
+                      </div>
+                      {% endfor %}
+                  {% endif %}
+            
+
+                      <table class="table table-sm">
+                        <thead>
+                          <tr class="text-nowrap">
+    
+                            <th>Nu</th>
+                            <th>Imagen</th>
+                            <th>Naran Grupu & <br> Kordenador </th>
+                            <th>Localizasau  & <br> Kontaktu</th>
+              
+                            <th>Deskrisaun</th>
+                            <th>Data Rejistu</th>
+                            <th>#</th>
+          
+                          </tr>
+                        </thead>
+                        <tbody>
+
+             
+                           {% for dados in grupuviveirus %}
+
+                          <tr>
+                            <th>{{forloop.counter}}</th>
+                            <th><img src = "{{dados.imagen.url}}" style='object-fit: cover ; border-radius: 10px;' width="75px"></th>
+                            <th>
+                              {{dados.naran}} <br>{{dados.naran_kordenador}}
+
+                            </th>
+                            <td>{{dados.suku}} / {{dados.suku.postu}}  / {{dados.suku.postu.munisipiu}}   <br> {{dados.kontaktu}}</td> 
+                            <td>{{dados.deskrisaun|safe}}</td>
+                            <td>{{dados.date_created}}</td>
+  
+                                <td>
+  
+                          <a href="{% url 'mapa:editgrupuviveirus' dados.id %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-edit"></span>&nbsp; </a>
+                               <a href="{% url 'mapa:deletegrupuviveirus' dados.id %}" onclick="return confirm('Ita Boot hakarak apaga dados {{dados.naran}}?')" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-trash"></span>&nbsp; </a>
+  
+                               <a href="{% url 'mapa:detallugrupuviveirus' dados.id %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-map">Detallu</span>&nbsp; </a>
+  
+                       
+                            </td> 
+                
+                          </tr>
+
+                          {% endfor %}
+
+
+
+
+
+  
+                        
+                        </tbody>
+                      </table>
+
+
+                      <br><br>
+
+
+                      <hr>
+            <table align="center">
+              <tr><td>
+                <div class="row" style="margin-left: 5px">
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item">
+      
+                      {% if grupuviveirus.has_previous %}
+                        <a class="page-link" href="{% url 'mapa:grupuviveirus' %}?page={{grupuviveirus.previous_page_number}}" tabindex="-1">Previous</a>
+                      {% else %}
+                        <a class="page-link" href="#" tabindex="-1" style="color:black">Previous</a>
+                      {% endif %}
+      
+                      </li>
+      
+      
+      
+                      {% for i in page_range %}
+                           {% if i == current_page %}
+                              <li class="page-item active">
+                                <a class="page-link" href="#">{{i}}<span class="sr-only">(current)</span></a>
+                              </li>
+                          {% elif i > current_page|add:'-2' and i < current_page|add:'2' %}
+                              <li class="page-item"><a class="page-link" href="{% url 'mapa:grupuviveirus' %}?page={{i}}">{{i}}</a></li>
+                          {% endif %}
+                      {% endfor %}
+      
+      
+                      <li class="page-item">
+      
+                      {% if grupuviveirus.has_next %}
+                        <a class="page-link" href="{% url 'mapa:grupuviveirus' %}?page={{grupuviveirus.next_page_number}}" tabindex="-1">next</a>
+                      {% else %}
+                        <a class="page-link" href="#" tabindex="-1" style="color:black">next</a>
+                      {% endif %}
+      
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+              </td></tr>
+            </table>
+          
+<hr>
+
+                        <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Peskiza Dadus</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+              
+                    <form method="get" action="">
+              
+                    <div class="modal-body">
+              
+               <input type="text" class="form-control"  name="pesquiza" placeholder="Prenxe Liafuan">
+                   
+                    </div>
+              
+              
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-secondary" data-bs-disxmiss="modal">Peskiza</buttom>
+                    </div>
+              
+                  </form>
+              
+                  </div>
+                </div>
+              </div>
+              <!-- / Content -->
+
+
+{% endblock content %}

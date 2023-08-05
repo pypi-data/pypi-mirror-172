@@ -1,0 +1,185 @@
+{% extends 'main/dashboard.html' %}
+
+
+{% load static %}
+{% block content %}
+         
+
+{% load crispy_forms_tags %} 
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+
+
+<style>
+
+.leaflet-container {
+  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.2/dist/leaflet.draw.css" />
+<script src="https://unpkg.com/leaflet-draw@1.0.2/dist/leaflet.draw-src.js"></script>
+
+
+
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-3 mb-4">
+    <span class="text-muted fw-light">Mapamentu /</span>  <a href="{% url 'mapa:grupubambu' %}">Dados Grupu Pre - Fabrica </a> <span class="text-muted fw-light"> / Detallu husi  -  {{naran_grupu}} </span> 
+    
+    <a class="btn btn-primary" style="float:right;"  onclick=self.history.back()> <span class="tf-icons bx bx-back"></span>&nbsp; <font color='white'>Fila</font></a>
+  
+    
+
+  
+  </h4>
+              
+  
+  <div class="row">
+
+
+
+    <div class="row">
+      <div class="col-lg-12 mb-4">
+
+                  <div class="col-xxl">
+                    <div class="card mb-4">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">Informasaun Detallu husi Grupu-Pre Fabrik {{grupubambu.naran}}</h5>
+                        <small class="text-muted float-end">Hili Localizasaun no Area</small>
+                      </div>
+                      <div class="card-body">
+
+                        <table class="table">
+                          <thead>
+                            <tr class="text-nowrap">
+      
+                                   <th>Nu</th>
+                              <th>Imagen</th>
+                              <th>Naran Grupu & <br> Naran Kordenador </th>
+                              <th>Lokalizasaun  & <br> Kontaktu</th>
+                
+                              <th>Deskrisaun</th>
+                              <th>Data Rejistu</th>
+                         
+            
+                            </tr>
+                          </thead>
+                          <tbody>
+               
+                             {% for dados in grupubambu2 %}
+  
+                             <th>{{forloop.counter}}</th>
+                             <th><img src = "{{dados.imagen.url}}" style='object-fit: cover ; border-radius: 10px;'  width="100px"></th>
+                             <th>
+                               {{dados.naran}} <br>{{dados.naran_kordenador}}
+  
+                             </th>
+                             <td>{{dados.suku}} / {{dados.suku.postu}}  / {{dados.suku.postu.munisipiu}}  <br> {{dados.kontaktu}}</td>
+                             <td>{{dados.deskrisaun|safe}}</td>
+                             <td>{{dados.date_created}}</td>
+                            </tr>
+  
+                            {% endfor %}
+  
+                          </tbody>
+                        </table>
+                        <br>
+
+                        <h5 class="mb-0">Localizasaun Grupu</h5>
+                     
+<hr>
+    <div id="mapem" style="border-radius: 10px ;" ></div>
+					
+                            				
+                               
+
+
+    <script>
+  
+    
+    //Kondisaun ba interface mapa husi kada user sira
+  
+      var map = L.map('mapem').setView([{{kordinate_centru}}], 10);
+
+      var basemaps = {
+		OpenStreetMap: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+             maxZoom: 20,
+			layers: 'TOPO-WMS'
+		}),
+
+		GoogleSatelite: L.tileLayer.wms('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+             maxZoom: 20,
+			subdomains:['mt0','mt1','mt2','mt3']
+		}),
+
+	};
+
+	L.control.layers(basemaps, {}, {collapsed: false}).addTo(map);
+
+	basemaps.OpenStreetMap.addTo(map);
+  
+    //kontrol husi leaflet draw
+      
+       // Hamos Dados zona ne'ebe iha ba iha mapa
+  
+  
+   
+
+var marker = L.icon({
+    iconUrl:  '../../media/iconmaps/0.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+
+
+
+
+
+
+
+
+L.marker([ {{kordinate_centru}}], { icon:marker{{forloop.counter}} }).addTo(map).bindPopup("sxjnjsnxjnsjnx");
+// alert({{forloop.counter}})
+
+
+
+
+  
+
+  
+  
+    </script>
+                         
+                      </div>
+                    </div>
+                  </div>
+  </div>
+
+
+  
+  
+    
+                                    
+              
+
+                    
+{% endblock content %}
+
+
+               
+              
+
