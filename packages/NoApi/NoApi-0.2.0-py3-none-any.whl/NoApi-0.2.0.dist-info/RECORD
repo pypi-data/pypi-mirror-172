@@ -1,0 +1,9 @@
+noapi/__init__.py,sha256=Aqq2E_T2E-eck4CY4PToqlPn1D2qJITRP2gQe6c2bQs,296
+noapi/client.py,sha256=tZTmH0cuCNZpshq8hGaQgafNb8xMBvmQHikG4iPGZ_I,3368
+noapi/models.py,sha256=Yua9YTXkxB3yNRwxVuqPAg8x11pn0MSpVXQGAljp49Y,790
+noapi/server.py,sha256=VK3c7ADyt_k2HyTSUp_3Fx5kybn7489WyFVG6YaAw9A,2248
+NoApi-0.2.0.dist-info/LICENSE,sha256=zXbv2P-Rj1Hf9EZ8qrJqLBexbHVcAc72uhYXJ1PwARw,1066
+NoApi-0.2.0.dist-info/METADATA,sha256=MaybcAsXhkvYxcmbaJ1TjoUCcCskCmyd0Pe7i0oPl5g,1719
+NoApi-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+NoApi-0.2.0.dist-info/top_level.txt,sha256=-M2LgcU6-MmJVAfJI0JL4aEvOhKMbBFcWuBVngGD8L0,6
+NoApi-0.2.0.dist-info/RECORD,,
