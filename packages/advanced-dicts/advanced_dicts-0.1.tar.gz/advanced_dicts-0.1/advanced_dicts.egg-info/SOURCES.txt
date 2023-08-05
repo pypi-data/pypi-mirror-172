@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+advanced_dicts/__init__.py
+advanced_dicts/advanced_dict.py
+advanced_dicts/typ.py
+advanced_dicts.egg-info/PKG-INFO
+advanced_dicts.egg-info/SOURCES.txt
+advanced_dicts.egg-info/dependency_links.txt
+advanced_dicts.egg-info/not-zip-safe
+advanced_dicts.egg-info/top_level.txt

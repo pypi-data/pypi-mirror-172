@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: advanced-dicts
+Version: 0.1
+Summary: Advanced dicts - package for simpler work with dicts
+Home-page: https://github.com/itttgg/advanced-dicts
+Author: itttgg
+Author-email: aitiiigg1@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/itttgg/advanced-dicts/tree/0.1
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# advanced-dicts
+Advanced dicts (python package)
+
+
