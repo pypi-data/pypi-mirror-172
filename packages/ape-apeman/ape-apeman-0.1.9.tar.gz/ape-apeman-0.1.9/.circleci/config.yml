@@ -1,0 +1,33 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.2
+
+workflows:
+  commit_master:
+    jobs:
+      - build-and-test
+
+jobs:
+  build-and-test:
+    docker:
+      - image: rstms/python-hydra:1.0.2
+    steps:
+      - checkout:
+          path: "ape-apeman"
+
+      - run:
+          name: Install Dependencies
+          command: |
+            cd ape-apeman
+            python -m venv venv
+            . venv/bin/activate
+            pip install --upgrade pip setuptools wheel
+            make dev
+            pip install --upgrade tox-pyenv
+      - run:
+          name: Run All Tests
+          command: |
+            cd ape-apeman
+            . venv/bin/activate
+            make tox
