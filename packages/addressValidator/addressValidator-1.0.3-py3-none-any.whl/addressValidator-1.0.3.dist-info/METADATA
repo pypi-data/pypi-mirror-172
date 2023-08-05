@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: addressValidator
+Version: 1.0.3
+Summary: validation of all addresses in colombia
+Home-page: https://github.com/CamiloCortesM/addressValidator
+Author: Camilo Cortes, Astrid Cely
+Author-email: 
+License: MIT
+Project-URL: Bug Tracker, https://github.com/CamiloCortesM/addressValidator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# mealy
+
