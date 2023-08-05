@@ -1,0 +1,10 @@
+pyhanja/__init__.py,sha256=XRGHQH-Hu6rdYPrO6vyCFtkmYM16BVRYGRw_vlO8Jcg,656
+pyhanja/_pyhanja.pypy37-pp73-x86_64-linux-gnu.so,sha256=tFVReyfS_Jgz_hClG6Y8vYYZytfdO9HGDeDmt77dLao,286920
+pyhanja/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhanja/data/hanja.txt,sha256=aT09SlS3P98JJZuaxB3qjSTcjUl012I53yyAdrglCHI,6451221
+pyhanja/data/ks_normalize.txt,sha256=dDilrKtJodTkjFiDcXjHvuh3N6U2HZ10mASlATkJDSQ,2417
+pyhanja-0.0.1a2.dist-info/LICENSE,sha256=hQirUJmvdCUz3IPYiO71luOcLFOH8J0_CTDCX_ANI2Y,1069
+pyhanja-0.0.1a2.dist-info/METADATA,sha256=J-DRu-Waxyv0vGEAkF8pxzK7yVhtCI1qqFXp-1pJp8M,246
+pyhanja-0.0.1a2.dist-info/WHEEL,sha256=6Awe83ig4FwNZCrpK1CZ_ZEDgk2lsynw5jmGNgpzXr0,156
+pyhanja-0.0.1a2.dist-info/top_level.txt,sha256=_dmpPR_qBz0KUJ89rUwlkSCI5cVF5ZetIaFp8gJPMgQ,8
+pyhanja-0.0.1a2.dist-info/RECORD,,
