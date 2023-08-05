@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_easy_admin_object_actions/__init__.py
+src/django_easy_admin_object_actions/admin.py
+src/django_easy_admin_object_actions/apps.py
+src/django_easy_admin_object_actions/decorators.py
+src/django_easy_admin_object_actions.egg-info/PKG-INFO
+src/django_easy_admin_object_actions.egg-info/SOURCES.txt
+src/django_easy_admin_object_actions.egg-info/dependency_links.txt
+src/django_easy_admin_object_actions.egg-info/requires.txt
+src/django_easy_admin_object_actions.egg-info/top_level.txt
+src/django_easy_admin_object_actions/templates/easy_admin_object_actions/admin/change_form.html
+src/django_easy_admin_object_actions/templates/easy_admin_object_actions/admin/includes/object_actions_row.html
