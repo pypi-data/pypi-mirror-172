@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_admin_multi_select_filter/__init__.py
+src/django_admin_multi_select_filter/filters.py
+src/django_admin_multi_select_filter.egg-info/PKG-INFO
+src/django_admin_multi_select_filter.egg-info/SOURCES.txt
+src/django_admin_multi_select_filter.egg-info/dependency_links.txt
+src/django_admin_multi_select_filter.egg-info/requires.txt
+src/django_admin_multi_select_filter.egg-info/top_level.txt
