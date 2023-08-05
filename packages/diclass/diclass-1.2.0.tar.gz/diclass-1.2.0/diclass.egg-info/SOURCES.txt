@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+diclass/__init__.py
+diclass.egg-info/PKG-INFO
+diclass.egg-info/SOURCES.txt
+diclass.egg-info/dependency_links.txt
+diclass.egg-info/top_level.txt
