@@ -1,0 +1,11 @@
+Rilton-processamento-imagem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Rilton-processamento-imagem/processamento/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Rilton-processamento-imagem/processamento/combinação.py,sha256=Qz-p20W6lMsr1kqT2NetW3P_8sKn13Y_b07L-9LP3Uw,832
+Rilton-processamento-imagem/processamento/transformação.py,sha256=TYKldxKuDVgWvMVGLOIjRGX5rWpyNBp6qhYxhx7cwf8,383
+Rilton-processamento-imagem/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Rilton-processamento-imagem/utils/io.py,sha256=A69uaxeb02qd_WATRvPObFhMTs7BtxrqQ24_X0YYiPI,229
+Rilton-processamento-imagem/utils/plot.py,sha256=Q_ALxS6tvRSA0LILS2R4Zr4cRUZ7JY9q9ULJtfVPC2U,1049
+Rilton_processamento_imagem-0.0.1.dist-info/METADATA,sha256=vzvonriKuCABYkDCln0tdppg26PfFm1DaMUMJrqPBYA,894
+Rilton_processamento_imagem-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Rilton_processamento_imagem-0.0.1.dist-info/top_level.txt,sha256=LjFPlB2oljuyugY93rZeS8e5GzafX_6hs-1JVMTIi8Y,28
+Rilton_processamento_imagem-0.0.1.dist-info/RECORD,,
