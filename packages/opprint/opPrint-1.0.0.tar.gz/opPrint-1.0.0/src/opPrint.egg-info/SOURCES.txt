@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/opPrint.py
+src/opPrint.egg-info/PKG-INFO
+src/opPrint.egg-info/SOURCES.txt
+src/opPrint.egg-info/dependency_links.txt
+src/opPrint.egg-info/top_level.txt

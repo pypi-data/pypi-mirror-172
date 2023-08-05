@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: opPrint
+Version: 1.0.0
+Summary: Override print formatter
+Author-email: rapid537 <rapid537@zoho.com>
+Project-URL: Homepage, https://github.com/rapid537/op.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+python3 override print() formatting
