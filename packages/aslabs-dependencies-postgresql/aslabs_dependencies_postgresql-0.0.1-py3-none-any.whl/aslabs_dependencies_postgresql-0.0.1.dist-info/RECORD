@@ -1,0 +1,5 @@
+aslabs/dependencies/postgresql/__init__.py,sha256=WEwwksmfFr6rUvcrZXWiKMnYQepXKy_MPGVlYrhOjVw,143
+aslabs/dependencies/postgresql/postgresql.py,sha256=xRZYl-5TDaN51MsxLC145sWz91GiY9bkqTFkx1AunA8,1993
+aslabs_dependencies_postgresql-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aslabs_dependencies_postgresql-0.0.1.dist-info/METADATA,sha256=6LdnhwDl_uzBkADyEkgKbiqa-iH8JPGt_GFNOlxNaFI,508
+aslabs_dependencies_postgresql-0.0.1.dist-info/RECORD,,
