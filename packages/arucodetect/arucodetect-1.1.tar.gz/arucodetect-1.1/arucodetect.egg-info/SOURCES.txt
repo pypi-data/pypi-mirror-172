@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+arucodetect/__init__.py
+arucodetect/arucodetect.py
+arucodetect.egg-info/PKG-INFO
+arucodetect.egg-info/SOURCES.txt
+arucodetect.egg-info/dependency_links.txt
+arucodetect.egg-info/requires.txt
+arucodetect.egg-info/top_level.txt
