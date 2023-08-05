@@ -1,0 +1,10 @@
+python-dateutil>=2.8
+notion-client>=1.0
+
+[test]
+coverage[toml]>=5.0
+pytest-cov>=2.7.1
+coveralls
+black>=22.1
+isort>=5.10
+pytest>=7.0
