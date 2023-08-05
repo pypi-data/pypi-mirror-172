@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: selenium-chrome-utils
+Version: 0.0.1
+Summary: selenium utils for chrome
+Home-page: UNKNOWN
+Author: weidingxing
+Author-email: 540667132@qq.com
+License: apache 3.0
+Platform: UNKNOWN
+Requires: selenium
+Requires: numpy
+Requires: PIL
+Requires: requests
+
+UNKNOWN
+
+
