@@ -1,0 +1,18 @@
+{% extends "basic/layout.html" %}
+{%- block rootrellink %}<li><a href="https://pyx-project.org">PyX Homepage</a>{{ reldelim1 }}</li>{{ super() }}{% endblock %}
+{%- block relbar1 %}<div class="relatedtop">{{ super() }}</div>{% endblock %}
+{%- block relbar2 %}<div class="relatedbottom">{{ super() }}</div>{% endblock %}
+{%- block sidebar2 %}
+  {%- if render_sidebar %}
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        {%- for sidebartemplate in sidebars %}
+          {%- macro thissidebar() %}{%- include sidebartemplate -%}{% endmacro %}
+          {%- if thissidebar()|length %}
+            <div class="sidebarbox">{{ thissidebar() }}</div>
+          {%- endif %}
+        {%- endfor %}
+      </div>
+    </div>
+  {%- endif %}
+{% endblock %}

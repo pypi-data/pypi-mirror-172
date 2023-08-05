@@ -1,0 +1,12 @@
+Customize fonts
+
+In LaTeX, there are nice packages allowing to switch fonts. Hence, for a simple
+example we change the mode of the default textengine instance to LaTeX and use
+the `preamble` method to load the `times` package. ...
+
+!! In general, it is more easy to use LaTeX with it's NFSS (new font selection
+scheme) for font switching, although, in principle, this is also possible in
+TeX. The LaTeX Font Catalog at http://www.tug.dk/FontCatalogue/ lists common
+fonts, which can readily be used in LaTeX. Integrating other fonts into the
+LaTeX requires some work. Sometimes one can find ready-to-use adaptions on CTAN
+http://ctan.org/.
