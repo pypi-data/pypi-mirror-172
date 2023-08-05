@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "aslabs-near"
+version = "0.0.3"
+description = ""
+authors = ["Titusz Ban <tituszban@antisociallabs.io>"]
+readme = "README.md"
+packages = [
+    { include = "aslabs" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ed25519 = "^1.5"
+base58 = "^2.1.1"
+near-api-py = "^0.1.0"
+aslabs-utils = "^0.0.1"
+python-dateutil = "^2.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
