@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aslabs-dependencies-near
+Version: 0.0.4
+Summary: 
+Author: Titusz Ban
+Author-email: tituszban@antisociallabs.io
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aslabs-dependencies (>=0.0.3,<0.0.4)
+Requires-Dist: aslabs-near (>=0.0.2,<0.0.3)
+Description-Content-Type: text/markdown
+
+
