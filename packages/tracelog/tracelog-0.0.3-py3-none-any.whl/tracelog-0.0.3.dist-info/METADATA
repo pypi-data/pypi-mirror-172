@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: tracelog
+Version: 0.0.3
+Requires-Dist: requests
+Requires-Dist: importlib ; python_version == "3.8"
+
