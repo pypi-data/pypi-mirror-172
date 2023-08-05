@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+scrapy_xls/__init__.py
+scrapy_xls/xls_spider.py
+scrapy_xls.egg-info/PKG-INFO
+scrapy_xls.egg-info/SOURCES.txt
+scrapy_xls.egg-info/dependency_links.txt
+scrapy_xls.egg-info/requires.txt
+scrapy_xls.egg-info/top_level.txt
