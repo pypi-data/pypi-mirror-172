@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: otel-inst-py
+Version: 1.0.2
+Summary: Python package that provides the basic features required for Open-Telemetry instrumentation.
+Home-page: https://github.com/tombenke/otel-inst-py
+Author: Tamás Benke
+Author-email: tombenke@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+
+For further information, please visit the [project's homepage](https://github.com/tombenke/otel-inst-py).

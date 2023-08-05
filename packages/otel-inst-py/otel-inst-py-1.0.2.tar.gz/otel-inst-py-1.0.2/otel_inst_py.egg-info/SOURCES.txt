@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+examples/__init__.py
+examples/simple_trace_otelgrpc.py
+examples/simple_trace_stdout.py
+examples/simple_trace_stdout_default_config.py
+examples/simple_trace_stdout_wo_sdk.py
+otel_inst_py.egg-info/PKG-INFO
+otel_inst_py.egg-info/SOURCES.txt
+otel_inst_py.egg-info/dependency_links.txt
+otel_inst_py.egg-info/requires.txt
+otel_inst_py.egg-info/top_level.txt
+oti/__init__.py
+oti/config.py
+oti/oti.py
