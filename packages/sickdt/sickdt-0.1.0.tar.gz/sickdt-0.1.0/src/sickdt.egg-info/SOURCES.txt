@@ -1,0 +1,11 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.cfg
+src/sickdt/__init__.py
+src/sickdt/core.py
+src/sickdt.egg-info/PKG-INFO
+src/sickdt.egg-info/SOURCES.txt
+src/sickdt.egg-info/dependency_links.txt
+src/sickdt.egg-info/requires.txt
+src/sickdt.egg-info/top_level.txt
