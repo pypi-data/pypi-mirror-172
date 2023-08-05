@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: zentra
+Version: 0.1.0
+Summary: A simple package for communicating with our backend services.
+Author: Skelmis
+Author-email: ethan@koldfusion.xyz
+Project-URL: Homepage, https://github.com/ZentraDev/python-client
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anyio (==3.6.1)
+Requires-Dist: certifi (==2022.9.24)
+Requires-Dist: h11 (==0.12.0)
+Requires-Dist: httpcore (==0.15.0)
+Requires-Dist: httpx (==0.23.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: sniffio (==1.3.0)
+Requires-Dist: websockets (==10.3)
+
+Zentra Python Client
+---
+
+A simple client for interacting with the backend.
