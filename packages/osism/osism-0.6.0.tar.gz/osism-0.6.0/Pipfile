@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+GitPython = "==3.1.29"
+Jinja2 = "==3.1.2"
+PyYAML = "==6.0"
+ansible-runner = "==2.2.1"
+celery = {version = "==5.2.7", extras = ["redis"]}
+cliff = "==4.0.0"
+deepdiff = "==5.8.1"
+flower = "==1.2.0"
+hiredis = "==2.0.0"
+napalm = "==4.0.0"
+kombu = "==5.2.4"
+openstacksdk = "==0.102.0"
+pottery = "==3.0.0"
+pydantic = "==1.10.2"
+pynetbox = "==6.6.2"
+routeros-diff = "==0.5.3"
+sushy = "==4.3.0"
+transitions = "==0.9.0"
+watchdog = "==2.1.9"
+netmiko = "==4.1.2"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
