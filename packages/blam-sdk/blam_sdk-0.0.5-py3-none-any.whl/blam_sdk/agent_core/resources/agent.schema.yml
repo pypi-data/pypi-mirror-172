@@ -1,0 +1,33 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: Agent
+description: Agent configuration  
+type: object
+properties:
+  name: 
+    type: string
+    description: Agent name
+  working_dir:
+    type: string
+    description: Working directory
+  queue:
+    type: string
+    description: Queue name
+  poll_interval:
+    type: integer
+    description: Poll interval in seconds
+    default: 30
+    minimum: 15
+    maximum: 120
+    multipleOf: 15
+  action_ids:
+    type: array
+    description: List of action IDs tge agebt cab perform
+    default: []
+    items:
+      type: string
+  commands:
+    type: array
+    description: List of commands the agent can run
+    default: []
+    items:
+      type: string
