@@ -1,0 +1,10 @@
+twidge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twidge/__main__.py,sha256=9DqVENCRFL1gxbaciIuuRsSYBxhS44tGIvSn1pY0Mok,1025
+twidge/core.py,sha256=NDollKdyOCb3qDNirEk7-cEpAMHPkHN8aBkufctObVQ,4865
+twidge/keymap.py,sha256=yFgzzWR4oTvBnArtYrD3xeVFGjd3TizZDU22vvitQYk,2190
+twidge/widgets.py,sha256=KKOs-uRCpPxAMBW3kBEMLR3Sgg92iVBzoeotjYw3LQQ,9699
+twidge-1.0.0.dist-info/entry_points.txt,sha256=38wWTAEltygl5ordGRgbAg1wSuFXpKGoLp2yB7SM_iQ,41
+twidge-1.0.0.dist-info/LICENSE,sha256=4PtbUmV39_L7uI2cWPKDIGcVt8V2Wylryz40yhF89aA,1074
+twidge-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+twidge-1.0.0.dist-info/METADATA,sha256=pQ7jwcUtGoqeEqQh7RJ_Sd_jakLzFSzmLFfxTY7iWV0,1376
+twidge-1.0.0.dist-info/RECORD,,
