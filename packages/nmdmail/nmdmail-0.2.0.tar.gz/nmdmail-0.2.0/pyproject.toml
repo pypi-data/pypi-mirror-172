@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "nmdmail"
+version = "0.2.0"
+description = "Send emails written in Markdown"
+authors = [
+    "Guilhem Saurel <guilhem.saurel@laas.fr>",
+    "Jianye Ye <yejianye@gmail.com>"
+]
+license = "BSD-2-Clause"
+readme = "README.md"
+keywords = ['markdown', 'html', 'email', 'inline css']
+homepage = 'https://github.com/nim65s/nmdmail'
+repository = "https://github.com/nim65s/nmdmail.git"
+
+[tool.poetry.urls]
+changelog = "https://github.com/nim65s/nmdmail/blob/main/CHANGELOG.md"
+
+[tool.poetry.scripts]
+nmdmail = 'nmdmail.cli:main'
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Markdown = "^3.4.1"
+premailer = "^3.10.0"
+emails = "^0.6"
+lxml = "^4.9.1"
+beautifulsoup4 = "^4.11.1"
+
+[tool.poetry.group.tests.dependencies]
+mock = "^4.0.3"
+coverage = "^6.5.0"
+
+[tool.poetry.group.tools.dependencies]
+black = "^22.10.0"
+pyupgrade = "^3.1.0"
+
+[tool.black]
+target-version = ['py37']
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
