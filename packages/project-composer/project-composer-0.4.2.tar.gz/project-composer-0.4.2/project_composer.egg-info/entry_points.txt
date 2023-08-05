@@ -1,0 +1,3 @@
+[console_scripts]
+old_project_composer = project_composer.cli:main
+project_composer = project_composer.cli.entrypoint:cli_frontend
