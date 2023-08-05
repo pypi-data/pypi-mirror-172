@@ -1,0 +1,8 @@
+faketory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faketory/factory.py,sha256=n-GxWRgWm7Dg5WVnlDPrCHuvnrVH4bsVyqWWkQ4CjjI,2139
+faketory/gens.py,sha256=NSvOzeOqEqQC0uhwuGYh457dWLDNZdGxeQ43igtw5yk,528
+faketory/placeholders/models.py,sha256=rR4qVrULfGMbuq1cqhb2FsOB0A2tqSrQb2imPkVKmzE,79
+faketory-0.1.2.dist-info/LICENSE,sha256=KP75iE2hX6bx_RgLaD3ARs4x8PDFz_AdL7OXEpaXvNA,1080
+faketory-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+faketory-0.1.2.dist-info/METADATA,sha256=I0X2FQ4ZcsfWNQXXBCMqx1tFKoo0Mg_iLu4mbcBlQRg,6308
+faketory-0.1.2.dist-info/RECORD,,
