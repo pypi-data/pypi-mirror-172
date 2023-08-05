@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: aiops_crypto_utils
+Version: 0.0.2
+Summary: Commonly used crypto utilities across AIOps framework
+Author-email: Jayashankar Jayan <jayashankar.Jayan@lntinfotech.com>, Varun Didugu <varun.didugu@lntinfotech.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
