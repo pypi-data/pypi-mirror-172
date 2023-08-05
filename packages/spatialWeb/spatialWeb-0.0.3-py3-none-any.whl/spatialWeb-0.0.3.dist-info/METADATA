@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: spatialWeb
+Version: 0.0.3
+Summary: The utilities for spatialWeb web server
+Home-page: UNKNOWN
+Author: Kevin Lee
+Author-email: 2101112223@pku.edu.cn
+License: UNKNOWN
+Keywords: spatial transcriptome,web server
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+
+The utilities for spatialWeb web server
+
