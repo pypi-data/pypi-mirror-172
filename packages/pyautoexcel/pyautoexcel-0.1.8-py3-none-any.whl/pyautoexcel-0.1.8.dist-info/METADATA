@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyautoexcel
+Version: 0.1.8
+Summary: 这是一个简单的操作 excel 的模块
+Author: wn0x00
+Author-email: 320753691@qq.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pywin32 (>=304,<305)
