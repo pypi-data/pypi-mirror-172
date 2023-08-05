@@ -1,0 +1,4 @@
+[console_scripts]
+raidpy = rsxpy.raidpy.core:main
+rsxpy = rsxpy.core:main
+

@@ -1,0 +1,4 @@
+raylib
+pyinstaller
+pysdl2
+pysdl2-dll
