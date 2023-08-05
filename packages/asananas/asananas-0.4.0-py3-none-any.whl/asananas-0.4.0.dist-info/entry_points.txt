@@ -1,0 +1,2 @@
+[console_scripts]
+asananas-dashboard = asananas.dashboard.cli:run
