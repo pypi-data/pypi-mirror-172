@@ -1,0 +1,2 @@
+[console_scripts]
+asight = asight.__main__:main

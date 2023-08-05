@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: asight
+Version: 0.0.1a1
+Summary: Ascend Performance Analysis Tool.
+Home-page: https://gitee.com/Ascend/Asight
+Author: Zhu LiangYing
+Author-email: zhuliangying@huawei.com
+Maintainer: Zhu LiangYing
+Maintainer-email: zhuliangying@huawei.com
+Keywords: Asight
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-flake8 ; extra == 'dev'
+Requires-Dist: pytest-isort ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-mypy ; extra == 'dev'
+Requires-Dist: pytest-pycodestyle ; extra == 'dev'
+Requires-Dist: pytest-pydocstyle ; extra == 'dev'
+Requires-Dist: pytest-pylint ; extra == 'dev'
+Requires-Dist: pytest-yapf3 ; extra == 'dev'
+Requires-Dist: types-setuptools ; extra == 'dev'
+Requires-Dist: coverage (>=6.4.3) ; extra == 'dev'
+Requires-Dist: flake8 (<5) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: yapf ; extra == 'dev'
+
+# Asight
+
+### 本地开发指南
+#### 配置PIP源（配置一次即可，已配置过无需重复配置）
+
+python装包一般都用 easy_install 或者 pip ，原理跟 apt-get 差不多，都是去某个地址去下载你所指定的包。pip 和 easy_install 默认是去[pypi.python.org/pypi](pypi.python.org/pypi)下载并解压，但是网络很不稳定，可以换成国内常用的源(比如华为云)，修改源有两种方式：
+
+
+**方式一：**
+每次安装时候，通过 -i 选项指定源（每次安装都要手动指定, 比较麻烦）
+```
+pip install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple $package_name
+```
+
+**方式二：**
+修改 pip 的配置文件 ~/.pip/pip.conf（只需配置一次，一劳永逸）
+
+```shell
+[global]
+index-url = https://repo.huaweicloud.com/repository/pypi/simple
+trusted-host = repo.huaweicloud.com
+timeout = 120
+```
+
+**注意：**
+这两个文件只针对当前用户生效，如果要sudo使用，需要在root用户下也配置一份，可以用软连接。
+
+#### 创建虚拟环境
+```shell
+pip install virtualenv setuptools-scm
+virtualenv -p python venv
+source venv/bin/activate
+```
+#### 本地安装CLI
+```shell
+# .是安装当前cli，dev是安装开发环境依赖包
+pip install -e .[dev]
+```
+
+#### 本地测试
+##### 总测试
+总测试包含UT，ST，静态检查（以下简称：Lint)三项测试
+```shell
+bash scripts/build.sh
+```
+
+##### 单元测试
+只做单元测试（以下简称: UT）
+```shell
+# 入参传入任务类型(ut)，覆盖率(100)
+./scripts/build.sh ut 100
+```
+##### 集成测试
+只做集成/系统测试（以下简称: ST）
+```shell
+# 入参传入任务类型(st)，覆盖率(100)
+./scripts/build.sh st 100
+```
+##### 代码规范检查(全局)
+对交付代码做规范检查，包含配置的全部检查工具
+```shell
+./scripts/build.sh lint
+```
+
+##### 代码规范检查(单点)
+对交付代码做规范检查，指定具体工具做检查
+```shell
+# 入参: 构建类型(lint)，工具类型(pylint, flake8, mypy等)
+./scripts/build.sh lint flake8
+```
+
+#### 参与贡献指导
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
+
+### 软件介绍
+**以下是 Gitee 平台说明，您可以替换此简介**
+Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
+无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)
+
+#### 软件架构
+软件架构说明
+
+#### 安装教程
+
+1.  xxxx
+2.  xxxx
+3.  xxxx
+
+#### 使用说明
+
+1.  xxxx
+2.  xxxx
+3.  xxxx
+
+### 特技
+
+1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
+2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
+3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
+4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
+5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
+6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
