@@ -1,0 +1,10 @@
+config/__init__.py,sha256=Ew68mT3O-mTuGTSOWVd7zty_7p4sAVCWpUGRh2VJTF0,28
+config/config.py,sha256=0Uncliw8TP023v-F_VpAM8FGwh09VDT9yWZWCZ6ydDQ,2952
+tests/__init__.py,sha256=CE9axZlUHqAxAeH-Uo0GVsDMAYrB_5PMTtRCkfP5dh8,114
+tests/helpers.py,sha256=88Rk0-mEQQ90nv1LNrB6MwoZNUIrUrzHL2RFd_8E2ro,873
+tests/test_config.py,sha256=3lyyVCcw5h2ehMw5GNvTCy2h86lsdu5ydnQGd46Y7Gw,7293
+aslabs_config-0.0.1.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aslabs_config-0.0.1.dist-info/METADATA,sha256=prr2PCTlXby-gGApbGE_Pj6MZjRQAkENJJ3ixpIDsdw,585
+aslabs_config-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aslabs_config-0.0.1.dist-info/top_level.txt,sha256=5GYk53JUpFFbemTzA2baHoauX2o4kdXySDautaMLmrg,13
+aslabs_config-0.0.1.dist-info/RECORD,,
