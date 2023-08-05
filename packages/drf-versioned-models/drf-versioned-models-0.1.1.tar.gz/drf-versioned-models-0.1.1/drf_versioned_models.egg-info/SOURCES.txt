@@ -1,0 +1,7 @@
+README.md
+setup.py
+drf_versioned_models.egg-info/PKG-INFO
+drf_versioned_models.egg-info/SOURCES.txt
+drf_versioned_models.egg-info/dependency_links.txt
+drf_versioned_models.egg-info/requires.txt
+drf_versioned_models.egg-info/top_level.txt
