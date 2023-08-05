@@ -1,0 +1,5 @@
+example/*.so
+example/leet_add
+example/*.o
+__pycache__
+dist/
