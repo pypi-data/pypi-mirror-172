@@ -1,0 +1,7 @@
+aslabs/dependencies/airtable/__init__.py,sha256=e6dYmaZP_Nk4h9lckB3gs8wWPIw2MyhUT57n8TgXXZM,179
+aslabs/dependencies/airtable/airtable.py,sha256=wU8G_gOJ6Cv7_avzSWG9ofNRVJRvhytxwGLxlSVJMH8,4733
+aslabs/dependencies/airtable/config.py,sha256=zKv_Rofr2VWI8n3tP-lNXQE4hhKi2kWdnp8ok4Btf-c,202
+aslabs/dependencies/airtable/resolver.py,sha256=U8dgEG2RYBP2oXGNiU8S9EETiephggy_p03wd9jEIHs,919
+aslabs_dependencies_airtable-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aslabs_dependencies_airtable-0.0.1.dist-info/METADATA,sha256=Y8OfMi6r_nDZEy575jJMPjsrsyJPmVdzlaAnxMH07S8,507
+aslabs_dependencies_airtable-0.0.1.dist-info/RECORD,,
