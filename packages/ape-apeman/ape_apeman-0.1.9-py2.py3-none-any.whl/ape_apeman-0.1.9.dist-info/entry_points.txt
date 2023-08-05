@@ -1,0 +1,3 @@
+[console_scripts]
+apeman=ape_apeman:cli
+
