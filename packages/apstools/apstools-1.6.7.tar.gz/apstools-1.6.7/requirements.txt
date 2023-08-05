@@ -1,0 +1,14 @@
+area-detector-handlers
+bluesky>=1.6.2
+databroker==1.2.5
+databroker-pack
+h5py
+mongoquery>=1.3.6
+numpy
+ophyd>=1.5.1
+openpyxl
+pint
+pyepics>=3.4.2
+pyRestTable
+spec2nexus>=2021.1.7
+xlrd

@@ -1,0 +1,39 @@
+name: apstools-test-environment
+
+channels:
+  - aps-anl-tag
+  - conda-forge
+  - defaults
+  # nsls2forge channel for newer mongoquery 1.3.6 (issue #673)
+  - nsls2forge
+
+dependencies:
+  - python >=3.8, <3.11
+  - area-detector-handlers
+  - bluesky >=1.6.7
+  - databroker =1.2.5
+  - databroker-pack
+  - h5py
+  - intake
+  - mongoquery >=1.3.6
+  - openpyxl
+  - ophyd >=1.6.1
+  - pandas
+  - pint
+  - pip
+  - prompt-toolkit
+  - pydata-sphinx-theme
+  - pyEpics >=3.4.3
+  - pymongo
+  - pyqt =5
+  - pyRestTable
+  - qt =5
+  - readline !=8.1.2
+  - setuptools-scm
+  - spec2nexus
+  - sphinx >=5
+
+  # - pip:
+    # - bluesky_live
+    # - ipython-genutils==0.2.0
+    # - prompt-toolkit==1.0.15
