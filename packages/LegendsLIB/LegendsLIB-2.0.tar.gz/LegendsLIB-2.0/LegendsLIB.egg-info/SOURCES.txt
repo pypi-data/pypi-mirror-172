@@ -1,0 +1,9 @@
+README.md
+setup.py
+LegendsLIB/LegendsLIB.py
+LegendsLIB/__init__.py
+LegendsLIB.egg-info/PKG-INFO
+LegendsLIB.egg-info/SOURCES.txt
+LegendsLIB.egg-info/dependency_links.txt
+LegendsLIB.egg-info/requires.txt
+LegendsLIB.egg-info/top_level.txt
