@@ -1,0 +1,11 @@
+exclude *
+recursive-exclude * *
+
+include MANIFEST.in
+include setup.py
+
+graft src/django_secret_sharing
+
+global-exclude .DS_Store
+global-exclude *.pyc
+global-exclude __pycache__
