@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: LisaPython
+Version: 1.0.6
+Summary: Simple description of LisaPython library
+Home-page: https://www.daniel-studio.tw/
+Author: Hung, Teng-Kuei
+Author-email: danielhorng@gmail.com
+License: MIT
+Keywords: HungTengKuei
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+#LisaPython
+This is a very simple calculator that takes two numbers and either add, substract...
+
+
+Change Log
+==========
+
+1.0.0 (2022/10/14)
+------------------
+- First Release
+
+1.0.2 (2022/10/16)
+------------------
+- add class

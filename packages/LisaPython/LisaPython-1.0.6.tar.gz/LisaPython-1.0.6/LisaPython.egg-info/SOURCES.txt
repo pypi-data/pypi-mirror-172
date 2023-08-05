@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+LisaPython/__init__.py
+LisaPython.egg-info/PKG-INFO
+LisaPython.egg-info/SOURCES.txt
+LisaPython.egg-info/dependency_links.txt
+LisaPython.egg-info/top_level.txt
