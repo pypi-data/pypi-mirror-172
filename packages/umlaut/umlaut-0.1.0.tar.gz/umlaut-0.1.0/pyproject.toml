@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "umlaut"
+version = "0.1.0"
+description = "Umlaut simplifies deploying data science models"
+authors = ["Andrew Dunkel <andrew.dunkel1@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/andrewdunkel/uMLaut"
+keywords = ["mlops", "mlflow", "devops"]
+packages = [
+    { include = "umlaut" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9.12,<4.0"
+mlflow = "1.28.0"
+psycopg2 = "2.9.3"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.15.0"
+black = "^21.11b1"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
