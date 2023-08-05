@@ -1,0 +1,3 @@
+[pytest11]
+pytest_call_checker=pytest_call_checker
+
