@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "python-connect"
+version = "0.1.0"
+description = "python database manipulation with advanced features"
+authors = ["Thompson <51963680+thompson0012@users.noreply.github.com>"]
+packages = [{ include = "pyconn", from = 'src' }]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.11"
+sqlmodel = "^0.0.8"
+pydantic = "^1.10.1"
+toml = "^0.10.2"
+addict = "^2.4.0"
+sqlglot = "^5.3.1"
+pampy = "^0.3.0"
+Humre = "^0.2.0"
+pendulum = "^2.1.2"
+bson = "^0.5.10"
+orjson = "^3.8.0"
+psycopg = { extras = ["binary"], version = "^3.1.2" }
+
+[tool.poetry.dev-dependencies]
+google-cloud-storage = "^2.5.0"
+s3 = "^3.0.0"
+aiomysql = "^0.1.1"
+asyncpg = "^0.26.0"
+psycopg = "^3.1.1"
+google-cloud-bigquery = "^3.3.2"
+modin = { extras = ["dask"], version = "^0.15.3" }
+boto3 = "^1.24.69"
+flashtext = "^2.7"
+sqloxide = "^0.1.22"
+Faker = "^14.2.0"
+PySnooper = "^1.1.1"
+nest-asyncio = "^1.5.6"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
