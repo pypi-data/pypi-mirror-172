@@ -1,0 +1,11 @@
+-e .[all,server]
+-r requirements-tests.txt
+
+black==22.3.0
+flake8==4.0.1
+click
+inflection
+lxml
+mypy
+packaging
+prompt_toolkit
