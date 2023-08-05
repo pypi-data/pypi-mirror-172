@@ -1,0 +1,26 @@
+[project]
+name = "fnsafe"
+version = "0.0.1.post1"
+description = "Not raising functions - like rust."
+readme = "README.md"
+keywords = [
+    "error",
+    "exception",
+    "function",
+    "functional",
+    "raise",
+    "rust",
+    "safe",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Rust",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = []

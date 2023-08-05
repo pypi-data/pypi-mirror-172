@@ -1,0 +1,7 @@
+README.md
+fnsafe.py
+pyproject.toml
+fnsafe.egg-info/PKG-INFO
+fnsafe.egg-info/SOURCES.txt
+fnsafe.egg-info/dependency_links.txt
+fnsafe.egg-info/top_level.txt
