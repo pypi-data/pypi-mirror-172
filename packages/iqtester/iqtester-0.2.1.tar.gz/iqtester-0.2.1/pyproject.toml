@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["iqtester*"]
+
+[project]
+name = "iqtester"
+version = "0.2.1"
+description = "A Python CLI version of the classic brain game IQ Tester"
+authors = [{ name = "Andrew Tracey", email = "act.project.alpha@gmail.com" }]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "Topic :: Games/Entertainment",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+    "Topic :: Games/Entertainment :: Board Games",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ['colorama']
+keywords = ["iq tester", "game", "classic game"]
+
+[project.scripts]
+iq-tester = "iqtester.__main__:main"
+
+
+[project.optional-dependencies]
+dev = ["pytest", "flake8"]
+
+[project.urls]
+Homepage = "https://github.com/andrewt110216/iq-tester-game"

@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+src/iqtester/__init__.py
+src/iqtester/__main__.py
+src/iqtester/board.py
+src/iqtester/formatter.py
+src/iqtester/game.py
+src/iqtester/session.py
+src/iqtester.egg-info/PKG-INFO
+src/iqtester.egg-info/SOURCES.txt
+src/iqtester.egg-info/dependency_links.txt
+src/iqtester.egg-info/entry_points.txt
+src/iqtester.egg-info/requires.txt
+src/iqtester.egg-info/top_level.txt
