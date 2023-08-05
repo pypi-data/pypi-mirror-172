@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="becomecooperator_ccee" inherit_id="cooperator_website.becomecooperator">
+        <xpath expr="//div[@id='wrap']//h1" position="replace">
+            <h1 class="mt-4 text-center">
+                Become Cooperator of <t t-esc="company.name" />
+            </h1>
+            <br/>
+            <p>This form allow you to request be member of the community: <t t-esc="company.name"/>.</p>
+            <p>To be a member you must fulfill this form and lateron proceed to pay the initial share of <t t-esc="company.initial_subscription_share_amount"/>€ by follow the steps you will receive by email.</p>
+            <p>Once you are a member you can enjoy the services available from the community and be part of a movement of social and energy model transformation.</p>
+        </xpath>
+        <xpath expr="//div[@id='wrap']//a[@t-if='not logged']/." position="replace" />
+        <xpath expr="//div[@name='confirm_email_container']" position="after">
+           <div 
+                t-if="not logged"
+                style="display: none;"
+                class="form-group field-login">
+                <label for="company_id">Target Odoo Company id</label>
+                <input
+                    class="form-control form-control-sm"
+                    autocapitalize="off"
+                    type="text"
+                    name="company_id"
+                    id="company_id"
+                    required="False"
+                    t-attf-value="#{company.id or 1}"
+                    />
+            </div>
+        </xpath>
+    </template>
+
+    <template id="iban_template_es_ccee" inherit_id="l10n_es_cooperator.iban_template_es">
+          <xpath expr="//div[@name='iban_container']" position="replace"/>
+    </template>
+
+</odoo>
