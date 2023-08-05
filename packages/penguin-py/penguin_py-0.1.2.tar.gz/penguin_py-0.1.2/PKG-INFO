@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: penguin_py
+Version: 0.1.2
+Summary: Penguin: a customizable stopwatch decorator
+Home-page: https://github.com/espitiaandres/penguin
+Download-URL: https://github.com/espitiaandres/penguin
+Author: espitiaandres
+Author-email: espitiaandres123@gmail.com
+Project-URL: Documentation, https://github.com/espitiaandres/penguin
+Project-URL: Source, https://github.com/espitiaandres/penguin
+Project-URL: Tracker, https://github.com/espitiaandres/penguin/issues
+Keywords: penguin python,penguin_py,stopwatch,timer,penguin_py timer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 🐧 Penguin_py 🐧
+
+Penguin: a customizable stopwatch decorator ⏱
+
+<img
+    src="/img/penguin_py_logo.jpg"
+    alt="Peter the penguin, penguin_py's mascot."
+    title="Peter the penguin, penguin_py's mascot."
+    width="200"
+/>
+
+Meet Peter, `penguin_py's` beloved mascot!
+
+https://github.com/espitiaandres/penguin
+
+# Installation
+
+## With Command Line
+
+To install `penguin_py` with the command line, run this command:
+
+`pip install penguin_py`.
+
+## With a `requirements.txt` file
+
+To install `penguin_py` using a `requirements.txt` file, add this line to your `requirements.txt` file.
+
+`penguin-py==0.1.1`
+
+# Usage
+
+To run with default kwargs:
+
+```
+from penguin_py import penguin
+
+
+@penguin()
+def test_func(test1, test2=None):
+    # NOTE: this function can be anything!
+    for i in range(10000):
+        pass
+    return "test", True
+
+
+test = test_func("", test2=":")
+```
+
+To run with user specified kwargs:
+
+```
+@penguin(
+    verbose=True,
+    show_args=True,
+    show_return=True,
+)
+def test_func(test1, test2=None):
+    # NOTE: this function can be anything!
+    for i in range(10000):
+        pass
+    return "test", True
+
+
+test = test_func("", test2=":")
+```
+
+# Documentation
+
+# Bugs/Requests
+
+# License
