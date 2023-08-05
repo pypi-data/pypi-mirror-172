@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pymarkdownreport/__init__.py
+pymarkdownreport/mdreport.py
+pymarkdownreport.egg-info/PKG-INFO
+pymarkdownreport.egg-info/SOURCES.txt
+pymarkdownreport.egg-info/dependency_links.txt
+pymarkdownreport.egg-info/entry_points.txt
+pymarkdownreport.egg-info/not-zip-safe
+pymarkdownreport.egg-info/top_level.txt
