@@ -1,0 +1,8 @@
+README.md
+setup.py
+Farosat.egg-info/PKG-INFO
+Farosat.egg-info/SOURCES.txt
+Farosat.egg-info/dependency_links.txt
+Farosat.egg-info/top_level.txt
+libname/__init__.py
+libname/farosat.py
