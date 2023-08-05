@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Martin Persson <martin.jens.persson@gmail.com>, 2014
+# Olle Gustafsson <olle@dalnix.se>, 2013
+# Olle Gustafsson <olle@dalnix.se>, 2013,2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Kalabash\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-27 16:24+0200\n"
+"PO-Revision-Date: 2015-01-13 15:18+0000\n"
+"Last-Translator: Olle Gustafsson <olle@dalnix.se>\n"
+"Language-Team: Swedish (http://www.transifex.com/projects/p/kalabash/language/"
+"sv/)\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app_settings.py:18
+msgid "General"
+msgstr "Generellt"
+
+#: app_settings.py:21
+msgid "Postfix's master.cf path"
+msgstr "Sökväg till Postfix master.cf"
+
+#: app_settings.py:23
+msgid "Path to the master.cf configuration file"
+msgstr "Sökväg till master.cf konfigureringsfil"
+
+#: forms.py:26
+msgid "Name"
+msgstr ""
+
+#: forms.py:27
+#, fuzzy
+#| msgid "The domain name"
+msgid "The relay domain name"
+msgstr "Domännamnet"
+
+#: general_callbacks.py:56 general_callbacks.py:63
+#, fuzzy
+#| msgid "Relay domains"
+msgid "Relay domain"
+msgstr "Relay domän"
+
+#: general_callbacks.py:76
+#, fuzzy
+#| msgid "Relay domains"
+msgid "Relay settings"
+msgstr "Relay domän"
+
+#: general_callbacks.py:112
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "<li><em>relaydomain; name; target host; service; enabled; verify "
+#| "recipients</em></li>\n"
+#| "<li><em>relaydomainalias; name; target; enabled</em></li>\n"
+msgid ""
+"\n"
+"<li><em>relaydomain; name; target host; service; enabled; verify recipients</"
+"em></li>\n"
+msgstr ""
+"\n"
+"<li><em>relaydomain; name; target host; service; enabled; verify recipients</"
+"em></li>\n"
+"<li><em>relaydomainalias; name; target; enabled</em></li>\n"
+
+#: models.py:62
+msgid "name"
+msgstr "namn"
+
+#: models.py:63
+msgid "The service name"
+msgstr "Tjänstens namn"
+
+#: models.py:85
+msgid "target host"
+msgstr "målvärd"
+
+#: models.py:86
+msgid "Remote destination of this domain"
+msgstr "Fjärrmål för den här domänen"
+
+#: models.py:90
+msgid "verify recipients"
+msgstr "verifiera mottagare"
+
+#: models.py:91
+msgid "Check for valid recipients"
+msgstr "Kontrollera giltiga mottagare"
+
+#: models.py:104
+msgid "Relay Domain"
+msgstr "Relay domän"
+
+#: models.py:131
+msgid "Invalid line"
+msgstr "Ogiltig rad"
+
+#: kalmonak_extension.py:29
+msgid "Relay domains support for Postfix"
+msgstr "Relay domän support för Postfix"
+
+#: kalmonak_extension.py:36
+msgid "Relay domains"
+msgstr "Relay domän"
+
+#: templates/kalabash_admin_relaydomains/service_field.html:3
+msgid "Scan"
+msgstr "Skanna"
+
+#~ msgid "Alias(es)"
+#~ msgstr "Alias"
+
+#~ msgid ""
+#~ "Alias(es) of this relay domain. Indicate only one name per input, press "
+#~ "ENTER to add a new input."
+#~ msgstr ""
+#~ "Alias för den här relay domänen. Ange bara ett namn per rad, tryck ENTER "
+#~ "för att lägga till en ny rad."
+
+#~ msgid "domain"
+#~ msgstr "domän"
+
+#~ msgid "domain alias"
+#~ msgstr "domän alias"
+
+#~ msgid "relay domain alias"
+#~ msgstr "relay domän alias"
+
+#~ msgid "A %s with this name already exists"
+#~ msgstr "En %s med detta namn finns redan"
+
+#~ msgid "relay domain"
+#~ msgstr "relay domän"
+
+#~ msgid "Relay domain modified"
+#~ msgstr "Relay domän ändrad"
+
+#~ msgid "Add relay domain"
+#~ msgstr "Lägg till relay domän"
+
+#~ msgid "Delete %s?"
+#~ msgstr "Radera %s?"
+
+#~ msgid "Maximum number of relay domains this user can create"
+#~ msgstr "Max antal relay domäner den här användaren kan skapa"
+
+#~ msgid "Relay domain aliases"
+#~ msgstr "Relay domän alias"
+
+#~ msgid "Maximum number of relay domain aliases this user can create"
+#~ msgstr "Max antal relay domän alias den här användaren kan skapa"
+
+#~ msgid "Maximum number of allowed relay domains for a new administrator"
+#~ msgstr "Max antal tillåtna relay domäner för en ny administratör"
+
+#~ msgid ""
+#~ "Maximum number of allowed relay domain aliases for a new administrator"
+#~ msgstr "Max antal tillåtna relay domän alias för en ny administratör"
+
+#~ msgid "enabled"
+#~ msgstr "aktiverad"
+
+#~ msgid "Check to activate this domain"
+#~ msgstr "Markera för att aktivera denna domän"
+
+#~ msgid "The alias name"
+#~ msgstr "Alias namn"
+
+#~ msgid "target"
+#~ msgstr "mål"
+
+#~ msgid "The relay domain this alias points to"
+#~ msgstr "Den relay domän detta alias pekar mot"
+
+#~ msgid "Check to activate this alias"
+#~ msgstr "Markera för aktivera detta alias"
+
+#~ msgid "Relay domain %s does not exist"
+#~ msgstr "Relay domän %s finns inte"
+
+#~ msgid "Relay domain created"
+#~ msgstr "Relay domän skapad"
+
+#~ msgid "New relay domain"
+#~ msgstr "Ny relay domän"
+
+#~ msgid "Create"
+#~ msgstr "Skapa"
+
+#~ msgid "Relay domain deleted"
+#~ msgstr "Relay domän raderad"
