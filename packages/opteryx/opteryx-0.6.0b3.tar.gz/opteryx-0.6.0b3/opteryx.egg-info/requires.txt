@@ -1,0 +1,7 @@
+cityhash
+numpy
+orjson
+pyarrow>=9.0.0
+pyyaml
+typer
+cython
