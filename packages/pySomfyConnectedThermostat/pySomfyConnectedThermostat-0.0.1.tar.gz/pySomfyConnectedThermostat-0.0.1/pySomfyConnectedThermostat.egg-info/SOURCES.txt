@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pySomfyConnectedThermostat.egg-info/PKG-INFO
+pySomfyConnectedThermostat.egg-info/SOURCES.txt
+pySomfyConnectedThermostat.egg-info/dependency_links.txt
+pySomfyConnectedThermostat.egg-info/requires.txt
+pySomfyConnectedThermostat.egg-info/top_level.txt
+somfy_connected_thermostat/__init__.py
+somfy_connected_thermostat/auth.py
+somfy_connected_thermostat/models.py
