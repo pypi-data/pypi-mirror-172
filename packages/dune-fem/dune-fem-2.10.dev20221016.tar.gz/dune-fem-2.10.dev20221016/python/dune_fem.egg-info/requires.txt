@@ -1,0 +1,7 @@
+dune-alugrid<=2.10.dev20221016
+dune-grid<=2.10.dev20221016
+dune-istl<=2.10.dev20221016
+dune-localfunctions<=2.10.dev20221016
+fenics-ufl==2019.1.0
+matplotlib
+scipy
