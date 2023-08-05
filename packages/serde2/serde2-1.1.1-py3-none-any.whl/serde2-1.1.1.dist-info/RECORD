@@ -1,0 +1,10 @@
+serde/__init__.py,sha256=u8gd_-aP_z5-96JFNsqx3E9-4vylM3_2x1nwxjnVPnM,257
+serde/helper.py,sha256=VJiZDPiTkIdkpwZS0H_PlifgFhBOA6jKSydbbzRQOSw,1789
+serde/jl.py,sha256=bh_U5u3OZZEcijrHTrzMk70OEguRvDFDHSVvQpDNEC8,1616
+serde/json.py,sha256=zZCGUmNufSkPd8ckelu6imUcJsogB-BDJWyCj2Kt9Mo,887
+serde/pickle.py,sha256=WFJ5KGD_c3EP7cHH_ns8BP6YdBqIKBMrJaGBpucHQes,308
+serde/yaml.py,sha256=s1SoPUHPumM71ix2R9vpwyM1VgAuN9sXG2zCXVxr9dI,380
+serde2-1.1.1.dist-info/LICENSE,sha256=RFga2USXvuQy8Cm9bc_bQPGXZSjO10jTUVzHSEknUuI,1064
+serde2-1.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+serde2-1.1.1.dist-info/METADATA,sha256=Nj0FROiQFgw-_QZzTh7oCsZSJ3DD3RCWLiPHBey4h1Y,887
+serde2-1.1.1.dist-info/RECORD,,
