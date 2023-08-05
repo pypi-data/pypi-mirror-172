@@ -1,0 +1,17 @@
+// This is the strings library for Macal
+// You can use it by issuing this command:
+// include strings;
+
+replace_tokens = "` ~!@//$%^&*+=|\;:,?/'" + '"';
+
+len => (arg) external "ext_strings" , "strLen";
+left => (string arg, length) external "ext_strings" , "strLeft";
+mid => (string arg, start, length) external "ext_strings" , "strMid";
+toString => (arg) external "ext_strings" , "toString";
+contains => (string needle, string haystack) external "ext_strings" , "strContains";
+replace => (variable var, frm, with) external "ext_strings" , "strReplace";
+startsWith => (string haystack, string needle) external "ext_strings" , "startsWith";
+removeNonAscii => (text) external "ext_strings" , "removeNonAscii";
+replaceEx => (variable var, repl, by) external "ext_strings" , "replaceEx";
+padLeft => (string strng, char, amount) external "ext_strings" , "padLeft";
+padRight => (string strng, char, amount) external "ext_strings" , "padRight";

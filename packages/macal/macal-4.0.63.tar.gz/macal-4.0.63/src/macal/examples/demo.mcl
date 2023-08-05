@@ -1,0 +1,3 @@
+include demo_lib, system;
+
+console(area(4));

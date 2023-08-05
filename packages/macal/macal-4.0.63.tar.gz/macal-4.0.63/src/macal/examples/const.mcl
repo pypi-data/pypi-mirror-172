@@ -1,0 +1,6 @@
+include system;
+
+const i = 1;
+console(i*3);
+
+i += 1; // This causes: Runtime Error: Illegal assignment to a constant (i). @(6, 1)

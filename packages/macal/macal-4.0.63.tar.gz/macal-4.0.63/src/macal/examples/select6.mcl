@@ -1,0 +1,7 @@
+include aor, system;
+select distinct author as Author, title, test as Title from var where author == 'J.R.R. Tolkien' into y;
+select distinct author as Author, title, test as Title from var where author == 'Douglas Adams' merge into y;
+
+foreach y {
+	console(it);
+}

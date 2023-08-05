@@ -1,0 +1,6 @@
+include aor, system;
+console("Runtime test");
+
+foreach var[1] {
+	console($"'{it}' : {var[1][it]}");
+}

@@ -1,0 +1,30 @@
+/*
+ This is the math library for Macal
+ You can use it by issuing this command:
+ include math;
+ Author: Marco Caspers
+ */
+
+const PI  = 3.141592653589793;
+const E   = 2.718281828459045;
+const TAU = 6.283185307179586;
+
+round => (x, digits) external "ext_math", "math_round";
+floor => (x) external "ext_math", "math_floor";
+ceil => (x) external "ext_math", "math_ceil";
+
+cos => (x) external "ext_math", "math_cos";
+sin => (x) external "ext_math", "math_sin";
+tan => (x) external "ext_math", "math_tan";
+acos => (x) external "ext_math", "math_acos";
+asin => (x) external "ext_math", "math_asin";
+atan => (x) external "ext_math", "math_atan";
+
+sqrt => (x) external "ext_math", "math_sqrt";
+
+log => (x) external "ext_math", "math_log";
+log2 => (x) external "ext_math", "math_log2";
+log10 => (x) external "ext_math", "math_log10";
+
+exp => (x) external "ext_math", "math_exp";
+expm1 => (x) external "ext_math", "math_expm1";

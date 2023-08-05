@@ -1,0 +1,12 @@
+// This is the io library for Macal
+// You can use it by issuing this command:
+// include io;
+
+
+loadTextFile => (filename) external "ext_io", "loadTextFile";
+loadJSONFile => (filename) external "ext_io", "readJSONFile";
+exists => (filename) external "ext_io", "exists";
+saveTextFile => (filename, content) external "ext_io", "saveTextFile";
+saveJSONFile => (filename, content) external "ext_io", "writeJSONFile";
+getLastRun => (name, defaultIsoNow) external "ext_io", "getLastRun";
+setLastRun => (name, isoNow) external "ext_io", "setLastRun";
