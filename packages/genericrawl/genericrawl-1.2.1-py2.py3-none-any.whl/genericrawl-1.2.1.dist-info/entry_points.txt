@@ -1,0 +1,3 @@
+[console_scripts]
+genericrawl=genericrawl.main:main
+
