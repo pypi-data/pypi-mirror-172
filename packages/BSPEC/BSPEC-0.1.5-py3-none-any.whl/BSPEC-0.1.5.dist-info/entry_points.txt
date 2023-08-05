@@ -1,0 +1,2 @@
+[console_scripts]
+bspec = bspec.__main__:main
