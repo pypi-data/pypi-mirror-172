@@ -1,0 +1,10 @@
+esper>=2.1
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
+build
+twine

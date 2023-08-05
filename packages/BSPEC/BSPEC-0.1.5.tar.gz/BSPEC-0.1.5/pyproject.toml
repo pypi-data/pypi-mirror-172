@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BSPEC"
+version = "0.1.5"
+authors = [
+  { name="Ryan Julyan", email="ryan@julyan.biz" },
+]
+description = "A python based Plugin, Entity Component System (ECS) architecture designed with Business Specifications in mind. This package allows you to easily set up and use existing systems and components."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+keywords = ["ECS", "Plugin", "Dynamic", "Dynamic"]
+dependencies = [
+    "esper >= 2.1",
+]
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest", "build", "twine"]
+
+[project.urls]
+"Homepage" = "https://github.com/BSPEC/BSPEC"
+"Bug Tracker" = "https://github.com/BSPEC/BSPEC/issues"
+
+[project.scripts]
+bspec = "bspec.__main__:main"
+
+[tool.bumpver]
+current_version = "0.1.5"
+version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
+commit_message  = "Bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/bspec/__init__.py" = ["{version}"]
+"setup.py" = [
+    "{version}",
+    "{pep440_version}",
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+
