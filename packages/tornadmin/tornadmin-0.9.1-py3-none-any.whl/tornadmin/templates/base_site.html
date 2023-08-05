@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tornadmin</title>
+    <link href="{{ static_url('tornadmin/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ static_url('tornadmin/vendor/bootstrap/icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ static_url('tornadmin/style.css') }}" rel="stylesheet">
+    {% block header %}{% end %}
+</head>
+<body>
+
+{% block container %}
+{% end %}
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<script type="text/javascript" src="{{ static_url('tornadmin/vendor/jquery-3.3.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ static_url('tornadmin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script type="text/javascript" src="{{ static_url('tornadmin/main.js') }}"></script>
+{% block footer %}{% end %}
+</body>
+</html>

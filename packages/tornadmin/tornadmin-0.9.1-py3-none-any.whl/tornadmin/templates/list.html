@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% autoescape conditional_xhtml_escape %}
+
+{% block content %}
+
+{% include 'modules/flash.html' %}
+
+{% module Template(
+        'modules/header.html',
+        admin=admin,
+        heading=admin.name,
+        back_button=False,
+        add_button=True,
+        absolute_url=None
+    ) 
+%}
+
+{% set actions = admin.get_actions(handler) %}
+
+<div class="content">
+    <div class="list-header">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4">
+                <form method="GET">
+                    <div class="input-group list-search-form">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        </div>
+                        <input type="text" name="q" class="form-control" placeholder="Search..." value="{{ q }}">
+                    </div>
+                </form>
+                {% if q %}
+                <div class="mt-3">
+                    Showing results for: <strong>"{{ q }}"</strong>
+                    <a href="?{{ replace_qs(handler, ('q', None)) }}" class="btn btn-flat-primary ml-2"><i class="bi bi-x-circle"></i> CLEAR</a>
+                </div>
+                {% end %}
+            </div>
+            <div class="col-12 col-md-6 col-xl-8 mt-4 mt-md-0 text-left text-md-right">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static">
+                        <i class="bi bi-sliders"></i> Actions
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-md-right">
+                        <form id="actionForm" action="{{ reverse_url('admin:list', admin.app_slug, admin.slug) }}?{{ handler.request.query }}" method="POST">
+                            {% module xsrf_form_html() %}
+                            {% for action in actions %}
+                            {% if action.require_confirmation %}
+                            <button
+                                type="button"
+                                class="dropdown-item"
+                                data-newTab="{{ action.new_tab }}"
+                                {% if action.require_confirmation %}
+                                data-toggle="modal"
+                                data-target="#{{action.__name__}}Modal"
+                                {% end %}
+                            >
+                                {{ action.label }}
+                            </button>
+                            {% else %}
+                            <button
+                                class="dropdown-item"
+                                type="submit"
+                                name="_action"
+                                value="{{ action.__name__ }}"
+                                {% if action.new_tab %}formtarget="_blank"{% end %}
+                            >
+                                {{ action.label }}
+                            </button>
+                            {% end %}
+                            {% end %}
+                        </form>
+                    </div>
+                </div>
+                {% if selected_filters or o %}
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="collapse" data-target="#filtersRow">
+                    <i class="bi bi-funnel"></i> Filters
+                </button>
+                <div class="d-block mt-2">
+                    <a href="." class="btn btn-secondary">
+                        <i class="bi bi-x-circle"></i> Clear Filters
+                    </a>
+                </div>
+                {% else %}
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="collapse" data-target="#filtersRow">
+                    <i class="bi bi-funnel"></i> Filters
+                </button>
+                {% end %}
+            </div>
+        </div>
+        <form action="" method="GET">
+        <div class="row collapse" id="filtersRow">
+            <div class="col-12">
+                <div class="filters-container mt-4 pt-4">
+                    <div class="row">
+                        {% for filter in filters %}
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <span class="filter-name">{{ filter.get('label', get_display_name(filter['name'])) }}</span>
+                            {% for index, option in enumerate(filter['options']) %}
+                                {% if filter['name'] in selected_filters %}
+                                {% set option_selected = (option[1] in selected_filters[filter['name']]) %}
+                                {% else %}
+                                {% set option_selected = ((index == 0) and filter['type'] == 'radio') %}
+                                {% end %}
+                                <div class="custom-control custom-{{ filter['type'] }}">
+                                    <label>
+                                        <input {% if option_selected %}checked=""{% end %} class="custom-control-input" name="{{ filter['name'] }}" type="{{ filter['type'] }}" value="{{ index }}">
+                                        <span class="custom-control-label">{{ option[0] }}</span>
+                                    </label>
+                                </div>
+                            {% end %}
+                        </div>
+                        {% end %}
+
+                        {% set order_by = admin.get_order_by(handler) %}
+                        {% if order_by %}
+                        {% set selected_o = o or order_by[0][1] %}
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <span class="filter-name">Sort by</span>
+                            {% for option in order_by %}
+                            <div class="custom-control custom-radio">
+                                <label>
+                                    <input {% if option[1] == selected_o %}checked=""{% end %} class="custom-control-input" name="o" type="radio" value="{{ option[1] }}">
+                                    <span class="custom-control-label">{{ option[0] }}</span>
+                                </label>
+                            </div>
+                            {% end %}
+                        </div>
+                        {% end %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Apply</button>
+                <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#filtersRow">Close</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    {% if page.paginator.count %}
+    <div class="table-container">
+        <table class="table table-hover table-checkable">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="list_check_all" autocomplete="off">
+                            <label class="custom-control-label" for="list_check_all"></label>
+                        </div>
+                    </th>
+                    {% for header in headers %}
+                        <th>{{ header[1] }}</th>
+                    {% end %}
+                </tr>
+            </thead>
+            <tbody>
+                
+            {% for item in list_items %}
+                <tr>
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input list-check" type="checkbox" id="list_check_{{ item.id }}" autocomplete="off" name="_selected" form="actionForm" value="{{ item.id }}">
+                            <label class="custom-control-label" for="list_check_{{ item.id }}"></label>
+                        </div>
+                    </td>
+                    {% for index, header in enumerate(headers) %}
+                        {% set value = get_list_display(header[0], item, admin) %}
+                        <td>
+                            {% if index == 0 %}
+                            <a href="{{ reverse_url('admin:detail', admin.app_slug, admin.slug, item.id) }}">{{ value }}</a>
+                            {% else %}
+                                {{ value }}
+                            {% end %}
+                        </td>
+                    {% end %}
+                </tr>
+            {% end %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="empty-list-page">Nothing here</div>
+    {% end %}
+</div>
+
+{% for action in actions %}
+{% if action.require_confirmation %}
+<!-- Action confirmation Modal -->
+<div class="modal fade scale" id="{{ action.__name__ }}Modal" tabindex="-1" aria-labelledby="{{ action.__name__ }}ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="{{ action.__name__ }}ModalLabel">{{ action.modal_title }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="bi bi-x"></i></span>
+                </button>
+            </div>
+        
+            <div class="modal-body py-4">
+                {{ action.modal_body }}
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal">Close</button>
+                <button
+                    class="btn btn-{{ action.modal_button_class }}"
+                    type="submit"
+                    name="_action"
+                    value="{{ action.__name__ }}"
+                    form="actionForm"
+                    {% if action.new_tab %}formtarget="_blank"{% end %}
+                >
+                    {{ action.modal_button_label }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% end %}
+{% end %}
+
+{% include 'modules/pagination.html' %}
+
+{% end %}

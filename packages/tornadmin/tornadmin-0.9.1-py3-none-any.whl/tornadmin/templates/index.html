@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% module Template(
+        'modules/header.html',
+        admin=None,
+        heading='Home',
+        back_button=False,
+        add_button=False,
+        absolute_url=None
+    ) 
+%}
+
+{% end %}
