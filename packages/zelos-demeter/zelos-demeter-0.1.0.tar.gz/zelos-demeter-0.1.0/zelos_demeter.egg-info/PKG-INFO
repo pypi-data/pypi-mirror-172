@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: zelos-demeter
+Version: 0.1.0
+Summary: better back testing tool for uniswap v3
+Home-page: https://zelos-demeter.readthedocs.io
+Author: zelos team
+Author-email: liang.hou@antalpha.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.10
+License-File: LICENSE
+
+UNKNOWN
+
