@@ -1,0 +1,13 @@
+squareandcube/__init__.py,sha256=31CTKzo2wRXPROPvox1x4mv5tZyJSl7QuEJQmRfgbS8,48
+squareandcube/cube.py,sha256=1tLQbypx3JmpY0NBTUuoqM5N6WcxXbk298RKPJWDYpw,112
+squareandcube/square.py,sha256=TJNTz1iVymyrwo-ceWGd0AKIXT43efBxbj4xNiAfD_8,113
+squareofnumber/__init__.py,sha256=YpmLra0oJt4rZR2tsMyD-lBALroWe3tcNLmvavTv8yo,25
+squareofnumber/square.py,sha256=69WbnLQAA_mzZ5Za92BigEcCQy1Xrhc7Zt2WBdiNkXc,151
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/cubetest.py,sha256=KrlW_sBmKKyJUiLAEj8ydkHmEnS9Fhg-B9_PY-gsD4E,187
+tests/squaretest.py,sha256=ihgG2p1b19f-vxr0ibRp3a92LEXhBi1cXpl_ArtFjYQ,179
+sqaureandcube-0.0.4.dist-info/LICENSE,sha256=utRTM62vR301fZOE7j_HoMwfG7rb4qB6pLSUKciZ4mg,1054
+sqaureandcube-0.0.4.dist-info/METADATA,sha256=V--xVxT9Lqq_Ox4kosP-OZvwNuf6FNYhSaQsJomvd4Q,639
+sqaureandcube-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sqaureandcube-0.0.4.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+sqaureandcube-0.0.4.dist-info/RECORD,,
