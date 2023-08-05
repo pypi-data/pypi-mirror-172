@@ -1,0 +1,9 @@
+{
+  "transforms.py": true,
+  "transforms_test.py::test_train_test_splitter_split_by[0.5-0.5]": true,
+  "transforms_test.py::test_train_test_splitter_split_by[0.5-None]": true,
+  "transforms_test.py::test_train_test_splitter_split_by[None-0.5]": true,
+  "transforms_test.py::test_train_val_test_splitter_split_by[0.5-0.5]": true,
+  "transforms_test.py::test_train_val_test_splitter_split_by[0.5-None]": true,
+  "transforms_test.py::test_train_val_test_splitter_split_by[None-0.5]": true
+}
