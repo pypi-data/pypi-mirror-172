@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: py-temp-mails-api
+Version: 1.3
+Summary: pyTempMailsApi is a library that allows you to easily interact with the site https://temp-mail.org/
+Home-page: https://github.com/onigirisell/pyTempMailsApi
+Author: Fitrad3w
+Author-email: onigirisell@protonmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: grequests
+Requires-Dist: requests
+
+# pyTempMailsApi
+
+pyTempMailsApi is a library that allows you to easily interact with the site https://temp-mail.org/
+
+# Features
+<ul dir="auto">
+<li>Create a new mailbox</li>
+<li>Get mailbox name</li>
+<li>Get mails list</li>
+<li>get message information by id</li>
+<li>Creating new mailboxes</li>
+<li>Get mailbox name of multiple accounts</li>
+<li>Get emails list of multiple accounts</li>
+<li>Get information about a message by ID from multiple messages</li>
+</ul>
+
+# Quick Start
+```python
+pip install py-temp-mails-api
+```
+# Class tempMailApi and tempMailApiMultipleData
+Class | variables | import
+:---: | :---: | :---:
+*tempMailApi* | token | from requests import Session
+*tempMailApiMultipleData* | tokenList | from grequests import get, post, map
+
+# tempMailApi (requests)
+def | variables | return | #
+:---: | :---: | :---: | :---:
+*createNewMailBox* | None | dict | creates a new mailbox and gets a dict: token, mailbox (it is not necessary to transfer the token)
+*getMailBox* | None | str | gets the name of the mailbox (token required)
+*getMailsList* | None | list | gets a list of messages [0 element is the first message] (token required)
+*getMailById* | id | dict | get message information by id (it is not necessary to transfer the token)
+
+```python
+from tempmailsapipy import tempMailApi
+
+def test():
+  #creates a new mailbox and gets a dict: token, mailbox (it is not necessary to transfer the token)
+  regAccount = tempMailApi().createNewMailBox()
+
+  userTempMail = tempMailApi(token = regAccount['token'])
+
+  #gets the name of the mailbox (token required)
+  mailBox = userTempMail.getMailBox()
+
+  #gets a list of messages [0 element is the first message] (token required)
+  getMessages = userTempMail.getMailsList()
+
+  #get message information by id (it is not necessary to transfer the token)
+  mailId = tempMailApi().getMailById(id = '634c9c7d7803b600764ae905')
+
+  print(f"tempMailApi\n{regAccount=}\n{mailBox=}\n{getMessages=}\n{mailId=}")
+
+if __name__ == '__main__':
+  test()
+```
+
+# tempMailApiMultipleData (grequests)
+def | variables | return | #
+:---: | :---: | :---: | :---:
+*createNewMailBoxesMultipleData* | qty | list | creates a new mailboxes and gets a dict: token, mailbox [Max qty =500!] (it is not necessary to transfer the token)
+*getMailBoxesMultipleData* | None | list | gets the name of the mailboxes (token required)
+*getMailsListMultipleData* | None | list | gets a dict: mailbox, messages [0 element is the first message] (token required)
+*getMailsByIdMultipleData* | idList | list | gets a dict: _id, receivedAt, user, mailbox, from, subject, bodyPreview, bodyHtml, attachmentsCount, attachments, createdAt (it is not necessary to transfer the token)
+
+```python
+from tempmailsapipy import tempMailApiMultipleData
+
+def testMultipleData():
+  #creates a new mailboxes and gets a dict: token, mailbox [Max qty =500!] (it is not necessary to transfer the token)
+  regAccountListMultipleData = tempMailApiMultipleData().createNewMailBoxesMultipleData(qty=5)
+
+  usersTempMailMultipleData = tempMailApiMultipleData(tokenList = [regAccount['token'] for regAccount in regAccountListMultipleData])
+
+  #gets the name of the mailboxes (token required)
+  mailBoxMultipleData = usersTempMailMultipleData.getMailBoxesMultipleData()
+
+  #gets a dict: mailbox, messages [0 element is the first message] (token required)
+  getMessagesMultipleData = usersTempMailMultipleData.getMailsListMultipleData()
+
+  #gets a dict: _id, receivedAt, user, mailbox, from, subject, bodyPreview, bodyHtml, attachmentsCount, attachments, createdAt (it is not necessary to transfer the token)
+  mailIdMultipleData = tempMailApiMultipleData().getMailsByIdMultipleData(idList = ['634c9c7d7803b600764ae905','634ca0659cae5c003a8564ec'])
+
+  print(f"\n\ntempMailApiMultipleData\n{regAccountListMultipleData=}\n{mailBoxMultipleData=}\n{getMessagesMultipleData=}\n{mailIdMultipleData=}")
+
+if __name__ == '__main__':
+  testMultipleData()
+```
