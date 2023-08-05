@@ -1,0 +1,78 @@
+#!python
+import decimal
+
+import click
+
+from refurbished import ProductNotFoundError, Store, feedback
+
+
+@click.command()
+@click.argument("country")
+@click.argument(
+    "product_family",
+    type=click.Choice(
+        ["accessories", "appletvs", "macs", "iphones", "ipads", "watches"]
+    ),
+)
+@click.option("--min-saving", default=0.0, help="Minimum saving")
+@click.option(
+    "--min-saving-percentage", default=0.0, help="Minimum saving percentage"
+)
+@click.option(
+    "--max-price", default=None, type=decimal.Decimal, help="Maximum price"
+)
+@click.option(
+    "--max-previous-price",
+    default=None,
+    type=decimal.Decimal,
+    help="Maximum previous price",
+)
+@click.option("--name", default=None, help="Filter product by name")
+@click.option("--format", default="text", help="Set output format")
+def get_products(
+    country: str,
+    product_family: str,
+    min_saving: float,
+    min_saving_percentage: float,
+    max_price: decimal.Decimal,
+    max_previous_price: decimal.Decimal,
+    name: str,
+    format: str,
+):
+    # set feedback
+    feedback.set_format(format)
+
+    # creates a store for the selected country
+    store = Store(country)
+
+    # checking the selected procuct is supported by refurbished
+    search_products = getattr(store, f"get_{product_family}", None)
+    if not callable(search_products):
+        feedback.echo(
+            f"Product family {product_family} is not supported by refurbished",
+            err=True,
+        )
+        return
+
+    try:
+        products = search_products(
+            min_saving=min_saving,
+            min_saving_percentage=min_saving_percentage,
+            max_price=max_price,
+            max_previous_price=max_previous_price,
+            name=name,
+        )
+
+        feedback.result(feedback.ProductsResult(products))
+
+    except ProductNotFoundError:
+        # the selected procuct is not available on this store
+        feedback.echo(
+            f"Product '{product_family}' is "
+            f"not available in the '{country}' store",
+            err=True,
+        )
+
+
+if __name__ == "__main__":
+    get_products(auto_envvar_prefix="REFURBISHED")
