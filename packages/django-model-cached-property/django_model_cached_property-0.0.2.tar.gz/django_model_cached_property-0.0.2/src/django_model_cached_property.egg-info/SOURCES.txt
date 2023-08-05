@@ -1,0 +1,15 @@
+AUTHORS.md
+AUTHORS.txt
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/django_model_cached_property/__init__.py
+src/django_model_cached_property/invalidate_model_cached_property.py
+src/django_model_cached_property/model_cached_property.py
+src/django_model_cached_property.egg-info/PKG-INFO
+src/django_model_cached_property.egg-info/SOURCES.txt
+src/django_model_cached_property.egg-info/dependency_links.txt
+src/django_model_cached_property.egg-info/not-zip-safe
+src/django_model_cached_property.egg-info/requires.txt
+src/django_model_cached_property.egg-info/top_level.txt
