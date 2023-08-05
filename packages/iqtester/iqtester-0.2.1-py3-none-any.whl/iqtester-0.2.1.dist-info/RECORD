@@ -1,0 +1,12 @@
+iqtester/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iqtester/__main__.py,sha256=2aJdu3meLNph9vaq58KK4D0jP5z73aYu1dbN4toQKAI,159
+iqtester/board.py,sha256=TjJDXcd0S61GpqD8xNqD6NquFMgI70VJNkIfEhBr_oQ,15103
+iqtester/formatter.py,sha256=nYXlQgBLMRNS6fkVEpiffn-E0nBXX_29GYTEHkkId6I,5502
+iqtester/game.py,sha256=VxWiX2REDjFTKh-2NYVeHxXoKAXrqFHRwhQduxB5va0,12610
+iqtester/session.py,sha256=vuJFkmNSxGnv9FI-Nvlen9z0Fz3wJNKlMLD-lBaTKvw,8942
+iqtester-0.2.1.dist-info/LICENSE.md,sha256=qeD4LtDieQmLJmYt7Z9_zyr53uDe2avHzWBk_fcDHGA,1070
+iqtester-0.2.1.dist-info/METADATA,sha256=aYI7JtmTdKfBJsq9jzRQf3Zk1I7sYDUu9FZh4wClKbo,3506
+iqtester-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+iqtester-0.2.1.dist-info/entry_points.txt,sha256=gysS27X8Wetea2Kh8bQUP_VaYHkyUfQuUFdrhbIuWF0,53
+iqtester-0.2.1.dist-info/top_level.txt,sha256=2SlvUqtIR0pDmUTEnXxu2i6Mu9y7HoQOpYbkqXp-1u8,9
+iqtester-0.2.1.dist-info/RECORD,,

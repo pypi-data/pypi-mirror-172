@@ -1,0 +1,2 @@
+[console_scripts]
+iq-tester = iqtester.__main__:main
