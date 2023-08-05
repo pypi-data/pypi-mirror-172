@@ -1,0 +1,1 @@
+const t="en-CA",e=new Intl.DateTimeFormat(t,{timeZone:"UTC"}),m=new Intl.DateTimeFormat(t,{dateStyle:"short",timeStyle:"medium"}),n=new Intl.DateTimeFormat(t,{timeStyle:"medium"});export{e as D,n as T,m as a};
