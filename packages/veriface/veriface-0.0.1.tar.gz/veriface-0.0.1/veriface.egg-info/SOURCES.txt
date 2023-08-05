@@ -1,0 +1,12 @@
+README
+setup.py
+eaface/__init__.py
+eaface/face_recognition.py
+stu/__init__.py
+stu/settings.py
+stu/urls.py
+stu/wsgi.py
+veriface.egg-info/PKG-INFO
+veriface.egg-info/SOURCES.txt
+veriface.egg-info/dependency_links.txt
+veriface.egg-info/top_level.txt
