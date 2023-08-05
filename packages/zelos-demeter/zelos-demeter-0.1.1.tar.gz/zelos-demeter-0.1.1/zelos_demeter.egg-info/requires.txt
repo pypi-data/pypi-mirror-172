@@ -1,0 +1,4 @@
+pandas>=1.4.4
+tqdm>=4.64.1
+google-cloud-bigquery>=3.3.5
+db-dtypes>=1.0.4
