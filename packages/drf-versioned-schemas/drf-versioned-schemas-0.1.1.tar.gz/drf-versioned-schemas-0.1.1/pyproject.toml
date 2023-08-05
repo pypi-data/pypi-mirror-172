@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61", "setuptools.scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# name it as your package name
+name = "drf-versioned-schemas"
+# semetric versions
+version = "0.1.1"
+# describe the package within one sentence
+description = "Versioned models support for Django REST Framework"
+authors = [
+    {name = "QuantTide Inc.", email = "opensource@quanttide.com"}
+]
+license = {text = "BSD 3-Clause License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: Django",
+]
+requires-python = '>=3'
+dependencies = [
+    "django>=3.0",
+    "djangorestframework>=3.0",
+    "drf-nested-routers",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+envlist =
+       {py37,py38,py39}-django{3.2,4.0,4.1}-drf{3.13}
+
+[gh-actions]
+python =
+    3.7: py37
+    3.8: py38
+    3.9: py39
+
+[testenv]
+commands = ./runtests.py --nolint
+setenv =
+       PYTHONDONTWRITEBYTECODE=1
+deps =
+       django3.2: Django>=3.2,<3.3
+       django4.0: Django>=4.0,<4.1
+       django4.1: Django>=4.1,<4.2
+       drf3.13: djangorestframework>=3.13,<3.14
+"""
