@@ -1,0 +1,8 @@
+speedbump/__init__.py,sha256=CVlTaD4TfNvqvvtymYPaPslo_mDy1y32YDYv2kttQY0,2229
+speedbump/_version.py,sha256=PnNE6QcZUt5oCbsY9H18IYOOjU4sCkdXWy-DXeDUdGc,176
+speedbump/cli.py,sha256=zHisJKqGQJzx_exLdBWOpyYzWOAjB2cXms3k8LbQm2A,108
+speedbump-0.0.0.dist-info/METADATA,sha256=_7QF6_0Hwb6O2_cA5vnUSCim8Zl4Wq6WLKCKIGJjjc4,220
+speedbump-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+speedbump-0.0.0.dist-info/entry_points.txt,sha256=Vlx0plfwhKrA-FqXz4VNI8gBTbabf78jYLTSFZwH6U4,49
+speedbump-0.0.0.dist-info/top_level.txt,sha256=9n-_XEsu4AT_nfDBBbHSiQ_WmOlIEpqUq7hVI0pb208,10
+speedbump-0.0.0.dist-info/RECORD,,
