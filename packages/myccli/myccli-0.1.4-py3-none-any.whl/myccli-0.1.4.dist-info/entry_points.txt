@@ -1,0 +1,3 @@
+[console_scripts]
+myc=myccli.main:run_cli
+
