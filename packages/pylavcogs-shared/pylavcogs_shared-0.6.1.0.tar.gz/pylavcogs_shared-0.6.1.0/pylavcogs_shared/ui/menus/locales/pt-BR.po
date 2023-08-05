@@ -1,0 +1,191 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavcogs-shared\n"
+"POT-Creation-Date: 2022-09-06 19:38+0000\n"
+"PO-Revision-Date: 2022-09-12 23:04\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylavcogs-shared\n"
+"X-Crowdin-Project-ID: 535248\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/menus/locales/messages.pot\n"
+"X-Crowdin-File-ID: 598\n"
+"Language: pt_BR\n"
+
+#: pylavcogs_shared/ui/menus/generic.py:115
+#: pylavcogs_shared/ui/menus/nodes.py:197
+#: pylavcogs_shared/ui/menus/playlist.py:255
+#: pylavcogs_shared/ui/menus/playlist.py:470
+msgid "You are not authorized to interact with this"
+msgstr "Você não está autorizado a interagir com isto"
+
+#: pylavcogs_shared/ui/menus/nodes.py:60
+msgid "Enter the domain or IP address of the host"
+msgstr "Digite o domínio ou endereço IP do host"
+
+#: pylavcogs_shared/ui/menus/nodes.py:61
+#: pylavcogs_shared/ui/menus/nodes.py:495
+msgid "Host"
+msgstr "Servidor"
+
+#: pylavcogs_shared/ui/menus/nodes.py:68
+msgid "Enter the host port to connect to"
+msgstr "Digite a porta de host para se conectar"
+
+#: pylavcogs_shared/ui/menus/nodes.py:69
+#: pylavcogs_shared/ui/menus/nodes.py:503
+msgid "Port"
+msgstr "Porta"
+
+#: pylavcogs_shared/ui/menus/nodes.py:76
+msgid "Enter the node's password"
+msgstr "Digite a senha do nó"
+
+#: pylavcogs_shared/ui/menus/nodes.py:77
+#: pylavcogs_shared/ui/menus/nodes.py:511
+msgid "Password"
+msgstr "Palavra-passe"
+
+#: pylavcogs_shared/ui/menus/nodes.py:84
+msgid "Enter an easy to know name for the node"
+msgstr "Digite um nome fácil para saber o nome do nó"
+
+#: pylavcogs_shared/ui/menus/nodes.py:85
+#: pylavcogs_shared/ui/menus/nodes.py:519
+msgid "Name"
+msgstr "Nome:"
+
+#: pylavcogs_shared/ui/menus/nodes.py:92
+msgid "Enter a timeout in seconds"
+msgstr "Insira um tempo limite em segundos"
+
+#: pylavcogs_shared/ui/menus/nodes.py:93
+#: pylavcogs_shared/ui/menus/nodes.py:527
+msgid "Timeout"
+msgstr "Tempo esgotado"
+
+#: pylavcogs_shared/ui/menus/nodes.py:108
+#: pylavcogs_shared/ui/menus/nodes.py:555
+msgid "Source to disable"
+msgstr "Fonte para desativar"
+
+#: pylavcogs_shared/ui/menus/nodes.py:218
+#: pylavcogs_shared/ui/menus/nodes.py:663
+msgid "Name set to {name}"
+msgstr "Nome definido como {name}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:231
+#: pylavcogs_shared/ui/menus/nodes.py:676
+msgid "Password set to {password}"
+msgstr "Senha definida para {password}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:249
+#: pylavcogs_shared/ui/menus/nodes.py:694
+msgid "Host set to {host}"
+msgstr "Host definido como {host}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:266
+#: pylavcogs_shared/ui/menus/nodes.py:711
+msgid "Invalid port"
+msgstr "Porta inválida"
+
+#: pylavcogs_shared/ui/menus/nodes.py:274
+#: pylavcogs_shared/ui/menus/nodes.py:719
+msgid "Port set to {port}"
+msgstr "Porta definida para {port}"
+
+#: pylavcogs_shared/ui/menus/nodes.py:291
+#: pylavcogs_shared/ui/menus/nodes.py:736
+msgid "Invalid timeout, it must be a number in seconds"
+msgstr "Tempo limite inválido, deve ser um número em segundos"
+
+#: pylavcogs_shared/ui/menus/nodes.py:299
+#: pylavcogs_shared/ui/menus/nodes.py:744
+msgid "Timeout set to {timeout} seconds"
+msgstr "Tempo limite definido para {timeout} segundos"
+
+#: pylavcogs_shared/ui/menus/nodes.py:494
+msgid "Change the domain or IP address of the host"
+msgstr "Alterar o domínio ou endereço IP do host"
+
+#: pylavcogs_shared/ui/menus/nodes.py:502
+msgid "Change the host port to connect to"
+msgstr "Altere a porta do host para se conectar"
+
+#: pylavcogs_shared/ui/menus/nodes.py:510
+msgid "Change the node's password"
+msgstr "Alterar a senha do nó"
+
+#: pylavcogs_shared/ui/menus/nodes.py:518
+msgid "Change the name of this node"
+msgstr "Mudar o nome deste nó"
+
+#: pylavcogs_shared/ui/menus/nodes.py:526
+msgid "Enter the new timeout for this node"
+msgstr "Digite o novo tempo limite para este nó"
+
+#: pylavcogs_shared/ui/menus/player.py:94
+msgid "selected"
+msgstr "Selecionado"
+
+#: pylavcogs_shared/ui/menus/player.py:101
+msgid "inactive"
+msgstr "Inativo"
+
+#: pylavcogs_shared/ui/menus/player.py:111
+msgid "all"
+msgstr "Todos"
+
+#: pylavcogs_shared/ui/menus/player.py:207
+msgid "Not connected anywhere"
+msgstr "Não está conectado em nenhum lugar"
+
+#: pylavcogs_shared/ui/menus/playlist.py:186
+#: pylavcogs_shared/ui/menus/playlist.py:317
+msgid "Please enter the playlist URL"
+msgstr "Por favor, insira o URL da playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:187
+#: pylavcogs_shared/ui/menus/playlist.py:318
+msgid "Playlist URL"
+msgstr "URL da playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:192
+msgid "Please enter the playlist name"
+msgstr "Por favor, digite o nome da lista de reprodução"
+
+#: pylavcogs_shared/ui/menus/playlist.py:192
+#: pylavcogs_shared/ui/menus/playlist.py:323
+msgid "Playlist Name"
+msgstr "Nome da playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:323
+msgid "Please enter the new playlist name"
+msgstr "Por favor, digite o novo nome da playlist"
+
+#: pylavcogs_shared/ui/menus/playlist.py:328
+msgid "What query to add to the playlist"
+msgstr "Qual consulta adicionar à lista de reprodução"
+
+#: pylavcogs_shared/ui/menus/playlist.py:329
+#: pylavcogs_shared/ui/menus/playlist.py:337
+msgid "Query"
+msgstr "Requisição"
+
+#: pylavcogs_shared/ui/menus/playlist.py:336
+msgid "What query to remove from the playlist"
+msgstr "Qual consulta remover da lista de reprodução"
+
+#: pylavcogs_shared/ui/menus/queue.py:451
+msgid "Select Track To Remove"
+msgstr "Selecione a faixa para remover"
+
+#: pylavcogs_shared/ui/menus/queue.py:453
+msgid "Select Track To Play Now"
+msgstr "Selecione a faixa para tocar agora"
+
