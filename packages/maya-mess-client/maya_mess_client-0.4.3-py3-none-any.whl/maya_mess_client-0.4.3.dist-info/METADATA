@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: maya-mess-client
+Version: 0.4.3
+Summary: Maya Mess Client
+Author: Maya
+Author-email: maya@dihalt.ru
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
