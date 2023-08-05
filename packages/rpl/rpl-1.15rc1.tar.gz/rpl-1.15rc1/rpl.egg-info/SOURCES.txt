@@ -1,0 +1,12 @@
+COPYING
+MANIFEST.in
+README.md
+man-include.1
+rpl
+setup.cfg
+setup.py
+rpl.egg-info/PKG-INFO
+rpl.egg-info/SOURCES.txt
+rpl.egg-info/dependency_links.txt
+rpl.egg-info/requires.txt
+rpl.egg-info/top_level.txt
