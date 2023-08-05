@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fnsafe
+Version: 0.0.1
+Summary: Not raising functions like in rust.
+License: MIT
+Keywords: error,exception,function,functional,raise,rust,safe
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
