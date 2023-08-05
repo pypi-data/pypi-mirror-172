@@ -1,0 +1,10 @@
+recordio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recordio/recordio.py,sha256=oFA-tVL23c-cXPMEQNrdMNGZMwSPeMj25d70fq6y3hU,1096
+recordio/recordio_test.py,sha256=pCLZURoZf4tcj2VP5JwrCx6WiCos9ubhOf9rZO1hHR4,961
+recordio/varint.py,sha256=1nfifIugrjWq5lZdowZ04wTgzMhXkqhBCtUfbuolaDs,1553
+recordio/varint_test.py,sha256=mYQKHe-D755b6_oqty2__IFJdPalPu_cj-RHq2BTib0,1100
+recordio_py-0.2.0.dist-info/LICENSE,sha256=kNPgqhHxDpoYtgLMAZ3BsBozOqrYaa5j0yxAbSOL1cE,1066
+recordio_py-0.2.0.dist-info/METADATA,sha256=VfH5LJcnf8ttjA7KsFfkFSiseILbC8JsHa6R7BNnhE0,2497
+recordio_py-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+recordio_py-0.2.0.dist-info/top_level.txt,sha256=WRNJgbFMJAvxBCBb6mle3J9t8GlPowNg12CA5tQIXCo,9
+recordio_py-0.2.0.dist-info/RECORD,,
