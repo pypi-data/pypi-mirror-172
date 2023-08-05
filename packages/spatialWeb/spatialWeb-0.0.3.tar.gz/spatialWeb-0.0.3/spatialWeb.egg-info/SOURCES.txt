@@ -1,0 +1,8 @@
+setup.py
+spatialWeb/__init__.py
+spatialWeb/gem2mtx.py
+spatialWeb/utils.py
+spatialWeb.egg-info/PKG-INFO
+spatialWeb.egg-info/SOURCES.txt
+spatialWeb.egg-info/dependency_links.txt
+spatialWeb.egg-info/top_level.txt
