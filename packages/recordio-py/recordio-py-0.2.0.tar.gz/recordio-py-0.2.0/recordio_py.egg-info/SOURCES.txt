@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+recordio/__init__.py
+recordio/recordio.py
+recordio/recordio_test.py
+recordio/varint.py
+recordio/varint_test.py
+recordio_py.egg-info/PKG-INFO
+recordio_py.egg-info/SOURCES.txt
+recordio_py.egg-info/dependency_links.txt
+recordio_py.egg-info/requires.txt
+recordio_py.egg-info/top_level.txt
