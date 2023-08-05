@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/safefunc.py
+src/safefunc.egg-info/PKG-INFO
+src/safefunc.egg-info/SOURCES.txt
+src/safefunc.egg-info/dependency_links.txt
+src/safefunc.egg-info/top_level.txt
