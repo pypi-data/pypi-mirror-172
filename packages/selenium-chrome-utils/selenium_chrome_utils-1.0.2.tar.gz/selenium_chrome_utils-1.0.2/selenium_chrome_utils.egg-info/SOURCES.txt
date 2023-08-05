@@ -1,0 +1,12 @@
+setup.py
+selenium_chrome_utils.egg-info/PKG-INFO
+selenium_chrome_utils.egg-info/SOURCES.txt
+selenium_chrome_utils.egg-info/dependency_links.txt
+selenium_chrome_utils.egg-info/top_level.txt
+selenium_utils/__init__.py
+selenium_utils/browser_utils.py
+selenium_utils/colors.py
+selenium_utils/image_bytes.py
+selenium_utils/logo.py
+selenium_utils/multiple_chrome_utils.py
+selenium_utils/seleniumObject.py
