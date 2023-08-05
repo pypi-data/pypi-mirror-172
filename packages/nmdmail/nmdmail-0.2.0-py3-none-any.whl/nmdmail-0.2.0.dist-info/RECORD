@@ -1,0 +1,10 @@
+nmdmail/__init__.py,sha256=a01FH3YPUahdvAQh5rkdyNPjdOJrWJc3f6DtzBcZ2Wg,73
+nmdmail/api.py,sha256=rQFu9k1IkEvQKt8FYhspVqEy6Dq9e7BvjYIUHhxxt-M,4612
+nmdmail/cli.py,sha256=7I9WBaIsH1yOVmTpreXwyWjlP29smG9GBJlQGe6c5mI,2643
+nmdmail/default.css,sha256=Ina5MZGozTfUxByh9ErrooYsH-5UddsP3X3mAiILS0w,901
+nmdmail/helpers.py,sha256=RKxgIJmDzCu4L1SWzLyoY3khLrO26GiBhmncsUGuu4A,662
+nmdmail-0.2.0.dist-info/entry_points.txt,sha256=PUBbxw6WEqpmiKFvNsX406yxCzdQnZ_AQRNvp1ZhE4U,44
+nmdmail-0.2.0.dist-info/LICENSE,sha256=bKNWjALGSdLoR-110ReemWDb9tQmNZ2Io_D_kuNSvNI,1281
+nmdmail-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+nmdmail-0.2.0.dist-info/METADATA,sha256=qFQsAv5_ZNbm80GB4-fPLM4CqTsmgEHYAeDO3cKp5tY,6648
+nmdmail-0.2.0.dist-info/RECORD,,
