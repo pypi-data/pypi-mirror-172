@@ -1,0 +1,14 @@
+anpp/__init__.py,sha256=6IXCFY8abm-0te8BN08OximOcYJMzBsjPVdbuOTwSzM,433
+anpp/template/LICENSE,sha256=C8J8LjXHgGsfJJ8FP5R__C1bEqIpoWa-eRDyhzGeceA,1063
+anpp/template/Makefile,sha256=Izs98fPuScTkaoB1mbI0mGJAFjj8a7rWFinXcTnbjiU,1225
+anpp/template/androiddir.bash,sha256=ErRVx3zlV2Jxg551QmGK3pb3TjL8rqhj6jnJXSAEKPA,9225
+anpp/template/androiddir.bash.template,sha256=i9ZIiuZsIKLYGKVBakkyOnkBn6hemq9OT9CHWqvCMgg,7631
+anpp/template/config.json,sha256=2PXn7cCJnCoLNA93AxhDUWnu4a40NwvVXyNFov2P-K8,2842
+anpp/template/custom.sh,sha256=hUBw94-fB2QRdS97DkEwNYEdRIseZhVtXf2yUnFC2M4,2434
+anpp/template/generator.py,sha256=WvK30zQXX5ybbvLxfl4M2qPBHbCE172923xNB3rJPro,7759
+anpp/template/tools/custom.py,sha256=nrH5axdGE4xsj23BM_JTCXNa_ysqa5h-iEmgjXGPzp0,82
+anpp-0.1.0.dist-info/METADATA,sha256=Cv0PEkp90J40C_Ib9bts2mvLLZwEQNi5knLkeKpbDfw,6898
+anpp-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+anpp-0.1.0.dist-info/entry_points.txt,sha256=3nxJINW7Rc2O3SxpAsZPePV4WtD0-RipikXyx9RvKAg,42
+anpp-0.1.0.dist-info/top_level.txt,sha256=VnQnFb0xXsShQLZwNK5unzQqEsjc0nxIrlIUI3ImEl4,5
+anpp-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,146 @@
+{
+	"version": "0.0.1",
+	/**
+	 * defaultPath: 默认路径，用于存放所有项目的根目录，所有的目录跳转基于该目录
+	 */
+	"defaultPath": "~/zengjf",
+	/**
+	 * project支持的key，这里相当于是定义，后面projects数组中的每个project相当于赋值，
+	 * 定义了不一定要赋值，没赋值会被'.'(目录)替换
+	 */
+	"project_keys": [
+		"project",
+		"product",
+		"kernel",
+		"dts",
+		"bootloaderStage1",
+		"bootloaderStage2",
+		"out",
+		"efuse",
+		"image",
+		"output"
+	],
+	/**
+	 * project数组，每个project可以包含project_keys数组中的字段，不一定需要完全包含 
+	 */
+	"projects": [
+		{
+			"project": "M0-project",
+			"product": "M0",
+			"kernel": "kernel-4.9",
+			"dts": "arch/arm64/boot/dts/mediatek/",
+			"bootloaderStage1": "vendor/mediatek/proprietary/bootable/bootloader/preloader",
+			"bootloaderStage2": "vendor/mediatek/proprietary/bootable/bootloader/lk",
+			"out": "out/target/product",
+			"efuse": "vendor/mediatek/proprietary/scripts/sign-image_v2"
+		},
+		{
+			"project": "M8-project",
+			"product": "k62v1_64",
+			"kernel": "kernel-4.19",
+			"dts": "arch/arm64/boot/dts/mediatek/",
+			"bootloaderStage1": "vendor/mediatek/proprietary/bootable/bootloader/preloader",
+			"bootloaderStage2": "vendor/mediatek/proprietary/bootable/bootloader/lk",
+			"out": "out/target/product",
+			"efuse": "vendor/mediatek/proprietary/scripts/sign-image_v2",
+			"image": "preloader.bin lk.img",
+			"output": "prebuild_images"
+		}
+	],
+	/**
+	 * 每一个component用于合成一条支持的命令，cmd字段用于生成alias，combine字段用于合成alias的路径，
+	 * combine数组中的内容来自project_keys中的组合
+	 */
+	"components": [
+		{
+			"cmd": "android",
+			"type": "dir",
+			"combine":[
+				"defaultPath",
+				"project"
+			]
+		},
+		{
+			"cmd": "kernel",
+			"type": "dir",
+			"combine":[
+				"defaultPath",
+				"project",
+				"kernel"
+			]
+		},
+		{
+			"cmd": "dts",
+			"type": "dir",
+			"combine":[
+				"defaultPath",
+				"project",
+				"kernel",
+				"dts"
+			]
+		},
+		{
+			"cmd": "out",
+			"type": "dir",
+			"combine":[
+				"defaultPath",
+				"project",
+				"out",
+				"product"
+			]
+		},
+		{
+			"cmd": "bs1",
+			"type": "dir",
+			"combine":[
+				"defaultPath",
+				"project",
+				"bootloaderStage1"
+			]
+		},
+		{
+			"cmd": "bs2",
+			"type": "dir",
+			"combine":[
+				"defaultPath",
+				"project",
+				"bootloaderStage2"
+			]
+		},
+		{
+			"cmd": "efuse",
+			"type": "dir",
+			"combine":[
+				"defaultPath",
+				"project",
+				"efuse"
+			]
+		},
+		{
+			"cmd": "images",
+			"type": "file",
+			"combine":[
+				"defaultPath",
+				"project",
+				"out",
+				"product"
+			],
+			"file": "image",
+			"output": [
+				"defaultPath",
+				"project",
+				"output"
+			]
+		}
+	],
+	"alias": [
+		{
+			"cmd": "pl",
+			"shell": "bs1"
+		},
+		{
+			"cmd": "lk",
+			"shell": "bs2"
+		}
+	]
+}
