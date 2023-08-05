@@ -1,0 +1,4 @@
+[console_scripts]
+lam = lookatme.__main__:main
+lookatme = lookatme.__main__:main
+witnessme = lookatme.__main__:main
