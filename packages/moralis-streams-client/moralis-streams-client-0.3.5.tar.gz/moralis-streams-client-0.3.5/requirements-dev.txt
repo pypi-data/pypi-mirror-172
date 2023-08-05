@@ -1,0 +1,14 @@
+ape-apeman
+backoff
+black
+bump2version
+coverage
+flake8
+flake8-length
+isort
+MoralisSDK
+pytest
+pytest-datadir
+python-box
+ratelimit
+tox

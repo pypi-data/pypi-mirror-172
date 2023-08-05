@@ -1,0 +1,12 @@
+attrs
+certifi
+click
+eth-hash
+eth-utils
+flask
+gunicorn
+httpx
+pyngrok
+python_dateutil
+requests
+toml
