@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+brawlstars/__init__.py
+brawlstars/client.py
+brawlstars/endpoints.py
+brawlstars/exceptions.py
+brawlstars/models.py
+brawlstars/utils.py
+brawlstars.py.egg-info/PKG-INFO
+brawlstars.py.egg-info/SOURCES.txt
+brawlstars.py.egg-info/dependency_links.txt
+brawlstars.py.egg-info/requires.txt
+brawlstars.py.egg-info/top_level.txt
