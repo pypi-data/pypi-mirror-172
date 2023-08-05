@@ -1,0 +1,203 @@
+Metadata-Version: 2.1
+Name: django-echo-tester
+Version: 0.0.5
+Summary: UNKNOWN
+Home-page: https://github.com/mohamed17717/EchoTester
+Author: Mhmd
+Author-email: d3v.mhmd@gmail.com
+License: MIT
+Keywords: django tect echo automate
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=3.2)
+Requires-Dist: requests (>=2.28)
+
+# EchoTester
+
+Django app , that record requests that comes to your project then run them whenever you want to determine if things breaks while development (in case you don't have tests written) --- or you wanna to simulate a scenario each time you made a change
+
+## How to use it
+
+### Installation
+
+Just install it from pip
+
+```bash
+pip install django-echo-tester
+```
+
+Then register is as an django app
+
+```python
+INSTALLED_APPS = [
+    ...    
+    'echo_tester'
+]
+```
+
+Then we need to record the requests to use it later.
+
+```python
+MIDDLEWARE = [
+    ...
+    'echo_tester.middleware.TesterMiddleware',
+]
+```
+
+### Basic use
+
+To run the saved requests, to test if there is breaking ones or not.
+
+```bash
+python manage.py runecho
+```
+
+### Settings variables and advanced use
+
+__NOTE__: Keys we use is just the path in the dictionary
+in other words you can consider the dictionary is an class instance and you get a value from it
+
+_for example_:
+```python
+request = {
+    ...
+    'headers': {
+        'Content-Type': 'application/json',
+        ...
+    }
+}
+
+# To access the key wanted we use
+path = 'headers.Content-Type'
+```
+
+#### Request
+
+__RequestObject__
+
+```json
+{
+    "path": "/random/path/in/your/app/",
+    "url": "http://domain.com/random/path/in/your/app/",
+    "scheme": "http",
+    "cookies": {
+        "token": "12345"
+    },
+    "method": "GET",
+    "headers": {
+        "Content-Length": "",
+        "Content-Type": "text/plain",
+        "Accept": "*/*",
+    },
+    "payload": {
+        "files": {},
+        "get": {},
+        "post": {},
+        "json": null
+    },
+    "user": {
+        "is_authenticated": false,
+        "is_staff": false,
+        "username": "",
+        "id": null,
+        "pk": null
+    }
+}
+```
+
+
+```python
+# How should identify the request is new or duplicated
+ECHO_TESTER_REQUEST_IDENTIFIERS = [
+    'method', 'user.pk', 'headers.Content-Type'
+]
+
+# Skip paths starts with this
+ECHO_TESTER_SKIP_PATH = [
+    '/admin',
+    '/secret-app'
+]
+```
+
+#### Response
+
+__ResponseObject__
+
+```json
+{
+    "status_code": 404,
+    "cookies": {},
+    "headers": {
+        "Content-Type": "text/html"
+    },
+    "data": "[DATA DROPPED]",
+    "content_length": null,
+    "content_encoding": null,
+    "content_type": "text/html"
+}
+```
+
+```python
+# What to check if response is changed or broken
+ECHO_TESTER_RESPONSE_CHECKS = [
+    'status_code', 'headers.Content-Type'
+]
+
+# Drop html from the response default is `True`
+ECHO_TESTER_DROP_HTML_FROM_RESPONSE = True
+```
+
+#### Credentials
+
+we need to track and update credentials to make sure saved requests and responses is always valid.
+
+```python
+# Track & update credentials or not
+ECHO_TESTER_CREDENTIALS_WATCH = True
+
+# the key of who this credentials related for (credential owner id)
+ECHO_TESTER_CREDENTIALS_IDENTIFIER_KEY = 'user.pk'
+
+# what key uses to track credentials, if you use session/token based authentication
+# just add the valid kays
+ECHO_TESTER_CREDENTIALS_KEYS = [
+    'cookies.sessionid'
+]
+
+```
+
+
+#### General settings
+
+```python
+# raise or skip errors that happened while listening 
+ECHO_TESTER_RAISE_ERRORS = True 
+
+# stop this middleware while running tests
+# just provide a part of the name if you want
+ECHO_TESTER_SKIP_MIDDLEWARE_CONTAIN = [
+    # FOR Example: stop csrf and stop recording
+    'csrf', apps.EchoTesterConfig.name
+]
+
+```
+
+
+
+
+
