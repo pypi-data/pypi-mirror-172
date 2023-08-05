@@ -1,0 +1,11 @@
+restapicall/__init__.py,sha256=N232QkQ3BVuPQ1nhXJi5tvkquOAxoLDanhEL-1RBcDg,88
+restapicall/api.py,sha256=jVtIeAULBk2LUksLyLNVoWUqwq1IfkIDqRqdlGuFWRs,1248
+restapicall/utils.py,sha256=guzShebeNpZUjxCBX1zxMvOAbj3uHnpumA9h2CF6u5M,562
+tests/__init__.py,sha256=V-p14_0KIpubZcebV7I9I7EOJaLmb4rEpcw7t_QfwDQ,62
+tests/test_api.py,sha256=czsPKj7kLy0ewss8YNFKdCo_4-IeqAObl5aurO1oa84,638
+tests/test_utils.py,sha256=srShxgHE1TBAfSTHgeR-zZ4zx4hcrg_sCyE21FjdnL0,456
+RestApiCall-1.0.0.dist-info/LICENSE,sha256=z9rsrsjbEZrLH7mYqlNCiCseciRwxfbzhkI9RDl4KXA,751
+RestApiCall-1.0.0.dist-info/METADATA,sha256=160Uy4ueNQi4d4tnTx5CGLrSt8DMExhBem5exfjgwFc,2026
+RestApiCall-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+RestApiCall-1.0.0.dist-info/top_level.txt,sha256=juXy9XqlYtRvPSDPYqMuI2rZnfOY1cwS5t8_wB5IyLM,18
+RestApiCall-1.0.0.dist-info/RECORD,,
