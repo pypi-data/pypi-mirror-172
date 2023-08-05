@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+smairio/__init__.py
+smairio/smairio.py
+smairio.egg-info/PKG-INFO
+smairio.egg-info/SOURCES.txt
+smairio.egg-info/dependency_links.txt
+smairio.egg-info/top_level.txt
