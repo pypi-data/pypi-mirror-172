@@ -1,0 +1,8 @@
+Licence.txt
+Readme.md
+setup.py
+os_shedulingAlgo_utsav.egg-info/PKG-INFO
+os_shedulingAlgo_utsav.egg-info/SOURCES.txt
+os_shedulingAlgo_utsav.egg-info/dependency_links.txt
+os_shedulingAlgo_utsav.egg-info/top_level.txt
+osalgopackage_utsav/__init__.py
