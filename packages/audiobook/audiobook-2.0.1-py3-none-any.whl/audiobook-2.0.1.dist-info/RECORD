@@ -1,0 +1,12 @@
+audiobook/__init__.py,sha256=0HIjlAwQbWI3zRl-htrnifgGlgED2zxQfWVAPMtH3GI,36
+audiobook/article_web_scraper.py,sha256=W304O4pUfD7jzsNK04d3oE5lea6GkYr5hY87oY9nWIo,1137
+audiobook/config.py,sha256=weQCN3SBvRlKz0p0h-N-SxF6vgcSjPHSxoxQM4WMkLU,122
+audiobook/main.py,sha256=lmRNA6LRGZ3DEVpBouxODgztj_lV4tuGRiGddldzIEY,6316
+audiobook/utils.py,sha256=qkly5uFMaAxwXzLLwrIIy7b8BpAUhSljbKHp1qrH-Uc,3771
+tests/__init__.py,sha256=yLifMJy_Y0fDZXYJ_PWXLcuWboDqHlMxGC6bWE1L0ns,39
+tests/test_audiobook.py,sha256=ha6rlbnO2nez4IyPTQ5ynk9RZLKhdC0-TvjXB_ipMnU,916
+audiobook-2.0.1.dist-info/LICENSE,sha256=x2xbIDebe_03bjcVI8BdxjIbwvB2-LAHIY94HeBM51Q,1088
+audiobook-2.0.1.dist-info/METADATA,sha256=UHw1x6ngCDT4BTsilqV4qtI1LzqF08PIhYF3DCpSYDA,4601
+audiobook-2.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+audiobook-2.0.1.dist-info/top_level.txt,sha256=dRiA8N9fVZklTNH5b4OGaFqaCV3s_lJ5Yu068wUwWPQ,16
+audiobook-2.0.1.dist-info/RECORD,,
