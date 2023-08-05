@@ -1,0 +1,3 @@
+[console_scripts]
+botafar=botafar:_cli
+
