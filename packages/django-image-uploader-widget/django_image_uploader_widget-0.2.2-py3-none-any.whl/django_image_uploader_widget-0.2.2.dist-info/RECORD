@@ -1,0 +1,17 @@
+image_uploader_widget/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_uploader_widget/admin.py,sha256=2lI3mjm2qZ2Gdj1HwMFhFEzD-Rq4XRUGYLsRmufn61w,1477
+image_uploader_widget/widgets.py,sha256=_X1C103AiHjVPoRO0iV_mTj6hdPClNMHSCy92cTTUN0,1663
+image_uploader_widget/locale/pt_BR/LC_MESSAGES/django.mo,sha256=S6W4igkuRTJwyhVCXm4kPdBiIoMIsmXaP0KKtmhUTRM,710
+image_uploader_widget/locale/pt_BR/LC_MESSAGES/django.po,sha256=LpUPppHNLjCNYIDZAvug-OcXo-yp-hwf_F0D1L5idlU,677
+image_uploader_widget/static/admin/css/image-uploader-inline.css,sha256=TaAN4Pnl5lKKrLz2Alw9y0E4T6bMx9-w7S720vL7hGQ,9114
+image_uploader_widget/static/admin/css/image-uploader-widget.css,sha256=crU9x42U2EJEiKDhrE1FgYZLYLTDknhMB2rKdT6YGJE,7480
+image_uploader_widget/static/admin/js/image-uploader-inline.js,sha256=uuOKunn3tLavJ76x3Rz9hleeWwFmW21tTzaXoHaazFU,13895
+image_uploader_widget/static/admin/js/image-uploader-modal.js,sha256=Mul2d2tmqvTnvprT9igPz2C-kewl7d0dnEiDks-ZEIw,2073
+image_uploader_widget/static/admin/js/image-uploader-widget.js,sha256=nc0jXEKfpKiF22t9xGGIqgOQmdI2Jk6PxVfdD0aLMbQ,8807
+image_uploader_widget/templates/admin/edit_inline/image_uploader.html,sha256=8Vt9du-zj9NCc2yfw5tngvFJkvUw1VILe8KQNz2jLyo,6137
+image_uploader_widget/templates/admin/widgets/image_uploader_widget.html,sha256=iqR216301INc4jLLWrb9vCAZbugZrEIVtbFlaDspSeY,3247
+django_image_uploader_widget-0.2.2.dist-info/LICENSE,sha256=RXjODmrEs_6HDfREUp9vZ-hyDDEZq9ls55Pf-R9VNeQ,1081
+django_image_uploader_widget-0.2.2.dist-info/METADATA,sha256=VWRu7OWCLd2wQUxOjdqiUAFj1gdZhWB5kWab0x0o4JY,2294
+django_image_uploader_widget-0.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_image_uploader_widget-0.2.2.dist-info/top_level.txt,sha256=pBtHlfC5dXT3zFfEmsuK5wNS8a22Xa44VJIgtCY64NU,22
+django_image_uploader_widget-0.2.2.dist-info/RECORD,,
