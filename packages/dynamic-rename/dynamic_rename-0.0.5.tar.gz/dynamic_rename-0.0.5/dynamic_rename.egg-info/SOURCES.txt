@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+dynamic_rename/__init__.py
+dynamic_rename/dynamic_rename.py
+dynamic_rename.egg-info/PKG-INFO
+dynamic_rename.egg-info/SOURCES.txt
+dynamic_rename.egg-info/dependency_links.txt
+dynamic_rename.egg-info/not-zip-safe
+dynamic_rename.egg-info/top_level.txt
