@@ -1,0 +1,201 @@
+{% extends 'main/dashboard.html' %}
+
+
+{% load static %}
+{% block content %}
+         
+
+{% load crispy_forms_tags %} 
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+
+
+<style>
+
+.leaflet-container {
+  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.2/dist/leaflet.draw.css" />
+<script src="https://unpkg.com/leaflet-draw@1.0.2/dist/leaflet.draw-src.js"></script>
+
+
+
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-3 mb-4">
+    <span class="text-muted fw-light"> Maneza Konta </span>
+  
+  
+  
+  </h4>
+  
+              
+  
+  {% if messages %}
+  {% for message in messages %}
+
+  {% if message.tags == "error" %}
+
+  <div class="alert alert-danger">
+     {{ message }}
+  </div>
+
+  {% else %}
+
+  <div class="alert alert-success">
+   {{ message }}
+  </div>
+
+  {% endif %}
+
+  {% endfor %}
+  {% endif %}
+
+
+
+
+
+    <div class="row">
+      <div class="col-lg-12 mb-4">
+
+                  <div class="col-xxl">
+                    <div class="card mb-4">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">   Perfil User </h5>
+
+                      </div>
+                      <div class="card-body">
+                        <table>
+                            <tr>
+                                <td><b> Naran Kompletu </b></td><td> : </td><td>{{request.user.first_name}}  {{request.user.last_name}}</td>
+                            </tr>
+                            <tr>
+                                <td><b> Username </b></td><td> : </td><td>{{request.user.username}} </td>
+                            </tr>
+                        
+                     
+                        </table>
+
+
+                           <div style="float: right ;">
+                            <button type="button" class="btn  btn-primary" data-bs-toggle="modal"   data-bs-target="#trokaperfil">
+                                Atualiza Perfil
+                                </button>
+                                 
+                            <button type="button" class="btn  btn-primary" data-bs-toggle="modal"  data-bs-target="#trokapassword">
+                                Troka Password
+                                </button>
+                        
+                        </div >
+
+                
+
+                      </div>
+                    </div>
+                  </div>
+  </div>
+  </div>
+
+
+
+  
+
+
+  <div class="modal fade" id="trokapassword" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Troka Password : </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <form method="post" action="" id="formtrokapassword">
+  
+            {% csrf_token %}
+        <div class="modal-body">
+  
+  Prenxe Password Tuan    :  <input type="password" class="form-control" placeholder="Prenxe Password Tuan" id="passwordtuan"  name="passwordtuan" placeholder="Prenxe Liafuan"> <br>
+  Prenxe Password Foun    :  <input type="password" class="form-control" placeholder="Prenxe Password Foun" id = "passwordfoun" name="passwordfoun" placeholder="Prenxe Liafuan"> <br>
+  Konfirma Password foun  :  <input type="password" class="form-control" placeholder="Prenxe Password Foun"  id = "konfirmapasswordfoun" name="konfirmapasswordfoun" placeholder="Prenxe Liafuan"><br>
+       
+        </div>
+  
+  
+        <div class="modal-footer">
+      
+
+            <a href ="#"  id = "xxxx" class="btn btn-primary">Troka Password</a>
+
+        
+
+
+        </div>
+  
+      </form>
+  
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="modal fade" id="trokaperfil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="staticBackdropLabel">Input Kordinate</h5> -->
+          <br>
+        Atensaun !!! Ita Bo'ot la bele troka ita bo'ot nia perfil,   Favor Kontaktu Admin hodi bele halo mudansa ba ita bo'ot nia usuario
+        <br>
+        <br>
+        <br>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+
+  
+      </div>
+    </div>
+  </div>
+                                    
+              
+  <script>
+    const element = document.getElementById("xxxx");
+    element.addEventListener("click", myFunction);
+    function myFunction(){
+        var passwordfoun = document.getElementById("passwordfoun").value;
+        var konfpasswordfoun = document.getElementById("konfirmapasswordfoun").value;
+
+        if(passwordfoun ==  konfpasswordfoun){
+
+            document.getElementById("formtrokapassword").submit();
+      
+        }else{
+            alert("Password Konfirma la hanesan")
+        }
+   
+    }
+
+  
+  </script>
+
+    
+
+{% endblock content %}
+
+
+               
+              
+
