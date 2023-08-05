@@ -1,0 +1,6 @@
+undetected-chromedriver
+2captcha-python
+selenium
+argparse
+psycopg2
+pytesseract
