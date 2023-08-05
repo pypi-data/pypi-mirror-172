@@ -1,0 +1,13 @@
+examples/__init__.py,sha256=pGNRKFbRPj_syfEUi7M_LsNEZ5cFmbwVPE4PsOjav7A,371
+examples/simple_trace_otelgrpc.py,sha256=Ckf3BA2q8_p9-2pJGYsDnX1aaW5AFMy2bFF8eS5tIQw,1417
+examples/simple_trace_stdout.py,sha256=xxnsrxWGujQ6xGbj_6voYTo-bd250t3st7qNOW2HRjw,1206
+examples/simple_trace_stdout_default_config.py,sha256=jmx1CV6Ab1rRCTpO1sgS_kUn2K5pr6bDlDU3tOB0jE4,919
+examples/simple_trace_stdout_wo_sdk.py,sha256=jwQvnUtKyAJAf04LlIxSDXC2OhqhhAWELXV9kC-ghk0,613
+oti/__init__.py,sha256=E6Mzgss5n8Ks9Q-gINC-Xr5lEgwjSL8dz7HoQZofmgw,247
+oti/config.py,sha256=UZeIQAP3M6Uf9ElDQzEvn_RogLiT8ZhrLCuW_raMdus,3164
+oti/oti.py,sha256=fY_ZgOGdFUUq-SDC2BX22VQlv69OTYTWoxQi5-wI-F8,4007
+otel_inst_py-1.0.2.dist-info/LICENSE,sha256=Ay8fk_fG0zXWGd3HS4Fc3RyH9gHiG1S28M6iBFeQ32I,1089
+otel_inst_py-1.0.2.dist-info/METADATA,sha256=1QiYuUIo9wVXNeLHbJBXy1E1U5ZSwf-z0Ri9gQH_2Iw,1328
+otel_inst_py-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+otel_inst_py-1.0.2.dist-info/top_level.txt,sha256=_LXFjHhUwBlM8-YpP6GJE1MnEeozeEj-l30BBplhEmE,13
+otel_inst_py-1.0.2.dist-info/RECORD,,
