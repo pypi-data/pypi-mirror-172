@@ -1,0 +1,82 @@
+<html>
+  <head>
+
+    <style>
+      #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+      }
+      
+      #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #customers tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #customers tr:hover {background-color: #ddd;}
+      
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: orange;
+        color: black;
+      }
+      </style>
+  </head>
+  <body onload="print()">
+
+<center>
+  <br>
+  <img src = "/static/assets/img/elements/logo.png" width="100px">
+  <br>
+
+  <h2>Institutu De Bambu IP <br> kontaktu : 7776676, bambu@gmail.com </h2>
+
+
+
+  <h3>  Dados Plantasaun  Bambu iha Munisipiu :  {{munisipiu}}</h3>
+
+  Total Hectar : {{totalhectar}}
+<br>
+<br>
+
+</center>
+
+    <table id="customers" align="center">
+
+    <thead>
+
+
+
+      <tr>
+        <th>No</th>
+        <th>Naran Grupu</th>
+        <th>Naran Kordenador</th>
+        <th>Localizasaun</th>
+        <th>Kontaktu</th>
+        <th>Area Hectares</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for dados in printareabambu %}
+      <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{dados.naran}}</td>
+        <td>{{dados.naran_kordenador}}</td>
+        <td>{{dados.suku }}</td>
+        <td>{{dados.kontaktu}}</td>
+        <td>{{dados.hectar}}</td>
+    
+        {% endfor %}
+    
+      </tr>
+    </tbody>
+    </table> 
+  </body>
+</html>
+
+
+
