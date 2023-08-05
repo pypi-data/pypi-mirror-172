@@ -1,0 +1,13 @@
+aliyunsdkvideoseg/__init__.py,sha256=Oi2b5pm3sFbESQW0xgj8kqwDPX_Hxmx4gNILYpLzYqI,21
+aliyunsdkvideoseg/endpoint.py,sha256=sMY18QlXlQM2FwvoeHUMpRty-ZItdR5yKvzA0_N4KsI,1088
+aliyunsdkvideoseg/request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyunsdkvideoseg/request/v20200320/GetAsyncJobResultRequest.py,sha256=yVOLNW4LHopEu3v4oSG8KK7cNlYTK8mc39vYje___ck,1440
+aliyunsdkvideoseg/request/v20200320/SegmentGreenScreenVideoRequest.py,sha256=YBBN87J1sfXLXS3Os3U5QqGmJ2OkAXKSmbWqFqlyDSc,1470
+aliyunsdkvideoseg/request/v20200320/SegmentHalfBodyRequest.py,sha256=nyl7PcX3aG7sYxyD4se_LIOQjVAtpMSWdTWr3i3gAew,1454
+aliyunsdkvideoseg/request/v20200320/SegmentVideoBodyRequest.py,sha256=zMSF1D28J9vukOFGXlTd-Y38Qi0cX7_9Kytv4serR4A,1456
+aliyunsdkvideoseg/request/v20200320/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyun_python_sdk_videoseg-1.0.4.dist-info/LICENSE,sha256=CvyZB4el1cZGT3cy9OYoITxta_Ea2maondKqmi8EcpU,575
+aliyun_python_sdk_videoseg-1.0.4.dist-info/METADATA,sha256=o7nTMpxPqOfmUf0pQ21obq8QKhuJXcZGwqD_-4ApT-k,1480
+aliyun_python_sdk_videoseg-1.0.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+aliyun_python_sdk_videoseg-1.0.4.dist-info/top_level.txt,sha256=NzclNMo-rWUzPDn9OR-PqN-9pfOlZxnmkD5YceUK-bw,18
+aliyun_python_sdk_videoseg-1.0.4.dist-info/RECORD,,
