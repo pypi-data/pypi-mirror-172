@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mpath/__init__.py
+mpath.egg-info/PKG-INFO
+mpath.egg-info/SOURCES.txt
+mpath.egg-info/dependency_links.txt
+mpath.egg-info/requires.txt
+mpath.egg-info/top_level.txt
+mpath/src/path.py
