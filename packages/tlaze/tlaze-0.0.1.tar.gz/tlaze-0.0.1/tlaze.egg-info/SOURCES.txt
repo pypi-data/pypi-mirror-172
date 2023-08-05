@@ -1,0 +1,7 @@
+LICENSE
+README
+setup.py
+tlaze.egg-info/PKG-INFO
+tlaze.egg-info/SOURCES.txt
+tlaze.egg-info/dependency_links.txt
+tlaze.egg-info/top_level.txt
