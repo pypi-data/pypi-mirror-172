@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Duck/__init__.py
+Duck/settings.py
+Duck/urls.py
+Duck/wsgi.py
+DuckBuBi.egg-info/PKG-INFO
+DuckBuBi.egg-info/SOURCES.txt
+DuckBuBi.egg-info/dependency_links.txt
+DuckBuBi.egg-info/top_level.txt
