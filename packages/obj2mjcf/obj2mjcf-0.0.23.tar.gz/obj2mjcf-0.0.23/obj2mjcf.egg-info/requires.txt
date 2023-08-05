@@ -1,0 +1,17 @@
+trimesh>=3.15.5
+Pillow>=9.2.0
+mujoco>=2.2.0
+tyro>=0.3.22
+numpy
+termcolor>=2.0.1
+lxml>=4.9.1
+
+[dev]
+black
+isort
+flake8
+mypy
+pytest
+
+[testing]
+pytest
