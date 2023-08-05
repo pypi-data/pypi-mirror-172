@@ -1,0 +1,5 @@
+aslabs/dependencies/firebase/__init__.py,sha256=f98Ch7oGQ452KP32vLjBwzyr-pDUPGYn7YYqvHqTTtg,63
+aslabs/dependencies/firebase/firestore.py,sha256=DogC2YE3cETnQ6jjG-ZjlSNcAUVXvIJwcoc2fz5DXWk,1394
+aslabs_dependencies_firestore-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aslabs_dependencies_firestore-0.0.1.dist-info/METADATA,sha256=VdPWbm9fA6dLL7gpJTpud906k8JzKXfE1pyzLI6GK0I,513
+aslabs_dependencies_firestore-0.0.1.dist-info/RECORD,,
