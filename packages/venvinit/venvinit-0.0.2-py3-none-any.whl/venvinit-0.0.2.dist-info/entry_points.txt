@@ -1,0 +1,2 @@
+[console_scripts]
+venvinit = venvinit:main
