@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "aslabs-cloud-structlog"
+version = "0.0.2"
+description = "Cloud ready configuration of structlog"
+authors = ["Titusz Ban <tituszban@antisociallabs.io>"]
+readme = "README.md"
+packages = [{include = "cloud_structlog"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+structlog = "^22.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
