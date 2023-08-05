@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: yaml-config-reader
+Version: 1.2
+Summary: Package for reading configs from yml files
+Home-page: https://github.com/J4CKVVH173/yaml-config
+Author: J4CK VVH173, Polosha
+Author-email: i78901234567890@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: PyYAML (==6.0.0)
+
+# Yaml config
+
+The package gives object like access for config files in yaml format
+
+## Using
+
+`yaml_config` - root package.
+
+### open_config
+
+The function for configuration an object from a file.
+
+The function accepts an unlimited number of arguments. Each argument is a path to the intended configuration file.
+The function iterates through all paths in the order in which they were passed to the function. The config that was found first will be used. If the arguments run out and the file is not found, an error will be called.
+
+The function returns the configuration as an python `dict`.
+
+### cut_protocol
+
+The function truncates the protocol at the passed url.
+
+The function takes a url in string format as an argument.
+
+The function returns clear domain without protocol.
