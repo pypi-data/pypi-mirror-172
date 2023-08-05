@@ -1,0 +1,3 @@
+[console_scripts]
+pypi-test=michaniskin_pypi_test.main:app
+
