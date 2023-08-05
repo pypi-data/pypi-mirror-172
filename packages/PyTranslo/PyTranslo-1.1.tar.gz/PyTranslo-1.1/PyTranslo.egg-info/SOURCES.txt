@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PyTranslo/__init__.py
+PyTranslo/api.py
+PyTranslo.egg-info/PKG-INFO
+PyTranslo.egg-info/SOURCES.txt
+PyTranslo.egg-info/dependency_links.txt
+PyTranslo.egg-info/not-zip-safe
+PyTranslo.egg-info/top_level.txt
