@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: radial
+Version: 0.1.0
+Summary: An intiutive interface for your requests in seconds
+Author: Shiv
+Author-email: hello@shivs.me
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+<br>
+<h1 align="center">
+💫 Radial
+</h1>
+<p align="center">
+An intiutive interface for your requests in seconds
+</p>
+
+***
+
+**Radial abstracts painful low-levels request handling and presents a simple and intiutive interface to handle requests for your application.**
+
+## Example
+```py
+@radial("https://dog.ceo/api")
+class Dog:
+    @get("/breeds/image/random")
+    def random(self, response):
+        return response.json()
+
+dog = Dog()
+random = dog.random()
+print(random)
+```
+
+Currently work in progress
