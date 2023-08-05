@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pineline
+Version: 0.0.2
+Summary: Theory predictions for PDF fitting
+Author: Alessandro Candido
+Author-email: candido.ale@gmail.com
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: eko (>=0.10.2,<0.11.0)
+Requires-Dist: pineappl (>=0.5.7,<0.6.0)
+Requires-Dist: pinefarm[full] (>=0.2.1,<0.3.0)
+Requires-Dist: pineko (>=0.2.5,<0.3.0)
+Description-Content-Type: text/markdown
+
+# Pineline
+
