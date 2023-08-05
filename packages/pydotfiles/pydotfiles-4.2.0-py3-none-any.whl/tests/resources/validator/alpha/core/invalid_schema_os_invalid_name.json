@@ -1,0 +1,7 @@
+{
+    "schema": "core",
+    "version": "alpha",
+    "os": {
+        "name": "not macos or linux"
+    }
+}
