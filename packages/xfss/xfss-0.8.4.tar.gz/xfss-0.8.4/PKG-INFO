@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xfss
+Version: 0.8.4
+Summary: A package to handle auth on flask. Made by Xatal
+Home-page: https://github.com/Masakuata/xatal_flask_auth
+Author: Edson Manuel Carballo Vera
+Author-email: edsonmanuelcarballovera@gmail.com
+License: MIT License
+Download-URL: https://pypi.org/project/xf-auth/
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+License-File: LICENSE
+
+UNKNOWN
+

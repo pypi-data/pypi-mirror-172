@@ -1,0 +1,14 @@
+LICENSE
+setup.py
+xfss/Auth.py
+xfss/HTTPStatus.py
+xfss/RemoteSession.py
+xfss/StatefulSession.py
+xfss/TelegramBot.py
+xfss/Util.py
+xfss/__init__.py
+xfss.egg-info/PKG-INFO
+xfss.egg-info/SOURCES.txt
+xfss.egg-info/dependency_links.txt
+xfss.egg-info/requires.txt
+xfss.egg-info/top_level.txt
