@@ -1,0 +1,5 @@
+structlog==22.1.0
+
+[dev]
+pytest
+flake8

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aslabs-cloud-structlog
+Version: 0.0.1
+Summary: Cloud ready configuration of structlog
+Author-email: Titusz Ban <tituszban@antisociallabs.io>
+Project-URL: Homepage, https://docs.antisociallabs.io
+Keywords: aslabs,antisociallabs,logging,structlog
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENCE
