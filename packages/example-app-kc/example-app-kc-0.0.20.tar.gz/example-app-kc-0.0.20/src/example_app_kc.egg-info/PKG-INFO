@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: example-app-kc
+Version: 0.0.20
+Summary: A small example package
+Author: Marta Arcones
+Author-email: marta.arcones@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Python example app
