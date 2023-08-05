@@ -1,0 +1,13 @@
+autoliterature/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoliterature/arxiv.py,sha256=pr6na-4KbmwlNDNKk-gN8248glFi0oou9DnAKV0ALpE,5135
+autoliterature/autoliter.py,sha256=D5n9gHFefGqOv2q9hH6iWEMkfrHpsOEfrlcyCNOTvyY,6169
+autoliterature/crossref.py,sha256=ac6VTQFruIad2Inh54R5C9d6avlWU73qVV0Fe92B4sA,4678
+autoliterature/downloads.py,sha256=4QKC4t8PKEWiFAKVj9WpIHmkSMGF88nPU25Aboi5uLE,2980
+autoliterature/medbiorxiv.py,sha256=8y_0t4Y2mU1600A4-d8pY36YS_bl9itYC29oYAmA8C0,5904
+autoliterature/pdfs.py,sha256=7W3dBplIj9PMBMXZkH4e_Krn6V6QMltAhBzvcUOJ9SE,3997
+autoliterature/utils.py,sha256=ZbLWaytLQQxHNKaJazKMxEP9n1pkTZBva_nMQVGtczk,4810
+autoliter-0.1.3.dist-info/METADATA,sha256=h094ahPGYqGjFqYLLjbCj93a_DFb_WDhxLQx4_f8Efg,3294
+autoliter-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+autoliter-0.1.3.dist-info/entry_points.txt,sha256=PM43BP_YPPiuRRk-T9ZwgHHu_mlR6F2J2oGmjHCK-Hg,60
+autoliter-0.1.3.dist-info/top_level.txt,sha256=GWgoyiie2Upv1zxuBhbJ4PfQgxb8YexdQYenmMKW5lg,15
+autoliter-0.1.3.dist-info/RECORD,,
