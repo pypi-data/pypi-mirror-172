@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cscPy/__init__.py
+cscPy.egg-info/PKG-INFO
+cscPy.egg-info/SOURCES.txt
+cscPy.egg-info/dependency_links.txt
+cscPy.egg-info/not-zip-safe
+cscPy.egg-info/top_level.txt
