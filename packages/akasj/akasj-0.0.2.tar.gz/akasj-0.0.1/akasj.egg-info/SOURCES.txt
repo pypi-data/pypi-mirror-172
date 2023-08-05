@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+akasj/__init__.py
+akasj/akasj.py
+akasj.egg-info/PKG-INFO
+akasj.egg-info/SOURCES.txt
+akasj.egg-info/dependency_links.txt
+akasj.egg-info/top_level.txt
+akasj/ceshi/__init__.py
