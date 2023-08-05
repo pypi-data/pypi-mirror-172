@@ -1,0 +1,22 @@
+graft src/paste
+graft tests
+graft docs
+graft .github
+
+include setup.cfg
+include README.rst
+include contributing.md
+include license.txt
+include .coveragerc
+include .flake8
+include pytest.ini
+include tox.ini
+include rtd.txt
+include pyproject.toml
+
+prune docs/_build
+prune docs/_themes
+prune tests/fake_packages/FakeApp.egg/EGG-INFO
+
+global-exclude __pycache__ *.py[cod]
+global-exclude .DS_Store
