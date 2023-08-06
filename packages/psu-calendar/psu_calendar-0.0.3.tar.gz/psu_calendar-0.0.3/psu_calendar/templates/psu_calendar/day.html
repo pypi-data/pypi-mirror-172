@@ -1,0 +1,22 @@
+{% load base_taglib %}
+<div class="psu_calendar-day_heading">
+    <span class="psu_calendar-day_number">{{day.number}}</span>
+    <span class="psu_calendar-day_label">{{day.heading|default:""}}</span>
+</div>
+<div class="psu_calendar-payload">
+    {%if day.payload_type == "list"%}
+        <div class="list-group">
+        {%for xx in day.payload%}
+            <div class="list-group-item">{{xx}}</div>
+        {%endfor%}
+        </div>
+    {%elif day.payload_type == "tuple"%}
+        <ul>
+        {%for xx in day.payload%}
+            <li>{{xx}}</li>
+        {%endfor%}
+        </ul>
+    {%else%}
+        {{day.payload|default:""}}
+    {%endif%}
+</div>
