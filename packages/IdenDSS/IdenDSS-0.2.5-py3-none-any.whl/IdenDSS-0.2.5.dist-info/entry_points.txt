@@ -1,0 +1,3 @@
+[console_scripts]
+IdenDSS = IdenDSS.IDSS:main
+

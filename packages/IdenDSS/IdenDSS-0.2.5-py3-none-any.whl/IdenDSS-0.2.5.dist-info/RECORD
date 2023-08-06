@@ -1,0 +1,17 @@
+IdenDSS/GUI.py,sha256=J2lVxiFr7y7jfC6y6gnTiAKa4wq9lj_I8xFa2F-0OGE,6579
+IdenDSS/IDSS.py,sha256=XSC-iT0OgAowEUEza8OySPYeoI6GLfQ6uL9FlZKJTXc,9058
+IdenDSS/__init__.py,sha256=WhEMSZlBwVmLggVrdaIdy9lww1SQujAoPdAGUXY3LGQ,149
+IdenDSS/__main__.py,sha256=1AsQ5w1jPgAIOHbXZktfXORCGoEljEqdp3XX9PPUnEw,52
+IdenDSS/identification.py,sha256=oxxk7HKUR44IBvVyESZapnzBy-qBas8czjKgqeCHxnA,8444
+IdenDSS/plugins.py,sha256=v70V-Qis6ZmSlfk_wqgKKfjtU0qrZhynUnEQjWelqqY,11243
+IdenDSS/primer_utils.py,sha256=aF1pG4Ss8s3Pj7fDYQsmmE974DPn15sOUThDebnanAM,4972
+IdenDSS/utils.py,sha256=SN9YcIYcVJIuKpAKwxN457NOMR_Cm97pWJl14sQ6YHo,5354
+IdenDSS/validation.py,sha256=KjHKtJ_k7B4BgmRI-DtUa7g7GZRDrBE2-FEOmDdBHkA,6160
+IdenDSS/template/DSS_settings.txt,sha256=MDJEgl2UahQbduEUFlWAnAgoqT2liQ_B0x7gYHN9v74,1117
+IdenDSS/template/GUI.settings.json,sha256=9ll5B2P7uqHXmYvl8XvDI7U3kMWsF8NQWHunKHkAKRk,18
+IdenDSS-0.2.5.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+IdenDSS-0.2.5.dist-info/METADATA,sha256=qXvqHPrAOMWTyQI5RFYfbLD8Ly2Jbe8I57Q8SjHDwus,1453
+IdenDSS-0.2.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+IdenDSS-0.2.5.dist-info/entry_points.txt,sha256=-2X7mUS3zWYYVQFh5A8ciusja00VJisM41KjOXJhC3M,47
+IdenDSS-0.2.5.dist-info/top_level.txt,sha256=X4_euUjxk-mCnGbIxD1Ho0dB_cs4bGWfXJ3qDqS6Gx0,8
+IdenDSS-0.2.5.dist-info/RECORD,,
