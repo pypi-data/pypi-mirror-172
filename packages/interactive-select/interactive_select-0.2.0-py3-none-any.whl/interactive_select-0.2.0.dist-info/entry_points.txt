@@ -1,0 +1,3 @@
+[console_scripts]
+interactive-select=interactive_select.cli:main
+
