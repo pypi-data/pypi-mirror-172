@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "parser201"
+version = "1.3.1"
+description = "Extract individual fields from lines in Apache access logs"
+authors = ["Peter Nardi <pete@nardi.com>"]
+maintainers = ["Peter Nardi <pete@nardi.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/geozeke/parser201"
+keywords = [
+	"parser201",
+	"apache",
+	"log",
+	"parse",
+	"parser",
+	"scanner",
+	"web",
+	"server"
+]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Education",
+	"Intended Audience :: Developers",
+	"Intended Audience :: System Administrators",
+	"License :: OSI Approved :: MIT License",
+	"Natural Language :: English",
+	"Operating System :: OS Independent",
+	"Topic :: Education",
+	"Topic :: Internet :: Log Analysis",
+	"Topic :: Security",
+	"Topic :: System :: Logging",
+	"Topic :: System :: Systems Administration",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.urls]
+"Source Code" = "https://github.com/geozeke/parser201"
+"Bug Tracker" = "https://github.com/geozeke/parser201/issues"
+"Documentation" = "https://geozeke.github.io/parser201"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^6.5.0"
+pytest = "^7.1.3"
+autopep8 = "^1.7.0"
+flake8 = "^5.0.4"
+flake8-docstrings = "^1.6.0"
+mypy = "^0.982"
+pdoc3 = "^0.10.0"
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src/parser201"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
