@@ -1,0 +1,1 @@
+from poetry_aliases_plugin import plugin
