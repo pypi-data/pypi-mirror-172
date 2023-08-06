@@ -1,0 +1,2 @@
+[console_scripts]
+dataverse = easyDataverse.cli:main

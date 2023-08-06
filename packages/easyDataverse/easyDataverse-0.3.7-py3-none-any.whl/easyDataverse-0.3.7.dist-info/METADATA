@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: easyDataverse
+Version: 0.3.7
+Author: Jan Range
+Author-email: jan.range@simtech.uni-stuttgart.de
+License: MIT License
+License-File: LICENSE
+Requires-Dist: pydantic (==1.9.0)
+Requires-Dist: jinja2
+Requires-Dist: pydataverse
+Requires-Dist: pandas
+Requires-Dist: datamodel-code-generator
+Requires-Dist: pyaml
+Requires-Dist: coloredlogs
+Requires-Dist: xmltodict
+Requires-Dist: tqdm
+Requires-Dist: deepdish
+Requires-Dist: h5py
+Requires-Dist: typer
+Requires-Dist: python-forge
+Provides-Extra: test
+Requires-Dist: pytest-cov ; extra == 'test'
+
