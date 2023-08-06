@@ -1,0 +1,12 @@
+.gitignore
+.gitmodules
+LICENSE
+README.md
+pyproject.toml
+setup.py
+.github/workflows/build.yaml
+openbabel/__init__.py
+openbabel_wheel.egg-info/PKG-INFO
+openbabel_wheel.egg-info/SOURCES.txt
+openbabel_wheel.egg-info/dependency_links.txt
+openbabel_wheel.egg-info/top_level.txt
