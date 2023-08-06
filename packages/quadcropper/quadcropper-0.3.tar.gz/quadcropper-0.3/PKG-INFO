@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: quadcropper
+Version: 0.3
+Summary: Desktop app for cropping and rectifying quadrilaterals from images.
+Home-page: https://github.com/LukasBommes/Quad-Cropper
+Maintainer: Lukas Bommes
+License: MIT
+Keywords: quadcropper,desktop-app,image,crop,perspective,crop-image,homography,recitfy,pyside6
+Platform: ALL
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8, <4
+License-File: LICENSE

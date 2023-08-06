@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+quadcropper.egg-info/PKG-INFO
+quadcropper.egg-info/SOURCES.txt
+quadcropper.egg-info/dependency_links.txt
+quadcropper.egg-info/entry_points.txt
+quadcropper.egg-info/requires.txt
+quadcropper.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/ui_mainwindow.py
+src/utils.py
+src/viewer.py
