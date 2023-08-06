@@ -1,0 +1,3 @@
+[console_scripts]
+dester-linter=dester:main
+
