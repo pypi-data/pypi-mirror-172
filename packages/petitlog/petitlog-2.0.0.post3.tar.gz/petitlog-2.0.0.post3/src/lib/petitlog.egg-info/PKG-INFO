@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: petitlog
+Version: 2.0.0.post3
+Summary: Log analysis tool for syslog, apache and raw log files
+Home-page: http://crunchtools.com/petit
+Author: Scott McCarty
+Author-email: Scott.McCarty@gmail.com
+License: GPL3
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Security
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+License-File: COPYING
+License-File: AUTHORS
+
+"Log analysis tool"
+

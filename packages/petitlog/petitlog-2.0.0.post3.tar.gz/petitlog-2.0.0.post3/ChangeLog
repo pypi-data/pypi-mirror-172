@@ -1,0 +1,262 @@
+CHANGES
+=======
+
+2.0.0.3
+-------
+
+* Add relative path to library
+* Attempt to package for pypi
+
+2.0.0
+-----
+
+* SM: Bumped to 2.0.0
+* SM: Petit is now passing all tests. Fixed Test 12 for all tests. Updated syntax for Python3
+* SM: changing directory structure to make it easier
+* SM: rearranging directory structure to make it easier to understand
+* SM: Updated for Python3, added Version tag back in
+* \* Cleaned up and made pep8 \* Added Tally class to clean up logic SM
+* Update version
+* \* Moved version logic to distribution script SM
+* \* Updated version \* Added new automated version updating SM
+* \* Added re.escape to variable based regex SM
+* Added tag 1.1.1 for changeset abd27c86f7f3
+* \* Added debugging output for graph \* Added patch for bug with determining month SM
+* \* Updated outputs for new patch and year change SM
+* \* Added empty log data test SM
+* \* Added new test output for broken apache error log SM
+* \* Updated description of tests SM
+* \* Added new test files SM
+* \* Added description of new test files SM
+* \* Added path for logs with no data \* Added try/catch for interspersed wrong data problem \* Fixed index bug in syslog entry and rsyslog \* Added better documentation rsyslog
+* \* Updated CrunchLog library code in all places SM
+* \* Updated build script to run from the web server, makes for much easier builds SM
+* \* Updating build script SM
+* \* Tightened up searches for SyslogEntry and SecurelogEntry \* Moved module introspection logic to end of the file, this allows the module to be loaded in program and still work SM
+* \* Merged back into main line SM
+* \* Added a lot of introspection to determine log type driver \* Offloaded tally logic tests to file type drivers \* Automatically iterates over all drivers when performing tally \* Basically decoupled driver writing from the rest of class structure \* Much easier to add drivers now \* Tested build from ipython \* Thinking about unit tests :-) \* Added small optimization to delete buffer \* Thinking about pickling hmmmm Scott M
+* \* Cleaned up comments on directories SM
+* \* Updated for crunchtools module SM
+* \* Updated comments SM
+* \* Updated test so that default action with no input is tested SM
+* Added tag 1.1.0 for changeset ea7e9090feec
+* Added tag 1.1.0 for changeset 8a008d8517e3
+* \* Fixed default behavior so that it does not crash SM
+* Added tag 1.0.3 for changeset 5c0a0d949921
+* Added tag 1.1.0 for changeset 53c5fd6db550
+* \* Updated version in all places SM
+* \* Added little trick to process fingerprint files in order of size \* Now processes from largest to smallest \* This prevents similiar fingerprints (such as rhel4 and rhel5) from being found at the same time when really only one is in the log SM
+* \* Fixed tally logic, back to old way (not sure why I ever changed it) \* Passes secure log test SM
+* \* Fixed overflow error while quarum testing for log file type SM
+* \* Fixed tab problem created with move to pep8 SM
+* \* Fixed debiab build problem because of path change with move to mercurial SM
+* \*
+* \* Removed confusing version SM
+* \* UPdated version numbers SM
+* Added tag 1.0.4 for changeset bdd0a3ef4431
+* \* Updated version because of problem commit with rpdb2 in it SM
+* \* renamed Log to CrunchLog for better name space SM
+* \* Separated into modules \* Kept ScriptLog loosly coupled to CrunchLog for better use in scriptlog and chev SM
+* \* Basic breakdown of crunchtools.py into separate modules in one package called crunchtools \* Still needs testing and clean up SM
+* \* fixed 80 line limits per pep8 \* Fixed 2 spaces before functions, methods, class defs SM
+* \* Removed tabs and replaced with spaces per pep8 SM
+* \* Cleaned up global variables and declared as correct objects SM
+* \* Don't remove file on fail test SM
+* \* Cleaned up globals, docstrings, etc per pylint SM
+* \* Cleaned up namespace, no longer overloads hash \* Cleaned up options.mode, so that it is eval-ed SM
+* \* Fixed all pep8 style problems SM
+* \* Replaced all tabs with 4 spaces to make pep8 happy SM
+* \* Updated change log SM
+* \* UPdated crunctools to handle mixed Ubuntu 8.04/10.04 environment \* Updated spec/control files \* Updated version SM
+* \* Updated all tests SM
+* \* Updated readme and test file SM
+* \* Added mixed mode test file SM
+* \* Manually removed environment specific stuff SM
+* \* Updated all tests with new names SM
+* \* Fixed name section SM
+* \* Fixed name piece SM
+* \* Updated spec/control files SM
+* \* Added name section SM
+* \* Added new fingerprints for ubuntu 10.04 SM
+* \* Added new tests for RSyslog Precision time format SM
+* \* Updated to work with default Ubuntu precision time rsyslog format SM
+* \* Updated version SM
+* \* Updated version number SM
+* \* Added support for rsyslog in Ubuntu 10.04 SM
+* \* Added changelog feature SM
+* \* Added CHANGLOG SM
+* \* Added new filter to get rid of MAC addresses SM
+* \* Fixed man page stuff SM
+* \* Updated tar installer for man pages SM
+* \* Updated spec file SM
+* \* Updated version SM
+* \* zipped version of man page SM
+* \* Added new fingerprints and man page SM
+* \* Added man page SM
+* \* Named more correctly SM
+* \* Added ubuntu fingerprints SM
+* \* Added man page \* New spec and control files SM
+* \* Updated tests to include Apache Error log testing SM
+* \* Added support for apache error log format, ahhh oh so good SM
+* \* Updated build files so that it can be distributed SM
+* \* Moved a bunch of code into the select function of the Log object so that it can now randomly sample ten entries over and over until it determines what kind of file has been opened \* Now passes all regression tests, all the time :-) SM
+* \* Patched to updated soft links on update SM
+* \* updated spec/control files SM
+* \* Changed defaults for entries to 1900 so that time delta calculations do not fail \* Changed log determination logic to use multiple samples \* Fixed bug in SecureLog processing where sample line was not being checked for long enough line \* Added string conversion to all known log types to resolve type bugs cating strings and numbers SM
+* \* Added secure log testing data SM
+* \* Added secure log testing \* Added new graph testing sm
+* \* Added access log test SM\* Added access log test SM\* Added access log test SM\* Added access log test SM\* Added access log test SM\* Added access log test SM\* Added access log test SM\* Added access log test SM
+* \* Added secure log test SM
+* \* New graph outputs added to test list SM
+* \* Updated graphs to new format SM
+* \* Updated spec files SM
+* \* Updated versions SM
+* \* update spec, control and version SM
+* \* Removed first sample, replaced by random SM
+* \* Added Linux secure log processing capabilities \* Changed to random sampling for log type determiniation SM
+* \* Fixed documentation/help menu text \* Added month graph, caveat: syslog does not store year data, so don't reach wrong conclusions \* Added year graph for completeness, same warning as month SM
+* \* Added year support in code \* Fixed bug in value calculations of each bar of graph, values were erroring low \* Added Days graph \* Completely revamped date delta code using datetime built in functionality to calculate date/time ranges \* Re-architected graphing logic \* Redesigned graphing output to better mach cacti/RRD \* Added normalization code, better differentiation of close values, handles most edge cases \* Made design decision to stay with simplicity (Separate Classes) for each type of graph. Imaging the graphing code more as report writing than object oriented programming and you will find my zen SM
+* \* Very small cleanup of code, no functional change SM
+* \* Added basic Dgraph functionality, does not work yet SM
+* \* Updatedto work with rheL5.4 \* Updated petit destribute script SM
+* \* Updated install docs to include tar install SM
+* \* Updated release versions for new build items SM
+* \* Added simple tar install/uninstall scripts SM
+* \* Updated build docs SM
+* \* updated README docs SM
+* \* Updated version numbers SM
+* \* Updated all licensing to be GPLv3 SM
+* \* removed directory \* Added yearly checklist items SM
+* \* updated release number SM
+* \* Fixed tests and updates SM
+* \* Updated testing framework to be able to easily update files SM
+* \* Fixed bug where single digit dates where not recognized SM
+* \* Updated to build deb and distribute to web server SM
+* \* Fixed to remove warnings in Ubuntu SM
+* Fixed script for building with new structure SM
+* \* Scripts used to create useful reports from snort output SM
+* \* Cleaned up makefile SM
+* \* Scripts to help speed distribution SM
+* \* Updated version numbers to promote sanity SM
+* \* Updated spec and control \* Updated tests SM
+* \* Fixed fingerprinting bug which broke tests SM
+* \* Added testing for special options to hash, this should catch broken fingerprinting if it ever occurs again SM
+* \* Fixed month field on snort entries sM
+* \* Added test and install-rpm options SM
+* \* updated deb version SM
+* \* Updated version SM
+* \* Made more visible SM
+* \* Updated docs SM
+* \* Updated tests to include snort data SM
+* \* Fixex bug with Snort entry \* Added compiled regexes for a big speed improvement SM
+* \* addded all functionality for 0.8.7 SM
+* \* Fixed global logging name space problem \* Added snort log format support SM
+* mistake
+* \* Actually made the readme worth reading SM
+* \* Fixed a few more bugs \* Now working much better SM
+* \* Modified to work with Makefile in main directory, more natural for spec file building SM
+* \* Move again SM
+* \* Moving again SM
+* \* moved SM
+* \* Organized for long term distribution SM
+* SM:mistake
+* SM:mistake
+* SM:mistake
+* \* Fixed output of test script SM
+* \* Added basic integration test script SM
+* \* Updated all versions to 0.8.3 \* Fixed global error problem SM
+* \* Baseline for all tests SM
+* \* Add .log extenstion to all log files SM
+* \* Mistake entry SM
+* \* Added back SM
+* \* Fixed files for petit, mistake commit from chev SM
+* \* Basic attempt at automation and build tools SM
+* \* removed SM
+* \* WOrk for moving more in line with Fedora project SM
+* \* New working spec file to be more in line with Fedora guidelines SM
+* \* Updated spec file to include fingerprint library files SM
+* \* Changed to work with correct fp file SM
+* mistake
+* \* Added build directory back into tar SM
+* \* Moved setup stuff to src directory SM
+* \* Moved back to old architecture SM
+* \* New directory for python only build SM
+* \* Moved SM
+* \* removed SM
+* \* moved SM
+* \* move under src SM
+* \* Start of test script SM\* Start of test script SM\* Start of test script SM\* Start of test script SM\* Start of test script SM\* Start of test script SM\* Start of test script SM\* Start of test script SM
+* \* Replaced by distutils stuff SM
+* \* Replaced by versions in src SM
+* \* Replaced by src/authors SM
+* \* Basic, semi-working version that I don't want to loose SM
+* \* updated deb script to install crunchtools correctly SM
+* \* Updated petit to use hash.syslog SM
+* Moved syslog.stopwords to hash because it is part of the algorithm, not part of the file type SM
+* \* updated spec file SM
+* \* Changed so that there is now a separate library called crunchtools which can be used with other programs SM
+* Fixed readme name
+* Added build root directory
+* \* Basic library SM
+* \* Authers file SM
+* \* Added more rules to makefile SM
+* \* Added release number SM
+* \* Added release number SM
+* \* Changed version SM
+* \* Updated to auto create version \* patched file directories
+* \* Added daemon field to the sample output, which was a bug SM
+* Updated documentation SM
+* \* Patched Makefile to handle building of deb packages automagically SM
+* Removed SM
+* \* Added logic for building of deb packages, not complete SM
+* \* Junk SM
+* \* junk SM
+* \* Control file for building deb package SM
+* Basic deb package converted with alien SM
+* \* Added copyleft stuff SM
+* \* Updated date SM
+* \* Basic files to be distributed with RPM SM
+* \* Added for all files SM
+* \* Renamed correctly SM
+* \* License file SM
+* \* Updated to be clean after a build SM
+* \* removed a bunch of unneeded stuff SM
+* \* Removed SM
+* \* Changed SM
+* \* Working version which installs everything needed for production isntallation SM
+* \* Working spec file SM
+* \* removed SM
+* \* Renamved for better paths SM
+* \* Cleaned up paths SM
+* \* Removed SM
+* \* Wokring make file with build for rpm SM
+* \* Better docs SM
+* \* Wowrking build mechanism SM
+* \* Basic spec file SM
+* \* Renamed architecture drawing and add pngs for web usage SM
+* \* Now renamed SM
+* \* Renamed tool SM
+* \* Changed method definitions to match UML + signs SM
+* \* Patched fingerprint to work right \* Also patched fingerprint to work with different types of logs \* Updated UMLish drawing SM
+* \* not sure SM
+* \* Updated object model document SM
+* \* Patched to make Filter a member of the SuperHash class, cleaner interface
+* \* Empty file for no filtering SM
+* \* removed debugging SM
+* \* Removed more debugging SM
+* \* removed debug SM
+* \* Removed breaks to fix small bug with graphing where loop would break out too soon SM
+* \* Converted mgraph and hgraph, basically working SM
+* \* Patched ApacheEntry driver to get date correctly \* Updated daemon, host, hash, and sgraph to use new "Log" object SM
+* \* Committed test data along with code for good integration testing SM
+* \* Object model for lt2 SM
+* \* Massive refactoring with new object model designed from the ground up to integrate better SM
+* \* Removed debugging and documented SM
+* \* Create apache log type and entries \* Created raw log type and entries \* Wrote logic to autodetermine log type SM
+* \* Semi working apachelog entry SM
+* \* build directories for deb and rpm SM
+* \* Rearranged SM
+* \* Updated locations of filter files SM
+* \* Organization SM
+* \* Basic readme file SM
+* \* Updated fingerprint loading SM
