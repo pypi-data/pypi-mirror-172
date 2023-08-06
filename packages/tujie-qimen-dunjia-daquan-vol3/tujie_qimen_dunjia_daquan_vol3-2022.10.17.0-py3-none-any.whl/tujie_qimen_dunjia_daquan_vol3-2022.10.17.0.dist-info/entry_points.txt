@@ -1,0 +1,4 @@
+[console_scripts]
+TujieQimenDunjiaDaquanVol3 = TujieQimenDunjiaDaquanVol3.__main__:main
+tujie-qimen-dunjia-daquan-vol3 = TujieQimenDunjiaDaquanVol3.__main__:main
+
