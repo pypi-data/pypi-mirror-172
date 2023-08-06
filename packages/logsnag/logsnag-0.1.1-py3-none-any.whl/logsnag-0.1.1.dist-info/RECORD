@@ -1,0 +1,11 @@
+logsnag/__init__.py,sha256=OZguUItOqXAx6As0PvxP8NQvNn2SQx8PgSKXNInXp_0,116
+logsnag/constants.py,sha256=ZXApF86VxvY0S-c0lPxLM5nd4FjSZ38fciMyw1mRF0E,213
+logsnag/exceptions.py,sha256=IHTICU2VWeHCIefz1LBTzwTsHuVv6d3zHG2kobV8Whg,91
+logsnag/logsnag.py,sha256=0JirHUkEF0eoa4VUfIvjcU4kjoKa8gdTHJ3u46ffdUA,2961
+logsnag/utils.py,sha256=UlAIHfDdlspq84VzSh-R7tVr2ZjUZJDM0LZ08_p2Q2Q,249
+logsnag/version.py,sha256=DGbvvGcEl3XJccWqzlMsZ1Or9W94mn-v41_LdmxeeHM,45
+logsnag-0.1.1.dist-info/LICENSE,sha256=1KQa4X8Gnq6LI2Bf1l60mtxA3Ti9NRIuB72vf-FC0hU,1063
+logsnag-0.1.1.dist-info/METADATA,sha256=UYla3K2Ca2YF-O0Bvd9uNFoVmKvzUvkpdJ_4E3Br-RU,1816
+logsnag-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+logsnag-0.1.1.dist-info/top_level.txt,sha256=FKCiJsVcUgpCG9vgkmjuV8Ska4pFJCbve8iG2ia73jg,8
+logsnag-0.1.1.dist-info/RECORD,,
