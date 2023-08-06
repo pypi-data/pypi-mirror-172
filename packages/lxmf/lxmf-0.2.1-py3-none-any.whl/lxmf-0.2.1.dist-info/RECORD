@@ -1,0 +1,12 @@
+LXMF/Handlers.py,sha256=Tr1vKMFAy7e8WOh1tV3yzCJovUW7d27EMQnOnSqpkpo,1740
+LXMF/LXMF.py,sha256=dM6AuHJYcF25XMAhvVj29_TdjlTqmemSfhwVyQzMbWQ,17
+LXMF/LXMPeer.py,sha256=l42BYFACCrheSy8vQw6nyH9J0cb4RDGe0KGq5Gnx0j0,10414
+LXMF/LXMRouter.py,sha256=U5MsMo3vwp03FcIQ3nu22yQuJhJSle_i3ET0gTWaYRY,59381
+LXMF/LXMessage.py,sha256=doN-VF1dBhhMcQUD4zwfs25GjTEegaT6UOh2Lg-4d3Q,21663
+LXMF/__init__.py,sha256=7meRaCR3WrjYhdliEFiTHs_JfU3GyuD7EXSgLBZsdtg,266
+LXMF/_version.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+lxmf-0.2.1.dist-info/LICENSE,sha256=4Flvutyi2SRX9i58mVdmKw1bBlRyxhOBtUTmsk_M2l4,1081
+lxmf-0.2.1.dist-info/METADATA,sha256=rtOzdPvVENz9-dkqa7lcC7aIM0L6kwd0Su5GBN-CtGY,6745
+lxmf-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lxmf-0.2.1.dist-info/top_level.txt,sha256=ym0CzFeFciFeKD8jRXI0MmHLGgGf2kCM8vvYUYCsQt0,5
+lxmf-0.2.1.dist-info/RECORD,,
