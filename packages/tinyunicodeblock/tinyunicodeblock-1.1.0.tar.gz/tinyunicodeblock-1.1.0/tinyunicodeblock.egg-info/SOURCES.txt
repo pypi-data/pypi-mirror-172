@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+tinyunicodeblock/__init__.py
+tinyunicodeblock.egg-info/PKG-INFO
+tinyunicodeblock.egg-info/SOURCES.txt
+tinyunicodeblock.egg-info/dependency_links.txt
+tinyunicodeblock.egg-info/top_level.txt
