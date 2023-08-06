@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dd8.egg-info/PKG-INFO
+dd8.egg-info/SOURCES.txt
+dd8.egg-info/dependency_links.txt
+dd8.egg-info/not-zip-safe
+dd8.egg-info/top_level.txt
