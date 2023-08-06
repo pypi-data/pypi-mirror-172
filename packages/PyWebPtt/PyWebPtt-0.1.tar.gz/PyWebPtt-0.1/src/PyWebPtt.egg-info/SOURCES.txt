@@ -1,0 +1,5 @@
+setup.py
+src/PyWebPtt.egg-info/PKG-INFO
+src/PyWebPtt.egg-info/SOURCES.txt
+src/PyWebPtt.egg-info/dependency_links.txt
+src/PyWebPtt.egg-info/top_level.txt
