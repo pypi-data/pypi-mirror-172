@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tensor-annotations-tensorflow-stubs
+Version: 2.0.2
+Summary: Shape-aware type stubs for TensorFlow.
+Home-page: https://github.com/deepmind/tensor_annotations
+Description-Content-Type: text/markdown
+Requires-Dist: tensor-annotations
+
+Shape-aware type stubs for TensorFlow. See the `tensor-annotations` package.
