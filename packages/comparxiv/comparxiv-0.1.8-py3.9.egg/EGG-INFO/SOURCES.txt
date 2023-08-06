@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+comparxiv/__init__.py
+comparxiv/command_line.py
+comparxiv/comparxiv.py
+comparxiv.egg-info/PKG-INFO
+comparxiv.egg-info/SOURCES.txt
+comparxiv.egg-info/dependency_links.txt
+comparxiv.egg-info/entry_points.txt
+comparxiv.egg-info/not-zip-safe
+comparxiv.egg-info/requires.txt
+comparxiv.egg-info/top_level.txt
