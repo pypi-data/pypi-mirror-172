@@ -1,0 +1,205 @@
+[build-system]
+requires = [
+    "hatchling"
+]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "yelpfusion3"
+authors = [
+    {name = "Ben Tran"}
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pycountry",
+    "pydantic",
+    "requests",
+    "validators",
+]
+readme = "README.rst"
+license = "MIT"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+]
+keywords = [
+    "yelp",
+    "fusion",
+    "api",
+]
+dynamic = [
+    "version",
+    "description",
+]
+
+
+[project.urls]
+Documentation = "https://yelpfusion3.readthedocs.io/en/latest/index.html"
+Issues = "https://github.com/benonsocial/yelpfusion3/issues"
+Source = "https://github.com/benonsocial/yelpfusion3"
+
+
+[tool.hatch.version]
+path = "src/yelpfusion3/__init__.py"
+
+
+[tool.hatch.envs.clean]
+dependencies = [
+    "coverage[toml]",
+]
+[tool.hatch.envs.clean.scripts]
+all = [
+    "python -m coverage erase",
+    """python -Bc 'import shutil; [shutil.rmtree(path=path, ignore_errors=True) for path in [".mypy_cache", ".pytest_cache", "build", "dist", "docs/build"]]'""",
+]
+
+
+[tool.hatch.envs.style]
+detached = true
+dependencies = [
+    "autoflake",
+    "black",
+    "flake8",
+    "isort",
+    "mypy[reports]",
+    "types-requests",
+]
+[tool.hatch.envs.style.scripts]
+check = [
+    "python -m mypy src tests --html-report build/report/mypy",
+    "python -m flake8",
+]
+format = [
+    "python -m autoflake --in-place --recursive docs/source/conf.py src/yelpfusion3 tests",
+    "python -m isort --atomic docs/source/conf.py src/yelpfusion3 tests",
+    "python -m black docs/source/conf.py src/yelpfusion3 tests",
+    "check",
+]
+
+
+[tool.hatch.envs.test]
+dependencies = [
+    "coveralls",
+    "coverage[toml]",
+    "pytest",
+    "pytest-cov",
+]
+[tool.hatch.envs.test.scripts]
+cov = [
+    "python -m pytest",
+]
+publish = [
+    "coveralls",
+]
+[[tool.hatch.envs.test.matrix]]
+python = ["39", "310"]
+
+
+[tool.hatch.envs.doc]
+dependencies = [
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+[tool.hatch.envs.doc.scripts]
+build = "(cd docs && make html)"
+
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".circleci",
+    ".github",
+]
+
+
+[tool.hatch.build.targets.wheel]
+
+
+[tool.hatch.envs.publish]
+dependencies = [
+    "twine",
+]
+[tool.hatch.envs.publish.scripts]
+testpypi = [
+    "python3 -m twine check dist/*",
+    "python3 -m twine upload --repository testpypi dist/*",
+]
+pypi = [
+    "python3 -m twine check dist/*",
+    "python3 -m twine upload --repository pypi dist/*",
+]
+
+
+[tool.black]
+line-length = 120
+
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source = [
+    "src/yelpfusion3",
+]
+
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+exclude_lines = [
+    "no cov",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.coverage.html]
+directory = "build/test/cov/html"
+
+[tool.coverage.xml]
+output = "build/test/cov/cobertura.xml"
+
+
+[tool.isort]
+profile = "black"
+skip = [
+    ".gitignore"
+]
+line_length = 120
+multi_line_output = 3
+
+
+[tool.mypy]
+python_version = 3.9
+disable_error_code = "valid-type"
+disallow_untyped_defs = true
+ignore_missing_imports = true
+pretty = true
+show_error_codes = true
+strict_optional = false
+warn_return_any = true
+warn_unused_configs = true
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+    "--cov=yelpfusion3",
+    "--cov-report=term-missing",
+    "--cov-report", "xml",
+    "--cov-report", "html",
+    "--junitxml=build/test/junit/test-results.xml",
+]
+pythonpath = [
+    "src",
+]
+testpaths = [
+    "tests",
+]

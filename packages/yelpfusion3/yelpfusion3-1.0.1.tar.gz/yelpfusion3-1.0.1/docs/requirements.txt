@@ -1,0 +1,5 @@
+sphinx==5.2.2
+sphinx-rtd-theme==1.0.0
+pycountry==22.3.5
+pydantic==1.10.2
+validators==0.20.0
