@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: NodeCDN
+Version: 0.0.3
+Summary: NodeCDN for Python.
+Home-page: UNKNOWN
+Author: Eric
+Author-email: justaneric.c@gmail.com
+License: UNKNOWN
+Description:  Original GitHub repository here: [git](https://github.com/WWEMGamer2/NodeCDN)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

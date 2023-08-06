@@ -1,0 +1,1 @@
+print("To use NodeCDN with Python, you must first import backend into your script. Click here to learn more: https://github.com/WWEMGamer2/NodeCDN/blob/main/README.md#start-coding")
