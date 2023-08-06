@@ -1,0 +1,13 @@
+[console_scripts]
+bidscoin = bidscoin.bidscoin:main
+bidscoiner = bidscoin.bidscoiner:main
+bidseditor = bidscoin.bidseditor:main
+bidsmapper = bidscoin.bidsmapper:main
+bidsparticipants = bidscoin.bidsparticipants:main
+deface = bidscoin.deface:main
+dicomsort = bidscoin.dicomsort:main
+echocombine = bidscoin.echocombine:main
+medeface = bidscoin.medeface:main
+physio2tsv = bidscoin.physio2tsv:main
+plotphysio = bidscoin.plotphysio:main
+rawmapper = bidscoin.rawmapper:main
