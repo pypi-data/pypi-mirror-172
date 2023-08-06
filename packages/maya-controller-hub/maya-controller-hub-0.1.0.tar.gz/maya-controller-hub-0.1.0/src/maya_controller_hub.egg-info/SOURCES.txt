@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/controller_hub.py
+src/maya_controller_hub.egg-info/PKG-INFO
+src/maya_controller_hub.egg-info/SOURCES.txt
+src/maya_controller_hub.egg-info/dependency_links.txt
+src/maya_controller_hub.egg-info/requires.txt
+src/maya_controller_hub.egg-info/top_level.txt

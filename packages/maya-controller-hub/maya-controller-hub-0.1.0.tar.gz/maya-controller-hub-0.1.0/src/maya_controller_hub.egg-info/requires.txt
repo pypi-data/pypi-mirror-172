@@ -1,0 +1,2 @@
+cpmel>=1.0
+maya-rig-core>=0.2
