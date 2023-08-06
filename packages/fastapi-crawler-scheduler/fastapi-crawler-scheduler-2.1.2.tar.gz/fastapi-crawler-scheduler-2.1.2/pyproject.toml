@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fastapi-crawler-scheduler"
+version = "2.1.2"
+description = "修改任务分发模块bug,并修改初始化参数名字，增加默认值"
+authors = ["laowang <847063657@qq.com>"]
+readme = "README.md"
+packages = [{ include = "fastapi_crawler_scheduler" }]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+uhashring = "^2.1"
+APScheduler = "^3.9.1"
+redis = "^4.3.4"
+fastapi = "^0.85.0"
+fastapi-utils = "^0.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
