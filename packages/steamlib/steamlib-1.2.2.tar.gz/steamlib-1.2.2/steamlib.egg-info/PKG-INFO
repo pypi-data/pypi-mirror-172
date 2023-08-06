@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: steamlib
+Version: 1.2.2
+Summary: Python library for working with steam
+Home-page: https://github.com/hirogarugaru/steamlib
+Author: valeXeich, hirogaru
+Author-email: valerapanow03@gmail.com
+License: GNU General Public License v3.0
+Download-URL: https://github.com/hirogarugaru/steamlib/archive/refs/heads/master.zip
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+
+# steam-lib
+
