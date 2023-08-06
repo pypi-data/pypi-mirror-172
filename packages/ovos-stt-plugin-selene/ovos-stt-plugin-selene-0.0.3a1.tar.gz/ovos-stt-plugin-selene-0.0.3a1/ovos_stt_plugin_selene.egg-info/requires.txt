@@ -1,0 +1,2 @@
+selene_api
+ovos-plugin-manager>=0.0.1
