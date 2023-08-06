@@ -1,0 +1,2 @@
+[console_scripts]
+sortmyfolder = determine_location:main
