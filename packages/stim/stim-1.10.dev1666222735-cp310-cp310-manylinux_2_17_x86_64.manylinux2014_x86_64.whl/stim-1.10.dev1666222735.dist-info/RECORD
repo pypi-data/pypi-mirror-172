@@ -1,0 +1,13 @@
+stim-1.10.dev1666222735.dist-info/top_level.txt,sha256=_h6lQZBgzVLumwrXyf13DY71YT6dUkd4SY-ZRjcljFQ,5
+stim-1.10.dev1666222735.dist-info/entry_points.txt,sha256=nKrnVit2TO7zlOC9PzFDbziXiGroRejQTIeqeJ2VS6Q,51
+stim-1.10.dev1666222735.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+stim-1.10.dev1666222735.dist-info/METADATA,sha256=WcyT3krsSN2e23MxMr_EXz4Lg3jRW18NxcPF7dvCBow,4180
+stim-1.10.dev1666222735.dist-info/RECORD,,
+stim-1.10.dev1666222735.dist-info/WHEEL,sha256=AENPUwuTc6qB95Mrn5JB5boXegWw6oDhuwuuX0q_ONg,152
+stim/_main_argv.py,sha256=8gHM50pjV8l_X1okiK0V7GCxy_UHPhWUbFc_d7_5wPQ,134
+stim/_stim_sse2.cpython-310-x86_64-linux-gnu.so,sha256=SyZt7yRNaWZXlH0Yr1GqKIKyAPIoq74nnNwBrD_e_I4,4317056
+stim/_stim_avx2.cpython-310-x86_64-linux-gnu.so,sha256=OJlr9RCFPMdZyJxdp3VidEi2ZMT0VqnP1zVKTLFyoSs,4374512
+stim/_detect_machine_architecture.cpython-310-x86_64-linux-gnu.so,sha256=6A0H3yl8N3eEaW9ycR9NOfvq2oVAH6BDBICkbQxcD7Y,227488
+stim/__init__.py,sha256=mwMNz7q11YFAe66oAdObDnbkhM7r0PbzdDSd8ZTKx98,2357
+stim/_stim_polyfill.cpython-310-x86_64-linux-gnu.so,sha256=JtGtcGVgcuFUlzGnMZN5xcjaJHOwIV8JimX0SCa6ywc,4317080
+stim/__init__.pyi,sha256=vTX5wh92-48XQhlLOzB3YapZcjVNX8x4WoWgCEDX_Kk,287353
