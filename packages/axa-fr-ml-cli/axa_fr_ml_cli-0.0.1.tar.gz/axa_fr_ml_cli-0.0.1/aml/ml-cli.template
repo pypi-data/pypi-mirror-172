@@ -1,0 +1,13 @@
+[
+        {
+            "type": "callapi",
+            "enabled": true,
+            "enabledSaveImages": false,
+            "fileDirectory": "${files_directory}$",
+            "outputDirectoryJsons": "${output_directory}$",
+            "numberParallel": 42,
+            "isSaveResultOnError": true,
+            "numberRetryOnHttp500": 6,
+            "url": "https://driving-licenses.axa-fr-preprod-lpl-int.teal.westeurope.azure.openpaas.axa-cloud.com",
+        }
+]

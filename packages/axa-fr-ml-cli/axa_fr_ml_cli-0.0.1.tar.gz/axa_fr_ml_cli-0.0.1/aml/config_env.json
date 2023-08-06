@@ -1,0 +1,40 @@
+{
+    "experiment_name":"license-integration-pipeline",
+    "datastore_name" : "workspaceblobstore",
+    "cluster": {
+        "cluster_cpu": {
+            "cluster_name": "license-integration-cpu",
+            "vm_size": "STANDARD_DS3_V2",
+            "max_nodes": 4,
+            "vnet_resourcegroup_name": "z-afa-vnet-tran-pra-ew1-rgp01",
+            "vnet_name": "z-azr-ml-spok-pra-ew1-net01",
+            "subnet_name": "z-azr-ml-spok-pra-ew1-sub01"
+        }
+    },
+    "environment": {
+          "ml-cli_env": {
+            "env_name": "license-integration-ml-cli",
+            "dockerfile" : "./aml/Dockerfile",
+            "conda_dependencies_file": "./aml/conda_dependencies.yml",
+            "version": 1
+          },
+         "light_env": {
+            "env_name": "license-integration",
+            "dockerfile" : null,
+            "conda_dependencies_file": "./aml/conda_dependencies.yml",
+            "version": 7
+        }
+    },
+    "datasets": {
+            "inputs": {
+                "dataset_name": "ged_permis",
+                "dataset_version": 1,
+                "number_chunk": 2,
+                "start_at_chunk_index": 0
+            },
+            "outputs": {
+                "path_on_datastore": "LICENSE/INTEGRATION/{date}",
+                "datastore_name": "datastore040820211436"
+            }
+        }
+}

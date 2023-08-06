@@ -1,0 +1,44 @@
+# Continuous Integration (CI) pipeline that orchestrates the training, evaluation, and registration of the model.
+name: permis.axa_fr_ml_cli.$(Build.DefinitionName).$(Build.BuildId)
+
+parameters:
+- name: azureSubscription
+  displayName: Azure Subscription
+  type: string
+  default: AFA_PRD_02_ML_CNI
+  values:
+  - AFA_PRD_02_ML_CNI
+
+trigger:
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - integration
+
+resources:
+  repositories:
+    - repository: ml-templates
+      type: git
+      name: SquadNSD/PipelineTemplates
+      ref: release/2.0
+
+stages:
+- template: aml/pipeline.yml@ml-templates
+  parameters:
+    azureSubscription: ${{ parameters.azureSubscription }}
+    workingDirectory: $(Build.SourcesDirectory)/integration
+    pythonScript: train_aml
+    configJson: aml/config_aml_${{ parameters.azureSubscription }}.json
+    isByPassReport: true
+    isByPassPipeline: false
+    #unitTests:
+    #  - workingDirectory: "src/axa_fr_ml_cli/modules/ingestion_chunk"
+    #    condaDependenciesPath: "../../../../aml/conda_dependencies.yml"
+    #    omit: '"*/tests/*"'
+    #    name: "ingestion_chunk"
+    #  - workingDirectory: "src/axa_fr_ml_cli/modules/save"
+    #    condaDependenciesPath: "../../../../aml/conda_dependencies.yml"
+    #    omit: '"*/tests/*"'
+    #    name: "save"
