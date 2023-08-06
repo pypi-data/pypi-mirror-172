@@ -1,0 +1,16 @@
+MicroLIA/__init__.py,sha256=nipsi3lm9sf-lT_fgWrpLRYKdEwNniCKxBS3zn13hwY,365
+MicroLIA/extract_features.py,sha256=w13tUHskFe1oKGWmPZTR5_T3duzfQneTxHRZUehh9Nw,3648
+MicroLIA/features.py,sha256=IpLZjqPhDnrWQOwXL6HKGdTHltwfrm__USFljWOOHMQ,45896
+MicroLIA/models.py,sha256=Ni4BZ3WTCvuVhP51jAcwAqtcucg70dZc8iSrJdKBvQo,33107
+MicroLIA/noise_models.py,sha256=jVWWeFGYnm-YIV51HmuZ1NhY0mRO3stNvwnYtPMjWxc,2644
+MicroLIA/optimization.py,sha256=MzUbpRw4_2YWsf-EG7kNj6AmbAkx3O-HG5vslRVnT08,31130
+MicroLIA/quality_check.py,sha256=dcb29LVwl8iRBmSP1fSm0KgxCooSD_sI4C9XI7jVZ2w,4406
+MicroLIA/simulate.py,sha256=XlUePCmA_ysqFoX1cwA6kJJry5Hrkq-p0bynevqqLlU,11802
+MicroLIA/training_set.py,sha256=YeCdUqsewLU9Jh4qDHR1bnDv1s9BRHofu5Dq1HcSUiE,22262
+MicroLIA/data/Miras_vo.xml,sha256=R2sefhGwld3wbBEB5ONT_F8pq3Q76tGc81J8O36M9ac,1384833
+MicroLIA/data/__init__.py,sha256=RBaBH30Jsg7Jo9Lpe-WkeLO88Vh8kpA2bAAn7FaK0nY,26
+MicroLIA-1.9.7.dist-info/LICENSE.txt,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+MicroLIA-1.9.7.dist-info/METADATA,sha256=vVSWwNMXlXYcw_z9hna7xrcDqJusIzAwDCplXNPJnlE,917
+MicroLIA-1.9.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+MicroLIA-1.9.7.dist-info/top_level.txt,sha256=wDQ4H1vFtSFOXNjuk2ZP3ZKCC7NxDbfWp2f0zQmymy4,9
+MicroLIA-1.9.7.dist-info/RECORD,,
