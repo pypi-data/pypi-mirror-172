@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: checksudoku
+Version: 0.0.1
+Summary: Check if any NxN Sudoku is solved correctly in Python
+Home-page: https://github.com/APSN4/checksudoku
+Author: APSN4
+Author-email: arty.ar@mail.ru
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# checksudoku
+Check if any NxN Sudoku is solved correctly in Python

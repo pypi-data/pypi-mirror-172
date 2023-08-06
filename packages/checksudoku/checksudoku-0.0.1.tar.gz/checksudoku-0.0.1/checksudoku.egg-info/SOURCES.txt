@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+checksudoku/__init__.py
+checksudoku/checksudoku.py
+checksudoku.egg-info/PKG-INFO
+checksudoku.egg-info/SOURCES.txt
+checksudoku.egg-info/dependency_links.txt
+checksudoku.egg-info/top_level.txt
