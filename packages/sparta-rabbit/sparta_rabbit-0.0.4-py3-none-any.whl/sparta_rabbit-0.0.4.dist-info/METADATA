@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sparta-rabbit
+Version: 0.0.4
+Summary: Sparta rabbit library
+Home-page: https://github.com/Spartan-Approach/sparta-rabbit
+Author: Spartan Approach
+Author-email: sparta@spartanapproach.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pika
+Requires-Dist: pika-stubs
+Requires-Dist: aio-pika
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Requires-Dist: python-dotenv ; extra == 'test'
+
+# sparta-rabbit
+
+Sparta rabbit library.
+
+## Usage
+
+```python
+import sparta.rabbit
+
+con_data = sparta.rabbit.RabbitMQConnectionData(
+    host="localhost",
+    username="guest",
+    password="guest",
+)
+
+publisher = sparta.rabbit.RabbitMQPublisher(con_data)
+await publisher.create_queue("hello")
+await publisher.publish_to_queue("hello", "hi there")
+
+consumer = sparta.rabbit.RabbitMQConsumer(con_data)
+await consumer.listen_to_queue("hello", lambda message: print(f"Received {message}"), timeout=10)
+```
