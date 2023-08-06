@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.rst
+arxiv_update_cli.py
+setup.py
+arxiv_update_cli.egg-info/PKG-INFO
+arxiv_update_cli.egg-info/SOURCES.txt
+arxiv_update_cli.egg-info/dependency_links.txt
+arxiv_update_cli.egg-info/entry_points.txt
+arxiv_update_cli.egg-info/requires.txt
+arxiv_update_cli.egg-info/top_level.txt
+packaging_archlinux/PKGBUILD

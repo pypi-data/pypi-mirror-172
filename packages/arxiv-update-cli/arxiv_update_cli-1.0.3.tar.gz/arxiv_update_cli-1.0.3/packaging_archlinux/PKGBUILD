@@ -1,0 +1,25 @@
+# Maintainer: Juliette Monsel <j_4321 at protonmail dot com>
+pkgname=arxiv-update-cli
+_pkgname=arxiv_update_cli
+pkgver=1.0.3
+pkgrel=1
+pkgdesc="Fetch new articles on arXiv by keywords"
+url="https://gitlab.com/j_4321/arxivscript"
+arch=('any')
+license=('MIT')
+depends=('python-feedparser')
+makedepends=('python-setuptools' 'git')
+optdepends=('python-keyring: Store password in system keyring')
+source=("${_pkgname}::git+https://gitlab.com/j_4321/arxivscript.git#tag=v${pkgver}")
+sha512sums=('SKIP')
+
+build() {
+    cd "$srcdir/${_pkgname}"
+    python setup.py build
+}
+
+package() {
+    cd "$srcdir/${_pkgname}"
+    python setup.py install --root="$pkgdir/" --prefix=/usr --optimize=1 --skip-build
+    install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

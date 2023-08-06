@@ -1,0 +1,135 @@
+ArXiv Update CLI
+================
+Fetch new articles on arXiv by keywords and authors.
+
+CLI tool to fetch new articles on arXiv in selected categories (e.g. quant-ph) filtered by keywords or authors.
+The updates can also be sent by email so that the script can be run automatically with `cron <https://en.wikipedia.org/wiki/Cron>`_.
+
+The script will fetch the articles on arXiv that
+
+ +  were *submitted/updated* after the last update date (or the provided date, see ``--since`` option)
+
+ **AND**
+
+ + belong to one of the *categories*
+
+ **AND**
+
+ + (one of the *authors* is in the author list) **OR** (one of the *keywords* is in the title or abstract)
+
+All the *options* are set in the configuration file. Note that keywords can contain spaces, e.g. *machine learning*.
+
+Thank you to arXiv for use of its open access interoperability.
+
+Dependencies
+------------
+
+- Python 3
+- `feedparser <https://pypi.python.org/pypi/feedparser>`_
+- `keyring <https://pypi.org/project/keyring/>`_ (optional): Store password of email account in system keyring (for the ``--email`` option)
+
+
+Install
+-------
+
+The script can be installed with pip
+
+::
+
+    $ pip install arxiv_update_cli
+
+or by downloading the source code and running
+
+::
+
+    $ python setup.py install
+
+from within the folder.
+
+
+For Archlinux users, there is a ``PKGBUILD`` file in ``packaging_archlinux/``.
+
+
+Launch
+------
+
+Execute ``arxiv-update-cli``, or if the package is not installed, execute ``arxiv_update_cli.py`` with python.
+
+Options:
+
+  ====================================  ===================================================================================
+  \-h, \-\-help                         show the help message and exit
+
+  \-e, \-\-email                        send result by email using SMTP (you will be prompted for missing settings)
+
+  \-s YYYY-MM-DD, \-\-since YYYY-MM-DD  fetch update since YYYY-MM-DD 00:00
+
+  \-c [FILE], \-\-config [FILE]         config file to use or print path to default one and exit if no argument is provided
+
+  \-v, \-\-version                      show version and exit
+
+  \-\-log                               show path to log file and exit
+  ====================================  ===================================================================================
+
+If no configuration file exists, one will be created. Then, you can edit the
+*categories*, *keywords* and *authors* fields and run the script again.
+
+
+Automatic execution
+-------------------
+
+Once the email setttings have been configured and the password saved in the keyring, regular executions of ``arxiv_update_cli`` can be scheduled. For instance, one can receive daily email updates at 9:30 on working days with the following `crontab <https://en.wikipedia.org/wiki/Cron>`_ (Unix)
+
+::
+
+    30 09 * * 1-5 arxiv-update-cli -e
+
+
+Troubleshooting
+---------------
+
+Errors are logged in the file ``arxiv_update_cli.log`` in the system's temporary folder. Use the ``--log`` option to display the path.
+
+License
+-------
+
+Copyright (c) 2022 Juliette Monsel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+Changelog
+---------
+
++ arxiv-update-cli 1.0.3
+
+    * Set default config path to local folder if the script is not installed
+
++ arxiv-update-cli 1.0.2
+
+    * Add comment field to the article summary
+    * Color the article URL in blue like the DOI link in the terminal
+
++ arxiv-update-cli 1.0.1
+
+    * Fix URL in PKGBUILD and setup.py
+
++ arxiv-update-cli 1.0.0
+
+    * First release

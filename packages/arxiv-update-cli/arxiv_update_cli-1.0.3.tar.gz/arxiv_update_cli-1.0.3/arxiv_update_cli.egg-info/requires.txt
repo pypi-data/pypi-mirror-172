@@ -1,0 +1,4 @@
+feedparser
+
+[Store password in system keyring]
+keyring
