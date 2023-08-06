@@ -1,0 +1,11 @@
+memory_magics/__init__.py,sha256=yTfkORzf4fQBSSv98JF-kSNHj5fkZ_63YPJ8IUIZczg,193
+memory_magics/_version.py,sha256=JytsqPXNlRCdKBtHbvewlY9_zyCpL_E84Tg-9ARnlYs,93
+memory_magics/memory_magics.py,sha256=HWR1hbLMtuz1HAgGO9OFgOcSC9MP8isg8bURJcIAFsM,8824
+memory_magics/memory_tracer/__init__.py,sha256=Ii9KSvnrxi2Wc6kOdPiShh-S5zFMyJuej7khtmp4VGQ,170
+memory_magics/memory_tracer/_memory_tracer.py,sha256=TBOZWttD8rwgW7mxoSTe_B0n4bpGtzK1EO8eIfGdN4s,2163
+memory_magics/memory_tracer/context_memory_tracer.py,sha256=PBMF7EA8xA0J2V8wb8iflUeE0qasN6u0mRb-PfrxS9k,1905
+memory_magics/utils.py,sha256=Ca4cGieEz1lCvbnRZzA-qbsgJ5L3y3P9xBMBPkaI8cA,4331
+ipython_memory_magics-0.3.7.dist-info/LICENSE,sha256=7Ec9BmTQTeAVvNmQkQDTFWvvZtF_dbC0nF26PrBfs10,1076
+ipython_memory_magics-0.3.7.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+ipython_memory_magics-0.3.7.dist-info/METADATA,sha256=Ks3LaETeyRDOtlLlfKgvgtqnxQSxjllEQ4SV_GFWQB8,3918
+ipython_memory_magics-0.3.7.dist-info/RECORD,,
