@@ -1,0 +1,12 @@
+c8_source_oracle/__init__.py,sha256=_r_myCoGV9d8G9MkUdJ_2ydeOcjX1xAuK_8tEnVCbrc,23328
+c8_source_oracle/db.py,sha256=CUrmCSWqjJ_HT0Hky1sfLaTWKz57CidJe3srXtfWzPs,470
+c8_source_oracle/sync_strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+c8_source_oracle/sync_strategies/common.py,sha256=BiijeiesN1j7RhAIeMBAHrESoA6tk_Gcxtob9KIdSzY,3089
+c8_source_oracle/sync_strategies/full_table.py,sha256=2PAIBFtUKLl7f5yB0AedFqvhwhNFkAaklqUta_-_U7c,7222
+c8_source_oracle/sync_strategies/incremental.py,sha256=AVkv-THMbpBemadawe52HRfQiNZFP5wxGW53cGSiS04,4808
+c8_source_oracle/sync_strategies/log_miner.py,sha256=jjTdQJ7NZKiqbIAAvTHImj7sz8gVJ4CZCz1zlTDqHz8,10383
+c8_source_oracle-0.0.3.dist-info/entry_points.txt,sha256=VOJ-SmlQ7ugXHYOcK1V-5WVO4dfzfCJCeNrNj9wOzy0,58
+c8_source_oracle-0.0.3.dist-info/LICENSE,sha256=xNuDgLmykYhajKZueHKWS9ZgnCFZ47hzbPCyI5-hs9c,32393
+c8_source_oracle-0.0.3.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+c8_source_oracle-0.0.3.dist-info/METADATA,sha256=aj2HJcWY5AW7PVTQ1SFGnw2iyPtraAcb--W3BBjkSJw,4367
+c8_source_oracle-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+c8-source-oracle=c8_source_oracle:main
+
