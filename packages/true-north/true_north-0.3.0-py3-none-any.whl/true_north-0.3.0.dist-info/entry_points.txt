@@ -1,0 +1,3 @@
+[console_scripts]
+true-north=true_north:entrypoint
+
