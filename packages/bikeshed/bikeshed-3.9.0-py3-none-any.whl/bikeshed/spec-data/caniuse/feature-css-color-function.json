@@ -1,0 +1,25 @@
+{
+ "notes": "For this function to work properly, the device screen and OS also needs to support the color space being used.",
+ "support": {
+  "Android Browser": "n 106",
+  "Baidu Browser": "n 13.18",
+  "Blackberry Browser": "n 10",
+  "Chrome": "n 109",
+  "Chrome for Android": "n 106",
+  "Edge": "n 106",
+  "Firefox": "n 107",
+  "Firefox for Android": "n 105",
+  "IE": "n 11",
+  "IE Mobile": "n 11",
+  "KaiOS Browser": "n 2.5",
+  "Opera": "n 91",
+  "Opera Mini": "n all",
+  "Opera Mobile": "n 64",
+  "QQ Browser": "n 13.1",
+  "Safari": "y 15",
+  "Safari on iOS": "y 15.0",
+  "Samsung Internet": "n 18.0",
+  "UC Browser for Android": "n 13.4"
+ },
+ "url": "https://w3c.github.io/csswg-drafts/css-color/#color-function"
+}
