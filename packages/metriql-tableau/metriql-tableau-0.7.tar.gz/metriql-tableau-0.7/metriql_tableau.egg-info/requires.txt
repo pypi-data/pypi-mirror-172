@@ -1,0 +1,4 @@
+tableaudocumentapi==0.9
+
+[test]
+tableaudocumentapi==0.9
