@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pytest-allure-collection
+Version: 0.0.4
+Summary: pytest plugin to collect allure markers without running any tests
+Home-page: https://github.com/jnhyperion/pytest-allure-collection
+Author: Johnny Huang
+Author-email: jnhyperion@gmail.com
+License: UNKNOWN
+Keywords: pytest allure
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Pytest
+Requires-Python: >=3.8
+Requires-Dist: pytest
+Requires-Dist: allure-pytest
+
+UNKNOWN
+
+
