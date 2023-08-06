@@ -1,0 +1,3 @@
+2016-SeeDev-binary-train	https://drive.google.com/uc?id=1WVsPHZWD7n5nkVa3PAiAMfdVPTbG19M5	BioNLP-ST-2016_SeeDev-binary_train.zip	ecca965ae09a31c5675cc2a62f238e0eb3a83c164a925a7e8984dd4d9dbcec84
+2016-SeeDev-binary-dev	https://drive.google.com/uc?id=1NYKkPzo5dPQDGgZeZj8ZkO5Wpb2Z6-SC	BioNLP-ST-2016_SeeDev-binary_dev.zip	ea8e0f8bb1bc62982bb9a1a207df33a106c78b14aeb9a0701894943ec9262326
+2016-SeeDev-binary-test	https://drive.google.com/uc?id=12utO4UqClhfcjx4wMcIjqLh2OrDhpMpM	BioNLP-ST-2019_SeeDev-binary_test.zip	0289a9bba5e6fe82e6088a65c529fc4727da27c6468538ed90d870ca662a9714

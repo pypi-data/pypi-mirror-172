@@ -1,0 +1,15 @@
+spacy>=3.0.0
+scikit-learn
+numpy
+scipy
+intervaltree
+networkx
+future
+bioc>=2.0
+pytest_socket
+six
+sphinx>=1.5.5
+sphinx_rtd_theme
+fasteners
+docstringtest
+gdown
