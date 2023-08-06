@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/syncqb/__init__.py
+src/syncqb/json_quickbase.py
+src/syncqb/qb_client.py
+src/syncqb/test.py
+src/syncqb/xml_quickbase.py
+src/syncqb.egg-info/PKG-INFO
+src/syncqb.egg-info/SOURCES.txt
+src/syncqb.egg-info/dependency_links.txt
+src/syncqb.egg-info/entry_points.txt
+src/syncqb.egg-info/top_level.txt
