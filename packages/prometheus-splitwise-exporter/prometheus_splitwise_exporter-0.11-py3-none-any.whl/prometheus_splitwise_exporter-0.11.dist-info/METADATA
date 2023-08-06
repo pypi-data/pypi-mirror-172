@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: prometheus-splitwise-exporter
+Version: 0.11
+Home-page: https://github.com/jelmer/prometheus-splitwise-exporter
+Maintainer: Jelmer Vernooij
+Maintainer-email: jelmer@jelmer.uk
+License: Apachev2
+Project-URL: Repository, https://github.com/jelmer/prometheus-splitwise-exporter
+License-File: COPYING
+Requires-Dist: prometheus-client
+Requires-Dist: splitwise
+
