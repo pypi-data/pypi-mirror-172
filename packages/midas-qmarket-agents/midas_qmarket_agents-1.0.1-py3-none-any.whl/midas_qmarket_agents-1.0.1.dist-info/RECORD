@@ -1,0 +1,10 @@
+midas/modules/qmarket_agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+midas/modules/qmarket_agents/meta.py,sha256=aUblNqTxKVcPUQQHNdxNDVQlMzx_w_i2EzaWd1T7mFU,478
+midas/modules/qmarket_agents/model.py,sha256=gHQhENjd-QsNtkfWGa9lVkCUhxpHBTnTq6xB8PrwggI,5886
+midas/modules/qmarket_agents/module.py,sha256=99igzzNKrr1nRkV-fz5NUb4xtAwyfD70b_gRIkEvuXA,7124
+midas/modules/qmarket_agents/simulator.py,sha256=4ZVwyly-6TPqW2kPhrlf1_LbubdDE1vNh652NqD69x8,5887
+midas_qmarket_agents-1.0.1.dist-info/LICENSE,sha256=adm0bP3Oct0QajMMTL3NBtwd_yyhhZFiPc4YVPwmofE,7648
+midas_qmarket_agents-1.0.1.dist-info/METADATA,sha256=3svMu72F6ru3vnybWL408J7CWhHvLssRj2P0NLoMmxM,4391
+midas_qmarket_agents-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+midas_qmarket_agents-1.0.1.dist-info/top_level.txt,sha256=n8dkPfm_amUh86KWKdyQFSehtTdf2SnUDp54AX6RcE0,6
+midas_qmarket_agents-1.0.1.dist-info/RECORD,,
