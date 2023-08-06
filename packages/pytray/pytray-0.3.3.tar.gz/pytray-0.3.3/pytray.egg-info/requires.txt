@@ -1,0 +1,15 @@
+deprecation
+
+[dev]
+grayskull
+pip
+pre-commit
+pytest
+pytest-cov
+ipython<6
+twine
+
+[docs]
+Sphinx==1.8.4
+Pygments==2.3.1
+docutils==0.14
