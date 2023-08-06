@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+jsoncheck
+jsonstrip.py
+setup.py
+jsonstrip.egg-info/PKG-INFO
+jsonstrip.egg-info/SOURCES.txt
+jsonstrip.egg-info/dependency_links.txt
+jsonstrip.egg-info/top_level.txt

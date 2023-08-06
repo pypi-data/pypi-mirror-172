@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+
+import sys
+import collections
+import json
+import jsonstrip
+
+exit_code = 0
+
+def object_pairs(pairs):
+    duplicates = [
+        key for key, cnt in collections.Counter(p[0] for p in pairs).items()
+        if cnt > 1]
+    if duplicates:
+        raise ValueError(f"Duplicate key(s): {', '.join(duplicates)}")
+    return dict(pairs)
+
+
+def json_check(file):
+    global exit_code
+
+    stripped = jsonstrip.strip(file.read())
+    try:
+        json.loads(stripped, object_pairs_hook=object_pairs)
+    except ValueError as err:
+        print(f"{file.name}: JSON error: {err}")
+        exit_code |= 1   # JSON error
+    else:
+        print(f"{file.name}: OK")
+
+
+def main(filenames):
+    global exit_code
+
+    if not filenames:
+        json_check(sys.stdin)
+    else:
+        for name in filenames:
+            try:
+                with open(name, encoding='utf-8') as file:
+                    json_check(file)
+            except OSError as err:
+                exit_code |= 2   # I/O error
+                print(err)
+
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
+    sys.exit(exit_code)
