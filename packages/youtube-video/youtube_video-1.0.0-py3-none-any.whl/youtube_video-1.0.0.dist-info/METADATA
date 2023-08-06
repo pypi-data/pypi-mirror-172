@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: youtube-video
+Version: 1.0.0
+Summary: Download Video Yotube
+Author: Farooq
+Keywords: python,download,youtube
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytube
+
+
+# youtube downloader
+
+from Youtube_Downloader.youtube import download
+
+video = download()
+## function take link of video and path
+video.Download_video_in_360_resolution()
