@@ -1,0 +1,29 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    name: Publish binaries
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+        cache: pip
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Package
+      run: |
+        pyfred package
+    - name: Create GitHub release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/*.alfredworkflow
