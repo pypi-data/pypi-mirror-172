@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+quintessence.egg-info/PKG-INFO
+quintessence.egg-info/SOURCES.txt
+quintessence.egg-info/dependency_links.txt
+quintessence.egg-info/top_level.txt
