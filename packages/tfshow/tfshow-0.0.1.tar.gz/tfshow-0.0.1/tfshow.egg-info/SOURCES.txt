@@ -1,0 +1,12 @@
+README.md
+setup.py
+./tfshow/__init__.py
+./tfshow/main.py
+./tfshow/tfreader.py
+./tfshow/tfshow.py
+tfshow.egg-info/PKG-INFO
+tfshow.egg-info/SOURCES.txt
+tfshow.egg-info/dependency_links.txt
+tfshow.egg-info/entry_points.txt
+tfshow.egg-info/requires.txt
+tfshow.egg-info/top_level.txt

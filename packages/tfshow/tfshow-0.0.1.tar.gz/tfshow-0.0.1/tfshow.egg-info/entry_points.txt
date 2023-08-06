@@ -1,0 +1,3 @@
+[console_scripts]
+tfshow = tfshow.main:main
+
