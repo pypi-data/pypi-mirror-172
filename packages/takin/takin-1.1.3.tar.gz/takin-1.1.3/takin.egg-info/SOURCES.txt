@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+takin/__init__.py
+takin/data_splitting.py
+takin/file_processing.py
+takin/text_cleaning.py
+takin.egg-info/PKG-INFO
+takin.egg-info/SOURCES.txt
+takin.egg-info/dependency_links.txt
+takin.egg-info/requires.txt
+takin.egg-info/top_level.txt
