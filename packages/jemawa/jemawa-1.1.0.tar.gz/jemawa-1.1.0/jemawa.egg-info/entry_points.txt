@@ -1,0 +1,2 @@
+[console_scripts]
+jemawa = jemawa.cli:main

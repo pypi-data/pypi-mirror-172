@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+jemawa/__init__.py
+jemawa/cli.py
+jemawa.egg-info/PKG-INFO
+jemawa.egg-info/SOURCES.txt
+jemawa.egg-info/dependency_links.txt
+jemawa.egg-info/entry_points.txt
+jemawa.egg-info/requires.txt
+jemawa.egg-info/top_level.txt
