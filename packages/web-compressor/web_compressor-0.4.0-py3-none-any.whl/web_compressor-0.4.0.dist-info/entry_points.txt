@@ -1,0 +1,3 @@
+[console_scripts]
+webcompr=web_compressor.cli:cli
+
