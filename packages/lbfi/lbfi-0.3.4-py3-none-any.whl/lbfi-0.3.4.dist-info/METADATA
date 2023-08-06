@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: lbfi
+Version: 0.3.4
+Summary: lbfi stands for Linux Bangla Font Installer. You can avail the fonts for your linux desktop easily with this tool. The main purpose of this tool is to easy installation of different and useful bangla fonts for your linux system.
+License: MIT
+Author: fahadahammed
+Author-email: iamfahadahammed@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# lbfi
+**lbfi** or **Linux Bangla Font Installer** is a useful tool to help you acquire useful bangla fonts for your linux machine.
+It is tested or maintained only for Debian based distributions like Ubuntu, Debian, Linux Mint, Deepin etc.
+
+## Installation
+
+### Linux - Debian Based
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install **lbfi**.
+
+```bash
+$ pip3 install lbfi
+```
+
+suggested command to install
+```bash
+$ pip3 install --upgrade lbfi
+```
+
+## Usage
+
+```bash
+$ lbfi --install yes
+```
+
+It will install the fonts in your home directory.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+### For developers
+Make a fork and clone the source locally. Make sure you have -
+
+- Installed poetry build tool
+- Properly wrote the changes and did test
+- Give a good branch name and commit message
+- Give a Pull request
+
+#### Dependency
+
+- click
+- poetry (Development Dependency)
+- requests
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
