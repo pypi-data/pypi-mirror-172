@@ -1,0 +1,13 @@
+starapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starapi/api.py,sha256=kuW7i0ioCBgCIyuysX2XccxsFlLx3a9BukCoO1jEJoo,7230
+starapi/dependency.py,sha256=zThqy7tuoiBsJPh5MPD5L2qSQeXcE_jkxdObUraTBlY,881
+starapi/endpoint.py,sha256=XVxjPH9W1FlJ6-Uu2nhkisixzhx9rPQUz7neUnb9xM4,3193
+starapi/middleware.py,sha256=PpM56xWf1cwsmhm31_1Z5e4DcPAfA7XoAhHvviLOvr4,394
+starapi/spec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starapi/spec/construct.py,sha256=kL687-DaA0NbcvBk4a7eDgs1HIRZTmVKDjwttsw9IRk,1531
+starapi/spec/core.py,sha256=ufkA1ExomFhcVwuDB76xkiExNq_oJ8CXaaw4kwurA9Y,7550
+starapi/types.py,sha256=fWUQW9kuTaUX3wjW4WLD_t9TY5jvQ7cq1W6kljB0imk,412
+starapi-0.2.0.dist-info/LICENSE,sha256=1XCryB5ZkxPacDVxBE4xtNvXBniZ0eaZceC5TFvLI7I,1065
+starapi-0.2.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+starapi-0.2.0.dist-info/METADATA,sha256=D88ZLZU1ZZ6e8T10AMNyUZXOElnohpzWr3PE5LZfO0E,837
+starapi-0.2.0.dist-info/RECORD,,
