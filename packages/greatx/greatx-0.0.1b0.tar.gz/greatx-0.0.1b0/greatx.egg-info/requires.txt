@@ -1,0 +1,12 @@
+tqdm
+scipy
+numpy
+tabulate
+pandas
+termcolor
+scikit_learn
+matplotlib
+
+[test]
+pytest
+pytest-cov
