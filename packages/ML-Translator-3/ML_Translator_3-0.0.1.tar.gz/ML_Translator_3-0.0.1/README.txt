@@ -1,0 +1,1 @@
+This is Docx file Translator for every 10000 Words it will give you new transalated file.

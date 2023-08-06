@@ -1,0 +1,15 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ML_Translator/__init__.py
+ML_Translator_3.egg-info/PKG-INFO
+ML_Translator_3.egg-info/SOURCES.txt
+ML_Translator_3.egg-info/dependency_links.txt
+ML_Translator_3.egg-info/requires.txt
+ML_Translator_3.egg-info/top_level.txt
+Old Packages/ML_Translator.egg-info/SOURCES.txt
+Old Packages/ML_Translator.egg-info/dependency_links.txt
+Old Packages/ML_Translator.egg-info/requires.txt
+Old Packages/ML_Translator.egg-info/top_level.txt
