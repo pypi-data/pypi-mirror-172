@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ntsubtree
+Version: 1.1
+Summary: Tree representation for fast queries of the subtree of a taxon in the NCBI taxonomy tree
+Home-page: https://github.com/ggonnella/fastsubtrees/tree/main/ntsubtree
+Author: Giorgio Gonnella and and others (see CONTRIBUTORS)
+Author-email: gonnella@zbh.uni-hamburg.de
+License: ISC
+Keywords: bioinformatics genomics taxonomy trees
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: AUTHORS.txt
+
+NtSubtree is a package based on Fastsubtrees which automatically
+downloads and installs the NCBI taxonomy tree during setup.
+
+
+
