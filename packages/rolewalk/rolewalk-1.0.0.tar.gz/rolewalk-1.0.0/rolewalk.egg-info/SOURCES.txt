@@ -1,0 +1,8 @@
+README.md
+rolewalk.py
+setup.py
+rolewalk.egg-info/PKG-INFO
+rolewalk.egg-info/SOURCES.txt
+rolewalk.egg-info/dependency_links.txt
+rolewalk.egg-info/requires.txt
+rolewalk.egg-info/top_level.txt
