@@ -1,0 +1,14 @@
+LMC_Winds/__init__.py,sha256=-Zha3chKqwyNXUVJWB0MYhnaxc3OjhyfUttf47NQqvU,1165
+LMC_Winds/def_norm_guesses.py,sha256=8rYgy4YB1bwPdT_wczjyAimpIx3fgqxv3OXqW-gHmrY,761
+LMC_Winds/def_normalize.py,sha256=tDQZ_uXZ9f5-jR-JmuDyxh7OajtBngpmnf-5Y6Cou90,3801
+LMC_Winds/def_read_STSCI.py,sha256=aO7Nb-UO5atEshcf0lPkUvwlKRd7b_wfKcjEC5JZqGc,1385
+LMC_Winds/def_read_line_transitions.py,sha256=KjpZEcvQYzLXK_feG5dtaBnQFODDcy-X_HoOPWhv4kM,6570
+LMC_Winds/def_velocity_conversions.py,sha256=OoBRMAI1Td8Dt_xqiU20GM0paOEf8Ost7zjjGhuFZdA,4509
+LMC_Winds/example.py,sha256=X8MPB275LbdlIVf8Mawtah11TDi5cPI8aDrkduPD7y8,42
+LMC_Winds/fitting.py,sha256=83xRyzocfhCMAjoU0oenU3YBY1RyaMjrrDQVhnts7b8,3050
+LMC_Winds/whichLSF.py,sha256=ma26O1L26HzE8smCWuEHuKLy32sOvOmdAfCOeDWrlIU,1711
+LMC_Winds-0.0.3.dist-info/LICENSE.txt,sha256=9Uf1CL6l18KFdxn_H4Tp2hSi1Yn4_dLuhmvWGIDUVfY,51
+LMC_Winds-0.0.3.dist-info/METADATA,sha256=pBrBNrEvyvDLcPJJgpUnmkD2ODKYzNZ3iOVNwXofBLc,212
+LMC_Winds-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+LMC_Winds-0.0.3.dist-info/top_level.txt,sha256=gEI9D2X3HLNWGekVmr8l7_c5d7bn4BqWAcY6d_7dhO8,10
+LMC_Winds-0.0.3.dist-info/RECORD,,
