@@ -1,0 +1,2 @@
+[addok.ext]
+france = addok_france
