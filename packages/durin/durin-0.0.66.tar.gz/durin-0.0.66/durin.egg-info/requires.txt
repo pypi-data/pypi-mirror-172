@@ -1,0 +1,9 @@
+inputs
+numpy
+pycapnp
+pyusb
+pysdl2
+pysdl2-dll
+
+[aestream]
+aestream
