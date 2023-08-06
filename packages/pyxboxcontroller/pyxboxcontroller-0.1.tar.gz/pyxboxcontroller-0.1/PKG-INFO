@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyxboxcontroller
+Version: 0.1
+Summary: This module allows for accessing the current state of a connected Xbox controller on Windows via the XInput library(https://learn.microsoft.com/en-gb/windows/win32/xinput/getting-started-with-xinput?redirectedfrom=MSDN#getting-controller-state).
+Home-page: https://github.com/SimpleHydrogen/pyxboxcontroller
+Author: Dan Forbes
+Author-email: danielforbes.123412@gmai.com
+License: MIT
+Keywords: xbox controller,XInput,xbox,controller
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+License-File: LICENCE
