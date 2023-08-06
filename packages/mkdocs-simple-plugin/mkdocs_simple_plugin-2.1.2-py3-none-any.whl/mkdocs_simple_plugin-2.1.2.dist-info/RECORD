@@ -1,0 +1,11 @@
+mkdocs_simple_plugin/__init__.py,sha256=AOiaXYgIsNtANg6yYBExLz4_82GE1E2gdtXpIMkUqEQ,36
+mkdocs_simple_plugin/generator.py,sha256=3oDYzhN-c_5GDPsvsJlVfRdojJ81B4mjAVUDrTBsfvg,4634
+mkdocs_simple_plugin/plugin.py,sha256=PBtxvOsgNv1UPDEnfgSpmfPcrPXvkEFqIP7t7BrCZ5w,11953
+mkdocs_simple_plugin/semiliterate.py,sha256=Uh4WPxqk_8evzFlS2A82R-MvdpZSg0LIBg8LWHFfXFM,15943
+mkdocs_simple_plugin/simple.py,sha256=qYHq8mQPZC2g9mbMPLD4tf7UynGwljBVWBBOWzQw4XM,8974
+mkdocs_simple_plugin-2.1.2.dist-info/LICENSE,sha256=xugbK6Bo1xQwM8zFJFf-TNDeyb9ep2_Hr6De7zKzWe8,11348
+mkdocs_simple_plugin-2.1.2.dist-info/METADATA,sha256=FhVHHHEPziA4_FyiNXIFY6rp0LKl_mEOmC-xGww0Ha4,4276
+mkdocs_simple_plugin-2.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mkdocs_simple_plugin-2.1.2.dist-info/entry_points.txt,sha256=IUTP3gL8U5MupUJyI8RuxGPihRSn6pZYqOajWFoK7Pg,142
+mkdocs_simple_plugin-2.1.2.dist-info/top_level.txt,sha256=OkEOH06mRWT_7PV2AzO7mYWBpcwBqdapfE_3djBrLzA,21
+mkdocs_simple_plugin-2.1.2.dist-info/RECORD,,
