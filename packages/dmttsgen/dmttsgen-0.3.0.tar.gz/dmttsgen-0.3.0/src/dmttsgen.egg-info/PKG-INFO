@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dmttsgen
+Version: 0.3.0
+Summary: Typescript generator for SIMOS based DMT models
+Home-page: UNKNOWN
+Author: SINTEF Ocean
+License: UNKNOWN
+Description: # Typescript runtime generators
+        
+        
+        Generates typescript runtime for given DMT blueprints
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
