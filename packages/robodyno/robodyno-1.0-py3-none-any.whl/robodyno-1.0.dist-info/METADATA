@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: robodyno
+Version: 1.0
+Summary: The Robodyno Robot SDK for Python 3
+Home-page: https://github.com/robottime/Robodyno-Python-API
+Author: song
+Author-email: zhaosongy@126.com
+Maintainer: robottime
+Maintainer-email: lab@robottime.cn
+License: MIT License
+Keywords: robodyno,robot,robot module
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Framework :: Robot Framework
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.10.0)
+Requires-Dist: python-can (<4.0,>=3.2.0) ; "linux" in sys_platform
+Requires-Dist: candle-driver ; sys_platform == "win32"
+
+# Robodyno Robot SDK
+
+
