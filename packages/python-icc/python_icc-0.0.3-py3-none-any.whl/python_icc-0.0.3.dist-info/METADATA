@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-icc
+Version: 0.0.3
+Summary: IoT Control Center data models
+Project-URL: Homepage, https://github.com/patterson-project/icc-models
+Project-URL: Bug Tracker, https://github.com/patterson-project/icc-models/issues
+Author-email: Patterson Project <patterson.n.adrian@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# ICC Models
+* Contains all DTOs and database models for the IoT control center home automation project
