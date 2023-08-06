@@ -1,0 +1,11 @@
+oarepo_model_builder_tests/__init__.py,sha256=16bjpl4fv2Ny0OwNhfvbNyx9f0usVm5xA4jaHUSqju4,177
+oarepo_model_builder_tests/conftest_builder.py,sha256=_8yyVD67J79wfL_if-2Xfjezh28ioYl4Jr_Y4rzfarw,432
+oarepo_model_builder_tests/oarepo_model_builder_setup_cfg.py,sha256=Rnb-ikSuxAmYD_qeY8RDAogMYkcCLv2w7P6ZG5t4DcQ,1015
+oarepo_model_builder_tests/test_resource_builder.py,sha256=1WlyyaicrZtL6tepLEozbhavWY_dvkpF0z0cqC3RX6E,451
+oarepo_model_builder_tests/test_service_builder.py,sha256=Ff5PwudMyDJ_e5z0dA_nkyLnDlFMUoDAMI-ma9Q5OKk,447
+oarepo_model_builder_tests-1.0.0.dist-info/LICENSE,sha256=h2uWz0OaB3EN-J1ImdGJZzc7yvfQjvHVYdUhQ-H7ypY,1064
+oarepo_model_builder_tests-1.0.0.dist-info/METADATA,sha256=FoIS5ah4Rcs8PvnJ8kaSMfu4ImDDrBFjC_U5Qot9LGI,451
+oarepo_model_builder_tests-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+oarepo_model_builder_tests-1.0.0.dist-info/entry_points.txt,sha256=Of6peITe-jQkmJuKj0Wysl6F6ArYY-kZZwiMh6A5FU8,497
+oarepo_model_builder_tests-1.0.0.dist-info/top_level.txt,sha256=8dp6dL11AebhKB_25r7ylVA-dVsT1d0fjZX_kUQSigA,27
+oarepo_model_builder_tests-1.0.0.dist-info/RECORD,,
