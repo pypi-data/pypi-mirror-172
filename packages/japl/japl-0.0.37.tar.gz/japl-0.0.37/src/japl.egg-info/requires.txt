@@ -1,0 +1,5 @@
+
+[dev]
+pandas
+tqdm
+pytest

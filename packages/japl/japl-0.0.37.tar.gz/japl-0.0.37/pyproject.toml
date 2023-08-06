@@ -1,0 +1,29 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0", 
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "japl"
+version = "0.0.37"
+description = "Just Another Python Library is a collection of useful tools to work with."
+readme = "README.md"
+authors = [{ name = "Juan Manuel Mejía Botero", email = "juanmam941025@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3"]
+keywords = ["decorators", "Azure", "Databricks"]
+dependencies = []
+
+requires-python = ">=3.8s"
+
+[project.optional-dependencies]
+dev = ["pandas", "tqdm", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/Juanmam/daz"
+Documentation = "https://daz.readthedocs.io/en/latest/"
