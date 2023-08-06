@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fastlmmclib
+Version: 0.0.2
+Summary: Fast GWAS C library
+Home-page: https://fastlmm.github.io/
+Author: FaST-LMM Team
+Author-email: fastlmm-dev@python.org
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/fastlmm/fastlmmclib/issues
+Project-URL: Source Code, https://github.com/fastlmm/fastlmmclib
+Keywords: gwas bioinformatics LMMs MLMs linear mixed models genomics genetics python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# fastlmmclib
+C extensions for FaST-LMM Python Project
