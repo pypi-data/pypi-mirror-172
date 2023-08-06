@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: CV-Robot
+Version: 0.0.2
+Summary: Computer vision robotics project
+Home-page: https://github.com/RobertJN64/CV_Robot
+Author: Robert Nies
+Author-email: robertjnies@gamil.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Computer Vision Robot
+
+![Python Version Badge](https://img.shields.io/pypi/pyversions/CV_Robot)
+![License Badge](https://img.shields.io/github/license/RobertJN64/CV_Robot)
