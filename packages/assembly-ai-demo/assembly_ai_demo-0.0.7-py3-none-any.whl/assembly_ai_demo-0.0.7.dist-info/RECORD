@@ -1,0 +1,9 @@
+assembly_ai/__init__.py,sha256=b8BBrBYPzxUumdNnonJV073rRaaLAeCs4eTWdRNnomU,330
+assembly_ai/endpoints.py,sha256=3iGOcJh-wj-8ccQKwB5hnqen8Jn61ntiLYUWkM8CYgM,62
+assembly_ai/example.py,sha256=1RwMM_jKFkqAMO_HkwjXDubdZQpDN7n0Z100852H3CM,387
+assembly_ai/walkthroughs.py,sha256=dGq3HftSbwFwOZ9PQUWi85gaGyG-6wSSR5ezTFYL2vM,1868
+assembly_ai_demo-0.0.7.dist-info/LICENSE,sha256=BPYCfxogOWoBhCyXznqeIDIwhZwRCylZChdtKmhYmqc,1053
+assembly_ai_demo-0.0.7.dist-info/METADATA,sha256=HftzJkOh17h8aSv2jMGEirfvHg5xXQaM7hWRvBtkCuE,1804
+assembly_ai_demo-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+assembly_ai_demo-0.0.7.dist-info/top_level.txt,sha256=FVSsuoFK-QrxOG9B7H7nF6EmU2qrrg57bV9-Ym_cYbQ,12
+assembly_ai_demo-0.0.7.dist-info/RECORD,,
