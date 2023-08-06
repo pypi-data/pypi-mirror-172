@@ -1,0 +1,16 @@
+pyplattsapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyplattsapi/locationmap.py,sha256=Wy_0ii77je7M5WDa-ZxiBAmzCXfNIqWJiCdWGzbKRro,2212
+pyplattsapi/oil_inventory.py,sha256=tODbwR-9oA_LIHvSxTDvwYu86YPssM9rZEADRi70rOI,2871
+pyplattsapi/plattsapicore.py,sha256=r15Y_CaPPo4hNaI8_R6VRjtaRKQ67QNkdpY2AEGqumY,2996
+pyplattsapi/refining_margins_crude_arbitrage.py,sha256=1Fq4NIASawYDuI0Ydu4_LNMnOH9QzmViD9xW5ozht7M,1468
+pyplattsapi/world_oil_supply.py,sha256=A4OcNMC3yeNisHQKoIaLUHuUJkwzneCyLhMFzib7kHY,1258
+pyplattsapi/world_refinery_database.py,sha256=Um7B8UH6armWOHkr1KQxjZ1iAD7ERn1Wkjn5fo31Rgw,2965
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_plattsapicore.py,sha256=1O4RgmYwBbKrZYXJQGdagJRekFjqa8bNpPNdwFh-JDs,1658
+tests/test_refining_margins_crude_arbitrage.py,sha256=O-GbcXQp3DMtW18DmNIejwL6gwpoeyiB6WQid10Bj_8,466
+tests/test_world_oil_supply.py,sha256=NnnIYN3v8vTZ65XntuVKbjW2K3JFR6nwRo54e_b8AHM,1259
+tests/test_world_refinery_database.py,sha256=VB2LtGGhohTECtGilwN-BLsnKvLg1rhxnCcWASARDMo,431
+pyplattsapi-0.0.3.dist-info/METADATA,sha256=4OxtBpPF3BLuIdrjHPiF2ebHo9Dt8syekMEz7Ffh2Uw,499
+pyplattsapi-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyplattsapi-0.0.3.dist-info/top_level.txt,sha256=_gR0xvx5I3yA_0-eRS2KdFgHbAVd4m8WfHcDBYpcCVw,18
+pyplattsapi-0.0.3.dist-info/RECORD,,
