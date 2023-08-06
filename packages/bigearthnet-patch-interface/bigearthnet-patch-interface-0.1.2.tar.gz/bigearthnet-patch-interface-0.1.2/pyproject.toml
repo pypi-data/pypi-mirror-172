@@ -1,0 +1,85 @@
+[project]
+name = "bigearthnet-patch-interface"
+version = "0.1.2"
+description = "A simple interface class that includes all the relevant information about BigEarthNet patches."
+authors = [
+    { name = "Kai Norman Clasen", email = "k.clasen@protonmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pydantic>=1.8",
+    "numpy>=1.20",
+    "natsort>=8",
+]
+
+[project.license]
+text = "Apache Software License 2.0"
+
+[project.urls]
+homepage = "https://github.com/kai-tub/bigearthnet_patch_interface/"
+repository = "https://github.com/kai-tub/bigearthnet_patch_interface/"
+documentation = "https://kai-tub.github.io/bigearthnet_patch_interface"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+includes = [
+    "LICENSE",
+    "src",
+]
+
+[tool.pdm.dev-dependencies]
+docs = [
+    "myst-nb>=0.16",
+    "Sphinx>=4.5",
+    "sphinx-autobuild",
+    "sphinx-external-toc",
+    "linkify-it-py",
+    "furo",
+    "common-nb-preprocessors>=1",
+]
+test = [
+    "pytest",
+    "pre-commit",
+    "jupyter",
+    "notebook",
+]
+lint = [
+    "black[jupyter]",
+    "isort",
+    "nbstripout",
+    "mypy",
+]
+
+[tool.pdm.scripts]
+check-pre-commit = "pre-commit run --all-files"
+check-types = "mypy src"
+tests = "pytest tests/"
+
+[tool.pdm.scripts.lint]
+composite = [
+    "pre-commit",
+    "check-types",
+]
+help = "Will check if all files are formatted with black & isort"
+
+[tool.pdm.scripts.build-docs]
+cmd = "sphinx-build docs docs/_build/"
+help = "Build Sphinx documentation"
+
+[tool.pdm.scripts.serve-sphinx-docs]
+cmd = "sphinx-autobuild docs docs/_build --open-browser"
+help = "Serve the Sphinx documentation with sphinx-autobuild"
+
+[tool.mypy]
+exclude = [
+    "tests",
+]
+
+[tool.isort]
+profile = "black"
