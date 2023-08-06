@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: tvb-ext-xircuits
+Version: 0.1a2
+Summary: Jupyterlab extension for building TVB workflows in a visual and interactive manner
+Home-page: https://github.com/the-virtual-brain/tvb-ext-xircuits
+Author: Xpress AI
+Author-email: eduardo@xpress.ai
+License: BSD-3-Clause
+Keywords: Jupyter,JupyterLab,JupyterLab3
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 3
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: full
+License-File: LICENSE
+
+# tvb-ext-xircuits
+
+This is a jupyterlab extension built as a prototype for building TVB workflows in a visual and interactive manner. It 
+extends the already existent [Xircuits](https://xircuits.io/) jupyterlab extension by adding TVB components and new features on top.
+
+There is an alpha version released for testing purposes:
+
+    pip install tvb-ext-xircuits
+
