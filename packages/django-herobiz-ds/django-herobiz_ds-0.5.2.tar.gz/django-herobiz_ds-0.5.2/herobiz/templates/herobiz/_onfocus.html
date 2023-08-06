@@ -1,0 +1,38 @@
+{% load static %}
+<style>
+.onfocus .video-play {
+  background: linear-gradient(rgba(var(--color-black-rgb), 0.4), rgba(var(--color-black-rgb), 0.7)), url("{% static 'img/onfocus/bg.jpg' %}") center center;
+}
+
+.onfocus .content {
+  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8)), url("{% static 'herobiz/img/onfocus-content-bg.jpg' %}") center center;
+}
+</style>
+
+<section id="onfocus" class="onfocus">
+  <div class="container-fluid p-0" data-aos="fade-up">
+
+    <div class="row g-0">
+      <div class="col-lg-6 video-play position-relative">
+        <a href="{{ onfocus.video_link }}" class="glightbox play-btn"></a>
+      </div>
+      <div class="col-lg-6">
+        <div class="content d-flex flex-column justify-content-center h-100">
+          <h3>{{ onfocus.h3 }}</h3>
+          <p class="fst-italic">
+            {{ onfocus.p }}
+          </p>
+          <ul>
+            {% for item in onfocus.li %}
+            <li><i class="bi bi-check-circle"></i>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          {% if onfocus.link %}
+          <a href="{{ onfocus.link }}" class="read-more align-self-start"><span>More</span><i class="bi bi-arrow-right"></i></a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
