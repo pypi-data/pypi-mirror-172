@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: mynameisQQ
+Version: 0.0.1
+Summary: Who is QQ?
+Home-page: https://github.com/Pongsura
+Author: QQ
+Author-email: p.pong1546@gmail.com
+License: MIT
+Download-URL: https://github.com/Pongsura
+Keywords: QQ,mynameisQQ
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+License-File: LICENSE.txt
+
+this package shows you information about QQ
+===========================================
+
+Link: https://www.youtube.com/watch?v=JsfIcV_4eik
+
+PyPi: https://pypi.org/project/mynameisQQ/
+
+Hello:) This package is about QQ
+
+how to install
+~~~~~~~~~~~~~~
+
+เปิด CMD / Terminal
+
+.. code:: python
+
+   pip install mynameisQQ
+
+วิธีใช้งานแพ็คเพจนี้
+~~~~~~~~~~~~~~~~~~~~
+
+-  เปิด IDLE ขึ้นมาแล้วพิมพ์…
+
+.. code:: python
+
+   from mynameisQQ import QQ
+
+   QQ = QQ() 
+   QQ.show_name() # shows name
+   QQ.show_youtube() # shows Youtube link
+   QQ.about() # shows information about QQ
+   QQ.show_art() # shows ascii art
+
+Developed by: QQ FB: :)
+
+YouTube: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+
