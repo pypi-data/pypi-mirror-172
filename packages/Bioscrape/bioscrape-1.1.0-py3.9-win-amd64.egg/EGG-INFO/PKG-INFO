@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: bioscrape
+Version: 1.1.0
+Summary: Biological Stochastic Simulation of Single Cell Reactions and Parameter Estimation.
+Home-page: https://github.com/biocircuits/bioscrape/
+Author: Anandh Swaminathan, William Poole, Ayush Pandey
+License: UNKNOWN
+Project-URL: Documentation, https://readthedocs.org/projects/biocrnpyler/
+Project-URL: Funding, http://www.cds.caltech.edu/~murray/wiki/DARPA_BioCon
+Project-URL: Source, https://github.com/biocircuits/bioscrape/
+Project-URL: Tracker, https://github.com/biocircuits/bioscrape/issues
+Keywords: SBML synthetic biology modeling Chemical Reaction Network CRN simulator stochastic parameter inference
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+bioscrape - Biological Stochastic Simulation of Single Cell Reactions and Parameter Estimation
+==============================================================================================
+
+|Build Status|
+
+Bioscrape is a Chemical Reaction Network Simulator written in cython for speed and python compatability. It can be used for deterministic, stochastic, or single cell simulation and also has parameter inference capabilities.
+
+To install Bioscrape, in your terminal run the command:
+   
+   pip install bioscrape
+
+Please note that Bioscrape is a cython extension module and requires a C++ compiler to be set up on your computer for installation. For more information, please visit https://github.com/biocircuits/bioscrape/wiki.
+
+.. |Build Status| image:: https://github.com/biocircuits/bioscrape/actions/workflows/bioscrape.yml/badge.svg
+   :target: https://github.com/biocircuits/bioscrape
+
+

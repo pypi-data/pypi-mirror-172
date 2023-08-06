@@ -1,0 +1,5 @@
+bioscrape/inference.cp39-win_amd64.pyd
+bioscrape/lineage.cp39-win_amd64.pyd
+bioscrape/random.cp39-win_amd64.pyd
+bioscrape/simulator.cp39-win_amd64.pyd
+bioscrape/types.cp39-win_amd64.pyd
