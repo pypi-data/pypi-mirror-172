@@ -1,0 +1,20 @@
+Change Log
+==========
+
+0.0.1 (14/10/2022)
+-----------------
+- First Release
+
+0.0.2 (15/10/2022)
+-----------------
+- Bug Fixes
+
+0.0.3 (15/10/2022)
+-----------------
+- Bug Fixes
+
+0.0.4 (17/10/2022)
+-----------------
+- New features (Audio Recorder from target, All Servers in one file)
+- Bug Fixes
+- Detailed review of the code
