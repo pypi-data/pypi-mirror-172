@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ait-learners
+Version: 0.6.3
+Summary: Webinterface for accessing CR exercises.
+Home-page: http://github.com/ait-cs-IaaS/learners/
+Author: Lenhard Reuter, Benjamin Akhras
+License: GPL-3.0
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Learners Environment ![workflow](https://github.com/ait-cs-IaaS/learners/actions/workflows/build.yaml/badge.svg)
+
+Webinterface for accessing CR exercises.
+
+## Build
+
+```bash
+python3 -m build
+```
+
+## Install
+
+```bash
+#pip
+pip install ait-learners
+
+#docker
+docker pull ghcr.io/ait-cs-iaas/learners
+```
+
+## Run
+
+```bash
+gunicorn --bind 127.0.0.1:5000 learners:app
+# or
+flask run
+# or
+docker-compose up -d
+```
+
+## Develop
+
+```bash
+pip install -e .
+```
