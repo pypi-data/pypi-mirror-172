@@ -1,0 +1,6 @@
+
+[cassandra]
+cassandra-driver==3.11.0
+
+[mysql]
+PyMySQL==0.7.11

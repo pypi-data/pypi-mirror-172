@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: curd2
+Version: 0.0.14
+Summary: db operations
+Home-page: https://github.com/abo123456789/curd2
+Author: jdxin0
+Author-email: jdxin00@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: db operations
+Platform: UNKNOWN
+Provides-Extra: mysql
+Provides-Extra: cassandra
