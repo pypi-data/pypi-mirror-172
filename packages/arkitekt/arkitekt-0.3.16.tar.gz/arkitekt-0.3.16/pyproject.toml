@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "arkitekt"
+version = "0.3.16"
+description = "rpc and node backbone"
+authors = ["jhnnsrs <jhnnsrs@gmail.com>"]
+license = "CC BY-NC 3.0"
+packages = [{ include = "arkitekt" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+herre = "^0.2.8"
+fakts = "^0.2.13"
+rekuest = "^0.0.19"
+mikro = "^0.2.25"
+
+[tool.poetry.dev-dependencies]
+black = "22.8.0"
+turms = { version = "^0.2.3", python = "^3.9" }
+PyQt5 = "^5.15.7"
+autoflake = "^1.6.1"
+pydoc-markdown = "4.5.1"
+testcontainers = "^3.7.0"
+pytest-cov = "^3.0.0"
+
+[tool.poetry.scripts]
+arkitekt = "arkitekt.cli.main:entrypoint"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+qt_api = "pyqt5"
+markers = [
+    "integration: marks tests that require a running server",
+    "qt: marks tests that require a running qt application",
+]
+
+
+[[tool.pydoc-markdown.loaders]]
+type = "python"
+search_path = ["arkitekt"]
+
+[tool.pydoc-markdown.renderer]
+type = "docusaurus"
+docs_base_path = "website/docs"
