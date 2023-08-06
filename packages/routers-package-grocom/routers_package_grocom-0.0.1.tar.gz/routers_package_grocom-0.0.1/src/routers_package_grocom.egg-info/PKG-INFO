@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: routers-package-grocom
+Version: 0.0.1
+Summary: Package for routing grocom project
+Author-email: Quynh <quynhlayer@gmail.com>
+Project-URL: Homepage, https://github.com/layer-quynh/routings-grocom
+Project-URL: Bug Tracker, https://github.com/layer-quynh/routings-grocom/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Routing Grocom Package
+
+This is a simple package for routing. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
