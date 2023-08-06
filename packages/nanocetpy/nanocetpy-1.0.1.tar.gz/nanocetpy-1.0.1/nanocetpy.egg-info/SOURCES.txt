@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+nanocetpy.egg-info/PKG-INFO
+nanocetpy.egg-info/SOURCES.txt
+nanocetpy.egg-info/dependency_links.txt
+nanocetpy.egg-info/entry_points.txt
+nanocetpy.egg-info/top_level.txt

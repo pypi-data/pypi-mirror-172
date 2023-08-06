@@ -1,0 +1,2 @@
+[console_scripts]
+nanocet = NanoCETPy.__main__:main
