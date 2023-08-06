@@ -1,0 +1,9 @@
+synapse_poll_module/__init__.py,sha256=sw0AzxaUg97qtIsctPuw6dMNug7_d7wzNTsZz8fS4os,16264
+synapse_poll_module/create_db.py,sha256=a4JFj2wwt-VP0-DL7oiJStuF6AeLBCIRjkOplWhkJ08,2731
+synapse_poll_module/database.py,sha256=Z8rVnmRIaSvVKXPVoLUbtNdv5Vl7olEJ28Dgoa4Rv-U,6803
+synapse_poll_module/polls.py,sha256=8Ls7bmnP5tN8x9RjjFOb947pKU2LmvsvCzcIe4eYL-M,2332
+synapse_poll_module-0.0.1.dist-info/LICENSE,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+synapse_poll_module-0.0.1.dist-info/METADATA,sha256=FBif0p6cwPlrqR4yOL7fGXZxjlIrCcHb3E_ggU7rR3Q,812
+synapse_poll_module-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+synapse_poll_module-0.0.1.dist-info/top_level.txt,sha256=pA38ASlHOkLt1K9ZfissvouF8UZEP05qTIMzuSI4ysI,20
+synapse_poll_module-0.0.1.dist-info/RECORD,,
