@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: py-simple-lorem
+Version: 0.0.1
+Summary: Simple, compressed Lorem Ipsum generator. Get a different output each time.
+Project-URL: Homepage, https://github.com/AndrewSpangler/py_simple_lorem/
+Project-URL: Bug Tracker, https://github.com/AndrewSpangler/py_simple_lorem/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py_simple_lorem 0.0.1<a name="mark0"></a>
+
+***Simple, compressed Lorem Ipsum generator. Get a different output each time.***
+
+![lorem](https://raw.githubusercontent.com/AndrewSpangler/py_simple_lorem/main/lorem.png)
+
+---
+
+- [About](#mark1)
+	- [Installation](#mark2)
+- [Command Line Usage](#mark3)
+- [Module Usage](#mark4)
+
+---
+
+# About<a name="mark1"></a>[^](#mark0)
+
+This module provides a single function `lorem` that produces Lorem Ipsum. py_simple_lorem.py contains a large amount of Lorem Ipsum stored in a compressed format.
+
+## Installation<a name="mark2"></a>[^](#mark1)
+
+Available on pip - `pip install py_simple_lorem`
+
+# Command Line Usage<a name="mark3"></a>[^](#mark0)
+
+Command line usage is simple. Run py_simple_lorem.py without arguments for one paragraph or pass an integer for the appropriate number of paragraphs.
+
+# Module Usage<a name="mark4"></a>[^](#mark0)
+
+Module usage is simple. Import lorem from py_simple_lorem.py and call `lorem(COUNT)` to get a string containing *COUNT* entries
+
