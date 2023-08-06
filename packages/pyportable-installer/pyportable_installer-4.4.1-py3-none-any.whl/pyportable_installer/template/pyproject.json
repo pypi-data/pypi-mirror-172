@@ -1,0 +1,82 @@
+{
+    "app_name": "",
+    "app_version": "0.1.0",
+    "description": "",
+    "authors": [],
+    "build": {
+        "proj_dir": "",
+        "dist_dir": "dist/{app_name_kebab}-{app_version}",
+        "launchers": {
+            "{app_name}": {
+                "file": "",
+                "icon": "",
+                "function": "main",
+                "args": [],
+                "kwargs": {}
+            }
+        },
+        "readme": "",
+        "attachments": {},
+        "attachments_exclusions": [],
+        "attachments_exist_scheme": "overwrite",
+        "module_paths": [],
+        "module_paths_scheme": "translate",
+        "python_version": "3.8",
+        "venv": {
+            "enabled": true,
+            "mode": "source_venv",
+            "options": {
+                "depsland": {
+                    "venv_name": "{app_name_snake}_venv",
+                    "venv_id": "",
+                    "requirements": [],
+                    "offline": false,
+                    "local": ""
+                },
+                "source_venv": {
+                    "path": "",
+                    "copy_venv": true
+                },
+                "pip": {
+                    "requirements": [],
+                    "pypi_url": "https://pypi.python.org/simple/",
+                    "offline": false,
+                    "local": ""
+                },
+                "embed_python": {
+                    "path": ""
+                }
+            }
+        },
+        "compiler": {
+            "enabled": true,
+            "mode": "pyportable_crypto",
+            "options": {
+                "cythonize": {
+                    "c_compiler": "msvc",
+                    "python_path": "auto_detect"
+                },
+                "pyarmor": {
+                    "license": "trial",
+                    "obfuscate_level": 0
+                },
+                "pyc": {
+                    "optimize_level": 0
+                },
+                "pyportable_crypto": {
+                    "key": "{random}"
+                },
+                "zipapp": {
+                    "password": ""
+                }
+            }
+        },
+        "experimental_features": {
+            "add_pywin32_support": false,
+            "platform": "system_default"
+        },
+        "enable_console": true
+    },
+    "note": "",
+    "pyportable_installer_version": "4.4.0"
+}

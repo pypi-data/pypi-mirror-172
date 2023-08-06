@@ -1,0 +1,113 @@
+"""
+Placeholders:
+    VENV_NAME       tell depsland what venv folder name to create.
+    REQUIREMENTS    list[str]. list of requirements with specifiers.
+    VENV_ID         venv id.
+    PYVERSION       python version. e.g. 'python39', 'python39-32', etc.
+    LAUNCHER        main launcher name.
+    OFFLINE         bool[False]. set pip offline mode.
+    LOCAL_DIR       str. if offline enabled, the local should be a valid path
+                    which contains '*.whl' files.
+See `pyportable_installer.main_flow.step3.step3_3.create_launcher
+    ._create_depsland_setup`
+
+Workflow:
+    1. import depsland
+    2. depsland create venv
+    3. generate exe
+    4. delete setup.bat
+"""
+import os
+import sys
+import shutil
+
+from os import path as xpath
+from traceback import format_exc
+
+os.chdir(xpath.dirname(__file__))
+
+
+def _safe_exit(msg, succeed: bool):
+    if msg:
+        lk.log(msg, h='parent')
+    if succeed:
+        # # print('[Setup Succeed] Press enter or close the window to leave...')
+        input('[Setup Succeed] Press enter or close the window to leave...')
+    else:
+        input('[Setup Failed] Press enter or close the window to leave...')
+    sys.exit()
+
+
+try:
+    def _get_depsland_dir():
+        # if os.getenv('DEPSLAND'):
+        #     return os.getenv('DEPSLAND')
+
+        d = os.getenv('ProgramData') + '/' + 'Depsland'
+        assert xpath.exists(d)
+        sys.path.insert(0, d)
+
+        from depsland_entrance import depsland_dir
+        return depsland_dir
+
+    sys.path.insert(0, _get_depsland_dir())
+
+    from depsland import launch
+
+    import lk_utils
+    from lk_logger import lk
+
+except AssertionError:
+    _safe_exit('DEPSLAND not found in environment variables, you may reinstall '
+               'depsland application', False)
+
+except ImportError:
+    _safe_exit('Cannot import depsland', False)
+
+
+# ------------------------------------------------------------------------------
+
+def main(offline={OFFLINE}, local=r'{LOCAL_DIR}'):
+    if offline and xpath.exists(local):
+        lk.loga('indexing local packages', local)
+        from depsland.pypi import local_pypi
+        from depsland_additional_tools import indexing_local_packages
+        indexing_local_packages.main(local)
+        # shutil.rmtree(local)
+        local_pypi.reload_indexed_data()
+
+    # create depsland venv
+    venv_dir = launch(
+        "{VENV_NAME}",
+        {REQUIREMENTS},
+        venv_id="{VENV_ID}",
+        pyversion="{PYVERSION}",
+    )
+
+    # generate launcher
+    # see `pyportable_installer.main_flow.step3.step3_3.create_launcher`
+    for fp, fn in lk_utils.find_files('./_bat_launchers_template', fmt='zip'):
+        fp_i, fp_o = fp, f'./_bat_launchers/{{fn}}'
+        code = lk_utils.loads(fp_i)
+        code = code.format(PYTHON=xpath.normpath(f'{{venv_dir}}/python.exe'))
+        lk_utils.dumps(code, fp_o)
+    for fp, fn in lk_utils.find_files('./_exe_launchers', fmt='zip'):
+        fp_i, fp_o = fp, f'../{{fn}}'
+        if xpath.exists(fp_o): os.remove(fp_o)
+        shutil.copyfile(fp_i, fp_o)
+
+    # move setup file to build dir
+    if xpath.exists('./setup.bat'):
+        os.remove('./setup.bat')
+    shutil.move('../setup.bat', './setup.bat')
+
+
+try:
+    main()
+except Exception:
+    _safe_exit(format_exc(), False)
+else:
+    # from lk_utils.subproc import run_cmd_args
+    # from lk_utils.subproc import run_new_thread
+    # run_new_thread(run_cmd_args, xpath.abspath('../{LAUNCHER}.exe'))
+    _safe_exit('', True)

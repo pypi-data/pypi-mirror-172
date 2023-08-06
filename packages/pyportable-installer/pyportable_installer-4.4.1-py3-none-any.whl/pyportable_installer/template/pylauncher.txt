@@ -1,0 +1,174 @@
+"""
+Funtions:
+    1. Update `sys.path`.
+    2. Locate and check out target module.
+    3. Passing args and kwargs to target function.
+
+Placeholders:
+    PROJ_LIB_DIR        dir
+    ADD_PYWIN32_SUPPORT bool[False]
+    MODULE_PATHS        list[dir]
+    *DEFAULT_CONF*      file[*.pkl]
+        TARGET_DIR      dir
+        TARGET_PKG      str
+        TARGET_MOD      str
+        TARGET_FUNC     str
+        TARGET_ARGS     list[val]
+        TARGET_KWARGS   dict[var, val]
+"""
+import os
+import sys
+import traceback
+
+from os.path import abspath
+
+# add current dir to `sys.path` (this is necessary for embed python)
+os.chdir(os.path.dirname(__file__))
+sys.path.insert(0, abspath('.'))
+
+# add project lib to environment
+sys.path.insert(1, abspath('{PROJ_LIB_DIR}'))
+
+module_paths = {MODULE_PATHS}
+if module_paths:
+    sys.path.extend(map(abspath, module_paths))
+
+add_pywin32_support = {ADD_PYWIN32_SUPPORT}
+if add_pywin32_support:
+    try:
+        # ref: https://stackoverflow.com/questions/58612306/how-to-fix
+        #      -importerror-dll-load-failed-while-importing-win32api
+        #      (see comment from @ocroquette)
+        import pywin32_system32  # noqa
+        _pywin32_dir = pywin32_system32.__path__._path[0]  # noqa
+        # -> ~/lib/site-packages/pywin32_system32
+        os.add_dll_directory(_pywin32_dir)
+        #   FIXME: this function is introduced since python 3.8.
+
+        _site_packages_dir = os.path.dirname(_pywin32_dir)
+        sys.path.extend((
+            _site_packages_dir + '/pythonwin',
+            _site_packages_dir + '/win32',
+            _site_packages_dir + '/win32/lib',
+        ))
+    except ImportError:
+        print('Adding pywin32 support failed')
+
+
+# ------------------------------------------------------------------------------
+
+def _parse_argv() -> dict:
+    """
+    Returns:
+        {{'launch_exception_output': literal['terminal', 'messagebox'],
+          'target': {{...}}}}
+    """
+    argv = sys.argv
+    out = {{
+        'launch_exception_output': 'messagebox',
+        'target': None,
+    }}
+
+    def _is_conf_file(arg: str) -> bool:
+        return arg.startswith('.pylauncher_conf/')
+
+    def _is_output_option(arg: str) -> bool:
+        return arg in ('terminal', 'messagebox')
+
+    if len(argv) == 1:
+        conf_file = '.pylauncher_conf/.main.pkl'
+    elif len(argv) >= 2:
+        if _is_conf_file(argv[1]):
+            conf_file = argv.pop(1)
+        if len(argv) >= 2 and _is_output_option(argv[1]):
+            out['launch_exception_output'] = argv.pop(1)
+    else:  # len(argv) == 0? (never reachable case)
+        raise Exception(argv)
+
+    assert conf_file.endswith(('.json', '.pkl')), (
+        'Unknown file type to load target config!', conf_file
+    )
+    if conf_file.endswith('.pkl'):
+        from pickle import load
+        with open(conf_file, 'rb') as f:
+            conf_data = load(f)
+    else:
+        from json import load
+        with open(conf_file, 'r', encoding='utf-8') as f:
+            conf_data = load(f)
+    out['target'] = conf_data
+
+    return out
+
+
+def launch(conf: dict) -> None:
+    # change working directory to `conf['TARGET_DIR']`, to make sure all 
+    # sequent relative paths are correct.
+    os.chdir(conf['TARGET_DIR'])
+    sys.path.append(abspath('.'))
+
+    from importlib import import_module
+    # target name is a filename without suffix
+    module = import_module(conf['TARGET_NAME'], '')
+    main = getattr(module, conf['TARGET_FUNC'], None)
+    if main is not None:
+        main(*conf['TARGET_ARGS'], **conf['TARGET_KWARGS'])
+
+
+def _prompt_error(
+    msg: str,
+    title='Runtime Exception',
+    output='terminal'
+) -> None:
+    """
+    Args:
+        msg:
+        title:
+        output:
+            - terminal: show error message in terminal.
+            - messagebox: show error message in a messagebox (os dependent).
+
+    Rerferences:
+        https://stackoverflow.com/questions/2963263/how-can-i-create-a-simple-
+            message-box-in-python
+        https://stackoverflow.com/questions/1278705/when-i-catch-an-exception-
+            how-do-i-get-the-type-file-and-line-number
+        https://stackoverflow.com/questions/17280637/tkinter-messagebox-without-
+            window
+        https://www.cnblogs.com/freeweb/p/5048833.html
+    """
+    if output == 'terminal':
+        print(title + ':', msg)
+        input('Press enter to leave...')
+        sys.exit(1)
+    else:
+        try:
+            import tkinter
+        except (ImportError, ModuleNotFoundError):
+            import subprocess
+            if sys.platform == 'win32':
+                subprocess.call(['msg', '*', title + ': ' + msg])
+            elif sys.platform == 'darwin':
+                subprocess.call([
+                    'osascript', '-e', 'Tell application "System Events" to '
+                    'display dialog "{{}}" with title "{{}}"'.format(msg, title)
+                ])
+            else:
+                raise NotImplementedError
+        else:
+            from tkinter import Tk, messagebox
+            root = Tk()
+            root.withdraw()
+            messagebox.showerror(title=title, message=msg)
+
+
+if __name__ == '__main__':
+    try:
+        info = _parse_argv()
+        # print(':l', info)
+        launch(info['target'])
+    except Exception:
+        _prompt_error(
+            traceback.format_exc(),
+            output=info['launch_exception_output']
+        )
