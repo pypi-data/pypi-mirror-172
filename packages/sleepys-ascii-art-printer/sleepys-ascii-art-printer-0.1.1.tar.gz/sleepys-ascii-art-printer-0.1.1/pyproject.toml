@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sleepys-ascii-art-printer"
+version = "0.1.1"
+description = "An ascii art library and output tool for the command line."
+authors = ["anthonybench <anthonybenchyep@gmail.com>"]
+license = "GNU GPL"
+readme = "README.md"
+packages = [{include = "ascii_art"}]
+repository = "https://github.com/anthonybench/ASCII_art"
+keywords = ["ascii", "art", "cli"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
