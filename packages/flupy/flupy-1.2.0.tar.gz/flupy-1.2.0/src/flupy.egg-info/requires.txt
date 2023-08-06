@@ -1,0 +1,10 @@
+typing_extensions
+
+[dev]
+pytest
+pytest-cov
+pytest-benchmark
+pre-commit
+pylint
+black
+mypy

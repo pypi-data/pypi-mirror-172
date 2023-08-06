@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/flupy/__init__.py
+src/flupy/fluent.py
+src/flupy/py.typed
+src/flupy.egg-info/PKG-INFO
+src/flupy.egg-info/SOURCES.txt
+src/flupy.egg-info/dependency_links.txt
+src/flupy.egg-info/entry_points.txt
+src/flupy.egg-info/requires.txt
+src/flupy.egg-info/top_level.txt
+src/flupy/cli/__init__.py
+src/flupy/cli/cli.py
+src/flupy/cli/utils.py
