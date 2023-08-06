@@ -1,0 +1,11 @@
+absl-py
+dm-sonnet
+graphviz
+matplotlib
+numpy
+pandas
+scikit-learn
+six
+
+[tensorflow]
+tensorflow>=1.15
