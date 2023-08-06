@@ -1,0 +1,4 @@
+[console_scripts]
+ShengmingdeYouxiChantaluoShouce = ShengmingdeYouxiChantaluoShouce.__main__:main
+shengmingde-youxi-chantaluo-shouce = ShengmingdeYouxiChantaluoShouce.__main__:main
+
