@@ -1,0 +1,12 @@
+setuptools
+wheel
+numpy
+scipy
+numba
+sympy
+awkward
+sectionproperties
+linkeddeepdict
+dewloosh.core
+neumann
+polymesh
