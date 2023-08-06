@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: synapse-audiobomb-module
+Version: 0.0.1
+Summary: "Synapse module to send audiobomb messages"
+Home-page: https://github.com/Supereuro/SynapseAudiobombModule/
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: attrs
+Requires-Dist: twisted
+Provides-Extra: dev
+Requires-Dist: matrix-synapse ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: twisted ; extra == 'dev'
+Requires-Dist: aiounittest ; extra == 'dev'
+Requires-Dist: mypy (==0.910) ; extra == 'dev'
+Requires-Dist: black (==21.9b0) ; extra == 'dev'
+Requires-Dist: flake8 (==4.0.1) ; extra == 'dev'
+Requires-Dist: isort (==5.9.3) ; extra == 'dev'
+
+"See Github README"
