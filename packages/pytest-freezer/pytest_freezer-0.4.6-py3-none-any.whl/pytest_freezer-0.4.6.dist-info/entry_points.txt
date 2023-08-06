@@ -1,0 +1,2 @@
+[pytest11]
+freezer = pytest_freezer
