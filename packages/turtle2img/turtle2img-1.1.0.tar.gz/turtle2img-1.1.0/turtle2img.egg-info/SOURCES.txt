@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/__init__.py
+src/turtle2img.py
+turtle2img.egg-info/PKG-INFO
+turtle2img.egg-info/SOURCES.txt
+turtle2img.egg-info/dependency_links.txt
+turtle2img.egg-info/requires.txt
+turtle2img.egg-info/top_level.txt
