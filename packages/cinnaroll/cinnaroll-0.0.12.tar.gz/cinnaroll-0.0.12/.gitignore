@@ -1,0 +1,27 @@
+# todo: delete after finding out where it is created and how to clean it up
+# all I know now is that it's created when tests are run
+saved_model
+
+# Editors
+.idea/
+*.swp
+
+# Python
+AUTHORS
+ChangeLog
+build/
+.coverage
+coverage.xml
+dist/
+docs/html/
+*.egg-info/
+.eggs/
+htmlcov/
+*.pyc
+.python-version
+test-results/
+.tox/
+venv/
+
+# MacOS
+.DS_Store
