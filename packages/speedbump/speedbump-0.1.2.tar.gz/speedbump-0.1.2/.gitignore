@@ -1,0 +1,11 @@
+_version.py
+.cache
+.coverage
+.direnv
+.eggs
+.tox
+build
+dist
+venv
+*.egg-info
+__pycache__

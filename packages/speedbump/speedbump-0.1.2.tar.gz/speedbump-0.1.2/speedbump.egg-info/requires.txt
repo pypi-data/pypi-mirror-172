@@ -1,0 +1,12 @@
+PyGithub
+typer
+PyYAML
+sh
+
+[test]
+pytest
+pytest-pikachu
+pytest-mypy
+pytest-cov
+pytest-shell
+types-PyYAML

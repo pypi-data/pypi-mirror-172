@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: speedbump
+Version: 0.1.2
+Summary: Fastest path to bump nirvana.
+Author: Ross Fenning
+Author-email: github@rossfenning.co.uk
+Description-Content-Type: text/markdown
+Provides-Extra: test
+
+# Speedbump
+
+Auto-create various configs based on project type.
