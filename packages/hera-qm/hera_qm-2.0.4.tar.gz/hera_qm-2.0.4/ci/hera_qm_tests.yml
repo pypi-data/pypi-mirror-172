@@ -1,0 +1,19 @@
+name: hera_qm_tests
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - astropy>=3.2.3
+  - astropy-healpix
+  - h5py
+  - matplotlib
+  - numpy>=1.23
+  - pip
+  - pytest
+  - pytest-cov
+  - pyuvdata>=2.2.9
+  - scikit-learn # from hera_cal
+  - scipy
+  - pip:
+    - hera-calibration
+    - uvtools
