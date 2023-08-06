@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/sparta/__init__.py
+src/sparta/rabbit/__init__.py
+src/sparta/rabbit/client.py
+src/sparta/rabbit/connection.py
+src/sparta_rabbit.egg-info/PKG-INFO
+src/sparta_rabbit.egg-info/SOURCES.txt
+src/sparta_rabbit.egg-info/dependency_links.txt
+src/sparta_rabbit.egg-info/namespace_packages.txt
+src/sparta_rabbit.egg-info/requires.txt
+src/sparta_rabbit.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+pika
+pika-stubs
+aio-pika
+
+[test]
+pytest
+pytest-asyncio
+python-dotenv
