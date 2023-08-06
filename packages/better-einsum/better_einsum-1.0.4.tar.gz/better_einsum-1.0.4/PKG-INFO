@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: better_einsum
+Version: 1.0.4
+Summary: np.einsum but better
+Home-page: https://github.com/evhub/better_einsum
+Author: Evan Hubinger
+Author-email: evanjhub@gmail.com
+License-File: LICENSE
+
+np.einsum but better

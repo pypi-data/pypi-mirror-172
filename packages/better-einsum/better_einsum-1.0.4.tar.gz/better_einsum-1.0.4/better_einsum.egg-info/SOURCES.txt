@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+better_einsum/__init__.py
+better_einsum/better_einsum.py
+better_einsum.egg-info/PKG-INFO
+better_einsum.egg-info/SOURCES.txt
+better_einsum.egg-info/dependency_links.txt
+better_einsum.egg-info/requires.txt
+better_einsum.egg-info/top_level.txt
