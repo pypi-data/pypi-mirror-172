@@ -1,0 +1,2 @@
+[console_scripts]
+nPerlinNoise = nPerlinNoise.__main__:main
