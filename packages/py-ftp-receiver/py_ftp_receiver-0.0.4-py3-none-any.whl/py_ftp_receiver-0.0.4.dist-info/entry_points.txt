@@ -1,0 +1,2 @@
+[console_scripts]
+ftp_receiver = ftp_receiver.main:main
