@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: doyle
+Version: 0.0.0.dev29
+Summary: doyle description
+Home-page: https://github.com/62090500409/doyle
+Author: Thanaphit S.
+Author-email: thanaphit.su@mail.kmutt.ac.th
+License: Unlicense
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: IPython
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Thai
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: ==3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: nltk
+Requires-Dist: scipy
+Requires-Dist: smart-open
+Requires-Dist: tensorflow
+Requires-Dist: sklearn
+Requires-Dist: matplotlib
+Requires-Dist: statsmodels
+Requires-Dist: pythainlp
+Requires-Dist: pyspellchecker
+Requires-Dist: fairseq
+Requires-Dist: tensorboardX
+Requires-Dist: jupyter
+Requires-Dist: ipywidgets
+Requires-Dist: widgetsnbextension
+Requires-Dist: pandas-profiling
+Requires-Dist: xlrd
+Requires-Dist: gdown
+Requires-Dist: dill
+
+Description
+===========
+    Doyle is project to build the automation tool for date exploration and data preprocessing as a python package. 
+    Doyle is in initial process so the package and documents are not complete for now.
+
+Installation
+============
+    In current version, Doyle only support for python 3.7
+
+.. code-block:: bash
+    pip install doyle
+    # then, install sherlock package with the following command
+    pip install -e git+https://github.com/mitmedialab/sherlock-project.git#egg=sherlock
+
+Documents
+============
+    the documents are not available for now
+
+Usage
+=====
+.. code-block:: bash
+    >>> import doyle
+    >>> explorer = doyle.DataExplorer.explore_files("./data")
