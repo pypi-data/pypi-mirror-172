@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: wiggles
+Version: 1.1
+Summary: This library makes signal processing easy ! 
+Home-page: https://linktr.ee/RanitBhowmick
+Download-URL: https://github.com/Kawai-Senpai/wiggles
+Author: Ranit Bhowmick
+Author-email: bhowmickranitking@gmail.com
+License: Free to use but prohibited to copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software
+Keywords: Signal Processing,Education,Discrete signal,Continuous signal,Basic signal operations

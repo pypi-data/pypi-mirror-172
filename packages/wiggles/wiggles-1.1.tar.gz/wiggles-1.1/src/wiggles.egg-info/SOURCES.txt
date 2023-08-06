@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+src/wiggles.egg-info/PKG-INFO
+src/wiggles.egg-info/SOURCES.txt
+src/wiggles.egg-info/dependency_links.txt
+src/wiggles.egg-info/requires.txt
+src/wiggles.egg-info/top_level.txt
