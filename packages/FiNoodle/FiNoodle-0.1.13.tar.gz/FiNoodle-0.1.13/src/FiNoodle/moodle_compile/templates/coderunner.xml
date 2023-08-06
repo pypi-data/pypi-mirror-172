@@ -1,0 +1,91 @@
+<question type="coderunner">
+    <name>
+        <text>{{ question.title }}</text>
+    </name>
+    <coderunnertype>{{ question.coderunnertype }}</coderunnertype>
+    <precheck>{{ question.precheck }}</precheck>
+    <questiontext format="html">
+        <text><![CDATA[{{ question.prompt }}]]></text>
+        {% for file in question.images %}
+          <file name="{{file.name}}" path="{{file.path}}" encoding="{{file.encoding}}">{{file.content}}</file>
+        {% endfor %}
+    </questiontext>
+    <answer><![CDATA[{{ question.answer }}]]></answer>
+    <answerboxlines>{{ question.answerlines }}</answerboxlines>
+    <answerpreload><![CDATA[{{ question.answerpreload }}]]></answerpreload>
+    <generalfeedback format="html">
+        <text></text>
+    </generalfeedback>
+    <defaultgrade>{{question.defaultgrade}}</defaultgrade>
+    <penalty>{{question.penalty}}</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <prototypetype>0</prototypetype>
+    <allornothing>1</allornothing>
+    <penaltyregime>0, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50</penaltyregime>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxcolumns>100</answerboxcolumns>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template>{% if question.template is not none %}<![CDATA[{{ question.template }}]]>{% endif %}
+    </template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>None</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald>{}</templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <testcases>
+        {% for testcase in question.testcases %}
+            <testcase testtype="0" useasexample="{{testcase.example}}" hiderestiffail="0" mark="1.0000000" >
+                <testcode>
+                        <text>{{testcase.testcode}}</text>
+                </testcode>
+                <stdin>
+                        <text>{{testcase.stdin}}</text>
+                </stdin>
+                <expected>
+                        <text>{{testcase.expected}}</text>
+                </expected>
+                <extra>
+                        <text></text>
+                </extra>
+                    <display>
+                        <text>{{testcase.display}}</text>
+                    </display>
+            </testcase>
+        {% endfor %}
+        {% for file in question.files %}
+            	<file name="{{file.name}}" path="{{file.path}}" encoding="{{file.encoding}}">{{file.content}}</file>
+        {% endfor %}
+    </testcases>
+    <tags>
+        {% for tag in question.tags %}
+            <tag>
+                <text>{{ tag }}</text>
+            </tag>
+        {% endfor %}
+    </tags>
+</question>
