@@ -1,0 +1,2 @@
+[napari.manifest]
+okapi-em = okapi_em:napari.yaml
