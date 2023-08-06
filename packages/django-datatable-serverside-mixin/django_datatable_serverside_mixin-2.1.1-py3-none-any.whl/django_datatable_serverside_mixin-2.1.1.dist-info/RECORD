@@ -1,0 +1,12 @@
+django_datatable_serverside_mixin/__init__.py,sha256=oj0LHDWlqboK4v9aL-Ip73XSys3CFyviNusWWM_gFPI,256
+django_datatable_serverside_mixin/datatable.py,sha256=mIlYsAVGXjwzkyQjbuuEZYSmOz9BlFXh14XuTVmWIdE,5420
+django_datatable_serverside_mixin/views.py,sha256=7HdkRA1hNx3F8hAt7mhoOtP2n6-uufjITtZek2KqmEY,2435
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fixtures.py,sha256=T2mA3C2HwVO7wXUK855tsGCQjswsEhz8AzF7ozwZbQs,442
+tests/test_datatable.py,sha256=4kTLL2DkyA_ehENaohMMlspdtO7eLYONiEu5DBihdAM,25144
+tests/test_views.py,sha256=nXvP3LB6DydjkDf6NIV7monp4r6Xx-BwOAQryY0wxlI,5285
+django_datatable_serverside_mixin-2.1.1.dist-info/LICENSE,sha256=j5oOMOlzcGaGfTnC8qL9YCt4UwpN6fsRNjcJ0cJOgik,1066
+django_datatable_serverside_mixin-2.1.1.dist-info/METADATA,sha256=cHolkh457es-6zPg-gId9rqmm6vxd0NjHgsU0BjO4lk,5649
+django_datatable_serverside_mixin-2.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_datatable_serverside_mixin-2.1.1.dist-info/top_level.txt,sha256=ULRFBYQtCLP6Uur85NgWdh9FKRfE_Tk78QJSAmaUq-g,40
+django_datatable_serverside_mixin-2.1.1.dist-info/RECORD,,
