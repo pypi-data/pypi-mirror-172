@@ -1,0 +1,3 @@
+[console_scripts]
+elastica-pipelines=elastica_pipelines.__main__:main
+

@@ -1,0 +1,17 @@
+elastica_pipelines/__init__.py,sha256=5_ZP-0o2W0ztP1XYLeIH6c4DNanjiHQBjQAeJ-BKk5s,26
+elastica_pipelines/__main__.py,sha256=YxdoVVw3xaHgsLoIk4Gn_Gsumk1j-Kj4tCAkWZs8BQI,226
+elastica_pipelines/io/__init__.py,sha256=MRkdEyLc9L1qyZkfcymhrHQcJYjeZ0ZsMH4k8WUHUak,478
+elastica_pipelines/io/backends.py,sha256=L1Sm2PWjEsISgFRVBbMvqevp3nnTbm6uP0FrRlyj-_k,1495
+elastica_pipelines/io/core.py,sha256=U4xWNlMqGbkWIhcPB3_YAXOt_v3gHKQuehTm_MHqjuk,9753
+elastica_pipelines/io/entry.py,sha256=drtMr9_LH3TME8McKOpUMEHuVrvYi_2ucmcSeYjQs-c,2846
+elastica_pipelines/io/protocols.py,sha256=1OepDMgT_87vvo0GTPfcrtPl0zOFzdImohbvHyyXvRg,5977
+elastica_pipelines/io/specialize.py,sha256=MpXKwgLFXaYKaT5rjkpWAM2deIIzaLu_II7WLli4ZlU,5600
+elastica_pipelines/io/temporal.py,sha256=OfvXYBJfGFy2-NKWJ65DPFdNpl-qW55BHvyrulXMabA,16684
+elastica_pipelines/io/transforms.py,sha256=21Y-R3NFYX1mvIP_Kjg98YEjjDLymKEY9mGBHCsDEUs,1990
+elastica_pipelines/io/typing.py,sha256=3zzkzBgHpYEIfD2jAOqneLxkb1F0lKiV2MgKnscMHqE,1545
+elastica_pipelines/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elastica_pipelines-0.2.0.dist-info/entry_points.txt,sha256=5SgorY3ohpdrU5N1gJzI7CUMmwQSg_lPDSAkyEO2X28,71
+elastica_pipelines-0.2.0.dist-info/LICENSE,sha256=E_8LR2GA1oDf7kfrMNPKuaW7ieLpKLMe1poeLgcLGNg,1067
+elastica_pipelines-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+elastica_pipelines-0.2.0.dist-info/METADATA,sha256=Sr-9uDMnETd17TDrBkqlWpqrOxbkNd4_FTvVg9JR3gs,4803
+elastica_pipelines-0.2.0.dist-info/RECORD,,
