@@ -1,0 +1,12 @@
+[
+  {
+    "name": "default",
+    "active": true,
+    "data": {
+      "backend": "gcp",
+      "credentials": "path_to_credentials",
+      "project": "",
+      "buckets": ["default_bloggen_bucket"]
+    }
+  }
+]
