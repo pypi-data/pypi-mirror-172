@@ -1,0 +1,4 @@
+[console_scripts]
+RenxueZhengjie = RenxueZhengjie.__main__:main
+renxue-zhengjie = RenxueZhengjie.__main__:main
+
