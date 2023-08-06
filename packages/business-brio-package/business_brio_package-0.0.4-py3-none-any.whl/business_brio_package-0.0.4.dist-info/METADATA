@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: business-brio-package
+Version: 0.0.4
+Summary: A package contains several submodules and functions
+Home-page: https://github.com/Business-Brio/MIT_Open_license.git
+Download-URL: https://github.com/Business-Brio/MIT_Open_license/archive/0.0.1.tar.gz
+Author: business_brio
+License: MIT
+Keywords: chi_test
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+
+                      This package contains several submodules which can be directly used after installing the package.
+
+                      You can find the details of our package from:
+
+                      https://github.com/Business-Brio/MIT_Open_license.git
+
+
+                    
