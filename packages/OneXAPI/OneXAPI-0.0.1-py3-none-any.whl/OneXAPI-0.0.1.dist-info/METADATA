@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: OneXAPI
+Version: 0.0.1
+Summary: For Beta Test
+Home-page: https://github.com/OneXAPI
+Author: Libera Inc.
+Author-email: ceo@libera.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: tqdm (==4.64.1)
+
+UNKNOWN
+
+
