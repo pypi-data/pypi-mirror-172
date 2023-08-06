@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tryPackagePython10
+Version: 0.0.1
+Summary: My own first package
+Home-page: UNKNOWN
+Author: Alex Pacheco
+Author-email: <alex.pacheco.reynado@gmail.com>
+License: MIT
+Keywords: iAR,OBR,ONS,iARg
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+this would be a long description
+

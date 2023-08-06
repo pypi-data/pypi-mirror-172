@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+tryPackagePython10/__init__.py
+tryPackagePython10.egg-info/PKG-INFO
+tryPackagePython10.egg-info/SOURCES.txt
+tryPackagePython10.egg-info/dependency_links.txt
+tryPackagePython10.egg-info/requires.txt
+tryPackagePython10.egg-info/top_level.txt
