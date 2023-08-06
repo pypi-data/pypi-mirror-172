@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: processamento_imagens_pythonico
+Version: 0.0.1
+Summary: Image processing package using skimage
+Home-page: https://github.com/guilhermercarv/Ciencia-Analise-de-Dados-com-Python
+Author: Guilherme
+Author-email: guilhermecarvalho056@gmail.com
+License: UNKNOWN
+Description: # processamento_imagens_pythonico
+        
+        Description. 
+        The package processamento_imagens_pythonico is used to:
+        	Processamento
+        		- Histogram matching
+        		- Structural similarity
+        		- Resize image
+        	Utils:
+        		- Read image
+        		- Save image
+        		- Plot image
+        		- Plot result
+        		- Plot histogram
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install processamento_imagens_pythonico
+        
+        ```bash
+        pip install processamento_imagens_pythonico
+        ```
+        ## Author
+        Guilherme
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
