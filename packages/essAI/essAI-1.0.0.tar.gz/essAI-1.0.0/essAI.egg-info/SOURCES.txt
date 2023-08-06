@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+essAI Core/main.py
+essAI.egg-info/PKG-INFO
+essAI.egg-info/SOURCES.txt
+essAI.egg-info/dependency_links.txt
+essAI.egg-info/requires.txt
+essAI.egg-info/top_level.txt
