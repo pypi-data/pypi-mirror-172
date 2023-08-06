@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: hcipy
+Version: 0.5.1
+Summary: A framework for performing optical propagation simulations, meant for high contrast imaging, in Python.
+Home-page: https://github.com/ehpor/hcipy/
+Author: Emiel Por
+Author-email: epor@stsci.edu
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib (>=2.0.0)
+Requires-Dist: Pillow
+Requires-Dist: pyyaml
+Requires-Dist: astropy
+Requires-Dist: imageio
+Requires-Dist: xxhash
+Requires-Dist: numexpr
+Requires-Dist: importlib-metadata ; python_version < "3.7"
+Requires-Dist: importlib-resources (>=1.4) ; python_version < "3.9"
+Requires-Dist: asdf (<=2.10) ; python_version <= "3.7"
+Requires-Dist: asdf ; python_version > "3.7"
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: codecov ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: mpmath ; extra == 'dev'
+Requires-Dist: dill ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: numpydoc ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: nbsphinx ; extra == 'doc'
+Requires-Dist: jupyter-client ; extra == 'doc'
+Requires-Dist: ipykernel ; extra == 'doc'
+Requires-Dist: poppy ; extra == 'doc'
+Requires-Dist: nbclient ; extra == 'doc'
+Requires-Dist: nbformat ; extra == 'doc'
+Requires-Dist: nbconvert ; extra == 'doc'
+Requires-Dist: sphinx-automodapi ; extra == 'doc'
+Requires-Dist: progressbar2 ; extra == 'doc'
+
+[![PyPI Status](https://img.shields.io/pypi/v/hcipy.svg?logo=pypi&logoColor=white)](https://pypi.org/project/hcipy/)
+[![Conda Status](https://img.shields.io/conda/vn/conda-forge/hcipy?logo=anaconda&logoColor=white)](https://anaconda.org/conda-forge/hcipy)
+[![Build Status](https://img.shields.io/azure-devops/build/ehpor/hcipy/1/master?logo=azure-pipelines)](https://dev.azure.com/ehpor/hcipy/_build?definitionId=1)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/ehpor/hcipy?logo=codecov&logoColor=white)](https://codecov.io/gh/ehpor/hcipy)
+[![Documentation Status](https://img.shields.io/badge/docs-latest%20build-brightgreen?logo=read-the-docs&logoColor=white)](https://docs.hcipy.org/dev)
+[![License](https://img.shields.io/github/license/ehpor/hcipy.svg?logo=open-source-initiative&logoColor=white)](https://opensource.org/licenses/MIT)
+
+# HCIPy: High Contrast Imaging for Python
+
+![HCIPy banner](https://github.com/ehpor/hcipy/raw/master/doc/hcipy_banner.png "HCIPy banner")
+
+HCIPy is an open-source object-oriented framework written in Python for performing end-to-end simulations of high-contrast imaging instruments for astronomy.
+
+The library defines wavefronts and optical elements for defining an optical system, and provides both Fraunhofer and Fresnel diffraction propgators. Polarization is supported using Jones calculus, with polarizers and waveplates included out of the box. It implements atmospheric turbulence using thin infinitely-long phase screens, and can model scintillation using Fresnel propagation between individual layers. Many wavefront sensors are implemented including a Shack-Hartmann and Pyramid wavefront sensor. Implemented coronagraphs include the vortex, Lyot and APP coronagraph.
+
+By including simulation of both adaptive optics and coronagraphy into a single framework, HCIPy allows simulations including feedback from post-coronagraphic focal-plane wavefront sensors to the AO system.
+
+The main website is hosted at <https://hcipy.org>. For documentation, see <https://docs.hcipy.org>.
+
+## Team
+
+HCIPy was originally developed by a small team of astronomers at Leiden Observatory, but has since received external constributions from scientists and software developers around the world. For a current list, please visit our [website](https://hcipy.org/team.html).
+
+## Citing
+
+If you use HCIPy for your own research, we ask you to cite the HCIPy proceeding ([Por et al. 2018](https://doi.org/10.1117/12.2314407)). If there is no appropriate place in the body text to cite the proceeding, please include something along the lines of the following in your acknowledgements:
+
+> This research made use of HCIPy, an open-source object-oriented framework written in Python for performing end-to-end simulations of high-contrast imaging instruments ([Por et al. 2018](https://doi.org/10.1117/12.2314407)).
+
+## Contributions
+
+If you have something to add, or want something added to HCIPy, please let us know using a Github issue. We actively support external contributions to HCIPy, small and large. Please look at the [contributing guide](https://docs.hcipy.org/dev/development/contributing_guide.html) for more information.
