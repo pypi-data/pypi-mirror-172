@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: megadata
+Version: 0.0.9
+Summary: tools for megadata
+Author-email: Wanjo Chan <wanjochan@gmail.com>
+Project-URL: Homepage, https://github.com/wanjo-tech/megadata
+Project-URL: Bug Tracker, https://github.com/wanjo-tech/megadata/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# megadata
+
+lib and tools for 'megadata'
+
+# install
+
+python -m pip install -U megadata
+
+# TODO
+
+## client shell for different databases ;)
+* python -m megadata [clt] *args **kwargs
