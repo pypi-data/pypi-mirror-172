@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dfer-tools-python
+Version: 0.0.1
+Summary: python常用的工具库
+Home-page: https://gitcode.net/dofun333/dfer_tools_python
+Author: dfer.top
+Author-email: df_business@qq.com
+License: MIT
+Project-URL: Bug Tracker, https://gitcode.net/dofun333/dfer_tools_python/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+📦 dfer_tools_python
+=======================
+**简介**
+一些常用的python类和方法
+
+
+
+**自动编译和发布**
+```
+python setup.py upload
+```
+
+
+
+**安装依赖包**
+```
+pip install build twine
+```
+
