@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "cerebrium"
+version = "0.1.9"
+description = ""
+authors = ["Elijah Roussos <elijah@cerebrium.ai>"]
+license = "AGPL-3.0-only"
+readme = "README.md"
+
+[tool.poetry.urls]
+"Homepage" = "https://www.cerebrium.ai"
+"Documentation" = "https://docs.cerebrium.ai/"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+pipeline-ai = "^0.1.1"
+xgboost = "^1.6"
+numpy = "^1.21"
+torch = "^1.12"
+scikit-learn = "^1.0"
+cloudpickle = "^2.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+ipython = "^8.5.0"
+ipykernel = "^6.16.0"
+poetry-dotenv-plugin = "^0.1.0"
+poetry-bumpversion = "^0.3.0"
+poetry-dynamic-versioning = {extras = ["plugin"], version = "^0.19.0"}
+
+
+[[tool.poetry.source]]
+name = "cerebrium"
+url = "http://52.50.58.118:8080/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
