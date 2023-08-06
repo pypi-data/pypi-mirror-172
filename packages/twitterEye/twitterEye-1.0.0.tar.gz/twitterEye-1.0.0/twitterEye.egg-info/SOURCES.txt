@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+twitterEye/__init__.py
+twitterEye.egg-info/PKG-INFO
+twitterEye.egg-info/SOURCES.txt
+twitterEye.egg-info/dependency_links.txt
+twitterEye.egg-info/requires.txt
+twitterEye.egg-info/top_level.txt

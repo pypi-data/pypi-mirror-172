@@ -1,0 +1,7 @@
+Change Log
+===========
+
+1.0.0 (18/10/2022)
+------------------
+- First release with only function named analyze_keyword, this function can fetch tweets from twitter, analyze and visualize them.
+- Future releases will have advanced features like, urdu and roman urdu tweets analyzer support.

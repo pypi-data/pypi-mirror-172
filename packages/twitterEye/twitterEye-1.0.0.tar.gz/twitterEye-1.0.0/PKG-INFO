@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: twitterEye
+Version: 1.0.0
+Summary: Analyze and visualize how public is reacting to a certain topic on Twitter
+Home-page: UNKNOWN
+Author: Hinan Bilal
+Author-email: hinanbilalshah@gmail.com
+License: MIT
+Description: twitterEye is a python library, designed for making twitter sentiment analysis easy and approachable to every one,
+        First you have to signup for twitter developers portal, use the provided secret keys in the builtin function with
+        the topic keyword you want to analyze and opt for results visualization.
+        The function can be called as follows with mentioned data types of arguments.
+        analyze_keyword(consumer_key: str, consumer_secret: str, access_token: str, access_token_secret: str, keyword: str, tweets_limit: int = 1000, visualize: bool = True)  
+        
+        Change Log
+        ===========
+        
+        1.0.0 (18/10/2022)
+        ------------------
+        - First release with only function named analyze_keyword, this function can fetch tweets from twitter, analyze and visualize them.
+        - Future releases will have advanced features like, urdu and roman urdu tweets analyzer support.
+Keywords: twitter sentimentanalysis visualization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
