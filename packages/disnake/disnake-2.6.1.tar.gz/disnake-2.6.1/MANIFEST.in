@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include disnake/bin/*
+include disnake/py.typed
+recursive-include . requirements*.txt
+global-exclude *.py[cod]
