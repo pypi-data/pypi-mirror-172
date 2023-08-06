@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sccover
+Version: 0.0.1
+Summary: A toolbox for deterministic subsampling of single-cell data.
+Home-page: https://github.com/Risitop/sccover
+Author: Aziz Fouché, Loïc Chadoutaud, Andrei Zinovyev (Institut Curie, Paris)
+Author-email: aziz.fouche@curie.fr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: anndata (>=0.8.0)
+Requires-Dist: numpy (>=1.17)
+Requires-Dist: pynndescent
+Requires-Dist: scanpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+TODO
