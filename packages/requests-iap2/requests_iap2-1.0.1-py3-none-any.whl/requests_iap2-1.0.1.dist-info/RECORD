@@ -1,0 +1,9 @@
+requests_iap2/__init__.py,sha256=PtN87CLMgGHo7O-4i3Z_21FISkHDC0F0X3xq8eSqYSo,429
+requests_iap2/_version.py,sha256=fk5qzmIpvX7tjR_Xv6Q29bWJGK0ePUmIlsLzDJaRr-E,176
+requests_iap2/get_oauth_creds.py,sha256=SpKvGSYHIvyJ9PbQ_K6dyvjQz32Ad0r9mwksLYMtRao,2974
+requests_iap2/iapauth.py,sha256=dmUKWlwqdqrrvuTsyVhTZfTpznlhKm8OCKdEdAk1ykw,4716
+requests_iap2-1.0.1.dist-info/LICENSE,sha256=SUPnDPkFKXjym7sSNUO9tYXrEcEq1xfzD0SD4wWg_34,1077
+requests_iap2-1.0.1.dist-info/METADATA,sha256=c0wwKcyQXpxc6v1qS3DFlg_NsCgGqWM5S8AA9dnXdqY,4847
+requests_iap2-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+requests_iap2-1.0.1.dist-info/top_level.txt,sha256=0f7yb20cb2Q156ADUmsQtRMx3jx_v5aiRfxlLuCjMWA,14
+requests_iap2-1.0.1.dist-info/RECORD,,
