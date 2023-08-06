@@ -1,0 +1,7 @@
+Click>=8.0
+requests>=2.0
+ruamel.yaml>=0.17
+yaspin>=2.1.0
+
+[test]
+pytest
