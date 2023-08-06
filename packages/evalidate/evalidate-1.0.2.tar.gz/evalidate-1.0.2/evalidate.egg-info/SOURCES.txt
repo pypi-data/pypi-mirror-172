@@ -1,0 +1,9 @@
+README.md
+setup.py
+evalidate/__init__.py
+evalidate/security.py
+evalidate.egg-info/PKG-INFO
+evalidate.egg-info/SOURCES.txt
+evalidate.egg-info/dependency_links.txt
+evalidate.egg-info/not-zip-safe
+evalidate.egg-info/top_level.txt
