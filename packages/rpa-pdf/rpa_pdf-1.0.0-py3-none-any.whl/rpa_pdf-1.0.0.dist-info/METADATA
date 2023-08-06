@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: rpa-pdf
+Version: 1.0.0
+Summary: Pdf actions for RPA
+Author-email: Grzegorz Ziolo <grzegorz.ziolo@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright © 2022 Ziolo, Grzegorz
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+        Fork this project to create your own MIT license that you can always link to.
+        
+Project-URL: Homepage, https://github.com/21010/rpa-pdf
+Keywords: rpa,pdf
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyPDF2 (>=1.28.5)
+Requires-Dist: fpdf2 (>=2.5.6)
+Requires-Dist: python-barcode (>=0.14.0)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: unitest ; extra == 'dev'
+
+# RPA_PDF
+Python module delivers some actions to manipulate with PDF files.
+The module is compatibile with the Robocorp.
+
+## Installation
+To install the package run:
+
+```
+pip install rpa_pdf
+```
+
+## Example
+### Generating pdf file from text
+```
+from rpa_pdf import Pdf
+
+pdf = Pdf()
+
+pdf.text_to_pdf('some text', 'c:/temp/somefile.pdf)
+```
+### Compress pdf file
+```
+from rpa_pdf import Pdf
+
+pdf = Pdf()
+
+pdf.compress('c:/temp/somefile.pdf')
+```
+### Add Code39 stamp
+```
+from rpa_pdf import Pdf
+
+pdf = Pdf()
+
+pdf.add_code39_stamp('c:/temp/input_file.pdf', 'c:/temp/output_file.pdf', '12345678')
+```
+### Merging pdf files
+```
+from rpa_pdf import Pdf
+
+pdf = Pdf()
+
+pdf.merge(['c:/temp/file1.pdf', 'c:/temp/file2.pdf'], 'c:/temp/merged.pdf')
+```
+### Add text stamp
+```
+from rpa_pdf import Pdf
+
+pdf = Pdf()
+
+pdf.add_text_stamp('c:/temp/input_file.pdf', 'c:/temp/output_file.pdf', 'some text')
+```
+### Print PDF document on the printer
+```
+from rpa_pdf import Pdf
+
+pdf = Pdf()
+
+pdf.print('c:/temp/document.pdf', 'printer1')
+```
+
+### Dependencies
+Python packages: PyPDF2 >= 1.28.5, fpdf2 >= 2.5.6, python-barcode >= 0.14.0
+External dependencies: DejaVu font, SumatraPdf.exe (both included in the package)
