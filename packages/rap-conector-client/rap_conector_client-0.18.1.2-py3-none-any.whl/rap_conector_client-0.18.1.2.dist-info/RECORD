@@ -1,0 +1,12 @@
+rapconector/__init__.py,sha256=lE4zSo_eZNaczgbTdla4TiezQz-lVQMgInTJC8b1o3k,67
+rapconector/client.py,sha256=o08-MASsAWMolbO1RkplruQn2gHS-XXjhk2Qw24Vah8,21559
+rapconector/document.py,sha256=RXsbkhCsmZhnLVm-Bpd-47arhTW3Bd0M92wuVcoFmeM,27400
+rapconector/errors.py,sha256=Eg_8oMims6w11iGdrW12nCop-oGaYVQ1jQy6ta8ZIkc,302
+rapconector/session.py,sha256=x2qbfw1cpIOnKorCeHH1xBCvIPtZng8Ng8pN3v-GPKA,3176
+rapconector/utils.py,sha256=bIxQchx7Ij7DfIM7tOSvuiAHYcwrWvuV6MvypYEJABY,2938
+rapconector/version.py,sha256=2602OhfrHM-nzwKQBhjYLT4xHI0M97-8iCuRo1pyuzc,266
+rap_conector_client-0.18.1.2.dist-info/LICENSE.md,sha256=RG51X65V_wNLuyG-RGcLXxFsKyZnlH5wNvK_5mMlOag,7560
+rap_conector_client-0.18.1.2.dist-info/METADATA,sha256=hevQ9SzPbTBunjeiG-yEV90pT7w_pj9ADDbp6XLDFV8,5808
+rap_conector_client-0.18.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rap_conector_client-0.18.1.2.dist-info/top_level.txt,sha256=HXN5PqMNssq_dedB6UUmMsWsun-U2kcCgCs0_giZH8s,12
+rap_conector_client-0.18.1.2.dist-info/RECORD,,
