@@ -1,0 +1,7 @@
+README.md
+setup.py
+petitext/__init__.py
+petitext.egg-info/PKG-INFO
+petitext.egg-info/SOURCES.txt
+petitext.egg-info/dependency_links.txt
+petitext.egg-info/top_level.txt
