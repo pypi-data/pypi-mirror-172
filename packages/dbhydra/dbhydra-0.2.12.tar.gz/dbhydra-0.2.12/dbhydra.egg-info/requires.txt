@@ -1,0 +1,6 @@
+pyodbc
+pandas
+pymysql
+pymongo
+psycopg2
+google-cloud-bigquery
