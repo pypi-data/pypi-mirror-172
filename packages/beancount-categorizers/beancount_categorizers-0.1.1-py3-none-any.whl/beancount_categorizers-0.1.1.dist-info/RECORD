@@ -1,0 +1,6 @@
+beancount_categorizers/__init__.py,sha256=JdjRIskYAaogDb5GIwsxy0Tg5zrrw_kI7QU7uyzzDJk,115
+beancount_categorizers/categorizer.py,sha256=2vKclIu3TQFk-Vkp5SsjPGQsCXWAcv-bpHJTCSsy5MI,2161
+beancount_categorizers/flag_txn.py,sha256=PfNmFimhd-QA-whrHEtVwpW0365oeJhHrVYqTHwEjSg,914
+beancount_categorizers-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+beancount_categorizers-0.1.1.dist-info/METADATA,sha256=PWrTVQkDLSYlNxQX7f7HxCVu4rZzVXmyrrnhUN7uOrs,1081
+beancount_categorizers-0.1.1.dist-info/RECORD,,
