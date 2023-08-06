@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: funcx-common
+Version: 0.0.17
+Summary: Common tools for funcX projects
+Home-page: https://github.com/funcX-faas/funcx-common
+Author: Stephen Rosen
+Author-email: sirosen@globus.org
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: moto
+Provides-Extra: redis
+Provides-Extra: boto3
+
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/funcx-faas/funcx-common/main.svg)](https://results.pre-commit.ci/latest/github/funcx-faas/funcx-common/main)
+
+# funcx-common
+
+This package contains common utilities for use across various funcX projects.
+
+For example, constants shared between the funcX service and the funcX SDK are
+defined here (and may be re-exported by the SDK).

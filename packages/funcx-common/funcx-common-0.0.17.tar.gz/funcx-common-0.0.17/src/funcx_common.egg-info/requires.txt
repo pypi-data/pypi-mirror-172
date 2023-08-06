@@ -1,0 +1,16 @@
+pydantic<2,>=1
+
+[boto3]
+boto3>=1.19.0
+
+[dev]
+pytest<8
+pytest-cov<4
+pytest-xdist<3
+types-redis
+
+[moto]
+moto[s3]<4
+
+[redis]
+redis<5,>=3.5.3
