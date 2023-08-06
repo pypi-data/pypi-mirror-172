@@ -1,0 +1,80 @@
+[tool.poetry]
+name = "thoughtful"
+version = "0.1.6"
+description = "Library for building Automation Digital Work Reports"
+authors = ["Thoughtful Automation <engineering@thoughtfulautomation.com>"]
+license = "MIT"
+readme = 'README.md'
+homepage = "https://thoughtfulautomation.com"
+repository = "https://github.com/thoughtful-automation/supervisor"
+documentation = "https://thoughtful-automation.github.io/supervisor"
+
+keywords = ['rpa', 'robot-framework', 'robocorp', 'automation']
+
+classifiers = [
+  "Topic :: Security :: Cryptography",
+  "License :: OSI Approved :: MIT License",
+  "Framework :: Robot Framework",
+  "Framework :: Robot Framework :: Library",
+  "Framework :: Robot Framework :: Tool",
+]
+
+packages = [{ include = "supervisor" }]
+include = [{ path = "supervisor/py.typed" }]
+
+[[tool.poetry.source]]
+name = "codeartifact"
+url = "https://thoughtful-automation-975753646808.d.codeartifact.us-east-1.amazonaws.com/pypi/thoughtful-automation/"
+secondary = true
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+pyyaml = ">=5.4.1"
+chevron = "^0.14.0"
+pyconfs = "^0.5.5"
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+mkdocs = "^1.2.3"
+datamodel-code-generator = "^0.11.14"
+mkdocstrings = "^0.16.2"
+pytest = "^6.2.5"
+pytest-cov = "^2.12.1"
+pytest-watch = "^4.2.0"
+pytest-sugar = "^0.9.4"
+pytest-timeout = "^2.0.2"
+syrupy = "^1.5.0"
+tox = "^3.24.3"
+yapf = "^0.31.0"
+pylint = "^2.11.1"
+pre-commit = "^2.15.0"
+devtools = "^0.8.0"
+isort = "^5.10.1"
+autoflake = "^1.4"
+bump2version = "1.0.0"
+
+[tool.datamodel-codegen]
+field-constraints = false
+snake-case-field = false
+strip-default-none = true
+target-python-version = "3.7"
+
+[tool.poetry.scripts]
+gen_models = "cli.models:run"
+
+[build-system]
+# requires = [
+#   # supports `pip install - e .` in pre-3.9.9 versions
+#   "setuptools",
+#   # supports `pip install - e .` using PEP 660 build hoks
+#   "poetry-core @ git+https://github.com/python-poetry/poetry-core.git@master",
+# ]
+# Building from source until this is merged:
+# https://github.com/python-poetry/poetry-core/pull/257
+# Once that's been done, we can replace the above build-system with the build
+# requirements below. Please test this by updating to the latest poetry
+# version, running `poetry build` and then `pip install -e .` in the root.
+# if that builds successfully, replace everything above with the below:
+# requires = ["poetry_core>=1.0"]
+requires = ["setuptools", "poetry_core>=1.0"]
+build-backend = "poetry.core.masonry.api"
