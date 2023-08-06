@@ -1,0 +1,9 @@
+voip_shifts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+voip_shifts/bot.py,sha256=QGw6a8V6OAyCsCscM-Yvhj6An7pFKmXgddCp3tQKI2E,1083
+voip_shifts/config.py,sha256=Yh9nXrmVHSpekvf1pCt0m_KfS6iP_ZQUhajVgpIx7Jc,1708
+voip_shifts/models.py,sha256=UyR_lJpfrNikMgtYvT0S2F15JdewycUoxiQXLMijIfQ,3390
+voip_shifts/shift_class.py,sha256=rZzPv_ffySTiFAcXH8LNZPLxc-r7lVvfrKxML8lN2ng,5105
+voip_shifts-0.3.8.dist-info/METADATA,sha256=DIDJkz_bELYg4vsMgYRXYOxV_yEwP7rl8iAnPB5Mro0,210
+voip_shifts-0.3.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+voip_shifts-0.3.8.dist-info/top_level.txt,sha256=0goudBOVZeuBz_VDOG1Iz-tt2oRwoWnePlLBtSOmoDE,12
+voip_shifts-0.3.8.dist-info/RECORD,,
