@@ -1,0 +1,27 @@
+[project]
+name = "snakesay"
+version = "0.10.0"
+description = "speaking snake"
+authors = [
+    { name="PythonAnywhere Developers", email="developers@pythonanywhere.com" }
+]
+license = {text="MIT"}
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.6",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+snakesay = "snakesay.snakesay:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
