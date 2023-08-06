@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pelican-compressor
+Version: 0.2.0
+Summary: Pelican plugin wrapper for 'web-compressor'
+Home-page: https://digitalbuero.eu
+License: GPL-3.0-only
+Keywords: pelican,pelican-plugin,cache-busting,cachebusting,csp,content-security-policy,fingerprinting,hashing,imageoptim,minification,minifier,minify,optimization,sri,subresource-integrity
+Author: Digitalbüro
+Author-email: post@digitalbuero.eu
+Maintainer: Martin Folkers
+Maintainer-email: hello@twobrain.io
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Framework :: Pelican
+Classifier: Framework :: Pelican :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: images
+Provides-Extra: minify
+Requires-Dist: Pillow (>=9.2,<10.0); extra == "images"
+Requires-Dist: pelican (>=4.5,<5.0)
+Requires-Dist: pillow-avif-plugin (>=1.2,<2.0); extra == "images"
+Requires-Dist: tdewolff-minify (>=2,<3); extra == "minify"
+Requires-Dist: web-compressor (>=0.3,<0.4)
+Project-URL: Documentation, https://docs.getpelican.com
+Project-URL: Funding, https://donate.getpelican.com/
+Project-URL: Issue Tracker, https://codeberg.org/digitalbuero/pelican-compressor/issues
+Project-URL: Repository, https://codeberg.org/digitalbuero/pelican-compressor
+Description-Content-Type: text/markdown
+
+# Pelican plugin for `web-compressor`
+
+## Getting started
+
+## Configuration
+
+## Roadmap
+
+- [ ] Update `README.md`
+- [ ] Add tests
+

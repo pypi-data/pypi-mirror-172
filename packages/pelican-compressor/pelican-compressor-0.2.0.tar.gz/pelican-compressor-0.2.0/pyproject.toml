@@ -1,0 +1,130 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pelican-compressor"
+version = "0.2.0"
+description = "Pelican plugin wrapper for 'web-compressor'"
+license = "GPL-3.0-only"
+authors = ["Digitalbüro <post@digitalbuero.eu>"]
+maintainers = ["Martin Folkers <hello@twobrain.io>"]
+readme = "README.md"
+homepage = "https://digitalbuero.eu"
+repository = "https://codeberg.org/digitalbuero/pelican-compressor"
+documentation = "https://docs.getpelican.com"
+keywords = [
+    "pelican",
+    "pelican-plugin",
+    "cache-busting",
+    "cachebusting",
+    "csp",
+    "content-security-policy",
+    "fingerprinting",
+    "hashing",
+    "imageoptim",
+    "minification",
+    "minifier",
+    "minify",
+    "optimization",
+    "sri",
+    "subresource-integrity",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Framework :: Pelican :: Plugins",
+    "Framework :: Pelican",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [{include = "pelican"}]
+
+[tool.poetry.dependencies]
+# Mandatory
+python = "^3.8"
+pelican = "^4.5"
+web-compressor = "^0.3"
+
+# Extras
+Pillow = {version = "^9.2", optional = true}
+pillow-avif-plugin = {version = "^1.2", optional = true}
+tdewolff-minify = {version = "^2", optional = true}
+
+[tool.poetry.dev-dependencies]
+# Testing
+bandit = "^1.7"
+black = "^22"
+invoke = "^1.3"
+isort = "^5.4"
+pylint = "^2.15"
+pytest = "^7.1"
+pytest-cov = "^4.0"
+pytest-sugar = "^0.9"
+tox = "^3.26"
+tox-pyenv = "^1.1"
+
+# Packages
+Pillow = "^9.2"
+pillow-avif-plugin = "^1.2"
+tdewolff-minify = "^2"
+
+[tool.poetry.extras]
+images = ["Pillow", "pillow-avif-plugin"]
+minify = ["tdewolff-minify"]
+
+[tool.poetry.urls]
+"Funding" = "https://donate.getpelican.com/"
+"Issue Tracker" = "https://codeberg.org/digitalbuero/pelican-compressor/issues"
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+# Maintain compatibility with Black
+profile = "black"
+multi_line_output = 3
+
+# Sort imports within their section independent of the import type
+force_sort_within_sections = true
+
+# Designate "pelican" as separate import section
+known_pelican = "pelican"
+sections = "FUTURE,STDLIB,THIRDPARTY,PELICAN,FIRSTPARTY,LOCALFOLDER"
+
+[tool.pylint]
+max-line-length = 88
+disable = [
+    "C0103",  # (invalid-name)
+    "C0114",  # (missing-module-docstring)
+    "W1203",  # (logging-not-lazy)
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+envlist = py{38,39,310,311}
+
+[testenv]
+description = Run tests using 'pytest'
+deps =
+    pytest
+    Pillow
+    pillow-avif-plugin
+    tdewolff-minify
+commands = pytest
+"""
