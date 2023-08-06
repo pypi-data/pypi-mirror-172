@@ -1,0 +1,647 @@
+Metadata-Version: 2.1
+Name: atila-vue
+Version: 0.2.1
+Summary: Atila Extension For VueJS 2 SFC and SSR
+Home-page: https://gitlab.com/atila-ext/atila-vue
+Author: Hans Roh
+Author-email: hansroh@gmail.com
+License: MIT
+Download-URL: https://pypi.python.org/pypi/atila-vue
+Platform: posix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: JavaScript
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: atila
+Requires-Dist: jinja2
+
+
+## Introduction
+
+Atla-Vue is [Atila](https://pypi.org/project/atila/) extension package for
+using [vue3-sfc-loader](https://github.com/FranckFreiburger/vue3-sfc-loader)
+and [Bootstrap 5](https://getbootstrap.com/).
+
+It will be useful for building simple web service at situation frontend developer
+dose not exists.
+
+Due to the [vue3-sfc-loader](https://github.com/FranckFreiburger/vue3-sfc-loader),
+We can use **vue single file component** on the fly without any compiling or
+building process.
+
+Atila-Vue composes these things:
+
+- VueJS 3
+- VueRouter 4
+- Vuex 4
+- Optional Bootstrap 5 for UI/UX
+
+For injecting objects to Vuex, it uses [Jinja2](https://jinja.palletsprojects.com) template engine.
+
+### Full Example
+See [atila-vue](https://gitlab.com/atila-ext/atila-vue) repository and [atila-vue examplet](https://gitlab.com/atila-ext/atila-vue/-/tree/master/example).
+
+
+
+
+
+## Launching Server
+```shell
+mkdir myservice
+cd myservice
+```
+
+Then create skitaid.py script for running server.
+```python
+#! /usr/bin/env python3
+import skitai
+import atila_vue
+import os
+import app
+
+os.environ ['SECRET_KEY'] = 'SECRET_KEY'
+
+if __name__ == '__main__':
+    with skitai.preference () as pref:
+        pref.extends (atila_vue)
+        skitai.mount ('/', app, pref)
+
+    skitai.run (ip = '0.0.0.0', port = 5000, name = 'myservice')
+```
+But it doesn't work yet.
+
+```shell
+mkdir -p app
+```
+
+Then create `app/__init__.py`.
+
+```python
+import atila
+import os
+import sys
+import skitai
+
+def __config__ (pref):
+    pref.set_static ('/', 'app/static')
+    pref.config.FRONTEND = {
+        "googleAnalytics": {"id": "UA-158163406-1"}
+    }
+
+def __app__ ():
+    return atila.Atila (__name__)
+```
+
+Now you can startup service.
+```shell
+./serve/py --devel
+```
+Then your browser address bar, enter `http://localhost:5000/`.
+If `404 Not Found` on your browser screen, it is very OK.
+
+
+
+
+
+## Add Your First Page
+Append these code into `app/__init__.py`.
+
+```python
+def __mount__ (app, mntopt):
+    @app.route ('/')
+    def index (was):
+        return '<h1>Hello, World</h1>'
+```
+Reload your browser then you can see `Hello, World`.
+
+
+
+
+
+## Improving Page With VueJS
+```shell
+mkdir app/templates
+```
+
+Create `app/templates/main.j2`.
+```jinja
+{% extends '__framework/vue.j2' %}
+```
+
+Optionally, if you want to use Bootstrap 5 also.
+```jinja
+{% extends '__framework/bs5.j2' %}
+```
+That's it. Just single line template.
+
+Then update `app/__init__.py` for using this template.
+```python
+def __mount__ (app, mntopt):
+    @app.route ('/<path:path>')
+    def index (was, path):
+        return was.render ('main.j2')
+```
+
+Reload page but you will meet error: `No page components for VueRouter`.
+
+
+
+
+
+## Creating Vue Component
+```shell
+mkdir app/static/apps
+```
+This is routing base directory.
+
+Your template file name is `main.j2`, so make directory `app/static/apps/main` as same name.
+
+```shell
+mkdir app/static/apps/main
+```
+
+Create file `app/static/apps/main/layout.vue` for app layout.
+```html
+<template>
+  <nav class='navbar navbar-expand-lg bg-dark navbar-dark'>
+    <div class="container">
+      <a href="#" class="navbar-brand">Atila Vue</a>
+    </div>
+  </nav>
+
+  <router-view v-slot="{ Component }">
+    <transition>
+      <keep-alive>
+        <component :is="Component" />
+      </keep-alive>
+    </transition>
+  </router-view>
+</template>
+
+<script>
+    export default {}
+</script>
+```
+
+Create file `app/static/apps/main/index.vue`.
+```html
+<template>
+  <div class="container">
+    <h1>{{ msg }}</h1>
+  </div>
+</template>
+
+<script>
+  import {ref} from '/vue/composition-api.js'
+
+  export default {
+    setup () {
+      const msg = ref ('Hello World')
+      return { msg }
+    }
+  }
+</script>
+```
+
+And Reload.
+
+**Note** that you can see long list like `Python Context` and `Vuex State`.
+This will be shown if you give '--devel' option on starting server.
+
+
+## Add Routable Sub Pages
+
+Create vue files as you want.
+
+- app/static/apps/main/about.vue
+- app/static/apps/main/products/index.vue
+- app/static/apps/main/products/_id.vue
+
+These will be automatically generated as routes option like this:
+```js
+[
+    {name: "index", path: "/" },
+    {name: "about", path: "/about" },
+    {name: "products", path: "/products"},
+    {name: "products/:id", path: "/products/:id")}
+]
+```
+And you can see it via HTML source view in browser.
+
+Then you can use `<router-link>` at your page.
+```html
+<template>
+  <div class="container">
+    <h1>{{ msg }}</h1>
+    <router-link :to="{ name: 'products/:id', params: {id: 100}}">Product #100</router-link>
+  </div>
+</template>
+```
+
+
+
+
+
+## Using Vuex
+
+You can define Vuex state.
+
+Update `app/templates/main.j2`.
+```jinja
+{% extends '__framework/bs5.j2' %}
+
+{{ map_state ('page_id', 0) }}
+{{ map_state ('types', ["todo", "canceled", "done"]) }}
+```
+These will be injected to `Vuex` through JSON.
+
+Now tou can use these state on your vue file with `useStore`.
+```html
+<script>
+  import {ref, computed, useStore} from '/vue/composition-api.js'
+
+  export default {
+    setup () {
+      const store = useStore ()
+      const page_id = computed ( () => store.state.page_id )
+      const msg = ref ('Hello World')
+      return { msg, page_id }
+    }
+  }
+</script>
+```
+
+Or use `useState`.
+```html
+<script>
+  import {ref, useState} from '/vue/composition-api.js'
+
+  export default {
+    setup () {
+      const { page_id } = useState ()
+      const msg = ref ('Hello World')
+      return { msg, page_id }
+    }
+  }
+</script>
+```
+
+
+**Note** that [/vue/composition-api.js](https://gitlab.com/atila-ext/atila-vue/-/blob/master/atila_vue/static/vue/helpers.js) contains some shortcuts for `Vue.`, `Vuex.` and `VueRouter`.
+
+
+
+
+
+## Creating Sub Apps
+
+Add routes to `app/__init__.py` for createing `My Page` sub app.
+```python
+def __mount__ (app, mntopt):
+    @app.route ('/<path:path>')
+    def index (was, path):
+        return was.render ('main.j2')
+
+    @app.route ('/mypage/<path:path>')
+    def mypage (was, path):
+        return was.render ('mypage.j2')
+```
+
+Then next steps are the same.
+
+- create `app/templates/mypage.j2`
+- create `app/static/apps/mypage/index.vue` and sub pages
+
+
+
+
+
+## Adding APIs
+```shell
+mkdir app/services
+```
+
+Create `app/services/apis.py`
+```python
+def __mount__ (app. mntopt):
+  @app.route ("")
+  def index (was):
+    return "API Index"
+
+  @app.route ("/now")
+  def now (was):
+    return was.API (result = time.time ())
+```
+
+Create `app/services/__init__.py`
+```python
+def __setup__ (app. mntopt):
+  from . import apis
+  app.mount ('/apis', apis)
+```
+
+Then update `app/__init__.py` for mount `services`.
+```python
+def __app__ ():
+    return atila.Atila (__name__)
+
+def __setup__ (app, mntopt):
+    from . import services
+    app.mount ('/', services)
+
+def __mount__ (app, mntopt):
+    @app.route ('/')
+    def index (was):
+        return was.render ('main.j2')
+```
+
+Now you can use API: http://localhost:5000/apis/now.
+
+```html
+<script>
+  import {ref, onBeforeMount} from '/vue/composition-api.js'
+  import {$http} from '/veu/helpers.js'
+
+  export default {
+    setup () {
+      const msg = ref ('Hello World')
+      const server_time = ref (null)
+      onBeforeMount ( () => {
+        const r = await $http.get ('/apis/now')
+        server_time.value = r.data.result
+      })
+      return { msg, server_time }
+    }
+  }
+</script>
+```
+**Note** that `$http` is the alias for `axios`.
+
+
+### Accessing APIs
+
+
+Vuex.state has `$apispecs` state and it contains all API specification of server side. We made only 1 APIs for now.
+
+**Note** that your exposed APIs endpoint should be `/api`.
+```js
+{
+  APIS_NOW: { "methods": [ "POST", "GET" ], "path": "/apis/now", "params": [], "query": [] }
+}
+```
+You can make API url by `apifor` helpers by `API ID`.
+```js
+import { apifor } from '/vue/helpers.js'
+
+const endpoint = apifor ('apis.now')
+// endpoint is resolved into '/apis/now'
+```
+
+
+
+
+## Client Side Page Access Control
+
+We provide user and grp base page access control.
+```html
+<script>
+  import { permission_required } from '/vue/helpers.js'
+
+  export default {
+    setup (props, context) {
+      ...
+    },
+
+    beforeRouteEnter (to, from, next) {
+      permission_required (['staff'], {name: 'signin'}, next)
+    }
+  }
+</script>
+```
+`admin` and `staff` are pre-defined reserved grp name.
+
+Vuex.state contains `$uid` and `$grp` state. So `permission_required` check with
+this state and decide to allow access.
+
+And you should build sign in component `signin.vue`.
+
+Create `app/static/apps/main/signin.vue`.
+```js
+<template>
+    <div>
+        <h1>Sign In</h1>
+        <input type="text" v-model='uid'>
+        <input type="password" v-model='password'>
+        <button @click='signin ()'>Sign In</button>
+    </div>
+</template>
+
+<script>
+    import { ref } from '/vue/composition-api.js'
+    import { signin_with_id_and_password, restore_route } from '/vue/helpers.js'
+
+    export default {
+      setup (props, context) {
+        const store = useStore ()
+        const uid = ref ('')
+        const password = ref ('')
+        const signin = async () => {
+            const msg = await signin_with_id_and_password (
+                'APIS_AUTH_SIGNIN_WITH_ID_AND_PASSWORD',
+                {uid: uid.value, password: password.value}
+            )
+            if (!!msg) {
+                return alert (`Sign in failed because ${ msg }`)
+            }
+            alert ('Sign in success!')
+            restore_route ()
+        }
+        return { uid, password, signin }
+      }
+    }
+  </script>
+```
+
+And one more, update `/app/static/apps/main/layout.vue`
+```js
+<script>
+  import { refresh_access_token } from '/vue/helpers.js'
+  import { onBeforeMount } from '/vue/composition-api.js'
+
+  export default {
+    setup () {
+      onBeforeMount ( () => {
+        refresh_access_token ('APIS_ACCESS_TOKEN')
+      })
+    }
+  }
+</script>
+```
+This will check saved tokens at app initializing and do these things:
+- update `Vuex.state.$uid` and `Vuex.state.$grp` if access token is valid
+- if access token is expired, try refresh using refresh token and save credential
+- if refresh token close to expiration, refresh 'refresh token' itself
+- if refresh token is expired, clear all credential
+
+From this moment, `axios` monitor `access token` whenever you call APIs and automatically managing tokens.
+
+Then we must create 2 APIs - API ID `APIS_SIGNIN_WITH_ID_AND_PASSWORD` and
+`APIS_AUTH_ACCESS_TOKEN`.
+
+
+
+
+
+
+## Server Side Token Providing API
+
+Update `app/services/apis.py`.
+```python
+import time
+
+USERS = {
+    'hansroh': ('1111', ['staff', 'user'])
+}
+
+def create_token (uid, grp = None):
+    due = (3600 * 6) if grp else (14400 * 21)
+    tk = dict (uid = uid, exp = int (time.time () + due))
+    if grp:
+        tk ['grp'] = grp
+    return tk
+
+def __mount__ (app, mntopt):
+    @app.route ('/signin_with_id_and_password', methods = ['POST', 'OPTIONS'])
+    def signin_with_uid_and_password (was, uid, password):
+        passwd, grp = USERS.get (uid, (None, []))
+        if passwd != password:
+            raise was.Error ("401 Unauthorized", "invalid account")
+        return was.API (
+            refresh_token = was.mkjwt (create_token (uid)),
+            access_token = was.mkjwt (create_token (uid, grp))
+        )
+
+    @app.route ('/access_token', methods = ['POST', 'OPTIONS'])
+    def access_token (was, refresh_token):
+        claim = was.dejwt ()
+        atk = None
+        if 'err' not in claim:
+            atk = claim # valid token
+        elif claim ['ecd'] != 0: # corrupted token
+            raise was.Error ("401 Unauthorized", claim ['err'])
+
+        claim = was.dejwt (refresh_token)
+        if 'err' in claim:
+            raise was.Error ("401 Unauthorized", claim ['err'])
+
+        uid = claim ['uid']
+        _, grp = USERS.get (uid, (None, []))
+        rtk = was.mkjwt (create_token (uid)) if claim ['exp'] + 7 > time.time () else None
+
+        if not atk:
+            atk = create_token (uid, grp)
+
+        return was.API (
+            refresh_token = rtk,
+            access_token = was.mkjwt (atk)
+        )
+```
+
+You have responsabliity for these things.
+- provide `access token` and `refresh token`
+- `access token` must contain `str uid`, `list grp` and `int exp`
+- `refresh token` must contain `str uid` and `int exp`
+
+Now reload page, you can see `Vuex.state.$apispecs` like this.
+```js
+{
+  APIS_NOW: { "methods": [ "POST", "GET" ], "path": "/apis/now", "params": [], "query": [] },
+
+  APIS_ACCESS_TOKEN: { "methods": [ "POST", "OPTIONS" ], "path": "/apis/access_token", "params": [], "query": [ "refresh_token" ] },
+
+  APIS_SIGNIN_WITH_ID_AND_PASSWORD: { "methods": [ "POST", "OPTIONS" ], "path": "/apis/signin_with_id_and_password", "params": [], "query": [ "uid", "password" ] }
+}
+```
+
+That's it.
+
+
+
+
+
+
+## Server Side Access Control
+```python
+def __mount__ (app, mntopt):
+  @app.route ('/profiles/<uid>')
+  @app.permission_required (['user'])
+  def get_profile (was):
+    icanaccess = was.request.user.uid
+    return was.API (profile = data)
+```
+If request user is one of `user`, `staff` and `admin` grp, access will be granted.
+
+And all claims of access token can be access via `was.request.user` dictionary.
+
+`@app.permission_required` can `groups` and `owner` based control.
+
+Also `@app.login_required` which is shortcut for `@app.permission_required ([])` - any groups will be granted.
+
+`@app.identification_required` is just create `was.request.user` object using access token only if token is valid.
+
+For more detail access control. see [Atila](https://pypi.org/project/atila/).
+
+
+
+
+
+
+
+## Using Django ORM and Admin Site
+
+`Atila-Vue` contains basic templates for using `Django ORM management` and `Django admin site` for laziness.
+
+add one of these lines to skitaid.py as you prefer.
+```python
+os.environ ['DBENGINE'] = 'sqlite3:///var/mydb.db3'
+os.environ ['DBENGINE'] = 'postgresql://user:password@localhost:5432/mydb'
+os.environ ['DBENGINE'] = 'oracle://user:password@localhost:1521/mydb'
+```
+
+Now, at shell,
+```shell
+./manage.py migrate
+```
+
+Some tables will be created on your database.
+
+You can review these files:
+- app/models/config/settings.py
+
+For adding models:
+```shell
+./manage.py startapp myapp
+```
+
+And add models and make admin customizations:
+- app/models/dap/myapp/models.py
+- app/models/dap/myapp/services.py
+- app/models/dap/myapp/admin.py
+
+For applying:
+```shell
+./manage.py makemigrations
+./manage.py migrate
+```
+
+Please note that `Atila` just use Django ORM management and admin site only. Using models is entirely different from conventional Django style. For usage examples using `firebase_vue` app:
+- app/services/apis/auth
+
+And Django tutorials for managing ORM.
+
+
