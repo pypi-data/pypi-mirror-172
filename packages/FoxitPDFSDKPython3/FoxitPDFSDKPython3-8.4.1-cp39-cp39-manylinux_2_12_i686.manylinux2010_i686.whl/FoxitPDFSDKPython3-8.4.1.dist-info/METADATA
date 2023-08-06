@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: FoxitPDFSDKPython3
+Version: 8.4.1
+Summary: Foxit PDF SDK For Python3
+Home-page: https://www.developers.foxit.com
+Author: Foxit Software Inc.
+Author-email: support@foxitsoftware.com
+License: Other/Proprietary License (Commercial)
+Keywords: PDF SDK,PDF Library,PDF render,PDF view,PDF print,PDF Edit,PDF convert
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/plain
+License-File: legal.txt
+
+Foxit PDF SDK v8.4.1
+==================================================================
+This is a maintenance release
+
+____New Features/Changes____
+* DWG2PDF add-on for Windows/Linux/Mac(x64)
+	Relevant API: foxit::addon::conversion::Convert::FromDWG
+* Support autocenter for Printmanager
+* Move the table generator feature to foxit::addon::tablegenerator namespace
+* Add an option to decide whether to load full content for html2pdf conversion feature
+
+____Demo____
+* using the standard signature algorithm for the Paging seal signature java demo
+* using the standard signature algorithm for the signature java demo
+
+____Bug Fixes____
+* Fixed FSDK_ImageObject_CloneBitmap issue for C APIs 
+* Fixed the file name error of RetrieveSearchResult for Chinese Character
+* Fixed PDFPage.GetAnnots() issue for special file
+* Fixed a rendering issue for using Renderer.StartRender to render only
+* Fixed some issues related to html2pdf feature
+
