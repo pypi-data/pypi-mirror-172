@@ -1,0 +1,6 @@
+[console_scripts]
+lightseq-deepspeed = lightseq.training.cli.lightseq_deepspeed_cli:ls_cli_main
+lightseq-generate = lightseq.training.cli.lightseq_fairseq_generate_cli:ls_cli_main
+lightseq-infer = lightseq.training.cli.lightseq_infer_cli:ls_cli_main
+lightseq-train = lightseq.training.cli.lightseq_fairseq_train_cli:ls_cli_main
+lightseq-validate = lightseq.training.cli.lightseq_fairseq_validate_cli:ls_cli_main
