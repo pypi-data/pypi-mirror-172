@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include region/templates *
+recursive-include region/templatetags *
