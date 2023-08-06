@@ -1,0 +1,2 @@
+[console_scripts]
+pfdicom = pfdicom.__main__:main

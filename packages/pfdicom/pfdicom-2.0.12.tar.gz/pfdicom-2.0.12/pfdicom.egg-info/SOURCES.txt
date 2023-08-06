@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+pfdicom/__init__.py
+pfdicom/__main__.py
+pfdicom/pfdicom.py
+pfdicom.egg-info/PKG-INFO
+pfdicom.egg-info/SOURCES.txt
+pfdicom.egg-info/dependency_links.txt
+pfdicom.egg-info/entry_points.txt
+pfdicom.egg-info/not-zip-safe
+pfdicom.egg-info/requires.txt
+pfdicom.egg-info/top_level.txt
