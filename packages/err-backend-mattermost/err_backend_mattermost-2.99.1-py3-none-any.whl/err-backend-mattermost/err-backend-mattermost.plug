@@ -1,0 +1,9 @@
+[Core]
+Name = Mattermost
+Module = err-backend-mattermost
+
+[Documentation]
+Description = Mattermost backend for Errbot.
+Author = Christian Plümer
+Version = 2.99.1
+Website = https://github.com/errbotio/errbot-mattermost-backend
