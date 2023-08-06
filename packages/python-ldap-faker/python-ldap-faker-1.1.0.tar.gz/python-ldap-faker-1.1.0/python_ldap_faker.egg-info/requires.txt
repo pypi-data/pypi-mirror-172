@@ -1,0 +1,3 @@
+python-ldap
+case-insensitive-dictionary
+ldap-filter
