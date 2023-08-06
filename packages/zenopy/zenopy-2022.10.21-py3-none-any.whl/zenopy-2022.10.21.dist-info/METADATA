@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: zenopy
+Version: 2022.10.21
+Summary: zenopy: A Python wrapper package for Zenodo API
+Home-page: https://github.com/MolSSI/zenopy
+Author: Mohammad Mostafanejad
+Author-email: smostafanejad@vt.edu
+License: GNU Lesser General Public License v3
+Keywords: zenopy
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: requests
+Requires-Dist: validators
+Requires-Dist: renku-sphinx-theme
+Provides-Extra: docs
+Requires-Dist: sphinx (==1.2.3) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: renku-sphinx-theme ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+<!--
+<p align="center">
+<img alt="zenopy logo" src="OpenRDM.png" object-fit: contain'/> 
+<br>
+</p>
+
+<table align="center">
+  <tr>
+     <th align="left">CI/CD</th>
+     <th align="left">
+        <a href="https://ci.appveyor.com/project/SinaMostafanejad/openrdm"><img alt="AppVeyor" src="https://ci.appveyor.com/api/projects/status/67t0souy2fhoc7l5?svg=true"></a>
+     </th>
+  </tr>
+  <tr>
+    <th align="left">Code Coverage and Quality</th>
+    <th align="left">
+      <a href="https://codecov.io/gh/SinaMostafanejad/OpenRDM">
+<img alt="CodeCoverage" src="https://codecov.io/gh/SinaMostafanejad/OpenRDM/branch/master/graph/badge.svg" />
+      </a>
+      <a href="https://lgtm.com/projects/g/SinaMostafanejad/OpenRDM/context:cpp"><img alt="Language grade: C/C++" src="https://img.shields.io/lgtm/grade/cpp/g/SinaMostafanejad/OpenRDM.svg?logo=lgtm&logoWidth=18"/></a>
+<a href="https://www.codefactor.io/repository/github/sinamostafanejad/openrdm"><img src="https://www.codefactor.io/repository/github/sinamostafanejad/openrdm/badge" alt="CodeFactor" /></a>
+     </th>
+  </tr>
+  <tr>
+    <th align="left">Technical Support</th>
+    <th align="left">
+      <a href="https://join.slack.com/t/openrdm/shared_invite/zt-er638tpi-2MZLGxi161sQSNC7YnO8lg"><img alt="Slack Link" src="https://img.shields.io/badge/Chat on-Slack-blue?style=flat&logo=slack"></a>
+    </th>
+  </tr>
+  <tr>
+    <th align="left">Foundation</th>
+    <th align="left">
+      <a href="https://opensource.org/licenses/BSD-3-Clause"><img alt="GitHub license" src="https://img.shields.io/badge/license-BSD--3-blueviolet"></a>
+      <a href="https://www.linuxfoundation.org/"><img alt="GitHub license" src="https://img.shields.io/badge/Platforms-Linux-blue"></a>
+    </th>
+  </tr>
+</table>
+-->
+
+# zenopy
+
+An open-source Python library for Zenodo REST API
+
+## OVERVIEW
+
+zenopy provides a comprehensive Python library for productivity
+allowing scientists and engineers to publish their work on Zenodo
+in compliance with FAIR principles.
+
+## INSTALLATION
+
+The installation procedure can be as easy as running the following
+command in a terminal
+
+```bash
+pip install zenopy
+```
