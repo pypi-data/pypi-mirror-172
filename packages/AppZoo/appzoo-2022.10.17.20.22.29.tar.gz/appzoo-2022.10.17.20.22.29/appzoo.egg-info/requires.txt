@@ -1,0 +1,7 @@
+meutils
+fastapi[all]
+uvicorn
+streamlit
+gradio
+thriftpy2
+grpcio-tools
