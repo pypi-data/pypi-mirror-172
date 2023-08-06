@@ -1,0 +1,44 @@
+[project]
+name = "samosa"
+version = "0.1.4"
+description = "Enforce a triangular Git workflow. If this is not possible, explain why."
+authors = [
+    { name = "David Seaward", email = "david@librem.one" },
+]
+dependencies = [
+    "pygit2>=1.10.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "AGPL-3.0-or-later"
+
+[project.optional-dependencies]
+
+[project.scripts]
+samosa = "samosa.cli:invoke"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "reuse>=1.0.0",
+    "mdformat>=0.7.16",
+]
+
+[tool.syllabub.files]
+body = "static/body.md"
+logo = "static/logo.png"
+
+[tool.syllabub.project]
+conduct = "contributor-covenant-2.1"
+copyright = "Copyright 2022 David Seaward and contributors"
+origin = "DCO-1.1-git-signoff"
+sbom = "reuse spdx"
+title = "Samosa (समोसा)"
+url = "https://gitlab.com/lofidevops/samosa"
