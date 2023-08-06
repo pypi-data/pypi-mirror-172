@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+edn_conf/__init__.py
+edn_conf/core.py
+edn_conf/eval.py
+edn_conf/tags.edn
+edn_conf/tags.py
+edn_configs.egg-info/PKG-INFO
+edn_configs.egg-info/SOURCES.txt
+edn_configs.egg-info/dependency_links.txt
+edn_configs.egg-info/requires.txt
+edn_configs.egg-info/top_level.txt

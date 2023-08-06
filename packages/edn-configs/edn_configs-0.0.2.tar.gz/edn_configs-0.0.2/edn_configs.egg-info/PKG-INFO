@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: edn-configs
+Version: 0.0.2
+Summary: Edn enhanced config parser
+Author-email: Massimiliano Falzari <m.falzari@student.rug.nl>
+Project-URL: Homepage, https://github.com/vimmoos/edn_conf
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EDN CONF #
+
+This small library is built on https://pypi.org/project/edn-format/ 
+It gives a trivial clojure interpreter (Only for math
+operators). Morever, it is equiped with a namespaced keywords
+resolution methods, which will find and import the specific Python
+namespace. 
+Finally, it gives some trivial reader macro for calling, and
+partialing functions. 
+
+## Installation ##
+
+	pip install edn_conf
+	
+	
+
+

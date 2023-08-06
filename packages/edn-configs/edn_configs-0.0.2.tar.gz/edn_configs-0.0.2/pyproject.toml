@@ -1,0 +1,19 @@
+[project]
+name =  "edn_configs"
+version="0.0.2"
+authors=[{name="Massimiliano Falzari", email="m.falzari@student.rug.nl"}]
+description="Edn enhanced config parser"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+	    "Programming Language :: Python :: 3",
+	    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+	    "Operating System :: POSIX :: Linux",
+]
+dependencies=["edn_format"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/vimmoos/edn_conf"
+
+
