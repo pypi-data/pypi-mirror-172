@@ -1,0 +1,26 @@
+#!python
+
+"""
+Extract the scientific names from the NCBI taxonomy database dump
+
+Usage:
+  ntnames [options] <ntdumpsdir>
+
+Arguments:
+  ntdumpsdir  path to the download directory output of ntdownload
+
+Options:
+ --version  show version
+ -h --help  show this help message and exit
+"""
+
+from docopt import docopt
+from ntdownload import __version__, yield_scientific_names_from_dump
+
+def main(args):
+  for taxid, name in yield_scientific_names_from_dump(args['<ntdumpsdir>']):
+    print("{}\t{}".format(taxid, name))
+
+if __name__ == '__main__':
+  args = docopt(__doc__, version=__version__)
+  main(args)
