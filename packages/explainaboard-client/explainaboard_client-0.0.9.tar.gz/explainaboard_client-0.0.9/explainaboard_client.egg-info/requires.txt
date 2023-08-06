@@ -1,0 +1,5 @@
+explainaboard_api_client>=0.2.0
+tqdm
+
+[dev]
+pre-commit
