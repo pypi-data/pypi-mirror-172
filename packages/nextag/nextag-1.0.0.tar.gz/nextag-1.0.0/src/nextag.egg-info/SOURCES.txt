@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/nextag/__main__.py
+src/nextag.egg-info/PKG-INFO
+src/nextag.egg-info/SOURCES.txt
+src/nextag.egg-info/dependency_links.txt
+src/nextag.egg-info/entry_points.txt
+src/nextag.egg-info/not-zip-safe
+src/nextag.egg-info/requires.txt
+src/nextag.egg-info/top_level.txt
