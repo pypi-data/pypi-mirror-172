@@ -1,0 +1,23 @@
+{
+    "schema": "core",
+    "os": {
+        "name": "macos",
+        "shell": "bash",
+        "packages": [
+            "coreutils",
+            "wget",
+            "make"
+        ],
+        "applications": [
+            "flux",
+            "firefox",
+            "atom"
+        ],
+        "default_dock": [
+            "launchpad",
+            "Notes",
+            "iTunes",
+            "appstore"
+        ]
+    }
+}

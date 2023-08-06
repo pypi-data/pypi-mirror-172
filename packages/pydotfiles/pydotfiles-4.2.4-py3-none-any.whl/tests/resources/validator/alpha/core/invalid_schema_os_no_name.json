@@ -1,0 +1,23 @@
+{
+    "schema": "core",
+    "version": "alpha",
+    "os": {
+        "shell": "bash",
+        "packages": [
+            "coreutils",
+            "wget",
+            "make"
+        ],
+        "applications": [
+            "flux",
+            "firefox",
+            "atom"
+        ],
+        "default_dock": [
+            "launchpad",
+            "Notes",
+            "iTunes",
+            "appstore"
+        ]
+    }
+}
