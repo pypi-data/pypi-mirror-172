@@ -1,0 +1,10 @@
+meshtaichi_patcher_core.cp39-win_amd64.pyd,sha256=Is101uhWaprTRWRKV97x_DApxQx7W_IlhCnQvGa5_p4,349696
+meshtaichi_patcher/__init__.py,sha256=dlMPxLAZcT4SipdgzQx1y_hdoyVrwh2Dy48R1yMsEgM,6800
+meshtaichi_patcher/cluster.py,sha256=IGv-lzq6LIJjnh4yEUBs5BBtFVnmH73dxvE6gyv8vCI,541
+meshtaichi_patcher/meshpatcher.py,sha256=25J2R0yUeWOidNoz_OkK5EvrHLmrcDjBW3IQ4lciU2I,8139
+meshtaichi_patcher/relation.py,sha256=cUj0Nsf3l1A-If5pl0_w8EFG42DY1Js_C4k8BeN1LWk,1841
+meshtaichi_patcher-0.0.18.dist-info/LICENSE,sha256=N_R9-5l0U5HZyk0-el1LtB0nxSXttAIy78h4x_w_bgk,2218
+meshtaichi_patcher-0.0.18.dist-info/METADATA,sha256=J7LgDeEdFrGWMHY7drwOMKCYvLvQqzu5mkNWzNGOeOo,578
+meshtaichi_patcher-0.0.18.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+meshtaichi_patcher-0.0.18.dist-info/top_level.txt,sha256=_NB2Xxy7-jJ7nhawhsfRJM6AGd_hYl0FsbAxIVZEGaI,43
+meshtaichi_patcher-0.0.18.dist-info/RECORD,,
