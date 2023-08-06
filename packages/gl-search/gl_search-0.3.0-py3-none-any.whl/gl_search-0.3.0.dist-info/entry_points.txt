@@ -1,0 +1,3 @@
+[console_scripts]
+gl-search=gl_search.cli:cli
+
