@@ -1,0 +1,14 @@
+diopter/__init__.py,sha256=6LKNYPgHgSI4-h70mWCeOcoYpc98Zy_Umq22FY_0CDI,223
+diopter/bisector.py,sha256=1a5GN7m2SUNG2mR27vdm8JA-lvxN-08a_4eXQbY9xR0,8898
+diopter/compiler.py,sha256=DousSaUyYK32t4ekNO4-qADRJkgRACiAfkJjknIz8HU,11203
+diopter/generator.py,sha256=BGad3sTRxGaCG_elHduCxgFBRroH1EIXsYTfP2j5zMw,5524
+diopter/preprocessor.py,sha256=VSFJ8mPWKs0g1ZV3jEg1Gf7BaOumPD6DJPisyEhm-lA,2984
+diopter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diopter/reducer.py,sha256=_kytZj1ikn4OV5tz0q4ZfPHbnQVmBQPfFeRwfPLVnNA,4622
+diopter/sanitizer.py,sha256=Tk2Et0Jc4opHqUySSUgHewWtkFiH371l9dFPn1hF8pc,8941
+diopter/utils.py,sha256=nUm7q9PbyzRoHYCKmqfBykYV_HKDX88hByhZFVDXKmM,2398
+diopter-0.0.1.dist-info/LICENSE,sha256=5iovAh48XOpQBAc1jT6NBVBcCVqJTvcKTzwmzE0yYjk,575
+diopter-0.0.1.dist-info/METADATA,sha256=wFqU4zLtp1HawClBV7m1dLoTrmOrZUmUL67Q_RsqAy8,484
+diopter-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+diopter-0.0.1.dist-info/top_level.txt,sha256=_lPGqaVz_fhEdqEh8jWel3nzjH-6A6WRyapVAXc37kY,8
+diopter-0.0.1.dist-info/RECORD,,
