@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/fib.c
+src/simplefib.py
+src/simplefib.egg-info/PKG-INFO
+src/simplefib.egg-info/SOURCES.txt
+src/simplefib.egg-info/dependency_links.txt
+src/simplefib.egg-info/top_level.txt
