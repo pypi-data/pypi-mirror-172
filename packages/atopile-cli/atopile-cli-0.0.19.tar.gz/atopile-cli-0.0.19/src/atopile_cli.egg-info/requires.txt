@@ -1,0 +1,9 @@
+attrs
+aiodocker
+click
+pyyaml
+networkx
+termcolor
+treelib
+GitPython
+tqdm
