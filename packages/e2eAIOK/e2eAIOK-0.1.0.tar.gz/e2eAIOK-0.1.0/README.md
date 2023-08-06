@@ -1,0 +1,47 @@
+# [Intel® End-to-End AI Optimization Kit](https://laughing-waddle-b1e4ead5.pages.github.io/html/)
+
+Intel® End-to-End AI Optimization Kit (code name AIDK) is a set of kits for E2E AI democratization on CPU. It is a pipeline framework that streamlines AI democratization technologies in each stage of E2E AI pipeline, including data processing, feature engineering, training, hyper-parameter tunning, and inference. Intel® End-to-End AI Optimization Kit delivers high performance, lightweight models efficiently on commodity hardware.
+
+
+# Motivation and Solution
+
+Modern end to end machine learning or deep learning system usually includes a lifecycle of data processing, feature engineering, training, inference and serving.
+In this project, we provided four Major components:
+
+- RecDP (Feature Engineering)
+
+- Democratized Modelzoo(Recsys, Computer Vision, NLP, speech recognition, etc)
+
+- DeNas(train-free Neural Architecture Search)
+
+- TLK(Transfer Learning Kit)
+
+
+![AIDK workflow](aidk-workflow.JPG)
+
+
+# Indices and tables
+* [Examples](https://laughing-waddle-b1e4ead5.pages.github.io/html/quick_start.html)
+    * Built-in Models
+        * [DLRM](https://laughing-waddle-b1e4ead5.pages.github.io/html/builtin/dlrm/AIDK_DLRM_DEMO.html) - recsys, facebook
+        * [DIEN](https://laughing-waddle-b1e4ead5.pages.github.io/html/builtin/dien/AIDK_DIEN_DEMO.html) - recsys, alibaba
+        * [WnD](https://laughing-waddle-b1e4ead5.pages.github.io/html/builtin/wnd/AIDK_WND_DEMO.html) - recsys, google
+        * [RNNT](https://laughing-waddle-b1e4ead5.pages.github.io/html/builtin/rnnt/AIDK_RNNT_DEMO.html) - speech recognition
+        * [RESNET](https://laughing-waddle-b1e4ead5.pages.github.io/html/builtin/resnet/AIDK_RESNET_DEMO.html) - computer vision
+        * [BERT](https://laughing-waddle-b1e4ead5.pages.github.io/html/builtin/bert/AIDK_BERT_DEMO.html) - Natual Language Processing
+        * [MiniGO](https://laughing-waddle-b1e4ead5.pages.github.io/html/builtin/minigo/AIDK_MiniGo_DEMO.html) - minimalist engine modeled after AlphaGo Zero
+    
+    * DENAS Models
+        * [ComputerVision](https://laughing-waddle-b1e4ead5.pages.github.io/html/denas/computer_vision/AIDK_DENAS_COMPUTER_VISION_DEMO.html) - computer vision
+        * [BERT](https://laughing-waddle-b1e4ead5.pages.github.io/html/denas/bert/AIDK_DENAS_BERT_DEMO.html) - Natural Language Processing
+        * [ASR](https://laughing-waddle-b1e4ead5.pages.github.io/html/denas/asr/AIDK_DENAS_ASR_DEMO.html) - speech recognition
+    
+    * TLK Models
+        * [TLK]() - transfer learning kit
+    
+    * DENAS-TLK Joint Models
+        * [BERT](https://laughing-waddle-b1e4ead5.pages.github.io/html/denas-tlk/bert/DENAS-BERT-TLK-DEMO.html) - Natural Language Processing
+    
+    * hugging face intergration
+        * [NLP_DeNas_KD]() - hugging face + DENAS NLP + TLK KD
+        * [CV_DeNas_KD]() - hugging face CV + TLK
