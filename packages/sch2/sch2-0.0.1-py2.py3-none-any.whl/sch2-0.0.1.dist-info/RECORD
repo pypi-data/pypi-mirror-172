@@ -1,0 +1,11 @@
+sch/__init__.py,sha256=BMMhNd22eAee8km7YbeW-V6MuTxdwTGcI2shfvUQ3iA,122
+sch/cli.py,sha256=jdXHI04F0oVAiFo1AMatydlxguFE4nEEVJ5pSpdhTeo,2020
+sch/sch.py,sha256=04NtEZnlsLUatGRKUy0kQqd_BmYp2-6q9oQxHNABUmM,22905
+tests/__init__.py,sha256=e6gN2ZiCPtEoGtejrvTXyc28ETUPHWxPbHuBxj6cDW0,33
+tests/test_sch.py,sha256=KSN-W-BGt23dmFHV8KacxCHcATzXCiptBsbhHk7W6Ao,942
+sch2-0.0.1.dist-info/LICENSE,sha256=vSQ2qSw4DIVLX6T0yoLYd8UtLEfM5kZguEDVE83H7so,35057
+sch2-0.0.1.dist-info/METADATA,sha256=Go6xiOl0LGY9uaM38SLZ9j4KOIRd9mvXYDoayW2Bm2U,10969
+sch2-0.0.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+sch2-0.0.1.dist-info/entry_points.txt,sha256=yzHis0NSJ-OSGuWwbByz6ZBhZLgpMiQpDTsBdRTmhb0,38
+sch2-0.0.1.dist-info/top_level.txt,sha256=kjkP6Sebz2hwYBCB8b8nno8pemM8wBeO4eJn5cDEHb0,10
+sch2-0.0.1.dist-info/RECORD,,
