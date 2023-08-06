@@ -1,0 +1,10 @@
+asyncssh>=2.9.0
+
+[docs]
+myst-parser>=0.18.0
+sphinx-autodoc-typehints>=1.18.2
+
+[tests]
+mypy>=0.931
+pytest>=7.0.0
+pytest-cov>=3.0.0
