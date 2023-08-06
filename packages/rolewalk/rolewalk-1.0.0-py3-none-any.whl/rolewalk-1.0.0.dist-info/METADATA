@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: rolewalk
+Version: 1.0.0
+Summary: Structural node embedding on directed graphs
+Home-page: https://github.com/kerighan/rolewalk
+Author: Maixent Chenebaux
+Author-email: max.chbx@gmail.com
+Maintainer: Maixent Chenebaux
+Maintainer-email: max.chbx@gmail.com
+License: UNKNOWN
+Download-URL: http://pypi.python.org/pypi/rolewalk
+Keywords: graph,node,embedding,structural,random walks
+Platform: Linux
+Platform: Mac OSX
+Platform: Windows
+Platform: Unix
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: numba
+
+UNKNOWN
+
+
