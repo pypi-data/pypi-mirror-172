@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.py
+admin/__init__.py
+winadmin32.egg-info/PKG-INFO
+winadmin32.egg-info/SOURCES.txt
+winadmin32.egg-info/dependency_links.txt
+winadmin32.egg-info/top_level.txt

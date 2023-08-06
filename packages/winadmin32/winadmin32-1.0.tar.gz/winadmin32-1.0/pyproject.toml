@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="winadmin32"
+version="1.0"
+authors=[
+    { name="BoomerDev", email="boomerdev@cubesoftware.xyz" },
+]
+description="A simple way to require admin on Windows"
+requires-python=">=3.7"
+classifiers=[
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
