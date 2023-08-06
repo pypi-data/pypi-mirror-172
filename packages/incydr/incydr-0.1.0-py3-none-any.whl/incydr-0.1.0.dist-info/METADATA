@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: incydr
+Version: 0.1.0
+Summary: Code42's Incydr Python SDK
+Project-URL: Documentation, https://github.com/unknown/incydr#readme
+Project-URL: Issues, https://github.com/code42/incydr_python/issues
+Project-URL: Source, https://github.com/code42/incydr_python/incydr
+Author-email: Code42 <integrations@code42.com>
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: isodate
+Requires-Dist: pydantic[dotenv]
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: rich
+Description-Content-Type: text/markdown
+
+# incydr
+
+[![PyPI - Version](https://img.shields.io/pypi/v/incydr.svg)](https://pypi.org/project/incydr)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/incydr.svg)](https://pypi.org/project/incydr)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+-----
+
+The Incydr SDK is a Python client for interacting with the [Code42 Incydr API](https://developer.code42.com/api).
+
+It provides a thin wrapper around the [Requests](https://requests.readthedocs.io/en/latest/) HTTP library with
+helper clients that model Code42 data and validate requests with the help of [Pydantic](https://pydantic-docs.helpmanual.io).
+
+**This project is currently in BETA and subject to breaking changes prior to the 1.0 release.**
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install incydr
+```
+
+# Contributing
+
+## Install hatch
+
+```console
+pip install hatch
+```
+
+#### Run style checks
+
+```console
+hatch run style:check
+```
+
+#### Run tests with coverage
+
+```console
+hatch run test:cov
+```
+
+#### Serve docs locally
+
+```console
+hatch run docs:serve
+```
+
+## License
+
+`incydr` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+
+-----
+## Getting Started
+
+```python
+from incydr import Client
+client = Client(url="api-gateway-url.code42.com", api_client_id="key-42", api_client_secret="c42")
+```
