@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/matchmaker/wsgi.py
+src/matchmaker/application/NextRoundMatchesTypes.py
+src/matchmaker/application/QueryContext.py
+src/matchmaker/application/__init__.py
+src/matchmaker/application/matchmaker.py
+src/matchmaker/application/routes.py
+src/matchmaker_t4_arm.egg-info/PKG-INFO
+src/matchmaker_t4_arm.egg-info/SOURCES.txt
+src/matchmaker_t4_arm.egg-info/dependency_links.txt
+src/matchmaker_t4_arm.egg-info/requires.txt
+src/matchmaker_t4_arm.egg-info/top_level.txt
