@@ -1,0 +1,131 @@
+{% if page and page.meta.language %}
+<!DOCTYPE html lang="{{ page.meta.language }}">
+{% else %}
+<!DOCTYPE html lang="{{ config.language }}">
+{% endif %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {% if page and page.meta.language %}
+  <meta http-equiv="content-language" content="{{ page.meta.language }}">
+{% else %}
+<meta http-equiv="content-language" content="{{ config.language }}">
+{% endif %}
+
+  <meta http-equiv="content-language" content="{{ config.language }}">
+    {% if page and page.meta.summary %}
+    <meta property="og:site_name" content="{{ config.site_name }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}" />
+    {% if page and page.meta.summary %}
+    
+    <meta name="description" content="{{ page.meta.summary }}">
+      <meta property="og:description" content="{{ page.meta.summary }}" />
+      <meta name="twitter:description" content="{{ page.meta.summary }}" />
+    {% endif %}
+    {% if page and page.meta.image %}
+    <meta property="og:image" content="{{ page.meta.image|url }}" />
+    {% else %}
+    <meta property="og:image" content="{{ config.image|url }}" />
+    {% endif %}
+    <meta name="twitter:card" content="Summary Card" />
+    {% endif %}
+
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.site_name }}</title>
+
+  {% if config.favicon_svg %}
+  <link rel="icon" href="{{ config.favicon_svg|url }}" type="image/svg+xml">
+  {% endif %}
+  {% if config.favicon %}
+  <link rel="icon alternate" href="{{ config.favicon|url }}">
+  {% endif%}
+  <script>var base_url = '{{ base_url }}';</script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
+
+  <link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
+  <link rel="stylesheet" href="{{ "css/highlight-style.css"|url }}">
+
+  {% for path in config.extra_css %}
+    <link href="{{ path|url }}" rel="stylesheet">
+  {% endfor %}
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  
+
+  {% block extrahead %}
+  {% endblock %}
+
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      {% if not config.disable_header %}
+      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" href="{{ "/"|url }}" style="color:#232423;">
+              {% if config.favicon %}
+              <img src="{{ config.favicon|url }}" alt="{{ config.site_name }}" width="28" height="24"/>
+              {% endif%}
+              {{ config.site_name }}
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                  
+                </ul>
+                {% if config.visible_search %}
+                <form class="d-flex" action="{{ "search/"|url }}">
+                    <input class="form-control me-2" type="search" placeholder="{{ config.site_name }}で検索" aria-label="検索" name="q">
+                    <button class="btn btn-outline-primary" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+    {% endif %}
+    </header>
+    <main role="main" class="pb-3">
+    {% block main_content %}
+    {% endblock %}
+      </div>
+      <script src="{{ "js/theme.js"|url }}"></script>
+      {% for path in config.extra_javascript %}
+    <script src="{{ path|url }}"></script>
+      {% endfor %}
+    </main>
+  </div>
+  {% if not config.disable_footer %}
+  <footer class="border-top footer text-muted .position-absolute.bottom-0.start-50.translate-middle-x" style="padding-top:15px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          {% if config.copyright %}
+          <p>{{ config.copyright }}</p>
+          {% endif %}
+        </div>
+        {% if config.footimg %}
+        <div class="col-md-1">
+          <p>
+            <img class="fit-picture" src="{{ config.footimg|url }}" height="30em" width="30em">
+          </p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </footer>
+  {% endif %}
+</body>
+</html>
