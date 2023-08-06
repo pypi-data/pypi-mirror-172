@@ -1,0 +1,120 @@
+# Calculator
+
+Package `calculator_tsukrus` contains `Calculator` class.
+`Calculator` class imitates a calculator
+
+Initialization:
+- _Calculator(n)_ - initializes `Calculator` object with `n` as it's memory, default: 0
+
+Private variables:
+- _memory_ - type: `float`
+
+Functions:
+- _add(n)_ - adds `n` to calculator's memory
+- _subtract(n)_ - subtracts `n` from calculator's memory
+- _multiply(n)_ - multiplies calculator's memory by `n`
+- _divide(n)_ - divides calculator's memory by `n`
+- _root(n)_ - takes `n` root from calculator's memory, default: 2
+- _reset(n)_ - resets calculator's memory to `n`, default: 0
+- _memory()_ - returns calculator's memory
+
+## Installation
+
+```sh
+pip install calculator_tsukrus
+```
+
+## Usage
+
+Create an object:
+
+```python
+>>> import calculator_tsukrus
+>>> calculator1 = calculator_tsukrus.Calculator()
+>>> calculator2 = calculator_tsukrus.Calculator(5)
+>>> calculator1.memory()
+0
+>>> calculator2.memory()
+5
+```
+
+Memory:
+
+```python
+>>> import calculator_tsukrus
+>>> calc = calculator_tsukrus.Calculator()
+>>> calc.memory()
+0
+```
+
+Addition:
+
+```python
+>>> import calculator_tsukrus
+>>> calc = calculator_tsukrus.Calculator()
+>>> calc.memory()
+0
+>>> calc.add(5)
+>>> calc.memory()
+5
+```
+
+Subtraction:
+
+```python
+>>> import calculator_tsukrus
+>>> calc = calculator_tsukrus.Calculator()
+>>> calc.memory()
+0
+>>> calc.subtract(5)
+>>> calc.memory()
+-5
+```
+
+Multiplication:
+
+```python
+>>> import calculator_tsukrus
+>>> calc = calculator_tsukrus.Calculator(2)
+>>> calc.memory()
+2
+>>> calc.multiply(3)
+>>> calc.memory()
+6
+```
+
+Division:
+
+```python
+>>> import calculator_tsukrus
+>>> calc = calculator_tsukrus.Calculator(15)
+>>> calc.memory()
+15
+>>> calc.divide(4)
+>>> calc.memory()
+3.75
+```
+
+Root:
+
+```python
+>>> import calculator_tsukrus
+>>> calc = calculator_tsukrus.Calculator(25)
+>>> calc.memory()
+25
+>>> calc.root()
+>>> calc.memory()
+5.0
+>>>
+>>> calc.reset(8)
+>>> calc.memory()
+8
+>>> calc.root(3)
+>>> calc.memory()
+2.0
+```
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
