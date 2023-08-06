@@ -1,0 +1,3 @@
+[console_scripts]
+prisma_yaml_script = prismasase.__main__:gen_yaml
+
