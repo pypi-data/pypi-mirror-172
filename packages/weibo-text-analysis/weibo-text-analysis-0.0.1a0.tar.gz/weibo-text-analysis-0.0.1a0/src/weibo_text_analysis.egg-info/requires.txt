@@ -1,0 +1,8 @@
+numpy
+jieba
+
+[dev]
+check-manifest
+
+[test]
+coverage

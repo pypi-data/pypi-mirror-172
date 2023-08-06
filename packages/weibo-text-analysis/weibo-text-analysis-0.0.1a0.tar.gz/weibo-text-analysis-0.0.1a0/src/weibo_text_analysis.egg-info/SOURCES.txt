@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/weibo_text_analysis/__init__.py
+src/weibo_text_analysis/sentiment_utils.py
+src/weibo_text_analysis/text_utils.py
+src/weibo_text_analysis/time_utils.py
+src/weibo_text_analysis.egg-info/PKG-INFO
+src/weibo_text_analysis.egg-info/SOURCES.txt
+src/weibo_text_analysis.egg-info/dependency_links.txt
+src/weibo_text_analysis.egg-info/requires.txt
+src/weibo_text_analysis.egg-info/top_level.txt
+src/weibo_text_analysis/__pycache__/__init__.cpython-39.pyc
+src/weibo_text_analysis/__pycache__/text_utils.cpython-39.pyc
