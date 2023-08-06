@@ -1,0 +1,9 @@
+requests
+aiohttp
+rich
+importlib-metadata
+filelock
+pathspec
+cryptography
+docker
+pyyaml
