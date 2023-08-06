@@ -1,0 +1,13 @@
+capylang/__init__.py,sha256=E-i-oQcgtQEsYITFD6ZpPIiDV4de5nCgSaNNpbcquv8,200
+capylang/base/__init__.py,sha256=S6AqbJNiZPBAIssvkXKLKoWHM8ORXCWFd2ZdUU7Gogw,81
+capylang/capi/__init__.py,sha256=LVu-8__n-hiroyzW8zO_t5aiMBsLfiNP5WEV9x79O6g,302
+capylang/color/__init__.py,sha256=hnaXQZtoACpVDPG3OD9-3iD52E2MPjvtQVHMc6bMXJo,64
+capylang/core/__init__.py,sha256=PpMSFeWYNTDUg0lSP9JuSG2Z7YNSFDz1CohV6pYrmrs,2137
+capylang/date/__init__.py,sha256=EmPjEmNwOSqxLBIIbFgeXCRGkbe5Mfr4uneTQNyWUmM,299
+capylang/decorators/__init__.py,sha256=V8PRVBBFAXmY71crg5xPZjepxaTWV4Y1MKyF5gmUpBM,2219
+capylang/http/__init__.py,sha256=TjRkiNj3h0FOCcK0-4QMx5_gLw9TSY9kXALQSjMr0bo,583
+capylang/string/__init__.py,sha256=JkUVu3GlL8j6_b8V-L9Zh9Fm3RGsQuNnCb3OhjJXS_w,1000
+capylang/terminal/__init__.py,sha256=a8dpvyPO9DjYmXkyzFhrp3EXjslMcBuIG-mIQDWueAM,321
+capylang-2.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+capylang-2.1.0.dist-info/METADATA,sha256=A_OLv2Y03xDc2-Mo67tbTRQiDb5FEcPslePo1hmoUr4,4026
+capylang-2.1.0.dist-info/RECORD,,
