@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nec-sol
+Version: 0.5.1
+Requires-Python: >=3.7
+Summary: SOL Installer
+Author: Nicolas Weber
+Author-email: nicolas.weber@neclab.eu
+Home-page: https://sol.neclab.eu/
+Platform: linux_x86_x64
+Project-URL: Documentation, https://sol.neclab.eu/docs/v0.5.1
+Project-URL: Bug Tracker, https://gitlab.neclab.eu/
+Requires-Dist: simple-term-menu
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+![SOL Logo](https://sol.neclab.eu/logo.svg)
+
+<hr/>
+
+```nec-sol``` is the installation wrapper for the [SOL Neural Network
+Accelerator](https://sol.neclab.eu). You need to be approved SOL user to get
+access to the installable packages.
+
+See the [documentation](https://sol.neclab.eu/docs/) on how to perform the
+installation.
+
+## Useful Links:
+* [Documentation](https://sol.neclab.eu/docs/)
+* [Issue Tracker](https://sol.neclab.eu/issue/)
+* [Homepage](https://sol.neclab.eu/)
