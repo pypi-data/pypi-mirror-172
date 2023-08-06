@@ -1,0 +1,17 @@
+numpy<=1.23.4
+
+[docs]
+sphinx
+sphinx_rtd_theme
+sphinx-rtd-dark-mode
+sphinx_autodoc_typehints
+
+[style]
+black
+bumpver
+pylint
+isort
+mypy
+
+[test]
+pytest
