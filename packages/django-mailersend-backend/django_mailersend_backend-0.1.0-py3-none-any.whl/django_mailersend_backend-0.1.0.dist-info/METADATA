@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-mailersend-backend
+Version: 0.1.0
+Summary: Email backend for Django which sends email via the Mailersend API
+Author: Adem Gaygusuz
+Author-email: adem@ardweb.co.uk
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=1.4)
+Requires-Dist: mailersend (>=0.5.0,<0.6.0)
