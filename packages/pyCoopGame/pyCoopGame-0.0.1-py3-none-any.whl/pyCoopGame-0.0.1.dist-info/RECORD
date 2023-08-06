@@ -1,0 +1,13 @@
+pyCoopGame/Core.py,sha256=jfDjoFP1zx4_AEvldxUBBMMkxuzp6IKxXoRcsyMDL_Q,6461
+pyCoopGame/CostGap.py,sha256=6VJS9LVUd0SGT05IzKNSwz_bSy_56Y4G6BD4RWTrRtQ,1064
+pyCoopGame/Create_game.py,sha256=wJ5PmPttPNTSs89xIpUwKeopE7BihdX3ONuOzS3bQ3I,1418
+pyCoopGame/Nucleolus.py,sha256=86wWIyxofasnpxa7_XR_2X5_RyaJ3y5rnJ5AsIxOlZw,6275
+pyCoopGame/Shapley.py,sha256=jvYspjL-KA5bj4b4y9QKY3WHgZTJrTOg2Fd-YLlkjmk,1427
+pyCoopGame/Test_Code.py,sha256=WY_eWOoGfkZKrmJVQRvSDN-kRBekkzbvaQYMI3tYktE,829
+pyCoopGame/Validate_game.py,sha256=-XXobd2S-SblCD-yiD0_EhiKPGiPflldX_R9lrNmpR0,1585
+pyCoopGame/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyCoopGame-0.0.1.dist-info/LICENSE,sha256=l9iPgaGxBBiFSGa3kacqCX2D3159BQGVkvaczgamTaI,1094
+pyCoopGame-0.0.1.dist-info/METADATA,sha256=0yGj4Oq2qfUotU-0bGA-SDcaBcUWdggv5lXLdD9L6d0,572
+pyCoopGame-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyCoopGame-0.0.1.dist-info/top_level.txt,sha256=vBZPrlb-vMXBTUPIv-KeIipm3Pxy4LJY8WzpZ-UMpec,11
+pyCoopGame-0.0.1.dist-info/RECORD,,

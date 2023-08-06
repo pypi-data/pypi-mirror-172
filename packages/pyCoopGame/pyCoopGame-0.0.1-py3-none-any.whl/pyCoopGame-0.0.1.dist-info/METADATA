@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyCoopGame
+Version: 0.0.1
+Summary: Single point solution concepts for TU cooperative games
+Home-page: https://github.com/flechtenberg/pyCG_project
+Author: Fabian Lechtenberg
+Author-email: fabian.lechtenberg@upc.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# HI!
+This is a markdown textfile describing the package ...
+
+### Install
+pip install pyCoopGame
