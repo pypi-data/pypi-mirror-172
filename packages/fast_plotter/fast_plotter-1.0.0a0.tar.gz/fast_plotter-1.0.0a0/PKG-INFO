@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: fast_plotter
+Version: 1.0.0a0
+Summary: FASTHEP package for creating plots
+Author-email: Ben Krikler <fast-hep@cern.ch>
+Maintainer-email: FAST-HEP <fast-hep@cern.ch>
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: sphinx >=4.0 ; extra == "docs"
+Requires-Dist: sphinx_rtd_theme >=1.0 ; extra == "docs"
+Requires-Dist: sphinxcontrib-bibtex >=2.4 ; extra == "docs"
+Requires-Dist: sphinxcontrib-programoutput >=0.16 ; extra == "docs"
+Requires-Dist: pytest >=6 ; extra == "test"
+Requires-Dist: pytest-cov >=2.12 ; extra == "test"
+Requires-Dist: flake8 >=3.9 ; extra == "test"
+Project-URL: Home, https://github.com/fast-hep/fast-plotter
+Provides-Extra: docs
+Provides-Extra: test
+
+
+fast-plotter
+============
+
+
+.. image:: https://img.shields.io/pypi/v/fast_plotter.svg
+   :target: https://pypi.python.org/pypi/fast_plotter
+   :alt: pypi package
+
+
+.. image:: https://travis-ci.com/FAST-HEP/fast-plotter.svg?branch=master
+   :target: https://travis-ci.com/FAST-HEP/fast-plotter
+   :alt: pipeline status
+
+
+.. image:: https://readthedocs.org/projects/fast-plotter/badge/
+   :target: https://fast-plotter.readthedocs.io/
+   :alt: Documentation Status
+
+.. image:: https://badges.gitter.im/FAST-HEP/community.svg
+   :target: https://gitter.im/FAST-HEP/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
+   :alt: Gitter
+
+To install:
+
+.. code-block:: bash
+
+   pip install fast-plotter
+
+Or for development:
+
+.. code-block:: bash
+
+   pip install -e git+https://github.com/FAST-HEP/fast-plotter.git#egg=fast-plotter
+
+(you may need the :code:`--user` flag)
+
+* Free software: Apache Software License 2.0
+
+Features
+--------
+
+* Functions to turn binned dataframes in the form produced from `fast-carpenter <https://gitlab.cern.ch/fast-hep/public/fast-carpenter>`_
+* A simple command-line tool to produce plots with decent defaults
+
