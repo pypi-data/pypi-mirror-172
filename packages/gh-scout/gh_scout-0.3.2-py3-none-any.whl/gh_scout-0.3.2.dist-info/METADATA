@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gh-scout
+Version: 0.3.2
+Summary: ⭐ Find hacktoberfest repos to contribute to from your CLI
+Home-page: https://github.com/TechWiz-3/scout
+Author: Zac the Wise aka TechWiz-3
+License-File: LICENSE
+
