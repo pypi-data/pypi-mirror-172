@@ -1,0 +1,7 @@
+altair>=4.1.0
+networkx>=2.6.3
+pandas<1.5.0
+scikit-network>=0.27.1
+
+[graphviz]
+pygraphviz>=1.10
