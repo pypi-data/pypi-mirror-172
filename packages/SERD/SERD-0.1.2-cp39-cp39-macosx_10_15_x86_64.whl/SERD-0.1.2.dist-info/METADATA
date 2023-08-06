@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: SERD
+Version: 0.1.2
+Summary: A Python package to detect solvent-exposed residues of a target biomolecule.
+Home-page: https://github.com/jvsguerra/SERD
+Author: João Victor da Silva Guerra, Gabriel Ernesto Jara, José Geraldo de Carvalho Pereira
+Author-email: jvsguerra@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/jvsguerra/SERD/
+Project-URL: Issues, https://github.com/jvsguerra/SERD/issues
+Keywords: structural biology,proteins,biomolecular surface,solvent-exposed residues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: networkx (>=2.8.6)
+Requires-Dist: numpy (>=1.23.2)
+Requires-Dist: pyKVFinder (>=0.4.2)
+Requires-Dist: scipy (>=1.9.0)
+
+####
+SERD
+####
+
+.. image:: https://img.shields.io/pypi/v/SERD
+    :target: https://pypi.org/project/SERD/
+
+.. image:: https://img.shields.io/pypi/pyversions/SERD
+    :target: https://pypi.org/project/SERD/
+
+.. image:: https://img.shields.io/pypi/dm/SERD
+    :target: https://pypi.org/project/SERD/
+
+A Python package to detect solvent-exposed residues of a target biomolecule.
+
+* `GitHub repository <https://github.com/jvsguerra/SERD>`_
+* `Documentation and tutorial <https://jvsguerra.github.io/SERD/>`_
+
+************
+Installation
+************
+
+The prerequisites for installing SERD is SWIG, Python v3 and PyMOL v2.
+
+To install the latest release on `PyPI <https://pypi.org/project/SERD>`_, 
+run:
+
+::
+
+  pip install SERD
+
+Or to install the latest developmental version, run:
+
+::
+
+  git clone https://github.com/jvsguerra/SERD.git
+  pip install SERD
+
+*******
+License
+*******
+
+The software is licensed under the terms of the GNU General Public License version 3 (GPL3) and is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+
