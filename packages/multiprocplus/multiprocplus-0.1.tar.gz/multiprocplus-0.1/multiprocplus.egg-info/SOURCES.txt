@@ -1,0 +1,8 @@
+README.md
+setup.py
+multiprocplus/__init__.py
+multiprocplus/multi_process.py
+multiprocplus.egg-info/PKG-INFO
+multiprocplus.egg-info/SOURCES.txt
+multiprocplus.egg-info/dependency_links.txt
+multiprocplus.egg-info/top_level.txt
