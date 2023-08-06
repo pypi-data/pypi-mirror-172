@@ -1,0 +1,2 @@
+[pytest11]
+monitor = pytest_monitor.pytest_monitor
