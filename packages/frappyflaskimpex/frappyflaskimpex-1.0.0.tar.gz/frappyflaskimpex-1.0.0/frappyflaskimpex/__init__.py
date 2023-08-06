@@ -1,0 +1,1 @@
+from frappyflaskimpex.impex_api import register_endpoints
