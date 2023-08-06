@@ -1,0 +1,15 @@
+setuptools
+importlib_resources
+gensim
+numpy
+tqdm
+spacy>=3.0.5
+bokeh
+minisom
+transformers
+sentence-transformers
+importlib_resources
+wheel
+pymorphy2
+configparser
+wget
