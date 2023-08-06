@@ -1,0 +1,11 @@
+setup.py
+tensor_annotations_tensorflow_stubs.egg-info/PKG-INFO
+tensor_annotations_tensorflow_stubs.egg-info/SOURCES.txt
+tensor_annotations_tensorflow_stubs.egg-info/dependency_links.txt
+tensor_annotations_tensorflow_stubs.egg-info/requires.txt
+tensor_annotations_tensorflow_stubs.egg-info/top_level.txt
+tensorflow-stubs/__init__.py
+tensorflow-stubs/__init__.pyi
+tensorflow-stubs/math/__init__.pyi
+tensorflow-stubs/python/__init__.pyi
+tensorflow-stubs/train/__init__.pyi
