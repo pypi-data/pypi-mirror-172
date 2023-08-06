@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+CV_Robot/robot.py
+CV_Robot/vision.py
+CV_Robot.egg-info/PKG-INFO
+CV_Robot.egg-info/SOURCES.txt
+CV_Robot.egg-info/dependency_links.txt
+CV_Robot.egg-info/top_level.txt
