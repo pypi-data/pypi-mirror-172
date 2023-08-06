@@ -1,0 +1,12 @@
+mcasm-0.2.1.dist-info/RECORD,,
+mcasm-0.2.1.dist-info/LICENSE.txt,sha256=YJ1lroXBMJF3gMoyUWB4QPy5FX5ctphKLMxCS-N_LVs,1073
+mcasm-0.2.1.dist-info/top_level.txt,sha256=DWeEqxoJAHd60Hg-KydtX_mRkv1RczHmEhRsabUYXRY,19
+mcasm-0.2.1.dist-info/METADATA,sha256=RUH0jWkP-Jx-82JmMjTBfOpQn45_QBRFamqYx5jqZMs,1698
+mcasm-0.2.1.dist-info/WHEEL,sha256=twY77Ln0WdkZIv2L6BJ0DV8RxaObJEr_PgSS3t2yYr8,142
+mcasm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcasm/__init__.py,sha256=UOfh5goatikpo8Mjt5p6V7UzsfSLNgKPFr4vX1jsv_Q,195
+mcasm/version.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+mcasm/__main__.py,sha256=kRKzrvx22eRBDVv6mAetayMWS8sy1-rRjG5SZN_xTXE,9044
+mcasm/_core.cpython-39-x86_64-linux-gnu.so,sha256=G-lQZ2v6FhwFkwskwudYLWT7TxW2ma6lmLXxxS0t45k,42166160
+mcasm/_core/__init__.pyi,sha256=YjvTsQmvKqWyRjsIv-ylfxJ6JzVSKSQhdJHe16u3Oes,16201
+mcasm/_core/mc/__init__.pyi,sha256=RxNpbrJPmSwJlpBHs195NY68x3V6dXh_5pccQbRrSjQ,47986
