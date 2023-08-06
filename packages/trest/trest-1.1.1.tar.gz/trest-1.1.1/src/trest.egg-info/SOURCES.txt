@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/trest/__init__.py
+src/trest/rest_request.py
+src/trest/rest_response.py
+src/trest/utils.py
+src/trest.egg-info/PKG-INFO
+src/trest.egg-info/SOURCES.txt
+src/trest.egg-info/dependency_links.txt
+src/trest.egg-info/requires.txt
+src/trest.egg-info/top_level.txt
