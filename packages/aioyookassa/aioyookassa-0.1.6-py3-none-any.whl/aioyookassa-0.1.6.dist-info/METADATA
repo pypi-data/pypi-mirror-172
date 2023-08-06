@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: aioyookassa
+Version: 0.1.6
+Summary: Asynchronous wrapper to interact with yookassa.ru API
+Home-page: https://github.com/marple-git/aioyookassa
+License: MIT
+Keywords: yookassa,asyncio,aiohttp,pydantic,aioyookassa
+Author: Marple
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Project-URL: Documentation, https://aioyookassa.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/marple-git/aioyookassa
+Description-Content-Type: text/markdown
+
+[![Downloads](https://pepy.tech/badge/aioyookassa)](https://pepy.tech/project/aioyookassa)
+[![Downloads](https://pepy.tech/badge/aioyookassa/month)](https://pepy.tech/project/aioyookassa)
+[![Downloads](https://pepy.tech/badge/aioyookassa/week)](https://pepy.tech/project/aioyookassa)
+[![Code Quality Score](https://api.codiga.io/project/34833/score/svg)](https://api.codiga.io/project/34833/score/svg)
+[![Code Grade](https://api.codiga.io/project/34833/status/svg)](https://api.codiga.io/project/34833/status/svg)
+
+## 🔗 Links
+* 🎓 **Documentation:** [*CLICK*](https://aioyookassa.readthedocs.io/en/latest/)
+* 🖱️ **Developer contacts:** [![Dev-Telegram](https://img.shields.io/badge/Telegram-blue.svg?style=flat-square&logo=telegram)](https://t.me/marple_tech)
+## 🐦 Dependencies  
+
+| Library  |                       Description                       |
+|:--------:|:-------------------------------------------------------:|
+| aiohttp  | Asynchronous HTTP Client/Server for asyncio and Python. |
+| pydantic |                   JSON Data Validator                   |
+
+---
+
