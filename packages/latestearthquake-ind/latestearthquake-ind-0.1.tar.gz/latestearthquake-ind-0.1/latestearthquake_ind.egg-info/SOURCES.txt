@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gempaterkini/__init__.py
+latestearthquake_ind.egg-info/PKG-INFO
+latestearthquake_ind.egg-info/SOURCES.txt
+latestearthquake_ind.egg-info/dependency_links.txt
+latestearthquake_ind.egg-info/top_level.txt
