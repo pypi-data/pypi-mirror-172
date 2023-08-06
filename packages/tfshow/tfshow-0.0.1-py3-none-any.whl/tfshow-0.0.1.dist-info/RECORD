@@ -1,0 +1,10 @@
+tfshow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tfshow/main.py,sha256=gpw42MG5Keyw8VBh6fnrSe-ByW1hlot43-TtC2jJXA0,2164
+tfshow/tfreader.py,sha256=2pm_N_m7igsw6zVE-o_iZt-R8s0e8vgBagIH62_wVFM,1308
+tfshow/tfshow.py,sha256=LltyUJ4d4K5wyNdTeMWqXEQCiV4AKxoUNokTMCdMIuo,1186
+tfshow-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tfshow-0.0.1.dist-info/METADATA,sha256=Man07w9izbMSUlq1loQ8-bB4CgIrUIyEXIb37ibc0dg,917
+tfshow-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tfshow-0.0.1.dist-info/entry_points.txt,sha256=dn2g-rg77hGaBE68-OIwd1W5HQjFBzlnlrDHSvTvYc0,45
+tfshow-0.0.1.dist-info/top_level.txt,sha256=MuSPpCMx80cjNuCHyASHgZWQoJAjEhXuioBadHgMlKU,7
+tfshow-0.0.1.dist-info/RECORD,,

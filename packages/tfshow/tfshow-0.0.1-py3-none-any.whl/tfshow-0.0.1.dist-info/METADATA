@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: tfshow
+Version: 0.0.1
+Summary: Cyber tf visualizer
+Home-page: https://github.com/daohu527/tfshow
+Author: daohu527
+Author-email: daohu527@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/daohu527/tfshow/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: graphviz
+Requires-Dist: cyber-record
+
+# tfshow
+cyber tf visualizer.
+
+## Install
+tfshow need graphviz, so you should install graphviz first.
+```shell
+sudo apt-get install graphviz
+
+pip install tfshow
+```
+
+## Quick start
+After install tfshow, you can use below cmd to visualize coordinate transformation.
+```shell
+tfshow -f demo.record
+```
+
+then you can see the result
+![tf graph](docs/img/example.jpg)
+
+
