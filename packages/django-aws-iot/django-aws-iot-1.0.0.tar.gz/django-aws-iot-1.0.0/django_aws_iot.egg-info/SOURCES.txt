@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_aws_iot/__init__.py
+django_aws_iot/aws_iot.py
+django_aws_iot.egg-info/PKG-INFO
+django_aws_iot.egg-info/SOURCES.txt
+django_aws_iot.egg-info/dependency_links.txt
+django_aws_iot.egg-info/requires.txt
+django_aws_iot.egg-info/top_level.txt
