@@ -1,0 +1,102 @@
+[project]
+name = "bigearthnet-encoder"
+version = "0.3.0"
+description = "A flexible BigEarthNet encoder that allows one to quickly convert BigEarthNet to a DL-optimization data format."
+authors = [
+    { name = "Kai Norman Clasen", email = "k.clasen@protonmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.19",
+    "lmdb>=1.3.0",
+    "pydantic>=1.8",
+    "fastcore>=1.3",
+    "bigearthnet-patch-interface>=0.1",
+    "typer[all]>=0.6",
+    "bigearthnet-common>=2.8",
+    "pandas>=1.3",
+    "rasterio>=1.2",
+]
+
+[project.license]
+text = "Apache Software License 2.0"
+
+[project.urls]
+homepage = "https://github.com/kai-tub/bigearthnet_encoder/"
+repository = "https://github.com/kai-tub/bigearthnet_encoder/"
+documentation = "https://kai-tub.github.io/bigearthnet_encoder"
+
+[project.scripts]
+ben_encoder = "bigearthnet_encoder.encoder:encoder_cli"
+
+[project.optional-dependencies]
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+includes = [
+    "LICENSE",
+    "src",
+]
+
+[tool.pdm.dev-dependencies]
+docs = [
+    "myst-nb>=0.16",
+    "Sphinx>=4.5",
+    "sphinx-autobuild",
+    "sphinx-external-toc",
+    "linkify-it-py",
+    "furo",
+    "common-nb-preprocessors>=1",
+    "sphinx-cli-recorder>=0.1.5",
+    "sphinxcontrib-mermaid",
+    "scikit-image>=0.19.3",
+    "matplotlib>=3.6.1",
+]
+test = [
+    "pytest",
+    "pre-commit",
+    "jupyter",
+    "notebook",
+    "icecream>=2.1",
+    "torch>=1.11",
+    "pyarrow>=7",
+]
+lint = [
+    "black[jupyter]",
+    "isort",
+    "nbstripout",
+    "mypy",
+]
+
+[tool.pdm.scripts]
+check-pre-commit = "pre-commit run --all-files"
+check-types = "mypy src"
+tests = "pytest tests/"
+
+[tool.pdm.scripts.lint]
+composite = [
+    "pre-commit",
+]
+help = "Will check if all files are formatted with black & isort"
+
+[tool.pdm.scripts.build-docs]
+cmd = "sphinx-build docs docs/_build/"
+help = "Build Sphinx documentation"
+
+[tool.pdm.scripts.serve-sphinx-docs]
+cmd = "sphinx-autobuild docs docs/_build --open-browser"
+help = "Serve the Sphinx documentation with sphinx-autobuild"
+
+[tool.mypy]
+exclude = [
+    "tests",
+]
+
+[tool.isort]
+profile = "black"
