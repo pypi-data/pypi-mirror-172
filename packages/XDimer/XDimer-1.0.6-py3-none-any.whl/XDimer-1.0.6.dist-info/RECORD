@@ -1,0 +1,14 @@
+xdimer/__init__.py,sha256=Q-2u6Atyyz7-3I5KU7LiUJUNSrjp8LlMrMO0fRMhRHM,13652
+xdimer/auxiliary.py,sha256=Zy8s34UdLoiAZM3GSri2JuaCnFFEhvfCkWZFAQU67ic,3245
+xdimer/quantummechanical.py,sha256=Ym5pGdLmRWa6ot9tdS8FGva7zoM0wxNg-pU18j0Vw1Y,3512
+xdimer/semiclassical.py,sha256=wRPPVVDE71erPSCywddV45oGFNHGgRUbI3M-GZ816tY,11598
+xdimer/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xdimer/examples/fitting_emission_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xdimer/examples/fitting_emission_data/__main__.py,sha256=3Zdw8gfBxenSRs1EkFSNa9lMN6WoNGG9Ac89V-JCggw,4947
+xdimer/examples/simulating_emission/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xdimer/examples/simulating_emission/__main__.py,sha256=-mbuhymrAR21bLpY1okgN2AuepYbZpqfdQzGgw287_Y,5438
+XDimer-1.0.6.dist-info/LICENSE.md,sha256=kSV3vJlv_B7raKeoVf6uyVDQPsyA9NUtcX53M5SxdmA,1073
+XDimer-1.0.6.dist-info/METADATA,sha256=w4cCrbzqQshdjI-wo1oxW0YJ0QpWlH0HHZdTQ5nr1pA,27643
+XDimer-1.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+XDimer-1.0.6.dist-info/top_level.txt,sha256=lo_V0r_VyJdFhr22qWpzo448zt2qEUxPnFp7Pmk7wgU,7
+XDimer-1.0.6.dist-info/RECORD,,
