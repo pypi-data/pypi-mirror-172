@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fourbody
+Version: 0.4
+Summary: Phase space parameterisation for four-body decays X -> h1+ h2- h3- h4+
+Home-page: https://github.com/richard-lane/fourbody
+Download-URL: https://github.com/richard-lane/fourbody/archive/v_02.tar.gz
+Author: Richard Lane
+Author-email: richard.lane6798@gmail.com
+License: MIT
+Keywords: Physics,hadron,Dalitz,phase space,phasespace,root,cern
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+See the projet homepage for details
