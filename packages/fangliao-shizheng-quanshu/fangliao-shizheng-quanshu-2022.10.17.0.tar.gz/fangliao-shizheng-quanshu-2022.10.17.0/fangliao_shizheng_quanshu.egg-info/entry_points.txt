@@ -1,0 +1,4 @@
+[console_scripts]
+FangliaoShizhengQuanshu = FangliaoShizhengQuanshu.__main__:main
+fangliao-shizheng-quanshu = FangliaoShizhengQuanshu.__main__:main
+
