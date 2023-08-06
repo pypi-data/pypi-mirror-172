@@ -1,0 +1,8 @@
+CHANGES
+=======
+
+0.0.2
+-----
+
+* 修复windows上导出crash文件失败的问题
+* Initial commit
