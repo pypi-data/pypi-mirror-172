@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyecowatt
+Version: 0.1.3
+Summary: Package to use RTE Ecowatt API
+License: BSD 3-Clause License
+Project-URL: Homepage, https://gitlab.com/Darathor/pyecowatt
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Requires-Dist: aiohttp
+
