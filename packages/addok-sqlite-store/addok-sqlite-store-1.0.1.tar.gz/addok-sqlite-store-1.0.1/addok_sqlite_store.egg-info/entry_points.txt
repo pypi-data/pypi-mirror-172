@@ -1,0 +1,2 @@
+[addok.ext]
+sqlite-store = addok_sqlite_store
