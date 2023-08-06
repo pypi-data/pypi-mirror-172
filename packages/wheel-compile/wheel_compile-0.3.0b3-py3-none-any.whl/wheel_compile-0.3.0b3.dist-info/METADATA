@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: wheel-compile
+Version: 0.3.0b3
+Summary: Python wheel compilation to clean up source files from distro.
+Home-page: https://bitbucket.org/p-app/wheel_compile
+License: MIT
+Author: Vladimir V. Pivovarov
+Author-email: admin@p-app.ru
+Maintainer: Vladimir V. Pivovarov
+Maintainer-email: admin@p-app.ru
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: audit
+Provides-Extra: cython
+Requires-Dist: Cython (>=0.29.24,<1.0.0); extra == "cython"
+Requires-Dist: auditwheel (>=5.1.2,<6.0.0); extra == "audit"
+Requires-Dist: setuptools (>=60.0.0)
+Requires-Dist: wheel (>=0.37.0,<1.0.0)
+Project-URL: Repository, https://bitbucket.org/p-app/wheel_compile
+Description-Content-Type: text/markdown
+
+## Wheel (re)Compile
+
+This library provides repackaging of any wheel package with it`s compiled source files.
+
