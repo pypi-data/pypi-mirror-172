@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: stack-bot
+Version: 0.2.0
+Summary: A Python package to create stack based Telegram bots hosting on Yandex.Cloud
+Home-page: https://github.com/Brat-vseznamus/stack_bot
+Author: Brat-vseznamus
+Author-email: fvixnin@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: dataclasses-json (>=0.5.7)
+Requires-Dist: numpy
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: ydb (>=2.10.0)
+
+UNKNOWN
+
