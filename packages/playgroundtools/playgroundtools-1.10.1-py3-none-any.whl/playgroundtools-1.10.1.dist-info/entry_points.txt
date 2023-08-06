@@ -1,0 +1,5 @@
+[console_scripts]
+playground = playgroundtools.cli:main
+
+[gui_scripts]
+playground-gui = playgroundtools.gui:main
