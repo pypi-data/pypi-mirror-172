@@ -1,0 +1,2 @@
+[console_scripts]
+vulnerablecode = vulnerablecode:command_line
