@@ -1,0 +1,2 @@
+[console_scripts]
+ketter = ketter.__main__:cli
