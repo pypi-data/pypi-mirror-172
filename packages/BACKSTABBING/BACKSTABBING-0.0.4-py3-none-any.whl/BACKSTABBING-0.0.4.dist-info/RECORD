@@ -1,0 +1,13 @@
+src/Client.py,sha256=ST2_OS2GyDTzt6qBmXwLXigiqmRHU67eJXC9gwlXf1s,15834
+src/__init__.py,sha256=g4CmcXQK4tpwi7VWiY4J493e9Z0a0uUS2EK8gLrTv6U,185
+src/cli.py,sha256=1kqzP58m04zzdkv30Ego6WmCPDPb3cCy3CFZKWNHtbo,725
+src/server_connection.py,sha256=8gN2VQL-E3qDDKpS_6xJcEjAoH-6h2dWwM6iUSHU978,497
+src/server_constants.py,sha256=3c7a5CEFQpBg04VD8WJlBg50COtA3daaj6Q5ioBOV0I,315
+src/server_game.py,sha256=VgOx3q_vhci1qFpOiAdgVOrZhkdzql6RQpPHdTGPsiE,14494
+src/server_player.py,sha256=iF9a4m-WbJ0B9c9odT7DXzdHYnb5JaftS8M12lOZ66E,3322
+src/server_to_play.py,sha256=gPe-dWq1hx0i7x_uI38Q0coEY2sRcxCSAPYsQeY69dM,559
+BACKSTABBING-0.0.4.dist-info/METADATA,sha256=GUfoENSkT5e9UOTsu92aY-cuR9TFVhVE9HBXrI0LsMc,446
+BACKSTABBING-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BACKSTABBING-0.0.4.dist-info/entry_points.txt,sha256=lmN3Xz6oTAtHuGF9zXsq03N735l_V_sfjp6XCx-kGR4,73
+BACKSTABBING-0.0.4.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+BACKSTABBING-0.0.4.dist-info/RECORD,,

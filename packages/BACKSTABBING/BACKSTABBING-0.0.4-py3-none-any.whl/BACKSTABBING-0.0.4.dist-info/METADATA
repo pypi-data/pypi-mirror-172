@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: BACKSTABBING
+Version: 0.0.4
+Summary: (CLI package to run the server and connect a client to play a multiplayer game!)
+Home-page: https://github.com/momus-s/Real-time-network-multiplayer-game
+Author: Nitesh_Dohre/Akshay_Pratap/Anurag_krishna
+Author-email: niteshdohre@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pygame
+
