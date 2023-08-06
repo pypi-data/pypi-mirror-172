@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UserDataProcessor &mdash; EPICS PvaPy 5.1.2 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="PvObject" href="pvaccess.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> EPICS PvaPy
+          </a>
+              <div class="version">
+                5.1.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html">PvObject</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvscalar">PvScalar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvboolean">PvBoolean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvbyte">PvByte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvubyte">PvUByte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvshort">PvShort</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvushort">PvUShort</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvint">PvInt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvuint">PvUInt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvlong">PvLong</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvulong">PvULong</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvfloat">PvFloat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvdouble">PvDouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvstring">PvString</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvunion">PvUnion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvscalararray">PvScalarArray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvtimestamp">PvTimeStamp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvalarm">PvAlarm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvcodec">PvCodec</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvcontrol">PvControl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvdimension">PvDimension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvdisplay">PvDisplay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvvaluealarm">PvValueAlarm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#nttype">NtType</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#ntattribute">NtAttribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#ntenum">NtEnum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#ntndarray">NtNdArray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#nttable">NtTable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#ntscalar">NtScalar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#channel">Channel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#multichannel">MultiChannel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvobjectqueue">PvObjectQueue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvaserver">PvaServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#pvamirrorserver">PvaMirrorServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#rpcserver">RpcServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#rpcclient">RpcClient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pvaccess.html#caioc">CaIoc</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">UserDataProcessor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#adimageprocessor">AdImageProcessor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#adoutputfileprocessor">AdOutputFileProcessor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#datadecryptor">DataDecryptor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#adimagedatadecryptor">AdImageDataDecryptor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#dataencryptor">DataEncryptor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#adimagedataencryptor">AdImageDataEncryptor</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EPICS PvaPy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>UserDataProcessor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/pvapy.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-pvapy"></span><section id="userdataprocessor">
+<h1>UserDataProcessor<a class="headerlink" href="#userdataprocessor" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pvapy.hpc.userDataProcessor.</span></span><span class="sig-name descname"><span class="pre">UserDataProcessor</span></span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that serves as a base for any user implementation of a processor class
+suitable for usage with the streaming framework. Interface methods
+will be called at different stages of the processing workflow.</p>
+<p>The following variables will be set after processor instance is created and before processing starts:</p>
+<blockquote>
+<div><p>- <em>logger</em> (logging.Logger) : logger object</p>
+<p>- <em>processorId</em> (int)       : processor id</p>
+<p>- <em>outputChannel</em> (str)     : output channel</p>
+<p>- <em>objectIdField</em> (str)     : name of the object id field</p>
+<p>- <em>pvaServer</em> (PvaServer)   : PVA Server instance for publishing output objects</p>
+<p>- <em>metadataQueueMap</em> (dict) : dictionary of available PvObject queues for metadata channels</p>
+</div></blockquote>
+<p><strong>UserDataProcessor(configDict={})</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configDict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor.configure" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated runtime configuration changes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor.getOutputPvObjectType">
+<span class="sig-name descname"><span class="pre">getOutputPvObjectType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor.getOutputPvObjectType" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines PVA structure of
+the output (processed) PvObject. There is no need to override
+this method if the structure of input and output objects are the same, or
+if the application will not publish processing output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>PvObject with the same structure as generated by the process() method</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor.getStats">
+<span class="sig-name descname"><span class="pre">getStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor.getStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked periodically for generating application statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing application statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor.getStatsPvaTypes">
+<span class="sig-name descname"><span class="pre">getStatsPvaTypes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor.getStatsPvaTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines user application part
+of the status PvObject published on the status PVA channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing PVA types for the application statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor.process" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked every time input channel updates its PV record.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - channel monitor update object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor.resetStats">
+<span class="sig-name descname"><span class="pre">resetStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor.resetStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated application statistics reset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor.start" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor.stop" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing shutdown.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.userDataProcessor.UserDataProcessor.updateOutputChannel">
+<span class="sig-name descname"><span class="pre">updateOutputChannel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.userDataProcessor.UserDataProcessor.updateOutputChannel" title="Permalink to this definition"></a></dt>
+<dd><p>Method that can be used for publishing processed object on the 
+output PVA channel. It should be invoked by the user application itself
+as part of the process() method. Typically, there should be no need for
+overriding this method in the derived class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - processed object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="adimageprocessor">
+<h1>AdImageProcessor<a class="headerlink" href="#adimageprocessor" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pvapy.hpc.adImageProcessor.</span></span><span class="sig-name descname"><span class="pre">AdImageProcessor</span></span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pvapy.hpc.userDataProcessor.UserDataProcessor" title="pvapy.hpc.userDataProcessor.UserDataProcessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">pvapy.hpc.userDataProcessor.UserDataProcessor</span></code></a></p>
+<p>Class that can be used as a base for user implementation of an
+Area Detector image processor class suitable for usage with the streaming
+framework.</p>
+<p><strong>AdImageProcessor(configDict={})</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configDict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.configure" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated runtime configuration changes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.generateNtNdArray2D">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generateNtNdArray2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imageId</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extraFieldsPvObject</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.generateNtNdArray2D" title="Permalink to this definition"></a></dt>
+<dd><p>Generate new NtNdArray object from NumPy array containing 2D image data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>imageId</em> (int) - Value for the ‘uniqueId’ field</p>
+</dd>
+<dt class="field-even">Parameter</dt>
+<dd class="field-even"><p><em>image</em> (numpy.array) - Image data</p>
+</dd>
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>extraFieldsPvbject</em> (PvObject) - optional PvObject to be used for setting additional fields in the generated NtNdArray object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>NtNdArray object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.getNtNdArrayDataFieldKey">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getNtNdArrayDataFieldKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.getNtNdArrayDataFieldKey" title="Permalink to this definition"></a></dt>
+<dd><p>Get NtNdArray value (union) field key suitable for the given NumPy array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>image</em> (numpy.array) - array containing image data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>NtNdArray union value field key. Possible return values are ‘ubyteValue’, ‘byteValue’, ‘ushortValue’, ‘shortValue’, ‘uintValue’, ‘intValue’, ‘ulongValue’, ‘longValue’, ‘floatValue’, or ‘doubleValue’.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.getOutputPvObjectType">
+<span class="sig-name descname"><span class="pre">getOutputPvObjectType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.getOutputPvObjectType" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines PVA structure of
+the output (processed) PvObject. There is no need to override
+this method if the structure of input and output objects are the same, or
+if the application will not publish processing output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>PvObject with the same structure as generated by the process() method</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.getStats">
+<span class="sig-name descname"><span class="pre">getStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.getStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked periodically for generating application statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing application statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.getStatsPvaTypes">
+<span class="sig-name descname"><span class="pre">getStatsPvaTypes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.getStatsPvaTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines user application part
+of the status PvObject published on the status PVA channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing PVA types for the application statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.process" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked every time input channel updates its PV record.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - channel monitor update object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.replaceNtNdArrayImage2D">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">replaceNtNdArrayImage2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ntNdArray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageId</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extraFieldsPvObject</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.replaceNtNdArrayImage2D" title="Permalink to this definition"></a></dt>
+<dd><p>Replace 2D image data in the existing NtNdArray object. This method is 
+slightly faster than generateNtNdArray2D().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>ntNdArray</em> (NtNdArray) - target NtNdArray object</p>
+</dd>
+<dt class="field-even">Parameter</dt>
+<dd class="field-even"><p><em>imageId</em> (int) - Value for the ‘uniqueId’ field</p>
+</dd>
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>image</em> (numpy.array) - Image data</p>
+</dd>
+<dt class="field-even">Parameter</dt>
+<dd class="field-even"><p><em>extraFieldsPvbject</em> (PvObject) - optional PvObject to be used for setting additional fields in the generated NtNdArray object</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>NtNdArray object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.resetStats">
+<span class="sig-name descname"><span class="pre">resetStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.resetStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated application statistics reset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.reshapeNtNdArray">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reshapeNtNdArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ntNdArray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.reshapeNtNdArray" title="Permalink to this definition"></a></dt>
+<dd><p>Reshape NtNdArray object and return tuple with image id, NumPy image array,
+image dimensions, color mode and NtNdArray value (union) field key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>ntNdArray</em> (NtNdArray) - NtNdArray object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Tuple (imageId,image,nx,ny,nz,colorMode,fieldKey).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.start" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.stop" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing shutdown.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageProcessor.AdImageProcessor.updateOutputChannel">
+<span class="sig-name descname"><span class="pre">updateOutputChannel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageProcessor.AdImageProcessor.updateOutputChannel" title="Permalink to this definition"></a></dt>
+<dd><p>Method that can be used for publishing processed object on the 
+output PVA channel. It should be invoked by the user application itself
+as part of the process() method. Typically, there should be no need for
+overriding this method in the derived class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - processed object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="adoutputfileprocessor">
+<h1>AdOutputFileProcessor<a class="headerlink" href="#adoutputfileprocessor" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pvapy.hpc.adOutputFileProcessor.</span></span><span class="sig-name descname"><span class="pre">AdOutputFileProcessor</span></span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pvapy.hpc.adImageProcessor.AdImageProcessor" title="pvapy.hpc.adImageProcessor.AdImageProcessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">pvapy.hpc.adImageProcessor.AdImageProcessor</span></code></a></p>
+<p>Streaming framework processor class that can be used for saving Area 
+Detector images into files. Configuration dictionary should provide
+the following settings:</p>
+<blockquote>
+<div><p>- outputDirectory (str)      : defines full path to the output directory</p>
+<p>- outputFileNameFormat (str) : defines format to be used for naming output files, e.g. ‘{uniqueId:06}.{processorId}.tiff’</p>
+</div></blockquote>
+<p><strong>AdImageProcessor(configDict)</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.BYTES_IN_MEGABYTE">
+<span class="sig-name descname"><span class="pre">BYTES_IN_MEGABYTE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1000000</span></em><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.BYTES_IN_MEGABYTE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configDict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.configure" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated runtime configuration changes. It
+looks for ‘outputDirectory’ and ‘outputFileNameFormat’ in the configuration
+dictionary and reconfigures processor behavior according to the specified
+values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.generateNtNdArray2D">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generateNtNdArray2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imageId</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extraFieldsPvObject</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.generateNtNdArray2D" title="Permalink to this definition"></a></dt>
+<dd><p>Generate new NtNdArray object from NumPy array containing 2D image data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>imageId</em> (int) - Value for the ‘uniqueId’ field</p>
+</dd>
+<dt class="field-even">Parameter</dt>
+<dd class="field-even"><p><em>image</em> (numpy.array) - Image data</p>
+</dd>
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>extraFieldsPvbject</em> (PvObject) - optional PvObject to be used for setting additional fields in the generated NtNdArray object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>NtNdArray object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.getNtNdArrayDataFieldKey">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getNtNdArrayDataFieldKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.getNtNdArrayDataFieldKey" title="Permalink to this definition"></a></dt>
+<dd><p>Get NtNdArray value (union) field key suitable for the given NumPy array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>image</em> (numpy.array) - array containing image data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>NtNdArray union value field key. Possible return values are ‘ubyteValue’, ‘byteValue’, ‘ushortValue’, ‘shortValue’, ‘uintValue’, ‘intValue’, ‘ulongValue’, ‘longValue’, ‘floatValue’, or ‘doubleValue’.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.getOutputPvObjectType">
+<span class="sig-name descname"><span class="pre">getOutputPvObjectType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.getOutputPvObjectType" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines PVA structure of
+the output (processed) PvObject. There is no need to override
+this method if the structure of input and output objects are the same, or
+if the application will not publish processing output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>PvObject with the same structure as generated by the process() method</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.getStats">
+<span class="sig-name descname"><span class="pre">getStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.getStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked periodically for generating processor statistics (number
+of files and bytes saved and corresponding processing/storage rates).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.getStatsPvaTypes">
+<span class="sig-name descname"><span class="pre">getStatsPvaTypes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.getStatsPvaTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines processor part
+of the status PvObject published on the status PVA channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing PVA types for the processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.process" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked every time input channel updates its PV record. It reshapes
+input NtNdArray object and saves image data into output file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (NtNdArray) - channel monitor update object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.replaceNtNdArrayImage2D">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">replaceNtNdArrayImage2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ntNdArray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageId</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extraFieldsPvObject</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.replaceNtNdArrayImage2D" title="Permalink to this definition"></a></dt>
+<dd><p>Replace 2D image data in the existing NtNdArray object. This method is 
+slightly faster than generateNtNdArray2D().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>ntNdArray</em> (NtNdArray) - target NtNdArray object</p>
+</dd>
+<dt class="field-even">Parameter</dt>
+<dd class="field-even"><p><em>imageId</em> (int) - Value for the ‘uniqueId’ field</p>
+</dd>
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>image</em> (numpy.array) - Image data</p>
+</dd>
+<dt class="field-even">Parameter</dt>
+<dd class="field-even"><p><em>extraFieldsPvbject</em> (PvObject) - optional PvObject to be used for setting additional fields in the generated NtNdArray object</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>NtNdArray object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.resetStats">
+<span class="sig-name descname"><span class="pre">resetStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.resetStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated application statistics reset. It resets
+total processing time, as well as counters for the number of files and for 
+the total number of bytes saved.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.reshapeNtNdArray">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reshapeNtNdArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ntNdArray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.reshapeNtNdArray" title="Permalink to this definition"></a></dt>
+<dd><p>Reshape NtNdArray object and return tuple with image id, NumPy image array,
+image dimensions, color mode and NtNdArray value (union) field key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>ntNdArray</em> (NtNdArray) - NtNdArray object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Tuple (imageId,image,nx,ny,nz,colorMode,fieldKey).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.start" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.stop" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing shutdown.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.updateOutputChannel">
+<span class="sig-name descname"><span class="pre">updateOutputChannel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adOutputFileProcessor.AdOutputFileProcessor.updateOutputChannel" title="Permalink to this definition"></a></dt>
+<dd><p>Method that can be used for publishing processed object on the 
+output PVA channel. It should be invoked by the user application itself
+as part of the process() method. Typically, there should be no need for
+overriding this method in the derived class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - processed object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="datadecryptor">
+<h1>DataDecryptor<a class="headerlink" href="#datadecryptor" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pvapy.hpc.dataDecryptor.</span></span><span class="sig-name descname"><span class="pre">DataDecryptor</span></span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pvapy.hpc.userDataProcessor.UserDataProcessor" title="pvapy.hpc.userDataProcessor.UserDataProcessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">pvapy.hpc.userDataProcessor.UserDataProcessor</span></code></a></p>
+<p>Processor class for decrypting data and publishing it on the output channel.
+This class should be used as a base for decrypting specific PVA types. 
+The configuration dictionary should provide the following settings:</p>
+<blockquote>
+<div><p>- privateKeyFilePath (str) : defines full path to the RSA private key in PEM format.</p>
+<p>- verify (bool) : if True, encrypted data will be verified (default: False)</p>
+</div></blockquote>
+<p><strong>DataDecryptor(configDict)</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configDict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor.configure" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated runtime configuration changes. It
+looks for ‘privateKeyFilePath’ and ‘verify’ in the configuration
+dictionary and reconfigures processor according to the specified
+value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor.getOutputPvObjectType">
+<span class="sig-name descname"><span class="pre">getOutputPvObjectType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor.getOutputPvObjectType" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines PVA structure of
+the output (processed) PvObject. There is no need to override
+this method if the structure of input and output objects are the same, or
+if the application will not publish processing output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>PvObject with the same structure as generated by the process() method</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor.getStats">
+<span class="sig-name descname"><span class="pre">getStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor.getStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked periodically for generating processor statistics (number
+of files and bytes saved and corresponding processing/storage rates).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor.getStatsPvaTypes">
+<span class="sig-name descname"><span class="pre">getStatsPvaTypes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor.getStatsPvaTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines processor part
+of the status PvObject published on the status PVA channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing PVA types for the processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor.process" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked every time input channel updates its PV record. It encrypts
+input object and publishes result on the output channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - channel monitor update object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor.resetStats">
+<span class="sig-name descname"><span class="pre">resetStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor.resetStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated application statistics reset. It resets
+total processing time, as well as counters for the number of processed
+objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor.start" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor.stop" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing shutdown.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataDecryptor.DataDecryptor.updateOutputChannel">
+<span class="sig-name descname"><span class="pre">updateOutputChannel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataDecryptor.DataDecryptor.updateOutputChannel" title="Permalink to this definition"></a></dt>
+<dd><p>Method that can be used for publishing processed object on the 
+output PVA channel. It should be invoked by the user application itself
+as part of the process() method. Typically, there should be no need for
+overriding this method in the derived class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - processed object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="adimagedatadecryptor">
+<h1>AdImageDataDecryptor<a class="headerlink" href="#adimagedatadecryptor" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pvapy.hpc.adImageDataDecryptor.</span></span><span class="sig-name descname"><span class="pre">AdImageDataDecryptor</span></span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pvapy.hpc.dataDecryptor.DataDecryptor" title="pvapy.hpc.dataDecryptor.DataDecryptor"><code class="xref py py-class docutils literal notranslate"><span class="pre">pvapy.hpc.dataDecryptor.DataDecryptor</span></code></a></p>
+<p>Processor for decrypting Area Detector image data. The configuration dictionary
+should provide the following settings:</p>
+<blockquote>
+<div><p>- privateKeyFilePath (str) : defines full path to the RSA private key in PEM format.</p>
+<p>- verify (bool) : if True, encrypted data will be verified (default: False)</p>
+</div></blockquote>
+<p><strong>AdImageDataDecryptor(configDict)</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configDict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.configure" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated runtime configuration changes. It
+looks for ‘privateKeyFilePath’ and ‘verify’ in the configuration
+dictionary and reconfigures processor according to the specified
+value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.getOutputPvObjectType">
+<span class="sig-name descname"><span class="pre">getOutputPvObjectType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.getOutputPvObjectType" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines PVA structure of
+the output (processed) PvObject.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>NtNdArray object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.getStats">
+<span class="sig-name descname"><span class="pre">getStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.getStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked periodically for generating processor statistics (number
+of files and bytes saved and corresponding processing/storage rates).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.getStatsPvaTypes">
+<span class="sig-name descname"><span class="pre">getStatsPvaTypes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.getStatsPvaTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines processor part
+of the status PvObject published on the status PVA channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing PVA types for the processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.process" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked every time input channel updates its PV record. It encrypts
+input object and publishes result on the output channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - channel monitor update object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.resetStats">
+<span class="sig-name descname"><span class="pre">resetStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.resetStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated application statistics reset. It resets
+total processing time, as well as counters for the number of processed
+objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.start" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.stop" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing shutdown.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.updateOutputChannel">
+<span class="sig-name descname"><span class="pre">updateOutputChannel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataDecryptor.AdImageDataDecryptor.updateOutputChannel" title="Permalink to this definition"></a></dt>
+<dd><p>Method that can be used for publishing processed object on the 
+output PVA channel. It should be invoked by the user application itself
+as part of the process() method. Typically, there should be no need for
+overriding this method in the derived class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - processed object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="dataencryptor">
+<h1>DataEncryptor<a class="headerlink" href="#dataencryptor" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pvapy.hpc.dataEncryptor.</span></span><span class="sig-name descname"><span class="pre">DataEncryptor</span></span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pvapy.hpc.userDataProcessor.UserDataProcessor" title="pvapy.hpc.userDataProcessor.UserDataProcessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">pvapy.hpc.userDataProcessor.UserDataProcessor</span></code></a></p>
+<p>Processor class for encrypting data and publishing it on the output channel.
+This class should be used as a base for encrypting specific PVA types. 
+The configuration dictionary should provide
+the following settings:</p>
+<blockquote>
+<div><p>- privateKeyFilePath (str) : defines full path to the RSA private key in PEM format.</p>
+<p>- sign (bool) : if True, encrypted data will be signed (default: False)</p>
+</div></blockquote>
+<p><strong>DataEncryptor(configDict)</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configDict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor.configure" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated runtime configuration changes. It
+looks for ‘privateKeyFilePath’ and ‘sign’ in the configuration
+dictionary and reconfigures processor according to the specified
+value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor.getOutputPvObjectType">
+<span class="sig-name descname"><span class="pre">getOutputPvObjectType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor.getOutputPvObjectType" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines PVA structure of
+the output (processed) PvObject.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>PvObject with the same structure as generated by the process() method</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor.getStats">
+<span class="sig-name descname"><span class="pre">getStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor.getStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked periodically for generating processor statistics (number
+of files and bytes saved and corresponding processing/storage rates).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor.getStatsPvaTypes">
+<span class="sig-name descname"><span class="pre">getStatsPvaTypes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor.getStatsPvaTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines processor part
+of the status PvObject published on the status PVA channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing PVA types for the processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor.process" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked every time input channel updates its PV record. It encrypts
+input object and publishes result on the output channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - channel monitor update object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor.resetStats">
+<span class="sig-name descname"><span class="pre">resetStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor.resetStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated application statistics reset. It resets
+total processing time, as well as counters for the number of processed
+objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor.start" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor.stop" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing shutdown.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.dataEncryptor.DataEncryptor.updateOutputChannel">
+<span class="sig-name descname"><span class="pre">updateOutputChannel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.dataEncryptor.DataEncryptor.updateOutputChannel" title="Permalink to this definition"></a></dt>
+<dd><p>Method that can be used for publishing processed object on the 
+output PVA channel. It should be invoked by the user application itself
+as part of the process() method. Typically, there should be no need for
+overriding this method in the derived class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - processed object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="adimagedataencryptor">
+<h1>AdImageDataEncryptor<a class="headerlink" href="#adimagedataencryptor" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pvapy.hpc.adImageDataEncryptor.</span></span><span class="sig-name descname"><span class="pre">AdImageDataEncryptor</span></span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pvapy.hpc.dataEncryptor.DataEncryptor" title="pvapy.hpc.dataEncryptor.DataEncryptor"><code class="xref py py-class docutils literal notranslate"><span class="pre">pvapy.hpc.dataEncryptor.DataEncryptor</span></code></a></p>
+<p>Processor for encrypting Area Detector image data. The configuration dictionary
+should provide the following settings:</p>
+<blockquote>
+<div><p>- privateKeyFilePath (str) : defines full path to the RSA private key in PEM format.</p>
+<p>- sign (bool) : if True, encrypted data will be signed (default: False)</p>
+</div></blockquote>
+<p><strong>AdImageDataEncryptor(configDict)</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configDict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.configure" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated runtime configuration changes. It
+looks for ‘privateKeyFilePath’ and ‘sign’ in the configuration
+dictionary and reconfigures processor according to the specified
+value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>configDict</em> (dict) - dictionary containing configuration parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.getOutputPvObjectType">
+<span class="sig-name descname"><span class="pre">getOutputPvObjectType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.getOutputPvObjectType" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines PVA structure of
+the output (processed) PvObject.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>PvObject with the same structure as generated by the process() method</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.getStats">
+<span class="sig-name descname"><span class="pre">getStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.getStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked periodically for generating processor statistics (number
+of files and bytes saved and corresponding processing/storage rates).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.getStatsPvaTypes">
+<span class="sig-name descname"><span class="pre">getStatsPvaTypes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.getStatsPvaTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup. It defines processor part
+of the status PvObject published on the status PVA channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary containing PVA types for the processor statistics parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.process" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked every time input channel updates its PV record. It encrypts
+input object and publishes result on the output channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - channel monitor update object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.resetStats">
+<span class="sig-name descname"><span class="pre">resetStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.resetStats" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at user initiated application statistics reset. It resets
+total processing time, as well as counters for the number of processed
+objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.start" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing startup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.stop" title="Permalink to this definition"></a></dt>
+<dd><p>Method invoked at processing shutdown.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.updateOutputChannel">
+<span class="sig-name descname"><span class="pre">updateOutputChannel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pvObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pvapy.hpc.adImageDataEncryptor.AdImageDataEncryptor.updateOutputChannel" title="Permalink to this definition"></a></dt>
+<dd><p>Method that can be used for publishing processed object on the 
+output PVA channel. It should be invoked by the user application itself
+as part of the process() method. Typically, there should be no need for
+overriding this method in the derived class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><em>pvObject</em> (PvObject) - processed object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pvaccess.html" class="btn btn-neutral float-left" title="PvObject" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014-2022, EPICS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
