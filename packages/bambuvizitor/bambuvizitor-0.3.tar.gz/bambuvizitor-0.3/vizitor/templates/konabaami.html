@@ -1,0 +1,140 @@
+
+
+
+
+	{% extends 'baze.html' %}
+    {% block content %}
+
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+
+
+                
+
+
+                {% for dados in benvindu %}
+              
+           
+
+
+                <div class="col-md-12">
+                    <div class="message-box">
+                    <h2>{{dados.titulu}}</h2>
+                     
+                    <p class="lead">{{dados.konteudu|safe}}</p>
+                        <!-- <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Hare Detalla</a> -->
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+
+                <center>
+                <div class="col-md-12" >
+
+                    <h2>Video</h2>
+
+                    <div style='justify-content:  center;'>
+
+                        <br>
+
+                        <div class="post-media wow fadeIn">
+                            <img src="{{dados.imagen.url}}"  style="width: 50% ;" alt="" class="img-responsive img-rounded">
+                            <a href="{{dados.linkvideo}}" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                         </div><!-- end media -->
+                    </div>
+
+                </div><!-- end col -->
+                </center>
+
+
+
+            </div><!-- end row -->
+
+            {% endfor %}
+
+
+
+     
+        </div><!-- end container -->
+ 
+
+ <hr>
+        <div class="container">
+            <div class="row">
+
+                     <div class="col-md-6">
+                      <div class="message-box">
+                      
+                        {% for dados in misaun %}
+
+                        <h2>{{dados.titulu}} </h2>
+                        <p class="lead">{{dados.konteudu|safe}}</p>
+
+                   {% endfor %}
+                        <!-- <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Hare Detalla</a> -->
+                    </div><!-- end messagebox -->
+                  </div><!-- end col -->
+
+
+                <div class="col-md-6">
+                    <div class="message-box">
+                 
+                        {% for dados in vizaun %}
+
+                        <h2>{{dados.titulu}} </h2>
+                        <p class="lead">{{dados.konteudu|safe}}</p>
+
+                   {% endfor %}
+                        <!-- <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Hare Detalla</a> -->
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+           
+
+
+
+                <div class="col-md-12">
+                    <div class="message-box">
+                 
+                        {% for dados in ornograma %}
+                        <legend>{{dados.titulu}}</legend>
+                      <center>  <img src ="{{dados.imagen.url}}" style="width: 80% ;"></center>
+                        <p class="lead">{{dados.}}</p>
+
+                   {% endfor %}
+                        <!-- <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Hare Detalla</a> -->
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+
+
+
+                <div class="col-md-12">
+                    <div class="message-box">
+                    
+                      {% for dados in objetivu %}
+
+                      <h2>{{dados.titulu}} </h2>
+                      <p class="lead">{{dados.konteudu|safe}}</p>
+
+                 {% endfor %}
+                      <!-- <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Hare Detalla</a> -->
+                  </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+
+          
+
+
+
+            </div><!-- end row -->
+
+     
+        </div><!-- end container -->
+    </div><!-- end section -->
+   
+
+
+
+{% endblock content %}

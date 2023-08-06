@@ -1,0 +1,337 @@
+
+	{% extends 'baze.html' %}
+    {% load static %}
+    {% load i18n%}
+
+
+    {% block content %}
+
+<style type="text/css">
+a.tooltip {
+	position: relative;
+	text-decoration: none;
+	color: blue;
+}
+
+a.tooltip span {
+	display: none;
+}
+
+a.tooltip:hover span {
+	position: absolute;
+	top: 40px;
+        font-size: 40px;
+	left: 0px;
+	display: block;
+	width: 250px;
+	color: black;
+	background-color: #FFFF40;
+	border: 1px solid black;
+	padding: 5px;
+}
+</style>
+
+
+
+    <div class="slider-area">
+		<div class="slider-wrapper owl-carousel" style="-webkit-tap-highlight-color: #ff9696ab;">
+
+
+            {% for dados in informasaun %}
+			<div class="slider-item home-one-slider-otem slider-item-four "      
+            style="
+    background-image: url('{{dados.informasaun.imagen_main.url}}');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+				<div class="container">
+					<div class="row">
+						<div class="slider-content-area">
+							<div class="slide-text">
+						
+							
+                                <h1 class="homepage-three-title">{{dados.titulu}}</h1>
+                                <h2>{{dados.konteudu|safe|truncatechars:250}}</h2>
+                                
+								<div class="slider-content-btn">
+								<a class="button btn btn-light btn-radius btn-brd" href="{% url 'vizitor:detalluinformasaun' dados.informasaun.id %}">{% trans "LeDetallu" %}</a>
+                                                                                                                              
+								
+								</div>
+                         
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            {% endfor %}
+         
+
+            
+
+
+		</div>
+	</div>
+
+
+
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+
+                {% for dados in konabaami %}
+                <div class="col-md-6">
+                    <div class="message-box">
+
+
+                     
+                        <h2>{{dados.titulu}}</h2>
+                     
+                        <p class="lead">{{dados.konteudu|safe|truncatechars:1100}}</p>
+
+                        <a href="{% url 'vizitor:konabaami' %}" class="btn btn-light btn-radius btn-brd grd1">{% trans "HareDetallu" %}</a>
+
+                     
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="post-media wow fadeIn">
+                        <img src="{{dados.imagen.url}}"   class="img-responsive img-rounded">
+                        <a href="{{dados.linkvideo}}" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                    </div><!-- end media -->
+                </div><!-- end col -->
+
+                {% endfor %}
+            </div><!-- end row -->
+
+     
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+
+
+
+    <div id="services" class="parallax section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>{% trans "MenuProdutu" %}</h3>
+                <p class="lead">{% trans "DeskrisaunProdutu" %}</p>
+            </div><!-- end title -->
+
+            <div class="owl-services owl-carousel owl-theme">
+
+                {% for dados in produtu %}
+
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <!-- <a href="{{dados.produtu.imagen_main.url}}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a> -->
+                        <img src="{{dados.produtu.imagen_main.url}}" alt="" class="img-responsive img-rounded">
+                    </div>
+                    <div class="service-dit">
+                        <center>
+                        
+                        <a href='#' data-toggle='modal' data-id="{{dados.produtu.id}}" id='butaun_modal_detallu'  data-target= '#modal_detallu' ><h5>  {{dados.titulu}} </h5></a> 
+                       <h3 style="padding: 0px 0 12px;">
+                        <a href='#' data-toggle='modal' data-id="{{dados.produtu.id}}" id='butaun_modal_detallu'  data-target= '#modal_detallu' >{% trans "Pressu" %}  $ {{dados.produtu.presu}}</a>
+
+                 
+                      </h3>
+
+                  </center>
+                    </div>
+                </div>
+
+                {% endfor %}
+                <!-- end service -->
+
+     
+            </div><!-- end row -->
+
+           <br>
+
+            <div class="text-center">
+                <a data-scroll href="{% url 'vizitor:produtu' %}" class="btn btn-light btn-radius btn-brd">{% trans "HareSeluk" %}</a>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+
+
+   
+
+
+	<div class="parallax section parallax-off" data-stellar-background-ratio="0.9" style="background-image:url('../media/bgmaps.png');">
+        <div class="container">
+
+          <div class="section-title text-center">
+                <h3 style="color: rgb(0, 0, 0);">{% trans "MenuMapamentu" %} </h3>
+                <p class="lead">{% trans "DeskrisaunMapamentu" %}</p>
+            </div><!-- end title -->
+            <div class="row text-center stat-wrap">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <span data-scroll="" class="global-radius icon_wrap effect-1"><img src="/media/mapa/prefabrika.png" width="50px"></i></span>
+                    <p class="stat_count" >{{prefabrika}}</p>
+                    <h3>Grupu Pre-Fabrika</h3>
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <span data-scroll="" class="global-radius icon_wrap effect-1"><img src="/media/mapa/viveirus.png" width="50px"></i></span>
+                    <p class="stat_count"  >{{viveirus}}</p>
+                    <h3>Grupu Viveirus</h3>
+                </div><!-- end col -->
+
+            
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <span data-scroll="" class="global-radius icon_wrap effect-1"><img src="/media/mapa/areabambu.png" width="50px"></i></span>
+                    <p class="stat_count" >{{areabambu}}</p>
+                    <h3>Area Plantasaun Bambu</h3>
+                </div><!-- end col -->
+            </div>
+
+
+         
+
+        </div><!-- end container --><br><br>
+
+        <div class="text-center">
+            <a data-scroll href="{% url 'vizitor:mapa' %}" class="btn btn-light btn-radius btn-brd">{% trans "HareDetallu" %}</a>
+        </div>
+    </div><!-- end section -->
+
+
+
+    <div id="services" class="parallax section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>{% trans "MenuActividade" %}</h3>
+                <p class="lead">{% trans "DeskrisaunAtividade" %}</p>
+            </div><!-- end title -->
+
+
+            <div class="owl-services owl-carousel owl-theme">
+            {% for dados in informasaun2 %}
+              
+            
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+            
+                        <a href="{{dados.informasaun.imagen_main.url}}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="{{dados.informasaun.imagen_main.url}}" alt="" class="img-responsive img-rounded">
+                    </div>
+                    <div class="service-dit">
+                        <a href="{% url 'vizitor:detalluinformasaun' dados.informasaun.id %}"> <h3>{{dados.titulu}}</h3>  <h4> {{dados.konteudu|safe|truncatechars:100}}</h4></a>
+                        <!-- <p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p> -->
+                    </div>
+                </div>
+                <!-- end service -->
+
+
+                <!-- end service -->
+          
+
+            {% endfor %}
+        </div><!-- end row -->
+      
+
+            <br>
+
+            <div class="text-center">
+                <a data-scroll href="{% url 'vizitor:informasaun' %}" class="btn btn-light btn-radius btn-brd">{% trans "HareSeluk" %}</a>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+
+	
+
+
+
+ 
+
+
+
+
+
+  
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_03.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>{% trans "TituluParceiru" %}</h3>
+                <p class="lead">{% trans "DeskrisaunParceiru" %}
+
+         
+
+                </p>
+            </div><!-- end title -->
+
+
+            <hr class="hr1">
+
+  
+
+            <div class="row " >
+
+
+
+    
+
+
+
+             
+                <center>
+             
+
+                {% for dados in parceiru %}
+
+           
+         
+                        <img src="{{dados.logo.url}}"  data-toggle="tooltip" title="{{dados.naran}}" style='width: auto; height: 200px;  padding: 20px; object-fit: cover;' aria-multiline="xx" >
+                
+
+
+           
+
+                {% endfor %}
+            </center>
+           
+               
+
+            </div><!-- end row -->
+
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+
+    <script type='text/javascript'>
+
+
+
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+
+{% endblock content %}

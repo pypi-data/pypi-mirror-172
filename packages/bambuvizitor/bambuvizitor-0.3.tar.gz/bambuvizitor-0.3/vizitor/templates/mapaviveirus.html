@@ -1,0 +1,77 @@
+
+
+	{% extends 'baze.html' %}
+    {% block content %}
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    
+    <style>
+    .leaflet-container {
+    height: 600px;
+    width: 100%;
+        }
+    </style>
+
+
+
+
+<div id="mapem" ></div>
+
+
+                            				
+                               
+
+
+<script>
+
+
+//Kondisaun ba interface mapa husi kada user sira
+
+  var map = L.map('mapem').setView([-8.556856, 125.560310], 8);
+
+  var basemaps = {
+    OpenStreetMap: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+         maxZoom: 20,
+         attribution: "{{html|safe}}",
+         layers: 'TOPO-WMS'
+    }),
+
+    GoogleSatelite: L.tileLayer.wms('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+         maxZoom: 20,
+         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        subdomains:['mt0','mt1','mt2','mt3']
+    }),
+
+};
+
+L.control.layers(basemaps, {}, {collapsed: false}).addTo(map);
+
+basemaps.OpenStreetMap.addTo(map);
+
+
+
+
+
+var grupuviveirus = L.icon({
+    iconUrl:  '../../media/iconmaps/grupuviveirus.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+{% for dados in grupuviveirus %}
+L.marker([ {{dados.kordinate_centru}}], { icon:grupuviveirus }).addTo(map).bindPopup("<center><img src = '{{dados.imagen.url}}' width = '200px'> </center> <br><h4>  Grupu Viveirus : {{dados.naran}} </h4>  <h4> Naran Responsavel : {{dados.naran_kordenador}} </h4> <h4> Deskrisaun : {{dados.deskrisaun}} </h4> <h4> Kontaktu : {{dados.kontaktu}} </h4> ");
+{% endfor %}
+// alert({{forloop.counter}})
+
+
+
+</script>
+
+    
+
+
+{% endblock content %}

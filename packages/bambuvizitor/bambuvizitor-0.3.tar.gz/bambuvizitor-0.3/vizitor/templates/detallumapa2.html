@@ -1,0 +1,393 @@
+{% extends 'main/dashboard.html' %}
+
+
+{% load static %}
+{% block content %}
+         
+
+{% load crispy_forms_tags %} 
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+
+
+<style>
+
+.leaflet-container {
+  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.2/dist/leaflet.draw.css" />
+<script src="https://unpkg.com/leaflet-draw@1.0.2/dist/leaflet.draw-src.js"></script>
+
+
+
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-3 mb-4">
+    <span class="text-muted fw-light">Mapa / Grupu Bambu / </span> Update  Bambu
+  
+  
+  
+  </h4>
+              
+  
+  <div class="row">
+
+
+
+    <div class="row">
+      <div class="col-lg-9 mb-4">
+
+                  <div class="col-xxl">
+                    <div class="card mb-4">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">Mapamentu Husi {{grupubambu.naran}}</h5>
+                        <small class="text-muted float-end">Hili Localizasaun no Area</small>
+                      </div>
+                      <div class="card-body">
+
+    <div id="mapem" ></div>
+					
+                            				
+                               
+
+
+    <script>
+  
+    
+    //Kondisaun ba interface mapa husi kada user sira
+  
+      var map = L.map('mapem').setView([{{kordinate_centru}}], 18);
+
+      var basemaps = {
+		OpenStreetMap: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+             maxZoom: 20,
+			layers: 'TOPO-WMS'
+		}),
+
+		GoogleSatelite: L.tileLayer.wms('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+             maxZoom: 20,
+			subdomains:['mt0','mt1','mt2','mt3']
+		}),
+
+	};
+
+	L.control.layers(basemaps, {}, {collapsed: false}).addTo(map);
+
+	basemaps.OpenStreetMap.addTo(map);
+  
+    //kontrol husi leaflet draw
+      
+       // Hamos Dados zona ne'ebe iha ba iha mapa
+  
+  
+   
+
+       var marker1 = L.icon({
+    iconUrl:  '../../media/iconmaps/1.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var marker2 = L.icon({
+    iconUrl:  '../../media/iconmaps/2.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+var marker3 = L.icon({
+    iconUrl:  '../../media/iconmaps/3.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+var marker4 = L.icon({
+    iconUrl:  '../../media/iconmaps/4.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var marker5= L.icon({
+    iconUrl:  '../../media/iconmaps/5.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+var marker6= L.icon({
+    iconUrl:  '../../media/iconmaps/6.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+
+var marker7= L.icon({
+    iconUrl:  '../../media/iconmaps/7.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+
+var marker8= L.icon({
+    iconUrl:  '../../media/iconmaps/8.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+var marker9= L.icon({
+    iconUrl:  '../../media/iconmaps/9.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+var marker10= L.icon({
+    iconUrl:  '../../media/iconmaps/10.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+var marker11= L.icon({
+    iconUrl:  '../../media/iconmaps/11.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+var marker12= L.icon({
+    iconUrl:  '../../media/iconmaps/12.png',
+    iconSize:     [15, 15], // size of the icon
+    shadowSize:   [15, 15], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+
+
+
+
+
+var polygonPoints = [{{kordinate_area}}];
+      var poly = L.polygon(polygonPoints).addTo(map);
+		 poly.setStyle({
+color: 'black',
+weight: 3,
+opacity: 1.0
+  
+});
+
+
+
+{% for dados in data_distance  %}
+
+
+
+L.marker([ {{dados.kor1}}], { icon:marker{{forloop.counter}} }).addTo(map).bindPopup("sxjnjsnxjnsjnx");
+// alert({{forloop.counter}})
+
+{% endfor %}
+
+
+
+       
+// Initialise the FeatureGroup to store editable layers
+var editableLayers = new L.FeatureGroup();
+map.addLayer(editableLayers);
+
+var options = {
+  position: 'topleft',
+  draw: {
+    polygon: {
+      allowIntersection: false, // Restricts shapes to simple polygons
+      drawError: {
+        color: '#e1e100', // Color the shape will turn when intersects
+        message: '<strong>Oh snap!<strong> you can\'t draw that!' // Message that will show when intersect
+      },
+      shapeOptions: {
+        color: '#97009c'
+      }
+    },
+    polyline: {
+    	shapeOptions: {
+        color: '#f357a1',
+        weight: 10
+          }
+    },
+    // disable toolbar item by setting it to false
+    polyline: false,
+    circle: false, // Turns off this drawing tool
+    polygon: true,
+    marker: true,
+    rectangle: false,
+	circlemarker: false,
+  },
+  edit: {
+    featureGroup: editableLayers, //REQUIRED!!
+    remove: false
+  }
+};
+
+// Initialise the draw control and pass it the FeatureGroup of editable layers
+var drawControl = new L.Control.Draw(options);
+map.addControl(drawControl);
+
+var editableLayers = new L.FeatureGroup();
+map.addLayer(editableLayers);
+
+
+
+
+
+map.on('draw:created', function(e) {
+  var type = e.layerType,
+    layer = e.layer;
+
+  if (type === 'polyline') {
+    
+  } else if ( type === 'polygon') {
+	    var koko = layer.getLatLngs();
+	  	document.getElementById("kordinate_area").value = koko;
+      alert(koko);
+  } else if (type === 'marker') {
+		var koko = layer.getLatLng();
+    alert(koko);
+		document.getElementById("kordinate_centru").value = koko;
+  }
+  else if (type === 'circle') 
+  {layer.bindPopup('A circle!');}
+   else if (type === 'rectangle') 
+  {layer.bindPopup('A rectangle!');}
+
+
+  editableLayers.addLayer(layer);
+  
+});
+
+
+
+  
+
+
+L.Control.RemoveAll = L.Control.extend(
+{
+    options:
+    {
+        position: 'topright',
+    },
+    onAdd: function (map) {
+        var controlDiv = L.DomUtil.create('div', 'leaflet-draw-toolbar leaflet-bar');
+        L.DomEvent
+            .addListener(controlDiv, 'click', L.DomEvent.stopPropagation)
+            .addListener(controlDiv, 'click', L.DomEvent.preventDefault)
+        .addListener(controlDiv, 'click', function () {
+            editableLayers.clearLayers();
+            document.getElementById("kordinate_area").value = "";
+            document.getElementById("kordinate_centru").value = "";
+
+        });
+
+        var controlUI = L.DomUtil.create('a', 'leaflet-draw-edit-remove', controlDiv);
+        controlUI.title = 'Remove All Polygons';
+        controlUI.href = '#';
+        return controlDiv;
+    }
+});
+var removeAllControl = new L.Control.RemoveAll();
+map.addControl(removeAllControl);
+  
+  
+  
+  
+
+  
+  
+    </script>
+                         
+                      </div>
+                    </div>
+                  </div>
+  </div>
+
+  <div class="col-lg-3 mb-4">
+
+    <div class="col-xxl">
+      <div class="card mb-4">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <h5 class="mb-0">Informasaun Rai</h5>
+     
+        </div>
+        <div class="card-body"> 
+
+     
+
+
+
+
+
+
+     
+
+
+        </div>
+      </div>
+    </div>
+
+
+</div>
+  
+  
+    
+                                    
+              
+
+                    
+{% endblock content %}
+
+
+               
+              
+

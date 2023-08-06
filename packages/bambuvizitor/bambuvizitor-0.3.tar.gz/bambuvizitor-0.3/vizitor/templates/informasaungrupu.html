@@ -1,0 +1,64 @@
+
+
+
+
+	{% extends 'baze.html' %}
+    {% block content %}
+
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+
+
+                {% for dados in grupu %}
+              
+
+           
+
+
+                <div class="col-md-7">
+                    <div class="message-box">
+                    <h2>{{dados.titulu}}</h2>
+                     
+                    <p class="lead">{{dados.konteudu|safe}}</p>
+                        <!-- <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Hare Detalla</a> -->
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+
+
+
+                <div class="col-md-5">
+                    <div class="post-media wow fadeIn">
+                        <img src="{{dados.imagen.url}}"  alt="" class="img-responsive img-rounded">
+                        <!-- <a href="{{dados.imagen.url}}" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a> -->
+                     </div><!-- end media -->
+                </div><!-- end col -->
+
+
+                <div class="col-md-12">
+                    <div class="post-media wow fadeIn">
+                        <iframe src="{{dados.file_pdf.url}}" width="100%" height="700px"></iframe>
+                     </div><!-- end media -->
+                </div><!-- end col -->
+
+
+            </div><!-- end row -->
+
+            {% endfor %}
+
+
+
+     
+        </div><!-- end container -->
+ 
+
+ <hr>
+      
+    </div><!-- end section -->
+   
+
+
+
+{% endblock content %}
