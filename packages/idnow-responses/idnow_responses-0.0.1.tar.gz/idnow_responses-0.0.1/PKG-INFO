@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: idnow_responses
+Version: 0.0.1
+Summary: A third-party pytest plugin that provides a fixture to mock the IdNow identification service
+Home-page: https://github.com/MartinThoma/responses-idnow
+Author: Martin Thoma
+Author-email: info@martin-thoma.de
+Maintainer: Martin Thoma
+Maintainer-email: info@martin-thoma.de
+License: Unlicense
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: License :: Public Domain
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# idnow_responses
+A third-party pytest plugin that provides a fixture to mock the IdNow identification service
+
+

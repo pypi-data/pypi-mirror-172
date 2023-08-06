@@ -1,0 +1,3 @@
+[pytest11]
+idnow_responses = idnow_responses
+
