@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: kilroy-module-py-shared
+Version: 0.6.1
+Summary: shared code for kilroy module SDKs in Python 🤝
+Home-page: https://github.com/kilroybot/kilroy-module-py-shared
+Author: kilroy
+Author-email: kilroymail@pm.me
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: betterproto (>=2.0.0b5,<3.0.0)
+Requires-Dist: jsonschema (>=4.7,<5.0)
+Requires-Dist: pydantic (>=1.9,<2.0)
+Requires-Dist: pyhumps (>=3.7,<4.0)
+Project-URL: Documentation, https://kilroybot.github.io/kilroy-module-py-shared
+Project-URL: Repository, https://github.com/kilroybot/kilroy-module-py-shared
+Description-Content-Type: text/markdown
+
+<h1 align="center">kilroy-module-py-shared</h1>
+
+<div align="center">
+
+shared code for kilroy module SDKs in Python 🤝
+
+[![Lint](https://github.com/kilroybot/kilroy-module-py-shared/actions/workflows/lint.yaml/badge.svg)](https://github.com/kilroybot/kilroy-module-py-shared/actions/workflows/lint.yaml)
+[![Tests](https://github.com/kilroybot/kilroy-module-py-shared/actions/workflows/test-multiplatform.yaml/badge.svg)](https://github.com/kilroybot/kilroy-module-py-shared/actions/workflows/test-multiplatform.yaml)
+[![Docs](https://github.com/kilroybot/kilroy-module-py-shared/actions/workflows/docs.yaml/badge.svg)](https://github.com/kilroybot/kilroy-module-py-shared/actions/workflows/docs.yaml)
+
+</div>
+
+---
+
+TODO
+
+## Installing
+
+Using `pip`:
+
+```sh
+pip install kilroy-module-py-shared
+```
+
