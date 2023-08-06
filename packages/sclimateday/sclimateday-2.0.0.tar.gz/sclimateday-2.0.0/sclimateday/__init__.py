@@ -1,0 +1,1 @@
+from sclimateday.sclimateday import TheWeather

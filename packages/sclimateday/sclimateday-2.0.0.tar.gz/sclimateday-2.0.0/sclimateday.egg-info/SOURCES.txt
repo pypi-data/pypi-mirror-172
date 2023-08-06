@@ -1,0 +1,8 @@
+setup.py
+sclimateday/__init__.py
+sclimateday/sclimateday.py
+sclimateday.egg-info/PKG-INFO
+sclimateday.egg-info/SOURCES.txt
+sclimateday.egg-info/dependency_links.txt
+sclimateday.egg-info/requires.txt
+sclimateday.egg-info/top_level.txt
