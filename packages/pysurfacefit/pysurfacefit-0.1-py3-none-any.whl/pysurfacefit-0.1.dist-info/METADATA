@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pysurfacefit
+Version: 0.1
+Summary: Multidimensional data fitting tool in Python
+Home-page: UNKNOWN
+Author: Roman Kochanov
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: tabulate
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: jeanny3
+
+UNKNOWN
+
+
