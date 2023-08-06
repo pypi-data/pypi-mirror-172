@@ -1,0 +1,36 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pypega-dm"
+version = "0.0.23"
+authors = [
+  "Rob Smart <rob.smart@pega.com>",
+]
+maintainers = [
+  "Rob Smart <rob.smart@pega.com>",
+  "James Sleightholm <james.sleightholm@pega.com>"
+]
+description = "Python package for orchestrating Pega environments"
+readme = "README.md"
+license = "LICENSE"
+keywords = ["pega", "bpm", "pypega", "deployment manager"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+exclude = [
+    { path = "tests", format = ["sdist", "wheel"] },
+    { path = "__package", format = ["sdist", "wheel"] },
+    { path = "__samples", format = ["sdist", "wheel"] },
+    { path = ".gitignore", format = ["sdist", "wheel"] }
+]
+
+[tool.poetry.dependencies]
+pypega = ">=0.0.47"
+
+[project.urls]
+"homepage" = "https://pypi.org/project/pypega-dm/"
+"documentation" = "https://pypi.org/project/pypega-dm/"
+"repository" = "https://pypi.org/project/pypega-dm/"
