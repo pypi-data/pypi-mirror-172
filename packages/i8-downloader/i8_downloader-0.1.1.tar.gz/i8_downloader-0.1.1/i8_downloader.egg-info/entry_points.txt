@@ -1,0 +1,2 @@
+[console_scripts]
+i8-downloader = i8_downloader.downloader:main

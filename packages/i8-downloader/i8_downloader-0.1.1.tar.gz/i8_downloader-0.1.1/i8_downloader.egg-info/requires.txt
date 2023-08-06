@@ -1,0 +1,3 @@
+pymortafix==0.2.2
+requests
+tqdm
