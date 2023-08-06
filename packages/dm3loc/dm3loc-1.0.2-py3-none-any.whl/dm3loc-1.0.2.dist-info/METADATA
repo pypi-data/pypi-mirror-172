@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dm3loc
+Version: 1.0.2
+Summary: Deep-learning Framework with Multi-head Self-attention for Multi-label mRNA Subcellular Localization Prediction and Analyses
+Author: Duolin Wang
+Author-email: deepduoduo@gmail.com
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pillow
+Requires-Dist: h5py
+Requires-Dist: keras (>=2.2.4)
+Requires-Dist: tensorflow (>=1.13.1)
+
