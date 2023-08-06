@@ -1,0 +1,9 @@
+cuallee/__init__.py,sha256=BZei9BKNEMmA4ck_4mVI84b8e3QFIqNpiAwUX6ov1MY,17920
+cuallee/pandas_validation.py,sha256=Z80V84MmmrynDqMW0ld9BKMvkM2bByKLJcf5rGkT8Es,725
+cuallee/spark_validation.py,sha256=1bv78hsTCknrZ3PU_GBujak27jH7Nh8KoUk47LrAzVA,27372
+cuallee/utils.py,sha256=fI0ed6r8Cz2zGCa1TsthQ3slHZtFuRp-ivmtL7Sujrc,512
+cuallee-0.0.16.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cuallee-0.0.16.dist-info/METADATA,sha256=MTA2Dm8ght1KAJwF14Hv5ro2ujuTrEcnLy9TJg9nj2c,6764
+cuallee-0.0.16.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cuallee-0.0.16.dist-info/top_level.txt,sha256=UVoy99_JqSWmPvSTwhVzRbhRIvjKCiqh5qgNQFAtoEM,8
+cuallee-0.0.16.dist-info/RECORD,,
