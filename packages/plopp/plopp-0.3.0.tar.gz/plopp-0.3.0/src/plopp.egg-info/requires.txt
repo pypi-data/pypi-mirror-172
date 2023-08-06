@@ -1,0 +1,9 @@
+matplotlib
+
+[all]
+scipp>=0.12
+ipympl
+pythreejs
+
+[scipp]
+scipp>=0.12

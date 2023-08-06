@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2022 Scipp contributors (https://github.com/scipp)
+
+from plopp.data import dense_data_array
+from plopp.graphics.canvas import Canvas
+from plopp.graphics.mesh import Mesh
+import scipp as sc
+
+
+def test_mesh_creation():
+    da = dense_data_array(ndim=2)
+    mesh = Mesh(canvas=Canvas(), data=da)
+    assert mesh._dims == {'x': 'xx', 'y': 'yy'}
+    assert sc.identical(mesh._data, da)
+
+
+def test_mesh_creation_binedges():
+    da = dense_data_array(ndim=2, binedges=True)
+    mesh = Mesh(canvas=Canvas(), data=da)
+    assert sc.identical(mesh._data, da)
+
+
+def test_mesh_creation_masks():
+    da = dense_data_array(ndim=2, masks=True)
+    mesh = Mesh(canvas=Canvas(), data=da)
+    assert sc.identical(mesh._data, da)
+
+
+def test_mesh_creation_ragged_coord():
+    da = dense_data_array(ndim=2, ragged=True)
+    mesh = Mesh(canvas=Canvas(), data=da)
+    assert mesh._dims == {'x': 'xx', 'y': 'yy'}
+    assert sc.identical(mesh._data, da)
+
+
+def test_mesh_update():
+    da = dense_data_array(ndim=2)
+    mesh = Mesh(canvas=Canvas(), data=da)
+    assert sc.identical(mesh._data, da)
+    mesh.update(da * 2.5)
+    assert sc.identical(mesh._data, da * 2.5)
