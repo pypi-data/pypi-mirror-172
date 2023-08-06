@@ -1,0 +1,8 @@
+README.md
+setup.py
+calc/__init__.py
+calc/calc.py
+calc_porcentagem.egg-info/PKG-INFO
+calc_porcentagem.egg-info/SOURCES.txt
+calc_porcentagem.egg-info/dependency_links.txt
+calc_porcentagem.egg-info/top_level.txt

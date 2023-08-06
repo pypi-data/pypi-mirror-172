@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: calc-porcentagem
+Version: 0.0.3
+Summary: Pacote de calculo basico de porcentagem
+Home-page: 
+Author: Anderson Willian
+Author-email: anderw1ll@outlook.com
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# calc_porcentagem
+
+DescriÃ§Ã£o.
+O pacote calc_porcentagem Ã© usado para:
+    Calculos:
+        - Aumento de valor baseado na porcentagem informado na chamada da funÃ§Ã£o
+        - DiminuiÃ§Ã£o de valor baseado na porcentagem informado na chamada da funÃ§Ã£o
+
+## InstalaÃ§Ã£o
+
+Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/estable/) para instalar calc_porcentagem
+
+```bash
+pip install -i https://test.pypi.org/simple/ calc-porcentagem
+```
+
+## Uso
+
+```python
+import calc-porcentagem.calc as cp
+
+cp.aumento() #exemplo da chamada de funÃ§Ã£o aumento()
+```
+
+## Autor
+Anderson Willian
+
+## Licensa
+[MIT](https://choosealicense.com/license/mit/)
