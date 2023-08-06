@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ultima-schemata
+Version: 0.1.2
+Summary: Schemas for Ultima
+Author: Rutger Hartog
+Author-email: r.l.hartog92@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cvss (>=2.5,<3.0)
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
