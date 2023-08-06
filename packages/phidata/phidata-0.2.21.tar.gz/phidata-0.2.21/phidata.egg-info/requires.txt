@@ -1,0 +1,12 @@
+awswrangler
+boto3
+phiterm>=0.2.19
+pydantic
+pyyaml
+rich
+types-PyYAML
+typing-extensions
+
+[dev]
+black
+pytest
