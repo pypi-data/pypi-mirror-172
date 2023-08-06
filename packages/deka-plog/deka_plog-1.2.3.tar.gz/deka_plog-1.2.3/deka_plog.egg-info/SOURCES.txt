@@ -1,0 +1,11 @@
+setup.py
+deka_plog/__init__.py
+deka_plog/filelock.py
+deka_plog/handlers.py
+deka_plog/log_manager.py
+deka_plog/monkey_patch.py
+deka_plog.egg-info/PKG-INFO
+deka_plog.egg-info/SOURCES.txt
+deka_plog.egg-info/dependency_links.txt
+deka_plog.egg-info/requires.txt
+deka_plog.egg-info/top_level.txt
