@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+mev_thesis.egg-info/PKG-INFO
+mev_thesis.egg-info/SOURCES.txt
+mev_thesis.egg-info/dependency_links.txt
+mev_thesis.egg-info/top_level.txt
