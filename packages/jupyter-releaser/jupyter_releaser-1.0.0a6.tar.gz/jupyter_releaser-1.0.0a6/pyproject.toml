@@ -1,0 +1,156 @@
+[build-system]
+requires = ["hatchling>=1.11"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyter_releaser"
+description = "Jupyter Releaser for Python and/or npm packages."
+license = {file = "LICENSE"}
+authors = [{name = "Jupyter Development Team", email = "jupyter@googlegroups.com"}]
+keywords = ["ipython", "jupyter"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+urls = {Homepage = "https://jupyter.org"}
+requires-python = ">=3.8"
+dynamic = ["version"]
+dependencies = [
+    "click",
+    "ghapi",
+    "github-activity~=0.2",
+    "importlib_resources",
+    "jsonschema>=3.0.1",
+    "mdformat",
+    "packaging",
+    "pkginfo",
+    "pypiserver",
+    "pipx",
+    "requests",
+    "requests_cache",
+    "toml~=0.10",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.optional-dependencies]
+docs = [
+  "sphinx",
+  "sphinx-copybutton",
+  "pip",
+  "myst-parser",
+  "pydata_sphinx_theme",
+  "numpydoc",
+  "sphinx-click",
+]
+test = [
+    "coverage",
+    "fastapi",
+    "pre-commit",
+    "pytest>=7.0",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-xdist[psutil]",
+    "uvicorn"
+]
+
+[project.scripts]
+jupyter-releaser = "jupyter_releaser.cli:main"
+
+[tool.hatch.version]
+path = "jupyter_releaser/__init__.py"
+validate-bump = false
+
+[tool.hatch.envs.docs]
+features = ["docs"]
+[tool.hatch.envs.docs.scripts]
+build = "make -C docs html SPHINXOPTS='-W'"
+
+[tool.hatch.envs.test]
+features = ["test"]
+[tool.hatch.envs.test.scripts]
+test = "python -m pytest -vv {args}"
+nowarn = "python -m pytest -vv -W default {args}"
+
+[tool.hatch.envs.cov]
+features = ["test"]
+dependencies = ["coverage", "pytest-cov"]
+[tool.hatch.envs.cov.env-vars]
+ARGS = "-vv --cov jupyter_releaser --cov-branch --cov-report term-missing:skip-covered"
+[tool.hatch.envs.cov.scripts]
+test = "python -m pytest $ARGS --cov-fail-under 80 {args}"
+
+[tool.jupyter-releaser.hooks]
+after-populate-release = "bash ./.github/scripts/bump_tag.sh"
+
+[tool.jupyter-releaser.options]
+post-version-spec = "dev"
+
+[tool.pytest.ini_options]
+addopts = "-raXs --durations 10 --color=yes --doctest-modules -p no:pastebin -p no:nose"
+testpaths = [
+    "jupyter_releaser/tests/"
+]
+filterwarnings= [
+  # Fail on warnings
+  "error",
+  "ignore:Using deprecated setup.py invocation:UserWarning",
+  "module:Neither GITHUB_TOKEN nor GITHUB_JWT_TOKEN found:UserWarning",
+]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = false
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+no_implicit_reexport = false
+pretty = true
+show_error_context = true
+show_error_codes = true
+strict_equality = true
+strict_optional = true
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_return_any = false
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = [
+  "toml.*",
+  "jsonschema",
+  "ghapi.*",
+  "github_activity",
+  "pkginfo",
+  "pypandoc",
+]
+ignore_missing_imports = true
+
+[tool.flake8]
+ignore = "E501, W503, E402"
+builtins = "c, get_config"
+exclude = [
+    ".cache",
+    ".github",
+    "docs",
+    "setup.py",
+]
+enable-extensions = "G"
+extend-ignore = [
+    "G001", "G002", "G004", "G200", "G201", "G202",
+    # black adds spaces around ':'
+    "E203",
+]
+per-file-ignores = [
+    # B011: Do not call assert False since python -O removes these calls
+    # F841 local variable 'foo' is assigned to but never used
+    "jupyter_releaser/tests/*: B011", "F841",
+]
