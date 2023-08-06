@@ -1,0 +1,4 @@
+[console_scripts]
+DarenmiZhengnianMingxiang = DarenmiZhengnianMingxiang.__main__:main
+darenmi-zhengnian-mingxiang = DarenmiZhengnianMingxiang.__main__:main
+
