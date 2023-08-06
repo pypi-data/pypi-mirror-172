@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: k2s
+Version: 0.1.7b3
+Requires-Dist: parso
+Requires-Dist: isort
+Requires-Dist: ploomber-core
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: invoke ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: jupyter-client ; extra == 'dev'
+Requires-Dist: pkgmt ; extra == 'dev'
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: nbformat ; extra == 'dev'
+Provides-Extra: nb
+Requires-Dist: nbformat ; extra == 'nb'
+
