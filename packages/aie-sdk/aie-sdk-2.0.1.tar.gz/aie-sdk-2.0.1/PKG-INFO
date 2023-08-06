@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: aie-sdk
+Version: 2.0.1
+Summary: AIEarth Engine Python SDK
+Home-page: https://engine-aiearth.aliyun.com/
+Requires-Python: >=3.5.0
+License-File: LICENSE
