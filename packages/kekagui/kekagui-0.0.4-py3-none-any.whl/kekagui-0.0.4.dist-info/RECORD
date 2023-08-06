@@ -1,0 +1,8 @@
+kekagui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kekagui/api.py,sha256=Vnmtms3Fc4_ln8O9bBs-nqBj0dOPvbgKEokO6iTOtHo,3802
+kekagui/middleware.py,sha256=3iycXXLOq9pt0tdryJ1vAa6dApi4MM2uNuOjiJWn8hw,673
+kekagui/response.py,sha256=ltQ67B8dryPz5xiLhva87PViQd-NQQ2tvWjWrQ5gZNo,955
+kekagui-0.0.4.dist-info/METADATA,sha256=G2vMySzjJ7TmuchNsdj0wDzwnZVdVXYvU1l0L2SbOjA,4045
+kekagui-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kekagui-0.0.4.dist-info/top_level.txt,sha256=7eVApqsl_tyML1Ki2r5ncWeBNxBgBVrupMQYGd-iXck,8
+kekagui-0.0.4.dist-info/RECORD,,
