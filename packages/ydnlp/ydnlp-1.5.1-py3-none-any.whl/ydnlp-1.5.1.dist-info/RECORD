@@ -1,0 +1,8 @@
+ydnlp/__init__.py,sha256=CdMFEGcOacVQoPFTpDgqRyLHAUz67Lrwgyn3tZ91ybA,25
+ydnlp/uie_predict.py,sha256=uVrot9opPhfet3lCHAmA_NE0dok4u9F23jx7cmPSWHI,168316
+ydnlp/utils/__init__.py,sha256=kb2-tFfGxK8NgUOglGtHf_sPp2h0iEDL6g-QxW7A-uk,24
+ydnlp/utils/downloader.py,sha256=mgh_o_fQ9lhSKGMkQr6LiJnEtHGRTIJIXruyBmmJ8b0,2337
+ydnlp-1.5.1.dist-info/METADATA,sha256=Oz7RvRzeSUOPSULau8ZfE2LJETVS-GvRwdioW4zcT4o,4408
+ydnlp-1.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ydnlp-1.5.1.dist-info/top_level.txt,sha256=kc0W0zeWu70x8LfcWNTqibcsXQBqmjbuD6R_yCdgEOE,6
+ydnlp-1.5.1.dist-info/RECORD,,
