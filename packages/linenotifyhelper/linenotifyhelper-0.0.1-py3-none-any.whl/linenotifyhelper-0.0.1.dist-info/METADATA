@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: linenotifyhelper
+Version: 0.0.1
+Summary: A small test project through which program messages can be sent back and forth to the line
+Home-page: https://github.com/tzamou/line_notify_helper
+Author: Guan-Lin Chen
+Author-email: ken54787845@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+#Line notify helper
+This is a small test project, mainly the author wants to learn what to upload to pypi.
+
+You can use the method provided by this project to send program messages back and forth to line notify. Many functions are incomplete and will be updated in the future.
+
+##Quick Start
+```python
+from line_notify import Code_returner
+helper = Code_returner(token='arigeOSqoNFVR6Zm0NxAmsGCMI2SKkCmhNnLwMRBK1m')
+helper.send_message(message='test messenge')
+helper.send_image(img_path='your_image_path.png',message='test image')
+```
