@@ -1,0 +1,5 @@
+sqlalchemy
+sshtunnel
+
+[postgresql]
+psycopg2-binary
