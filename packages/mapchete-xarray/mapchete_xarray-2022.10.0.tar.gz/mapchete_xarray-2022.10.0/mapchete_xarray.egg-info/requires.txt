@@ -1,0 +1,6 @@
+croniter
+dask
+mapchete[s3]>=2022.7.0
+python-dateutil
+xarray
+zarr
