@@ -1,0 +1,200 @@
+[build-system]
+requires = ["hatchling >=1.11"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyter_server"
+dynamic = ["version"]
+readme = "README.md"
+license = { file = "COPYING.md" }
+description = "The backend—i.e. core services, APIs, and REST endpoints—to Jupyter web applications."
+authors = [{name = "Jupyter Development Team", email = "jupyter@googlegroups.com"}]
+keywords = ["ipython", "jupyter"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Jupyter",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "anyio>=3.1.0,<4",
+    "argon2-cffi",
+    "jinja2",
+    "jupyter_client>=6.1.12",
+    "jupyter_core>=4.7.0",
+    "jupyter_server_terminals",
+    "nbconvert>=6.4.4",
+    "nbformat>=5.2.0",
+    "packaging",
+    "prometheus_client",
+    "pywinpty;os_name=='nt'",
+    "pyzmq>=17",
+    "Send2Trash",
+    "terminado>=0.8.3",
+    "tornado>=6.1.0",
+    "traitlets>=5.1",
+    "websocket-client",
+    "jupyter_events>=0.4.0"
+]
+
+[project.urls]
+Homepage = "https://jupyter-server.readthedocs.io"
+Documentation = "https://jupyter-server.readthedocs.io"
+Funding = "https://numfocus.org/donate"
+Source = "https://github.com/jupyter-server/jupyter_server"
+Tracker = "https://github.com/jupyter-server/jupyter_server/issues"
+
+[project.optional-dependencies]
+test = [
+    "ipykernel",
+    "pytest-console-scripts",
+    "pytest-timeout",
+    "pytest-tornasync",
+    "pytest>=7.0",
+    "requests",
+    "pre-commit"
+]
+docs = [
+    # needed because m2r uses deprecated APIs
+    # m2r is depended on by sphinxcontrib-openapi
+    "docutils<0.19",
+    "ipykernel",
+    "jinja2",
+    "jupyter_client",
+    "jupyter_server",
+    "mistune<1.0.0",
+    "myst-parser",
+    "nbformat",
+    "prometheus_client",
+    "pydata_sphinx_theme",
+    "Send2Trash",
+    "sphinxcontrib-openapi",
+    "sphinxcontrib_github_alt",
+    "sphinxemoji",
+    "tornado",
+]
+
+[project.scripts]
+jupyter-server = "jupyter_server.serverapp:main"
+
+[tool.hatch.envs.docs]
+features = ["docs"]
+[tool.hatch.envs.docs.scripts]
+build = "make -C docs html SPHINXOPTS='-W'"
+
+[tool.hatch.envs.test]
+features = ["test"]
+[tool.hatch.envs.test.scripts]
+test = "python -m pytest -vv {args}"
+nowarn = "python -m pytest -vv -W default {args}"
+
+[tool.hatch.envs.cov]
+features = ["test"]
+dependencies = ["coverage", "pytest-cov"]
+[tool.hatch.envs.cov.env-vars]
+ARGS = "-vv --cov jupyter_server --cov-branch --cov-report term-missing:skip-covered"
+[tool.hatch.envs.cov.scripts]
+test = "python -m pytest $ARGS --cov-fail-under 70 {args}"
+
+[tool.hatch.version]
+path = "jupyter_server/_version.py"
+validate-bump = false
+
+[tool.hatch.build]
+artifacts = ["jupyter_server/static/style"]
+
+[tool.hatch.build.hooks.jupyter-builder]
+dependencies = ["hatch-jupyter-builder>=0.8.1"]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = [
+  "jupyter_server/static/style/bootstrap.min.css",
+  "jupyter_server/static/style/bootstrap-theme.min.css"
+]
+install-pre-commit-hook = true
+optional-editable-build = true
+
+[tool.black]
+line_length = 100
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = "-raXs --durations 10 --color=yes --doctest-modules"
+testpaths = [
+    "tests/"
+]
+timeout = 300
+# Restore this setting to debug failures
+# timeout_method = "thread"
+filterwarnings = [
+  "error",
+  "module:make_current is deprecated:DeprecationWarning",
+  "module:clear_current is deprecated:DeprecationWarning",
+  "module:There is no current event loop:DeprecationWarning",
+  "ignore:Passing a schema to Validator.iter_errors:DeprecationWarning",
+  "ignore:unclosed <socket.socket:ResourceWarning",
+  "ignore:unclosed event loop:ResourceWarning",
+  "ignore:run_pre_save_hook is deprecated:DeprecationWarning",
+  "module:Jupyter is migrating its paths to use standard platformdirs:DeprecationWarning",
+]
+
+[tool.jupyter-releaser.hooks]
+before-build-python = ["npm install", "npm run build"]
+
+[tool.jupyter-releaser.options]
+pydist_resource_paths = ["jupyter_server/static/style/bootstrap.min.css", "jupyter_server/static/style/bootstrap-theme.min.css"]
+post-version-spec = "dev"
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+pretty = true
+show_error_context = true
+show_error_codes = true
+strict_equality = true
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+explicit_package_bases = true
+namespace_packages = true
+
+
+[[tool.mypy.overrides]]
+module = [
+    "pysqlite2",
+    "_frozen_importlib_external",
+    "send2trash",
+    "websocket"
+]
+ignore_missing_imports = true
+
+
+[tool.flake8]
+ignore = ["E501", "W503", "E402"]
+builtins = ["c", "get_config"]
+exclude = [
+    ".cache",
+    ".github",
+    "docs"
+]
+enable-extensions = "G"
+extend-ignore = [
+    "G001", "G002", "G004", "G200", "G201", "G202",
+    # black adds spaces around ':'
+    "E203"]
+per-file-ignores = [
+    # B011: Do not call assert False since python -O removes these calls
+    # F841 local variable 'foo' is assigned to but never used
+    "tests/*: B011, F841"]
