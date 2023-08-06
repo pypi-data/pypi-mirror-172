@@ -1,0 +1,17 @@
+icotools/__init__.py,sha256=052Etd-hAuzTCgK7PLNUyCpELEMz93EOcvle6GYsnvs,84
+icotools/foiler.py,sha256=YsJEifTVUfRBf9ug4UtlJyAtDTUCMe88qNwD2X9I0f8,10087
+icotools/guesser.py,sha256=YxUhcjAwNSioqBIvMoe23H48yXPKqt4aU5PbMv6VnVY,25375
+icotools/rater.py,sha256=65CWP7tc9Y_x0Jm7g9vHKxHvHwmm-uQpdy2dWQAHvZQ,21923
+icotools/features/phoible-segments-features.tsv,sha256=thBluWWHtm-Me5-XBUsjaJ7bFplKJHTIZo-oYUwN8Yc,178101
+icotools/templates/guesses_images.html,sha256=s0szBxdAkhYEbx0nxSaf2rLYt0SBvIOBAOmIQjv7cxA,9862
+icotools/templates/guesses_mp3.html,sha256=no25EINBySUeKic-lp3AEmnzePrfuNf9fYs7TokDjB4,11320
+icotools/templates/guesses_mp4.html,sha256=KABjcXfTpznAsJS8v9J-i-jZfMEsxIYwIbs9k5zMe80,11387
+icotools/templates/php_temp.php,sha256=l_T8jNzG6T7VdhZoeMyKMko2sWDtY-kxHUy_dDj4l20,514
+icotools/templates/ratings_images.html,sha256=oCDjzW6cM0KgSMNu2CxCHWtihwLnPUHRpwg4PSVN2xg,8882
+icotools/templates/ratings_mp3.html,sha256=eVB912qmiuUhwXOIdXyj5Uiz1900aQZb3BYQfvLCX_s,9438
+icotools/templates/ratings_mp4.html,sha256=2HkwPT8kIyc5BwpBz-F72bZ-09gz4AQNOR-MGJVd7OY,9455
+icotools-1.2.3.dist-info/LICENSE,sha256=8CKSxpUVIM4yzkgtU9BU52iCMoDJdYUibr0Uj_pKkec,1091
+icotools-1.2.3.dist-info/METADATA,sha256=pcP9j2LnvrG3nEVStBRyNXsXkLiiimFyUW6BvsVlRKc,644
+icotools-1.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+icotools-1.2.3.dist-info/top_level.txt,sha256=ZS8A5j9pSYeC4dgN1s8duWvpUpr30m2HO38dF17MK5s,9
+icotools-1.2.3.dist-info/RECORD,,
