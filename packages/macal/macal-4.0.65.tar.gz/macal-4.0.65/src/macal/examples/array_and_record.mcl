@@ -1,0 +1,15 @@
+include system;
+
+var = array;
+var [] = 1;
+var [] = "text";
+var [] = 42;
+Console(var[2]);
+Console(var);
+var = record;
+var["one"] = 1;
+var["two"] = "text";
+Console(var["two"]);
+Console(var);
+var = Array("one", 2, 'three');
+Console(var);
