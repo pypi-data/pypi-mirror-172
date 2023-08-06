@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tetebeche"
+version = "0.1.0"
+description = "Script to generate a tėte-bêche book from two pdfs"
+authors = ["Jacob Smullyan <smulloni@smullyan.org>"]
+readme = "README.md"
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyPDF2 = "^2.11.1"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.5.0"
+black = "^22.10.0"
+
+[tool.poetry.scripts]
+tetebeche = 'tetebeche.cmd:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
