@@ -1,0 +1,2 @@
+[console_scripts]
+dmcc-passwordrelay = jpl.edrn.dmcc.passwordrelay.main:main
