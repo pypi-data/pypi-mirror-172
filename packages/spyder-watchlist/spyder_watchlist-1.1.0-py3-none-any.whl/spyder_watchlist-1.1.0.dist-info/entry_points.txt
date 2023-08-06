@@ -1,0 +1,3 @@
+[spyder.plugins]
+watchlist=spyder_watchlist.plugin:Watchlist
+

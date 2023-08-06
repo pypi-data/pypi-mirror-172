@@ -1,0 +1,14 @@
+spyder_watchlist/__init__.py,sha256=1xE5rbZ7sKoT9ge53GUtFMdIJXV7ziqUiRCJWOQUZYE,124
+spyder_watchlist/plugin.py,sha256=EgphHEvj5exl8n2u6U3zm8bW8Xn4jG-AB33qwr5iqFw,1818
+spyder_watchlist/locale/spyder_watchlist.pot,sha256=Ni38_NmLfvrg73ZYabrwPyijr6sQo0PvDKTcVVULP44,1015
+spyder_watchlist/locale/de/LC_MESSAGES/spyder_watchlist.mo,sha256=A3x7MRBwsbicjwvVz0JQ3sPb8cxugNo_tsz4Xczoibk,587
+spyder_watchlist/locale/de/LC_MESSAGES/spyder_watchlist.po,sha256=28WkGDQhL40f9ikZd0ju2qfh0KEBTukb9-YzyBsi5BY,1013
+spyder_watchlist/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spyder_watchlist/widgets/kernel_backend.py,sha256=fnr5D8GTWe18scKOSyrZe0UsZ6TbQhu5hXtH2yL_erA,1255
+spyder_watchlist/widgets/main_widget.py,sha256=q0-Gt42CwItTxkpO0C3TYqzd--sN2QPMZUdn3rUOBNQ,3613
+spyder_watchlist/widgets/watchlist.py,sha256=bd7ew7rzP9cP5LdpvjaXxR4YN-6-KZAcj1E5wbqyjV4,19215
+spyder_watchlist-1.1.0.dist-info/entry_points.txt,sha256=W8eZ5Ks2RXlQlkQihfcjlT1xmI4RyihbRcmx2QhDfVc,62
+spyder_watchlist-1.1.0.dist-info/LICENSE,sha256=rgRpju8w1NROiH93rlbLVWYqkmUXxgRdtWWXhWOieHc,1070
+spyder_watchlist-1.1.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+spyder_watchlist-1.1.0.dist-info/METADATA,sha256=qsaozAC_TSFC60nhsETGsfBHHN5DSGisrqGsyJdzKio,3546
+spyder_watchlist-1.1.0.dist-info/RECORD,,
