@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+./inorgqm/__init__.py
+./inorgqm/multi_electron.py
+./inorgqm/utils.py
+./inorgqm/version.py
+inorgqm.egg-info/PKG-INFO
+inorgqm.egg-info/SOURCES.txt
+inorgqm.egg-info/dependency_links.txt
+inorgqm.egg-info/requires.txt
+inorgqm.egg-info/top_level.txt
+test/test_iqm.py
