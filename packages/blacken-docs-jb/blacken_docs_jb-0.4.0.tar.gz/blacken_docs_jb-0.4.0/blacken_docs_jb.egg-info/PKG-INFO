@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: blacken-docs-jb
+Version: 0.4.0
+Summary: Run `black` on python code blocks in documentation files (also for jupyterbook)
+Home-page: https://github.com/finsberg/blacken-docs-jb
+Author: Henrik Finsberg
+Author-email: henriknf@simula.no
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+blacken-docs-jb
+===============
+
+Extension of [blancken-docs](https://github.com/asottile/blacken-docs) which also supports the [executable code blocks](https://jupyterbook.org/en/stable/reference/cheatsheet.html#executable-code) from [JupyterBook](https://jupyterbook.org) e.g
+
+````
+```{code-cell} python
+x = 1 + 2
+```
+````
+
+
+## install
+
+```bash
+pip install blacken-docs-jb
+```
