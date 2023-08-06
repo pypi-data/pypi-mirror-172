@@ -1,0 +1,17 @@
+odoo/addons/sale_quick_seasonality/README.rst,sha256=J_mqKZqjyt9uivsDFlG3jvQY_r5UejnjaiiclbPBKgA,2772
+odoo/addons/sale_quick_seasonality/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/sale_quick_seasonality/__manifest__.py,sha256=jYh_myUZkJ2yUATeZPGEyxi_OL0yfU2Y91PNSVWA4XA,525
+odoo/addons/sale_quick_seasonality/i18n/sale_quick_seasonality.pot,sha256=DcaXwxJk4d4yJEKpXQBdhLbEFZM0_Rng4fLNhprGBDw,971
+odoo/addons/sale_quick_seasonality/models/__init__.py,sha256=LsPoCIAYodIFzh85VEjY5GiuzDQDQpiF38txDw10qT0,25
+odoo/addons/sale_quick_seasonality/models/sale_order.py,sha256=xRVGH3m7686_6QTYaFpDwiFHyN8b2nQrpyTtVd8yxE0,401
+odoo/addons/sale_quick_seasonality/readme/CONTRIBUTORS.rst,sha256=GHaYtcKsoqpGMGOTOmsGNRajdp6EP5rV05Xw1C6x3Qg,45
+odoo/addons/sale_quick_seasonality/readme/DESCRIPTION.rst,sha256=0c0AfVkSlHgRARqHncK93poT5UlAtzci4CXrymS16Oc,125
+odoo/addons/sale_quick_seasonality/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/sale_quick_seasonality/static/description/index.html,sha256=ABuPdibXKQIo1cyBzfXLyQLjPr1gwQANo2a-xTyafho,11889
+odoo/addons/sale_quick_seasonality/tests/__init__.py,sha256=xWFFGSGiWYgkVOoxqQM5dV_mc9KvEHSW45E6ZvfKDkY,30
+odoo/addons/sale_quick_seasonality/tests/common.py,sha256=0r59UWwQuKLG2fXpVOTavdR96q2tHI1t9N8gySc8OY4,401
+odoo/addons/sale_quick_seasonality/tests/test_sale_order.py,sha256=tUXJbxh47jqeZ6e6SqMqyEsZ7UtNgqZuhNp4WGDdyWA,1997
+odoo14_addon_sale_quick_seasonality-14.0.1.0.1.dev3.dist-info/METADATA,sha256=l6iJsD03cystKq_xYIdn4oPEgHNWOnRidBghcDroAqI,3419
+odoo14_addon_sale_quick_seasonality-14.0.1.0.1.dev3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo14_addon_sale_quick_seasonality-14.0.1.0.1.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_sale_quick_seasonality-14.0.1.0.1.dev3.dist-info/RECORD,,
