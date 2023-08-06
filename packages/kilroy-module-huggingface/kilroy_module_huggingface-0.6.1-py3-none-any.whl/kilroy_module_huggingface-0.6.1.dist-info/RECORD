@@ -1,0 +1,17 @@
+kilroy_module_huggingface/__init__.py,sha256=O7RQG8wMAGn-J_bE1-VAiI5pi3mKClnm9E1ycF78cPg,50
+kilroy_module_huggingface/__main__.py,sha256=gDQbZU9Wd9LGnqK-CyHG6UtxRQHqPjWapZCAitkJ38w,4230
+kilroy_module_huggingface/config.py,sha256=FxZDWweuJ_9jM9YfJbd64dPIikaLsTFS_qDiYkI9w8s,2186
+kilroy_module_huggingface/log.py,sha256=RRFTdMbx-yh_L8MOe8wqKvs9m8QAtP_UEkCAKnI42OE,972
+kilroy_module_huggingface/models.py,sha256=RhB0-gAqGp_REgqvT8u2mbfnlHD_Cvn-86pqfliJ-SU,4801
+kilroy_module_huggingface/modules/__init__.py,sha256=26R6l_zyP3yF3N7XefGw68CYZ3iy_fQQ8bPp-MNwuUA,235
+kilroy_module_huggingface/modules/base.py,sha256=CodG644XTusyyZhKnZk_tWi_ErTsL3W8u_z_iHoQqV4,439
+kilroy_module_huggingface/modules/basic.py,sha256=PbY5kD--1EpaWNtxUMN5LrzKNEhkSdT5TWrxonU24GY,11988
+kilroy_module_huggingface/modules/reward.py,sha256=U90_yA__zg0FDNStNJwLoQIhrf9vwp9bQNloXSgfy7I,23481
+kilroy_module_huggingface/resources/__init__.py,sha256=_wezS5TKy-o2hQfQak0vUBf27KjqF5KOy-jVODFFTTE,1573
+kilroy_module_huggingface/resources/config.yaml,sha256=SdU4cQI7FYndBgJ__5qK2FZu2x7BahDAslKaDBKmG5k,229
+kilroy_module_huggingface/tokenizer.py,sha256=IukphAlf2N-076y63CfZUrawjBJ6HFryXXIec-A4QP0,1624
+kilroy_module_huggingface-0.6.1.dist-info/entry_points.txt,sha256=7uhrKP3NPNq6ofW7fBmDG0_wr_NB5w4WVXYK7IcqLU4,84
+kilroy_module_huggingface-0.6.1.dist-info/LICENSE,sha256=jX4FG3WEtoz7iCbng5k7DLrQhDMs0fDnD2vGC6hQU_A,1063
+kilroy_module_huggingface-0.6.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+kilroy_module_huggingface-0.6.1.dist-info/METADATA,sha256=Q1yv98MVFQLV6My4Nlo5NlHY4uHjFMICfM_h7xbdFt8,1955
+kilroy_module_huggingface-0.6.1.dist-info/RECORD,,
