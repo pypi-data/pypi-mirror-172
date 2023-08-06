@@ -1,0 +1,9 @@
+equilibrator-api~=0.4.5.1
+cvxpy>=1.1.1
+efmtool>=0.2.0
+cobra>=0.18.1
+PolyRound>=0.1.5
+psutil>=5.8.0
+
+[test]
+pytest

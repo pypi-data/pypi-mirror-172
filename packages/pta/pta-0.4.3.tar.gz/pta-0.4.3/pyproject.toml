@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "ninja; sys_platform != 'win32'",
+    "cmake>=3.12",
+    "setuptools-git-versioning"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[tool.pytest.ini_options]
+log_cli=true
+log_cli_level="DEBUG"
+log_cli_format = "[%(levelname)8s] %(message)s"
+
+[tool.pylint.MASTER]
+extension-pkg-allow-list = [
+    "_pta_python_binaries"
+]
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "invalid-unary-operand-type",       # False positive with -np.vstack()
+    "anomalous-backslash-in-string",    # Needed for math in docstrings.
+    "broad-except",                     # Bad practice, but we do this for simplicity.
+    "invalid-name",                     # We don't want to be so strict. Exceptions are useful to match literature notation.
+    "logging-fstring-interpolation",    # We accept the performance penalty for simplicity, since we don't have performance-critical code in Python.
+    "wrong-import-order",               # Import are managed by isort.    
+]
