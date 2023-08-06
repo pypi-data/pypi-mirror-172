@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: s3-browser
+Version: 0.3.4
+Summary: UNKNOWN
+Home-page: https://github.com/giftig/s3-browser/
+Author: Rob Moore
+Author-email: giftiger.wunsch@xantoria.com
+License: MIT
+Keywords: aws s3 browser cli interactive prompt s3-browser
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# S3 Browser
+
+A small, interactive tool to browse s3 like a regular directory structure
+
+Written in python.
+
+## Features
+  * Tab completion
+  * Familiar interface for unix users (`cd`, `ls`, `file`, `pwd`, etc.)
+  * Bookmarking (`bookmark add`, `bookmark ls`...)
+  * Inspect key metadata (`file`)
+  * Maintains command history
+  * Lazy-loading and caching of paths (no scanning entire buckets on start up)
+
+## Installation
+
+`pip install s3_browser`
+
+And then run with `s3-browser`.
+
+## Example usage
+
+![Usage example][usage-1]
+
+## Development
+
+### Running tests
+
+Install the project into your virtualenv in development mode:
+
+```bash
+pip install -e .
+```
+
+Then install the test requirements:
+
+```bash
+pip install -r requirements_test.txt
+```
+
+and finally run `./build.sh` to run the full build.
+
+[usage-1]: readme-resources/usage-1.png "Usage example"
+
+
