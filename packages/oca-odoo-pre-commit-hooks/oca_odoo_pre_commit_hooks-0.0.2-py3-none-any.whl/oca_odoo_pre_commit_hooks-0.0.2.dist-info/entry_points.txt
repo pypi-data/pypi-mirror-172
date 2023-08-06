@@ -1,0 +1,2 @@
+[console_scripts]
+oca-checks-odoo-module = checks_odoo_module:main
