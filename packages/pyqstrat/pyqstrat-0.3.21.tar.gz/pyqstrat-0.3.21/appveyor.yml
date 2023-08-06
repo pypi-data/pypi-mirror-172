@@ -1,0 +1,80 @@
+image:
+  - Visual Studio 2017
+  - Ubuntu
+
+matrix:
+  # Finish when first job fails
+  fast_finish: true
+
+notifications:
+  - provider: Email
+    to:
+      - abbasi.sal@gmail.com
+    on_build_success: true
+    on_build_failure: true
+    on_build_status_changed: true
+
+platform:
+  -x64
+
+# Not a .NET project, we build in the install step instead
+build: false
+
+environment:
+  PYTHON_ARCH: "64"
+  PYTHON_VERSION: "3.9"
+
+
+for:
+-
+  matrix:
+    only:
+      - image: Ubuntu
+
+  install:
+    - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+    - bash miniconda.sh -b -p $HOME/miniconda
+    - export PATH="$HOME/miniconda/bin:$PATH"
+    - hash -r
+    - conda config --set always_yes yes --set changeps1 no
+    - conda update -q conda
+    # Useful for debugging any issues with conda
+    - conda info -a
+    - conda create --channel conda-forge -q -n test-environment python=$PYTHON_VERSION pybind11 pytest pandas numpy matplotlib scipy ipython sortedcontainers libzip h5py statsmodels mypy flake8 plotly ipywidgets types-python-dateutil
+    - source activate test-environment
+    - CXX=g++-9 CC=g++-9 python setup.py build_ext --inplace
+
+  test_script:
+    - which python
+    - python -c 'import pyqstrat'
+    - python -m pytest pyqstrat
+    - mypy --ignore-missing-imports pyqstrat/
+    - flake8 --ignore W291,W293,W503,E701,E275 --max-line-length=160 pyqstrat/
+  
+
+-
+  matrix:
+    only:
+      - image: Visual Studio 2017
+
+  install:
+    - set "CONDA_ROOT=C:\Miniconda3-x64"
+    - set "PATH=%CONDA_ROOT%;%CONDA_ROOT%\Scripts;%CONDA_ROOT%\Library\bin;%PATH%"
+    - echo %PATH%
+    - conda config --set always_yes yes
+    - conda info -a
+    - conda create -c conda-forge -q -n test-environment python=%PYTHON_VERSION% pybind11 pandas numpy matplotlib pytest ipython sortedcontainers libzip h5py statsmodels mypy flake8 plotly ipywidgets types-python-dateutil
+    - conda list
+
+  test_script:
+    - "%CONDA_ROOT%\\Scripts\\activate test-environment"
+    - python -c "import sys; print(sys.version)"
+    - python -c "import sys; print(sys.executable)"
+    - python -c "import sys; print(sys.prefix)"
+    - python --version
+    # - pip install scipy
+    - python setup.py build_ext --inplace
+    - python -m pytest pyqstrat
+    - mypy --ignore-missing-imports pyqstrat/
+    - flake8 --ignore W291,W293,W503,E701,E275 --max-line-length=160 pyqstrat/
+
