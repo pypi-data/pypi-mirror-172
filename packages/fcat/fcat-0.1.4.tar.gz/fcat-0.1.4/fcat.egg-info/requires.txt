@@ -1,0 +1,9 @@
+biopython
+tqdm
+ete3
+six
+greedyFAS>=1.12.1
+fdog>=0.0.45
+rpy2
+tzlocal
+scipy
