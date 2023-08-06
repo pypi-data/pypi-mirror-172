@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: arlas-subscriptions-manager-api
+Version: 23.0.0
+Summary: ARLAS Subscriptions Manager API
+Home-page: https://github.com/gisaia/ARLAS-subscriptions
+Author: Gisaïa
+Author-email: contact@gisaia.com
+License: UNKNOWN
+Description:     Manage subscriptions to ARLAS collection events
+            
+Keywords: Arlas,ARLAS Subscriptions API
+Platform: UNKNOWN
