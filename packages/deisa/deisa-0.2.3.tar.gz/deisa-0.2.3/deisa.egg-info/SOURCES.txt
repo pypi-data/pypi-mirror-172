@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+deisa/__init__.py
+deisa/deisa.py
+deisa.egg-info/PKG-INFO
+deisa.egg-info/SOURCES.txt
+deisa.egg-info/dependency_links.txt
+deisa.egg-info/requires.txt
+deisa.egg-info/top_level.txt
