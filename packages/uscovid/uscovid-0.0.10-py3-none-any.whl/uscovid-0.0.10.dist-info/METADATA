@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uscovid
+Version: 0.0.10
+Summary: covid19 in US states
+Home-page: https://github.com/Junya-Toyokura/uscovid
+Author: junya toyokura
+Author-email: j.toyokura@agreement.jp
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Junya-Toyokura/uscovid
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
