@@ -1,0 +1,7 @@
+Code generation for modules mm and mm_op
+Code generation for modules mm_reduce
+Generating code for extension 'mat24'
+Patching and copying shared libraries
+Starting code generation
+import_all
+mmgroup
