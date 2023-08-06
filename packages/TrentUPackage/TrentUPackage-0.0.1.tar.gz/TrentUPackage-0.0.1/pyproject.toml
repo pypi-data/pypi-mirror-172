@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+
+
+[project]
+name = "TrentUPackage"
+version = "0.0.1"
+dependencies = [
+    "discord",
+    "dotenv",
+    "selenium",
+    "bs4",
+    "webdriver_manager",
+    "re",
+    "PyPDF2",
+    "time",
+    "io"
+]
+
+requires-python = ">=3.10.8"
+
+
+[project.scripts]
+TrentUBuddy = "TrentUPackage.bot"
