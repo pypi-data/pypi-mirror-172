@@ -1,0 +1,2 @@
+[console_scripts]
+fitlins = fitlins.cli.run:main
