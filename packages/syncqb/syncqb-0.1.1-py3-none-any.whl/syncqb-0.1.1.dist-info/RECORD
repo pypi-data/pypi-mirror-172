@@ -1,0 +1,11 @@
+syncqb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syncqb/json_quickbase.py,sha256=_9UNKmCbpTLP7xdxEU07BZLkebvmwbOskleSqqoGEzE,28631
+syncqb/qb_client.py,sha256=Iz6faFpa6FeGW0HZOEW0VkWUoh9NAbh1sk_yyhQ3oS4,2199
+syncqb/test.py,sha256=_2DBbRL5mR9wza8_Vy3maNvRCfeVoR99gafjDjXP_2s,110
+syncqb/xml_quickbase.py,sha256=_lSD-2Mm73aaVIsmJsbL3D6fItgZaUsaIevPJlDikAM,42351
+syncqb-0.1.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+syncqb-0.1.1.dist-info/METADATA,sha256=cMHbJ3Iwrp6v1aAnbAFMcVqVbukt_oPZOwY2DjrJN_8,10099
+syncqb-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+syncqb-0.1.1.dist-info/entry_points.txt,sha256=dK0_acNkm7VMNi_kVfYBLXutTWnNuzR1P-oK8prYGb0,59
+syncqb-0.1.1.dist-info/top_level.txt,sha256=hFWJ-XlzjEBFKLluDyYopSmR-48xskV_aMhQ5NDeVYI,7
+syncqb-0.1.1.dist-info/RECORD,,
