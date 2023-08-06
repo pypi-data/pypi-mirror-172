@@ -1,0 +1,99 @@
+{% import 'enumeration.jinja' as enumerate %}
+
+
+{% macro parameter_header(parameter, idx_prefix='', idx=1, nonumber=False) -%}
+{%  if nonumber  %}
+## **`{{ parameter }}`**  
+
+{%  else   %}
+{{  idx_prefix  }}{{  idx  }}. **`{{ parameter }}`**    
+{%  endif  %}
+{% endmacro %}
+
+
+{%  macro title_or_description(fields, default=False)                                                                      -%}
+{%      if "description" in fields                                                                                          %}
+{{          fields.description }} {% if default -%}{{  single_default(fields)  }}{%- endif  %}
+{%      else                                                                                                                %}
+{{          fields.title       }} {% if default -%}{{  single_default(fields)  }}{%- endif  %}
+{%      endif                                                                                                               %}
+{%- endmacro                                                                                                                %}
+
+
+{% macro single_default(fields) -%}
+{% if "default" in fields and fields.default != {} -%}
+(default: `{{  fields.default  }}`)
+{%- endif %}
+{%- endmacro %}
+
+{% macro quote(content)    -%}
+> {{ content                }}
+{%- endmacro                %}
+
+
+{% macro document_parameter_compact(parameter, fields={}, idx=1, idx_prefix='', is_input=True, level=0)            -%}
+{%  set extra_indent = level==1                                                                                     %}
+{{  parameter_header(parameter, idx_prefix=idx_prefix, idx=idx)                                                     }}
+{%      if extra_indent                                                                                             %}
+{%          set width = 4                                                                                           %}
+{%      else                                                                                                        %}
+{%          set width = 0                                                                                           %}
+{%      endif                                                                                                       %}
+
+{{  quote(fields.title)                                                      | indent(first=True, width=width)      }}
+
+{%  if is_input                                                                                                     %}
+{{      enumerate.enumerate_available_inputs(fields)                      | indent(first=True, width=width)         }}
+{%  else                                                                                                            %}
+{{      enumerate.enumerate_required_and_optional_outputs(fields)       | indent(first=True, width=width)           }}
+{%  endif                                                                                                           %}
+
+{%  if "description" in fields                                                                                      %}
+{{      fields.description                                              | indent(first=True, width=width)           }} 
+{%  endif                                                                                                           %}
+  
+{% endmacro                                                                                                         %}
+
+
+{%- macro  document_top_parameter(parameter, fields={}, idx_prefix='', idx=1, level=0, is_composite=False)                 -%}
+{%-  set extra_indent = level==1                                                                                           -%}
+{%-  set nonumber = level==0                                                                                               -%}
+{{  parameter_header(parameter, idx_prefix=idx_prefix, idx=idx, nonumber=nonumber)                                          }}
+{%-  if extra_indent                                                                                                       -%}
+{{      title_or_description(fields, default=not is_composite)                      | indent(first=True, width=4)           }}
+{{      enumerate.enumerate_options(fields)                                  | indent(first=True, width=4)                  }}
+{%-  else                                                                                                                  -%}
+{{      title_or_description(fields, default=not is_composite)                                                              }}
+{{      enumerate.enumerate_options(fields)                                                                                 }}
+{%-  endif                                                                                                                 -%}
+{%- endmacro                                                                                                               -%}
+
+{%- macro  document_sub_parameters(fields={}, idx_prefix='', idx=1,  is_input=True, level=0, compact_level=2)              -%}
+{%  if level == 0                                                                                                           %}
+{%      set width = 0                                                                                                       %}
+{%      set idx_prefix = ""                                                                                                 %}
+{%  elif level == 1                                                                                                         %}
+{%      set width = 4                                                                                                       %}
+{%      set idx_prefix = "{}{}.".format(idx_prefix, idx)                                                                    %}
+{%  else                                                                                                                    %}
+{%      set width = 0                                                                                                       %}
+{%      set idx_prefix = "{}{}.".format(idx_prefix, idx)                                                                    %}
+{%  endif                                                                                                                   %}
+{%  set subparameters = fields.properties.items()                                                                           %}
+{%  set level_subparameter = level + 1                                                                                      %}
+{%-  for p, f in subparameters                                                                                             -%}
+{%-       if f.type == "object" and  (level_subparameter >= compact_level)                                                                                                     -%}
+{{          document_parameter_compact(p, fields=f, idx=loop.index, idx_prefix=idx_prefix, is_input=is_input, level=level_subparameter)    | indent(first=True, width=width)    }}
+{%-      else                                                                                                                                                                  -%}
+{{          document_parameter_extensive(p, fields=f, idx=loop.index, idx_prefix=idx_prefix, is_input=is_input, level=level_subparameter)  | indent(first=True, width=width)    }}
+{%-      endif                                                                                                               -%}
+{%-  endfor                                                                                                                  -%}
+{%- endmacro                                                                                                                 -%}
+
+{%- macro document_parameter_extensive(parameter, fields={}, idx=1, idx_prefix='', is_input=True, level=0, compact_level=2)                     -%}
+{%- set is_composite = (fields.type == "object")                                                                                                -%}
+{{  document_top_parameter(parameter, fields=fields, idx_prefix=idx_prefix, idx=idx, level=level, is_composite=is_composite)                     }}
+{%  if is_composite                                                                                                                              %}
+{{      document_sub_parameters(fields=fields, idx_prefix=idx_prefix, idx=idx, is_input=is_input, level=level, compact_level=compact_level)      }}
+{%-  endif                                                                                                                                       %}
+{%- endmacro                                                                                                                                    -%}

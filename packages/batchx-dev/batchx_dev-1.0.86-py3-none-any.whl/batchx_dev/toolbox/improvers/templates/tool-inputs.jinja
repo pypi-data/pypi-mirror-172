@@ -1,0 +1,47 @@
+{%  import 'conditional_count_list.jinja' as countlist %}
+{%  import 'parameters.jinja' as parameters %}
+
+{%-  set required_inputs = dict() -%}
+{%-  for parameter, fields in schema.input.properties.items() -%}
+{%-     if fields.required == True -%}
+{{          required_inputs.__setitem__(parameter, fields) if  required_inputs.__setitem__(parameter, fields) is not none }}
+{%-      endif -%}
+{%-  endfor -%}
+{%-  set optional_inputs = dict() -%}
+{%-  for parameter, fields in schema.input.properties.items() -%}
+{%-      if fields.required == False -%}
+{{          optional_inputs.__setitem__(parameter, fields) if  optional_inputs.__setitem__(parameter, fields) is not none  }}
+{%-      endif -%}
+{%-  endfor -%}
+{%-  set n_optional_inputs = optional_inputs | length  -%}
+{%-  set n_required_inputs = required_inputs | length  -%}
+
+# Inputs
+
+{%  if n_required_inputs > 0  %}
+## Required inputs
+
+{%      if n_required_inputs == 1  %}
+This tool has the following **required** input: 
+{%      else %}
+This tool has the following **required** inputs:
+{%      endif %}
+
+{%      for parameter, fields in required_inputs.items() %}
+{{              parameters.document_parameter_extensive(parameter, fields=fields, idx=loop.index, is_input=True, level=1, compact_level=4)  }}
+{%-      endfor -%}
+{%  endif %}
+
+{%  if n_optional_inputs > 0  %}
+## Optional inputs
+
+{%      if n_optional_inputs == 1  %}
+This tool provides additional configuration through the following **optional** input:  
+{%      else %}
+This tool provides additional configuration through the following **optional** inputs: 
+{%      endif %}
+
+{%      for parameter, fields in optional_inputs.items() %}
+{{              parameters.document_parameter_extensive(parameter, fields=fields, idx=loop.index, is_input=True, level=1, compact_level=4)  }}
+{%-      endfor -%}
+{%  endif %}

@@ -1,0 +1,47 @@
+{%  import 'conditional_count_list.jinja' as countlist %}
+{%  import 'parameters.jinja' as parameters %}
+
+{%-  set required_outputs = dict() -%}
+{%-  for parameter, fields in schema.output.properties.items() -%}
+{%-     if fields.required == True -%}
+{{          required_outputs.__setitem__(parameter, fields) if  required_outputs.__setitem__(parameter, fields) is not none }}
+{%-      endif -%}
+{%-  endfor -%}
+{%-  set optional_outputs = dict() -%}
+{%-  for parameter, fields in schema.output.properties.items() -%}
+{%-      if fields.required == False -%}
+{{          optional_outputs.__setitem__(parameter, fields) if  optional_outputs.__setitem__(parameter, fields) is not none  }}
+{%-      endif -%}
+{%-  endfor -%}
+{%-  set n_optional_outputs = optional_outputs | length  -%}
+{%-  set n_required_outputs = required_outputs | length  -%}
+
+# Outputs
+
+{%  if n_required_outputs > 0  %}
+## Required outputs
+
+{%      if n_required_outputs == 1  %}
+This tool will **always** provide the following output:  
+{%      else %}
+This tool will **always** provide the following outputs:
+{%      endif %}
+
+{%      for parameter, fields in required_outputs.items() %}
+{{              parameters.document_parameter_extensive(parameter, fields=fields, idx=loop.index, is_input=False, level=1, compact_level=4) }}
+{%      endfor %}
+{%  endif %}
+
+{%  if n_optional_outputs > 0  %}
+## Optional outputs
+
+{%      if n_optional_outputs == 1  %}
+This tool will **optionally** provide the following output:  
+{%      else %}
+This tool will **optionally** provide the following outputs:  
+{%      endif %}
+
+{%      for parameter, fields in optional_outputs.items() %}
+{{              parameters.document_parameter_extensive(parameter, fields=fields, idx=loop.index, is_input=False, level=1, compact_level=4)  }}
+{%      endfor %}
+{%  endif %}

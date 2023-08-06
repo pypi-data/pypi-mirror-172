@@ -1,0 +1,100 @@
+{% set ALPHABET = "_abcdefghijklmnopqrstuvwxyz" %}
+
+{%- macro enumerate_outputs(d, is_required=True, title="Required outputs") -%}
+{%- set outputs = [] -%}
+{%- for parameter, fields in d.items() -%}
+{%- if fields.required == is_required -%}
+{{ outputs.append("\`{p}\`".format(p=parameter)) if outputs.append("`{p}`".format(p=parameter)) is not none }}
+{%- endif -%}
+{%- endfor -%}
+{% if outputs | length | int > 0 %}
+* *{{ title }}:* {{ outputs | join(", ") }}.
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro enumerate_inputs(d, title="Default inputs")                                          -%}
+{%- set inputs = []                                                                            -%}
+{%- for parameter, value in d.items()                                                          -%}
+{%      if  value is not none                                                                  -%}
+{%-         set s = "`{p}` ({v})".format(p=parameter, v=value)                                  %}
+{%      else                                                                                   -%}
+{%-         set s = "`{p}`".format(p=parameter)                                                 %}
+{%      endif                                                                                  -%}
+{{ inputs.append(s) if inputs.append(s) is not none                                             }}
+{%- endfor                                                                                     -%}
+{% if inputs | length | int > 20                                                                %}
+* *{{ title }}:* For detailed information about the available inputs of this tool, we refer to the inputs section of this tool's own documentation (linked above).
+{%  else                                                            -%}
+* *{{ title }}:* {{ inputs | join(", ") }}.
+{%- endif                                                                                      -%}
+{%- endmacro                                                                                   -%}
+
+{% macro document_enumeration(enumeration) %}
+{% for item in enumeration -%}
+{% if item.type == "object" -%}
+{% if "description" in item %}
+
+{{ ALPHABET[loop.index] }}. **`{{ item.const }}`**: {{ item.description }}
+{% else %}
+
+{{ ALPHABET[loop.index] }}. **`{{ item.const }}`**: {{ item.title }}
+{% endif -%}
+{% else %}
+
+{{ ALPHABET[loop.index] }}. **`{{ item }}`**: [Description of this option]
+{% endif -%}
+{% endfor -%}
+{%- endmacro -%}
+
+{%- macro enumerate_options(fields) -%}
+{%- if "anyOf" in fields -%}
+{{ document_enumeration(fields.anyOf) }}
+{%- elif "oneOf" in fields -%}
+{{ document_enumeration(fields.oneOf) }}
+{%- elif "enum" in fields -%}
+{{ document_enumeration(fields.enum) }}
+{%- elif "items" in fields -%}
+{%- if "enum" in fields.get("items").keys() -%}
+{{ document_enumeration(fields.get("items").get("enum")) }}
+{%- endif -%}
+{%- endif -%}
+{%- endmacro -%}
+
+{% macro enumerate_required_and_optional_outputs(fields) -%}
+{{ enumerate_outputs(fields.properties, is_required=True, title="Required outputs") }}
+{{ enumerate_outputs(fields.properties, is_required=False, title="Optional outputs") }}
+{%- endmacro %}
+
+{% macro enumerate_default_inputs(fields) -%}
+{% if "default" in fields and fields.default != {} -%}
+{{ enumerate_inputs(fields.default, title="Default inputs") }}
+{%- endif %}
+{%-endmacro %}
+
+{% macro enumerate_available_inputs(fields) -%}
+{% if "available" in fields and fields.available != {} -%}
+{{ enumerate_inputs(fields.available, title="Available inputs") }}
+{%- endif %}
+{%-endmacro %}
+
+{%- macro enumerate_pipeline_steps(steps) -%}
+{%- set outputs = [] -%}
+{%- for step, fields in steps.items() -%}
+{{ loop.index}}. {{single_pipeline_step(step, fields, include_title=True) }}
+{%- endfor -%}
+{%- endmacro -%}
+
+{% macro single_pipeline_step(step, fields, include_title=True) %}
+{% if include_title %}
+**[{{ fields.step }}]({{ fields.urls.docs }})**: {{ fields.title }}
+{% else %}
+**[{{ fields.step }}]({{ fields.urls.docs }})**
+{% endif %}
+{% endmacro %}
+
+{%- macro list_pipeline_steps(steps) -%}
+{%- set outputs = [] -%}
+{%- for step, fields in steps.items() -%}
+- {{ single_pipeline_step(step, fields, include_title=False) }}
+{%- endfor -%}
+{%- endmacro -%}
