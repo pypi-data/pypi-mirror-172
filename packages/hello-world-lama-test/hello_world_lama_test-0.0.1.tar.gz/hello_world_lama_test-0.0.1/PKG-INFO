@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: hello_world_lama_test
+Version: 0.0.1
+Summary: test
+Home-page: https://gist.github.com/lamoboos223/e1b8e3638e3b5eddd01ae0bf2d1c8d73
+Author: Lama Alosaimi
+License: MIT
+Keywords: test
+Description-Content-Type: text/markdown
+
+# Hello World
+
+This package will only print hello world. This package is for educational purposes only.
+
+
+---
+
+### import
+
+```py
+from hello_world_code import HelloWorldClass
+```
+
+---
+
+### Usage
+```py
+HelloWorldClass.greeting()
+```
