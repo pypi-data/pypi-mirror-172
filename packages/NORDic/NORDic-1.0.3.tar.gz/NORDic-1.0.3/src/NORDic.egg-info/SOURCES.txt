@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/NORDic.egg-info/PKG-INFO
+src/NORDic.egg-info/SOURCES.txt
+src/NORDic.egg-info/dependency_links.txt
+src/NORDic.egg-info/requires.txt
+src/NORDic.egg-info/top_level.txt
