@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pySCOrchestrator/__init__.py
+pySCOrchestrator.egg-info/PKG-INFO
+pySCOrchestrator.egg-info/SOURCES.txt
+pySCOrchestrator.egg-info/dependency_links.txt
+pySCOrchestrator.egg-info/requires.txt
+pySCOrchestrator.egg-info/top_level.txt
