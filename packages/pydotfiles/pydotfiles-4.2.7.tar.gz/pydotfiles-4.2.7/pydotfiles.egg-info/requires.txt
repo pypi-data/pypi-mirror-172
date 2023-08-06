@@ -1,0 +1,10 @@
+PyYAML>=3.13
+jsonschema>=2.6.0
+GitPython>=2.1.11
+progressbar2>=3.38.0
+
+[:python_version < "3.7"]
+dataclasses
+
+[:python_version < "3.9"]
+importlib_resources
