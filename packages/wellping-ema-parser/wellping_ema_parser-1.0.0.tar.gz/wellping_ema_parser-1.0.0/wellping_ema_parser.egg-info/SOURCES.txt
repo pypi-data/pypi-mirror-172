@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+scp_ema/__init__.py
+scp_ema/parser/__init__.py
+scp_ema/parser/scp_ema_parser.py
+wellping_ema_parser.egg-info/PKG-INFO
+wellping_ema_parser.egg-info/SOURCES.txt
+wellping_ema_parser.egg-info/dependency_links.txt
+wellping_ema_parser.egg-info/requires.txt
+wellping_ema_parser.egg-info/top_level.txt
