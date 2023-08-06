@@ -1,0 +1,16 @@
+amrlib
+biopython
+cadences
+karateclub
+networkx
+phonemizer
+pyemd
+scikit-learn
+scipy
+spacy
+torch
+transformers
+sentence-transformers
+stanza
+unideocde
+zss
