@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: afmaths
+Version: 1.0.1
+Summary: A suite of mathematical functions with outputs to help revise math
+Project-URL: url, https://pypi.org/project/afmaths/
+Project-URL: Bug Tracker, https://github.com/Arturius771/afmaths/issues
+Author-email: Artúr Foden <fodena@tcd.ie>
+License: MIT License
+        
+        Copyright (c) 2022 Artúr Foden
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# afmaths
+
+A simple package of math functions. Many of these will display output to the console to help understand what steps are required.
+
+# Functions
+
+- General
+  - add(), subtract(), multiply(), divide(), exponentiate(), square_root(), factorial(), euclid()
+- Computer Science
+  - cs_file_compression_ratio(), cs_compressed_file_size(), cs_diagonal_pixel_length(), cs_travelling_salesman_problem_total_routes(), cs_check_clusters(), cs_ml_precision(), cs_ml_recall(), cs_ml_weighted_inputs()
+- Graphs
+  - graph_gradient(), graph_equation_of_line()
+- Lists (todo: rename to collections?)
+  - list_sorted(), list_length(), list_sum(), list_minimum(), list_maximum(), list_range(), list_mean(), list_median(), list_quartiles()
+- Physics
+  - physics_radiowave_power_distances(), physics_radiowave_recieved_power(), physics_speed_of_light_metres_per_second(), physics_planck_constant(), physics_photon_energy_from_wavelength(), physics_photon_energy_from_frequency(), physics_frequency_to_wavelength(), physics_wavelength_to_frequency()
