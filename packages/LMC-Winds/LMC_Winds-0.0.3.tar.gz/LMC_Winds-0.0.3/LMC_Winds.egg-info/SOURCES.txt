@@ -1,0 +1,15 @@
+LICENSE.txt
+setup.py
+LMC_Winds/__init__.py
+LMC_Winds/def_norm_guesses.py
+LMC_Winds/def_normalize.py
+LMC_Winds/def_read_STSCI.py
+LMC_Winds/def_read_line_transitions.py
+LMC_Winds/def_velocity_conversions.py
+LMC_Winds/example.py
+LMC_Winds/fitting.py
+LMC_Winds/whichLSF.py
+LMC_Winds.egg-info/PKG-INFO
+LMC_Winds.egg-info/SOURCES.txt
+LMC_Winds.egg-info/dependency_links.txt
+LMC_Winds.egg-info/top_level.txt
