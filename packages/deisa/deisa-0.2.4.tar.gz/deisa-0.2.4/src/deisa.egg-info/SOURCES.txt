@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+src/deisa/__init__.py
+src/deisa/deisa.py
+src/deisa.egg-info/PKG-INFO
+src/deisa.egg-info/SOURCES.txt
+src/deisa.egg-info/dependency_links.txt
+src/deisa.egg-info/requires.txt
+src/deisa.egg-info/top_level.txt
