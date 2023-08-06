@@ -1,0 +1,10 @@
+README.md
+setup.py
+formfiller/__init__.py
+formfiller/__main__.py
+formfiller.egg-info/PKG-INFO
+formfiller.egg-info/SOURCES.txt
+formfiller.egg-info/dependency_links.txt
+formfiller.egg-info/not-zip-safe
+formfiller.egg-info/requires.txt
+formfiller.egg-info/top_level.txt
