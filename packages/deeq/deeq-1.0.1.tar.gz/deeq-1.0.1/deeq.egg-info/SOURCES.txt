@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+deeq/__init__.py
+deeq/_version.py
+deeq/main.py
+deeq.egg-info/PKG-INFO
+deeq.egg-info/SOURCES.txt
+deeq.egg-info/dependency_links.txt
+deeq.egg-info/requires.txt
+deeq.egg-info/top_level.txt
