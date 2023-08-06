@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+midas/modules/qmarket_agents/__init__.py
+midas/modules/qmarket_agents/meta.py
+midas/modules/qmarket_agents/model.py
+midas/modules/qmarket_agents/module.py
+midas/modules/qmarket_agents/simulator.py
+midas_qmarket_agents.egg-info/PKG-INFO
+midas_qmarket_agents.egg-info/SOURCES.txt
+midas_qmarket_agents.egg-info/dependency_links.txt
+midas_qmarket_agents.egg-info/requires.txt
+midas_qmarket_agents.egg-info/top_level.txt
