@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+git-timeline = mkdocs_git_timeline_plugin.plugin:GitTimelinePlugin
