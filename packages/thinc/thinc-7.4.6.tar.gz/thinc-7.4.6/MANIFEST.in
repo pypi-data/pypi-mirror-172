@@ -1,0 +1,6 @@
+global-include *.h *.S *.c *.cu LICENSE
+include buildbot.json
+include LICENSE
+include README.rst
+prune tmp/
+recursive-exclude *.cpp
