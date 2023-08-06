@@ -1,0 +1,75 @@
+# CARDAMOM
+
+CARDAMOM is an executable Gene Regulatory Network (GRN) inference method, adapted for timestamped scRNA-seq dataset. The algorithm consists in fitting the parameters of a mechanistic model of gene expression: the simulation of the model, once calibrated, allows to reproduce the dataset used for the inference. The method has been introduced in [1]. It has been benchmarked among other GRN inference tools and applied on a real dataset in [2]. 
+
+The directory "cardamom_v1" contains the package described in [1]. The method has been slightly modifiied in [2]. Details concerning these changes can be found in the file "cardamom_v2/cardamom_vignette.pdf".
+
+# Dependencies
+
+CARDAMOM depends on the following standard scientific libraries (numpy_ and _scipy). The library numba_ accelerates the inference method and simulations (tutorial can be found [here](https://numba.readthedocs.io/en/stable/user/installing.html)). The package _harissa_ is used for the function "simulate_data" of CARDAMOM. The library umap-learn_ is used for the function "visualize_data".
+
+They can be installed using pip:
+
+#### pip install numba
+#### pip install harissa
+#### pip install umap-learn
+
+# Tutorial
+
+## Structure of the directories
+
+The user must create a separate directory named "mynetwork". The two examples given here correspond to the dataset of the directory "Network4" generated with one of the networks used for the benchmark of [2], and the dataset of the directory "Semrau" corresponding to the network inferred from an experimental dataset collected in vitro on single mouse embryonic stem cells induced to differentiate by all-trans retinoic acid addition in [3].
+
+The directory "mynetwork" must contain 3 directories:
+
+- #### cardamom:
+It has to be empty before the inference, and will contain the results of the inference, after running the script "infer_network".
+
+- #### Data: 
+It must contain 2 files, one named "panel.txt" which contains the dataset for the inference, and one named "panel_genes.txt" which contains the names of the genes.
+
+- #### Rates: 
+It must contain a file "degradation_rates.txt" which will be used for simulating the model, when running the script  "simulate_data".
+
+## Structure of the data
+
+The dataset must be in the .txt format. The first line must corresponds to the timepoints at which the cells are sampled, and the first column to the numero of each gene. Then, each line represents the mRNAs counts associated to a gene for each cell at each timepoint. Note that the second line corresponds to the Stimulus, which is set to 0 at t=0h and to 1 at t > 0h (see [1] Section 5.1 for the details).
+
+## 1- Calibrating the model from a reference dataset
+
+Run the following script for calibrating the model from the file "myproject/Data/panel.text":
+
+#### python infer_network.py -i [mynetwork]
+
+The output are the following files:
+ "myproject/cardamom/basal_t.npy": matrix of size (n X 1), contain the basal parameters of the GRN.
+ "myproject/cardamom/inter_t.npy": matrix of size (n X n), contain the GRN.
+ "myproject/cardamom/kmin.npy": vector of size (n X 1); containing the minimal bursts rates frequency for each gene.
+ "myproject/cardamom/kmax.npy": vector of size (n X 1); containing the maximal bursts rates frequency for each gene.
+ "myproject/cardamom/betnpy": vector of size (n X 1); containing the scaling of the bursts sizes for each gene.
+Here, n denotes the number of genes (including the stimulus).
+ 
+
+## 2- Simulate a dataset from an inferred network
+
+Run the following script for simulating the model from the parameters stored in the directory myproject/cardamom:
+
+#### python simulate_data.py -i [mynetwork]
+
+The output is the file "myproject/Data/panel_simulated.text".
+
+## 3- Compare the simulations to the reference dataset
+
+Run the following script for comparing the UMAP representations between the dataset "myproject/Data/panel.text" and "myproject/Data/panel_simulated.text":
+
+#### python visualize_data.py -i [mynetwork]
+
+The output is the file "UMAP_[mynetwork].pdf".
+
+## References
+
+[1] E. Ventre. “Reverse engineering of a mechanistic model of gene expression using metastability and temporal dynamics”. In: In Silico Biology 14 (2021), pp. 89–113.
+
+[2] E. Ventre, U. Herbach et al. "One model fits all: combining inference and simulation of gene regulatory networks". In: BioRxiv (2022).
+
+[3] S. Semrau et al. “Dynamics of lineage commitment revealed by single-cell transcriptomics of differentiating embryonic stem cells”. In: Nat Commun 8 (2017), pp. 1–16.
