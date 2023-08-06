@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: testy_quick
+Version: 0.0.30
+Summary: For quickly setting up unit tests
+Author: Artur Baboi
+Author-email: abc05artur@gmail.com
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+Keywords: python,test
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: Free for non-commercial use
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Quick Test
+
+Framework to quickly implement tests
+
