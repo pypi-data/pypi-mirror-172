@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: gppc
+Version: 0.1.5
+Summary: Check OSRS Grand Exchange prices from the command line. Includes limited module functionality.
+Home-page: https://pypi.org/project/gppc/
+Author: moxxos
+Author-email: moxxos@proton.me
+License: GNU AGPLv3
+Project-URL: Project, https://github.com/moxxos/gppc
+Keywords: OSRS,Grand Exchange,GE,OSRS GE,Runescape,Oldschool Runescape,OS Runescape
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: <3.11,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: climage
+Requires-Dist: platformdirs
+Provides-Extra: dev
+Requires-Dist: autopep8 (>=1.7.0) ; extra == 'dev'
+Requires-Dist: flake8 (>=5.0.4) ; extra == 'dev'
+Requires-Dist: pylint (>=2.15.2) ; extra == 'dev'
+
+# GPPC (Gold Piece Price Checker) 
+
+Check OSRS Grand Exchange prices from the command line. 
+Includes limited module functionality.
+
+# Usage
+
+Installation
+
+```bash
+$ pip install gppc
+```
+
+```bash 
+$ git clone https://github.com/moxxos/gppc.git
+$ cd gppc
+$ pip install .
+```
+
+Get the price and recent 24h change of many different Grand Exchange items.
+
+```bash
+$ gppc 'gold bar' coal
+$ gppc gold_bar coal
+```
+![Image](https://raw.githubusercontent.com/moxxos/gppc/main/gppc_example.jpg)
+
+Import as a module
+
+```bash
+$ import gppc
+$ gppc.search('coal')
+```
+
+# Updates
+
+#### TODO
+- [ ] Add option for a full version showing all item data
+- [ ] Add option to disable images
+- [ ] Add compact version with no images and smaller vertical display
+- [x] Add some caching for images and other static item data
+- [ ] Add tests and documentation
+
+## [CHANGELOG](https://github.com/moxxos/gppc/blob/main/CHANGELOG.md)
+## [0.1.5.] - 2022-10-18
+### Display output now works on Windows.
+### Added image caching.
+#
+
+## [0.1.4] - 2022-10-07
+### Removed pycache from repo.
+### Added MANIFEST.in to process CHANGELOG.md during build process.
+#
+
+## [0.1.3] - 2022-10-07
+### Fixed README and description for build and setup.
+### PYPI description now renders correctly.
+#
+
+## [0.1.1] - 2022-10-06
+### Now works. Also displays item images.
+#
+
+## [0.1.0] - 2022-09-12
+### Configured pyproject.toml
+#
