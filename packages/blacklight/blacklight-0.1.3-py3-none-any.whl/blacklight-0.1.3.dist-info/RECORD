@@ -1,0 +1,10 @@
+blacklight/Dataset.py,sha256=0bYnAG7zVgUpCSziH9UVmi6kTVQVgpbM6l5TKRonkxA,3176
+blacklight/GDNN.py,sha256=Lhy_3SjdS7mzGP2omiTV8PcAcjazOT0Qui_N5peXIvQ,15735
+blacklight/GeneticTopologyFinder.py,sha256=hbC8G_rE3lY51ZDD8LaEyKByK0vfzYB8CrhOc-vrI80,1267
+blacklight/__init__.py,sha256=58tgYrQDorqC6ZCjjrwAvzl6nUE028rU0LAXtdIYUeo,16973
+blacklight/blacklightutils.py,sha256=kJ1U14ZEblkSVAJLqe4VlgVIHsTgNHR7PMbD7Ollbgo,168
+blacklight/requirements.txt,sha256=mmHS8wzDdumPl2Zmg5mnk_v-AngAy_eBIrlt9tWHUyM,255
+blacklight-0.1.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+blacklight-0.1.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+blacklight-0.1.3.dist-info/METADATA,sha256=vgGB59PDKCR8hg79VdoroQho28E9iYJqG-hRT1o6qPE,809
+blacklight-0.1.3.dist-info/RECORD,,
