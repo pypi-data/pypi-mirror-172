@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: bechdelai
+Version: 0.0.0a0
+Summary: Automating the Bechdel test and its variants for feminine representation in movies with AI
+License: MIT
+Author: Data For Good
+Author-email: hellodataforgood@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyMuPDF (>=1.19.6,<2.0.0)
+Requires-Dist: deepface (>=0.0.68,<0.0.69)
+Requires-Dist: ftfy (>=6.1.1,<7.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: lxml (>=4.8.0,<5.0.0)
+Requires-Dist: matplotlib (>=3.4.3,<4.0.0)
+Requires-Dist: numpy (>=1.21.3,<2.0.0)
+Requires-Dist: opencv-python (>=4.5.4,<5.0.0)
+Requires-Dist: openpyxl (>=3.0.10,<4.0.0)
+Requires-Dist: pandas (>=1.3.4,<2.0.0)
+Requires-Dist: plotly (>=5.3.1,<6.0.0)
+Requires-Dist: python-dotenv (>=0.19.2)
+Requires-Dist: retina-face (>=0.0.12,<0.0.13)
+Requires-Dist: scikit-learn (>=1.0.1,<2.0.0)
+Requires-Dist: streamlit (>=1.9.2,<2.0.0)
+Requires-Dist: tensorflow (>=2.7.0,<3.0.0)
+Requires-Dist: torch (>=1.11.0,<2.0.0)
+Requires-Dist: torchaudio (>=0.11.0,<0.12.0)
+Requires-Dist: torchvision (>=0.12.0,<0.13.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
+Requires-Dist: transformers (>=4.17.0,<5.0.0)
+Requires-Dist: umap-learn (>=0.5.2,<0.6.0)
