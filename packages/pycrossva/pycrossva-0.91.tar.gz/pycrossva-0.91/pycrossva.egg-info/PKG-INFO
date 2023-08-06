@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycrossva
+Version: 0.91
+Summary: prepare data from WHO and PHRMC instruments for verbal autopsy algorithms
+Home-page: https://github.com/verbal-autopsy-software/pyCrossVA
+License: GNU General Public License v3.0
+Keywords: verbal autopsy data preparation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+License-File: LICENSE
