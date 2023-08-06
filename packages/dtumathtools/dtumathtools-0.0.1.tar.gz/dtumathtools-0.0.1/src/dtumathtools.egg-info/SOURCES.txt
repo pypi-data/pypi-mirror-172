@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/dtumathtools/__init__.py
+src/dtumathtools/plot2d.py
+src/dtumathtools.egg-info/PKG-INFO
+src/dtumathtools.egg-info/SOURCES.txt
+src/dtumathtools.egg-info/dependency_links.txt
+src/dtumathtools.egg-info/top_level.txt
