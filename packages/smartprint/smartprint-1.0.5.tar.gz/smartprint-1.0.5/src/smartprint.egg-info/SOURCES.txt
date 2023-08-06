@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/smartprint/__init__.py
+src/smartprint.egg-info/PKG-INFO
+src/smartprint.egg-info/SOURCES.txt
+src/smartprint.egg-info/dependency_links.txt
+src/smartprint.egg-info/requires.txt
+src/smartprint.egg-info/top_level.txt
