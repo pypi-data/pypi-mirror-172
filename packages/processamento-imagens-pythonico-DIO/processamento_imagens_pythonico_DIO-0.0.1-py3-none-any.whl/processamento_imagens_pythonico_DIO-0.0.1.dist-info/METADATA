@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: processamento-imagens-pythonico-DIO
+Version: 0.0.1
+Summary: Processamento de imagens com Python
+Home-page: https://github.com/guilhermercarv/Ciencia-Analise-de-Dados-com-Python
+Author: Guilherme
+Author-email: guilhermecarvalho056@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image (>=0.16.1)
+
+# processamento_imagens_pythonico_DIO
+
+Description. 
+The package processamento_imagens_pythonico_DIO is used to:
+	Processing
+		- Histogram matching
+		- Structural similarity
+		- Resize image
+	Utils
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histograms
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install processamento_imagens_pythonico_DIO
+
+```bash
+pip install processamento_imagens_pythonico_DIO
+```
+
+## Author
+Guilherme
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+

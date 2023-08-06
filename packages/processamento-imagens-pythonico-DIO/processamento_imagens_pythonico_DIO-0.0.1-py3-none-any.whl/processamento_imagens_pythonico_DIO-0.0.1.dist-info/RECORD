@@ -1,0 +1,11 @@
+processamento_imagens_pythonico_DIO/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processamento_imagens_pythonico_DIO/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processamento_imagens_pythonico_DIO/processing/combination.py,sha256=NDyXbaoUZII5fyKXnVaOYDlewx3Z6kd026LGWJlBds4,780
+processamento_imagens_pythonico_DIO/processing/transformation.py,sha256=Yxle0geLSG0XXRKoBv9sGtGFwYHbBRp5p5ZALC0vG0o,341
+processamento_imagens_pythonico_DIO/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processamento_imagens_pythonico_DIO/utils/io.py,sha256=hiHYy2-Ubgwur_hIZWHJMp6gsYEMJe_GRy80TooXwLQ,193
+processamento_imagens_pythonico_DIO/utils/plot.py,sha256=5BaxMrSaZJNdf8Ks-JfdjKxMvcCHQNDjrBrUBYi-0kw,960
+processamento_imagens_pythonico_DIO-0.0.1.dist-info/METADATA,sha256=8po8LYpU9mXLZLW4LZq0fQNrB4cQop9ye2WsDkwom2o,1002
+processamento_imagens_pythonico_DIO-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+processamento_imagens_pythonico_DIO-0.0.1.dist-info/top_level.txt,sha256=prkRk1tdN2ZN9mkALA7lsOw0gi8a1-HXYiJYCF7r4Ds,36
+processamento_imagens_pythonico_DIO-0.0.1.dist-info/RECORD,,
