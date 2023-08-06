@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: dendro_text
+Version: 1.7.2
+Summary: Draw dendrogram of similarity between text files
+Home-page: https://github.com/tos-kamiya/dendro_text
+Author: Toshihiro Kamiya
+Author-email: kamiya@mbj.nifty.com
+License: BSD 2-Clause License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: docopt-ng
+Provides-Extra: docopt
+License-File: LICENSE
+
+[![Tests](https://github.com/tos-kamiya/dendro_text/actions/workflows/tests.yaml/badge.svg)](https://github.com/tos-kamiya/dendro_text/actions/workflows/tests.yaml)
+
+dendro_text
+===========
+
+Draw a dendrogram of similarity between text files.
+
+The similarity is measured in terms of **Damerau-Levenshtein edit distance**.
+The distance between given two texts is a count of inserted, deleted, and substituted characters required to modify one text to the other.
+A smaller value means that the two texts are more similar.
+
+Features:
+
+* **Parallel execution**: Supports execution on multiple CPU cores. Plus, jit compilation by Numba (v1.6+).
+
+* **Options in tokenization**: By default, the text is compared with a sequence of words extracted by splitting input text into different character types. Optionally, you can compare texts line by line, character by character, or token by token as extracted with lexical analyzers of programming languages.
+
+* **File-centric search**: A function to list files in order of similarity to a given file.
+
+* **Diff (Experimental)**: Diff functionality to show textual differences between files. (This function is provided to check for differences in similarity calculations depending on tokenization.)
+
+## Installation
+
+```sh
+pip install dendro-text
+```
+
+If you run the dendro_text and get the following error message, please install dendro-text with docopt-ng.
+
+```sh
+$ dendro_text
+Error: the Docopt module has not been installed. Install it with `pip install docopt-ng`.
+```
+
+```sh
+pip install dendro-text[docopt-ng]
+```
+
+(To make `dendro-text` compatible with both `docopt` and `docopt-ng`, dependencies on them are now explicitly extra dependencies.)
+
+To uninstall,
+
+```sh
+pip uninstall dendro-text
+```
+
+

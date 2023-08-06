@@ -1,0 +1,12 @@
+numpy>=1.16.1
+scipy
+pygments
+tqdm
+init-attrs-with-kwargs>=0.2.0
+win-wildcard>=0.5.0
+
+[docopt]
+docopt
+
+[docopt-ng]
+docopt-ng
