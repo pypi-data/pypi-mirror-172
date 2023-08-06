@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bin/ref
+reftool/__init__.py
+reftool/init.py
+reftool/item.py
+reftool/note.py
+reftool/reference.py
+reftool.egg-info/PKG-INFO
+reftool.egg-info/SOURCES.txt
+reftool.egg-info/dependency_links.txt
+reftool.egg-info/requires.txt
+reftool.egg-info/top_level.txt
+reftool/resources/reftool.ini

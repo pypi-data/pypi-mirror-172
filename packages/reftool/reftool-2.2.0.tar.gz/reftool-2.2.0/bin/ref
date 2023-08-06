@@ -1,0 +1,91 @@
+#!/usr/bin/python3
+
+import reftool
+import argparse
+
+from reftool.init import reftool_init
+from reftool.reference import Reference
+
+
+encodings = ['base64', 'hex', 'html', 'HTML', 'json', 'url', 'URL']
+parser = argparse.ArgumentParser(description=f'''{reftool.name} {reftool.version} - a command line interface for
+                                                 reference archives. Reference archives are databases of .yml files
+                                                 that store command line references. These can be displayed, copied
+                                                 or encoded using reftool.''')
+parser.add_argument('name', nargs='?', metavar='reference-name', help='name of the reference which should be displayed')
+parser.add_argument('ref_id', nargs='?', metavar='id', help='copy the specified reference to the clipboard')
+parser.add_argument('parameters', nargs='*', default=[], help='specify parameters for the reference')
+parser.add_argument('--args', action='store_true', help='list all available arguments for the selected reference')
+parser.add_argument('--comp', metavar='param', help='list possible completions for a certain param')
+parser.add_argument('--enc', metavar='codec', choices=encodings, help='select an encoding for copy operations')
+parser.add_argument('--names', metavar='expr', nargs='?', const='', default=False, help='list available reference names')
+parser.add_argument('--reference-search', metavar='expr', help='search for references with matching name')
+parser.add_argument('--search', metavar='expr', help='search for an expression (regex) in all references')
+
+
+def main() -> None:
+    '''
+    Starts reftools main procedure which is mainly controlled by command line parameters.
+
+    Parameters:
+        None
+
+    Returns:
+        None
+    '''
+    reftool_init()
+    args = parser.parse_args()
+
+    if args.names or args.names == '':
+
+        Reference.print_references(args.names)
+        return
+
+    elif args.search:
+
+        matches = Reference.search_references(args.search)
+        Reference.pretty_print_list('Matching References:', matches)
+        return
+
+    elif args.reference_search:
+
+        reference = Reference.create_matching_reference(args.reference_search)
+        reference.filter_reference(args.reference_search)
+
+        if args.name:
+            args.ref_id = args.name
+
+        if args.ref_id:
+            args.parameters = [args.ref_id] + args.parameters
+
+    elif args.name:
+        reference = Reference.load_reference(args.name)
+
+    else:
+        parser.print_help()
+        return
+
+    if reference is None:
+        return
+
+    elif args.ref_id:
+        note = reference.get_note(args.ref_id)
+
+        if note is None:
+            return
+
+        elif args.args:
+            note.print_args()
+
+        elif args.comp:
+            note.print_completion(args.comp)
+
+        else:
+            note.copy_note(args.parameters, args.enc)
+
+    else:
+        reference.print()
+
+
+if __name__ == '__main__':
+    main()
