@@ -1,0 +1,2 @@
+[console_scripts]
+posNegEvolution = __main__:main

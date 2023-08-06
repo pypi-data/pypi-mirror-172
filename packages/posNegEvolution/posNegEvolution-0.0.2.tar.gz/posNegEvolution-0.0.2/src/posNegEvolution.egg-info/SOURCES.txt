@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/posNegEvolution/__init__.py
+src/posNegEvolution/__main__.py
+src/posNegEvolution/mainView.py
+src/posNegEvolution/pos_neg_evolution_init.py
+src/posNegEvolution/pos_neg_evolution_loop.py
+src/posNegEvolution/wmean.py
+src/posNegEvolution.egg-info/PKG-INFO
+src/posNegEvolution.egg-info/SOURCES.txt
+src/posNegEvolution.egg-info/dependency_links.txt
+src/posNegEvolution.egg-info/entry_points.txt
+src/posNegEvolution.egg-info/requires.txt
+src/posNegEvolution.egg-info/top_level.txt
