@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: staffology
+Version: 0.1.1
+Summary: Staffology openapi client with authentication patch
+Home-page: https://github.com/ihorizonUK/staffology
+Author: isik-kaplan
+Author-email: isik@ihorizon.co.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: attrs
+
+This repository is generated via [openapi-python-client](https://github.com/openapi-generators/openapi-python-client) generator
+
+--- 
+
