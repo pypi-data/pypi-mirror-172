@@ -1,0 +1,3 @@
+recursive-include signs_calculator/templates *
+recursive-include signs_calculator/static *
+prune tests

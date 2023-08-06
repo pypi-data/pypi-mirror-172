@@ -1,0 +1,15 @@
+{% extends "signs_calculator/base.html" %}
+
+{% block title %}Resultado{% endblock %}
+
+{% block content %}
+  <div id="result-container" class="container border-rounded mt-5">
+    {% for r in result %}
+      <h3 class="{{ 'primary-regular-bg' if loop.index0 % 2 == 0 else 'primary-light-bg' }}">
+        {{ r.label }}: {{ r.sign }}
+        <img class="sign-icon" src="{{ r.icon_url }}" alt="icon">
+      </h3>
+    {% endfor %}
+    <a class="btn w-100" href="{{ url_for('.index') }}">Voltar</a>
+  </div>
+{% endblock %}
