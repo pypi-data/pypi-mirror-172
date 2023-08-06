@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+python_switchbot.egg-info/PKG-INFO
+python_switchbot.egg-info/SOURCES.txt
+python_switchbot.egg-info/dependency_links.txt
+python_switchbot.egg-info/requires.txt
+python_switchbot.egg-info/top_level.txt
+switchbot/__init__.py
+switchbot/client.py
+switchbot/devices.py
+switchbot/remotes.py
