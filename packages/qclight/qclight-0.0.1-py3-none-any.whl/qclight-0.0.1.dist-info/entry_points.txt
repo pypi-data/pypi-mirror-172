@@ -1,0 +1,2 @@
+[console_scripts]
+realpython = qclight.__main__:main

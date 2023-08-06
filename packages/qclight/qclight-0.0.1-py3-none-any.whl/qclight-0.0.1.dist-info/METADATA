@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: qclight
+Version: 0.0.1
+Summary: A lightweught quantum computing simulator
+Author-email: TendTo <casablancaernesto@gmail.com>
+License: Copyright (c) 2022 TendTo        
+        Permission is hereby granted, free of charge, to any person obtaining
+        a copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+        OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+        WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://tendto.github.io/QCLight/
+Project-URL: Source, https://github.com/TendTo/QCLight
+Project-URL: Tracker, https://github.com/TendTo/QCLight/issues
+Keywords: quantum,quantum computing,numpy,algebra,qubit
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (<=1.23.4)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-rtd-dark-mode ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Provides-Extra: style
+Requires-Dist: black ; extra == 'style'
+Requires-Dist: bumpver ; extra == 'style'
+Requires-Dist: pylint ; extra == 'style'
+Requires-Dist: isort ; extra == 'style'
+Requires-Dist: mypy ; extra == 'style'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+<p align="center">
+    <img src="./docs/source/_static/img/logo.svg" width="200" height="200" />
+</p>
+
+Simple and lightweight Quantum Computing simulator built with python3 for educational purposes.
+
+---
+
+## Installation
+
+```shell
+pip install qclight
+```
+
+## Example
+
+```python
+from qclight.circuit import QCLCircuit
+
+
+def main():
+    circuit = QCLCircuit(2)
+    circuit.h(0)
+    circuit.cx(0, 1)
+    circuit.run()
+
+
+if __name__ == "__main__":
+    main()
+```
