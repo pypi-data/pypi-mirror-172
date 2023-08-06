@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+lovely_tensors/__init__.py
+lovely_tensors/_modidx.py
+lovely_tensors/tensors.py
+lovely_tensors.egg-info/PKG-INFO
+lovely_tensors.egg-info/SOURCES.txt
+lovely_tensors.egg-info/dependency_links.txt
+lovely_tensors.egg-info/entry_points.txt
+lovely_tensors.egg-info/not-zip-safe
+lovely_tensors.egg-info/requires.txt
+lovely_tensors.egg-info/top_level.txt
