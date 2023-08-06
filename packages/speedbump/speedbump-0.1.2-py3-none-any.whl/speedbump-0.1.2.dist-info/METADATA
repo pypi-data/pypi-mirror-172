@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: speedbump
+Version: 0.1.2
+Summary: Fastest path to bump nirvana.
+Author: Ross Fenning
+Author-email: github@rossfenning.co.uk
+Description-Content-Type: text/markdown
+Requires-Dist: PyGithub
+Requires-Dist: typer
+Requires-Dist: PyYAML
+Requires-Dist: sh
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-pikachu ; extra == 'test'
+Requires-Dist: pytest-mypy ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-shell ; extra == 'test'
+Requires-Dist: types-PyYAML ; extra == 'test'
+
+# Speedbump
+
+Auto-create various configs based on project type.
