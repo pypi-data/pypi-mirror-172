@@ -1,0 +1,10 @@
+utcnow/__init__.py,sha256=gvjf0ux2-hUO8EVUSP5wl-87264PxtclxDolsAkXB_w,16307
+utcnow/__main__.py,sha256=mxkriXpaOeSjJxse7Tj6tzeOV9ZORgcQpzyTzgG8h3I,293
+utcnow/__version__.py,sha256=_Gs6SQm_vUIuw4Om-lWH4ALNxaVUrsABfADxvUT9hpI,197
+utcnow/__version_data__.py,sha256=BavL6jdlwpLtd-_h6V57t7b9jAQLRF-xdGBWe2fvYKU,325
+utcnow/interface.py,sha256=t_-KsElCeDo0-zUsEzioYbJmCTPyF78qWmD1wZ12kx4,5369
+utcnow/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utcnow-0.3.3.dist-info/LICENSE,sha256=j8xm4nGrgQAo0aMQPDog85UGXqQh4S3L-ZJWC3y-QQ8,1055
+utcnow-0.3.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+utcnow-0.3.3.dist-info/METADATA,sha256=X3gzI2brkGE73vx1HjN2nO4OMhKV2elOlOTyRms53D4,22237
+utcnow-0.3.3.dist-info/RECORD,,
