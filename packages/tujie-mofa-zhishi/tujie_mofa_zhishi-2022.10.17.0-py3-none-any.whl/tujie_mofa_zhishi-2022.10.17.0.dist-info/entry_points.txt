@@ -1,0 +1,4 @@
+[console_scripts]
+TujieMofaZhishi = TujieMofaZhishi.__main__:main
+tujie-mofa-zhishi = TujieMofaZhishi.__main__:main
+
