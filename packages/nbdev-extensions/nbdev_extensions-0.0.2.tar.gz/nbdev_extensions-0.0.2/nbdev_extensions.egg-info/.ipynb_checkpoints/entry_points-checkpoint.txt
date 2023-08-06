@@ -1,0 +1,5 @@
+[console_scripts]
+new_nb = nbdev_extensions.mknb.new_nb
+
+[nbdev]
+nbdev_extensions = nbdev_extensions._modidx:d
