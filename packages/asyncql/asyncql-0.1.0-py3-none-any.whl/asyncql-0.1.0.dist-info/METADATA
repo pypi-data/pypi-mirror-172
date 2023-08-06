@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: asyncql
+Version: 0.1.0
+Summary: An asynchronous python library for all your database needs.
+Home-page: https://github.com/tsunyoku/asyncql
+Author: tsunyoku
+Author-email: tsunyoku@gmail.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: mysql
+Requires-Dist: aiomysql ; extra == 'mysql'
+Provides-Extra: postgresql
+Requires-Dist: asyncpg ; extra == 'postgresql'
+Provides-Extra: sqlite
+Requires-Dist: aiosqlite ; extra == 'sqlite'
+
+# asyncql
+
+An asynchronous python library for all your database needs.
+
+This is designed as an alternative/replacement for [databases](https://github.com/encode/databases), without the use of SQLAlchemy.
+
+## Installation
+
+**Requires Python3.7+**
+
+Currently supported databases:
+
+- [MySQL (with asyncmy)](https://github.com/long2ice/asyncmy)
+
+You can install `asyncql` with your desired database like so:
+
+```bash
+$ pip install asyncql[mysql]
+```
