@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: kilroy-module-client-py-sdk
+Version: 0.8.1
+Summary: SDK for kilroy module clients in Python 🧰
+Home-page: https://github.com/kilroybot/kilroy-module-client-py-sdk
+Author: kilroy
+Author-email: kilroymail@pm.me
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiostream (>=0.4,<0.5)
+Requires-Dist: kilroy-module-py-shared (>=0.6,<0.7)
+Project-URL: Documentation, https://kilroybot.github.io/kilroy-module-client-py-sdk
+Project-URL: Repository, https://github.com/kilroybot/kilroy-module-client-py-sdk
+Description-Content-Type: text/markdown
+
+<h1 align="center">kilroy-module-client-py-sdk</h1>
+
+<div align="center">
+
+SDK for kilroy module clients in Python 🧰
+
+[![Lint](https://github.com/kilroybot/kilroy-module-client-py-sdk/actions/workflows/lint.yaml/badge.svg)](https://github.com/kilroybot/kilroy-module-client-py-sdk/actions/workflows/lint.yaml)
+[![Tests](https://github.com/kilroybot/kilroy-module-client-py-sdk/actions/workflows/test-multiplatform.yaml/badge.svg)](https://github.com/kilroybot/kilroy-module-client-py-sdk/actions/workflows/test-multiplatform.yaml)
+[![Docs](https://github.com/kilroybot/kilroy-module-client-py-sdk/actions/workflows/docs.yaml/badge.svg)](https://github.com/kilroybot/kilroy-module-client-py-sdk/actions/workflows/docs.yaml)
+
+</div>
+
+---
+
+## Installing
+
+Using `pip`:
+
+```sh
+pip install kilroy-module-client-py-sdk
+```
+
