@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: br-gender
+Version: 0.1.0
+Summary: br_gender predicts gender from Brazilian first names using data from the Instituto Brasileiro de Geografia e Estatistica’s 2010 Census.
+Home-page: https://github.com/arthurfortes/br_gender
+Author: Arthur Fortes
+Author-email: fortes.arthur@gmail.com
+License: MIT License
+Keywords: gender names brazil
+License-File: LICENSE

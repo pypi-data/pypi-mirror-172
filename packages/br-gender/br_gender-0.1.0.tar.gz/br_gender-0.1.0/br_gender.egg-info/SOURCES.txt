@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+br_gender/__init__.py
+br_gender/base.py
+br_gender/gender_by_name.json
+br_gender.egg-info/PKG-INFO
+br_gender.egg-info/SOURCES.txt
+br_gender.egg-info/dependency_links.txt
+br_gender.egg-info/top_level.txt
