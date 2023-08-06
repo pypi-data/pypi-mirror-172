@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: dj-triggers
+Version: 0.5.1
+Summary: 
+Home-page: https://github.com/cockpithq/django-triggers
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=3)
+Requires-Dist: celery (>=4.4)
+Requires-Dist: django-polymorphic (>=3.1.0,<4.0.0)
+Project-URL: Repository, https://github.com/cockpithq/django-triggers
+Description-Content-Type: text/markdown
+
+# django-triggers
+
+## Development
+
+### Run a django-admin command, e.g. `makemigrations`
+```shell
+poetry run python -m django makemigrations --settings=tests.app.settings
+```
+
+### Run isort
+```shell
+poetry run isort triggers tests
+```
+### Run flake8
+```shell
+poetry run flake8 triggers tests
+```
+### Run mypy
+```shell
+poetry run mypy triggers tests
+```
+### Run pytest
+```shell
+poetry run pytest
+```
+
