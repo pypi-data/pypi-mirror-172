@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: CaesarCryptanalysis
+Version: 0.0.2
+Summary: It is a tool to decipher Caesar ciphers.
+Home-page: https://github.com/i-inose/Caesar-Cryptanalysis-App
+Author: izuru inose
+Author-email: i.inose0304@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/i-inose/Caesar-Cryptanalysis-App
+Description: # Introduction
+        Hello.<br>
+        This is a tool to analyze the Caesar cipher.<br>
+        It is packaged using PyPI.<br>
+        
+        # Description
+        First, please create a Caesar cipher at the following site.<br>
+        Please keep a copy of the Caesar cipher you have created.<br>
+        Then enter the following program on the terminal and install it.<br>
+        
+        ```
+        $ pip install CaesarCryptanalysis
+        ```
+        
+        Then, after running CaesarCryptanalysis, paste the cipher you just copied and press enter.<br>
+        You will then get 25 cipher decryption results.<br>
+        
+        # Postscript
+        In this case, we developed a simple Caesar cryptanalysis application using Streamlit.<br>
+        I found Streamlit very convenient and easy to use because I could write the program within a ".py file".<br>
+        I would like to add tools for analyzing other ciphers to this app in the future.<br>
+        
+        Izuru Inose
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
