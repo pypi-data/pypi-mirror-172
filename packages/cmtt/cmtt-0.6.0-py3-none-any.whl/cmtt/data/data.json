@@ -1,0 +1,37 @@
+{
+  "datasets": [
+    {
+      "url":"https://drive.google.com/file/d/1wTXfrahYD3zgM5ZCQOCTifXk0W6JP36i/view",
+      "id": "1wTXfrahYD3zgM5ZCQOCTifXk0W6JP36i",
+      "name":"linc_ner_hineng",
+      "format":"zip",
+      "language":"hineng",
+      "task":"NER",
+      "credits": "Language Identification and Named Entity Recognition in {H}inglish Code Mixed Tweets; Singh, Kushagra and Sen, Indira and Kumaraguru, Ponnurangam",
+      "source": "gdrive",
+      "last_modified": "22-09-2022"
+    },
+    {
+      "url":"https://drive.google.com/file/d/1E3BuLCmo_xC1jPvzpDJu85lEDQEsoXlz/view?usp=sharing",
+      "id": "1E3BuLCmo_xC1jPvzpDJu85lEDQEsoXlz",
+      "name":"L3Cube_HingLID_all",
+      "format":"txt",
+      "language":"hineng",
+      "task":"LID",
+      "credits": "L3Cube-HingCorpus and HingBERT: A Code Mixed Hindi-English Dataset and BERT Language Models; Nayak, Ravindra and Joshi, Raviraj",
+      "source": "gdrive",
+      "last_modified": "22-09-2022"
+    },
+    {
+      "url":"https://drive.google.com/file/d/1HSVqz0UnTfF2_aYMDcAAj4b8aeSJwV5r/view?usp=sharing",
+      "id": "1HSVqz0UnTfF2_aYMDcAAj4b8aeSJwV5r",
+      "name":"linc_lid_spaeng",
+      "format":"zip",
+      "language":"spaeng",
+      "task":"LID",
+      "credits": "Overview for the Second Shared Task on Language Identification in Code-Switched Data; Molina, Giovanni and AlGhamdi, Fahad and Ghoneim, Mahmoud and Hawwari, Abdelati and Rey-Villamizar, Nicolas and Diab, Mona and Solorio, Thamar",
+      "source": "gdrive",
+      "last_modified": "05-10-2022"
+    }
+  ]
+}
