@@ -1,0 +1,7 @@
+setup.py
+package_speech_recognizer/__init__.py
+package_speech_recognizer.egg-info/PKG-INFO
+package_speech_recognizer.egg-info/SOURCES.txt
+package_speech_recognizer.egg-info/dependency_links.txt
+package_speech_recognizer.egg-info/requires.txt
+package_speech_recognizer.egg-info/top_level.txt
