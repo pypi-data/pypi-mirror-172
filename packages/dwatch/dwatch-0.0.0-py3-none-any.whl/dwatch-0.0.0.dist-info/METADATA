@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dwatch
+Version: 0.0.0
+Summary: A tool to watch command output for differences and send notifications.
+Home-page: https://github.com/IngoMeyer441/dwatch
+Author: Ingo Meyer
+Author-email: i.meyer@fz-juelich.de
+License: MIT
+Keywords: administration,monitoring
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2
+Requires-Dist: yacl
+Provides-Extra: colored_exceptions
+Requires-Dist: pygments ; extra == 'colored_exceptions'
+
+# dwatch
