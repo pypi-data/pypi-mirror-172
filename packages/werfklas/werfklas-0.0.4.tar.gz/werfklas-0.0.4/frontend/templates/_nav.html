@@ -1,0 +1,129 @@
+{% extends "bootstrap/base.html" %}
+
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Werfklas - {{ _PageTitle }}</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="stylesheet" href="../../static/style.css">
+    <link rel="stylesheet" href="../../static/sidebars.css">
+{% endblock %}
+
+{% block navbar %}
+    <div class="b-example-divider"></div>
+    <aside class="shadow bd-sidebar">
+        <div class="shadow flex-shrink-0 p-3 bg-white" style="width: 220px; height:100vh;">
+        <ul class="list-unstyled ps-0">
+                <a class="navbar-brand" style="color: #9A5029;">Waldorfschool<br>De Werfklas</a>
+                      <li class="border-top my-3"></li>
+
+            <li class="mb-1">
+            <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+              Home
+            </button>
+            <div class="collapse show" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="/" class="dropdown-item rounded">Wachtlijst</a></li>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Family-collapse" aria-expanded="false" id="btnFamily">
+            Gezin
+          </button>
+            <div class="collapse" id="Family-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="{{ url_for('families_bp.index_families') }}" class="dropdown-item rounded">Overzicht</a></li>
+                <li><a href="{{ url_for('families_bp.add_family') }}" class="dropdown-item rounded">Gezin aanmaken</a></li>
+                <li><a hidden href="#" class="dropdown-item disabled" tabindex="-1" role="button" aria-disabled="true" id="btnEditFamily">Wijzigen</a></li>
+                <li><a hidden class="dropdown-item disabled" tabindex="-1" role="button" aria-disabled="true" id="btnDeleteFamily">Verwijderen</a></li>
+              </ul>
+            </div>
+          </li>
+
+        <li class="mb-1">
+            <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Parent-collapse" aria-expanded="false" id="btnParent">
+                Ouders
+            </button>
+            <div class="collapse" id="Parent-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="{{ url_for('parents_bp.index_parents') }}" class="dropdown-item rounded">Overzicht</a></li>
+                    <li><a href="{{ url_for('parents_bp.add_parent') }}" class="dropdown-item rounded">Ouder aanmaken</a></li>
+                    <li><a hidden href="#" class="dropdown-item disabled" tabindex="-1" role="button" aria-disabled="true" id="btnEditParent">Wijzigen</a></li>
+                    <li><a hidden class="dropdown-item disabled" tabindex="-1" role="button" aria-disabled="true" id="btnDeleteParent">Verwijderen</a></li>
+                </ul>
+            </div>
+        </li>
+
+
+        <li class="mb-1">
+          <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Children-collapse" aria-expanded="false" id="btnChildren">
+            Kinderen
+          </button>
+          <div class="collapse" id="Children-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a class="dropdown-item rounded" href="{{ url_for('children_bp.index_children') }}">Kinder overzicht</a><li>
+              <li><a class="dropdown-item rounded" href="{{ url_for('children_bp.add_child') }}">Kind toevoegen</a><li>
+              <li><a hidden href="#" class="dropdown-item rounded disabled" tabindex="-1" role="button" aria-disabled="true" id="btnEditChild">Wijzigen</a><li>
+              <li><a hidden class="dropdown-item rounded disabled" tabindex="-1" role="button" aria-disabled="true" id="btnDeleteChild">Verwijderen</a><li>
+            </ul>
+          </div>
+        </li>
+
+          <li class="border-top my-3"></li>
+            <li class="mb-1">
+                <button class="btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#School-collapse" aria-expanded="false" id="btnSchool">
+                School
+                </button>
+                <div class="collapse" id="School-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li class="mb-1">
+                        <button class="btn-toggle align-items-center rounded collapsed list-group-level1" data-bs-toggle="collapse" data-bs-target="#Teachers-collapse" aria-expanded="false" id="btnTeachers" >
+                            Docenten
+                        </button>
+                            <div class="collapse" id="Teachers-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 auto list-group-level2">
+                                    <li><a class="dropdown-item rounded" href="{{ url_for('teachers_bp.index_teachers') }}">Docenten overzicht</a></li>
+                                    <li><a class="dropdown-item rounded" href="{{ url_for('teachers_bp.add_teacher') }}">Docent toevoegen</a></li>
+                                    <li><a hidden href="#" class="dropdown-item rounded disabled" tabindex="-1" role="button" aria-disabled="true" id="btnEditTeacher">Wijzigen</a><li>
+                                    <li><a hidden class="dropdown-item rounded disabled" tabindex="-1" role="button" aria-disabled="true" id="btnDeleteTeacher">Verwijderen</a><li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn-toggle align-items-center rounded collapsed list-group-level1" data-bs-toggle="collapse" data-bs-target="#Classes-collapse" aria-expanded="false" id="btnClasses" >
+                                Klassen
+                            </button>
+                                <div class="collapse" id="Classes-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 auto list-group-level2">
+                                        <li><a class="dropdown-item rounded" href="{{ url_for('classroom_bp.index_classrooms') }}">Klassen overzicht</a></li>
+                                        <li><a class="dropdown-item rounded" href="{{ url_for('classroom_bp.add_classroom') }}">Klas toevoegen</a></li>
+                                        <li><a hidden href="#" class="dropdown-item rounded disabled" tabindex="-1" role="button" aria-disabled="true" id="btnEditClass">Wijzigen</a><li>
+                                        <li><a hidden class="dropdown-item rounded disabled" tabindex="-1" role="button" aria-disabled="true" id="btnDeleteClass">Verwijderen</a><li>
+                                    </ul>
+                                </div>
+                            </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://getbootstrap.com/docs/5.0/examples/sidebars/sidebars.js"></script>
+        <script src="../static/js/navigationModules.js"></script>
+        </div>
+    </aside>
+    <footer class="footer bg-transparent">
+        <div class="container" align="center">
+          <span class="text" style="color: white;">Copyright ©<script>
+            document.write(new Date().getFullYear());
+            </script> All rights reserved | xyz-it {{ version }}</span>
+        </div>
+      </footer>
+{% endblock %}
+

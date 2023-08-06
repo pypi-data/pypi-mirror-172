@@ -1,0 +1,114 @@
+<main class="bd-main order-1">
+
+{% extends '_nav.html' %}
+
+{% block content %}
+	<div class="container">
+	  <div class="row pb-5">
+		  		    <div class="col-md-10 col-lg-20 mx-lg-auto mx-md-auto" style="left: -60px;bottom: -65px;">
+		<button type="button" class="btn btn-outline-secondary" onclick="history.back()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+			  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+			</svg>
+		<span class="visually-hidden">Button</span>
+		</button>
+	</div>
+		<div class="shadow col-md-10 col-lg-8 mx-lg-auto mx-md-auto border border-2 bg-light">
+			{% include '_nav_top.html' %}
+
+			{% if Family['divorced'] %}
+				<p class="lead alert alert-warning">Ouders zijn gescheiden</p>
+			{% endif %}
+			        <ul style="padding-top: 10px;">
+			<br>
+        </ul>
+				<div class="card" style="width: 18rem; display:inline-block;">
+				  <div class="card-body">
+					<h5 class="card-title">{{ Family['parent1']['firstname'] }}</h5>
+					<h6 class="card-subtitle mb-2"><a href="{{ url_for( 'parents_bp.details_parent', uuid=Family['parent1']['uuid']) }}"><i>{{ Family['parent1']['lastname'] }}</i></a></h6>
+					<p class="card-text">{{ Family['parent1']['address']}}<br>{{ Family['parent1']['postal'] }} {{ Family['parent1']['city'] }}</p>
+					<p><a href="tel:{{ Family['parent1']['phone'] }}" class="card-link">{{ Family['parent1']['phone'] }}</a><br>
+					<a href="mailto:{{ Family['parent1']['email'] }}" class="card-link">{{ Family['parent1']['email'] }}</a></p>
+				  </div>
+				</div>
+				{% if Family['parent2'] %}
+				<div class="card" style="width: 18rem; display:inline-block;">
+				  <div class="card-body">
+					<h5 class="card-title">{{ Family['parent2']['firstname'] }}</h5>
+					<h6 class="card-subtitle mb-2"><a href="{{ url_for( 'parents_bp.details_parent', uuid=Family['parent2']['uuid']) }}"><i>{{ Family['parent2']['lastname'] }}</i></a></h6>
+					<p class="card-text">{{ Family['parent2']['address']}}<br>{{ Family['parent2']['postal'] }} {{ Family['parent2']['city'] }}</p>
+					<p><a href="tel:{{ Family['parent2']['phone'] }}" class="card-link">{{ Family['parent2']['phone'] }}</a><br>
+					<a href="mailto:{{ Family['parent2']['email'] }}" class="card-link">{{ Family['parent2']['email'] }}</a></p>
+				  </div>
+				</div>
+			{% endif %}
+			<ul></ul>
+			{% if Children %}
+				<p><b>Kinderen</b></p>
+				<table class="table">
+					<tr>
+						<th>Voornaam</th>
+						<th>Leeftijd</th>
+						<th>Klas</th>
+					</tr>
+					{% for c in Children %}
+					<tr>
+						<td><a href="{{ url_for( 'children_bp.details_child', uuid=c.uuid) }}">{{ c.firstname }}</a></td>
+						<td>{{ c.age }}</td>
+						{% if c.classroom1.active is true %}
+							<td><a href="{{ url_for( 'classroom_bp.details_classroom', uuid=c.classroom1.uuid) }}">{{ c.classroom1.name }} {{ c.classroom1.start_date[0:4] }} - {{ c.classroom1.teacher_firstname }}</a> </td>
+						{% elif c.classroom2.active is true  %}
+							<td><a href="{{ url_for( 'classroom_bp.details_classroom', uuid=c.classroom2.uuid) }}">{{ c.classroom2.name }} {{ c.classroom2.start_date[0:4] }} - {{ c.classroom2.teacher_firstname }}</a> </td>
+						{% elif c.classroom3.active is true  %}
+							<td><a href="{{ url_for( 'classroom_bp.details_classroom', uuid=c.classroom3.uuid) }}">{{ c.classroom3.name }} {{ c.classroom3.start_date[0:4] }} - {{ c.classroom3.teacher_firstname }}</a> </td>
+
+						{% else %}
+							<td></td>
+						{% endif %}
+					{% endfor %}
+				</table>
+			{% else %}
+				<p>Geen kinderen gekoppeld aan dit gezin.</p>
+			<a href="{{ url_for('children_bp.add_child') }}">Voeg nu het eerste kind toe</a>
+			{% endif %}
+				<div class="form-group">
+				  <div class="modal fade" id="exampleModalCenter{{ Family['uuid'] }}">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLongTitle{{ Family['uuid'] }}">Gezin permanent verwijderen?</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body">
+					  <p>Het gezin <b><i>{{ Family['parent1']['firstname'] }} {{ Family['parent1']['lastname'] }}</i></b>&nbsp;en de gekoppelde kinderen:<br>
+						  {% for c in Children %}
+							<b><i>&ensp;- {{ c.firstname }}</i></b><br>
+						  {% endfor %}
+						 definitief verwijderen?
+					  </p>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuleren</button>
+
+					  <form action="{{ url_for('families_bp.remove_family', uuid=Family['uuid']) }}">
+						<input type="submit" value="Verwijderen" class="btn btn-danger">
+					  </form>
+					</div>
+				  </div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="module">
+		ShowEditOption("Family", "{{ url_for('families_bp.edit_family', uuid=Family['uuid']) }}")
+		ShowDeleteOption("Family", "{{ Family['uuid'] }}")
+		Collapse("Family")
+	</script>
+
+	</div>
+{% endblock %}
+</main>
