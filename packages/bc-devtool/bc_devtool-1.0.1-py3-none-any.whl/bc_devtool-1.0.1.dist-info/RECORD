@@ -1,0 +1,14 @@
+bc_devtool/__init__.py,sha256=cdOwE9ofaCnunERLDJ0c4dKjznRg7WlssfZjMQXoKgs,96
+bc_devtool/ali_script.py,sha256=j4xtADqZEPdgtkJZf7W8iWqw-QgWaV4abF-JU9DSK0s,11087
+bc_devtool/arg_actions.py,sha256=srIMuUVHR-Acc3cE79ZQVnYfWQH6hH9dnmrp1UnAZiQ,37757
+bc_devtool/configurator.py,sha256=sDySlFt12lLGc3lj-AWvLyRiw0yqHblCs4hzAMDp88c,28035
+bc_devtool/dev_tools.py,sha256=ZSYSk9FXeXKgmBRuz4YVHaA15fcT2k02rpi021vXMFU,15482
+bc_devtool/file_util.py,sha256=ZqwnErPU8CX1uOlLK4-RNNuLz51Is9xguWj1b8kANN0,18423
+bc_devtool/op_menu.py,sha256=uTdVBCfGwZmc_GjZk_jd0WSDtGBozcmRqkCOhsncQV8,11135
+bc_devtool/utils.py,sha256=CkP28V_i_NSP80Kte-xrEiXRoMtLwC4JkJ_XrDuLJeQ,5800
+bc_devtool-1.0.1.dist-info/LICENSE,sha256=cWsskK1LL8Hr3_soLIdB619pMUjrfvW3eYlFPCsLlRM,1071
+bc_devtool-1.0.1.dist-info/METADATA,sha256=c189g3aHBP3FADuDLAFvBEjfIGvPrPqb9_Bb7IXTqBs,1307
+bc_devtool-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bc_devtool-1.0.1.dist-info/entry_points.txt,sha256=YkhthcHUNISiBlVinysxLv5qHfZNfIqWfAWR55t0dsk,143
+bc_devtool-1.0.1.dist-info/top_level.txt,sha256=OMOb7TQ5w5febfi4SsEigf2KtEze-cx4hahwJ03yre8,11
+bc_devtool-1.0.1.dist-info/RECORD,,
