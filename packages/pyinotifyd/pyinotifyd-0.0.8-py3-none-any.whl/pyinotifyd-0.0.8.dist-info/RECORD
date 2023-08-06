@@ -1,0 +1,13 @@
+pyinotifyd/__init__.py,sha256=RlLip4LF0HzpQOajOLt-0GEDUrsx_zrxKS1ENLFkalk,14765
+pyinotifyd/_install.py,sha256=2sk5sA1XdR3VefjAE91mUhNTks7ZUTpiy_h0ktltxYU,4637
+pyinotifyd/scheduler.py,sha256=1CVB2ug2NEdygCrV1bj3EFn6tw8BTjNNmGWRnIBJXkE,15445
+pyinotifyd/misc/config.py.default,sha256=xtrVB8tQsK6Ahm7qx8O99cKZ8DgQqt2Nm8eWVfUiZ7Y,2461
+pyinotifyd/misc/openrc/pyinotifyd.confd,sha256=PRtzU1xjzGoNeMu2DCJw14aFmh28xGjqG-C43GaIVDg,292
+pyinotifyd/misc/openrc/pyinotifyd.initd,sha256=MhejQavwIDIgQCiH1zyIXhwRG_6qJFot7zC3cYWy9-4,933
+pyinotifyd/misc/systemd/pyinotifyd.service,sha256=2eQ4yFeoU7mtdWgXnlVBF8SMMm1bXWZHnJBYsBDs4C0,191
+pyinotifyd-0.0.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyinotifyd-0.0.8.dist-info/METADATA,sha256=PZY7F_vFo-kXQyfx-EwwW0bMHI0XlRCf_-wNirMmDcE,12137
+pyinotifyd-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyinotifyd-0.0.8.dist-info/entry_points.txt,sha256=lb8led6Kxi3oZ7Zri8D06CXpS32-K0vxcpFz14OHV7k,47
+pyinotifyd-0.0.8.dist-info/top_level.txt,sha256=PXL5inFsEa5kR9kwl19GZY8vbMluEJwrrSDKXJmGKgg,11
+pyinotifyd-0.0.8.dist-info/RECORD,,
