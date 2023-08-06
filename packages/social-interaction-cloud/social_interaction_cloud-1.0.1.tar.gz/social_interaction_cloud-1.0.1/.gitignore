@@ -1,0 +1,10 @@
+*.idea
+/
+*venv/
+**/*.iml
+*.pyc
+
+python/sic/build
+python/sic/social_interaction_cloud.egg-info
+python/.ipynb_checkpoints
+python/sic/dist
