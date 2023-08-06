@@ -1,0 +1,4 @@
+[console_scripts]
+robodyno = robodyno:robodyno
+robodyno-motor = robodyno:robodyno_motor
+
