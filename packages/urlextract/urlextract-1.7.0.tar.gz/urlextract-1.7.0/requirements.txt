@@ -1,0 +1,8 @@
+idna
+uritools
+pytest
+platformdirs
+bump2version
+filelock
+dnspython
+black;python_version>="3.6"
