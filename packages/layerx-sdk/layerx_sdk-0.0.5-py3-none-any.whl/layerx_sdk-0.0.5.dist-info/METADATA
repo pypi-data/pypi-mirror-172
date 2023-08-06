@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: layerx-sdk
+Version: 0.0.5
+Summary: LayerX Python SDK
+Home-page: UNKNOWN
+Author: LayerX
+Author-email: <support@layerx.ai>
+License: UNKNOWN
+Keywords: python,datalake,datasetsync,ai,annotation,layerx,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: uuid
+Requires-Dist: python-dotenv
+
+
+# layerx-python-sdk
+LayerX Python API Client
+
+
