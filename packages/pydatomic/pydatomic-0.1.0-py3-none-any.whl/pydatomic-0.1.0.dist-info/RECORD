@@ -1,0 +1,11 @@
+pydatomic/.DS_Store,sha256=XpCW-0dpOIBdUfiNuTYhw_6QUWv9lFsGASa3HWojFp8,6148
+pydatomic/__init__.py,sha256=NzfLNSnKI9ocKAhPfcQmYKqDR2gySVobb7Pc4tWvtvQ,568
+pydatomic/builtin.py,sha256=1S_Tz3TEi9Q4yYLIadffmNBHrmMypks9xXErDH7FjbU,10100
+pydatomic/core.py,sha256=l_43uNfBcq8uNBEW8KpyejbCitX7jPz5aKCcdEzPubM,18930
+pydatomic/exceptions.py,sha256=edk76FOPzMRe93g3xa55y_c2t0cGZBfd9bf-D2PAHQk,47
+pydatomic/facts.py,sha256=ViEhJAeAR7xAFX7JEP7RE-2CPveYIAKvh7zM2pRXIvw,1746
+pydatomic/util.py,sha256=UKWRFP6CxR3goRxTC2DhrGiSOJF0x4-RGvTMAs4tCzQ,295
+pydatomic-0.1.0.dist-info/WHEEL,sha256=g_UdFZqm-k6b0W64OcndB0YT_D2mFFPAYBj7-_YsSPA,87
+pydatomic-0.1.0.dist-info/METADATA,sha256=rn0SdUBSmmJLthrwS2creTOs9D5jHRezHgyOrx4A8eo,477
+pydatomic-0.1.0.dist-info/license_files/LICENSE.md,sha256=S56qSh-UcoSgeGrjad3SL2YqNykXqOEohIfpISlwpyM,1063
+pydatomic-0.1.0.dist-info/RECORD,,
