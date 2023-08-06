@@ -1,0 +1,3 @@
+[console_scripts]
+pm4py_wrapper=pm4py_wrapper.cli:main
+
