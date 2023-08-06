@@ -1,0 +1,2 @@
+include src/transmorph/datasets/data/spirals/*.csv
+include src/transmorph/datasets/*.json
