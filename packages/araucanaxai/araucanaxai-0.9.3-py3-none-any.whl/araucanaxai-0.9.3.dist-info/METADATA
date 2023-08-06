@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: araucanaxai
+Version: 0.9.3
+Summary: A novel approach for generating explanations of the predictions of a generic ML model
+Home-page: https://github.com/detsutut/AraucanaXAI
+Author: Tommaso Buonocore
+Author-email: buonocore.tms@gmail.com
+Project-URL: Bug Tracker, https://github.com/detsutut/AraucanaXAI/issues
+Keywords: xai,ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gower
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: imblearn
+
+# Auracana XAI
+
+Tree-based local explanations of machine learning model predictions.
+Implementation of the pipeline described in <a href="https://arxiv.org/abs/2110.08272">Parimbelli et al., 2021</a>
+
+## About The Project
+
+Increasingly complex learning methods such as boosting, bagging and deep learning have made ML models more accurate, but harder to understand and interpret. A tradeoff between performance and intelligibility is often to be faced, especially in high-stakes applications like medicine. This project propose a novel methodological approach for generating explanations of the predictions of a generic ML model, given a specific instance for which the prediction has been made, that can tackle both classification and regression tasks. Advantages of the proposed XAI approach include improved fidelity to the original model, the ability to deal with non-linear decision boundaries, and native support to both classification and regression problems.
+
+**Keywords**: *explainable AI, explanations, local explanation, fidelity, interpretability, transparency, trustworthy AI, black-box, machine learning, feature importance, decision tree, CART, AIM*.
+
+### Paper
+The araucanaxai package implements the pipeline described in <a href="https://arxiv.org/abs/2110.08272">*Tree-based local explanations of machine learning model predictions - Parimbelli et al., 2021*</a>.
+
