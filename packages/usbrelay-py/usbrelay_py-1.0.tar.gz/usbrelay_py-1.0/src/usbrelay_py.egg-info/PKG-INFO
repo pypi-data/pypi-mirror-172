@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: usbrelay-py
+Version: 1.0
+Summary: USB Relay board control from Python
+Home-page: https://github.com/darrylb123/usbrelay
+Author: Sean Mollet
+Author-email: sean@malmoset.com
+License: GPL-2.0-or-later
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+../LIBVER.in
+src/libusbrelay_py.c
+src/usbrelay_py.egg-info/PKG-INFO
+src/usbrelay_py.egg-info/SOURCES.txt
+src/usbrelay_py.egg-info/dependency_links.txt
+src/usbrelay_py.egg-info/top_level.txt
