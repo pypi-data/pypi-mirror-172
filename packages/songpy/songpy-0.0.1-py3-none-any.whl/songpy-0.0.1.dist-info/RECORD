@@ -1,0 +1,15 @@
+songpy/__init__.py,sha256=xyo4AXzUCbabGnvpy6pB1fyrW2F0ui6_n3iz8a_cc5E,62
+songpy/generator.py,sha256=F1nvHBgp4wH7y4YFQG9DKstwUZ-nET72uDSltI1p_34,54
+songpy/song.py,sha256=hPhjw0Kd-4MyP7NoG86T11aXonCz3D9jXF15BlHxkC8,2058
+songpy/music/__init__.py,sha256=tO6jxwxqkUOrEP4k3k-MZBIyXq4475o5LDwEQg8criU,56
+songpy/music/chord.py,sha256=i9ymRsvGmVALNznRKjjFA7dz4g5HYtrjhsEc-ZWIwlM,1249
+songpy/music/interval.py,sha256=OrWdIUzcuUSghFRf5qkcIZu6E9BRwpYuWmEdFJHzRZU,4799
+songpy/music/note.py,sha256=gxP7_MsVqJg0zgfW02-ESaZgxRG6h3uUJAKrifltEMo,1590
+songpy/utils/__init__.py,sha256=hg6t8Z9g_mtgF86hpKL46M517SkuXyb99CZJMe8nT-4,47
+songpy/utils/filters.py,sha256=Vq36XZ-FRElpWJIeAJfZEg7t6g3mJmlRzjNjMVBfI-E,228
+songpy/utils/parser.py,sha256=yJPDDskyj_yrZXVJCyz595yexlPjoGQJpVx_F3lZTOE,2181
+songpy/utils/transpose.py,sha256=8d1UvZ8gL8lbUv_OJRNAQVroOiTIBTkVqP7E0G2YbAU,1306
+songpy-0.0.1.dist-info/METADATA,sha256=43uHQpp20XwmIcDLjMEYVSO8QVGVUEDPE64NgJ60Dt8,177
+songpy-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+songpy-0.0.1.dist-info/top_level.txt,sha256=ullqcIMG_Bdt69ogYYE2DZSiOu-IR04ph_KLFobuJbQ,7
+songpy-0.0.1.dist-info/RECORD,,
