@@ -1,0 +1,7 @@
+azcam_fastapi/__init__.py,sha256=7f2TIMVR3k_dnD_P7O2tybuKf2TgZegWGFfLRAs4m1U,160
+azcam_fastapi/fastapi_server.py,sha256=gmefuH_tJhBES9m1xb7jzhUo-BSPTgGlbZKN0TjHJAk,9135
+azcam_fastapi/test_send_json.py,sha256=ctALCFSR6zEfhE-7Adxkp592oM1dkCQXSHuceOpCfek,475
+azcam_fastapi-22.3.3.dist-info/LICENSE,sha256=PS_ZlV-IPpFrsMJ3UKgSaOC-2jpMsH-qO5h_IImZdCM,1092
+azcam_fastapi-22.3.3.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+azcam_fastapi-22.3.3.dist-info/METADATA,sha256=uDjiH0JQ_CZPGRE_jjJkYrXbzL6A8C5YOmbgB_8zWNQ,897
+azcam_fastapi-22.3.3.dist-info/RECORD,,
