@@ -1,0 +1,4 @@
+[console_scripts]
+QimenTouyi = QimenTouyi.__main__:main
+qimen-touyi = QimenTouyi.__main__:main
+
