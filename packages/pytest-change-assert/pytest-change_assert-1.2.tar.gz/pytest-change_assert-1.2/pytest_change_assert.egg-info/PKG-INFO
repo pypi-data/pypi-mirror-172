@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pytest-change-assert
+Version: 1.2
+Summary: 修改报错中文为英文
+Home-page: https://github.com/Jakilo1996/PytestAssertErrorPlugin
+Author: Jakilo
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Requires-Python:  >=3
+License-File: AUTHORS
+
+UNKNOWN
+
