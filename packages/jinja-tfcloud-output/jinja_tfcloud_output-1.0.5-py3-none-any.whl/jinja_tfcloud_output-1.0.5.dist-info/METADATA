@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jinja-tfcloud-output
+Version: 1.0.5
+Summary: A Jinja extension to fetch terraform state output versions
+Author: lummo-io
+Author-email: dev@lummo.com
+License: MIT
+Requires-Dist: Jinja2 (<4)
+Requires-Dist: requests (<3)
+
+A Jinja extension to fetch terraform state output versions
