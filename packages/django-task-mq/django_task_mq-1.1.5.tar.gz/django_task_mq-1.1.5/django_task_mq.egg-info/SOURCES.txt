@@ -1,0 +1,7 @@
+README.md
+setup.py
+django_task_mq/__init__.py
+django_task_mq.egg-info/PKG-INFO
+django_task_mq.egg-info/SOURCES.txt
+django_task_mq.egg-info/dependency_links.txt
+django_task_mq.egg-info/top_level.txt
