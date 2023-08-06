@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Gemi3
+Version: 1.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Requires-Python: >=3.8
+License-File: LICENSE.md
