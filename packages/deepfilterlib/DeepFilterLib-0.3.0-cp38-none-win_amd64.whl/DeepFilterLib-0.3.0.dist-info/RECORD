@@ -1,0 +1,13 @@
+DeepFilterLib-0.3.0.dist-info/DELVEWHEEL,sha256=UlWshjWOdJ5nQ12HaI1QdmXbcfXSP2VUDAZW7aHemRE,179
+DeepFilterLib-0.3.0.dist-info/METADATA,sha256=28RGbCj_JPnyXgnUuyns1Pq43l2DKtWoh6mzYtdlwqM,253
+DeepFilterLib-0.3.0.dist-info/RECORD,,
+DeepFilterLib-0.3.0.dist-info/WHEEL,sha256=9BEkOAbGRtK7exFmGpPz36T_wCzr8Eg49jFDKetqhAY,95
+DeepFilterLib-0.3.0.dist-info/license_files/LICENSE,sha256=NBndc-fEJ-Sb3_2fHnKXQ48HqmWuG2WuFn1kRb-o-kE,507
+DeepFilterLib-0.3.0.dist-info/license_files/LICENSE-APACHE,sha256=LXHSRyrmRG6YbMmtPsYYK5GGjGOXNPg4qh0DiIg471Y,11038
+DeepFilterLib-0.3.0.dist-info/license_files/LICENSE-MIT,sha256=04SCSRZj7lxVu5_Up6GT8WUhV7qFpL5dTopQZJssvD0,1102
+DeepFilterLib.libs/.load-order-DeepFilterLib-0.3.0,sha256=GwVJ2jCxsqwecQgx9mscm_YjL_eH67lvAYmugWx3szk,18
+DeepFilterLib.libs/vcruntime140.dll,sha256=aghQQZQyc1qY5WhX1c_Ol-nVipR6mGPKavrdHHvKsnw,96120
+libdf/libdf.cp38-win_amd64.pyd,sha256=8-Z6i-Rde6jRq3cn3kKfYW4BDk00cIs_IxV_8S9PcXE,1080320
+libdf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libdf/__init__.py,sha256=OR9k5HBlKiJNsQfwfB0S0jCOPg0AxyAKmmWjpDTDW1M,856
+libdf/__init__.pyi,sha256=ko2GmrX3bZp1QHXDFRhYWPsZkakzqN8cft-2slfJTHk,2118
