@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pocketKnife
+Version: 0.0.19
+Summary: A collection of useful functions for any data scientist working with NLP
+Home-page: https://github.com/Cutlery-Foundation/PocketKnife
+Maintainer: Cutlery Foundation
+Maintainer-email: cutlery.foundation@gmail.com
+Provides-Extra: cuda
+License-File: LICENSE.txt
