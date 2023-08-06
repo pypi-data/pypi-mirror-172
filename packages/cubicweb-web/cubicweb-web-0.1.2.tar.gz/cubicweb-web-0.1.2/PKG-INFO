@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cubicweb-web
+Version: 0.1.2
+Summary: Legacy component for web application
+Home-page: https://forge.extranet.logilab.fr/cubicweb/cubes/web
+Author: LOGILAB S.A. (Paris, FRANCE)
+Author-email: contact@logilab.fr
+License: LGPL
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: CubicWeb
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: JavaScript
+
+Summary
+-------
+Legacy component for web application
+
+

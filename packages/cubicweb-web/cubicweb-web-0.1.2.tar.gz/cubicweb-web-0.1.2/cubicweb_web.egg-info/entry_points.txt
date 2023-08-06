@@ -1,0 +1,2 @@
+[cubicweb.cubes]
+web = cubicweb_web
