@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "utcnow"
+version = "0.3.3"
+description = "Timestamps as opinionated RFC 3339 (Date and Time on the Internet) formatted strings"
+authors = ["Carl Oscar Aaro <hello@carloscar.com>"]
+homepage = "https://github.com/kalaspuff/utcnow"
+repository = "https://github.com/kalaspuff/utcnow"
+keywords = ["utcnow", "utc timestamp", "modern timestamp", "rfc 3339", "rfc3339", "timestamp", "timestamps", "date and time on the internet", "datetime", "zulu time"]
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Intended Audience :: Developers",
+    "Typing :: Typed",
+    "License :: OSI Approved :: MIT License"
+]
+
+packages = [
+    { include = "utcnow" },
+]
+
+include = [
+    "utcnow/*.py",
+    "utcnow/*.pyi",
+    "utcnow/py.typed",
+]
+
+exclude = [
+    "utcnow/cli/*.py",
+    "utcnow/cli/*.pyi",
+    "utcnow/cli/py.typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+utcnow-cli = { version = ">=1.0.0", optional = true }
+
+[tool.poetry.extras]
+cli = ["utcnow-cli"]
+
+[tool.poetry.dev-dependencies]
+flake8 = { version = ">=3.8.4", markers = "sys_platform != \"win32\"" }
+flake8-black = { version = ">=0.2.0", markers = "sys_platform != \"win32\"" }
+flake8-isort = { version = ">=4.0.0", markers = "sys_platform != \"win32\"" }
+isort = { version = ">=5.6.0", markers = "sys_platform != \"win32\"" }
+pytest = { version = ">=6.1.0", markers = "sys_platform != \"win32\"" }
+pytest-cov = { version = ">=2.10.0", markers = "sys_platform != \"win32\"" }
+black = { version = "*", markers = "sys_platform != \"win32\"", allow-prereleases = true }
+mypy = { version = ">=0.800", markers = "sys_platform != \"win32\"" }
+codecov = { version = ">=2.1.10", markers = "sys_platform != \"win32\"" }
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target_version = ["py37", "py38", "py39", "py310"]
+include = '\.pyi?$'
+exclude = '\.eggs/|\.egg-info/|\.git/|\.github/|\.mypy_cache/|\.venv/|\.pytest_cache/|\.vscode/|__pycache__/|build/|dist/|setup\.py'
+
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = "utcnow"
+skip = ".mypy_cache,__pycache__,.pytest_cache,.eggs,.venv,.git,.vscode,.github,dist"
