@@ -1,0 +1,6 @@
+autoconf~=2022.7.11.1
+numpy~=1.21
+
+[pytest]
+coverage
+pytest
