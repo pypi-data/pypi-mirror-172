@@ -1,0 +1,5 @@
+nltk==3.6.1
+spacy==3.4.1
+flair==0.11.3
+stanza==1.4.0
+pandas==1.3.1

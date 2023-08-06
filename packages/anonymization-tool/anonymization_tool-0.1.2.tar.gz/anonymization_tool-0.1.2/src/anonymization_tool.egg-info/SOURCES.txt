@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/anonymization_tool.egg-info/PKG-INFO
+src/anonymization_tool.egg-info/SOURCES.txt
+src/anonymization_tool.egg-info/dependency_links.txt
+src/anonymization_tool.egg-info/requires.txt
+src/anonymization_tool.egg-info/top_level.txt
+src/anonymization_tool_medium/__init__.py
+src/anonymization_tool_medium/anonymization_tool.py

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: anonymization_tool
+Version: 0.1.2
+Summary: Anonymization Tool
+Home-page: https://github.com/joeytxy/anonymization_tool
+Author: Joey Tan Xin Yi
+Author-email: joeytxy0706@gmail.com
+License: MIT
+Keywords: anonymization tool
+
+An anonymization tool which utilises NER packages such as flair, NLTK,spaCy and stanza to mask personal names (default). Other information such as NRIC, phone number etc can also be masked by giving corresponding input.
