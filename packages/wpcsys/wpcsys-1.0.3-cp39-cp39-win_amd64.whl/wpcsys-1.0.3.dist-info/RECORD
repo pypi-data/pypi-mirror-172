@@ -1,0 +1,9 @@
+wpcsys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wpcsys/pywpc.cp310-win_amd64.pyd,sha256=6xXkIBrpl9Xv9jPv0mNRFUS8SU_Nm31gKDbsUMVyRRQ,1625088
+wpcsys/pywpc.cp38-win_amd64.pyd,sha256=Zy4SZkUoasCKPgYLU8emS0U8bfd4UfdFYEDAcWQu_3o,1759232
+wpcsys/pywpc.cp39-win_amd64.pyd,sha256=7qMRU7T45atwA_tg_Nx7_qODm25gNgpZvrj_gEaBvmY,1766912
+wpcsys-1.0.3.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+wpcsys-1.0.3.dist-info/METADATA,sha256=57B7dNKh2HH3zA4xSw8C1QXjAQRQ1V8SnCVqIopvDI0,7220
+wpcsys-1.0.3.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+wpcsys-1.0.3.dist-info/top_level.txt,sha256=0_MMgzXCFieTV8Cugw10SqWzdlq5d7HLRWNRKTxB33w,7
+wpcsys-1.0.3.dist-info/RECORD,,
