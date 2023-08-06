@@ -1,0 +1,14 @@
+scikit-image
+earthengine-api>=0.1.304
+coastsat-package
+area
+requests
+doodleverse-utils<=0.0.3
+tqdm
+leafmap
+shapely
+geojson
+scikit-image
+matplotlib
+pandas
+numpy<1.23.0
