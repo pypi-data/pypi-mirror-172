@@ -1,0 +1,9 @@
+pandas-gbq
+pathlib
+google-cloud-datastore
+google-cloud-bigquery
+google-cloud-storage
+tqdm
+google-cloud-bigquery-storage
+pyarrow
+pandas==1.0.0
