@@ -1,0 +1,4 @@
+[console_scripts]
+MofaShengjing = MofaShengjing.__main__:main
+mofa-shengjing = MofaShengjing.__main__:main
+
