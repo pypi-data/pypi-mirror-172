@@ -1,0 +1,11 @@
+pyigtl/__init__.py,sha256=0HGJVExHfMHvBKOB59FlLXjqM7-4SEHH5U-cf-shGBY,1207
+pyigtl/_version.py,sha256=BdzwIKvRVAlR5VRbvceYhzXBGwNsEs2iTfKWFaJoUjQ,182
+pyigtl/comm.py,sha256=e-TFKPUcbF45EzupQLHTzOOLLeccDmVx7Vk6und5S58,12757
+pyigtl/messages.py,sha256=in0eAegVTIo7W6TdKLnSlS1sckvDSbl7vxG5XtSn1m8,34318
+pyigtl/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyigtl/tests/test_basic_comm.py,sha256=mmmwlxSrrE_50VCkOLadEx-0QqafEyraotJaYMGSLqw,4094
+pyigtl-0.2.0.dist-info/LICENSE,sha256=9Jslb1_SjQausdAqFGWpKT3HXzSmyCp1yex2SWQiRjY,1080
+pyigtl-0.2.0.dist-info/METADATA,sha256=2j8NEOd0IdI6tnDdP-iz-cM3X6eLovanc9gZM8Cm8Dc,2195
+pyigtl-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyigtl-0.2.0.dist-info/top_level.txt,sha256=px2KBx15jk_5Yv9ulWh7SAO39PO_mTwLz5SzrfdVdxc,7
+pyigtl-0.2.0.dist-info/RECORD,,
