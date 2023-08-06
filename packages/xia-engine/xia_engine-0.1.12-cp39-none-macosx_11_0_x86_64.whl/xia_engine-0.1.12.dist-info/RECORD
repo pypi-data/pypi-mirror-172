@@ -1,0 +1,10 @@
+xia_engine/__init__.py,sha256=537nEOS6dZWt81w-1NCcjR4-rcxKIYEXdDqFZ-uQ_zM,521
+xia_engine/base.cpython-310-darwin.so,sha256=5dqctLYaQiV3RMvvKhs2cMW0nX_nyydfIKFTxweuJTI,373848
+xia_engine/document.cpython-310-darwin.so,sha256=PrX0totKghF-paL0fX9BmufD3_uJuoUYUqGBmdjPtgk,338496
+xia_engine/engine.cpython-310-darwin.so,sha256=pVVtDkkQm4kVVEZQdgHDYULWnYan0TIWuQZmPrsjL7g,304232
+xia_engine/fields.cpython-310-darwin.so,sha256=XQvqglxV5rOjU7eTWJJ8jcd4NXgphYDvxbQky-XXj1c,374864
+xia_engine-0.1.12.dist-info/LICENSE.txt,sha256=tWXZqpL_C-bIyrhuzutInM8bKRN490vPwfa6vH65N1Q,154
+xia_engine-0.1.12.dist-info/METADATA,sha256=_9WJFQstPVTZQ9bijjoUyere_KhtfZU8NE1eG3YX9kE,710
+xia_engine-0.1.12.dist-info/WHEEL,sha256=NsapCMY7EanMRKZsZABtoiyq2rs4aXJ4FKsV_kV91NE,108
+xia_engine-0.1.12.dist-info/top_level.txt,sha256=Q896WUzHNHm14oiEaw7BbLcGbvHkKPKEQOBa8Z06dbk,11
+xia_engine-0.1.12.dist-info/RECORD,,
