@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: python-dotenv-vault
+Version: 0.0.6
+Summary: Syncing your .env to the cloud.
+Home-page: https://github.com/dotenv-org/dotenv-vault-python
+Author: dotenv
+Author-email: mot@dotenv.org
+License: MIT
+Keywords: environment,environment variables,deployments,settings,env,dotenv,configurations,python,dotenv-vault
+Description-Content-Type: text/markdown
+
+# dotenv-vault-python
+
+dotenv-vault-python allows your app to sync the `.env` file to the cloud. This means that you can work anywhere, in any machine, and in any cloud infrastructure with cofidence.
+
+- [Getting Started](#getting-started)
+
+## Getting Started
+```shell
+pip install python-dotenv-vault --no-cache-dir
+```
+
