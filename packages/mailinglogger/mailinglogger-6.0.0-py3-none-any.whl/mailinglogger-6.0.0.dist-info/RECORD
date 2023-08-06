@@ -1,0 +1,15 @@
+mailinglogger/__init__.py,sha256=xsjzEWF412OynNH1JJ5FiCq2xqb68aPmA184op96bjU,90
+mailinglogger/common.py,sha256=NjePb4DiG89hF8OI-GuWDX0IX2ZDBZ3QB4Q85iHIDok,946
+mailinglogger/flood_template.txt,sha256=EbEhDF77mm2MbeDA64yZ8bdU059Rnbz61NsWvfIV-Lk,334
+mailinglogger/mailinglogger.py,sha256=xiPij_rKbeUyRYDx99aCvNtaKLPYcRnGAfKROe1V0Uo,4351
+mailinglogger/summarisinglogger.py,sha256=3hLEeF3Re3AOmObWcZZx0HtBwNT_Uz2wrwuWkZsdfII,4270
+mailinglogger/version.txt,sha256=AKBVlLAzgcJQETt6ZsDx9_wpBHmqpMAncn6m4Oq9Mvw,9
+mailinglogger/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailinglogger/tests/shared.py,sha256=A6D9h1Be3AUSCNEx0nq4ZDMMovNzZHmn_ETVxQzwi1U,3812
+mailinglogger/tests/test_htmlfilter.py,sha256=dhTIJhCIsUMvt56ax1b0L1fZEESHJwlgEnOeFUWFH58,1423
+mailinglogger/tests/test_mailinglogger.py,sha256=dcPHfNtvwX6N2kx1zSWLNpsqn448tKI5JrTeIRrzL2M,8442
+mailinglogger/tests/test_summarisinglogger.py,sha256=CnYDFRnYJfhrtpDbrRy_a2SmW8l8NBDMP3MDZ2kwnZM,7185
+mailinglogger-6.0.0.dist-info/METADATA,sha256=LbQ-9sVYmznAVoyeykB7uSJ_855ahyflvU5p8SI47E4,1984
+mailinglogger-6.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mailinglogger-6.0.0.dist-info/top_level.txt,sha256=KcuFXlbT5Dy-QwJNXFskTf3pE3ZclMEm81ckFaRfGPQ,14
+mailinglogger-6.0.0.dist-info/RECORD,,
