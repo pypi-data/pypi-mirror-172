@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mahjong-utils
+Version: 0.1.0a1
+Summary: 
+License: MIT
+Author: ssttkkl
+Author-email: huang.wen.long@hotmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: lazy (>=1.5,<2.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+mahjong-utils
+========
+
+已实现功能：
+
+- [x] 获取番符对应和牌点数
+- [x] 向听数计算（包括K\*3+1张牌和K\*3+2张牌）
+- [x] 和了分析（役种、番数、符数）
+
