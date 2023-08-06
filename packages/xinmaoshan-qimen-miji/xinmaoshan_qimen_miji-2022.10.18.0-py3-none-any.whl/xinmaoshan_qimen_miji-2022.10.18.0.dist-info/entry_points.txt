@@ -1,0 +1,4 @@
+[console_scripts]
+XinmaoshanQimenMiji = XinmaoshanQimenMiji.__main__:main
+xinmaoshan-qimen-miji = XinmaoshanQimenMiji.__main__:main
+
