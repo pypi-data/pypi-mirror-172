@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: TextBarcodeGenerator
+Version: 2022.0.2
+Summary: A tool to generate text-based barcodes.
+Home-page: https://github.com/J-J-B-J/BarcodeGenerator
+Author: J-J-B-J
+License: UNKNOWN
+Keywords: barcode generator text numerical
+Platform: Windows
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a tool to generate text-based barcodes. You can input anything, so long as it can be converted to a numerical string.
+
