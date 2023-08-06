@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "looker-gen"
+version = "0.1.5"
+description = "Generate LookML for a dbt project"
+license = "BSD-4-Clause"
+authors = ["Aaron Bannin <aaronbannin@hotmail.com>"]
+homepage = "https://github.com/aaronbannin/looker-gen"
+keywords = ["dbt", "looker", "lookml"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+lkml = "^1.2.0"
+click = "^8.1.2"
+PyYAML = "^6.0"
+looker-sdk = "^22.4.0"
+GitPython = "^3.1.27"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+looker-gen = 'looker_gen.cli:cli'
