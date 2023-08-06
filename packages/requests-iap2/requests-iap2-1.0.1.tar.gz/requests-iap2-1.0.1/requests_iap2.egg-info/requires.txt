@@ -1,0 +1,16 @@
+requests
+google-auth
+google-auth-oauthlib
+
+[dev]
+build
+more-itertools==5.0.0
+pip-tools
+pytest<5.0.0
+pytest-cov
+pytest-mock<3.3
+setuptools>=42
+setuptools_scm[toml]>=5.0.2
+tox
+twine
+wheel
