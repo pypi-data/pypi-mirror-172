@@ -1,0 +1,2 @@
+[console_scripts]
+DAJIN2 = src.DAJIN2.DAJIN2:main
