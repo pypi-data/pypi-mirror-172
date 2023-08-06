@@ -1,0 +1,14 @@
+shapely
+GDAL
+numpy
+tensorflow
+Pillow
+
+[build]
+build
+twine
+
+[dev]
+black
+bumpver
+isort
