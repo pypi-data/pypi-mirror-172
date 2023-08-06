@@ -1,0 +1,17 @@
+boto3
+semver<3,>2
+pydantic<2,>=1.9.0
+terrapyst
+ruamel.yaml
+typer
+
+[dev]
+black
+build
+isort
+mypy
+pytest
+pytest-cov
+types-PyYAML
+boto3-stubs
+versioneer
