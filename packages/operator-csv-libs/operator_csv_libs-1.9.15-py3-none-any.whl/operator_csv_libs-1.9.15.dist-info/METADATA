@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: operator-csv-libs
+Version: 1.9.15
+Summary: Code to manage OLM related CSVs and channels
+Home-page: https://github.com/multicloud-ops/operator-csv-libs
+Author: bennett-white
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: pygithub (==1.55)
+Requires-Dist: dohq-artifactory (==0.7.574)
+Requires-Dist: requests (==2.27.1)
+
