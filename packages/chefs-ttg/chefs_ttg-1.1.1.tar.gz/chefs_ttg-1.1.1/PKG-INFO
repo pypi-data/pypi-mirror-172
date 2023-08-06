@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: chefs_ttg
+Version: 1.1.1
+Summary: create and save empty truth table
+Author: Noam Avned
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Truth table generator
+=======================
+
+create a truth table and save it in a list/text/excel file.
+
+to import use ``import truthtablegen``
+
+
+Change Log
+=======================
+
+1.1.1 (18/10/2022)
+-------------------
+- First Release
