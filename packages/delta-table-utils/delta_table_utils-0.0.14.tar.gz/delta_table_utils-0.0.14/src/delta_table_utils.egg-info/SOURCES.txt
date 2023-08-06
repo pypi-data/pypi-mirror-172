@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/delta_table/__init__.py
+src/delta_table/delta_table_utils.py
+src/delta_table/utils/__init__.py
+src/delta_table/utils/logger.py
+src/delta_table_utils.egg-info/PKG-INFO
+src/delta_table_utils.egg-info/SOURCES.txt
+src/delta_table_utils.egg-info/dependency_links.txt
+src/delta_table_utils.egg-info/top_level.txt
