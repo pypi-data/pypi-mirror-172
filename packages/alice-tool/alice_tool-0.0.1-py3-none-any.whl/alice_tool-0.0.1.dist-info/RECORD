@@ -1,0 +1,7 @@
+alice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alice/alice.py,sha256=FgfCdki_xZs69Z5qhJqNm2wwEvMRSr39RwjmOWHjmeg,11040
+alice/language_models.py,sha256=ScaOb8o9YW1bWflByZUK75bMS32njpy8WQGww-lv5mk,1257
+alice_tool-0.0.1.dist-info/METADATA,sha256=R3BpUgRS5sSZKeZVT8Knxts9daKsyFaF3qNsHKY52-8,465
+alice_tool-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alice_tool-0.0.1.dist-info/top_level.txt,sha256=-HFl4wWw98SCTTgGQ0-dCQlhCiVkGrh3PPkqSMnXdnA,6
+alice_tool-0.0.1.dist-info/RECORD,,

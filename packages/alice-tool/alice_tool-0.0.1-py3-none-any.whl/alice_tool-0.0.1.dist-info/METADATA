@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: alice-tool
+Version: 0.0.1
+Summary: ALICE
+Home-page: 
+Author: 
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: nltk
+Provides-Extra: dev
+Requires-Dist: sphinx (==3.2.1) ; extra == 'dev'
+Requires-Dist: recommonmark (==0.6.0) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (==0.5.0) ; extra == 'dev'
+
