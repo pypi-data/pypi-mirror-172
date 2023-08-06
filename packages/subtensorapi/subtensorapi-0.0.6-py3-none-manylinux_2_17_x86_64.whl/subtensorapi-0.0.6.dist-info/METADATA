@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: subtensorapi
+Version: 0.0.6
+Summary: Subtensor API package for bittensor
+Author-email: Opentensor Foundation <cameron@opentensor.ai>, Opentensor Foundation <eduardo@opentensor.ai>
+License: MIT
+Project-URL: Documentation, https://github.com/opentensor/subtensor-node-api#subtensor-node-api
+Project-URL: Source, https://github.com/opentensor/subtensor-node-api
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm (<5,>=4.64.0)
+Requires-Dist: rich (<13,>=12.6.0)
+Provides-Extra: test
+Requires-Dist: unittest ; extra == 'test'
+
+# Subtensor Node API Python
+
