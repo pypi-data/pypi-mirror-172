@@ -1,0 +1,11 @@
+argparser/__init__.py,sha256=Bg_cDiVj6bv_IQVbb4cJUtJiyHgXHzrFzFLiVAdDEAQ,150
+argparser/argparser.py,sha256=3TIsHC6wOm1bs-xNcb1DC-wBqtqYps6iSjaJFZ5JvgU,18164
+clsarg/__init__.py,sha256=Bg_cDiVj6bv_IQVbb4cJUtJiyHgXHzrFzFLiVAdDEAQ,150
+clsarg/clsarg.py,sha256=OH7vs63o2WGx_zQCWLeaR0IsWe-bZiyUoobyzcziyiQ,15959
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_argparser.py,sha256=0ffryvI54EVbdNYGT0lLIKRQtBQCkNkSgAordn-en0o,2998
+clsarg-0.0.5.dist-info/LICENSE,sha256=HC0Au-xvYHrlnbBhPiXxTfbhfvJJANrCeA_1bioocMs,1068
+clsarg-0.0.5.dist-info/METADATA,sha256=Ic7dfgXVTnzLR1d2-pKLyMykqdpYYQfCysXc29tbSbU,394
+clsarg-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+clsarg-0.0.5.dist-info/top_level.txt,sha256=UQtUu3Xfn3TBbHyLRLZ0PrvzooFdD2Ynjeqhg1KI5lY,13
+clsarg-0.0.5.dist-info/RECORD,,
