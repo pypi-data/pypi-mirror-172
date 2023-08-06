@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+webSpiders.egg-info/PKG-INFO
+webSpiders.egg-info/SOURCES.txt
+webSpiders.egg-info/dependency_links.txt
+webSpiders.egg-info/top_level.txt
