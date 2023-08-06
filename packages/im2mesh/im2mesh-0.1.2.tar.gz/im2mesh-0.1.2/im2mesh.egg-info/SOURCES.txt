@@ -1,0 +1,8 @@
+license.txt
+setup.cfg
+setup.py
+im2mesh.egg-info/PKG-INFO
+im2mesh.egg-info/SOURCES.txt
+im2mesh.egg-info/dependency_links.txt
+im2mesh.egg-info/requires.txt
+im2mesh.egg-info/top_level.txt

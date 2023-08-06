@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: im2mesh
+Version: 0.1.2
+Summary: Python library to create Finite Element meshes from segmented image stacks
+Home-page:  https://github.com/cborau/im2mesh 
+Author: Diego Sainz-DeMena & Carlos Borau-Zamora (UNIZAR)
+Author-email: cborau@unizar.es
+License: MIT
+Classifier: Programming Language :: Python :: 3.9
+License-File: license.txt
+
+For further information please visit the GitHub repository (https://github.com/cborau/im2mesh) or the documentation site (https://cborau.github.io/im2mesh/html/index.html)
