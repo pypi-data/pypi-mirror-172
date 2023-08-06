@@ -1,0 +1,14 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+suntranslator.py,sha256=BO-DFfWwYhWDFOBg3aCnx98L1-nf42Lt2xen96cTjeY,2846
+data/fonts/SUN7_8_1210.ttf,sha256=HR84VQ164P5LawzqarndDXp0bPz_yQSXSzs2tNLR-vs,1123728
+data/symbols/sun_dictionary.csv,sha256=vjDEIsgvwTx1P7sseb32Ce0yrHLrjGEfS4CUHqcjHEo,42027
+gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gui/menubar.py,sha256=RNketcF1leD9l6YvqEvGIDm6CpqFV1cW4Iqya7OHqxc,887
+translator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+translator/translate.py,sha256=7jNot5cmaAURxJhXafJ8Hr3zgW_pEZdBS9gJdZI7i1Y,1903
+suntranslator-0.0.5.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+suntranslator-0.0.5.dist-info/METADATA,sha256=sHqWDwfA_049qngYBzrqTNRQn4qvXITqgx67k3O-Xz4,486
+suntranslator-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+suntranslator-0.0.5.dist-info/entry_points.txt,sha256=esQ4xY-s-JM6DE1uwebr7BDTzgzDCTjSEtSSmApZMiQ,49
+suntranslator-0.0.5.dist-info/top_level.txt,sha256=NlulBYqXpmnxzKQOMJCTjKHXee6Vdz2fF3P54G99ZgA,43
+suntranslator-0.0.5.dist-info/RECORD,,
