@@ -1,0 +1,4 @@
+[console_scripts]
+BukeBududeWushiMofaGushi = BukeBududeWushiMofaGushi.__main__:main
+buke-budude-wushi-mofa-gushi = BukeBududeWushiMofaGushi.__main__:main
+
