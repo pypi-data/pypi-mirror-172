@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/en/exercises/demo_exercise/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/documentation/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/documentation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/documentation/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/exercises/form/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/documentation/network/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/documentation/network/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/documentation/network/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/exercises/pinpad/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/documentation/tools/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/documentation/tools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/documentation/tools/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/exercises/fail/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/exercises/fail/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/exercises/fail/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/exercises/ping/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/exercises/ping/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/exercises/ping/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/exercises/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/exercises/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/exercises/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+  </url>
+  
+</urlset>

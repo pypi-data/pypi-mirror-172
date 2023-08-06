@@ -1,0 +1,64 @@
+[
+{
+	"uri": "/fr/documentation/",
+	"title": "Documentation (french)",
+	"tags": [],
+	"description": "",
+	"content": "Documentation (french) Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.\nUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\n"
+},
+{
+	"uri": "/fr/documentation/network/",
+	"title": "Network (french)",
+	"tags": [],
+	"description": "",
+	"content": "For example, the CyberRange network is explained here. The network topology is presented, the machines and/or various settings are listed.\nImages Images can be added via e.g. ![network_topology](net_topology.png)\nImages can only be inserted when they are stored on the same level as the markdown file.\n "
+},
+{
+	"uri": "/fr/documentation/tools/",
+	"title": "Tools (french)",
+	"tags": [],
+	"description": "",
+	"content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto\n"
+},
+{
+	"uri": "/fr/exercises/fail/",
+	"title": "Failing script",
+	"tags": [],
+	"description": "",
+	"content": "French version of a failing script.\n Exercise Control Failing execution  Script executed       Exercise completed          execute / check status       "
+},
+{
+	"uri": "/fr/exercises/ping/",
+	"title": "Succeeding Script",
+	"tags": [],
+	"description": "",
+	"content": "French version of a succeeding script.\n Exercise Control Succeeding execution  Script executed       Exercise completed          execute / check status       "
+},
+{
+	"uri": "/fr/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/fr/exercises/",
+	"title": "Demo-Exercises (french)",
+	"tags": [],
+	"description": "",
+	"content": "This is the headline of Demo-Exercises This is the french version of the introduction/welcome text \u0026hellip;\n"
+},
+{
+	"uri": "/fr/",
+	"title": "French: Documentation for CyberRange",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/fr/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
