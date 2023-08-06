@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: django-model-prefix
+Version: 1.0.1
+Summary: A django module that allows to configure a global or model based database table prefix
+Home-page: https://github.com/anexia/django-model-prefix
+Author: Harald Nezbeda
+Author-email: hnezbeda@anexia-it.com
+License: MIT License
+Description: # Django Model Prefix
+        [![PyPI](https://badge.fury.io/py/django-model-prefix.svg)](https://pypi.org/project/django-model-prefix/)
+        [![Test Status](https://github.com/anexia/django-model-prefix/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/anexia/django-model-prefix/actions/workflows/tests.yml)
+        [![Codecov](https://codecov.io/gh/anexia/django-model-prefix/branch/main/graph/badge.svg)](https://codecov.io/gh/anexia/django-model-prefix)
+        
+        A Django package that adds a global or model based database table prefix
+        
+        # Installation
+        
+        Install using pip:
+        
+        ```shell
+        pip install django-model-prefix
+        ```
+        
+        Add model_prefix to your INSTALLED_APPS list. Make sure it is the first app in the list
+        
+        ```python
+        INSTALLED_APPS = [
+            'model_prefix',
+            ...
+        ]
+        ```
+        
+        # Usage
+        
+        ## Global table prefix
+        
+        The global database table prefix can be configured using the `DB_PREFIX` setting
+        
+        ```python
+        DB_PREFIX = "foo_"
+        ```
+        
+        ## Model table prefix
+        
+        Optionally a model based prefix can also be defined by extending the models meta class
+        
+        ```python
+        class Meta:
+            db_prefix = "bar_"
+        ```
+        
+        This can be also used in order to disable the global prefix for a specific model
+        
+        
+        ```python
+        class Meta:
+            db_prefix = None
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
