@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: haohaodaren-project
+Version: 2.1.1
+Summary: A tool for prediction of molecules associations
+Home-page: https://github.com/fengmm521/pipProject
+Author: kaizheng&&haoyuanli
+Author-email: a1242884508@gmail.com
+License: MIT Licence
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+

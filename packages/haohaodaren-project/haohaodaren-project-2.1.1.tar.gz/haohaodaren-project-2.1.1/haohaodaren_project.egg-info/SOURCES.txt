@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+haohaodaren_project.egg-info/PKG-INFO
+haohaodaren_project.egg-info/SOURCES.txt
+haohaodaren_project.egg-info/dependency_links.txt
+haohaodaren_project.egg-info/top_level.txt
