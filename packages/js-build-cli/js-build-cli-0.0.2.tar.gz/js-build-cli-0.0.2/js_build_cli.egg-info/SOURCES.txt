@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+jsbuild.py
+setup.py
+js_build_cli.egg-info/PKG-INFO
+js_build_cli.egg-info/SOURCES.txt
+js_build_cli.egg-info/dependency_links.txt
+js_build_cli.egg-info/entry_points.txt
+js_build_cli.egg-info/top_level.txt
