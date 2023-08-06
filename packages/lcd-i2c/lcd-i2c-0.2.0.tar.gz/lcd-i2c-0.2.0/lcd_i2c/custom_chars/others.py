@@ -1,0 +1,15 @@
+from . import CustomChar
+
+heart = CustomChar([ 0,  0, 10, 31, 31, 14,  4,  0], ["heart", "♥️", "♥", "❤️"])
+smile = CustomChar([ 0, 10, 10,  0, 17, 14,  0,  0], ["smile", "😀", "😁","😄","😃","☺️","🙂","🤗", "😊"])
+dog_left = CustomChar([ 0,  0, 12, 12,  7,  4,  4,  0], "dog_left")
+dog_right = CustomChar([ 0,  0,  0,  6, 24,  8,  8,  0], "dog_right")
+half_moon = CustomChar([ 6, 12, 24, 24, 24, 28, 15,  6], ["half_moon", "🌙", "🌜", "🌛", "🌘", "🌖"])
+bell = CustomChar([ 0,  4, 14, 14, 14, 31,  0,  4], "bell")
+note = CustomChar([ 0,  2,  3,  2, 14, 30, 12,  0], "note")
+duck = CustomChar([ 0,  0, 12, 29, 15, 15,  6,  0], "duck")
+a_accent = CustomChar([ 2,  4,  0, 14,  1, 15, 17, 15], "á")
+e_accent = CustomChar([ 2,  4,  0, 14, 17, 31, 16, 14], "é")
+i_accent = CustomChar([ 2,  4,  0,  4, 12,  4,  4, 14], "í")
+o_accent = CustomChar([ 2,  4,  0, 14, 17, 17, 17, 14], "ó")
+u_accent = CustomChar([ 2,  4,  0, 17, 17, 17, 19, 13], "ú")
