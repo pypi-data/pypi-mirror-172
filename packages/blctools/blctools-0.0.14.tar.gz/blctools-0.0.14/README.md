@@ -1,0 +1,81 @@
+# BLC Data Analytics tools package
+
+Data Analytics helper functions to work with inside BLC's Cloud system.
+
+# Changelog
+
+## Version 0.0.14
+* SQLConnector now decrypts login data from BLC's secure fileserver.
+* Corrected functions that took equipments from blctools.TablasVC().conjuntogeneradores, now reading from .tipoequipo
+* Changed the behaviour of DatosCROM().fecha_i and DatosCROM().fecha_i setters. They now attempt to update "incidencias" and "archivos" depending on the values of fecha_i and fecha_f, but the setters dont try to order the dates automatically, which lead to an unwanted behaviour.
+* Corrected bug in TablasVC(). Now Parks without any grouping of it's generators can return the generators without grouping. Special Case: PEGARCIG
+* Changed completely how DatosCROM() now proceses raw data (10 seconds and Incidencias). It's more efficient, and the heavy lifting occurs while processing the 10-second data. Now index has 1 column (Time) and columns have a 3 level structure (p,e,v) = Park, Element, Variable
+* DatosCROM().consultar_equipos_parque() now retrieves the right elements if the plant doesn't havy any other grouping stages
+* DatosCROM().consultar_equipos_por_agrupamiento() now returns an empty list if the plant doesn't havy any other grouping stages
+* DatosCROM().rpt_consolidado(granularidad='1D') was added.
+* DatosCROM() "forzar_reprocesamiento" parameter added while initializing, to force re-process 10second data.
+* DatosCROM().
+
+
+## Version 0.0.13
+* Created SQLConnector class to migrate to SQLAlchemy
+* blctools.TablasVC now inherits from SQLConnector
+
+## Version 0.0.12
+* Function blctools.fechas.obtener_periodo() was added (moved from blctools.ReporteBase())
+* Added more parameter flexibility within all functions inside blctools.fechas.
+* Objects PPO(), DTE() and DatosCROM() now accept the "periodo" initialization parameter (overrides fecha_i and fecha_f).
+* bjects blctools.DatosCROM() and blctools.TablasVC() have now the "solo_CROM=False" initialization parameter.
+* function blctools.TablasVC.consultar_nemoCammesa() has now the "solo_CROM=False" argument  
+
+## Version 0.0.11
+* Corrected blctools.PPO.periodo('mes_anterior')
+* Function ReporteBase.a_excel() accepts now the parameter "exportar_consulta=bool"
+* Objects PPO() and DTE() now accept the following initialization parameters
+    - "filtro"
+    - "periodo" (overrides fecha_i and fecha_f)
+* No more unnecessary warnings on changing the "filtro" parameter
+* Function blctools.fechas.mes_dia_1() and blctools.fechas.mes_ult_dia() now validate dates using blctools.fechas.validar_fechas()
+* Functions blctools.fechas.validar_fecha() and .validar_fechas() now have a parameter "prevenir_futuro=True" as default, to prevent future dates or not.
+* Fixed a bug, when changing "filtro" on functions of child classes of DTE() or PPO(), download and extraction directories wouldn't update properly.
+
+## Version 0.0.10
+* Attribute blctools.DatosCROM.dir_salida sets to which directory the reports go out to (didn't have much impact before)
+* Improved automatic Servicios directory search
+
+## Version 0.0.9
+* Removed dependencies list
+* Ability to download unfiltered PPOs/DTEs without specifying parks/plants list
+* Incidents are no longer loaded by default on blctools.DatosCrom() objects
+
+## Version 0.0.8
+* Corrected dependencies list
+
+## Version 0.0.6 ~ 0.0.7
+* Bug fixes regarding file management
+* Ability to customize filters when hitting CAMMESA's API
+* PBA calculation according to IEC61400 is still functioning incorrectly
+
+## Version 0.0.5
+* Most of the code is Object Oriented now.
+* CAMMESA's forecasts have been added.
+
+## Version 0.0.2 ~ 0.0.4
+Fixed the install issues
+
+## Version 0.0.1
+* Basic functionality is up and running
+
+
+## TO DOs
+* El procesamiento de los xlsx no es simétrico para todos los parques. Preveer diferencias en las variables y cómo ésto puede afectar en el reporte iec61400
+* Solucionar el rolldown del PBA
+* Convertir DatosCROM().parques a "nemos" automáticamente si hay conexión.
+* Poder generar reporte iec61400 y consolidado segundal desde la inicialización del objeto DatosCROM()
+
+* TablasVC.consultar_datos_basicos()
+
+* TO DO: Matchear incidencias con datos 10seg, usando record linkeage
+* TO DO: Antes de matchear incidencias cada 10 seg, se podría crear una nueva tabla de incidencias, sin solapamientos
+* TO DO: Poder tomar mediciones SMEC de la BD del VC
+
