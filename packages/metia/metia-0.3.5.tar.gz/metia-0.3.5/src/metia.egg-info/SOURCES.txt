@@ -1,0 +1,27 @@
+.gitignore
+Makefile
+Pipfile
+Pipfile.lock
+README.md
+requirements_dev.txt
+setup.py
+.github/workflows/python-coverage-test.yml
+src/metia/__init__.py
+src/metia/encoders.py
+src/metia/executables.py
+src/metia/ext_programs.py
+src/metia/formats.py
+src/metia/probe.py
+src/metia/utils.py
+src/metia/writter.py
+src/metia.egg-info/PKG-INFO
+src/metia.egg-info/SOURCES.txt
+src/metia.egg-info/dependency_links.txt
+src/metia.egg-info/entry_points.txt
+src/metia.egg-info/top_level.txt
+test/test_probe.py
+test/test_writter.py
+test/media_files/Canon Rock.mp3
+test/media_files/Canon Rock.mp3.md5
+test/media_files/no_audio.mp4
+test/media_files/no_audio.mp4.md5

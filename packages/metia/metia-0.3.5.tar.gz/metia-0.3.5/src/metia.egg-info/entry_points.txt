@@ -1,0 +1,2 @@
+[console_scripts]
+metia-probe = metia.executables:metia_probe
