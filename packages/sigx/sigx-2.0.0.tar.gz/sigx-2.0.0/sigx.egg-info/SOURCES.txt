@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+sigx/__init__.py
+sigx.egg-info/PKG-INFO
+sigx.egg-info/SOURCES.txt
+sigx.egg-info/dependency_links.txt
+sigx.egg-info/requires.txt
+sigx.egg-info/top_level.txt
