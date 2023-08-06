@@ -1,0 +1,8 @@
+br_gender/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+br_gender/base.py,sha256=JJERIajmeT3APzc2XU5ogNg462-WXmNn9Ri9rvl2-ys,946
+br_gender/gender_by_name.json,sha256=siGbWIeECos2vjrD4SGHLASWBcwYu7olk73a2FufomI,15612009
+br_gender-0.1.0.dist-info/LICENSE,sha256=FNish9YqGrqUM5ClmhNRysK0vrSm6QTPTuAoMDjG4aA,1070
+br_gender-0.1.0.dist-info/METADATA,sha256=kEmPgtS_aB1MfZ2NAD8DM8eK_IS7RhxNXqvKlEadd1Y,387
+br_gender-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+br_gender-0.1.0.dist-info/top_level.txt,sha256=tLwboXmJ_nEOmEDEqplFqkU_4WhBx_zOuxX1IsESVkU,10
+br_gender-0.1.0.dist-info/RECORD,,
