@@ -1,0 +1,8 @@
+requests<3.0.0,>=2.25.1
+urllib3<1.25,>=1.21.1
+docopt==0.6.2
+PyYAML<6.0,>=5.2
+dohq-artifactory>=0.8.3
+Jinja2>=2.11
+patool==1.12
+pyunpack==0.2
