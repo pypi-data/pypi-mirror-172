@@ -1,0 +1,2 @@
+[console_scripts]
+searchor = searchor.main:cli
