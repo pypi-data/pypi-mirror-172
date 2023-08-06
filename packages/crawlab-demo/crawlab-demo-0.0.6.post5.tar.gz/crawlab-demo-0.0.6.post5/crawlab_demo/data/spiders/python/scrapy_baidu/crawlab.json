@@ -1,0 +1,6 @@
+{
+  "name": "百度 Scrapy 爬虫",
+  "description": "抓取关键词 \"crawlab\" 百度搜索结果的 Scrapy 爬虫",
+  "cmd": "scrapy crawl baidu",
+  "mode": "all-nodes"
+}
