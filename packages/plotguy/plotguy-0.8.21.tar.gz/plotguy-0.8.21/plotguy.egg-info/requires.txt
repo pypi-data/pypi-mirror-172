@@ -1,0 +1,5 @@
+pandas>=1.1.5
+dash
+dash_bootstrap_components
+dash_daq
+dash_dangerously_set_inner_html
