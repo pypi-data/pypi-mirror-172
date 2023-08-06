@@ -1,0 +1,10 @@
+gql[aiohttp]
+
+[dev]
+flake8
+mypy
+pytest
+
+[docs]
+sphinx
+sphinx-rtd-theme

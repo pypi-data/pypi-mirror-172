@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: wikijs
+Version: 0.1.dev1
+Summary: WikiJs API client
+Home-page: https://github.com/nuno-andre/python-wikijs#readme
+Author: Nuno André
+Author-email: mail@nunoand.re
+License: BSD-3-Clause
+Project-URL: Source, https://github.com/nuno-andre/python-wikijs
+Project-URL: Bug Tracker, https://github.com/nuno-andre/python-wikijs/issues
+Keywords: wikijs,wiki,graphql
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Documentation
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+# Wiki.Js Python client ( &#9888; WIP &#9888; )
+
+## Examples
+
+- Move all pages in a folder to a new folder
+
+  ```python
+  from wikijs import WikiJs
+
+  client = WikiJs(<endpoint>, <api_key>)
+
+  OLD_FOLDER = 'OldFolder/'
+  NEW_FOLDER = 'NewFolder/'
+
+  for page in client.search_pages('', OLD_FOLDER):
+      new_path = page['path'].replace(OLD_FOLDER, NEW_FOLDER, 1)
+      client.move_page(page['id'], new_path, page['locale'])
+  ```
+
+

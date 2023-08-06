@@ -1,0 +1,17 @@
+LICENSE
+setup.cfg
+setup.py
+src/wikijs/__init__.py
+src/wikijs/asset.py
+src/wikijs/client.py
+src/wikijs/exceptions.py
+src/wikijs/page.py
+src/wikijs/system.py
+src/wikijs/typing.py
+src/wikijs/user.py
+src/wikijs.egg-info/PKG-INFO
+src/wikijs.egg-info/SOURCES.txt
+src/wikijs.egg-info/dependency_links.txt
+src/wikijs.egg-info/not-zip-safe
+src/wikijs.egg-info/requires.txt
+src/wikijs.egg-info/top_level.txt
