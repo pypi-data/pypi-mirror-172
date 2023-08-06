@@ -1,0 +1,7 @@
+LICENSE,sha256=rnSLpz3QJCkBKse22plWCYvN3YggdPO9yuhHsNfjAs8,1071
+tailscale_agent/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+tailscale_agent/tailscale_agent.py,sha256=QY-8Q7RkkL1rccJn7SAWTmBijYQFCap1DCbuh2-7j3I,12636
+tailscale_agent-0.4.0.dist-info/LICENSE,sha256=rnSLpz3QJCkBKse22plWCYvN3YggdPO9yuhHsNfjAs8,1071
+tailscale_agent-0.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+tailscale_agent-0.4.0.dist-info/METADATA,sha256=gAght4lo2wfbgyuVYiIbRTDKchj05z95IrhuWbj6Pqw,663
+tailscale_agent-0.4.0.dist-info/RECORD,,
