@@ -1,0 +1,3 @@
+[console_scripts]
+bloggen=bloggen.__main__:main
+
