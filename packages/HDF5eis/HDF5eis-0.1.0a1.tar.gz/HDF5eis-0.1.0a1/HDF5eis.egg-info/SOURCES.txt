@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+HDF5eis.egg-info/PKG-INFO
+HDF5eis.egg-info/SOURCES.txt
+HDF5eis.egg-info/dependency_links.txt
+HDF5eis.egg-info/requires.txt
+HDF5eis.egg-info/top_level.txt
+hdf5eis/__init__.py
+hdf5eis/_version.py
+hdf5eis/core.py
+hdf5eis/exceptions.py
+hdf5eis/gather.py
