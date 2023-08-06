@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: qjob
+Version: 0.5.2
+Summary: Utility to split shell commands into jobs, then submit them for computation to a queue of a SGE or Slurm cluster.
+Home-page: https://github.com/marco-mariotti/qjob
+Author: Marco Mariotti
+Author-email: marco.mariotti@ub.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.10,>=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: more-itertools
+Requires-Dist: easyterm (>=0.4.0)
+
+# qjob
+Utility to split shell commands into jobs, then submit them for computation to a queue of a SGE or Slurm cluster.
+
+See https://qjob.readthedocs.io/
