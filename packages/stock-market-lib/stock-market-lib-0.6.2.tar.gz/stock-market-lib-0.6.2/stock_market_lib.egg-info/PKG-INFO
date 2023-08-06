@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: stock-market-lib
+Version: 0.6.2
+Home-page: https://github.com/MattiasDC/{name}
+Author: Mattias De Charleroy
+Author-email: mattias.decharleroy@gmail.com
+Platform: any
+Requires-Python: >=3.9
+Provides-Extra: dev
+License-File: LICENSE
+
+stock-market-lib is a Python library that contains functionality related to stocks and the stock market in general. It also contains functionality to analyze stock time series. All classes are considered immutable.
