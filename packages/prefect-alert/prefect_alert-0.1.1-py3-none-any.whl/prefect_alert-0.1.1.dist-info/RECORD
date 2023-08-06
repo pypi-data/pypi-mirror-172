@@ -1,0 +1,9 @@
+prefect_alert/__init__.py,sha256=IvErW9w-LIe52AMQDoA0sSDds8MWp8tLY0jQiJWYZEQ,109
+prefect_alert/_version.py,sha256=_x5YWIcCSYdKZoDqSr2NS05Q-OIYoKXtoGKEdj0NU_8,497
+prefect_alert/alert.py,sha256=jzLam5JsdNfU5jWJOpSj3sZUOHJGt-vkIX9h0Sp6v-k,2805
+prefect_alert-0.1.1.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_alert-0.1.1.dist-info/METADATA,sha256=--bY2_lSoEgXt1w580NbCvxVtWhsgRIe_pZjYHCRQ9w,6541
+prefect_alert-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prefect_alert-0.1.1.dist-info/entry_points.txt,sha256=uXNyOI4QjezCmCfi6JcRelRHivP2JalXJPUblGQdHDQ,52
+prefect_alert-0.1.1.dist-info/top_level.txt,sha256=jdfRdJcmPy27oA0wsz-X7y_xYZFenWimZHmtQDCp_uk,14
+prefect_alert-0.1.1.dist-info/RECORD,,
