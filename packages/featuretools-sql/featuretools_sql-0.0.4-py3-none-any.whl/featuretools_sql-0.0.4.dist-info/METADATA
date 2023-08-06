@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: featuretools-sql
+Version: 0.0.4
+Summary: directly import and convert their relational data into a Featuretools
+Author: Alteryx, Inc.
+Maintainer: Alteryx, Inc.
+License: BSD 3-clause
+Project-URL: Documentation, https://featuretools.alteryx.com
+Project-URL: Source Code, https://github.com/alteryx/featuretools_sql/
+Project-URL: Changes, https://github.com/alteryx/featuretools/blob/main/source/release_notes.rst
+Project-URL: Issue Tracker, https://github.com/alteryx/featuretools_sql/issues
+Project-URL: Twitter, https://twitter.com/alteryxoss
+Project-URL: Chat, https://join.slack.com/t/alteryx-oss/shared_invite/zt-182tyvuxv-NzIn6eiCEf8TBziuKp0bNA
+Keywords: relational data,sql,feature engineering,data science,machine learning
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.17.5)
+Requires-Dist: pandas (>=1.3.0)
+Requires-Dist: featuretools (>=1.5.0)
+Requires-Dist: psycopg2 (>=2.9.3)
+Requires-Dist: sqlalchemy (>=1.4.2)
+Requires-Dist: PyMySQL (>=1.0.2)
+Requires-Dist: snowflake-sqlalchemy[pandas] (>=1.4.2)
+Provides-Extra: dev
+Requires-Dist: flake8 (==5.0.4) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: black (==22.6.0) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.20.0) ; extra == 'dev'
+Requires-Dist: featuretools-sql[test] ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (>=7.1.2) ; extra == 'test'
+Requires-Dist: pytest-cov (>=3.0.0) ; extra == 'test'
+
+# Featuretools-SQL 
+The `featuretools_sql` library allows you to directly import your relational data into
+[Featuretools](https://github.com/alteryx/featuretools) to run automated feature engineering.
+
+<p align="center">
+<i>Automated creation of EntitySets from relational data stored in SQL databases</i>
+</p>
+
+<p align="center">
+
+</a>
+    <a href="https://badge.fury.io/py/featuretools-sql" target="_blank">
+        <img src="https://badge.fury.io/py/featuretools-sql.svg?maxAge=2592000" alt="PyPI Version" />
+    </a>
+    <a href="https://stackoverflow.com/questions/tagged/featuretools" target="_blank">
+        <img src="http://img.shields.io/badge/questions-on_stackoverflow-blue.svg" alt="StackOverflow" />
+    </a>
+    <a href="https://pepy.tech/project/featuretools-sql" target="_blank">
+        <img src="https://pepy.tech/badge/featuretools-sql/month" alt="PyPI Downloads" />
+    </a>
+</p>
+
+## Installation 
+
+Install with pip:
+
+```shell
+python -m pip install "featuretools[sql]"
+```
+
+## Example
+Simply pass in the database connection information. For example:
+
+```python
+from featuretools_sql.connector import DBConnector
+
+sql_connector = DBConnector(
+    system_name = "mysql",
+    host = "127.0.0.1:3306"
+    user = "root",
+    password = "password",
+    database = "db"
+) 
+entityset = sql_connector.get_entityset()
+```
+
+The `entityset` object will have the `relationships` and `DataFrames` already populated, allowing you to call featuretools.DFS and run automated feature generation.
+
+```python
+import featuretools as ft
+
+feature_defs, feature_matrix = ft.dfs(
+    entityset=entityset,
+    target_entity='target_table_name'
+)
+```
+
+We currently supports importing data from the following relational database systems: 
+  - `MySQL` 
+  - `PostgreSQL`
+  - `Snowflake`
+
+## Support
+The Featuretools community is happy to provide support to users. Project support can be found in four places depending on the type of question:
+1. For usage questions, use [Stack Overflow](https://stackoverflow.com/questions/tagged/featuretools) with the `featuretools` tag.
+2. For bugs, issues, or feature requests start a [Github issue](https://github.com/alteryx/featuretools_sql/issues).
+3. For discussion regarding development, use [Slack](https://join.slack.com/t/alteryx-oss/shared_invite/zt-182tyvuxv-NzIn6eiCEf8TBziuKp0bNA).
+4. For everything else, the core developers can be reached by email at open_source_support@alteryx.com
+
+## Built at Alteryx
+
+`featuretools_sql` is an open source project maintained by [Alteryx](https://www.alteryx.com). To see the other open source projects we’re working on, visit [Alteryx Open Source](https://www.alteryx.com/open-source). If building impactful data science pipelines is important to you or your business, please get in touch.
+
+<p align="center">
+  <a href="https://www.alteryx.com/open-source">
+    <img src="https://alteryx-oss-web-images.s3.amazonaws.com/OpenSource_Logo-01.png" alt="Alteryx Open Source" width="800"/>
+  </a>
+</p>
