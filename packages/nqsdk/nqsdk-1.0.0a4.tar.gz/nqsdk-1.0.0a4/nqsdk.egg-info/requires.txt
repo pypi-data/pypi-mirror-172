@@ -1,0 +1,4 @@
+jsonschema>=4.15
+pytz
+requests>=2.28
+djangorestframework
