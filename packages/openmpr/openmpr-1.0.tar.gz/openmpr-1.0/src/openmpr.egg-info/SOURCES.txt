@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/mpr.py
+src/rmpr.py
+src/openmpr.egg-info/PKG-INFO
+src/openmpr.egg-info/SOURCES.txt
+src/openmpr.egg-info/dependency_links.txt
+src/openmpr.egg-info/top_level.txt

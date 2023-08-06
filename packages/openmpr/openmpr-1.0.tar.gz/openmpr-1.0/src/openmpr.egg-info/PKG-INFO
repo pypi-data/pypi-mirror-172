@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: openmpr
+Version: 1.0
+Summary: Publish whatever you want
+Author: Zhuokai Zhao
+Author-email: zhuokai@uchicago.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Publish
+
+Publishing mpr to PyPI.
+
+## Installation
+
+Run the following to install:
+
+>>>pip3 install mpr
+
+## Usage
+
+from mpr-glk import mpr
