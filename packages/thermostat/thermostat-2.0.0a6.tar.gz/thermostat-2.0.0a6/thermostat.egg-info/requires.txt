@@ -1,0 +1,6 @@
+eeweather==0.3.24
+numpy
+pandas
+scipy
+sqlalchemy
+zipcodes==1.2.0
