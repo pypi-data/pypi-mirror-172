@@ -1,0 +1,3 @@
+[console_scripts]
+markl-do = markl:mark
+markl-rollback = markl:rollback

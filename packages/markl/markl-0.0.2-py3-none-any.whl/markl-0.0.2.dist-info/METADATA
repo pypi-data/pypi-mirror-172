@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: markl
+Version: 0.0.2
+Summary: .tsx locator marker
+Home-page: https://github.com/2gis-test-labs/markl
+Author: 2GIS Test Labs
+Author-email: test-labs@2gis.ru
+License: Apache-2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Markl 
+Mark up .tsx files with attribute mark="{UUID}"
+
+## Install
+
+```bash
+python3 -m pip install markl
+```
+
+## Usage
+
+Mark up .tsx files with attribute mark="{UUID}" in current directory 
+``` 
+markl-do
+```
+
+Rollback markup in current directory
+```
+markl-rollback
+```
