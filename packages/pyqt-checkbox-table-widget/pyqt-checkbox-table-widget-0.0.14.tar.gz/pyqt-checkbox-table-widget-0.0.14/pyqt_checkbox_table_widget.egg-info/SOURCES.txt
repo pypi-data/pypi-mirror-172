@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyqt_checkbox_table_widget/__init__.py
+pyqt_checkbox_table_widget/checkBox.py
+pyqt_checkbox_table_widget/checkBoxTableWidget.py
+pyqt_checkbox_table_widget.egg-info/PKG-INFO
+pyqt_checkbox_table_widget.egg-info/SOURCES.txt
+pyqt_checkbox_table_widget.egg-info/dependency_links.txt
+pyqt_checkbox_table_widget.egg-info/requires.txt
+pyqt_checkbox_table_widget.egg-info/top_level.txt
