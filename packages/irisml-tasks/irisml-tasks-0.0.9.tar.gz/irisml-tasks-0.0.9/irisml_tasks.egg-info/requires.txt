@@ -1,0 +1,5 @@
+irisml
+azure-identity
+azure-keyvault-secrets
+azure-storage-blob
+Pillow
