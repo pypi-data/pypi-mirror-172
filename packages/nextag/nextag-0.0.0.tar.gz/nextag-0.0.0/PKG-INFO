@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nextag
+Version: 0.0.0
+Summary: A simple command to give the next tag on a semver tagged git
+Home-page: UNKNOWN
+Author: Emmanuel PLUOT
+License: MIT
+Platform: unix
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Provides-Extra: testing
+License-File: LICENSE
+
+UNKNOWN
+

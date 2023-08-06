@@ -1,0 +1,9 @@
+
+[testing]
+bandit>=1.7
+flake8>=3.9
+mypy>=0.910
+pylint>=2.11
+pytest-cov>=2.0
+pytest>=6.0
+tox>=3.24

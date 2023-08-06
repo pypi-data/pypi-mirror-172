@@ -1,0 +1,3 @@
+[console_scripts]
+nextag = nextag.__main__:main
+
