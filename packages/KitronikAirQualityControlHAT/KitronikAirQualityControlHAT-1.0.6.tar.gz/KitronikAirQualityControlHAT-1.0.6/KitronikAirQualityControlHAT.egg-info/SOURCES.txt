@@ -1,0 +1,9 @@
+KitronikAirQualityControlHAT.py
+LICENSE
+README.md
+setup.py
+KitronikAirQualityControlHAT.egg-info/PKG-INFO
+KitronikAirQualityControlHAT.egg-info/SOURCES.txt
+KitronikAirQualityControlHAT.egg-info/dependency_links.txt
+KitronikAirQualityControlHAT.egg-info/requires.txt
+KitronikAirQualityControlHAT.egg-info/top_level.txt
