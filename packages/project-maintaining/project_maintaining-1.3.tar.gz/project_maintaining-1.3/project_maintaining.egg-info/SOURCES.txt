@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+project_maintaining/__init__.py
+project_maintaining/manager.py
+project_maintaining.egg-info/PKG-INFO
+project_maintaining.egg-info/SOURCES.txt
+project_maintaining.egg-info/dependency_links.txt
+project_maintaining.egg-info/requires.txt
+project_maintaining.egg-info/top_level.txt
