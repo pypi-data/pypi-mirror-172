@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pacotepypi1235/modulo.py
+pacotepypi1235.egg-info/PKG-INFO
+pacotepypi1235.egg-info/SOURCES.txt
+pacotepypi1235.egg-info/dependency_links.txt
+pacotepypi1235.egg-info/requires.txt
+pacotepypi1235.egg-info/top_level.txt

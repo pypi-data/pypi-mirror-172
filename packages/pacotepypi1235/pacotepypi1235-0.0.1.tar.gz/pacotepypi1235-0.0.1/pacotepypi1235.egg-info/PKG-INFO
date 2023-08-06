@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pacotepypi1235
+Version: 0.0.1
+Summary: Pacote python para exibir número de 1 a 9
+Home-page: https://github.com/Fabreba/pypacotinho.git
+Author: Fabricio José Sousa Silva
+Author-email: fabricioj49@gmail.com
+License: MIT License
+Keywords: Pacote
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1>Requisitos</h1>
+<h2>Bibliotecas</h2>
+* SetupTools
+* Twine
+* wheel
