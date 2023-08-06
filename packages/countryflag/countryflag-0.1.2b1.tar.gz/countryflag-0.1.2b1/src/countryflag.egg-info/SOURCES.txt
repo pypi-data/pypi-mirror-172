@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/countryflag.py
+src/countryflag.egg-info/PKG-INFO
+src/countryflag.egg-info/SOURCES.txt
+src/countryflag.egg-info/dependency_links.txt
+src/countryflag.egg-info/entry_points.txt
+src/countryflag.egg-info/requires.txt
+src/countryflag.egg-info/top_level.txt
