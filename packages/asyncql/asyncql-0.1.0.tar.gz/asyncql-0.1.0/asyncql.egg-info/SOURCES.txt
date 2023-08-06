@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+asyncql.egg-info/PKG-INFO
+asyncql.egg-info/SOURCES.txt
+asyncql.egg-info/dependency_links.txt
+asyncql.egg-info/not-zip-safe
+asyncql.egg-info/requires.txt
+asyncql.egg-info/top_level.txt
