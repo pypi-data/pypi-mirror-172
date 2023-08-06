@@ -1,0 +1,10 @@
+setup.py
+dnsd031_binomialPypi/Binomialdistribution.py
+dnsd031_binomialPypi/Gaussiandistribution.py
+dnsd031_binomialPypi/Generaldistribution.py
+dnsd031_binomialPypi/__init__.py
+dnsd031_binomialPypi.egg-info/PKG-INFO
+dnsd031_binomialPypi.egg-info/SOURCES.txt
+dnsd031_binomialPypi.egg-info/dependency_links.txt
+dnsd031_binomialPypi.egg-info/not-zip-safe
+dnsd031_binomialPypi.egg-info/top_level.txt
