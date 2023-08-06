@@ -1,0 +1,8 @@
+ftfy
+loguru
+pandas
+probablepeople
+rapidfuzz
+sklearn
+sparse-dot-topn
+tqdm
