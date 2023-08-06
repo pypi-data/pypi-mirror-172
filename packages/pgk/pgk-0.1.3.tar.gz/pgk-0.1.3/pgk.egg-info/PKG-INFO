@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pgk
+Version: 0.1.3
+Home-page: https://github.com/ExtraMobs/pgk
+Author: ExtraMobs
+Author-email: extramobs@hotmail.com
+License: MIT
+Keywords: PyGameKit
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
