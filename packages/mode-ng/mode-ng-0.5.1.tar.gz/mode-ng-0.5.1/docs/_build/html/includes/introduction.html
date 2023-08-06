@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>What is Mode? &#8212; mode-ng 0.4.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p>:Version: 0.3.0
+:Web: http://mode-ng.readthedocs.org/
+:Download: http://pypi.org/project/mode-ng
+:Source: http://github.com/lqhuang/mode-ng
+:Keywords: async, service, framework, actors, bootsteps, graph</p>
+<section id="what-is-mode">
+<h1>What is Mode?<a class="headerlink" href="#what-is-mode" title="Permalink to this heading">¶</a></h1>
+<p>Mode is a very minimal Python library built-on top of AsyncIO that makes
+it much easier to use.</p>
+<p>In Mode your program is built out of services that you can start, stop,
+restart and supervise.</p>
+<p>A service is just a class::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>class PageViewCache(Service):
+    redis: Redis = None
+
+    async def on_start(self) -&gt; None:
+        self.redis = connect_to_redis()
+
+    async def update(self, url: str, n: int = 1) -&gt; int:
+        return await self.redis.incr(url, n)
+
+    async def get(self, url: str) -&gt; int:
+        return await self.redis.get(url)
+</pre></div>
+</div>
+<p>Services are started, stopped and restarted and have
+callbacks for those actions.</p>
+<p>It can start another service::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>class App(Service):
+    page_view_cache: PageViewCache = None
+
+    async def on_start(self) -&gt; None:
+        await self.add_runtime_dependency(self.page_view_cache)
+
+    @cached_property
+    def page_view_cache(self) -&gt; PageViewCache:
+        return PageViewCache()
+</pre></div>
+</div>
+<p>It can include background tasks::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>class PageViewCache(Service):
+
+    @Service.timer(1.0)
+    async def _update_cache(self) -&gt; None:
+        self.data = await cache.get(&#39;key&#39;)
+</pre></div>
+</div>
+<p>Services that depends on other services actually form a graph
+that you can visualize.</p>
+<p>Worker
+Mode optionally provides a worker that you can use to start the program,
+with support for logging, blocking detection, remote debugging and more.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>To start a worker add this to your program::
+
+    if __name__ == &#39;__main__&#39;:
+        from mode import Worker
+        Worker(Service(), loglevel=&quot;info&quot;).execute_from_commandline()
+
+Then execute your program to start the worker:
+
+.. code-block:: console
+
+    $ python examples/tutorial.py
+    [2018-03-27 15:47:12,159: INFO]: [^Worker]: Starting...
+    [2018-03-27 15:47:12,160: INFO]: [^-AppService]: Starting...
+    [2018-03-27 15:47:12,160: INFO]: [^--Websockets]: Starting...
+    STARTING WEBSOCKET SERVER
+    [2018-03-27 15:47:12,161: INFO]: [^--UserCache]: Starting...
+    [2018-03-27 15:47:12,161: INFO]: [^--Webserver]: Starting...
+    [2018-03-27 15:47:12,164: INFO]: [^--Webserver]: Serving on port 8000
+    REMOVING EXPIRED USERS
+    REMOVING EXPIRED USERS
+
+To stop it hit :kbd:`Control-c`:
+
+.. code-block:: console
+
+    [2018-03-27 15:55:08,084: INFO]: [^Worker]: Stopping on signal received...
+    [2018-03-27 15:55:08,084: INFO]: [^Worker]: Stopping...
+    [2018-03-27 15:55:08,084: INFO]: [^-AppService]: Stopping...
+    [2018-03-27 15:55:08,084: INFO]: [^--UserCache]: Stopping...
+    REMOVING EXPIRED USERS
+    [2018-03-27 15:55:08,085: INFO]: [^Worker]: Gathering service tasks...
+    [2018-03-27 15:55:08,085: INFO]: [^--UserCache]: -Stopped!
+    [2018-03-27 15:55:08,085: INFO]: [^--Webserver]: Stopping...
+    [2018-03-27 15:55:08,085: INFO]: [^Worker]: Gathering all futures...
+    [2018-03-27 15:55:08,085: INFO]: [^--Webserver]: Closing server
+    [2018-03-27 15:55:08,086: INFO]: [^--Webserver]: Waiting for server to close handle
+    [2018-03-27 15:55:08,086: INFO]: [^--Webserver]: Shutting down web application
+    [2018-03-27 15:55:08,086: INFO]: [^--Webserver]: Waiting for handler to shut down
+    [2018-03-27 15:55:08,086: INFO]: [^--Webserver]: Cleanup
+    [2018-03-27 15:55:08,086: INFO]: [^--Webserver]: -Stopped!
+    [2018-03-27 15:55:08,086: INFO]: [^--Websockets]: Stopping...
+    [2018-03-27 15:55:08,086: INFO]: [^--Websockets]: -Stopped!
+    [2018-03-27 15:55:08,087: INFO]: [^-AppService]: -Stopped!
+    [2018-03-27 15:55:08,087: INFO]: [^Worker]: -Stopped!
+</pre></div>
+</div>
+<p>Beacons
+The <code class="docutils literal notranslate"><span class="pre">beacon</span></code> object that we pass to services keeps track of the services
+in a graph.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>They are not stricly required, but can be used to visualize a running
+system, for example we can render it as a pretty graph.
+
+This requires you to have the ``pydot`` library and GraphViz
+installed:
+
+.. code-block:: console
+
+    $ pip install pydot
+
+Let&#39;s change the app service class to dump the graph to an image
+at startup::
+
+    class AppService(Service):
+
+        async def on_start(self) -&gt; None:
+            print(&#39;APP STARTING&#39;)
+            import pydot
+            import io
+            o = io.StringIO()
+            beacon = self.app.beacon.root or self.app.beacon
+            beacon.as_graph().to_dot(o)
+            graph, = pydot.graph_from_dot_data(o.getvalue())
+            print(&#39;WRITING GRAPH TO image.png&#39;)
+            with open(&#39;image.png&#39;, &#39;wb&#39;) as fh:
+                fh.write(graph.create_png())
+</pre></div>
+</div>
+</section>
+<section id="creating-a-service">
+<h1>Creating a Service<a class="headerlink" href="#creating-a-service" title="Permalink to this heading">¶</a></h1>
+<p>To define a service, simply subclass and fill in the methods
+to do stuff as the service is started/stopped etc.::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>class MyService(Service):
+
+    async def on_start(self) -&gt; None:
+        print(&#39;Im starting now&#39;)
+
+    async def on_started(self) -&gt; None:
+        print(&#39;Im ready&#39;)
+
+    async def on_stop(self) -&gt; None:
+        print(&#39;Im stopping now&#39;)
+</pre></div>
+</div>
+<p>To start the service, call <code class="docutils literal notranslate"><span class="pre">await</span> <span class="pre">service.start()</span></code>::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>await service.start()
+</pre></div>
+</div>
+<p>Or you can use <code class="docutils literal notranslate"><span class="pre">mode.Worker</span></code> (or a subclass of this) to start your
+services-based asyncio program from the console::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if __name__ == &#39;__main__&#39;:
+    import mode
+    worker = mode.Worker(
+        MyService(),
+        loglevel=&#39;INFO&#39;,
+        logfile=None,
+        daemon=False,
+    )
+    worker.execute_from_commandline()
+</pre></div>
+</div>
+</section>
+<section id="it-s-a-graph">
+<h1>It’s a Graph!<a class="headerlink" href="#it-s-a-graph" title="Permalink to this heading">¶</a></h1>
+<p>Services can start other services, coroutines, and background tasks.</p>
+<ol class="arabic">
+<li><p>Starting other services using <code class="docutils literal notranslate"><span class="pre">add_depenency</span></code>::</p>
+<p>class MyService(Service):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> def __post_init__(self) -&gt; None:
+    self.add_dependency(OtherService(loop=self.loop))
+</pre></div>
+</div>
+</li>
+<li><p>Start a list of services using <code class="docutils literal notranslate"><span class="pre">on_init_dependencies</span></code>::</p>
+<p>class MyService(Service):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> def on_init_dependencies(self) -&gt; None:
+     return [
+         ServiceA(loop=self.loop),
+         ServiceB(loop=self.loop),
+         ServiceC(loop=self.loop),
+     ]
+</pre></div>
+</div>
+</li>
+<li><p>Start a future/coroutine (that will be waited on to complete on stop)::</p>
+<p>class MyService(Service):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> async def on_start(self) -&gt; None:
+     self.add_future(self.my_coro())
+
+ async def my_coro(self) -&gt; None:
+     print(&#39;Executing coroutine&#39;)
+</pre></div>
+</div>
+</li>
+<li><p>Start a background task::</p>
+<p>class MyService(Service):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> @Service.task
+ async def _my_coro(self) -&gt; None:
+     print(&#39;Executing coroutine&#39;)
+</pre></div>
+</div>
+</li>
+<li><p>Start a background task that keeps running::</p>
+<p>class MyService(Service):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> @Service.task
+ async def _my_coro(self) -&gt; None:
+     while not self.should_stop:
+         # NOTE: self.sleep will wait for one second, or
+         #       until service stopped/crashed.
+         await self.sleep(1.0)
+         print(&#39;Background thread waking up&#39;)
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="../index.html">mode-ng</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction to Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/index.html">API Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelong</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Lanqing Huang.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/includes/introduction.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

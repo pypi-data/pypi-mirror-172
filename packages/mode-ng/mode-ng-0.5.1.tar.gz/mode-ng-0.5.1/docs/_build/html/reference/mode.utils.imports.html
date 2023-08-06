@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>mode.utils.imports &#8212; mode-ng 0.4.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="mode.utils.locals" href="mode.utils.locals.html" />
+    <link rel="prev" title="mode.utils.graphs" href="mode.utils.graphs.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="mode-utils-imports">
+<h1><code class="docutils literal notranslate"><span class="pre">mode.utils.imports</span></code><a class="headerlink" href="#mode-utils-imports" title="Permalink to this heading">¶</a></h1>
+<span class="target" id="module-mode.utils.imports"></span><p>Importing utilities.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.imports.FactoryMapping">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.imports.</span></span><span class="sig-name descname"><span class="pre">FactoryMapping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Mapping</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.imports.FactoryMapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class plugin system.</p>
+<p>This is an utility to maintain a mapping from name to fully
+qualified Python attribute path, and also supporting the use
+of these in URLs.</p>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Specifying the type enables mypy to know that</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># this factory returns Driver subclasses.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">drivers</span><span class="p">:</span> <span class="n">FactoryMapping</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">Driver</span><span class="p">]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">drivers</span> <span class="o">=</span> <span class="n">FactoryMapping</span><span class="p">({</span>
+<span class="gp">... </span>   <span class="s1">&#39;rabbitmq&#39;</span><span class="p">:</span> <span class="s1">&#39;my.drivers.rabbitmq:Driver&#39;</span><span class="p">,</span>
+<span class="gp">... </span>   <span class="s1">&#39;kafka&#39;</span><span class="p">:</span> <span class="s1">&#39;my.drivers.kafka:Driver&#39;</span><span class="p">,</span>
+<span class="gp">... </span>   <span class="s1">&#39;redis&#39;</span><span class="p">:</span> <span class="s1">&#39;my.drivers.redis:Driver&#39;</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">})</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">drivers</span><span class="o">.</span><span class="n">by_url</span><span class="p">(</span><span class="s1">&#39;rabbitmq://localhost:9090&#39;</span><span class="p">)</span>
+<span class="go">&lt;class &#39;my.drivers.rabbitmq.Driver&#39;&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">drivers</span><span class="o">.</span><span class="n">by_name</span><span class="p">(</span><span class="s1">&#39;redis&#39;</span><span class="p">)</span>
+<span class="go">&lt;class &#39;my.drivers.redis.Driver&#39;&gt;</span>
+</pre></div>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mode.utils.imports.FactoryMapping.aliases">
+<span class="sig-name descname"><span class="pre">aliases</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">MutableMapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#mode.utils.imports.FactoryMapping.aliases" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mode.utils.imports.FactoryMapping.by_name">
+<span class="sig-name descname"><span class="pre">by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">_T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">_T</span></span></span><a class="headerlink" href="#mode.utils.imports.FactoryMapping.by_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mode.utils.imports.FactoryMapping.by_url">
+<span class="sig-name descname"><span class="pre">by_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">URL</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">_T</span></span></span><a class="headerlink" href="#mode.utils.imports.FactoryMapping.by_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get class associated with URL (scheme is used as alias key).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="mode.utils.imports.FactoryMapping.data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">MutableMapping</span></em><a class="headerlink" href="#mode.utils.imports.FactoryMapping.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mode.utils.imports.FactoryMapping.get_alias">
+<span class="sig-name descname"><span class="pre">get_alias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mode.utils.imports.FactoryMapping.get_alias" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mode.utils.imports.FactoryMapping.include_setuptools_namespace">
+<span class="sig-name descname"><span class="pre">include_setuptools_namespace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#mode.utils.imports.FactoryMapping.include_setuptools_namespace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mode.utils.imports.FactoryMapping.iterate">
+<span class="sig-name descname"><span class="pre">iterate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><span class="pre">_T</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#mode.utils.imports.FactoryMapping.iterate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mode.utils.imports.FactoryMapping.namespaces">
+<span class="sig-name descname"><span class="pre">namespaces</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">set</span></em><a class="headerlink" href="#mode.utils.imports.FactoryMapping.namespaces" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.imports.cwd_in_path">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.imports.</span></span><span class="sig-name descname"><span class="pre">cwd_in_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Generator</span></span></span><a class="headerlink" href="#mode.utils.imports.cwd_in_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Context adding the current working directory to sys.path.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.imports.import_from_cwd">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.imports.</span></span><span class="sig-name descname"><span class="pre">import_from_cwd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">package</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">module</span></span></span><a class="headerlink" href="#mode.utils.imports.import_from_cwd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import module, temporarily including modules in the current directory.</p>
+<p>Modules located in the current directory has
+precedence over modules located in <cite>sys.path</cite>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.imports.load_extension_class_names">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.imports.</span></span><span class="sig-name descname"><span class="pre">load_extension_class_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">RawEntrypointExtension</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#mode.utils.imports.load_extension_class_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get setuptools entrypoint extension class names.</p>
+<p>If the entrypoint is defined in <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">entry_points</span><span class="o">=</span><span class="p">{</span>
+    <span class="s1">&#39;faust.codecs&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;msgpack = faust_msgpack:msgpack&#39;</span><span class="p">,</span>
+    <span class="p">],</span>
+</pre></div>
+</div>
+<p>Iterating over the ‘faust.codecs’ namespace will yield the name:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">load_extension_class_names</span><span class="p">(</span><span class="s1">&#39;faust.codecs&#39;</span><span class="p">))</span>
+<span class="go">[(&#39;msgpack&#39;, &#39;faust_msgpack:msgpack&#39;)]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.imports.load_extension_classes">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.imports.</span></span><span class="sig-name descname"><span class="pre">load_extension_classes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">EntrypointExtension</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#mode.utils.imports.load_extension_classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield extension classes for setuptools entrypoint namespace.</p>
+<p>If an entrypoint is defined in <code class="docutils literal notranslate"><span class="pre">setup.py</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">entry_points</span><span class="o">=</span><span class="p">{</span>
+    <span class="s1">&#39;faust.codecs&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;msgpack = faust_msgpack:msgpack&#39;</span><span class="p">,</span>
+    <span class="p">],</span>
+</pre></div>
+</div>
+<p>Iterating over the ‘faust.codecs’ namespace will yield
+the actual attributes specified in the path (<code class="docutils literal notranslate"><span class="pre">faust_msgpack:msgpack</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">faust_msgpack</span> <span class="kn">import</span> <span class="n">msgpack</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">attrs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">load_extension_classes</span><span class="p">(</span><span class="s1">&#39;faust.codecs&#39;</span><span class="p">))</span>
+<span class="go">assert msgpack in attrs</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.imports.smart_import">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.imports.</span></span><span class="sig-name descname"><span class="pre">smart_import</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#mode.utils.imports.smart_import" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import module if module, otherwise same as <a class="reference internal" href="#mode.utils.imports.symbol_by_name" title="mode.utils.imports.symbol_by_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">symbol_by_name()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.imports.symbol_by_name">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.imports.</span></span><span class="sig-name descname"><span class="pre">symbol_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">_T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aliases</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">package</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">_T</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">_T</span></span></span><a class="headerlink" href="#mode.utils.imports.symbol_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get symbol by qualified name.</p>
+<p>The name should be the full dot-separated path to the class:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">modulename</span><span class="o">.</span><span class="n">ClassName</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mazecache</span><span class="o">.</span><span class="n">backends</span><span class="o">.</span><span class="n">redis</span><span class="o">.</span><span class="n">RedisBackend</span>
+                        <span class="o">^-</span> <span class="k">class</span> <span class="nc">name</span>
+</pre></div>
+</div>
+<p>or using ‘:’ to separate module and symbol:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mazecache</span><span class="o">.</span><span class="n">backends</span><span class="o">.</span><span class="n">redis</span><span class="p">:</span><span class="n">RedisBackend</span>
+</pre></div>
+</div>
+<p>If <cite>aliases</cite> is provided, a dict containing short name/long name
+mappings, the name is looked up in the aliases first.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">symbol_by_name</span><span class="p">(</span><span class="s1">&#39;mazecache.backends.redis:RedisBackend&#39;</span><span class="p">)</span>
+<span class="go">&lt;class &#39;mazecache.backends.redis.RedisBackend&#39;&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">symbol_by_name</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="s1">&#39;mazecache.backends.redis:RedisBackend&#39;</span><span class="p">})</span>
+<span class="go">&lt;class &#39;mazecache.backends.redis.RedisBackend&#39;&gt;</span>
+</pre></div>
+</div>
+<p># Does not try to look up non-string names.
+&gt;&gt;&gt; from mazecache.backends.redis import RedisBackend
+&gt;&gt;&gt; symbol_by_name(RedisBackend) is RedisBackend
+True</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="../index.html">mode-ng</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction to Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/index.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#mode">Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#typehints">Typehints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#event-loops">Event Loops</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#utils">Utils</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelong</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">API Reference</a><ul>
+      <li>Previous: <a href="mode.utils.graphs.html" title="previous chapter"><code class="docutils literal notranslate"><span class="pre">mode.utils.graphs</span></code></a></li>
+      <li>Next: <a href="mode.utils.locals.html" title="next chapter"><code class="docutils literal notranslate"><span class="pre">mode.utils.locals</span></code></a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Lanqing Huang.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/reference/mode.utils.imports.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
