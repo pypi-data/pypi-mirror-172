@@ -1,0 +1,31 @@
+# Last Changes
+
+## v. 0.7.3
+
+  - Added option for import/export to sqlite database. Cleaned-up code. Fixed some bugs.
+
+## v. 0.7.1
+
+  - Fixed bugs in bibmanage searching. Added option to bibtex output.
+
+## v. 0.7.0
+
+  - Fixed bugs related to string and unicode objects
+
+## v. 0.6.7
+
+  - Working python 3 version
+
+## v. 0.6.1
+
+  - Added option to export to bibtex in different encodings
+  - Parsing of tex files with two or more bibtex input files has been
+    corrected in bibextract.py
+
+## v. 0.6.0
+
+  - Fixed bugs to all scripts and added option for version information
+    output
+  - bibextract.py now determines the bibtex file from the source.
+
+
