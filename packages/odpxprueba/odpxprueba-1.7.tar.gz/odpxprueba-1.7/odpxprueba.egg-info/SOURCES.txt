@@ -1,0 +1,12 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+odpxprueba/__init__.py
+odpxprueba/odpxprueba.py
+odpxprueba/odpxprueba2.py
+odpxprueba.egg-info/PKG-INFO
+odpxprueba.egg-info/SOURCES.txt
+odpxprueba.egg-info/dependency_links.txt
+odpxprueba.egg-info/requires.txt
+odpxprueba.egg-info/top_level.txt
