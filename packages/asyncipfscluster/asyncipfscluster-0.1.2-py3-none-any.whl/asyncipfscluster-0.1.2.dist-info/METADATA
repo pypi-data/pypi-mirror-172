@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: asyncipfscluster
+Version: 0.1.2
+Summary: Async IPFS Cluster HTTP API
+Home-page: https://git.frsqr.xyz/cofob/asyncipfscluster
+License: MIT
+Keywords: ipfs,cluster,http,api
+Author: Egor Ternovoy
+Author-email: cofob@riseup.net
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiohttp (>=3.8,<4.0)
+Project-URL: Repository, https://git.frsqr.xyz/cofob/asyncipfscluster
+Description-Content-Type: text/markdown
+
+# Async IPFS API
+
+## Install
+
+```bash
+pip install asyncipfscluster
+```
+
+## Usage
+
+```python
+import asyncio
+from asyncipfscluster import IPFSClient
+
+client = IPFSClient("http://127.0.0.1:9094")
+
+async def main():
+    async with client as session:
+        cid = await client.add_bytes(b"Hello from cofob!", "text/plain")
+        print(cid)
+
+asyncio.run(main())
+```
+
