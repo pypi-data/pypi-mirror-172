@@ -1,0 +1,15 @@
+ogdf_python/__init__.py,sha256=Gj0G_XDb0lbY24IGFWvTwlxfIQr27uuf23E3B24ssHQ,626
+ogdf_python/doxygen.json,sha256=4BlS1w8vigeHKXprMzzzGNbSJ_EFfK19CSomDTv5MQw,5117854
+ogdf_python/doxygen.py,sha256=hQ5-uBsHtnMjQic-Xta_O1Ty0wU9g-B6kxH5WrC0F9A,6855
+ogdf_python/info.py,sha256=iufXxfDVswAb_vSSNufzDTGWymkcctI8njYqis8hoOM,3129
+ogdf_python/jupyter.py,sha256=6dt4P-b-4sy71Ea4xHeCsvWmCiob-Qf-2Zz2s-EuUT0,1971
+ogdf_python/loader.py,sha256=USVEn-5ZWslcoMmflMM0TdtTe8c0eribuZNzhVxBw34,2263
+ogdf_python/utils.py,sha256=C_RfNoOTfpKxALvJm7uEPkIUrfxs-wEbqD8Uc1us87k,336
+ogdf_python/pythonize/__init__.py,sha256=uslW8LhMBFgofkS2w4Ova7zF9zMUckybYl6TlHyNb7g,1956
+ogdf_python/pythonize/container.py,sha256=5NR1YArk7vJN1f08ios3Tya0xromnXsRKYygtLd1WwU,1222
+ogdf_python/pythonize/graph_attributes.py,sha256=y220J_Ll_zvRfvEqE38N1hvuLwyak-aVWsi3U29o-Tg,4009
+ogdf_python/pythonize/render.py,sha256=24QcUGp_1zzouHtl7agQ6vaOC-GRGR2k5EQjkOa8Osc,517
+ogdf_python/pythonize/str.py,sha256=SMugrOYlaxNJ6_Su2vuTXcvbR7kcGqpDlalq7ztGpF8,1489
+ogdf_python-0.1.5.dist-info/METADATA,sha256=_56sk99w770QCGQmCbcS7lJA0sbCEONsfR7UyghE0Ro,7849
+ogdf_python-0.1.5.dist-info/WHEEL,sha256=dX1WPp444jXDT0mMZWrdU6ZHm7Cfu0jldiLCQOk_Kmg,87
+ogdf_python-0.1.5.dist-info/RECORD,,
