@@ -1,0 +1,43 @@
+ProdSteps:
+  - ID: 1
+    type: MCSimulation
+    version: 2022-08-03
+    parentID:
+    array_layout:
+    site: Paranal
+    particle: gamma
+    pointing_dir: South
+    zenith_angle: 20
+    n_shower: 10
+    magic: False
+    sct: True
+    moon: full
+    start_run_number: 0
+    catalogs: DIRACFileCatalog, TSCatalog
+  - ID: 2
+    type: EvnDispProcessing
+    version: eventdisplay-cta-dl1-prod5.v06
+    nsb: 1
+    catalogs: DIRACFileCatalog
+    parentID: 1
+    dataset:
+  - ID: 3
+    type: EvnDispProcessing
+    version: eventdisplay-cta-dl1-prod5.v06
+    nsb: 5
+    catalogs: DIRACFileCatalog
+    parentID: 1
+    dataset:
+  - ID: 4
+    type: EvnDispProcessing
+    version: eventdisplay-cta-dl1-prod5.v06
+    nsb: 19
+    catalogs: DIRACFileCatalog
+    parentID: 1
+    dataset:
+
+Common:
+    MCCampaign: Prod6Test
+    base_path: /vo.cta.in2p3.fr/user/a/afaure/prod6/
+    configuration_id: 15
+
