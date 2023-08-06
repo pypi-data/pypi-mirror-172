@@ -1,0 +1,27 @@
+name: ldcpy
+channels:
+  - conda-forge
+dependencies:
+  - python=*=*cp*
+  - cartopy
+  - cmocean
+  - codecov
+  - dask
+  - intake-esm
+  - matplotlib-base=3.3.3
+  - netcdf4
+  - pip
+  - pytest
+  - pytest-cov
+  - scikit-image
+  - zfpy
+  - pandas
+  - astropy
+  - jupyterlab
+  - ipython
+  - pooch
+  - statsmodels
+  - pip:
+      - git+https://github.com/pydata/xarray.git
+      - git+https://github.com/xarray-contrib/cf-xarray.git
+      - git+https://github.com/xgcm/xrft.git

@@ -1,0 +1,36 @@
+name: ldcpy_dev
+channels:
+  - conda-forge
+dependencies:
+  - python=*=*cp*
+  - cartopy
+  - cmocean
+  - codecov
+  - cython
+  - dask
+  - graphviz
+  - intake-esm
+  - jupyter_contrib_nbextensions
+  - jupyterlab
+  - matplotlib
+  - matplotlib-base
+  - netcdf4
+  - numpy
+  - opencv
+  - pandas
+  - pip
+  - pre-commit
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - scikit-image
+  - scipy
+  - setuptools
+  - xarray
+  - xrft
+  - zfpy
+  - cf_xarray
+  - astropy
+  - ipython
+  - pooch
+  - statsmodels

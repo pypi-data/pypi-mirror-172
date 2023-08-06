@@ -1,0 +1,32 @@
+name: myenv
+channels:
+  - conda-forge
+dependencies:
+  - python=*=*cp*
+  - cartopy
+  - cf_xarray
+  - cmocean
+  - dask
+  - dask-gateway
+  - dask-labextension
+  - distributed
+  - fsspec
+  - intake-esm
+  - ipywidgets
+  - jupyter-offlinenotebook
+  - jupyterlab>=3
+  - matplotlib-base=3.3.3
+  - ipython
+  - netcdf4
+  - nodejs
+  - pip
+  - python=3.8
+  - s3fs
+  - scikit-image
+  - xarray
+  - xrft
+  - pandas
+  - pooch
+  - statsmodels
+  - pip:
+      - -e ..
