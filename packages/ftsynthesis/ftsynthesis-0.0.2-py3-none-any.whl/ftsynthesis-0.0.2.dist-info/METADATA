@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ftsynthesis
+Version: 0.0.2
+Summary: fault tolerant circuit synthesis for universal fault-tolerant quantum computing based on concatenated codes
+Home-page: UNKNOWN
+Author: Yongsoo Hwang
+Author-email: yhwang@etri.re.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+License-File: NOTICE.md
+Requires-Dist: simplejson
+Requires-Dist: icecream
+Requires-Dist: qubitmapping
+Requires-Dist: userproperty
+
+UNKNOWN
+
