@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tcloud-codeartifact"
+version = "0.1.0"
+description = "Tcloud codeartifacts"
+authors = ["tcloudcodeartifact <tcloudcodeartifact@gmail.com>"]
+readme = "README.md"
+packages = [{include = "artifacts"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+Faker = ">=8.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
