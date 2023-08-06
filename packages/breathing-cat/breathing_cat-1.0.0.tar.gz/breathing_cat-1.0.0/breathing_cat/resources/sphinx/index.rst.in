@@ -1,0 +1,19 @@
+@HEADER@
+
+@README@
+
+@GENERAL_DOCUMENTATION@
+
+@CPP_API@
+
+@PYTHON_API@
+
+@CMAKE_API@
+
+Indices and Tables
+------------------
+
+* :ref:`genindex`
+* :ref:`search`
+
+@LICENSE@
