@@ -1,0 +1,9 @@
+settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+settings/debug.py,sha256=21vtGJqhK7cr5eOldrG4v1S3up7Y7q45OfWx29fP9FU,626
+settings/defaults.py,sha256=WWKdL9r40UqnCp-ruxazFhJKZKooCgYj5BzhaLEvhGo,19150
+settings/logging.py,sha256=Sey43OFS-AaAK0D1ENxTeb6XHhbiif9cOQ3RDy-cKaI,1916
+meta3_demo-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+meta3_demo-0.3.0.dist-info/METADATA,sha256=wHfaZ1GBWyolg_lt6u9l2lxvdrQVyImlZB6S08aSa0E,9303
+meta3_demo-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+meta3_demo-0.3.0.dist-info/top_level.txt,sha256=wZK3kjBHOHXxWdRCPXTQD32cxOY0Yas7CgQwuGdtn3A,9
+meta3_demo-0.3.0.dist-info/RECORD,,
