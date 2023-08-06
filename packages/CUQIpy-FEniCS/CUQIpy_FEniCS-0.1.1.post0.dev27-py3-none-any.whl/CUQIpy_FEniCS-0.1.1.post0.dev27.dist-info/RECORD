@@ -1,0 +1,10 @@
+cuqipy_fenics/__init__.py,sha256=OBnTw08dxhuuPz77eca6vHc5z8tYy5nagh7ftsWEqx0,384
+cuqipy_fenics/_version.py,sha256=WC9UMHC6WaOyLd1n1B31kdKD7ZXkLKCqjLRgXFIpRio,509
+cuqipy_fenics/geometry.py,sha256=lNUkXkCTR3D2cHtakKzxYg3tJGvpVydipVliW03JyQ4,11292
+cuqipy_fenics/pde.py,sha256=PfJD2K5Wpzfq0lLKXC9ABIzsf6hlsZMLeGzcssP1MjY,9811
+cuqipy_fenics/testproblem.py,sha256=6Qu3AYhaU37fOvKg16voMg-Py_RjpX3v-a1dzihRczI,5293
+CUQIpy_FEniCS-0.1.1.post0.dev27.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+CUQIpy_FEniCS-0.1.1.post0.dev27.dist-info/METADATA,sha256=n4-0Pe8XV8KY0-AKc2R4EobZ5d6bzg7gIZSnadzfbAQ,42353
+CUQIpy_FEniCS-0.1.1.post0.dev27.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CUQIpy_FEniCS-0.1.1.post0.dev27.dist-info/top_level.txt,sha256=I5DOtRcOn_I9x0Epcrw601od5gaeV1C4vxcnzoTDa4k,14
+CUQIpy_FEniCS-0.1.1.post0.dev27.dist-info/RECORD,,
