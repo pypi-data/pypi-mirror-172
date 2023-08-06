@@ -1,0 +1,2 @@
+sphinxcontrib-bibtex
+pydata-sphinx-theme
