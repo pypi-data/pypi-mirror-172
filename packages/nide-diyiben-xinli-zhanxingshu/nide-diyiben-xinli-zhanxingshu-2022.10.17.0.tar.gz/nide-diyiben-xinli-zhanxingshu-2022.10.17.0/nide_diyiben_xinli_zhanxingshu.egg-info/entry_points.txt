@@ -1,0 +1,4 @@
+[console_scripts]
+NideDiyibenXinliZhanxingshu = NideDiyibenXinliZhanxingshu.__main__:main
+nide-diyiben-xinli-zhanxingshu = NideDiyibenXinliZhanxingshu.__main__:main
+
