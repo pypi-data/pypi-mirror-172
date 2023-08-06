@@ -1,0 +1,3 @@
+[console_scripts]
+add-only-dictionary=add_only_dictionary.__main__:main
+
