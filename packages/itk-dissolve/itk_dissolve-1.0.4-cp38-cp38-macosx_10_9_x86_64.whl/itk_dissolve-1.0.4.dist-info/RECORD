@@ -1,0 +1,10 @@
+itk/DissolvePython.py,sha256=lDMH-WP0uC_iA1X_dunBx1X1OkUxyQqA517SWpioCUQ,2372
+itk/_DissolvePython.so,sha256=Fq_7GKc_U8n1Kfz5kAxn9pK49nyy9reUfxOS1SceyDo,3680708
+itk/itkDissolveMaskImageFilterPython.py,sha256=VEnnCukmUm-0jtB8M5paPzh9LdKpJqjUueU4oVG-sGw,112422
+itk/Configuration/DissolveConfig.py,sha256=wMntblU91n93-Ox-DKC-faiVMH5ttSfJpCOGGQFAafc,5096
+itk/Configuration/Dissolve_snake_case.py,sha256=6uLj4WKOK6PpphMGdSMlG9wpCrmh-wcur5K4mQNcFm0,56
+itk_dissolve-1.0.4.dist-info/LICENSE,sha256=rovgk7h0zPwqAAbVuETcXnPdLAxPudSUgcED6Bt46is,1072
+itk_dissolve-1.0.4.dist-info/METADATA,sha256=D2wtwIUNR2ERJ0sq--SI4zgCHlxENrBhFg4yeW1ZtLM,3143
+itk_dissolve-1.0.4.dist-info/WHEEL,sha256=z9qir6Vi_mkOsxGi50wLYU-N2ok_4rABw72J-twhmMA,102
+itk_dissolve-1.0.4.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_dissolve-1.0.4.dist-info/RECORD,,
