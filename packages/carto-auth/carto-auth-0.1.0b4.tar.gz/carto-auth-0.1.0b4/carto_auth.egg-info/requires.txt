@@ -1,0 +1,5 @@
+requests
+
+[carto-dw]
+google-auth
+google-cloud-bigquery>=2.34.4
