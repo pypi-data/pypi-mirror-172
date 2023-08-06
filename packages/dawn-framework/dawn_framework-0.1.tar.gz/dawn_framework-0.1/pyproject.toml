@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "dawn-framework"
+version = "0.1"
+description = "DawnFramework"
+authors = ["Sergey Shikhovtsov <sh.sergey.yur@gmail.com>"]
+homepage = "https://gitlab.com/dawn-framework/dawn-framework"
+repository = "https://gitlab.com/dawn-framework/dawn-framework"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: MIT License",
+]
+readme = "README.md"
+packages = [{include = "dawn"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
