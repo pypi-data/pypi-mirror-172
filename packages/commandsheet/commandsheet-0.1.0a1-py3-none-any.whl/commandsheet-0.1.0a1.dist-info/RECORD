@@ -1,0 +1,15 @@
+commandsheet/__init__.py,sha256=oklfaV_M5bvHU9tWlv1O9c7sfWaYAf07dMBUHZ3wLHs,24
+commandsheet/__main__.py,sha256=Ati96A7CFnbm_W91iZULUgN5-yYpe-Sq5nRNRKm5Jmw,82
+commandsheet/cli.py,sha256=3DBDieYbhh1z-mR3VuHTbFc4bHF2z3cbGut6gnNTPII,2600
+commandsheet/commandsheet.py,sha256=v2SepYPVjTckIlB7Zt4z6jVFPvauexuzk9Jfcf4r_xA,1499
+commandsheet/config.py,sha256=H-CKlaErYkLNPapsBYR1aYYUBbwcJxO_7d_L9R9jdkQ,1321
+commandsheet/const.py,sha256=HYAORGkjorzM_x1wzqc2y4mUCwsUqBu_rzKE-8m2mho,60
+commandsheet/errors.py,sha256=fhzYqjlEsWq__oGIWOhk56ZhNWnymC3PCCj6hEUR40U,854
+commandsheet/locale.py,sha256=exsY5e4kKkZk_vuR4LVgQ_5bUOVYVJqJMu4jIno5lrQ,110
+commandsheet/output.py,sha256=RyjA1G0kgWpl9s0TvvphXScW7wqjb7-mYN-a3P-guTc,3258
+commandsheet-0.1.0a1.dist-info/LICENSE,sha256=W19Ci1I2HPe710WZUp0Ly2KpFsz-uLgASi4rKAWBI34,1071
+commandsheet-0.1.0a1.dist-info/METADATA,sha256=WGM9qO0KmotYXs33HygErKfvHl8E1vHcDqixmnFQn7w,2347
+commandsheet-0.1.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+commandsheet-0.1.0a1.dist-info/entry_points.txt,sha256=aZ2Wc-J-ezKa2ClpTWVOkkGGEKfHA29CNmV9sfnFCi0,64
+commandsheet-0.1.0a1.dist-info/top_level.txt,sha256=3IkJOZXb8wpuBpfwIkPvDECmSmw2gWZHa_bH5u1My7U,13
+commandsheet-0.1.0a1.dist-info/RECORD,,
