@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: harf
+Version: 0.1.1
+Summary: Tools for processing har files
+Author-email: Brendan <brendandeleeuw@gmail.com>
+License: MIT License        
+        Copyright (c) 2022 Brendan DeLeeuw        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.        
+Project-URL: Homepage, https://github.com/MystiriodisLykos/harf/tree/v0.1.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: pyserde
+Requires-Dist: harf-serde
+
+A package of utilities for parsing, analyzing, and displaying data in `har` files.
+Particularly in relation to helping develop [locust](https://locust.io/) performance test scripts.
+
+***HarF* is heavily biased towards REST(ish) json based apis**
+
+Currently the project only provides a CLI and library to help track data through a har file.
+The CLI (`correlations`) displays what data is used where in a har file, some basic filters, and two ways to interact with the data. 
+For more information use `correlations --help` to see everything supported by the CLI.
+
+### Basic Output
+For small `har` files this basic output is probably sufficient.
+For example, if you use the `tests/example1.har` file with modified filters you will see all the values used in a request. `correlations tests/example1.har -x 100`
+```
+Value ('products') used in:  
+   "entry_0.request.url[0]"  
+  
+Value (1) used in:  
+   "entry_0.response.body[0].id",  
+   "entry_1.request.url[1]",  
+   "entry_1.response.body[0].id",  
+   "entry_2.request.body.productId"  
+  
+Value ('test') used in:  
+   "entry_0.response.body[0].name",  
+   "entry_1.response.body[0].name"  
+  
+Value ('product') used in:  
+   "entry_1.request.url[0]"  
+  
+Value (1.1) used in:  
+   "entry_1.response.body[0].price"  
+  
+Value ('cart') used in:  
+   "entry_2.request.url[0]"
+```
+
+### Interactive Output
+Once you start getting into larger files with hundreds of requests and dozens of values that need to be tracked the basic output is not all that helpful.
+HarF provides two ways to interact with the data dynamically.
+
+With `-i` you will be dropped into a python shell with the har data, correlation info, and some utility functions to inspect and manipulate the data as needed.
+
+And because I am an [obsidian](https://obsidian.md/) nerd `-o <vault_path>` will output a bunch of markdown files to the `vault_path` where every request, response, and used value gets their own note and are back-linked through usage.
+
+![Example Obsidian graph of linked HAR data](https://github.com/MystiriodisLykos/harf/blob/dev/assets/obsidian_example.png?raw=true)
+
+Colors are made from the `pageref` info where entries on page earlier in the trace are closer to the red end of the rainbow and later requests are closer to the purple/pink end.
+Additionally if there are **Comment Requests** (requests that begin with `http://COMMENT`) every entry is "re-paged" based on the Comment Request before it and the Comment Requests are removed.
+E.G. `GET http://COMMENT/homepage; GET http://www.example.com pageref:page_1;` becomes `GET http://www.example.com pageref:homepage;`
