@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: funlib.geometry
+Version: 0.1
+Home-page: https://github.com/funkelab/funlib.geometry
+Author: Jan Funke
+Author-email: funkej@janelia.hhmi.org
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![tests](https://github.com/funkelab/funlib.geometry/actions/workflows/tests.yaml/badge.svg)](https://github.com/funkelab/funlib.geometry/actions/workflows/tests.yaml)
+[![black](https://github.com/funkelab/funlib.geometry/actions/workflows/black.yaml/badge.svg)](https://github.com/funkelab/funlib.geometry/actions/workflows/black.yaml)
+[![mypy](https://github.com/funkelab/funlib.geometry/actions/workflows/mypy.yaml/badge.svg)](https://github.com/funkelab/funlib.geometry/actions/workflows/mypy.yaml)
+
+# funlib.geometry
+A package for Coordinates, Rois and common operations in Coordinate spaces
