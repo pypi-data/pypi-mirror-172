@@ -1,0 +1,2 @@
+[console_scripts]
+catholic = catholic.catholic:cli
