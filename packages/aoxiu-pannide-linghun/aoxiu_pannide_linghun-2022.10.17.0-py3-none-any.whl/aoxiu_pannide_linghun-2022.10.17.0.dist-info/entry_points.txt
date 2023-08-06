@@ -1,0 +1,4 @@
+[console_scripts]
+AoxiuPannideLinghun = AoxiuPannideLinghun.__main__:main
+aoxiu-pannide-linghun = AoxiuPannideLinghun.__main__:main
+
