@@ -1,0 +1,14 @@
+blipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blipy/conexao_bd.py,sha256=ShnmixlKEX0EZdnxNxFyKWynpzG49ScxVHEe6gzldzs,9741
+blipy/enum_tipo_col_bd.py,sha256=5pw9Rb7IySdvZcSU0jnDIM8tBKvqpFfWwKJgVsk_e6U,335
+blipy/erro.py,sha256=NpvZVwU0DFpU9PeDJQxkRMUx-cS5nRwO4quBNQhpnoQ,2135
+blipy/func_transformacao.py,sha256=0VqrTUIR-KQQYUmh84AZt79VqsMCnY7OL3gKwLD4ne0,16781
+blipy/job.py,sha256=ykl5NZzHI7cr849y5QZYgo0DVIjmjMlMx7gmpQTgsF4,11555
+blipy/planilha.py,sha256=517lVPtVlqeC2bcDG9eeeoL79rgYqHnzA2cmRCzCLE8,7695
+blipy/profiling.py,sha256=15GDBmTQckrxtanf_ULK7XbsHbYdB-9mzW4TGbb64jw,2759
+blipy/tabela_entrada.py,sha256=PJSVCd8MrmIw5lhwBa8v6c0LjL_Ps-I-8oAYyfBSPvM,4885
+blipy/tabela_saida.py,sha256=r5R21n5UuWfOyYugS0MHPvk480zhFW7K1QMcPlUDfRo,5873
+stnblipy-3.2.1.dist-info/METADATA,sha256=MatK9RbzeUSlTVajbJV3hZ-fj1K0flL4Qsgj1AQr0Xc,563
+stnblipy-3.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stnblipy-3.2.1.dist-info/top_level.txt,sha256=EjZTBkuMu4tIsFkTRyByBQRHzeTKwQWh_u7yDridJk4,6
+stnblipy-3.2.1.dist-info/RECORD,,
