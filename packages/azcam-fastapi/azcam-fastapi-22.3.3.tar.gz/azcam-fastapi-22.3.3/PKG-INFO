@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: azcam-fastapi
+Version: 22.3.3
+Summary: Azcam-fastapi is an azcam extension which implements a fastapi-based webserver
+Keywords: ccd,imaging,astronomy,sensors
+Author: Michael Lesser
+Author-email: mlesser@arizona.edu
+Description-Content-Type: text/markdown
+Requires-Dist: azcam
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: jinja2
+Project-URL: Documentation, https://mplesser.github.io/azcam/
+Project-URL: Repository, https://github.com/mplesser/azcam-fastapi/
+
+# azcam-fastapi
+
+*azcam-fastapi* is an *azcam* extension which adds support for a fastapi-based web server.
+
+## Installation
+
+`pip install azcam-fastapi`
+
+or download from github: https://github.com/mplesser/azcam-fastapi.git.
+
+## Uage Example
+
+```python
+from azcam_fastapi.fastapi_server import WebServer
+webserver = WebServer()
+webserver.index = f"index_mysystem.html"
+webserver.start()
+```
+

@@ -1,0 +1,25 @@
+[project]
+name = "azcam-fastapi"
+version = "22.3.3"
+description = "Azcam-fastapi is an azcam extension which implements a fastapi-based webserver"
+license = {file ="LICENSE"}
+readme = "README.md"
+keywords=["ccd", "imaging", "astronomy", "sensors"]
+authors = [{name="Michael Lesser"},{email = "mlesser@arizona.edu"}]
+dependencies = [
+    "azcam",
+    "fastapi",
+    "uvicorn",
+    "jinja2",
+]
+
+[project.urls]
+Documentation = "https://mplesser.github.io/azcam/"
+Repository = "https://github.com/mplesser/azcam-fastapi/"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "azcam_fastapi"
