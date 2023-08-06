@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tybtools
+Version: 0.0.2
+Summary: tools for cv
+Home-page: https://gitee.com/aierwiki/easytrain
+Author: Tang Yubin
+Author-email: tang-yu-bin@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+tools for cv
