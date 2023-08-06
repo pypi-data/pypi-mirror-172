@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+flespi/__init__.py
+flespi/rest.py
+flespi.egg-info/PKG-INFO
+flespi.egg-info/SOURCES.txt
+flespi.egg-info/dependency_links.txt
+flespi.egg-info/top_level.txt
