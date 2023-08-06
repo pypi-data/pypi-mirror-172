@@ -1,0 +1,60 @@
+name: blik
+display_name: blik
+contributions:
+  commands:
+    - id: blik.get_reader
+      python_name: blik.reader:get_reader
+      title: Open data with blik
+    - id: blik.write_image
+      python_name: blik.writer:write_image
+      title: Save image data with blik
+    - id: blik.write_labels
+      python_name: blik.writer:write_image
+      title: Save labels data with blik
+    - id: blik.write_particles
+      python_name: blik.writer:write_particles
+      title: Save particles data with blik
+    - id: blik.main_widget
+      python_name: blik.widgets.main_widget:MainBlikWidget
+      title: Create blik widget
+    - id: blik.file_reader
+      python_name: blik.widgets.file_reader:file_reader
+      title: Create reader widget
+    - id: blik.bandpass_filter
+      python_name: blik.widgets.filter:bandpass_filter
+      title: Create bandpass filter widget
+    - id: blik.gaussian_filter
+      python_name: blik.widgets.filter:gaussian_filter
+      title: Create gaussian filter widget
+  readers:
+    - command: blik.get_reader
+      filename_patterns:
+        - '*.mrc'
+        - '*.mrcs'
+        - '*.st'
+        - '*.em'
+        - '*.star'
+        - '*.tbl'
+        - '*.box'
+        - '*.cbox'
+  writers:
+    - command: blik.write_image
+      layer_types: ["image"]
+      filename_extensions: [".mrc", ".mrcs", ".st"]
+    - command: blik.write_labels
+      layer_types: ["labels"]
+      filename_extensions: [".mrc", ".mrcs", ".st"]
+    - command: blik.write_particles
+      layer_types: ["points+", "vectors*"]
+      filename_extensions: [".star"]
+  widgets:
+    - command: blik.main_widget
+      display_name: main widget
+    - command: blik.file_reader
+      display_name: file reader
+    - command: blik.bandpass_filter
+      display_name: bandpass filter
+    - command: blik.gaussian_filter
+      display_name: gaussian filter
+    - command: blik.filament_picker
+      display_name: filament picker
