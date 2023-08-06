@@ -1,0 +1,18 @@
+Change Log
+==========
+
+0.0.1 (05/05/2022)
+------------------
+- First Release
+
+0.0.2 (20/07/2022)
+------------------
+- Added the unsubscribe option.
+
+0.0.3 (20/07/2022)
+------------------
+- Implemented try catch statement
+
+0.0.8 (21/10/2022)
+------------------
+- fixed an issue such that it is possible now to subscribe to many topics on the same subscriber.
