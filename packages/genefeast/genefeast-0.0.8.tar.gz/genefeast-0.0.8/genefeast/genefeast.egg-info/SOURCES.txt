@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+genefeast/go-basic.obo
+genefeast/msigdb_v7.2.filtered.html
+genefeast/genefeast.egg-info/PKG-INFO
+genefeast/genefeast.egg-info/SOURCES.txt
+genefeast/genefeast.egg-info/dependency_links.txt
+genefeast/genefeast.egg-info/requires.txt
+genefeast/genefeast.egg-info/top_level.txt
