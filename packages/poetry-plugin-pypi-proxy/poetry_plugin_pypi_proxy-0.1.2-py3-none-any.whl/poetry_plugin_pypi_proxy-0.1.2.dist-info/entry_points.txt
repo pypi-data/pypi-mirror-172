@@ -1,0 +1,3 @@
+[poetry.plugin]
+poetry-pypi-proxy=poetry_plugin_pypi_proxy.plugin:PypiProxyPlugin
+

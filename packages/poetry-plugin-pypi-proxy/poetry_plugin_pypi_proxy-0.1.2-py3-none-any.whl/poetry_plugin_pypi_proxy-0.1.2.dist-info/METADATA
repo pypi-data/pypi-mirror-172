@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: poetry-plugin-pypi-proxy
+Version: 0.1.2
+Summary: Aliases PIP_INDEX_URL silently within Poetry to point at a new repository.
+License: MIT
+Author: Chad Crawford
+Author-email: chad@cacrawford.org
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: poetry (>=1.2.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# poetry-plugin-pypi-proxy
+
+This is a plugin that enables developers who use internal proxies of
+Pypi to integrate their projects seamlessly with Poetry without
+needing to build custom configurations for their proxy server.
+
+The plugin operates intuitively -- users can onboard to this tooling
+by installing the plugin and then setting `PIP_INDEX_URL` before
+running Poetry commands.
+
+It also runs silently, i.e., it will not pollute your `poetry.lock`
+with the URL of your proxy server and `poetry publish` is
+automatically redirected to the proxy as well.
+
+## Usage
+
+Start by installing Poetry with pipx:
+
+    pipx install poetry
+    pipx runpip poetry install poetry-plugin-pypi-proxy
+
+If you have already installed poetry, you only need to run the second command.
+
+Now, any Poetry project will automatically use the proxy server
+specified by `PIP_INDEX_URL`. You may add this to your `rc` file
+(`.bashrc`, `.zshrc`, `.envrc` with direnv, etc) or simply export it
+in your terminal to get started.
+
