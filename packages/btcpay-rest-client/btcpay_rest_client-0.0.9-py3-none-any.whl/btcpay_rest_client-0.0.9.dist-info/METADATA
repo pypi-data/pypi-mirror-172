@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: btcpay-rest-client
+Version: 0.0.9
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.6,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: requests (>=2.26.0,<3.0.0)

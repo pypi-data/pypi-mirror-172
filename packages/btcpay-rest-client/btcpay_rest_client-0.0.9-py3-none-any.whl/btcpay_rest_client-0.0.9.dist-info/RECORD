@@ -1,0 +1,8 @@
+btcpay_rest_client/__init__.py,sha256=3tgImRp1S0-FLVb7Ok6HGdTCVvJ0I7Ow7s-wiXn-1w8,38
+btcpay_rest_client/api.py,sha256=DUsnzNbzNtdWZ2IIeaImt8eM0g3CKlZRcPbj8ilKQYw,12389
+btcpay_rest_client/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btcpay_rest_client/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btcpay_rest_client/tests/test_api.py,sha256=sPIrTa6tIXW2xBcddzHof8qqgcEqJR2VhJM2n0w4v0Y,1322
+btcpay_rest_client-0.0.9.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+btcpay_rest_client-0.0.9.dist-info/METADATA,sha256=POw_B6YZIZwC3i4BGIZFHHHXeeVSR4cgpHf8y7A_v2g,487
+btcpay_rest_client-0.0.9.dist-info/RECORD,,
