@@ -1,0 +1,4 @@
+[console_scripts]
+BukesiyideGuwenmingVol2 = BukesiyideGuwenmingVol2.__main__:main
+bukesiyide-guwenming-vol2 = BukesiyideGuwenmingVol2.__main__:main
+
