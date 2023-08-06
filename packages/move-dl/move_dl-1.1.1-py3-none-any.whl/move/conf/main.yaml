@@ -1,0 +1,24 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - data: base_data
+  - model: vae
+  - tuning_reconstruction: main
+  - tuning_stability: main
+  - training_latent: main
+  - training_association: main
+  - task: null
+  - experiment: null
+  - override /hydra/job_logging: none
+  - override /hydra/hydra_logging: none
+
+hydra:
+  output_subdir: null
+  run:
+    dir: ./
+  searchpath:
+    - file://config/
+
+name: MOVE
+seed: 123456
