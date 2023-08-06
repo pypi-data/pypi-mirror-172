@@ -1,0 +1,14 @@
+oca_pre_commit_hooks/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+oca_pre_commit_hooks/__main__.py,sha256=tO6Dum5OUWIen4vDSFxkAo34tLTOyfqVZuvX0Bz_lb8,383
+oca_pre_commit_hooks/checks_odoo_module.py,sha256=5dYXVlDoWJna7npBm9tX1cDKiNwfpNYCdosmQrsLbwY,11362
+oca_pre_commit_hooks/checks_odoo_module_csv.py,sha256=rMpECTB5rlvDNjA1pBaUEmVbLR-09Y3BqjQXra4tkQ4,2337
+oca_pre_commit_hooks/checks_odoo_module_po.py,sha256=kRbD4c9nsedhJLhKApMOcW0f6NLzWCy7twZoXmii0GY,12114
+oca_pre_commit_hooks/checks_odoo_module_xml.py,sha256=21xP4NyT50_CLibr0_d0U0ilqCcHhfZE9IEPPUjrn8w,14404
+oca_pre_commit_hooks/cli.py,sha256=As0XvhNx5Of-hPITo8Lnhk_TTI8k9IjELMzyK5q0dN4,1971
+oca_pre_commit_hooks/utils.py,sha256=-V47ENpYndZ78-KQE6mgNCLGg2INe5S9nkQMuqqyR7M,1939
+oca_odoo_pre_commit_hooks-0.0.7.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+oca_odoo_pre_commit_hooks-0.0.7.dist-info/METADATA,sha256=F1NKIuEDYpepmC2hl0vqCU2qZubqSyaU2nv2t7JyxL0,8029
+oca_odoo_pre_commit_hooks-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+oca_odoo_pre_commit_hooks-0.0.7.dist-info/entry_points.txt,sha256=jwLejluouMKTIFxg6TZ4QB8NpO86BvAUnmB0O7lGkHw,73
+oca_odoo_pre_commit_hooks-0.0.7.dist-info/top_level.txt,sha256=33D31WYe6Dh2cvL5z5ZpwRxubk-E2Ss5G3tSiMTqTr8,21
+oca_odoo_pre_commit_hooks-0.0.7.dist-info/RECORD,,
