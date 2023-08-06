@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: mazepa
+Version: 0.0.0
+Summary: Lightweight distributed task scheduling.
+Author-email: Sergiy Popovych <sergiy.popoviich@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/supersergiy/mazepa
+Keywords: Distributed Computing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: attrs (>=21.3)
+Requires-Dist: typeguard (>=2.13.3)
+Requires-Dist: coolname (>=1.1.0)
+Requires-Dist: task-queue
+Requires-Dist: boto3
+Provides-Extra: all
+Requires-Dist: mazepa[docs,test] ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: piccolo-theme (>=0.11.1) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints (>=1.19.0) ; extra == 'docs'
+Requires-Dist: sphinx-notfound-page (>=0.8.3) ; extra == 'docs'
+Requires-Dist: sphinx-copybutton (>=0.5.0) ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: twine (>=4.0.1) ; extra == 'test'
+Requires-Dist: black (==21.9b0) ; extra == 'test'
+Requires-Dist: click (==8.0.1) ; extra == 'test'
+Requires-Dist: pydocstyle (==6.1.1) ; extra == 'test'
+Requires-Dist: flake8 (==4.0.1) ; extra == 'test'
+Requires-Dist: mypy (==0.971) ; extra == 'test'
+Requires-Dist: pytest (==7.1.1) ; extra == 'test'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'test'
+Requires-Dist: pytest-mock (==3.8.2) ; extra == 'test'
+Requires-Dist: isort (==5.10.1) ; extra == 'test'
+Requires-Dist: pylint (==2.13.9) ; extra == 'test'
+Requires-Dist: pre-commit (==2.19.0) ; extra == 'test'
+Requires-Dist: moto (==4.0.7) ; extra == 'test'
+
+Mazepa: Lightweight Distributed Task Scheduling
+===============================================
+
+|CI Badge| |Codecov Badge| |Docs Badge| |Python Badge|
+
+.. teaser-begin
+
+``mazepa`` is TODO 
+
+.. teaser-end
+
+
+.. project-info-begin
+
+Project Information
+===================
+
+- **License**: `MIT <https://choosealicense.com/licenses/mit/>`_
+- **Source Code**: https://github.com/supersergiy/mazepa
+- **Documentation**:  TODO 
+- **Supported Python Versions**: 3.7 and later
+
+.. project-info-end
+
+..
+  - **Changelog**:
+  - **PyPI**: https://pypi.org/project/a
+
+
+.. |CI Badge| image:: https://github.com/supersergiy/mazepa/actions/workflows/testing.yaml/badge.svg
+  :target: https://github.com/supersergiy/mazepa/actions/workflows/testing.yaml
+.. |Codecov Badge| image:: https://codecov.io/gh/supersergiy/mazepa/branch/main/graph/badge.svg?token=MGT3MDVTYZ
+  :target: https://codecov.io/gh/supersergiy/mazepa
+
+.. |Docs Badge| image:: https://github.com/supersergiy/mazepa/actions/workflows/docs_deployment.yaml/badge.svg?branch=main
+  :target: https://github.com/supersergiy/mazepa/actions/workflows/docs_deployment.yaml
+.. |Python Badge| image:: https://img.shields.io/badge/python-3.7+-blue.svg
