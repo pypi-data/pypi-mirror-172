@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+protoc_gen_pyproject/__init__.py
+protoc_gen_pyproject/__main__.py
+protoc_gen_pyproject/main.py
+protoc_gen_pyproject/parser.py
+protoc_gen_pyproject.egg-info/PKG-INFO
+protoc_gen_pyproject.egg-info/SOURCES.txt
+protoc_gen_pyproject.egg-info/dependency_links.txt
+protoc_gen_pyproject.egg-info/entry_points.txt
+protoc_gen_pyproject.egg-info/requires.txt
+protoc_gen_pyproject.egg-info/top_level.txt
