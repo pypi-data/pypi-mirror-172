@@ -1,0 +1,26 @@
+# [build-system]
+# requires = ["setuptools", "seuptools-scm"]
+# build-backend = "setuptools.build_meta"
+
+
+# [project]
+# name = "sortmyfolder"
+# description="My Package description"
+# version = "0.0.8"
+# author = "Emmanuel Agyapong"
+# author_name = "emmanuelagyapong070@gmail.com"
+# dependencies = [
+#     "shutils"
+# ]
+
+# [tool.setuptools.packages.find]
+# find = {}
+
+
+# [project.scripts]
+# sortmyfolder = "auto_group.determine_location:main"
+
+
+[build-system]
+requires = ["setuptools >= 39.2.0", "wheel"]
+build-backend = "setuptools.build_meta"

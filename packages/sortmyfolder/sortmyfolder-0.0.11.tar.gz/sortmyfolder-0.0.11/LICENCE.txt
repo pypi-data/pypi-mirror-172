@@ -1,0 +1,2 @@
+License
+This program is copyrighted by Emmanuel Agyapong (2022) and released under the MIT license. See the LICENSE file for details.
