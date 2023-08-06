@@ -1,0 +1,32 @@
+[project]
+name = "pip-resolved"
+version = "0.1.4"
+description = "Install wheels with pre-resolved dependencies"
+authors = [
+    { name = "Lucas Cardozo", email = "lucasecardozo@gmail.com" },
+]
+dependencies = [
+    "installer>=0.5.1",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+
+[project.scripts]
+pip-resolved = "pip_resolved.main:main"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=22.10.0",
+    "flake8>=5.0.4",
+]

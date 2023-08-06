@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pip-resolved
+Version: 0.1.4
+Summary: Install wheels with pre-resolved dependencies
+License: MIT
+Author-email: Lucas Cardozo <lucasecardozo@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pip-resolved
+
+
+
