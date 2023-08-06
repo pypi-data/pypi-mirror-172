@@ -1,0 +1,69 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+import os
+import readline
+import signal
+import sys
+import termios
+import time
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from op import Wd, keys, printable, update
+from operbot.run import Event, command, parse, scan
+from operbot.run import Cfg
+from operbot.irc import Config, IRC
+from operbot.rss import Fetcher
+
+
+from operbot import cmds, irc, rss
+
+
+Config.nick = "operbotd"
+Config.channel = "#operbot"
+Config.realname = "program your own commands"
+Config.username = "operbotd"
+
+
+Wd.workdir = os.path.expanduser("~/.operbot")
+
+
+scan(cmds)
+scan(irc)
+scan(rss)
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    sis = open("/dev/null", 'r')
+    sos = open("/dev/null", 'a+')
+    ses = open("/dev/null", 'a+')
+    os.dup2(sis.fileno(), sys.stdin.fileno())
+    os.dup2(sos.fileno(), sys.stdout.fileno())
+    os.dup2(ses.fileno(), sys.stderr.fileno())
+
+
+def hup(_sig, _frame):
+    print("signal 15 called")
+    sys.stdout.flush()
+
+
+def main():
+    daemon()
+    signal.signal(signal.SIGHUP, hup)
+    bot = IRC()
+    bot.start()
+    fetcher = Fetcher()
+    fetcher.start()
+    bot.wait()
+        
+
+main()

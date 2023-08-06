@@ -1,0 +1,115 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+import os
+import readline
+import signal
+import sys
+import termios
+import time
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from op import Class, Wd, keys, printable, update
+
+
+from operbot import cmds, irc, rss
+from operbot.irc import Config, IRC
+from operbot.rss import Fetcher
+from operbot.run import Cfg
+from operbot.run import Command, Event, Handler, parse, scan
+
+
+Config.nick = "operbot"
+Config.channel = "#operbot"
+Config.realname = "program your own commands"
+Config.username = "operbot"
+
+
+Wd.workdir = os.path.expanduser("~/.operbot")
+
+
+scan(cmds)
+scan(irc)
+scan(rss)
+
+
+class Console(Handler):
+
+    @staticmethod
+    def announce(txt):
+        pass
+
+    @staticmethod
+    def handle(event):
+        Command.handle(event)
+        event.wait()
+
+    def poll(self):
+        event = Event()
+        event.txt = input("> ")
+        event.orig = repr(self)
+        return event
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+
+def banner(cfg):
+    print(
+          "OPERBOT started at %s %s" % (
+                                     time.ctime(time.time()).replace("  ", " "),
+                                     printable(cfg, "debug,verbose")
+                                    )
+         )
+
+
+def hup(_sig, _frame):
+    print("signal 15 called")
+    sys.stdout.flush()
+
+
+def isopt(ostr):
+    for opt in ostr:
+        if opt in Cfg.opts:
+            return True
+    return False
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    readline.redisplay()
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+
+
+def main():
+    signal.signal(signal.SIGHUP, hup)
+    txt = ' '.join(sys.argv[1:])
+    cfg = parse(txt)
+    update(Cfg, cfg)
+    banner(cfg)
+    bot = IRC()
+    bot.start()
+    print(printable(bot.cfg, "nick,channel,server,port,sasl"))
+    fetcher = Fetcher()
+    fetcher.start()
+    csl = Console()
+    csl.start()
+    csl.wait()
+        
+
+wrap(main)
