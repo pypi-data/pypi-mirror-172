@@ -1,0 +1,25 @@
+{
+    "install_requires": [
+        "generalimport",
+        "generallibrary",
+        "send2trash",
+        "appdirs",
+        "dill"
+    ],
+    "extras_require": {
+        "spreadsheet": [
+            "pandas"
+        ]
+    },
+    "enabled": true,
+    "private": false,
+    "name": "generalfile",
+    "target": "python",
+    "version": "2.5.13",
+    "description": "Easily manage files cross platform.",
+    "topics": [
+        "file-manager"
+    ],
+    "manifest": [],
+    "contribute": false
+}

@@ -1,0 +1,11 @@
+generalimport
+generallibrary
+send2trash
+appdirs
+dill
+
+[full]
+pandas
+
+[spreadsheet]
+pandas
