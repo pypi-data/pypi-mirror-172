@@ -1,0 +1,10 @@
+firebird/butler/fbdp_pb2.py,sha256=sYg3-MxRBnco2ysGpY_EJhOuo1CESEaF4YHFaZvLnQY,1305
+firebird/butler/fbsd_pb2.py,sha256=v7KcB-o33o_wc_xrNl0kQVr72GP2zRmSFwZjkDE5sQA,4940
+firebird/butler/fbsp_pb2.py,sha256=6N8ew1Y8d0kH0NuWKmItoqkq5_RQVoLJeb9Szf4gkFg,2356
+firebird_butler_protobuf-0.4.0.dist-info/LICENSE,sha256=RXeR1aeo-tvFYvBsBHahWsk_mxPBrXPaLBuaul-7k2M,1100
+firebird_butler_protobuf-0.4.0.dist-info/METADATA,sha256=BsHeimHmAFxfdKseJQYB-6WhKNzzdtJMpDIeYPkVOgQ,1394
+firebird_butler_protobuf-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+firebird_butler_protobuf-0.4.0.dist-info/entry_points.txt,sha256=vaim4oTEoW-i-eMY0FxF25fFEOQ7R4fk3lSKS-pfn9o,204
+firebird_butler_protobuf-0.4.0.dist-info/top_level.txt,sha256=N4Gw4cmu0RmoDDexl12jzkFggSpBGYYdf0HwZenEza4,9
+firebird_butler_protobuf-0.4.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+firebird_butler_protobuf-0.4.0.dist-info/RECORD,,
