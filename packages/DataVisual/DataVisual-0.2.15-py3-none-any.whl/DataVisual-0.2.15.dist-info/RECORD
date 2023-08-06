@@ -1,0 +1,13 @@
+DataVisual/NdArray.py,sha256=IOXVN2WMy_iJCuIFVX0sf-6MTb80C0TvC-fZGfjTZaA,8080
+DataVisual/__init__.py,sha256=dwsgTdpNJ0T18Mi0bqDIGb-QMV9LM5wkKl2dasQ_cfQ,72
+DataVisual/Plottings/Plots.py,sha256=2fmknH1Il1IDlHWhxOlGU9YIyZbl8rBcSfzWB724IQA,7490
+DataVisual/Plottings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DataVisual/Tools/PlotsUtils.py,sha256=NuT-059IbywLk8FEzHq_HyVbWmlweFx9ygDqItAjnU0,796
+DataVisual/Tools/Tables.py,sha256=nqOpGztDePMGWTgtAONyexZPD_yOX86NfMTh5SHPGwA,5171
+DataVisual/Tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DataVisual/Tools/utils.py,sha256=H5hM0vMNV-eXvZZNVlwKw-jbs5DlgwJXontxwFGK8Bc,937
+DataVisual-0.2.15.dist-info/LICENSE,sha256=U6YG4UEW9XJzHa53oijR0qw6JNN_SZ38WOBmYn3NPd0,1072
+DataVisual-0.2.15.dist-info/METADATA,sha256=-2u6iM7sxnD2xBMKLAxtO0R_wQ-5pCOnh-gbqZQ7IBk,1421
+DataVisual-0.2.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+DataVisual-0.2.15.dist-info/top_level.txt,sha256=noiHFlgpZk0PsyudveLPxwIAClGrpUFDpHoc_HiVXoI,11
+DataVisual-0.2.15.dist-info/RECORD,,
