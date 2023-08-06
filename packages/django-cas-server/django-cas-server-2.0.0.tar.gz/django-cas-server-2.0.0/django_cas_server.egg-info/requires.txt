@@ -1,0 +1,5 @@
+Django<4.2,>=1.11
+lxml>=3.4
+requests>=2.4
+requests_futures>=0.9.5
+six>=1
