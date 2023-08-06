@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+quickbeserverless/__init__.py
+quickbeserverless.egg-info/PKG-INFO
+quickbeserverless.egg-info/SOURCES.txt
+quickbeserverless.egg-info/dependency_links.txt
+quickbeserverless.egg-info/requires.txt
+quickbeserverless.egg-info/top_level.txt
