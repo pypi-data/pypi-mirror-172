@@ -1,0 +1,8 @@
+whocan/__init__.py,sha256=WD_436CT6CqU970Zuszol9XGGo00gpOusaUgxW9JcQQ,597
+whocan/_environment.py,sha256=2CiDbzc4BHuyhIbM98TOe_etPP_isTEarEsLBFME5j4,266
+whocan/_errors.py,sha256=SL3rd-piZY7oUZvf1j10oYHoXmweWDu15SzFO0mb0Aw,242
+whocan/_policies.py,sha256=RTXwlsyvFr7MeY1K_LQR4-vn4rgOfkSiZjy3upji7kc,12861
+whocan/_policy_sets.py,sha256=1qiH6N0bp9zdAJIAAWlVKVOdznKN13LvBcbaTfbFxXM,3365
+whocan-0.3.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+whocan-0.3.4.dist-info/METADATA,sha256=uY3KAudkzpg4q1zL3D03Y8WNbvBjprTaCaV4wPd_AJs,2034
+whocan-0.3.4.dist-info/RECORD,,
