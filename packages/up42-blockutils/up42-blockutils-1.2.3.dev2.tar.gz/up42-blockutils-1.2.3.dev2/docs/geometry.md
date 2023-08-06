@@ -1,0 +1,2 @@
+# `blockutils.geometry`
+::: blockutils.geometry

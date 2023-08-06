@@ -1,0 +1,2 @@
+# `blockutils.exceptions`
+::: blockutils.exceptions
