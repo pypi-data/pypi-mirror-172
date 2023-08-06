@@ -1,0 +1,2 @@
+numpy==1.23.0
+azureml-defaults==1.32.0
