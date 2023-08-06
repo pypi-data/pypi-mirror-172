@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/webui/__init__.py
+src/webui/webui-2-x64.dll
+src/webui/webui.py
+src/webui2.egg-info/PKG-INFO
+src/webui2.egg-info/SOURCES.txt
+src/webui2.egg-info/dependency_links.txt
+src/webui2.egg-info/top_level.txt
