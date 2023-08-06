@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pics
+Version: 0.2
+Summary: for cut picture
+Home-page: https://gitee.com/teark/pictools.git
+Author: TEARK
+Author-email: 913355434@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+<h2>English Introduction</h2>
+
+<h4> cut picture in PIL</h4>
+
+<hr>
+
+<h2> 中文介绍</h2>
+
+<h4>剪切图片</h4>
+
+
