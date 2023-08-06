@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-brand
+Version: 16.0.20221019.0
+Summary: Meta package for oca-brand Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-account-brand (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-brand (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-brand-external-report-layout (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-product-brand (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-sale-brand (<16.1dev,>=16.0dev)
+
+UNKNOWN
+
