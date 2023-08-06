@@ -1,0 +1,11 @@
+bioresource/__init__.py,sha256=LM1WNLVhDm2cJnd68j39NS6wqgvdDoIL2yWTjmWZ978,29
+bioresource/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bioresource/config.py,sha256=tRkd8uGQExqm2VLT9wvjrz62IyUwYnml_wKyX5DCqig,513
+bioresource/lib.py,sha256=0KPd6FyCWwy47x_4p9iG1jXo5pfNBpQotsfl_dw2Uok,47713
+bioresource/pipelines.py,sha256=-zGIE9eBIr5dDZmIzfMv8aiqMXtk2HwTTJzO0h-emBg,504
+bioresource/versions.py,sha256=MWbzv3lICO9Gck7pkayXCNTZ5KKK5HFV3NgaQiS74wg,705
+BioResource-0.1.4.dist-info/LICENSE,sha256=IzULPsFTlrF-uHczR75Slnfo_VrUn2deqtzPAlyMZrM,1066
+BioResource-0.1.4.dist-info/METADATA,sha256=FqJMw55VnKFIXfu_sRMj-pZbZnQuyDu9WkWrj67v6e4,533
+BioResource-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BioResource-0.1.4.dist-info/top_level.txt,sha256=RB9oiw_PLfGD2UmOXtceK5JReTpV3Ldobk4C8cw76pU,12
+BioResource-0.1.4.dist-info/RECORD,,
