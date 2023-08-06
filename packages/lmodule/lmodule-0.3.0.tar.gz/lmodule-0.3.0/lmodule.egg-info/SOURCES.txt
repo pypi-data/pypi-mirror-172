@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+lmod/__init__.py
+lmod/module.py
+lmod/moduleloadtest.py
+lmod/spider.py
+lmodule.egg-info/PKG-INFO
+lmodule.egg-info/SOURCES.txt
+lmodule.egg-info/dependency_links.txt
+lmodule.egg-info/top_level.txt
