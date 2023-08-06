@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mjpeg/__init__.py
+mjpeg/client.py
+mjpeg/server.py
+py_mjpeg.egg-info/PKG-INFO
+py_mjpeg.egg-info/SOURCES.txt
+py_mjpeg.egg-info/dependency_links.txt
+py_mjpeg.egg-info/top_level.txt
