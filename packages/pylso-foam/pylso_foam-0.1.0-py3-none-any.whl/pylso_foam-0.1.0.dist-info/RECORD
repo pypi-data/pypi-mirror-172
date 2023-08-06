@@ -1,0 +1,10 @@
+pylsoFoam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylsoFoam/clean.py,sha256=h826uul_-X_W7vrVhhhwsr8eRvsxV68GzD_HWEyN5_U,541
+pylsoFoam/foam.py,sha256=fK1YTev4_8YHjzll0ylACNT25MPl6XniwBeUsnH9Mpc,4069
+pylsoFoam/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylsoFoam/utils.py,sha256=rqaGYDVYrZG0Yl-4Hcp6zZXqMj25p0cxEqOae28JnxA,2199
+pylsoFoam/vector.py,sha256=s6lZ6af9leABi8gLAnzhoJYbtbLAI_b0aQkGJXW0lt4,5189
+pylso_foam-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pylso_foam-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pylso_foam-0.1.0.dist-info/METADATA,sha256=uFg5Yf2jQi-DlKDtyyfQmMpGyY9X386JEuFHKcmFhdU,1915
+pylso_foam-0.1.0.dist-info/RECORD,,

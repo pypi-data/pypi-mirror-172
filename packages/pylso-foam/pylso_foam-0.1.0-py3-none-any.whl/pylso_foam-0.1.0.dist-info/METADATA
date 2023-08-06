@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pylso-foam
+Version: 0.1.0
+Summary: Python Large Scale Orchestrator for OpenFOAM computations.
+License: Apache-2.0
+Author: Johan Hidding
+Author-email: j.hidding@esciencecenter.nl
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyFoam (>=2022.9,<2023.0)
+Requires-Dist: argh (>=0.26.2,<0.27.0)
+Requires-Dist: byteparsing (>=0.1.2,<0.2.0)
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+---
+title: pylso-foam
+subtitle: Python module for Large Scale Orchestration of OpenFoam computations.
+author: Johan Hidding, Pablo Rodríguez Sanchez
+---
+[![Entangled badge](https://img.shields.io/badge/entangled-Use%20the%20source!-%2300aeff)](https://entangled.github.io/)
+[![Python package](https://github.com/parallelwindfarms/pylso-foam/actions/workflows/python-package.yml/badge.svg)](https://github.com/parallelwindfarms/pylso-foam/actions/workflows/python-package.yml)
+
+This module lets you interact with OpenFOAM through Python. You may use it in cases where you need to run a lot of separate computations in OpenFOAM, possibly in parallel. In our view, this fixes a few gaps in the PyFoam module. Here's what `pylso-foam` can and `PyFoam` can't do:
+
+- Run jobs in parallel: PyFoam has a lot of hidden state. In `pylso-foam` every job runs in its own case directory.
+- Work with binary OpenFOAM files: by using the [`byteparsing`](https://parallelwindfarms.github.io/byteparsing) package, we can interact with binary data. We don't involve any geometry here, we can just read the raw data and do some arithmetic on it.
+
+# Admin
+You may `pip install` this module. If you're developing however, we use `poetry` to manage dependencies.
+
+# License
+Apache 2
+
+
