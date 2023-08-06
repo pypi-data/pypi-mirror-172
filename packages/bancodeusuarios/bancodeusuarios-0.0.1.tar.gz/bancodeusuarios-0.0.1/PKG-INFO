@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: bancodeusuarios
+Version: 0.0.1
+Summary: Pacote Python para cadastrar, armazenar e consultar usuários em um sistema.
+Home-page: https://github.com/CaioJohnston
+Author: Caio Johnston Soares
+Author-email: caio21070002@aluno.cesupa.br
+License: MIT License
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Banco de Usuarios
+**bancodeusuarios** é um simples pacote para gerenciar o cadastro, armazenamento e consulta de usuários em um sistema.
+
+## Dependências
+**Python 3.6** ou posterior
+
+## Começando o uso
+Você vai precisar instalar o pacote **bancodeusuarios**, para isso basta executar:
+```
+pip install bancodeusuarios
+```
+
+## Função
+* `interagir()` - Coleta o CPF, Nome e o Endereço do usuario.
+* `armazenar()` - Armazena as informações coletadas em um arquivo .txt.
+* `consultar()` - Consulta o arquivo de texto e exibe as informações referentes ao CPF informado.
+
+## Demo
+O pacote ainda conta com um arquivo `main.py` que demonstra o funcionamento do mesmo.
+

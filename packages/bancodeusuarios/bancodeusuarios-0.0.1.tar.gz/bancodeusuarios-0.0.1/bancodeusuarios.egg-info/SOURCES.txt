@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bancodeusuarios.egg-info/PKG-INFO
+bancodeusuarios.egg-info/SOURCES.txt
+bancodeusuarios.egg-info/dependency_links.txt
+bancodeusuarios.egg-info/top_level.txt
+pacotebanco/Armazenamento.py
+pacotebanco/Consulta.py
+pacotebanco/Interacao.py
+pacotebanco/__init__.py
+pacotebanco/main.py
