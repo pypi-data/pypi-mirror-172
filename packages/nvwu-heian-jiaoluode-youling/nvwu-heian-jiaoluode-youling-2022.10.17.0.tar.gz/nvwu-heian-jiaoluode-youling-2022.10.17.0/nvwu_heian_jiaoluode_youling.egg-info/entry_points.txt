@@ -1,0 +1,4 @@
+[console_scripts]
+NvwuHeianJiaoluodeYouling = NvwuHeianJiaoluodeYouling.__main__:main
+nvwu-heian-jiaoluode-youling = NvwuHeianJiaoluodeYouling.__main__:main
+
