@@ -1,0 +1,129 @@
+[build-system]
+requires = ["setuptools", "poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "tree_sitter_talon"
+build = "build.py"
+version = "1006.3.2.0"
+description = "Parser for Talon files in Python."
+license = "MIT"
+authors = ["Wen Kokke <wenkokke@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/wenkokke/py-tree-sitter-talon"
+documentation = "https://wenkokke.github.io/py-tree-sitter-talon/"
+keywords = ["parser", "tree-sitter", "talon"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Compilers",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+tree-sitter = "^0.20.0"
+tree-sitter-type-provider = "^2.1.18"
+dataclasses-json = "^0.5.7"
+setuptools = "<65.6.0" # for 'pkg_resources'
+bumpver = { version = "*", optional = true }
+mypy = { version = "^0.971", optional = true }
+pytest = { version = "^7.1.2", optional = true }
+pytest-golden = { version = "^0.2.2", optional = true }
+parsec = "^3.14"
+
+[tool.poetry.extras]
+test = ["bumpver", "mypy", "pytest", "pytest-golden"]
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^5.1.1"
+sphinx-bootstrap-theme = "^0.8.1"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.971"
+tox = "^3.25.1"
+black = "^22.8.0"
+isort = "^5.10.1"
+bumpver = "*"
+
+[tool.poetry.group.ci.dependencies]
+cibuildwheel = "^2.10.2"
+tox = "^3.25.1"
+tox-gh-actions = "^2.10.0"
+
+[tool.cibuildwheel]
+manylinux-x86_64-image = "manylinux_2_24"
+manylinux-i686-image = "manylinux_2_24"
+manylinux-aarch64-image = "manylinux_2_24"
+manylinux-ppc64le-image = "manylinux_2_24"
+manylinux-s390x-image = "manylinux_2_24"
+manylinux-pypy_x86_64-image = "manylinux_2_24"
+manylinux-pypy_i686-image = "manylinux_2_24"
+manylinux-pypy_aarch64-image = "manylinux_2_24"
+
+[tool.pytest.ini_options]
+enable_assertion_pass_hook = true
+filterwarnings = ["ignore::DeprecationWarning:.*:"]
+addopts = "--ignore=tests/data"
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = 3.7
+implicit_reexport = false
+ignore_missing_imports = true
+warn_incomplete_stub = false
+warn_no_return = true
+
+[tool.bumpver]
+current_version = "1006"
+version_pattern = "BUILD"
+commit_message = "Bump build number {old_version} -> {new_version}"
+commit = true
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+  '^version = "{version}.3.2.0"$',
+  '^current_version = "{version}"$',
+]
+"tree_sitter_talon/internal/__init__.py" = [
+  '^__version__: str = "{version}.3.2.0"$'
+]
+"docs/conf.py" = ['^release = "{version}.3.2.0"$']
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+requires =
+  tox-poetry
+envlist = py37,py38,py39,py310,py311
+isolated_build = True
+
+[gh-actions]
+python =
+  3.7: py37
+  3.8: py38
+  3.9: py39
+  3.10: py310
+  3.11: py311
+
+[testenv]
+extras =
+  test
+commands =
+  bumpver update --dry --no-fetch
+  pytest tests -x
+
+[testenv:py37]
+extras =
+  {[testenv]extras}
+commands =
+  {[testenv]commands}
+  stubtest --mypy-config-file pyproject.toml --allowlist=.stubtest-allowlist.py37.csv tree_sitter_talon
+
+[testenv:py{py38,py39,py10}]
+extras =
+  {[testenv]extras}
+commands =
+  {[testenv]commands}
+  stubtest --mypy-config-file pyproject.toml tree_sitter_talon
+"""
