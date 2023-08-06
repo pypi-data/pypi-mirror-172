@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: owl-builder
+Version: 0.1.11
+Summary: Tools for Automating the Construction of an Ontology (OWL)
+Home-page: https://github.com/craigtrim/owl-builder
+License: None
+Keywords: nlp,nlu,ai,ontology,automation
+Author: Craig Trim
+Author-email: craigtrim@gmail.com
+Maintainer: Craig Trim
+Maintainer-email: craigtrim@gmail.com
+Requires-Python: ==3.8.5
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: baseblock
+Requires-Dist: nltk (>=3.7,<4.0)
+Requires-Dist: openai (>=0.20.0,<0.21.0)
+Requires-Dist: pandas (>=1.4.0,<2.0.0)
+Requires-Dist: rdflib (>=6.1.1,<7.0.0)
+Requires-Dist: regex (==2022.7.9)
+Requires-Dist: scipy (==1.9.2)
+Requires-Dist: spacy (==3.3)
+Requires-Dist: tabulate
+Requires-Dist: textacy (==0.12.0)
+Requires-Dist: textblob (>=0.17.1,<0.18.0)
+Project-URL: Repository, https://github.com/craigtrim/owl-builder
+Description-Content-Type: text/markdown
+
+# Ontology Builder (owl-builder)
+
+##
+
+## Key Term Extraction
+```python
+from owl_builder import keyterms
+
+input_text = """
+A local area network (LAN) is a computer network that interconnects computers within a limited area such as a residence, school, laboratory, university campus or office building.
+
+By contrast, a wide area network (WAN) not only covers a larger geographic distance, but also generally involves leased telecommunication circuits.
+
+Ethernet and Wi-Fi are the two most common technologies in use for local area networks.
+
+Historical network technologies include ARCNET, Token Ring, and AppleTalk.
+"""
+
+results = keyterms(
+    input_text=input_text,
+    use_terms=True,
+    use_keyterms=True,
+    use_ngrams=False,
+    use_nounchunks=False)
+```
+
+The results are
+```json
+[
+   "leased telecommunication circuit",
+   "historical network technology",
+   "large geographic distance",
+   "interconnects computer",
+   "local area network",
+   "university campus",
+   "common technology",
+   "wide area network",
+   "computer network",
+   "office building",
+   "include arcnet",
+   "limited area",
+   "token ring"
+]
+```
