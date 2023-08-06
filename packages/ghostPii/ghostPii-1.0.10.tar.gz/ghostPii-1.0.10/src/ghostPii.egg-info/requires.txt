@@ -1,0 +1,6 @@
+numpy
+pandas
+SQLAlchemy
+scipy
+sympy
+IPython
