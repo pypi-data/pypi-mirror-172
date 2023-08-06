@@ -1,0 +1,5 @@
+<ns0:Session xmlns:ns0="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" Version="2">{% for session_index in session_indexes %}{% with nameid=session_index.saml_identifier %}
+<ns0:NidAndSessionIndex AssertionID="" ProviderID="{{ nameid.issuer.entity_id }}" SessionIndex="{{ session_index.session_index }}">
+<ns1:NameID Format="{{ nameid.nid_format }}"{% if nameid.nid_name_qualifier %} NameQualifier="{{ nameid.nid_name_qualifier }}"{% endif %}{% if nameid.nid_sp_name_qualifier %} SPNameQualifier="{{ nameid.nid_sp_name_qualifier }}"{% endif %}{% if nameid.nid_sp_provided_id %} SPProvidedId="{{ nameid.nid_sp_provided_id}}"{% endif %}>{% firstof session_index.transient_name_id nameid.name_id %}</ns1:NameID>
+</ns0:NidAndSessionIndex>{% endwith %}{% endfor %}
+</ns0:Session>
