@@ -1,0 +1,17 @@
+pyopal-0.2.0.dist-info/top_level.txt,sha256=C8WpsJQfyRtUf6LRl-00lXUJB9M6isvpOIFeq1JSpz4,7
+pyopal-0.2.0.dist-info/METADATA,sha256=5D95fJagu-QbjLISlc6WgKHDYoUsNv0lpiJiFcG_owQ,10099
+pyopal-0.2.0.dist-info/WHEEL,sha256=ew2YEZL4tYBu-7alY4_Jtys4Qo0IihLmNDA4uB16AP4,162
+pyopal-0.2.0.dist-info/RECORD,,
+pyopal-0.2.0.dist-info/COPYING,sha256=dCmFFHwRyicElehFYZv1GT5BbQ0fh5tOT0PHOfqzYmg,1098
+pyopal/_version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+pyopal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyopal/_opal_sse2.pypy38-pp73-x86_64-linux-gnu.so,sha256=FIzq5gmkFnJxjNXPbhQ-h7SrG42iEyk1om7Tg3kYap8,139128
+pyopal/_opal_avx2.pypy38-pp73-x86_64-linux-gnu.so,sha256=NCgi67gjo3wcVWMB2shq_U3q4oFj8Cym8bSv6zCRHoQ,130904
+pyopal/_opal.pypy38-pp73-x86_64-linux-gnu.so,sha256=KV6w0SJrROscwLHT3RKE1tkddcIBLOprAad0TmG0bi0,433216
+pyopal/_opal.pyi,sha256=G9Bk5baUIBnW-uBDrxkXLvv-PlmdD6jZZhiu9n2k6wc,3791
+pyopal/__init__.py,sha256=xtGzlQOcvV7hJeJcNCmLuDkaoh3hI54ENlwAs4Jb6ew,712
+pyopal/_opal_sse4.pypy38-pp73-x86_64-linux-gnu.so,sha256=x-ITFiB5jU9ekDLkv_JLp068B0lv3XytEvLD9fnqlLI,130664
+pyopal/tests/test_search.py,sha256=CFwhEYaFDTaNTJwJzo1WMIEaHmzrlsi7g6Cpzeu6y4s,3121
+pyopal/tests/test_database.py,sha256=-Bq-kChJfp1HlNmaW9U-NZVbxovb452EK76_TD5vYZQ,3397
+pyopal/tests/test_doctest.py,sha256=s0itV9-FXo3l8JfYuLn8thwc2DpbOoITwYKUOf6O_DQ,3242
+pyopal/tests/__init__.py,sha256=xMux4UKWqILmlEoisq8yq7ydwWHuR0-iBJGfavKc8YI,328
