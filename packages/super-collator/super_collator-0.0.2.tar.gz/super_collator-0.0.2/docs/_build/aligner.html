@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aligner &mdash; super-collator 0.0.2 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon-cceh-blue.png"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script>window.MathJax = {"tex": {"macros": {"bs": ["\\boldsymbol"]}}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Strategy" href="strategy.html" />
+    <link rel="prev" title="Examples" href="examples.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> super-collator
+            <img src="_static/logo-cceh-white.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Aligner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategy.html">Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="token.html">Token</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">super-collator</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Aligner</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/aligner.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-super_collator.aligner">
+<span id="aligner"></span><h1>Aligner<a class="headerlink" href="#module-super_collator.aligner" title="Permalink to this headline"></a></h1>
+<p>This module implements the aligner.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="super_collator.aligner.Data">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#super_collator.aligner.Data" title="Permalink to this definition"></a></dt>
+<dd><p>Private data class for the Needleman-Wunsch+Gotoh sequence aligner.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="super_collator.aligner.Data.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#super_collator.aligner.Data.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="super_collator.aligner.Data.score">
+<span class="sig-name descname"><span class="pre">score</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#super_collator.aligner.Data.score" title="Permalink to this definition"></a></dt>
+<dd><p>The current score.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="super_collator.aligner.Data.p">
+<span class="sig-name descname"><span class="pre">p</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#super_collator.aligner.Data.p" title="Permalink to this definition"></a></dt>
+<dd><p><span class="math notranslate nohighlight">\(P_{m,n}\)</span> in <a class="reference internal" href="references.html#gotoh1982" id="id1"><span>[Gotoh1982]</span></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="super_collator.aligner.Data.q">
+<span class="sig-name descname"><span class="pre">q</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#super_collator.aligner.Data.q" title="Permalink to this definition"></a></dt>
+<dd><p><span class="math notranslate nohighlight">\(Q_{m,n}\)</span> in <a class="reference internal" href="references.html#gotoh1982" id="id2"><span>[Gotoh1982]</span></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="super_collator.aligner.Data.pSize">
+<span class="sig-name descname"><span class="pre">pSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#super_collator.aligner.Data.pSize" title="Permalink to this definition"></a></dt>
+<dd><p>The size of the p gap. <span class="math notranslate nohighlight">\(k\)</span> in <a class="reference internal" href="references.html#gotoh1982" id="id3"><span>[Gotoh1982]</span></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="super_collator.aligner.Data.qSize">
+<span class="sig-name descname"><span class="pre">qSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#super_collator.aligner.Data.qSize" title="Permalink to this definition"></a></dt>
+<dd><p>The size of the q gap. <span class="math notranslate nohighlight">\(k\)</span> in <a class="reference internal" href="references.html#gotoh1982" id="id4"><span>[Gotoh1982]</span></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="super_collator.aligner.Aligner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Aligner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-</span> <span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open_score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-</span> <span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extend_score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-</span> <span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#super_collator.aligner.Aligner" title="Permalink to this definition"></a></dt>
+<dd><p>A generic Needleman-Wunsch+Gotoh sequence aligner.</p>
+<p>This implementation uses Gotoh’s improvements to get <span class="math notranslate nohighlight">\(\mathcal{O}(mn)\)</span> running time
+and reduce memory requirements to essentially the backtracking matrix only.  In
+Gotoh’s technique the gap weight formula must be of the special form <span class="math notranslate nohighlight">\(w_k = uk + v\)</span>
+(affine gap).  <span class="math notranslate nohighlight">\(k\)</span> is the gap size, <span class="math notranslate nohighlight">\(v\)</span> is the gap opening score and <span class="math notranslate nohighlight">\(u\)</span> the gap
+extension score.</p>
+<p>The aligner is type-agnostic and expects only to call the method
+<code class="xref py py-func docutils literal notranslate"><span class="pre">Strategy.similarity()</span></code> on the given strategy.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="references.html#needlemanwunsch1970" id="id5"><span>[NeedlemanWunsch1970]</span></a></p>
+<p><a class="reference internal" href="references.html#gotoh1982" id="id6"><span>[Gotoh1982]</span></a></p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="super_collator.aligner.Aligner.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-</span> <span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open_score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-</span> <span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extend_score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-</span> <span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#super_collator.aligner.Aligner.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="super_collator.aligner.Aligner.start_score">
+<span class="sig-name descname"><span class="pre">start_score</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#super_collator.aligner.Aligner.start_score" title="Permalink to this definition"></a></dt>
+<dd><p>The gap opening score at the start of the string.
+Set this to 0 to find local alignments.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="super_collator.aligner.Aligner.open_score">
+<span class="sig-name descname"><span class="pre">open_score</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#super_collator.aligner.Aligner.open_score" title="Permalink to this definition"></a></dt>
+<dd><p>The gap opening score <span class="math notranslate nohighlight">\(v\)</span>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="super_collator.aligner.Aligner.extend_score">
+<span class="sig-name descname"><span class="pre">extend_score</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#super_collator.aligner.Aligner.extend_score" title="Permalink to this definition"></a></dt>
+<dd><p>The gap extension score <span class="math notranslate nohighlight">\(u\)</span>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="super_collator.aligner.Aligner.align">
+<span class="sig-name descname"><span class="pre">align</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strategy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="strategy.html#super_collator.strategy.Strategy" title="super_collator.strategy.Strategy"><span class="pre">super_collator.strategy.Strategy</span></a><span class="p"><span class="pre">[</span></span><span class="pre">super_collator.token.TT</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tokens_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="token.html#super_collator.token.Token" title="super_collator.token.Token"><span class="pre">super_collator.token.Token</span></a><span class="p"><span class="pre">[</span></span><span class="pre">super_collator.token.TT</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tokens_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="token.html#super_collator.token.Token" title="super_collator.token.Token"><span class="pre">super_collator.token.Token</span></a><span class="p"><span class="pre">[</span></span><span class="pre">super_collator.token.TT</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="token.html#super_collator.token.Token" title="super_collator.token.Token"><span class="pre">super_collator.token.Token</span></a><span class="p"><span class="pre">[</span></span><span class="pre">super_collator.token.TT</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#super_collator.aligner.Aligner.align" title="Permalink to this definition"></a></dt>
+<dd><p>Align two sequences.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the aligned sequence (of MultiTokens) and the score</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="super_collator.aligner.build_debug_matrix">
+<span class="sig-name descname"><span class="pre">build_debug_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#super_collator.aligner.Data" title="super_collator.aligner.Data"><span class="pre">super_collator.aligner.Data</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">len_matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ts_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="token.html#super_collator.token.Token" title="super_collator.token.Token"><span class="pre">super_collator.token.Token</span></a><span class="p"><span class="pre">[</span></span><span class="pre">super_collator.token.TT</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ts_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="token.html#super_collator.token.Token" title="super_collator.token.Token"><span class="pre">super_collator.token.Token</span></a><span class="p"><span class="pre">[</span></span><span class="pre">super_collator.token.TT</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#super_collator.aligner.build_debug_matrix" title="Permalink to this definition"></a></dt>
+<dd><p>Build a human-readable debug matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>matrix</strong> – the full scoring matrix</p></li>
+<li><p><strong>len_matrix</strong> – the backtracking matrix</p></li>
+<li><p><strong>ts_a</strong> – the first aligned string</p></li>
+<li><p><strong>ts_b</strong> – the second aligned string</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return str</dt>
+<dd class="field-even"><p>the debug matrix as human readable string</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="examples.html" class="btn btn-neutral float-left" title="Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="strategy.html" class="btn btn-neutral float-right" title="Strategy" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Marcello Perathoner.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
