@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mcgs
+Version: 0.0.2
+Summary: A Simple Monte Carlo Simulator for different board games such as Coin flips , Dice rolls , Roman Alphabet , Card shuffle and many more.
+Project-URL: Documentation, https://github.com/brooksideas/monte-carlo-generic-simulator/blob/main/README.md
+Project-URL: Issues, https://github.com/brooksideas/monte-carlo-generic-simulator/issues
+Project-URL: Source, https://github.com/brooksideas/monte-carlo-generic-simulator
+Author-email: Brook Tarekegn Assefa <brooksideas@gmail.com>
+License-File: LICENSE
+Keywords: alphabet,carlo,coin,dice,flip,generic,monte,monte carlo generic simulator,monte-carlo,monte-carlo-generic,python,simulator
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# monte-carlo-generic-simulator
+Monte Carlo Simulator for different  board games such as Coin flips , Dice rolls , Roman Alphabet ,Card shuffle and many more.
