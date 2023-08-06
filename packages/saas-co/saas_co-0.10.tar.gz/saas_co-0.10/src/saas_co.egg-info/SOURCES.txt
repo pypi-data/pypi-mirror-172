@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/saas_co.egg-info/PKG-INFO
+src/saas_co.egg-info/SOURCES.txt
+src/saas_co.egg-info/dependency_links.txt
+src/saas_co.egg-info/requires.txt
+src/saas_co.egg-info/top_level.txt
