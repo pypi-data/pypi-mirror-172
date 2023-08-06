@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1244</width>
+    <height>761</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Roboto</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>NanoCET</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: rgb(255, 255, 255);
+}
+
+/*rgba(255, 117, 26)*/
+/*rgba(226, 83, 3)*/
+
+QWidget#centralwidget {
+	background-color: rgba(226, 83, 3, 1%);
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+QWidget#main_widget {
+	border-color: rgb(22,22,22);
+	border-style: solid;
+    border-radius: 10px;
+	border-width: 2px;
+}
+
+QPushButton {
+	background-color: rgba(226, 83, 3, 100%);
+	color: rgb(255,255,255);
+	border-color: rgba(226, 83, 3, 100%);
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	font-size: 16px;
+	max-width: 200px;
+	/*font-weight: bold;*/
+	
+}
+
+QPushButton[flat='false'] {
+	background-color: rgba(226, 83, 3, 100%);
+	color: rgb(255,255,255);
+	border-color: rgba(226, 83, 3, 100%);
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	font-size: 16px;
+	max-width: 200px;
+	/*font-weight: bold;*/
+	
+}
+
+QPushButton[flat='true'] {
+	background-color: rgba(226, 83, 3, 1%);
+	border-color: rgba(226, 83, 3, 50%);
+	color: rgba(226, 83, 3, 50%);
+}
+
+QMenu {
+	background-color: rgba(255, 117, 26, 100%);
+	color: rgb(255,255,255);
+	border-color: rgba(255, 117, 26, 100%);
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+QLabel {
+	font-size: 16px; /*5rem;*/
+	font-weight: 300;
+}
+
+QLabel[objectName^='subtitle'] {
+	font-size: 18px; /*5rem;*/
+	font-weight: 400;
+	border: 1px solid rgb(255,255,255);
+	border-bottom: 1px solid rgb(226, 83, 3);
+}
+
+QLabel#title {
+	font-size: 24px;
+	font-weight: 300;
+	color: rgba(226, 83, 3, 100%);
+	padding-left: 1px;
+}
+
+QLabel#helptext_label {
+	font-size: 14px;
+	font-weight: 100;
+	padding-top: 16px;
+}
+
+QFrame#frame {
+	border-color: rgba(226, 83, 3, 100%);
+	border-style: solid;
+    border-radius: 10px;
+	border-width: 2px;
+	min-width: 200px;
+	max-width: 200px;
+}
+
+QLineEdit, QComboBox {
+	border-radius: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(0,0,0,50%);
+	padding-left: 5px;
+	font-size: 16px;
+}
+
+QComboBox::drop-down, QComboBox::drop-down:button {
+	border-radius: 12px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,5,0">
+    <property name="leftMargin">
+     <number>15</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>15</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="left_frame">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">Label {
+	font-size: 16px;
+	font-weight: 200;
+	color: rgba(0,0,0,30%);
+	border-color: rgb(100,200,100);
+	border-style: solid;
+    border-radius: 10px;
+	border-width: 2px;
+    /*margin: 2px;
+	max-height: 50px;
+	max-width: 150px;*/
+}
+
+QFrame {
+	background-color: rgb(220,220,220);
+	border-color: rgb(220,220,220);
+	border-style: solid;
+    border-radius: 10px;
+	border-width: 2px;
+    padding: 2px;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="main_widget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="right_frame">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">Label {
+	font-size: 16px;
+	font-weight: 200;
+	color: rgba(0,0,0,30%);
+	border-color: rgb(100,200,100);
+	border-style: solid;
+    border-radius: 10px;
+	border-width: 2px;
+    /*margin: 2px;
+	max-height: 50px;
+	max-width: 150px;*/
+}
+
+QFrame {
+	background-color: rgb(220,220,220);
+	border-color: rgb(220,220,220);
+	border-style: solid;
+    border-radius: 10px;
+	border-width: 2px;
+    padding: 2px;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1244</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
