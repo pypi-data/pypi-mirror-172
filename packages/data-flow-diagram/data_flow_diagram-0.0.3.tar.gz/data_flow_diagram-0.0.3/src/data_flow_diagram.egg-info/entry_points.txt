@@ -1,0 +1,2 @@
+[console_scripts]
+data_flow_diagram = data_flow_diagram:main
