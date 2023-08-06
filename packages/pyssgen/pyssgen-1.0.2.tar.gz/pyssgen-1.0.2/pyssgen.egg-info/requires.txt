@@ -1,0 +1,7 @@
+jinja2
+markdown
+markupsafe
+python-frontmatter
+python-slugify
+pyyaml
+text-unidecode
