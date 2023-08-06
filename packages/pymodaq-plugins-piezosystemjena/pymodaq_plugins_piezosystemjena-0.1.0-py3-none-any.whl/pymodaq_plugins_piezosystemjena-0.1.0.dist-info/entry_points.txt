@@ -1,0 +1,2 @@
+[pymodaq.plugins]
+piezosystemjena = pymodaq_plugins_piezosystemjena
