@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: easy-df-profiling
+Version: 0.1.1
+Summary: A package that allows you to easily profile your dataframe, check for missing values, outliers, data types.
+Home-page: UNKNOWN
+Author: Sam Faraday
+Author-email: <saurater@gmail.com>
+License: MIT
+Keywords: python,profiling,outliers,missing values
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+Data Frame Profiling - A package that allows to easily profile your dataframe, check for missing values, outliers, data types. <p> <ul><b>Import Lib</b><li>from  df_profiling  import  DF_Profiling </li></ul><ul> <b>Profile your Data:</b><li> DF_Profiling.profiling("my_file.csv")</li></ul><ul> <b>Check for:</b><li>Data Types</li> <li>Counts</li> <li>Missing Values Count</li> <li>Missing Values Percentage</li> <li> Min Value</li><li>Quartiles: 1st, 3rd</li> <li>Median</li> <li>Lower Bound Limits</li><li>Upper Bound Limits</li><li> Max Value</li><li> Unique Values</li><li> Spot Potential Outliers</li></ul><p> <b>Save / Export your Analyses</b><p> DF_Profiling.profiling("my_file.csv").to_csv("my_profiling.csv")
+
+
