@@ -1,0 +1,8 @@
+setup.py
+klarity_connector/__init__.py
+klarity_connector/connector.py
+klarity_connector.egg-info/PKG-INFO
+klarity_connector.egg-info/SOURCES.txt
+klarity_connector.egg-info/dependency_links.txt
+klarity_connector.egg-info/requires.txt
+klarity_connector.egg-info/top_level.txt
