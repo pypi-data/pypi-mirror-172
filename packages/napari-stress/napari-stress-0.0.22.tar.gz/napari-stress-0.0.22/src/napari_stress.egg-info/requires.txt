@@ -1,0 +1,16 @@
+numpy
+vedo==2022.3.0
+napari
+vispy
+matplotlib
+tqdm
+scipy
+pandas
+scikit-image
+napari-tools-menu>=0.1.15
+napari-process-points-and-surfaces>=0.3.0
+aicsimageio
+napari_segment_blobs_and_things_with_membranes
+mpmath
+pyshtools<=4.10.0
+napari-matplotlib
