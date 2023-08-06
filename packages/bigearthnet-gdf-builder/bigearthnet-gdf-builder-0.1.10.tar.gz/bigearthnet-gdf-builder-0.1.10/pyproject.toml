@@ -1,0 +1,100 @@
+[project]
+name = "bigearthnet-gdf-builder"
+version = "0.1.10"
+description = "A package to generate and extend BigEarthNet GeoDataFrames."
+authors = [
+    { name = "Kai Norman Clasen", email = "k.clasen@protonmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "geopandas>=0.11",
+    "typer[all]>=0.6",
+    "pydantic>=1.8",
+    "fastcore>=1.3",
+    "natsort>=8",
+    "pygeos>=0.12",
+    "pyarrow>=6",
+    "appdirs>=1.4",
+    "bigearthnet-common>=2.4",
+]
+
+[project.license]
+text = "Apache Software License 2.0"
+
+[project.urls]
+homepage = "https://github.com/kai-tub/bigearthnet_gdf_builder/"
+repository = "https://github.com/kai-tub/bigearthnet_gdf_builder/"
+documentation = "https://kai-tub.github.io/bigearthnet_gdf_builder"
+
+[project.scripts]
+ben_gdf_builder = "bigearthnet_gdf_builder.builder:_run_gdf_cli"
+
+[project.optional-dependencies]
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+includes = [
+    "LICENSE",
+    "src",
+]
+
+[tool.pdm.dev-dependencies]
+docs = [
+    "myst-nb>=0.16",
+    "Sphinx>=4.5",
+    "sphinx-autobuild",
+    "sphinx-external-toc",
+    "linkify-it-py",
+    "furo",
+    "common-nb-preprocessors>=1",
+    "sphinx-cli-recorder>=0.1.5",
+]
+test = [
+    "pytest",
+    "pre-commit",
+    "jupyter",
+    "notebook",
+    "folium",
+    "matplotlib",
+    "mapclassify",
+]
+lint = [
+    "black[jupyter]",
+    "isort",
+    "nbstripout",
+    "mypy",
+]
+
+[tool.pdm.scripts]
+check-pre-commit = "pre-commit run --all-files"
+check-types = "mypy src"
+tests = "pytest tests/"
+
+[tool.pdm.scripts.lint]
+composite = [
+    "pre-commit",
+    "check-types",
+]
+help = "Will check if all files are formatted with black & isort"
+
+[tool.pdm.scripts.build-docs]
+cmd = "sphinx-build docs docs/_build/"
+help = "Build Sphinx documentation"
+
+[tool.pdm.scripts.serve-sphinx-docs]
+cmd = "sphinx-autobuild docs docs/_build --open-browser"
+help = "Serve the Sphinx documentation with sphinx-autobuild"
+
+[tool.mypy]
+exclude = [
+    "tests",
+]
+
+[tool.isort]
+profile = "black"
