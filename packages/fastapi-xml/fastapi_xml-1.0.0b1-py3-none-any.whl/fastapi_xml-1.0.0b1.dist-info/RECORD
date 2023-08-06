@@ -1,0 +1,7 @@
+fastapi_xml/__init__.py,sha256=OVMZqd9DHiCm731-OaiOLgojry5cbUH0Yt49f51TWls,642
+fastapi_xml/nonjson.py,sha256=cZ0OyIgKnhKf4Rn6J30wiEAMVqBXrPdVmyBKo-j7UAY,34001
+fastapi_xml/xmlbody.py,sha256=gpzpUu-NZfdbP_W3oHQw_eqj6bgWXaWOxYMrK-C6RqM,25971
+fastapi_xml-1.0.0b1.dist-info/LICENSE,sha256=8Dr0KP-QjcI0o-Q4OAVsYapf0_GM3lPEk4TmpU2_F2Y,1068
+fastapi_xml-1.0.0b1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+fastapi_xml-1.0.0b1.dist-info/METADATA,sha256=MW96KCdt8V8F30vPmxyzijaPnAypQwMz7-6U23VVBHw,3305
+fastapi_xml-1.0.0b1.dist-info/RECORD,,
