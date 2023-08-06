@@ -1,0 +1,6 @@
+redis~=4.3.4
+pillow~=9.2.0
+matplotlib~=3.6.1
+
+[async]
+aioredis~=2.0.1
