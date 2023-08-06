@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+addopts = "--flakes --cov"
+testpaths = [
+    "okonf",
+    "tests",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
+
+[tool.coverage.paths]
+source = ["okonf", "tests"]

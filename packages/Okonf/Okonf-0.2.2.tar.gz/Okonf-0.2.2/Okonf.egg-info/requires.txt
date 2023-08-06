@@ -1,0 +1,7 @@
+asyncssh
+aiohttp
+colorama
+typer
+
+[lxd]
+pylxd
