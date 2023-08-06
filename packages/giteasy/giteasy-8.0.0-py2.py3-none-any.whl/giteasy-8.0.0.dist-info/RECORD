@@ -1,0 +1,10 @@
+giteasy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+giteasy/consts.py,sha256=DDVPSMRzKE_DTHEPkGnFqT72pEzEr1wRrf-bf7ROZSA,61
+giteasy/funcs.py,sha256=wE7m8EVo_6mywALLSS0G_QZ3HPfP4gcpd-rJbElaBd4,1032
+giteasy/github_async.py,sha256=kk-KzrAckbLa4Oe9bbd1iqF8r281ZakSo9dE1bPPi24,3060
+giteasy/githubb.py,sha256=YwJMxv5U77_l1duihI1HAyphgnh3sSWKWtocgu6P_3A,7848
+giteasy/repo.py,sha256=mlhu_7bqWa_nIF5Ta0PqD9iTQTnJt-tk2PMiwSZDtTo,4470
+giteasy-8.0.0.dist-info/METADATA,sha256=rO8zk9-aKW-bk21lP4a6Bpb__17LMieOB8ef-pTvZ1w,2734
+giteasy-8.0.0.dist-info/WHEEL,sha256=pXyArdmKHUKTm5iUX9rRnkSY3Ss4HYzSn7I4vT2gVVg,105
+giteasy-8.0.0.dist-info/licenses/LICENSE,sha256=uPRgxU7YXOcDR4gQRcEzK05-SyOV1_AEyhHBAPFct9c,1062
+giteasy-8.0.0.dist-info/RECORD,,
