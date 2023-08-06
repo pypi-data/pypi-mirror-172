@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: reactive-core
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/reactive-python/reactive
+Project-URL: Issues, https://github.com/reactive-python/reactive/labels/reactive-core
+Project-URL: Source, https://github.com/reactive-python/reactive/tree/main/packages/reactive-core
+Author-email: rmorshea <ryan.morshead@gmail.com>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# reactive-core
+
+[![PyPI - Version](https://img.shields.io/pypi/v/reactive-core.svg)](https://pypi.org/project/reactive-core)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/reactive-core.svg)](https://pypi.org/project/reactive-core)
+
+---
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install reactive-core
+```
