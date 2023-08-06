@@ -1,0 +1,4 @@
+[prefect.collections]
+prefect_aws = prefect_aws
+prefect_aws_ecs = prefect_aws.ecs
+prefect_aws_s3 = prefect_aws.s3
