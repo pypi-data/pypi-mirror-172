@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+boptools/__init__.py
+boptools/question.py
+boptools/results.py
+boptools.egg-info/PKG-INFO
+boptools.egg-info/SOURCES.txt
+boptools.egg-info/dependency_links.txt
+boptools.egg-info/not-zip-safe
+boptools.egg-info/requires.txt
+boptools.egg-info/top_level.txt
