@@ -1,0 +1,4 @@
+[console_scripts]
+YuanlaiWohaiKeyiZheyanghuo = YuanlaiWohaiKeyiZheyanghuo.__main__:main
+yuanlai-wohai-keyi-zheyanghuo = YuanlaiWohaiKeyiZheyanghuo.__main__:main
+
