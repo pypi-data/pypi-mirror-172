@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: social-interaction-cloud
+Version: 1.0
+Summary: Python connectors for the Social Interaction Cloud
+Author: Mike Ligthart
+Author-email: m.e.u.ligthart@vu.nl
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: protobuf
+Requires-Dist: redis
+Requires-Dist: simplejson
+
