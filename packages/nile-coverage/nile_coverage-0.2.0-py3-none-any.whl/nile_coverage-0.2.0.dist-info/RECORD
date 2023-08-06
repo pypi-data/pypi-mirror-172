@@ -1,0 +1,11 @@
+nile_coverage/__init__.py,sha256=rVsxiaeF36jRgaNjhv15sJ7rnLBKtFlWzggoQjJD_JU,481
+nile_coverage/commands.py,sha256=ix_Wv9fOIE9jJIlyTiVGw6ksKCWYTKAOx47yQ5elU8U,927
+nile_coverage/plugins.py,sha256=TEM-qcSc5d-nMfWztAUHqNOxNlSPh-2upbnncsMWs20,471
+nile_coverage/vendor/cairo_coverage.py,sha256=XdMf8vif2s0O1hMBC7WJ9-ZhtKRmRQn88FAa3TU5KDE,5408
+nile_coverage/vendor/reporters.py,sha256=0KP0lDMBOvwcH1a80Zl9vug79OLOrAiIOCeEDPORRao,7361
+nile_coverage/vendor/utils.py,sha256=5erXckN_88t_9wIgCkcAjNyVuKh_Ia0TV26Y0Wm3AY0,2466
+nile_coverage-0.2.0.dist-info/METADATA,sha256=7CRmas22e67rkJYVVGl-aXZ1q9YfH_6Vsm-1nUwOFn4,2706
+nile_coverage-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nile_coverage-0.2.0.dist-info/entry_points.txt,sha256=I5setN-1i7GmeUqEdz2clwKhYLR09_vQs9ma_TCHMhQ,58
+nile_coverage-0.2.0.dist-info/top_level.txt,sha256=IV9dKJnt4OWkr-I343dfPbNsiHhE6hP7F9rJ1-zGj24,14
+nile_coverage-0.2.0.dist-info/RECORD,,
