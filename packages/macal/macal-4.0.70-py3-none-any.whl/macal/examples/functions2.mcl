@@ -1,0 +1,10 @@
+// testing number of arguments in the function.
+// This code should produce a runtime error because we are passing 2 arguments while the function definition only has one.
+
+include system;
+
+func => (arg1) {
+    Console(arg1);
+}
+
+func("one", "this should error");
