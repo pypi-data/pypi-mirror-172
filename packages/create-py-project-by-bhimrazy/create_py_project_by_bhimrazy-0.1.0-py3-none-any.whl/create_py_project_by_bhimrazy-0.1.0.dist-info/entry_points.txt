@@ -1,0 +1,2 @@
+[console_scripts]
+create-py-project = create_py_project.main:main
