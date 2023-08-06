@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: kognic-base-clients
+Version: 1.0.0
+Summary: Kognic Base Clients
+Home-page: https://github.com/annotell/annotell-python
+Download-URL: https://github.com/annotell/annotell-python/tarball/1.0.0
+Author: Kognic
+Author-email: Scenes & Predictions <scenes-and-predictions@kognic.com>
+License: MIT
+Keywords: API,Kognic
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: kognic-auth (>=3.0.0<4)
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: pydantic
+Requires-Dist: pyhumps
+
+# Kognic Base Clients
+
+Python 3 library for providing a base clients for interacting with the Kognic platform
+
+# Changelog
+
+All notable changes to this library will be documented in this file
+
+## [1.0.0] - 2022-10-18
+- Annotell becomes Kognic
+
+## [0.1.1] - 2022-08-16
+- Corrected user agent
+- Bugfix for timeout
+
+## [0.1.0] - 2022-05-12
+- Update `annotell-auth` to 2.0.1
+- Support for pagination on API requests
+
+## [0.0.1] - 2022-04-01
+
+- Library created
