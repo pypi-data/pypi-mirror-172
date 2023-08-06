@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: followerauditapi
+Version: 0.0.1
+Summary: Python library to access followeraudit API
+Home-page: https://github.com/himanshu-git1/followerauditapi-python
+Author: Followeraudit
+Author-email: contact@followeraudit.com
+License: GNU V3
+Keywords: followerauditapi,newaudit,bulkaudit,getaudit
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests (<3.0.0)
+
+![Alt text](https://www.followeraudit.com/images/fa-logo-dark.png)
+
+# <p align="center">Followeraudit Python Client
+Followeraudit allows you to create a library for accessing http services easily, in a centralized way. An API defined by followeraudit will return a JSON object when called.
+
+# Installation
+
+## Supported Python Versions
+Python >= 3.5 fully supported and tested.
+
+## Install Package
+```
+pip install followerauditapi
+```
+
+## Quick Start
+
+Followeraudit docs can be seen [here](https://www.followeraudit.com/).
+
