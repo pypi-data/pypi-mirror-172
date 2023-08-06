@@ -1,0 +1,3 @@
+[console_scripts]
+symmsyn=symmetric_synthetic.data_process:main
+
