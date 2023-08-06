@@ -1,0 +1,62 @@
+image-classification-train:
+    type: ExecutionMetaflow
+    dockerfile:
+        gpu: batch_pipelines/DockerfileGPU
+        cpu: batch_pipelines/Dockerfile
+    py: batch_pipelines/image_classification_train.py
+    className: ImageClassificationTrain
+    additionalOptions:
+        annotations:
+            artifacts.ai.sap.com/datain.kind: dataset
+            artifacts.ai.sap.com/trainedmodel.kind: model
+            executables.ai.sap.com/description: "Pipeline to train an image classifier model."
+            executables.ai.sap.com/name: "image-classification-train"
+object-detection-train:
+    type: ExecutionMetaflow
+    dockerfile:
+        gpu: batch_pipelines/DockerfileGPU
+        cpu: batch_pipelines/Dockerfile
+    py: batch_pipelines/object_detection_train.py
+    className: ObjectDetectionTrain
+    additionalOptions:
+        annotations:
+            artifacts.ai.sap.com/datain.kind: dataset
+            artifacts.ai.sap.com/trainedmodel.kind: model
+            executables.ai.sap.com/description: "Pipeline to train an object detection model."
+            executables.ai.sap.com/name: "object-detection-train"
+triplet-distance-learning-train:
+    type: ExecutionMetaflow
+    dockerfile:
+        gpu: batch_pipelines/DockerfileGPU
+        cpu: batch_pipelines/Dockerfile
+    className: TripletDistanceMetricTrain
+    py: batch_pipelines/contrastive_learning_triplet_loss.py
+    additionalOptions:
+        annotations:
+            artifacts.ai.sap.com/datain.kind: dataset
+            artifacts.ai.sap.com/trainedmodel.kind: model
+            executables.ai.sap.com/description: "Pipeline to train an feature extraction model using triplet loss"
+            executables.ai.sap.com/name: "triplet-distance-learning-train"
+batch-processing:
+    type: ExecutionMetaflow
+    dockerfile:
+        gpu: batch_pipelines/DockerfileGPU
+        cpu: batch_pipelines/Dockerfile
+    className: BatchProcessing
+    py: batch_pipelines/batch_processing.py
+    additionalOptions:
+        annotations:
+            artifacts.ai.sap.com/datain.kind: dataset
+            artifacts.ai.sap.com/trainedmodel.kind: model
+            anotation=artifacts.ai.sap.com/results.kind: dataset
+            executables.ai.sap.com/description: "Processing a large batch of images."
+            executables.ai.sap.com/name: "batch-processing"
+
+model-serving:
+    type: DeploymentYaml
+    dockerfile:
+        gpu: model_serving/DockerfileGPU
+        cpu: model_serving/Dockerfile
+    yaml: model_serving/template.yaml
+    description: >
+        Serve Models trained with the `sap-computer-vision` package on AIF.

@@ -1,0 +1,12 @@
+README.md
+__pycache__
+add_package.sh
+*.zip
+customContentPackage.yaml
+swar-demo-workflow.yaml
+swar.yaml
+testin
+testout
+train.zip
+workflow.yaml
+wotkflow_config.yaml

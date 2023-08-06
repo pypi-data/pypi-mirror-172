@@ -1,0 +1,15 @@
+.contentPackage: sap-cv-prep-imgs
+.workflow: prepareTraining
+name: "this-needs-to-be-unique"
+labels:
+  scenarios.ai.sap.com/id: "my-scenario-id"
+  ai.sap.com/version: "0.0.1"
+annotations:
+  scenarios.ai.sap.com/name: "my-scenario-name"
+  executables.ai.sap.com/description: "Description of executable"
+  executables.ai.sap.com/name: "my-executable-name"
+  artifacts.ai.sap.com/datain.kind: "dataset"
+  artifacts.ai.sap.com/prepareddata.kind: "dataset"
+image: "docker-registry/docker-repository:tag"
+imagePullSecret: "my-docker-registry-secret"
+objectStoreSecret: "default-object-store-secret"

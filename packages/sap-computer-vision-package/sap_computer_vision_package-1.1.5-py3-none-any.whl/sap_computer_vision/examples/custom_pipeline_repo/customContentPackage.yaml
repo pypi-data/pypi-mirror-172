@@ -1,0 +1,16 @@
+name: sap-cv-prep-imgs
+description: |
+    This is an additional content package providing a workflow to paste background images to images with white background.
+license: SAP DEVELOPER LICENSE
+workflows:
+    prepareTraining:
+        type: ExecutionMetaflow
+        py: prepare_training.py
+        className: ImageSynthesis
+        dockerfile: Dockerfile
+        annotations:
+            artifacts.ai.sap.com/datain.kind: dataset
+            artifacts.ai.sap.com/prepareddata.kind: dataset
+        additionalOptions:
+            metaflow:
+                - --package-suffixes=.py,.sh
