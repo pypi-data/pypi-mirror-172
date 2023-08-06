@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: smartsense
+Version: 1.0
+Summary: A function that dynamically switches Adafruit Sense Hat API's
+Home-page: UNKNOWN
+Author: Spuds1224
+Author-email: zachydem@aol.com
+License: UNKNOWN
+Keywords: sense hat,sense,adafruit,sense emu,sense emulation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: sense-emu
+Requires-Dist: sense-hat
+
+This function allows for the dynamic switching of the Adafruit Sense Hat API based on whether the sense hat is connected or not
+
+
