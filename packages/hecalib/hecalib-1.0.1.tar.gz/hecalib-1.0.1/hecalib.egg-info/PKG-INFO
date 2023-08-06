@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hecalib
+Version: 1.0.1
+Summary: A python library for different implementations of handeye calibration for vision guided robots
+Home-page: https://github.com/ienebuse/hecalib
+Author: Ikenna Enebuse
+Author-email: i.enebuse@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hecalib
