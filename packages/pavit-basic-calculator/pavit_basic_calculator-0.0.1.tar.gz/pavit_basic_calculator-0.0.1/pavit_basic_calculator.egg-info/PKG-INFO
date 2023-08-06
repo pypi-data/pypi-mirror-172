@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pavit-basic-calculator
+Version: 0.0.1
+Summary: Use for pratice create python library
+Home-page: 
+Author: Pavit Suwansiri
+Author-email: pavit.suwansiri@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Bug Tracking
+License-File: LICENCE
+
+# Pavit's Basic Calculator
+
+use for pratice create python library
+
+
+Change Log
+==========
+
+0.0.0 (19/04/2020)
+------------------
+- First Release

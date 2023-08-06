@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+pavit_basic_calculator/__init__.py
+pavit_basic_calculator.egg-info/PKG-INFO
+pavit_basic_calculator.egg-info/SOURCES.txt
+pavit_basic_calculator.egg-info/dependency_links.txt
+pavit_basic_calculator.egg-info/requires.txt
+pavit_basic_calculator.egg-info/top_level.txt
