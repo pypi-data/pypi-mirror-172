@@ -1,0 +1,10 @@
+pandas
+pytest
+coverage
+setuptools
+pytest-cov
+python-dotenv
+python-dateutil
+supportLibEasyT
+binancespoteasyt
+metatrader5easyt
