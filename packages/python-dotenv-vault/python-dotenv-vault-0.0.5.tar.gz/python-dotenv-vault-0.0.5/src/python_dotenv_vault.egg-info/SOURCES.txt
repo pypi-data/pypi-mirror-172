@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/dotenv/__init__.py
+src/dotenv/__version__.py
+src/dotenv/main.py
+src/python_dotenv_vault.egg-info/PKG-INFO
+src/python_dotenv_vault.egg-info/SOURCES.txt
+src/python_dotenv_vault.egg-info/dependency_links.txt
+src/python_dotenv_vault.egg-info/top_level.txt
