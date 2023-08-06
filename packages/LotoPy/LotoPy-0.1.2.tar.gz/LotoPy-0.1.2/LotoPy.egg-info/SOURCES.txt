@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+LotoPy.egg-info/PKG-INFO
+LotoPy.egg-info/SOURCES.txt
+LotoPy.egg-info/dependency_links.txt
+LotoPy.egg-info/top_level.txt
+lotopy/__init__.py
+lotopy/lotopy.py

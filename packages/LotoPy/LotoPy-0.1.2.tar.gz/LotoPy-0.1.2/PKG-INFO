@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: LotoPy
+Version: 0.1.2
+Summary: pacote para geração de números aleatórios para jogos de loteria
+Home-page: https://github.com/flaviorabelo/lotopy
+Author: Flavio Rabelo
+Author-email: flaviorab@gmail.com
+License: UNKNOWN
+Description: # LotoPy
+        
+        Descrição.
+        Gerador de numeros aleatórios para jogos de loterias.
+        Permite gerar numeros para megasena, lotofacil e quina.
+        	lotopy:
+        	    - megasena
+        	    - quina
+        	    - lotofacil
+        	    
+        ## Instalação
+        
+        Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) to install package_name
+        
+        ---bash
+        pip install lotopy
+        
+        ## Autor
+        Flavio Rabelo
+        
+Keywords: loteria aposta jogo aleatorio
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
