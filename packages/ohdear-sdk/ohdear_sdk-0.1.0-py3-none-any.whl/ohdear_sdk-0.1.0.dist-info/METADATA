@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ohdear-sdk
+Version: 0.1.0
+Summary: Oh Dear Python SDK
+Home-page: https://github.com/owenvoke/ohdear-python-sdk
+Author: Owen Voke
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE.md
+Requires-Dist: requests
+
