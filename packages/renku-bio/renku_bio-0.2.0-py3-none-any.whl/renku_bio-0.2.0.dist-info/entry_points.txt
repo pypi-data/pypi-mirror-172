@@ -1,0 +1,3 @@
+[renku.cli_plugins]
+bio=renkubio.cli:bio
+
