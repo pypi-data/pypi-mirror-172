@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: png-to-jpg
+Version: 1.0.0
+Summary: png to jpg
+Author: Farooq
+Keywords: python,jpg png,jpg
+Description-Content-Type: text/markdown
+
+
+# png to jpg
+
+from png_jpg.png_to_jpg import converter
+
+
+c = converter()
+c.png_jpg(source_path,destination_path)
