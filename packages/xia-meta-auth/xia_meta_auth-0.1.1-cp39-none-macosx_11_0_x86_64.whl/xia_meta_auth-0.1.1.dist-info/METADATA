@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: xia-meta-auth
+Version: 0.1.1
+Summary: X-I-A Meta Authorization
+Home-page: https://develop.x-i-a.com/docs/xia-meta-auth/0.1.1/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: passlib
+Requires-Dist: xia-engine-firestore
+Requires-Dist: xia-meta
+Requires-Dist: xia-cache
+
+.. image:: https://img.shields.io/pypi/v/xia-meta-auth.svg?color=blue
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-meta-auth/
+
+====================================
+X-I-A Meta Authorization
+====================================
+
+X-I-A Authorization Management System
+
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install xia-meta-auth
+
+
