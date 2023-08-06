@@ -1,0 +1,3 @@
+[console_scripts]
+airnet=bas_air_unit_network_dataset.__main__:cli
+
