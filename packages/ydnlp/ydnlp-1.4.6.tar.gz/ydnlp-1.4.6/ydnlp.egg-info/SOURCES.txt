@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirement.txt
+setup.py
+ydnlp/__init__.py
+ydnlp/uie_predict.py
+ydnlp.egg-info/PKG-INFO
+ydnlp.egg-info/SOURCES.txt
+ydnlp.egg-info/dependency_links.txt
+ydnlp.egg-info/requires.txt
+ydnlp.egg-info/top_level.txt
+ydnlp/utils/__init__.py
+ydnlp/utils/downloader.py
