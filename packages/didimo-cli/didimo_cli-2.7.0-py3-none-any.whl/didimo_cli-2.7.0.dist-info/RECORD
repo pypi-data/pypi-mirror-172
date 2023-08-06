@@ -1,0 +1,15 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/_version.py,sha256=EtKWW0Hnl5oWglRNH0HZigvcDT2FEs58ek8buJdwW1E,22
+cli/cli.py,sha256=93BYyNWMaacjRHxbS7BfQDmZpV_6myhawpjKdcWQuJo,115717
+cli/config.py,sha256=YP2AP39B-MvyinZamP56GPaaVzXo6XJ9sR9jgT7wYeY,5163
+cli/helpers.py,sha256=Vgf7BZj0NmBG17bDx2kyxy-MZ9p2j-T4oGBAQAFPPE0,15482
+cli/network.py,sha256=wcxsxhsOpRu_sUmZDIEatmG7QGL_uR51z64r4yVc4zE,6849
+cli/shared_processing.py,sha256=nz5ASsCN-nzhAXgUKLEKCkBjMmUc1f2iVXVDnmv-sEI,23736
+cli/shared_queue.py,sha256=6hUAPe6QcBx22OuuHALlHtfQky_4qdBfw2aUnRIezts,4204
+cli/utils.py,sha256=Fb-qHmmjJnDbb4NPFSFrwkrxJLTe0VKmXUMUlsUIq2A,5195
+didimo_cli-2.7.0.dist-info/LICENSE,sha256=l89g4cKiMcQcwMoXDuc2kZTbDTesDxuBmBa0hy7A8OA,11578
+didimo_cli-2.7.0.dist-info/METADATA,sha256=IisRGiK1x4K-uSYh6BMACrCbdeWwwikgGJFLUeVLdDM,8727
+didimo_cli-2.7.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+didimo_cli-2.7.0.dist-info/entry_points.txt,sha256=RgeZIVtzUrjeVmQnq5VSNmEtmChKTrs8NF6u7_2uKnQ,39
+didimo_cli-2.7.0.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+didimo_cli-2.7.0.dist-info/RECORD,,
