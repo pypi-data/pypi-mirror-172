@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: logzy
+Version: 0.1.0
+Summary: A tool for converting f-strings in log functions to lazy-logging
+Author: Alex Harford
+Author-email: harford@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: astroid (>=2.12.12,<3.0.0)
+Requires-Dist: libcst (>=0.4.7,<0.5.0)
+Description-Content-Type: text/markdown
+
+# Introduction
+
+*ALPHA SOFTWARE*: Use at your own risk. Carefully vet the suggestions.
+
+`logzy` is a linter / fixer that ensures Python log message arguments are in
+lazy-logging format. This is recommended so that arguments to the log messages
+are only rendered if they're emitted. Performance regressions can be occur if
+objects are being rendered even if the log message isn't being emitted.
+
+For example:
+
+```python
+
+import logging
+
+log = logging.getLogger()
+
+user = "root"
+
+# Bad
+log.warning(f"Login failed for {user}")
+
+# Good
+log.warning("Login failed for %s", user)
+```
+
+You may have seen tools like pylint complain about
+`logging-fstring-interpolation`, `logging-format-interpolation`, or
+`logging-not-lazy`.
+
+
+# Installation
+
+```sh
+pip install logzy
+```
+
+# Usage
+
+Since logzy only works on f-strings right now, you probably want to convert
+everything to an f-string first using a tool like
+[flynt](https://github.com/ikamensh/flynt) or
+[pyupgrade](https://github.com/asottile/pyupgrade)
+
+
+# TODO
+
+* Non f-string parameters to log functions (ie `.format()` or `%`)
+* Untested f-strings:
+  * Multiline f-string
+  * Nested f-string
+

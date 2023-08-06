@@ -1,0 +1,8 @@
+logzy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logzy/app.py,sha256=0CQPq9O8cp_DNOMAlIdmUw91yR4c68w3B7zqqXhnUuk,2831
+logzy/convert.py,sha256=F2w7ekrd4KkT9dVqbzcUQCR8tp7WGhZcnkB6krUeTJo,1843
+logzy/transform.py,sha256=bP574DVq0NxLBUOwnnWoRY4r5-p9agPKuB3KsJDsEho,6215
+logzy-0.1.0.dist-info/entry_points.txt,sha256=3iT-mz5qJCcEvdzAaPMWVQZDVuYbkVfTFG7DSzRb_ko,40
+logzy-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+logzy-0.1.0.dist-info/METADATA,sha256=lGFpTX9xfHBe6ToVnbUxKbR-eKs98k579yFqMpAJk4s,1616
+logzy-0.1.0.dist-info/RECORD,,

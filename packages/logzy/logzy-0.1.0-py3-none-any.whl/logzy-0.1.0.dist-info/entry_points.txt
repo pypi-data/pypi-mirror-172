@@ -1,0 +1,3 @@
+[console_scripts]
+logzy=logzy.app:main
+
