@@ -1,0 +1,4 @@
+[console_scripts]
+TujieModaoshu = TujieModaoshu.__main__:main
+tujie-modaoshu = TujieModaoshu.__main__:main
+
