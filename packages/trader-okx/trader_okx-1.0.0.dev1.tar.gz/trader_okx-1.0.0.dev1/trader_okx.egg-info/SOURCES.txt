@@ -1,0 +1,6 @@
+setup.py
+trader_okx/__init__.py
+trader_okx.egg-info/PKG-INFO
+trader_okx.egg-info/SOURCES.txt
+trader_okx.egg-info/dependency_links.txt
+trader_okx.egg-info/top_level.txt
