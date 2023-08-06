@@ -1,0 +1,3 @@
+[console_scripts]
+install-ca=groove.cli:install_ca
+
