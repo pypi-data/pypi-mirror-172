@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mara_dbt/__init__.py
+mara_dbt/cli.py
+mara_dbt/commands.py
+mara_dbt/config.py
+mara_dbt/integration.py
+mara_dbt/setup.py
+mara_dbt.egg-info/PKG-INFO
+mara_dbt.egg-info/SOURCES.txt
+mara_dbt.egg-info/dependency_links.txt
+mara_dbt.egg-info/requires.txt
+mara_dbt.egg-info/top_level.txt
