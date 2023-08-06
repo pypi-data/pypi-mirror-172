@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: lo-extension-dev
+Version: 0.0.6
+Summary: A tool to help developing LibreOffice Extension.
+Project-URL: Bug Reports, https://github.com/bastien34/lo-extension-dev/issues
+Project-URL: Source, https://github.com/bastien34/lo-extension-dev
+License: Copyright (c) 2023-Bastien Roques
+        
+        Permission is hereby granted, free of charge, to any person obtaining
+        a copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:
+        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+        OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+        WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+License-File: LICENSE.txt
+Keywords: development,extension,libreoffice
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Requires-Dist: argparse
+Requires-Dist: psutil
+Requires-Dist: pyyaml
+Description-Content-Type: text/x-rst
+
+=============================
+Libreoffice Developing Helper
+=============================
+
+
+This tool helps developing LibreOffice Extension. It mainly does:
+
+    - build a LibreOffice extension from source
+
+    - create the `Addons.xcu` file following a simple yaml conf file.
+
+    - install / uninstall extension
+
+    - create shortcut from installed extension to development files
+
+Note that it hasn't been tested on other system than Linux.
+
+WHY
+---
+When developing for LibreOffice, it is common to reinstall an extension
+to test it, which means compiling, uninstalling, installing. These tasks are
+quite boring. Beside, after a reinstallation, you need to create again and
+again some symlinks from the installation path to your code.
+
+This command line tool helps achieving this goal.
+
+
+Installation
+------------
+
+::
+
+  $ pip install lo-extension-dev
+
+**Attention: this tool needs two configuration files to work !**
+
+Create in your root directory `extension.yml` and `addons.yml` to auto generate  `Addons.xcu`
+files in charge of OfficeMenuBar & OfficeToolBar.
+
+The module holds an example of these files.
+
+
+Usage
+-----
+
+To develop a LibreOffice extension, we advocate to use the following
+architecture. Extension code is in `src/`.
+
+::
+
+    ─ my_extension
+        │   ├── addons.yml
+    │   ├── Addons.xcu
+    │   ├── extension
+    │   │   ├── 0.0.1
+    │   │   │   ├── lo-extension-testing.oxt
+    │   ├── extension.yml
+    │   ├── README.md
+    │   └── src
+    │       ├── Accelerators.xcu
+    │       ├── Addons.xcu
+    │       ├── assets
+    │       │   ├── avaudiologo.svg
+    │       │   └── sc_underline.svg
+    │       ├── description
+    │       │   ├── descr-en.txt
+    │       ├── description.xml
+    │       ├── dialogs
+    │       │   ├── window.xdl
+    │       ├── Events.xcu
+    │       ├── META-INF
+    │       │   └── manifest.xml
+    │       ├── Office
+    │       │   └── UI
+    │       ├── python
+    │       │   ├── pythonpath
+    │       │   └── my_macros.py
+    │       ├── README.md
+    │       └── registration
+    │           ├── license_en.txt
+    └── README.md
+
+Once installed, a command line `manage_extension` is available in your terminal.
+
+To get help, just type:
+
+    $ manage_extension -h
+
+
+    options:
+      -h, --help          show this help message and exit
+      -o, --open          Open installation directory
+      -m, --make          Make extension
+      -i, --install       Install extension
+      -u, --uninstall     Uninstall extension
+      -d, --dev           Set dev shortcuts
+      -id, --install-dev  Install and set dev shortcuts
+
+
+Configuration files
+-------------------
+
+We use two configuration files, using `yaml` syntax. One to generate menubar
+menu and toolbar menu. The second one hold the extension configuration.
+
+
+extension.yml
+~~~~~~~~~~~~~
+- version : version number in format 0.0.1
+
+- extension_name : name of your extension (no space)
+
+- file_extension : zip or oxt
+
+- lib : com.company.my_extension
+
+- macros_directory : in this example, it is `python`. In some project, it is `macros`.
+
+-addons : it shouldn't be changed. The file holding menubar & toolbar conf.
+
+- menu_name : the label displayed in the menu bar.
+
+
+addons.yml
+~~~~~~~~~~~~~~~
+This files has two main sections :
+
+- OfficeMenuBar
+
+- OfficeToolBar
+
+You can create a `submenu`. Don't forget, the keys following a submenu have to
+be named as the function they call. It's the same logic for the OfficeToolBar.

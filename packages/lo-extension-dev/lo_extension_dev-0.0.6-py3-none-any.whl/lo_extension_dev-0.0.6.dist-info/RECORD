@@ -1,0 +1,10 @@
+lo_extension_dev/__init__.py,sha256=ot2M1l8RO549N4ezo4RH_NIJoNjboGIH8VaTVzHpfY0,624
+lo_extension_dev/addons.py,sha256=psYC7NjwxoDR5QW-QOMbXPsp0ZOthCWO0UWnbHwkd0k,6033
+lo_extension_dev/addons.yml,sha256=konuwZBA2iJb-sJCmLxZDDam6svdxgyNZfQ7D2kVdUk,731
+lo_extension_dev/extension.yml,sha256=lFRbCrEJsTXjmlGbprdPejZ3FEnu0Aalyc0hs9cYOB0,178
+lo_extension_dev/manage.py,sha256=y-5ojRdGnuaFP9T01JeMYJTjP2WPpOP0n5yJ-y4y6wo,6133
+lo_extension_dev-0.0.6.dist-info/METADATA,sha256=FZL9vAZZ6vwgKu14DAhLsVtdrM-qf55AwzLjhRWNNFA,5778
+lo_extension_dev-0.0.6.dist-info/WHEEL,sha256=dX1WPp444jXDT0mMZWrdU6ZHm7Cfu0jldiLCQOk_Kmg,87
+lo_extension_dev-0.0.6.dist-info/entry_points.txt,sha256=Jj_LKg90DWufuTg3BCr2GHeuSJlL2_fecN0LIHcXycY,66
+lo_extension_dev-0.0.6.dist-info/licenses/LICENSE.txt,sha256=ZaEXG1som7aUjecgZ8NWtL1iqZuDK4WfQWAC9z6wDPA,1057
+lo_extension_dev-0.0.6.dist-info/RECORD,,
