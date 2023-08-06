@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ketter
+Version: 1.3.2
+Summary: Asynchronous HTTP downloader
+Author-email: Kelsey Mwongeli <kelseykm.git@gmail.com>
+Project-URL: repository, https://github.com/kelseykm/ketter
+Project-URL: changelog, https://github.com/kelseykm/ketter/blob/main/CHANGELOG.md
+Keywords: downloader,asynchronous-downloader
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ketter
+
+![ketter](https://raw.githubusercontent.com/kelseykm/banners/main/ketter/banner.png)
+
+Ketter is an asynchronous http downloader written in [Python](https://python.org)
+
+## Features
+
+- Download many files concurrently
+- Set maximum number of concurrent downloads
+- Set custom HTTP headers and cookies to be used in download requests
+- Resume incomplete downloads at later sessions automatically
+- Beautiful progress bars that provide feedback on the ongoing download
+
+## Installation
+
+`pip3 install ketter`
+
+### Update
+
+`pip3 install --upgrade ketter`

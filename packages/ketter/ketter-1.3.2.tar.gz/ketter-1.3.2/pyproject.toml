@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ketter"
+version = "1.3.2"
+description = "Asynchronous HTTP downloader"
+readme = "README.md"
+keywords = ["downloader", "asynchronous-downloader"]
+authors = [
+  {name = "Kelsey Mwongeli", email = "kelseykm.git@gmail.com"},
+]
+dependencies = [
+  "aiofiles",
+  "aiohttp",
+  "tqdm",
+]
+
+[project.scripts]
+ketter = "ketter.__main__:cli"
+
+[project.urls]
+repository = "https://github.com/kelseykm/ketter"
+changelog = "https://github.com/kelseykm/ketter/blob/main/CHANGELOG.md"
