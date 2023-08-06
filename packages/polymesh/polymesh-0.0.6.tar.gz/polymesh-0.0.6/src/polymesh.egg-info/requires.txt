@@ -1,0 +1,4 @@
+packaging
+linkeddeepdict
+dewloosh.core
+neumann
