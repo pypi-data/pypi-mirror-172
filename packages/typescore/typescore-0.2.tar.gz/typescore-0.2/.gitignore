@@ -1,0 +1,7 @@
+.venv
+dist/
+scratch/
+*.egg-info
+*.egg
+*.gz
+
