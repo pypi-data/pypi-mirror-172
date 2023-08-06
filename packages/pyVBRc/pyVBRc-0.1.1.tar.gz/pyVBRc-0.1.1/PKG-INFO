@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyVBRc
+Version: 0.1.1
+Summary: python utilities for working with the VBRc
+Home-page: https://github.com/vbr-project/pyVBRc
+Author: Chris Havlin
+Author-email: chris.havlin@gmail.com
+License: MIT license
+Keywords: pyVBRc
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+License-File: LICENSE
+
+python utilities for working with the Very Broadband Rheology Calculator, see https://github.com/vbr-project/pyVBRc
