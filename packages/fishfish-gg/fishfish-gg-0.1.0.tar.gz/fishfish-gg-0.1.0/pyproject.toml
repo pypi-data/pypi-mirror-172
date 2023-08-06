@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fishfish-gg"
+version = "0.1.0"
+description = "FishFish API library for Python"
+keywords = ["api", "fishfish", "phishing", "discord"]
+authors = ["fishfish-gg <admin@fishfish.gg>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://fishfish.gg"
+repository = "https://github.com/fishfish-gg/fishfish-py"
+documentation = "https://fishfish-py.rtfd.io"
+packages = [{include = "fishfish"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.1"
+aiohttp = "^3.8.3"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
