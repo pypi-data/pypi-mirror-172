@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gerador
+Version: 0.0.1
+Summary: Pacote python para criar nomes para jogos de RPG.
+Home-page: https://github.com/LeKeu/Gerador---Nomes-de-RPG
+Author: Leticia Keuffer Cavalleiro de Macedo
+Author-email: lekeuffer@gmail.com
+License: MIT License
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+*gerador*\
+gerador Ã© um simples pacote para criar nomes de personagens fictÃ­cios para jogos de RPG.
+
+*DependÃªncias*\
+Python 3.6 ou posterior
+
+*Pacote* --> random, que jÃ¡ vem instalado com o python
+
+*FunÃ§Ã£o*\
+create_name(size) --> retorna um nome com "size" quantidade de sÃ­labas\
+
+create_lastname(size) --> retorna um sobrenome com "size" quantidade de sÃ­labas\
+
+create_name_and_lastname(size_name, size_lastname) --> retorna um nome e sobrenome com "size_name" e "size_lastname" quantidade de silabas
+
+
