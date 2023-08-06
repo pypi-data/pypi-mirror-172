@@ -1,0 +1,15 @@
+crispy_forms_bootstrap2/__init__.py,sha256=WrUkhk-M0xEMEUQKB0uWgZArc3CoiCAG9d-WzDzbvog,133
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=XSLHvKASxPBBPteAPMKHSwyDF6KVoZAlFD1YYTB0CJo,739
+tests/forms.py,sha256=QC1r10WQnipCpdL4_zEO-LupcEjRRKK86g_L7hwrSWE,7551
+tests/test_form_helper.py,sha256=0b8fIiC7Wppr3mrOU-BGoBM07uOzbe8Vyjc-0JHPIRY,16696
+tests/test_layout.py,sha256=iuuNO1pMafHSyNyz8Gc6GuAyNtzOJJ6q_AIh3y0Zuxk,14129
+tests/test_layout_objects.py,sha256=U9qEO4tGmn2UJeWAnRoB42VY0MyFpab2h9_u6wcQg5k,18235
+tests/test_settings.py,sha256=ZDNsygneQthr7jTwQDNM5W-0IBgaOZhxjiPuShLmSGA,1663
+tests/urls.py,sha256=Uwghft__UevZos2Y-4cCfI5Y_rCOBOWot31tWcjq0f8,151
+tests/utils.py,sha256=xNH4wecXXmJSkmkmFQymqi7oDWT9zjFq3R48j4AGiv0,1358
+crispy_forms_bootstrap2-2022.1.dist-info/LICENSE,sha256=dFP8LksA-Xcqod5Tv2H6gtxdcd3T1vIwDXbRbNEC3xw,1079
+crispy_forms_bootstrap2-2022.1.dist-info/METADATA,sha256=Z19OoLHjQ9RBCDcNnjUQfS1Bg70zZB3dW22530WAZxE,653
+crispy_forms_bootstrap2-2022.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+crispy_forms_bootstrap2-2022.1.dist-info/top_level.txt,sha256=sRJ11hFmGjT4kXpIYiovU0soFfsg1YNaBSm1GwQvMfs,30
+crispy_forms_bootstrap2-2022.1.dist-info/RECORD,,
