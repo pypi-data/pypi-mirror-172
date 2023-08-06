@@ -1,0 +1,10 @@
+.eggs/
+*.egg-info/
+.github/
+.nox/
+.pytest_cache/
+.venv/
+.vscode/
+__pycache__/
+build/
+jupyter/.ipynb_checkpoints/
