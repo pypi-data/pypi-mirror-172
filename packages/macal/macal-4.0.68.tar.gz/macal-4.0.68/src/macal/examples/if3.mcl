@@ -1,0 +1,11 @@
+include system, strings;
+
+events = record;
+events["message"] = nil;
+
+if RecordHasField(events, "message") and (events["message"] != nil) {
+	Console("@", events["message"]);	
+}
+else {
+    Console("Correctly processed the if instruction.");
+}
