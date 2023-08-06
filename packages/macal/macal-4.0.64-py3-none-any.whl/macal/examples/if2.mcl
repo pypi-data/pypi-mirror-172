@@ -1,0 +1,10 @@
+include system;
+
+a = 1;
+
+if a != nil {
+    Console(a);
+}
+else {
+    Console("Nil");
+}

@@ -1,0 +1,11 @@
+// This is a demonstration of a library fully written in Macal.
+
+include math;
+
+const quarter = 0.25;
+
+area => (diameter) {
+    return PI * quarter * diameter ^ 2;
+}
+
+
