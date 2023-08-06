@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+pacotebmi/__init__.py
+pacotebmi/arquivobmi.py
+pacotebmi.egg-info/PKG-INFO
+pacotebmi.egg-info/SOURCES.txt
+pacotebmi.egg-info/dependency_links.txt
+pacotebmi.egg-info/top_level.txt
