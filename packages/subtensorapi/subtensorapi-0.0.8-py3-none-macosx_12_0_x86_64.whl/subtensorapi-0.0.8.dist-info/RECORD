@@ -1,0 +1,10 @@
+subtensorapi/__init__.py,sha256=d0onUmFOMFR02H8i7yAieB8cuAsjrqB-NQxXkKy2kaw,12370
+subtensorapi/__main__.py,sha256=55cqV3I56iJN6nYAn5BmIeK6Jo0F5ehaEhdmQDs0L3g,1016
+subtensorapi/cli.py,sha256=8rFGVOmQK0kh_0r7qOYAQBbJ22n22_JN_N-q763JZL0,4185
+subtensorapi/exceptions.py,sha256=RZx0A-wJVOl39DTd0AdEacAr1gNGeM62zzRwi9hP3ro,771
+subtensorapi/subtensor-node-api-macos,sha256=o0qb6udw-BvsRZ_CRUn7lhOuuf8qYvEDQnIAB80vyf4,59236374
+subtensorapi-0.0.8.dist-info/LICENSE,sha256=US6ooXqotsQhddvF67dxW2CPnVIsTQnz5bz1U3p9yf4,1100
+subtensorapi-0.0.8.dist-info/METADATA,sha256=EVV2vKhNd-hkwyZyY9uiCjTAtzkhDbzyzhvTS2KZyS0,652
+subtensorapi-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+subtensorapi-0.0.8.dist-info/top_level.txt,sha256=nZne1CSNpxzrwan8lgNVCiG4aJzMs2rXKZoH5UpPPjY,13
+subtensorapi-0.0.8.dist-info/RECORD,,
