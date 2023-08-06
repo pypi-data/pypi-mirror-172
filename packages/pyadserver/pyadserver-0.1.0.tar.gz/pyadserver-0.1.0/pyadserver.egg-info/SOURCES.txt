@@ -1,0 +1,12 @@
+README
+setup.py
+pyadserver/__init__.py
+pyadserver/isofit.py
+pyadserver/simide.py
+pyadserver/simsep.py
+pyadserver/simsep_backup.py
+pyadserver.egg-info/PKG-INFO
+pyadserver.egg-info/SOURCES.txt
+pyadserver.egg-info/dependency_links.txt
+pyadserver.egg-info/requires.txt
+pyadserver.egg-info/top_level.txt
