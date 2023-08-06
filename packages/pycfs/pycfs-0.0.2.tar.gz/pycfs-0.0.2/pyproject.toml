@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", 
+            "wheel",
+            "numpy>=1.20.1",
+            "typing_extensions>=3.7.4.3",
+            "glob2>=0.7",
+            "pytest >= 6.2.5",
+            "h5py",
+            "matplotlib",
+            "tqdm",
+            ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycfs"
+version = "0.0.2"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name="Eniz Mušeljić", email="eniz.m@outlook.com" },
+]
+classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.9",
+    ]
+
+[project.urls]
+"Homepage" = "https://www.tugraz.at/institute/igte/home/"
+"Bug Tracker" = "https://gitlab.tugraz.at/A9C639836B4DDECA/igte_optim_interface/-/issues"
