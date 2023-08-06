@@ -1,0 +1,8 @@
+autodiff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodiff/autodiff.py,sha256=xBCg9r1HY8pme_qUZAg1FlblIPUbDBZxrDDGdmv69bQ,12476
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_autodiff.py,sha256=rvvuTugnxTVKFiFKJtYlBknIhTC0VsghcK-LpZc5MKM,3202
+yaadl-1.0.0.dist-info/METADATA,sha256=x50pIDjpjasUkFKs6VTytAJXX_hrT3seiycDQlIZYTU,500
+yaadl-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+yaadl-1.0.0.dist-info/top_level.txt,sha256=P2luh1ssCaokoOzYL3Ob7Js7XOBgXRbce6Oa2uCDQms,15
+yaadl-1.0.0.dist-info/RECORD,,
