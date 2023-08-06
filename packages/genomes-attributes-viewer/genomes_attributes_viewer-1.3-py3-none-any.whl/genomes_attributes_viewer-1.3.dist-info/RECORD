@@ -1,0 +1,12 @@
+genomes_attributes_viewer/__init__.py,sha256=0rUUw0vHOl4M3GoFfzDSTF8EEs1U06LVUR38_FdhXpg,208
+genomes_attributes_viewer/app.py,sha256=SCzbm-dVX0VPJ7oL0PzbNEVqsuhilVolIFtcEiVBd4o,4867
+genomes_attributes_viewer/first_run.py,sha256=Ay6UPRvfMmjQ3pBA4gjpF0JjhXgPiZeCoxc8Q7jrlG0,1868
+genomes_attributes_viewer/prepare_attributes.py,sha256=xvMMvYBG8HXESMiNky_8jbANYfr1CxflERU6Hv8zW1g,1160
+genomes_attributes_viewer/prepare_names.py,sha256=JbcwUV9Lx7XMpkahampQhFjOHcnVTFDwmadMZR2b1BA,1361
+genomes_attributes_viewer/data/accession_taxid_attribute.tsv.gz,sha256=riTwD6wzx_XbBCmGK5AMpPoq-24BQUngJaDjO1jXxRw,366867
+genomes_attributes_viewer-1.3.data/scripts/genomes-attributes-viewer,sha256=Z63D2Ew52aKD_FTaI5ztldOL1jQg4ET1ir4zvWn_ygo,1187
+genomes_attributes_viewer-1.3.dist-info/AUTHORS.txt,sha256=8UgLM0fWce7r9Tr7L8-jJcwf4AsV6I3aoWumf9WJ2Jo,211
+genomes_attributes_viewer-1.3.dist-info/METADATA,sha256=DT8A7bOTj3m9bC58a2Ljvm0dyXd7hUt9rZTsjYnm3A0,2800
+genomes_attributes_viewer-1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+genomes_attributes_viewer-1.3.dist-info/top_level.txt,sha256=CihDLVzitG-thHsH8dPzl1hFzBEGEhx31LUe8BlY30A,26
+genomes_attributes_viewer-1.3.dist-info/RECORD,,
