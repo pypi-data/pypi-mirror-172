@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: blik
+Version: 0.3.2
+Summary: Python tool for visualising and interacting with cryo-ET and subtomogram averaging data.
+Home-page: https://github.com/gutsche-lab/blik
+Download-URL: https://github.com/gutsche-lab/blik
+Author: Blik Team
+Author-email: blik-team@googlegroups.com
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Bug Tracker, https://github.com/gutsche-lab/blik/issues
+Project-URL: Documentation, https://github.com/gutsche-lab/blik#README.md
+Project-URL: Source Code, https://github.com/gutsche-lab/blik
+Project-URL: User Support, https://github.com/gutsche-lab/blik/issues
+Project-URL: Changelog, https://github.com/gutsche-lab/blik/blob/main/CHANGELOG.md
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Utilities
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Framework :: napari
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: dask
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: magicgui (>=0.4.0)
+Requires-Dist: cryohub (>=0.3.2)
+Requires-Dist: cryotypes
+Provides-Extra: all
+Requires-Dist: napari[all] (>=0.4.16) ; extra == 'all'
+Requires-Dist: napari-properties-plotter ; extra == 'all'
+Requires-Dist: napari-properties-viewer ; extra == 'all'
+Requires-Dist: napari-label-interpolator ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: napari[all] (>=0.4.16) ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-qt ; extra == 'dev'
+Requires-Dist: pyqt5 ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: napari[all] (>=0.4.16) ; extra == 'testing'
+Requires-Dist: tox ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-qt ; extra == 'testing'
+Requires-Dist: pyqt5 ; extra == 'testing'
+
+![logo](https://github.com/gutsche-lab/blik/raw/main/docs/images/logo.png)
+
+# `blik`
+
+![Codecov branch](https://img.shields.io/codecov/c/github/gutsche-lab/blik/main?label=codecov)
+![PyPI](https://img.shields.io/pypi/v/blik)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/blik)
+
+*it means glance in Dutch*
+
+![blik showcase](https://user-images.githubusercontent.com/23482191/161224963-ad746a06-c2e5-46fe-a13b-f356bc4ad72b.png)
+
+**`blik`** is a tool for visualising and interacting with cryo-ET and subtomogram averaging data. It leverages the fast, multi-dimensional [napari viewer](https://napari.org) and the scientific python stack.
+
+**DISCLAIMER**: this package is in development phase. Expect frequent bugs and crashes. Please, report them on the issue tracker and ask if anything is unclear!
+
+## Installation
+
+You can either install `blik` through the [napari plugin system](https://napari.org/plugins/index.html), through pip, or get both napari and blik directly with:
+
+```bash
+pip install "blik[all]"
+```
+
+The `[all]` qualifier also installs `pyqt5` as the napari GUI backend, and a few additional napari plugins that you might find useful in your workflow:
+- [napari-properties-plotter](https://github.com/brisvag/napari-properties-plotter)
+- [napari-properties-viewer](https://github.com/kevinyamauchi/napari-properties-viewer)
+- [napari-label-interpolator](https://github.com/kevinyamauchi/napari-label-interpolator)
+
+## Basic Usage
+
+From the command line:
+```bash
+napari -w blik -- /path/to.star /path/to/mrc/files/*
+```
+
+The `-w blik` is important for proper initialization of all the layers. Keep the main widget open to ensure nothing goes wrong!
+
+*`blik` is just `napari`*. Particles and images are exposed as simple napari layers, which can be analysed and manipulated with simple python, and most importantly other [napari plugins](https://napari-hub.org/).
+
