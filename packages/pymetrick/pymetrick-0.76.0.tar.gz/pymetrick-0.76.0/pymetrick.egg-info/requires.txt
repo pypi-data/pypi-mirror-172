@@ -1,0 +1,9 @@
+openpyxl>=3.0.0
+pillow>=4.0.0
+mysql-connector-python==8.0.28
+qrcode
+pyaes
+six>=1.15.0
+boto3==1.23.9
+botocore==1.26.9
+zeep
