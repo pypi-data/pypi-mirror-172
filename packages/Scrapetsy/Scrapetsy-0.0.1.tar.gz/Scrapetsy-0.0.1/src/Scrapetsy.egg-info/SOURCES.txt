@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/Scrapetsy/__init__.py
+src/Scrapetsy.egg-info/PKG-INFO
+src/Scrapetsy.egg-info/SOURCES.txt
+src/Scrapetsy.egg-info/dependency_links.txt
+src/Scrapetsy.egg-info/top_level.txt

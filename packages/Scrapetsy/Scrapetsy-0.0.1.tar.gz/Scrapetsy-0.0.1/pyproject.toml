@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Scrapetsy"
+version = "0.0.1"
+authors = [
+  { name="mharitzr", email="harits.muhammad.only@gmail.com" },
+]
+description = "Scrape product details from www.etsy.com"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/HaritsAcheiz/Scrapetsy"
