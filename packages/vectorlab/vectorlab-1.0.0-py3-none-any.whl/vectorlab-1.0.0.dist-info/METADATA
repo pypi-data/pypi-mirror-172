@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: vectorlab
+Version: 1.0.0
+Summary: A lab for vectors.
+Author-email: Kyle Yang <kyle.yang1995@gmail.com>, Emma Qin <emmaqin0722@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy>=1.23.2
+Requires-Dist: scipy>=1.9.0
+Requires-Dist: pandas>=1.4.3
+Requires-Dist: networkx>=2.8.6
+Requires-Dist: statsmodels>=0.13.2
+Requires-Dist: scikit-learn>=1.1.2
+Requires-Dist: matplotlib>=3.5.3
+Requires-Dist: seaborn>=0.11.2
+Requires-Dist: pillow>=9.2.0
+Requires-Dist: pytz>=2022.2.1
+Requires-Dist: dill>=0.3.5.1
+Requires-Dist: halo>=0.0.31
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: torch>=1.10.0 ; extra == "full"
+Requires-Dist: torch-sparse>=0.6.12 ; extra == "full"
+Requires-Dist: torch-cluster>=1.6.0 ; extra == "full"
+Requires-Dist: torch-scatter>=2.0.9 ; extra == "full"
+Requires-Dist: torch-spline-conv>=1.2.1 ; extra == "full"
+Requires-Dist: torch-geometric>=2.0.4 ; extra == "full"
+Requires-Dist: pytest>=7.1.2 ; extra == "test"
+Requires-Dist: pytest-cov>=3.0.0 ; extra == "test"
+Requires-Dist: pytest-repeat>=0.9.1 ; extra == "test"
+Requires-Dist: pytest-benchmark>=3.4.1 ; extra == "test"
+Provides-Extra: full
+Provides-Extra: test
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Kr4t0n/vectorlab/main/static/logo.png"/>
+</p>
+
+[![PyPI Latest Release](https://img.shields.io/pypi/v/vectorlab)](https://pypi.org/project/vectorlab/)
+[![Package Status](https://img.shields.io/pypi/status/vectorlab)](https://pypi.org/project/vectorlab/)
+[![Testing Status](https://img.shields.io/github/workflow/status/Kr4t0n/vectorlab/Testing?label=Testing&logo=github)](https://github.com/Kr4t0n/vectorlab/actions/workflows/testing.yml)
+[![Coverage](https://codecov.io/github/Kr4t0n/vectorlab/coverage.svg?branch=dev-feat)](https://codecov.io/gh/Kr4t0n/vectorlab)
+[![License](https://img.shields.io/pypi/l/vectorlab)](https://github.com/Kr4t0n/vectorlab/blob/main/LICENSE.txt)
+[![Python Version](https://img.shields.io/pypi/pyversions/vectorlab)](https://pypi.org/project/vectorlab/)
+
+VectorLab is a library to help solve scientific and engineering problems of mathematics and machine learning. It is built upon various fabulous softwares and tries to fill the gap when playing around with those softwares.
+
+VectorLab consists of many modules including data generation, graph processing, series processing, statistics, optimization, ensemble mechanism and more.
+
+VectorLab is distributed under the 3-Clause BSD license.
+
+## Installation
+
+### Dependencies
+
+VectorLab supports **Python 3.8+** only.
+
+### PyPI Installation
+
+The lastest version of VectorLab could be installed from PyPI.
+
+```
+pip install -U vectorlab
+```
+
+VectorLab also needs PyTorch and PyG support. It is highly
+**recommended** to handle these two package installations **manually**. 
+If you only care for the CPU version of PyTorch and PyG, you can
+also install vectorlab from PyPI with extensions.
+
+```
+pip install -U -e vectorlab[.full]
+```
+
+## Development
+
+We welcome contributions from all sources.
+
+### Source code
+
+You can check the latest commit with *git*:
+
+```
+git clone https://github.com/Kr4t0n/vectorlab.git
+```
+
+### Testing
+
+After the regular installation, you will need *pytest* to test VectorLab. You can install corresponding dependencies with:
+
+```
+pip install -U -e vectorlab[.test]
+```
+
+You can launch the test suite with:
+
+```
+pytest vectorlab
+```
