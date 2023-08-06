@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: score-card-model
+Version: 1.6.6
+Summary: Risk Score Card Model
+Home-page: https://github.com/skykiseki/score_card_model
+Author: Wei, Zhihui
+Author-email: evelinesdd@qq.com
+License: MIT
+Keywords: Risk Score Card
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: dill (>=0.2.9)
+Requires-Dist: seaborn (>=0.11.1)
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels (>=0.12.2)
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: tqdm
+
+
+我家还蛮大的, 欢迎你们来我家van.
+
+https://github.com/skykiseki
+
+score_card_model
+====
+
+    "风险评分卡模型开发" 
+    基于最早的FICO风险评分卡逻辑进行优化
+
+    当前包含主干部分, 即特征分箱、IV值计算、Woe转化、模型评估指标等。
+    不包含建模的部分, 这个问题留给用户。
+
+    
+    特征的分箱使用的方法是卡方分箱, 整个流程为:
+    整理特征类型(离散、连续) -> 初始化分箱 -> 卡方合并 -> 单调性检验 -> 特殊值处理 
+
+完整文档见 ``README.md``
+
+GitHub: https://github.com/skykiseki/score_card_model
+
+
