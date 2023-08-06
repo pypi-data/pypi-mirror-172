@@ -1,0 +1,14 @@
+extrabol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extrabol/extrabol.py,sha256=mrd9tk7_kWlcdLigqYHQZtraaljRdfgiyS39ieqhKYw,36286
+extrabol/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extrabol/template_bank/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extrabol/template_bank/smoothed_sn1a.npz,sha256=pXhZN_HmWVl90YgpdRDm0sAkik4o4bFbSv9b4sTuPSs,5244546
+extrabol/template_bank/smoothed_sn1bc.npz,sha256=QGZfX4e8vHndzqxtDzRMbXIN728l_HT44MnaQIF2xkU,4956426
+extrabol/template_bank/smoothed_sn2l.npz,sha256=vvLMRXvrbvUllfCH9JplXdsj7DBcJQmNbwLhBvjp7ww,692250
+extrabol/template_bank/smoothed_sn2p.npz,sha256=jj4aCvWTTdi8IrfFjyQJeLBF3I-77ci-K6SOEr7-u2o,692250
+extrabol-0.1.12.dist-info/LICENSE,sha256=CKKumPmF0YGwq1ixSgMFUc2WCB_efNn4nARZtZcOx_k,1058
+extrabol-0.1.12.dist-info/METADATA,sha256=57yG2j_i2J7feQs4FAsIgloyXmNFJfPr-KAPl8fiT2k,3203
+extrabol-0.1.12.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+extrabol-0.1.12.dist-info/entry_points.txt,sha256=Krfb0MoNOXzACtPDr-zRH0IIrv8EFnwcyZ2m-KH8kA4,53
+extrabol-0.1.12.dist-info/top_level.txt,sha256=nnOc0oZJkeiVL5Vt5EaBYdpZJ9rf64RuNPONXQIvgjQ,9
+extrabol-0.1.12.dist-info/RECORD,,
