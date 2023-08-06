@@ -1,0 +1,10 @@
+xia_engine/__init__.py,sha256=eO9u2PUp7HAZa805cx4rcT_wQEF99ViMFHSWgVzQDP4,521
+xia_engine/base.cpython-310-x86_64-linux-gnu.so,sha256=8QanUz0Ad10gX_wVrqymc6ebxOUrVeXgiU_MzJfdgjk,895496
+xia_engine/document.cpython-310-x86_64-linux-gnu.so,sha256=ysL-NSpioVaOrWI48FiH2nCnEPbun-wS2Eda6l7srF4,862728
+xia_engine/engine.cpython-310-x86_64-linux-gnu.so,sha256=hNDqexFnhH0lJHea4DTWAXxHuiRAD24wNncg2KwuFQI,829960
+xia_engine/fields.cpython-310-x86_64-linux-gnu.so,sha256=sGg88saQe_kbtjJWHBdRwwrb9DwsnckE1_FDhGuHUb4,879080
+xia_engine-0.1.10.dist-info/LICENSE.txt,sha256=tWXZqpL_C-bIyrhuzutInM8bKRN490vPwfa6vH65N1Q,154
+xia_engine-0.1.10.dist-info/METADATA,sha256=SAROkhbU9xJLaeoG84uyT1ZD-CVyjuSZBeQFDIG_1dU,710
+xia_engine-0.1.10.dist-info/WHEEL,sha256=Kn0XEVEprF3m5Ls7p1vDRSgmlko_ccaWbbQdh4VEEUE,108
+xia_engine-0.1.10.dist-info/top_level.txt,sha256=Q896WUzHNHm14oiEaw7BbLcGbvHkKPKEQOBa8Z06dbk,11
+xia_engine-0.1.10.dist-info/RECORD,,
