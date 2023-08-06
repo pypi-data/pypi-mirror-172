@@ -1,0 +1,108 @@
+[project]
+name = "bigearthnet-common"
+version = "2.8.0"
+description = "A collection of common tools to interact with the BigEarthNet dataset."
+authors = [
+    { name = "Kai Norman Clasen", email = "k.clasen@protonmail.com" },
+]
+readme = "README.md"
+keywords = [
+    "ben",
+    "bigearthnet",
+    "script",
+    "tools",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "pydantic>=1.8",
+    "fastcore>=1.3",
+    "natsort>=8",
+    "appdirs>=1.4",
+    "typer[all]>=0.6",
+    "python-dateutil>=2",
+]
+
+[project.license]
+text = "Apache Software License 2.0"
+
+[project.urls]
+homepage = "https://github.com/kai-tub/bigearthnet_common/"
+repository = "https://github.com/kai-tub/bigearthnet_common/"
+documentation = "https://kai-tub.github.io/bigearthnet_common"
+
+[project.scripts]
+ben_constant_prompt = "bigearthnet_common.constants:cli"
+ben_build_csv_sets = "bigearthnet_common.sets:build_csv_sets_cli"
+ben_validate_s1_root_dir = "bigearthnet_common.base:validate_ben_s1_root_directory_cli"
+ben_validate_s2_root_dir = "bigearthnet_common.base:validate_ben_s2_root_directory_cli"
+ben_describe_patch = "bigearthnet_common.base:describe_patch_cli"
+
+[project.optional-dependencies]
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+includes = [
+    "LICENSE",
+    "src",
+]
+
+[tool.pdm.dev-dependencies]
+docs = [
+    "myst-nb>=0.16",
+    "Sphinx>=4.5",
+    "sphinx-autobuild",
+    "sphinx-external-toc",
+    "linkify-it-py",
+    "furo",
+    "common-nb-preprocessors>=1",
+    "sphinxcontrib-mermaid",
+    "pre-commit",
+    "sphinx-cli-recorder>=0.1.5",
+]
+test = [
+    "numpy>=1.20",
+    "pytest",
+    "pre-commit",
+    "jupyter",
+    "notebook",
+    "types-requests>=2.28.11.2",
+    "types-python-dateutil>=2.8.19.1",
+]
+lint = [
+    "black[jupyter]",
+    "isort",
+    "nbstripout",
+    "mypy",
+]
+
+[tool.pdm.scripts]
+check-pre-commit = "pre-commit run --all-files"
+check-types = "mypy src"
+tests = "pytest tests/"
+
+[tool.pdm.scripts.lint]
+composite = [
+    "pre-commit",
+]
+help = "Will check if all files are formatted with black & isort"
+
+[tool.pdm.scripts.build-docs]
+cmd = "sphinx-build docs docs/_build/"
+help = "Build Sphinx documentation"
+
+[tool.pdm.scripts.serve-sphinx-docs]
+cmd = "sphinx-autobuild docs docs/_build --open-browser"
+help = "Serve the Sphinx documentation with sphinx-autobuild"
+
+[tool.mypy]
+exclude = [
+    "tests",
+]
+
+[tool.isort]
+profile = "black"
