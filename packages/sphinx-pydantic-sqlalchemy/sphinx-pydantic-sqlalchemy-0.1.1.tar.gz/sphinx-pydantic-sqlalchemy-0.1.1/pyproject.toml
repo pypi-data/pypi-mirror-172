@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sphinx-pydantic-sqlalchemy"
+version = "0.1.1"
+description = "Document SQLAlchemy models by leveraging to sphinx-pydantic and pydantic-sqlalchemy"
+authors = ["David Francos <davidfrancos@sipay.es>"]
+license = "GPL2+"
+packages = [{include = "sphinx_pydantic_sqlalchemy"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic-sqlalchemy = "^0.0.9"
+sphinx-pydantic = "^0.1.1"
+sphinx-jsonschema = "^1.19.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
