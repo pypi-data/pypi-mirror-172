@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: superbox-utils
+Version: 2022.1
+Summary: Utilities for Superbox Python Packages.
+Home-page: https://github.com/mh-superbox/superbox-utils
+Author: Michael Hacker
+Author-email: mh@superbox.one
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![license-url](https://img.shields.io/npm/l/make-coverage-badge.svg)](https://opensource.org/licenses/MIT)
+![coverage-badge](https://raw.githubusercontent.com/mh-superbox/superbox-utils/main/coverage.svg)
+![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)
+
+# Superbox Utils
+
+Utilities for Superbox Python Packages.

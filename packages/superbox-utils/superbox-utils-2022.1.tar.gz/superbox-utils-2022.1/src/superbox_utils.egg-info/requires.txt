@@ -1,0 +1,2 @@
+PyYAML~=6.0
+asyncio-mqtt~=0.12.1
