@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sketch-image
+Version: 0.0.1
+Summary: Convert images into sketches
+Home-page: https://github.com/pshreyam/image-sketcher
+Author: Shreyam Pokharel
+Author-email: pshreyam@gmail.com
+Project-URL: Bug Tracker, https://github.com/pshreyam/image-sketcher/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (==8.1.3)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: opencv-python (==4.6.0.66)
+
+# Sketch Image
+
+Convert Images to Sketches
+
+# Installation
+
+```bash
+pip install sketch-image
+```
+
+# Get Started
+
+```bash
+sketch-image --image <image_path> --output <output_path>
+```
+
+Note: The `--image` and `--output` flags are optional.
+
+- The CLI will prompt for input image path until supplied.
+- The output will be placed in the Pictures directory within the user's home directory by default.
+
+For help, run:
+
+```bash
+sketch-image --help
+```
