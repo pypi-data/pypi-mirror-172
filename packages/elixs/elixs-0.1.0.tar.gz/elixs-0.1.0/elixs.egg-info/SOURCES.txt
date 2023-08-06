@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+elixs/__init__.py
+elixs/errorhandlers.py
+elixs/load.py
+elixs/logger.py
+elixs/sqllogger.py
+elixs.egg-info/PKG-INFO
+elixs.egg-info/SOURCES.txt
+elixs.egg-info/dependency_links.txt
+elixs.egg-info/requires.txt
+elixs.egg-info/top_level.txt
