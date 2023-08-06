@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: deisa
+Version: 0.2.3
+Author-email: "A. Gueroudji" <amal.gueroudji@cea.fr>
+Project-URL: Homepage, https://github.com/GueroudjiAmal/deisa
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.9
+Requires-Dist: PyYAML
+Requires-Dist: dask[distributed]
+
