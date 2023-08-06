@@ -1,0 +1,6 @@
+setup.py
+finance_ib.egg-info/PKG-INFO
+finance_ib.egg-info/SOURCES.txt
+finance_ib.egg-info/dependency_links.txt
+finance_ib.egg-info/top_level.txt
+trader_ib/__init__.py
