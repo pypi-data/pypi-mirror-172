@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: xforms
+Version: 0.1.0
+Summary: Async HTML forms for Starlette
+Home-page: https://github.com/alex-oleshkevich/xforms
+License: MIT
+Author: Alex Oleshkevich
+Author-email: alex.oleshkevich@gmail.com
+Requires-Python: >=3.10.0,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Project-URL: Documentation, https://github.com/alex-oleshkevich/xforms
+Project-URL: Repository, https://github.com/alex-oleshkevich/xforms
+Description-Content-Type: text/markdown
+
+# xforms
+
+Async HTML forms for Starlette
+
+![PyPI](https://img.shields.io/pypi/v/xforms)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alex-oleshkevich/xforms/Lint)
+![GitHub](https://img.shields.io/github/license/alex-oleshkevich/xforms)
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/pypi/xforms)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/xforms)
+![GitHub Release Date](https://img.shields.io/github/release-date/alex-oleshkevich/xforms)
+
+## Installation
+
+Install `xforms` using PIP or poetry:
+
+```bash
+pip install xforms
+# or
+poetry add xforms
+```
+
+## Features
+
+-   TODO
+
+## Quick start
+
+See example application in [examples/](examples/) directory of this repository.
+
