@@ -1,0 +1,11 @@
+app:
+  device_id: null
+  pkg_name: null
+common:
+  base_url: https://patents.qizhidao.com/
+  login_headers: {}
+  platform: web
+  timeout: 10
+  visit_headers: {}
+web:
+  browser: chrome
