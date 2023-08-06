@@ -1,0 +1,11 @@
+parentdir=/Documents/development/pypi_packages/
+package_name=example_package
+pypi_username=<example pypi username>
+pypi_password=<example pypi password>
+pypi_email=<example pypi email>
+package_version=1.0.0
+description=example package
+python_version=3.7
+license=MIT
+autoinstall=true
+build_files=false
