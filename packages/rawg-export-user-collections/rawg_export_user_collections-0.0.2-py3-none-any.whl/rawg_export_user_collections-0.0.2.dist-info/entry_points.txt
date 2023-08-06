@@ -1,0 +1,3 @@
+[console_scripts]
+rawg_export_user_collections=rawg_export_user_collections.main:run
+
