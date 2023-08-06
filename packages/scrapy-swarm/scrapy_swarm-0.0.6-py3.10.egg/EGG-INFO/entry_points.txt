@@ -1,0 +1,2 @@
+[console_scripts]
+swarm = scrapy_swarm.cmdline:execute
