@@ -1,0 +1,14 @@
+sunrpc/__init__.py,sha256=bgxCNyJoG7frsRqz61TPu3lgjyHPb5fxls44JyALQm0,235
+sunrpc/client.py,sha256=weK8zJhtX-52WgOVirm16DgqcTFGmB05MzG946OZ4oY,15670
+sunrpc/portmapper.py,sha256=dyEodv_FXjgCAeyhQptSRGVOuGCAId52Gboxq60tgrE,4199
+sunrpc/proxy.py,sha256=1HEMl9N5ShjmMZ__PW6UladeyfvewCIzBhqJTEVwYts,7082
+sunrpc/server.py,sha256=WExoyygPp47tXyjShP2RxlczzY1I-g_KgY-FGj3FnHQ,21857
+sunrpc/services.py,sha256=YoOl2hmbZ17MN9h8m0n_7tH4V_YEv7qhNhYZDw69pFI,5205
+sunrpc/sunrpc.py,sha256=5nO7_8Z_0L6ukKPtXVdydnA12laRvoPo16cvq1o-YTw,11467
+sunrpc/types.py,sha256=b7PzPCcN-mnDfecO1Jt59uXiwp354hPppDhbwMp__Xs,10604
+sunrpc/utils.py,sha256=KrLdakjM2AzCDMOn5CN9OTC6n580RRsk1p1nfBmbsrg,6762
+sunrpc-1.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sunrpc-1.1.0.dist-info/METADATA,sha256=ZLkuB-pItseTTnwvuL14meHNxBJQunKFrt-Kd-GDf2E,47024
+sunrpc-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sunrpc-1.1.0.dist-info/top_level.txt,sha256=1VywPROpJv2SQ_82LnAAwc7YL3k20jtNk8FPrfhTbAE,7
+sunrpc-1.1.0.dist-info/RECORD,,
