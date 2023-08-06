@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+django_simple_diff.egg-info/PKG-INFO
+django_simple_diff.egg-info/SOURCES.txt
+django_simple_diff.egg-info/dependency_links.txt
+django_simple_diff.egg-info/requires.txt
+django_simple_diff.egg-info/top_level.txt
+example/server/__init__.py
+example/server/models.py
+example/server/settings.py
+example/server/urls.py
+example/server/wsgi.py
+example/server/tests/__init__.py
+example/server/tests/test_model_changes.py
+simple_diff/__init__.py
+simple_diff/models.py
