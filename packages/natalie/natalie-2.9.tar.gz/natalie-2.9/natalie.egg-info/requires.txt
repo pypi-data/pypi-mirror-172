@@ -1,0 +1,11 @@
+colorama
+datetime
+cryptography
+termcolor
+tinydb
+PyQt5
+requests
+cloudscraper
+bs4
+pymongo[srv]
+opencv-python
