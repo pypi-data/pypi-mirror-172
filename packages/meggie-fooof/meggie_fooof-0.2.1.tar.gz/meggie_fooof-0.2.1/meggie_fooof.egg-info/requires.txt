@@ -1,0 +1,3 @@
+setuptools
+meggie>=1.3.0
+fooof
