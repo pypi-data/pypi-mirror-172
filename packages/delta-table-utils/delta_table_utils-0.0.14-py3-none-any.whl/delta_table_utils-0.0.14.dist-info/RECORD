@@ -1,0 +1,9 @@
+delta_table/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+delta_table/delta_table_utils.py,sha256=_9mAKY1jDd3xmVn2gH9fOvIF-6UXoBIGvjQroqUhYdo,12194
+delta_table/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+delta_table/utils/logger.py,sha256=BvRwM8rO9w9RHTV16gSZ23tCFoamFYoFqvRz2WcNAvg,1187
+delta_table_utils-0.0.14.dist-info/LICENSE,sha256=T0eTPzleHkBrtJvHkUXH-RR8DaI_ULFNjLC2aPeExM4,1073
+delta_table_utils-0.0.14.dist-info/METADATA,sha256=FT8ZxBb9WP6f6llIAWXdXQjYSr2TAdfGkqItDhpT9Rg,1814
+delta_table_utils-0.0.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+delta_table_utils-0.0.14.dist-info/top_level.txt,sha256=-Xf2DLYLar92cGA0BS44uJli43DH3pb829usHweDjdM,12
+delta_table_utils-0.0.14.dist-info/RECORD,,
