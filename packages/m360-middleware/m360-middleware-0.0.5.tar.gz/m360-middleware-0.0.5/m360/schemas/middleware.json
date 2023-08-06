@@ -1,0 +1,14 @@
+{
+	"$id": "middleware.schema.json",
+	"type": "object",
+	"properties": {
+		"ip": { "type": "string" },
+		"platform": {
+			"type": "string",
+			"enum": [ "docker", "kubernetes", "manual", "other" ]
+		},
+		"type": { "type": "string", "enum": [ "django", "flask", "job" ] },
+		"contract": {"$ref": "contract.schema.json#"}
+	},
+	"required": [ "contract", "ip", "platform", "type" ]
+}
