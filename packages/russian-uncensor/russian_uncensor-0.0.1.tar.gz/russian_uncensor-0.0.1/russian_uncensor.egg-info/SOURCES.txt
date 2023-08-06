@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+russian_uncensor/__init__.py
+russian_uncensor/n_grams.py
+russian_uncensor/rd_wr_util.py
+russian_uncensor/uncensored.py
+russian_uncensor.egg-info/PKG-INFO
+russian_uncensor.egg-info/SOURCES.txt
+russian_uncensor.egg-info/dependency_links.txt
+russian_uncensor.egg-info/requires.txt
+russian_uncensor.egg-info/top_level.txt

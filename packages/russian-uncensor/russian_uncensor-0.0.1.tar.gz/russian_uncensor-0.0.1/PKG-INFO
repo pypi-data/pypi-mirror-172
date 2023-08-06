@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: russian_uncensor
+Version: 0.0.1
+Summary: Uncensor for russian masked or separated obscene words based on frequent letters, bi- and tri-grams analysis
+Home-page: https://github.com/AlexKly/russian_uncensor
+Download-URL: https://github.com/AlexKly/russian_uncensor/archive/refs/tags/0.0.1.tar.gz
+Author: Alex Klyuev
+Author-email: Klyukvanstalker@gmail.com
+License: MIT
+Keywords: uncensor,obscene words,swear words,n-grams
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
