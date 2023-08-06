@@ -1,0 +1,8 @@
+data_il_fetcher/__init__.py,sha256=T5Vp1HqAUci2adS_V4467aD_X-qPrLgO-LlVXFCwHv4,407
+data_il_fetcher/common.py,sha256=4m9tTEudmAFy4N2fAMfqUZSZKuqWK0B5Mr6UKfLy9FI,832
+data_il_fetcher/nadlan.py,sha256=j75969_XxQkhOKy6ydea7Rmrhu3vdUkPxGk_BAASf1s,2673
+data_il_fetcher/yad2.py,sha256=fb0Gt4PZ0TOFG1CAP_HrDOeNLyuKW_8-ccg7HoyI_Ew,2494
+data_il_fetcher-1.0.2.dist-info/METADATA,sha256=9RHg0SWwUspGCLHrzMnEZrRAxUwIneSfPwGXEeDN8Bk,508
+data_il_fetcher-1.0.2.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+data_il_fetcher-1.0.2.dist-info/licenses/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+data_il_fetcher-1.0.2.dist-info/RECORD,,
