@@ -1,0 +1,3 @@
+[console_scripts]
+test-portal-gun=test_portal_gun.main:app
+
