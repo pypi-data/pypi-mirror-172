@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: compacter
+Version: 1.0.4
+Summary: Compact directories of parquet files to single parquet files.
+Home-page: http://github.com/drorspei/compacter
+Author: Dror Speiser
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# compacter
