@@ -1,0 +1,12 @@
+
+include LICENSE
+include MANIFEST.in
+include README
+include .gitignore
+
+recursive-include cklink *
+recursive-include cklink/links *
+recursive-include cklink/tdescriptions *
+
+
+
