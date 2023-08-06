@@ -1,0 +1,13 @@
+norfair/__init__.py,sha256=RGgDV9-LNP34Aq3P8Ziq2DXXEjC9qBWH2t7usd7yPjA,527
+norfair/camera_motion.py,sha256=zte7EzhSDhcayZak4A-_Tbf8fY7BvBaYV4ljm_DWwP4,13698
+norfair/distances.py,sha256=zYeYBqU3LbWYKdBbl7rIM-GZEo1WUeOCq8_sXbu9M2I,8767
+norfair/drawing.py,sha256=KAwYBCejvWumdhwfYYgUoOxiCtYNMeEdwZfnv9mZGMM,36280
+norfair/filter.py,sha256=92MNGEe3S8rlwjGMgSkp1zxty5bTsplotrmKWpqf6MA,10088
+norfair/metrics.py,sha256=h8-gynUzV5qfZ5ZTrkQ6JuDZR80cPdKzuHE_hr9y0iY,11801
+norfair/tracker.py,sha256=i67kLqBv-HdeNk5AdKPrdtWRGjBSoyF07O1B3O3hQvk,36054
+norfair/utils.py,sha256=UjuF2iKElqxato2G4vK-bD7bSNPD8lDRHmhk5pgY1H0,3281
+norfair/video.py,sha256=W-fH29p3TXaEMnrLov4BEFw_oLW8Eb4-D9oRBWwt34U,13474
+norfair-2.1.0.dist-info/LICENSE,sha256=kGmKn5I_yOAVBUOr_nxABZGyy7AU1BgzAUc0w4O5AZg,1508
+norfair-2.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+norfair-2.1.0.dist-info/METADATA,sha256=uUjne4dbRPFU5oSMXin0Ut0sJC4bUrC6xpmH5wjbGHs,17461
+norfair-2.1.0.dist-info/RECORD,,
