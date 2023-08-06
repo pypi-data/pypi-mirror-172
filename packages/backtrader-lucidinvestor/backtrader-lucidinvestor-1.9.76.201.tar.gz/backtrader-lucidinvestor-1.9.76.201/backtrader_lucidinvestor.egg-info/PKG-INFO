@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: backtrader-lucidinvestor
+Version: 1.9.76.201
+Summary: BackTesting Engine - maintained by LucidInvestor
+Home-page: https://gitlab.com/algorithmic-trading-library/backtrader
+Author: maintainer: LucidInvestor - original: Daniel Rodriguez (danjrod@gmail.com)
+Author-email: info@lucidinvestor.ca
+License: GPLv3+
+Download-URL: https://gitlab.com/algorithmic-trading-library/backtrader/-/archive/1.9.76.201/backtrader-1.9.76.201.tar.gz
+Description: BackTesting Engine - maintained by LucidInvestor
+Keywords: trading,development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Software Development
+Classifier: Topic :: Office/Business :: Financial
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Provides-Extra: plotting
