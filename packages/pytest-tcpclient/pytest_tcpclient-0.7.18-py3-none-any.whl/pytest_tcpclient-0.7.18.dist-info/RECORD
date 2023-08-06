@@ -1,0 +1,9 @@
+pytest_tcpclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_tcpclient/framing.py,sha256=ysBJH92SoWRMvkiKp2MToHv0qKjLj04pTunaUBL1ZaI,635
+pytest_tcpclient/plugin.py,sha256=1nHLF3TvEfE8YLd3ftU91lOKlSBZCcg3LGAkFfUlUJE,26995
+pytest_tcpclient-0.7.18.dist-info/LICENSE,sha256=up4tpyHbtBiY-vY-uWEIPOOoq8-hp95_-zt_JFyn_pY,1073
+pytest_tcpclient-0.7.18.dist-info/METADATA,sha256=osCoGPV59njR8UTK5FgchgB34xUpXHAGi1G8R7DZEJk,7833
+pytest_tcpclient-0.7.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytest_tcpclient-0.7.18.dist-info/entry_points.txt,sha256=D3nOPx3o6V9fBvvjv3ShvL-34Mee9cY3WfNnxNrjBaQ,47
+pytest_tcpclient-0.7.18.dist-info/top_level.txt,sha256=rzi7axvA-Pxx36_mLSFlEONQIKtYL780_tSuZaEUw6k,17
+pytest_tcpclient-0.7.18.dist-info/RECORD,,
