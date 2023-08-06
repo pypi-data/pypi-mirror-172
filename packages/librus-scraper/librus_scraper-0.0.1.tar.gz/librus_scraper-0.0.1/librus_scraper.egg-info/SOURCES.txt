@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+librus_scraper/__init__.py
+librus_scraper/announcements.py
+librus_scraper/authorization.py
+librus_scraper/cal.py
+librus_scraper/grades.py
+librus_scraper/messages.py
+librus_scraper/other.py
+librus_scraper/schedule.py
+librus_scraper.egg-info/PKG-INFO
+librus_scraper.egg-info/SOURCES.txt
+librus_scraper.egg-info/dependency_links.txt
+librus_scraper.egg-info/requires.txt
+librus_scraper.egg-info/top_level.txt
