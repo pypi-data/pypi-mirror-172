@@ -1,0 +1,10 @@
+datadoc_model/BaseModel.py,sha256=fRxkGmVrS_h4qIi-wZW2PnYwlil8iV_U7k7BmU_5Ry0,381
+datadoc_model/Enums.py,sha256=IW6Lc2ceLN_QOhTk9l_5vHZoHO9-A1OU3nBILdtEGjI,4668
+datadoc_model/LanguageStrings.py,sha256=HfAfK2qGY94pXBnfn4k1wOmqjaaI7V47G7J3Uw-fDUA,147
+datadoc_model/LanguageStringsEnum.py,sha256=GGKHfnZs9beJsacecNRApjTdO76eR2tUwtre9VYX7UI,1304
+datadoc_model/Model.py,sha256=2fyYgpqcVYSLrj3S9cpj1i4nzJSGQ27WBeUbEmKMaE8,3560
+datadoc_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssb_datadoc_model-2.0.1.dist-info/LICENSE,sha256=lL2h0dNKGTKAE0CjTy62SDbRennVD1xPgM5LzGqhKeo,1074
+ssb_datadoc_model-2.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+ssb_datadoc_model-2.0.1.dist-info/METADATA,sha256=B3q17slpLkVSpnqC5WH96AA1vu8cYP55qsXleCSOWY8,1368
+ssb_datadoc_model-2.0.1.dist-info/RECORD,,
