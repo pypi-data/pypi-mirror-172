@@ -1,0 +1,13 @@
+prefix=/private/var/folders/w1/w77kvvl9613022ksfxj7v8xh0000gn/T/build-via-sdist-ijyftp3g/imgui-bundle-0.5.1/_skbuild/macosx-12.0-arm64-3.9/cmake-install/bindings/imgui_bundle
+exec_prefix=${prefix}
+includedir=/private/var/folders/w1/w77kvvl9613022ksfxj7v8xh0000gn/T/build-via-sdist-ijyftp3g/imgui-bundle-0.5.1/_skbuild/macosx-12.0-arm64-3.9/cmake-install/bindings/imgui_bundle/include
+libdir=/private/var/folders/w1/w77kvvl9613022ksfxj7v8xh0000gn/T/build-via-sdist-ijyftp3g/imgui-bundle-0.5.1/_skbuild/macosx-12.0-arm64-3.9/cmake-install/bindings/imgui_bundle/lib
+
+Name: GLFW
+Description: A multi-platform library for OpenGL, window and input
+Version: 3.4.0
+URL: https://www.glfw.org/
+Requires.private: 
+Libs: -L${libdir} -lglfw3
+Libs.private:  -framework Cocoa -framework IOKit -framework CoreFoundation
+Cflags: -I${includedir}
