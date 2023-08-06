@@ -1,0 +1,17 @@
+# PlantAnno
+An automated process for plant genome annotation
+
+## Install
+
+Get license file (named `gm_key_64.gz`) for GeneMark(GeneMark-ES/ET/EP ver 4.69_lic) from [here](http://topaz.gatech.edu/GeneMark/license_download.cgi), and save this file in `braker2_singularity`.
+
+```
+cd singularity
+
+bash busco_downloads.sh
+
+wget https://github.com/Gaius-Augustus/Augustus/releases/download/v3.4.0/augustus-3.4.0.tar.gz
+wget http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.57-90.0/interproscan-5.57-90.0-64-bit.tar.gz
+wget https://github.com/gatech-genemark/ProtHint/releases/download/v2.6.0/ProtHint-2.6.0.tar.gz
+wget https://github.com/SouthernCD/genewise2_docker/raw/main/wise2.4.1.tar.gz
+```
