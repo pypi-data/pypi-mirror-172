@@ -1,0 +1,56 @@
+# https://editorconfig.org/
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[*.1]
+indent_style = tab
+tab_size = 8
+
+[*.c]
+indent_style = tab
+tab_size = 8
+
+[*.h]
+indent_style = tab
+tab_size = 8
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[*.md]
+indent_style = space
+indent_size = 2
+
+[*.nix]
+indent_style = space
+indent_size = 2
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.rs]
+indent_style = space
+indent_size = 4
+
+[*.sh]
+indent_style = tab
+tab_size = 8
+
+[CMakeLists.txt]
+indent_style = tab
+tab_size = 8
+
+[setup.cfg]
+indent_style = space
+indent_size = 4
+
+[tox.ini]
+indent_style = space
+indent_size = 2
