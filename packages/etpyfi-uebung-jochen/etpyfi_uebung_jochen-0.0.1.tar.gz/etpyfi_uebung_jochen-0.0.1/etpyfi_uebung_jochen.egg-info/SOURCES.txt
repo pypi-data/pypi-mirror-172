@@ -1,0 +1,7 @@
+README.md
+setup.py
+etpyfi_uebung_jochen.egg-info/PKG-INFO
+etpyfi_uebung_jochen.egg-info/SOURCES.txt
+etpyfi_uebung_jochen.egg-info/dependency_links.txt
+etpyfi_uebung_jochen.egg-info/requires.txt
+etpyfi_uebung_jochen.egg-info/top_level.txt
