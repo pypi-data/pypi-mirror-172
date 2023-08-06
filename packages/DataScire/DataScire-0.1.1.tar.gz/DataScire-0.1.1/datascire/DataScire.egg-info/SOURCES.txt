@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+datascire/DataScire.egg-info/PKG-INFO
+datascire/DataScire.egg-info/SOURCES.txt
+datascire/DataScire.egg-info/dependency_links.txt
+datascire/DataScire.egg-info/requires.txt
+datascire/DataScire.egg-info/top_level.txt
