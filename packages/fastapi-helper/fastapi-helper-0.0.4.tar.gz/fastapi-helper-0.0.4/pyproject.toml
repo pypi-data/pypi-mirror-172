@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "fastapi-helper"
+version = "0.0.3"
+description = ""
+authors = ["Rey <roman.cheban@ukr.net>", "Bogdan <bogdan24ro@gmail.com>", "Artem <kalaficzkij@ukr.net>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "fastapi_helper"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.85.0"
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.18.3"
+virtualenv = "^20.16.5"
+build = "^0.8.0"
+flake8 = "^5.0.4"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+    "ignore::DeprecationWarning",
+    "ignore:.*unclosed.*:ResourceWarning",
+]
+
+[tool.pytest.init_options]
+filterwarnings = [
+    "error",
+    "ignore::DeprecationWarning",
+    "ignore:.*unclosed.*:ResourceWarning",
+]
