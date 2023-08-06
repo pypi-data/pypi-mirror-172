@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: freebarcodes
+Version: 3.1.0
+Summary: FREE Divergence Error-Correcting DNA Barcodes
+Home-page: https://github.com/hawkjo/freebarcodes
+Author: John Hawkins
+Author-email: hawkjo@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/hawkjo/freebarcodes/archive/refs/tags/v3.0.tar.gz
+Description: UNKNOWN
+Keywords: DNA,NGS,bioinformatics,barcodes
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.0
