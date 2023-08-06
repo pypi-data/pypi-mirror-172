@@ -1,0 +1,9 @@
+#!/bin/bash
+cmd=$(basename "$0")
+cmd=${cmd#dt}
+args=("$@")
+index=$((${#args[@]} - 1))
+if [ "${args[$index]}" == "--blocking" ]; then
+    unset "args[$index]"
+fi
+"$cmd" "${args[@]}"

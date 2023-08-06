@@ -1,0 +1,12 @@
+taurus_datamover/__init__.py,sha256=LBxRnMYnxkGW9a_fZQZc4LwSIbBUqALoqLFHI6CLqF0,49
+taurus_datamover/_datamover.py,sha256=vvnxk3ts5L30bopkXjh_OsRyEgYq6QUHla5GyCOGOtA,13740
+taurus_datamover/_mock.py,sha256=XLb3B3gN4Vua3mIqWHqs7Ads7G_Va_dbO8nILB0wExA,1003
+taurus_datamover/mock_cluster_files/dtwrapper,sha256=3zpFKFXk_GMHDKWmQb3RN6K5a-8RiJEPWy-axRSx5zo,180
+taurus_datamover/mock_cluster_files/ws_allocate,sha256=TFUlRBtdHxT3bqIVfcxFNRMIieYBzcNS0CLDEZ2nbdM,103
+taurus_datamover/mock_cluster_files/ws_list,sha256=EOrkOV9la0u38qgBN9wqg_C7T0eyRo6z4G2zuL8frak,78
+taurus_datamover/mock_cluster_files/ws_release,sha256=PiralQKbe0SgPUECph1QB8IihLlZS51c1koAttA7vu4,160
+taurus_datamover-0.3.3.dist-info/LICENSE,sha256=_CHXZiDbygNbsvk4DCxkPsy0kOVhV2qbuUoudYkGh54,1578
+taurus_datamover-0.3.3.dist-info/METADATA,sha256=R-wEl6xNpMlLRCmbnz5fF75auUBfg4URdIa-MUREcr4,9109
+taurus_datamover-0.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+taurus_datamover-0.3.3.dist-info/top_level.txt,sha256=hyAbQAXAcWyMFhPEe_06ci0Ca3gBe1otNjTt--wwetw,17
+taurus_datamover-0.3.3.dist-info/RECORD,,
