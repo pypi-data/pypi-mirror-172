@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ssi-converter-thuongnn"
+version = "0.1.0"
+description = "demo"
+authors = ["Nguyen Nhu Thuong <thuongnn6666@gmail.com>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [
+    { include = "converter" }
+]
+
+[tool.semantic_release]
+version_variable = [
+    "converter/__init__.py:__version__"
+]
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+branch = "master"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
