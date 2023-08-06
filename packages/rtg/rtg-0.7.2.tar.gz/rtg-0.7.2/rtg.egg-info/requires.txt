@@ -1,0 +1,11 @@
+ruamel.yaml>=0.17.10
+sacrebleu_macrof==2.0.1
+sentencepiece>=0.1.85
+tensorboard>=2.6.0
+tqdm>=4.45.0
+nlcodec>=0.5
+torch>=1.10
+sacremoses>=0.0.45
+portalocker>=2.0.0
+torchtext>=0.10.0
+pyspark>=3.0.0
