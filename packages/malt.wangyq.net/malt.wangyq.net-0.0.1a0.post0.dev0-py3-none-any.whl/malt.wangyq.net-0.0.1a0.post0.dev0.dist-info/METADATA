@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: malt.wangyq.net
+Version: 0.0.1a0.post0.dev0
+Author: Yuanqing Wang
+Author-email: wangyq@wangyq.net
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# malt
+[//]: # (Badges)
+![](https://github.com/uli-ai/malt/workflows/python-package/badge.svg)
+
+Molecular Active Learning Testbed
