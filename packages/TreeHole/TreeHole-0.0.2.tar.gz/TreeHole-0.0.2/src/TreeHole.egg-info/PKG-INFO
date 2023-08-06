@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: TreeHole
+Version: 0.0.2
+Summary: A Python interface to PKU Hole!
+Author-email: TeddyHuang-00 <huang_nan_2019@pku.edu.cn>
+Project-URL: Homepage, https://github.com/TeddyHuang-00/pyTreeHole
+Project-URL: Bug Tracker, https://github.com/TeddyHuang-00/pyTreeHole/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE.txt
+
+# TreeHole
+
+> Simple Python interface to PKU Tree Hole
+
+目前正在持续开发完善中，欢迎尝试使用和提出建议！
+
+## 安装
+
+已发布至 Pypi 源，可直接使用 pip 安装：
+
+```bash
+pip3 install TreeHole
+```
+
+## 使用
+
+```python
+from treehole import Client
+
+...
+```
+
+详情请参考 [example](./tests/sample.py)
+
+## 开发
+
+克隆此仓库：
+
+```bash
+git clone git@github.com:TeddyHuang-00/pyTreeHole.git
+```
+
+编辑模式下：
+
+```bash
+pip3 install -e ".[test]"
+```
+
+欢迎提 issues 与 PR！

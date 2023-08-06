@@ -1,0 +1,6 @@
+requests
+
+[test]
+setuptools
+rich
+pytest
