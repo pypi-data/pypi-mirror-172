@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing to VulnerableCode &mdash; VulnerableCode  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="FAQ" href="faq.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VulnerableCode
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">VulnerableCode Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing to VulnerableCode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#do-your-homework">Do Your Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ways-to-contribute">Ways to Contribute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#first-timers">First Timers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code-contributions">Code Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation-improvements">Documentation Improvements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-ways">Other Ways</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#helpful-resources">Helpful Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_importer.html">Add a new importer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_improver.html">Add a new improver</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference_importer_overview.html">Importer Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_improver_overview.html">Improver Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_framework_overview.html">Framework Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importers_link.html">Importers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Summer of Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="soc_gsoc21.html">Google Summer of Code 2021 Final Report</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VulnerableCode</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Contributing to VulnerableCode</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/contributing.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="contributing-to-vulnerablecode">
+<span id="contributing"></span><h1>Contributing to VulnerableCode<a class="headerlink" href="#contributing-to-vulnerablecode" title="Permalink to this headline"></a></h1>
+<p>Thank you so much for being so interested in contributing to VulnerableCode. We
+are always on the lookout for enthusiastic contributors like you who can make
+our project better, and we are willing to lend a helping hand if you have any
+questions or need guidance along the way. That being said, here are a few
+resources to help you get started.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By contributing to the VulnerableCode project, you agree to the Developer
+<a class="reference external" href="http://developercertificate.org/">Certificate of Origin</a>.</p>
+</div>
+<section id="do-your-homework">
+<h2>Do Your Homework<a class="headerlink" href="#do-your-homework" title="Permalink to this headline"></a></h2>
+<p>Before adding a contribution or create a new issue, take a look at the project’s
+<a class="reference external" href="https://github.com/nexB/vulnerablecode">README</a>, read through our
+<a class="reference external" href="https://vulnerablecode.readthedocs.io/en/latest/">documentation</a>,
+and browse existing <a class="reference external" href="https://github.com/nexB/vulnerablecode/issues">issues</a>,
+to develop some understanding of the project and confirm whether a given
+issue/feature has previously been discussed.</p>
+</section>
+<section id="ways-to-contribute">
+<h2>Ways to Contribute<a class="headerlink" href="#ways-to-contribute" title="Permalink to this headline"></a></h2>
+<p>Contributing to the codebase is not the only way to add value to VulnerableCode or
+join our community. Below are some examples to get involved:</p>
+<section id="first-timers">
+<h3>First Timers<a class="headerlink" href="#first-timers" title="Permalink to this headline"></a></h3>
+<p>You are here to help, but you are a new contributor! No worries, we always
+welcome newcomer contributors. We maintain some
+<a class="reference external" href="https://github.com/nexB/vulnerablecode/labels/good%20first%20issue">good first issues</a>
+and encourage new contributors to work on those issues for a smooth start.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you arere an open-source newbie, make sure to check the extra resources at
+the bottom of this page to get the hang of the contribution process!</p>
+</div>
+</section>
+<section id="code-contributions">
+<h3>Code Contributions<a class="headerlink" href="#code-contributions" title="Permalink to this headline"></a></h3>
+<p>For more established contributors, you can contribute to the codebase in several ways:</p>
+<ul class="simple">
+<li><p>Report a <a class="reference external" href="https://github.com/nexB/vulnerablecode/issues">bug</a>; just remember to be as
+specific as possible.</p></li>
+<li><p>Submit a <a class="reference external" href="https://github.com/nexB/vulnerablecode/labels/bug">bug fix</a> for any existing
+issue.</p></li>
+<li><p>Create a <a class="reference external" href="https://github.com/nexB/vulnerablecode/issues">new issue</a> to request a
+feature, submit a feedback, or ask a question.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure to check existing <a class="reference external" href="https://github.com/nexB/vulnerablecode/issues">issues</a>,
+to confirm whether a given issue or a question has previously been
+discussed.</p>
+</div>
+</section>
+<section id="documentation-improvements">
+<h3>Documentation Improvements<a class="headerlink" href="#documentation-improvements" title="Permalink to this headline"></a></h3>
+<p>Documentation is a critical aspect of any project that is usually neglected or
+overlooked. We value any suggestions to improve
+<a class="reference external" href="https://vulnerablecode.readthedocs.io/en/latest/">vulnerablecode documentation</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Our documentation is treated like code. Make sure to check our
+<a class="reference external" href="https://scancode-toolkit.readthedocs.io/en/latest/contribute/contrib_doc.html">writing guidelines</a>
+to help guide new users.</p>
+</div>
+</section>
+<section id="other-ways">
+<h3>Other Ways<a class="headerlink" href="#other-ways" title="Permalink to this headline"></a></h3>
+<p>You want to contribute to other aspects of the VulnerableCode project, and you
+cannot find what you are looking for! You can always discuss new topics, ask
+questions, and interact with us and other community members on
+<a class="reference external" href="https://gitter.im/aboutcode-org/discuss">AboutCode Gitter</a> and <a class="reference external" href="https://gitter.im/aboutcode-org/vulnerablecode">VulnerableCode Gitter</a></p>
+</section>
+</section>
+<section id="helpful-resources">
+<h2>Helpful Resources<a class="headerlink" href="#helpful-resources" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Review our <a class="reference external" href="https://scancode-toolkit.readthedocs.io/en/latest/contribute/index.html">comprehensive guide</a>
+for more details on how to add quality contributions to our codebase and documentation</p></li>
+<li><p>Check this free resource on <a class="reference external" href="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github">how to contribute to an open source project on github</a></p></li>
+<li><p>Follow <a class="reference external" href="https://aboutcode.readthedocs.io/en/latest/contributing/writing_good_commit_messages.html">this wiki page</a>
+on how to write good commit messages</p></li>
+<li><p><a class="reference external" href="https://git-scm.com/book/en/v2">Pro Git book</a></p></li>
+<li><p><a class="reference external" href="https://www.softwaretestinghelp.com/how-to-write-good-bug-report/">How to write a good bug report</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="faq.html" class="btn btn-neutral float-right" title="FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright nexB Inc. and others.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

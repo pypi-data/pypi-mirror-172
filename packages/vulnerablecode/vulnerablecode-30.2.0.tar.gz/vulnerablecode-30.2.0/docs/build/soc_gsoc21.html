@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Summer of Code 2021 Final Report &mdash; VulnerableCode  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Importers" href="importers_link.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VulnerableCode
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">VulnerableCode Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to VulnerableCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_importer.html">Add a new importer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_improver.html">Add a new improver</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference_importer_overview.html">Importer Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_improver_overview.html">Improver Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_framework_overview.html">Framework Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importers_link.html">Importers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Summer of Codes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Google Summer of Code 2021 Final Report</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#organization-aboutcode">Organization - AboutCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#detailed-report">Detailed Report</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#improve-import-time">Improve Import Time</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#speed-up-upstream-tests">Speed up upstream tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#improve-docker-configuration">Improve Docker Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-makefile">Add Makefile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-svn-to-collects-tags-in-githubtagsapi">Use svn to collects tags in GitHubTagsAPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#separate-import-and-improve-operations-wip">Separate import and improve operations - WIP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#others">Others</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pre-gsoc">Pre GSoC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#post-gsoc-future-plans-and-what-s-left">Post GSoC - Future Plans and what’s left</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#closing-thoughts">Closing Thoughts</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VulnerableCode</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Google Summer of Code 2021 Final Report</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/soc_gsoc21.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="google-summer-of-code-2021-final-report">
+<h1>Google Summer of Code 2021 Final Report<a class="headerlink" href="#google-summer-of-code-2021-final-report" title="Permalink to this headline"></a></h1>
+<section id="organization-aboutcode">
+<h2>Organization - <a class="reference external" href="https://www.aboutcode.org">AboutCode</a><a class="headerlink" href="#organization-aboutcode" title="Permalink to this headline"></a></h2>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://github.com/hritik14">Hritik Vijay</a></div>
+<div class="line">Project: <a class="reference external" href="https://github.com/nexB/vulnerablecode">VulnerableCode</a></div>
+</div>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h2>
+<p>VulnerableCode is a decentralized python program to collect data about open
+source software vulnerabilities across the internet.  My proposal for this
+year’s Google Summer of Code involved improving the import speed, refactoring
+existing code, finding points for overall improvement and adding importers.</p>
+</section>
+<section id="detailed-report">
+<h2>Detailed Report<a class="headerlink" href="#detailed-report" title="Permalink to this headline"></a></h2>
+<section id="improve-import-time">
+<h3>Improve Import Time<a class="headerlink" href="#improve-import-time" title="Permalink to this headline"></a></h3>
+<p>Profiling showed that a lot of time was being wasted during auto commits
+undertaken by django. Wraping the importer in an atomic block avoids lots of
+database commits and shows huge performance improvement. This simple change
+allows for much faster import times while not drastically changing the code
+structure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Alpine</span><span class="p">:</span> <span class="mf">202.7</span><span class="n">s</span> <span class="o">-&gt;</span> <span class="mf">50.9</span><span class="n">s</span>
+<span class="n">Archlinux</span> <span class="mf">2116.6</span><span class="n">s</span> <span class="o">-&gt;</span> <span class="mf">107.8</span><span class="n">s</span>
+<span class="n">Gentoo</span> <span class="mf">3176.3</span><span class="n">s</span> <span class="o">-&gt;</span> <span class="mf">225.8</span><span class="n">s</span>
+</pre></div>
+</div>
+<p>Yielding an average of 93% reduction in time (14x faster)</p>
+<p>More: <a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/478">https://github.com/nexB/vulnerablecode/pull/478</a></p>
+</section>
+<section id="speed-up-upstream-tests">
+<h3>Speed up upstream tests<a class="headerlink" href="#speed-up-upstream-tests" title="Permalink to this headline"></a></h3>
+<p>VulnerableCode performs upstream tests for all the importers to make sure that
+any change change in upstream data structure is easily spotted. This allows us
+to have a look at failing importers without actually deploying the application.</p>
+<p>Earlier, all of the importers were run one by one in order to verify that they
+are intact. While this being the obvious and the full proof way to detect any
+anomalies in the imported data schema, it did not work because the time
+required to run all the importers much exceeded 6 hours - which is the maximum
+time allowed for GitHub actions to run.
+With this PR, the updated_advisories method of each importer is expected to
+create at least one Advisory object. If it does so, the importer is marked
+working. While this is not full proof, it stays much below the allowed resource
+usage cap. In the end, this is a trade off between resource usage and data
+accuracy.  This brings major performance improvement during the test.</p>
+<div class="line-block">
+<div class="line">Before: ~6hrs, now ~9 minutes</div>
+<div class="line">More: <a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/490">https://github.com/nexB/vulnerablecode/pull/490</a></div>
+</div>
+</section>
+<section id="improve-docker-configuration">
+<h3>Improve Docker Configuration<a class="headerlink" href="#improve-docker-configuration" title="Permalink to this headline"></a></h3>
+<p>The preferred mode of deployment for VulnerableCode is deploying using Docker
+images. Docker configuration existing earlier was very insecure and
+rudimentary. I took the inspiration for a uniform Docker configuration from the
+ScanCodeIO project and provided with detailed documentation for installation
+using a docker image. The current configuration makes use of files like
+<code class="docutils literal notranslate"><span class="pre">docker.env</span></code> to supply container’s environment and <code class="docutils literal notranslate"><span class="pre">.dockerignore</span></code> to skip
+over any unnecessary files for deployment.</p>
+<div class="line-block">
+<div class="line">More:</div>
+<div class="line"><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/497">https://github.com/nexB/vulnerablecode/pull/497</a></div>
+<div class="line"><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/521">https://github.com/nexB/vulnerablecode/pull/521</a></div>
+</div>
+</section>
+<section id="add-makefile">
+<h3>Add Makefile<a class="headerlink" href="#add-makefile" title="Permalink to this headline"></a></h3>
+<p>Makefile usage is prevalent in sister projects like <a class="reference external" href="https://github.com/nexB/scancode.io">ScanCodeIO</a>. It gives VulnerableCode a consistent
+behavior and provides a very friendly interface for invocations. This also
+avoids security risks like having a default django <code class="docutils literal notranslate"><span class="pre">SECRET_KEY</span></code> as it can be
+easily generated by a make target.  I added a Makefile which has a similar
+usage as that of ScanCodeIO, replaced all the CI tests to use make, updated the
+relevant part of the documentation and updated settings to reject insecure
+deployments.</p>
+<div class="line-block">
+<div class="line">More:</div>
+<div class="line"><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/497">https://github.com/nexB/vulnerablecode/pull/497</a></div>
+<div class="line"><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/523">https://github.com/nexB/vulnerablecode/pull/523</a></div>
+</div>
+</section>
+<section id="use-svn-to-collects-tags-in-githubtagsapi">
+<h3>Use svn to collects tags in GitHubTagsAPI<a class="headerlink" href="#use-svn-to-collects-tags-in-githubtagsapi" title="Permalink to this headline"></a></h3>
+<p>Surprisingly, GitHub allows svn requests to repositories. Now we can
+have all the tags with a single request. This is much more efficient and
+gentle to the APIs.
+This was as issue since the importers based on GithubDataSource were <a class="reference external" href="https://github.com/nexB/vulnerablecode/issues/507">failing</a> because of being rate
+limited by GitHub.</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://github.com/pombredanne">Philippe</a>, thank you so much for the suggestion</div>
+<div class="line">More: <a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/508">https://github.com/nexB/vulnerablecode/pull/508</a></div>
+</div>
+</section>
+<section id="separate-import-and-improve-operations-wip">
+<h3>Separate import and improve operations - WIP<a class="headerlink" href="#separate-import-and-improve-operations-wip" title="Permalink to this headline"></a></h3>
+<p>This introduces a new concept of <code class="docutils literal notranslate"><span class="pre">improver</span></code>. Earlier, data fetching and
+improvement were done as one single process by <code class="docutils literal notranslate"><span class="pre">importer</span></code>. This meant that
+importers were convoluted and not very modular. The concept of <code class="docutils literal notranslate"><span class="pre">improver</span></code>
+comes from the idea that an <code class="docutils literal notranslate"><span class="pre">importer</span></code> should only do one thing - import. Any
+further improvement on the data is delegated to the improvers. This allows for
+us to have multiple ways of improvement with certain confidence on the improved
+data making the import and improve operations modular and simpler to work with.
+As a bonus, writing importers will be very easy and welcome more contributors
+to the project. As of writing this report, this remains a work in progress
+which will be finished very soon.</p>
+<p>More: <a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/525">https://github.com/nexB/vulnerablecode/pull/525</a></p>
+</section>
+<section id="others">
+<h3>Others<a class="headerlink" href="#others" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>helper: split_markdown_front_matter: <a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/443">https://github.com/nexB/vulnerablecode/pull/443</a></p></li>
+<li><p>Dump yaml in favor of saneyaml <a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/452">https://github.com/nexB/vulnerablecode/pull/452</a></p></li>
+<li><p>Refactor package_managers <a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/495/commits">https://github.com/nexB/vulnerablecode/pull/495/commits</a></p></li>
+<li><p>Importers bugfix <a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/505">https://github.com/nexB/vulnerablecode/pull/505</a></p></li>
+</ul>
+</section>
+</section>
+<section id="pre-gsoc">
+<h2>Pre GSoC<a class="headerlink" href="#pre-gsoc" title="Permalink to this headline"></a></h2>
+<p>I started to like VulnerableCode as soon as I laid eyes on the project. While
+exploring the codebase, I realized that there is a lot of room for improvement.
+Thus I looked for simple improvements and bugs to fix in the early stage, which
+were:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/379">Correct API docs path and fix pytest invocation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/382">Explicity provide lxml parser to beautifulsoup</a></p></li>
+<li><p><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/389">Make sure vulnerability id is_cve or is_vulcoid</a></p></li>
+<li><p><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/395">Fix istio importer</a> (cleared a huge confusion about the codebase)</p></li>
+<li><p><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/405">Add me to AUTHORS</a> (Should’ve done this a lot earlier)</p></li>
+<li><p><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/415">Add unspecified scoring system</a></p></li>
+<li><p><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/418">Fix redhat import failure</a> (This one took a <em>lot</em> of effort to pinpoint)</p></li>
+<li><p><a class="reference external" href="https://github.com/nexB/vulnerablecode/pull/439">expose find_all_cve helper</a></p></li>
+</ul>
+</section>
+<section id="post-gsoc-future-plans-and-what-s-left">
+<h2>Post GSoC - Future Plans and what’s left<a class="headerlink" href="#post-gsoc-future-plans-and-what-s-left" title="Permalink to this headline"></a></h2>
+<p>I wish to carry on with the development of VulnerableCode and implement the
+ideas suggested by my mentors. This will require a lot of effort to bring
+VulnerableCode to a stable point. I hope to see VulnerableCode integrated into
+the ScanCode toolkit happen in a near future.</p>
+<p>Further, if possible, I would like VulnerableCode to interact with other great
+open source tools like <em>Eclipse Steady</em> and <em>Prospector</em>.  VulnerableCode,
+currently, works statically to collect all the vulnerabilities from different
+data sources, meanwhile there have been some developments with the Prospector
+project of Eclipse Steady. The project aims to scan fix-commits of the git
+repository in order to find out if the vulnerable part of a library was
+actually used in a project. It is not always the case that if a library is
+vulnerable then all the projects building upon it would be vulnerable too. It
+is crucial to identify if it is worth updating the library in use and dealing
+with the breaking changes.  <em>Prospectus</em> is undergoing improvements in order to
+be released as a usable public tool. <em>Project KB</em> (Under Eclipse Steady) is
+also working on a “tool support for mining repositories and databases of
+advisories to establish the (missing) link between vulnerabilities (as
+described in natural language in the advisories) and the corresponding
+fix-commits”.  When these projects are ready for public use I would like to add
+them to VulnerableCode as a modules. I hope this will benefit both the projects
+and the downstream.</p>
+<p>After everything mentioned above, writing importers and improvers is something
+that is still left. In my opinion, this needs to be addressed after having a
+stable structure for VulnerableCode.</p>
+</section>
+<section id="closing-thoughts">
+<h2>Closing Thoughts<a class="headerlink" href="#closing-thoughts" title="Permalink to this headline"></a></h2>
+<p>I really enjoyed working on the project. There were ups and downs when I met
+some weird bugs but every one of them taught me something new about Python,
+Django and programming in general. The best part of working with my amazing
+mentors - Philippe and Shivam - were the <a class="reference external" href="https://github.com/nexB/vulnerablecode/wiki/WeeklyMeetings#meeting-on-tuesday-2021-08-17-at-1400-utc">weekly meets</a>
+where we would together try to figure out how to proceed with the development.
+I learned something new with every call and interaction we had. Thank you so
+much my mentors for providing a very smooth experience and Google for showing
+me the guiding light for participation.</p>
+<p>To the reader, I would really like you to read <a class="reference external" href="https://en.wikipedia.org/wiki/Program_optimization#When_to_optimize">this</a>
+before Philippe asks you to ;)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="importers_link.html" class="btn btn-neutral float-left" title="Importers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright nexB Inc. and others.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

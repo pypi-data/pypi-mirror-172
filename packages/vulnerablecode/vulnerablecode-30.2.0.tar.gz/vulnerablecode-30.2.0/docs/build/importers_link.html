@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Importers &mdash; VulnerableCode  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Google Summer of Code 2021 Final Report" href="soc_gsoc21.html" />
+    <link rel="prev" title="Command Line Interface" href="command-line-interface.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VulnerableCode
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">VulnerableCode Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to VulnerableCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_importer.html">Add a new importer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_improver.html">Add a new improver</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="reference_importer_overview.html">Importer Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_improver_overview.html">Improver Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_framework_overview.html">Framework Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Importers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Summer of Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="soc_gsoc21.html">Google Summer of Code 2021 Final Report</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VulnerableCode</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Importers</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/importers_link.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="importers">
+<span id="importers-link"></span><h1>Importers<a class="headerlink" href="#importers" title="Permalink to this headline"></a></h1>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 60%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Importer Name</p></th>
+<th class="head"><p>Data Source</p></th>
+<th class="head"><p>Ecosystems Covered</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rust</p></td>
+<td><p><a class="reference external" href="https://github.com/RustSec/advisory-db">https://github.com/RustSec/advisory-db</a></p></td>
+<td><p>rust crates</p></td>
+</tr>
+<tr class="row-odd"><td><p>alpine</p></td>
+<td><p><a class="reference external" href="https://secdb.alpinelinux.org/">https://secdb.alpinelinux.org/</a></p></td>
+<td><p>alpine packages</p></td>
+</tr>
+<tr class="row-even"><td><p>archlinux</p></td>
+<td><p><a class="reference external" href="https://security.archlinux.org/json">https://security.archlinux.org/json</a></p></td>
+<td><p>arch packages</p></td>
+</tr>
+<tr class="row-odd"><td><p>debian</p></td>
+<td><p><a class="reference external" href="https://security-tracker.debian.org/tracker/data/json">https://security-tracker.debian.org/tracker/data/json</a></p></td>
+<td><p>debian packages</p></td>
+</tr>
+<tr class="row-even"><td><p>npm</p></td>
+<td><p><a class="reference external" href="https://github.com/nodejs/security-wg.git">https://github.com/nodejs/security-wg.git</a></p></td>
+<td><p>npm packages</p></td>
+</tr>
+<tr class="row-odd"><td><p>ruby</p></td>
+<td><p><a class="reference external" href="https://github.com/rubysec/ruby-advisory-db.git">https://github.com/rubysec/ruby-advisory-db.git</a></p></td>
+<td><p>ruby gems</p></td>
+</tr>
+<tr class="row-even"><td><p>ubuntu</p></td>
+<td><p><a class="reference external" href="https://people.canonical.com/~ubuntu-security/oval/">https://people.canonical.com/~ubuntu-security/oval/</a></p></td>
+<td><p>ubuntu packages</p></td>
+</tr>
+<tr class="row-odd"><td><p>retiredotnet</p></td>
+<td><p><a class="reference external" href="https://github.com/RetireNet/Packages.git">https://github.com/RetireNet/Packages.git</a></p></td>
+<td><p>.NET packages</p></td>
+</tr>
+<tr class="row-even"><td><p>suse_backports</p></td>
+<td><p><a class="reference external" href="http://ftp.suse.com/pub/projects/security/yaml/">http://ftp.suse.com/pub/projects/security/yaml/</a></p></td>
+<td><p>SUSE packages</p></td>
+</tr>
+<tr class="row-odd"><td><p>debian_oval</p></td>
+<td><p><a class="reference external" href="https://www.debian.org/security/oval/">https://www.debian.org/security/oval/</a></p></td>
+<td><p>debian packages</p></td>
+</tr>
+<tr class="row-even"><td><p>redhat</p></td>
+<td><p><a class="reference external" href="https://access.redhat.com/hydra/rest/securitydata/cve.json">https://access.redhat.com/hydra/rest/securitydata/cve.json</a></p></td>
+<td><p>rpm packages</p></td>
+</tr>
+<tr class="row-odd"><td><p>nvd</p></td>
+<td><p><a class="reference external" href="https://nvd.nist.gov/vuln/data-feeds#JSON_FEED">https://nvd.nist.gov/vuln/data-feeds#JSON_FEED</a></p></td>
+<td><p>none</p></td>
+</tr>
+<tr class="row-even"><td><p>gentoo</p></td>
+<td><p><a class="reference external" href="https://anongit.gentoo.org/git/data/glsa.git">https://anongit.gentoo.org/git/data/glsa.git</a></p></td>
+<td><p>gentoo packages</p></td>
+</tr>
+<tr class="row-odd"><td><p>openssl</p></td>
+<td><p><a class="reference external" href="https://www.openssl.org/news/vulnerabilities.xml">https://www.openssl.org/news/vulnerabilities.xml</a></p></td>
+<td><p>openssl</p></td>
+</tr>
+<tr class="row-even"><td><p>ubuntu_usn</p></td>
+<td><p><a class="reference external" href="https://usn.ubuntu.com/usn-db/database-all.json.bz2">https://usn.ubuntu.com/usn-db/database-all.json.bz2</a></p></td>
+<td><p>ubuntu packages</p></td>
+</tr>
+<tr class="row-odd"><td><p>github</p></td>
+<td><p><a class="reference external" href="https://api.github.com/graphql">https://api.github.com/graphql</a></p></td>
+<td><p>maven, .NET, php-composer, pypi packages. ruby gems</p></td>
+</tr>
+<tr class="row-even"><td><p>msr2019</p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/SAP/project-kb/master/MSR2019/dataset/vulas_db_msr2019_release.csv">https://raw.githubusercontent.com/SAP/project-kb/master/MSR2019/dataset/vulas_db_msr2019_release.csv</a></p></td>
+<td><p>maven packages</p></td>
+</tr>
+<tr class="row-odd"><td><p>apache_httpd</p></td>
+<td><p><a class="reference external" href="https://httpd.apache.org/security/vulnerabilities-httpd.xml">https://httpd.apache.org/security/vulnerabilities-httpd.xml</a></p></td>
+<td><p>apache-httpd</p></td>
+</tr>
+<tr class="row-even"><td><p>kaybee</p></td>
+<td><p><a class="reference external" href="https://github.com/SAP/project-kb.git">https://github.com/SAP/project-kb.git</a></p></td>
+<td><p>maven packages</p></td>
+</tr>
+<tr class="row-odd"><td><p>nginx</p></td>
+<td><p><a class="reference external" href="http://nginx.org/en/security_advisories.html">http://nginx.org/en/security_advisories.html</a></p></td>
+<td><p>nginx</p></td>
+</tr>
+<tr class="row-even"><td><p>postgresql</p></td>
+<td><p><a class="reference external" href="https://www.postgresql.org/support/security/">https://www.postgresql.org/support/security/</a></p></td>
+<td><p>postgresql</p></td>
+</tr>
+<tr class="row-odd"><td><p>elixir_security</p></td>
+<td><p><a class="reference external" href="https://github.com/dependabot/elixir-security-advisories">https://github.com/dependabot/elixir-security-advisories</a></p></td>
+<td><p>hex packages</p></td>
+</tr>
+<tr class="row-even"><td><p>suse_scores</p></td>
+<td><p><a class="reference external" href="https://ftp.suse.com/pub/projects/security/yaml/suse-cvss-scores.yaml">https://ftp.suse.com/pub/projects/security/yaml/suse-cvss-scores.yaml</a></p></td>
+<td><p>vulnerability severity scores by SUSE</p></td>
+</tr>
+<tr class="row-odd"><td><p>mozilla</p></td>
+<td><p><a class="reference external" href="https://github.com/mozilla/foundation-security-advisories">https://github.com/mozilla/foundation-security-advisories</a></p></td>
+<td><p>mozilla</p></td>
+</tr>
+<tr class="row-even"><td><p>mattermost</p></td>
+<td><p><a class="reference external" href="https://mattermost.com/security-updates/">https://mattermost.com/security-updates/</a></p></td>
+<td><p>mattermost server, desktop and mobile apps</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="command-line-interface.html" class="btn btn-neutral float-left" title="Command Line Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="soc_gsoc21.html" class="btn btn-neutral float-right" title="Google Summer of Code 2021 Final Report" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright nexB Inc. and others.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

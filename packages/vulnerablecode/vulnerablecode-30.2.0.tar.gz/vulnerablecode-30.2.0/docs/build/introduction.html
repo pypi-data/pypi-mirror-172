@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VulnerableCode Overview &mdash; VulnerableCode  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="Welcome to VulnerableCode!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VulnerableCode
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VulnerableCode Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-can-i-do-with-vulnerablecode">What can I do with VulnerableCode?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-vulnerablecode">Why VulnerableCode?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-does-it-work">How does it work?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-can-i-contribute-to-vulnerablecode">How can I contribute to VulnerableCode?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to VulnerableCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_importer.html">Add a new importer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_improver.html">Add a new improver</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference_importer_overview.html">Importer Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_improver_overview.html">Improver Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_framework_overview.html">Framework Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importers_link.html">Importers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Summer of Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="soc_gsoc21.html">Google Summer of Code 2021 Final Report</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VulnerableCode</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>VulnerableCode Overview</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vulnerablecode-overview">
+<span id="introduction"></span><h1>VulnerableCode Overview<a class="headerlink" href="#vulnerablecode-overview" title="Permalink to this headline"></a></h1>
+<p><em>VulnerableCode</em> provides an open database of software packages that are affected
+by known security vulnerabilities aka. <em>“vulnerable packages”</em>.</p>
+<p>VulnerableCode is also a free and open source software (FOSS) project that
+provides the tools to build this open database. The tools handle collecting,
+aggregating and correlating these vulnerabilities and relating them to a correct
+package version. Our project also supports a public cloud instance of this
+database - VulnerableCode.io.</p>
+<section id="what-can-i-do-with-vulnerablecode">
+<h2>What can I do with VulnerableCode?<a class="headerlink" href="#what-can-i-do-with-vulnerablecode" title="Permalink to this headline"></a></h2>
+<p><strong>For security researchers and software developers, VulnerableCode offers a web
+UI and a JSON API to efficient find if the FOSS packages and dependencies that
+you use may be affected by known vulnerabilities and which version of a package
+you should upgrade to to fix this issue.</strong></p>
+<ul class="simple">
+<li><p>With the web UI, you can search by package using Package URLs or search by
+vulnerability like by CVE. From there you can navigate to the package
+vulnerabilities and to the vulnerable packages.</p></li>
+<li><p>With the JSON API, you can perform package queries using Package URLs or query
+by vulnerability id. You can also query by CPEs and vulnerability aliases.
+The API provides paginated index and detail endpoints and includes indexes
+of vulnerable CPEs and vulnerable Package URLs (purl).</p></li>
+</ul>
+<p>You can also install VulnerableCode locally or use the provided publicly hosted instance,
+or host your own installation. You can also contact the VulnerableCode authors and team
+for special needs including commercial support.</p>
+</section>
+<section id="why-vulnerablecode">
+<h2>Why VulnerableCode?<a class="headerlink" href="#why-vulnerablecode" title="Permalink to this headline"></a></h2>
+<p>VulnerableCode provides open correlated data and eventually does provide curated
+data. Our approach is to privilege upstream data sources and to merge multiple
+vulnerability data sources after comparison and correlation. The vulnerability
+data is keyed by Package URL ensuring quick and accurate lookup with minimal
+friction. We further continuously validate and refine the collected data for
+quality, accuracy and consistency using “improver” jobs.
+An example of such improver can validate that a package version reported as
+vulnerable effectively exists (several do not exist); Or an improver can
+re-evaluate a vulnerable version ranges based on the latest releases of a
+package.</p>
+<p>The benefits of our approach is that we will eventually provide better, more
+accurate vulnerability data, more efficiently related to actual packages scanned
+or reported in an SBOM. This should contribute to more efficient vulnerability
+management with less noise from false positives.</p>
+<p>Furthermore, existing vulnerability database solutions are primarily commercial
+or proprietary which does not make sense because the bulk of the vulnerability
+data is about FOSS.</p>
+<p>The National Vulnerability Database, which is a primary centralized data
+source for known vulnerabilities, is not particularly well suited to
+address FOSS security issues because:</p>
+<ol class="arabic simple">
+<li><p>It predates the explosion of FOSS software usage</p></li>
+<li><p>Its data format reflects a commercial vendor-centric point of view in part
+due to the usage of <a class="reference external" href="https://nvd.nist.gov/products/cpe">CPE</a> to map
+vulnerabilities to existing packages.</p></li>
+<li><p>CPEs are not designed to map FOSS to vulnerabilities owing to their
+vendor-product centric semantics. This makes it really hard to answer the
+fundamental questions “Is package foo vulnerable” and “Is package foo
+vulnerable to vulnerability bar?”</p></li>
+</ol>
+</section>
+<section id="how-does-it-work">
+<h2>How does it work?<a class="headerlink" href="#how-does-it-work" title="Permalink to this headline"></a></h2>
+<p>VulnerableCode independently aggregates many software vulnerability data sources
+and supports data re-creation in a decentralized fashion. These data sources
+(see complete list
+<a class="reference external" href="https://vulnerablecode.readthedocs.io/en/latest/importers_link.html#importers-link">here</a>)
+include security advisories published by Linux and BSD distributions,
+application software package managers and package repositories, FOSS projects,
+GitHub and more. Thanks to this approach, the data is focused on specific ecosystems and
+aggregated in a single database that enables querying a richer graph of relations between multiple
+representations of a package. Being specific increases the accuracy and validity
+of the data as the same version of an upstream package across different
+ecosystems may or may not be subject to the same vulnerability.</p>
+<p>In VulnerableCode, packages are identified using Package URL <a class="reference external" href="https://github.com/package-url/purl-spec">PURL</a> as the primary identifier instead of
+a CPE. This makes answers to questions such as “Is package foo vulnerable
+to vulnerability bar?” more accurate and easier to interpret.</p>
+<p>The primary access to VulnerableCode data is through a REST API, but there
+is also a Web UI for searching and browsing vulnerabilities by package
+or by vulnerability. For the initial releases both access modes are
+read-only, but our longer-term goal is to enable community curation of
+the data including addition of new packages and vulnerabilities, and
+reviewing and updating their relationships.</p>
+<p><em>We also plan to mine for vulnerabilities that didn’t receive any
+exposure due to various reasons like, but not limited to, the complicated
+procedure to obtain a CVE ID or not being able to classify a bug as a vulnerability.</em></p>
+</section>
+<section id="how-can-i-contribute-to-vulnerablecode">
+<h2>How can I contribute to VulnerableCode?<a class="headerlink" href="#how-can-i-contribute-to-vulnerablecode" title="Permalink to this headline"></a></h2>
+<p>Please get in touch on our <a class="reference external" href="https://gitter.im/aboutcode-org/vulnerablecode">Gitter channel</a>.
+You can review or get the code and report issues at our <a class="reference external" href="https://github.com/nexB/vulnerablecode/issues">GitHub repo</a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to VulnerableCode!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright nexB Inc. and others.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

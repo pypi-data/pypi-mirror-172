@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Command Line Interface &mdash; VulnerableCode  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Importers" href="importers_link.html" />
+    <link rel="prev" title="Framework Overview" href="reference_framework_overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VulnerableCode
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">VulnerableCode Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to VulnerableCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_importer.html">Add a new importer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_improver.html">Add a new improver</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="reference_importer_overview.html">Importer Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_improver_overview.html">Improver Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_framework_overview.html">Framework Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Line Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#manage-py-help"><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./manage.py</span> <span class="pre">--help</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manage-py-subcommand-help"><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./manage.py</span> <span class="pre">&lt;subcommand&gt;</span> <span class="pre">--help</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manage-py-import-importer-name"><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./manage.py</span> <span class="pre">import</span> <span class="pre">&lt;importer-name&gt;</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manage-py-improve-improver-name"><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./manage.py</span> <span class="pre">improve</span> <span class="pre">&lt;improver-name&gt;</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="importers_link.html">Importers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Summer of Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="soc_gsoc21.html">Google Summer of Code 2021 Final Report</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VulnerableCode</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Command Line Interface</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/command-line-interface.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="command-line-interface">
+<span id="id1"></span><h1>Command Line Interface<a class="headerlink" href="#command-line-interface" title="Permalink to this headline"></a></h1>
+<p>The main entry point is Django’s <span class="guilabel">manage.py</span> management commands.</p>
+<section id="manage-py-help">
+<h2><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./manage.py</span> <span class="pre">--help</span></code><a class="headerlink" href="#manage-py-help" title="Permalink to this headline"></a></h2>
+<p>Lists all sub-commands available, including Django built-in commands.
+VulnerableCode’s own commands are listed under the <code class="docutils literal notranslate"><span class="pre">[vulnerabilities]</span></code> section:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./manage.py --help
+...
+[vulnerabilities]
+    create_cpe_to_purl_map
+    importer
+    improver
+</pre></div>
+</div>
+</section>
+<section id="manage-py-subcommand-help">
+<h2><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./manage.py</span> <span class="pre">&lt;subcommand&gt;</span> <span class="pre">--help</span></code><a class="headerlink" href="#manage-py-subcommand-help" title="Permalink to this headline"></a></h2>
+<p>Displays help for the provided sub-command.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./manage.py import --help
+usage: manage.py import [-h] [--list] [--all] [--version] [-v {0,1,2,3}]
+                        [--settings SETTINGS] [--pythonpath PYTHONPATH]
+                        [--traceback] [--no-color] [--force-color]
+                        [--skip-checks]
+                        [sources [sources ...]]
+
+Import vulnerability data
+
+positional arguments:
+  sources               Fully qualified importer name to run
+</pre></div>
+</div>
+</section>
+<section id="manage-py-import-importer-name">
+<h2><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./manage.py</span> <span class="pre">import</span> <span class="pre">&lt;importer-name&gt;</span></code><a class="headerlink" href="#manage-py-import-importer-name" title="Permalink to this headline"></a></h2>
+<p>Import vulnerability data using the given importer name.</p>
+<p>Other variations:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--list</span></code> List all available importers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--all</span></code> Run all available importers</p></li>
+</ul>
+</section>
+<section id="manage-py-improve-improver-name">
+<h2><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./manage.py</span> <span class="pre">improve</span> <span class="pre">&lt;improver-name&gt;</span></code><a class="headerlink" href="#manage-py-improve-improver-name" title="Permalink to this headline"></a></h2>
+<p>Improve the imported vulnerability data using the given improver name.</p>
+<p>Other variations:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--list</span></code> List all available improvers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--all</span></code> Run all available improvers</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="reference_framework_overview.html" class="btn btn-neutral float-left" title="Framework Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="importers_link.html" class="btn btn-neutral float-right" title="Importers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright nexB Inc. and others.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

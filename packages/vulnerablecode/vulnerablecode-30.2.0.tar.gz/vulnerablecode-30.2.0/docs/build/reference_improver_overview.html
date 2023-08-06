@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Improver Overview &mdash; VulnerableCode  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Framework Overview" href="reference_framework_overview.html" />
+    <link rel="prev" title="Importer Overview" href="reference_importer_overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VulnerableCode
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">VulnerableCode Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to VulnerableCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_importer.html">Add a new importer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_improver.html">Add a new improver</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="reference_importer_overview.html">Importer Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Improver Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_framework_overview.html">Framework Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importers_link.html">Importers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Summer of Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="soc_gsoc21.html">Google Summer of Code 2021 Final Report</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VulnerableCode</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Improver Overview</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/reference_improver_overview.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="improver-overview">
+<span id="id1"></span><h1>Improver Overview<a class="headerlink" href="#improver-overview" title="Permalink to this headline"></a></h1>
+<p>Improvers improve upon already imported data. They are responsible for creating a relational
+model for vulnerabilites and packages.</p>
+<p>An Improver is intended to contain data points about a vulnerability and the relevant discrete
+affected and fixed packages (in the form of <a class="reference external" href="https://github.com/package-url/packageurl-python">PackageURLs</a>).
+There is no notion of version ranges here; all package versions must be explicitly specified.
+As this concrete relationship might not always be absolutely correct, improvers supply a
+confidence score and only the record with the highest confidence against a vulnerability and package
+relationship is stored in the database.</p>
+<p>There are two categories of improvers:</p>
+<ul class="simple">
+<li><p><strong>Generic</strong>: Improve upon some imported data irrespective of any importer. These improvers are
+defined in <code class="file docutils literal notranslate"><span class="pre">vulnerabilites/improvers/</span></code>.</p></li>
+<li><p><strong>Importer Specific</strong>: Improve upon data imported by a specific importer. These are defined in the
+corresponding importer file itself.</p></li>
+</ul>
+<p>Both types of improvers internally work in a similar fashion. They indicate which <code class="docutils literal notranslate"><span class="pre">Advisory</span></code> they
+are interested in and when supplied with those Advisories, they return Inferences.
+An <code class="docutils literal notranslate"><span class="pre">Inference</span></code> is more explicit than an <code class="docutils literal notranslate"><span class="pre">Advisory</span></code> and is able to answer questions like “Is
+package A vulnerable to Vulnerability B ?”. Of course, there is some confidence attached to the
+answer, which could also be <code class="docutils literal notranslate"><span class="pre">MAX_CONFIDENCE</span></code> in certain cases.</p>
+<p>The possibilities with improvers are endless; they are not restricted to take one approach. Features
+like <em>Time Travel</em> and <em>finding fix commits</em> could be implemented as well.</p>
+<p>You can find more in-code documentation about improvers in <code class="file docutils literal notranslate"><span class="pre">vulnerabilites/improver.py</span></code> and
+the framework responsible for invoking these improvers in <code class="file docutils literal notranslate"><span class="pre">vulnerabilites/improve_runner.py</span></code>.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="reference_importer_overview.html" class="btn btn-neutral float-left" title="Importer Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="reference_framework_overview.html" class="btn btn-neutral float-right" title="Framework Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright nexB Inc. and others.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; VulnerableCode  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing to VulnerableCode" href="contributing.html" />
+    <link rel="prev" title="VulnerableCode Overview" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VulnerableCode
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">VulnerableCode Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#run-with-docker">Run with Docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-docker">Get Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build-the-image">Build the Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-the-app">Run the App</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execute-a-command">Execute a Command</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#local-development-installation">Local development installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#supported-platforms">Supported Platforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-installation-checklist">Pre-installation Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-dependencies">System Dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clone-and-configure">Clone and Configure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#database">Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests">Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#web-application">Web Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#upgrading">Upgrading</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-nix">Using Nix</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to VulnerableCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_importer.html">Add a new importer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_improver.html">Add a new improver</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference_importer_overview.html">Importer Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_improver_overview.html">Improver Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_framework_overview.html">Framework Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importers_link.html">Importers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Summer of Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="soc_gsoc21.html">Google Summer of Code 2021 Final Report</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VulnerableCode</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>VulnerableCode is going through a major structural change and the
+installations are likely to not produce enough results.
+This is tracked in <a class="reference external" href="https://github.com/nexB/vulnerablecode/issues/597">https://github.com/nexB/vulnerablecode/issues/597</a></p>
+</div>
+<p>Welcome to <strong>VulnerableCode</strong> installation guide! This guide describes how to install
+VulnerableCode on various platforms.
+Please read and follow the instructions carefully to ensure your installation is
+functional and smooth.</p>
+<p>The <strong>preferred VulnerableCode installation</strong> is to <a class="reference internal" href="#run-with-docker"><span class="std std-ref">Run with Docker</span></a> as this is
+the simplest to setup and get started.
+Running VulnerableCode with Docker <strong>guarantees the availability of all features</strong> with the
+<strong>minimum configuration</strong> required.
+This installation <strong>works across all Operating Systems</strong>.</p>
+<p>Alternatively, you can install VulnerableCode locally as a development server with some
+limitations and caveats. Refer to the <a class="reference internal" href="#local-development-installation"><span class="std std-ref">Local development installation</span></a> section.</p>
+<section id="run-with-docker">
+<span id="id2"></span><h2>Run with Docker<a class="headerlink" href="#run-with-docker" title="Permalink to this headline"></a></h2>
+<section id="get-docker">
+<h3>Get Docker<a class="headerlink" href="#get-docker" title="Permalink to this headline"></a></h3>
+<p>The first step is to download and <strong>install Docker on your platform</strong>.
+Refer to Docker documentation and choose the best installation
+path for your system: <a class="reference external" href="https://docs.docker.com/get-docker/">Get Docker</a>.</p>
+</section>
+<section id="build-the-image">
+<h3>Build the Image<a class="headerlink" href="#build-the-image" title="Permalink to this headline"></a></h3>
+<p>VulnerableCode is distributed with <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> and <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> files
+required for the creation of the Docker image.</p>
+<p>Clone the git <a class="reference external" href="https://github.com/nexB/vulnerablecode">VulnerableCode repo</a>,
+create an environment file, and build the Docker image:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">nexB</span><span class="o">/</span><span class="n">vulnerablecode</span><span class="o">.</span><span class="n">git</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">vulnerablecode</span>
+<span class="n">make</span> <span class="n">envfile</span>
+<span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">build</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The image will need to be re-built when the VulnerableCode app source code is
+modified or updated via
+<code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">build</span> <span class="pre">--no-cache</span> <span class="pre">vulnerablecode</span></code></p>
+</div>
+</section>
+<section id="run-the-app">
+<h3>Run the App<a class="headerlink" href="#run-the-app" title="Permalink to this headline"></a></h3>
+<p><strong>Run your image</strong> as a container:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">up</span>
+</pre></div>
+</div>
+<p>At this point, the VulnerableCode app should be running at port <code class="docutils literal notranslate"><span class="pre">8000</span></code> on your Docker host.
+Go to <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a> on a web browser to access the web UI.
+Optionally, you can set <code class="docutils literal notranslate"><span class="pre">NGINX_PORT</span></code> environment variable in your shell or in the <cite>.env</cite> file
+to run on a different port than 8000.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To access a dockerized VulnerableCode app from a remote location, the <code class="docutils literal notranslate"><span class="pre">ALLOWED_HOSTS</span></code>
+setting need to be provided in your <code class="docutils literal notranslate"><span class="pre">docker.env</span></code> file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ALLOWED_HOSTS</span><span class="o">=.</span><span class="n">domain</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="mf">127.0.0.1</span>
+</pre></div>
+</div>
+<p>Refer to <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts">Django ALLOWED_HOSTS settings</a>
+for more details.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Serving VulnerableCode on a network could lead to security issues and there
+are several steps that may be needed to secure such a deployment.
+Currently, this is not recommendend.</p>
+</div>
+</section>
+<section id="execute-a-command">
+<h3>Execute a Command<a class="headerlink" href="#execute-a-command" title="Permalink to this headline"></a></h3>
+<p>You can execute a one of <code class="docutils literal notranslate"><span class="pre">manage.py</span></code> commands through the Docker command line
+interface, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">run</span> <span class="n">vulnerablecode</span> <span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="kn">import</span> <span class="o">--</span><span class="nb">list</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Refer to the <a class="reference internal" href="command-line-interface.html#command-line-interface"><span class="std std-ref">Command Line Interface</span></a> section for the full list of commands.</p>
+</div>
+<p>Alternatively, you can connect to the Docker container <code class="docutils literal notranslate"><span class="pre">bash</span></code> and run commands
+from there:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">run</span> <span class="n">vulnerablecode</span> <span class="n">bash</span>
+<span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="kn">import</span> <span class="o">--</span><span class="nb">list</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="local-development-installation">
+<span id="id4"></span><h2>Local development installation<a class="headerlink" href="#local-development-installation" title="Permalink to this headline"></a></h2>
+<section id="supported-platforms">
+<h3>Supported Platforms<a class="headerlink" href="#supported-platforms" title="Permalink to this headline"></a></h3>
+<p><strong>VulnerableCode</strong> has been tested and is supported on the following operating systems:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Debian-based</strong> Linux distributions</p></li>
+<li><p><strong>macOS</strong> 12.1 and up</p></li>
+</ol>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>On <strong>Windows</strong> VulnerableCode can <strong>only</strong> <a class="reference internal" href="#run-with-docker"><span class="std std-ref">Run with Docker</span></a> and is not supported.</p>
+</div>
+</section>
+<section id="pre-installation-checklist">
+<h3>Pre-installation Checklist<a class="headerlink" href="#pre-installation-checklist" title="Permalink to this headline"></a></h3>
+<p>Before you install VulnerableCode, make sure you have the following prerequisites:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Python: 3.8+</strong> found at <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p></li>
+<li><p><strong>Git</strong>: most recent release available at <a class="reference external" href="https://git-scm.com/">https://git-scm.com/</a></p></li>
+<li><p><strong>PostgreSQL</strong>: release 10 or later found at <a class="reference external" href="https://www.postgresql.org/">https://www.postgresql.org/</a> or
+<a class="reference external" href="https://postgresapp.com/">https://postgresapp.com/</a> on macOS</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="system-dependencies">
+<span id="id5"></span><h3>System Dependencies<a class="headerlink" href="#system-dependencies" title="Permalink to this headline"></a></h3>
+<p>In addition to the above pre-installation checklist, there might be some OS-specific
+system packages that need to be installed before installing VulnerableCode.</p>
+<p>On <strong>Debian-based distros</strong>, several <strong>system packages are required</strong> by VulnerableCode.
+Make sure those are installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">venv</span> <span class="n">python3</span><span class="o">-</span><span class="n">dev</span> <span class="n">postgresql</span> <span class="n">libpq</span><span class="o">-</span><span class="n">dev</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span>
+</pre></div>
+</div>
+</section>
+<section id="clone-and-configure">
+<h3>Clone and Configure<a class="headerlink" href="#clone-and-configure" title="Permalink to this headline"></a></h3>
+<p>Clone the <a class="reference external" href="https://github.com/nexB/vulnerablecode">VulnerableCode Git repository</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">nexB</span><span class="o">/</span><span class="n">vulnerablecode</span><span class="o">.</span><span class="n">git</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">vulnerablecode</span>
+</pre></div>
+</div>
+<p>Install the required dependencies:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">dev</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can specify the Python version during the <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">dev</span></code> step using the following
+command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">dev</span> <span class="n">PYTHON_EXE</span><span class="o">=</span><span class="n">python3</span><span class="mf">.8.10</span>
+</pre></div>
+</div>
+<p>When <code class="docutils literal notranslate"><span class="pre">PYTHON_EXE</span></code> is not specified, by default, the <code class="docutils literal notranslate"><span class="pre">python3</span></code> executable is
+used.</p>
+</div>
+<p>Create an environment file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">envfile</span>
+</pre></div>
+</div>
+</section>
+<section id="database">
+<h3>Database<a class="headerlink" href="#database" title="Permalink to this headline"></a></h3>
+<p><strong>PostgreSQL</strong> is the preferred database backend and should always be used on
+production servers.</p>
+<ul>
+<li><p>Create the PostgreSQL user, database, and table with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">postgres</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can also use a <strong>SQLite</strong> database for local development as a single user
+with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">sqlite</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Choosing SQLite over PostgreSQL has some caveats. Check this <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/databases/#sqlite-notes">link</a>
+for more details.</p>
+</div>
+</section>
+<section id="tests">
+<h3>Tests<a class="headerlink" href="#tests" title="Permalink to this headline"></a></h3>
+<p>You can validate your VulnerableCode installation by running the tests suite:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">test</span>
+</pre></div>
+</div>
+</section>
+<section id="web-application">
+<h3>Web Application<a class="headerlink" href="#web-application" title="Permalink to this headline"></a></h3>
+<p>A web application is available to create and manage your projects from a browser;
+you can start the local webserver and access the app with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">run</span>
+</pre></div>
+</div>
+<p>Then open your web browser and visit: <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> to access the web
+application.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This setup is <strong>not suitable for deployments</strong> and <strong>only supported for local
+development</strong>.</p>
+</div>
+</section>
+<section id="upgrading">
+<h3>Upgrading<a class="headerlink" href="#upgrading" title="Permalink to this headline"></a></h3>
+<p>If you already have the VulnerableCode repo cloned, you can upgrade to the latest version
+with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">vulnerablecode</span>
+<span class="n">git</span> <span class="n">pull</span>
+<span class="n">make</span> <span class="n">dev</span>
+<span class="n">make</span> <span class="n">migrate</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="using-nix">
+<h2>Using Nix<a class="headerlink" href="#using-nix" title="Permalink to this headline"></a></h2>
+<p>You can install VulnerableCode with <a class="reference external" href="https://nixos.org/download.html">Nix</a>
+(<a class="reference external" href="https://nixos.wiki/wiki/Flakes">Flake</a> support is needed):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">etc</span><span class="o">/</span><span class="n">nix</span>
+<span class="n">nix</span><span class="o">-</span><span class="n">shell</span> <span class="o">-</span><span class="n">p</span> <span class="n">nixFlakes</span> <span class="o">--</span><span class="n">run</span> <span class="s2">&quot;nix --print-build-logs flake check &quot;</span> <span class="c1"># build &amp; run tests</span>
+</pre></div>
+</div>
+<p>There are several options to use the Nix version:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter an interactive environment with all dependencies set up.</span>
+<span class="n">cd</span> <span class="n">etc</span><span class="o">/</span><span class="n">nix</span>
+<span class="n">nix</span> <span class="n">develop</span>
+<span class="o">&gt;</span> <span class="o">../../</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="o">...</span> <span class="c1"># invoke the local checkout</span>
+<span class="o">&gt;</span> <span class="n">vulnerablecode</span><span class="o">-</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="o">...</span> <span class="c1"># invoke manage.py as installed in the nix store</span>
+
+<span class="c1"># Test the import prodecure using the Nix version.</span>
+<span class="n">etc</span><span class="o">/</span><span class="n">nix</span><span class="o">/</span><span class="n">test</span><span class="o">-</span><span class="n">import</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">nix</span><span class="o">.</span><span class="n">sh</span> <span class="o">--</span><span class="nb">all</span> <span class="c1"># import everything</span>
+<span class="c1"># Test the import using the local checkout.</span>
+<span class="n">INSTALL_DIR</span><span class="o">=.</span> <span class="n">etc</span><span class="o">/</span><span class="n">nix</span><span class="o">/</span><span class="n">test</span><span class="o">-</span><span class="n">import</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">nix</span><span class="o">.</span><span class="n">sh</span> <span class="n">ruby</span> <span class="c1"># import ruby only</span>
+</pre></div>
+</div>
+<p><strong>Keeping the Nix setup in sync</strong></p>
+<p>The Nix installation uses <a class="reference external" href="https://github.com/DavHau/mach-nix">mach-nix</a> to
+handle Python dependencies because some dependencies are currently not available
+as Nix packages. All Python dependencies are automatically fetched from
+<code class="docutils literal notranslate"><span class="pre">./requirements.txt</span></code>. If the <code class="docutils literal notranslate"><span class="pre">mach-nix</span></code>-based installation fails, you might
+need to update <code class="docutils literal notranslate"><span class="pre">mach-nix</span></code> itself and the <a class="reference external" href="https://github.com/DavHau/pypi-deps-db">pypi-deps-db</a> version in use (see
+<code class="docutils literal notranslate"><span class="pre">etc/nix/flake.nix:inputs.machnix</span></code> and <code class="docutils literal notranslate"><span class="pre">machnixFor.pypiDataRev</span></code>).</p>
+<p>Non-Python dependencies are curated in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">etc</span><span class="o">/</span><span class="n">nix</span><span class="o">/</span><span class="n">flake</span><span class="o">.</span><span class="n">nix</span><span class="p">:</span><span class="n">vulnerablecode</span><span class="o">.</span><span class="n">propagatedBuildInputs</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="VulnerableCode Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing to VulnerableCode" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright nexB Inc. and others.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

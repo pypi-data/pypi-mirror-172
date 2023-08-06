@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add a new improver &mdash; VulnerableCode  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Importer Overview" href="reference_importer_overview.html" />
+    <link rel="prev" title="Add a new importer" href="tutorial_add_new_importer.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VulnerableCode
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">VulnerableCode Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to VulnerableCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_importer.html">Add a new importer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Add a new improver</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tl-dr">TL;DR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#importer">Importer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importer-prerequisites">Importer Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inference">Inference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#improver">Improver</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-an-improver">Writing an improver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#locate-the-source-file">Locate the Source File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#explore-package-managers-optional">Explore Package Managers (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#implement-the-interesting-advisories-property">Implement the <code class="docutils literal notranslate"><span class="pre">interesting_advisories</span></code> Property</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#implement-the-get-inferences-method">Implement the <code class="docutils literal notranslate"><span class="pre">get_inferences</span></code> Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#register-the-improver">Register the Improver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-your-first-improver">Run Your First Improver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enable-debug-logging-optional">Enable Debug Logging (Optional)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference_importer_overview.html">Importer Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_improver_overview.html">Improver Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_framework_overview.html">Framework Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importers_link.html">Importers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Summer of Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="soc_gsoc21.html">Google Summer of Code 2021 Final Report</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VulnerableCode</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Add a new improver</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tutorial_add_new_improver.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="add-a-new-improver">
+<span id="tutorial-add-a-new-improver"></span><h1>Add a new improver<a class="headerlink" href="#add-a-new-improver" title="Permalink to this headline"></a></h1>
+<p>This tutorial contains all the things one should know to quickly
+implement an improver.
+Many internal details about improvers can be found inside the
+<code class="file docutils literal notranslate"><span class="pre">vulnerabilites/improver.py</span></code> file.
+Make sure to go through <a class="reference internal" href="reference_improver_overview.html#improver-overview"><span class="std std-ref">Improver Overview</span></a> before you begin writing one.</p>
+<section id="tl-dr">
+<h2>TL;DR<a class="headerlink" href="#tl-dr" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Locate the importer that this improver will be improving data of at
+<code class="file docutils literal notranslate"><span class="pre">vulnerabilities/importers/</span><em><span class="pre">importer_name.py</span></em></code> file.</p></li>
+<li><p>Create a new improver subclass inheriting from the <code class="docutils literal notranslate"><span class="pre">Improver</span></code> superclass defined in
+<code class="docutils literal notranslate"><span class="pre">vulnerabilites.improver</span></code>. It is conventional to end an improver name with <em>Improver</em>.</p></li>
+<li><p>Implement the <code class="docutils literal notranslate"><span class="pre">interesting_advisories</span></code> property to return a QuerySet of imported data
+(<code class="docutils literal notranslate"><span class="pre">Advisory</span></code>) you are interested in.</p></li>
+<li><p>Implement the <code class="docutils literal notranslate"><span class="pre">get_inferences</span></code> method to return an iterable of <code class="docutils literal notranslate"><span class="pre">Inference</span></code> objects for the
+given <code class="docutils literal notranslate"><span class="pre">AdvisoryData</span></code>.</p></li>
+<li><p>Add the newly created improver to the improvers registry at
+<code class="docutils literal notranslate"><span class="pre">vulnerabilites/improvers/__init__.py</span></code>.</p></li>
+</ol>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline"></a></h2>
+<p>Before writing an improver, it is important to familiarize yourself with the following concepts.</p>
+<section id="importer">
+<h3>Importer<a class="headerlink" href="#importer" title="Permalink to this headline"></a></h3>
+<p>Importers are responsible for scraping vulnerability data from various data sources without creating
+a complete relational model between vulnerabilites and their fixes and storing them in a structured
+fashion. These data are stored in the <code class="docutils literal notranslate"><span class="pre">Advisory</span></code> model and can be converted to an equivalent
+<code class="docutils literal notranslate"><span class="pre">AdvisoryData</span></code> for various use cases.
+See <a class="reference internal" href="reference_importer_overview.html#importer-overview"><span class="std std-ref">Importer Overview</span></a> for a brief overview on importers.</p>
+</section>
+<section id="importer-prerequisites">
+<h3>Importer Prerequisites<a class="headerlink" href="#importer-prerequisites" title="Permalink to this headline"></a></h3>
+<p>Improvers consume data produced by importers, and thus it is important to familiarize yourself with
+<a class="reference internal" href="tutorial_add_new_importer.html#tutorial-add-a-new-importer-prerequisites"><span class="std std-ref">Importer Prerequisites</span></a>.</p>
+</section>
+<section id="inference">
+<h3>Inference<a class="headerlink" href="#inference" title="Permalink to this headline"></a></h3>
+<p>Inferences express the contract between the improvers and the improve runner framework.
+An inference is intended to contain data points about a vulnerability without any uncertainties,
+which means that one inference will target one vulnerability with the specific relevant affected and
+fixed packages (in the form of <a class="reference external" href="https://github.com/package-url/packageurl-python">PackageURLs</a>).
+There is no notion of version ranges here: all package versions must be explicitly specified.</p>
+<p>Because this concrete relationship is rarely available anywhere upstream, we have to <em>infer</em>
+these values, thus the name.
+As inferring something is not always perfect, an Inference also comes with a confidence score.</p>
+</section>
+<section id="improver">
+<h3>Improver<a class="headerlink" href="#improver" title="Permalink to this headline"></a></h3>
+<p>All the Improvers must inherit from <code class="docutils literal notranslate"><span class="pre">Improver</span></code> superclass and implement the
+<code class="docutils literal notranslate"><span class="pre">interesting_advisories</span></code> property and the <code class="docutils literal notranslate"><span class="pre">get_inferences</span></code> method.</p>
+</section>
+</section>
+<section id="writing-an-improver">
+<h2>Writing an improver<a class="headerlink" href="#writing-an-improver" title="Permalink to this headline"></a></h2>
+<section id="locate-the-source-file">
+<h3>Locate the Source File<a class="headerlink" href="#locate-the-source-file" title="Permalink to this headline"></a></h3>
+<p>If the improver will be working on data imported by a specific importer, it  will be located in
+the same file at <code class="file docutils literal notranslate"><span class="pre">vulnerabilites/importers/</span><em><span class="pre">importer-name.py</span></em></code>.  Otherwise, if it is a
+generic improver, create a new file <code class="file docutils literal notranslate"><span class="pre">vulnerabilites/improvers/</span><em><span class="pre">improver-name.py</span></em></code>.</p>
+</section>
+<section id="explore-package-managers-optional">
+<h3>Explore Package Managers (Optional)<a class="headerlink" href="#explore-package-managers-optional" title="Permalink to this headline"></a></h3>
+<p>If your Improver depends on the discrete versions of a package, the package managers’ VersionAPI
+located at <code class="file docutils literal notranslate"><span class="pre">vulnerabilites/package_managers.py</span></code> could come in handy.  You will need to
+instantiate the relevant <code class="docutils literal notranslate"><span class="pre">VersionAPI</span></code> in the improver’s constructor and use it later in the
+implemented methods. See an already implemented improver (NginxBasicImprover) for an example usage.</p>
+</section>
+<section id="implement-the-interesting-advisories-property">
+<h3>Implement the <code class="docutils literal notranslate"><span class="pre">interesting_advisories</span></code> Property<a class="headerlink" href="#implement-the-interesting-advisories-property" title="Permalink to this headline"></a></h3>
+<p>This property is intended to return a QuerySet of <code class="docutils literal notranslate"><span class="pre">Advisory</span></code> on which the <code class="docutils literal notranslate"><span class="pre">Improver</span></code> is
+designed to work.</p>
+<p>For example, if the improver is designed to work on Advisories imported by <code class="docutils literal notranslate"><span class="pre">ExampleImporter</span></code>,
+the property can be implemented as</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ExampleBasicImprover</span><span class="p">(</span><span class="n">Improver</span><span class="p">):</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">interesting_advisories</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">QuerySet</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Advisory</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">created_by</span><span class="o">=</span><span class="n">ExampleImporter</span><span class="o">.</span><span class="n">qualified_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="implement-the-get-inferences-method">
+<h3>Implement the <code class="docutils literal notranslate"><span class="pre">get_inferences</span></code> Method<a class="headerlink" href="#implement-the-get-inferences-method" title="Permalink to this headline"></a></h3>
+<p>The framework calls <code class="docutils literal notranslate"><span class="pre">get_inferences</span></code> method for every <code class="docutils literal notranslate"><span class="pre">AdvisoryData</span></code> that is obtained from
+the <code class="docutils literal notranslate"><span class="pre">Advisory</span></code> QuerySet returned by the <code class="docutils literal notranslate"><span class="pre">interesting_advisories</span></code> property.</p>
+<p>It is expected to return an iterable of <code class="docutils literal notranslate"><span class="pre">Inference</span></code> objects for the given <code class="docutils literal notranslate"><span class="pre">AdvisoryData</span></code>. To
+avoid storing a lot of Inferences in memory, it is preferable to yield from this method.</p>
+<p>A very simple Improver that processes all Advisories to create the minimal relationships that can
+be obtained by existing data can be found at <code class="file docutils literal notranslate"><span class="pre">vulnerabilites/improvers/default.py</span></code>, which is
+an example of a generic improver.  For a more sophisticated and targeted example, you can look
+at an already implemented improver (e.g., <code class="file docutils literal notranslate"><span class="pre">vulnerabilites/importers/nginx.py</span></code>).</p>
+<p>Improvers are not limited to improving discrete versions and may also improve <code class="docutils literal notranslate"><span class="pre">aliases</span></code>.
+One such example, improving the importer written in the <a class="reference internal" href="tutorial_add_new_importer.html#tutorial-add-a-new-importer"><span class="std std-ref">importer tutorial</span></a>, is shown below.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">timezone</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Iterable</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">django.db.models.query</span> <span class="kn">import</span> <span class="n">QuerySet</span>
+<span class="kn">from</span> <span class="nn">packageurl</span> <span class="kn">import</span> <span class="n">PackageURL</span>
+<span class="kn">from</span> <span class="nn">univers.version_range</span> <span class="kn">import</span> <span class="n">NginxVersionRange</span>
+<span class="kn">from</span> <span class="nn">univers.versions</span> <span class="kn">import</span> <span class="n">SemverVersion</span>
+
+<span class="kn">from</span> <span class="nn">vulnerabilities.importer</span> <span class="kn">import</span> <span class="n">AdvisoryData</span>
+<span class="kn">from</span> <span class="nn">vulnerabilities.improver</span> <span class="kn">import</span> <span class="n">MAX_CONFIDENCE</span>
+<span class="kn">from</span> <span class="nn">vulnerabilities.improver</span> <span class="kn">import</span> <span class="n">Improver</span>
+<span class="kn">from</span> <span class="nn">vulnerabilities.improver</span> <span class="kn">import</span> <span class="n">Inference</span>
+<span class="kn">from</span> <span class="nn">vulnerabilities.models</span> <span class="kn">import</span> <span class="n">Advisory</span>
+<span class="kn">from</span> <span class="nn">vulnerabilities.severity_systems</span> <span class="kn">import</span> <span class="n">SCORING_SYSTEMS</span>
+
+
+<span class="k">class</span> <span class="nc">ExampleImporter</span><span class="p">(</span><span class="n">Importer</span><span class="p">):</span>
+    <span class="o">...</span>
+
+
+<span class="k">class</span> <span class="nc">ExampleAliasImprover</span><span class="p">(</span><span class="n">Improver</span><span class="p">):</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">interesting_advisories</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">QuerySet</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Advisory</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">created_by</span><span class="o">=</span><span class="n">ExampleImporter</span><span class="o">.</span><span class="n">qualified_name</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_inferences</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">advisory_data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">Inference</span><span class="p">]:</span>
+        <span class="k">for</span> <span class="n">alias</span> <span class="ow">in</span> <span class="n">advisory_data</span><span class="o">.</span><span class="n">aliases</span><span class="p">:</span>
+            <span class="n">new_aliases</span> <span class="o">=</span> <span class="n">fetch_additional_aliases</span><span class="p">(</span><span class="n">alias</span><span class="p">)</span>
+            <span class="n">aliases</span> <span class="o">=</span> <span class="n">new_aliases</span> <span class="o">+</span> <span class="p">[</span><span class="n">alias</span><span class="p">]</span>
+            <span class="k">yield</span> <span class="n">Inference</span><span class="p">(</span><span class="n">aliases</span><span class="o">=</span><span class="n">aliases</span><span class="p">,</span> <span class="n">confidence</span><span class="o">=</span><span class="n">MAX_CONFIDENCE</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">fetch_additional_aliases</span><span class="p">(</span><span class="n">alias</span><span class="p">):</span>
+    <span class="n">alias_map</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;CVE-2021-23017&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;PYSEC-1337&quot;</span><span class="p">,</span> <span class="s2">&quot;CERTIN-1337&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;CVE-2021-1234&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;ANONSEC-1337&quot;</span><span class="p">,</span> <span class="s2">&quot;CERTDES-1337&quot;</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">alias_map</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">alias</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">Use <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">valid</span></code> to format your new code using black and isort automatically.</div>
+<div class="line">Use <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">check</span></code> to check for formatting errrors.</div>
+</div>
+</div>
+</section>
+<section id="register-the-improver">
+<h3>Register the Improver<a class="headerlink" href="#register-the-improver" title="Permalink to this headline"></a></h3>
+<p>Finally, register your improver in the improver registry at
+<code class="file docutils literal notranslate"><span class="pre">vulnerabilites/improvers/__init__.py</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span> <span class="kn">from</span> <span class="nn">vulnerabilities</span> <span class="kn">import</span> <span class="n">importers</span>
+ <span class="kn">from</span> <span class="nn">vulnerabilities.improvers</span> <span class="kn">import</span> <span class="n">default</span>
+
+ <span class="n">IMPROVERS_REGISTRY</span> <span class="o">=</span> <span class="p">[</span>
+     <span class="n">default</span><span class="o">.</span><span class="n">DefaultImprover</span><span class="p">,</span>
+     <span class="n">importers</span><span class="o">.</span><span class="n">nginx</span><span class="o">.</span><span class="n">NginxBasicImprover</span><span class="p">,</span>
+<span class="hll">     <span class="n">importers</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">ExampleAliasImprover</span><span class="p">,</span>
+</span> <span class="p">]</span>
+
+ <span class="n">IMPROVERS_REGISTRY</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="o">.</span><span class="n">qualified_name</span><span class="p">:</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">IMPROVERS_REGISTRY</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Congratulations! You have written your first improver.</p>
+</section>
+<section id="run-your-first-improver">
+<h3>Run Your First Improver<a class="headerlink" href="#run-your-first-improver" title="Permalink to this headline"></a></h3>
+<p>If everything went well, you will see your improver in the list of available improvers.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"> $ </span>./manage.py improve --list
+
+<span class="go"> Vulnerability data can be processed by these available improvers:</span>
+<span class="go"> vulnerabilities.improvers.default.DefaultImprover</span>
+<span class="go"> vulnerabilities.importers.nginx.NginxBasicImprover</span>
+<span class="hll"><span class="go"> vulnerabilities.importers.example.ExampleAliasImprover</span>
+</span></pre></div>
+</div>
+<p>Before running the improver, make sure you have imported the data. An improver cannot improve if
+there is nothing imported.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>./manage.py import vulnerabilities.importers.example.ExampleImporter
+
+<span class="go">Importing data using vulnerabilities.importers.example.ExampleImporter</span>
+<span class="go">Successfully imported data using vulnerabilities.importers.example.ExampleImporter</span>
+</pre></div>
+</div>
+<p>Now, run the improver.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>./manage.py improve vulnerabilities.importers.example.ExampleAliasImprover
+
+<span class="go"> Improving data using vulnerabilities.importers.example.ExampleAliasImprover</span>
+<span class="go"> Successfully improved data using vulnerabilities.importers.example.ExampleAliasImprover</span>
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="command-line-interface.html#command-line-interface"><span class="std std-ref">Command Line Interface</span></a> for command line usage instructions.</p>
+</section>
+<section id="enable-debug-logging-optional">
+<h3>Enable Debug Logging (Optional)<a class="headerlink" href="#enable-debug-logging-optional" title="Permalink to this headline"></a></h3>
+<p>For more visibility, turn on debug logs in <code class="file docutils literal notranslate"><span class="pre">vulnerablecode/settings.py</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DEBUG</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">LOGGING</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">&#39;disable_existing_loggers&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s1">&#39;handlers&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;console&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="s1">&#39;logging.StreamHandler&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;root&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;handlers&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;console&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;level&#39;</span><span class="p">:</span> <span class="s1">&#39;DEBUG&#39;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Invoke the improve command now and you will see (in a fresh database, after importing):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>./manage.py improve vulnerabilities.importers.example.ExampleAliasImprover
+
+<span class="go">Improving data using vulnerabilities.importers.example.ExampleAliasImprover</span>
+<span class="go">Running improver: vulnerabilities.importers.example.ExampleAliasImprover</span>
+<span class="go">Improving advisory id: 1</span>
+<span class="go">New alias for &lt;Vulnerability: VULCOID-23dd9060-3bc0-4454-bfbd-d16c08a966a6&gt;: PYSEC-1337</span>
+<span class="go">New alias for &lt;Vulnerability: VULCOID-23dd9060-3bc0-4454-bfbd-d16c08a966a6&gt;: CVE-2021-23017</span>
+<span class="go">New alias for &lt;Vulnerability: VULCOID-23dd9060-3bc0-4454-bfbd-d16c08a966a6&gt;: CERTIN-1337</span>
+<span class="go">Improving advisory id: 2</span>
+<span class="go">New alias for &lt;Vulnerability: VULCOID-fae4e06e-4815-45fe-ae95-8d2356ffb5b9&gt;: CERTDES-1337</span>
+<span class="go">New alias for &lt;Vulnerability: VULCOID-fae4e06e-4815-45fe-ae95-8d2356ffb5b9&gt;: ANONSEC-1337</span>
+<span class="go">New alias for &lt;Vulnerability: VULCOID-fae4e06e-4815-45fe-ae95-8d2356ffb5b9&gt;: CVE-2021-1234</span>
+<span class="go">Finished improving using vulnerabilities.importers.example.ExampleAliasImprover.</span>
+<span class="go">Successfully improved data using vulnerabilities.importers.example.ExampleAliasImprover</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Even though CVE-2021-23017 and CVE-2021-1234 are not supplied by this improver, the output above shows them
+because we left out running the <code class="docutils literal notranslate"><span class="pre">DefaultImprover</span></code> in the example. The <code class="docutils literal notranslate"><span class="pre">DefaultImprover</span></code>
+inserts minimal data found via the importers in the database (here, the above two CVEs). Run
+importer, DefaultImprover and then your improver in this sequence to avoid this anomaly.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tutorial_add_new_importer.html" class="btn btn-neutral float-left" title="Add a new importer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="reference_importer_overview.html" class="btn btn-neutral float-right" title="Importer Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright nexB Inc. and others.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
