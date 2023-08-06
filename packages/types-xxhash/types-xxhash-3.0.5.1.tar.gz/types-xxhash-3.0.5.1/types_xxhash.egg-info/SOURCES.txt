@@ -1,0 +1,10 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+types_xxhash.egg-info/PKG-INFO
+types_xxhash.egg-info/SOURCES.txt
+types_xxhash.egg-info/dependency_links.txt
+types_xxhash.egg-info/top_level.txt
+xxhash-stubs/METADATA.toml
+xxhash-stubs/__init__.pyi
+xxhash-stubs/version.pyi
