@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+datashuttle/datashuttle.egg-info/PKG-INFO
+datashuttle/datashuttle.egg-info/SOURCES.txt
+datashuttle/datashuttle.egg-info/dependency_links.txt
+datashuttle/datashuttle.egg-info/not-zip-safe
+datashuttle/datashuttle.egg-info/requires.txt
+datashuttle/datashuttle.egg-info/top_level.txt
