@@ -1,0 +1,12 @@
+folium
+networkx
+shapely
+pandas
+numpy
+requests
+pyproj
+scikit-learn
+matplotlib
+setuptools
+pydot
+graphviz
