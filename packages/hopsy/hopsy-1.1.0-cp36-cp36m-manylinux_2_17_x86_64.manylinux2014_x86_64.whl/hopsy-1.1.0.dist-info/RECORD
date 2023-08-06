@@ -1,0 +1,9 @@
+hopsy/__init__.py,sha256=txzBfdIip_EcyrXsnbnm3OKuM1OQ5AveBLqQG8b2brQ,146
+hopsy/misc.py,sha256=UlUIvsUKD4ysw7KffymdA4BGeHOb-DHwaIpqXFtA2i0,24043
+hopsy/lp.py,sha256=wvRvoqdXyc7OsYHy6njWnQkfpj0PVTn4jBPDfj9cG1A,1076
+hopsy/core.cpython-36m-x86_64-linux-gnu.so,sha256=ufmgDXKGtwb0RVN3tNEg8d4LIXFplMPNyvzbc5NeDTI,1936176
+hopsy-1.1.0.dist-info/RECORD,,
+hopsy-1.1.0.dist-info/LICENSE,sha256=MxMieC04w3YECssEEn_zWdhHCFYZZ_giFmuObdMIUX4,1106
+hopsy-1.1.0.dist-info/METADATA,sha256=e41zNpOZolwRY6luyOwQhYbzJ2O9s6c5xRhenLk970E,4844
+hopsy-1.1.0.dist-info/WHEEL,sha256=YVAXCacQXnznQ-_lMj8Nvqrs7YPtMP1pHRCw9EcyWRQ,150
+hopsy-1.1.0.dist-info/top_level.txt,sha256=g8QfGHQq4nGbh4Dk-sKfsQp5tf7AWb9UmrgF-fGuJik,17
