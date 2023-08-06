@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PYfeishuBot
+Version: 0.0.2
+Summary: A feishu Bot SDK for Python
+Home-page: https://github.com/yry0008/pyfeishubot.git
+Author: Yang
+Author-email: plectra-taproot0y@icloud.com
+Keywords: feishu lark bot api tools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.28.0)
+Requires-Dist: fastapi (>=0.78.0)
+Requires-Dist: uvicorn (>=0.17.6)
+Requires-Dist: pycryptodome (>=3.14.1)
+
+# Feishu Bot Python SDK
+
+## Usage
+
+```python
+import feishuBot
+bot = feishuBot.Bot(app_id, app_secret, verification_token,encrypt_key)
+```
