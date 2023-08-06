@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "extmaillogin"
+version = "0.1.1"
+description = ""
+authors = ["Beda Kosata <beda.kosata@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^3.2.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
