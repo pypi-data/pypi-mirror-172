@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cloudtrace
+Version: 2.1.20221021042723
+Summary: Cloud traceroute.
+Home-page: https://gitlab.com/alexander_marder/cloudtrace
+Author: Alex Marder
+Requires-Python: >3.6
