@@ -1,0 +1,2 @@
+[console_scripts]
+cv_tools = cv_tools:main
