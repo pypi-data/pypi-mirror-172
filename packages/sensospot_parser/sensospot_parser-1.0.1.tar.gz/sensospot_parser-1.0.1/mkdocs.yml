@@ -1,0 +1,17 @@
+site_name: Sensospot Parser Docs
+
+nav:
+  - Introduction: index.md
+  - Tutorials: tutorials.md
+  - How-To Guides: how-to-guides.md
+  - Reference: reference.md
+  - Explanation: explanation.md
+
+repo_url: https://github.com/example/repository/
+
+theme:
+    name: readthedocs
+    highlightjs: true
+
+plugins:
+  - mkdocstrings
