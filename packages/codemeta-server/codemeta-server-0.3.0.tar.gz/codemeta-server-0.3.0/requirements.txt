@@ -1,0 +1,3 @@
+rdflib-endpoint
+codemetapy >= 2.3.0
+fastapi
