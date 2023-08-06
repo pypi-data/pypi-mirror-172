@@ -1,0 +1,29 @@
+[submodule "external/imgui"]
+	path = external/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "external/hello_imgui"]
+	path = external/hello_imgui
+	url = https://github.com/pthom/hello_imgui.git
+[submodule "external/glfw"]
+	path = external/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "lg_cmake_utils"]
+	path = lg_cmake_utils
+	url = https://github.com/pthom/lg_cmake_utils.git
+[submodule "external/implot"]
+	path = external/implot
+	url = https://github.com/epezent/implot.git
+[submodule "implot"]
+	url = https://github.com/epezent/implot.git
+[submodule "external/ImGuiColorTextEdit"]
+	path = external/ImGuiColorTextEdit
+	url = https://github.com/pthom/ImGuiColorTextEdit
+[submodule "external/imgui-node-editor"]
+	path = external/imgui-node-editor
+	url = https://github.com/thedmd/imgui-node-editor
+[submodule "external/imgui-knobs"]
+	path = external/imgui-knobs
+	url = https://github.com/altschuler/imgui-knobs
+[submodule "external/ImFileDialog"]
+	path = external/ImFileDialog
+	url = https://github.com/pthom/ImFileDialog.git
