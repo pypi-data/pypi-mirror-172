@@ -1,0 +1,15 @@
+nameko>=3.0.0rc9
+opentelemetry-api
+opentelemetry-instrumentation
+opentelemetry-instrumentation-wsgi
+importlib-metadata<=4.13.0
+
+[dev]
+nameko>=3.0.0rc1
+coverage
+pytest
+opentelemetry-sdk
+opentelemetry-instrumentation-requests
+
+[instruments]
+nameko>=3.0.0rc1
