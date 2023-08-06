@@ -1,0 +1,3 @@
+[console_scripts]
+modal = modal.cli:main
+
