@@ -1,0 +1,28 @@
+{
+    "version": "alpha",
+    "schema": "core",
+    "environments": [
+        {
+            "language": "python",
+            "versions": ["3.7.0", "2.7.15"],
+            "environment_manager": {
+                "name": "pyenv",
+                "plugins": ["pyenv-virtualenv"]
+            }
+        },
+        {
+            "language": "ruby",
+            "versions": ["2.4.1"],
+            "environment_manager": {
+                "name": "rbenv"
+            }
+        },
+        {
+            "language": "java",
+            "versions": ["1.8", "1.11"],
+            "environment_manager": {
+                "name": "jenv"
+            }
+        }
+    ]
+}

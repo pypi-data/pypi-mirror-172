@@ -1,0 +1,77 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "alpha.default_settings.json",
+    "type": "object",
+    "$defs": {
+        "MacVersion": {
+            "enum": [
+                "yosemite",
+                "el_capitan",
+                "sierra",
+                "high_sierra",
+                "mojave",
+                "catalina",
+                "big_sur",
+                "monterey",
+                "ventura"
+            ]
+        },
+         "DefaultSettingType": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "enabled": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "description": {
+                    "type": "string"
+                },
+                "start": {
+                    "$ref": "#/$defs/MacVersion"
+                },
+                "end": {
+                    "$ref": "#/$defs/MacVersion"
+                },
+                "check_command": {
+                    "type": "string"
+                },
+                "command": {
+                    "type": "string"
+                },
+                "expected_check_state": {
+                    "type": "string"
+                },
+                "sudo": {
+                    "type": "boolean",
+                    "default": false
+                },
+                "check_output": {
+                    "type": "boolean",
+                    "default": true
+                }
+            },
+            "required": ["name", "command"]
+        },
+        "DefaultSettingsType": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/DefaultSettingType"
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "alpha.common.json"
+        },
+        {
+            "properties": {
+                "default_settings": {
+                    "$ref": "#/$defs/DefaultSettingsType"
+                }
+            }
+        }
+    ]
+}
