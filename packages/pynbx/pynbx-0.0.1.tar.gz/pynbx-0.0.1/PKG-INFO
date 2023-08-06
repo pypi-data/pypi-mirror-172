@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pynbx
+Version: 0.0.1
+Summary: Next generation of personal knolwedge management
+Home-page: https://github.com/WorkshopHQ/nbx
+Author: Tan Li
+Author-email: tanl@workshop.cool
+Project-URL: Bug Tracker, https://github.com/WorkshopHQ/nbx/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# nbx
