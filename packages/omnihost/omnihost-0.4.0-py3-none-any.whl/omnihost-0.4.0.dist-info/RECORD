@@ -1,0 +1,12 @@
+omnihost/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnihost/__main__.py,sha256=CBiBcBZP734400qgSO3pYbDmkRSWzouc80aZeSJxsnI,2674
+omnihost/config_handler.py,sha256=eYiW8-v-EeI-_T23rRms9zxP-V3__cms7w5NiH4GrFk,5629
+omnihost/gemtext_parser.py,sha256=2q70lxnCztmKUkHIgcak9sSHWuozURR-udZhzg702YU,5189
+omnihost/html_converter.py,sha256=5K2Ulz_1saZPg4ihO9UhPcFt2s1KDf9HasYk3X8CXJY,6921
+omnihost/omniconverter.py,sha256=2prnihb8jaNiuk_vG95bjwbb8NdLMa6vgNUsbUqWov8,5770
+omnihost/version.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+omnihost-0.4.0.dist-info/entry_points.txt,sha256=-KU-kaB4kVzCe7tQLOQRSGmdqyh5JE7FHSoN1Q20tTc,51
+omnihost-0.4.0.dist-info/LICENSE.txt,sha256=tQ37mO_rKDCGiRqhjkSYRjGNA_E8mT8l2yj8nfdf6E4,1070
+omnihost-0.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+omnihost-0.4.0.dist-info/METADATA,sha256=CaTTfCBHg4zKDwLIg8cwoqCR3iZLmgeEm8t0KvoApiE,7235
+omnihost-0.4.0.dist-info/RECORD,,
