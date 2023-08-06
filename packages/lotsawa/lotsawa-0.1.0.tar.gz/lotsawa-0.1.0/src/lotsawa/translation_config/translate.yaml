@@ -1,0 +1,17 @@
+defaults:
+  - model: cased
+  - generation: slow
+  - mode: interactive
+  # - word_exclusion: bad-words-list
+  - help/translate@hydra.help
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+  - _self_
+
+hydra:
+  # verbose: cai_garland
+  run:
+    dir: .
+  output_subdir: ~
+
+cuda: False
