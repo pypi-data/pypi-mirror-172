@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gcspy/__init__.py
+gcspy/gcspy.cpython-37m-darwin.so
+gcspy.egg-info/PKG-INFO
+gcspy.egg-info/SOURCES.txt
+gcspy.egg-info/dependency_links.txt
+gcspy.egg-info/top_level.txt
