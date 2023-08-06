@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+source/hidro_UNC_joaquin.segura.ellis.egg-info/PKG-INFO
+source/hidro_UNC_joaquin.segura.ellis.egg-info/SOURCES.txt
+source/hidro_UNC_joaquin.segura.ellis.egg-info/dependency_links.txt
+source/hidro_UNC_joaquin.segura.ellis.egg-info/top_level.txt
+source/precipitation/FACETA.py
+source/precipitation/__init__.py
+source/precipitation/__version__.py
+source/precipitation/geo_tools.py
+source/precipitation/h5py_tools.py
+source/precipitation/hidro_tools.py
+source/precipitation/libraries.py
