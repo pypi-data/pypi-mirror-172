@@ -1,0 +1,5 @@
+chinesecalendar
+baidu-aip
+chardet
+pywebio
+pysqlcipher3

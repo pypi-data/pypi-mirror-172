@@ -1,0 +1,28 @@
+####################### Q&A ########################
+
+一、打开终端，运行以下命令行：
+pip install --upgrade pip
+pip install chinesecalendar
+pip install baidu-aip
+pip install chardet
+pip install pywebio
+
+二、Mac 安装Python库 pysqlcipher3
+brew install sqlcipher
+pip install pysqlcipher3
+
+三、解压文件，终端命令行进入项目根目录
+cd 项目根目录
+nohup python main.py > run.log 2>&1 &
+
+
+####################### Q&A ########################
+
+一、 MAC 安装brew
+如果命令行提示没有安装brew，运行以下命令：
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+
+二、MAC 安装pysqlcipher3库过程中提示：undefined method `cellar' for 解决方法
+cd /usr/local/Homebrew/Library/Taps/homebrew/
+rm -rf homebrew-core
+git clone https://github.com/Homebrew/homebrew-core.git
