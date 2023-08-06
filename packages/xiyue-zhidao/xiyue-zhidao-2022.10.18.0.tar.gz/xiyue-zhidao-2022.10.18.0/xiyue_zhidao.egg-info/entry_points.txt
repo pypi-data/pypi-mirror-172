@@ -1,0 +1,4 @@
+[console_scripts]
+XiyueZhidao = XiyueZhidao.__main__:main
+xiyue-zhidao = XiyueZhidao.__main__:main
+
