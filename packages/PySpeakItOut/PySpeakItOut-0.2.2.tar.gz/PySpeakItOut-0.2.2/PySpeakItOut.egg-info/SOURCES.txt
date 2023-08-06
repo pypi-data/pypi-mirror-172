@@ -1,0 +1,9 @@
+README.md
+setup.py
+PySpeakItOut/__init__.py
+PySpeakItOut/reader.py
+PySpeakItOut.egg-info/PKG-INFO
+PySpeakItOut.egg-info/SOURCES.txt
+PySpeakItOut.egg-info/dependency_links.txt
+PySpeakItOut.egg-info/requires.txt
+PySpeakItOut.egg-info/top_level.txt
