@@ -1,0 +1,32 @@
+[tool.black]
+line-length = 80
+target-version = ['py39']
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | migrations
+  | docs
+  | venv
+  | .venv
+
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+  | profiling
+)/
+'''
+
+[tool.isort]
+py_version=39
+profile = "black"
+line_length = 80
+skip = ['.bzr', '.direnv', '.eggs', '.git', '.hg', '.mypy_cache', '.nox', '.pants.d', '.svn', '.tox', '.venv', '__pypackages__', '_build', 'buck-out', 'build', 'dist', 'node_modules', 'venv', 'migrations']
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = 'test_env.settings'
+pythonpath = './src'
+
+[build-system]
+requires = ['setuptools>=40.8.0', 'wheel']
+build-backend = 'setuptools.build_meta:__legacy__'

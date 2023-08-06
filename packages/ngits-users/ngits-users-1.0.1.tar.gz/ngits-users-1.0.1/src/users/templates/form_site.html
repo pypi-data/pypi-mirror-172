@@ -1,0 +1,19 @@
+{% load static %}
+<head>
+    <title>{% block page_title%}{% endblock %}</title>
+    <link rel="icon" type="image/png" href="{% static 'users/img/logo.png' %}"/>
+    <link rel="stylesheet" href="{% static 'users/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<div id='form-container'>
+    <span id="title">
+        {% block title %}
+        {% endblock %}
+    </span>
+    {% block form %}
+    {% endblock %}
+</div>
+    {% block error %}
+    {% endblock %}
