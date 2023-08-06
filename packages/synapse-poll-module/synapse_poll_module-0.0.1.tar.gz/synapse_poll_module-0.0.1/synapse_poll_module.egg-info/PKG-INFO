@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: synapse-poll-module
+Version: 0.0.1
+Summary: "Synapse module to create polls"
+Home-page: https://github.com/Supereuro/SynapsePollModule/
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Provides-Extra: dev
+License-File: LICENSE
+
+"See Homepage"
