@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+aiart/__init__.py
+aiart/_modidx.py
+aiart/core.py
+fastart.egg-info/PKG-INFO
+fastart.egg-info/SOURCES.txt
+fastart.egg-info/dependency_links.txt
+fastart.egg-info/entry_points.txt
+fastart.egg-info/not-zip-safe
+fastart.egg-info/requires.txt
+fastart.egg-info/top_level.txt
