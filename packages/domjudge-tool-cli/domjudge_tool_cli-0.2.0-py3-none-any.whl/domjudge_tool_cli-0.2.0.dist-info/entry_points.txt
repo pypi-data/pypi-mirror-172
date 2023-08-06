@@ -1,0 +1,3 @@
+[console_scripts]
+domjudge-tool-cli=domjudge_tool_cli:app
+
