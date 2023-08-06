@@ -1,0 +1,14 @@
+ciso/__init__.py,sha256=LYtO1mfNNzoATMVzaYqvbH_Uj1s1ULXhcr52w_TdA8U,192
+ciso/_ciso.c,sha256=lCFncV9prjXNvSzRah9F3JvBKYfpbwcBO0talWRiIbs,869497
+ciso/_ciso.cpython-38-darwin.so,sha256=tbbyOeN39M5ymV3RwueyHYIAmYfkzkLNERwhaQpTcM4,168391
+ciso/_ciso.pyx,sha256=Yag_898IMiq__Au7rI7gUc8STyyBgF8g0H4jWsjT9dk,1038
+ciso/_version.py,sha256=1KhrBItVjTCR-Sumh0o09b_aKrjTTcJrpTBh5GBw6Lk,21
+ciso/ciso.py,sha256=oGa5T0TIJ17TQgp8jCUq6FzVGxyKl66sqUnDMs78FjU,1478
+ciso/tests/test_ciso.py,sha256=DqB3d1aWLR5nIhfh_v0wtCYU47HKt9GNxDfTzvd4kFM,2443
+ciso/tests/data/fortran.npz,sha256=IUrAVWu-oK-_xSTMB1EXgnCiTcSw1JI2HbVkbUeOdJs,28192
+ciso-0.2.0.dist-info/LICENSE.txt,sha256=39qpEzurZv2-ovsZCqx75yXiCTA8L8Gj9cmtlaRqWgU,1292
+ciso-0.2.0.dist-info/METADATA,sha256=5dA8eFCl7godglJzXU_bptCUyfFM_M71ErBZBgxr19I,1002
+ciso-0.2.0.dist-info/WHEEL,sha256=u895uB4FIjm1puccTaPTl57dorjncEYygQxItKHr_T0,108
+ciso-0.2.0.dist-info/top_level.txt,sha256=65kU9gy-9rHceMkzsMxKtw3VakTqyTc7KBtT1wKDj5c,5
+ciso-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ciso-0.2.0.dist-info/RECORD,,
