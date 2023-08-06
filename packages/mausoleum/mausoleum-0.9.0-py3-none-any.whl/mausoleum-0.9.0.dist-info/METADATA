@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mausoleum
+Version: 0.9.0
+Summary: A Python GUI, CLI, and wrapper for Tomb
+Home-page: https://github.com/mandeep/Mausoleum
+Author: Mandeep
+Author-email: info@mandeep.xyz
+License: GPLv3+
+Keywords: Mausoleum
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: appdirs (==1.4.3)
+Requires-Dist: click (==7.0)
+Requires-Dist: pytoml (==0.1.13)
+
