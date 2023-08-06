@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: FAaDO
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/rAlexandre00/FADO
+Maintainer: Rodrigo Simoes
+Maintainer-email: rsimoes@lasige.di.fc.ul.pt
+License: MIT
+Keywords: Federated Attack and Defense Orchestrator
+Platform: UNKNOWN
+Requires-Dist: grpcio
+Requires-Dist: fedml
+Requires-Dist: PyYAML
+Requires-Dist: pyOpenSSL
+
+UNKNOWN
+
