@@ -1,0 +1,6 @@
+# Build image using root privileges
+USER root
+
+# MPI environment variable
+ENV OMPI_MCA_btl_vader_single_copy_mechanism=none
+
