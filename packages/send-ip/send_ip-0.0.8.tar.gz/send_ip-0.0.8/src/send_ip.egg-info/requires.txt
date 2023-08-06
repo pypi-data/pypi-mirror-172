@@ -1,0 +1,11 @@
+PyYAML>=5.3.1
+paramiko>=2.6.0
+py_console
+python-crontab>=0.23.0
+scp
+
+[dev]
+PyYAML==5.3.1
+check-manifest
+paramiko==2.6.0
+twine
