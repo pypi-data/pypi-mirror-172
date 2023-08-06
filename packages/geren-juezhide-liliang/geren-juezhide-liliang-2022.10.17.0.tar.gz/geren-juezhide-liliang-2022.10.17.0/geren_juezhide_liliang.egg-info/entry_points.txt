@@ -1,0 +1,4 @@
+[console_scripts]
+GerenJuezhideLiliang = GerenJuezhideLiliang.__main__:main
+geren-juezhide-liliang = GerenJuezhideLiliang.__main__:main
+
