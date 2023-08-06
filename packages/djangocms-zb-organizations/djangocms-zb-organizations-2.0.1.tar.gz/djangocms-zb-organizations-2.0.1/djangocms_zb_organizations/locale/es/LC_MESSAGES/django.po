@@ -1,0 +1,420 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-14 17:09-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\admin.py:196
+msgid "Polygon files"
+msgstr "Archivos de polígonos"
+
+#: .\admin.py:198
+msgid "Upload .shp and .shx files for the polygons of the organization"
+msgstr "Subir archivos .shp y .shx para los polígonos de la organización"
+
+#: .\admin.py:212 .\admin.py:350
+msgid "Main Options"
+msgstr "Opciones Principales"
+
+#: .\admin.py:217
+msgid "Location"
+msgstr "Ubicación"
+
+#: .\admin.py:220
+msgid "Social Networks"
+msgstr "Redes Sociales"
+
+#: .\admin.py:295
+msgid ""
+"The polygons were not processed, because the coordinates are in a different "
+"format or there was a problem processing the data."
+msgstr ""
+"Los polígonos no se procesaron porque las coordenadas están en un formato "
+"diferente o hubo un problema al procesar los datos."
+
+#: .\admin.py:303
+msgid ""
+"The polygons were not processed, because the temporary directory is "
+"configured."
+msgstr ""
+"Los polígonos no fueron procesados, porque esta configurado el directorio temporal."
+
+#: .\admin.py:307
+msgid ""
+"The polygons were not processed, because a .shp and a .shx file are required."
+msgstr ""
+"Los polígonos no se procesaron porque se requiere un archivo .shp y .shx."
+
+#: .\admin.py:309
+msgid "The polygons were not processed, because only two files are required."
+msgstr ""
+"Los polígonos no fueron procesados, porque se requieren solo dos archivos."
+
+#: .\apps.py:33
+msgid "Django cms Zb Organizations"
+msgstr ""
+
+#: .\cms_plugins.py:44
+msgid "Organizations Manager Plugin for Django CMS"
+msgstr ""
+
+#: .\cms_plugins.py:151
+msgid "Organizations Logo Carousel Admin Plugin for Django CMS"
+msgstr ""
+
+#: .\lib\choices.py:33
+msgid "Default"
+msgstr ""
+
+#: .\models\db_models.py:58
+msgid "Parent category"
+msgstr "Categoría principal"
+
+#: .\models\db_models.py:59
+msgid "Parent category, if it is a subcategory."
+msgstr "Categoría principal, si es una subcategoría."
+
+#: .\models\db_models.py:60
+msgid "Category name"
+msgstr "Nombre de la categoría"
+
+#: .\models\db_models.py:61 .\models\db_models.py:109 .\models\db_models.py:133
+#: .\models\db_models.py:156 .\models\db_models.py:184
+#: .\models\db_models.py:206
+msgid "Is enabled"
+msgstr "Esta habilitada/o"
+
+#: .\models\db_models.py:62
+msgid "Indicates if the category is enabled."
+msgstr "Indica si la categoría está habilitada."
+
+#: .\models\db_models.py:65 .\models\db_models.py:96
+msgid "Categories"
+msgstr "Categorías"
+
+#: .\models\db_models.py:78
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:25
+msgid "Name"
+msgstr "Nombre"
+
+#: .\models\db_models.py:79
+msgid "Organization name"
+msgstr "Nombre de la Organización"
+
+#: .\models\db_models.py:80
+msgid "acronym/initials"
+msgstr "Siglas/Iniciales"
+
+#: .\models\db_models.py:81
+msgid "Organization acronym/initials"
+msgstr "Siglas/Iniciales de la Organización"
+
+#: .\models\db_models.py:82
+msgid "Address"
+msgstr "Dirección"
+
+#: .\models\db_models.py:83
+msgid "Company/organization address."
+msgstr "Dirección de la empresa/organización."
+
+#: .\models\db_models.py:84
+msgid "Country"
+msgstr "País"
+
+#: .\models\db_models.py:85
+msgid "Country where the company/organization is located."
+msgstr "País donde se encuentra la empresa/organización."
+
+#: .\models\db_models.py:86
+msgid "Región"
+msgstr "Región"
+
+#: .\models\db_models.py:87
+msgid "Region or state where the company/organization is located."
+msgstr "Región o estado donde se encuentra la empresa/organización."
+
+#: .\models\db_models.py:89
+msgid "Sub Región"
+msgstr "Subregión"
+
+#: .\models\db_models.py:90
+msgid "City or sub region where the company/organization is located."
+msgstr "Ciudad o subregión donde se encuentra ubicada la empresa/organización."
+
+#: .\models\db_models.py:91
+msgid "Phone number"
+msgstr "Número de teléfono"
+
+#: .\models\db_models.py:92
+msgid "Phone number of the organization/company."
+msgstr "Número de teléfono de la organización/empresa."
+
+#: .\models\db_models.py:93
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: .\models\db_models.py:94
+msgid "Primary company/organization email."
+msgstr "Correo electrónico principal de la empresa/organización."
+
+#: .\models\db_models.py:98
+msgid "Logo"
+msgstr "Logo"
+
+#: .\models\db_models.py:99
+msgid "Organization logo"
+msgstr "Logotipo de la organización"
+
+#: .\models\db_models.py:100
+msgid "Facebook Link"
+msgstr "Link de Facebook"
+
+#: .\models\db_models.py:101
+msgid "Instagram Link"
+msgstr "Link de Instagram"
+
+#: .\models\db_models.py:102
+msgid "Twitter Link"
+msgstr "Link de Twitter"
+
+#: .\models\db_models.py:103
+msgid "Youtube Link"
+msgstr "Link de Youtube"
+
+#: .\models\db_models.py:104
+msgid "Latitude"
+msgstr "Latitud"
+
+#: .\models\db_models.py:105
+msgid "Latitude in which the company/organization is located."
+msgstr "Latitud en la que se encuentra la empresa/organización."
+
+#: .\models\db_models.py:107
+msgid "Longitude"
+msgstr "Longitud"
+
+#: .\models\db_models.py:108
+msgid "Longitude in which the company/organization is located."
+msgstr "Longitud en la que se encuentra la empresa/organización."
+
+#: .\models\db_models.py:110
+msgid "Indicates if the company/organization is enabled."
+msgstr "Indica si la empresa/organización está habilitada."
+
+#: .\models\db_models.py:119 .\models\db_models.py:129
+#: .\models\db_models.py:150 .\models\geo_models.py:34
+msgid "Organization"
+msgstr "Organización"
+
+#: .\models\db_models.py:120
+msgid "Organizations"
+msgstr "Organizaciones"
+
+#: .\models\db_models.py:130
+msgid "Contact name"
+msgstr "Nombre de contacto"
+
+#: .\models\db_models.py:131
+msgid "Contact phone"
+msgstr "Teléfono de contacto"
+
+#: .\models\db_models.py:132
+msgid "Contact email"
+msgstr "Correo Electrónico de contacto"
+
+#: .\models\db_models.py:134
+msgid "Indicates if the contact/organization is enabled."
+msgstr "Indica si el contacto/organización está habilitado."
+
+#: .\models\db_models.py:137
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:115
+msgid "Contact"
+msgstr "Contacto"
+
+#: .\models\db_models.py:138
+msgid "Contacts"
+msgstr "Contactos"
+
+#: .\models\db_models.py:152
+msgid "Microsite abstract"
+msgstr "Resumen del micrositio"
+
+#: .\models\db_models.py:153
+msgid "Summary to show on the microsite."
+msgstr "Resumen para mostrar en el micrositio."
+
+#: .\models\db_models.py:154
+msgid "Microsite content"
+msgstr "Contenido del micrositio"
+
+#: .\models\db_models.py:155
+msgid "Content (text) to be displayed on the microsite."
+msgstr "Contenido (texto) a mostrar en el micrositio."
+
+#: .\models\db_models.py:157
+msgid "Indicates if the microsite is enabled."
+msgstr "Indica si el micrositio está habilitado."
+
+#: .\models\db_models.py:160 .\models\db_models.py:180
+msgid "Microsite"
+msgstr "Micrositio"
+
+#: .\models\db_models.py:161
+msgid "Microsites"
+msgstr "Micrositios"
+
+#: .\models\db_models.py:182
+msgid "Picture file"
+msgstr "Archivo de imagen"
+
+#: .\models\db_models.py:183 .\models\db_models.py:205
+msgid "Represents the image file found in media (Filer)."
+msgstr ""
+"Representa el archivo de imagen que se encuentra en los medios (Archivador)."
+
+#: .\models\db_models.py:185
+msgid "Indicates if the picture/organization is enabled."
+msgstr "Indica si la imagen/organización está habilitada."
+
+#: .\models\db_models.py:197
+msgid "Microsite owner"
+msgstr "Propietario del micrositio"
+
+#: .\models\db_models.py:198
+msgid "Microsite to which the catalog belongs."
+msgstr "Microsite al que pertenece el catálogo."
+
+#: .\models\db_models.py:199
+msgid "Product/Service name"
+msgstr "Nombre del producto/servicio"
+
+#: .\models\db_models.py:200
+msgid "Name of the product or service."
+msgstr "Nombre del producto o servicio."
+
+#: .\models\db_models.py:201
+msgid "Short description"
+msgstr "Breve descripción"
+
+#: .\models\db_models.py:202
+msgid "Description of the product or service offered."
+msgstr "Descripción del producto o servicio ofrecido."
+
+#: .\models\db_models.py:204
+msgid "Catalog Picture"
+msgstr "Imagen del catálogo"
+
+#: .\models\db_models.py:207
+msgid "Indicates if the product or service is enabled."
+msgstr "Indica si el producto o servicio está habilitado."
+
+#: .\models\db_models.py:210
+#: .\templates\djangocms_zb_organizations\micro_site.html:61
+msgid "Catalog"
+msgstr "Catálogo"
+
+#: .\models\db_models.py:211
+msgid "Catalogs"
+msgstr "Catálogos"
+
+#: .\models\db_models.py:221
+msgid "Filter by category"
+msgstr "Filtrar por categoría"
+
+#: .\models\db_models.py:224
+msgid "Template dir"
+msgstr "Directorio de plantilla"
+
+#: .\models\db_models.py:225
+msgid "Directory that contains the templates that the plugin will use."
+msgstr "Directorio que contiene las plantillas que usará el complemento."
+
+#: .\models\geo_models.py:35
+msgid "Polygons"
+msgstr "Polygonos"
+
+#: .\models\geo_models.py:36
+msgid "Location Area Coordinates"
+msgstr "Coordenadas del área de ubicación"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_carousel_logo.html:54
+msgid "There are no logos of organizations or companies to display."
+msgstr "No hay logotipos de organizaciones o empresas para mostrar."
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:14
+msgid "Filter"
+msgstr "Filtro"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:19
+msgid "Filter by:"
+msgstr "Filtrar por:"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:21
+msgid "Select"
+msgstr "Seleccionar"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:22
+msgid "City"
+msgstr "Ciudad"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:23
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:130
+msgid "Category"
+msgstr "Categoría"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:24
+msgid "Product or Service"
+msgstr "Producto o servicio"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:29
+msgid "Subcategories:"
+msgstr "Subcategorías"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:37
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:43
+msgid "Send"
+msgstr "Enviar"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:41
+msgid "Contains:"
+msgstr "Contiene:"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:57
+msgid "Remove Filter"
+msgstr "Eliminar Filtro"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:80
+msgid "There are no organizations or companies to display"
+msgstr "No hay organizaciones o empresas para mostrar"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:93
+msgid "Organization or Branch Data"
+msgstr "Datos de la organización o sucursal"
+
+#: .\templates\djangocms_zb_organizations\default\organizations_map.html:106
+msgid "See Microsite"
+msgstr "Ver Micrositio"
+
+#: .\templates\djangocms_zb_organizations\micro_site.html:114
+msgid "No catalog found."
+msgstr "No se ha encontrado ningún catálogo."
+
+#~ msgid "Is Enabled"
+#~ msgstr "Esta habilitada"
+
+#~ msgid "Category parent"
+#~ msgstr "Categoría padre"
