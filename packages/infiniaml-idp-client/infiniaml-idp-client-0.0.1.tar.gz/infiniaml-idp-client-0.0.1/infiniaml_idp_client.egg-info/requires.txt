@@ -1,0 +1,8 @@
+typing-extensions>=4.0.0
+httpx>=0.21.0
+
+[cli]
+typer>=0.6.0
+datamodel-code-generator>=0.13.0
+autoflake>=1.5.0
+black>=22.1.0

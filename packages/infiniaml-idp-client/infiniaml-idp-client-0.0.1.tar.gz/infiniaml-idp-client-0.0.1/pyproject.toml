@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infiniaml-idp-client"
+description = "InfiniaML Intelligent Document Processing Client"
+version = "0.0.1"
+requires-python = ">=3.8"
+dependencies = [
+    "typing-extensions >=4.0.0",
+    "httpx >=0.21.0",
+]
+
+[project.optional-dependencies]
+cli = [
+    "typer >=0.6.0",
+    "datamodel-code-generator >=0.13.0",
+    "autoflake >=1.5.0",
+    "black >=22.1.0",
+]
+
+[project.scripts]
+infiniaml-idp-client = "infiniaml_idp_client._cli:main"
+
+[tool.setuptools]
+packages = ["infiniaml_idp_client"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+reportUnknownMemberType = "information"
+reportMissingTypeStubs = "information"
+reportInvalidTypeVarUse = "information"
+useLibraryCodeForTypes = true
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
