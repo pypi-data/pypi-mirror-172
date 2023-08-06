@@ -1,0 +1,8 @@
+flytekitplugins_huggingface-1.2.2-py3.10-nspkg.pth,sha256=lkJ-eVJsxHcpr3YkJBzWrgSFWPWyG3DLhUSGmTcjxhg,584
+flytekitplugins/huggingface/__init__.py,sha256=GV4bor9RBy8OZmFp_oyZYt9O0Mc89_V0jx0ji7rZnI0,417
+flytekitplugins/huggingface/sd_transformers.py,sha256=V3TJxnbq0yyZNPhYKbUpX6oM4fsw0XysuV3MsXmtDEc,2704
+flytekitplugins_huggingface-1.2.2.dist-info/METADATA,sha256=FNxki0U3p0ef8PDqXZJcxOFoLxjYaZf6PWEODu90D5w,894
+flytekitplugins_huggingface-1.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flytekitplugins_huggingface-1.2.2.dist-info/namespace_packages.txt,sha256=b2gTzXFHuV5afchaJ28HueRhYzj-8x5Ytr8n2twnAik,16
+flytekitplugins_huggingface-1.2.2.dist-info/top_level.txt,sha256=b2gTzXFHuV5afchaJ28HueRhYzj-8x5Ytr8n2twnAik,16
+flytekitplugins_huggingface-1.2.2.dist-info/RECORD,,
