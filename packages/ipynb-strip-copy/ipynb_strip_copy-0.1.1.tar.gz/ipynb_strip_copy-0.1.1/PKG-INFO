@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: ipynb_strip_copy
+Version: 0.1.1
+Summary: makes student / TA copy of ipynb from rubric version
+Author-email: Matt Higger <matt.higger@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 matt higger
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/matthigger/ipynb_strip_copy
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ipynb_strip_copy
+
+Command line tool to detect text in a jupyter notebook cell and process
+accordingly (remove the cell, clear its contents or snip a section). Our
+motivation is to allow users to maintain a "rubric" `ipynb` file from
+which the "solution" and "student" copies can be created quickly.
+
+## Installation
+
+    pip install ipynb_strip_copy
+
+## Quick-Start
+
+Open
+up [demo_rubric.ipynb](https://github.com/matthigger/ipynb_strip_copy/blob/main/demo_rubric.ipynb)
+and use the
+command line interface via the jupyter magic command `!`:
+
+    !python -m ipynb_strip_copy demo_rubric.ipynb
+
+## Usage
+
+Commands are explicitly written into the jupyter notebook's markdown or code cells and have the form:
+
+    #! rm: student, sol
+
+The command above implies the removal of its containing cell when
+the 
+- `<orig_file_name>_student.ipynb`
+- `<orig-file-name>_sol.ipynb`
+
+outputs are created via `python -m ipynb_strip_copy demo_rubric.ipynb`. The text of any command (i.e. `#! rm: student, sol` is removed in all outputs).
+
+### `#! rm`
+
+Removes the cell entirely
+
+### `#! clear`
+
+Clears cell of any contents
+
+### `#! snip-start` / `#! snip-end`
+
+Snips a section of text within the cell. For example:
+
+    # here be starter code, given to students on assignment
+    x = defaultdict(list)
+    
+    #! snip-start: student
+    # solution
+    #! snip-end: student
+
+will generate output `<orig_file_name>_student.ipynb` whose corresponding cell
+contains only:
+
+    # here be starter code, given to students on assignment
+    x = defaultdict(list)
+
+## Counting Points
+
+If the `--sum-pts` flag is passed (i.e. `!python -m ipynb_strip_copy demo_rubric.ipynb --sum-pts`) then we'll search markdown cells for "problems" and print a list of problems, their associated points and the total points for the whole assignment:
+
+    123 problem: example
+    28 part: another example
+    151 total points
+
+- points must be integers
+- A problem is defined by the first match of regular expression: `(part|problem).+\(\d+ *(points|pts)[^\(]*\)` on a line where we map characters to their lowercase version beforehand.  See [test_case_points.ipynb](test/test_case_points.ipynb) for some examples.

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+ipynb_strip_copy/__init__.py
+ipynb_strip_copy/__main__.py
+ipynb_strip_copy/command.py
+ipynb_strip_copy/count_points.py
+ipynb_strip_copy/file_ipynb.py
+ipynb_strip_copy/search_apply.py
+ipynb_strip_copy.egg-info/PKG-INFO
+ipynb_strip_copy.egg-info/SOURCES.txt
+ipynb_strip_copy.egg-info/dependency_links.txt
+ipynb_strip_copy.egg-info/top_level.txt
+test/test_quick.py
