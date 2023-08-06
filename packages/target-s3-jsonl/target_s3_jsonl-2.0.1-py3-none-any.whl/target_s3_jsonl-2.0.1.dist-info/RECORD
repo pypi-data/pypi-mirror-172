@@ -1,0 +1,9 @@
+target_s3_json/__init__.py,sha256=XPVFKDeSxGgy_vFnO2CNZTP5u-VGll-WS4wB6wy8A0I,497
+target_s3_json/logging.conf,sha256=erahU2eOyFu9aZMWaSjQb-oUfqucntt4RJ7uunrN-as,297
+target_s3_json/s3.py,sha256=eWjuV7bTp0xw5txYSh2ua_LiUcsHAm3DNINkgn9DarE,11097
+target_s3_jsonl-2.0.1.dist-info/LICENSE,sha256=q8_GG06iKdCqCfpZ9-GBBSsxxQN1bIJ2ivJFy2YyySU,11339
+target_s3_jsonl-2.0.1.dist-info/METADATA,sha256=NJv3HOU_-6J7LpyjrT523MtrQKQDbv63pcmrwdRLZY4,9326
+target_s3_jsonl-2.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+target_s3_jsonl-2.0.1.dist-info/entry_points.txt,sha256=PlSWNK4KV3jf-5gIWgJnWBIkIjq-cd2uErvQrBfgPN0,93
+target_s3_jsonl-2.0.1.dist-info/top_level.txt,sha256=XFSiGYyXcYwCjLf64dLv9kmou9EqNY1p4yeRHmuUsNY,15
+target_s3_jsonl-2.0.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+target-s3-json = target_s3_json:main
+target-s3-jsonl = target_s3_json:main
