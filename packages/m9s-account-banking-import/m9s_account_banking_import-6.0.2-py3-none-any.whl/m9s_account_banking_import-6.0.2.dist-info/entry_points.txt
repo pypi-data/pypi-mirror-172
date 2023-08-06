@@ -1,0 +1,2 @@
+[trytond.modules]
+account_banking_import = trytond.modules.account_banking_import

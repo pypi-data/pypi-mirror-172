@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<tree sequence="sequence">
+    <field name="rule" expand="1"/>
+    <field name="amount"/>
+    <field name="party" expand="1"/>
+    <field name="account" expand="1"/>
+    <field name="tax" expand="1"/>
+    <field name="override_default_tax" expand="1"/>
+</tree>

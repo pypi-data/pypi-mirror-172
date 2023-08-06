@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<tree>
+    <field name="date"/>
+    <field name="valuta_date"/>
+    <field name="contra_name"/>
+    <field name="contra_account"/>
+    <field name="contra_bank_code"/>
+    <field name="amount"/>
+    <field name="balance"/>
+</tree>
