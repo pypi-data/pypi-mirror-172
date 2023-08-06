@@ -1,0 +1,12 @@
+odoo_connect/__init__.py,sha256=8u5GdLwsIHsm3jD2TjYSdr3wzrdp86xx1goo0DPDIAw,3425
+odoo_connect/data.py,sha256=eh-I1Yx3-9CCE8CXG5703q0xEfyi8-ObAbM-XKj8cUU,20546
+odoo_connect/explore.py,sha256=0FVWDTDbTN7NyJmo583zE5ou6ZCYRn2CxKHkujCaC3M,7962
+odoo_connect/format.py,sha256=PLCcPdFZdjtLX2qymFecMN-jKVolKj64segM0IjJ_9g,4644
+odoo_connect/odoo_rpc.py,sha256=M0z7Ue-67eLhoRDz4Wb4horKMqbdAFfaAvYJSCOgIDE,15946
+odoo_connect/odoo_rpc_json.py,sha256=epD5nQIimhGQfQ48ejDMLXi0LnG_Ly3QzWxQRnO0GX8,1170
+odoo_connect/odoo_rpc_xml.py,sha256=YSu0cY0kX-o6y14r2-fzNuxOh7Sh6RBU59Jl0HEN658,857
+odoo_connect-0.2.1.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+odoo_connect-0.2.1.dist-info/METADATA,sha256=rWfMCFvXa_2z4UUDbMW7wmTXq1sKiDJZg7bZXsr4hZs,3546
+odoo_connect-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo_connect-0.2.1.dist-info/top_level.txt,sha256=-uSNlBlBpofNADjn-UUIXXEsh2CTLKFgFGUaxCmKXTU,13
+odoo_connect-0.2.1.dist-info/RECORD,,
