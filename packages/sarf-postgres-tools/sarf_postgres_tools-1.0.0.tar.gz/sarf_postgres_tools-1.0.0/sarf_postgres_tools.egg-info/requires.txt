@@ -1,0 +1,3 @@
+sarf_listener>=0.4
+awesome_messages
+psycopg2-binary>=2.0.0
