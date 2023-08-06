@@ -1,0 +1,12 @@
+plantanno/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plantanno/cli.py,sha256=fG9N8YG-xxfaKsjJK9Igg5vCuWrkKGHFOJ9rkcL0y48,6933
+plantanno/config.py,sha256=aSQnJVUeENiIuwXd0Txngm3KXGfwt829-E1kTYQy_oA,931
+plantanno/pipelines.py,sha256=1dWabCwMUZSKk_P4z-_-HXk8lXWR8zjt7HpC0Ofhlnk,14952
+plantanno/src.py,sha256=jWtymAbniZtqYvUfbRhs7m3TxeChRQFZdk6gOPIJpAM,45618
+plantanno/versions.py,sha256=BqI2ti-XT4lC51EbI4xz_nWNt3iiEViQMT-Fgsy5HPI,584
+PlantAnno-0.2.3.dist-info/LICENSE,sha256=IzULPsFTlrF-uHczR75Slnfo_VrUn2deqtzPAlyMZrM,1066
+PlantAnno-0.2.3.dist-info/METADATA,sha256=dq3hXmsEQcboW0WzJM25V0Dx3uE14yapV4a2m0W-ysA,1138
+PlantAnno-0.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PlantAnno-0.2.3.dist-info/entry_points.txt,sha256=W8IW0aA_l-F0VzlBHxRRMe02vpECSVJojg-CwBMUMk0,49
+PlantAnno-0.2.3.dist-info/top_level.txt,sha256=_PHSqFAZ_scA0HZaXmNlirK4YEFtiXzyNTtWogFGxUY,10
+PlantAnno-0.2.3.dist-info/RECORD,,
