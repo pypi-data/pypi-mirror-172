@@ -1,0 +1,8 @@
+numpy
+aircv
+Pillow
+opencv-python
+pywin32
+requests
+pyautogui
+pytesseract
