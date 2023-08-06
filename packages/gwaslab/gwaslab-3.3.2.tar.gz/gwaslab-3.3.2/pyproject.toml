@@ -1,0 +1,18 @@
+[build-system]
+requires = [
+    "setuptools>42",
+    "wheel",
+    "pandas>=1.2.4",
+    "numpy>=1.21.2",
+    "matplotlib>=3.5",
+    "seaborn>=0.11.1",
+    "scipy>=1.6.2",
+    "pySAM",
+    "Biopython",
+    "adjustText",
+    "liftover",
+    "statsmodels>=0.13",
+    "scikit-allel",
+    "pyensembl"
+]
+build-backend = "setuptools.build_meta"
