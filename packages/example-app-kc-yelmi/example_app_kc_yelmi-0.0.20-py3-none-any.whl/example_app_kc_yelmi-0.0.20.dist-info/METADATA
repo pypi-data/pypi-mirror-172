@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: example-app-kc-yelmi
+Version: 0.0.20
+Summary: A small example package
+Author: Yelmi Almonte
+Author-email: yelmialmonte@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: coloredlogs
+
+# Python example app
