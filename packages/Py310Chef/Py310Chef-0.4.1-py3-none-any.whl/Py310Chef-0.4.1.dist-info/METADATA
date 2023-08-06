@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: Py310Chef
+Version: 0.4.1
+Summary: (upgraded) Python implementation of a Chef API client.
+Home-page: http://github.com/tom-dierckx/pychef
+Author: Noah Kantrowitz
+Author-email: noah@coderanger.net
+Maintainer: Tom Dierckx
+Maintainer-email: tom.dierckx@digipolis.be
+License: Apache 2.0
+Requires-Python: >3.6.9
+License-File: LICENSE
+Requires-Dist: six (>=1.9.0)
+Requires-Dist: requests (>=2.7.0)
+
+PyChef
+======
+
+Updated version based on a fork of leigh-johnson/pychef to make it work in python 3.10.
+A Python API for interacting with a Chef server.
+
+Example
+-------
+
+::
+
+    from chef import autoconfigure, Node
+    
+    api = autoconfigure()
+    n = Node('web1')
+    print n['fqdn']
+    n['myapp']['version'] = '1.0'
+    n.save()
+
+Further Reading
+---------------
+
+For more information check out http://pychef.readthedocs.org/en/latest/index.html
