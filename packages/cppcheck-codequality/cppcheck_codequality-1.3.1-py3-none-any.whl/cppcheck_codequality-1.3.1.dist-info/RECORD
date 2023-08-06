@@ -1,0 +1,10 @@
+CHANGELOG.adoc,sha256=igqyGzeVX7nSmg3BS9D1O6_rUG368B76OD3hPf-fBnQ,4402
+LICENSE,sha256=vqnNmIeYDgbPN-rkUjeVVV7xb30ZMvPnglaVoVR04rc,1108
+README.md,sha256=WfMCutIZy_gVZtluRJmwuwad8tGVyuQMJhvS132w0jM,3736
+cppcheck_codequality/__init__.py,sha256=1UCBD6hsfqupXuFGKdUVwII_8tSmdA-S5r4ZbTBjJ7k,12074
+cppcheck_codequality/__main__.py,sha256=yVQ7X1JZPxBW46-sWxpGGdNw23hwKc_iuDG4lPLNuvw,3684
+cppcheck_codequality-1.3.1.dist-info/entry_points.txt,sha256=fDjOFXaibxQ4TMdCmDqcGBieQ1k5WxdR0lYMkT8W_vs,75
+cppcheck_codequality-1.3.1.dist-info/LICENSE,sha256=vqnNmIeYDgbPN-rkUjeVVV7xb30ZMvPnglaVoVR04rc,1108
+cppcheck_codequality-1.3.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+cppcheck_codequality-1.3.1.dist-info/METADATA,sha256=MmOeZFU3bVabV2FZCXxWiho7HZKIOxj8Umtm6jDmFEg,4859
+cppcheck_codequality-1.3.1.dist-info/RECORD,,
