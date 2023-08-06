@@ -1,0 +1,14 @@
+nonebot_plugin_bawiki/__init__.py,sha256=Q0IbVEkDJszF7oTYJ_Jau2apyAlDT5tUuTBNc9fS2po,9944
+nonebot_plugin_bawiki/__main__.py,sha256=2VXPuhFQIV0YLi2DkDzOMyQmxqW1jS4oJKXO_a01suc,13227
+nonebot_plugin_bawiki/config.py,sha256=OiL1eigS6-ZUBWkFseswLiP5Cb2ShiY9EF1LSg8ewnE,200
+nonebot_plugin_bawiki/const.py,sha256=EU6_TERUroll1V_rj-RL4icjsOyv2AxzezGLLcrV0fs,365
+nonebot_plugin_bawiki/data_bawiki.py,sha256=aw6P8xqbQDT2WbAXizm6YHgVTZCmItfOiBcMP8ZfWw4,3552
+nonebot_plugin_bawiki/data_gamekee.py,sha256=iifOGHjhOpgTDNBqoD8akrlr6qaZGqGOt0AKx6XHBJI,6153
+nonebot_plugin_bawiki/data_schaledb.py,sha256=bn5-P15T3nH2jVfNXzH3UfMOgbmukav0ulRxdovWKfo,17677
+nonebot_plugin_bawiki/res/calender_banner.png,sha256=O5UzUmE5uIEFtM3dvBk80K48wZY6LOCVWSsaZtp7MkA,21514
+nonebot_plugin_bawiki/res/schale_bg.jpg,sha256=SUZ8DxGZICtVDU2OnuZzp1fl51AdqYcsMbosMk3m8FI,304646
+nonebot_plugin_bawiki/util.py,sha256=deMl_vGRrx-6Yrnc0K2Ji1FAnTpO0uBQbp0nIYTBtiY,2291
+nonebot_plugin_bawiki-0.5.0b6.dist-info/LICENSE,sha256=I1G-OSMcuXsr5hhx5xw3VhkynSBMfXyoLyzh3OXgnog,1068
+nonebot_plugin_bawiki-0.5.0b6.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+nonebot_plugin_bawiki-0.5.0b6.dist-info/METADATA,sha256=Z52MiNytgxoADDErIVHsLSrFN4LCPWriP8V-dP9GKJs,6959
+nonebot_plugin_bawiki-0.5.0b6.dist-info/RECORD,,
