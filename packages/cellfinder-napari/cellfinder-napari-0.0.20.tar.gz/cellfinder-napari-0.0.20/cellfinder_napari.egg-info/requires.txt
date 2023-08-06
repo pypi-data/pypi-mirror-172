@@ -1,0 +1,15 @@
+napari
+napari-plugin-engine>=0.1.4
+napari-ndtiffs
+brainglobe-napari-io
+cellfinder-core>=0.3
+pooch>=1
+
+[dev]
+black
+bump2version
+gitpython
+pre-commit
+pytest
+pytest-cov
+pytest-qt

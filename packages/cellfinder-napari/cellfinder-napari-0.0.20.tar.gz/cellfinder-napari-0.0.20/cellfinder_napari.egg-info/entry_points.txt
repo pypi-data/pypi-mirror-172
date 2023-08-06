@@ -1,0 +1,2 @@
+[napari.manifest]
+cellfinder-napari = cellfinder_napari:napari.yaml
