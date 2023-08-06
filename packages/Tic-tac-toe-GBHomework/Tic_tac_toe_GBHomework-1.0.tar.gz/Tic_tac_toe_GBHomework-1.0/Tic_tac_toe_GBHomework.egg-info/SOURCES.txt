@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+Tic_tac_toe_GBHomework/__init__.py
+Tic_tac_toe_GBHomework.egg-info/PKG-INFO
+Tic_tac_toe_GBHomework.egg-info/SOURCES.txt
+Tic_tac_toe_GBHomework.egg-info/dependency_links.txt
+Tic_tac_toe_GBHomework.egg-info/top_level.txt
