@@ -1,0 +1,10 @@
+cppython_cmake/__init__.py,sha256=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U,3
+cppython_cmake/builder.py,sha256=z2NOze0se3KPedW08POOnUy4BMS7ZEfqxCMDAH7Z4PU,3551
+cppython_cmake/plugin.py,sha256=jxO5E7E8B-jbXHFxBE3lPDQS5qkGGxb6RM9C2zsTgco,1443
+cppython_cmake/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cppython_cmake/schema.py,sha256=wjTU9OQjssUXtNz-uPsgvMbLn5G6kPFP9T-UDp53YPY,3077
+cppython_cmake-0.1.0.dev3.dist-info/entry_points.txt,sha256=8MLTq0Tf38D_HMol_UKZlBzlM2ta3gA0UzLqzh9659E,65
+cppython_cmake-0.1.0.dev3.dist-info/WHEEL,sha256=g_UdFZqm-k6b0W64OcndB0YT_D2mFFPAYBj7-_YsSPA,87
+cppython_cmake-0.1.0.dev3.dist-info/METADATA,sha256=BClbqwB2byoRD6Fe7njPazReCbh2-ADE5gfKU8mbWHs,563
+cppython_cmake-0.1.0.dev3.dist-info/license_files/LICENSE.md,sha256=O2GDdR5BeAXcN20aptXMBkBD0QUDlBgHTw-0JJApQOM,1070
+cppython_cmake-0.1.0.dev3.dist-info/RECORD,,
