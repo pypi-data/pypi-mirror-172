@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: adatest
+Version: 0.3.5
+Summary: Adaptively test and debug any natural language machine learning model.
+Home-page: https://github.com/microsoft/adatest.git
+Author: Scott Lundberg and Marco Tulio Ribeiro
+Author-email: scott.lundberg@microsoft.com
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
