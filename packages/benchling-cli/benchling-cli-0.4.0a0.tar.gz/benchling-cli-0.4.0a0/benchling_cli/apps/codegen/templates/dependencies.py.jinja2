@@ -1,0 +1,177 @@
+"""Generated from {{ manifest.info.name }} {{ manifest.info.version }}.
+
+Do not edit manually.
+
+An instance `dependencies: Dependencies` can be used as follows:
+
+```
+{% for dependency in manifest.configuration %}
+{% if dependency.__class__.__name__ == "ManifestScalarConfig" %}
+dependencies.{{ dependency_to_snake_case(dependency) }}.value
+{% else %}
+dependencies.{{ dependency_to_snake_case(dependency) }}.value
+    {% if field_definitions_from_dependency(dependency) %}
+        {% for field in dependency.field_definitions %}
+dependencies.{{ dependency_to_snake_case(dependency) }}.fields.{{ dependency_to_snake_case(field) }}.value
+        {% endfor %}
+    {% elif options_from_dependency(dependency) %}
+        {% for option in dependency.options %}
+dependencies.{{ dependency_to_snake_case(dependency) }}.options.{{ dependency_to_snake_case(option) }}.value
+        {% endfor %}
+    {% endif %}
+{% endif %}
+{% endfor %}
+```
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import date, datetime
+from typing import Optional
+
+from benchling_api_client.v2.alpha.models.app_config_item import AppConfigItem
+from benchling_api_client.v2.types import UNSET
+from benchling_sdk.apps.config.base_decryption_provider import BaseDecryptionProvider
+from benchling_sdk.apps.config.dependencies import (
+    BaseConfigItem,
+    BaseDependencies,
+    ConfigItemContainer,
+    ParentConfigItem,
+    RequiredScalarDependencyMixin,
+    RequiredSecureTextDependencyMixin,
+    RequiredValueMixin,
+    ScalarConfigItem,
+    SecureTextDependency,
+)
+from benchling_sdk.apps.config.scalars import JsonType
+
+class Dependencies(BaseDependencies):
+{% for dependency in manifest.configuration %}
+
+    @property
+    def {{ dependency_to_snake_case(dependency) }}(self) -> {{ dependency_to_pascal_case(dependency) }}Dependency:
+{% if dependency.__class__.__name__ == "ManifestScalarConfig" %}
+  {% if is_secure_text_dependency(dependency) %}
+   {% set config_class_name = "SecureTextConfig" %}
+  {% else %}
+   {% set config_class_name = "ScalarConfig" %}
+  {% endif %}
+        config = self._store.config_by_path({{ dependency_to_pascal_case(dependency) }}Dependency.path)
+        definition = self._scalar_definitions.get(config.type.value, self._unknown_scalar_definition) if config else None
+        {% if is_secure_text_dependency(dependency) %}
+        return {{ dependency_to_pascal_case(dependency) }}Dependency(config, definition, decryption_provider=self._decryption_provider)
+        {% else %}
+        return {{ dependency_to_pascal_case(dependency) }}Dependency(config, definition)
+        {% endif %}
+
+{% else %}
+        config_item = self._store.config_by_path({{ dependency_to_pascal_case(dependency) }}Dependency.path)
+        return {{ dependency_to_pascal_case(dependency) }}Dependency(config_item, self)
+{% endif %}
+{% endfor %}
+{% for dependency in manifest.configuration %}
+
+{% if dependency.__class__.__name__ == "ManifestScalarConfig" %}
+    {% if is_secure_text_dependency(dependency) %}
+       {% set dependency_subclass_name = "SecureTextDependency" %}
+       {% set required_mixin_name = "RequiredSecureTextDependencyMixin" %}
+    {% else %}
+       {% set dependency_subclass_name = "ScalarConfigItem" %}
+       {% set scalar_type_instance = scalar_type_from_config(dependency) %}
+       {% set scalar_type = scalar_type_name(scalar_type_instance) %}
+       {% set required_mixin_name = "RequiredScalarDependencyMixin[" + scalar_type + "]" %}
+    {% endif %}
+{% else %}
+    {% set dependency_subclass_name = "ParentConfigItem" %}
+    {% set required_mixin_name = "RequiredValueMixin" %}
+{% endif %}
+
+@dataclass
+class {{ dependency_to_pascal_case(dependency) }}Dependency({{ dependency_subclass_name }}, {{ required_mixin_name }}):
+    path = ["{{ dependency.name }}"]
+    {% if field_definitions_from_dependency(dependency) %}
+
+    @property
+    def fields(self) -> {{ dependency_to_pascal_case(dependency) }}DependencyFields:
+        return {{ dependency_to_pascal_case(dependency) }}DependencyFields(self)
+    {% elif options_from_dependency(dependency) %}
+
+    @property
+    def options(self) -> {{ dependency_to_pascal_case(dependency) }}DependencyOptions:
+        return {{ dependency_to_pascal_case(dependency) }}DependencyOptions(self)
+    {% endif %}
+    {% if workflow_task_schema_output_from_dependency(dependency) and field_definitions_from_dependency(dependency.output) %}
+
+    @property
+    def output(self) -> {{ dependency_to_pascal_case(dependency) }}DependencyOutput:
+        return {{ dependency_to_pascal_case(dependency) }}DependencyOutput(self)
+
+
+@dataclass
+class {{ dependency_to_pascal_case(dependency) }}DependencyOutput(ConfigItemContainer):
+    @property
+    def fields(self) -> {{ dependency_to_pascal_case(dependency) }}DependencyOutputFields:
+        return {{ dependency_to_pascal_case(dependency) }}DependencyOutputFields(self.parent_config)
+
+    {% set output_fields_class_name = dependency_to_pascal_case(dependency) + "DependencyOutputFields" %}
+
+
+@dataclass
+class {{ output_fields_class_name }}(ConfigItemContainer):
+        {% for field in dependency.output.field_definitions %}
+            {% if not loop.first %}
+
+            {% endif %}
+            {% set inner_fields_class_name = dependency_to_pascal_case(field) + "Dependency" %}
+    @dataclass
+    class {{ inner_fields_class_name }}(BaseConfigItem, RequiredValueMixin):
+        path = ["{{ dependency.name }}", "output", "{{ field.name }}"]
+
+    @property
+    def {{ dependency_to_snake_case(field) }}(self) -> {{ inner_fields_class_name }}:
+        config_item = self.parent_config.config_context._store.config_by_path({{ output_fields_class_name }}.{{ inner_fields_class_name }}.path)
+        return {{ output_fields_class_name }}.{{ inner_fields_class_name }}(config_item)
+    {% endfor %}
+
+    {% endif %}
+    {% if field_definitions_from_dependency(dependency) %}
+
+        {% set fields_class_name = dependency_to_pascal_case(dependency) + "DependencyFields" %}
+@dataclass
+class {{ fields_class_name }}(ConfigItemContainer):
+        {% for field in dependency.field_definitions %}
+            {% if not loop.first %}
+
+            {% endif %}
+            {% set inner_fields_class_name = dependency_to_pascal_case(field) + "Dependency" %}
+    @dataclass
+    class {{ inner_fields_class_name }}(BaseConfigItem, RequiredValueMixin):
+        path = ["{{ dependency.name }}", "{{ field.name }}"]
+
+    @property
+    def {{ dependency_to_snake_case(field) }}(self) -> {{ inner_fields_class_name }}:
+        config_item = self.parent_config.config_context._store.config_by_path({{ fields_class_name }}.{{ inner_fields_class_name }}.path)
+        return {{ fields_class_name }}.{{ inner_fields_class_name }}(config_item)
+        {% endfor %}
+    {% elif options_from_dependency(dependency) %}
+
+
+        {% set options_class_name = dependency_to_pascal_case(dependency) + "DependencyOptions" %}
+@dataclass
+class {{ options_class_name }}(ConfigItemContainer):
+        {% for option in dependency.options %}
+            {% if not loop.first %}
+
+            {% endif %}
+            {% set inner_option_class_name = dependency_to_pascal_case(option) + "Dependency" %}
+    @dataclass
+    class {{ inner_option_class_name }}(BaseConfigItem, RequiredValueMixin):
+        path = ["{{ dependency.name }}", "{{ option.name }}"]
+
+    @property
+    def {{ dependency_to_snake_case(option) }}(self) -> {{ inner_option_class_name }}:
+        config_item = self.parent_config.config_context._store.config_by_path({{ options_class_name }}.{{ inner_option_class_name }}.path)
+        return {{ options_class_name }}.{{ inner_option_class_name }}(config_item)
+        {% endfor %}
+    {% endif %}
+{% endfor %}
