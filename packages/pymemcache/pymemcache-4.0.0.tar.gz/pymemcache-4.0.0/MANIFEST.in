@@ -1,0 +1,9 @@
+include README.* ChangeLog.* setup.py setup.cfg LICENSE.txt
+include *-requirements.txt tox.ini
+include pymemcache/py.typed
+recursive-include pymemcache *.py
+recursive-include pymemcache/test *.crt
+recursive-include pymemcache/test *.key
+recursive-include docs *.rst
+global-exclude *.pyc
+global-exclude *.pyo
