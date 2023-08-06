@@ -1,0 +1,11 @@
+aiogram_forms/__init__.py,sha256=8P8N7_-OMmC4Xpd7k9D5WwldtfXKwwyNOwl5KaPX3rQ,200
+aiogram_forms/base.py,sha256=A4xz_alnCoksBuZeDkgg6BOSmhe04y2mBJLtLH-Volk,9386
+aiogram_forms/const.py,sha256=xWqH8RBjusr53kFPRpFG0zo_SPGkRCYs2O0mK9SZ7Fo,363
+aiogram_forms/fields.py,sha256=ghu4PjvbAxc2kEYoNFn_Vo4dwN64kcqBEJukx14VFs8,2069
+aiogram_forms/forms.py,sha256=Tg8jKVWpl-9nqB1LBGZg26q5pJNdbaCg0UTDBw-DW_I,145
+aiogram_forms/validators.py,sha256=w9eKODTBrGgh1lFMM7opLDYB1F8X6dFFKxkZENTxPXY,1160
+LICENSE,sha256=OSxlBpk4wTHbLSuMGQrggy5dlKTznIkwWEJn2X6dohA,1096
+aiogram_forms-0.3.0.dist-info/LICENSE,sha256=OSxlBpk4wTHbLSuMGQrggy5dlKTznIkwWEJn2X6dohA,1096
+aiogram_forms-0.3.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aiogram_forms-0.3.0.dist-info/METADATA,sha256=nGDZyXaC7x3qakf6w-ye4IyZlgm1AJVdRm0RwAZg9F4,2534
+aiogram_forms-0.3.0.dist-info/RECORD,,
