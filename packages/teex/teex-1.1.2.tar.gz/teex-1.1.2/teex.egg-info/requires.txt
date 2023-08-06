@@ -1,0 +1,6 @@
+tqdm>=4.61
+numpy>=1.22
+scikit-learn>=1.1
+scipy>1.7
+sympy>=1.8
+Pillow>=9.0
