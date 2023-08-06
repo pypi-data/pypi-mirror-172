@@ -1,0 +1,11 @@
+lessline/__init__.py,sha256=0y6k8nuEg4XxLNRO0Sz_p_KUrxzqYCf0HlCKAbE3fCs,175
+lessline/text_file.py,sha256=C0-2ucjO9eooiHtfi4HmseHXG0YnVeNzDooZDC3MfTw,300
+src/__init__.py,sha256=Wub4WnCgivKJrvNiSAjkMVS_zl_J9xoL1VjjJC7Wos8,140
+src/text_file.py,sha256=JUvr_nWklidENAAzkafhJCSZLeaZwlSYB7EKygY_Ex4,147
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_text_file.py,sha256=VURTeSAYYv2x3uOuwjZIogQjY2KHCegxCekLayuNfkI,1038
+lessline-0.1.0.dist-info/LICENSE,sha256=CDQVmkZYHoKkrbNhef-TMEC-lQjUyvWn9C8K_mSlRco,1091
+lessline-0.1.0.dist-info/METADATA,sha256=xZ1Lncpvom817Ypca7WI_teFugpILGPiC7eo0cztB5M,1393
+lessline-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+lessline-0.1.0.dist-info/top_level.txt,sha256=4JDTuM2zVVvGnozyBbHzlwOOhf-XADyipvSRaTBbgz0,15
+lessline-0.1.0.dist-info/RECORD,,
