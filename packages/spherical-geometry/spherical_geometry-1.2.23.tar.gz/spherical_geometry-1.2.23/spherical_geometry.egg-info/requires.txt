@@ -1,0 +1,11 @@
+astropy>=5.0.4
+numpy>=1.18
+
+[docs]
+sphinx
+sphinx-automodapi
+numpydoc
+
+[test]
+pytest
+pytest-cov
