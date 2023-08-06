@@ -1,0 +1,3 @@
+[console_scripts]
+testscribe=testscribe.__main__:app
+
