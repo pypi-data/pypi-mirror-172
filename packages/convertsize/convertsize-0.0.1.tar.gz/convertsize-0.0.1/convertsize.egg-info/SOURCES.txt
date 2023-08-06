@@ -1,0 +1,7 @@
+LICENSE.md
+README.md
+setup.py
+convertsize.egg-info/PKG-INFO
+convertsize.egg-info/SOURCES.txt
+convertsize.egg-info/dependency_links.txt
+convertsize.egg-info/top_level.txt
