@@ -1,0 +1,5 @@
+bbrl_gym >= 0.1.2
+bbrl >= 0.1.5
+box2d
+box2d-kengz
+importlib-metadata==4.13.0
