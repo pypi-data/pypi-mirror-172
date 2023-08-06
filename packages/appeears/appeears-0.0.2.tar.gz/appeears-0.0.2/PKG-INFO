@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: appeears
+Version: 0.0.2
+Summary: Simple CLI for NASA AppEEARS API
+Home-page: https://github.com/samapriya/appeears
+Author: Samapriya Roy
+Author-email: samapriya.roy@gmail.com
+License: Apache 2.0
+Description: # appeears
+        Simple CLI for NASA AppEEARS API
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: GIS
+Description-Content-Type: text/markdown
