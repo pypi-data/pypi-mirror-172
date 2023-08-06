@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+    "setuptools>=63.4.1",
+    "setuptools_scm>=7.0.5"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "suntranslator"
+description = "A program to convert text into the Sun language"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fpdf2",
+]
+authors = [
+    { name="Carl Head", email="chead@linuxmail.org" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/cjhead/suntranslator"
+
+[tool.setuptools_scm]
+
+[project.gui-scripts]
+suntranslator = "suntranslator:main"
+
+[tool.pytest.ini_options]
+pythonpath = [ "src" ]
