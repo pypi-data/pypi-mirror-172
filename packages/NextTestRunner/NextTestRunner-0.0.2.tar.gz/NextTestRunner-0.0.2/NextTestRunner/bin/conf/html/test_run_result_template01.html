@@ -1,0 +1,1078 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <!-- import CSS -->
+    <!--    <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Import style -->
+    <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
+    <!-- Import Vue 3 -->
+    <script src="//unpkg.com/vue@3"></script>
+    <!-- Import component library -->
+    <script src="https://unpkg.com/element-plus"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.js"></script>
+    <script src="https://unpkg.com/naive-ui"></script>
+    <title>Element Plus demo</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .pass_icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #41cc86;
+        }
+
+        .error_icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #e35e53;
+        }
+
+        .failed_icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #ef8a00;
+        }
+
+        .skip_icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #8a8a8a;
+        }
+
+        .el-descriptions__body .el-descriptions__table.is-bordered .el-descriptions__cell {
+            padding-left: 8px;
+            padding-top: 3px;
+
+        }
+
+
+        .text {
+            line-height: 50px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .text_error {
+            line-height: 50px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .box-card {
+            max-width: 800px;
+
+            height: 300px;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        .demo-progress .el-progress--line {
+            margin-bottom: 10px;
+            width: 350px;
+            font-size: 10px;
+        }
+
+        .table {
+            background-color: #FFBAC3;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, .12);
+            width: 98%;
+            margin: 0 auto;
+
+        }
+    </style>
+    <style type="text/css">
+
+        .table-runner {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .slt-pre {
+            width: 100%;
+            max-height: 100px;
+            overflow-y: auto;
+        }
+
+        #result_table {
+            width: 99%;
+        }
+
+        #header_row {
+            height: 50px;
+        }
+
+        .hiddenRow {
+            display: none;
+        }
+
+        /*隐藏列*/
+
+        /*弹窗样式*/
+        .popup_window {
+            display: none;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            border: solid #627173 1px;
+            padding: 10px;
+            /*background-color: #E6E6D6; */
+            font-family: "Lucida Console", "Courier New", Courier, monospace;
+            text-align: left;
+            font-size: 8pt;
+            /* width: 500px;*/
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+
+        output_list = Array();
+
+        /* level - 0:Summary; 1:Failed; 2:All */
+
+        // 显示case
+        function showCase(level) {
+            trs = document.getElementsByTagName("tr");
+            for (var i = 2; i < trs.length; i++) {
+                let tr = trs[i];
+                var result = tr.getElementsByTagName("td")[0].className
+                if (result === "passCase") {
+                    if (level === 2 || level === 3) {
+                        tr.className = '';
+                    } else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                if (result === "failCase") {
+                    if (level === 1 || level === 3) {
+                        tr.className = '';
+                    } else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                if (result === "errorCase") {
+                    if (level === 4 || level === 3) {
+                        tr.className = '';
+                    } else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+            }
+
+        }
+
+        // 点击用例套件集的详情按钮
+        function showClassDetail(cid, count) {
+            console.log(cid, count)
+            // 将拿到的表格的行数进行保存到数组里面
+            var id_list = Array(count);
+
+            console.log("id_list", id_list)
+            var toHide = 1;
+            for (var i = 0; i < count; i++) {
+                tid0 = 't' + cid.substr(1) + '.' + (i + 1);
+                console.log("參數tid0", tid0)
+                tid = 'f' + tid0;
+                console.log("參數tid", tid)
+                tr = document.getElementById(tid);
+                console.log("tr", tr)
+                if (!tr) {
+                    tid = 'p' + tid0;
+                    tr = document.getElementById(tid);
+                    console.log("if中的tr", tr)
+                }
+                id_list[i] = tid;
+                console.log("id_list[i]", tid)
+                console.log("className", tr.className)
+                if (tr.className) {
+                    console.log("className", tr.className)
+                    toHide = 0;
+                }
+            }
+            for (var i = 0; i < count; i++) {
+                tid = id_list[i];
+                if (toHide) {
+                    document.getElementById('div_' + tid).style.display = !'none';
+                    document.getElementById(tid).className = 'hiddenRow';
+                } else {
+                    document.getElementById(tid).className = '';
+                }
+            }
+        }
+
+        // 点击显示测试描述详情
+        function showTestDetail(div_id) {
+            var details_div = document.getElementById(div_id);
+            var displayState = details_div.style.display;
+            // alert(displayState)
+            if (displayState !== 'block') {
+                displayState = 'block'
+                details_div.style.display = 'block'
+            } else {
+                details_div.style.display = 'none'
+            }
+        }
+
+
+        function html_escape(s) {
+            s = s.replace(/&/g, '&amp;');
+            s = s.replace(/</g, '&lt;');
+            s = s.replace(/>/g, '&gt;');
+            return s;
+        }
+
+
+        function show_img(obj) {
+            var obj1 = obj.nextElementSibling;
+            obj1.style.display = 'block';
+            var index = 0;//每张图片的下标，
+            var len = obj1.getElementsByTagName('img').length;
+            var imgyuan = obj1.getElementsByClassName('imgyuan')[0];
+            //var start=setInterval(autoPlay,500);
+            obj1.onmouseover = function () {//当鼠标光标停在图片上，则停止轮播
+                clearInterval(start);
+            }
+            obj1.onmouseout = function () {//当鼠标光标停在图片上，则开始轮播
+                start = setInterval(autoPlay, 1000);
+            }
+            for (var i = 0; i < len; i++) {
+                var font = document.createElement('font');
+                imgyuan.appendChild(font)
+            }
+            var lis = obj1.getElementsByTagName('font');//得到所有圆圈
+            changeImg(0);
+            var funny = function (i) {
+                lis[i].onmouseover = function () {
+                    index = i;
+                    changeImg(i)
+                }
+            }
+            for (var i = 0; i < lis.length; i++) {
+                funny(i);
+            }
+
+            function autoPlay() {
+                if (index > len - 1) {
+                    index = 0;
+                    clearInterval(start); //运行一轮后停止
+                }
+                changeImg(index++);
+            }
+
+            imgyuan.style.width = 25 * len + "px";
+
+            //对应圆圈和图片同步
+            function changeImg(index) {
+                var list = obj1.getElementsByTagName('img');
+                var list1 = obj1.getElementsByTagName('font');
+                for (i = 0; i < list.length; i++) {
+                    list[i].style.display = 'none';
+                    list1[i].style.backgroundColor = 'white';
+                }
+                list[index].style.display = 'block';
+                list1[index].style.backgroundColor = 'blue';
+            }
+
+        }
+
+        function hide_img(obj) {
+            obj.parentElement.style.display = "none";
+            obj.parentElement.getElementsByClassName('imgyuan')[0].innerHTML = "";
+        }
+
+        window.onload = function () {
+            var objSelectet = document.getElementById("testTime");
+            for (var i = data.length - 1; i >= 0; i--) {
+                var objOption = document.createElement("OPTION");
+                objOption.text = data[i]["startTime"];
+                objOption.value = i;
+                objSelectet.options.add(objOption);
+            }
+            let successrate = [];
+            let failrate = [];
+            let errorrate = [];
+            for (var j = 0; j < data.length; j++) {
+                if (data[j]["success"] === undefined) {
+                    data[j]["success"] = 0
+                }
+                if (data[j]["fail"] === undefined) {
+                    data[j]["fail"] = 0
+                }
+                if (data[j]["error"] === undefined) {
+                    data[j]["error"] = 0
+                }
+                console.log(data[j]["success"], data[j]["fail"], data[j]["error"])
+                //失败的数量
+                let totle = Number(data[j]["success"]) + Number(data[j]["fail"]) + Number(data[j]["error"]);
+
+                successrate.push((Number(data[j]["success"]) / totle) * 100);
+                failrate.push((Number(data[j]["fail"]) / totle) * 100);
+                errorrate.push((Number(data[j]["error"]) / totle) * 100)
+            }
+            console.log(successrate, failrate, errorrate)
+            let myChartline = echarts.init(document.getElementById('chartline'));
+            // 绘制图表
+            let optionline = {
+                title: {
+                    text: '近十次测试结果',
+                    left: 'center',
+                    top: 20,
+                    textStyle: {
+                        color: '#ccc'
+                    }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'cross',
+                        crossStyle: {
+                            color: '#999'
+                        }
+                    }
+                },
+                toolbox: {
+                    feature: {
+                        dataView: {show: true, readOnly: false},
+                        magicType: {show: true, type: ['line', 'bar']},
+                        restore: {show: true},
+                        saveAsImage: {show: true}
+                    }
+                },
+                legend: {
+                    data: ['通过率', '失败率', '错误率']
+                },
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+                        axisPointer: {
+                            type: 'shadow'
+                        }
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value',
+                        name: '百分比',
+                        min: 0,
+                        max: 100,
+                        interval: 20,
+                        axisLabel: {
+                            formatter: '{value} %'
+                        }
+                    },
+                ],
+                series: [
+                    {
+                        name: '失败率',
+                        type: 'bar',
+                        data: failrate
+                        // data: [20, 10, 15, 2, 8, 56, 45, 10, 48, 1]
+                    },
+                    {
+                        name: '错误率',
+                        type: 'line',
+                        // yAxisIndex: 1,
+                        data: errorrate
+                        // data: [1, 5, 7, 2, 5, 6, 1, 0, 4, 7]
+                    },
+                    {
+                        name: '通过率',
+                        type: 'bar',
+                        data: successrate
+                        // data: [79, 85, 78, 96, 87, 48, 54, 90, 52, 8]
+                    },
+                ]
+            };
+            myChartline.setOption(optionline);
+        }
+        // function changeResult(obj) {
+        //     var objSelectet = document.getElementById("testTime");
+        //     console.log(data[objSelectet.value])
+        //     document.getElementById("title").innerText=data[objSelectet.value]["title"];
+        //     document.getElementsByClassName("attribute")[0].innerHTML='<strong>开始时间：</strong>'+data[objSelectet.value]["startTime"];
+        //     document.getElementsByClassName("attribute")[1].innerHTML='<strong>运行时长：</strong>'+data[objSelectet.value]["duration"];
+        //     document.getElementsByClassName("attribute")[2].innerHTML='<strong>状态：</strong>'+data[objSelectet.value]["status"];
+        //      document.getElementById("btn-group").innerHTML=data[objSelectet.value]["data"];
+        //      this.changChart(data[objSelectet.value]["success"],data[objSelectet.value]["fail"],data[objSelectet.value]["error"])
+        // }
+        function changChart(success, fail, error) {
+            var myChart = echarts.init(document.getElementById('chart'));
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: '测试执行情况',
+                    x: 'center'
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                color: ['#95b75d', 'grey', '#b64645'],
+                legend: {
+                    orient: 'vertical',
+                    left: 'left',
+                    data: ['通过', '失败', '错误']
+                },
+                series: [
+                    {
+                        name: '测试执行情况',
+                        type: 'pie',
+                        radius: '60%',
+                        center: ['50%', '60%'],
+                        data: [
+                            {value: success, name: '通过'},
+                            {value: fail, name: '失败'},
+                            {value: error, name: '错误'}
+                        ],
+                        itemStyle: {
+                            emphasis: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }
+                ]
+            };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        }
+
+        function showOutput(id, name) {
+            var w = window.open("", //url
+                name,
+                "resizable,scrollbars,status,width=800,height=450");
+            d = w.document;
+            d.write("<pre>");
+            d.write(html_escape(output_list[id]));
+            d.write("\n");
+            d.write("<a href='javascript:window.close()'>close</a>\n");
+            d.write("</pre>\n");
+            d.close();
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+<div id="app">
+
+    <div style="background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);width:100%;height: 65px;margin-bottom: 10px;    box-shadow:0px 0px 12px rgba(0, 0, 0, .12);">
+
+    </div>
+    <div>
+        <el-row>
+            <el-col :span="9">
+                <div class="dis">
+                    <el-card class="box-card">
+                        <template #header>
+                            <div class="card-header">
+                                <!--                          概述-->
+                                <span>概 述</span>
+                                <!--                            <el-button class="button" text>Operation button</el-button>-->
+                            </div>
+                        </template>
+                        <el-descriptions
+                                :column="1"
+                                :size="small"
+                                border
+                        >
+                            <el-descriptions-item>
+                                <template #label>
+                                    <div class="">
+
+                                        执行时间
+                                    </div>
+                                </template>
+                                2022-10-01 10:20:15
+                            </el-descriptions-item>
+                            <el-descriptions-item>
+                                <template #label>
+                                    <div class="">
+
+                                        运行时长
+                                    </div>
+                                </template>
+                                1500s
+                            </el-descriptions-item>
+                            <el-descriptions-item>
+                                <template #label>
+                                    <div class="cell-item">
+
+                                        测试人员
+                                    </div>
+                                </template>
+                                Suzhou,guan,fl,666
+                            </el-descriptions-item>
+                            <el-descriptions-item>
+                                <template #label>
+                                    <div class="">
+
+                                        状态
+                                    </div>
+                                </template>
+                                <el-tag size="small">
+                                    总用例数
+                                </el-tag>
+                                10000
+                                <el-tag size="small" type="info">
+                                    测试通过
+                                </el-tag>
+                                10000
+                                <el-tag size="small" type="success">
+                                    测试失败
+                                </el-tag>
+                                10000
+                                <el-tag size="small" type="warning">
+                                    测试异常
+                                </el-tag>
+                                10000
+                                <el-tag size="small" type="danger">
+                                    测试跳过
+                                </el-tag>
+                                10000
+
+                            </el-descriptions-item>
+                            <el-descriptions-item>
+                                <template #label>
+                                    <div class="">
+                                        描述信息
+                                    </div>
+                                </template>
+                                进行对ai云端模型进行的第一轮自动化回归测试
+                            </el-descriptions-item>
+                        </el-descriptions>
+
+                    </el-card>
+                </div>
+            </el-col>
+            <el-col :span="12">
+
+                <el-row>
+                    <el-col :span="12">
+                        <div style="margin-bottom: 10px;margin-right: 10px;margin-left: 40px">
+                            <el-card shadow="hover">
+                                <div class="pass_icon" style="float: left">
+                                    <div class="text">
+                                        PASS
+                                    </div>
+                                </div>
+                                <div style="float: left;margin-left: 10px;padding-bottom: 20px">
+                                    <div style="padding-bottom: 2px;color:#525f7f ">
+                                        PASS COUNT
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 18px;font-weight: bold;float: left;margin-right: 50px;max-width: 100px">
+                                            78500
+                                        </div>
+                                    </div>
+                                    <div style="clear:both;margin-top: 10px;margin-bottom: 10px">
+                                        pass rate
+                                    </div>
+                                    <div style="width: 200px;clear:both;margin-left: -8px">
+                                        <el-progress
+
+                                                :stroke-width="10"
+                                                :percentage="50"
+
+                                        />
+                                    </div>
+
+                                </div>
+                                <div style="float: right;">
+                                    <el-progress type="dashboard" :percentage="dashboard_percentage" :color="colors"/>
+
+                                </div>
+                            </el-card>
+
+                        </div>
+                    </el-col>
+
+                    <el-col :span="12">
+                        <div style="margin-bottom: 10px;margin-right: 10px;margin-left: 40px">
+                            <el-card shadow="hover">
+                                <div class="failed_icon" style="float: left">
+                                    <div class="text">
+                                        FAIL
+                                    </div>
+                                </div>
+                                <div style="float: left;margin-left: 10px;padding-bottom: 20px">
+                                    <div style="padding-bottom: 2px;color:#525f7f ">
+                                        FAILED COUNT
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 18px;font-weight: bold;float: left;margin-right: 50px;max-width: 100px">
+                                            78500
+                                        </div>
+                                    </div>
+                                    <div style="clear:both;margin-top: 10px;margin-bottom: 10px">
+                                        failed rate
+                                    </div>
+                                    <div style="width: 200px;clear:both;margin-left: -8px">
+                                        <el-progress
+
+                                                :stroke-width="10"
+                                                :percentage="50"
+
+                                        />
+                                    </div>
+
+                                </div>
+                                <div style="float: right;">
+                                    <el-progress type="dashboard" :percentage="dashboard_percentage" :color="colors"/>
+
+                                </div>
+                            </el-card>
+
+                        </div>
+
+
+                    </el-col>
+                    <el-col :span="12">
+                        <div style="margin-bottom: 10px;margin-right: 10px;margin-left: 40px">
+                            <el-card shadow="hover">
+                                <div class="error_icon" style="float: left">
+                                    <div class="text_error">
+                                        ERROR
+                                    </div>
+                                </div>
+                                <div style="float: left;margin-left: 10px;padding-bottom: 20px">
+                                    <div style="padding-bottom: 2px;color:#525f7f ">
+                                        ERROR COUNT
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 18px;font-weight: bold;float: left;margin-right: 50px;max-width: 100px">
+                                            78500
+                                        </div>
+                                    </div>
+                                    <div style="clear:both;margin-top: 10px;margin-bottom: 10px">
+                                        error rate
+                                    </div>
+                                    <div style="width: 200px;clear:both;margin-left: -8px">
+                                        <el-progress
+
+                                                :stroke-width="10"
+                                                :percentage="50"
+
+                                        />
+                                    </div>
+
+                                </div>
+                                <div style="float: right;">
+                                    <el-progress type="dashboard" :percentage="dashboard_percentage" :color="colors"/>
+
+                                </div>
+                            </el-card>
+
+                        </div>
+                    </el-col>
+                    <el-col :span="12">
+                        <div style="margin-bottom: 10px;margin-right: 10px;margin-left: 40px">
+                            <el-card shadow="hover">
+                                <div class="skip_icon" style="float: left">
+                                    <div class="text">
+                                        SKIP
+                                    </div>
+                                </div>
+                                <div style="float: left;margin-left: 10px;padding-bottom: 20px">
+                                    <div style="padding-bottom: 2px;color:#525f7f ">
+                                        SKIPPED COUNT
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 18px;font-weight: bold;float: left;margin-right: 50px;max-width: 100px">
+                                            78500
+                                        </div>
+                                    </div>
+                                    <div style="clear:both;margin-top: 10px;margin-bottom: 10px">
+                                        skipped rate
+                                    </div>
+                                    <div style="width: 200px;clear:both;margin-left: -8px">
+                                        <el-progress
+
+                                                :stroke-width="10"
+                                                :percentage="50"
+
+                                        />
+                                    </div>
+
+                                </div>
+                                <div style="float: right;">
+                                    <el-progress type="dashboard" :percentage="dashboard_percentage" :color="colors"/>
+
+                                </div>
+                            </el-card>
+
+                        </div>
+
+                    </el-col>
+                </el-row>
+
+                <!--            <div id="main" style="width: 100px;height:200px;"></div>-->
+            </el-col>
+        </el-row>
+    </div>
+    <div style="width: 98%;margin: 20px auto;word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+    border: 0 solid #eceef3;
+    border-radius: 0.75rem;
+    box-shadow: 0 3px 3px -1px rgba(10,22,70,.1),0 0 1px 0rgba(10,22,70,.06);
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+">
+        <table id='result_table' class="table-runner
+
+        ">
+            <colgroup>
+                <col align='left'/>
+                <col align='right'/>
+                <col align='right'/>
+                <col align='right'/>
+                <col align='right'/>
+                <col align='right'/>
+                <col align='right'/>
+            </colgroup>
+            <tr id='header_row' class="bg-gray-200 bg-opacity-50">
+                <td class="border border-green-600">测试套件/测试用例</td>
+                <td>总数</td>
+                <td>通过</td>
+                <td>失败</td>
+                <td>错误</td>
+                <th>视图</th>
+                <th>错误截图</th>
+            </tr>
+            {{main}}
+
+            <tr class='passClass'>
+                <td>test_baidu.BaiduTestUi</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr id='pt1.1' class='hiddenRow'>
+                <td class='passCase'>
+                    <div class='testcase'>test_baidu_ui_test</div>
+                </td>
+                <td colspan='5' align='center'>
+
+                    <!--css div popup start-->
+                    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')">
+                        成功</a>
+
+                    <div id='div_pt1.1' class="popup_window">
+                        <div style='text-align: right; color:red;cursor:pointer'>
+                            <a onfocus='this.blur();'
+                               onclick="document.getElementById('div_pt1.1').style.display = 'none' ">
+                                [x]</a>
+                        </div>
+                        <pre class="slt-pre">pt1.1: 1
+                        1
+                        1
+                        1
+                        1
+                        1
+                        1
+                        1
+                        1
+                        1
+                        </pre>
+                    </div>
+                    <!--css div popup end-->
+
+                </td>
+                <td>无截图</td>
+            </tr>
+
+            <tr id='ft1.2' class='none'>
+                <td class='passCase'>
+                    <div class='testcase'>test_skip</div>
+                </td>
+                <td colspan='5' align='center'>
+
+                    <!--css div popup start-->
+                    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')">
+                        跳过</a>
+
+                    <div id='div_ft1.2' class="popup_window">
+                        <div style='text-align: right; color:red;cursor:pointer'>
+                            <a onfocus='this.blur();'
+                               onclick="document.getElementById('div_ft1.2').style.display = 'none' ">
+                                [x]</a>
+                        </div>
+                        <pre>ft1.2: 跳过</pre>
+                    </div>
+                    <!--css div popup end-->
+
+                </td>
+                <td>无截图</td>
+            </tr>
+
+            <tr id='total_row'>
+                <td>总计</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>&nbsp;</td>
+                <th>&nbsp;</th>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        2022 © sveltest team -
+    </div>
+
+</div>
+<script>
+    const App = {
+        compilerOptions: {
+            delimiters: ['$[', ']'],
+            comments: true
+        },
+        data() {
+            return {
+                expandkeys: [3],
+                tableData: [
+                    {
+                        id: 1,
+                        date: '2016-05-02',
+                        name: 'wangxiaohu',
+                        run_time: '1s',
+                        case_count: 10,
+                        pass_count: 10,
+                        fail_count: 10,
+                        error_count: 10,
+                        skip_count: 10,
+                        screenshots: 10,
+                        view: 10,
+
+
+                    },
+                    {
+                        id: 2,
+                        date: '2016-05-04',
+                        name: 'wangxiaohu',
+                        run_time: '1s',
+                        case_count: 10,
+                        pass_count: 10,
+                        fail_count: 10,
+                        error_count: 10,
+                        skip_count: 10,
+                        screenshots: 10,
+                        view: 10,
+                    },
+                    {
+                        id: 3,
+                        date: '2016-05-01',
+                        name: 'wangxiaohu',
+                        case_count: 10,
+                        pass_count: 10,
+                        fail_count: 10,
+                        error_count: 10,
+                        skip_count: 10,
+                        screenshots: 10,
+                        view: 10,
+                        children: [
+                            {
+                                id: 31,
+                                date: '2016-05-01',
+                                name: 'wangxiaohu',
+                                run_time: '1s',
+                                case_count: 10,
+                                pass_count: 10,
+                                fail_count: 10,
+                                error_count: 10,
+                                skip_count: 10,
+                                screenshots: 10,
+                                view: 10,
+                            },
+                            {
+                                id: 32,
+                                date: '2016-05-01',
+                                name: 'wangxiaohu',
+                                run_time: '1s',
+                                case_count: 10,
+                                pass_count: 10,
+                                fail_count: 10,
+                                error_count: 10,
+                                skip_count: 10,
+                                screenshots: 10,
+                                view: 10,
+                            },
+                        ],
+                    },
+                    {
+                        id: 4,
+                        date: '2016-05-03',
+                        name: 'wangxiaohu',
+                        run_time: '1s',
+                        case_count: 10,
+                        pass_count: 10,
+                        fail_count: 10,
+                        error_count: 10,
+                        skip_count: 10,
+                        screenshots: 10,
+                        view: 10,
+                    },
+                ],
+
+
+                message: "Hello Element Plus",
+                dashboard_percentage: 10,
+
+                colors: [
+                    {color: '#f56c6c', percentage: 20},
+                    {color: '#e6a23c', percentage: 40},
+                    {color: '#5cb87a', percentage: 60},
+                    {color: '#1989fa', percentage: 80},
+                    {color: '#6f7ad3', percentage: 100},
+                ],
+            };
+        },
+        mounted() {
+
+        },
+        methods: {
+            //合并行
+
+            arraySpanMethod(row, column,
+                            rowIndex,
+                            columnIndex) {
+                if (row.row.children) {
+                    // return {
+                    //        rowspan: 1,
+                    //        colspan: 2,
+                    //    }
+                    console.log(row, column, rowIndex, columnIndex)
+                }
+
+                console.log()
+                // if (columnIndex === 0) {
+                //     if (rowIndex % 2 === 0) {
+                //         return {
+                //             rowspan: 2,
+                //             colspan: 1,
+                //         }
+                //     } else {
+                //         return {
+                //             rowspan: 0,
+                //             colspan: 0,
+                //         }
+                //     }
+                // }
+            },
+
+
+            scope_line(e) {
+                console.log('点击了', e)
+            },
+            myChart() {
+                // 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('main'));
+
+                // 指定图表的配置项和数据
+                option = {
+                    series: [
+                        {
+                            type: 'gauge',
+                            axisLine: {
+                                lineStyle: {
+                                    width: 4,
+                                    color: [
+                                        [0.3, '#67e0e3'],
+                                        [0.7, '#37a2da'],
+                                        [1, '#fd666d']
+                                    ]
+                                }
+                            },
+                            pointer: {
+                                itemStyle: {
+                                    color: 'auto'
+                                }
+                            },
+                            axisTick: {
+                                distance: -30,
+                                length: 4,
+                                lineStyle: {
+                                    color: '#f0f0f0',
+                                    width: 0.2
+                                }
+                            },
+                            splitLine: {
+                                distance: -30,
+                                length: 30,
+                                lineStyle: {
+                                    color: '#f0f0f0',
+                                    width: 0.4
+                                }
+                            },
+                            axisLabel: {
+                                color: 'auto',
+                                distance: 10,
+                                fontSize: 5
+                            },
+                            detail: {
+                                // valueAnimation: true,
+                                formatter: '{value} %',
+                                color: 'auto'
+                            },
+                            data: [
+                                {
+                                    value: 70
+                                }
+                            ]
+                        }
+                    ]
+                };
+
+
+                // 使用刚指定的配置项和数据显示图表。
+                myChart.setOption(option);
+            }
+        }
+    };
+    const app = Vue.createApp(App);
+    app.use(ElementPlus);
+    app.use(naive);
+    app.mount("#app");
+</script>
+
+</body>
+</html>
