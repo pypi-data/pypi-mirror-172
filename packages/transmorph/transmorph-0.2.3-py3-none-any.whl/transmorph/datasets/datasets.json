@@ -1,0 +1,94 @@
+[
+    {
+        "name": "chen_10x",
+        "reference": "https://www.nature.com/articles/s41422-020-0374-x",
+        "type": "single-cell RNA-seq 10x",
+        "zip_link": "https://1drv.ms/u/s!Al03Ky07bKkGheMGsWpiP1Gk7DI0DQ?e=irVnzx",
+        "zip_name": "han_chen_10x.zip",
+        "md5_hash": "e44bf5629c111aa0b6a44ee7979ce2d5",
+        "n_files": 14,
+        "files": [
+            "P01.h5ad",
+            "P02.h5ad",
+            "P03.h5ad",
+            "P04.h5ad",
+            "P05.h5ad",
+            "P06.h5ad",
+            "P07.h5ad",
+            "P08.h5ad",
+            "P09.h5ad",
+            "P10.h5ad",
+            "P11.h5ad",
+            "P12.h5ad",
+            "P14.h5ad",
+            "P15.h5ad"
+        ]
+    },
+    {
+        "name": "pal_10x",
+        "reference": "https://embopress.org/doi/full/10.15252/embj.2020107333",
+        "type": "single-cell RNA-seq 10x",
+        "zip_link": "https://1drv.ms/u/s!Al03Ky07bKkGheMM3FETrabb7Iv3Rw?e=iQp4cS",
+        "zip_name": "pal_10x.zip",
+        "md5_hash": "b1e5a3498d0a93ff9304644d91e2ecb2",
+        "n_files": 5,
+        "files": [
+            "patient_1.h5ad",
+            "patient_2.h5ad",
+            "patient_3.h5ad",
+            "patient_4.h5ad",
+            "patient_5.h5ad"
+        ]
+    },
+    {
+        "name": "travaglini_10x",
+        "reference": "https://www.nature.com/articles/s41586-020-2922-4",
+        "type": "single-cell RNA-seq 10X",
+        "zip_link": "https://1drv.ms/u/s!Al03Ky07bKkGheMKsRN8zBPNvxl2VQ?e=fbOtm9",
+        "zip_name": "travaglini.zip",
+        "md5_hash": "e26b747c749309d67b25b33fa5a803bc",
+        "n_files": 3,
+        "files": [
+            "lung_P1.h5ad",
+            "lung_P2.h5ad",
+            "lung_P3.h5ad"
+        ]
+    }, 
+    {
+        "name": "zhou_10x",
+        "reference": "https://www.nature.com/articles/s41467-020-20059-6",
+        "type": "single-cell RNA-seq 10X",
+        "zip_link": "https://1drv.ms/u/s!Al03Ky07bKkGheM8Au3yD77IRpeUcQ?e=xiOP4W",
+        "zip_name": "zhou_10x.zip",
+        "md5_hash": "9a677456e5b97e03e2170d950d71052b",
+        "n_files": 11,
+        "files": [
+            "BC2.h5ad",
+            "BC3.h5ad",
+            "BC5.h5ad",
+            "BC6.h5ad",
+            "BC10.h5ad",
+            "BC11.h5ad",
+            "BC16.h5ad",
+            "BC17.h5ad",
+            "BC20.h5ad",
+            "BC21.h5ad",
+            "BC22.h5ad"
+        ]
+    },
+    {
+        "name": "cell_cycle",
+        "reference": "multiple, see documentation",
+        "type": "Cell cycle coordinates",
+        "zip_link": "https://1drv.ms/u/s!Al03Ky07bKkGheYuVdA7Eyhb4fHUNw?e=hPd9Nm",
+        "zip_name": "cell_cycle.zip",
+        "md5_hash": "f39fa350d590a7539cbb656bd6d1a56a",
+        "n_files": 4,
+        "files": [
+            "U2OS.h5ad",
+            "CHLA9.h5ad",
+            "CHLA10.h5ad",
+            "TC71.h5ad"
+        ]
+    }
+]
