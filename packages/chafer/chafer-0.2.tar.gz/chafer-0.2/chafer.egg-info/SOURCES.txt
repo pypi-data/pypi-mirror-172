@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+chafer/__init__.py
+chafer/ch_art_suppr_tools.py
+chafer/predict_charge_centers.py
+chafer.egg-info/PKG-INFO
+chafer.egg-info/SOURCES.txt
+chafer.egg-info/dependency_links.txt
+chafer.egg-info/not-zip-safe
+chafer.egg-info/requires.txt
+chafer.egg-info/top_level.txt
