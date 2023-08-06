@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: totemp
+Version: 0.1.0
+Summary: Temperature Converter
+Home-page: https://github.com/eddyyxxyy/ToTemp
+License: MIT
+Keywords: converter,temperature,celsius,kelvin,fahrenheit,rankine,delisle,Newton,Réaumur,Rømer,Wedgwood
+Author: Edson Pimenta
+Author-email: edson.tibo@gmail.com
+Maintainer: Edson Pimenta
+Maintainer-email: edson.tibo@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/eddyyxxyy/ToTemp
+Description-Content-Type: text/markdown
+
+# ToTemp
+<div style="display: inline-block">
+  <img src="https://shields.io/pypi/v/totemp"  alt="package version"/>
+  <img src="https://img.shields.io/pypi/l/totemp.svg"  alt="license"/>
+</div>
+
+**ToTemp** is a temperature conversion package between Celcius, Delisle, Fahrenheit, Kelvin, Rankine, Reaumur, Newton and Romer
+
