@@ -1,0 +1,2 @@
+[console_scripts]
+scTenifold = scTenifold.__main__:app
