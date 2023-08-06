@@ -1,0 +1,5 @@
+mailersend_backend/__init__.py,sha256=uAVd6kdzaof5hX3KSdNl-39pZQQ3RoIrrU1K1-oKyeo,59
+mailersend_backend/mail.py,sha256=zA6VtGaJUGnmBKdtefcprf12nVvvOJnAp4AgOnxPALg,1996
+django_mailersend_backend-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+django_mailersend_backend-0.1.1.dist-info/METADATA,sha256=MrnSyaU6WKvdB4quBEs-KBJUttExZsv4OIJqZkP_zb0,499
+django_mailersend_backend-0.1.1.dist-info/RECORD,,
