@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "alpha.manifest.json",
+    "type": "object",
+    "$defs": {
+        "Profiles": {
+            "type": "object",
+             "patternProperties": {
+                 ".{1,}": {
+                     "type": "array",
+                     "items": {
+                         "type": "string"
+                     }
+                 }
+             }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "alpha.common.json"
+        },
+        {
+            "properties": {
+                "profiles": {
+                    "$ref": "#/$defs/Profiles"
+                }
+            },
+            "required": ["profiles"]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "version": "alpha",
+    "schema": "default_settings",
+    "default_settings": [
+        {
+            "name": "invalid minimal default setting example",
+            "command": "echo 'invalid minimal default setings example'",
+            "end": null
+        }
+    ]
+}

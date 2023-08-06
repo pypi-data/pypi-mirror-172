@@ -1,0 +1,31 @@
+{
+    "version": "alpha",
+    "schema": "default_settings",
+    "default_settings": [
+        {
+            "name": "Mission Control: Disables automatic re-arranging based on most-recently-used",
+            "description": "Mission control will default to a MRU algorithm, moving the screen. This setting disables that application shuffling.",
+            "start": "mojave",
+            "check_command": "defaults read com.apple.dock mru-spaces",
+            "expected_check_state": "0",
+            "command": "defaults write com.apple.dock mru-spaces -bool false",
+            "check_output": false
+
+        },
+        {
+            "name": "Keyboard: 0-delay key repeat",
+            "enabled": false,
+            "description": "Sets a blazingly fast key repeat",
+            "start": "mojave",
+            "end": "mojave",
+            "check_command": "defaults read NSGlobalDomain KeyRepeat",
+            "expected_check_state": "1",
+            "command": "defaults write NSGlobalDomain KeyRepeat -int 1",
+            "sudo": false
+        },
+        {
+            "name": "minimal default setting example",
+            "command": "echo 'minimal default setings example'"
+        }
+    ]
+}

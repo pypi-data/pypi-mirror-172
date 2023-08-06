@@ -1,0 +1,109 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "alpha.core.json",
+    "type": "object",
+    "$defs": {
+        "OperatingSystemType": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": ["macos", "linux"]
+                },
+                "shell": {
+                    "enum": ["bash", "zsh"]
+                },
+                "package_manager": {
+                    "enum": ["yum", "apt", "brew"]
+                },
+                "packages": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "applications": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "default_dock": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "default_settings_files": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": ["name"],
+            "dependentSchemas": {
+                "packages": { "required": ["package_manager"] },
+                "applications": { "required": ["package_manager"] }
+            }
+        },
+        "ActionType": {
+            "type": "object",
+            "properties": {
+                "action": {
+                    "enum": [
+                        "copy",
+                        "symlink",
+                        "script"
+                    ]
+                },
+                "files": {
+                    "type": "object",
+                    "properties": {
+                        "terms": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "hidden": {
+                    "type": "boolean",
+                    "default": false
+                },
+                "sudo": {
+                    "type": "boolean",
+                    "default": false
+                },
+                "absolute": {
+                    "type": "boolean",
+                    "default": false
+                }
+            },
+            "required": ["action", "files"]
+
+        },
+        "ActionsType": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/ActionType"
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "alpha.common.json"
+        },
+        {
+            "properties": {
+                "os": {
+                    "$ref": "#/$defs/OperatingSystemType"
+                },
+                "actions": {
+                    "$ref": "#/$defs/ActionsType"
+                },
+                "profile": {
+                    "type": "string"
+                }
+            },
+            "required": ["profile"]
+        }
+    ]
+}

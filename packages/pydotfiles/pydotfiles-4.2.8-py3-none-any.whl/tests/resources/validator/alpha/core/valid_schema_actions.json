@@ -1,0 +1,39 @@
+{
+    "version": "alpha",
+    "schema": "core",
+    "actions": [
+        {
+            "action": "copy",
+            "files": {
+                "source.json": "destination.json"
+            }
+        },
+        {
+            "action": "symlink",
+            "files": {
+                "source.symlink": "destination"
+            }
+        },
+        {
+            "action": "script",
+            "files": {
+                "do_file.sh": "undo_file.sh"
+            }
+        },
+        {
+            "action": "script",
+            "files": {
+                "do_file.sh": null
+            }
+        },
+        {
+            "action": "copy",
+            "files": {
+                "source.json": "destination.json"
+            },
+            "hidden": true,
+            "sudo": true,
+            "absolute": true
+        }
+    ]
+}

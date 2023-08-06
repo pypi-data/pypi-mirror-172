@@ -1,0 +1,9 @@
+{
+    "version": "alpha",
+    "schema": "core",
+    "environments": [
+        {
+            "language": "not one of python, ruby, golang, or java"
+        }
+    ]
+}
