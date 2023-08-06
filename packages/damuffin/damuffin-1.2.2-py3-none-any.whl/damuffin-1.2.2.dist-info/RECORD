@@ -1,0 +1,13 @@
+damuffin/__init__.py,sha256=ylA7-JFGCFrcPm7nrJ7WRa6ZRm0w01gNpJ2vVEHRgA0,177
+damuffin/_hector.py,sha256=L6zK5kutqLdCmC7bd5kM7ZV5qyBYfSLeCYZEE9qBUGM,487
+damuffin/_net.py,sha256=rjTZ6PpMMkxuHfHVyjkWAj2UGSTMzY8IcOYA7TuIKTc,8385
+damuffin/_sysinfo.py,sha256=yRMpAfTnvOmdUJeU_BUSvSzOSQ3byw2hZwFQRcCE8Ho,8101
+damuffin/damuffin.py,sha256=uSrOjgqWqn64IsfTLsr5ouoeexA-wdEZZn6v-IzWhcs,11911
+damuffin/hector.py,sha256=L6zK5kutqLdCmC7bd5kM7ZV5qyBYfSLeCYZEE9qBUGM,487
+damuffin/net.py,sha256=rjTZ6PpMMkxuHfHVyjkWAj2UGSTMzY8IcOYA7TuIKTc,8385
+damuffin/sysinfo.py,sha256=yRMpAfTnvOmdUJeU_BUSvSzOSQ3byw2hZwFQRcCE8Ho,8101
+damuffin-1.2.2.dist-info/LICENSE,sha256=oRN7OX7W-nf6kpgw7LUqW4WhQu86A2axu51b-U3MA0U,1089
+damuffin-1.2.2.dist-info/METADATA,sha256=LhzIjK6sH9_xup4tpFRvz1CqsF8htJoRC_Zql4c8MC0,582
+damuffin-1.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+damuffin-1.2.2.dist-info/top_level.txt,sha256=jhAfX0gTmarlUxi8oinMg-Dndd0gKQ6B02gGwNTrwZ8,9
+damuffin-1.2.2.dist-info/RECORD,,
