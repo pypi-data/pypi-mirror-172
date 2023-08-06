@@ -1,0 +1,10 @@
+daas_service_sdk/__init__.py,sha256=wE-ysRweQEzgenT5Mp9XgBtBkSRNx4N5371R7etneHw,63
+daas_service_sdk/base_client.py,sha256=1kcCXOqyyjy27ON6SOROmianCXp8k2xyS1kBnRofT-U,4192
+daas_service_sdk/service_base_client.py,sha256=G7mwYpmMx6xgyM6ZJq7w7RrkmFd4OUtCJjy60kVKfT0,2064
+daas_service_sdk/entitlements/__init__.py,sha256=3NC46G7b8B88sSHn_fHknxKk7ENj8pccZw7lFre147o,75
+daas_service_sdk/entitlements/_client.py,sha256=fSz9-JOYggvQ2w0wZpsvGSsI1Y9ixpkWt8sbZya4tb4,1566
+daas_service_sdk-0.0.2.dist-info/LICENSE,sha256=TzovDSMPOicE0vv54WS5t3LgyGMz84NZNICptyaUJLc,1067
+daas_service_sdk-0.0.2.dist-info/METADATA,sha256=yJoA2Tyc3DLpUtLsHkgdTri9TWaJgSPntuU_hzuy3k0,892
+daas_service_sdk-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+daas_service_sdk-0.0.2.dist-info/top_level.txt,sha256=fo5s2wXUCoI6b1rR2bbumsjNsecK8pTXFrCFbcSnfNc,17
+daas_service_sdk-0.0.2.dist-info/RECORD,,
