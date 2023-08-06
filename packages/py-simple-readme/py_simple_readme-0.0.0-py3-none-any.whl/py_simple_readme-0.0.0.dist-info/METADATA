@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: py-simple-readme
+Version: 0.0.0
+Summary: Quick, easy, navigatable readme generator
+Author-email: AndrewSpangler@users.noreply.github.com
+Project-URL: Homepage, https://github.com/AndrewSpangler/py_simple_readme/
+Project-URL: Bug Tracker, https://github.com/AndrewSpangler/py_simple_readme/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
