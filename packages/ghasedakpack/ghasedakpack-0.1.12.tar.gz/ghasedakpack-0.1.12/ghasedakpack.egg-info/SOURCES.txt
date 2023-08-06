@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+ghasedakpack/__init__.py
+ghasedakpack/ghasedakpack.py
+ghasedakpack.egg-info/PKG-INFO
+ghasedakpack.egg-info/SOURCES.txt
+ghasedakpack.egg-info/dependency_links.txt
+ghasedakpack.egg-info/top_level.txt
