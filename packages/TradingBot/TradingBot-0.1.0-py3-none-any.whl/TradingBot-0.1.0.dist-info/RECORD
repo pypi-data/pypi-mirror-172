@@ -1,0 +1,17 @@
+TradingBot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TradingBot/main.py,sha256=gnlj9_j5DmCCKgTvWa45t0iuDYEb2PWpXjkynlXLwUA,15790
+TradingBot/strategy/__init__.py,sha256=z4OzJuxPsQptq8r7t40Teu5ccHPOChW8GshvoKvp_5k,173
+TradingBot/strategy/__main__.py,sha256=gsZXNLb0KgPOTNBw6pxXFSn8ePyCRQgJ5aRoT4SXeGU,817
+TradingBot/strategy/arron.py,sha256=X1lmtRp3BPDljkFBUSnfWGarkTPD3Doe4HTllVgfdVE,1552
+TradingBot/strategy/backtest.py,sha256=ECE012w-7Eh_Th0hkaFNuhvMOPDxFq7vM_kzUGPLfuY,26251
+TradingBot/strategy/computation.py,sha256=nYvBvPgjwr2jcPt_yhBEmVVHkO6UIK2GzswslxcgKuI,330
+TradingBot/strategy/double_momentum.py,sha256=h21zFyxDUajb9JZuEPZcE3cZCzyz8393n4JfZM-2WEY,6310
+TradingBot/strategy/momentum.py,sha256=iMaWu6e_xaccecC1OX8DRyEEXM0Y9t18S4J-kFvg5EE,10533
+TradingBot/utils/__init__.py,sha256=HNtHiqS6wwA8x0rWclkb5iQ0oX_byBjcgg04IMK29fE,50
+TradingBot/utils/data.py,sha256=2-QFMggZ2znXbYb4JRQq4K9CiX2BW5gJwirca27rGRw,1120
+TradingBot/utils/emailme.py,sha256=0OUo-PnPdZlr9dTyYH2jkcCDekmvVNL6a1McsaFc29c,571
+TradingBot/utils/tradebot.py,sha256=yYFwmzs118ylL2eIICbgqLbdhSru-6He4ShsLD8Sipc,14686
+TradingBot-0.1.0.dist-info/METADATA,sha256=IUX71hzLDlVGeJcqpLeKpydlu2rnC3b0uuqwlBGHxNs,735
+TradingBot-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+TradingBot-0.1.0.dist-info/top_level.txt,sha256=pGG6FlXNMpOg5OEzkhjZVcyX8yAcU9hMzCuSg9fGf5I,11
+TradingBot-0.1.0.dist-info/RECORD,,
