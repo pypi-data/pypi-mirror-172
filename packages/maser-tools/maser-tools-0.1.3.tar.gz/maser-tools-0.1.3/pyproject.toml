@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "maser-tools"
+version = "0.1.3"
+description = ""
+authors = ["MASER Team"]
+license = "CeCILL"
+
+# handle namespace with poetry
+packages = [
+    { include = "maser" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+numpy = "^1.23.3"
+spacepy = "^0.4.0"
+openpyxl = "^3.0.10"
+pytz = "^2022.4"
+jinja2 = "^3.1.2"
+
+[build-system]
+requires = ["poetry>=1.1.4", "setuptools"]
+build-backend = "poetry.core.masonry.api"
