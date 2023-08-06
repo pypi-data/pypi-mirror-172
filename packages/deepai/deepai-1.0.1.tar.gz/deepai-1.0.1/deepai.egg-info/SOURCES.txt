@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+deepai/__init__.py
+deepai/_version.py
+deepai/main.py
+deepai.egg-info/PKG-INFO
+deepai.egg-info/SOURCES.txt
+deepai.egg-info/dependency_links.txt
+deepai.egg-info/requires.txt
+deepai.egg-info/top_level.txt
