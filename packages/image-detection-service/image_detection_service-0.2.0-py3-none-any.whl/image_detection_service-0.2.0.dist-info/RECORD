@@ -1,0 +1,15 @@
+image_detection_service/__init__.py,sha256=IJSfGFXKbb9HVi1kMqT_-_hkRcjAkJnClihuJjFNrG0,144
+image_detection_service/api_v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_detection_service/api_v1/image_detection_service.py,sha256=VzXMeRledkyWiJN_CKxun0Oz22wlVE0btbowV6f3wpo,2130
+image_detection_service/app.py,sha256=MdNpUBOGRUZrxMZv1hhiOD-vTXmSbP5sWoDKv6RFgtk,2126
+image_detection_service/constants.py,sha256=yfSKT9Y43AwtsnQToSxGCIxg3P1AZQKAUwuDL83IRU4,810
+image_detection_service/metrics.py,sha256=9QwEqje0g3mNofdDoFHurikRM1jv0HpYYQjyu_xw47M,758
+image_detection_service/run.py,sha256=Rg7_wefEiB_vgqiKCPBdffv6t58WXu96pZ8-Vob5zSY,1034
+image_detection_service/service.py,sha256=ReIjiq7zliPra-owNTB1eEwATMEZFJSVQ0sRuFaZzio,1965
+image_detection_service/utils.py,sha256=Fysjr8viNlUTXRi8lstPA4FYFwkk-uSjBjmqE5EBYkQ,1011
+image_detection_service/version.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+image_detection_service-0.2.0.dist-info/entry_points.txt,sha256=pJ5gFkJDstsfysqEhTe5_Vmu8vhyBixzLHKY7bjMAqc,133
+image_detection_service-0.2.0.dist-info/LICENSE.txt,sha256=l9S5XIKriUACvff8BKNs_nKawIDaE6wBBXWsSDIU65Q,1091
+image_detection_service-0.2.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+image_detection_service-0.2.0.dist-info/METADATA,sha256=LtjNY87SRI7zOUGMmCTCC7PSXSUI_Y0gVCLhzs0_PHI,732
+image_detection_service-0.2.0.dist-info/RECORD,,
