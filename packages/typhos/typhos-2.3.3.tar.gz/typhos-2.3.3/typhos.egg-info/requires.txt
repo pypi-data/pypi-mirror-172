@@ -1,0 +1,13 @@
+coloredlogs
+entrypoints
+numpy
+numpydoc
+ophyd
+pcdsutils
+pydm>=1.16.1
+pyqtgraph
+qdarkstyle
+qtawesome
+qtconsole
+qtpy
+timechart
