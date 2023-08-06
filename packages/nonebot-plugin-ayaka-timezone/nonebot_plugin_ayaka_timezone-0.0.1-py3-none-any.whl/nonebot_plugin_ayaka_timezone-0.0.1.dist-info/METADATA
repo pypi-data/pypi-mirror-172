@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-ayaka-timezone
+Version: 0.0.1
+Summary: 时区助手
+Home-page: https://github.com/bridgeL/nonebot-plugin-ayaka-timezone
+License: MIT
+Author: Su
+Author-email: wxlxy316@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: nonebot-adapter-onebot (>=2.1.3,<3.0.0)
+Requires-Dist: nonebot-plugin-ayaka (>=0.3.5,<0.4.0)
+Requires-Dist: nonebot2 (>=2.0.0b5,<3.0.0)
+Project-URL: Repository, https://github.com/bridgeL/nonebot-plugin-ayaka-timezone
+Description-Content-Type: text/markdown
+
+# 时区助手
+
+基于ayaka开发的 时区助手 插件
+
+任何问题请发issue
+
+注意：只适用于群聊！
+
+<b>注意：由于更新pypi的readme.md需要占用版本号，因此其readme.md可能不是最新的，强烈建议读者前往[github仓库](https://github.com/bridgeL/nonebot-plugin-ayaka-timezone)以获取最新版本的帮助</b>
+
+
+# How to start
+
+## 安装 ayaka
+
+安装 [前置插件](https://github.com/bridgeL/nonebot-plugin-ayaka) 
+
+`poetry add nonebot-plugin-ayaka`
+
+
+## 安装 本插件
+
+安装 本插件
+
+`poetry add nonebot-plugin-ayaka-timezone`
+
+修改nonebot2  `bot.py` 
+
+```python
+nonebot.load_plugin("ayaka_timezone")
+```
+
+## 配置
+
+推荐配置（非强制要求）
+```
+COMMAND_START=["#"]
+COMMAND_SEP=[" "]
+```
+
+# 指令
+指令|参数|功能
+-|-|-
+tz_add|name, timezone|添加一条时区转换，例如，#tz_add 北京 8，#tz_add 伦敦 0，#tz_add 洛杉矶 -8
+tz|name|返回name对应时区的时间，例如 #tz 北京
+tz|number|返回对应时区的时间，例如 #tz 8
+tz_list|无|查看所有的时区转换
+
+
+
