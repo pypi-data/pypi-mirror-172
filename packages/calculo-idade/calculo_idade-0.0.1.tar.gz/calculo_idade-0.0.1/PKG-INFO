@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: calculo_idade
+Version: 0.0.1
+Summary: Calculo de idade por entrada de dados
+Home-page: https://github.com/evertonfranca23/exercicio_pypi
+Author: DeadLock
+License: UNKNOWN
+Description: # package_name
+        
+        Description. 
+        The package calculo_idade is used to:
+        	calculo_idade:
+        		- entrada de dados
+        		- calculo_idade
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+        
+        ```bash
+        pip install calculo_idade
+        ```
+        
+        ## Author
+        DeadLock
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
