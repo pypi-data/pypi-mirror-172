@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: opta-api
+Version: 0.0.5
+Summary: API wrapper for OPTA/StatsPerform
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest (>=3.7) ; extra == 'test'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'test'
+
+UNKNOWN
+

@@ -1,0 +1,9 @@
+opta_api/__init__.py,sha256=jYVozQEK7W1l5Y0Fg2A_46IlE84h9b7wXDUlTPUQSao,84
+opta_api/metadata.py,sha256=CLEEPSANlMcyFXFcsqAVhiLPEIk6Kdq2txiCHggDOwI,5087
+opta_api/optaAPI.py,sha256=pxuP78i1QEaYnEyKCrwBhUcirqgxLYL3ROFCxy76QmI,12080
+opta_api/transformers.py,sha256=nROrg1dQ9bnqAa4onjIiHdPFycuAx5rQQ0Fz7Rvy9Qo,11577
+opta_api-0.0.5.dist-info/LICENSE,sha256=RlcV46ocynjv78wlXcIWqkH2r7uXwFx9oMwJYNXCBlY,1088
+opta_api-0.0.5.dist-info/METADATA,sha256=yuGEkNL7l7tlM4v4mVQNaWFW0HaRtgAiPeTIS5xqr3Y,281
+opta_api-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+opta_api-0.0.5.dist-info/top_level.txt,sha256=jCHj2u6r6ONDuj0E9PZAjz4NA5SmekaVqTZxBqKfBmc,9
+opta_api-0.0.5.dist-info/RECORD,,
