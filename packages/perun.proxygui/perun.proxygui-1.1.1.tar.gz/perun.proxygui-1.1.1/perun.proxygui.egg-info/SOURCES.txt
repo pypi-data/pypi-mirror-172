@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+perun.proxygui.egg-info/PKG-INFO
+perun.proxygui.egg-info/SOURCES.txt
+perun.proxygui.egg-info/dependency_links.txt
+perun.proxygui.egg-info/requires.txt
+perun.proxygui.egg-info/top_level.txt
