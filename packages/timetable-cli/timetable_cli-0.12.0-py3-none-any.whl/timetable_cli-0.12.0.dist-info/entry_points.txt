@@ -1,0 +1,3 @@
+[console_scripts]
+timetable-cli=timetable_cli.cli:cli
+
