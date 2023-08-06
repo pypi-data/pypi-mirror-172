@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: incubig_raven
+Version: 1.0.1
+Summary: This module is send secure communication to clients
+Author-email: Ketan Chandra <ketan@incubig.org>
+Project-URL: Homepage, https://github.com/IncubigInnovations/communication/incubig-raven
+Project-URL: Bug Tracker, https://github.com/IncubigInnovations/communication/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+#raven documentation
+This module is used to send secured communication to incubig clients.
+
+The function takes following inputs
+- [Optional][credentials] - Credentials in a .env file @ root directory
+- [Mandatory][email_content] - A json object containing email subject, body and corresponding HTML
+- [Optional][attachment] - A JSON object ({"data":file,"name":name,"type":type})
+- [Mandatory][email_recipients] - A JSON object ({"to":[{"email":"example@example.com"},"display_name":"Display Name"],"cc":[{"email":"example@example.com"},"display_name":"Display Name"]."bcc":[{"email":"example@example.com"},"display_name":"Display Name"]})

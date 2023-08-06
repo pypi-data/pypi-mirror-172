@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "incubig_raven"
+version = "1.0.1"
+authors = [
+  { name="Ketan Chandra", email="ketan@incubig.org" },
+]
+description = "This module is send secure communication to clients"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "azure-communication-email",
+    "python-decouple"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/IncubigInnovations/communication/incubig-raven"
+"Bug Tracker" = "https://github.com/IncubigInnovations/communication/issues"
