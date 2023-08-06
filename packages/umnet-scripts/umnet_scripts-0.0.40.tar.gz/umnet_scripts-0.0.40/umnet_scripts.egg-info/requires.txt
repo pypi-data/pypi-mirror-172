@@ -1,0 +1,12 @@
+dnspython
+regex
+psycopg2-binary
+sqlalchemy
+pynetbox
+cx_Oracle
+ncclient
+python-decouple
+requests
+urllib3
+gspread
+oauth2client
