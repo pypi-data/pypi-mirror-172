@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: wacryptolib
+Version: 0.10
+Summary: Witness Angel Cryptolib
+Home-page: https://witnessangel.com/
+License: MIT
+Author: Pascal Chambon
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: decorator (>=5.1,<6.0)
+Requires-Dist: jsonrpc-requests (>=0.4.0,<0.5.0)
+Requires-Dist: jsonschema (>=4.1.2,<5.0.0)
+Requires-Dist: multitimer (>=0.3,<0.4)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: pycryptodome (>=3.9.9,<4.0.0)
+Requires-Dist: pymongo (>=4.0,<5.0)
+Requires-Dist: pytz (>=2021.3)
+Requires-Dist: pyudev (>=0.22.0,<0.23.0); sys_platform == "linux"
+Requires-Dist: pywin32 (>=300); sys_platform == "win32"
+Requires-Dist: schema (>=0.7.2,<0.8.0)
+Requires-Dist: uuid0 (>=0.2.7,<0.3.0)
+Requires-Dist: wmi (>=1.5.1,<2.0.0); sys_platform == "win32"
+Project-URL: Documentation, https://witness-angel-cryptolib.readthedocs.io/
+Project-URL: Repository, https://github.com/WitnessAngel/witness-angel-cryptolib
+Description-Content-Type: text/x-rst
+
+Witness Angel Cryptolib
+#############################
+
+.. image:: https://ci.appveyor.com/api/projects/status/y7mfa00b6c34khe0?svg=true
+    :target: https://travis-ci.com/WitnessAngel/witness-angel-cryptolib
+
+.. image:: https://readthedocs.org/projects/witness-angel-cryptolib/badge/?version=latest&style=flat
+    :target: https://witness-angel-cryptolib.readthedocs.io/en/latest/
+
+-> `Full documentation on READTHEDOCS! <https://witness-angel-cryptolib.readthedocs.io/en/latest/>`_ <-
+
+
+Overview
++++++++++++++++++++++
+
+The Witness Angel Cryptolib is a toolkit aimed at handling secure configuration-driven containers, called *cryptainers*.
+
+By leveraging a flexible JSON-based format called *cryptoconf*, users can define their own hybrid cryptosystem, recursively combining symmetric cihers, asymmetric ciphers, shared secrets, and data signatures.
+
+Access to the cyptainers is secured by a variety of actors: local device, remote server, trusted third parties...
+
+The decryption process can involve different steps, like entering passphrases, or submitting authorization requests to third parties.
+
+Overall, the lib gathers lots of utilities to generate and store cryptographic keys, encrypt/check/decrypt cryptainers, access webservices and recorder sensors, and help testing other libraries willing to extend these tools.
+
+
+CLI interface
++++++++++++++++++++++
+
+A command-line interface is available to play with simple cryptainers.
+
+If you didn't install the library via `pip`, ensure that "src/" is in your PYTHONPATH environnement variable.
+
+::
+
+    $ python -m wacryptolib --help
+
+    $ python -m wacryptolib encrypt -i <data-file> -o <cryptainer-file>
+
+    $ python -m wacryptolib decrypt -i <cryptainer-file> -o <data-file>
+
+    $ python -m wacryptolib summarize -i <cryptoconf-or-cryptainer>
+
+
+By default, CLI-generated cryptainers use a simple hard-coded cryptographic conf, using unprotected local keypairs, so they are insecure.
+Use a `--cryptoconf` argument during encryption, to specify a config with your own trusted third parties.
+But note that many cases (accessing remote web gateways, entering passphrases...) are not yet supported by this CLI.
+
