@@ -1,0 +1,3 @@
+[console_scripts]
+cinful = cinful.cinful:main
+cinful_init = cinful.cinful_initialize:main
