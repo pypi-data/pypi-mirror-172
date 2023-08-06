@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: LaharZ
+Version: 3.0.19
+Summary: Creates tif maps of lahars using QGIS
+Home-page: https://github.com/Keith1815/LaharZ
+Author: Keith Blair
+Author-email: laharz@hotmail.com
+Project-URL: Bug Tracker, https://github.com/Keith1815/LaharZ/issues
+Project-URL: repository, https://github.com/Keith1815/LaharZ
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Creates tif maps of lahars using QGIS. See documentation

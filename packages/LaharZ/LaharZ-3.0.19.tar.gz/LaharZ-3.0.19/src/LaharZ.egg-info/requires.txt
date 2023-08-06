@@ -1,0 +1,8 @@
+numpy
+gdal
+rasterio
+pillow
+scipy
+gmsh
+pyproj
+simplekml
