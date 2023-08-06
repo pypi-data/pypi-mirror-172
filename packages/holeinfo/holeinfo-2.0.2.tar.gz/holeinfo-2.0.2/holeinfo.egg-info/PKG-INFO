@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: holeinfo
+Version: 2.0.2
+Summary: Pi.Hole statistics viewer
+Home-page: https://github.com/mnk400/holeinfo
+Author: Manik
+Author-email: me@manik.cc
+License: MIT
+Keywords: pi hole manik raspberry pi adblock
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Commandline tool to display pi-hole statistics to beviewed in your terminal without any configuration or needing to log in.

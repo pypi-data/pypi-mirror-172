@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+holeinfo/__init__.py
+holeinfo/src.py
+holeinfo.egg-info/PKG-INFO
+holeinfo.egg-info/SOURCES.txt
+holeinfo.egg-info/dependency_links.txt
+holeinfo.egg-info/entry_points.txt
+holeinfo.egg-info/not-zip-safe
+holeinfo.egg-info/top_level.txt
