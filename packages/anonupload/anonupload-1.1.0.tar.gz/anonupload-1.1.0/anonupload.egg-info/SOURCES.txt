@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+anonupload/__init__.py
+anonupload/main.py
+anonupload.egg-info/PKG-INFO
+anonupload.egg-info/SOURCES.txt
+anonupload.egg-info/dependency_links.txt
+anonupload.egg-info/entry_points.txt
+anonupload.egg-info/requires.txt
+anonupload.egg-info/top_level.txt
