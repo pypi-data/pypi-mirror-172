@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+wikipediarevs.py
+wikipediarevs.egg-info/PKG-INFO
+wikipediarevs.egg-info/SOURCES.txt
+wikipediarevs.egg-info/dependency_links.txt
+wikipediarevs.egg-info/entry_points.txt
+wikipediarevs.egg-info/requires.txt
+wikipediarevs.egg-info/top_level.txt
+wikipediarevs.egg-info/zip-safe
