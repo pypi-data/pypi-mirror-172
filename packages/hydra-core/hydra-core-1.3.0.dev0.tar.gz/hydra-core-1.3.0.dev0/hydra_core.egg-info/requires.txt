@@ -1,0 +1,6 @@
+omegaconf~=2.2
+antlr4-python3-runtime==4.9.*
+packaging
+
+[:python_version < "3.9"]
+importlib-resources
