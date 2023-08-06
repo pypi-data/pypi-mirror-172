@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: PyCQuery
+Version: 1.0.4
+Summary: Python interface to Hive with pure-python Kerberos support
+Home-page: https://github.com/naver/PyCQuery
+Author: NAVER Corp.
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: NOTICE
+
+UNKNOWN
+
