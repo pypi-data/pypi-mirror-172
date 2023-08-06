@@ -1,0 +1,13 @@
+goes2go/NEW.py,sha256=hxkUPPDgNCbjv1STZbfhISVfKLi3t4xqjYIy1S-ASbU,7797
+goes2go/__init__.py,sha256=mSXJLq5EpUCaq7d9aqw1kxk-FwAKwwXDN1o5aHtZBAk,3098
+goes2go/_version.py,sha256=9jNsDyN6I-Zod7ljZd2JluWfCfimg2mWNPzS_X7zsoc,184
+goes2go/accessors.py,sha256=pU60bk5qinrLMZMs6G4ewGA59vSNMm_6cOJ9upyqqhM,41049
+goes2go/data.py,sha256=UIU44gToSspE7S2-pQRa3IOpoxEuJNvi6ryiKbFP07I,21258
+goes2go/product_table.txt,sha256=dFUomuhaQnX5t6LkktymbO1328vdCIwr5BEsbtFyHZc,6710
+goes2go/rgb.py,sha256=Ksh35J1wMbspsnmLvP9lK3FULwe-OKqoAknNh4D9S40,35109
+goes2go/tools.py,sha256=nl-MrSquCNYO6pVJnpKW_f4zybPUkgy5M4Q5yw060fg,6593
+goes2go-2022.10.0.dist-info/LICENSE,sha256=ddxdTOlC-O2LqPG27f9TY6_QlsnK9VQ4b-9IeSh_sHE,1076
+goes2go-2022.10.0.dist-info/METADATA,sha256=2nxtI43JxjslCD83LmKkVW8BiQOL1Cg-EaNUHXZZHKo,8427
+goes2go-2022.10.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+goes2go-2022.10.0.dist-info/top_level.txt,sha256=xeXcxRCqDhFVNgHl0USuSI7u-H0Q2eiFTrgdO8gWDwM,8
+goes2go-2022.10.0.dist-info/RECORD,,
