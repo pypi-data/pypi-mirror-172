@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ocr/__init__.py
+src/ocr/ocr.py
+src/ocr_meter.egg-info/PKG-INFO
+src/ocr_meter.egg-info/SOURCES.txt
+src/ocr_meter.egg-info/dependency_links.txt
+src/ocr_meter.egg-info/requires.txt
+src/ocr_meter.egg-info/top_level.txt
