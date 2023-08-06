@@ -1,0 +1,13 @@
+pupil_apriltags/bindings.py,sha256=4LXoGf37qdm8x0l0-zgggFttjVwhGKMM1vgfiUM8F2k,27521
+pupil_apriltags/__init__.py,sha256=O8Ek2eKnkpX9fBGB-9NwR2EFvB8z6ySSmnojw0Kqews,1128
+pupil_apriltags/lib/apriltag.dll,sha256=BEYKjgK7Pv_CDLYHrCDJj3ikOPYmkESiwnoAzX3sMSQ,6509568
+pupil_apriltags/lib/apriltag.lib,sha256=f2WH0hMr9T3AyTdpEBRkEd7KIQ5Bx0ZDqLvPkfqUQ-s,71714
+pupil_apriltags-1.0.4.post8.dist-info/DELVEWHEEL,sha256=_iFvxishL_hvZkKRwL5pdZThEvcekWuuoSTLSaFWtIw,613
+pupil_apriltags-1.0.4.post8.dist-info/LICENSE,sha256=2DzfpGj6SKOoPYqnE4kYifhLBW4TXo_AHpZ2ZitFmdQ,3130
+pupil_apriltags-1.0.4.post8.dist-info/METADATA,sha256=ZsbhhZbdIPGB_hMlWi-oW7Eqb8JL2LvwpT6ulDSTd7U,4363
+pupil_apriltags-1.0.4.post8.dist-info/RECORD,,
+pupil_apriltags-1.0.4.post8.dist-info/top_level.txt,sha256=f4dpHe0MvTZnrtv5KZEY-IQMRvR5ixDgTBdyignqRV0,16
+pupil_apriltags-1.0.4.post8.dist-info/WHEEL,sha256=jvh2uAAOPzVqRFR2HUfOubR4tJXimDagF1N4BQm26do,94
+pupil_apriltags.libs/.load-order-pupil_apriltags-1.0.4.post8,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pupil_apriltags.libs/msvcr100.dll,sha256=rjy2xq-6mkqlyF9mAjw1M4ylebMDJt0CkY-dVSWVA9U,829264
+pupil_apriltags.libs/pthreadvc2.dll,sha256=Dmr3JGCe9oRpgu9xcBNCbDWcRV__Mk6QbY1VyLuI0W4,82944
