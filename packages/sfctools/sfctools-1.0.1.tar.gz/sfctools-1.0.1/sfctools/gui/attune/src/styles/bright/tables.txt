@@ -1,0 +1,9 @@
+QTableView{color: black;
+selection-color: rgb(223, 224, 227);
+color:black;
+background-color: rgb(243, 244, 247);
+font: 8pt "MS Sans Serif";
+font-size:10pt;
+padding: 8pt;}
+
+QTableWidget::item{padding: 15px}
