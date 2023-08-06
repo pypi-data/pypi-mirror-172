@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/decoratio/__init__.py
+src/decoratio/__main__.py
+src/decoratio.egg-info/PKG-INFO
+src/decoratio.egg-info/SOURCES.txt
+src/decoratio.egg-info/dependency_links.txt
+src/decoratio.egg-info/requires.txt
+src/decoratio.egg-info/top_level.txt

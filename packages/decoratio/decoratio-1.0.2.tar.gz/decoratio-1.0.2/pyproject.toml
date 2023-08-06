@@ -1,0 +1,34 @@
+[build-system]
+requires = [
+    "setuptools >= 46.4.0", # (for dynamic version)
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decoratio"
+dynamic = ["version"]
+authors = [
+  { name="Nicolas C. Rochette", email="nic.rochette@gmail.com" },
+  { name="Angel G. Rivera-Colon", email="angelgr2@illinois.edu" },
+  { name="Julian M. Catchen", email="jcatchen@illinois.edu" },
+]
+description = "A bioinformatics package to estimate the depth-complexity ratio and amplification noisiness of a sequencing experiment."
+readme = "README.md"
+requires-python = ">=3.5"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+
+[project.urls]
+"Source" = "https://bitbucket.org/rochette/decoratio/"
+"Bugs & Issues" = "https://bitbucket.org/rochette/decoratio/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "decoratio.__version__"}
