@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: stock-market-lib
+Version: 0.6.1
+Home-page: https://github.com/MattiasDC/{name}
+Author: Mattias De Charleroy
+Author-email: mattias.decharleroy@gmail.com
+Platform: any
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: aiosqlite
+Requires-Dist: aiohttp
+Requires-Dist: aiohttp-client-cache
+Requires-Dist: dateparser
+Requires-Dist: jsonschema[format]
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+Requires-Dist: simputils (==0.1.0)
+Requires-Dist: sorcery
+Requires-Dist: toolz
+Requires-Dist: transitions
+Requires-Dist: yahoo-fin
+Provides-Extra: dev
+Requires-Dist: aioresponses ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-aioresponses ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: nox ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: yamllint ; extra == 'dev'
+
+stock-market-lib is a Python library that contains functionality related to stocks and the stock market in general. It also contains functionality to analyze stock time series. All classes are considered immutable.
