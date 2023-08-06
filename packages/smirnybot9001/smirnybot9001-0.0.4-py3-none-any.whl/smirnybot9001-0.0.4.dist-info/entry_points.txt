@@ -1,0 +1,4 @@
+[console_scripts]
+chatbot = smirnybot9001.chatbot:main
+overlay = smirnybot9001.overlay:main
+smirnyboot9001 = smirnybot9001.smirnyboot9001:main

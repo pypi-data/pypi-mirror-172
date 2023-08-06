@@ -1,0 +1,15 @@
+smirnybot9001/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smirnybot9001/chatbot.py,sha256=0l37EcO2zeht2_JuZLsiAwWRsM0IPwVZ_CHMAY3sejY,7213
+smirnybot9001/color_table.py,sha256=EHJAYmHvjJsTXK4D27zHuK0sxCQL83T-QH24PXZIPPs,1554
+smirnybot9001/config.py,sha256=QwmSZg5Nvlkw_3W-8oijErW4qxfBrLKyyCEzs_BnL9I,3224
+smirnybot9001/overlay.py,sha256=zMGVDrjI_kW-gFWmBLFOPm4Zf0yarvrzUoGOxymtxn4,16296
+smirnybot9001/smirnyboot9001.py,sha256=qz6g9zQx8qbh4mfDSGKyNxsznOQMadcaydbEMh7FzBc,2263
+smirnybot9001/util.py,sha256=XVbZImA5gStuXEO8MMXoOVaOL5K5Az5ccs2X-ZW-mu0,568
+smirnybot9001/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smirnybot9001/data/happy-ending.wav,sha256=GFZn3DJGlpVjhBmaIoMXli1beku8vC6FXjeWhZB4xjs,353160
+smirnybot9001/data/sample.conf,sha256=9JcerF7zr1UKw45vraTjezVrHo92NQCTdSCdMXlGHic,809
+smirnybot9001-0.0.4.dist-info/METADATA,sha256=7XoRYMXG6gSvxxsfhWehUJgIePAwJc-CRNiWJF9XWbA,42942
+smirnybot9001-0.0.4.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+smirnybot9001-0.0.4.dist-info/entry_points.txt,sha256=uMlk_oRprxKvdLI8JRRGchibeJbhDcOsmQhCHsJ8wgs,143
+smirnybot9001-0.0.4.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+smirnybot9001-0.0.4.dist-info/RECORD,,
