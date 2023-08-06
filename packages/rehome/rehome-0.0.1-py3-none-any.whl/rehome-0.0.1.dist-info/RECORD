@@ -1,0 +1,11 @@
+rehome/__init__.py,sha256=PyD3wPZpM9EtTPFhwiWWKA6ffZveHY36EUEbDRb-qNY,381
+rehome/cli.py,sha256=yDeZHQx3NVTDDTknEoRx3QAB5ZFw2Ljn-VJhXb0fmbo,196
+rehome/log_utils.py,sha256=0QzxQM69o8yyNheIs0GdcAJcZmr8zIj_PeTNYWM6MQM,636
+rehome/new_home.py,sha256=rksLM-YArEMLrR1DHl_wXCLwmT-5W3uaUTP7fTlh6Y4,727
+rehome/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rehome-0.0.1.dist-info/LICENSE,sha256=TTt3bqs-mhZ0EpRTkUr__poAxxDywNMXGJZ4FmK6t6g,1069
+rehome-0.0.1.dist-info/METADATA,sha256=oouISC1AsxT7Bc0CI0P9qsxkvqPJ1BcKhOXOHXnQBms,3605
+rehome-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rehome-0.0.1.dist-info/entry_points.txt,sha256=xUJyiR1IIiScSF123Q5KPhVd7Y_D3BEIxe1MJ2EWOpE,42
+rehome-0.0.1.dist-info/top_level.txt,sha256=8UAAH9GxWi06s0gMWhMfWPY-1ZuxRTiCDjfI3Ev5iXA,7
+rehome-0.0.1.dist-info/RECORD,,
