@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: setuptools-protobuf
+Version: 0.1.2
+Summary: Setuptools protobuf extension plugin
+Home-page: https://github.com/jelmer/setuptools-protobuf
+Author: Jelmer Vernooĳ
+Author-email: jelmer@jelmer.uk
+License: Apachev2
+Keywords: distutils,setuptools,protobuf
+Classifier: Topic :: Software Development :: Version Control
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# protobuf support for setuptools
+
+Plugin for `setuptools` that adds support for compiling protobuf files.
+
+## Usage
+
+You can configure `setuptools-protobuf` in either `setup.py`, `setup.cfg` or `pyproject.toml`.
+
+## setup.py
+
+```python
+from setuptools_protobuf import Protobuf
+
+setup(
+...
+    setup_requires=['setuptools-protobuf'],
+    protobufs=[Protobuf('example/foo.proto')],
+)
+```
+
+## setup.cfg
+
+```ini
+...
+
+[options]
+setup_requires =
+    setuptools
+    setuptools-protobuf
+```
+
+## pyproject.toml
+
+```toml
+[build-system]
+requires = ["setuptools", "setuptools-protobuf"]
+```
