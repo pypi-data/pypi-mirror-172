@@ -1,0 +1,20 @@
+Numula: a Python library for nuanced computer music
+
+Numula is a Python library for making computer-rendered music with complex, layered variation in dynamics, timing, articulation and pedaling, as is typical in human performance.  Numula can be used to render existing compositions or for algorithmic composition.  It provides textual "shorthand" notations for scores and nuance.  The output of a Numula program is a MIDI file.
+
+Numula is open-source and is on Github: https://github.com/davidpanderson/Numula/wiki
+
+--------------
+Numula: a Python library for nuanced computer music with Pianoteq
+
+Numula is a Python library for making computer-rendered music with complex, layered variation in dynamics, timing, articulation and pedaling, as is typical in human performance.  Numula can be used to render existing compositions or for algorithmic composition.  It provides textual "shorthand" notations for scores and nuance.  The output of a Numula program is a MIDI file, which can be played with Pianoteq.
+
+Numula is open-source and is on Github: https://github.com/davidpanderson/Numula/wiki
+--------------
+Numula: a Python library for nuanced computer music
+
+Numula is a Python library for making computer-rendered music with complex, layered variation in dynamics, timing, articulation and pedaling, as is typical in human performance.  Numula can be used to render existing compositions or for algorithmic composition.  It provides textual "shorthand" notations for scores and nuance.  The output of a Numula program is a MIDI file.
+
+I think some of the ideas in Numula may be relevant to Music21, and conversely.
+
+Numula is open-source and is on Github: https://github.com/davidpanderson/Numula/wiki
