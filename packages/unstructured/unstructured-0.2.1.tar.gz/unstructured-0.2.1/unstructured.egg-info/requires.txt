@@ -1,0 +1,8 @@
+lxml
+nltk
+
+[huggingface]
+transformers
+
+[pdf]
+layoutparser[layoutmodels,tesseract]
