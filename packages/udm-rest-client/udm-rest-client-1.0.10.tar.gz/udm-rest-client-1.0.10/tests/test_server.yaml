@@ -1,0 +1,7 @@
+#
+# copy this file to tests/test_server.yaml and adapt settings
+#
+host: "10.200.7.123"
+username: "Administrator"
+user_dn: "uid=Administrator,cn=users,dc=five,dc=new"
+password: "univention"
