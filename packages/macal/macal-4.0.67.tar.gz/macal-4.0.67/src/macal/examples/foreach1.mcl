@@ -1,0 +1,8 @@
+include aor, system;
+
+lvar = "Runtime test";
+Console(lvar);
+
+foreach var {
+	Console(it);
+}
