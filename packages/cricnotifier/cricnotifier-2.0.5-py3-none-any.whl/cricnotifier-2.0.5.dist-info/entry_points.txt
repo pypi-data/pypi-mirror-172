@@ -1,0 +1,3 @@
+[console_scripts]
+cricnotifier=cricnotifier.main:app
+

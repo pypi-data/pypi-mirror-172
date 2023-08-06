@@ -1,0 +1,9 @@
+cricnotifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cricnotifier/main.py,sha256=DkodZPe1IFOkRKU-gPhGz_LroLUMtGwcszTUO-cDY8c,11587
+cricnotifier/static/icon/cricNotifier.ico,sha256=8j8gS5e5pM5fL76HX3PuUpVjVTTt9d-m2Sv2DeTqprE,16958
+cricnotifier/static/icon/cricNotifier.png,sha256=JtlWRk5gJLHmnIKfTJIbQUaoMvpTe9Q8zL0giNG-Wto,1541
+cricnotifier-2.0.5.dist-info/entry_points.txt,sha256=9PKWjtc9mNynd2BP1QEVwhPmZ_aYX2ppPQTFHUXL41k,54
+cricnotifier-2.0.5.dist-info/LICENSE,sha256=5s5H01RSG2gPhKBKj70rKj_wV33QQJqLAygxnMeeQVY,1087
+cricnotifier-2.0.5.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+cricnotifier-2.0.5.dist-info/METADATA,sha256=36nPqWyXEVlMWw5yZaYmB4cDz0gJ1QODB3cct78__yo,26178
+cricnotifier-2.0.5.dist-info/RECORD,,
