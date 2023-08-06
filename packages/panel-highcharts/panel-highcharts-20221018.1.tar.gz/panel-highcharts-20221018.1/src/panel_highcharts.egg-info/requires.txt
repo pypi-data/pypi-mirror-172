@@ -1,0 +1,17 @@
+panel<1.0
+bokeh<3.0
+
+[all]
+awesome-panel-cli[dev]
+jupyterlab
+notebook
+pandas
+
+[dev]
+awesome-panel-cli[dev]
+
+[examples]
+awesome-panel-cli
+jupyterlab
+notebook
+pandas
