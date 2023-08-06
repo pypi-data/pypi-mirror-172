@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pop_archive/conf.py
+pop_archive/version.py
+pop_archive.egg-info/PKG-INFO
+pop_archive.egg-info/SOURCES.txt
+pop_archive.egg-info/dependency_links.txt
+pop_archive.egg-info/entry_points.txt
+pop_archive.egg-info/requires.txt
+pop_archive.egg-info/top_level.txt
+pop_archive/exec/tar.py
