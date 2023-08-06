@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "plexo"
+version = "1.0.0a2"
+readme = "README.md"
+description = "Opinionated, reactive, schema-driven, distributed message passing"
+authors = ["Alecks Gates <agates@mail.agates.io>"]
+license = "LGPL-3.0-or-later"
+homepage = "https://gitlab.com/agates/pyplexo/"
+repository = "https://gitlab.com/agates/pyplexo/"
+classifiers = [
+    "Environment :: Console",
+    "Framework :: AsyncIO",
+    "Framework :: Pytest",
+    "Development Status :: 3 - Alpha",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Adaptive Technologies",
+    "Topic :: Home Automation",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+build = "build.py"
+include = [
+    { path = "src/plexo/schema/*.capnp", format = "sdist"},
+    { path = "src/plexo/schema/*.py", format = [ "sdist", "wheel" ] },
+    { path = "src/plexo/schema/*.so", format = "wheel"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+capnpy = "^0.9.0"
+pyrsistent = "^0.18.0"
+pyzmq = "^24.0.0"
+returns = "^0.19.0"
+typing_extensions = "^4.0"
+python-jsonschema-objects = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.0"
+black = "^22.1.0"
+isort = "^5.8.0"
+mypy = "^0.982"
+pytest = "^7.1.3"
+pytest-asyncio = "^0.19.0"
+pytest-cov = "^4.0.0"
+pytest-mock = "*"
+pytest-mypy = "*"
+pytest-timeout = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "capnpy", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+testpaths = [
+    "tests",
+]
