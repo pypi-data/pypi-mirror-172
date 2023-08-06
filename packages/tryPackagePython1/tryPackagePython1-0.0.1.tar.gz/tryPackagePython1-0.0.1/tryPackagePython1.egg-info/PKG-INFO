@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tryPackagePython1
+Version: 0.0.1
+Summary: My own first package
+Home-page: UNKNOWN
+Author: Alex Pacheco
+Author-email: alex.pacheco.reynado@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+this would be a long description
+
