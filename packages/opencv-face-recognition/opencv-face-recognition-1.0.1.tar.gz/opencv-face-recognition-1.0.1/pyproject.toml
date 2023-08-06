@@ -1,0 +1,33 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opencv-face-recognition"
+version = "1.0.1"
+description = "Python SDK for interacting with OpenCV Face Recognition API"
+readme = "README.md"
+authors = [{ name = "Seventh Sense Artificial Intelligence Private Limited", email = "support@seventhsense.ai" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["Opencv Face Recognition", "Opencv FR", "Face Verification", "Face Recognition"]
+dependencies = [
+    'numpy', 
+    'opencv-python', 
+    'pillow', 
+    'python-dateutil', 
+    'requests'
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["mkdocs"]
+
+[project.urls]
+Homepage = "https://docs.opencv.fr/python"
