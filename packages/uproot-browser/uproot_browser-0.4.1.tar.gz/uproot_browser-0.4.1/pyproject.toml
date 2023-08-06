@@ -1,0 +1,122 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uproot_browser"
+authors = [
+  { name = "Henry Schreiner", email = "henryfs@princeton.edu" },
+]
+maintainers = [
+  { name = "The Scikit-HEP admins", email = "scikit-hep-admins@googlegroups.com" },
+]
+license = { file = "LICENSE" }
+
+description = "Tools to inspect ROOT files with uproot"
+readme = "README.md"
+
+requires-python = ">=3.7"
+
+classifiers = [
+  "License :: OSI Approved :: BSD License",
+  "Topic :: Scientific/Engineering",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Development Status :: 2 - Pre-Alpha",
+  "Typing :: Typed",
+]
+
+dynamic = ["version"]
+dependencies = [
+  "awkward >=1",
+  "click >=8",
+  "lz4",
+  "numpy >=1.13.3",
+  "rich >=12.0.0",
+  "uproot >=4.2.1",
+  "plotext >=5.2.2",
+  "hist >=2.4",
+  "textual >=0.1.17,<0.2.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest >=6",
+  "scikit-hep-testdata",
+]
+iterm = [
+  "matplotlib",
+  "itermplot",
+  "mplhep",
+]
+dev = [
+  "ipython >=6",
+  "pytest >=6",
+  "scikit-hep-testdata",
+]
+
+[project.urls]
+homepage = "https://github.com/scikit-hep/uproot-browser"
+repository = "https://github.com/scikit-hep/uproot-browser"
+
+[project.scripts]
+uproot-browser = "uproot_browser.__main__:main"
+
+[tool.hatch]
+version.source = "vcs"
+build.hooks.vcs.version-file = "src/uproot_browser/_version.py"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
+xfail_strict = true
+filterwarnings = [
+  "error",
+  "ignore:can't resolve package from __spec__ or __package__, falling back on __name__ and __path__:ImportWarning",  # PyPy NumPy
+]
+log_cli_level = "info"
+testpaths = ["tests"]
+
+
+[tool.isort]
+profile = "black"
+
+
+[tool.mypy]
+files = "src"
+python_version = "3.7"
+warn_unused_configs = true
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["plotext.*", "awkward.*", "uproot.*", "matplotlib.*"]
+ignore_missing_imports = true
+
+
+[tool.pylint]
+master.py-version = "3.7"
+master.jobs = "0"
+reports.output-format = "colorized"
+similarities.ignore-imports = "yes"
+messages_control.enable = [
+  "useless-suppression",
+]
+messages_control.disable = [
+  "broad-except",
+  "design",
+  "invalid-name",
+  "line-too-long",
+  "missing-class-docstring",
+  "missing-function-docstring",
+  "missing-module-docstring",
+  "duplicate-code",
+]
