@@ -1,0 +1,5 @@
+setup.py
+gaominghui.egg-info/PKG-INFO
+gaominghui.egg-info/SOURCES.txt
+gaominghui.egg-info/dependency_links.txt
+gaominghui.egg-info/top_level.txt
