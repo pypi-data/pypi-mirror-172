@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: meshtaichi-patcher
+Version: 0.0.1
+Summary: a mesh patcher for meshtaichi
+Author: Dean Moldovan
+Author-email: BillXu2000 <BillXu2000@126.com>
+Project-URL: Homepage, https://github.com/BillXu2000/meshtaichi_patcher
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+Some examples can be found under example folder.
+
+### install
+
+pip install -r requirements.txt
+
+python3 setup.py develop --user
+
+
