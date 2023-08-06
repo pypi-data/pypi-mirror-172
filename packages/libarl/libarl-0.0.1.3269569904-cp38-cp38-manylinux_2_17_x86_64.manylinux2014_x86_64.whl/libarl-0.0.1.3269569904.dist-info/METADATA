@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: libarl
+Version: 0.0.1.3269569904
+Summary: Core ARL model evaluator library
+Home-page: https://github.com/fvutils/libarl
+Author: Matthew Ballance
+Author-email: matt.ballance@gmail.com
+License: Apache 2.0
+Keywords: SystemVerilog,Verilog,RTL,Python
+License-File: LICENSE
+Requires-Dist: libvsc
+
+
+  Provides a library interface for creating and evaluating ARL models at an API level
+  
