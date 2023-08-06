@@ -1,0 +1,10 @@
+damuffin/__init__.py,sha256=ylA7-JFGCFrcPm7nrJ7WRa6ZRm0w01gNpJ2vVEHRgA0,177
+damuffin/_hector.py,sha256=L6zK5kutqLdCmC7bd5kM7ZV5qyBYfSLeCYZEE9qBUGM,487
+damuffin/_net.py,sha256=quORcWxiYjG_7QsrQHhYoxNULqfXaSFG0GxETNObQL0,8374
+damuffin/_sysinfo.py,sha256=uZQzqa_rx44OnzaP4A9rAwP2fPCF8wwv5al75MGeato,8099
+damuffin/damuffin.py,sha256=rMUnKzcmRzEOfRG8GuqbWKCjrgXPjXcxAqOpPCoSQfE,12019
+damuffin-1.2.6.dist-info/LICENSE,sha256=oRN7OX7W-nf6kpgw7LUqW4WhQu86A2axu51b-U3MA0U,1089
+damuffin-1.2.6.dist-info/METADATA,sha256=wJZSzTsNJOZKiGS6mMosPfxOm-A3Ck8YYCZo2cW0QPM,578
+damuffin-1.2.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+damuffin-1.2.6.dist-info/top_level.txt,sha256=jhAfX0gTmarlUxi8oinMg-Dndd0gKQ6B02gGwNTrwZ8,9
+damuffin-1.2.6.dist-info/RECORD,,
