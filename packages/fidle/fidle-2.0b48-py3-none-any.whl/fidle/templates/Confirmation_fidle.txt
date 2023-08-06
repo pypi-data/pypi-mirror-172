@@ -1,0 +1,40 @@
+
+** Confirmation de présence **
+
+Votre présence a bien été <b>prise en compte par le gestionnaire de présence.
+La procédure de récupération des attestations de présence sera <b>prochainement
+envoyée via la liste d'information Fidle</b>.
+        
+Pour vous abonner à la liste : https://fidle.cnrs.fr/listeinfo
+
+Les paramètres nécessaires à la récupération de votre attestation seront :
+     - identifiant : ${mail_id}
+     - visa        : ${attestation_visa}
+
+Ce message est automatique et ne prend pas de réponse.
+Si vous n'avez pas effectué de déclaration de présence et que vous recevez
+ce message, merci de contacter l'équipe Fidle via : contact(at)fidle.cnrs.fr
+
+L'équipe Fidle
+
+
+** Confirmation of attendance **
+
+Your attendance has been validated by the attendance manager.
+The procedure for retrieving attendance certificates will sent out shortly via the information list.
+
+To subscribe to the list: https://fidle.cnrs.fr/listeinfo
+
+The parameters required to retrieve your certificate will be :
+     - identifier : ${mail_id}
+     - visa       : ${attestation_visa}
+
+This message is automatic and takes no response.
+If you have not made a declaration of presence and you receive this message,
+please contact the team Fidle team via : contact(at)fidle.cnrs.fr
+
+Fidle Team
+
+
+Powered by Fidle/TimeSheetManager - Version : ${fidle_version}
+Site Fidle : https://fidle.cnrs.fr
