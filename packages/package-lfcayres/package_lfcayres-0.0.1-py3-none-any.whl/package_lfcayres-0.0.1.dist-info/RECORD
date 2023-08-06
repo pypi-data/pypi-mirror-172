@@ -1,0 +1,11 @@
+package-lfcayres/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package-lfcayres/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package-lfcayres/processing/combination.py,sha256=Qsx5B7uR-NQ_ZAyU87oZS7mYEWorVMsyehPz7wwYAj8,801
+package-lfcayres/processing/transformation.py,sha256=rPfCMQBWj-Xnvh0sYOkWGV7wR2rHsY3n6-HPfYZIwUk,354
+package-lfcayres/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package-lfcayres/utils/io.py,sha256=hKo68C2DqcswP3tUiik6og-EFVPVAVZUM57BN7LbV0o,199
+package-lfcayres/utils/plot.py,sha256=7rbz7mSP-2m5Mlanzcky9PuSEaWmDDiNj0vCxeuShWo,1013
+package_lfcayres-0.0.1.dist-info/METADATA,sha256=vIGqUz2VMKq88MSL_kxh7d2bBUE926jYxIuL1xD8F_U,881
+package_lfcayres-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+package_lfcayres-0.0.1.dist-info/top_level.txt,sha256=7J2Uzxh7lPpSsd3vsuq_BZSGQW9iy7Fvdr6XqdY40Ss,17
+package_lfcayres-0.0.1.dist-info/RECORD,,
