@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ssi-converter-thuongnn
+Version: 0.1.0
+Summary: demo
+License: LICENSE
+Author: Nguyen Nhu Thuong
+Author-email: thuongnn6666@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Converter
+
+Convert XML to JSON
+
+
+### prerequisite
+- you need to install below library using pip
+- $ pip install xmltodict
+ 
+### Description
+- It coverts any input.xml file into output.json.
+
+### How to run the script
+
+- First rename your file to input.xml 
+- Execute `python3 converter.py`
+- The Output will be shown below as output.json
+
+## *Author Name*
+Azhad Ghufran
+
+
+# Testing
