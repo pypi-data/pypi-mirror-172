@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Komoe
+Version: 0.2.1
+Summary: A static site generator
+Home-page: https://github.com/louisdevie/komoe
+Author: Louis DEVIE
+License: MIT License
+Keywords: static,site,website,template,templating
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# KOMOE
+
+A static site generator
+
