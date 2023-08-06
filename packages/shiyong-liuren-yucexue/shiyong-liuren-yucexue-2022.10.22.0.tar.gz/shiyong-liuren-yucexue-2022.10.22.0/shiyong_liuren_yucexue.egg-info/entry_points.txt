@@ -1,0 +1,4 @@
+[console_scripts]
+ShiyongLiurenYucexue = ShiyongLiurenYucexue.__main__:main
+shiyong-liuren-yucexue = ShiyongLiurenYucexue.__main__:main
+
