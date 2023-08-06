@@ -1,0 +1,3 @@
+[console_scripts]
+CaesarCryptanalysis = CaesarCryptanalysis:main
+
