@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+windows_adb_screen_capture/LICENSE
+windows_adb_screen_capture/README.MD
+windows_adb_screen_capture/__init__.py
+windows_adb_screen_capture/requirements.txt
+windows_adb_screen_capture/thirdparty.json
+windows_adb_screen_capture.egg-info/PKG-INFO
+windows_adb_screen_capture.egg-info/SOURCES.txt
+windows_adb_screen_capture.egg-info/dependency_links.txt
+windows_adb_screen_capture.egg-info/requires.txt
+windows_adb_screen_capture.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+include windows_adb_screen_capture/requirements.txt
+include windows_adb_screen_capture/thirdparty.json
+include windows_adb_screen_capture/README.MD
+include windows_adb_screen_capture/LICENSE
