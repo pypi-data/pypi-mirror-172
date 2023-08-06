@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/dbeasy_py/__init__.py
+src/dbeasy_py/dbeasy_py.py
+src/dbeasy_py.egg-info/PKG-INFO
+src/dbeasy_py.egg-info/SOURCES.txt
+src/dbeasy_py.egg-info/dependency_links.txt
+src/dbeasy_py.egg-info/top_level.txt
