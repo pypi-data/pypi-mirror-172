@@ -1,0 +1,7 @@
+regex
+importlib.resources
+pandas
+transformers
+numpy
+torch
+IPython
