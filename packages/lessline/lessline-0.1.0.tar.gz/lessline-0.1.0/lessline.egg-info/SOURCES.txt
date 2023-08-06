@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+lessline/__init__.py
+lessline/text_file.py
+lessline.egg-info/PKG-INFO
+lessline.egg-info/SOURCES.txt
+lessline.egg-info/dependency_links.txt
+lessline.egg-info/not-zip-safe
+lessline.egg-info/top_level.txt
+tests/__init__.py
+tests/test_text_file.py
