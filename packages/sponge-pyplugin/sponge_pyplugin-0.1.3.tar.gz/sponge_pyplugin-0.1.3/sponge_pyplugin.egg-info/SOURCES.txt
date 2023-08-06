@@ -1,0 +1,6 @@
+README.md
+setup.py
+sponge_pyplugin.egg-info/PKG-INFO
+sponge_pyplugin.egg-info/SOURCES.txt
+sponge_pyplugin.egg-info/dependency_links.txt
+sponge_pyplugin.egg-info/top_level.txt
