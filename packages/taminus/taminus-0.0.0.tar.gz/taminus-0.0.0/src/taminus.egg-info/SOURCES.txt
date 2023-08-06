@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/taminus/taminus.py
+src/taminus.egg-info/PKG-INFO
+src/taminus.egg-info/SOURCES.txt
+src/taminus.egg-info/dependency_links.txt
+src/taminus.egg-info/top_level.txt
