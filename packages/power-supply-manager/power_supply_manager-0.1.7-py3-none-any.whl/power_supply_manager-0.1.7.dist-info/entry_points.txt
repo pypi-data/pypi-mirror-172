@@ -1,0 +1,4 @@
+[console_scripts]
+power-supply-manager=power_supply_manager.power_supply_manager:app
+psm=power_supply_manager.power_supply_manager:app
+
