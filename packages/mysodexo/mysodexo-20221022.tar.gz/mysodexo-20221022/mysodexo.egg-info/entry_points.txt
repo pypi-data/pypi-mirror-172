@@ -1,0 +1,2 @@
+[console_scripts]
+mysodexo = mysodexo.cli:main
