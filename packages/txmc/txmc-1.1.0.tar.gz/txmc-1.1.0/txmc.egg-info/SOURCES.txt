@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+txmc/__init__.py
+txmc.egg-info/PKG-INFO
+txmc.egg-info/SOURCES.txt
+txmc.egg-info/dependency_links.txt
+txmc.egg-info/top_level.txt
