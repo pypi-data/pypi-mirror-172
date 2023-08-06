@@ -1,0 +1,7 @@
+jinja_docker_compose/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jinja_docker_compose/jinja_docker_compose.py,sha256=afWHeSqfq9GSzmKvvo3dxnHamJv418THQjqo9liL-Ac,978
+jinja_docker_compose/main.py,sha256=9rHbQ2pr6pCIjZmhSpU7nzKRwsO0jaqb18Dzux9SDCA,2357
+jinja_docker_compose-1.0.3.dist-info/entry_points.txt,sha256=ugnv777UGfQwJ0He0taEkD0ylsGLtjtGmXvUrwBlUVA,71
+jinja_docker_compose-1.0.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+jinja_docker_compose-1.0.3.dist-info/METADATA,sha256=6zVewLz8EVdATwvrcAEyu6t7uWnMK6qsfqZ7cn1Dthc,3352
+jinja_docker_compose-1.0.3.dist-info/RECORD,,
