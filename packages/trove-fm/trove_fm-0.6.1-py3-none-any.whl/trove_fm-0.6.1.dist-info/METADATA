@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: trove-fm
+Version: 0.6.1
+Summary: Trove Farmer's Market is an online store and headless CMS.
+Author-email: Brian Farrell <brian.farrell@me.com>
+License: AGPLv3
+Project-URL: homepage, https://trove-supply.com
+Project-URL: rest-api-docs-swagger, https://trove-supply.com/docs/
+Project-URL: rest-api-docs-redoc, https://trove-supply.com/redoc/
+Project-URL: repository, https://gitlab.com/brianfarrell/trove-fm/
+Project-URL: documentation, https://brianfarrell.gitlab.io/trove-fm/
+Keywords: commerce,CMS,headless,store
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: FastAPI
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System
+Classifier: Topic :: Office/Business
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: celery[arangodb] (==5.2.7)
+Requires-Dist: email-validator (==1.1.3)
+Requires-Dist: fastapi (==0.75.2)
+Requires-Dist: fastapi-mail (==1.0.8)
+Requires-Dist: flower (==1.0.0)
+Requires-Dist: itsdangerous (==2.1.2)
+Requires-Dist: loguru (==0.6.0)
+Requires-Dist: phonenumbers (==8.12.48)
+Requires-Dist: python-multipart (==0.0.5)
+Requires-Dist: ua-parser (==0.10.0)
+Requires-Dist: uvicorn[standard] (==0.17.6)
+Requires-Dist: alembic (==1.7.7)
+Requires-Dist: asyncpg (==0.25.0)
+Requires-Dist: databases[postgresql] (==0.5.5)
+Requires-Dist: psycopg2 (==2.9.3)
+Requires-Dist: passlib[bcrypt] (==1.7.4)
+Requires-Dist: PyJWT (==2.3.0)
+Provides-Extra: doc
+Requires-Dist: sphinx (==4.5.0) ; extra == 'doc'
+Requires-Dist: sphinxcontrib-napoleon (==0.7) ; extra == 'doc'
+Requires-Dist: sphinx-material (==0.0.35) ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: asgi-lifespan (==1.0.1) ; extra == 'test'
+Requires-Dist: coverage[toml] (==6.3.2) ; extra == 'test'
+Requires-Dist: dirty-equals (==0.4) ; extra == 'test'
+Requires-Dist: httpx (==0.22.0) ; extra == 'test'
+Requires-Dist: mypy (==0.942) ; extra == 'test'
+Requires-Dist: pytest (==7.1.1) ; extra == 'test'
+Requires-Dist: pytest-asyncio (==0.18.3) ; extra == 'test'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'test'
+
+
+=====================
+Trove Farmer's Market
+=====================
+
+TroveFM is an online store and headless CMS built with `FastAPI <https://fastapi.tiangolo.com/>`_
+
+
+Links
+-----
+
+Framework Documentation: https://brianfarrell.gitlab.io/trove-fm/
+
+License: https://www.gnu.org/licenses/agpl.html
+
+PyPi Release: https://pypi.org/project/trove-fm/
+
+
+REST API
+
+    * Endpoint: https://trove-supply.com/api/
+
+    * SwaggerUI: https://trove-supply.com/docs/
+
+    * ReDoc: https://trove-supply.com/redoc/
