@@ -1,0 +1,8 @@
+SimpleITK
+azure-storage-blob
+h5py
+matplotlib
+nibabel
+numba
+scipy
+sklearn
