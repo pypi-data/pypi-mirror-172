@@ -1,0 +1,2 @@
+[console_scripts]
+lummao = lummao.cli:cli_main
