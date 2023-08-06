@@ -1,0 +1,12 @@
+README.md
+setup.py
+MofashiXuetudeMofashuXia/README.md
+MofashiXuetudeMofashuXia/__init__.py
+MofashiXuetudeMofashuXia/__main__.py
+MofashiXuetudeMofashuXia/file.pdf
+MofashiXuetudeMofashuXia/index.html
+mofashi_xuetude_mofashu_xia.egg-info/PKG-INFO
+mofashi_xuetude_mofashu_xia.egg-info/SOURCES.txt
+mofashi_xuetude_mofashu_xia.egg-info/dependency_links.txt
+mofashi_xuetude_mofashu_xia.egg-info/entry_points.txt
+mofashi_xuetude_mofashu_xia.egg-info/top_level.txt
