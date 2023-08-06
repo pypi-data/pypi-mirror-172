@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+django_api_gen/__init__.py
+django_api_gen/utils.py
+django_api_gen/management/__init__.py
+django_api_gen/management/commands/__init__.py
+django_api_gen/management/commands/generate-api.py
+django_api_generator.egg-info/PKG-INFO
+django_api_generator.egg-info/SOURCES.txt
+django_api_generator.egg-info/dependency_links.txt
+django_api_generator.egg-info/not-zip-safe
+django_api_generator.egg-info/requires.txt
+django_api_generator.egg-info/top_level.txt
+docs/blank.txt
