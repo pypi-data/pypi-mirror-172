@@ -1,0 +1,6 @@
+numpy>=1.21.3
+ply>=3.11
+scipy>=1.7.1
+networkx>=2.3
+bs4
+ezQpy
