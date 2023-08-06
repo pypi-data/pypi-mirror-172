@@ -1,0 +1,13 @@
+rich
+pandas
+requests
+numpy
+openpyxl
+psutil
+pytest
+
+[dev]
+
+[docs]
+
+[testing]
