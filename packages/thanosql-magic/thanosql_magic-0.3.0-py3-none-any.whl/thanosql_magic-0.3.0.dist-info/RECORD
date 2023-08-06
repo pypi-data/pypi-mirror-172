@@ -1,0 +1,12 @@
+thanosql/__init__.py,sha256=QLiTdX70Oo-rblNF8svyJPQI3Emh_pGz419v3fQz6gc,54
+thanosql/exceptions.py,sha256=9a2tX5NwinTK71R7LPO_LjxZV7-QYJNeLpKgeJFtzWQ,327
+thanosql/magic.py,sha256=W95F1rD66PxA9DIjfS1Hy6JEU3Neyek6lGb8v4pGcIk,3663
+thanosql/parse.py,sha256=iuOKN_kM52zjwfzddV2FkGufLncEIodkAYcAFw5hlS4,1130
+thanosql/spinner.py,sha256=QVF2e2TRu8ebTK_VnHVlareRYxlgwLSxeFWdMpUmw6s,1140
+thanosql/utils.py,sha256=qeEwjzdncu00_owIl8ef-nnYytAwAyvxRwQfagZpbl4,3465
+thanosql/version.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+thanosql_magic-0.3.0.dist-info/LICENSE,sha256=iUz0xCh-hAUPYTiUUJoOBGVzsc9cHdFRC64Zim32hkw,1066
+thanosql_magic-0.3.0.dist-info/METADATA,sha256=bIQp5Jxfkamm1qjCDDXzxsjW1XlpVCFKuuRXLTt1vAc,978
+thanosql_magic-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+thanosql_magic-0.3.0.dist-info/top_level.txt,sha256=XeX_F3xa94Yc4DP-Y3FmAFo_EBVTytdpsoTEkKtPadI,9
+thanosql_magic-0.3.0.dist-info/RECORD,,
