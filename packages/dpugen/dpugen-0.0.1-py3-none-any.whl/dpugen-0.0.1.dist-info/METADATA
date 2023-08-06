@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dpugen
+Version: 0.0.1
+Summary: Multi-vendor DPU library to generate its configuration
+Home-page: https://github.com/vkuma82/dpugen
+Author: Mircea-Dan Gheorghe
+Author-email: mircea-dan.gheorghe@keysight.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: macaddress
+Requires-Dist: munch
+Requires-Dist: pyang
+Requires-Dist: pyangbind
+Requires-Dist: pytest
+Requires-Dist: yangson
+
+# cgyang
+
+
