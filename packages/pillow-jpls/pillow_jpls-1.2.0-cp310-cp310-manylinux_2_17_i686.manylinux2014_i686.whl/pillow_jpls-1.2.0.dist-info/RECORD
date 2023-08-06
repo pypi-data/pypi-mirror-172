@@ -1,0 +1,10 @@
+pillow_jpls-1.2.0.dist-info/top_level.txt,sha256=6vdiArAXHvh9ax5KAlJt93t7Q5ses3UL33VzHPE4E-I,12
+pillow_jpls-1.2.0.dist-info/METADATA,sha256=iQbXxdZWrwg-FnELDVqmNjETiOqpa2ljxkKbb-gCJW4,2729
+pillow_jpls-1.2.0.dist-info/LICENSE.md,sha256=QFaqDXlodCjXW-2vDzk7A1yuth_o5YoFafTFDDDQ8ak,1459
+pillow_jpls-1.2.0.dist-info/RECORD,,
+pillow_jpls-1.2.0.dist-info/WHEEL,sha256=rF5Vj-HK4jYdCECLFxDpy992VL20L_A-gqTWAioOQYM,142
+pillow_jpls/jpls_image_file.py,sha256=LvbpGgzwu2nXII8BYY3cceqgmMkIDkzZpCv_idzaEAM,2515
+pillow_jpls/jpls_image_encoder.py,sha256=8e3oyWeKcZXVHpEyXfWrEBDBWh4kcSFp_IlM3u3EluM,2629
+pillow_jpls/jpls_image_decoder.py,sha256=avcvx_3DEA4jELYDPFJdM8XePFK7rGMBBQnl280GwqY,783
+pillow_jpls/__init__.py,sha256=zNEepINvHPWKRDzAjJWrP52EU4zDUTkB69xtzBapnik,574
+pillow_jpls/_pycharls.so,sha256=pZqSdNeoDlkpfzKKEv7PN_wZB1iMsk7TWHMjesbVnwI,1041112
