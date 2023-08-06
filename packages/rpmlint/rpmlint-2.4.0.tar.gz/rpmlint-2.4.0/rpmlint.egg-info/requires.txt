@@ -1,0 +1,13 @@
+pybeam
+pyxdg
+rpm
+tomli-w
+zstandard
+pyenchant
+python-magic
+
+[:python_version < "3.11"]
+tomli
+
+[:python_version < "3.8"]
+importlib-metadata
