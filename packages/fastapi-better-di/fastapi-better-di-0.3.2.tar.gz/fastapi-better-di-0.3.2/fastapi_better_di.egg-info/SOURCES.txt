@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+fastapi_better_di/__init__.py
+fastapi_better_di/_utils.py
+fastapi_better_di/exceptions.py
+fastapi_better_di.egg-info/PKG-INFO
+fastapi_better_di.egg-info/SOURCES.txt
+fastapi_better_di.egg-info/dependency_links.txt
+fastapi_better_di.egg-info/requires.txt
+fastapi_better_di.egg-info/top_level.txt
+fastapi_better_di/patcher/__init__.py
+fastapi_better_di/patcher/_utils.py
+fastapi_better_di/patcher/auto.py
+fastapi_better_di/patcher/manual.py
