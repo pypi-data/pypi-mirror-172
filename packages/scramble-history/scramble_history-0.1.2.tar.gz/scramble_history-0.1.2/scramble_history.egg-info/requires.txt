@@ -1,0 +1,13 @@
+click>=8.0
+requests
+logzero
+IPython
+platformdirs
+
+[optional]
+orjson
+
+[testing]
+pytest
+mypy
+flake8
