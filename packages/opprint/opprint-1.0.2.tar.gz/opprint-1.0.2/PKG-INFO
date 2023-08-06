@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: opprint
+Version: 1.0.2
+Summary: Override print formatter
+Home-page: https://github.com/rapid537/op.git
+Author: rapid537
+Author-email: rapid537@zoho.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Description-Content-Type: text/markdown
+
+## installation ##
+```
+python3 -m pip install opprint
+```
+
+## usage ##
+op(***arg***, ***var***=None, ***format***=False, ***yml***=False)
+```
+from opPrint import op
+greeting = 'hello world!'
+
+# basic
+op(greeting)
+
+# with label
+op('op says...', greeting)
+
+# with standard format
+op(greeting, format=True)
+
+# with yaml format
+op(greeting, format=True, yml=True)
+
+# with all params
+op('op says...', greeting, format=True, yml=True)
+```
+
