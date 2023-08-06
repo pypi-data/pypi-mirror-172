@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: LiftoffTools
+Version: 0.4.4
+Summary: A tool for comparing annotations across genome assemblies
+Home-page: https://github.com/ashumate/LiftoffTools
+Author: Alaina Shumate
+Author-email: alainashumate@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
