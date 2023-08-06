@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: nolk-dwh-logs
+Version: 0.0.6
+Requires-Dist: requests
+Requires-Dist: importlib ; python_version == "3.8"
+
