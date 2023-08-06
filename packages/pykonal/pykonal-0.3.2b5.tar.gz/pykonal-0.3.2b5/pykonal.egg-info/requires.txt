@@ -1,0 +1,7 @@
+cython>=0.29.14
+h5py
+numpy
+scipy
+
+[tests]
+nose
