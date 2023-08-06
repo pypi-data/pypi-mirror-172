@@ -1,0 +1,6 @@
+dbutils
+PIL
+pymysql
+cx_Oracle
+paramiko
+requests
