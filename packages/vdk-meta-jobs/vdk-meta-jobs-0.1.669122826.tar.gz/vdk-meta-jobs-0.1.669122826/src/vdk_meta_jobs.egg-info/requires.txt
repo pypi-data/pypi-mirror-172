@@ -1,0 +1,4 @@
+vdk-core
+vdk-control-api-auth
+vdk-plugin-control-cli
+vdk-control-service-api
