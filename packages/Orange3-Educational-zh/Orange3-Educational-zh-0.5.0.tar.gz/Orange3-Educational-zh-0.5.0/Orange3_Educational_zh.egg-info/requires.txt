@@ -1,0 +1,11 @@
+Orange3-zh>=3.31.1
+BeautifulSoup4
+numpy
+
+[doc]
+sphinx
+recommonmark
+sphinx_rtd_theme
+
+[test]
+coverage
