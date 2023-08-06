@@ -1,0 +1,3 @@
+[console_scripts]
+hpc-blast = hpcblast.main:main
+
