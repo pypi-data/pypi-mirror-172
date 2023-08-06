@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Output file format &mdash; GiRAFR 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Detect CRISPR Cas9 editing effect" href="editing_effect.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> GiRAFR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gRNA_mutation.html">Single cell CRISPR screen gRNA library mutation profiling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_effect.html">Detect CRISPR Cas9 editing effect</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Output file format</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#grna-mutation">gRNA_mutation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-effect">editing_effect</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GiRAFR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Output file format</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/output.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="output-file-format">
+<h1>Output file format<a class="headerlink" href="#output-file-format" title="Permalink to this heading"></a></h1>
+<div class="section" id="grna-mutation">
+<h2>gRNA_mutation<a class="headerlink" href="#grna-mutation" title="Permalink to this heading"></a></h2>
+<p>consensus.bam: Bam file contains consensus sequence alignment result for each UMI.
+consensus.sequence.gRNA.variant.txt:
+Column 1: Cell barcode
+Column 2: UMI
+Column 3: Number of UMI in the cell
+Column 4: Number of reads for this UMI (default min = 1)
+Column 5: single/multiple. Single refers to UMI with only one type of sequence. Multiple refers to UMI with more than one type of sequence.
+Column 6: Consensus sequence. Sequence with most reads supported.
+Column 7: Number of reads that support the consensus sequence.
+Column 8: True/False. True: wild type sequence. False: different from reference.
+Column 9: Name of the guide. ‘multiple gene’: when UMI mapped to multiple guides with equal number of reads. The progam cannot assign gene to UMI confidently. In this case, UMI will be skipped later.
+Column 10: Guide variant type with detailed mismatch information
+Column 11: Mutation structure annotation</p>
+<p>cells.gRNA.txt
+Column 1: Cell barcode
+Column 2: Number of guides in the cell
+Column 3: Guide name.
+Column 4: WT: Intact gRNA
+Column 5: Number of UMI support wild type guide
+Column 6: Guide variant type if exist.
+Column 7: Number of UMI support mutant guide.</p>
+<p>cells.gRNA.single.txt: Cells with only one guide
+Column 1: Cell barcode
+Column 2: 1 as only one guide in the cell
+Column 3: Guide name. Guide name ends with WT represents wild type.
+Column 4: Number of UMI support mutant guide.</p>
+<p>cells.gRNA.single.MT.txt
+Column 1 – Column 4: same as cells.gRNA.single.txt
+Column 5: Mutation details. None when wildtype or soft clipping only.
+Column 6: Mutant sequence. None when wildtype or soft clipping only.</p>
+<p>MT.txt: mutations in single cell in a long format, each line contains single mutation event.
+Column 1: target gene
+Column 2: structure (defined in structure.gtf)
+Column 3: length of the structure
+Column 4: Position on the structure
+Column 5: mutation (CIGAR similar format)
+Column 6: variant name with number suffix.</p>
+<p>all.MT.txt: mutations of all in-cell guides same format as MT.txt. An important difference is multiple cells with the same variant guide will be recorded once in this file, but multiple times in MT.txt.
+consensus.sequence.gRNA.MT.txt: same format as all.MT.txt but for all mutations in consensus.sequence.gRNA.variant.txt including guides that are not detected in cells. Variants with at least 2 UMIs will be recorded. Each variant only appears once in this file.</p>
+</div>
+<div class="section" id="editing-effect">
+<h2>editing_effect<a class="headerlink" href="#editing-effect" title="Permalink to this heading"></a></h2>
+<p>For each gRNA:
+{region_name}.bam: alignment within detection window
+{region_name}.bam.featureCounts.sorted.bam: FeatureCount assigned reads to gene.
+{region_name}.consensus.sequence.txt: Consensus sequence within detection window for each UMI and cell.
+Column 1: cell barcode
+Column 2: UMI
+Column 3: Number of UMI for cell
+Column 4: Number of sequences for that UMI
+Column 5: reference sequence in the detection window
+Column 6: union sequence for that UMI in the detection window
+Column 7: union number of reads
+Column 8: Boolean True for wildtype sequence, false for mutation exist in sequence
+Column 9: mapped gene
+Column 10: mapped positions on the genome
+Column 11: is_umi_seq_different
+Column 12: reference gRNA id (region_name)</p>
+<p>{region_name}.editing_effect.cutsite.txt:
+Column 13: mutation, ‘No mutation’ given when wildtype sequence. “Deletion at cutsite”, “Insertion/Deletion somewhere else”, “Mismatch”
+Column 14: gRNA assigned to this cell</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="editing_effect.html" class="btn btn-neutral float-left" title="Detect CRISPR Cas9 editing effect" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Qian Yu.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
