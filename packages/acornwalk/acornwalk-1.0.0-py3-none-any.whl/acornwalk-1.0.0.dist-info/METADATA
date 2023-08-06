@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: acornwalk
+Version: 1.0.0
+Summary: ECMAScript AST walker for the ESTree format. Python translation of acorn-walk
+Project-URL: Homepage, https://github.com/0o120/acornwalk-python
+Author-email: 0x78 <contact@0x78.com>
+License-File: LICENSE
+Keywords: acorn,ast,ecmascript,escodegen,javascript,walker
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: General
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Acorn AST walker
+
+An abstract syntax tree walker for the
+[ESTree](https://github.com/estree/estree) format.
+
+Python translation of acorn-walk from the [acornjs/acorn](https://github.com/acornjs/acorn/blob/master/acorn-walk) repository.
