@@ -1,0 +1,13 @@
+LICENSE,sha256=HxjzbvRCvoxlm7Jn6CFBL7Vr58uYg-Jn6mteM9aMu3E,1119
+abstract_codebase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+abstract_codebase/accreditation.py,sha256=jARr-gVT4gCdOgO_qVOnUm3t1enpb8nBqapygkvrvFI,2639
+abstract_codebase/config.py,sha256=KxvEkgimKoXce7o3BA--4nurFijRLa4nHhYMTHS9dkk,7856
+abstract_codebase/directories.py,sha256=BGMTHeFlBUrvlbzEE31e9SzqWybbx_F9AIhlgSKEt0I,1300
+abstract_codebase/metacoding.py,sha256=x9tvC4jUoQc8NgS0iE6ov9GxPko-mkGGEfQWKVROpeo,2806
+abstract_codebase/registration.py,sha256=Stzm4-iQm5j5l_tb86Mw4yQQnzSnH8QwKSIO_5p6N5c,6269
+abstract_codebase/tools.py,sha256=fbTENJyNTpR-NFkkY4pmS900VZxn3B9vR-h6nHlfPN0,763
+abstract_codebase/typescripts.py,sha256=D0fYYtOselsWpU-YLMCCV6u_n6kjJTkkd5tJbiW94B0,170
+abstract_codebase-0.1.0.dist-info/LICENSE,sha256=HxjzbvRCvoxlm7Jn6CFBL7Vr58uYg-Jn6mteM9aMu3E,1119
+abstract_codebase-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+abstract_codebase-0.1.0.dist-info/METADATA,sha256=XVT7i1gepPxKc-PjAwtGUGkVDsqdebcBGKmUuhD923M,4251
+abstract_codebase-0.1.0.dist-info/RECORD,,
