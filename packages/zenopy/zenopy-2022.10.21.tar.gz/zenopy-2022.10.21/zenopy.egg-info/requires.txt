@@ -1,0 +1,17 @@
+requests
+validators
+renku-sphinx-theme
+
+[docs]
+sphinx==1.2.3
+sphinxcontrib-napoleon
+sphinx_rtd_theme
+renku-sphinx-theme
+numpydoc
+
+[lint]
+black
+
+[tests]
+pytest
+pytest-cov
