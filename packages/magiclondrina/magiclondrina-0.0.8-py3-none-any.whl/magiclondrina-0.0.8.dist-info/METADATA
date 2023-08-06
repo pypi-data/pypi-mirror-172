@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: magiclondrina
+Version: 0.0.8
+Summary: Buscador de cartas de magic em londrina
+Home-page: https://github.com/erickhiroyuki/pipinstallmagic
+Author: Erick
+Author-email: erickomine67@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (==4.11.1)
+Requires-Dist: lxml (==4.9.1)
+Requires-Dist: scrython (==1.11.0)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: tabulate (==0.9.0)
+
+# Procurador de carta de Magic - Londrina
+
+
+## DescriÃ§Ã£o:
+*****************************
+O objetivo do programa Ã© melhorar a velocidade de pesquisa de cartas de Magic em lojas no [MYP](https://mypcards.com/magic), inicialmente o programa funciona com os 3 maiores de Londrina: [Piedade](https://mypcards.com/Piedade), [Wlad](https://mypcards.com/Wlad) e [basdao](https://mypcards.com/basdao).
+
+## Como funciona
+*****************************
+Ao rodar o programa, Ã© necessÃ¡rio inserir o nome da carta desejada para pesquisa, em seguida o script verifica se a carta existe no banco de dados do Scryfall e returna a carta com a melhor conpatibiidade, caso nÃ£o exista, o programa vai dar um reprompt. Com o web scrapping do *_BeautifulSoup_* Ã© pÃ³ssivel extrair informaÃ§oes da carta desejada em cada uma das lojas, retornando em forma tabulada os dados obtidos.
