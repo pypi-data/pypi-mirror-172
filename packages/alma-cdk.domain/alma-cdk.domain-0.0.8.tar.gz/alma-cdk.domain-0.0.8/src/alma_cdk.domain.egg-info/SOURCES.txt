@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/alma_cdk.domain.egg-info/PKG-INFO
+src/alma_cdk.domain.egg-info/SOURCES.txt
+src/alma_cdk.domain.egg-info/dependency_links.txt
+src/alma_cdk.domain.egg-info/requires.txt
+src/alma_cdk.domain.egg-info/top_level.txt
+src/alma_cdk/domain/__init__.py
+src/alma_cdk/domain/py.typed
+src/alma_cdk/domain/_jsii/__init__.py
+src/alma_cdk/domain/_jsii/domain@0.0.8.jsii.tgz
