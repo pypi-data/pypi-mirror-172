@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: radar-mongodb
+Version: 0.2.0
+Summary: 
+Author: Ernesto Martinez del Pino
+Author-email: ernestomar1997@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pymongo (==4.2.0)
