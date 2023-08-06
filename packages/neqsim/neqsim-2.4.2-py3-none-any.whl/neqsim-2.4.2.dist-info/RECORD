@@ -1,0 +1,16 @@
+neqsim/__init__.py,sha256=K3cyUXuNiKnqzsmRgR0-vWH-WgppoTOROfYiT2QxZ6Q,792
+neqsim/neqsimpython.py,sha256=fo6GtLi6z8sAACGjLHowd2f4aWbrCSRtTr7m3mLgrII,278
+neqsim/lib/neqsim-2.4.0.jar,sha256=G5LNxDX_YsJAddXZkpPOGUp1JTqTofnq61nqCcnH3XE,32383273
+neqsim/process/__init__.py,sha256=7itKOkOAPB9vDO9K8fVWabjAAkgml1hDkxGhi4jJ3aw,28
+neqsim/process/processTools.py,sha256=WSHM2xjyPMV1MwChmgu-OMbe9G4BvtOSguWLq8hNLh4,11614
+neqsim/standards/__init__.py,sha256=69m3yOZ7-6wkLXQ6XSTTk4EwZGvNc-NLPZTGsZWSy04,29
+neqsim/standards/standardTools.py,sha256=Ii5w_LikAVnrvMkSXLDiVbrs7OVlilQEaRA2SdoUIUc,192
+neqsim/thermo/__init__.py,sha256=kMxrmzcOPVzYQU79RNHFD08DH_9y4beHtyBe7wZhT6o,27
+neqsim/thermo/thermoTools.py,sha256=aaXGvxuQI1wS42DNk90nm5L26svo-24Yi6GYrB5WuNo,34788
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_NeqSim.py,sha256=vAyFe250-dHZ5wDhNcaK881_lrw1i18PQ-5aV6cfPPs,9259
+neqsim-2.4.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+neqsim-2.4.2.dist-info/METADATA,sha256=BiXIqMQSgwZoguwPCM2EpCOG1zt_KatyLh1NDSK1Q3Y,803
+neqsim-2.4.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+neqsim-2.4.2.dist-info/top_level.txt,sha256=u7Ni0ezChWmFpdLXQTlfoA8eqH75Y3t1gpOcncv6ma4,13
+neqsim-2.4.2.dist-info/RECORD,,
