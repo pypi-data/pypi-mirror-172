@@ -1,0 +1,191 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  schedule:
+  - cron:  '17 3 * * 0'
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: messense/maturin-action@v1
+      with:
+        manylinux: auto
+        command: build
+        rust-toolchain: nightly
+        args: --release --sdist -o dist --find-interpreter
+    - name: Upload wheels
+      uses: actions/upload-artifact@v2
+      with:
+        name: wheels
+        path: dist
+
+  windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: messense/maturin-action@v1
+      with:
+        command: build
+        rust-toolchain: nightly
+        args: --release -o dist --find-interpreter
+    - name: Upload wheels
+      uses: actions/upload-artifact@v2
+      with:
+        name: wheels
+        path: dist
+
+  macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: messense/maturin-action@v1
+      with:
+        command: build
+        rust-toolchain: nightly
+        args: --release -o dist --universal2 --find-interpreter
+    - name: Upload wheels
+      uses: actions/upload-artifact@v2
+      with:
+        name: wheels
+        path: dist
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    if: "startsWith(github.ref, 'refs/tags/')"
+    needs: [ macos, windows, linux ]
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: wheels
+      - name: Publish to PyPI
+        uses: messense/maturin-action@v1
+        env:
+          MATURIN_PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+        with:
+          command: upload
+          args: --skip-existing *
+
+  pytest:
+    name: Pytest
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.7', '3.8', '3.x']
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          cache-dependency-path: 'requirements-dev.txt'
+
+      - name: Create virtual environment
+        run: |
+          python -m venv venv
+          echo "$GITHUB_WORKSPACE/venv/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: nightly
+
+      - name: Install
+        run: |
+          source activate
+          maturin develop
+
+      - name: Run tests
+        run: pytest --tb=native test
+
+      - name: Run example
+        run: |
+            cd examples
+            for f in *.py; do
+                python "$f"
+            done
+
+
+
+  docs:
+    name: Documentation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+          cache-dependency-path: 'requirements-dev.txt'
+
+      - name: Create virtual environment
+        run: |
+          python -m venv venv
+          echo "$GITHUB_WORKSPACE/venv/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: nightly
+
+      - name: Install and build docs
+        run: |
+          source activate
+          maturin develop
+          cd doc
+          make html SPHINXOPTS="-W --keep-going -n"
+
+      - name: Upload docs
+        run: |
+            if test "$GITHUB_REF" = "refs/heads/main"; then
+                cat > doc_upload_ssh_config <<END
+            Host doc-upload
+                User doc
+                IdentityFile doc_upload_key
+                IdentitiesOnly yes
+                Hostname marten.tiker.net
+                StrictHostKeyChecking false
+            END
+
+                echo "${DOC_UPLOAD_KEY}" > doc_upload_key
+                chmod 0600 doc_upload_key
+                RSYNC_RSH="ssh -F doc_upload_ssh_config" rsync --verbose --archive --delete doc/_build/html/* doc-upload:doc/starlark-pyo3
+            fi
+        env:
+            DOC_UPLOAD_KEY: ${{ secrets.DOC_UPLOAD_KEY }}
+
+  flake8:
+      name: Flake8
+      runs-on: ubuntu-latest
+      steps:
+      -   uses: actions/checkout@v3
+      -
+          uses: actions/setup-python@v4
+          with:
+              # matches compat target in pyproject.toml
+              python-version: '3.7'
+      -   name: "Main Script"
+          run: |
+              curl -L -O https://gitlab.tiker.net/inducer/ci-support/raw/main/prepare-and-run-flake8.sh
+              . ./prepare-and-run-flake8.sh test examples
