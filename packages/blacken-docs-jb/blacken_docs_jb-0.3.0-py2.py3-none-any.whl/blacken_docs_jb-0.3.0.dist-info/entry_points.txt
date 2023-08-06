@@ -1,0 +1,2 @@
+[console_scripts]
+blacken-docs-jb = blacken_docs_jb:main
