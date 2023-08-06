@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: HandDetector-cc
+Version: 0.0.4
+Summary: A simple way to use Mediapipe hand features.
+Home-page: https://github.com/Chexa12cc/HandDetector-cc
+Author: Chanchal Roy
+Author-email: croy7667@gmail.com
+Maintainer: Chanchal Roy
+Maintainer-email: croy7667@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Chexa12cc/HandDetector-cc/issues
+Keywords: Hand Detection,Opencv,Hand Recognition,Mediapipe
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-contrib-python (==4.6.0.66)
+Requires-Dist: mediapipe (==0.8.11)
+
+
+# HandDetector-cc Module
+
+Simple python package to simply use mediapipe hand detection.
+
+
+## Author Details
+
+#### Name : [Chanchal Roy](https://github.com/Chexa12cc)
+#### Email : [croy7667@gmail.com](https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjDXfbgxPqzlHGlKdhgKgDfbxZMfwLWHzBDlSCTsRdSrZxkGcgLHSwmlbGpKmVPcLfKxWQ)
+
+
+## GitHub Project Details
+
+#### Project : [HandDetector-cc](https://github.com/Chexa12cc/HandDetector-cc)
+
+
+## Installation
+
+Install HandDetector-cc with pip
+
+```bash
+  pip install HandDetector-cc
+```
+
+
+## Usage
+
+```python
+import HandDec
+import time
+
+timeS = time.time()
+
+class_obj = HandDec.HandDetector()
+cam = class_obj.init_cam()
+
+while cam.isOpened():
+    success, image = cam.read()
+    if not success: continue
+
+    detected_hand = class_obj.findHand(image, draw_detect=False)
+    hand_landmark = class_obj.findLocations(image, draw_id=8)
+
+    if hand_landmark[0] and hand_landmark[1]:
+        # print(hand_landmark[0][8])
+
+        finger_ups = class_obj.fingerUp(hand_landmark[0])
+        # print(finger_ups)
+
+        boundry = hand_landmark[1]
+        cv2.rectangle(image, (boundry[0], boundry[1]), (boundry[2], boundry[3]), (0, 255, 255), 2)
+
+    timeE = time.time()
+    fps = int(1 / (timeE - timeS))
+    timeS = timeE
+    cv2.putText(image, str(f'FPS : {fps}'), (10, 30), 4, 1, (0, 255, 255), 3)
+    cv2.imshow('Hand Detection - Chanchal Roy', image)
+    if cv2.waitKey(1) & 0xff == ord('q'): break
+
+cam.release()
+cv2.destroyAllWindows()
+```
