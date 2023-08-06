@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sflux
+Version: 0.0.1
+Summary: A simple python interface for InfluxDB2.0
+Home-page: https://github.com/perrytec/sflux.git
+Author: perrytec
+Author-email: hello@perry.sg
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: influxdb-client
+Requires-Dist: ciso8601
+
+# SFLUX
+
+Simple Influx DB wrapper for python.
+Builds on top of influxdb-client to make the use of Influxdb as simple as possible
