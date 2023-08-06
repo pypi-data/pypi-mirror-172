@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/adnovum-test-adn-pkg/__init__.py
+src/adnovum-test-adn-pkg/example.py
+src/adnovum_test_adn_pkg.egg-info/PKG-INFO
+src/adnovum_test_adn_pkg.egg-info/SOURCES.txt
+src/adnovum_test_adn_pkg.egg-info/dependency_links.txt
+src/adnovum_test_adn_pkg.egg-info/top_level.txt
