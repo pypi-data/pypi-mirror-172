@@ -1,0 +1,8 @@
+README.md
+setup.py
+BoldLines/__init__.py
+BoldLines/lines.py
+BoldLines.egg-info/PKG-INFO
+BoldLines.egg-info/SOURCES.txt
+BoldLines.egg-info/dependency_links.txt
+BoldLines.egg-info/top_level.txt
