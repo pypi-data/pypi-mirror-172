@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: batch-rpc-provider
+Version: 1.2.1
+Home-page: https://github.com/scx1332/batch-rpc-provider
+Download-URL: https://github.com/scx1332/batch-rpc-provider/archive/refs/tags/{github_version}.tar.gz
+Author: Sieciech Czajka
+Author-email: sieciech.czajka@golem.network
+Keywords: MultiCall,json-rpc,web3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: aiohttp
+

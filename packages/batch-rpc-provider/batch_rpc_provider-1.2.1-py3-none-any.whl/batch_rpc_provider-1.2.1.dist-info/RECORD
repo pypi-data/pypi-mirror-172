@@ -1,0 +1,12 @@
+batch_rpc_provider/__init__.py,sha256=v88LstSwNN6NUpMIXoPiLR60Pu7cWzIFkQT6CEa3SBI,197
+batch_rpc_provider/_version.py,sha256=Mlm4Gvmb_6yQxwUbv2Ksc-BJFXLPg9H1Vt2iV7wXrA4,22
+batch_rpc_provider/batch_rpc_provider.py,sha256=G3ER4XHj48i4ZRESclIxp1rryG0IHeHY4GidDhbowlk,10130
+batch_rpc_provider/history_checks.py,sha256=D2pZDdDMtUew-IwGBBgcHiHaOkRxxE4qyG_EiUNeS60,850
+batch_rpc_provider/utils.py,sha256=TrWPEA_4ZFDiBpBhGfXHl09Si5xuGfVCwEfXWHEjCyg,644
+batch_rpc_provider-1.2.1.data/scripts/__init__.py,sha256=v88LstSwNN6NUpMIXoPiLR60Pu7cWzIFkQT6CEa3SBI,197
+batch_rpc_provider-1.2.1.data/scripts/batch_rpc_provider.py,sha256=G3ER4XHj48i4ZRESclIxp1rryG0IHeHY4GidDhbowlk,10130
+batch_rpc_provider-1.2.1.dist-info/LICENSE,sha256=3k4gnjzNCAIMgxBMa-E8DeYG5Ue54cPwse90cL4JAG4,1064
+batch_rpc_provider-1.2.1.dist-info/METADATA,sha256=33P3AMZy9VF9WSjAAe6Yy-f4nRVlmiuve-cEEaV1L8A,616
+batch_rpc_provider-1.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+batch_rpc_provider-1.2.1.dist-info/top_level.txt,sha256=NHhtKLnreQ1aximws4AdDE0x6FdJf27S383nZe6XZFI,19
+batch_rpc_provider-1.2.1.dist-info/RECORD,,
