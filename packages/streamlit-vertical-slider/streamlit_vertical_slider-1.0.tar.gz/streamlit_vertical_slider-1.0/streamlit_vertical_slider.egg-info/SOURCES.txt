@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+setup.py
+streamlit_vertical_slider/__init__.py
+streamlit_vertical_slider.egg-info/PKG-INFO
+streamlit_vertical_slider.egg-info/SOURCES.txt
+streamlit_vertical_slider.egg-info/dependency_links.txt
+streamlit_vertical_slider.egg-info/requires.txt
+streamlit_vertical_slider.egg-info/top_level.txt
