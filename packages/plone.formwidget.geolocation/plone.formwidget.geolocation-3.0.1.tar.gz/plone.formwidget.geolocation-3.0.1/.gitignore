@@ -1,0 +1,27 @@
+*.egg-info
+*.mo
+*.pyc
+*~
+.coverage
+.installed.cfg
+.mr.developer.cfg
+.installed.txt
+bin/
+develop-eggs/
+dist/
+htmlcov/
+node_modules/
+parts/
+lib/
+lib64
+pyvenv.cfg
+share/
+var/
+
+# mxdev
+/instance/
+/.make-sentinels/
+/*-mxdev.txt
+/reports/
+/sources/
+/venv/
