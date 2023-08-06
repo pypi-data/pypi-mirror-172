@@ -1,0 +1,10 @@
+include LICENSE
+include CHANGELOG.md
+include MANIFEST.in
+include NOTICE
+include README.rst
+include setup.py
+include setup.cfg
+include pyproject.toml
+
+recursive-include projectq *.py *.hpp *.cpp
