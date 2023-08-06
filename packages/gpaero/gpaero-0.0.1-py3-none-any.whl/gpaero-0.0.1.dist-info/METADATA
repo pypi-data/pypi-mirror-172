@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gpaero
+Version: 0.0.1
+Summary: A code for surrogate aerodynamic modelling using Gaussian process regression
+Project-URL: Homepage, https://github.com/csp-at-unimelb/gpaero
+Author-email: Max Gains <viv.bone@uqconnect.edu.au>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# gpaero
+
+Surrogate aerodynamic modelling via Gaussian process regression.

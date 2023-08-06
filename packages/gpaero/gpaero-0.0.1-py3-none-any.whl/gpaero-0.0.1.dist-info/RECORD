@@ -1,0 +1,10 @@
+src/__init__.py,sha256=qMOG3t1Isqw0IytaNPqaZwUQ-tojgoXJzYopAbIHgxo,78
+src/add_data_noise.py,sha256=yA8mhc99_i0X2m_HwIOKo6r6YshZmJeKSiuon7SIYMA,3088
+src/aerodexx.py,sha256=xjHzdgGurxCn0Y3R-c2aqwegXeIPhMSsWSV8dzeMeXE,9798
+src/generate_aero_data_su2.py,sha256=ltBmiR2CFRNyiiQbTFJMCWEejVGE77p8AOV6jyTrFZc,8967
+src/gpr.py,sha256=gWGpHPH8SJql6N9MU7JIYR1gZEi7Orrb5rCIRtPT9nE,42056
+src/modify_data.py,sha256=uyRj6EDn0le3Sth-_IxjFOWAOjGRU8mangPBG7OsT7c,3099
+gpaero-0.0.1.dist-info/METADATA,sha256=b45XwskhLCNDYzFD7LDutm4aj5wxZ1kY1SuQEAhscO0,559
+gpaero-0.0.1.dist-info/WHEEL,sha256=dX1WPp444jXDT0mMZWrdU6ZHm7Cfu0jldiLCQOk_Kmg,87
+gpaero-0.0.1.dist-info/licenses/LICENSE,sha256=KLuujSvsKmD_zOZ9ymHiJ0Hyaqunp4yWn8mpL4tJxsM,11343
+gpaero-0.0.1.dist-info/RECORD,,
