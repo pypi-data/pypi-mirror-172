@@ -1,0 +1,10 @@
+genefeast/gf.py,sha256=u9iUR8rlJUU-ZIH1kVJ6L3X4KP2QoooceugB5L0LW6M,16874
+genefeast/gf_base.py,sha256=KnfMpNPmCDi45aiI3KOaIRthh8RyNDEjzXCP_PV5S3c,39211
+genefeast/gf_classes.py,sha256=iL2SGoQcYeo7lTAVlRD9Yq9lKIU1zpwmra6iZtm0c_A,134085
+genefeast/gf_config.py,sha256=U0lA0uK8_IPeqa4W1e9D9iTzqLN1m-gEQtVtBwoiJp4,1380
+genefeast/gf_multi.py,sha256=C8b7wddnX6GKvKwBTRoIql0oKCm83ZmN-Hak8oqjhWM,17905
+genefeast/yaml_test.py,sha256=QiFJAOcx7GNLDbjdrt0P3W5nSijgYb3Iia9o2lMaRa4,284
+genefeast-0.0.5.dist-info/METADATA,sha256=eefOeKTCIIjE3y9TnGksBFCjmNjoNrzFdwf2-qSOb2Q,1855
+genefeast-0.0.5.dist-info/WHEEL,sha256=dX1WPp444jXDT0mMZWrdU6ZHm7Cfu0jldiLCQOk_Kmg,87
+genefeast-0.0.5.dist-info/licenses/LICENSE,sha256=inHudEvNvHhh6Qn9DphMwuw_8dMB8T3qsJ7oYJAHeHg,1617
+genefeast-0.0.5.dist-info/RECORD,,
