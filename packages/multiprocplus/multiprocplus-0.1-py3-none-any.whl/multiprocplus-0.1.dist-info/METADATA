@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: multiprocplus
+Version: 0.1
+Summary: a drop-in and easy-use enhancement for multiprcocessing
+Home-page: https://github.com/yinglang/multiprocplus
+Author: hui
+Author-email: y19941010@126.com
+License: BSD
+Project-URL: Bug Tracker, https://github.com/yinglang/multiprocplus/issues
+Project-URL: Source Code, https://github.com/yinglang/multiprocplus
+Keywords: replace for loop by multi processing
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 4 - Beta 
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# multiprocplus
+multiprocessing plus, a drop-in and easy-use enhancement for multiprcocessing
+
+- easy to replace "for loop".
+- assign task group with given an estimated cost.
+
+# install
+
+```shell
+# install method 1: from source code
+git clone https://github.com/yinglang/multiprocplus
+cd multiprocplus
+python setup.py install
+# install method 2: from pip (TODO)
+```
+
+# Usage
+
+```shell
+from multiprocplus import multiprocess_for, MultiprocessRunner
+
+# func passed to new process must be global function or 
+# member function of global class, and not lambda function
+def func(a, b):
+    return a * b
+
+if __name__ == "__main__":
+    N = 100
+    A, B = list(range(N)), list(range(N))
+    # run in single process
+    C = [func(a, b) for a, b in zip(A, B)]
+    print(sum(C))
+    # => run in multiprocess
+    # only allow to be called under 'if __name__ == "__main__"' of entry script
+    C = multiprocess_for(func, [(a, b) for a, b in zip(A, B)], num_process=3)
+    print(sum(C))
+```
+
+For more usage examples, see [doc/usage.md](doc/usage.md)
+
+# Notice:
+
+>1. The definition of function passed to new process must be out of 'if __name__ == "__main__"' (global function or member function of global class), 
+  and can not be lambda function;
+>2. Code/Function that you do not want to run in new process must be written/called under 'if __name__ == "__main__"' of entry script, 
+  or it will run/called in new process.
+>3. Following last note, multiprocess_run must be called in a function called under 'if __name__ == "__main__"' of entry script. 
+  Otherwise, new processes will be generated recursively
+
+For error usage examples, to see [doc/normal_issue.md](doc/normal_issue.md) or [test/error_usage](test/error_usage)
+
+# Basic && Implementation
+
+## Manager & Pool in multiprocessing
+If you have known the usage of module multiprocessing in python, you can skip this section.
+see [CSDN](https://blog.csdn.net/yinglang19941010/article/details/127390585)
+
+## Implementation
+If you just want to use multiprocplus in you project and do not interest the implementation, you can skip this section.
+
+
