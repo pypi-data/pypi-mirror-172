@@ -1,0 +1,11 @@
+louvain/Optimiser.py,sha256=-ehil2uDZx-8dBU6ae07RthPSkBB65xf58Jea5brU_c,17081
+louvain/VertexPartition.py,sha256=QQWchFJGggrTjMP-i8ZE9affEyrY-5wP-1Ol19Owqxo,37574
+louvain/__init__.py,sha256=7dCZUsA_sxprAQxxO2QmaihifTF4W8SZZ5oPcqXiZWk,2808
+louvain/_c_louvain.cp311-win_amd64.pyd,sha256=Vm93K_8BqCo56qvfvXYqye7zs3TZwnhC0wHULJ0GkK4,126464
+louvain/functions.py,sha256=hQcFaJyOEAi3Mv6SgykmwFHotSSSYwYgR_b4hJcQF_k,18690
+louvain/version.py,sha256=Ui0rseh09E50hMXiZ57d_rjJ72oe5iApDaH7EDJMKhM,181
+louvain-0.7.2.dist-info/LICENSE,sha256=U5J70Lc504yHoKgiNv2bBwwt__EcDBGb5QNyAF1QR60,35815
+louvain-0.7.2.dist-info/METADATA,sha256=JN0WZRnoyjT-FjeBtxoW3hFInViNNRPFZCRUvkeIZUM,1507
+louvain-0.7.2.dist-info/WHEEL,sha256=TxwUeV-3HEbjjXVQ7qnUZIKQ4IinhZYV_rmkwq84M_Y,102
+louvain-0.7.2.dist-info/top_level.txt,sha256=_uGptjKo4FbjodRFDADZjZkGMPLP1s-WRXsYPHSGzJI,8
+louvain-0.7.2.dist-info/RECORD,,
