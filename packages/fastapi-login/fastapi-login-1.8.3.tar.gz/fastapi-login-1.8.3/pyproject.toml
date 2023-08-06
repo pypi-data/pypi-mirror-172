@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "fastapi-login"
+version = "1.8.3"
+description = "Flask-Login like package for FastAPI"
+authors = ["Max Rausch-Dupont <maxrd79@gmail.com>"]
+license = "MIT"
+readme="README.md"
+homepage="https://github.com/MushroomMaula/fastapi_login"
+documentation="https://fastapi-login.readthedocs.io/"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+packages = [
+    {include = "fastapi_login"},
+]
+include = ["fastapi_login/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+pyjwt = "^2.4"
+cryptography = {version="^36.0.1", optional=true}
+typing-extensions = "^4.1.1"
+
+[tool.poetry.extras]
+asymmetric = ["cryptography"]
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-asyncio = "*"
+async-asgi-testclient = "*"
+mkdocs = "*"
+mkdocs-material = "*"
+pymdown-extensions = "*"
+markdown-include = "*"
+mkdocstrings = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
