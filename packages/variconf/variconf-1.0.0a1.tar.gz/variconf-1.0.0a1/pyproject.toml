@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "variconf"
+description = """\
+    Wrapper around OmegaConf for loading configuration from various types of \
+    files.\
+    """
+authors = [
+    {name = "Felix Widmaier", email = "felix.widmaier@tue.mpg.de"},
+]
+maintainers = [
+    {name = "Felix Widmaier", email = "felix.widmaier@tue.mpg.de"}
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["config", "configuration"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Typing :: Typed",
+]
+urls.Source = "https://github.com/MPI-IS/variconf"
+urls."Bug Tracker" = "https://github.com/MPI-IS/variconf/issues"
+dynamic = ["version"]
+
+requires-python = ">=3.7"
+dependencies = [
+    "omegaconf",
+]
+
+[project.optional-dependencies]
+all = ["variconf[toml,yaml]"]
+toml = ["tomli"]
+yaml = ["pyyaml"]
+
+test = ["variconf[all]", "pytest"]
+# include test dependencies for mypy, so tests can be checked as well
+mypy = ["variconf[test]", "mypy", "types-PyYAML", "types-setuptools"]
+
+[tool.setuptools.dynamic]
+version = {attr = "variconf.__version__"}
