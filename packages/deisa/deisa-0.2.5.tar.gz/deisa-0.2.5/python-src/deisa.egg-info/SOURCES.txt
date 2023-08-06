@@ -1,0 +1,13 @@
+AUTHORS
+LICENSE
+README.md
+setup.cfg
+setup.py
+python-src/deisa/__init__.py
+python-src/deisa/__version__.py
+python-src/deisa/deisa.py
+python-src/deisa.egg-info/PKG-INFO
+python-src/deisa.egg-info/SOURCES.txt
+python-src/deisa.egg-info/dependency_links.txt
+python-src/deisa.egg-info/requires.txt
+python-src/deisa.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+dask
+dask[distributed]
+PyYAML
+numpy
