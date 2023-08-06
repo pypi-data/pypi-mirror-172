@@ -1,0 +1,6 @@
+riptide_cpp<2,>=1.8
+pandas<2.0,>=0.24
+ansi2html>=1.5.2
+numpy>=1.21
+numba>=0.55.2
+python-dateutil
