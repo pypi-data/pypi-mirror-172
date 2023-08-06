@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: lit_lib
+Version: 1.0a0
+Summary: Короткое описание твоего проекта на PyPi
+Home-page: https://github.com/DiorDS/lit_lib
+Author: Ilya G
+Author-email: phone.mas@yandex.ru
+Keywords: localisation lit translate
+Requires: deep_translator
+Description-Content-Type: text/markdown
+
+# lit_lib
+
+### You must install deep_translator for lib working corectly
+### 1 localisation ended in 1008 ns!
+```
+from time import perf_counter_ns
+
+from lit_lib import Lit
+
+l = Lit("./config.json", diasble_warnings=True)
+
+start = perf_counter_ns()
+
+for i in range(1000000):           
+    l["DE"]["Hi everyone"]
+
+end = perf_counter_ns()
+```
