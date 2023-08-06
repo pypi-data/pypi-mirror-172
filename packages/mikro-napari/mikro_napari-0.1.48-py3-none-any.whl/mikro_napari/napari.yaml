@@ -1,0 +1,10 @@
+name: mikro-napari
+contributions:
+  commands:
+    - id: mikro-napari.arkitekt_widget
+      title: Open my widget
+      python_name: mikro_napari.plugin:ArkitektPluginWidget
+  widgets:
+    - command: mikro-napari.arkitekt_widget
+      display_name: Arkitekt Widget
+      autogenerate: False
