@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: opentelemetry-instrumentation-nameko-grpc
+Version: 0.3.0
+Summary: Extension producing opentelemetry data for nameko-grpc
+Home-page: https://github.com/nameko/opentelemetry-instrumentation-nameko-grpc
+Author: Nameko Authors
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: nameko
+Requires-Dist: nameko-grpc (>=1.2.0rc)
+Requires-Dist: googleapis-common-protos
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-instrumentation
+Requires-Dist: opentelemetry-instrumentation-nameko (>=0.4.0)
+Provides-Extra: dev
+Requires-Dist: nameko-grpc (>=1.2.0rc) ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: opentelemetry-sdk ; extra == 'dev'
+Requires-Dist: opentelemetry-instrumentation-requests ; extra == 'dev'
+Requires-Dist: grpcio-tools ; extra == 'dev'
+Requires-Dist: retry ; extra == 'dev'
+Provides-Extra: instruments
+Requires-Dist: nameko-grpc (>=1.2.0rc) ; extra == 'instruments'
+
+UNKNOWN
+
