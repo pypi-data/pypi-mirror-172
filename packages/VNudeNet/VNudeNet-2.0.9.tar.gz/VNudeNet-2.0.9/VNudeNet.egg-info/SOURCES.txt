@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+VNudeNet.egg-info/PKG-INFO
+VNudeNet.egg-info/SOURCES.txt
+VNudeNet.egg-info/dependency_links.txt
+VNudeNet.egg-info/requires.txt
+VNudeNet.egg-info/top_level.txt
+nudenet/__init__.py
+nudenet/classifier.py
+nudenet/detector.py
+nudenet/detector_utils.py
+nudenet/image_utils.py
+nudenet/lite_classifier.py
+nudenet/video_utils.py
