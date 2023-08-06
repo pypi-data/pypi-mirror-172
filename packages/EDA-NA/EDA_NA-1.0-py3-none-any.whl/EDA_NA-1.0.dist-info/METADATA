@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: EDA-NA
+Version: 1.0
+Summary: Esta libreria contiene diferentes funciones para llevar a cabo un análisis exploratorio de los datos a partir de un archivo csv como input.
+Home-page: UNKNOWN
+Author: Ainhoa y Nagore
+Author-email: nagore.bermeosolo@alumni.mondragon.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: warnings
+Requires-Dist: itertools
+Requires-Dist: numpy
+Requires-Dist: math
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+
+UNKNOWN
+
