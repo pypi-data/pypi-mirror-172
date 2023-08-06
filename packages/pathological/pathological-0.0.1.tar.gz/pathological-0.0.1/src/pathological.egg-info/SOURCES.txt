@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pathological/__init__.py
+src/pathological/pathological.py
+src/pathological.egg-info/PKG-INFO
+src/pathological.egg-info/SOURCES.txt
+src/pathological.egg-info/dependency_links.txt
+src/pathological.egg-info/top_level.txt
