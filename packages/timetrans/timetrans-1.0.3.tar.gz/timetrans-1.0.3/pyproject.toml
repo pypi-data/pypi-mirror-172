@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "timetrans"
+version = "1.0.3"
+description = "Time trans to transfer to a normal date and clearance "
+authors = ["Sad_Cat0326"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+googletrans = "3.1.0a0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
