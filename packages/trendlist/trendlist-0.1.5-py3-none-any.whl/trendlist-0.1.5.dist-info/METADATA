@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: trendlist
+Version: 0.1.5
+Summary: Define, manipulate and study lists of Trends.
+Author: Jeffrey S. Haemer
+Author-email: jeffrey.haemer@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: blessed (>=1.19.1,<2.0.0)
+Requires-Dist: parso (>=0.8.3,<0.9.0)
