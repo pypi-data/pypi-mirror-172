@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+tryPackagePython12/__init__.py
+tryPackagePython12.egg-info/PKG-INFO
+tryPackagePython12.egg-info/SOURCES.txt
+tryPackagePython12.egg-info/dependency_links.txt
+tryPackagePython12.egg-info/requires.txt
+tryPackagePython12.egg-info/top_level.txt
