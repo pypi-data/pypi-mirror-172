@@ -1,0 +1,14 @@
+kelluwen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kelluwen/classes/__init__.py,sha256=WITIgI9rMhIzgS8IVxXykBYrof0n6j4ZRf-VK3KmCxk,45
+kelluwen/classes/losses.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kelluwen/classes/networks.py,sha256=4IrJ84EX3b2ZbZuqV9QlvPEXPCbRA3JzRaTPjr-svhA,38
+kelluwen/functions/__init__.py,sha256=-4Xq0PjhtPxBKFPu4QE6Eqi4jydTWvvAmhWtwcojI7A,90
+kelluwen/functions/data.py,sha256=lsxpA6ivd4jiDYuqnluNO0BA8q-BMU299HJpEINqXwI,5033
+kelluwen/functions/measures.py,sha256=spSPE5Hr_7raddofrPoFAVm96b-Tfm9XPkOfhnsEJiU,26909
+kelluwen/functions/tools.py,sha256=KhrXWDFRuikExdZqa5ePSlz8KBjk4ZoHdQnIBH1qd2Q,9021
+kelluwen/functions/transforms.py,sha256=I9BhPLU3F3lkn_NRL_fjxP73s3Vt0Z7A7O64EcApyeg,36647
+kelluwen-0.0.29.dist-info/LICENSE.txt,sha256=5mwmnUgZqqs0tJ71IgxN2rZ1byG7UYB2Gk64Vh8re70,20850
+kelluwen-0.0.29.dist-info/METADATA,sha256=4o656M5uZcc330pw-85F4fA3R9HrIRxyl9IsiLID7Qc,2263
+kelluwen-0.0.29.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kelluwen-0.0.29.dist-info/top_level.txt,sha256=4LEUrWcoHolJ2YoiCOarqZpK0ex8W3234CjNzkfUp0U,9
+kelluwen-0.0.29.dist-info/RECORD,,
