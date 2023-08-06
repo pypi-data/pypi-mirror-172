@@ -1,0 +1,9 @@
+pymc
+
+[notebooks]
+nbconvert
+jupytext
+ipykernel
+
+[test]
+pytest
