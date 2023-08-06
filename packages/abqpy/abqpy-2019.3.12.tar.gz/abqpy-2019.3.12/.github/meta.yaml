@@ -1,0 +1,30 @@
+package:
+  name: abqpy
+  version: "{{ GIT_DESCRIBE_TAG }}"
+
+build:
+  script: pip instll .
+  skip: True # [py<37]
+
+source:
+  path: ../
+
+requirements:
+  build:
+    - python
+    - setuptools_scm
+  run:
+    - python
+    - auto-all
+    - Jinja2
+    - toml
+
+test:
+  import:
+    - abaqus
+    - mesh
+    - abaqusConstants
+about:
+  summary: Type hints for Abaqus/Python scripting
+  home: https://github.com/haiiliin/abqpy
+  license: MIT
