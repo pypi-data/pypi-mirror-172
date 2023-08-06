@@ -1,0 +1,2 @@
+[nbdev]
+artpy = artpy._modidx:d
