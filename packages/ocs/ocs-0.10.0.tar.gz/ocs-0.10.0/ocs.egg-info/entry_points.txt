@@ -1,0 +1,9 @@
+[console_scripts]
+ocs-agent-cli = ocs.agent_cli:main
+ocs-client-cli = ocs.client_cli:main
+ocs-install-systemd = ocs.ocs_systemd:main
+ocs-local-support = ocs.ocsbow:main_local
+ocsbow = ocs.ocsbow:main
+
+[ocs.plugins]
+ocs = ocs.plugin
