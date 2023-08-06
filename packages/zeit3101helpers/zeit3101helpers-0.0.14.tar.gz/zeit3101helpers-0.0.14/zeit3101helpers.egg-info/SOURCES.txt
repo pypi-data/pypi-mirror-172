@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+zeit3101helpers/__init__.py
+zeit3101helpers/main.py
+zeit3101helpers.egg-info/PKG-INFO
+zeit3101helpers.egg-info/SOURCES.txt
+zeit3101helpers.egg-info/dependency_links.txt
+zeit3101helpers.egg-info/requires.txt
+zeit3101helpers.egg-info/top_level.txt
