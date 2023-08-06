@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "target-jsonl-webhdfs"
+version = "0.1.4.4"
+description = "Singer.io target for writing JSON Line files via webhdfs"
+authors = [
+    "Andy Huynh <andy.huynh312@gmail.com>",
+    "Stanislav Lysikov <stave.tx@gmail.com>",
+]
+maintainers = [
+    "Stanislav Lysikov <stave.tx@gmail.com>",
+]
+readme = "README.md"
+repository = "https://github.com/barloc/target-jsonl-webhdfs"
+keywords=[
+    "singer",
+    "singer.io",
+    "target",
+    "etl",
+    "meltano",
+    "webhdfs"
+]
+classifiers=[
+    'Programming Language :: Python :: 3 :: Only'
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+jsonschema = "2.6.0"
+singer-python = "5.8.0"
+adjust-precision-for-schema = "0.3.3"
+hdfs = "2.7.0"
+
+[tool.poetry.scripts]
+target-jsonl-webhdfs = 'target_jsonl_webhdfs:main'
