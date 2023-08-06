@@ -1,0 +1,4 @@
+[console_scripts]
+MofashideGuaiwuTujianXia = MofashideGuaiwuTujianXia.__main__:main
+mofashide-guaiwu-tujian-xia = MofashideGuaiwuTujianXia.__main__:main
+
