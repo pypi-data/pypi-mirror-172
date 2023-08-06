@@ -1,0 +1,2 @@
+[nbdev]
+cfnet = cfnet._modidx:d
