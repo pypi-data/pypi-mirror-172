@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/mavis_config/__init__.py
+src/mavis_config/config.json
+src/mavis_config/constants.py
+src/mavis_config/overlay.json
+src/mavis_config.egg-info/PKG-INFO
+src/mavis_config.egg-info/SOURCES.txt
+src/mavis_config.egg-info/dependency_links.txt
+src/mavis_config.egg-info/requires.txt
+src/mavis_config.egg-info/top_level.txt
