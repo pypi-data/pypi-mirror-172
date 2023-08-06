@@ -1,0 +1,60 @@
+defaults:
+  - huggingface_training_args
+
+seed: 12345
+
+# per_device_train_batch_size: 24
+# per_device_eval_batch_size: 24
+# gradient_accumulation_steps: 1
+
+per_device_train_batch_size: 4
+per_device_eval_batch_size: 4
+gradient_accumulation_steps: 6
+
+num_train_epochs: 9
+
+# Every how many training steps to run the evaluation loop
+logging_steps: 1000
+
+# Every how many training steps to save a model checkpoint
+save_steps: 1000
+
+# How many model checkpoints to keep around
+save_total_limit: 50
+
+# Optimizer learning rate
+learning_rate: 1e-4
+
+# Number of steps of the linear warmup in the LR scheduler
+#   (multiply by number of devices * per_device_train_batch_size to get number of warmup examples)
+warmup_steps: 5000
+
+# Number of beams to use for evaluation. This argument will be passed to 'model.generate', which is used during
+#   'evaluate' and 'predict'
+generation_num_beams: 5
+
+# Maximum length of the beam search. Setting this too low (like the default in the Hugging Face example) will choke the
+#   evaluation of the model and give you artificially very low BLEU scores
+generation_max_length: 200
+
+# Evaluate the model every 'steps' (as opposed to epochs or never)
+evaluation_strategy: STEPS
+
+# Use beam search during the evaluation step, needed for computing BLEU on validation data
+predict_with_generate: true
+
+# What metric to use on evaluation data to decide which model is the current champion
+metric_for_best_model: loss
+greater_is_better: false       # Defaults to true if metric_for_best_model isn't loss, set explicitly for clarity
+
+# Do not output memory use metrics to Tensorboard. This seems to be buggy in the current version of Transformers
+skip_memory_metrics: true
+
+# Various floating point settings. Currently bf16 is the recommended.
+#   See here for good explanation:
+#   https://huggingface.co/docs/transformers/perf_train_gpu_one#fp16-training
+# fp16: true
+bf16: true
+# tf32: true
+
+dataloader_num_workers: 50

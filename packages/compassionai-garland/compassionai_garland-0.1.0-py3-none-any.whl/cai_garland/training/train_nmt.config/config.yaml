@@ -1,0 +1,26 @@
+defaults:
+  - data:
+    - 84000-parallel-sentences-raw-with-context-cased
+    # - nllb-augmentation-bo-it
+    # - nllb-augmentation-bo-en
+  - dataset_construction: context-injection-cased
+  - model: olive-cormorant-nllb-pooled-context-injection-cased
+  - training: basic_with_bleu
+  - training_preprocess: basic
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+  - _self_
+
+hydra:
+  verbose: cai_garland.training
+  run:
+    dir: ${oc.env:CAI_TEMP_PATH}/training_results/nmt/olive-cormorant-nllb-with-context/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+# Uncomment this to skip evaluation
+# training:
+#   evaluation_strategy: "NO"
+
+# pretrained_checkpoint: ${oc.env:CAI_TEMP_PATH}/champion
+
+# Overwrite the cached training and evaluation sets
+overwrite_cache: false
