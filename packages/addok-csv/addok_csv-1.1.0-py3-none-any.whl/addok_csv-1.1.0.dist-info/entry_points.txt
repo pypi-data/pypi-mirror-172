@@ -1,0 +1,2 @@
+[addok.ext]
+csv = addok_csv
