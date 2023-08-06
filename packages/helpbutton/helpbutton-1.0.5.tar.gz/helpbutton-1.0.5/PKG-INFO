@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: helpbutton
+Version: 1.0.5
+Summary: 
+Author: Sad_Cat0326
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: discord (>=2.0.0,<3.0.0)
+Requires-Dist: typing (>=3.7.4.3,<4.0.0.0)
+Description-Content-Type: text/markdown
+
+My
