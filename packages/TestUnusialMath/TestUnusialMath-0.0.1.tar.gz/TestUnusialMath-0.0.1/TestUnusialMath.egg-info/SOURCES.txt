@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+TestUnusialMath/Math.py
+TestUnusialMath/__init__.py
+TestUnusialMath.egg-info/PKG-INFO
+TestUnusialMath.egg-info/SOURCES.txt
+TestUnusialMath.egg-info/dependency_links.txt
+TestUnusialMath.egg-info/top_level.txt
