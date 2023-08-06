@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: rpmlint
+Version: 2.3.0
+Summary: Check for common errors in RPM packages
+Home-page: https://github.com/rpm-software-management/rpmlint
+Author: Frédéric Lepied
+Author-email: flepied@mandriva.com
+Maintainer: RPMLint maintainers
+Maintainer-email: rpm-ecosystem@lists.rpm.org
+License: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Download-URL: https://github.com/rpm-software-management/rpmlint
+Keywords: RPM,.spec,validator
+Platform: Linux
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: System :: Archiving :: Packaging
+License-File: COPYING
+
+Rpmlint is a tool to check common errors in RPM packages.Binary and source packages can be checked
+

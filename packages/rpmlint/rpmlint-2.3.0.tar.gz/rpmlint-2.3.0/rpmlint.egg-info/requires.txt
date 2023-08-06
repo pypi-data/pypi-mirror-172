@@ -1,0 +1,10 @@
+pybeam
+pyxdg
+rpm
+toml
+zstandard
+pyenchant
+python-magic
+
+[:python_version < "3.8"]
+importlib-metadata
