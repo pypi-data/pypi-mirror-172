@@ -1,0 +1,10 @@
+poetry_dynamic_versioning/__init__.py,sha256=_tHbixm9UE6JAKEgbL4mydWpBdXhzIEOnSejA7ZgOaA,11049
+poetry_dynamic_versioning/__main__.py,sha256=bbPwuEbz6sFAze6ejpOZTSUNyOfKcpe9tAGvwdFARqs,1280
+poetry_dynamic_versioning/backend.py,sha256=qWED2n4lJ0x6P3EQl0HAbeF0j0JJur89bskhpuBgO8s,119
+poetry_dynamic_versioning/patch.py,sha256=oSf0-cbccvVMk2KDJnuNnJMMxseYClHF5-f2yrllDsg,1622
+poetry_dynamic_versioning/plugin.py,sha256=MXbyWMKE-NLhADHVch8RY9zrV2EJAmErJ46AVC6wWaE,4353
+poetry_dynamic_versioning-0.20.0.dist-info/entry_points.txt,sha256=P2qjjLPbJpXOYuzHDZKYHeHTU21d3NjJ-g7fgUr33cE,197
+poetry_dynamic_versioning-0.20.0.dist-info/LICENSE,sha256=zXXFVkB446rfZiqd89I0MPRwXf7t670Ou-71OZitlKg,1089
+poetry_dynamic_versioning-0.20.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+poetry_dynamic_versioning-0.20.0.dist-info/METADATA,sha256=aEu6e0CC_C01WGZ_M8MDBUCSH1kC1u6NJ4VsDvpKdjs,14320
+poetry_dynamic_versioning-0.20.0.dist-info/RECORD,,
