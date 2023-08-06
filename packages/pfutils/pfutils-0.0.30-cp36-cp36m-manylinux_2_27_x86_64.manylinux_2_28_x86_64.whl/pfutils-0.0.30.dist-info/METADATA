@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pfutils
+Version: 0.0.30
+Summary: parallel file utility command line tool
+Home-page: https://github.com/caffeinism/pfutils
+Author: Kim Minjong
+Author-email: make.dirty.code@gmail.com
+License: MIT
+Keywords: ceph,nfs
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: tabulate
+Requires-Dist: tqdm
+Requires-Dist: xattr
+
+UNKNOWN
+
