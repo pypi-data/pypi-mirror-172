@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: invagination
+Version: 0.0.2
+Summary: mesoderm invagination modeling based on tyssue
+Home-page: https://github.com/suzannelab/invagination
+Download-URL: https://github.com/suzannelab/invagination.git
+Maintainer: Guillaume Gay
+Maintainer-email: guillaume@damcb.com
+License: GPL-v3.0
+License-File: LICENSE

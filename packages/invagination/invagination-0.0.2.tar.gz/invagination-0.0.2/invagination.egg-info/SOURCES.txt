@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+invagination/__init__.py
+invagination/delamination.py
+invagination/ellipsoid.py
+invagination/morphometry.py
+invagination/plots.py
+invagination/toolbox.py
+invagination/version.py
+invagination.egg-info/PKG-INFO
+invagination.egg-info/SOURCES.txt
+invagination.egg-info/dependency_links.txt
+invagination.egg-info/not-zip-safe
+invagination.egg-info/top_level.txt
