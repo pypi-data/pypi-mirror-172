@@ -1,0 +1,2 @@
+[console_scripts]
+xmobar_wttr = xmobar_wttr.__main__:main

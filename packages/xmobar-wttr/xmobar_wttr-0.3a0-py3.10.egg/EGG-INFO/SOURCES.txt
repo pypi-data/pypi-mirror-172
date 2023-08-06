@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+xmobar_wttr/__init__.py
+xmobar_wttr/__main__.py
+xmobar_wttr/constants.py
+xmobar_wttr/fetch.py
+xmobar_wttr/parsing.py
+xmobar_wttr/utils.py
+xmobar_wttr.egg-info/PKG-INFO
+xmobar_wttr.egg-info/SOURCES.txt
+xmobar_wttr.egg-info/dependency_links.txt
+xmobar_wttr.egg-info/entry_points.txt
+xmobar_wttr.egg-info/requires.txt
+xmobar_wttr.egg-info/top_level.txt
