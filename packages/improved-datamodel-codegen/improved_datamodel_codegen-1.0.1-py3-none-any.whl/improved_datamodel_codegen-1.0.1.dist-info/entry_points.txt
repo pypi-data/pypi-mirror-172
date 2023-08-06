@@ -1,0 +1,3 @@
+[console_scripts]
+datamodel-codegen=improved_datamodel_codegen.__main__:main
+
