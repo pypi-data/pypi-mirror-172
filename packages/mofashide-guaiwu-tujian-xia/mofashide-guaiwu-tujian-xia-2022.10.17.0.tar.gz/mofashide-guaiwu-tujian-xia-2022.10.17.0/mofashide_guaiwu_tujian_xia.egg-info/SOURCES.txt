@@ -1,0 +1,12 @@
+README.md
+setup.py
+MofashideGuaiwuTujianXia/README.md
+MofashideGuaiwuTujianXia/__init__.py
+MofashideGuaiwuTujianXia/__main__.py
+MofashideGuaiwuTujianXia/file.pdf
+MofashideGuaiwuTujianXia/index.html
+mofashide_guaiwu_tujian_xia.egg-info/PKG-INFO
+mofashide_guaiwu_tujian_xia.egg-info/SOURCES.txt
+mofashide_guaiwu_tujian_xia.egg-info/dependency_links.txt
+mofashide_guaiwu_tujian_xia.egg-info/entry_points.txt
+mofashide_guaiwu_tujian_xia.egg-info/top_level.txt
