@@ -1,0 +1,13 @@
+pandas>=1.3.4
+joblib
+sqlalchemy
+python-gssapi
+PyMySQL
+psycopg2
+pyarrow
+datatable
+pytest-html
+pyyaml
+requests-kerberos
+krb5
+nbparameterise
