@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: kramlin
+Version: 0.1.3
+Summary: Settings Manager for Traboda Platforms
+Home-page: https://github.com/traboda/kramlin
+Author: Ashwin Shenoy
+Author-email: ashwin@traboda.com
+Maintainer: Ashwin Shenoy
+Maintainer-email: ashwin@traboda.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 4.0
+Description-Content-Type: text/markdown
+
+# Kramlin
+
+Easily StartUp & Manage your Traboda Platform.
+
