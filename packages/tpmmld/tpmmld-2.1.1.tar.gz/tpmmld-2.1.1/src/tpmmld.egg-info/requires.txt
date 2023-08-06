@@ -1,0 +1,4 @@
+evdev>=1.6.0
+pulsectl>=22.3.2
+python-daemon>=2.3.0
+python-dateutil>=2.8.1
