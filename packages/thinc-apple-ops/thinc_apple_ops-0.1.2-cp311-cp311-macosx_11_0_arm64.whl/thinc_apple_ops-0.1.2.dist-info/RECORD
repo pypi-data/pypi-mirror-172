@@ -1,0 +1,17 @@
+thinc_apple_ops/__init__.py,sha256=gq7qYLzpnjhCUYWRmwygHMIowu-eIS9XhYRiWcyiZ8Y,26
+thinc_apple_ops/blas.cpython-311-darwin.so,sha256=bXUThXyQ9L-XktYAcK4VeCrzsZZ_Inr-WhH-_FK6JOA,168327
+thinc_apple_ops/blas.pxd,sha256=dlDgBc9oNz62lKbDiES1yZJXfcy-oCJaMoC8NCEKxpo,1976
+thinc_apple_ops/blas.pyx,sha256=zwHCGIZN4CNheBksFlqo_whAu8cRe_ujdK-SUqceIyY,1954
+thinc_apple_ops/ops.cpp,sha256=6zpr8D-PC8g7FMcO0wA0SFStSn8GTjwOZvz8fBBlXOY,203978
+thinc_apple_ops/ops.cpython-311-darwin.so,sha256=XMbJsgQvhN8hwQw9Aq2u8ylX9GRVf2SyPfl56ChJUjU,83942
+thinc_apple_ops/ops.pyx,sha256=EEQDgRJfuH_KYLHgpjSWTBORFS8O3CuI4vCty09B4sc,977
+thinc_apple_ops/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thinc_apple_ops/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thinc_apple_ops/tests/test_gemm.py,sha256=lbfYTByenL_Vr57IGtWWLolqTxuljyN-Mczvo93i9M8,2132
+thinc_apple_ops-0.1.2.dist-info/LICENSE,sha256=-Nkd5LQez2Eb42ACE5teInibvQoC8Z119rGHM__RdOM,1083
+thinc_apple_ops-0.1.2.dist-info/METADATA,sha256=wjbOtc5oqNNU1v8M6NNAvP5J9L2dLAfQUhMARVdU3us,5635
+thinc_apple_ops-0.1.2.dist-info/WHEEL,sha256=fHvRBzKCrQbGWlIL1eIB4x2YIBk9sCn_QC5-FS8Vm74,110
+thinc_apple_ops-0.1.2.dist-info/entry_points.txt,sha256=T7UBMSDFDV-zhnUeAdeLx80yzFW88CKNqWq-j6x-8rs,48
+thinc_apple_ops-0.1.2.dist-info/top_level.txt,sha256=mzOnVxE0bVNb0EFEqQKBEY8lQ9TWWJhFCLefE6tTU7c,16
+thinc_apple_ops-0.1.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+thinc_apple_ops-0.1.2.dist-info/RECORD,,
