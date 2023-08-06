@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel", "hatchling", "pyserial"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kiwrious"
+version = "0.0.5"
+authors = [
+  { name = "David", email = "dgil754@aucklanduni.ac.nz" },
+]
+description = "Package for interacting with Kiwrious sensors"
+dependencies = ["pyserial"]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
