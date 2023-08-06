@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: active-transformers
+Version: 0.0.4
+Summary: Active Learning for Transformer with focus on Sequence Tagging tasks
+Home-page: https://github.com/ndoll1998/active-transformers/tree/master
+Author: Niclas Doll
+Author-email: niclas@amazonis.net
+License: Apache 2.0
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Freely Distributable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: rl
+License-File: LICENSE
+
+# Active Transformers
+
+![Tests Master](https://github.com/ndoll1998/active-transformers/workflows/Tests%20Master/badge.svg)
+![Publish Master](https://github.com/ndoll1998/active-transformers/workflows/PyPI/badge.svg)

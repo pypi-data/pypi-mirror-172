@@ -1,0 +1,6 @@
+[console_scripts]
+active.active = active.scripts.run_active:main
+active.rl.client = active.scripts.rl.client:main
+active.rl.dqn-server = active.scripts.rl.dqn_server:main
+active.rl.ppo-server = active.scripts.rl.ppo_server:main
+active.train = active.scripts.run_train:main
