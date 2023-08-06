@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ftdc-tools
+Version: 0.5.0
+Summary: 
+Author: Alexander Costas
+Author-email: alexander.costas@mongodb.com
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Requires-Dist: pymongo (>=4.2.0,<5.0.0)
