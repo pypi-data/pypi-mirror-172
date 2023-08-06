@@ -1,0 +1,26 @@
+{% load notices_tags static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>django-notices</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'notices/css/notices.css' %}">
+</head>
+
+<body>
+
+    {% NoticesModal %}
+
+    <div>
+        <h1>The Home Page</h1>
+        <p>Some content here</p>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="{% static 'notices/js/notices.js' %}"></script>
+
+</html>
