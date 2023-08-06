@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+PlantAnno.egg-info/PKG-INFO
+PlantAnno.egg-info/SOURCES.txt
+PlantAnno.egg-info/dependency_links.txt
+PlantAnno.egg-info/entry_points.txt
+PlantAnno.egg-info/requires.txt
+PlantAnno.egg-info/top_level.txt
+plantanno/__init__.py
+plantanno/cli.py
+plantanno/config.py
+plantanno/pipelines.py
+plantanno/src.py
+plantanno/versions.py
