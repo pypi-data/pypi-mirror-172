@@ -1,0 +1,9 @@
+merge3
+python-tr
+python_debian>=0.1.44
+
+[debcargo]
+tomlkit
+
+[watch]
+python-pcre
