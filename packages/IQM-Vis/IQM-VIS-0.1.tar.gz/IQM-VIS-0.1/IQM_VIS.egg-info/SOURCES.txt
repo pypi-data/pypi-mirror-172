@@ -1,0 +1,7 @@
+README.md
+setup.py
+IQM_VIS.egg-info/PKG-INFO
+IQM_VIS.egg-info/SOURCES.txt
+IQM_VIS.egg-info/dependency_links.txt
+IQM_VIS.egg-info/requires.txt
+IQM_VIS.egg-info/top_level.txt
