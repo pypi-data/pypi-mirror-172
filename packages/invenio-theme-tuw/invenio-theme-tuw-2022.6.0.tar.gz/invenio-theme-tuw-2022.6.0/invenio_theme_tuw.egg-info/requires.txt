@@ -1,0 +1,13 @@
+Flask-WebpackExt>=1.0.0
+invenio-app-rdm>=10.0.0
+Flask>=2.0.2
+
+[all]
+Sphinx>=4
+pytest-invenio>=1.4.0
+
+[docs]
+Sphinx>=4
+
+[tests]
+pytest-invenio>=1.4.0
