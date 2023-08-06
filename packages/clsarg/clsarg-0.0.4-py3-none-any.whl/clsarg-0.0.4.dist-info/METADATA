@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: clsarg
+Version: 0.0.4
+Summary: The class-based argument parser
+Home-page: https://github.com/doldam0/clsarg
+Author: doldam0
+Author-email: jinustar@g.skku.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# argparser
+
+
