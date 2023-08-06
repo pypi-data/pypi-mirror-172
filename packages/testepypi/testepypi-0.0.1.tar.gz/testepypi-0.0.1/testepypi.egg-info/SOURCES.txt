@@ -1,0 +1,9 @@
+README.md
+setup.py
+testepypi/__init__.py
+testepypi.egg-info/PKG-INFO
+testepypi.egg-info/SOURCES.txt
+testepypi.egg-info/dependency_links.txt
+testepypi.egg-info/top_level.txt
+testepypi/module1_name/__init__.py
+testepypi/module1_name/teste.py
