@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: ait-learners
+Version: 0.6.3
+Summary: Webinterface for accessing CR exercises.
+Home-page: http://github.com/ait-cs-IaaS/learners/
+Author: Lenhard Reuter, Benjamin Akhras
+License: GPL-3.0
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: antlr4-python3-runtime
+Requires-Dist: beautifulsoup4
+Requires-Dist: bidict
+Requires-Dist: black
+Requires-Dist: blinker
+Requires-Dist: build
+Requires-Dist: certifi
+Requires-Dist: cffi
+Requires-Dist: charset-normalizer
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: cryptography
+Requires-Dist: cssmin
+Requires-Dist: distlib
+Requires-Dist: dnspython
+Requires-Dist: eventlet
+Requires-Dist: filelock
+Requires-Dist: flake8
+Requires-Dist: Flask
+Requires-Dist: Flask-Assets
+Requires-Dist: Flask-Cors
+Requires-Dist: Flask-Environments
+Requires-Dist: Flask-JWT-Extended
+Requires-Dist: Flask-Mail
+Requires-Dist: Flask-SocketIO
+Requires-Dist: Flask-SQLAlchemy
+Requires-Dist: glob2
+Requires-Dist: greenlet
+Requires-Dist: gunicorn
+Requires-Dist: idna
+Requires-Dist: importlib-metadata
+Requires-Dist: importlib-resources
+Requires-Dist: itsdangerous
+Requires-Dist: Jinja2
+Requires-Dist: libsass
+Requires-Dist: MarkupSafe
+Requires-Dist: mccabe
+Requires-Dist: mypy-extensions
+Requires-Dist: omegaconf
+Requires-Dist: packaging
+Requires-Dist: pathspec
+Requires-Dist: platformdirs
+Requires-Dist: pycodestyle
+Requires-Dist: pycparser
+Requires-Dist: PyJWT
+Requires-Dist: python-dateutil
+Requires-Dist: python-dotenv
+Requires-Dist: python-engineio
+Requires-Dist: python-socketio
+Requires-Dist: PyYAML
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: SQLAlchemy
+Requires-Dist: strictyaml
+Requires-Dist: urllib3
+Requires-Dist: webassets
+Requires-Dist: Werkzeug
+Requires-Dist: zipp
+
+# Learners Environment ![workflow](https://github.com/ait-cs-IaaS/learners/actions/workflows/build.yaml/badge.svg)
+
+Webinterface for accessing CR exercises.
+
+## Build
+
+```bash
+python3 -m build
+```
+
+## Install
+
+```bash
+#pip
+pip install ait-learners
+
+#docker
+docker pull ghcr.io/ait-cs-iaas/learners
+```
+
+## Run
+
+```bash
+gunicorn --bind 127.0.0.1:5000 learners:app
+# or
+flask run
+# or
+docker-compose up -d
+```
+
+## Develop
+
+```bash
+pip install -e .
+```
