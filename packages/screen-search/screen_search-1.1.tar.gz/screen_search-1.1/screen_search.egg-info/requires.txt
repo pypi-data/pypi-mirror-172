@@ -1,0 +1,13 @@
+numpy
+opencv-python
+pyautogui
+
+[:platform_system == "Darwin"]
+pyobjc
+pyobjc-core
+
+[:platform_system == "Linux" and python_version < "3.0"]
+Xlib
+
+[:platform_system == "Linux" and python_version >= "3.0"]
+python3-Xlib
