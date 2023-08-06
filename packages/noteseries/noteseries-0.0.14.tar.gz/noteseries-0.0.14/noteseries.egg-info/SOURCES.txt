@@ -1,0 +1,11 @@
+README.md
+setup.py
+noteseries/__init__.py
+noteseries.egg-info/PKG-INFO
+noteseries.egg-info/SOURCES.txt
+noteseries.egg-info/dependency_links.txt
+noteseries.egg-info/requires.txt
+noteseries.egg-info/top_level.txt
+noteseries/experiment/__init__.py
+noteseries/experiment/prime/__init__.py
+noteseries/experiment/prime/core.py
