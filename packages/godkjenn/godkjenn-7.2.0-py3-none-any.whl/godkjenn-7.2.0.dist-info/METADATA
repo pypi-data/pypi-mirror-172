@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: godkjenn
+Version: 7.2.0
+Summary: Approval testing for Python3
+Home-page: http://bitbucket.org/sixty-north/godkjenn
+Author: Sixty North AS
+Author-email: austin@sixty-north.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Framework :: Pytest
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: dendrodict
+Requires-Dist: exit-codes
+Requires-Dist: rich
+Requires-Dist: toml
+Provides-Extra: dev
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Provides-Extra: pytest-plugin
+Requires-Dist: pytest ; extra == 'pytest-plugin'
+Provides-Extra: test
+Requires-Dist: hypothesis ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+========
+godkjenn
+========
+
+.. highlights::
+
+    *godkjenn* 
+        /go:kjen/
+        Approve (Norwegian)
+
+Approval testing for Python3.
+
+|full_documentation|_
+
+.. |full_documentation| replace:: **Read the full documentation at readthedocs.**
+.. _full_documentation: http://godkjenn.readthedocs.org/en/latest/
+
