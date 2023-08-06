@@ -1,0 +1,17 @@
+LICENSE
+README
+setup.cfg
+setup.py
+wplotlib/__init__.py
+wplotlib/bar.py
+wplotlib/clusters.py
+wplotlib/heatMap.py
+wplotlib/histograms.py
+wplotlib/lines.py
+wplotlib/mesh3d.py
+wplotlib/scatter.py
+wplotlib.egg-info/PKG-INFO
+wplotlib.egg-info/SOURCES.txt
+wplotlib.egg-info/dependency_links.txt
+wplotlib.egg-info/requires.txt
+wplotlib.egg-info/top_level.txt
