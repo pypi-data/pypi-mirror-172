@@ -1,0 +1,7 @@
+pandas
+nltk
+numpy
+openpyxl
+lxml
+sqlalchemy
+es_core_news_sm
