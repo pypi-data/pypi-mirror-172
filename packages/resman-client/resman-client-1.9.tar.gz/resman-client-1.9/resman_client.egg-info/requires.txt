@@ -1,0 +1,6 @@
+requests
+python-magic
+pydantic
+requests-toolbelt
+click
+chardet

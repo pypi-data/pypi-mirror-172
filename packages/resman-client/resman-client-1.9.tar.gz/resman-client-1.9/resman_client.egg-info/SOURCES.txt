@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+resman_client/__init__.py
+resman_client/cli.py
+resman_client/client.py
+resman_client/ffmpeg_util.py
+resman_client.egg-info/PKG-INFO
+resman_client.egg-info/SOURCES.txt
+resman_client.egg-info/dependency_links.txt
+resman_client.egg-info/entry_points.txt
+resman_client.egg-info/requires.txt
+resman_client.egg-info/top_level.txt
