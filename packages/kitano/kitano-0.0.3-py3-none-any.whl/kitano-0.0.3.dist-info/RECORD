@@ -1,0 +1,8 @@
+kitano/__init__.py,sha256=q0zFML7T23n9pSij0ik3_AuDwer0DF10HYvwu8eqkNU,23
+kitano/logging.py,sha256=5ZMXxaTCPNoz4QYJ9fjMgG8_rGeXrqrjLnyqqMZr8pY,715
+kitano/termux.py,sha256=3KuAvQESq96a-90JEeWPOjuLOyudgiIq3A_357Y50gw,512
+kitano-0.0.3.dist-info/LICENSE,sha256=NOcFVGNJ2W1OyOcGvsd9aC7cdnQOY_6VmLmF_Gv8CYU,1067
+kitano-0.0.3.dist-info/METADATA,sha256=m1SLDWjtNUuTaQSdYfGyvi-7DFMFgHC3V4ZXA3knUxY,416
+kitano-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kitano-0.0.3.dist-info/top_level.txt,sha256=Ehr-CpcbnlTcBBjowcxjtLSSsK3A344b3DFlXZNAElw,7
+kitano-0.0.3.dist-info/RECORD,,

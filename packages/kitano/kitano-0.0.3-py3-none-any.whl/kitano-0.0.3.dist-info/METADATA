@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kitano
+Version: 0.0.3
+Summary: Library for development and works in python3.9+
+Home-page: https://github.com/perseu912/kitano
+Author: Reinan Br
+Author-email: slimchatuba@gmail.com
+License: MIT License
+Keywords: kit tools dev works
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+
+# kitano
+A lib for tolls of development in python3.9+
+
+
