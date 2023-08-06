@@ -1,0 +1,17 @@
+requests
+beautifulsoup4
+python-dotenv
+requests
+configparser
+pydash
+colorlog
+prettytable
+pypac
+tqdm
+lxml
+pycryptodome
+json5
+
+[debug]
+ipython
+ipdb
