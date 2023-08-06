@@ -1,0 +1,15 @@
+prefect_aws/__init__.py,sha256=04LZM6O84kFdeLgLQylFjMhv4J0RvCPU-sGA6Gklbgo,270
+prefect_aws/_version.py,sha256=Pwvag2Z9u2BT55qr4snwbI6e9SYCcARKmxCwF2tBuy4,497
+prefect_aws/batch.py,sha256=L0f2ODFJjhj8cipR50V_OLonMjt4K1rSMG2Bt8bs0TA,2181
+prefect_aws/client_parameters.py,sha256=3rpQE4o_Ps6ZfHlfs3Kw8CbduGA_Fi1JHst5N4sCsfw,2605
+prefect_aws/client_waiter.py,sha256=nIKDbO98Hb_AtphksOciVFpCi_Cl_xpwhmN45dOXXi0,2710
+prefect_aws/credentials.py,sha256=m_356w8SI4-WyLk3rfuJ8udOru7sn0LKmEYsM5qoZ7M,4889
+prefect_aws/ecs.py,sha256=P4Vkoiqbgh66R_PmPl2cYH6oIZ-qyv3V7rvaV_4fd5E,42296
+prefect_aws/s3.py,sha256=sePpqUZ-nSz-BjbdHMZ3RaFTSg6F3Zm7bDAn0CLBoCo,14049
+prefect_aws/secrets_manager.py,sha256=KNb1QyFBeHlSKB3Ptltf_npTXMVX7SCA-lYVQS3LrN0,11549
+prefect_aws-0.1.5.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_aws-0.1.5.dist-info/METADATA,sha256=8pSkccfYJaeza63BiCjZj4b4HDpzdtouTAgXZ5nRi2E,7114
+prefect_aws-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prefect_aws-0.1.5.dist-info/entry_points.txt,sha256=5Y_wqlDCoLRS5i8j2QvhMYZAw6_806hRDACo7DbSSXM,114
+prefect_aws-0.1.5.dist-info/top_level.txt,sha256=fxJxxFAd2635lYsoNYcfoxM6kBZ0mKx8G2TyXqFljAU,12
+prefect_aws-0.1.5.dist-info/RECORD,,
