@@ -1,0 +1,11 @@
+processamento_imagens_pythonico/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processamento_imagens_pythonico/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processamento_imagens_pythonico/processing/combination.py,sha256=n-XDcgvRYbqtbOnz1YD6qGGQ8z6VrZERF3uBrFjpDcU,760
+processamento_imagens_pythonico/processing/transformation.py,sha256=Yxle0geLSG0XXRKoBv9sGtGFwYHbBRp5p5ZALC0vG0o,341
+processamento_imagens_pythonico/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processamento_imagens_pythonico/utils/io.py,sha256=hiHYy2-Ubgwur_hIZWHJMp6gsYEMJe_GRy80TooXwLQ,193
+processamento_imagens_pythonico/utils/plot.py,sha256=5BaxMrSaZJNdf8Ks-JfdjKxMvcCHQNDjrBrUBYi-0kw,960
+processamento_imagens_pythonico-0.0.1.dist-info/METADATA,sha256=WjF8YDRE0x-W5YfSwJn8maKYv1PtZJMYEsmH9N_BGz4,986
+processamento_imagens_pythonico-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+processamento_imagens_pythonico-0.0.1.dist-info/top_level.txt,sha256=QFJWhkJDmpn9NajqhOW_P1S6AtOdaIlHqf84BkDunjo,32
+processamento_imagens_pythonico-0.0.1.dist-info/RECORD,,
