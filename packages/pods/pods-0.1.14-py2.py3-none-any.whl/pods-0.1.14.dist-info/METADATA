@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pods
+Version: 0.1.14
+Summary: Python software for Open Data Science
+Home-page: https://github.com/lawrennd/ods
+Author: Neil D. Lawrence
+Author-email: lawrennd@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: PyYAML
+Requires-Dist: scipy
+Requires-Dist: tables
+Provides-Extra: kepler_telescope_light_curves
+Requires-Dist: astropy ; extra == 'kepler_telescope_light_curves'
+Provides-Extra: nigerian_nmis_data
+Requires-Dist: geopandas ; extra == 'nigerian_nmis_data'
+Provides-Extra: olivetti_faces
+Requires-Dist: netpbmfile ; extra == 'olivetti_faces'
+Provides-Extra: google_trends_interface
+Requires-Dist: pytrends ; extra == 'google_trends_interface'
+
+
+pods
+===
+
+<p align="left">
+  <a href="https://github.com/lawrennd/ods"><img alt="GitHub Actions status" src="https://github.com/lawrennd/ods/workflows/code-tests/badge.svg"></a>
+</p>
+
+# Python open data science software. 
+
+This repository contains utilities and tools for open data science including tools for accessing data sets in python. 
+
+
+
+
+# Installation
+
+```
+pip install pods
+```
+
+
+## Release Notes
+
+Note that from version 0.0.32-alpha non-data set loading functionality has been moved to other packages. Check [`goggles`](https://github.com/lawrennd/goggles), [`assessor`](https://github.com/lawrennd/assessor) and [`notutils`](https://github.com/lawrennd/notutils).
+
+
+
