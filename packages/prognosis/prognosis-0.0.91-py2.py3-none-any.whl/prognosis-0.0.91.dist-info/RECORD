@@ -1,0 +1,12 @@
+prognosis/__init__.py,sha256=G4YkcD4GYMd3mgJwBw8l0WdqX9bnqnx_Mfj79vCyDug,206
+prognosis/country.py,sha256=W2eKXpnitd72Mll0gSCB2iEWNktix2L7b-6L7HMh5E4,1972
+prognosis/country_group.py,sha256=QP-mYKa-7vbx8tOAumlBE8Zg5gcWOYzvbiWO2XXb2Z4,898
+prognosis/helper.py,sha256=F022zbs6ltAHDy7VXDhy29UcV553JyUBxEpJQTmkkaA,853
+prognosis/widget.py,sha256=vYVuIdu--l0A_iCUOkFHeHO3YuEHoYoElKoi3dZ-ECY,739
+prognosis/com/__init__.py,sha256=9laoxUw7ea9ysvpvigG9Iod6IR4OX5ab9RZSddXVgps,186
+prognosis/com/country.py,sha256=sciPpAUHnCjUppWsC9yD_DFenF_0UvReH01OV2WjA1Y,3649
+prognosis/com/topics.py,sha256=JLyn0qsSTi2igF6GIL8ux_x5z-n16EymDDMpz09o2tE,4260
+prognosis-0.0.91.dist-info/METADATA,sha256=AlHSQV5VGJqdRHXtrh4JvFx0sYaSnVsNhSHVy05ILfQ,1400
+prognosis-0.0.91.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+prognosis-0.0.91.dist-info/top_level.txt,sha256=GveuCivF6w1uvsazw65wxKDdFEzW19nx_5n6W5EY_dg,10
+prognosis-0.0.91.dist-info/RECORD,,
