@@ -1,0 +1,17 @@
+{
+    "install_requires": [
+        "generallibrary"
+    ],
+    "extras_require": {},
+    "enabled": true,
+    "private": false,
+    "name": "generalvector",
+    "target": "python",
+    "version": "1.5.111",
+    "description": "Simple immutable vectors.",
+    "topics": [
+        "utility"
+    ],
+    "manifest": [],
+    "contribute": false
+}
