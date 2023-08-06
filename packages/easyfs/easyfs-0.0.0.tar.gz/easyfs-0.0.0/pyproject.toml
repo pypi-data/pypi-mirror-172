@@ -1,0 +1,8 @@
+[project]
+name = "easyfs"
+version = "0.0.0"
+dynamic = ["dependencies", "optional-dependencies"]
+readme = "README.rst"
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {cookiecutter = {file = ["requirements-cookiecutter.txt"]}}

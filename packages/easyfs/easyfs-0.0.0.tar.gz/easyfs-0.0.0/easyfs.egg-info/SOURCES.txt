@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+easyfs/__init__.py
+easyfs/directory.py
+easyfs/file.py
+easyfs.egg-info/PKG-INFO
+easyfs.egg-info/SOURCES.txt
+easyfs.egg-info/dependency_links.txt
+easyfs.egg-info/requires.txt
+easyfs.egg-info/top_level.txt
