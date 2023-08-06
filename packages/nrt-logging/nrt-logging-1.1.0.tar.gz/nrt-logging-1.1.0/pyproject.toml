@@ -1,0 +1,26 @@
+[project]
+name='nrt-logging'
+version='1.1.0'
+authors=[
+  { name='Eyal Tuzon', email='eyal.tuzon.dev@gmail.com' },
+]
+description='Hierarchical logging in YAML format'
+keywords=[
+    'logging', 'logger', 'log', 'hierarchical',
+    'hierarchy', 'yaml']
+readme='README.md'
+requires-python='>=3.10'
+classifiers=[
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+    'Operating System :: OS Independent',
+]
+dynamic=['dependencies']
+
+[project.urls]
+'Homepage'='https://github.com/etuzon/Python-NRT-Logging'
+'Bug Tracker'='https://github.com/etuzon/Python-NRT-Logging/issues'
+'documentation'='https://github.com/etuzon/Python-NRT-Logging/wiki'
+[tool.setuptools]
+packages = ['nrt_logging']
+py-modules = []
