@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+goclecdscraper/__init__.py
+goclecdscraper/goclecdscraper.py
+goclecdscraper.egg-info/PKG-INFO
+goclecdscraper.egg-info/SOURCES.txt
+goclecdscraper.egg-info/dependency_links.txt
+goclecdscraper.egg-info/requires.txt
+goclecdscraper.egg-info/top_level.txt
