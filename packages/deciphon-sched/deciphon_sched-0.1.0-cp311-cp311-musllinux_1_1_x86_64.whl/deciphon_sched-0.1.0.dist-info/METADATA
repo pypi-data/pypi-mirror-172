@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: deciphon-sched
+Version: 0.1.0
+Summary: Deciphon scheduler wrapper
+Home-page: https://github.com/EBI-Metagenomics/deciphon-sched-py
+License: MIT
+Keywords: deciphon,sched,scheduler
+Author: Danilo Horta
+Author-email: danilo.horta@pm.me
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cffi
+Project-URL: Repository, https://github.com/EBI-Metagenomics/deciphon-sched-py
+Description-Content-Type: text/markdown
+
+# deciphon-sched-py
+Wrapper around deciphon-sched.
+
