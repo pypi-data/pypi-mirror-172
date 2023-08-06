@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-operating-unit
+Version: 14.0.20221017.0
+Summary: Meta package for oca-operating-unit Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-account-asset-operating-unit
+Requires-Dist: odoo14-addon-account-asset-operating-unit-access-all
+Requires-Dist: odoo14-addon-account-financial-report-operating-unit
+Requires-Dist: odoo14-addon-account-operating-unit
+Requires-Dist: odoo14-addon-account-operating-unit-access-all
+Requires-Dist: odoo14-addon-agreement-operating-unit
+Requires-Dist: odoo14-addon-analytic-operating-unit
+Requires-Dist: odoo14-addon-analytic-operating-unit-access-all
+Requires-Dist: odoo14-addon-contract-operating-unit
+Requires-Dist: odoo14-addon-contract-operating-unit-access-all
+Requires-Dist: odoo14-addon-crm-operating-unit
+Requires-Dist: odoo14-addon-fieldservice-operating-unit
+Requires-Dist: odoo14-addon-hr-contract-operating-unit
+Requires-Dist: odoo14-addon-hr-expense-operating-unit
+Requires-Dist: odoo14-addon-hr-expense-operating-unit-access-all
+Requires-Dist: odoo14-addon-hr-operating-unit
+Requires-Dist: odoo14-addon-hr-payroll-account-operating-unit
+Requires-Dist: odoo14-addon-mis-builder-budget-operating-unit
+Requires-Dist: odoo14-addon-mis-builder-operating-unit
+Requires-Dist: odoo14-addon-mis-builder-operating-unit-access-all
+Requires-Dist: odoo14-addon-mrp-operating-unit
+Requires-Dist: odoo14-addon-operating-unit
+Requires-Dist: odoo14-addon-operating-unit-access-all
+Requires-Dist: odoo14-addon-product-operating-unit
+Requires-Dist: odoo14-addon-purchase-operating-unit
+Requires-Dist: odoo14-addon-purchase-operating-unit-access-all
+Requires-Dist: odoo14-addon-purchase-request-operating-unit
+Requires-Dist: odoo14-addon-purchase-request-operating-unit-access-all
+Requires-Dist: odoo14-addon-purchase-requisition-operating-unit
+Requires-Dist: odoo14-addon-purchase-requisition-operating-unit-access-all
+Requires-Dist: odoo14-addon-report-qweb-operating-unit
+Requires-Dist: odoo14-addon-sales-team-operating-unit
+Requires-Dist: odoo14-addon-stock-operating-unit
+Requires-Dist: odoo14-addon-stock-operating-unit-access-all
+
+UNKNOWN
+
