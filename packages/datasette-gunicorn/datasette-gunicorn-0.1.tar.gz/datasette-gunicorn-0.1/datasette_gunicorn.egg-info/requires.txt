@@ -1,0 +1,7 @@
+datasette
+gunicorn
+
+[test]
+pytest
+pytest-asyncio
+cogapp
