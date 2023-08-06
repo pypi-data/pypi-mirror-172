@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/alethiomics/__init__.py
+src/alethiomics/adata.py
+src/alethiomics/ecdf.py
+src/alethiomics/fisher.py
+src/alethiomics/ks.py
+src/alethiomics/pykeen.py
+src/alethiomics.egg-info/PKG-INFO
+src/alethiomics.egg-info/SOURCES.txt
+src/alethiomics.egg-info/dependency_links.txt
+src/alethiomics.egg-info/requires.txt
+src/alethiomics.egg-info/top_level.txt
