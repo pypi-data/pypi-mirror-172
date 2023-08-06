@@ -1,0 +1,2 @@
+[console_scripts]
+easyt = easyT.file_generator:main
