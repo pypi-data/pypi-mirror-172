@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: eventsinksdkapi-swagger-client
+Version: 1.0.0
+Summary: Api Documentation
+Home-page: 
+Author-email: 
+Keywords: Swagger,Api Documentation
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    Api Documentation  # noqa: E501
+    
