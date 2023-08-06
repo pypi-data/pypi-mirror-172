@@ -1,0 +1,17 @@
+django_acl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_acl/admin.py,sha256=2KsjaKaxCG_gD2AEFCgjoTxGMI6blmcwQesIltS_9Jg,1097
+django_acl/apps.py,sha256=9xVJ2pKQ3Klr14e0Qz8FOSVTdleatjK-T0lAZx9lKjM,157
+django_acl/models.py,sha256=-j-aLXZUW9KtoWNlA-YL2cgVEBgL-_We6A4pI5NFsjQ,1299
+django_acl/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+django_acl/views.py,sha256=u0FhL7RT5byf5IlcnZEMrcH2TOnQkdfRQU2SjtA26m0,66
+django_acl/management/commands/init-migration.py,sha256=2xHeGw9QJoZb8qia-yRC76cO0lu9OOB0EbhoEx5maZc,623
+django_acl/management/commands/__pycache__/init-migration.cpython-310.pyc,sha256=X3KXg3hev76QlKRRc0RwT5x7I-r0eZus30btViEoRw0,981
+django_acl/management/commands/__pycache__/init-process.cpython-310.pyc,sha256=0qroe4rWWukOuF8r68-JJsf7OkBvB69bNIaj8VUNF44,1055
+django_acl/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_acl/utils/helper.py,sha256=AhkkM4Olrp92yOCPNzsQA2AyNA8BKm1qE2y4dQ2irP0,1735
+django_acl/utils/__pycache__/helper.cpython-310.pyc,sha256=NUj3H8dfZACdzMVpna7Ax-uMya132SJLTgZveTXL74E,2087
+django_acl_permissions-1.0.1.dist-info/LICENSE.txt,sha256=UiqC4htoqxvI7nlIGnaK_1sj_9OPzYci9b9fUkhQrYc,1089
+django_acl_permissions-1.0.1.dist-info/METADATA,sha256=gA16hDIkTj0HlnBX_IQ-G8lMjT8eiG2FWKNoECsjMUc,2953
+django_acl_permissions-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_acl_permissions-1.0.1.dist-info/top_level.txt,sha256=mK2BuZYxY7mdTG-xKBXAzZPBeSnVFOr2zp-xJnKnYvY,11
+django_acl_permissions-1.0.1.dist-info/RECORD,,
