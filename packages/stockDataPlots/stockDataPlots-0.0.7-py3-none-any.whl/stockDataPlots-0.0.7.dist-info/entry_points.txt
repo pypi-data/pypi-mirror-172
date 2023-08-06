@@ -1,0 +1,2 @@
+[nbdev]
+stockDataPlots = stockDataPlots._modidx:d
