@@ -1,0 +1,12 @@
+README.md
+setup.py
+XiyinliFazeXinlingShiyongShouce/README.md
+XiyinliFazeXinlingShiyongShouce/__init__.py
+XiyinliFazeXinlingShiyongShouce/__main__.py
+XiyinliFazeXinlingShiyongShouce/file.pdf
+XiyinliFazeXinlingShiyongShouce/index.html
+xiyinli_faze_xinling_shiyong_shouce.egg-info/PKG-INFO
+xiyinli_faze_xinling_shiyong_shouce.egg-info/SOURCES.txt
+xiyinli_faze_xinling_shiyong_shouce.egg-info/dependency_links.txt
+xiyinli_faze_xinling_shiyong_shouce.egg-info/entry_points.txt
+xiyinli_faze_xinling_shiyong_shouce.egg-info/top_level.txt
