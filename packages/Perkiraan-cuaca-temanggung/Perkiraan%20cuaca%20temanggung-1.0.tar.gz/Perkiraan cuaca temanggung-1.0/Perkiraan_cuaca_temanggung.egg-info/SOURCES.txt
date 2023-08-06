@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+Perkiraan_Cuaca/__init__.py
+Perkiraan_cuaca_temanggung.egg-info/PKG-INFO
+Perkiraan_cuaca_temanggung.egg-info/SOURCES.txt
+Perkiraan_cuaca_temanggung.egg-info/dependency_links.txt
+Perkiraan_cuaca_temanggung.egg-info/top_level.txt

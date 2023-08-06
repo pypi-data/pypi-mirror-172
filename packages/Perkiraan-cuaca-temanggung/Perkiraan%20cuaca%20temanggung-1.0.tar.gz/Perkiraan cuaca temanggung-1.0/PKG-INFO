@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Perkiraan cuaca temanggung
+Version: 1.0
+Summary: This package will get the latest weather from BMKG | Meteorological, Climatological, and Geophysical Agency
+Home-page: https://github.com/Jlntriwibowo/Perkiraan-cuaca
+Author: Julianto T. Wibowo
+Author-email: juliantowibowo3@gmail.com
+Project-URL: Website, https://remoteworker.id
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Perkiraan-cuaca
+Update cuaca di temanggung
+
+# How it works
+This package will get the latest weather from [BMKG](https://bmkg.go.id) | Meteorological, Climatological, and Geophysical Agency
