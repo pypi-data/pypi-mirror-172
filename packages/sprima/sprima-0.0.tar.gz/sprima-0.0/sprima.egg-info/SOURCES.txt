@@ -1,0 +1,9 @@
+README
+setup.cfg
+setup.py
+sprima.egg-info/PKG-INFO
+sprima.egg-info/SOURCES.txt
+sprima.egg-info/dependency_links.txt
+sprima.egg-info/not-zip-safe
+sprima.egg-info/requires.txt
+sprima.egg-info/top_level.txt
