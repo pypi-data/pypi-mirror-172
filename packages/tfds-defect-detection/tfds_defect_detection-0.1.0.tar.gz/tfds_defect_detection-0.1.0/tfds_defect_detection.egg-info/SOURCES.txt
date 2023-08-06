@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+tfds_defect_detection/__init__.py
+tfds_defect_detection/data.py
+tfds_defect_detection/test.py
+tfds_defect_detection/utils.py
+tfds_defect_detection.egg-info/PKG-INFO
+tfds_defect_detection.egg-info/SOURCES.txt
+tfds_defect_detection.egg-info/dependency_links.txt
+tfds_defect_detection.egg-info/requires.txt
+tfds_defect_detection.egg-info/top_level.txt
+tfds_defect_detection/downloader/__init__.py
+tfds_defect_detection/downloader/mvtec.py
+tfds_defect_detection/downloader/visual_anomalies.py
