@@ -1,0 +1,4 @@
+[console_scripts]
+DLR_ICF_comparison = DLR_ICF.DLR_ICF_comparison:main
+DLR_ICF_main = DLR_ICF.DLR_ICF_main:main
+
