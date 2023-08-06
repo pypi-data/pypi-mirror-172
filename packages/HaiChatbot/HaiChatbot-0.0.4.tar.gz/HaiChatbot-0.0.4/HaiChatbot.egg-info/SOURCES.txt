@@ -1,0 +1,8 @@
+setup.py
+HaiChatbot/HowToAnswer.py
+HaiChatbot/Talk.py
+HaiChatbot/__init__.py
+HaiChatbot.egg-info/PKG-INFO
+HaiChatbot.egg-info/SOURCES.txt
+HaiChatbot.egg-info/dependency_links.txt
+HaiChatbot.egg-info/top_level.txt
