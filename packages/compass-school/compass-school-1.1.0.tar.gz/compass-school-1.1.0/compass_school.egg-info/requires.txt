@@ -1,0 +1,12 @@
+bokeh
+hypothesis
+ijson
+Mesa
+pytest
+scikit_learn
+scipy
+seaborn
+dask
+distributed
+geopandas
+shapely
