@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+addon_tvg/__init__.py
+addon_tvg/evalexpress.py
+addon_tvg/grapp.py
+addon_tvg/sumall.py
+addon_tvg_karjakak.egg-info/PKG-INFO
+addon_tvg_karjakak.egg-info/SOURCES.txt
+addon_tvg_karjakak.egg-info/dependency_links.txt
+addon_tvg_karjakak.egg-info/requires.txt
+addon_tvg_karjakak.egg-info/top_level.txt
