@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: base00
+Version: 0.0.1
+Summary: Pacote python para salvar nomes criados para jogos de RPG
+Home-page: https://github.com/LeKeu/Gerador---Nomes-de-RPG
+Author: Leticia Keuffer Cavalleiro de Macedo
+Author-email: lekeuffer@gmail.com
+License: MIT License
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+*base*\
+Pacote criado como exercicio para salvar os nomes criados pelo pacote "gerador"
+
+*DependÃªncias*\
+Python 3.6 ou posterior
+
+*FunÃ§Ã£o*\
+save(*names)
+
