@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: qubitmapping
+Version: 0.1.4
+Summary: initial qubit mapping picked randomly
+Author: Yongsoo Hwang
+Requires-Python: >=3
