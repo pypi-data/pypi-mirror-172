@@ -1,0 +1,4 @@
+[console_scripts]
+YangzhongyiYixingHuandouShizhan = YangzhongyiYixingHuandouShizhan.__main__:main
+yangzhongyi-yixing-huandou-shizhan = YangzhongyiYixingHuandouShizhan.__main__:main
+
