@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hahnpro-flow-sdk
+Version: 0.1.1
+Summary: 
+Author: timoklingenhoefer
+Author-email: timo.klingenhoefer@web.de
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aio-pika (>=8.2.2,<9.0.0)
+Requires-Dist: typing-extensions (>=4.4.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+
