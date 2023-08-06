@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="res.group" id="group_bank_import">
+            <field name="name">Bank Import</field>
+        </record>
+        <record model="res.group" id="group_bank_import_admin">
+            <field name="name">Bank Import Administration</field>
+        </record>
+        <record model="res.user-res.group" id="user_admin_group_bank_import">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_bank_import"/>
+        </record>
+        <record model="res.user-res.group" id="user_admin_group_bank_import_admin">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_bank_import_admin"/>
+        </record>
+
+        <menuitem name="Bank Import" parent="account.menu_account_configuration"
+            id="menu_bank_import_configuration" sequence="80"/>
+        <record model="ir.ui.menu-res.group"
+            id="menu_bank_import_configuration_group_bank_import_admin">
+            <field name="menu" ref="menu_bank_import_configuration"/>
+            <field name="group" ref="group_bank_import_admin"/>
+        </record>
+        <menuitem name="Bank Import" parent="account.menu_account"
+            id="menu_bank_import" sequence="55"/>
+        <record model="ir.ui.menu-res.group" id="menu_bank_import_group_bank_import">
+            <field name="menu" ref="menu_bank_import"/>
+            <field name="group" ref="group_bank_import"/>
+        </record>
+        <record model="ir.ui.menu-res.group" id="menu_bank_import_group_bank_import_admin">
+            <field name="menu" ref="menu_bank_import"/>
+            <field name="group" ref="group_bank_import_admin"/>
+         </record>
+
+         <record model="ir.ui.view" id="bank_import_view_form">
+            <field name="model">banking.import.configuration</field>
+            <field name="type">form</field>
+            <field name="name">bank_import_form</field>
+        </record>
+        <record model="ir.ui.view" id="bank_import_view_tree">
+            <field name="model">banking.import.configuration</field>
+            <field name="type">tree</field>
+            <field name="name">bank_import_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_bank_import_form">
+            <field name="name">Bank Import Configurations</field>
+            <field name="res_model">banking.import.configuration</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_bank_import_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="bank_import_view_tree"/>
+            <field name="act_window" ref="act_bank_import_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_bank_import_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="bank_import_view_form"/>
+            <field name="act_window" ref="act_bank_import_form"/>
+        </record>
+        <menuitem parent="menu_bank_import_configuration" sequence="60"
+            action="act_bank_import_form" id="menu_bank_import_form"/>
+
+        <record model="ir.ui.view" id="bank_import_line_view_form">
+            <field name="model">banking.import.line</field>
+            <field name="type">form</field>
+            <field name="name">bank_import_line_form</field>
+        </record>
+        <record model="ir.ui.view" id="bank_import_line_view_tree">
+            <field name="model">banking.import.line</field>
+            <field name="type">tree</field>
+            <field name="name">bank_import_line_tree</field>
+        </record>
+
+        <record model="ir.ui.view" id="run_import_start_view_form">
+            <field name="model">banking.run_import.start</field>
+            <field name="type">form</field>
+            <field name="name">run_import_start_form</field>
+        </record>
+        <record model="ir.ui.view" id="run_import_info_no_lines_view_form">
+            <field name="model">banking.run_import.info_no_lines</field>
+            <field name="type">form</field>
+            <field name="name">run_import_info_no_lines_form</field>
+        </record>
+        <record model="ir.ui.view" id="run_import_show_view_form">
+            <field name="model">banking.run_import.show</field>
+            <field name="type">form</field>
+            <field name="name">run_import_show_form</field>
+        </record>
+
+        <record model="ir.action.wizard" id="act_run_import">
+            <field name="name">Run Import</field>
+            <field name="wiz_name">banking.run_import</field>
+            <field name="window" eval="True"/>
+        </record>
+        <menuitem parent="menu_bank_import" action="act_run_import"
+            id="menu_run_import" sequence="20"/>
+
+        <!-- Global rules -->
+        <record model="ir.rule.group" id="rule_group_banking_import_configuration_companies">
+            <field name="name">User in companies</field>
+            <field name="model" search="[('model', '=', 'banking.import.configuration')]"/>
+            <field name="global_p" eval="True"/>
+        </record>
+        <record model="ir.rule" id="rule_banking_import_configuration_companies">
+            <field name="domain"
+                eval="[('company', 'in', Eval('companies', []))]"
+                pyson="1"/>
+            <field name="rule_group" ref="rule_group_banking_import_configuration_companies"/>
+        </record>
+
+        <record model="ir.model.access" id="access_bank_import_configuration_default">
+            <field name="model" search="[('model', '=', 'banking.import.configuration')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_bank_import_configuration">
+            <field name="model" search="[('model', '=', 'banking.import.configuration')]"/>
+            <field name="group" ref="group_bank_import"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_bank_import_configuration_admin">
+            <field name="model" search="[('model', '=', 'banking.import.configuration')]"/>
+            <field name="group" ref="group_bank_import_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_bank_import_line_default">
+            <field name="model" search="[('model', '=', 'banking.import.line')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_bank_import_line">
+            <field name="model" search="[('model', '=', 'banking.import.line')]"/>
+            <field name="group" ref="group_bank_import"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <record model="ir.model.access" id="access_bank_import_line_admin">
+            <field name="model" search="[('model', '=', 'banking.import.line')]"/>
+            <field name="group" ref="group_bank_import_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+    </data>
+</tryton>

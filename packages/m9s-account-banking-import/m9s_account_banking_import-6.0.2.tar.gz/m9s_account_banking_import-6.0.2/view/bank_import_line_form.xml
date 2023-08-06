@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<form>
+    <label name="date"/>
+    <field name="date"/>
+    <label name="valuta_date"/>
+    <field name="valuta_date"/>
+    <label name="amount"/>
+    <field name="amount"/>
+    <label name="contra_name"/>
+    <field name="contra_name"/>
+    <label name="contra_account"/>
+    <field name="contra_account"/>
+    <label name="contra_bank_code"/>
+    <field name="contra_bank_code"/>
+    <label name="balance"/>
+    <field name="balance"/>
+    <label name="kind"/>
+    <field name="kind"/>
+    <label name="customer_ref"/>
+    <field name="customer_ref"/>
+    <label name="code"/>
+    <field name="code"/>
+    <label name="addkey"/>
+    <field name="addkey"/>
+    <label name="primanota"/>
+    <field name="primanota"/>
+    <newline/>
+    <label name="purpose"/>
+    <field name="purpose" colspan="3"/>
+</form>

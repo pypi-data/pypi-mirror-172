@@ -1,0 +1,6 @@
+m9s-trytond<6.1,>=6.0
+m9s_account_batch<6.1,>=6.0
+trytond_account_invoice<6.1,>=6.0
+trytond_bank<6.1,>=6.0
+trytond_company<6.1,>=6.0
+trytond_party<6.1,>=6.0

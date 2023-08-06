@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<form cursor="amount">
+    <label name="rule"/>
+    <field name="rule"/>
+    <label name="sequence"/>
+    <field name="sequence"/>
+
+    <label name="amount"/>
+    <field name="amount"/>
+    <newline/>
+
+    <label name="party"/>
+    <field name="party"/>
+    <label name="account"/>
+    <field name="account"/>
+    <label name="tax"/>
+    <field name="tax"/>
+    <label name="override_default_tax"/>
+    <field name="override_default_tax"/>
+</form>

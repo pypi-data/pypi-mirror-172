@@ -1,0 +1,725 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:account.batch.line,bank_imp_line:"
+msgid "Banking Import Line"
+msgstr "Bankimportzeile"
+
+msgctxt "field:banking.import.configuration,active:"
+msgid "Active"
+msgstr "Aktiv"
+
+msgctxt "field:banking.import.configuration,bank_account:"
+msgid "Bank Account"
+msgstr "Bankkonto"
+
+msgctxt "field:banking.import.configuration,company:"
+msgid "Company"
+msgstr "Unternehmen"
+
+msgctxt "field:banking.import.configuration,entry_date:"
+msgid "Entry date"
+msgstr "Erfassungsdatum"
+
+msgctxt "field:banking.import.configuration,import_method:"
+msgid "Import Method"
+msgstr "Importmethode"
+
+msgctxt "field:banking.import.configuration,journal:"
+msgid "Batch Journal"
+msgstr "Stapeljournal"
+
+msgctxt "field:banking.import.configuration,lines:"
+msgid "Imported Transactions"
+msgstr "Importierte Transaktionen"
+
+msgctxt "field:banking.import.configuration,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:banking.import.configuration,processing_start_date:"
+msgid "Processing Start Date"
+msgstr "Verarbeitungsstartdatum"
+
+msgctxt "field:banking.import.line,addkey:"
+msgid "Additional Key"
+msgstr "Zusatzschlüssel"
+
+msgctxt "field:banking.import.line,amount:"
+msgid "Amount"
+msgstr "Betrag"
+
+msgctxt "field:banking.import.line,balance:"
+msgid "Balance"
+msgstr "Saldo"
+
+msgctxt "field:banking.import.line,bank_import_config:"
+msgid "Bank Import Configuration"
+msgstr "Bankimportkonfiguration"
+
+msgctxt "field:banking.import.line,batch_lines:"
+msgid "Batch Lines"
+msgstr "Stapelzeilen"
+
+msgctxt "field:banking.import.line,code:"
+msgid "Code"
+msgstr "Code (Geschäftsvorfallcode)"
+
+msgctxt "field:banking.import.line,contra_account:"
+msgid "Contra Account Number"
+msgstr "Gegenkonto Nummer"
+
+msgctxt "field:banking.import.line,contra_bank_code:"
+msgid "Contra Account Bank Code"
+msgstr "Gegenkonto BLZ/BIC"
+
+msgctxt "field:banking.import.line,contra_name:"
+msgid "Contra Account Name"
+msgstr "Gegenkonto Name"
+
+msgctxt "field:banking.import.line,customer_ref:"
+msgid "Customer Reference"
+msgstr "Kundenreferenz"
+
+msgctxt "field:banking.import.line,date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:banking.import.line,kind:"
+msgid "Kind"
+msgstr "Art"
+
+msgctxt "field:banking.import.line,primanota:"
+msgid "Primanota"
+msgstr "Primanota"
+
+msgctxt "field:banking.import.line,purpose:"
+msgid "Purpose"
+msgstr "Verwendungszweck"
+
+msgctxt "field:banking.import.line,valuta_date:"
+msgid "Valuta Date"
+msgstr "Valutadatum"
+
+msgctxt "field:banking.import.rule,amount_high:"
+msgid "Amount High"
+msgstr "Betrag Obergrenze"
+
+msgctxt "field:banking.import.rule,amount_low:"
+msgid "Amount Low"
+msgstr "Betrag Untergrenze"
+
+msgctxt "field:banking.import.rule,bank_import_config:"
+msgid "Bank Import Configuration"
+msgstr "Bankimportkonfiguration"
+
+msgctxt "field:banking.import.rule,company:"
+msgid "Company"
+msgstr "Unternehmen"
+
+msgctxt "field:banking.import.rule,currency_digits:"
+msgid "Currency Digits"
+msgstr "Währung (signifikante Stellen)"
+
+msgctxt "field:banking.import.rule,information_rules:"
+msgid "Information Rules"
+msgstr "Informationsregeln"
+
+msgctxt "field:banking.import.rule,lines:"
+msgid "Lines"
+msgstr "Zeilen"
+
+msgctxt "field:banking.import.rule,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:banking.import.rule.information,boolean:"
+msgid "Boolean"
+msgstr "Boolesch"
+
+msgctxt "field:banking.import.rule.information,char:"
+msgid "Char"
+msgstr "Zeichen"
+
+msgctxt "field:banking.import.rule.information,float_high:"
+msgid "Float High"
+msgstr "Fließkommazahl Oberbetrag"
+
+msgctxt "field:banking.import.rule.information,float_low:"
+msgid "Float Low"
+msgstr "Fließkommazahl Unterbetrag"
+
+msgctxt "field:banking.import.rule.information,integer_high:"
+msgid "Integer High"
+msgstr "Ganzzahl Oberbetrag"
+
+msgctxt "field:banking.import.rule.information,integer_low:"
+msgid "Integer Low"
+msgstr "Ganzzahl Unterbetrag"
+
+msgctxt "field:banking.import.rule.information,key:"
+msgid "Key"
+msgstr "Schlüssel"
+
+msgctxt "field:banking.import.rule.information,key_type:"
+msgid "Key Type"
+msgstr "Schlüsseltyp"
+
+msgctxt "field:banking.import.rule.information,key_value:"
+msgid "Match Value"
+msgstr "Suchwert"
+
+msgctxt "field:banking.import.rule.information,number_high:"
+msgid "Numeric High"
+msgstr "Numerisch Obergrenze"
+
+msgctxt "field:banking.import.rule.information,number_low:"
+msgid "Numeric Low"
+msgstr "Numerisch Untergrenze"
+
+msgctxt "field:banking.import.rule.information,rule:"
+msgid "Rule"
+msgstr "Regel"
+
+msgctxt "field:banking.import.rule.information,selection:"
+msgid "Selection"
+msgstr "Auswahl"
+
+msgctxt "field:banking.import.rule.information,text:"
+msgid "Text"
+msgstr "Text"
+
+msgctxt "field:banking.import.rule.line,account:"
+msgid "Account"
+msgstr "Konto"
+
+msgctxt "field:banking.import.rule.line,amount:"
+msgid "Amount"
+msgstr "Betrag"
+
+msgctxt "field:banking.import.rule.line,company:"
+msgid "Company"
+msgstr "Unternehmen"
+
+msgctxt "field:banking.import.rule.line,date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:banking.import.rule.line,override_default_tax:"
+msgid "Override Default Taxes"
+msgstr "Standardsteuern überschreiben"
+
+msgctxt "field:banking.import.rule.line,party:"
+msgid "Party"
+msgstr "Partei"
+
+msgctxt "field:banking.import.rule.line,rule:"
+msgid "Rule"
+msgstr "Regel"
+
+msgctxt "field:banking.import.rule.line,tax:"
+msgid "Tax"
+msgstr "Steuer"
+
+msgctxt "field:banking.run_import.show,addkey:"
+msgid "Additional Key"
+msgstr "Zusatzschlüssel"
+
+msgctxt "field:banking.run_import.show,amount:"
+msgid "Amount"
+msgstr "Betrag"
+
+msgctxt "field:banking.run_import.show,balance:"
+msgid "Balance"
+msgstr "Saldo"
+
+msgctxt "field:banking.run_import.show,bank_import_config:"
+msgid "Bank Import Configuration"
+msgstr "Bankimportkonfiguration"
+
+msgctxt "field:banking.run_import.show,batch:"
+msgid "Batch"
+msgstr "Buchungsstapel"
+
+msgctxt "field:banking.run_import.show,batch_lines:"
+msgid "Batch Lines"
+msgstr "Stapelzeilen"
+
+msgctxt "field:banking.run_import.show,code:"
+msgid "Code"
+msgstr "Code (Geschäftsvorfallcode)"
+
+msgctxt "field:banking.run_import.show,contra_account:"
+msgid "Contra Account Number"
+msgstr "Gegenkonto Nummer"
+
+msgctxt "field:banking.run_import.show,contra_bank_code:"
+msgid "Contra Account Bank Code"
+msgstr "Gegenkonto BLZ/BIC"
+
+msgctxt "field:banking.run_import.show,contra_name:"
+msgid "Contra Account Name"
+msgstr "Gegenkonto Name"
+
+msgctxt "field:banking.run_import.show,counter:"
+msgid "Counter"
+msgstr "Zähler"
+
+msgctxt "field:banking.run_import.show,customer_ref:"
+msgid "Customer Reference"
+msgstr "Kundenreferenz"
+
+msgctxt "field:banking.run_import.show,date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:banking.run_import.show,difference:"
+msgid "Difference"
+msgstr "Differenz"
+
+msgctxt "field:banking.run_import.show,journal:"
+msgid "Batch Journal"
+msgstr "Stapeljournal"
+
+msgctxt "field:banking.run_import.show,kind:"
+msgid "Kind"
+msgstr "Art"
+
+msgctxt "field:banking.run_import.show,line:"
+msgid "Banking Import Line"
+msgstr "Bankimportzeile"
+
+msgctxt "field:banking.run_import.show,lines:"
+msgid "Unprocessed Lines"
+msgstr "Nicht verarbeitete Buchungen"
+
+msgctxt "field:banking.run_import.show,primanota:"
+msgid "Primanota"
+msgstr "Primanota"
+
+msgctxt "field:banking.run_import.show,purpose:"
+msgid "Purpose"
+msgstr "Verwendungszweck"
+
+msgctxt "field:banking.run_import.show,sum_lines:"
+msgid "Sum Lines"
+msgstr "Zeilensumme"
+
+msgctxt "field:banking.run_import.show,valuta_date:"
+msgid "Valuta Date"
+msgstr "Valutadatum"
+
+msgctxt "field:banking.run_import.start,bank_import_config:"
+msgid "Bank Import Configuration"
+msgstr "Bankimportkonfiguration"
+
+msgctxt "field:banking.run_import.start,batch:"
+msgid "Batch"
+msgstr "Buchungsstapel"
+
+msgctxt "field:banking.run_import.start,company:"
+msgid "Company"
+msgstr "Unternehmen"
+
+msgctxt "field:banking.run_import.start,counter_total:"
+msgid "Counter Total"
+msgstr "Zähler gesamt"
+
+msgctxt "field:banking.run_import.start,employee:"
+msgid "Employee"
+msgstr "Mitarbeiter"
+
+msgctxt "field:banking.run_import.start,journal:"
+msgid "Batch Journal"
+msgstr "Stapeljournal"
+
+msgctxt "field:banking.run_import.start,running_balance:"
+msgid "Running Balance"
+msgstr "Laufender Saldo"
+
+msgctxt "field:banking.run_import.start,start_balance:"
+msgid "Start Balance"
+msgstr "Anfangssaldo"
+
+msgctxt "field:banking.run_import.start,update_transactions:"
+msgid "Update Transactions"
+msgstr "Transaktionen aktualisieren"
+
+msgctxt "help:banking.import.configuration,bank_account:"
+msgid ""
+"Bank Account of the company, for which the transactions will be imported."
+msgstr ""
+"Bankkonto des Unternehmens, für das die Transaktionen importiert werden "
+"sollen."
+
+msgctxt "help:banking.import.configuration,entry_date:"
+msgid ""
+"The date of the bank statement, that shall be used as entry date for "
+"accounting."
+msgstr ""
+"Das Datum auf dem Bankauszug, das als Erfassungsdatum für die Buchhaltung "
+"verwendet werden soll."
+
+msgctxt "help:banking.import.configuration,import_method:"
+msgid ""
+"Import Method to use for this configuration.\n"
+"(Import Methods are provided by specific Submodules)"
+msgstr ""
+"Importmethode, die für diese Konfiguration zur Anwendung kommt.\n"
+"(Importmethoden werden durch spezifische Untermodule bereitgestellt)"
+
+msgctxt "help:banking.import.configuration,journal:"
+msgid "Bank Journal used for this import configuration."
+msgstr ""
+"Bankjournal, das für diese Importkonfiguration zur Anwendung kommen soll"
+
+msgctxt "help:banking.import.configuration,processing_start_date:"
+msgid "The date from which on transactions shall be presented for processing."
+msgstr ""
+"Ab diesem Datum sollen Banktransaktionen zur Verarbeitung vorgelegt werden"
+
+msgctxt "help:banking.import.line,balance:"
+msgid "New balance at the end of the transaction"
+msgstr "Neuer Saldo bei Transaktionsende"
+
+msgctxt "help:banking.import.line,contra_account:"
+msgid "Number of the Contra Account"
+msgstr "Nummer des Gegenkontos"
+
+msgctxt "help:banking.import.line,contra_bank_code:"
+msgid "Bank/Business Identifier Code of the Contra Account"
+msgstr "Bankleitzahl/BIC (Bankleitzahl/BIC des Gegenkontos) des Gegenkontos"
+
+msgctxt "help:banking.import.line,contra_name:"
+msgid "Name of the owner of the Contra Account"
+msgstr "Name des Inhabers des Gegenkontos"
+
+msgctxt "help:banking.import.rule.information,char:"
+msgid ""
+"The regular expression the key information is searched with.\n"
+"It may define the groups named:\n"
+"party, bank_account, invoice."
+msgstr ""
+"Der reguläre Ausdruck (RegEx), der verwendet wird um den Schlüsselwert zu durchsuchen.\n"
+"Es können folgende Gruppen verwendet werden:\n"
+"party, bank_account, invoice."
+
+msgctxt "help:banking.import.rule.information,text:"
+msgid ""
+"The regular expression the key information is searched with.\n"
+"It may define the groups named:\n"
+"party, bank_account, invoice."
+msgstr ""
+"Der reguläre Ausdruck (RegEx), der verwendet wird um den Schlüsselwert zu durchsuchen.\n"
+"Es können folgende Gruppen verwendet werden:\n"
+"party, bank_account, invoice."
+
+msgctxt "help:banking.import.rule.line,account:"
+msgid ""
+"Leave empty to use the party's receivable or payable account.\n"
+"The rule must have a company to use this field."
+msgstr ""
+"Leer lassen um das Forderungs- bzw. Verbindlichkeitskonto der Partei zu verwenden.\n"
+"Für die Funktion dieses Felds muss ein Unternehmen für die Regel definiert sein."
+
+msgctxt "help:banking.import.rule.line,amount:"
+msgid "A Python expression evaluated with 'amount' and 'pending'."
+msgstr "Ein Pythonausdruck der mit 'amount' und 'pending' ausgewertert wird."
+
+msgctxt "help:banking.import.rule.line,override_default_tax:"
+msgid ""
+"When activated the tax will override the default taxes defined on the "
+"account."
+msgstr ""
+"Bei Aktivierung werden die Standardsteuern des Kontos durch den Wert der "
+"Steuer überschrieben."
+
+msgctxt "help:banking.import.rule.line,party:"
+msgid ""
+"Leave empty to use the group named 'party' from the regular expressions."
+msgstr "Leer lassen um die RegEx-Gruppe 'party' zu verwenden."
+
+msgctxt "help:banking.import.rule.line,tax:"
+msgid ""
+"Leave empty to use the default taxes defined on the account.\n"
+"The rule must have a company to use this field."
+msgstr ""
+"Leer lassen um die Standardsteuern des Kontos zu verwenden.\n"
+"Für die Funktion dieses Felds muss ein Unternehmen für die Regel definiert sein."
+
+msgctxt "help:banking.run_import.show,balance:"
+msgid "New balance at the end of the transaction"
+msgstr "Neuer Saldo bei Transaktionsende"
+
+msgctxt "help:banking.run_import.show,contra_account:"
+msgid "Number of the Contra Account"
+msgstr "Nummer des Gegenkontos"
+
+msgctxt "help:banking.run_import.show,contra_bank_code:"
+msgid "Bank/Business Identifier Code of the Contra Account"
+msgstr "Bankleitzahl/BIC (Bankleitzahl/BIC des Gegenkontos) des Gegenkontos"
+
+msgctxt "help:banking.run_import.show,contra_name:"
+msgid "Name of the owner of the Contra Account"
+msgstr "Name des Inhabers des Gegenkontos"
+
+msgctxt "help:banking.run_import.show,counter:"
+msgid "Display of the actual and total number of banking import lines"
+msgstr ""
+"Anzeige der aktuellen und gesamten Anzahl der zu verarbeitenden "
+"Bankimportzeilen"
+
+msgctxt "help:banking.run_import.show,difference:"
+msgid "This field displays the difference to the expected balance."
+msgstr "Dieses Feld zeigt die Differenz zum erwarteten Saldo an"
+
+msgctxt "help:banking.run_import.show,sum_lines:"
+msgid "This field displays the sum of the actual encoded lines"
+msgstr "Dieses Feld zeigt die Summe der aktuellen Stapelzeilen an"
+
+msgctxt "help:banking.run_import.start,bank_import_config:"
+msgid "Bank Import Configuration to use for this run"
+msgstr ""
+"Bankimportkonfiguration, die für diesen Durchlauf verwendet werden soll"
+
+msgctxt "help:banking.run_import.start,running_balance:"
+msgid "Balance updated with each imported line"
+msgstr "Dieser Saldo wird mit jeder importierten Zeile aktualisiert"
+
+msgctxt "help:banking.run_import.start,start_balance:"
+msgid "Start balance at the begin of the import"
+msgstr "Anfangssaldo zu Beginn des Imports"
+
+msgctxt "help:banking.run_import.start,update_transactions:"
+msgid ""
+"Whether the transactions of the selected account shall be updated before "
+"running the import into a batch journal"
+msgstr ""
+"Ob die Transaktionen für die ausgewählte Konfiguration vor der Verarbeitung "
+"aktualisiert werden sollen"
+
+msgctxt "model:banking.import.configuration,name:"
+msgid "Bank Import Configuration"
+msgstr "Bankimportkonfiguration"
+
+msgctxt "model:banking.import.line,name:"
+msgid "Bank Import Line"
+msgstr "Bankimportzeile"
+
+msgctxt "model:banking.import.rule,name:"
+msgid "Banking Import Rule"
+msgstr "Bankimportregel"
+
+msgctxt "model:banking.import.rule.information,name:"
+msgid "Banking Import Rule Information"
+msgstr "Bankimportregelinformation"
+
+msgctxt "model:banking.import.rule.line,name:"
+msgid "Banking Import Rule Line"
+msgstr "Bankimportregelzeile"
+
+msgctxt "model:banking.run_import.info_no_lines,name:"
+msgid "Run Import Info No Lines"
+msgstr "Bankimport Info Keine Zeilen"
+
+msgctxt "model:banking.run_import.show,name:"
+msgid "Run Import Show"
+msgstr "Bankimport Anzeige"
+
+msgctxt "model:banking.run_import.start,name:"
+msgid "Run Import Start"
+msgstr "Bankimport Start"
+
+msgctxt "model:ir.action,name:act_bank_import_form"
+msgid "Bank Import Configurations"
+msgstr "Bankimportkonfigurationen"
+
+msgctxt "model:ir.action,name:act_rule_form"
+msgid "Rules"
+msgstr "Regeln"
+
+msgctxt "model:ir.action,name:act_run_import"
+msgid "Run Import"
+msgstr "Import ausführen"
+
+msgctxt "model:ir.message,text:msg_bank_account_used"
+msgid "A bank account can only be used in one active configuration."
+msgstr ""
+"Ein Bankkonto kann nur in einer aktiven Konfiguration verwendet werden."
+
+msgctxt "model:ir.message,text:msg_journal_used"
+msgid "A journal can only be used in one active configuration."
+msgstr "Ein Journal kann nur in einer aktiven Konfiguration verwendet werden."
+
+msgctxt "model:ir.message,text:msg_method_not_available"
+msgid "Method %s not available."
+msgstr "Methode %s ist nicht verfügbar."
+
+msgctxt "model:ir.message,text:msg_missing_currency_account"
+msgid "Currency on bank account is missing."
+msgstr "Fehlende Währung auf dem Bankkonto."
+
+msgctxt "model:ir.message,text:msg_missing_journal_account"
+msgid ""
+"Missing account on the Bank Import Journal. Please configure the journal "
+"before proceeding."
+msgstr ""
+"Fehlendes Konto im Bankimportjournal. Bitte konfigurieren Sie das Journal "
+"bevor Sie fortsetzen können."
+
+msgctxt "model:ir.message,text:msg_unposted_batch_lines"
+msgid ""
+"There exist unposted batch lines for this account. Before being able to "
+"import further transactions these batch lines must be "
+"processed:%(batch_lines)s"
+msgstr ""
+"Es existieren nicht festgeschriebene Stapelzeilen für dieses Konto. Vor der "
+"Eingabe weiterer Transaktionen müssen diese Stapelzeilen verarbeitet "
+"werden:%(batch_lines)s"
+
+msgctxt "model:ir.message,text:msg_wrong_currency"
+msgid "Currency of bank account and journal must be the same."
+msgstr "Die Währung von Bankkonto und Journal muss übereinstimmen."
+
+msgctxt "model:ir.message,text:msg_wrong_initial_balance"
+msgid ""
+"Initial balance check: The balance of the first Banking Import Line "
+"(%(line)s): %(line_balance)s does not match the initial balance of the "
+"journal: %(journal_balance)s. Difference: %(difference)s"
+msgstr ""
+"Initiale Saldenüberprüfung: Der Saldo der ersten Bankimportzeile (%(line)s):"
+" %(line_balance)s entspricht nicht dem Startsaldo des Journals: "
+"%(journal_balance)s. Differenz: %(difference)s"
+
+msgctxt "model:ir.message,text:msg_wrong_line_balance"
+msgid ""
+"Running balance check: The balance of the next Banking Import Line "
+"(%(line)s): %(line_balance)s does not match the running balance of the "
+"journal: %(journal_balance)s. Difference: %(difference)s"
+msgstr ""
+"Laufende Saldenüberprüfung: Der Saldo der nächsten Bankimportzeile "
+"(%(line)s): %(line_balance)s entspricht nicht dem laufenden Saldo des "
+"Journals: %(journal_balance)s. Differenz: %(difference)s"
+
+msgctxt ""
+"model:ir.rule.group,name:rule_group_banking_import_configuration_companies"
+msgid "User in companies"
+msgstr "Benutzer im Unternehmen"
+
+msgctxt "model:ir.rule.group,name:rule_group_banking_import_rule_companies"
+msgid "User in companies"
+msgstr "Benutzer im Unternehmen"
+
+msgctxt ""
+"model:ir.rule.group,name:rule_group_banking_import_rule_line_companies"
+msgid "User in companies"
+msgstr "Benutzer im Unternehmen"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_import"
+msgid "Bank Import"
+msgstr "Bankimport"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_import_configuration"
+msgid "Bank Import"
+msgstr "Bankimport"
+
+msgctxt "model:ir.ui.menu,name:menu_bank_import_form"
+msgid "Bank Import Configurations"
+msgstr "Bankimportkonfigurationen"
+
+msgctxt "model:ir.ui.menu,name:menu_rule_form"
+msgid "Rules"
+msgstr "Regeln"
+
+msgctxt "model:ir.ui.menu,name:menu_run_import"
+msgid "Run Import"
+msgstr "Import ausführen"
+
+msgctxt "model:res.group,name:group_bank_import"
+msgid "Bank Import"
+msgstr "Bankimport"
+
+msgctxt "model:res.group,name:group_bank_import_admin"
+msgid "Bank Import Administration"
+msgstr "Bankimport Administration"
+
+msgctxt "selection:banking.import.configuration,entry_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "selection:banking.import.configuration,entry_date:"
+msgid "Valuta Date"
+msgstr "Valutadatum"
+
+msgctxt "view:banking.import.configuration:"
+msgid "Imported Transactions"
+msgstr "Importierte Transaktionen"
+
+msgctxt "view:banking.import.line:"
+msgid "Bank Import Line"
+msgstr "Bankimportzeile"
+
+msgctxt "view:banking.import.line:"
+msgid "Bank Import Lines"
+msgstr "Bankimportzeile"
+
+msgctxt "view:banking.import.rule.information:"
+msgid "-"
+msgstr "-"
+
+msgctxt "view:banking.import.rule:"
+msgid "Amount between low threshold"
+msgstr "Betrag zwischen Untergrenze"
+
+msgctxt "view:banking.import.rule:"
+msgid "Criteria"
+msgstr "Kriterien"
+
+msgctxt "view:banking.import.rule:"
+msgid "and high threshold"
+msgstr "und Obergrenze"
+
+msgctxt "view:banking.run_import.info_no_lines:"
+msgid "No Lines for import found!"
+msgstr "Keine Zeilen für den Import gefunden."
+
+msgctxt "view:banking.run_import.show:"
+msgid "Control Data"
+msgstr "Kontrolldaten"
+
+msgctxt "view:banking.run_import.show:"
+msgid "Transaction Data"
+msgstr "Transaktionsdaten"
+
+msgctxt "view:banking.run_import.start:"
+msgid "Run Import"
+msgstr "Import ausführen"
+
+msgctxt "view:company.company:"
+msgid "Bank Import"
+msgstr "Bankimport"
+
+msgctxt "view:company.company:"
+msgid "Bank Import Configurations"
+msgstr "Bankimportkonfigurationen"
+
+msgctxt "wizard_button:banking.run_import,info_no_lines,clean:"
+msgid "Ok"
+msgstr "OK"
+
+msgctxt "wizard_button:banking.run_import,show,open_batch:"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgctxt "wizard_button:banking.run_import,show,save_lines:"
+msgid "Next"
+msgstr "Weiter"
+
+msgctxt "wizard_button:banking.run_import,start,end:"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgctxt "wizard_button:banking.run_import,start,process_:"
+msgid "Process"
+msgstr "Ausführen"

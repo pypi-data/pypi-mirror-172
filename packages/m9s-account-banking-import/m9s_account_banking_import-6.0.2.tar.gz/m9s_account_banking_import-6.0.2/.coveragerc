@@ -1,0 +1,5 @@
+[run]
+source = trytond.modules.account_banking_import
+
+[report]
+omit = */tests/*,*/setup.py

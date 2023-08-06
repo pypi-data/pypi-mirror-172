@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<form>
+    <label name="employee"/>
+    <field name="employee"/>
+    <label name="bank_import_config"/>
+    <field name="bank_import_config"/>
+    <label name="update_transactions"/>
+    <field name="update_transactions"/>
+</form>
