@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+mudanca.egg-info/PKG-INFO
+mudanca.egg-info/SOURCES.txt
+mudanca.egg-info/dependency_links.txt
+mudanca.egg-info/top_level.txt
+src/ashift.c
+src/ashift.h
+src/ashift.pxd
+src/ashift_nmsimplex.c
+src/math.h
+src/mudancamodule.c
+src/mudancamodule.pyx
