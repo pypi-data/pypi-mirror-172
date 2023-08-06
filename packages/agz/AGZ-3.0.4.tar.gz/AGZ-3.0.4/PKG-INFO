@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: AGZ
+Version: 3.0.4
+Summary: This is an unofficial library and fastest library for deploying robots on Rubika accounts.
+Home-page: https://github.com/aliexers
+Author: Ali Ganji zadeh
+Author-email: yb.windows.plus@gmail.com
+Keywords: agz,bot,robot,library,rubikalib,rubika,agz lib,agz-lib
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+## AGZ
+
+**This is fast and easy library for making rubika self bots**
+
+## Example
+``` python
+from AGZ.Socket.AGZ_Socket import _Socket
+from AGZ.Lib.AGZ_lib import Bot
+
+auth = "Auth Acount"
+agz , bot = _Socket(auth) , Bot(auth)
+
+for msg in agz.handler():
+    guid = agz.object_guid(msg)
+    user = agz.author_object_guid(msg)
+    msg_id = agz.message_id(msg)
+    guid_type = agz.guid_type(msg)
+    action = agz.action(msg)
+    text = agz.text(msg)
+    print(text)
+
+    if text == "hello":
+        bot.sendMessage(guid , "hi" , msg_id)
+```
+
+### Installing
+
+``` bash
+pip3 install AGZ
+```
+
+© 2022 Ali Ganji zadeh
