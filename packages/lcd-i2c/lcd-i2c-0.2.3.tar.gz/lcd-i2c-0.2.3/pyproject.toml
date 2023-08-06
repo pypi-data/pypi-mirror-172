@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lcd-i2c"
+version = "0.2.3"
+description = "Library for interacting with an I2C LCD screen through Python"
+authors = ["Federico Giancarelli <hello@federicogiancarelli.com>"]
+homepage = "https://github.com/omirete/lcd-i2c"
+license = "MIT"
+readme = "README.md"
+packages = [{include = "lcd_i2c"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+smbus2 = "^0.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
