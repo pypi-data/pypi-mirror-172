@@ -1,0 +1,8 @@
+sqlpd/__init__.py,sha256=pP19JZ1bdfVneddzrljv4LlhCGXUjP-HtwCdMGzVmvs,36
+sqlpd/src/connection.py,sha256=SWeAQaw8OdKpaN-v8baMYl1p_SGtwSw2Yhy9ZkGNcu0,13690
+sqlpd/src/database.py,sha256=Up8WlRTWZvnAphnlZpsE7zsI2z6ohNU1IrqVdbSxLhk,9709
+sqlpd-1.1.0.dist-info/LICENSE,sha256=hRv115YwRarr5wPuaEzj3_yO8iojV8DqDQvYFCPuKYY,1071
+sqlpd-1.1.0.dist-info/METADATA,sha256=f-xqzzNm5J2SXwnrHlHfxS8O1gATQngyh7XAkyo36go,236
+sqlpd-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqlpd-1.1.0.dist-info/top_level.txt,sha256=1ggbSOCEWN4QSdEhdHuOEPwhYrL-jziGpTN_uWE4CsU,6
+sqlpd-1.1.0.dist-info/RECORD,,
