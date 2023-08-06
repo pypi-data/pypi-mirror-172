@@ -1,0 +1,625 @@
+- model:  权限
+  handler: "PermissionGroups"
+  apis: "/permission/groups"
+  method:
+    get:
+      summary: 角色详情
+      description:
+      parameters:
+        - name: group_id
+          description: 角色id
+          required: true
+          type: int
+        - name: content_type
+          description: 0系统端角色，1业务的角色
+          required: true
+          type: int
+          allow: [ 0, 1 ]
+      responses:
+        {
+          "id": "id",
+          "name": "角色名称",
+          "counts": 10,               # 成员数量
+          "state": 1,                           # 1可以 0 禁用 默认1
+          "content_type": 1,             # 1 业务端使用，0系统管理端
+          "describes": "描述",           
+          "permissions": '{
+            "control2-xxx-api:get": 1,        # 1勾选，0未勾选
+            "control2-xxx-api2:get,post,put,delete": 1,  # 组合方法
+            "monitoring-tasks-api:post": 1
+          }',
+          create_time: "2022-10-11 09:20:08",
+          update_time: "2022-10-11 09:20:08"
+        }
+
+    post:
+      summary: 新增角色
+      description:
+      parameters:
+        - name: name
+          description: 权限名称
+          required: true
+          type: str
+          regex: ^[a-zA-Z\u4e00-\u9fa5]{2,40}$
+          message: 仅允许输入中文、英文，长度为2-40个字符
+        - name: content_type
+          description: 0系统端角色，1业务的角色
+          required: true
+          type: int
+          allow: [0, 1]
+        - name: describes
+          description: 角色说明
+          required: false
+          type: str
+          default: ""
+          regex: ^.{0,200}$
+          message: 最多填写200字
+      responses:
+        {
+
+        }
+
+    put:
+      summary: 修改角色
+      description:
+      parameters:
+        - name: group_id
+          description: id
+          required: true
+          type: int
+        - name: name
+          description: 权限名称
+          required: false
+          type: str
+          regex: ^[a-zA-Z\u4e00-\u9fa5]{2,40}$
+          message: 仅允许输入中文、英文，长度为2-40个字符
+        - name: state
+          description: 1启用，0禁用
+          required: false
+          type: int
+          allow: [ 0, 1]
+#        - name: content_type
+#          description: 0系统端角色，1业务的角色
+#          required: true
+#          type: int
+#          allow: [ 0, 1 ]
+        - name: describes
+          description: 角色说明
+          required: false
+          type: str
+          default: ""
+          regex: ^.{0,200}$
+          message: 最多填写200字
+      responses:
+        {
+
+        }
+
+#    delete:
+#      summary: 删除角色
+#      description:
+#      parameters:
+#      - name: group_id
+#        description: id
+#        required: true
+#        type: int
+#
+#      responses:
+#        {
+#
+#        }
+
+- handler: "PermissionGroupsMembers"
+  apis: "/permission/groups/members"
+  method:
+    get:
+      summary: 该角色的用户
+      description:
+      parameters:
+        - name: group_id
+          description: 角色id
+          required: true
+          type: int
+        - name: company_id
+          description: 指定商户id，不提供代表所有
+          required: false
+          type: int
+
+      responses:
+        {
+          'datas':
+            [
+              {
+                id: 51,
+#                last_login: "",
+#                is_superuser: 0,
+                create_time: "2022-09-20 16:34:50",
+                update_time: "2022-09-20 16:35:48",
+                username: "jianwei",
+                account: "hkvoVMDPmX",
+                mobile: "18588647651",
+#                email: "1123360699@qqq.com",
+                avatar: "头像data:image/png;base64,iVBOR...",
+                is_active: 0,
+#                is_staff: 1,
+#                is_guide: 0,
+#                department: "",
+#                position: "",
+#                gender: "",
+                company_id: 1,
+#                warn_norm_id: "",
+#                group_id: "27",
+                company_name: "商户名称"
+              }
+            ],
+
+        }
+
+    post:
+      summary: 给角色分配成员
+      description: 选定一个角色，分配若干个成员
+      parameters:
+        - name: group_id
+          description: 角色id
+          required: true
+          type: int
+        - name: company_id
+          description: 商户id
+          required: true
+          type: int
+        - name: user_id
+          description: 角色id，逗号隔开
+          required: true
+          type: str
+
+      responses:
+        {
+
+        }
+
+- handler: "PermissionGroupsList"
+  apis: "/permission/groups/list"
+  method:
+    get:
+      summary: 所有角色列表
+      description:
+      parameters:
+        - name: page
+          description: 翻页码
+          required: false
+          type: int
+          default: 1
+        - name: count
+          description: 每页显示条数
+          required: false
+          type: int
+          default: 10
+        - name: state
+          description: 状态
+          required: false
+          type: int
+          allow: [0, 1]
+        - name: content_type
+          description: 0系统端角色，1业务的角色
+          required: false
+          type: int
+          allow: [ 0, 1 ]
+        - name: company_id
+          description: 指定商户，默认所有角色。
+          required: false
+          type: int
+      responses:
+        {
+          'datas':
+            [
+              {
+                "id": "id",
+                "name": "角色名称",
+                "counts": 10,               # 成员数量
+                "state": 1,                           # 1可以 0 禁用 默认1
+                "content_type": 1,             # 1 业务端使用，0系统管理端
+                "describes": "描述",
+#                "permissions": '
+#                    {
+#                      "control2-xxx-api:get": 1,        # 1勾选，0未勾选
+#                      "control2-xxx-api2:get,post,put,delete": 1,  # 组合方法
+#                      "monitoring-tasks-api:post": 1
+#                    }
+#                ',
+                "create_time": "时间",
+                "update_time": "时间",
+              }
+            ],
+          pagination: {
+            pages: 10,        # 总页数
+            page: 1,        # 当前页
+            count: 10,        # 每页10条
+            counts: 10        # 总条数
+          }
+        }
+
+
+- handler: PermissionGroupsCheck
+  apis: "/permission/groups/check"
+  method:
+    post:
+      summary: 编辑角色权限（单条）
+      description: 权限勾选或取消,修改成功后，建议刷新本地权限缓存
+      parameters:
+        - name: group_id
+          description: 角色id
+          required: true
+          type: int
+        - name: key
+          description: 接口标识符
+          required: true
+          type: str
+        - name: method
+          description: 接口方法
+          required: true
+          type: str
+        - name: value
+          description: 1勾选，0取消
+          required: true
+          type: int
+      responses:
+        {
+
+        }
+
+- handler: PermissionGroupsChecks
+  apis: "/permission/groups/checks"
+  method:
+    post:
+      summary: 编辑角色权限（批量）
+      description: 权限勾选,修改成功后，建议刷新本地权限缓存
+      parameters:
+        - name: group_id
+          description: 角色id
+          required: true
+          type: int
+        - name: permissions
+          description: 已勾选的权限k:v，例{"key:get":1,"key2:get,post":1}
+          required: true
+          type: json
+
+      responses:
+        {
+
+        }
+
+- handler: "PermissionGroupsCompany"
+  apis: "/permission/groups/company"
+  method:
+    get:
+      summary: 商户的所有角色
+      description: 查看某商户的所有角色，不分页
+      parameters:
+        - name: company_id
+          description: 商户id
+          required: true
+          type: int
+        - name: content_type
+          description: 0系统端角色，1业务的角色
+          required: true
+          type: int
+      responses:
+        {
+          datas:
+            [
+              {
+                "id": "id",
+                "name": "角色名称",
+                "counts": 10,               # 成员数量
+                "state": 1,                           # 1可以 0 禁用 默认1
+                "content_type": 1,             # 1 业务端使用，0系统管理端
+                "describes": "描述",           
+#                "permissions": '{
+#                   "control2-xxx-api:get": 1,        # 1勾选，0未勾选
+#                   "control2-xxx-api2:get,post,put,delete": 1,  # 组合方法
+#                   "monitoring-tasks-api:post": 1
+#                 }',
+                "create_time": "时间",
+                "update_time": "时间",
+              }
+            ]
+        }
+
+    post:
+      summary: 分配角色
+      description: 把角色分配给商户
+      parameters:
+        - name: group_id
+          description: 角色id， 多个角色用英文逗号隔开
+          required: true
+          type: str
+        - name: company_id
+          description: 商户id
+          required: true
+          type: int
+
+      responses:
+        {
+
+        }
+    delete:
+      summary: 移除角色
+      description: 将角色从商户下移除，属于该角色的用户将失去该角色的所有权限
+      parameters:
+        - name: group_id
+          description: 角色id，多个角色用逗号隔开
+          required: true
+          type: str
+        - name: company_id
+          description: 商户id
+          required: true
+          type: int
+
+      responses:
+        {
+
+        }
+
+- handler: "Permission"
+  apis: "/permission"
+  method:
+    get:
+      summary: 权限详情
+      description:
+      parameters:
+        - name: permission_id
+          description: id
+          required: true
+          type: int
+
+      responses:
+        {
+          id: 281,
+          name: "示例4",
+          key: "demo4-api",
+          method: "get",
+          permission_class: "api",
+          hook_func: "",
+          state: 1,
+          describes: "",
+          parent_id: 277,
+          content_type: 0,
+          create_time: "2022-10-11 09:20:08",
+          update_time: "2022-10-11 09:20:08"
+        }
+
+    post:
+      summary: 新增权限
+      description:
+      parameters:
+        - name: content_type
+          description: 0系统端角色，1业务的角色
+          required: true
+          type: int
+          allow: [ 0, 1 ]
+        - name: key
+          description: 接口标识符
+          required: true
+          type: str
+        - name: name
+          description: 名称
+          required: true
+          type: str
+          regex: ^[a-zA-Z\u4e00-\u9fa5]{2,40}$
+          message: 仅允许输入中文、英文，长度为2-40个字符
+        - name: permission_class
+          description: 类别，tag标签，api接口权限
+          required: true
+          type: str
+          allow: [ "tag", "api" ]
+        - name: method
+          description: 接口方法， 当permission_class=api时必须提供
+          required: false
+          type: str
+        - name: parent_id
+          description: 父级id
+          required: false
+          type: int
+        - name: describes
+          description: 角色说明
+          required: false
+          type: str
+          default: ""
+          regex: ^.{0,200}$
+          message: 最多填写200字
+        - name: state
+          description: 状态
+          required: false
+          type: int
+          allow: [ 0, 1]
+        - name: hook_func
+          description: 钩子方法
+          required: false
+          type: str
+      responses:
+        {
+
+        }
+
+    put:
+      summary: 修改权限
+      description: 修改权限名称，描述，状态，钩子
+      parameters:
+        - name: permission_id
+          description: 权限id
+          required: true
+          type: int
+        - name: content_type
+          description: 0系统端角色，1业务的角色
+          required: true
+          type: int
+          allow: [ 0, 1 ]
+#        - name: key
+#          description: 接口标识符
+#          required: false
+#          type: str
+        - name: name
+          description: 名称
+          required: false
+          type: str
+#        - name: permission_class
+#          description: 类别，tag标签，api接口权限
+#          required: false
+#          type: int
+#          allow: [ "tag", "api" ]
+        - name: method
+          description: 接口方法， 当permission_class=api时必须提供
+          required: false
+          type: str
+        - name: parent_id
+          description: 父级id
+          required: false
+          type: str
+        - name: describes
+          description: 角色说明
+          required: false
+          type: str
+          default: ""
+          regex: ^.{0,200}$
+          message: 最多填写200字
+        - name: state
+          description: 状态
+          required: false
+          type: int
+          allow: [ 0, 1 ]
+        - name: hook_func
+          description: 钩子方法
+          required: false
+          type: str
+      responses:
+        {
+
+        }
+
+    delete:
+      summary: 删除权限
+      description:
+      parameters:
+        - name: permission_id
+          description: id
+          required: true
+          type: int
+        - name: content_type
+          description: 0系统端角色，1业务的角色
+          required: true
+          type: int
+          allow: [ 0, 1 ]
+      responses:
+        {
+
+        }
+
+- handler: "PermissionList"
+  apis: "/permission/list"
+  method:
+    get:
+      summary: 权限条目清单
+      description:
+      parameters:
+#        - name: page
+#          description: 翻页码
+#          required: false
+#          type: int
+#          default: 1
+#        - name: count
+#          description: 每页显示条数
+#          required: false
+#          type: int
+#          default: 10
+#        - name: state
+#          description: 状态
+#          required: false
+#          type: int
+#          allow: [0, 1]
+        - name: content_type
+          description: 0系统端权限条目，1业务端权限条目
+          required: true
+          type: int
+          allow: [ 0, 1 ]
+
+      responses:
+        {
+          'datas':
+            [
+              {
+                id: 281,
+                name: "示例4",
+                key: "demo4-api",
+                method: "get",
+                permission_class: "api",
+                hook_func: "",
+                state: 1,
+                describes: "",
+                parent_id: 277,
+                content_type: 0,
+                create_time: "2022-10-11 09:20:08",
+                update_time: "2022-10-11 09:20:08",
+                children: "[permission1，permission2, ...]|list"
+              }
+            ],
+#          pagination: {
+#            pages: 10,        # 总页数
+#            page: 1,        # 当前页
+#            count: 10,        # 每页10条
+#            counts: 10        # 总条数
+#          }
+        }
+
+- handler: "PermissionEnable"
+  apis: "/permission/enable"
+  method:
+    get:
+      summary: 是否启用权限系统
+      description:
+      parameters:
+        - name: content_type
+          description: 0系统端角色，1业务的角色
+          required: true
+          type: int
+          allow: [ 0, 1 ]
+      responses:
+        {
+            "enable": 1
+        }
+
+    post:
+      summary: 启用停用
+      description: 停用权限系统后，所有访问都不做拦截
+      parameters:
+        - name: state
+          description: 状态， 1启用，0停用
+          required: true
+          type: int
+          allow: [ 0, 1 ]
+        - name: content_type
+          description: 0系统端角色，1业务的角色
+          required: true
+          type: int
+          allow: [ 0, 1 ]
+      responses:
+        {
+
+        }
+
+- handler: "PermissionLoads"
+  apis: "/permission/loads"
+  method:
+    post:
+      summary: 导入新的权限条目
+      description: 当后端新增新的api逻辑后，调用该方法可自动载入新增的权限条目。该功能仅支持系统端
+      parameters:
+#        - name: content_type
+#          description: 0系统端角色，1业务的角色
+#          required: true
+#          type: int
+#          allow: [ 0, 1 ]
+
+      responses:
+        {
+          datas: "[]"
+        }
