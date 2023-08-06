@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+.github/README.rst
+src/pytest_tcpclient/__init__.py
+src/pytest_tcpclient/framing.py
+src/pytest_tcpclient/plugin.py
+src/pytest_tcpclient.egg-info/PKG-INFO
+src/pytest_tcpclient.egg-info/SOURCES.txt
+src/pytest_tcpclient.egg-info/dependency_links.txt
+src/pytest_tcpclient.egg-info/entry_points.txt
+src/pytest_tcpclient.egg-info/requires.txt
+src/pytest_tcpclient.egg-info/top_level.txt
