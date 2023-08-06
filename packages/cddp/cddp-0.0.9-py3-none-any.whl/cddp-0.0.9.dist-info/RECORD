@@ -1,0 +1,17 @@
+cddp/__init__.py,sha256=pNnmA7y4jBG73kblHW1viOtJNAVVANxZHbDCWjUwuIk,15862
+cddp/dbxapi.py,sha256=fiwdrIHUzW4MiXFnyC7PWMc9NSC6Rzi6Eh9nIhRszQQ,6822
+cddp/utils.py,sha256=qVMR7zbIvQq9ghBN3HpNTQUEiff-B27FGmn-QeoR-BY,637
+cddp/ingestion/__init__.py,sha256=EsphueuSaOQ_UICw-_BojYOImeRBfm8VsnoblxPdbNg,2028
+cddp/ingestion/autoloader.py,sha256=rPbQcLrSc0kYM6--wbEtElqMYsXeq1ssdJWlddl7eDE,1380
+cddp/ingestion/azure_adls_gen1.py,sha256=FsvZdg_2heieaEMwXjcp6P7-f99JCsJJirrtSGdXLzI,1207
+cddp/ingestion/azure_adls_gen2.py,sha256=fF3pyJfkG0TPJUplP9742kC5bNUdCsk7zqWXJ3Qc8JI,2412
+cddp/ingestion/azure_eventhub.py,sha256=zTUGVqyKhm9qzfD4_jxyv_99uUtlZpUuKMi91PQQkbQ,690
+cddp/ingestion/deltalake.py,sha256=LEB7rjOrO37QYUeYpAaEtO_2qR7ia51_CEsQQmsrLlw,665
+cddp/ingestion/filestore.py,sha256=8ZQePQolPVwhVfDipR5dWbNsZJW3QA_zF-bnr_QGB-k,942
+cddp/ingestion/jdbc.py,sha256=YlIxFyfGuU62QtXSNHmxQScl_tD33t2uceVXEFkpqjk,626
+cddp-0.0.9.dist-info/LICENSE,sha256=1iOa-pGJYbRlsHv3QRy-NP9mhYVPWFU9t5ZvSIGgIR8,19047
+cddp-0.0.9.dist-info/LICENSE-CODE,sha256=mQaUD2Gx8LUz-n2ZuvVReLKAj74RPqUd-_rYVyzNXys,1162
+cddp-0.0.9.dist-info/METADATA,sha256=Nn_DB4C9NrrRcl5NSu4jynxa4wdTi6k5MwCG-oluJBE,20706
+cddp-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cddp-0.0.9.dist-info/top_level.txt,sha256=w5d37f8KpZWEsGRnzHRE4Jb0WpU68_Tv0JQeuuy7OEc,5
+cddp-0.0.9.dist-info/RECORD,,
