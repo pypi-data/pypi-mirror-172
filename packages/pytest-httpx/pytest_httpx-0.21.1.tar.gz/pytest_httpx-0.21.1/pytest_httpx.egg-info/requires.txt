@@ -1,0 +1,6 @@
+httpx==0.23.*
+pytest<8.*,>=6.*
+
+[testing]
+pytest-asyncio==0.17.*
+pytest-cov==3.*
