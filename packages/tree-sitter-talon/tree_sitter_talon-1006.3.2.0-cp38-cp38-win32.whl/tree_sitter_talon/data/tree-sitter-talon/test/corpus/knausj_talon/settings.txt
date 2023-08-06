@@ -1,0 +1,592 @@
+================================================================================
+1. Settings knausj_talon/settings.talon
+================================================================================
+
+settings():
+    # Adjust the scale of the imgui to my liking
+    imgui.scale = 1.3
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (comment)
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))
+
+================================================================================
+2. Settings knausj_talon/modes/sleep_mode.talon
+================================================================================
+
+settings():
+    #stop continuous scroll/gaze scroll with a pop
+    user.mouse_enable_pop_stops_scroll = 0
+	#enable pop click with 'control mouse' mode
+	user.mouse_enable_pop_click = 0
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (comment)
+      (block
+        (assignment_statement
+          (identifier)
+          (integer))
+        (comment)
+        (assignment_statement
+          (identifier)
+          (integer))))))
+
+================================================================================
+3. Settings knausj_talon/talon_draft_window/draft_window.talon
+================================================================================
+
+settings():
+  # Enable 'Smart dictation mode', see https://github.com/knausj85/knausj_talon/pull/356
+  user.context_sensitive_dictation = 1
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (comment)
+      (block
+        (assignment_statement
+          (identifier)
+          (integer))))))
+
+================================================================================
+4. Settings knausj_talon/lang/vimscript/vimscript.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+5. Settings knausj_talon/lang/python/python.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+6. Settings knausj_talon/lang/css/css.talon
+================================================================================
+
+settings():
+    user.code_public_variable_formatter = "DASH_SEPARATED"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+7. Settings knausj_talon/lang/rust/rust.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+8. Settings knausj_talon/lang/r/r.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+9. Settings knausj_talon/lang/java/java.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+0. Settings knausj_talon/lang/php/php.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+1. Settings knausj_talon/lang/scala/scala.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+2. Settings knausj_talon/lang/csharp/csharp.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PUBLIC_CAMEL_CASE"
+    user.code_public_function_formatter = "PUBLIC_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PUBLIC_CAMEL_CASE"
+    user.code_public_variable_formatter = "PUBLIC_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+3. Settings knausj_talon/lang/javascript/javascript.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+4. Settings knausj_talon/lang/c/c.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+    # whether or not to use uint_8 style datatypes
+    #    user.use_stdint_datatypes = 1
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (comment)
+        (comment)))))
+
+================================================================================
+5. Settings knausj_talon/lang/ruby/ruby.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+6. Settings knausj_talon/apps/evernote/mac.talon
+================================================================================
+
+settings():
+    # Necessary to stop commands like 'slap' getting jumbled
+    key_wait = 9.0
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (comment)
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))

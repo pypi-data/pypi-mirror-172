@@ -1,0 +1,140 @@
+================================================================================
+1. File andreas-talon/settings/settings_work_laptop.talon (failing)
+================================================================================
+
+hostname: EliteBook
+-
+
+settings():
+    imgui.scale = 1.3
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches
+    (match
+      (identifier)
+      (implicit_string)))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))
+
+================================================================================
+1. Settings examples/andreas-talon/misc/abort/abort.talon
+================================================================================
+
+settings():
+    user.abort_word = "cancel"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+2. Settings examples/andreas-talon/misc/sleep/sleep.talon
+================================================================================
+
+settings():
+    user.sleep_word = "drowse"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
+
+================================================================================
+3. Settings examples/andreas-talon/misc/sleep/sleep_mode.talon
+================================================================================
+
+settings():
+    speech.timeout = 0
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (integer))))))
+
+================================================================================
+4. Settings examples/andreas-talon/settings/settings.talon
+================================================================================
+
+settings():
+    # Speech timeout
+    speech.timeout = 0.400
+    # Record speech
+    speech.record_all = 0
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (comment)
+      (block
+        (assignment_statement
+          (identifier)
+          (float))
+        (comment)
+        (assignment_statement
+          (identifier)
+          (integer))))))
+
+================================================================================
+5. Settings examples/andreas-talon/settings/settings_work_laptop.talon
+================================================================================
+
+settings():
+    imgui.scale = 1.3
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))
+
+================================================================================
+6. Settings examples/andreas-talon/apps/vscode/vscode.talon
+================================================================================
+
+settings():
+    user.scroll_step = 0.025
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))
