@@ -1,0 +1,3 @@
+[console_scripts]
+alice_ua = alice:main_func
+bob_ua = bob:main_func
