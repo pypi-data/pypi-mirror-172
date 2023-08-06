@@ -1,0 +1,7 @@
+numpy
+pandas
+xarray
+metpy
+cartopy
+toml
+s3fs
