@@ -1,0 +1,9 @@
+README.md
+setup.py
+pymessari/__init__.py
+pymessari/pymessari.py
+pymessari.egg-info/PKG-INFO
+pymessari.egg-info/SOURCES.txt
+pymessari.egg-info/dependency_links.txt
+pymessari.egg-info/requires.txt
+pymessari.egg-info/top_level.txt
