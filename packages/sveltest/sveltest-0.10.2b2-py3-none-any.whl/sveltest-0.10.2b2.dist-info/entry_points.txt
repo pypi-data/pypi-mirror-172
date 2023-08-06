@@ -1,0 +1,3 @@
+[console_scripts]
+slt = sveltest.bin.conf.base.sveltest_main:main
+
