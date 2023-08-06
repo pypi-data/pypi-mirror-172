@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ezyquant
+Version: 0.1.9
+Summary: Powerful backtest python library for Thai stocks
+Home-page: https://doc.ezyquant.com/
+Author: Fintech (Thailand) Company Limited
+Author-email: admin@fintech.co.th
+Maintainer: Fintech (Thailand) Company Limited
+Maintainer-email: admin@fintech.co.th
+License: The MIT License (MIT)
+Project-URL: Documentation, https://doc.ezyquant.com/
+Project-URL: Bug Reports, https://github.com/ezyquant/ezyquant/issues
+Project-URL: Source, https://github.com/ezyquant/ezyquant
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+
+Powerful backtest python library for Thai stocks
