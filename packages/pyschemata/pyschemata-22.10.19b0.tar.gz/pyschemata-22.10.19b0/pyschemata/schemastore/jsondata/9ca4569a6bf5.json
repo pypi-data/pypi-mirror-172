@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-full antialiased">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebComponents.dev 404</title>
+    <meta name="description" content="The Component IDE for Web Platform Developers">
+
+    <link  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&amp;display=swap" rel="preload" as="style" onload="this.rel='stylesheet'"/>
+
+    
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+    
+    
+<meta itemprop="name" content="WebComponents.dev 404">
+<meta itemprop="description" content="The Component IDE for Web Platform Developers">
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:title" content="WebComponents.dev 404">
+<meta name="twitter:description" content="The Component IDE for Web Platform Developers">
+<meta name="twitter:site" content="@webcomp_dev">
+<meta name="twitter:creator" content="@divriots">
+<meta name="twitter:image" content="https://webcomponents.dev/assets/meta/twitter.png">
+
+
+<meta name="og:title" content="WebComponents.dev 404">
+<meta name="og:description" content="The Component IDE for Web Platform Developers">
+<meta name="og:image" content="https://webcomponents.dev/assets/meta/og.png">
+<meta name="og:url" content="https://webcomponents.dev/404.html">
+<meta name="og:site_name" content="WebComponents.dev">
+<meta name="og:locale" content="en_GB">
+<meta name="og:type" content="website">
+
+    
+  
+  
+  <script src="https://cdn.usefathom.com/script.js" data-site="MZWXOAEH" data-spa="history" defer></script>
+  
+
+
+    
+</head>
+
+<body  class="min-h-full overflow-x-hidden font-sans text-lg leading-normal">
+
+    <a class="visually-hidden" href="#main">Skip to content</a>
+
+    <div id="wrapper" class="wrapper flex flex-col relative min-h-screen">
+
+        
+        <header id="header" class="header text-base flex sm:flex-row justify-between items-center p-4" role="banner">
+
+	<div class="flex flex-col">
+  <a class="company-logo-link block hover:no-underline text-l lg:text-xl mr-6 mb-0" href="/" aria-label="Back to homepage">
+      <div class="flex items-center">
+        <img class="mr-2 w-8" style="min-width:32px" src="/assets/icons/logo.svg" width="150" height="150" alt=""/>
+        <div class="font-logo">
+          <span class="mb-0" style="font-size: 130%">WebComponents</span><span style="font-size:70%">.dev</span>
+        </div>
+      </div>
+  </a>
+    <a class="relative text-sm outline-none text-white" style="left:40px; top:-8px;" href="https://divriots.com" target="_blank">
+      by <img src="/assets/logo/divriots.svg" class="h-3.5 inline w-auto" width="300" height="52" alt="<div>riots">
+  </a>
+</div>
+	<nav id="nav" class="nav flex mt-0">
+
+    <ul class="menu hidden lg:flex flex-row items-center list-reset text-base">
+
+        
+
+        <li class="level-1 my-1">
+            <a href="/docs/" class="px-2 py-1 hover:no-underline text-current 
+            ">Docs</a>
+        </li>
+
+        
+
+        <li class="level-1 my-1">
+            <a href="/pricing/" class="px-2 py-1 hover:no-underline text-current 
+            ">Pricing</a>
+        </li>
+
+        
+
+        <li class="level-1 my-1">
+            <a href="/blog/" class="px-2 py-1 hover:no-underline text-current 
+            ">Blog</a>
+        </li>
+
+        
+
+    </ul>
+
+</nav>
+
+	<div class="flex items-center">
+		<div class="hidden md:block">
+			<ul class="flex justify-center items-center">
+    
+
+    
+
+        
+
+            <li class="mr-4">
+                <a href="https://twitter.com/webcomp_dev" class="block opacity-75 hover:opacity-100" aria-label="Twitter" target="_twitter">
+                    <img src="/assets/logo/grey/twitter.svg" width="24px" height="24px" style="max-width:24px;max-height:24px" alt="Twitter"/>
+                </a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="mr-4">
+                <a href="https://webcomponents.dev/chat" class="block opacity-75 hover:opacity-100" aria-label="Discord" target="_discord">
+                    <img src="/assets/logo/grey/discord.svg" width="24px" height="24px" style="max-width:24px;max-height:24px" alt="Discord"/>
+                </a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="mr-4">
+                <a href="https://www.github.com/webcomponents-dev" class="block opacity-75 hover:opacity-100" aria-label="Github" target="_github">
+                    <img src="/assets/logo/grey/github.svg" width="24px" height="24px" style="max-width:24px;max-height:24px" alt="Github"/>
+                </a>
+            </li>
+
+        
+
+    
+
+</ul>
+
+		</div>
+
+		
+			<div class="hidden xs:block">
+				
+					<a class="button secondary outline" href="https://studio.webcomponents.dev">STUDIO</a>
+				
+			</div>
+		
+
+		<a href="javascript:void(0)" aria-label="Open navigation menu" class="text-current hover:no-underline lg:hidden secondary ml-4 p-1 text-4xl" onclick="openNav()">
+  <svg height="32" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+</a>
+<nav id="side-nav" class="nav fixed top-0 h-full bg-black z-10 text-white overflow-hidden" style="right: -64px; width: 0px; transition: all 0.3s ease-out">
+    <a href="javascript:void(0)" class="hover:no-underline text-white float-right m-0 mr-2 p-0 px-2 text-5xl leading-none" onclick="closeNav()">&times;</a>
+    <ul class="menu md:flex flex-col list-reset text-xl pl-8 pt-16 h-1">
+
+        
+        <li class="level-1 mb-4">
+          <a class="button outline text-white" href="https://studio.webcomponents.dev">STUDIO</a>
+        </li>
+        
+
+        
+
+        <li class="level-1 my-1">
+            <a href="/docs/" class="px-2 py-1 hover:no-underline text-white 
+            ">Docs</a>
+        </li>
+
+        
+
+        <li class="level-1 my-1">
+            <a href="/pricing/" class="px-2 py-1 hover:no-underline text-white 
+            ">Pricing</a>
+        </li>
+
+        
+
+        <li class="level-1 my-1">
+            <a href="/blog/" class="px-2 py-1 hover:no-underline text-white 
+            ">Blog</a>
+        </li>
+
+        
+
+    </ul>
+
+    <div class="absolute" style="left:32px; bottom:32px;">
+      <ul class="flex justify-center items-center">
+    
+
+    
+
+        
+
+            <li class="mr-4">
+                <a href="https://twitter.com/webcomp_dev" class="block opacity-75 hover:opacity-100" aria-label="Twitter" target="_twitter">
+                    <img src="/assets/logo/grey/twitter.svg" width="24px" height="24px" style="max-width:24px;max-height:24px" alt="Twitter"/>
+                </a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="mr-4">
+                <a href="https://webcomponents.dev/chat" class="block opacity-75 hover:opacity-100" aria-label="Discord" target="_discord">
+                    <img src="/assets/logo/grey/discord.svg" width="24px" height="24px" style="max-width:24px;max-height:24px" alt="Discord"/>
+                </a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li class="mr-4">
+                <a href="https://www.github.com/webcomponents-dev" class="block opacity-75 hover:opacity-100" aria-label="Github" target="_github">
+                    <img src="/assets/logo/grey/github.svg" width="24px" height="24px" style="max-width:24px;max-height:24px" alt="Github"/>
+                </a>
+            </li>
+
+        
+
+    
+
+</ul>
+
+    </div>
+</nav>
+
+<script type="module">
+function openNav() {
+  document.getElementById("side-nav").style.width = "250px";
+  document.getElementById("side-nav").style.right = "0px";
+}
+
+function closeNav() {
+  document.getElementById("side-nav").style.width = "0px";
+  document.getElementById("side-nav").style.right = "-64px";
+}
+
+window.openNav = openNav;
+window.closeNav = closeNav;
+</script>
+
+	</div>
+
+</header>
+
+
+        
+        
+<style>
+    .main::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.3;
+        background: url("/assets/404_box.svg") no-repeat center;
+        background-size: auto 100%;
+    }
+</style>
+<main id="main" class="main flex flex-1 flex-col px-0 pt-4 sm:pt-10 lg:pt-16 lg:px-10 text-white bg-gray-900 items-center relative overflow-hidden">
+    <div class="flex flex-col items-center">
+        <div class="text-6xl sm:text-4xl py-20" style="font-size:6rem">
+            <strong>
+                <code>404</code>
+            </strong>
+        </div>
+        <p style="font-style:italic">
+        Oops ... something went wrong
+        </p>
+        <p>
+                Page not found
+        </p>
+    </div>
+</main>
+
+        
+        <div class="footer-wrapper">
+
+    <footer 
+        id="footer" 
+        class="footer bg-gray-200" 
+        role="contentinfo"
+        style="background: linear-gradient(135deg, rgba(69, 155, 207, 1) 0%, rgba(8, 108, 167, 1) 100%)" 
+    >
+
+        <div class="footer-inner md:flex w-full justify-between items-center p-10">
+
+            <p class="text-white flex justify-center mb-2 md:mb-0">
+                <a href="/legal/privacy-policy" style="color: inherit;">Privacy Policy</a>
+                <span class="mx-2">-</span>
+                <a href="/legal/terms-of-service" style="color: inherit;">Terms of Service</a>
+            </p>
+
+            <p class="text-center text-white mb-2 md:mb-0">
+                by <a href="https://divriots.com"><img src="/assets/logo/divriots.svg" class="h-3.5 w-auto" width="300" height="52" style="display: inline;" alt="divriots"></a> &copy; 2022
+            </p>
+        </div>
+
+    </footer>
+
+</div>
+
+    </div>
+
+</body>
+
+</html>

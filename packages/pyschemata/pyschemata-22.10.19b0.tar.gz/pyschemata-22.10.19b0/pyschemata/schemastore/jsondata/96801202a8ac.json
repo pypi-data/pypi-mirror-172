@@ -1,0 +1,1668 @@
+{
+  "title": "PluginManifest",
+  "description": "Model mixin/base class that provides read/write from toml/yaml/json.\n\nTo force the inclusion of a given field in the exported toml/yaml use:\n\n    class MyModel(ImportExportModel):\n        some_field: str = Field(..., always_export=True)",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "Name",
+      "description": "The name of the plugin. Though this field is mandatory, it *must* match the package `name` as defined in the python package metadata.",
+      "type": "string"
+    },
+    "display_name": {
+      "title": "Display Name",
+      "description": "User-facing text to display as the name of this plugin. Must be 3-40 characters long, containing printable word characters, and must not begin or end with an underscore, white space, or non-word character. If not provided, the manifest `name` will be used as the display name.",
+      "default": "",
+      "type": "string"
+    },
+    "schema_version": {
+      "title": "Schema Version",
+      "description": "A SemVer compatible version string matching the napari plugin schema version that the plugin is compatible with.",
+      "default": "0.1.0",
+      "always_export": true,
+      "type": "string"
+    },
+    "on_activate": {
+      "title": "On Activate",
+      "description": "Fully qualified python path to a function that will be called upon plugin activation (e.g. `'my_plugin.some_module:activate'`). The activate function can be used to connect command ids to python callables, or perform other side-effects. A plugin will be 'activated' when one of its contributions is requested by the user (such as a widget, or reader).",
+      "type": "string"
+    },
+    "on_deactivate": {
+      "title": "On Deactivate",
+      "description": "Fully qualified python path to a function that will be called when a user deactivates a plugin (e.g. `'my_plugin.some_module:deactivate'`). This is optional, and may be used to perform any plugin cleanup.",
+      "type": "string"
+    },
+    "contributions": {
+      "title": "Contributions",
+      "description": "An object describing the plugin's [contributions](./contributions)",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ContributionPoints"
+        }
+      ]
+    },
+    "package_metadata": {
+      "title": "Package Metadata",
+      "description": "Package metadata following https://packaging.python.org/specifications/core-metadata/. For normal (non-dynamic) plugins, this data will come from the package's setup.cfg",
+      "hide_docs": true,
+      "allOf": [
+        {
+          "$ref": "#/definitions/PackageMetadata"
+        }
+      ]
+    },
+    "npe1_shim": {
+      "title": "Npe1 Shim",
+      "description": "Whether this manifest was created as a shim for an npe1 plugin.",
+      "default": false,
+      "hide_docs": true,
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "name"
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "Icon": {
+      "title": "Icon",
+      "type": "object",
+      "properties": {
+        "light": {
+          "title": "Light",
+          "type": "string"
+        },
+        "dark": {
+          "title": "Dark",
+          "type": "string"
+        }
+      }
+    },
+    "CommandContribution": {
+      "title": "CommandContribution",
+      "description": "Contribute a **command** (a python callable) consisting of a unique `id`,\na `title` and (optionally) a `python_path` that points to a fully qualified python\ncallable.  If a `python_path` is not included in the manifest, it *must* be\nregistered during activation with `register_command`.\n\nNote, some other contributions (e.g. `readers`, `writers` and `widgets`) will\n*point* to a specific command.  The command itself (i.e. the callable python\nobject) will always appear in the `contributions.commands` section, but those\ncontribution types may add additional contribution-specific metadata.\n\n```{admonition} Future Plans\nCommand contributions will eventually include an **icon**, **category**, and\n**enabled** state. Enablement is expressed with *when clauses*, that capture a\nconditional expression determining whether the command should be enabled or not,\nbased on the current state of the program.  (i.e. \"*If the active layer is a\n`Labels` layer*\")\n\nCommands will eventually be availble in a Command Palette (accessible with a\nhotkey) but they can also show in other menus.\n```",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "description": "A unique identifier used to reference this command. While this may look like a python fully qualified name this does *not* refer to a python object; this identifier is specific to napari.  It must begin with the name of the package, and include only alphanumeric characters, plus dashes and underscores.",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "description": "User facing title representing the command. This might be used, for example, when searching in a command palette. Examples: 'Generate lily sample', 'Read tiff image', 'Open gaussian blur widget'. ",
+          "type": "string"
+        },
+        "python_name": {
+          "title": "Python Name",
+          "description": "Fully qualified name to a callable python object implementing this command. This usually takes the form of `{obj.__module__}:{obj.__qualname__}` (e.g. `my_package.a_module:some_function`)",
+          "type": "string"
+        },
+        "short_title": {
+          "title": "Short Title",
+          "description": "Short title by which the command is represented in the UI. Menus pick either `title` or `short_title` depending on the context in which they show commands.",
+          "type": "string"
+        },
+        "category": {
+          "title": "Category",
+          "description": "Category string by which the command may be grouped in the UI.",
+          "type": "string"
+        },
+        "icon": {
+          "title": "Icon",
+          "description": "Icon used to represent this command in the UI, on buttons or in menus. These may be [superqt](https://github.com/napari/superqt) fonticon keys, such as `'fa6s.arrow_down'`; though note that plugins are expected to depend on any fonticon libraries they use, e.g [fonticon-fontawesome6](https://github.com/tlambert03/fonticon-fontawesome6).",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "#/definitions/Icon"
+            }
+          ]
+        },
+        "enablement": {
+          "title": "Enablement",
+          "description": "Expression which must evaluate as true to enable the command in the UI (menu and keybindings). Does not prevent executing the command by other means, like the `execute_command` api.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title"
+      ],
+      "additionalProperties": false
+    },
+    "ReaderContribution": {
+      "title": "ReaderContribution",
+      "description": "Contribute a file reader.\n\nReaders may be associated with specific **filename_patterns** (e.g. \"*.tif\",\n\"*.zip\") and are invoked whenever `viewer.open('some/path')` is used on the\ncommand line, or when a user opens a file in the graphical user interface by\ndropping a file into the canvas, or using `File -> Open...`",
+      "type": "object",
+      "properties": {
+        "command": {
+          "title": "Command",
+          "description": "Identifier of the command providing `napari_get_reader`.",
+          "type": "string"
+        },
+        "filename_patterns": {
+          "title": "Filename Patterns",
+          "description": "List of filename patterns (for fnmatch) that this reader can accept. Reader will be tried only if `fnmatch(filename, pattern) == True`. Use `['*']` to match all filenames.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "accepts_directories": {
+          "title": "Accepts Directories",
+          "description": "Whether this reader accepts directories",
+          "default": false,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "command",
+        "filename_patterns"
+      ],
+      "additionalProperties": false
+    },
+    "WriterContribution": {
+      "title": "WriterContribution",
+      "description": "Contribute a layer writer.\n\nWriters accept data from one or more layers and write them to file. Writers declare\nsupport for writing one or more **layer_types**, may be associated with specific\n**filename_patterns** (e.g. \"\\*.tif\", \"\\*.zip\") and are invoked whenever\n`viewer.layers.save('some/path.ext')` is used on the command line, or when a user\nrequests to save one or more layers in the graphical user interface with `File ->\nSave Selected Layer(s)...` or `Save All Layers...`",
+      "type": "object",
+      "properties": {
+        "command": {
+          "title": "Command",
+          "description": "Identifier of the command providing a writer.",
+          "type": "string"
+        },
+        "layer_types": {
+          "title": "Layer Types",
+          "description": "List of layer type constraints. These determine what layers (or combinations thereof) this writer handles.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "filename_extensions": {
+          "title": "Filename Extensions",
+          "description": "List of filename extensions compatible with this writer. The first entry is used as the default if necessary. Empty by default. When empty, any filename extension is accepted.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "display_name": {
+          "title": "Display Name",
+          "description": "Brief text used to describe this writer when presented. Empty by default. When present, this string is presented in the save dialog along side the plugin name and may be used to distinguish the kind of writer for the user. E.g. \u201clossy\u201d or \u201clossless\u201d.",
+          "default": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "command",
+        "layer_types"
+      ],
+      "additionalProperties": false
+    },
+    "WidgetContribution": {
+      "title": "WidgetContribution",
+      "description": "Contribute a widget that can be added to the napari viewer.\n\nWidget contributions point to a **command** that, when called, returns a widget\n*instance*; this includes functions that return a widget instance, (e.g. those\ndecorated with `magicgui.magic_factory`) and subclasses of either\n[`QtWidgets.QWidget`](https://doc.qt.io/qt-5/qwidget.html) or\n[`magicgui.widgets.Widget`](https://napari.org/magicgui/api/_autosummary/magicgui.widgets._bases.Widget.html).\n\nOptionally, **autogenerate** may be used to create a widget (using\n[magicgui](https://napari.org/magicgui/)) from a command.  (In this case, the\ncommand needn't return a widget instance; it can be any function suitable as an\nargument to `magicgui.magicgui()`.)",
+      "type": "object",
+      "properties": {
+        "command": {
+          "title": "Command",
+          "description": "Identifier of a command that returns a widget instance.  Or, if `autogenerate` is `True`, any command suitable as an argument to `magicgui.magicgui()`.",
+          "type": "string"
+        },
+        "display_name": {
+          "title": "Display Name",
+          "description": "Name for the widget, as presented in the UI.",
+          "type": "string"
+        },
+        "autogenerate": {
+          "title": "Autogenerate",
+          "description": "If true, a widget will be autogenerated from the signature of the associated command using [magicgui](https://napari.org/magicgui/).",
+          "default": false,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "command",
+        "display_name"
+      ],
+      "additionalProperties": false
+    },
+    "SampleDataGenerator": {
+      "title": "Sample Data Function",
+      "description": "Contribute a callable command that creates data on demand.",
+      "type": "object",
+      "properties": {
+        "key": {
+          "title": "Key",
+          "description": "A unique key to identify this sample.",
+          "type": "string"
+        },
+        "display_name": {
+          "title": "Display Name",
+          "description": "String to show in the UI when referring to this sample",
+          "type": "string"
+        },
+        "command": {
+          "title": "Command",
+          "description": "Identifier of a command that returns layer data tuple.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "display_name",
+        "command"
+      ]
+    },
+    "SampleDataURI": {
+      "title": "Sample Data URI",
+      "description": "Contribute a URI to static local or remote data. This can be data included in\nthe plugin package, or a URL to remote data.  The URI must be readable by either\nnapari's builtin reader, or by a plugin that is included/required.",
+      "type": "object",
+      "properties": {
+        "key": {
+          "title": "Key",
+          "description": "A unique key to identify this sample.",
+          "type": "string"
+        },
+        "display_name": {
+          "title": "Display Name",
+          "description": "String to show in the UI when referring to this sample",
+          "type": "string"
+        },
+        "uri": {
+          "title": "Uri",
+          "description": "Path or URL to a data resource. This URI should be a valid input to `io_utils.read`",
+          "type": "string"
+        },
+        "reader_plugin": {
+          "title": "Reader Plugin",
+          "description": "Name of plugin to use to open URI",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "display_name",
+        "uri"
+      ]
+    },
+    "ThemeColors": {
+      "title": "ThemeColors",
+      "type": "object",
+      "properties": {
+        "canvas": {
+          "title": "Canvas",
+          "type": "string",
+          "format": "color"
+        },
+        "console": {
+          "title": "Console",
+          "type": "string",
+          "format": "color"
+        },
+        "background": {
+          "title": "Background",
+          "type": "string",
+          "format": "color"
+        },
+        "foreground": {
+          "title": "Foreground",
+          "type": "string",
+          "format": "color"
+        },
+        "primary": {
+          "title": "Primary",
+          "type": "string",
+          "format": "color"
+        },
+        "secondary": {
+          "title": "Secondary",
+          "type": "string",
+          "format": "color"
+        },
+        "highlight": {
+          "title": "Highlight",
+          "type": "string",
+          "format": "color"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string",
+          "format": "color"
+        },
+        "icon": {
+          "title": "Icon",
+          "type": "string",
+          "format": "color"
+        },
+        "warning": {
+          "title": "Warning",
+          "type": "string",
+          "format": "color"
+        },
+        "current": {
+          "title": "Current",
+          "type": "string",
+          "format": "color"
+        }
+      }
+    },
+    "ThemeContribution": {
+      "title": "ThemeContribution",
+      "description": "Contribute a color theme to napari.\n\nYou must specify an **id**, **label**, and whether the theme is a dark theme or a\nlight theme **type** (such that the rest of napari changes to match your theme).\nAny color keys omitted from the theme contribution will use the default napari\ndark/light theme colors.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "description": "Identifier of the color theme as used in the user settings.",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "description": "Label of the color theme as shown in the UI.",
+          "type": "string"
+        },
+        "type": {
+          "title": "Type",
+          "description": "Base theme type, used for icons and filling in unprovided colors. Must be either `'dark'` or  `'light'`.",
+          "anyOf": [
+            {
+              "enum": [
+                "dark"
+              ],
+              "type": "string"
+            },
+            {
+              "enum": [
+                "light"
+              ],
+              "type": "string"
+            }
+          ]
+        },
+        "colors": {
+          "title": "Colors",
+          "description": "Theme colors. Valid keys include: `canvas`, `console`, `background`, `foreground`, `primary`, `secondary`, `highlight`, `text`, `icon`, `warning`, `current`. All keys are optional. Color values can be defined via:\n   - name: `\"Black\"`, `\"azure\"`\n   - hexadecimal value: `\"0x000\"`, `\"#FFFFFF\"`, `\"7fffd4\"`\n   - RGB/RGBA tuples: `(255, 255, 255)`, `(255, 255, 255, 0.5)`\n   - RGB/RGBA strings: `\"rgb(255, 255, 255)\"`, `\"rgba(255, 255, 255, 0.5)`\"\n   - HSL strings: \"`hsl(270, 60%, 70%)\"`, `\"hsl(270, 60%, 70%, .5)`\"\n",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ThemeColors"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "type",
+        "colors"
+      ]
+    },
+    "MenuCommand": {
+      "title": "MenuCommand",
+      "description": "Contributes a command in a menu.",
+      "type": "object",
+      "properties": {
+        "when": {
+          "title": "When",
+          "description": "Condition which must be true to *show* this item in the menu. Note that ``when`` clauses apply to menus and ``enablement`` clauses to commands. The ``enablement`` applies to all menus and even keybindings while the ``when`` only applies to a single menu.",
+          "type": "string"
+        },
+        "group": {
+          "title": "Group",
+          "description": "The `group` property defines sorting and grouping of menu items. The `'navigation'` group is special: it will always be sorted to the top/beginning of a menu. By default, the order *inside* a group depends on the `title`. The group-local order of a menu item can be specified by appending @<int> to the group identifier: e.g. `group: 'myGroup@2'`.",
+          "type": "string"
+        },
+        "command": {
+          "title": "Command",
+          "description": "Identifier of the command to execute. The command must be declared in the 'commands' section",
+          "type": "string"
+        },
+        "alt": {
+          "title": "Alt",
+          "description": "Identifier of an alternative command to execute. It will be shown and invoked when pressing Alt while opening a menu.The command must be declared in the 'commands' section",
+          "type": "string"
+        }
+      },
+      "required": [
+        "command"
+      ]
+    },
+    "Submenu": {
+      "title": "Submenu",
+      "description": "Contributes a submenu placement in a menu.",
+      "type": "object",
+      "properties": {
+        "when": {
+          "title": "When",
+          "description": "Condition which must be true to *show* this item in the menu. Note that ``when`` clauses apply to menus and ``enablement`` clauses to commands. The ``enablement`` applies to all menus and even keybindings while the ``when`` only applies to a single menu.",
+          "type": "string"
+        },
+        "group": {
+          "title": "Group",
+          "description": "The `group` property defines sorting and grouping of menu items. The `'navigation'` group is special: it will always be sorted to the top/beginning of a menu. By default, the order *inside* a group depends on the `title`. The group-local order of a menu item can be specified by appending @<int> to the group identifier: e.g. `group: 'myGroup@2'`.",
+          "type": "string"
+        },
+        "submenu": {
+          "title": "Submenu",
+          "description": "Identifier of the submenu to display in this item.The submenu must be declared in the 'submenus' -section",
+          "type": "string"
+        }
+      },
+      "required": [
+        "submenu"
+      ]
+    },
+    "SubmenuContribution": {
+      "title": "SubmenuContribution",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "description": "Identifier of the menu to display as a submenu.",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "description": "The label of the menu item which leads to this submenu.",
+          "type": "string"
+        },
+        "icon": {
+          "title": "Icon",
+          "description": "(Optional) Icon which is used to represent the command in the UI. Either a file path, an object with file paths for dark and lightthemes, or a theme icon references, like `$(zap)`",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "#/definitions/Icon"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "label"
+      ]
+    },
+    "Draft06JsonSchema": {
+      "title": "Draft06JsonSchema",
+      "description": "Model for Draft 6 JSON Schema.",
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "title": "$Schema",
+          "default": "http://json-schema.org/draft-06/schema#",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "default": {
+          "title": "Default"
+        },
+        "multipleOf": {
+          "title": "Multipleof",
+          "minimum": 0,
+          "type": "number"
+        },
+        "maximum": {
+          "title": "Maximum",
+          "type": "number"
+        },
+        "minimum": {
+          "title": "Minimum",
+          "type": "number"
+        },
+        "maxLength": {
+          "title": "Maxlength",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minLength": {
+          "title": "Minlength",
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "pattern": {
+          "title": "Pattern",
+          "type": "string"
+        },
+        "maxItems": {
+          "title": "Maxitems",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minItems": {
+          "title": "Minitems",
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "uniqueItems": {
+          "title": "Uniqueitems",
+          "default": false,
+          "type": "boolean"
+        },
+        "maxProperties": {
+          "title": "Maxproperties",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minProperties": {
+          "title": "Minproperties",
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "enum": {
+          "title": "Enum",
+          "minItems": 1,
+          "uniqueItems": true,
+          "type": "array",
+          "items": {}
+        },
+        "type": {
+          "title": "Type",
+          "anyOf": [
+            {
+              "enum": [
+                "array",
+                "boolean",
+                "integer",
+                "null",
+                "number",
+                "object",
+                "string"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "array",
+                  "boolean",
+                  "integer",
+                  "null",
+                  "number",
+                  "object",
+                  "string"
+                ],
+                "type": "string"
+              },
+              "minItems": true,
+              "uniqueItems": true
+            }
+          ]
+        },
+        "format": {
+          "title": "Format",
+          "type": "string"
+        },
+        "$id": {
+          "title": "$Id",
+          "type": "string"
+        },
+        "examples": {
+          "title": "Examples",
+          "type": "array",
+          "items": {}
+        },
+        "exclusiveMaximum": {
+          "title": "Exclusivemaximum",
+          "type": "number"
+        },
+        "exclusiveMinimum": {
+          "title": "Exclusiveminimum",
+          "type": "number"
+        },
+        "contains": {
+          "$ref": "#/definitions/Draft06JsonSchema"
+        },
+        "required": {
+          "title": "Required",
+          "uniqueItems": true,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dependencies": {
+          "title": "Dependencies",
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/Draft06JsonSchema"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              }
+            ]
+          }
+        },
+        "propertyNames": {
+          "$ref": "#/definitions/Draft06JsonSchema"
+        },
+        "const": {
+          "title": "Const"
+        },
+        "additionalItems": {
+          "title": "Additionalitems",
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "$ref": "#/definitions/Draft06JsonSchema"
+            }
+          ]
+        },
+        "items": {
+          "title": "Items",
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Draft06JsonSchema"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Draft06JsonSchema"
+              }
+            }
+          ]
+        },
+        "additionalProperties": {
+          "title": "Additionalproperties",
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "$ref": "#/definitions/Draft06JsonSchema"
+            }
+          ]
+        },
+        "properties": {
+          "title": "Properties",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Draft06JsonSchema"
+          }
+        },
+        "patternProperties": {
+          "title": "Patternproperties",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Draft06JsonSchema"
+          }
+        },
+        "allOf": {
+          "title": "Allof",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Draft06JsonSchema"
+          }
+        },
+        "anyOf": {
+          "title": "Anyof",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Draft06JsonSchema"
+          }
+        },
+        "oneOf": {
+          "title": "Oneof",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Draft06JsonSchema"
+          }
+        },
+        "not": {
+          "$ref": "#/definitions/Draft06JsonSchema"
+        }
+      }
+    },
+    "Draft07JsonSchema": {
+      "title": "Draft07JsonSchema",
+      "description": "Model for Draft 7 JSON Schema.",
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "title": "$Schema",
+          "default": "http://json-schema.org/draft-07/schema#",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "default": {
+          "title": "Default"
+        },
+        "multipleOf": {
+          "title": "Multipleof",
+          "minimum": 0,
+          "type": "number"
+        },
+        "maximum": {
+          "title": "Maximum",
+          "type": "number"
+        },
+        "minimum": {
+          "title": "Minimum",
+          "type": "number"
+        },
+        "maxLength": {
+          "title": "Maxlength",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minLength": {
+          "title": "Minlength",
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "pattern": {
+          "title": "Pattern",
+          "type": "string"
+        },
+        "maxItems": {
+          "title": "Maxitems",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minItems": {
+          "title": "Minitems",
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "uniqueItems": {
+          "title": "Uniqueitems",
+          "default": false,
+          "type": "boolean"
+        },
+        "maxProperties": {
+          "title": "Maxproperties",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minProperties": {
+          "title": "Minproperties",
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "enum": {
+          "title": "Enum",
+          "minItems": 1,
+          "uniqueItems": true,
+          "type": "array",
+          "items": {}
+        },
+        "type": {
+          "title": "Type",
+          "anyOf": [
+            {
+              "enum": [
+                "array",
+                "boolean",
+                "integer",
+                "null",
+                "number",
+                "object",
+                "string"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "array",
+                  "boolean",
+                  "integer",
+                  "null",
+                  "number",
+                  "object",
+                  "string"
+                ],
+                "type": "string"
+              },
+              "minItems": true,
+              "uniqueItems": true
+            }
+          ]
+        },
+        "format": {
+          "title": "Format",
+          "type": "string"
+        },
+        "$id": {
+          "title": "$Id",
+          "type": "string"
+        },
+        "examples": {
+          "title": "Examples",
+          "type": "array",
+          "items": {}
+        },
+        "exclusiveMaximum": {
+          "title": "Exclusivemaximum",
+          "type": "number"
+        },
+        "exclusiveMinimum": {
+          "title": "Exclusiveminimum",
+          "type": "number"
+        },
+        "contains": {
+          "$ref": "#/definitions/Draft06JsonSchema"
+        },
+        "required": {
+          "title": "Required",
+          "uniqueItems": true,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dependencies": {
+          "title": "Dependencies",
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/Draft06JsonSchema"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              }
+            ]
+          }
+        },
+        "propertyNames": {
+          "$ref": "#/definitions/Draft06JsonSchema"
+        },
+        "const": {
+          "title": "Const"
+        },
+        "$comment": {
+          "title": "$Comment",
+          "type": "string"
+        },
+        "readOnly": {
+          "title": "Readonly",
+          "default": false,
+          "type": "boolean"
+        },
+        "writeOnly": {
+          "title": "Writeonly",
+          "default": false,
+          "type": "boolean"
+        },
+        "contentMediaType": {
+          "title": "Contentmediatype",
+          "type": "string"
+        },
+        "contentEncoding": {
+          "title": "Contentencoding",
+          "type": "string"
+        },
+        "if": {
+          "$ref": "#/definitions/Draft07JsonSchema"
+        },
+        "then": {
+          "$ref": "#/definitions/Draft07JsonSchema"
+        },
+        "else": {
+          "$ref": "#/definitions/Draft07JsonSchema"
+        },
+        "additionalItems": {
+          "title": "Additionalitems",
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "$ref": "#/definitions/Draft07JsonSchema"
+            }
+          ]
+        },
+        "items": {
+          "title": "Items",
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Draft07JsonSchema"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Draft07JsonSchema"
+              }
+            }
+          ]
+        },
+        "additionalProperties": {
+          "title": "Additionalproperties",
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "$ref": "#/definitions/Draft07JsonSchema"
+            }
+          ]
+        },
+        "properties": {
+          "title": "Properties",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "patternProperties": {
+          "title": "Patternproperties",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "allOf": {
+          "title": "Allof",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "anyOf": {
+          "title": "Anyof",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "oneOf": {
+          "title": "Oneof",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "not": {
+          "$ref": "#/definitions/Draft07JsonSchema"
+        }
+      }
+    },
+    "ConfigurationProperty": {
+      "title": "ConfigurationProperty",
+      "description": "Configuration for a single property in the plugin settings.\n\nThis is a super-set of the JSON Schema (draft 7) specification.\nhttps://json-schema.org/understanding-json-schema/reference/index.html",
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "title": "$Schema",
+          "default": "http://json-schema.org/draft-07/schema#",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "description": "Your `description` appears after the title and before the input field, except for booleans, where the description is used as the label for the checkbox. See also `markdown_description`.",
+          "type": "string"
+        },
+        "default": {
+          "title": "Default",
+          "description": "The default value for this property."
+        },
+        "multipleOf": {
+          "title": "Multipleof",
+          "minimum": 0,
+          "type": "number"
+        },
+        "maximum": {
+          "title": "Maximum",
+          "type": "number"
+        },
+        "minimum": {
+          "title": "Minimum",
+          "type": "number"
+        },
+        "maxLength": {
+          "title": "Maxlength",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minLength": {
+          "title": "Minlength",
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "pattern": {
+          "title": "Pattern",
+          "type": "string"
+        },
+        "maxItems": {
+          "title": "Maxitems",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minItems": {
+          "title": "Minitems",
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "uniqueItems": {
+          "title": "Uniqueitems",
+          "default": false,
+          "type": "boolean"
+        },
+        "maxProperties": {
+          "title": "Maxproperties",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "minProperties": {
+          "title": "Minproperties",
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "enum": {
+          "title": "Enum",
+          "description": "A list of valid options for this field. If you provide this field,the settings UI will render a dropdown menu.",
+          "minItems": 1,
+          "uniqueItems": true,
+          "type": "array",
+          "items": {}
+        },
+        "type": {
+          "title": "Type",
+          "description": "The type of this variable. Either JSON Schema type names ('array', 'boolean', 'object', ...) or python type names ('list', 'bool', 'dict', ...) may be used, but they will be coerced to JSON Schema types. Numbers, strings, and booleans will be editable in the UI, other types (lists, dicts) *may* be editable in the UI depending on their content, but maby will only be editable as text in the napari settings file. For boolean entries, the description (or markdownDescription) will be used as the label for the checkbox.",
+          "anyOf": [
+            {
+              "enum": [
+                "array",
+                "boolean",
+                "integer",
+                "null",
+                "number",
+                "object",
+                "string"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "array",
+                  "boolean",
+                  "integer",
+                  "null",
+                  "number",
+                  "object",
+                  "string"
+                ],
+                "type": "string"
+              },
+              "minItems": true,
+              "uniqueItems": true
+            }
+          ]
+        },
+        "format": {
+          "title": "Format",
+          "type": "string"
+        },
+        "$id": {
+          "title": "$Id",
+          "type": "string"
+        },
+        "examples": {
+          "title": "Examples",
+          "type": "array",
+          "items": {}
+        },
+        "exclusiveMaximum": {
+          "title": "Exclusivemaximum",
+          "type": "number"
+        },
+        "exclusiveMinimum": {
+          "title": "Exclusiveminimum",
+          "type": "number"
+        },
+        "contains": {
+          "$ref": "#/definitions/Draft06JsonSchema"
+        },
+        "required": {
+          "title": "Required",
+          "uniqueItems": true,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dependencies": {
+          "title": "Dependencies",
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/Draft06JsonSchema"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              }
+            ]
+          }
+        },
+        "propertyNames": {
+          "$ref": "#/definitions/Draft06JsonSchema"
+        },
+        "const": {
+          "title": "Const"
+        },
+        "$comment": {
+          "title": "$Comment",
+          "type": "string"
+        },
+        "readOnly": {
+          "title": "Readonly",
+          "default": false,
+          "type": "boolean"
+        },
+        "writeOnly": {
+          "title": "Writeonly",
+          "default": false,
+          "type": "boolean"
+        },
+        "contentMediaType": {
+          "title": "Contentmediatype",
+          "type": "string"
+        },
+        "contentEncoding": {
+          "title": "Contentencoding",
+          "type": "string"
+        },
+        "if": {
+          "$ref": "#/definitions/Draft07JsonSchema"
+        },
+        "then": {
+          "$ref": "#/definitions/Draft07JsonSchema"
+        },
+        "else": {
+          "$ref": "#/definitions/Draft07JsonSchema"
+        },
+        "additionalItems": {
+          "title": "Additionalitems",
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "$ref": "#/definitions/Draft07JsonSchema"
+            }
+          ]
+        },
+        "items": {
+          "title": "Items",
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Draft07JsonSchema"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Draft07JsonSchema"
+              }
+            }
+          ]
+        },
+        "additionalProperties": {
+          "title": "Additionalproperties",
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "$ref": "#/definitions/Draft07JsonSchema"
+            }
+          ]
+        },
+        "properties": {
+          "title": "Properties",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "patternProperties": {
+          "title": "Patternproperties",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "allOf": {
+          "title": "Allof",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "anyOf": {
+          "title": "Anyof",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "oneOf": {
+          "title": "Oneof",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Draft07JsonSchema"
+          }
+        },
+        "not": {
+          "$ref": "#/definitions/Draft07JsonSchema"
+        },
+        "descriptionFormat": {
+          "title": "Descriptionformat",
+          "description": "By default (`markdown`) your `description`, will be parsed as CommonMark (with `markdown_it`) and rendered as rich text. To render as plain text, set this value to `plain`.",
+          "default": "markdown",
+          "enum": [
+            "markdown",
+            "plain"
+          ],
+          "type": "string"
+        },
+        "enumDescriptions": {
+          "title": "Enumdescriptions",
+          "description": "If you provide a list of items under the `enum` field, you may provide `enum_descriptions` to add descriptive text for each enum.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "enumDescriptionsFormat": {
+          "title": "Enumdescriptionsformat",
+          "description": "By default (`markdown`) your `enum_description`s, will be parsed as CommonMark (with `markdown_it`) and rendered as rich text. To render as plain text, set this value to `plain`.",
+          "default": "markdown",
+          "enum": [
+            "markdown",
+            "plain"
+          ],
+          "type": "string"
+        },
+        "deprecationMessage": {
+          "title": "Deprecationmessage",
+          "description": "If you set deprecationMessage, the setting will get a warning underline with your specified message. It won't show up in the settings UI unless it is configured by the user.",
+          "type": "string"
+        },
+        "deprecationMessageFormat": {
+          "title": "Deprecationmessageformat",
+          "description": "By default (`markdown`) your `deprecation_message`, will be parsed as CommonMark (with `markdown_it`) and rendered as rich text. To render as plain text, set this value to `plain`.",
+          "default": "markdown",
+          "enum": [
+            "markdown",
+            "plain"
+          ],
+          "type": "string"
+        },
+        "editPresentation": {
+          "title": "Editpresentation",
+          "description": "By default, string settings will be rendered with a single-line editor. To render with a multi-line editor, set this value to `multiline`.",
+          "default": "singleline",
+          "enum": [
+            "singleline",
+            "multiline"
+          ],
+          "type": "string"
+        },
+        "order": {
+          "title": "Order",
+          "description": "When specified, gives the order of this setting relative to other settings within the same category. Settings with an order property will be placed before settings without this property set; and settings without `order` will be placed in alphabetical order.",
+          "type": "integer"
+        },
+        "patternErrorMessage": {
+          "title": "Patternerrormessage",
+          "description": "When restricting string types to a given regular expression with the `pattern` field, this field may be used to provide a custom error when the pattern does not match.",
+          "type": "string"
+        }
+      }
+    },
+    "ConfigurationContribution": {
+      "title": "ConfigurationContribution",
+      "description": "A configuration contribution for a plugin.\n\nThis enables plugins to provide a schema for their configurables.\nConfiguration contributions are used to generate the settings UI.",
+      "type": "object",
+      "properties": {
+        "title": {
+          "title": "Title",
+          "description": "The heading used for this configuration category. Words like \"Plugin\", \"Configuration\", and \"Settings\" are redundant and should not beused in your title.",
+          "type": "string"
+        },
+        "properties": {
+          "title": "Properties",
+          "description": "Configuration properties. In the settings UI, your configuration key will be used to namespace and construct a title. Though a plugin can contain multiple categories of settings, each plugin setting must still have its own unique key. Capital letters in your key are used to indicate word breaks. For example, if your key is 'gitMagic.blame.dateFormat', the generated title for the setting will look like 'Blame: Date Format'",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/ConfigurationProperty"
+          }
+        }
+      },
+      "required": [
+        "title",
+        "properties"
+      ]
+    },
+    "ContributionPoints": {
+      "title": "ContributionPoints",
+      "type": "object",
+      "properties": {
+        "commands": {
+          "title": "Commands",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CommandContribution"
+          }
+        },
+        "readers": {
+          "title": "Readers",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ReaderContribution"
+          }
+        },
+        "writers": {
+          "title": "Writers",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/WriterContribution"
+          }
+        },
+        "widgets": {
+          "title": "Widgets",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/WidgetContribution"
+          }
+        },
+        "sample_data": {
+          "title": "Sample Data",
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/SampleDataGenerator"
+              },
+              {
+                "$ref": "#/definitions/SampleDataURI"
+              }
+            ]
+          }
+        },
+        "themes": {
+          "title": "Themes",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ThemeContribution"
+          }
+        },
+        "menus": {
+          "title": "Menus",
+          "hide_docs": true,
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/MenuCommand"
+                },
+                {
+                  "$ref": "#/definitions/Submenu"
+                }
+              ]
+            }
+          }
+        },
+        "submenus": {
+          "title": "Submenus",
+          "hide_docs": true,
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SubmenuContribution"
+          }
+        },
+        "configuration": {
+          "title": "Configuration",
+          "description": "Configuration options for this plugin.This section can either be a single object, representing a single category ofsettings, or an array of objects, representing multiple categories ofsettings. If there are multiple categories of settings, the Settings editorwill show a submenu in the table of contents for that extension, and the titlekeys will be used for the submenu entry names.",
+          "hide_docs": true,
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ConfigurationContribution"
+          }
+        }
+      }
+    },
+    "PackageMetadata": {
+      "title": "PackageMetadata",
+      "description": "Pydantic model for standard python package metadata.\n\nhttps://www.python.org/dev/peps/pep-0566/\nhttps://packaging.python.org/specifications/core-metadata/\n\nThe `importlib.metadata` provides the `metadata()` function,\nbut it returns a somewhat awkward `email.message.Message` object.",
+      "type": "object",
+      "properties": {
+        "metadata_version": {
+          "title": "Metadata Version",
+          "description": "Version of the file format",
+          "default": "1.0",
+          "enum": [
+            "1.0",
+            "1.1",
+            "1.2",
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "description": "The name of the distribution. The name field is the primary identifier for a distribution.",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*[a-zA-Z0-9]$",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "description": "A string containing the distribution's version number. This field must be in the format specified in PEP 440.",
+          "type": "string"
+        },
+        "dynamic": {
+          "title": "Dynamic",
+          "description": "A string containing the name of another core metadata field. The field names Name and Version may not be specified in this field.",
+          "min_ver": "2.2",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "platform": {
+          "title": "Platform",
+          "description": "A Platform specification describing an operating system supported by the distribution which is not listed in the \u201cOperating System\u201d Trove classifiers. See \u201cClassifier\u201d below.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supported_platform": {
+          "title": "Supported Platform",
+          "description": "Binary distributions containing a PKG-INFO file will use the Supported-Platform field in their metadata to specify the OS and CPU for which the binary distribution was compiled",
+          "min_ver": "1.1",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "title": "Summary",
+          "description": "A one-line summary of what the distribution does.",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "description": "A longer description of the distribution that can run to several paragraphs.",
+          "type": "string"
+        },
+        "description_content_type": {
+          "title": "Description Content Type",
+          "description": "A string stating the markup syntax (if any) used in the distribution's description, so that tools can intelligently render the description. The type/subtype part has only a few legal values: text/plain, text/x-rst, text/markdown",
+          "min_ver": "2.1",
+          "type": "string"
+        },
+        "keywords": {
+          "title": "Keywords",
+          "description": "A list of additional keywords, separated by commas, to be used to assist searching for the distribution in a larger catalog.",
+          "type": "string"
+        },
+        "home_page": {
+          "title": "Home Page",
+          "description": "A string containing the URL for the distribution's home page.",
+          "type": "string"
+        },
+        "download_url": {
+          "title": "Download Url",
+          "description": "A string containing the URL from which THIS version of the distribution can be downloaded.",
+          "min_ver": "1.1",
+          "type": "string"
+        },
+        "author": {
+          "title": "Author",
+          "description": "A string containing the author's name at a minimum; additional contact information may be provided.",
+          "type": "string"
+        },
+        "author_email": {
+          "title": "Author Email",
+          "description": "A string containing the author's e-mail address. It can contain a name and e-mail address in the legal forms for a RFC-822 From: header.",
+          "type": "string"
+        },
+        "maintainer": {
+          "title": "Maintainer",
+          "description": "A string containing the maintainer's name at a minimum; additional contact information may be provided.",
+          "min_ver": "1.2",
+          "type": "string"
+        },
+        "maintainer_email": {
+          "title": "Maintainer Email",
+          "description": "A string containing the maintainer's e-mail address. It can contain a name and e-mail address in the legal forms for a RFC-822 From: header.",
+          "min_ver": "1.2",
+          "type": "string"
+        },
+        "license": {
+          "title": "License",
+          "description": "Text indicating the license covering the distribution where the license is not a selection from the \u201cLicense\u201d Trove classifiers. See \u201cClassifier\u201d below. This field may also be used to specify a particular version of a license which is named via the Classifier field, or to indicate a variation or exception to such a license.",
+          "type": "string"
+        },
+        "classifier": {
+          "title": "Classifier",
+          "description": "Each entry is a string giving a single classification value for the distribution. Classifiers are described in PEP 301, and the Python Package Index publishes a dynamic list of currently defined classifiers.",
+          "min_ver": "1.1",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requires_dist": {
+          "title": "Requires Dist",
+          "description": "The field format specification was relaxed to accept the syntax used by popular publishing tools. Each entry contains a string naming some other distutils project required by this distribution.",
+          "min_ver": "1.2",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requires_python": {
+          "title": "Requires Python",
+          "description": "This field specifies the Python version(s) that the distribution is guaranteed to be compatible with. Installation tools may look at this when picking which version of a project to install. The value must be in the format specified in Version specifiers (PEP 440).",
+          "min_ver": "1.2",
+          "type": "string"
+        },
+        "requires_external": {
+          "title": "Requires External",
+          "description": "The field format specification was relaxed to accept the syntax used by popular publishing tools. Each entry contains a string describing some dependency in the system that the distribution is to be used. This field is intended to serve as a hint to downstream project maintainers, and has no semantics which are meaningful to the distutils distribution.",
+          "min_ver": "1.2",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "project_url": {
+          "title": "Project Url",
+          "description": "A string containing a browsable URL for the project and a label for it, separated by a comma.",
+          "min_ver": "1.2",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "provides_extra": {
+          "title": "Provides Extra",
+          "description": "A string containing the name of an optional feature. Must be a valid Python identifier. May be used to make a dependency conditional on whether the optional feature has been requested.",
+          "min_ver": "2.1",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "provides_dist": {
+          "title": "Provides Dist",
+          "min_ver": "1.2",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "obsoletes_dist": {
+          "title": "Obsoletes Dist",
+          "min_ver": "1.2",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ]
+    }
+  }
+}
