@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+pathcache/__init__.py
+pathcache/pathcache.py
+pathcache.egg-info/PKG-INFO
+pathcache.egg-info/SOURCES.txt
+pathcache.egg-info/dependency_links.txt
+pathcache.egg-info/top_level.txt

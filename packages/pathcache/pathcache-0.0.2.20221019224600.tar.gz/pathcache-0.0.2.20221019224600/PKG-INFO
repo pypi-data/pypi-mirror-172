@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pathcache
+Version: 0.0.2.20221019224600
+Summary: Cache file using path
+Home-page: https://github.com/LiXiaYu/pathcache
+Author: LiXiaYu
+Author-email: aasll@126.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+When using remote files, using the remote path will be slow, but you do not want to manually download to the local. You can use this library to automatically download management cache files, but still use the original remote path.
+
+For example:
+
+from pathcache import pathcachestr as pc
+
+open(pc(r"/mnt/smb_01/xxx/yy/z.txt"))
+
+This will create ./_pathcache/mnt/smb_01/xxx/yy/z.txt copy from /mnt/smb_01/xxx/yy/z.txt
+
+Actully, the argument to the open() is str absolute path of "./_pathcache/mnt/smb_01/xxx/yy/z.txt"
