@@ -1,0 +1,11 @@
+ssb_project_cli/__init__.py,sha256=9EtUsJADcn3BDVVdhpBJshwnQiOTZlvF8UlEsY_MOVo,23
+ssb_project_cli/__main__.py,sha256=Rq7umNoHJ3WQyHvBtKfBQtdvB3ArdtzrftRj_LpzE_Y,220
+ssb_project_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssb_project_cli/ssb_project/__init__.py,sha256=SwTvZjK4v-KwV12CMMxHeThQE4v6ja1nWxwAnfj7siY,19
+ssb_project_cli/ssb_project/app.py,sha256=s-juuw3wauL2BxbLROWhg__mEK_nXImNRT18LRT2LTU,20835
+ssb_project_cli/ssb_project/build_cmds.md,sha256=XttGOPxfVDvr5uF8O0yKfEaxqYiBYjFpWztGuiOXzaU,69
+ssb_project_cli-1.0.4.dist-info/entry_points.txt,sha256=Ovh1qxLjYiKCS-feRhE3JCzb-aiZ5iP39zz_0r2sPNo,61
+ssb_project_cli-1.0.4.dist-info/LICENSE,sha256=JEslg3zzDwJvCy9RnysKNTtLh-rSFRN1F8t0brtcu60,1073
+ssb_project_cli-1.0.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+ssb_project_cli-1.0.4.dist-info/METADATA,sha256=zE2Yn6hcNiIbmATmrnaz2KlnZJZEg3CDbTJYKJxqjSo,4206
+ssb_project_cli-1.0.4.dist-info/RECORD,,
