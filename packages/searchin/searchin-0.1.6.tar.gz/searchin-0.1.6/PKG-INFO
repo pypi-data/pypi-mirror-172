@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: searchin
+Version: 0.1.6
+Summary: Search anything in a live python object, method or variable!
+Home-page: https://github.com/NicolasMICAUX/searchin
+Author: Nicolas Micaux
+Keywords: SEARCH,DEBUG
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
