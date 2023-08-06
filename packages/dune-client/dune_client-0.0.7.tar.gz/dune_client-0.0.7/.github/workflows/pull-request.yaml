@@ -1,0 +1,51 @@
+name: pull request
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+jobs:
+  lint-format-types:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+      - name: Install Requirements
+        run: pip install -r requirements/dev.txt
+      - name: Pylint
+        run: pylint dune_client/
+      - name: Black
+        run: black --check ./
+      - name: Type Check (mypy)
+        run: mypy dune_client --strict
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+      - name: Install Requirements
+        run:
+          pip install -r requirements/dev.txt
+      - name: Unit Tests
+        run: python -m pytest tests/unit
+  e2e-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+      - name: Install Requirements
+        run:
+          pip install -r requirements/dev.txt
+      - name: End to End Tests
+        env:
+          DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
+        run:
+          python -m pytest tests/e2e
