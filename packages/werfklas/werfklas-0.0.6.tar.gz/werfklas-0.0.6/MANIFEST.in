@@ -1,0 +1,11 @@
+#MANIFEST.in
+
+include cfg/config.yml
+include frontend/children/templates/*.html
+include frontend/classrooms/templates/*.html
+include frontend/families/templates/*.html
+include frontend/parents/templates/*.html
+include frontend/teachers/templates/*.html
+include frontend/templates/*.html
+include werfklas/static/*.css
+include werfklas/static/js/*.js

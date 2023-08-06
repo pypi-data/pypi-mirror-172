@@ -1,0 +1,28 @@
+<main class="bd-main order-1">
+
+{% extends '_nav.html' %}
+{% block content %}
+
+<div class="container">
+  <div class="row pb-5">
+    <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+
+    {% if message %}
+		<!-- the form was submitted and message exists -->
+		<br>
+		<p class="lead alert alert-success">{{ message }}</p>
+
+		<meta http-equiv="refresh" content="3;url={{ url_for('classroom_bp.index_classrooms') }}" />
+	{% else %}
+		<p class="lead">There is nothing for you here.</p>
+	{% endif %}
+
+		<!-- links -->
+		Binnen 3 seconden wordt je automatisch doorverwezen naar het klassen overzicht
+		<p><a href="{{ url_for('classroom_bp.index_classrooms') }}">Terug naar het klassen overzicht.</a></p>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+</main>
