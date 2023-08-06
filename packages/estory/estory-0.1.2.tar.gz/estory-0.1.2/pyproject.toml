@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "estory"
+version = "0.1.2"
+description = "Read from and write to event stores"
+authors = ["Tanguy Le Carrour <tanguy@bioneland.org>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://git.easter-eggs.org/bioneland/estory"
+repository = "https://git.easter-eggs.org/bioneland/estory"
+
+exclude = ["**/conftest.py", "**/*_test.py"]
+
+[tool.poetry.scripts]
+estory = "estory:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.4.1"
+bl-event-sourcing = ">=0.1.0"
+bl-event-sourcing-sqlalchemy = ">=0.1.0"
+PyMySQL = {version = "^1.0.2", optional = true}
+
+[tool.poetry.dev-dependencies]
+invoke = "^1.6.0"
+black = "^22.3.0"
+isort = "^5.9.2"
+flake8 = "^4.0.1"
+safety = "^1.10.3"
+termcolor = "^1.1.0"
+mypy = "^0.961"
+types-setuptools = "^57.0.0"
+types-requests = "^2.25.2"
+pytest = "^7.1.2"
+types-mock = "^4.0.15"
+
+[tool.poetry.extras]
+mysql = ["pymysql"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.black]
+line-length = 89
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
