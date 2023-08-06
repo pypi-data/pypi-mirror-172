@@ -1,0 +1,6 @@
+include .gitignore
+include LICENCE
+include *.md
+
+recursive-include conf *
+recursive-include lsystem *
