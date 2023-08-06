@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: wakong
+Version: 1.1.1
+Summary: Wakong: An appropriate and robust masking algorithm for generating the training objective of text infilling.
+Keywords: algorithm,masking algorithm,nlp,natural language processing,training objective,deep learning,text processing,text infilling
+Author-email: Ayaka <ayaka@mail.shn.hk>
+Requires-Python: ~=3.10
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing
+Classifier: Typing :: Typed
+Requires-Dist: numpyro~=0.10.1 ; extra == "test"
+Project-URL: Repository, https://github.com/ayaka14732/wakong
+Provides-Extra: test
+
+# Wakong
+
+Wakong: An appropriate and robust masking algorithm for generating the training objective of text infilling
+
+This project is the Python library of ARP 1: [_The Wakong Algorithm and Its Python Implementation_](https://arp.shn.hk/1/).
+
+This project is supported by Cloud TPUs from Google's [TPU Research Cloud](https://sites.research.google/trc/about/) (TRC) as a part of my project on large-scale language model pre-training.
+
+## Installation
+
+Wakong supports Python 3.10 and above:
+
+```sh
+pip install wakong
+```
+
+You can also install from source:
+
+```sh
+flit install
+```
+
+## Usage
+
+```python
+from wakong import Wakong
+wakong = Wakong(seed=42)
+sentence = 'I can eat glass , it does not hurt me .'.split(' ')
+print(wakong(sentence))
+```
+
+Output:
+
+```
+['I', '<mask>', 'eat', 'glass', '<mask>', ',', 'it', 'does', 'not', 'hurt', 'me', '.']
+```
+
