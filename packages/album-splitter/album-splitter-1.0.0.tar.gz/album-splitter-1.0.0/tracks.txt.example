@@ -1,0 +1,13 @@
+# This is an example file that shows how to write the tracks.txt file.
+#
+# Empty lines or lines starting with # are ignored
+#
+# Try to keep your input simple.
+# Recognized timestamps are in the HH:MM:SS or MM:SS format.
+# Examples of some supported lines format, you can try others but they might not work.
+11:22 Song Title
+Song Title - 11:22:33
+11:22 Song Title
+Song Title 11:22
+Song Title | 11:22
+11:22 | Song Title
