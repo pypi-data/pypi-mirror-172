@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+appapy/__init__.py
+appapy/access.py
+paddypy.egg-info/PKG-INFO
+paddypy.egg-info/SOURCES.txt
+paddypy.egg-info/dependency_links.txt
+paddypy.egg-info/requires.txt
+paddypy.egg-info/top_level.txt
