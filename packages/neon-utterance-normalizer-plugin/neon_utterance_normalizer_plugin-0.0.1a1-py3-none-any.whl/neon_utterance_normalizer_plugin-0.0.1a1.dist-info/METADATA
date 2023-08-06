@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: neon-utterance-normalizer-plugin
+Version: 0.0.1a1
+Summary: An utterance normalizer plugin for ovos/neon/mycroft
+Home-page: https://github.com/NeonGeckoCom/neon_utterance_normalizer_plugin
+Author: Neongecko
+Author-email: developers@neon.ai
+License: bsd3
+Keywords: mycroft plugin utterance parser/classifier/transformer
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: neon-transformers (~=0.1)
+Requires-Dist: ovos-lingua-franca (~=0.4)
+
+# neon-utterance-plugin-normalizer
+Normalizes utterances by stripping trailing punctuation, normalization (numeric substitutions, expanded contractions), and removing articles.
+Original utterances are preserved and returned utterances are returned in order:
+1. No Punctuation, Normalized
+2. No Punctuation, Normalized, Removed Articles
+3. No Punctuation
+4. Original Utterances
+
+
