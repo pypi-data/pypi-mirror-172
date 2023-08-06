@@ -1,0 +1,7 @@
+quera/__init__.py,sha256=HAv0t0Lopx9X_AYzSsUvJUU7tAUt4Cx6zUKxJF-ECkU,62
+quera/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quera/utils/cache.py,sha256=PeOptk-WZcwGbq1YPrmCOsjJ8xl_4UOErslQJeVJ1Sk,11
+quera/utils/submit.py,sha256=1yRREvd9sNAwhbCfAk8UR4hGSFqWAAbQMTyQR1W0ons,3733
+quera-0.1.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+quera-0.1.4.dist-info/METADATA,sha256=-Y0qNm5nwGgKwBaJMBJV_BvAYjcSWF9vU2P054kORVU,436
+quera-0.1.4.dist-info/RECORD,,
