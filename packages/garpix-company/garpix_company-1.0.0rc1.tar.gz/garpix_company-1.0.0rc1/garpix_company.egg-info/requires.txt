@@ -1,0 +1,2 @@
+garpixcms>=3.43.0
+drf-nested-routers==0.93.4
