@@ -1,0 +1,10 @@
+README.md
+setup.py
+nonebot2_plugin_RealESRGAN/__init__.py
+nonebot2_plugin_RealESRGAN/__version__.py
+nonebot2_plugin_RealESRGAN/utils.py
+nonebot2_plugin_RealESRGAN.egg-info/PKG-INFO
+nonebot2_plugin_RealESRGAN.egg-info/SOURCES.txt
+nonebot2_plugin_RealESRGAN.egg-info/dependency_links.txt
+nonebot2_plugin_RealESRGAN.egg-info/requires.txt
+nonebot2_plugin_RealESRGAN.egg-info/top_level.txt
