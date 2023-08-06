@@ -1,0 +1,12 @@
+Tutorials & Examples
+====================
+
+.. toctree::
+   :maxdepth: 1
+
+   examples/01_parameters.ipynb
+   examples/02_generate.ipynb
+   examples/03_model_free.ipynb
+   examples/04_writing_new_fits.ipynb
+   examples/05_profiler.ipynb
+   examples/06_MCMC.ipynb
