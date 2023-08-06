@@ -1,0 +1,4 @@
+[console_scripts]
+TujieTianguoYudiyu = TujieTianguoYudiyu.__main__:main
+tujie-tianguo-yudiyu = TujieTianguoYudiyu.__main__:main
+
