@@ -1,0 +1,4 @@
+[console_scripts]
+JieduZhanxingshu = JieduZhanxingshu.__main__:main
+jiedu-zhanxingshu = JieduZhanxingshu.__main__:main
+
