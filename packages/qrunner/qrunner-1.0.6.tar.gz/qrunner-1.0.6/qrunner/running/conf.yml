@@ -1,0 +1,12 @@
+app:
+  device_id: null
+  pkg_name: null
+common:
+  base_url: null
+  env: test
+  login_headers: {}
+  platform: api
+  timeout: 10
+  visit_headers: {}
+web:
+  browser: chrome
