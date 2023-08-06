@@ -1,0 +1,14 @@
+operbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+operbot/cmds.py,sha256=HQOoVxIYA4IvHou8m46JkAcvnAjaZ8bGG-R7W-edS4M,2452
+operbot/irc.py,sha256=kl-PjKKG9k-TDHjyC4o7XLoALOew71ZaRLU5FIzXUX4,18466
+operbot/rss.py,sha256=e-FkJC8_RAClwyWANSRIviysFKy2Iha5yp4yWmQFkwo,7575
+operbot/run.py,sha256=x0oa0aSGeZjnE9Bx_87R5T41j8RkluP_stIO-hUehgM,8325
+operbot/udp.py,sha256=oR1zW8HVrWNFRnGektoHGumOxETc0tAeTCcBAHx1VEM,1601
+operbot-103.data/scripts/operbot,sha256=Q0Rfht21pRE-jdUilD43cSSOyYlKUqwlioQ57i2BDQg,2155
+operbot-103.data/scripts/operbotcmd,sha256=W94mHthS_DYeXTftfhnuILO0-1qDQh9J6cnZvov0T_Q,839
+operbot-103.data/scripts/operbotd,sha256=gA1PXo7z95Y93q41W98URWNi1-Yfncrdz0KEM6aHxig,1205
+operbot-103.data/scripts/operbotsrv,sha256=f1v4NXqzSzeSMTx8Ako8o_922ATLu6RuHAeFpyQ3fpM,835
+operbot-103.dist-info/METADATA,sha256=eRLLt_5AaxKon9qvy2bk5vvcUa6Ui_0MPvmn2u-p_r4,5661
+operbot-103.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+operbot-103.dist-info/top_level.txt,sha256=oLonl4bDjn98exQqLbLwqZRnXe9vSLBVfqzZiXwRlhA,8
+operbot-103.dist-info/RECORD,,
