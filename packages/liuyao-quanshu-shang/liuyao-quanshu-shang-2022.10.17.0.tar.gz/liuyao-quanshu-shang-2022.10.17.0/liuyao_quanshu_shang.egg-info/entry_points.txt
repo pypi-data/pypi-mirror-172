@@ -1,0 +1,4 @@
+[console_scripts]
+LiuyaoQuanshuShang = LiuyaoQuanshuShang.__main__:main
+liuyao-quanshu-shang = LiuyaoQuanshuShang.__main__:main
+
