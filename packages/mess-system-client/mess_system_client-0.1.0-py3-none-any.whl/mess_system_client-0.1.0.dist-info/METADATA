@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mess-system-client
+Version: 0.1.0
+Summary: Mess_System Client
+Home-page: UNKNOWN
+Author: Stasy_Kadr
+Author-email: holy_night@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
+
