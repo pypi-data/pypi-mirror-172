@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: BatchExpLaunch
+Version: 0.0.6
+Summary: A project for batch scripts submission
+Home-page: https://github.com/Taosheng-ty/BEL.git
+Author: Tao Yang
+Author-email: taoyang@cs.utah.edu
+Project-URL: Bug Tracker, https://github.com/Taosheng-ty/BEL/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+### To build the package
+
+        python3 -m build
+
+### To install the package
+        python setup.py install

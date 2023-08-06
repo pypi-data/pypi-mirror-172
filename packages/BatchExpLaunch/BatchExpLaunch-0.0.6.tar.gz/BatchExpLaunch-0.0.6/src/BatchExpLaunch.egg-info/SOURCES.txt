@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bin/Extract_result
+bin/slurm_python
+src/BatchExpLaunch/__init__.py
+src/BatchExpLaunch/results_org.py
+src/BatchExpLaunch/tools.py
+src/BatchExpLaunch.egg-info/PKG-INFO
+src/BatchExpLaunch.egg-info/SOURCES.txt
+src/BatchExpLaunch.egg-info/dependency_links.txt
+src/BatchExpLaunch.egg-info/top_level.txt
