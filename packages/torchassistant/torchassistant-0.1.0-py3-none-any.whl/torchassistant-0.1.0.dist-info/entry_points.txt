@@ -1,0 +1,5 @@
+[console_scripts]
+taevaluate = torchassistant.cmd_api.evaluate:run_evaluate
+tainfer = torchassistant.cmd_api.infer:run_infer
+tainit = torchassistant.cmd_api.init:run_init
+tatrain = torchassistant.cmd_api.train:run_train
