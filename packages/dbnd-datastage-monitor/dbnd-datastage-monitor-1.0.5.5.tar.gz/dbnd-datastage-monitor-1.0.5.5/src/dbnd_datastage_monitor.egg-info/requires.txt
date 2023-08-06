@@ -1,0 +1,8 @@
+dbnd==1.0.5.5
+dbnd-airflow-monitor==1.0.5.5
+requests>=2.25.0
+PyJWT==1.7.1
+
+[tests]
+pytest
+mock
