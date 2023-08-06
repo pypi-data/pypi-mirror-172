@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hepscale
+Version: 1.0.2
+Summary: An easy way to plot the scales in high energy physics
+Author: Mingrui Zhao
+Author-email: mingrui.zhao@mail.labz0.org
+License: Apache License, Version 2.0
+Keywords: scale
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+License-File: LICENSE
