@@ -1,0 +1,12 @@
+lambdex/__init__.py,sha256=4vbPVoez1QFRNKWTDd1nB6m53xhdKhw0c_F17S1jeEI,437
+lambdex/__main__.py,sha256=ofXaFSgjp9pQKPRCXfwhjbvhCpIFK8TlKsptayWsNT4,251
+lambdex/version.py,sha256=G7OeXgM7WmUTgJp7koT9PBaA3DE1KDhbFpq3xpaz7WU,154
+lambdex/bin/__init__.py,sha256=Fj3G-cILhxLZ7F6uqEm8289PlyllMYcv8byjni4WqfY,131
+lambdex/bin/lambdex.py,sha256=NKP1NsctYrEP68HVJZ06lAm_7KfOztjWxFHRI4XEhiw,8119
+lambdex/resources/__init__.py,sha256=Fj3G-cILhxLZ7F6uqEm8289PlyllMYcv8byjni4WqfY,131
+lambdex/resources/lambdex_handler.py,sha256=8v3vP0O9nkLyd2yeI83VZCbrgz1RUpdr84IwuEZ48Ic,1920
+lambdex-0.1.7.dist-info/entry_points.txt,sha256=lfzzfUu8RdbgcAk-8Wi-G8K1ICtn0r1WotcgvY9-0JI,52
+lambdex-0.1.7.dist-info/LICENSE,sha256=bcDgaNzzpbyOBUIFuFt3IOHUkmW7xkv1FdLPeRl99po,11323
+lambdex-0.1.7.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+lambdex-0.1.7.dist-info/METADATA,sha256=e7OdsnugoTvf3PSRogue9UoMyVjUovxt9HI8sOcp1l8,5872
+lambdex-0.1.7.dist-info/RECORD,,
