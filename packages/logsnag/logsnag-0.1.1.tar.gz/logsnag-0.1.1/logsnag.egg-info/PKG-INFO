@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: logsnag
+Version: 0.1.1
+Summary: LogSnag API Wrapper
+Home-page: https://github.com/logsnag/logsnag.py
+Author: Shayan Taslim
+Author-email: shayan@logsnag.com
+License: MIT
+Project-URL: Homepage, https://logsnag.com
+Project-URL: Documentation, https://docs.logsnag.com
+Project-URL: Playground, https://logsnag.com/playground
+Project-URL: Github, https://github.com/LogSnag/logsnag.py
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+	<img src="https://logsnag.com/og-image.png" alt="LogSnag"/>
+	<br>
+    <h1>LogSnag</h1>
+	<p>Get notifications and track your project events.</p>
+	<a href="https://discord.gg/dY3pRxgWua"><img src="https://img.shields.io/discord/922560704454750245?color=%237289DA&label=Discord" alt="Discord"></a>
+	<a href="https://docs.logsnag.com"><img src="https://img.shields.io/badge/Docs-LogSnag" alt="Documentation"></a>
+	<br>
+	<br>
+</div>
+
+
+## Installation
+
+```sh
+pip3 install logsnag
+```
+
+## Usage
+
+### Import Library
+
+```python
+from logsnag import LogSnag
+```
+
+### Initialize Client
+
+```python
+logsnag = LogSnag('7f568d735724351757637b1dbf108e5', "my-saas")
+```
+
+### Publish Event
+
+```python
+logsnag.publish(
+    channel="waitlist",
+    event="User Joined",
+    description="Email: john@doe.com",
+    icon="🎉",
+    tags={
+      "email": "john@doe.com",
+      "user-id": "uid-12"  
+    },
+    notify=True
+)
+```
+
+### Publish Insight
+
+```python
+logsnag.insight(
+    title='User Count',
+    value=100,
+    icon='👨',
+)
+```
+
+
