@@ -1,0 +1,9 @@
+setup.py
+alice/__init__.py
+alice/alice.py
+alice/language_models.py
+alice_tool.egg-info/PKG-INFO
+alice_tool.egg-info/SOURCES.txt
+alice_tool.egg-info/dependency_links.txt
+alice_tool.egg-info/requires.txt
+alice_tool.egg-info/top_level.txt
