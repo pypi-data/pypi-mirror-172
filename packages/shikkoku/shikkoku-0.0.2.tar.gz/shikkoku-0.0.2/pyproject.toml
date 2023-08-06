@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "pysdl2", "pysdl2-dll", "pillow"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shikkoku"
+version = "0.0.2"
+authors = [
+    { name="James Correll", email="mail.james.correll@gmail.com" },
+]
+description = "A small engine for game-making wrapped around SDL2"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
