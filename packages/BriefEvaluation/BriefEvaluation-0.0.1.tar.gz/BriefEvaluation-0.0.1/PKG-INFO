@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: BriefEvaluation
+Version: 0.0.1
+Summary: This is a package for doing a comprehensive evaluation
+Home-page: https://gitee.com/zkspongebob/evaluation
+Author: zkSponegBob
+Author-email: zkSpongeBob@126.com
+License: MIT Licence
+Keywords: pip,BriefEvaluation
+Platform: any
+
+This is a package for doing a comprehensive evaluation
