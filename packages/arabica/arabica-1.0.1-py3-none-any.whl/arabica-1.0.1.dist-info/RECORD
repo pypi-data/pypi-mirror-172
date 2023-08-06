@@ -1,0 +1,12 @@
+arabica/__init__.py,sha256=q26dDwkP50Wqvdun-I60Ey9f5Ctq3U3jyZc6uugzG5I,52
+arabica/arabica_freq.py,sha256=gglfVYRUX51KHvJTyJR-8wQ9sqdyTtFdPiVK7z2hfS4,9099
+arabica/clean_ngram.py,sha256=VGnm_7Y1aG8KV6VmMrybJWvd08v1XnvqsLSu7uhq1kY,1692
+arabica/clean_numbers.py,sha256=LrR6_r3QeRRedkzo_N8OG4bMA02iudOmgd4vLKaGbAg,146
+arabica/group.py,sha256=YmsD3qasvQphz7CPw3g1hdDKYFdwWtONgq47VG-j1mY,1850
+arabica/preprocess.py,sha256=98wiYcCqugJU6rLaCwHIxWSPn68wifflp80rgKm75dU,374
+arabica/stopwords.py,sha256=cEnSeZNRfk9TopSTC-0rHZmCYhr1FI7lsPZF5m94mXk,449
+arabica-1.0.1.dist-info/LICENSE,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arabica-1.0.1.dist-info/METADATA,sha256=jJHrY4fXRKzKN6s4v51NltXnmOsOJro6enC2p5j4k2g,5955
+arabica-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+arabica-1.0.1.dist-info/top_level.txt,sha256=CVDjDxZI2dE0ArvaFNI79Q44eV2XhvADGo7aA8nxxoc,8
+arabica-1.0.1.dist-info/RECORD,,
