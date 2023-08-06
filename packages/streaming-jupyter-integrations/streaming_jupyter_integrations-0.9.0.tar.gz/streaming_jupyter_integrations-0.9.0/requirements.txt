@@ -1,0 +1,12 @@
+ipywidgets
+ipytree
+apache-flink==1.15.2
+setuptools
+pandas
+ipython
+py4j
+requests
+wget
+sqlparse
+pyyaml
+types-PyYAML
