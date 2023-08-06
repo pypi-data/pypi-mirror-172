@@ -1,0 +1,11 @@
+thetadata/__init__.py,sha256=p8mdObBL6BR-ddkZopUciNKLwDZfHnti5Gu6qrylrnA,102
+thetadata/client.py,sha256=ZQAVZk3AITVnHaiO5UArAEYG0OD3Jr7wsCwLOq1I10w,11327
+thetadata/enums.py,sha256=QUdU9Vvx7whVTyp9rb39WR0BuagjI5deA8avmbhr17o,5581
+thetadata/exceptions.py,sha256=B3WPUxs-5H9WRRBqCQI1AiVbGc4YJuv0kPm2EVsYlbM,888
+thetadata/parsing.py,sha256=Hnq4fTptn9b026LZOHUb65nFnmZnzCnqONrzpp4-i_w,8537
+thetadata/py.typed,sha256=y6ARoGfTDlsXOfaq7TVR9t6NIdTNhmGRDVrNNj0Hs64,27
+thetadata/terminal.py,sha256=Y13pC47fHyHiAQJXkRTmiiOQqz-ExelR7OIX1MxpZ4Y,839
+thetadata-0.4.5.dist-info/METADATA,sha256=MdQQzA8S6hIknjHTfTxfbZyxzPE4MT2XGJhqVkcZiWw,3004
+thetadata-0.4.5.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+thetadata-0.4.5.dist-info/licenses/LICENSE,sha256=UnGiikl9yhz69XB8SHmd5j62WQ7MKEXuk1GzuMGiho0,1067
+thetadata-0.4.5.dist-info/RECORD,,
