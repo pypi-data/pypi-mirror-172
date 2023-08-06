@@ -1,0 +1,17 @@
+README.md
+setup.py
+src/__init__.py
+src/__main__.py
+src/apiclient.py
+src/configurator.py
+src/importer.py
+src/parser.py
+src/status.py
+src/testcase.py
+src/../connection_config.ini
+testit_importer_junit.egg-info/PKG-INFO
+testit_importer_junit.egg-info/SOURCES.txt
+testit_importer_junit.egg-info/dependency_links.txt
+testit_importer_junit.egg-info/entry_points.txt
+testit_importer_junit.egg-info/requires.txt
+testit_importer_junit.egg-info/top_level.txt
