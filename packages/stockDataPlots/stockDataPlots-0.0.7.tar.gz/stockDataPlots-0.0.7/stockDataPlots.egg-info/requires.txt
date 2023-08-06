@@ -1,0 +1,7 @@
+fastcore
+pandas>=1.5
+yFinance>=0.1.77
+html5lib>=1.1
+BeautifulSoup4>=4.11.1
+
+[dev]

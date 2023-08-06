@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+stockDataPlots/__init__.py
+stockDataPlots/_modidx.py
+stockDataPlots/structureData.py
+stockDataPlots.egg-info/PKG-INFO
+stockDataPlots.egg-info/SOURCES.txt
+stockDataPlots.egg-info/dependency_links.txt
+stockDataPlots.egg-info/entry_points.txt
+stockDataPlots.egg-info/not-zip-safe
+stockDataPlots.egg-info/requires.txt
+stockDataPlots.egg-info/top_level.txt
