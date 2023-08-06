@@ -1,0 +1,5 @@
+[console_scripts]
+msspeech=msspeech.__main__:main
+msspeech-update-voices=msspeech.__main__:update_voices
+msspeech_update_voices=msspeech.__main__:update_voices
+
