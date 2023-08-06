@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tbc-ken-api
+Version: 0.2
+Summary: Trading Bot Club alpaca api
+Home-page: https://pypi.org/project/tbc-ken-api/
+Author: Kris Luangpenthong
+Author-email: krisken4699@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# This lib is made for to be used by members of the TBC club made in 2022.
+
+## To use the lib, touch alpaca_credentials.json and place in it your credentials.
+
+<code>
+    #alpaca_credentials.json
+    <ul style="list-style: none;"> 
+        <li>{</li>
+            <li>&emsp;"APCA-API-KEY-ID": "PKNOZUSMT0A6E89QURCG",</li>
+            <li>&emsp;"APCA-API-SECRET-KEY": "SXFTc5gC4cAWmUpuGEiEurBGfN4bAqhA6Mxu28Ez"</li>
+        <li>}</li>
+    </ul>
+</code>
+
