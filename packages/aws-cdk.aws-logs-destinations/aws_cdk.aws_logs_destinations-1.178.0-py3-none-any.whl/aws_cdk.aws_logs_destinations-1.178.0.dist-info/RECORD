@@ -1,0 +1,10 @@
+aws_cdk/aws_logs_destinations/__init__.py,sha256=o9SyoH4y73IMrM_y54cbJIw-xTkdviUnWdSH2THAcX4,9890
+aws_cdk/aws_logs_destinations/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_logs_destinations/_jsii/__init__.py,sha256=7x4NowW0NOabtHu4UoXNz6UkCvgLN5iQjcYlyEOrT-A,564
+aws_cdk/aws_logs_destinations/_jsii/aws-logs-destinations@1.178.0.jsii.tgz,sha256=91AhuRnAX9r5QTiEr75xcy7-0WIjsWyWv_IexUhnsKk,16259
+aws_cdk.aws_logs_destinations-1.178.0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_logs_destinations-1.178.0.dist-info/METADATA,sha256=nbRjbwDuV_C4ZrezmzSAUxSAc-Hsg-bYOnsbJmX2wQI,1783
+aws_cdk.aws_logs_destinations-1.178.0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_logs_destinations-1.178.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_logs_destinations-1.178.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_logs_destinations-1.178.0.dist-info/RECORD,,
