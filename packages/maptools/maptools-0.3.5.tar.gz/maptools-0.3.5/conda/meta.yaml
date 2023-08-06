@@ -1,0 +1,49 @@
+{% set name = "maptools" %}
+{% set version = "0.3.4" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  path: ../
+
+build:
+  number: 0
+  entry_points:
+    - map=maptools.command_line:main
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - gemmi
+    - matplotlib
+    - mrcfile
+    - numpy
+    - pip
+    - python
+    - pyyaml
+    - scikit-image
+    - scipy
+  run:
+    - gemmi
+    - matplotlib
+    - mrcfile
+    - numpy
+    - python
+    - pyyaml
+    - scikit-image
+    - scipy
+
+test:
+  imports:
+    - maptools
+  commands:
+    - map --help
+  requires:
+    - mock
+    - pytest
+    - pytest-cov
+
+about:
+  summary: "Manipulate maps"

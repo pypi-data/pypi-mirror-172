@@ -1,0 +1,2 @@
+[console_scripts]
+map = maptools.command_line:main

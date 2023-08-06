@@ -1,0 +1,16 @@
+gemmi
+matplotlib
+mrcfile
+numpy
+pyyaml
+scipy
+scikit-image
+
+[build_sphinx]
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest
+pytest-cov
+mock
