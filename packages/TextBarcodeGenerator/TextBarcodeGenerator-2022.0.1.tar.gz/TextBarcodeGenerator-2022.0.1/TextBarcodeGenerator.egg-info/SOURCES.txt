@@ -1,0 +1,7 @@
+setup.py
+./BarcodeGenerator/BarcodeGenerator.py
+./BarcodeGenerator/__init__.py
+TextBarcodeGenerator.egg-info/PKG-INFO
+TextBarcodeGenerator.egg-info/SOURCES.txt
+TextBarcodeGenerator.egg-info/dependency_links.txt
+TextBarcodeGenerator.egg-info/top_level.txt
