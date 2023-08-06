@@ -1,0 +1,17 @@
+conkits/__init__.py,sha256=vEAwd1IGmY22GUlueA55OI6EutDoCPeQPbm4UWl26kE,276
+conkits/conio.py,sha256=h6GsjpnLcBQb2Ug411T43tAXDdo5gh25rHIO3_8NN0o,7109
+conkits/csi.py,sha256=EiezvEAdzmknjthfQ6YLX0DJLCPyVw68tst5J9sb8Cw,7025
+conkits/csi256colors/__init__.py,sha256=pGS58X2Xod5-EZMqORwM4us2yLQGe9217hRFLKMm4VE,37
+conkits/csi256colors/csi256colors.py,sha256=bOsBDYES81HLD_YSZ5LxBQtA5fSCbl1Im4wqcb3RaUE,4894
+conkits/csi256colors/csi256colorscodes.py,sha256=KXVIxV0dnRLZyuEzmN_GUtdrBKqK382wOL7RPzQO1x4,14262
+conkits/help/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conkits/help/help.py,sha256=7k2e4ndmi16erZkcKvFLJRo31s-Nw7rd6Wp-CNRHbJs,35
+conkits/printtools/__init__.py,sha256=9UF8on7Slx6lhV7KwCn9IPwEsM9XmT1TaJYtlaI2_qc,42
+conkits/printtools/basicprinttool.py,sha256=zRjl0gGy-HnUWplX-3pC3EzSF9szfmMfzdFsgMTvg3U,7080
+conkits/printtools/csistring.py,sha256=xdoeQA04STEdJC3rpyZbzKWpheYC0MHFZZF9svFFNvQ,10085
+conkits/printtools/liveprint.py,sha256=1i2NGx8allVx8_erY22f9M5YIKU7zM64v8uiRznESCs,23045
+conkits-0.1.2.dist-info/LICENSE,sha256=0ZWnyL-Dv8MSmfr053VDLMT0SJMH08W-nkqVKB3u6Cs,1108
+conkits-0.1.2.dist-info/METADATA,sha256=Xo4GcNvcaFWNookBGTifM9Rwf74Wu5-sT66cPEDrr2Q,426
+conkits-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+conkits-0.1.2.dist-info/top_level.txt,sha256=qKc4n4jVKwE01yWcVf1rGsm4HNohOvLmH-MKz4mWSoM,8
+conkits-0.1.2.dist-info/RECORD,,
