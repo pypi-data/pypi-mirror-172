@@ -1,0 +1,10 @@
+utcnow/cli/__init__.py,sha256=ErKa3siamoANj690ErLvmdjckURTngvPRHYy51j7e-k,229
+utcnow/cli/__main__.py,sha256=mxkriXpaOeSjJxse7Tj6tzeOV9ZORgcQpzyTzgG8h3I,293
+utcnow/cli/__version__.py,sha256=_Gs6SQm_vUIuw4Om-lWH4ALNxaVUrsABfADxvUT9hpI,197
+utcnow/cli/__version_data__.py,sha256=QDlRfpHt9KbKLf-LeZj6qCd5LBnG2A9capoCp_LS_cY,325
+utcnow/cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utcnow_cli-1.0.0.dist-info/entry_points.txt,sha256=1ujWH5bcAo_jki-7OeVtx8rn4C5VUnR3-b4fprEvmgw,58
+utcnow_cli-1.0.0.dist-info/LICENSE,sha256=j8xm4nGrgQAo0aMQPDog85UGXqQh4S3L-ZJWC3y-QQ8,1055
+utcnow_cli-1.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+utcnow_cli-1.0.0.dist-info/METADATA,sha256=zhNbVU_TCC6ecPR_CF50CEx0kFclHK7hdYZTUZkL95Q,22201
+utcnow_cli-1.0.0.dist-info/RECORD,,

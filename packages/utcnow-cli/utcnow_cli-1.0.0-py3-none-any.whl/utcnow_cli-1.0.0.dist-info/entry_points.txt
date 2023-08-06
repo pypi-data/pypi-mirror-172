@@ -1,0 +1,3 @@
+[console_scripts]
+utcnow=utcnow.interface:cli_entrypoint
+
