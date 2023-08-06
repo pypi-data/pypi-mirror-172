@@ -1,0 +1,8 @@
+hdf5extractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdf5extractor/h5handler.py,sha256=805KqKKPGwm4dMtyMnV-6dUh9-Nh95vnIW4vVjT4D0Q,912
+hdf5extractor/main.py,sha256=Vc0v4jFgQExLCbfTFWl4bsA91rLvPUaiXOL-ingAdDY,2454
+hdf5extractor-1.0.0.dist-info/entry_points.txt,sha256=aLYOKtqB7FecyXFAJtI2yfdO1DI9tZ90VojCFJs4J-M,53
+hdf5extractor-1.0.0.dist-info/LICENSE,sha256=DR9lx5-lroomsCdy9yvxDtknckI8Vk97Bcvw2aHpLp8,11338
+hdf5extractor-1.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+hdf5extractor-1.0.0.dist-info/METADATA,sha256=gjc6x7kDewUZzUQAhN3IlK3lHZICX4xcLjCX4LM-UUg,2178
+hdf5extractor-1.0.0.dist-info/RECORD,,
