@@ -1,0 +1,16 @@
+# Build tools
+setuptools
+setuptools_scm
+black
+flake8
+isort
+mypy
+pytest
+types-toml
+
+# Libraries
+omegaconf>=2
+colorama
+python-dotenv
+invoke
+toml

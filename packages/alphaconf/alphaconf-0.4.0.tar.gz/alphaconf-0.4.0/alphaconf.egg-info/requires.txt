@@ -1,0 +1,13 @@
+omegaconf>=2
+
+[color]
+colorama
+
+[dotenv]
+python-dotenv
+
+[invoke]
+invoke
+
+[toml]
+toml
