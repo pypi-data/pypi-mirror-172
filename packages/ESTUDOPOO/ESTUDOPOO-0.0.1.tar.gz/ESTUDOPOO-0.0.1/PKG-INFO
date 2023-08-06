@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ESTUDOPOO
+Version: 0.0.1
+Summary: PRIMEIROS PROGRAMAS DE ESTUDO EM PY
+Home-page: https://github.com/felipesoler-ads
+Author: FELIPE SOLER
+Author-email: FELIPESOLER12@GMAIL.COM
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	- pacote_herancas:
+        Animais.py
+        Veiculos.py
+    -pacote_metodos:
+        abc.py
+        metodo.py
+    -pacote_treino:
+        Biciclta.py
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install ESTUDOPOO
+```
+
+## Author
+FELIPE
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

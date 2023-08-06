@@ -1,0 +1,14 @@
+README.md
+setup.py
+ESTUDOPOO.egg-info/PKG-INFO
+ESTUDOPOO.egg-info/SOURCES.txt
+ESTUDOPOO.egg-info/dependency_links.txt
+ESTUDOPOO.egg-info/top_level.txt
+pacote_herancas/Animias.py
+pacote_herancas/Veiculos.py
+pacote_herancas/__init__.py
+pacote_metodos/__init__.py
+pacote_metodos/abc.py
+pacote_metodos/metodos.py
+pacote_treino/Bicicleta.py
+pacote_treino/__init__.py
