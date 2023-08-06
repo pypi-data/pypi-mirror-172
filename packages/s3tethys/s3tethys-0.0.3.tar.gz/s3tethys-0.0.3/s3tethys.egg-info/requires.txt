@@ -1,0 +1,6 @@
+smart_open
+boto3
+requests
+pandas
+zstandard
+tethys-data-models
