@@ -1,0 +1,29 @@
+{
+  "title": "Transformer Settings",
+  "description": "The settings for Transformer.",
+  "properties": {
+    "transformerConfig": {
+      "title": "Transformer Configuration",
+      "description": "The configuration for transformer.",
+      "$ref": "#/definitions/transformerConfig",
+      "default": {
+        "enabled": true
+      }
+    }
+  },
+  "additionalProperties": false,
+  "type": "object",
+  "definitions": {
+    "transformerConfig": {
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "Enable transformer"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object"
+    }
+  }
+}
