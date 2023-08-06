@@ -1,0 +1,46 @@
+site_name: "CardTrader Wrapper"
+site_url: "https://cardtrader-wrapper.readthedocs.io/en/latest/"
+repo_url: "https://github.com/Buried-In-Code/CardTrader-Wrapper"
+repo_name: "Github"
+site_description: "A Python wrapper for CardTrader."
+site_author: "Jonah Jackson"
+copyright: "MIT"
+
+theme:
+  name: "readthedocs"
+
+nav:
+  - Home: "index.md"
+  - cardtrader:
+    - Package: "cardtrader/__init__.md"
+    - exceptions: "cardtrader/exceptions.md"
+    - service: "cardtrader/service.md"
+    - sqlite_cache: "cardtrader/sqlite_cache.md"
+  - cardtrader.schemas:
+    - Package: "cardtrader/schemas/__init__.md"
+    - blueprint: "cardtrader/schemas/blueprint.md"
+    - category: "cardtrader/schemas/category.md"
+    - expansion: "cardtrader/schemas/expansion.md"
+    - game: "cardtrader/schemas/game.md"
+    - info: "cardtrader/schemas/info.md"
+    - product: "cardtrader/schemas/product.md"
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_root_heading: True
+            show_root_full_path: False
+            show_category_heading: True
+            # Docstrings
+            docstring_style: google
+            docstring_section_style: spacy
+            line_length: 100
+            merge_init_into_class: True
+            show_signature_annotations: True
+            # Additional
+            show_source: False
+  - include-markdown
