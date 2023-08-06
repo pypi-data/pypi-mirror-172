@@ -1,0 +1,7 @@
+[console_scripts]
+cloudscamper = cloudtrace.trace.cloudscamper:main
+cloudshuffle = cloudtrace.trace.shuffle:main
+ct-randomize = cloudtrace.trace.randomize:main
+fastread = cloudtrace.read.reader:main
+fasttrace = cloudtrace.trace.fasttrace:main
+scampertrace = cloudtrace.trace.scampertrace:main
