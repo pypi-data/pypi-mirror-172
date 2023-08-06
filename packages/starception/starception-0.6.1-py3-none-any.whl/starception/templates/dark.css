@@ -1,0 +1,19 @@
+:root.dark {
+    --gray: #e2e8f0;
+    --gray-lightest: #1e293b;
+    --gray-lighter: #334155;
+    --gray-light: #94a3b8;
+    --section-bg: #1e293b;
+    --green: #bbf7d0;
+    --green-darker: #16a34a;
+    --green-lightest: #334155;
+    --snippet-bg: var(--gray-lighter);
+    --snippet-border-color: #475569;
+    --snippet-line-highlight: #075985;
+    --snippet-line-number: inherit;
+    --frames-line-current: #475569;
+    --data-list-border-color: #475569;
+    --data-list-bg-hover: #334155;
+    --data-list-title-color: inherit;
+    --locals-value-color: inherit;
+}
