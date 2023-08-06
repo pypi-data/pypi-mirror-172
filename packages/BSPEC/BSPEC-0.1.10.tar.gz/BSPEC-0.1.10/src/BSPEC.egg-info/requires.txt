@@ -1,0 +1,11 @@
+esper>=2.1
+Deprecated>=1.2.13
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
+build
+twine
