@@ -1,0 +1,10 @@
+README
+setup.py
+package/__init__.py
+package/modul1.py
+package/modul2.py
+projekt_bla_stefan.egg-info/PKG-INFO
+projekt_bla_stefan.egg-info/SOURCES.txt
+projekt_bla_stefan.egg-info/dependency_links.txt
+projekt_bla_stefan.egg-info/requires.txt
+projekt_bla_stefan.egg-info/top_level.txt
