@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+async_url_validator/__init__.py
+async_url_validator/status_assigner.py
+async_url_validator/throttle.py
+async_url_validator/url_validator.py
+async_url_validator.egg-info/PKG-INFO
+async_url_validator.egg-info/SOURCES.txt
+async_url_validator.egg-info/dependency_links.txt
+async_url_validator.egg-info/entry_points.txt
+async_url_validator.egg-info/requires.txt
+async_url_validator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_throttle.py
+tests/test_url_validator.py

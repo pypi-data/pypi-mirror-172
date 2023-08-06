@@ -1,0 +1,3 @@
+[console_scripts]
+async_url_validator = async_url_validator.url_validator:main
+
