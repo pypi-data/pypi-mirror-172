@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: davestools
+Version: 1.0.0
+Summary: Dave's Tools! Various tools to make your life simple!
+Home-page: UNKNOWN
+Author: davestools
+Author-email: davestools@protonmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+
+Various tools to make your life simple!
+
+
