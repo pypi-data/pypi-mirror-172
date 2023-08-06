@@ -1,0 +1,12 @@
+patpat/__init__.py,sha256=AyVrC_dDU3Fxfw6DHKorxu7IG5GKEiFkBm8Y6nwK29Y,14
+patpat/hub.py,sha256=bIVV26nFJ8u9_hfmnnPqoVCMJYkBElqYMZAto4psTXw,15222
+patpat/logger.py,sha256=ibKkphFTL_9owiLebR1qkAPKPC7OKcJXivfBawYir54,2831
+patpat/mapper.py,sha256=ZixDah7h1JxA9yB_nLNbcljk70IrWF8KdVmYCHUA520,20750
+patpat/querier.py,sha256=rsUUemN2uk38SA_DubpYWJKB2ilKuT9-lA7_hyQ_VdQ,17799
+patpat/retriever.py,sha256=42w1VvB62CQNhno6h9ud6eMUMud5ntkrhT5mEzwyFgE,26924
+patpat/utility.py,sha256=972TRUCEGKpbs0JP8C9dIMw7ISCaTrwlhGhOXq6MW_8,8823
+patpat-1.0.1.dist-info/LICENSE,sha256=0VR1jgcnqFTxgN6UliMzh46nvM901BWGPpEynsgpk4k,11543
+patpat-1.0.1.dist-info/METADATA,sha256=LXLHfFAaykQA57u5nitqXukrAJwQ6JyQF0Kzf2jOVPI,2398
+patpat-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+patpat-1.0.1.dist-info/top_level.txt,sha256=4nYWsEZjmfMgxssB37i6QR2M4KK607oN_5oBWfdbC9k,7
+patpat-1.0.1.dist-info/RECORD,,
