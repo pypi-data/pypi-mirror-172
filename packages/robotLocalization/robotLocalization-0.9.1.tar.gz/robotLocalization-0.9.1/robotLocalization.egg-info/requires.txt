@@ -1,0 +1,14 @@
+jproperties>=2.1.1
+requests>=2.22.0
+
+[dev]
+pytest
+docutils
+pygments
+
+[optional]
+robotframework
+robotframework-seleniumlibrary
+robotframework-autorecorder
+robotframework-requests
+opencv-python
