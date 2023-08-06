@@ -1,0 +1,9 @@
+vcfvalidator/__init__.py,sha256=MpVHFFoITiYyPltTb_qFrdeX2entdTm4x0PczXi3txY,21
+vcfvalidator/cli.py,sha256=ILxJYdimRu4Kaphq7L43gSDEUWUt-xWieNBKVTZ3w2o,865
+vcfvalidator/parser.py,sha256=9fX0WBqfXA6xsulpcpHunMKDCOWPnmDTl1l7O-Lx6kw,4507
+vcfvalidator/result.py,sha256=3lC3b8tNFtsuCWU3TSoVe3LtpemMiaoXrVDm_jhny7g,12228
+vcfvalidator/vcfvalidator.py,sha256=rhJMbwv-5hnEpzkxxizYkcQWOzDxnPjmeumP_fHorBc,1553
+vcfvalidator-1.0.3.dist-info/entry_points.txt,sha256=TiD30eJ9F2to4tIotkBdIbhhycM9TR3F-RvvlHYu32w,54
+vcfvalidator-1.0.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+vcfvalidator-1.0.3.dist-info/METADATA,sha256=dgTgSXdVpeLC-7PcTdTSK0ZTw5rc4zE77P4gWITTVKw,1224
+vcfvalidator-1.0.3.dist-info/RECORD,,
