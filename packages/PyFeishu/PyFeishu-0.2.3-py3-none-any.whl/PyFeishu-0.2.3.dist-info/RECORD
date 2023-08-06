@@ -1,0 +1,10 @@
+pyfeishu/__init__.py,sha256=eeHTrr-KzZmmrdVjlJMJsmkli9--qjdPsfOqhsGw1fw,28
+pyfeishu/__version__.py,sha256=o4ScPsx3ebE9pX-fF55Y4NZwE-gZl1putS6aE2pTVtI,23
+pyfeishu/bot.py,sha256=FI98tS5TBY-lN-9G4_8YKm2AWys1AKDUZ9zLHJ3q6nI,4168
+pyfeishu/errors.py,sha256=gT5Zd304frDtCvLyMwcEWn6ck772ll_KjYDIGM3ICAw,482
+pyfeishu/log.py,sha256=DG6AkPGkOaZQGFre1NGUaunx-Vrh7w2UgisBsPO3jjY,58
+PyFeishu-0.2.3.dist-info/LICENSE,sha256=JXgOR9MuQIGQqdvgDz9EqrVDc0QcTSmgnv-BB1-5MrE,1085
+PyFeishu-0.2.3.dist-info/METADATA,sha256=SzwPkyIQ8hX4CEL6BZOsAeY6hlFeSgGh7RrOLDs-Dro,3013
+PyFeishu-0.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyFeishu-0.2.3.dist-info/top_level.txt,sha256=GkzPXWe6Oo_kqH8Bf47VAMA4MnFaMCTS54STK64oGCs,9
+PyFeishu-0.2.3.dist-info/RECORD,,
