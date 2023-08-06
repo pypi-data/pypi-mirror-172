@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: electricpower
+Version: 0.1.0
+Summary:  Measurements of electric power consumption in one household
+Home-page: https://github.com/Asmaa-khorkhash/householdelectricpower
+Author: Asmaa khorkhash
+Author-email: asmaakhorkhash@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+
+Power Consumption!
+
+Idea:
+Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years.
+Different electrical quantities and some sub-metering values are available.

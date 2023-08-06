@@ -1,0 +1,11 @@
+README.md
+setup.py
+electricpower/__init__.py
+electricpower/electricpower.py
+electricpower.egg-info/PKG-INFO
+electricpower.egg-info/SOURCES.txt
+electricpower.egg-info/dependency_links.txt
+electricpower.egg-info/top_level.txt
+electricpower/data/householdpower.csv
+test/__init__.py
+test/test.py
