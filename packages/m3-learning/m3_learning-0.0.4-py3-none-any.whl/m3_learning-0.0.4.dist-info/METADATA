@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: m3-learning
+Version: 0.0.4
+Summary: Tutorials, Projects, and datasets from the M3-learning research group
+Home-page: https://github.com/jagar2/m3_learning.git
+Author: Joshua C. Agar
+Author-email: jca92@drexel.edu
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: matplotlib (==3.6.1)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: setuptools (==65.5.0)
+Requires-Dist: torch
+Requires-Dist: tqdm (==4.64.1)
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: torchsummary
+Requires-Dist: py-cpuinfo
+Requires-Dist: jupyter-book
+Requires-Dist: m3-learning
+
