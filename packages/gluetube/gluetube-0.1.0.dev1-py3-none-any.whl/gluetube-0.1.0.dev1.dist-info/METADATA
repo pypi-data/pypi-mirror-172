@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gluetube
+Version: 0.1.0.dev1
+Summary: Glue systems together with pipelines
+Home-page: https://github.com/ctomkow/gluetube
+Author: Craig Tomkow
+Author-email: ctomkow@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests (>=2.6.0)
+Requires-Dist: jsonparse (>=0.9.1)
+
