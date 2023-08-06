@@ -1,0 +1,6 @@
+ffmpy
+music_tag
+yt-dlp
+
+[test]
+pytest

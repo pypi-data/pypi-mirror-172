@@ -1,0 +1,2 @@
+[console_scripts]
+album-splitter = album_splitter.__main__:main
