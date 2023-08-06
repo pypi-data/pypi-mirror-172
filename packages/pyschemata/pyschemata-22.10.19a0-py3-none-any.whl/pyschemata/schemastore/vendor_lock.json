@@ -1,0 +1,2337 @@
+{
+  "catalog": "60211294930ec7fce6a09c1de47d9a5b5cfe045a7dc924aa62d66d3108ec5bcc",
+  "schemas": [
+    {
+      "digest": "82a225ff61ded20c5e773d15d1b9b9cd16d20e84c9694553a1ef648519c1c971",
+      "url": "https://json.schemastore.org/base.json"
+    },
+    {
+      "digest": "7d5086127db5823f9a6f6a64ce7d9f178ef9ca1a2b2e2135894652cf9ab741a3",
+      "url": "https://json.schemastore.org/anywork-ac-1.1.json"
+    },
+    {
+      "digest": "fb80930f214b92f1503776081239e2fb4cf40952c724136ddba6166b3b8d5831",
+      "url": "https://json.schemastore.org/factorial-drupal-breakpoints-css-0.1.0.json"
+    },
+    {
+      "digest": "7d820f8755557d7da1bb34b89500cb922bb0516a1c95aedd0079a0f8d6185112",
+      "url": "https://raw.githubusercontent.com/adonisjs/application/master/adonisrc.schema.json"
+    },
+    {
+      "digest": "33a4d1af6853a5c93fedaa6c8b44bece0b98e1eacebb8fdee1f9f120b2028656",
+      "url": "https://json.schemastore.org/agripparc-1.4.json"
+    },
+    {
+      "digest": "b18c043a58f147e2885b9aac059bb46073d0a2ef3b56192835473255db3e4f29",
+      "url": "https://json.schemastore.org/aiproj.json"
+    },
+    {
+      "digest": "4c91bbc553a2873dabf326c245a220bee6c56363dcab95388bd8b57ec44e5547",
+      "url": "https://json.schemastore.org/airlock-microgateway-3.2.json"
+    },
+    {
+      "digest": "6736a9c6d44988aab1f9774a78bfadf6eae84524023cb9e5d3057b34cb4b297b",
+      "url": "https://raw.githubusercontent.com/airplanedev/lib/main/pkg/deploy/taskdir/definitions/schema_0_3.json"
+    },
+    {
+      "digest": "bc9291b2e50fc5b669301ece40e1521595a3398b5c67055c077c9e81562b6e09",
+      "url": "https://raw.githubusercontent.com/angular/angular-cli/master/packages/angular/cli/lib/config/workspace-schema.json"
+    },
+    {
+      "digest": "0abc77ec6fcfd03550f03c4d87631e24f507126e02456ecbd2bacb8a51752a8a",
+      "url": "https://raw.githubusercontent.com/angular/angular-cli/v10.1.6/packages/angular/cli/lib/config/schema.json"
+    },
+    {
+      "digest": "c8c523d0284c344d57f64f0084f26285ba02aebddabea0b67edb6ec6d1b740f4",
+      "url": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible-ee.json"
+    },
+    {
+      "digest": "c1c6fc1fb33a0c15fcb8a79be90b4bccb4e83cdd348dcd2250c14fb49bcb6d46",
+      "url": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible-meta.json"
+    },
+    {
+      "digest": "8ffbbcf414c43e89d53d15808168bc47dbcea5a9dfdca71db7c909caf08c1f05",
+      "url": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible-meta-runtime.json"
+    },
+    {
+      "digest": "493f3cc89a76ffcd0457526c795ca9e4fc9a6606622c54cee026e42e7ac5ee57",
+      "url": "https://github.com/ansible/schemas/raw/main/f/ansible-argument-specs.json"
+    },
+    {
+      "digest": "0372605844b10bb11dad37e3c3cbd5de745a03c1fdfbd91512f72465af02c474",
+      "url": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible-requirements.json"
+    },
+    {
+      "digest": "d2ddbacf680064e2de4cc98673aff35028b9d13c5e7f85ccdd32775b3aaccc8e",
+      "url": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible-vars.json"
+    },
+    {
+      "digest": "037402c9429b9a7d0dff31343689d42a5aefaf6068fa1d5e5a125f1000f273af",
+      "url": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible.json#/$defs/tasks"
+    },
+    {
+      "digest": "037402c9429b9a7d0dff31343689d42a5aefaf6068fa1d5e5a125f1000f273af",
+      "url": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible.json#/$defs/playbook"
+    },
+    {
+      "digest": "de7b19b5a82623686cd85d50d1ad624530bec05e1fe2c303d2ebba3d1aae1417",
+      "url": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible-inventory.json"
+    },
+    {
+      "digest": "8251a68b3c7e17c3c9cf2c87649c2e93a6313dece8158d6544e65bed32bb1a6e",
+      "url": "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible-galaxy.json"
+    },
+    {
+      "digest": "e98ff7dfa4386a266b55fc9c46b0032cdaccb209067f5f525bfc7802d5b07f6f",
+      "url": "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible-lint-config.json"
+    },
+    {
+      "digest": "09bc02e5020d178e22194e0c362de5cafdc9fa30db7ccd27ac38827adff697cf",
+      "url": "https://raw.githubusercontent.com/ansible/ansible-navigator/main/src/ansible_navigator/data/ansible-navigator.json"
+    },
+    {
+      "digest": "b507c3ee749cebe48e9fb17abc780e25c6c504177957f9aa2ca57f76c669c4dd",
+      "url": "https://json.schemastore.org/apple-app-site-association.json"
+    },
+    {
+      "digest": "6d09ae3365d9c29dfa45831a91d5b25f042e18926c56bb21b0d8badf4e113467",
+      "url": "https://appsemble.app/api.json#/components/schemas/AppDefinition"
+    },
+    {
+      "digest": "c38edc84a4d623109560296b30fcf3d83897c11cc33ab55217fa397018a3b467",
+      "url": "https://gitlab.com/appsemble/appsemble/-/raw/HEAD/packages/cli/assets/appsemblerc.schema.json"
+    },
+    {
+      "digest": "50b6861bcc588be97469927bb3866fdda0ac1ace70048212e9240effd88d2582",
+      "url": "https://json.schemastore.org/appsscript.json"
+    },
+    {
+      "digest": "a194f31da3d797a4b0bf1a9e96fc64c3b4fa21dfd8c271e5ccef36d04899b641",
+      "url": "https://json.schemastore.org/appsettings.json"
+    },
+    {
+      "digest": "12fd96c7e9f15c82e30cbb909a1db938961275d9e338b368fc01145de6146af7",
+      "url": "https://json.schemastore.org/appveyor.json"
+    },
+    {
+      "digest": "023bd0c74828b97bab93096c12a5a239fe00364f19cf9895de3666173de73920",
+      "url": "https://raw.githubusercontent.com/architect-team/architect-cli/main/src/dependency-manager/schema/architect.schema.json"
+    },
+    {
+      "digest": "a1c0f117c8402278a53c746ee82ec1f66d3f156e8ee3971c722f750909b3dc2a",
+      "url": "https://raw.githubusercontent.com/architect/parser/v2.3.0/arc-schema.json"
+    },
+    {
+      "digest": "eefe0402429d0a542bedc0a46e4efce0160ed44aa477f3c30cb9f9298647491c",
+      "url": "https://raw.githubusercontent.com/argoproj/argo-events/master/api/jsonschema/schema.json"
+    },
+    {
+      "digest": "d62f50d27031dc3785439d37fa96fd22795beb8f0fd05e03a014fb4589d515da",
+      "url": "https://raw.githubusercontent.com/argoproj/argo-workflows/master/api/jsonschema/schema.json"
+    },
+    {
+      "digest": "d37bcbd32a4ab500962c88a27ed0b4c0a6ee9246ff8c189f0576793b6fce2925",
+      "url": "https://json.schemastore.org/artifacthub-repo.json"
+    },
+    {
+      "digest": "b515bfce7e023be6f60f13f1a2411fa8a913f6660d7da45abd56a7ae2439f915",
+      "url": "https://json.schemastore.org/asconfig-schema.json"
+    },
+    {
+      "digest": "0757b14ff8ae90029bc0b0dc5a0e2147073cb6bacd652df409da1b3b8abde967",
+      "url": "https://www.asyncapi.com/schema-store/all.schema-store.json"
+    },
+    {
+      "digest": "e7fda77f3fe8e399c0318e631b82faeebc3541e0a7c6e181f1728ddf3e375dfa",
+      "url": "https://json.schemastore.org/avro-avsc.json"
+    },
+    {
+      "digest": "0af60e3c41d607769fa47284ea2b1af79a141a923493e468c7bd191dd664b24c",
+      "url": "https://json.schemastore.org/azure-deviceupdate-import-manifest-5.0.json"
+    },
+    {
+      "digest": "a320d34b01abb2f3b2c29f3d84ae74894ea3adb859a2840100e36400d7513d67",
+      "url": "https://json.schemastore.org/azure-deviceupdate-update-manifest-5.json"
+    },
+    {
+      "digest": "0c407e77f03501c0fb04bec69d0e018208980a337e451e1033e719bfb27e07fe",
+      "url": "https://json.schemastore.org/azure-iot-edgeagent-deployment-1.1.json"
+    },
+    {
+      "digest": "dec30d499590896488f1515045c23f2811406fedf8f8614689b3d5661e5bbf94",
+      "url": "https://json.schemastore.org/azure-iot-edgehub-deployment-1.2.json"
+    },
+    {
+      "digest": "92ded91b37c6bd3d68a870f626d88eaaa8fddfccce065244f441ab0b3ac90c31",
+      "url": "https://json.schemastore.org/azure-iot-edge-deployment-2.0.json"
+    },
+    {
+      "digest": "acd01f13955688b305c5a67be527860d5d9c4ddb624c2ff1ee9aee1b1e2a61e7",
+      "url": "https://json.schemastore.org/azure-iot-edge-deployment-template-4.0.json"
+    },
+    {
+      "digest": "5b6ad2e6b61f0ace96c34d626f78b5fe8d6bff34e4f0149da8952ebfb407d091",
+      "url": "https://raw.githubusercontent.com/microsoft/azure-pipelines-vscode/master/service-schema.json"
+    },
+    {
+      "digest": "2e16fda3f19084209f5b236c9ea052cbdd7c3ed1cfdcd5f9768468c036b2ef82",
+      "url": "https://json.schemastore.org/foxx-manifest.json"
+    },
+    {
+      "digest": "2d75812b49aac5b1074f89902525ccc129ae3123952aa938eb9aaed9281496f9",
+      "url": "https://json.schemastore.org/fly.json"
+    },
+    {
+      "digest": "ad41986db9f30c96a3a0b7fddc57c17b350b113660039da6abd0d8b5bba0855e",
+      "url": "https://json.schemastore.org/asmdef.json"
+    },
+    {
+      "digest": "7d6456790ce447792f3ddc675bef232bdfffb9896bcfbb573012343444302cb5",
+      "url": "https://json.schemastore.org/babelrc.json"
+    },
+    {
+      "digest": "a89a6f7ebc05e1fb9d53988c5174c68c6b0b3234e0b9d1ed41e610ab1fbe35a9",
+      "url": "https://json.schemastore.org/backportrc.json"
+    },
+    {
+      "digest": "a8212555e3d0f10191d1ef5e2d337a23930a4f938874d6d7d6ad12e0314f1301",
+      "url": "https://ide-integration.batect.dev/v1/configSchema.json"
+    },
+    {
+      "digest": "8f83d6ba72a2b7e7d2d753a2084e44dba18b6f720f00795893fe7d8b36bdc774",
+      "url": "https://json.schemastore.org/bamboo-spec.json"
+    },
+    {
+      "digest": "33dc2b09dbae8ee401056c03c67c764dbc2a717018db55f8d0c53704d80ebb3c",
+      "url": "https://raw.githubusercontent.com/Avanade/Beef/master/tools/Beef.CodeGen.Core/Schema/database.beef.json"
+    },
+    {
+      "digest": "f99cb16b25088b713f2628ecaaa5d303aa26c7eda3f6be6debc3a013f33f93ee",
+      "url": "https://raw.githubusercontent.com/Avanade/Beef/master/tools/Beef.CodeGen.Core/Schema/entity.beef.json"
+    },
+    {
+      "digest": "7dddb815c93bb753e5ac9dc1e7947b8ced08c1ae97a1dff12f2eea133e2bfb33",
+      "url": "https://json.schemastore.org/bigquery-table.json"
+    },
+    {
+      "digest": "0a321537746a703a198c8c900844d4a33401ab314fb325ff2c496fd3c09e43c6",
+      "url": "https://bitbucket.org/atlassianlabs/atlascode/raw/main/resources/schemas/pipelines-schema.json"
+    },
+    {
+      "digest": "f1a89d64126b9198cc7f24b0e7f89b820b368e36deec052b8e390c1b9f1327e6",
+      "url": "https://json.schemastore.org/bitrise.json"
+    },
+    {
+      "digest": "6f80ae820c9d633bf01302415c8d93e49efda537b4d81b72c198ba8c3bbbd09e",
+      "url": "https://json.schemastore.org/bitrise-step.json"
+    },
+    {
+      "digest": "d3ed6856d8463bf7160799bb1dbdcb4a105a371073f07869ec4a4bad37f4eb13",
+      "url": "https://json.schemastore.org/bootstraprc.json"
+    },
+    {
+      "digest": "f41959f8e15c38e21c1299844afad41ff45621223c5c7292cec2364e0903d6b6",
+      "url": "https://json.schemastore.org/bower.json"
+    },
+    {
+      "digest": "44860ff6b9180e14546315a0ca59a0b033f4af4d1b332049295f085a18624a54",
+      "url": "https://json.schemastore.org/bowerrc.json"
+    },
+    {
+      "digest": "25a4d3c394871ed0952a77f1a015162fd026d78548eb3a4ae24b6c666f4cf68c",
+      "url": "https://json.schemastore.org/behat.json"
+    },
+    {
+      "digest": "0ed7948ef8501091f8939b486d6d6cee5e1cec407205569d1e4a63b57e3ecbe9",
+      "url": "https://json.schemastore.org/bozr.json"
+    },
+    {
+      "digest": "2fe384f308b4cc36be83075bb55634b11cdab1d4b329e9ad9fd837c0240ba60f",
+      "url": "https://json.schemastore.org/browser.i18n.json"
+    },
+    {
+      "digest": "b157b5e549ab07787875456c830f77071295604c98f9711d52b77228e69b2809",
+      "url": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json"
+    },
+    {
+      "digest": "90f84b1b34964c9a2d1d245c4dc08e44304849241065e64ea60ecd5dcef9575b",
+      "url": "https://raw.githubusercontent.com/jfrog/build-info-go/main/buildinfo-schema.json"
+    },
+    {
+      "digest": "d47db8b4548b1dacf0994b8da2bb97c76efa95abcbf925a62f1de904ecdb034b",
+      "url": "https://json.schemastore.org/bukkit-plugin.json"
+    },
+    {
+      "digest": "6c7d79d01996a9f7977ee639277f60f52a3ce1627ceb1eb73a69b3699d275568",
+      "url": "https://raw.githubusercontent.com/buildkite/pipeline-schema/main/schema.json"
+    },
+    {
+      "digest": "26974c7ff4a4ab551e088df7bf9774a978236989ce93769ff934bb72b2136d67",
+      "url": "https://json.schemastore.org/sourcehut-build-0.65.0.json"
+    },
+    {
+      "digest": "6f3eedc89177bdbab1aa118536bc6ec388d309d7ff7d076fd22eafe7206c6cfa",
+      "url": "https://json.schemastore.org/bundleconfig.json"
+    },
+    {
+      "digest": "42adfa82bdd5277534deb91e8e6edec6db5b66f7b7e8e7bab688fd037e46b708",
+      "url": "https://json.schemastore.org/bungee-plugin.json"
+    },
+    {
+      "digest": "530924206f86732881b5b3288f6c9b6b7d7b926889459f8b620d2e59946177bb",
+      "url": "https://schemas.wp.org/trunk/block.json"
+    },
+    {
+      "digest": "2ec7782a215c04ff7da1b22c6efdaee548c4c96cec0c31c6e5c0834f6425b194",
+      "url": "https://blockprotocol.org/schemas/block-metadata.json"
+    },
+    {
+      "digest": "96478101998d6b11e435ce4c065ca13f223c2f8cb0568e2e0f299f4415e7afe3",
+      "url": "https://json.schemastore.org/bxci.schema-2.x.json"
+    },
+    {
+      "digest": "bd1c4020298ff8c1dedfecafbef494802f541f1ab5c76b2721daca073302d84b",
+      "url": "https://raw.githubusercontent.com/iamyoki/better-scripts/main/lib/schema.json"
+    },
+    {
+      "digest": "ab15656c2f1fa72352b1d2b1c2d2092d5f22e981c5026d61e96186402d8a1043",
+      "url": "https://raw.githubusercontent.com/Kitware/CMake/master/Help/manual/presets/schema.json"
+    },
+    {
+      "digest": "aadb5cbe6b361bba915e7cb0a627ae98ca0f28c645db0ab53f63212bd0648ce0",
+      "url": "https://raw.githubusercontent.com/qualisys/qualisys-schemas/master/calqulus-pipeline.schema.json"
+    },
+    {
+      "digest": "90b6e23cee7bcea4c76728790cb4778dcc1411c2c3249bb8d42e8ca9d7a77686",
+      "url": "https://raw.githubusercontent.com/apache/camel/main/dsl/camel-yaml-dsl/camel-yaml-dsl/src/generated/resources/schema/camel-yaml-dsl.json"
+    },
+    {
+      "digest": "b5b2f34d5cb9ef3cdf548472140457e36bcb0baa9841563d2ee219c3fa1b085b",
+      "url": "https://carafe.fm/schema/draft-02/bundle.schema.json"
+    },
+    {
+      "digest": "fc0d3551d6a5e360b4262ec4b3bca75c12af1d58630834293808cbc9b0aafed7",
+      "url": "https://json.schemastore.org/cargo.json"
+    },
+    {
+      "digest": "5b8742cd8b9fde379e9579cb393417553a4c1df55319cc245a48572d7156243e",
+      "url": "https://json.schemastore.org/cargo-make.json"
+    },
+    {
+      "digest": "29adc128547b199c2e4ab7325bf2da2cd61644dd541b0df430713288dd719294",
+      "url": "https://json.schemastore.org/catalog-info.json"
+    },
+    {
+      "digest": "57f9ae53f1b5a20e7639fbc6e6742a4846d81753c22ea225704c7d3251b4584a",
+      "url": "https://raw.githubusercontent.com/cityjson/specs/master/schemas/cityjson.min.schema.json"
+    },
+    {
+      "digest": "bd04014bf97fae814d87e0eb1bcc479fa885857104a0417521fbbcddd30642de",
+      "url": "https://raw.githubusercontent.com/palantir/conjure/master/conjure.schema.json"
+    },
+    {
+      "digest": "71c6eb8917b7fa66a075c85ab07fad3633ba096d3876a6b91011659ae2f12731",
+      "url": "https://appliedengdesign.github.io/cnccodes-json-schema/draft/2022-07/schema"
+    },
+    {
+      "digest": "55e699abfe66ad5141d0da385f67c88141443a0038b5784e6a88e7d1b8b29d23",
+      "url": "https://raw.githubusercontent.com/Ortus-Solutions/vscode-commandbox/master/resources/schemas/box.schema.json"
+    },
+    {
+      "digest": "77498f6bedcdcfa4cddf1adfc32e5c017305b43da70e45e3385230a232a908c1",
+      "url": "https://raw.githubusercontent.com/Ortus-Solutions/vscode-commandbox/master/resources/schemas/server.schema.json"
+    },
+    {
+      "digest": "c1d1a0a569a8e44002a1708688db7343cfd3c8143c50f2d36f5e5bf219e34e82",
+      "url": "https://json.schemastore.org/csr.json"
+    },
+    {
+      "digest": "e8e397b71de8eacaafad52d206f8e0d118592ebeb8775240d806f7dd2a98030c",
+      "url": "https://raw.githubusercontent.com/dbt-labs/dbt-core/main/schemas/dbt/manifest/v7.json"
+    },
+    {
+      "digest": "67171ef83091f451da4beff969b41aa6c482ad2c300a8046d555ce68879e7ac2",
+      "url": "https://json.schemastore.org/deadpendency.json"
+    },
+    {
+      "digest": "10c8e40c3ff8fc38d7e09285d9037c9264a2a04027f197a6723654bfe130da29",
+      "url": "https://json.schemastore.org/dein.json"
+    },
+    {
+      "digest": "1bf521fb54cb7ead8c8682faaf0f2f8d53a6f303a11d5c04b1b8f97ff0124a58",
+      "url": "https://json.schemastore.org/drupal-breakpoints.json"
+    },
+    {
+      "digest": "f3afc8bcf71d0110a7b390eceb8402c694539a32f05195ba84c8e09cb59719c7",
+      "url": "https://json.schemastore.org/drupal-info.json"
+    },
+    {
+      "digest": "99667dcf4c995442c36d3b200eda6fcbba2410edf8cd308c3b772d1ae68a4d91",
+      "url": "https://json.schemastore.org/drupal-layouts.json"
+    },
+    {
+      "digest": "13613c5b81a42863c477606ec7a44045790fb001b7782ba08f11afa415f1c77d",
+      "url": "https://json.schemastore.org/drupal-libraries.json"
+    },
+    {
+      "digest": "6eca7177ae2cc6d9189e4e346a94b502bae2977fdca8493d3a36c29c2383d309",
+      "url": "https://json.schemastore.org/drupal-links-action.json"
+    },
+    {
+      "digest": "74b11835fa9b1a1c9960ee009ace3b5251ad8f6490367bc65e966b8a5694691d",
+      "url": "https://json.schemastore.org/drupal-links-contextual.json"
+    },
+    {
+      "digest": "f8113938a502ef0e38fbf3c6680ef4b6f2edfc82315d3b1ea51f845fb6b1f8c5",
+      "url": "https://json.schemastore.org/drupal-links-menu.json"
+    },
+    {
+      "digest": "44cbfe5daa139ddbc91b14e97ffb31173d6d1fecedfe4fd7918b0c1597a86c66",
+      "url": "https://json.schemastore.org/drupal-links-task.json"
+    },
+    {
+      "digest": "acbde287f580e82ac4d3d60f1786e4d56278769507ac88aedf2c785b5f572539",
+      "url": "https://json.schemastore.org/drupal-migration.json"
+    },
+    {
+      "digest": "3c2a62272c2960325f053d403a535556787cb62d482c7805292004c2b8a87781",
+      "url": "https://json.schemastore.org/drupal-permissions.json"
+    },
+    {
+      "digest": "05e3ba92d0fc99451d6e05ce49a8f84eb66db370632910cd459697de899dad3c",
+      "url": "https://json.schemastore.org/drupal-routing.json"
+    },
+    {
+      "digest": "9f1b91bd7cc26fbaac5d63b56b106e869279ed023cdaf444cc3cdd08099cad8b",
+      "url": "https://json.schemastore.org/drupal-config.json"
+    },
+    {
+      "digest": "944199984157441e94bb75edc3fffac9a47b911af2b59ffefe74697b46421313",
+      "url": "https://json.schemastore.org/drupal-services.json"
+    },
+    {
+      "digest": "8337b72e2b324314083082fba5c33c038d3d54e838247714f122c2479021b1e5",
+      "url": "https://json.schemastore.org/chart.json"
+    },
+    {
+      "digest": "f0907edf5e6b6765949d9f45d4c1d006eed78791797c25b9f16a0fd3e1643bf0",
+      "url": "https://json.schemastore.org/chart-lock.json"
+    },
+    {
+      "digest": "77a0949b6ebced649c93046e82dbbeb469cafbde2110a32eff69eb68b9ff17d8",
+      "url": "https://json.schemastore.org/circleciconfig.json"
+    },
+    {
+      "digest": "de757b3c6d72623e1a52194ac1d9c97d9b12d507e1a810045b96ecd67661956f",
+      "url": "https://json.schemastore.org/codeclimate.json"
+    },
+    {
+      "digest": "cdf0b11d33115794e4ecb8fd7c2ea1b1829e34d559797f0394d58f1d867bcfd2",
+      "url": "https://json.schemastore.org/cirrus.json"
+    },
+    {
+      "digest": "e07ffdf12361122c1a9a615f619ecbb15b7fbf3e830782729a4420457e45de43",
+      "url": "https://json.schemastore.org/clasp.json"
+    },
+    {
+      "digest": "9be223274a47c9f5b79b5f4220de6bd1f372a84a831810c15a1d86f58fb7b06a",
+      "url": "https://json.schemastore.org/cloudify.json"
+    },
+    {
+      "digest": "40e8b914ff7f022c7c0e8d6a7310fa9f42efefdde9fccbfbfff59044630e66da",
+      "url": "https://raw.githubusercontent.com/canonical/cloud-init/main/cloudinit/config/schemas/versions.schema.cloud-config.json"
+    },
+    {
+      "digest": "76efbc77e50cb07d194962413aa10d3e8861eb7529175f169f4eb0a4a8921afd",
+      "url": "https://static.codemagic.io/codemagic-schema.json"
+    },
+    {
+      "digest": "bfca838efdf31864de4191fca3004a9695ee10a5a52f0bf18fc3dd767304e8a2",
+      "url": "https://json.schemastore.org/codecov.json"
+    },
+    {
+      "digest": "fcd7c725dffc132e2a3481e54d49bf238ed6075745885cd9c6ee994f8fefdaea",
+      "url": "https://json.schemastore.org/codeship-services.json"
+    },
+    {
+      "digest": "0d0ab5f47cca27d808ee92a8f9a9f248a38b0b3c922f84325e35d738b7eaa61a",
+      "url": "https://json.schemastore.org/codeship-steps.json"
+    },
+    {
+      "digest": "c81f09b554c486921b198bcfb355e3ed2eb06646a4dcfbf7c658036ccf77a19b",
+      "url": "https://openapi.vercel.sh/vercel.json"
+    },
+    {
+      "digest": "032a7842fb5dc3f918659deb3186e74265a492d975e0a07094f8e6b58f81e584",
+      "url": "https://raw.githubusercontent.com/Yash-Singh1/vscode-snippets-json-schema/main/schema.json"
+    },
+    {
+      "digest": "0860a0b3033449d8ed4550f44060b12b028da77e4752fadb9e6b556ac109ce33",
+      "url": "https://json.schemastore.org/compilerconfig.json"
+    },
+    {
+      "digest": "cb2bf86d6e999ded728e1f6f2d1c7a45ec4bbd6c2b9557c6329ebe85c65382fe",
+      "url": "https://json.schemastore.org/compile-commands.json"
+    },
+    {
+      "digest": "83a3365ad9994b32379bb959d443420578d5484ab8dc120492c53f10db70521b",
+      "url": "https://json.schemastore.org/commands.json"
+    },
+    {
+      "digest": "d4dba09de10d35093e42c5c1c340239fd465c0e6b283a65eda152e6b296ae02d",
+      "url": "https://raw.githubusercontent.com/howlowck/common-catalog-schema/main/schema-versions.json"
+    },
+    {
+      "digest": "9dd49a121fdfcc582fd8bfcf8dc7a14504442d016c8d32858999a65984879520",
+      "url": "https://json.schemastore.org/cosmos-config.json"
+    },
+    {
+      "digest": "bba3491b536b49471ce4b38769283cdef6b963a7e347ffdc6dd6ac21329cb4ff",
+      "url": "https://json.schemastore.org/chrome-manifest.json"
+    },
+    {
+      "digest": "0ac1d592fc2f3abbae0f228bf061f8f1e8787e2387a00939bc682d2b9c15776b",
+      "url": "https://json.schemastore.org/chutzpah.json"
+    },
+    {
+      "digest": "88d728f0495bb3baf88bdd41fc37b55e8d7bad94bcead412ed049e7ec94d6b42",
+      "url": "https://json.schemastore.org/vsix-manifestinjection.json"
+    },
+    {
+      "digest": "6a666e38c18a99213cc789c0f31328e1d4cf6da1567382eedd72f75f20fc8b26",
+      "url": "https://json.schemastore.org/cloud-sdk-pipeline-config-schema.json"
+    },
+    {
+      "digest": "490773fb52402cc2e49e30a3975dfd04d3ea56a2483dfcd8cc11158b47e686c6",
+      "url": "https://json.schemastore.org/cloudbuild.json"
+    },
+    {
+      "digest": "b85025dd7898ab76f503487bc09b5c5e767696a5ec8c540971900ea34b5fa22b",
+      "url": "https://json.schemastore.org/workflows.json"
+    },
+    {
+      "digest": "d38314633148ae5d5fcb0719ca069862e36e614993937c17a815a8cdf0fdf424",
+      "url": "https://json.schemastore.org/cdk.json"
+    },
+    {
+      "digest": "d82ba4614a7fe7454ec8c216ff627a4880fb90f73ab7ca61412503489a2cd4fc",
+      "url": "https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json"
+    },
+    {
+      "digest": "66e2ca5a3104453d106eef28d09744ff61a027a69b71ccdcaacc1051f0c6dcbe",
+      "url": "https://raw.githubusercontent.com/awslabs/goformation/master/schema/sam.schema.json"
+    },
+    {
+      "digest": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
+      "url": "https://citation-file-format.github.io/1.2.0/schema.json"
+    },
+    {
+      "digest": "8505fc679100b09eea35f08fe92cb73c7e5b218c8af933925a5b61eb1bbfc242",
+      "url": "https://json.schemastore.org/coffeelint.json"
+    },
+    {
+      "digest": "e6858f173d216954cd61d223746ef077f36df83390193f675b23424f72c71bc2",
+      "url": "https://raw.githubusercontent.com/composer/composer/main/res/composer-schema.json"
+    },
+    {
+      "digest": "727a6ea34a6954b5b919bcae9a9ff62b667cc80329df41b6f52606b3623966bd",
+      "url": "https://json.schemastore.org/component.json"
+    },
+    {
+      "digest": "2aa386ee880135c8fe3d79f8c315cdb6101b2006671c13e26482e66462d87f81",
+      "url": "https://json.schemastore.org/component-detection-manifest.json"
+    },
+    {
+      "digest": "7b79679baf5a1db76e8b6622b038e4fdd35ca131882b64d33cda29a43c788fa3",
+      "url": "https://json.schemastore.org/config.json"
+    },
+    {
+      "digest": "10113769e2812fdacdbad05bada3482984fd7b59e07b0779540759888671fe87",
+      "url": "https://raw.githubusercontent.com/mozilla/contribute.json/master/schema.json"
+    },
+    {
+      "digest": "bcd71ca2cd72a80a4965926241eaf571106588be9a4492552e2776d3e28c7935",
+      "url": "https://json.schemastore.org/crowdin.json"
+    },
+    {
+      "digest": "fa2111b82540a66b257719e2ef08502e2f26500d8d0ea8f25ef3946fc66d4738",
+      "url": "https://on.cypress.io/cypress.schema.json"
+    },
+    {
+      "digest": "212a4181184a41da9ce5e43a99d71a239400e8972514cf0e950b5e8a67ce623e",
+      "url": "https://json.schemastore.org/creatomic.json"
+    },
+    {
+      "digest": "b7e4048d5335923d48d8fd9fe5ed856646f273b4d3273a301127024edc76ab2a",
+      "url": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json"
+    },
+    {
+      "digest": "4e6fa8b1d9615ddc5740f7b5eb407dda8f2babde2ff71fccc16cc3cd2625fa9f",
+      "url": "https://json.schemastore.org/csscomb.json"
+    },
+    {
+      "digest": "47cb41d4c5889de072c74362f1735253633226aa5ac1bd84098f9f9a1b2f1dc6",
+      "url": "https://json.schemastore.org/csslintrc.json"
+    },
+    {
+      "digest": "c24394d54167eea1dfedd74abb65d94808202f8a713475e0dcc4ccfccf42a30c",
+      "url": "https://json.schemastore.org/dart-build.json"
+    },
+    {
+      "digest": "55b10ca57db2e858bebe84425ef7c61ddbe086f52f5a2eeea8a87ee66ebb9bea",
+      "url": "https://json.schemastore.org/dart-test.json"
+    },
+    {
+      "digest": "fe906a9a0071c1c5f0bf37f1d49fe5a4cd4768cffc89c48f7b19f0bb81f39b4f",
+      "url": "https://raw.githubusercontent.com/socialgouv/dashlord/main/schema.json"
+    },
+    {
+      "digest": "e9b3c1815e45067d7f9e096df2428cfb1019a209faf3353f987cf12fc88dcaf2",
+      "url": "https://json.schemastore.org/datalogic-scan2deploy-android.json"
+    },
+    {
+      "digest": "0f752fc78caa04a46378e189c3bb5c2bb53b980aa2d495d1e9f383c0b67ac266",
+      "url": "https://json.schemastore.org/datalogic-scan2deploy-ce.json"
+    },
+    {
+      "digest": "8678415ca7b8d900a244b4fcbd7528063b9cc7255f7035c61967cf062ebb790f",
+      "url": "https://json.schemastore.org/debugsettings.json"
+    },
+    {
+      "digest": "af7f9a43f5ac6f97e755debf6ea0996150695c47f1a42a2bccccd50c641d1fbe",
+      "url": "https://raw.githubusercontent.com/denoland/deno/main/cli/schemas/config-file.v1.json"
+    },
+    {
+      "digest": "7342253d0465fffc79f1124d120ef066590b86a5ac8b1697ce4d4f9bb752d1a8",
+      "url": "https://json.schemastore.org/dependabot.json"
+    },
+    {
+      "digest": "0be020082fd7d40546d36312b4d5ab4c27dba5934eb02c59c4b0c30c0546428a",
+      "url": "https://json.schemastore.org/dependabot-2.0.json"
+    },
+    {
+      "digest": "6942d0940b20702154e29d2e404a5f194ef1c7925035c630aa4e81070657c744",
+      "url": "https://raw.githubusercontent.com/deployphp/deployer/master/src/schema.json"
+    },
+    {
+      "digest": "61b29ce480c58de039872ef75a8891b3c3caa0ff328b2b0490ccb312fe797363",
+      "url": "https://json.schemastore.org/detekt.json"
+    },
+    {
+      "digest": "c865562cd83313a1db74da6f56f541ff7fca861597a83397082a7e9927d9def1",
+      "url": "https://raw.githubusercontent.com/AxoCode/json-schema/master/discord/webhook.json"
+    },
+    {
+      "digest": "ae5af3c6a2d714cf391a7338fde2e3cde21de81ac05abba00f15060f69c65624",
+      "url": "https://json.schemastore.org/dockerd.json"
+    },
+    {
+      "digest": "779c6a16409f656367be285a70f52ca155149602aeff9a03e75dc65d052471dd",
+      "url": "https://gitlab.com/sbenv/veroxis/docker-seq/-/raw/HEAD/docker-seq.schema.json"
+    },
+    {
+      "digest": "9e6b7c962c96541db0eac3b5b241e966fd680f6b8504e122f9046c2f750392d8",
+      "url": "https://json.schemastore.org/docfx.json"
+    },
+    {
+      "digest": "7a2763be138851a7595415b64c5e9c35766096df9cd7018c0675ab5d1e2886ea",
+      "url": "https://raw.githubusercontent.com/dolittle/DotNET.SDK/v5.0.0/Schemas/Artifacts.Configuration/artifacts.json"
+    },
+    {
+      "digest": "452773bd07c042673edd7fe6da828eca90ba4478797dcb11f6c5f37299ab4fbc",
+      "url": "https://raw.githubusercontent.com/dolittle/Runtime/master/Schemas/Applications.Configuration/bounded-context.json"
+    },
+    {
+      "digest": "b5a4ee6a61c0abf25d5def3634764e73ef26a6ace1cc90daa125444ad0fb978c",
+      "url": "https://raw.githubusercontent.com/dolittle/Runtime/master/Schemas/Events/event-horizons.json"
+    },
+    {
+      "digest": "8e4566a10863109792495536536d041ebae70b5ca1901b766f5e5b65fbd968e3",
+      "url": "https://raw.githubusercontent.com/dolittle/DotNET.Fundamentals/v5.1.0/Schemas/ResourceTypes.Configuration/resources.json"
+    },
+    {
+      "digest": "2cbe92f165fea5e14fe5ccbd479537be8b829e17da1668a0536545a7cf6a2ee7",
+      "url": "https://raw.githubusercontent.com/dolittle/Runtime/master/Schemas/Server/server.json"
+    },
+    {
+      "digest": "0ed4a7d7a72662d534685dafffcaea064ef789222bd7cb522ba9c54e1351d373",
+      "url": "https://raw.githubusercontent.com/dolittle/Runtime/master/Schemas/Tenancy/tenants.json"
+    },
+    {
+      "digest": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "url": "https://raw.githubusercontent.com/dolittle/DotNET.Fundamentals/master/Schemas/Tenancy.Configuration/tenant-map.json"
+    },
+    {
+      "digest": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "url": "https://raw.githubusercontent.com/dolittle/DotNET.SDK/master/Schemas/Applications.Configuration/topology.json"
+    },
+    {
+      "digest": "f9f2bca5709f90a9c8ba659f967576bd363d487931d28a5e9b40e778b72c035f",
+      "url": "https://json.schemastore.org/dotnet-releases-index.json"
+    },
+    {
+      "digest": "76037daec2a62f7fd31164853d0794422746d0026d8774d751347eb31e43c736",
+      "url": "https://json.schemastore.org/dotnetcli.host.json"
+    },
+    {
+      "digest": "83b272370f23f1a2ed8eee3100d8eba1caba62ffd814ae81f1402c79f162b0d1",
+      "url": "https://json.schemastore.org/drone.json"
+    },
+    {
+      "digest": "30d3a1e411df54f23af2932f2724b0359db9989a48771f3c7da0e6e990d73c2c",
+      "url": "https://json.schemastore.org/drush.site.yml.json"
+    },
+    {
+      "digest": "4cb541bd057adbb59789b76b07a193c0703e6820a766a305791cdcaeb8c0ba96",
+      "url": "https://json.schemastore.org/dss-2.0.0.json"
+    },
+    {
+      "digest": "1e44f5aa4b3e698572f5ad8cd228c45416e00187a656c549322a83e6bac0580d",
+      "url": "https://raw.githubusercontent.com/iterative/dvcyaml-schema/master/schema.json"
+    },
+    {
+      "digest": "2357a0222a1bae14e8fee6dfd3cd147644f17c2b136fa5d258f76837b5d4ea35",
+      "url": "https://raw.githubusercontent.com/devfile/api/v2.1.0/schemas/latest/devfile.json"
+    },
+    {
+      "digest": "8d494e9e303702d22ca4171e28ae22d1e3920a9e3dcbab72f39a78b36ecb68da",
+      "url": "https://json.schemastore.org/pm2-ecosystem.json"
+    },
+    {
+      "digest": "96e1b3031988e08e02900b9f4441f297ba77643a03d4a77d0c686577daeac0ba",
+      "url": "https://raw.githubusercontent.com/weaveworks/eksctl/main/pkg/apis/eksctl.io/v1alpha5/assets/schema.json"
+    },
+    {
+      "digest": "d748a1a651344589bdfe62ba187fd30ffb7934e8427aa2138033ad312fb9e738",
+      "url": "https://json.schemastore.org/esmrc.json"
+    },
+    {
+      "digest": "27978c2b07d5921fa06c4583df06c7f3cb3bfbf1e67d2fb7d5a48a934668fce5",
+      "url": "https://json.schemastore.org/esquio.json"
+    },
+    {
+      "digest": "e823931a99c086a0f216d4562fa3563efe4e62ab06a9dcac41f65dd9bc91064e",
+      "url": "https://json.schemastore.org/epr-manifest.json"
+    },
+    {
+      "digest": "f3258bd53d8be8994de30b64bcea5bb925f03f36a158aac227376e035c6a5256",
+      "url": "https://cdn.jsdelivr.net/gh/tarampampam/error-pages@latest/schemas/config/1.0.schema.json"
+    },
+    {
+      "digest": "3b5396dc971c4d1df973ee7f28a8824e791992fa450fd0ecf18b3d844dc473dc",
+      "url": "https://json.schemastore.org/electron-builder.json"
+    },
+    {
+      "digest": "36fd8504a6ac62603ed8bd634c63be87386ef454a4625a4b9d7e8e8e74414704",
+      "url": "https://raw.githubusercontent.com/andig/evcc/master/schema.json"
+    },
+    {
+      "digest": "544b0755e0ac06b209450c863b60a620c9fbc20548aa5818c9d1b23556f16af2",
+      "url": "https://json.schemastore.org/expo-46.0.0.json"
+    },
+    {
+      "digest": "732e7a26506c4f58eaf45557ef64b1ab0aadea510099fa3606455665b4fa157d",
+      "url": "https://gitlab.com/sbenv/veroxis/ezd-rs/-/raw/HEAD/ezd.schema.json"
+    },
+    {
+      "digest": "b6de27f9284081524bae79ef9080e653db477f2a031bdc847bc59a2f5a9838b1",
+      "url": "https://json.schemastore.org/eslintrc.json"
+    },
+    {
+      "digest": "a5d39e0dcc36e6b86c156b64d826481c93280612a87187138f1f19980f6cd7a1",
+      "url": "https://www.facets.cloud/assets/fsdl/application.schema.json"
+    },
+    {
+      "digest": "6361b783e4b841e07bb6858fd76a07559e8469bfe3c69f7b3aa442f01f609738",
+      "url": "https://json.schemastore.org/fabric.mod.json"
+    },
+    {
+      "digest": "021c9dc4f6a032ee11ffc485d6018808dbbaf900e0f7abece2f920b62e64660f",
+      "url": "https://gitlab.com/fdroid/fdroiddata/-/raw/master/schemas/metadata.json"
+    },
+    {
+      "digest": "35260098a740e5f6af2cc4e8d2f101b23df5634780667a3b5436958be7bda188",
+      "url": "https://ffizer.github.io/ffizer/ffizer.schema.json"
+    },
+    {
+      "digest": "fdaee83c4f329cf662073ce1826cc2525d3ff8e85d4bf310d7fa508aed92e73b",
+      "url": "https://json.schemastore.org/first-timers.json"
+    },
+    {
+      "digest": "e1545ccfadee457ef2dcc25210255e01fa41c9b4907d354fce09e298e61b79e4",
+      "url": "https://json.schemastore.org/foundryvtt-manifest.json"
+    },
+    {
+      "digest": "2599aa0a9dc8a75a4f6ef4a297e016aec1bddd399d7d34e41e828b4f266d0834",
+      "url": "https://json.schemastore.org/foundryvtt-template.json"
+    },
+    {
+      "digest": "b4dd3bf3e17481ab0ffe5488b0d2f3dd0b0dcfc9868b4de14f5fe07f0976efad",
+      "url": "https://raw.githubusercontent.com/fossas/fossa-cli/master/docs/references/files/fossa-yml.v3.schema.json"
+    },
+    {
+      "digest": "ee30bb68c33794b0d3bab7c08f064c10fc61e3ad97e6d3926028745b2e6461b1",
+      "url": "https://raw.githubusercontent.com/fossas/fossa-cli/master/docs/references/files/fossa-deps.schema.json"
+    },
+    {
+      "digest": "3406e2a6f5bb7b7a1e7da6b7df08289efffc81f6feded2abb6313f0f627382d4",
+      "url": "https://raw.githubusercontent.com/knative/func/latest-release/schema/func_yaml-schema.json"
+    },
+    {
+      "digest": "d173eafaff7b27de2ff285c67d5e48428b403641b655de4ed85724ad1269002b",
+      "url": "https://json.schemastore.org/function.json"
+    },
+    {
+      "digest": "72e737fdefe9e78355d2b7fa0580bcbf50163f7dd993e14566c3808c5559f049",
+      "url": "https://raw.githubusercontent.com/cloudtoid/gateway-core/master/src/Cloudtoid.GatewayCore/Options/Schema/2021-07.json"
+    },
+    {
+      "digest": "d221ad29afef2edccba14a537410854d83ccf4912a87c0cf8c2d26a7cfe08182",
+      "url": "https://json.schemastore.org/gpc.json"
+    },
+    {
+      "digest": "65108245edf8e9d69b021199656b2162b01c81dd6ba7ad1a41242d29d6fcedb3",
+      "url": "https://json.schemastore.org/geojson.json"
+    },
+    {
+      "digest": "388c5a666307f8aeb9ee7c74f6a858ecdeda6bfc09746d3aa8ebe617cea52d18",
+      "url": "https://json.schemastore.org/gitversion.json"
+    },
+    {
+      "digest": "9bc3a3b83cfc13179ee8981309bddc8686b0f9996050acfa63db9eae8b204a86",
+      "url": "https://json.schemastore.org/github-action.json"
+    },
+    {
+      "digest": "cbeea25a7a19af228edb9414bc20361b0386b91006bc67220805cfe10a322b75",
+      "url": "https://json.schemastore.org/github-funding.json"
+    },
+    {
+      "digest": "c1bc33b906793b1089e19cbc55b3f1a19ce8041c5239b72e7b11554f60218290",
+      "url": "https://json.schemastore.org/github-issue-forms.json"
+    },
+    {
+      "digest": "821adb9a25a2ec9905d05331dda64c1bbf46be60f1ebceb19e983f03d1355c1f",
+      "url": "https://json.schemastore.org/github-issue-config.json"
+    },
+    {
+      "digest": "460175ab2313fe0736adb77bf8343b3838bb5fd30a0a5dfa7c8cd5e77d1c0f7a",
+      "url": "https://json.schemastore.org/github-workflow.json"
+    },
+    {
+      "digest": "b666b135e51eff1b169bd4489e927ba5208e43f864b0f7c3444fb94ba59affd4",
+      "url": "https://json.schemastore.org/github-workflow-template-properties.json"
+    },
+    {
+      "digest": "e6cc8447e5503207265deff994fe6f0010070a9c01d5b1b8e039ed48f10d9616",
+      "url": "https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json"
+    },
+    {
+      "digest": "5642afbc6a787615c8ca8ffac664cc9b218f386f5fe567297d6e37a4476f72ef",
+      "url": "https://gitpod.io/schemas/gitpod-schema.json"
+    },
+    {
+      "digest": "db47eb1ca81612d6285b13b83cacb8c7f90e43535330abcae1684d6f6f3a3131",
+      "url": "https://json.schemastore.org/global.json"
+    },
+    {
+      "digest": "23470514e3b1121ebaf836e0c1fa241d193ea81b9f34191dda31c1a18a6ab802",
+      "url": "https://json.schemastore.org/golangci-lint.json"
+    },
+    {
+      "digest": "88eb7b15cd4b440466eaa61f8ad0a02e8aa2b702d719b7c1c130451edf7b2728",
+      "url": "https://goreleaser.com/static/schema.json"
+    },
+    {
+      "digest": "4d40e3c2a893d47931db553dedd2c8163fa978af543648aada0b3655e1394cf9",
+      "url": "https://goreleaser.com/static/schema-pro.json"
+    },
+    {
+      "digest": "61171f7bf123efe4d2d438466016640738b6e3a6689b4f9c0b782140d3e7baa9",
+      "url": "https://json.schemastore.org/grafana-dashboard-5.x.json"
+    },
+    {
+      "digest": "880ef233de165e5506fc06d55f3cc91bb9d046cacad481c352a2e932f26a0f57",
+      "url": "https://unpkg.com/@graphql-mesh/types/config-schema.json"
+    },
+    {
+      "digest": "b6b53d4180c471fe943a2f781d88bea6edc33b56f7bf1cf81582a42b7bd8349a",
+      "url": "https://unpkg.com/graphql-config/config-schema.json"
+    },
+    {
+      "digest": "0e03a2dcd92b9cddd343d50407c44801ac30d3525daa91abbdedfdd682c042c0",
+      "url": "https://www.graphql-code-generator.com/config.schema.json"
+    },
+    {
+      "digest": "ef06282203c06fd1f9f057114471f330dfe863faf6e75b8ec29fbf53d2f2ef0f",
+      "url": "https://json.schemastore.org/grunt-copy-task.json"
+    },
+    {
+      "digest": "ba07431d007de651fa727da8266a50c374ccceb0d5d63d0bace9df18309b5537",
+      "url": "https://json.schemastore.org/grunt-clean-task.json"
+    },
+    {
+      "digest": "850ec3f9a1617ae83835aa5cffcad945bb04941a60e7a701c33a62d2b9980511",
+      "url": "https://json.schemastore.org/grunt-cssmin-task.json"
+    },
+    {
+      "digest": "1a3a745e828db7ff0929dee9db63a16cbd568085b42d664f2c048d43218c8fc7",
+      "url": "https://json.schemastore.org/grunt-jshint-task.json"
+    },
+    {
+      "digest": "f601c7dbaa0a130a6fcba29c778ff58828da6fe70b6dc257a3d08a8d3f45d69a",
+      "url": "https://json.schemastore.org/grunt-watch-task.json"
+    },
+    {
+      "digest": "10d1a202982dd3976e250494566f14014749240183b771e277ae5fa40fd80288",
+      "url": "https://json.schemastore.org/grunt-task.json"
+    },
+    {
+      "digest": "d5f0a0a3c773f53f3ec84c07ae3d53469f59cea7e4b7fa25f04d70af909b72d3",
+      "url": "https://json.schemastore.org/haxelib.json"
+    },
+    {
+      "digest": "8659d864bcd0f4f9894c63af6ea4a6a4e16dc2633921e3bc6a234c1b9d392f0b",
+      "url": "https://raw.githubusercontent.com/j2inn/hayson/master/hayson-json-schema.json"
+    },
+    {
+      "digest": "204bddc93c3357e5c8dbc1346674383c9b5f1f693460eb54b35dbd3c4d3eae39",
+      "url": "https://raw.githubusercontent.com/deepset-ai/haystack/master/haystack/json-schemas/haystack-pipeline.schema.json"
+    },
+    {
+      "digest": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+      "url": "https://hazelcast.com/schema/config/hazelcast-config-5.1.json"
+    },
+    {
+      "digest": "d1a5328a91f30661b8513e05dba0ff7ff7f4f3a2ba6a34cefb83a474ab35ea47",
+      "url": "https://json.schemastore.org/host.json"
+    },
+    {
+      "digest": "a852f801cd0e8e897cd5679fbbd1349e2f1a668289accb3fba0f959393bd7385",
+      "url": "https://json.schemastore.org/host-meta.json"
+    },
+    {
+      "digest": "4eb92aa0eb5e125070aa9ab536dd8f77116557bd169bfeb0534359fb52d5cb82",
+      "url": "https://json.schemastore.org/htmlhint.json"
+    },
+    {
+      "digest": "5a0d18e9d8631008d4f5335595df8a64d76d55b33d10af8405d6599a7194ee89",
+      "url": "https://raw.githubusercontent.com/ory/hydra/master/.schema/version.schema.json"
+    },
+    {
+      "digest": "1ba5b62f57d83f5b564fa332f348b4ca794aadbbaf8789ac141d865f025d2164",
+      "url": "https://json.schemastore.org/ide.host.json"
+    },
+    {
+      "digest": "98052d7a638b784d00f942e9219bb4de690f0d2998b5b0b40520f1cd259d0083",
+      "url": "https://json.schemastore.org/imageoptimizer.json"
+    },
+    {
+      "digest": "9e65d2c37b5f7045323cdd0a635a4710b3ec26ef8d714a6cb0062961c949a287",
+      "url": "https://json.schemastore.org/imgbotconfig.json"
+    },
+    {
+      "digest": "e989f6eb6750517b491b773414c8f5f2a9084daadadf8563d56ce3a459bb7fff",
+      "url": "https://json.schemastore.org/importmap.json"
+    },
+    {
+      "digest": "19f9da7e24f3c79cdca68a9a1d51b83ee5c9cddcbba27a60447297a30a4f268f",
+      "url": "https://raw.githubusercontent.com/ioBroker/adapter-react-v5/main/schemas/jsonConfig.json"
+    },
+    {
+      "digest": "237d7cbb9fd43599968d0e0dc17283f70ef1db40cbad36dfea442ace2a3435e4",
+      "url": "https://json.schemastore.org/io-package.json"
+    },
+    {
+      "digest": "ec26c46ddf0ed6daafbcdd8ebfc2930765487a6a72172b9eded270a4c7722215",
+      "url": "https://json.schemastore.org/jasmine.json"
+    },
+    {
+      "digest": "8035654945e30687aebfe2a52c2351fb861e0fd5309bfab5fadf13874afb7e37",
+      "url": "https://json.schemastore.org/jekyll.json"
+    },
+    {
+      "digest": "d7aaed96457d4929c3ae6311ee88c2d379f7976a101ef35a5d754eefe9631ff9",
+      "url": "https://jenkins-x.io/schemas/jx-schema.json"
+    },
+    {
+      "digest": "abd5aed4203dd0c163b39fe000277afa17381de6fc1ed7e875de7a9802054c40",
+      "url": "https://jenkins-x.io/schemas/jx-requirements.json"
+    },
+    {
+      "digest": "43be91095c936a1678920d99d76eaedb160f4d0563bb2109b562938e4cbbba42",
+      "url": "https://raw.githubusercontent.com/sergxerj/jdownloader2-crawler-rule-json-schema/main/jd2cr.schema.json"
+    },
+    {
+      "digest": "4b931c80f055391814b07f2358869fbb4751f411cf199e199ee1685de3aee159",
+      "url": "https://raw.githubusercontent.com/sergxerj/jdownloader2-crawler-rule-json-schema/main/jd2mcr.schema.json"
+    },
+    {
+      "digest": "77034952ee8e5bbe51f555b55bb78a5270003faed04be77ada696393eda7130c",
+      "url": "https://raw.githubusercontent.com/jfrog/jfrog-cli/v2/schema/filespec-schema.json"
+    },
+    {
+      "digest": "7a02f8360e920aa65b855b6946fa66dd918dfff48d2736ae3d96523d6bbcf32c",
+      "url": "https://json.schemastore.org/jovo-language-model.json"
+    },
+    {
+      "digest": "79866f1728f68084bafb5c65c4e165ea72b6960275034de430579e9865002696",
+      "url": "https://json.schemastore.org/jsbeautifyrc.json"
+    },
+    {
+      "digest": "c67f72c7275891e5f079fef8495ca68126f6a7ca1d60a621dd5f3b3afe1cdbd8",
+      "url": "https://json.schemastore.org/jsbeautifyrc-nested.json"
+    },
+    {
+      "digest": "b96e32b8950b8dae04abc3e6e52f5a92ecbc5ecc77b09b908b2eb72116173942",
+      "url": "https://json.schemastore.org/jscsrc.json"
+    },
+    {
+      "digest": "9b5b50ca3c2f7b5d65132b9e7335c8b185a1bf65c31dd89ca5a8bf5d3a0a8806",
+      "url": "https://json.schemastore.org/jshintrc.json"
+    },
+    {
+      "digest": "10da87675fe3522886878bbcbaca976139070acbcb7a0d3075ae5f5ebbfd25ca",
+      "url": "https://json.schemastore.org/jsinspectrc.json"
+    },
+    {
+      "digest": "039373bd2b6dfd2d9b12c855c58f35b74bec2265ac64325d7d6047979e482742",
+      "url": "https://jsonapi.org/schema"
+    },
+    {
+      "digest": "3c91af8ad06fef0540e1d2cf44cf0c1dd43c78ef52fca058327ce327d659598e",
+      "url": "https://json.schemastore.org/jdt.json"
+    },
+    {
+      "digest": "d0105283b9d431ff0536f6da81df9a7cb3e595e7c2fe80e89655940753e43d94",
+      "url": "https://json.schemastore.org/feed.json"
+    },
+    {
+      "digest": "3d81d801d7173f32d981efc8c564e49619d59cf020e60342eda644f85f977f15",
+      "url": "https://json.schemastore.org/jsonld.json"
+    },
+    {
+      "digest": "9c4e9fc5dc5f4db6aa15ab4e1522421b727eb763dbeb91cf3e065397950dadd0",
+      "url": "https://json.schemastore.org/json-patch.json"
+    },
+    {
+      "digest": "0fcb101d5e84b759834ae7d3d88ee4681d695697e23f51ec085ae986171bee40",
+      "url": "https://json.schemastore.org/jsconfig.json"
+    },
+    {
+      "digest": "8b3c64e29de7ac9ede44658067be0df81580e43cd3d3f985290d362b1e9a72c8",
+      "url": "https://raw.githubusercontent.com/rancher/k3d/main/pkg/config/config.versions.schema.json"
+    },
+    {
+      "digest": "6901afa4d0f2cb7dce5b638d96c87924b9e34cb506418d9af5b8431c07d0fd0a",
+      "url": "https://www.krakend.io/schema/v3.json"
+    },
+    {
+      "digest": "847bcb2c880506e5b2f734f2867c103aa702898ff49c22499570eebf7c7a1616",
+      "url": "https://raw.githubusercontent.com/DataDog/schema/main/service-catalog/version.schema.json"
+    },
+    {
+      "digest": "f1e7075378ce10e6b770e12957f9261ebe6dae9f50880ce9b9dd122f2f3504d7",
+      "url": "https://raw.githubusercontent.com/ory/keto/master/.schema/version.schema.json"
+    },
+    {
+      "digest": "a316ee538e3b4b9e63d1205b746e74b80f1b285eb965d89436591cd9f5f153c6",
+      "url": "https://json.schemastore.org/kustomization.json"
+    },
+    {
+      "digest": "338c7411ac4b20d6af17b1c0e7691d16a2ebf4c5f1c703785bcf2403ad8b389b",
+      "url": "https://json.schemastore.org/label-commenter-config.json"
+    },
+    {
+      "digest": "3c07066ebc63fec20951437fb19df419041839ebc79b3df847b16f3fbe9e2df7",
+      "url": "https://json.schemastore.org/launchsettings.json"
+    },
+    {
+      "digest": "46bf7c52e286b6905fcfb639fb0ddc7b909f5b286041efbb1b6c35a0fc5f9ae8",
+      "url": "https://json.schemastore.org/lerna.json"
+    },
+    {
+      "digest": "248da6458de68ebdc33e855095a3d47315eb9621e7d20aaf5a7c1df33314fc90",
+      "url": "https://json.schemastore.org/lgtm.json"
+    },
+    {
+      "digest": "0b3deccd36ca9ce32300001f490a1fbd98efe101d19c5e88248c156cdadda2d8",
+      "url": "https://json.schemastore.org/libman.json"
+    },
+    {
+      "digest": "c8d10fadc65caf1f1aa781443d5df90f963577f9bfada40b2a7ae22b581d3add",
+      "url": "https://json.schemastore.org/license-report-config.json"
+    },
+    {
+      "digest": "2094626061ee8b3f482161c7d8565997e2bacdb60d1ddf244a234fa89efac48a",
+      "url": "https://json.schemastore.org/linkinator-config.json"
+    },
+    {
+      "digest": "076d886f57c4228af124c62fc83fd5f09fc22dc552ef320fc178e1f01d53e00e",
+      "url": "https://w3id.org/linkml/meta.schema.json"
+    },
+    {
+      "digest": "467c4b54ee022f4a6c37b79ac53d16c4bfdf7827722c9e16422172cf2601230e",
+      "url": "https://json.schemastore.org/local.settings.json"
+    },
+    {
+      "digest": "fe352e91e42a7de646cb2bc4ea262b60eaffb22db7c62295aba08b25bba5dcaf",
+      "url": "https://raw.githubusercontent.com/localazy/cli-schema/master/localazy.json"
+    },
+    {
+      "digest": "41aa20daf88b3a2fc8f5045aa30e280a84c746d09c525531ce01edba08989365",
+      "url": "https://json.schemastore.org/lsdlschema.json"
+    },
+    {
+      "digest": "5b18891c5a515f0e146ad46950d515d1b85f4718fea79b9b6e99ae050dca5898",
+      "url": "https://raw.githubusercontent.com/megalinter/megalinter/main/megalinter/descriptors/schemas/megalinter-configuration.jsonschema.json"
+    },
+    {
+      "digest": "bb8b1f7d3da4fbc045bde74cb17d3348feafda4dd0138108f3d93e46d3f72d81",
+      "url": "https://raw.githubusercontent.com/megalinter/megalinter/main/megalinter/descriptors/schemas/megalinter-descriptor.jsonschema.json"
+    },
+    {
+      "digest": "68641fef8ae89ae3c220645a37738150c0080f60b790c4b9380098687fa81011",
+      "url": "https://raw.githubusercontent.com/meltano/meltano/main/schema/meltano.schema.json"
+    },
+    {
+      "digest": "a559e58b4140f534cbe3af83297af0bdceff7dc3e47a570008623e89aa68c09c",
+      "url": "https://raw.githubusercontent.com/meltano/meltano/main/schema/discovery.schema.json"
+    },
+    {
+      "digest": "6a133aa174c0f1a140a4703c2749a7de3e8cbcb328bcf88ebc1e6be1c9094c26",
+      "url": "https://json.schemastore.org/band-manifest.json"
+    },
+    {
+      "digest": "a013d30ef15092e48044ce6f4520dadc8a84495978a75d931f11c11c7a4e550b",
+      "url": "https://json.schemastore.org/mimetypes.json"
+    },
+    {
+      "digest": "40ca2735a858707be5d27b939da437c9f47f70e108870b9fc4ea2038efc53cb5",
+      "url": "https://json.schemastore.org/minecraft-advancement.json"
+    },
+    {
+      "digest": "d020997b1f26aec2be87b0d10c2229fcf90baed117da466497bdeddaaf1dea7b",
+      "url": "https://json.schemastore.org/minecraft-biome.json"
+    },
+    {
+      "digest": "b8c5487943fa3d3622565b0f13a38774f4402bd69109c70cba422f902de0143d",
+      "url": "https://json.schemastore.org/minecraft-configured-carver.json"
+    },
+    {
+      "digest": "dfb280244fd5a06d7cce53c1692d9a160af01f11225c678540e5f117f2f61dd8",
+      "url": "https://json.schemastore.org/minecraft-dimension-type.json"
+    },
+    {
+      "digest": "77616f8498bda7eb9797cc678cf10660e895abead0ba9c602443d9713e04c278",
+      "url": "https://json.schemastore.org/minecraft-dimension.json"
+    },
+    {
+      "digest": "104ba7c05d32985c5117744c749d0275d15b42ba64a58b7c494714d39d637b4a",
+      "url": "https://json.schemastore.org/minecraft-item-modifier.json"
+    },
+    {
+      "digest": "d3bf108f20a91efeb68837713fe2d4ab449d70a433d79bfd2ec8f780c9e3ef21",
+      "url": "https://json.schemastore.org/minecraft-loot-table.json"
+    },
+    {
+      "digest": "6c58ccb48ea7baa773957d70b90617a9fd207ad42e22b3135fb4514e795d5f04",
+      "url": "https://json.schemastore.org/minecraft-pack-mcmeta.json"
+    },
+    {
+      "digest": "aca81a6e6eb02682d244f1d1107d20c1af0ca1e7e1ae0103ad86c1a41bd292f0",
+      "url": "https://json.schemastore.org/minecraft-predicate.json"
+    },
+    {
+      "digest": "eb7a2f8900df8ecb249c55c24580d1b269fd447e208f5558c28cce3314715d48",
+      "url": "https://json.schemastore.org/minecraft-recipe.json"
+    },
+    {
+      "digest": "f1901bb6534a044b650d209db2bd0e35e6f2a3a13137cbf25ef5466ff8d5f3b3",
+      "url": "https://json.schemastore.org/minecraft-template-pool.json"
+    },
+    {
+      "digest": "cfff8ca7057cc59256736f2804df6b2ec2fc62eff3d87cf4e3e8a735da00f2be",
+      "url": "https://raw.githubusercontent.com/AxoCode/json-schema/master/minecraft/sounds.json"
+    },
+    {
+      "digest": "99de574b5e6cbaf768f0abf782d86bcab87804a5fff87d4575d48a7074ce7de4",
+      "url": "https://json.schemastore.org/mocharc.json"
+    },
+    {
+      "digest": "a6a8ef5108680f6edc80014c9ee058c705d649599b4de11e2f72ccedffdaf8af",
+      "url": "https://json.schemastore.org/modernizrrc.json"
+    },
+    {
+      "digest": "148d9989a2a8b8227742607de1879c68f472b5e207edc75c1da04e077840b64c",
+      "url": "https://json.schemastore.org/mycode.json"
+    },
+    {
+      "digest": "bd2250f4943580fe365bb59f2f242e968cbf00fa4d4d771bbddbedefde18f80c",
+      "url": "https://github.com/napari/npe2/releases/latest/download/schema.json"
+    },
+    {
+      "digest": "b13f6423330fb4a8b9d38a7d8a17a2e005f653ac8307b24814be99f8078c41e8",
+      "url": "https://json.schemastore.org/netlify.json"
+    },
+    {
+      "digest": "68f66a7f2102bef942bbe643f8851a027338f000c3e45e8261ec00856d01d639",
+      "url": "https://json.schemastore.org/nightwatch.json"
+    },
+    {
+      "digest": "cbdb82ba2c321f27921f19bf7401d4ed1bcff5973c9e70ebd271af2e53e626ee",
+      "url": "https://json.schemastore.org/ninjs-2.0.json"
+    },
+    {
+      "digest": "1409ac05ab13c677c4c49ea1814dbf0d68a079a7aface54d78de02cbe3ae5460",
+      "url": "https://json.schemastore.org/ninjs-1.3.json"
+    },
+    {
+      "digest": "da2806a42e43fcf75a98fb0cf43b625e708f7561de4d7d7ef9ca7d66479c4bd5",
+      "url": "https://json.schemastore.org/nest-cli.json"
+    },
+    {
+      "digest": "2f20c4df1a00881a893783e1b88eda2a97c01c9bdc839da4d3dee3103cdad57f",
+      "url": "https://raw.githubusercontent.com/oresoftware/npm-link-up/master/assets/nlu.schema.json"
+    },
+    {
+      "digest": "7acd053f827012c9cb7f45bb84d898c5dc391c1aab25b120cd70aaa61ba2cb45",
+      "url": "https://json.schemastore.org/nodehawkrc.json"
+    },
+    {
+      "digest": "8933799da84f8fb62a647dc81e13b7258e13a44431a938697e696d46fccb223b",
+      "url": "https://json.schemastore.org/nodemon.json"
+    },
+    {
+      "digest": "ca651068232cac73b19fdcc0da18a647db04902637dac29890c5542dc3e54c21",
+      "url": "https://json.schemastore.org/npmpackagejsonlintrc.json"
+    },
+    {
+      "digest": "6f4c2e2f24c683bcb66f9956e970da2e7056a264e962301967133dc8ecc1ea77",
+      "url": "https://raw.githubusercontent.com/projectdiscovery/nuclei/master/nuclei-jsonschema.json"
+    },
+    {
+      "digest": "5e5356299972c04190b3e680adffbe02e71426ef4572cc903fcdd337a556ae1b",
+      "url": "https://json.schemastore.org/nuget-project.json"
+    },
+    {
+      "digest": "cf3dc04d908bb4625c2d3eb33e624acdf012e30cd741d673c0d181f5c5aa2a9f",
+      "url": "https://json.schemastore.org/nswag.json"
+    },
+    {
+      "digest": "3281d772aaa1379a21b1fa8112edf63a94eddb036291e67277b84484d5c2e3f3",
+      "url": "https://raw.githubusercontent.com/Avanade/NTangle/main/schemas/ntangle.json"
+    },
+    {
+      "digest": "cfea25212ef4a6e8b8737c313b15d30f193cedd600e4e413420524823fd45486",
+      "url": "https://raw.githubusercontent.com/ory/oathkeeper/master/.schema/version.schema.json"
+    },
+    {
+      "digest": "9b3933a84a785ca1f385354b8013fdf04d33a794004481b60398fee7b6e9f4a5",
+      "url": "https://json.schemastore.org/ocelot.json"
+    },
+    {
+      "digest": "97b75dea83fa71ff14e960843edd4072e24a479df53a772fc668b0569977ec9b",
+      "url": "https://json.schemastore.org/omnisharp.json"
+    },
+    {
+      "digest": "da01ba28852cac0de53893797cb8d1942bc3b05084f526dcc216717dec314ed0",
+      "url": "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.1/schema.json"
+    },
+    {
+      "digest": "0b4b6d44c219e063e2c90d9dbd00466d01de8c651e7e9274c247260b1e6f6e81",
+      "url": "https://meta.open-rpc.org/"
+    },
+    {
+      "digest": "aaf5a1e89a231452c52af86cab8da61d11736577a334e420ace767215fa879e1",
+      "url": "https://json.schemastore.org/openfin.json"
+    },
+    {
+      "digest": "2ef71e2809a08a078f988206ddb80de2eb4f0afc5a8670b53299ab67d4be0325",
+      "url": "https://raw.githubusercontent.com/outblocks/outblocks-cli/master/schema/schema-project.json"
+    },
+    {
+      "digest": "e88ecb50f137730ba6ec43b9462876dcd4f0f18be7750619de8d1bdace9df13f",
+      "url": "https://raw.githubusercontent.com/outblocks/outblocks-cli/master/schema/schema-app.json"
+    },
+    {
+      "digest": "c878f007264b19ef2acaa7a9b58b0797776324d5d1bddc0e9ea140b3ecf9f262",
+      "url": "https://raw.githubusercontent.com/outblocks/outblocks-cli/master/schema/schema-table.json"
+    },
+    {
+      "digest": "0c1a65aa2ecd6d3a0288ffb76a1b1968337b22f4b313a80d37957ea1f644ab8a",
+      "url": "https://raw.githubusercontent.com/ory/kratos/master/.schema/version.schema.json"
+    },
+    {
+      "digest": "8e3ff06b4476c33d3e393170067183a03b1938715d0b69a1d9b5ddc319793af3",
+      "url": "https://raw.githubusercontent.com/oss-review-toolkit/ort/main/integrations/schemas/ort-configuration-schema.json"
+    },
+    {
+      "digest": "ebfec278d18f1c75002c0dbd7256ac42966ec981768f026bb92499c9a5c0457a",
+      "url": "https://raw.githubusercontent.com/oss-review-toolkit/ort/main/integrations/schemas/curations-schema.json"
+    },
+    {
+      "digest": "39d68bfce1f8a056ad5e5472e496c243d2f782ae2dec73f0d184b75f5b51d9b3",
+      "url": "https://raw.githubusercontent.com/oss-review-toolkit/ort/main/integrations/schemas/package-configuration-schema.json"
+    },
+    {
+      "digest": "504432e9fc76a49d7742e8cc6d6f9f06724804613ca28a7a868887f78789cee5",
+      "url": "https://raw.githubusercontent.com/oss-review-toolkit/ort/main/integrations/schemas/repository-configuration-schema.json"
+    },
+    {
+      "digest": "d1616998d96ae2df4b5fcf42f16bed43b3a571ef533ee9062618b17e6a1c4982",
+      "url": "https://raw.githubusercontent.com/oss-review-toolkit/ort/main/integrations/schemas/resolutions-schema.json"
+    },
+    {
+      "digest": "c3c12f4c1b8428353cb048c0ea3eac687f1d175bf3a9bc245fa8bf55acd5dcb4",
+      "url": "https://json.schemastore.org/package.json"
+    },
+    {
+      "digest": "e0860947776644adfa74c2b0df4aeb188463ae56e76eb85a5713a5e2b2e50101",
+      "url": "https://json.schemastore.org/package.manifest.json"
+    },
+    {
+      "digest": "8f485c491532b1bf3f6f4f237743779c4734d79ff88401bb0dc0e6d249e0f563",
+      "url": "https://json.schemastore.org/packer.json"
+    },
+    {
+      "digest": "3c3571cee47d29115067231c360a8d5723af2a7bfe85e2a72efe0167f13ee767",
+      "url": "https://json.schemastore.org/pgap_yaml_input_reader.json"
+    },
+    {
+      "digest": "3fd8ca0ea84e1a6555b6dbd64bd14f43270fd95e94e42b52b48808e7f09bbfd3",
+      "url": "https://json.schemastore.org/pattern.json"
+    },
+    {
+      "digest": "9cb96cd13e4dbb4cba104921fc01cb79c03708d6de31424b313374ae5aa926cf",
+      "url": "https://raw.githubusercontent.com/pmbot-io/config/master/pmbot.yml.schema.json"
+    },
+    {
+      "digest": "b3a39d27ca84d463bc4c39293f2dee1c59125761cd59dc5b4fb0fd4a23061611",
+      "url": "https://json.schemastore.org/pocketmine-plugin.json"
+    },
+    {
+      "digest": "687ed18083c540173a87b4d51d7c35caa0158017d2474279121f4150fa3d193d",
+      "url": "https://json.schemastore.org/plagiarize.json"
+    },
+    {
+      "digest": "5c7c3e80a743b32f8185b020604bdaa9b2e2f66522b9430060fa53cdbc017a4c",
+      "url": "https://json.schemastore.org/plagiarize-me.json"
+    },
+    {
+      "digest": "0dd536d5f2593d81d2785d3074b384aa90b93a63f91172369e691b819684b15e",
+      "url": "https://raw.githubusercontent.com/apideck-libraries/portman/main/src/utils/portman-config-schema.json"
+    },
+    {
+      "digest": "2e53678279daec6b2d0bdf46279ae6fa37ed04ca4e24a9657c43c4f3b3c25f98",
+      "url": "https://json.schemastore.org/postcssrc.json"
+    },
+    {
+      "digest": "e023443aa7930f366d2cd5c45cadd0b8e026b1324d5aeebb6baccb73b6fc2106",
+      "url": "https://json.schemastore.org/pre-commit-config.json"
+    },
+    {
+      "digest": "d3e0105a8361b55a944a1b6a1a9abbd13a1339156d3f00ec6d3adac9ab4d5d9b",
+      "url": "https://json.schemastore.org/pre-commit-hooks.json"
+    },
+    {
+      "digest": "3966787cf0bbfb1c9e2827fa3ec6678782cc27c74e5cf4b05a3ed77024d499f5",
+      "url": "https://json.schemastore.org/phraseapp.json"
+    },
+    {
+      "digest": "f8b0d9ff1c2ad781e57606accc864dafa6386591a2e6c7ec3134566eae957ceb",
+      "url": "https://json.schemastore.org/prettierrc.json"
+    },
+    {
+      "digest": "470c62f8c76343956b4f5b26e85e2add114c14a58c2d905db57f4344e1039e37",
+      "url": "https://json.schemastore.org/prisma.json"
+    },
+    {
+      "digest": "950f628a995340e244030e7f082605b7c92d34cdff31f7278bffc76870783a3f",
+      "url": "https://json.schemastore.org/project.json"
+    },
+    {
+      "digest": "b80306610896114678c256aba67c4d52033957e378cd28ed2180930727c06808",
+      "url": "https://json.schemastore.org/project-1.0.0-beta3.json"
+    },
+    {
+      "digest": "f78ac3298898ef4406350f20483404d4d4fdf945b62ce76d06e3057eb59c5819",
+      "url": "https://json.schemastore.org/project-1.0.0-beta4.json"
+    },
+    {
+      "digest": "5942378c880014449dcb4f727fd08c3ba24a493e78d913b57baca69b1b61de54",
+      "url": "https://json.schemastore.org/project-1.0.0-beta5.json"
+    },
+    {
+      "digest": "b68eb162ca06fad31a2c5449ac9d74bcb4317407e88c212af868f9024533a51f",
+      "url": "https://json.schemastore.org/project-1.0.0-beta6.json"
+    },
+    {
+      "digest": "0e62dc135ac4af50321d7b420c61a0f67587d92a4380191432272a6e60b923c6",
+      "url": "https://json.schemastore.org/project-1.0.0-beta8.json"
+    },
+    {
+      "digest": "a37def03f524940c44384ce4c0359818a972d76aebcd26ada1fb1876b20de582",
+      "url": "https://json.schemastore.org/project-1.0.0-rc1.json"
+    },
+    {
+      "digest": "b89d1e3d42a240e7ff051adbf55471254c5a080e591fe71b2fd31292e275ec35",
+      "url": "https://json.schemastore.org/project-1.0.0-rc2.json"
+    },
+    {
+      "digest": "937f379e2c7033892ad9827d46ea8a443ae0241810154b6fba67223c0d792da4",
+      "url": "https://json.schemastore.org/prometheus.json"
+    },
+    {
+      "digest": "08c4fd7d7eb009e4c80f910e3731d270219528b66edf20ab4ce05f817b4b083c",
+      "url": "https://json.schemastore.org/prometheus.rules.json"
+    },
+    {
+      "digest": "23f3f6031d484e88667481caddd78a2d57c5a611e43217dfd267c851d95f228e",
+      "url": "https://json.schemastore.org/proxies.json"
+    },
+    {
+      "digest": "593b215ce664833aa3d5e69eb86672a385db5f8bb9779466c14edd06475de3bf",
+      "url": "https://json.schemastore.org/publiccode.json"
+    },
+    {
+      "digest": "39a5704359ffdb9c617ba6db5b3852241e22cc77fbcb1894b351c0b9c65c5a2b",
+      "url": "https://json.schemastore.org/pubspec.json"
+    },
+    {
+      "digest": "c8a6b6580883b81b3001c935393d7b92b4ea3d9d93f17db14bd19e17e99b6d9d",
+      "url": "https://json.schemastore.org/pull-request-labeler.json"
+    },
+    {
+      "digest": "f48da097be81d3451e775c0c4829c94b01c3db1d85b9cae2335141fa30da880a",
+      "url": "https://json.schemastore.org/putout.json"
+    },
+    {
+      "digest": "99278c35a42281986fbcc7c9f2b5f05ef7f41045be3588d6cd6943fb458a6b2b",
+      "url": "https://json.schemastore.org/pyrseas-0.8.json"
+    },
+    {
+      "digest": "8af33758aa8ff19173eabb0a976ea1b499f5f4eace61afa5665ed3f3aa7a31df",
+      "url": "https://raw.githubusercontent.com/readthedocs/readthedocs.org/master/readthedocs/rtd_tests/fixtures/spec/v2/schema.json"
+    },
+    {
+      "digest": "a7a909719911f3f6c3c1d4d4124e118397652d21752068190b432c90263c0ca5",
+      "url": "https://json.schemastore.org/pyproject.json"
+    },
+    {
+      "digest": "29b9d3621bc9b2e05e3df030a6d3915876dabdd57f5f8cab3df79d860f084fbc",
+      "url": "https://raw.githubusercontent.com/Cog-Creators/Red-DiscordBot/V3/develop/schema/red_cog.schema.json"
+    },
+    {
+      "digest": "3f02eb47919e4f5193234c698aac68d5fbfa38a2d2a7afe627415df60e1c45d9",
+      "url": "https://raw.githubusercontent.com/Cog-Creators/Red-DiscordBot/V3/develop/schema/red_cog_repo.schema.json"
+    },
+    {
+      "digest": "8548cea7b0a1713b005036f9db33171df80174d37fb998a7785c6191d893e906",
+      "url": "https://json.schemastore.org/rehyperc.json"
+    },
+    {
+      "digest": "c73e6f7e9e681f79393f272e5d304c5c7294fe766a95583a29ea1db4c0015287",
+      "url": "https://json.schemastore.org/remarkrc.json"
+    },
+    {
+      "digest": "a507f6fd9d83c7c40d22c2e9cb7a1c9618651f174ebdc7952231323e5b44a0c6",
+      "url": "https://json.schemastore.org/replit.json"
+    },
+    {
+      "digest": "92c5ab741061ed44ec350438de7dd4aa997a14b153b2995c18005931f4329e48",
+      "url": "https://json.schemastore.org/resjson.json"
+    },
+    {
+      "digest": "ff6e39e79cfe6dedddf7c1e313ddb4da346bde8b055a884d7f6d849965dc27a6",
+      "url": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json"
+    },
+    {
+      "digest": "f3421a1a24ce21f855fc2a856b964bcc8eba75127f5042fc1bfd17c8833c15d7",
+      "url": "https://docs.renovatebot.com/renovate-schema.json"
+    },
+    {
+      "digest": "f1d4bb4ef6e576e64dab0bdee763241a5d8a89f523a94f2fd9f28eeb43b76095",
+      "url": "https://cdn.jsdelivr.net/gh/roadrunner-server/roadrunner@latest/schemas/config/2.0.schema.json"
+    },
+    {
+      "digest": "167e1be7270350449dc207438d445ca66f10e81421f385ab7151d0b9b59ffadb",
+      "url": "https://json.schemastore.org/rustfmt.json"
+    },
+    {
+      "digest": "698efb86af188602b02db3b8e55071f1b68e067637d898b0e4cf7fb732343925",
+      "url": "https://json.schemastore.org/rust-toolchain.json"
+    },
+    {
+      "digest": "a3d59a00b10af4308db8d945d081da70b7ba8028949350ef5d81d72edadec15e",
+      "url": "https://raw.githubusercontent.com/sapphiredev/cli/main/templates/schemas/.sapphirerc.scheme.json"
+    },
+    {
+      "digest": "788163505630723337f3a8a03a2f678b0eaa06c21ac372adb136f70216c52928",
+      "url": "https://json.schemastore.org/sarif-1.0.0.json"
+    },
+    {
+      "digest": "03279f03cf6f2c2b6c3f136b2f03dd5a8f43ea91deaa9c61b12e9e34f9bd01e2",
+      "url": "https://json.schemastore.org/sarif-2.0.0.json"
+    },
+    {
+      "digest": "20fe0f3cd04617ca69905279a671c94769e795a23215b2b3c32632df331b91fe",
+      "url": "https://json.schemastore.org/sarif-2.1.0-rtm.2.json"
+    },
+    {
+      "digest": "8a85c5e418ccd7f0d70f468e27422dbb8d736e909315a4936eb63f5485afef96",
+      "url": "https://json.schemastore.org/sarif-external-property-file-2.1.0-rtm.2.json"
+    },
+    {
+      "digest": "04387bf0380f4e00dfba89de2be67b2b2a2c22d4700f7130e3ca973577d7f601",
+      "url": "https://json.schemastore.org/sarif-2.1.0-rtm.3.json"
+    },
+    {
+      "digest": "a05ed49904025a479ef9a0cb4b0a99494a63cc53864b7bfccf2068f90bd0d986",
+      "url": "https://json.schemastore.org/sarif-external-property-file-2.1.0-rtm.3.json"
+    },
+    {
+      "digest": "8f0bd2c03de187df1023bf87fabc8dad68c7d86589eee2a5097c7f7bc5a32596",
+      "url": "https://json.schemastore.org/sarif-2.1.0-rtm.4.json"
+    },
+    {
+      "digest": "7a6d61762dc48f1d8b5af3ef4d9c17077f4143795cec3dbf7755749d1fb052d9",
+      "url": "https://json.schemastore.org/sarif-external-property-file-2.1.0-rtm.4.json"
+    },
+    {
+      "digest": "ae3bdde62ed05165daa05f372dd5ddcb2896af413236571fa3dddcdb68f6d826",
+      "url": "https://json.schemastore.org/sarif-2.1.0-rtm.5.json"
+    },
+    {
+      "digest": "ff27f116bc7c9f1306784462912ccda54a67ac4ad46295d45bdb8cda8d70b9cf",
+      "url": "https://json.schemastore.org/sarif-external-property-file-2.1.0-rtm.5.json"
+    },
+    {
+      "digest": "03b3c591cf1a1a87c5e29119785ec9671e07a38f5f5a761d2deeea0e07faa738",
+      "url": "https://json.schemastore.org/sarif-2.1.0.json"
+    },
+    {
+      "digest": "e800b448020b368c29f3cae25b9c906b1b2503e01688725b13a197103bf39365",
+      "url": "https://json.schemastore.org/sarif-external-property-file-2.1.0.json"
+    },
+    {
+      "digest": "2bd5c5132d8421e80f02e37a7bba9cb5b89e203e1205d94480935056dedb7a9d",
+      "url": "https://json.schemastore.org/schema-catalog.json"
+    },
+    {
+      "digest": "07130ef279f295d8bd8f7bc6f9a587cb80225394ee141e0d907f4a78a6529915",
+      "url": "https://json.schemastore.org/schema-org-action.json"
+    },
+    {
+      "digest": "25d1764bb3a007c6bb1cbfaa3dae2632f6a9812127b405a60f65da956b10ab1b",
+      "url": "https://json.schemastore.org/schema-org-contact-point.json"
+    },
+    {
+      "digest": "d6dd09ce01c8f1ae43709318794ee561c8b25f841b482b2dfb4787fcdeda6784",
+      "url": "https://json.schemastore.org/schema-org-place.json"
+    },
+    {
+      "digest": "0e3b25a0a1965098c09602d295e0aa6c8d7ec913798926d16b8693162d9ca9c9",
+      "url": "https://json.schemastore.org/schema-org-thing.json"
+    },
+    {
+      "digest": "d5e378b689b839fe22f9fdc03a79d32f29fb146affe18981d806ef5ecb87a515",
+      "url": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json"
+    },
+    {
+      "digest": "63c1fc1adafdc3cd096bbcad462694ee276b4d0bbeb6860e0713a7d4135c75c6",
+      "url": "https://json.schemastore.org/semantic-release.json"
+    },
+    {
+      "digest": "e3a3e4e8f0d184018f5cc948c2e09f131ff99eea6e8c36b25f217689aab9facf",
+      "url": "https://json.schemastore.org/semgrep.json"
+    },
+    {
+      "digest": "50cebce39980a5272059d940c9bc4d1c2bc65b4ea4842d52479a15a7db1a26fd",
+      "url": "https://json.schemastore.org/settings.job.json"
+    },
+    {
+      "digest": "94ac738ac303e26d59448c3ce524439e0fc32d5e2e02c17f641dc22d2f9bdd73",
+      "url": "https://raw.githubusercontent.com/qualisys/qualisys-schemas/master/paf-module.schema.json"
+    },
+    {
+      "digest": "9eeffae65a5855247b59e5e4a30a40c46dea2710bc361fa547ad8b15a044547f",
+      "url": "https://raw.githubusercontent.com/hardisgroupcom/sfdx-hardis/main/config/sfdx-hardis.jsonschema.json"
+    },
+    {
+      "digest": "ded5e93a6e66059a65df4391a9f27518836308da093fd37da86d0f50df9b6419",
+      "url": "https://json.schemastore.org/size-limit.json"
+    },
+    {
+      "digest": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "url": "https://raw.githubusercontent.com/blackbaud/skyux-config/master/skyuxconfig-schema.json"
+    },
+    {
+      "digest": "f669cf7fc0d7664f0498f41ee3a520853789760d5bfbb3f6165d2a0c192b967a",
+      "url": "https://raw.githubusercontent.com/snapcore/snapcraft/master/schema/snapcraft.json"
+    },
+    {
+      "digest": "9d5f94021e21c9e5bdc26f74ae349dfc63d697f3ec42a3818dd06f21eab19f29",
+      "url": "https://json.schemastore.org/solidaritySchema.json"
+    },
+    {
+      "digest": "2b46738a43661b381ddbc00ab9dcd33695dc7ebee4a3c77fc5f7ed8dbfb1c843",
+      "url": "https://json.schemastore.org/solution-filter.json"
+    },
+    {
+      "digest": "0df5cd4a683ad696d3ddae02f643a86aa0ca3feff0a4ef552f70b2de43f2bb7a",
+      "url": "https://json.schemastore.org/sourcemap-v3.json"
+    },
+    {
+      "digest": "011d3cbff29356e13f5d391a243483a2031262bf42370b656c1eefefa79815e8",
+      "url": "https://json.schemastore.org/specif-1.1.json"
+    },
+    {
+      "digest": "594e238f6d65d7938743045b503ac3982564151b78f100023555d8e4d300ce89",
+      "url": "https://json.schemastore.org/sponge-mixins.json"
+    },
+    {
+      "digest": "98f68bfafb6646c5f2ae4bbd39a1f702b661e66a5cf80449b6e2037357393894",
+      "url": "https://json.schemastore.org/sprite.json"
+    },
+    {
+      "digest": "0e0688bf346b5f7b1fdc0d2fdb26c2153864d0f55ef3e4732929a62f1448ef25",
+      "url": "https://json.schemastore.org/staticwebapp.config.json"
+    },
+    {
+      "digest": "8f8cfb50e04c80b3388353963541b7fce6317216ca65d1afd7256e939abb93c4",
+      "url": "https://json.schemastore.org/swa-cli.config.json"
+    },
+    {
+      "digest": "9c8df919a32823cc9065276e580445dfa39d3a2c4f8215d9e98af3ca21d709c5",
+      "url": "https://json.schemastore.org/stale.json"
+    },
+    {
+      "digest": "cc3c5851903cbf3fa94f16e5c19125e9291f77505e18638260e3e993320e8013",
+      "url": "https://starship.rs/config-schema.json"
+    },
+    {
+      "digest": "c5d51704b43fcd7cfffcc2a8d340c2e3a2e0df5afaaf0de40bec1df2d605ce59",
+      "url": "https://raw.githubusercontent.com/Konafets/statamic-blueprint-validation/main/statamic.blueprint.schema.json"
+    },
+    {
+      "digest": "dc9d37005485e9ce98294c17360289ff294e5e329ffa885cfe215cd9b18ffd44",
+      "url": "https://raw.githubusercontent.com/stripe/stripe-apps/main/schema/stripe-app.schema.json"
+    },
+    {
+      "digest": "8d937e2d9fd1333a341b80f46882d67c29318bf25ccacdbf0aaa86fabf76e8da",
+      "url": "https://raw.githubusercontent.com/stryker-mutator/stryker/master/packages/api/schema/stryker-core.json"
+    },
+    {
+      "digest": "50c3aebac3f8c221dfdc38ed28af97702dd5989a47154409dcbd3a032d0e3588",
+      "url": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json"
+    },
+    {
+      "digest": "d61fa1229481e105ea3a729acaaa375300196286971b725bda74cb4d1ecf5dff",
+      "url": "https://json.schemastore.org/stylelintrc.json"
+    },
+    {
+      "digest": "7910db3770020aa3d5fbccb2ee23dbad793720f836f89ead0e43ec526f1040e5",
+      "url": "https://raw.githubusercontent.com/SymphonyPlatformSolutions/symphony-wdk/master/workflow-language/src/main/resources/swadl-schema-1.0.json"
+    },
+    {
+      "digest": "c67c4c55bc6ff3e57b7c971343f8f334da9293d04cdb57d02a07377350828ac5",
+      "url": "https://json.schemastore.org/swagger-2.0.json"
+    },
+    {
+      "digest": "feeb6f4fff4c8037077cf4146f9da8fc049c8518e491eab2716b808bf201db71",
+      "url": "https://raw.githubusercontent.com/thoughtworks/talisman/main/examples/schema-store-talismanrc.json"
+    },
+    {
+      "digest": "cb9e00edc97d88855af737fa0518dd7de912cca0540a3fe28272ba06a2f1b58f",
+      "url": "https://json.schemastore.org/taurus.json"
+    },
+    {
+      "digest": "613d3cc02c41ad1ebffb6f256c92d657ecb06a43d863f7a7bbc20035248baf81",
+      "url": "https://json.schemastore.org/template.json"
+    },
+    {
+      "digest": "c9b9108028122b29aa8add0a29671fad2ebd2d95c556d6f414ec19fa780c1b1e",
+      "url": "https://json.schemastore.org/templatesources.json"
+    },
+    {
+      "digest": "7c7ae7f567b21c3fc7741b1466d70fafef9343d83192a7531ae990ebbe4e5669",
+      "url": "https://raw.githubusercontent.com/kevgo/tikibase/main/doc/tikibase.schema.json"
+    },
+    {
+      "digest": "0a0ea5ecd2f57f5a49c30605dff1fe3fc25367c18966e5c6d4831748df3ed70e",
+      "url": "https://schemas.wp.org/trunk/theme.json"
+    },
+    {
+      "digest": "827fabce8a26aefe88c43039d9b1d50c574e2cf52892a29ea212d6ce3674f8fd",
+      "url": "https://json.schemastore.org/tizen_workspace.json"
+    },
+    {
+      "digest": "4cea2089894e183a1545a9d99efbc4074161bd8aabd81794f739977d681e26b1",
+      "url": "https://raw.githubusercontent.com/Septh/tmlanguage/master/tmLanguage.schema.json"
+    },
+    {
+      "digest": "217e888c97c58cc1dd710b8c47af6d4227c1a0888a194c19ecaaeec57593930a",
+      "url": "https://json.schemastore.org/testenvironments.json"
+    },
+    {
+      "digest": "21eaccace7da1b4bcfee23109d31af4f79cb920f16a093ce74eb4c8e2992a5a2",
+      "url": "https://turborepo.org/schema.json"
+    },
+    {
+      "digest": "ecdd229272aa290b2019c9b909695d53d397ea6c474491b8ad141b9df5a6b0e1",
+      "url": "https://json.schemastore.org/travis.json"
+    },
+    {
+      "digest": "13643297afdd75151f02159749861f8cc3e2d858299255ffdb439a45888ab398",
+      "url": "https://json.schemastore.org/traefik-v2.json"
+    },
+    {
+      "digest": "f569f308d19b9196b8fc19a4882c1af8b066b8b4bfaf04532a9c2188a990e011",
+      "url": "https://json.schemastore.org/traefik-v2-file-provider.json"
+    },
+    {
+      "digest": "3a4565928fd635ffc602ced494e339423aeb705649267feff2e32e5cfd2085d8",
+      "url": "https://static.trunk.io/pub/trunk-yaml-schema.json"
+    },
+    {
+      "digest": "f4f4855c7d641a44959fe4459cc98fb1556d801e9f78ed4ad2d4882531cadb1e",
+      "url": "https://json.schemastore.org/tsconfig.json"
+    },
+    {
+      "digest": "5bae92f8c448701498de69a76ed4e49dd8272881175c39e2c5a1d626b1ce9571",
+      "url": "https://json.schemastore.org/tsd.json"
+    },
+    {
+      "digest": "c972e506e565ee48cc451da7ba72d67d33338b20bb3d670e209edc4663ad6a90",
+      "url": "https://json.schemastore.org/tsdrc.json"
+    },
+    {
+      "digest": "f6244a87588ed4538348cc3ef847fe7678e6f014b48f3cd4828ee82e83894bac",
+      "url": "https://json.schemastore.org/ts-force-config.json"
+    },
+    {
+      "digest": "b817333be73e31f2da9774d2fe2f50dd51dda791f8761f4f11b67ff0babcf77e",
+      "url": "https://json.schemastore.org/tslint.json"
+    },
+    {
+      "digest": "1aec2e626de12bce0f714d5ed1447567e04dce5cd39a6f58cc66a682cab4ddab",
+      "url": "https://raw.githubusercontent.com/spectral-discord/TSON/main/schema/tson.json"
+    },
+    {
+      "digest": "47042aeb108f38c95b1b17566e3b5476cfc937fc3dd5b9d037f3b2f53217d5fc",
+      "url": "https://json.schemastore.org/typewiz.json"
+    },
+    {
+      "digest": "c3a941f0ea3f82eaae4e39d3734fea5082bf6eef08aad21454b125200a6e2829",
+      "url": "https://json.schemastore.org/typings.json"
+    },
+    {
+      "digest": "015f1cd6d5d167abe4d450f03b0df50f511cc7725c36892ee41cb0c3e8edbff4",
+      "url": "https://json.schemastore.org/typingsrc.json"
+    },
+    {
+      "digest": "85602d887e628a92fa1b2d8eaf5a9da559c2e1d48336aa2a91fffb8ab326a172",
+      "url": "https://json.schemastore.org/ubuntu-server-autoinstall.json"
+    },
+    {
+      "digest": "aa66422447c8688f8451a37c2d38d88aa70646212ce6b92d819d749d9106579c",
+      "url": "https://json.schemastore.org/up.json"
+    },
+    {
+      "digest": "bbe0fa68999f133d0a7fbf08411ea7434e767bc2736401d09c182c25fa5622be",
+      "url": "https://raw.githubusercontent.com/SAP/ui5-manifest/master/schema.json"
+    },
+    {
+      "digest": "a586d5f1f98954f5227a2488437503c9f54dc97d28262322756058f09fa28543",
+      "url": "https://sap.github.io/ui5-tooling/schema/ui5.yaml.json"
+    },
+    {
+      "digest": "56aae4d30f24bc8f7b00ff3f72093152db12d450136772b59bc712518e15c3d3",
+      "url": "https://json.schemastore.org/utam-page-object.json"
+    },
+    {
+      "digest": "809dca64d7433b8bf355a2d075eb29fa88f0e0e4db7a0b59f39760ed83d23809",
+      "url": "https://json.schemastore.org/vega.json"
+    },
+    {
+      "digest": "7448ae04b45c43a11d642d4293c17542a956dcec46c85185b8c906533b3d8ab5",
+      "url": "https://json.schemastore.org/vega-lite.json"
+    },
+    {
+      "digest": "9dca61852f0d6b5dc419c45367fe9522f3882ce26afc2771b3f2fe5c9e5130c8",
+      "url": "https://github.com/go-vela/types/releases/latest/download/schema.json"
+    },
+    {
+      "digest": "6dbb9bbd9b78db86bd97646971f30daebc09381259575c123a70c776bf9170fc",
+      "url": "https://json.schemastore.org/venvironment-schema.json"
+    },
+    {
+      "digest": "155b85c39ec68e8eea2d11e0d1c99826a7580c7485de56a3543419de2ee25dd5",
+      "url": "https://json.schemastore.org/venvironment-basic-schema.json"
+    },
+    {
+      "digest": "25f0403f157d30b115b0ed27b172a74fecfc395566f8737536b3cc3aceca59f9",
+      "url": "https://raw.githubusercontent.com/dotnet/Nerdbank.GitVersioning/master/src/NerdBank.GitVersioning/version.schema.json"
+    },
+    {
+      "digest": "c0a1a4a22464786435d9a3f0e05a69d2d806fdd9a76d7991567d9b849b023de1",
+      "url": "https://json.schemastore.org/vim-addon-info.json"
+    },
+    {
+      "digest": "5e38e21457d94c0f4bad2414a2332d1d1e3489fac5c91a6590389f00f8082082",
+      "url": "https://json.schemastore.org/vsls.json"
+    },
+    {
+      "digest": "bad7f8ce5ae99a4265d1c8793fd1e3e6e1af42f4854bd8605388214c8dd65072",
+      "url": "https://json.schemastore.org/vs-2017.3.host.json"
+    },
+    {
+      "digest": "781a5e7cc0799c1372d128094d0b04a08a417abecfd417578cc6e784620be23c",
+      "url": "https://json.schemastore.org/vs-nesting.json"
+    },
+    {
+      "digest": "1a317b32fd103c8ce940b05ccda109f7015bc28ba0100f1b25a271692cce52fb",
+      "url": "https://json.schemastore.org/vsconfig.json"
+    },
+    {
+      "digest": "2471bde261ae268af83711cfc26ba5ff58a788e3294db0bb720928289648bb76",
+      "url": "https://json.schemastore.org/vsext.json"
+    },
+    {
+      "digest": "f3833c0c45c1ff2a6b06855d2aa4a1a5f593261aaf11ac22d48230d20e57cf93",
+      "url": "https://json.schemastore.org/vsix-publish.json"
+    },
+    {
+      "digest": "8b7020e8dd16b20df7379307ecd4bdb985d668bbc0011995f41a921aad163e9e",
+      "url": "https://json.schemastore.org/vss-extension.json"
+    },
+    {
+      "digest": "5391ee72c4d0de23c684adece77228d36ccaf7062459795a499e2607af2603c6",
+      "url": "https://raw.githubusercontent.com/chris48s/v8r/main/config-schema.json"
+    },
+    {
+      "digest": "c8cc5f2af6d5c52ba57267856753f8a69969ef89667bee842870d912aa9133d9",
+      "url": "https://webcomponents.dev/assets2/schemas/studio.config.json"
+    },
+    {
+      "digest": "4c41bd7e602b926a82dae6be9734453b064ef229d9907bd7aa9d609c2182df2b",
+      "url": "https://json.schemastore.org/webextension.json"
+    },
+    {
+      "digest": "07c485abef794d90a8bd785c15f3325e80640d519fd713f3433d71066ea43c93",
+      "url": "https://json.schemastore.org/web-manifest-combined.json"
+    },
+    {
+      "digest": "d52d9b0fae37f50318e4142ce0d668f5cf8fa621ecc3bf2dc56f2b35e911e292",
+      "url": "https://json.schemastore.org/webjobs-list.json"
+    },
+    {
+      "digest": "29439473e28283b777b6ddf42f969e0c7aa1d196cc1e2f621db9c8b3b09f96bd",
+      "url": "https://json.schemastore.org/webjob-publish-settings.json"
+    },
+    {
+      "digest": "6b3f50da0d62f2d9301372273aec58e4d5d414431c66f52a414ed966a96031a5",
+      "url": "https://json.schemastore.org/web-types.json"
+    },
+    {
+      "digest": "d6fbb9e67e38f237f09856596817e568fb17a936019a90481e5b5bc00c8b082b",
+      "url": "https://json-stat.org/format/schema/2.0/"
+    },
+    {
+      "digest": "910253b1cb410c7a41155320a085a34f097decae837275de32eb0c2a82a9363b",
+      "url": "https://raw.githubusercontent.com/linuxgurugamer/KSPAddonVersionChecker/master/KSP-AVC.schema.json"
+    },
+    {
+      "digest": "3e10c6eda82ddb4c9f093bb032bbb132c80bdf3cc8e9f690c9bae29665872dab",
+      "url": "https://raw.githubusercontent.com/KSP-CKAN/CKAN/master/CKAN.schema"
+    },
+    {
+      "digest": "e1489d0b4755f02793302591d3fcb8f07b6893a82a94f24895f8e4edf11b82e2",
+      "url": "https://json-schema.org/draft-04/schema"
+    },
+    {
+      "digest": "692e1d165e47afcb5f11b2ce1c639635ffa834035d6ecb6bcf3087481dae8404",
+      "url": "https://json-schema.org/draft-07/schema"
+    },
+    {
+      "digest": "7b761b3e121f0a0ca1ea2a0b8e2cc856bcf801604b8268d71bacaa202bc0c13b",
+      "url": "https://json-schema.org/draft/2019-09/schema"
+    },
+    {
+      "digest": "41da76f5afb7ce062d248f762463a92f7ca47e4e0f905b224ba6afeef91ded0f",
+      "url": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "digest": "4fb644e9010ab07df6e244907a263e62186bb9fba13996caffe291a3b27c390f",
+      "url": "https://json.schemastore.org/xunit.runner.schema.json"
+    },
+    {
+      "digest": "db91c3c2b9543d8bc546189d16c371bd14dc6c457d72b6ae049ff50a795765e6",
+      "url": "https://json.schemastore.org/servicehub.service.schema.json"
+    },
+    {
+      "digest": "d8bfd257d06f5e3ff34a94681b9c21898cc8192fd5fcbcb5d66d92814f6f2010",
+      "url": "https://json.schemastore.org/servicehub.config.schema.json"
+    },
+    {
+      "digest": "2a23944c67616d445125a5d0ad1178466ecad62c0254e36fb4d88f4b34223f54",
+      "url": "https://json.schemastore.org/cryproj.52.schema.json"
+    },
+    {
+      "digest": "25dc406130b0038dd13a0154494f713257dd32b610804ca10ba7319e3b7b0761",
+      "url": "https://json.schemastore.org/cryproj.53.schema.json"
+    },
+    {
+      "digest": "b59cee1c383a30eff41d602fa261f347c039c5b4434c8213a9248725ab7a6a17",
+      "url": "https://json.schemastore.org/cryproj.54.schema.json"
+    },
+    {
+      "digest": "fada6ca8dae9a0d5ed9d7f4e8252247773a2b2556c82d09e3f9eaf39d902ac7d",
+      "url": "https://json.schemastore.org/cryproj.55.schema.json"
+    },
+    {
+      "digest": "5e993453a6b571c1b03a4a98e9665cb0cc154ebcea3cd6ffa472413573fc8a0e",
+      "url": "https://json.schemastore.org/cryproj.dev.schema.json"
+    },
+    {
+      "digest": "086ad26c82088200b419d4db2e12c95fcf4ebb7fed6ee5fcf8a166e57b84c30b",
+      "url": "https://json.schemastore.org/cryproj.json"
+    },
+    {
+      "digest": "59165c84af0a4197dbd60a903ea1953a56dc1dbf0e7898625a7d84f36f71616e",
+      "url": "https://typedoc.org/schema.json"
+    },
+    {
+      "digest": "b490a9cdeee39e69705e3d5396da63272b5cd67f5a77779dfd27c48559b841b8",
+      "url": "https://json.schemastore.org/tmuxinator.json"
+    },
+    {
+      "digest": "3f15a27e862de86729b58278e5b8b2284108dc7c00aef201ca3411877ce4e2e1",
+      "url": "https://json.schemastore.org/huskyrc.json"
+    },
+    {
+      "digest": "fde9d2c40821fc6555c328128ab8ce751cc7a93d15aa3ff6500049c02df1f8c0",
+      "url": "https://json.schemastore.org/lintstagedrc.schema.json"
+    },
+    {
+      "digest": "16baff7ba58aaf8572f9660bc6448a959a79b7522e494482fe2114d5f95046c9",
+      "url": "https://json.schemastore.org/mta.json"
+    },
+    {
+      "digest": "70a8039209aa50c244d5148536680fcf63fa4749113ffdedd54a908d38e4e4d0",
+      "url": "https://json.schemastore.org/mtad.json"
+    },
+    {
+      "digest": "48e466c28617ca3d836b11ef51071c36660a44e3e0fcd154bc34b21e42f6c905",
+      "url": "https://motif.land/api/motif.schema.json"
+    },
+    {
+      "digest": "25172e8a7a88625336be72f92f5c5f43e7039daa5224e195c5fb3657bbf077ed",
+      "url": "https://json.schemastore.org/mtaext.json"
+    },
+    {
+      "digest": "053974c3dfd6a3dabf9376864b9f6441cf361c3f0785e764c4eb69fff1ac080c",
+      "url": "https://json.schemastore.org/xs-app.json"
+    },
+    {
+      "digest": "9bba64f5c9cc7c00466fcd12cc00ccf60eab589b0c3300c4191a3823ac2f799b",
+      "url": "https://json.schemastore.org/opspec-io-0.1.7.json"
+    },
+    {
+      "digest": "338004a2766907f4399d1ba343867d666a5240dc62a84a8df6eb46f597712ab3",
+      "url": "https://json.schemastore.org/hemtt-0.6.2.json"
+    },
+    {
+      "digest": "6cb9699ebfd45cec96a04dea8c5ed879e7545a0519ad26e290803842e150acb0",
+      "url": "https://json.schemastore.org/now.json"
+    },
+    {
+      "digest": "dd374e27891ce6a481efa864ab5b64d455c123107444d8d9710e29876f2db5e2",
+      "url": "https://raw.githubusercontent.com/aws-quickstart/taskcat/master/taskcat/cfg/config_schema.json"
+    },
+    {
+      "digest": "b45a7e37e5eb5b7c6c4abd50bee0d9d477a425d6de40e82ffd986fa0893c79f3",
+      "url": "https://json.schemastore.org/BizTalkServerApplicationSchema.json"
+    },
+    {
+      "digest": "7af33ce140e36177284e82fb355a9cac4e5c54e7a9efc1a395733a124481feeb",
+      "url": "https://json.schemastore.org/httpmockrc.json"
+    },
+    {
+      "digest": "1c30e9661d3d159a91b6184c5368d6b6d0732744be753dc6d5fa3d42c62ca4cb",
+      "url": "https://raw.githubusercontent.com/Neotys-Labs/neoload-cli/master/resources/as-code.latest.schema.json"
+    },
+    {
+      "digest": "7f3382b17e221375f91fb1eebe31ec1cab60ee659ca99fbc8968096a47b84774",
+      "url": "https://raw.githubusercontent.com/release-drafter/release-drafter/master/schema.json"
+    },
+    {
+      "digest": "4726a4ee5a6d451af8ed8fb4df88fe292830a550a049e8bd4764c29265ed0b64",
+      "url": "https://json.schemastore.org/zuul.json"
+    },
+    {
+      "digest": "54277cde170757d73f060f0b0b4c2bbf9f2ff8e8ead7773458cd3e262f33f0c5",
+      "url": "https://raw.githubusercontent.com/microsoft/Briefcase/master/mlbriefcase/briefcase-schema.json"
+    },
+    {
+      "digest": "589c7a12138f36b01e491cb6b6eb74e9aeccf34eb4a704d0fa1fd63a69ec4800",
+      "url": "https://raw.githubusercontent.com/ahmadnassri/har-schema/master/lib/har.json"
+    },
+    {
+      "digest": "b8b7f6dd8f588c38a7d5aed2c6521ef1e7926a0a9656e3dac20d2067cb50abbf",
+      "url": "https://json.schemastore.org/jsdoc-1.0.0.json"
+    },
+    {
+      "digest": "5119cae29ced22528b1113d1555a1140dbde3dd11e73315ac9c9a74c4b6261e8",
+      "url": "https://raw.githubusercontent.com/ray-project/ray/master/python/ray/autoscaler/ray-schema.json"
+    },
+    {
+      "digest": "2141fcb94f69d8b5b48db6af19c94e27089777de286e0e68f6aea38769257c40",
+      "url": "https://raw.githubusercontent.com/hadolint/hadolint/master/contrib/hadolint.json"
+    },
+    {
+      "digest": "fb8190507f6c45f928d81b565c37bf0dbc14eefc34d5ceb028483811cd46d9cd",
+      "url": "https://json.schemastore.org/helmfile.json"
+    },
+    {
+      "digest": "3a834cf04016502625822c6a1e959d635cef510fb544f6f53087a198926a1efb",
+      "url": "https://json.schemastore.org/container-structure-test.json"
+    },
+    {
+      "digest": "64fb7f2aefcf6c202d1764b877d2cb81880270ad31671dc967528355045c2bec",
+      "url": "https://github.com/fbecart/zinoma/releases/latest/download/zinoma-schema.json"
+    },
+    {
+      "digest": "26abf83a1e7191ac9a283845d21df16651dcbf6b68b6cecdf2de064e8b035133",
+      "url": "https://json.schemastore.org/winget-pkgs-singleton-1.0.0.json"
+    },
+    {
+      "digest": "117bcd6363187dc472c41bd3f70eed505610c6b0bf7cd9372656868ab7151995",
+      "url": "https://json.schemastore.org/winget-pkgs-installer-1.0.0.json"
+    },
+    {
+      "digest": "8bed84ce03b201bc87ebf869904498db06553823f72af4e33728abba34defbbf",
+      "url": "https://json.schemastore.org/winget-pkgs-locale-1.0.0.json"
+    },
+    {
+      "digest": "9cb5b58bf80fa3939606616d897965fb30c2470db976a9997aa4a1c1f253bf15",
+      "url": "https://json.schemastore.org/commitlintrc.json"
+    },
+    {
+      "digest": "cf4a057373863359246e8118d7ad9f76df372b0e3f1c0ca9baa29d7749f31103",
+      "url": "https://uniswap.org/tokenlist.schema.json"
+    },
+    {
+      "digest": "3a1edd1f5967150b38499b838b19e1be8400ee016bb5689b59fcebf998a37766",
+      "url": "https://json.schemastore.org/yamllint.json"
+    },
+    {
+      "digest": "8a983791f9a485d68db910ec850e0b538e829f955d76a29382db19c0c393e39a",
+      "url": "https://raw.githubusercontent.com/nagyesta/yippee-ki-json/main/schema/yippee-ki-json_config_schema.json"
+    },
+    {
+      "digest": "9f3896f680fed4a32609da4c2c003c70d5609f3666a9733744578e0239879533",
+      "url": "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"
+    },
+    {
+      "digest": "703bacad3a4416e7c3a39da1030d1742421bf7f80b495952320504f36cbc56fb",
+      "url": "https://json.schemastore.org/devinit.schema-6.0.json"
+    },
+    {
+      "digest": "6a59bf417c3d67467b380a2cf78407b4e36151fc172c06f3923e15e0af8a6034",
+      "url": "https://json.schemastore.org/tsoa.json"
+    },
+    {
+      "digest": "344052f3e4557725cb267f95a24227cc3eff6337d542296e8e6c17be6a5b23ca",
+      "url": "https://json.schemastore.org/apibuilder.json"
+    },
+    {
+      "digest": "a9d3f7b5917c926b07f98183b8025387d12761825e788458a8cc4523634f41c8",
+      "url": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-5.json"
+    },
+    {
+      "digest": "1598b51d3018e83f5ad199b03332d2d5729d63ae678a259d3814a0b6aaeef0c1",
+      "url": "https://docs.gradle.com/build-cache-node/schema/build-cache-node-config-schema-5.json"
+    },
+    {
+      "digest": "34147b9e9d5b6c41dcd30a058e562f8afffc4b258fea45f2870900a3f51a247d",
+      "url": "https://yarnpkg.com/configuration/yarnrc.json"
+    },
+    {
+      "digest": "cfe6590ab8c7f19daf00214b34bc1b6edbe335fe72afcc53ad69f08e8955b985",
+      "url": "https://beaujs.com/schema.json"
+    },
+    {
+      "digest": "2fa19f3dd0602de08639fea487216fd141d0dad12ff8b4fb5f0b2868e0062eec",
+      "url": "https://json.schemastore.org/bettercodehub.json"
+    },
+    {
+      "digest": "da33305611dd99d6953d1094bf4f6112b393c04744adf3f353866a4e26db6fd8",
+      "url": "https://json.schemastore.org/comet.json"
+    },
+    {
+      "digest": "ae78e18f0d881868772f6356a72a869818d86469f36ef7ed9680d06eee76665e",
+      "url": "https://json.schemastore.org/swcrc.json"
+    },
+    {
+      "digest": "96376da5c5f401c2c6047abcc84ac7f0c95776d2a9d67451f334664d4ce1009d",
+      "url": "https://json.schemastore.org/openweather.roadrisk.json"
+    },
+    {
+      "digest": "9a293ee49ab6469c755b2ecbf42607047b3a40e931e4020e49819a55a6c1a2eb",
+      "url": "https://json.schemastore.org/openweather.current.json"
+    },
+    {
+      "digest": "22f5356a536de572d2cb611bcee6a643c90a657d68271975f9e47518a1f8cbe0",
+      "url": "https://json.schemastore.org/jsone.json"
+    },
+    {
+      "digest": "ae3859fb828fb8eb1f97335803b53ab085dd19bf2dbab365988eb3fd5440fa09",
+      "url": "https://json.schemastore.org/taskfile.json"
+    },
+    {
+      "digest": "5e71f2d9b90d2970ce0ff495c78a1e295c914cac49b2cac3ac0995a950b9a28c",
+      "url": "https://raw.githubusercontent.com/srl-labs/containerlab/main/schemas/clab.schema.json"
+    },
+    {
+      "digest": "741006785814868824e7eb96b8d97ebbd6d2d37e826951dda011c036c966bc78",
+      "url": "https://raw.githubusercontent.com/arvinxx/components/master/packages/journey-map/schema/journey-map.schema.json"
+    },
+    {
+      "digest": "4e5d8bb10a09b06b33210be597ba83c9c0e88a62a60d8c2ec47ef04a319b34f4",
+      "url": "https://raw.githubusercontent.com/dcermak/vscode-rke-cluster-config/main/schemas/cluster.yml.json"
+    },
+    {
+      "digest": "40e07e04f020dd7cf692c2bf15dc711dbd3b6360585a87aacb845c04c95f4ca7",
+      "url": "https://raw.githubusercontent.com/dcermak/vscode-rke-cluster-config/main/schemas/cluster.json"
+    },
+    {
+      "digest": "cfeda77bd67693476b3a91317b0965a4020e919904423ac6d3201e112b22b8a2",
+      "url": "https://json.schemastore.org/liquibase-3.2.json"
+    },
+    {
+      "digest": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+      "url": "https://www.liquibase.org/json/schema/liquibase-flow-file-latest.json"
+    },
+    {
+      "digest": "54b1611ad1ba33a4f8d2891cba5cc2c52ff887dc716a30dba0efce613e817649",
+      "url": "https://raw.githubusercontent.com/Cloud-Pipelines/component_spec_schema/stable/component_spec.json_schema.json"
+    },
+    {
+      "digest": "ebb89e67b3146ca973c35ba15978f60f0e0c36d34923aba8ab19c8cd664fbf7e",
+      "url": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta28.json"
+    },
+    {
+      "digest": "4b30e849ee15e0ba82c33bb7c26dfedcc6f20d9cb79528e8c09ab304f6969ad7",
+      "url": "https://raw.githubusercontent.com/DavidAnson/markdownlint/main/schema/markdownlint-config-schema.json"
+    },
+    {
+      "digest": "bf9eabad9e0c6147982862d4316c1ab3ec24009db2af3de8b62d998e1ccb644f",
+      "url": "https://json.schemastore.org/markdown-lint-check.json"
+    },
+    {
+      "digest": "806d10e19005b99ad8ff9c35713ab2d6eea7cd64d72260d74613faff2339adc8",
+      "url": "https://raw.githubusercontent.com/saucelabs/saucectl/main/api/saucectl.schema.json"
+    },
+    {
+      "digest": "1bf47d1d5327e47453200a722fea9ab57d85ef97bb64f37f8501c9ab6345269c",
+      "url": "https://raw.githubusercontent.com/fujaba/fulibWorkflows/main/schemas/fulibWorkflows.schema.json"
+    },
+    {
+      "digest": "3af69675d87b6a62d24e52a835ee8c54bab445039781a3aa0ab6d35f35a38cbf",
+      "url": "https://raw.githubusercontent.com/woodpecker-ci/woodpecker/master/pipeline/schema/schema.json"
+    },
+    {
+      "digest": "d9a30767470b1457416daf4403319e82467d19a2f5837f0e077cce2e3810a549",
+      "url": "https://s3.eu-central-1.amazonaws.com/files.netin.io/spider-schemas/template.schema.json"
+    },
+    {
+      "digest": "f2a38c68fc3966cc1bc3ad921a4f3d7cce0fce604d9b574c91d0610db9073847",
+      "url": "https://noodl.s3.us-west-1.amazonaws.com/noodl.schema.json"
+    },
+    {
+      "digest": "df8ce670dc99f3f87f2a47b1fd28feb35f3f5b1da1d93a381358cb79d9af5c5e",
+      "url": "https://json.schemastore.org/mboats-config-0.2.json"
+    },
+    {
+      "digest": "5363b126ab58377171f8a6f98a8cafdefba4e76a94a6175217e90b73378e1c66",
+      "url": "https://download.stackhawk.com/hawk/jsonschema/hawkconfig.json"
+    },
+    {
+      "digest": "d6b8a1b9e9d164ed624127458eb841d5ba6342bab329c5b5f45e5130c5539e52",
+      "url": "https://raw.githubusercontent.com/lalcebo/json-schema/master/serverless/reference.json"
+    },
+    {
+      "digest": "59b4c8a7f722e973c75657e0d2c4ae84e55827261cd793b2db0d7e0d6187b2f9",
+      "url": "https://raw.githubusercontent.com/serverlessworkflow/specification/main/schema/workflow.json"
+    },
+    {
+      "digest": "c51c45e9b2676b6af07a6e7fe965365b862e628f6d4088ff05c2e8cc9fa0f88a",
+      "url": "https://raw.githubusercontent.com/shopware/platform/trunk/config-schema.json"
+    },
+    {
+      "digest": "2ceeddd3b04ccf3e8de14e79f14388fc39a9f5e6bba01742c0a491a983e543be",
+      "url": "https://raw.githubusercontent.com/FriendsOfShopware/shopware-cli/main/extension/shopware-extension-schema.json"
+    },
+    {
+      "digest": "cfe0a5f3136d5a8fd8b8aed09c7fb41206b6de6caec1b61374b99365f3b975f1",
+      "url": "https://raw.githubusercontent.com/FriendsOfShopware/shopware-cli/main/shop/shopware-project-schema.json"
+    },
+    {
+      "digest": "ef9e25bcec22695c036d5f46133b71854d95a7ee727f080e8768c0a8b0d57e0f",
+      "url": "https://json.schemastore.org/qodana-1.0.json"
+    },
+    {
+      "digest": "05048576cc067ccef115e0049e435437adc9848a5473ec02a3a8aa25c5de34e8",
+      "url": "https://raw.githubusercontent.com/dotnet/tye/main/src/schema/tye-schema.json"
+    },
+    {
+      "digest": "1875d565cc0323b248c872cd0b33f3f350eae3e71fbd14190745169f853bdfb7",
+      "url": "https://json.schemastore.org/unist.json"
+    },
+    {
+      "digest": "a7ac25a3d9eaca10ed63d605209452817a70087f1991c14f8e89e07c6a808f84",
+      "url": "https://json.schemastore.org/hugo.json"
+    },
+    {
+      "digest": "722302939ad5cb567dce7b12338839834cc1609fd0143b24cb97aaf36ed8cb6d",
+      "url": "https://json.schemastore.org/cheatsheets.json"
+    },
+    {
+      "digest": "ffd1d30e72975bd6f9ba688c95ac32f256925ef043f7ec1815e6804ef97bfb77",
+      "url": "https://json.schemastore.org/deployed.json"
+    },
+    {
+      "digest": "15cb43569f1df66051d054bca702c0b180bdd0fce2674dc5c3e3bccf266df39d",
+      "url": "https://raw.githubusercontent.com/statelyai/xstate/main/packages/core/src/machine.schema.json"
+    },
+    {
+      "digest": "22c105c1972f0c2479b51956bb23df194dfa436a7e7210e54fa883bee9d7b52e",
+      "url": "https://raw.githubusercontent.com/Relativ-IT/Butane-Schemas/Release/Butane-Schema.json"
+    },
+    {
+      "digest": "b6bc0fe12789a297260de1efb6cf39b12886c834aa68577a7c1572fb7b0fb1fe",
+      "url": "https://www.updatecli.io/schema/latest/config.json"
+    },
+    {
+      "digest": "5456d0bdf070d3b654ee6b78c7d807c2663756931cf9f5e50726ed6241535666",
+      "url": "https://geojson.org/schema/GeoJSON.json"
+    },
+    {
+      "digest": "c962cd0482515920f4a4196af36393a6dc9aea5acca517a18a975e5ba46936f8",
+      "url": "https://json.schemastore.org/clang-format.json"
+    },
+    {
+      "digest": "8e0a6ea58cb44555c8170478a490dd118692659de6b08416de4230113695dfea",
+      "url": "https://raw.githubusercontent.com/estuary/flow/master/flow.schema.json"
+    },
+    {
+      "digest": "62a7d4f319e709c79ebca0a5f7e31aa068d39a3272d607caf7d1cc28d70ee5d0",
+      "url": "https://raw.githubusercontent.com/EHfive/v2ray-jsonschema/main/v4-config.schema.json"
+    },
+    {
+      "digest": "101b9ac97c0038bc09edfafeab02c6be254603f42937b07cda64b3c5d6eb8edc",
+      "url": "https://raw.githubusercontent.com/gherking/gherking/master/schema/gherking.schema.json"
+    },
+    {
+      "digest": "bebe3c5cdc638ef4e9acfb6b598a4ff9c99dd2d1da373d76355dc0d9fe031ad6",
+      "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/htp/cics/schemas/json/cicstags.json"
+    },
+    {
+      "digest": "7ec5efb3dc27fb44dcf85b1483b4f606ac6cf37c58aad769d9ecb49b534a2a5c",
+      "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/htp/cics/schemas/json/resourceimport.json"
+    },
+    {
+      "digest": "74833edd4d1e3f77ccbf2e1bead9b3dbd73d77b32857781528c072bf9cee2f58",
+      "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/htp/cics/schemas/json/resourcemodel.json"
+    },
+    {
+      "digest": "3bb51acf0ad346434f2762c5d66268d51cd23b4d723d6c265515a5cfd6e4c01c",
+      "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/htp/cics/schemas/json/resourceoverrides.json"
+    },
+    {
+      "digest": "e165122841d61c9e14c4a6a2ebfa953e4d047ca1ea7e12083f2e3fd731fa2523",
+      "url": "https://raw.githubusercontent.com/candrewlee14/webman/main/schema/pkg_schema.json"
+    },
+    {
+      "digest": "6db9ada68a9016e3e75e0d74578408a4634a06a70467bfd088cc042341b87367",
+      "url": "https://raw.githubusercontent.com/webhintio/hint/main/packages/hint/src/lib/config/config-schema.json"
+    },
+    {
+      "digest": "b76a6041eb290f3f77091243762c29a349bd8bcf344e6953d21a609880ff4e15",
+      "url": "https://json.schemastore.org/ava.json"
+    },
+    {
+      "digest": "711fce4efaf0929aea91bcde702b4347e26dff112069b3e432c43ed60ae0ec23",
+      "url": "https://datahubproject.io/schemas/datahub_ingestion_schema.json"
+    },
+    {
+      "digest": "ca12c398df661a1f6cdc2636a331b27514c336bcd3202dc4343f9fd14819cd13",
+      "url": "https://raw.githubusercontent.com/QualiTorque/torque-vs-code-extensions/master/client/schemas/blueprint-spec2-schema.json"
+    },
+    {
+      "digest": "2d9b0899f4196abfbc61d70683ce6abd2d4f2c28f929ded7820a13c5470a06b5",
+      "url": "https://json.schemastore.org/jscpd.json"
+    },
+    {
+      "digest": "c7b307d3f8fb1efb205d87a4339421aaec12b7ba6d8d5e0fd19621fba3e968f1",
+      "url": "https://json.schemastore.org/pterodactyl.json"
+    },
+    {
+      "digest": "93add4df603f708eb0ef54861ead0a77cbc0b8803bcf74cf4eb6b6b3872fd2ab",
+      "url": "https://json.schemastore.org/hws-config.json"
+    },
+    {
+      "digest": "bf096e0a88c86687c844ec84f69e3c86eb89ceb721ddf3d3e1a41efbc9964519",
+      "url": "https://raw.githubusercontent.com/loft-sh/devspace/main/devspace-schema.json"
+    },
+    {
+      "digest": "f9e51b66c5fb94661e30edccdb7e45cbcc73578555626302a96b90d921a56a02",
+      "url": "https://json.schemastore.org/monika-config-schema.json"
+    },
+    {
+      "digest": "29e524731c85add49aa6856b27c162c9d34b875382beefbd344d0645ab9650b9",
+      "url": "https://json.schemastore.org/nycrc.json"
+    },
+    {
+      "digest": "e5ee46643597cba2e29c08f003073561407925d6aca1e18399019ef6d3f593ba",
+      "url": "https://json.schemastore.org/mongodb-atlas-search-index-definition.json"
+    },
+    {
+      "digest": "0dce23c661b8844d544122d056628cb638a97f94f05a42fb325d699bf28e8d7b",
+      "url": "https://json.schemastore.org/kode-ci-build-1.0.0.json"
+    },
+    {
+      "digest": "d94decad965e8203282b3bd400bf6c9473e35df2fd83ae0e34b6889dfdc8867a",
+      "url": "https://json.schemastore.org/kong_json_schema.json"
+    },
+    {
+      "digest": "7d9d6cc66f81ed54e7bad1536f302089a29480a48d1d815326335c0a338a84d5",
+      "url": "https://json.schemastore.org/embrace-config-schema-1.0.0.json"
+    },
+    {
+      "digest": "f1a2c0dae285bd33152c64b9c4871813fac6917887808e964b6976a87e99cb94",
+      "url": "https://json.schemastore.org/petstore-v1.0.json"
+    },
+    {
+      "digest": "3461d475d7fbbc924bac793114e6323a4fccac7b99fc593abd7560427ed2c5ce",
+      "url": "https://json.schemastore.org/jfrog-pipelines.json"
+    },
+    {
+      "digest": "72ef068f429d10dbd0bf402ddd23ee66208c839ff37440631843d680faf5ba59",
+      "url": "https://docs.strmprivacy.io/jsonschema/BatchJob.json"
+    },
+    {
+      "digest": "cfbe734c69a1567e5a58199fde173b39c17cb91fa0412f29ba9194512db9c5fc",
+      "url": "https://raw.githubusercontent.com/dahag-ag/keycloak-openapi/main/OpenApiDefinitions/keycloak-19.0.0.json"
+    },
+    {
+      "digest": "60fd7c3cbf04f1ed5d35d540563294113c43b9e0d1a52683426e3a08382aead5",
+      "url": "https://raw.githubusercontent.com/hazelops/ize/1.1.5/internal/schema/ize-spec.json"
+    },
+    {
+      "digest": "713ade3161a3aa0ad46b86a16e4e53163d3f050c79147c453b014bb2e0d841e2",
+      "url": "https://upliftci.dev/static/schema.json"
+    }
+  ]
+}
