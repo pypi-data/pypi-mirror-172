@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: infiniaml-idp-client
+Version: 0.0.1
+Summary: InfiniaML Intelligent Document Processing Client
+Requires-Python: >=3.8
+Requires-Dist: typing-extensions (>=4.0.0)
+Requires-Dist: httpx (>=0.21.0)
+Provides-Extra: cli
+Requires-Dist: typer (>=0.6.0) ; extra == 'cli'
+Requires-Dist: datamodel-code-generator (>=0.13.0) ; extra == 'cli'
+Requires-Dist: autoflake (>=1.5.0) ; extra == 'cli'
+Requires-Dist: black (>=22.1.0) ; extra == 'cli'
+
