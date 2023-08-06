@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: onipynbrenderer
+Version: 0.0.1
+Summary: A small python package
+Home-page: https://github.com/divyuk/onipynbrenderer
+Author: divyuk
+Author-email: div14kes@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Provides-Extra: testing
+License-File: LICENSE
+
+# IPYNB renderer python package
