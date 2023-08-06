@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "loniapi"
+version = "0.0.6"
+description = "package to make calls to loni ida"
+authors = ["Hieu Do <hieu.do@sagebionetworks.org>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.22.1"
+pandas = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
