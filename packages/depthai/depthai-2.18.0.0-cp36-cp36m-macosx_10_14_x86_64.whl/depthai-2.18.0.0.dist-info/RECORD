@@ -1,0 +1,9 @@
+depthai.cpython-36m-darwin.so,sha256=9qHlfU9YQSO1t8OhhHVIpEKZu3PxThMlUa7FfzHIYzw,13683936
+depthai/__init__.pyi,sha256=UHorky0hb9tqLBGEO_8e721M55AxJrwjzo73EX_Y9no,161854
+depthai/node.pyi,sha256=3By3-WPTC9PqohQUkKrnJlUu721_Ozy0Fc7njMlBeiA,39308
+depthai/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depthai-2.18.0.0.dist-info/LICENSE,sha256=X-bU7Cqk4igULucQhNHIv-pHQjj-6NSb0Q6MvQtErOE,1068
+depthai-2.18.0.0.dist-info/METADATA,sha256=DCsyA-uUcB8eEYM2inBSv95iMnHD9nKmKtQzHtKGQ6k,8632
+depthai-2.18.0.0.dist-info/WHEEL,sha256=L2ysQRpzaZ_dwmB2jbkklv0iP3gp4u98o7Dm87lh-Xk,111
+depthai-2.18.0.0.dist-info/top_level.txt,sha256=39NG_7OEgvQ5PKU-ilUsp81cr2azecT6E-c1oCTbufM,8
+depthai-2.18.0.0.dist-info/RECORD,,
