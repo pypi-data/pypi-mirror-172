@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: googlesearch.py
+Version: 1.4
+Summary: The search API for Google.
+Author: CJ Praveen
+Author-email: cjpraveen@hotmail.com
+Keywords: googlesearch.py,python google search,google search pypi,google api
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# googlesearch.py 1.4
+The search API for [Google](https://www.google.com).
+
+```
+pip install googlesearch.py
+```
+
+## Example
+
+```py
+from gsearchlib import Search
+
+result = Search("what is programming language")
+
+print(result)
+
+# output
+# [
+#     {
+#         "title": "Programming language - Wikipedia",
+#         "url": "https://en.wikipedia.org/wiki/Programming_language",
+#         "netloc" : "en.wikipedia.org"
+#     }
+# ...
+# ]
+```
+
+## License
+This Python package is distributed under the [Unlicense](https://unlicense.org/)
