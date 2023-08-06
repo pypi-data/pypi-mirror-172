@@ -1,0 +1,5 @@
+allianceauth<4.0.0,>=2.15.1
+graphqlclient
+
+[discordbot]
+allianceauth-discordbot>=3.0.0
