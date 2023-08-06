@@ -1,0 +1,88 @@
+Recent tagged changes as of 2022-10-21T21:54:58.690474-04:00:
+- 0 seconds ago (HEAD -> working, tag: 4.8.2) Daniel Graham
+    416bd7cd 2022-10-21 21:54:58 -0400
+    Tagged version 4.8.2.
+
+- 29 hours ago (tag: 4.8.1) Daniel Graham
+    e3e182ae 2022-10-20 16:53:19 -0400
+    Tagged version 4.8.1.
+
+- 2 days ago (tag: 4.8.0) Daniel Graham
+    7420832f 2022-10-19 13:46:52 -0400
+    Tagged version 4.8.0. Added preserve as an overdue option for
+    repeating tasks.
+
+- 5 days ago (tag: 4.7.17) Daniel Graham
+    475d89a9 2022-10-17 08:03:21 -0400
+    Tagged version 4.7.17.
+
+- 7 days ago (tag: 4.7.16) Daniel Graham
+    90083942 2022-10-14 11:14:51 -0400
+    Tagged version 4.7.16.
+
+- 4 months ago (tag: 4.7.15) Daniel Graham
+    f449fc6d 2022-06-28 12:52:48 -0400
+    Tagged version 4.7.15.
+
+- 4 months ago (tag: 4.7.14) Daniel Graham
+    c47de41b 2022-06-28 12:10:03 -0400
+    Tagged version 4.7.14. Handle missing summaries and UTC datetimes
+    in ics imports.
+
+- 7 months ago (tag: 4.7.13) Daniel Graham
+    13e69aba 2022-03-29 12:12:12 -0400
+    Tagged version 4.7.13. Compress output for current.txt and
+    next.txt to improve display in mobile devices.
+
+- 7 months ago (tag: 4.7.12) Daniel Graham
+    5593f57b 2022-03-26 08:15:09 -0400
+    Tagged version 4.7.12. Made reply and entry areas expandable.
+    README repetition example addition.
+
+- 7 months ago (tag: 4.7.11) Daniel Graham
+    9d551f2b 2022-03-25 10:09:24 -0400
+    Tagged version 4.7.11.
+
+- 7 months ago (tag: 4.7.10) Daniel Graham
+    e3c7b39b 2022-03-21 11:32:08 -0400
+    Tagged version 4.7.10.
+
+- 9 months ago (tag: 4.7.9) Daniel Graham
+    ad32bdfd 2022-01-11 18:35:40 -0500
+    Tagged version 4.7.9.
+
+- 1 year, 2 months ago (tag: 4.7.8) Dan Graham
+    a182b971 2021-08-18 10:13:15 -0400
+    Tagged version 4.7.8. Allow @+ entries in journal records.
+
+- 1 year, 7 months ago (tag: 4.7.7) Dan Graham
+    8fdfeda1 2021-04-04 12:30:19 -0400
+    Tagged version 4.7.7. Replaced call in item_changed from
+    update_completions to get_completions to insure that completions
+    are always consistent with the current data."
+
+- 1 year, 7 months ago (tag: 4.7.6) Dan Graham
+    6bf4cc82 2021-03-26 18:55:48 -0400
+    Tagged version 4.7.6. "Fixed sorting bug in get_usedtime routine."
+
+- 1 year, 7 months ago (tag: 4.7.5) Dan Graham
+    6f29c7b7 2021-03-26 13:20:25 -0400
+    Tagged version 4.7.5.
+
+- 1 year, 7 months ago (tag: 4.7.4) Dan Graham
+    13eec67c 2021-03-14 16:55:35 -0400
+    Tagged version 4.7.4.
+
+- 1 year, 9 months ago (tag: 4.7.3) Dan Graham
+    3af362bb 2021-01-27 10:00:46 -0500
+    Tagged version 4.7.3. Use requests to check version info from
+    github instead of pip search which is currently disabled.
+
+- 2 years ago (tag: 4.7.2) Dan Graham
+    8569c2cd 2020-11-04 14:03:14 -0500
+    Tagged version 4.7.2. Bug fix in openWithDefault path expansion.
+
+- 2 years ago (tag: 4.7.1) Dan Graham
+    71cbea69 2020-11-01 10:30:44 -0500
+    Tagged version 4.7.1. Added years to period string parsing. Handle
+    anniversary regex expressions in beginbys.
