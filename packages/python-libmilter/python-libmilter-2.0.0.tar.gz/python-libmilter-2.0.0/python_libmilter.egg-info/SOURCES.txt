@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+libmilter.py
+setup.py
+examples/testmilter.py
+python_libmilter.egg-info/PKG-INFO
+python_libmilter.egg-info/SOURCES.txt
+python_libmilter.egg-info/dependency_links.txt
+python_libmilter.egg-info/top_level.txt
