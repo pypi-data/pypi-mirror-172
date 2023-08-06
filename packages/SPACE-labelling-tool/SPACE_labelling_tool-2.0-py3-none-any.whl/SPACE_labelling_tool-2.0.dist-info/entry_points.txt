@@ -1,0 +1,3 @@
+[console_scripts]
+spacelabel = spacelabel.__main__:main
+
