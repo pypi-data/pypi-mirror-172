@@ -1,0 +1,5 @@
+setup.py
+artest.egg-info/PKG-INFO
+artest.egg-info/SOURCES.txt
+artest.egg-info/dependency_links.txt
+artest.egg-info/top_level.txt

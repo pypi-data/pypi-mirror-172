@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: artest
+Version: 0.0.1
+Summary: A test algorithm framework
+Home-page: 
+Author: ripplepiam
+Author-email: example@mail.com
+License: MIT Licence
+Keywords: pip,test
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Logging
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+
+A test algorithm framework
