@@ -1,0 +1,3 @@
+[console_scripts]
+pyrrhic=pyrrhic.cli.main:app
+
