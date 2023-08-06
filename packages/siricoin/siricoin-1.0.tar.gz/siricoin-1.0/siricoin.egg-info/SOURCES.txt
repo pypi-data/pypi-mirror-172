@@ -1,0 +1,6 @@
+README.md
+setup.py
+siricoin.egg-info/PKG-INFO
+siricoin.egg-info/SOURCES.txt
+siricoin.egg-info/dependency_links.txt
+siricoin.egg-info/top_level.txt
