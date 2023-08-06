@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+xenopict/__init__.py
+xenopict/_static_version.py
+xenopict/_version.py
+xenopict/colormap.py
+xenopict/drawer.py
+xenopict/magic.py
+xenopict/monkey.py
+xenopict/plotdot.py
+xenopict.egg-info/PKG-INFO
+xenopict.egg-info/SOURCES.txt
+xenopict.egg-info/dependency_links.txt
+xenopict.egg-info/requires.txt
+xenopict.egg-info/top_level.txt

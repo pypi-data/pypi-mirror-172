@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: xenopict
+Version: 0.1b7
+Summary: Library for publication quality depictions of small molecules.
+Home-page: https://github.com/swamidasslab/xenopict/
+Author: S. Joshua Swamidass
+Author-email: swamidass@wustl.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Editors :: Vector-Based
+Classifier: Topic :: Multimedia :: Graphics :: Presentation
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Xenopict
+
+Xenopict is a package for generating publication quality 2D depictions of small molecules, 
+with special attention to "shading" molecules with atom or bond level properties. This package
+relies on RDKit generation an initial SVG depiction of the input molecule.
+
+Read the [documentation](https://xenopict.readthedocs.io/en/latest/) for more information.
+
+This package is in beta. It's API is still subject to substantial revisions. It is in active use by our laboratory, 
+and several bugs and features are added frequently.
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/swamidasslab/xenopict/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/swamidasslab/xenopict/tree/main)
+
+

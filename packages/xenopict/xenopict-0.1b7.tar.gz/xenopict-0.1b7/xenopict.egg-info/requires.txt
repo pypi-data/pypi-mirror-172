@@ -1,0 +1,7 @@
+matplotlib
+colorio
+numpy
+simplejson
+decorator
+rdkit
+shapely
