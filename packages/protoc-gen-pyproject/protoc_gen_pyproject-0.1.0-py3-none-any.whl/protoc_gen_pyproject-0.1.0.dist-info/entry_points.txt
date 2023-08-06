@@ -1,0 +1,2 @@
+[console_scripts]
+protoc-gen-pyproject = protoc_gen_pyproject:main
