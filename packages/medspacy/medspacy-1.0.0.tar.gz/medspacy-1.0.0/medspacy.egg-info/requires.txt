@@ -1,0 +1,4 @@
+spacy>=3.4.1
+PyRuSH>=1.0.6
+pysbd==0.3.4
+jsonschema
