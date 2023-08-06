@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mypandas"
+version = "0.1.4"
+authors = [
+  { name="yrom1", email="ryanm.inbox@gmail.com" },
+]
+description = "MySQL for Panadas 🐬+🐼=❤️"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sqlalchemy",
+    "pandas",
+    "mysqlclient",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yrom1/mypandas"
+"Bug Tracker" = "https://github.com/yrom1/mypandas/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
+[tool.ty]
+type_checker = "mypy"
+
+[tool.mypy]
+ignore_missing_imports = true

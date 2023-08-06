@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: mypandas
+Version: 0.1.4
+Summary: MySQL for Panadas 🐬+🐼=❤️
+Project-URL: Homepage, https://github.com/yrom1/mypandas
+Project-URL: Bug Tracker, https://github.com/yrom1/mypandas/issues
+Author-email: yrom1 <ryanm.inbox@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: mysqlclient
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy
+Description-Content-Type: text/markdown
+
+# [mypandas](https://github.com/yrom1/mypandas)
+[![Tests](https://github.com/yrom1/mypandas/actions/workflows/test.yml/badge.svg)](https://github.com/yrom1/mypandas/actions/workflows/test.yml)
+
+Query Panadas DataFrames with SQL (MySQL/PostgreSQL/SQLite)
+
+## Install
+
+Currently available on [PyPI](https://pypi.org/project/mypandas/), to install:
+```
+pip install mypandas
+```
+
+## Example
+
+```py
+import pandas as pd
+
+from mypandas import MyPandas, load_births
+
+births = load_births()
+assert type(births) == pd.DataFrame
+URL = "mysql://root:root@localhost/" # or PostgreSQL/SQLite
+QUERY = """
+SELECT b1.date d1
+    , b1.births b1
+    , b2.date d2
+    , b2.births b2
+FROM births b1, births b2
+"""
+df = MyPandas(URL)(QUERY, locals())
+assert type(df) == pd.DataFrame
+print(df)
+```
+```
+               d1      b1         d2      b2
+0      2012-12-01  340995 1975-01-01  265775
+1      2012-11-01  320195 1975-01-01  265775
+2      2012-10-01  347625 1975-01-01  265775
+3      2012-09-01  361922 1975-01-01  265775
+4      2012-08-01  359554 1975-01-01  265775
+...           ...     ...        ...     ...
+166459 1975-05-01  254545 2012-12-01  340995
+166460 1975-04-01  247455 2012-12-01  340995
+166461 1975-03-01  268849 2012-12-01  340995
+166462 1975-02-01  241045 2012-12-01  340995
+166463 1975-01-01  265775 2012-12-01  340995
+
+[166464 rows x 4 columns]
+```
+
+### Example explanation
+The `URL` variable is a database URL, for my information about URL formatting including passwords with special characters [click here](https://docs.sqlalchemy.org/en/14/core/engines.html#database-urls). In this example, the default MySQL username and password for [Github Action's runner images](https://github.com/actions/runner-images) is used.
+
+Also notice that `locals()` is passed when an initialized `MyPandas` object is `__call__`'ed, which provides the current scope's local variables. That is how MyPandas is able to query the Pandas DataFrames in the current scope based on just a string. When `__call__`'ing an initialized `MyPandas` object from within a function, pass `globals()` instead if you need to query DataFrames in the global scope.
