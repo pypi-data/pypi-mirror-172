@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: kilroy-module-pytorch-py-sdk
+Version: 0.7.1
+Summary: SDK for kilroy modules using PyTorch 🧰
+Home-page: https://github.com/kilroybot/kilroy-module-pytorch-py-sdk
+Author: kilroy
+Author-email: kilroymail@pm.me
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: kilroy-module-server-py-sdk (>=0.9,<0.10)
+Requires-Dist: numpy (>=1,<2)
+Requires-Dist: torch (>=1,<2)
+Project-URL: Documentation, https://kilroybot.github.io/kilroy-module-pytorch-py-sdk
+Project-URL: Repository, https://github.com/kilroybot/kilroy-module-pytorch-py-sdk
+Description-Content-Type: text/markdown
+
+<h1 align="center">kilroy-module-pytorch-py-sdk</h1>
+
+<div align="center">
+
+SDK for kilroy modules using PyTorch 🧰
+
+[![Lint](https://github.com/kilroybot/kilroy-module-pytorch-py-sdk/actions/workflows/lint.yaml/badge.svg)](https://github.com/kilroybot/kilroy-module-pytorch-py-sdk/actions/workflows/lint.yaml)
+[![Tests](https://github.com/kilroybot/kilroy-module-pytorch-py-sdk/actions/workflows/test-multiplatform.yaml/badge.svg)](https://github.com/kilroybot/kilroy-module-pytorch-py-sdk/actions/workflows/test-multiplatform.yaml)
+[![Docs](https://github.com/kilroybot/kilroy-module-pytorch-py-sdk/actions/workflows/docs.yaml/badge.svg)](https://github.com/kilroybot/kilroy-module-pytorch-py-sdk/actions/workflows/docs.yaml)
+
+</div>
+
+---
+
+## Installing
+
+Using `pip`:
+
+```sh
+pip install kilroy-module-pytorch-py-sdk
+```
+
