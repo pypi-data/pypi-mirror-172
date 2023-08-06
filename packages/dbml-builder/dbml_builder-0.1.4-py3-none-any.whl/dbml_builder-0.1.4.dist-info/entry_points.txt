@@ -1,0 +1,3 @@
+[console_scripts]
+model-build=dbml_builder.cli:main
+
