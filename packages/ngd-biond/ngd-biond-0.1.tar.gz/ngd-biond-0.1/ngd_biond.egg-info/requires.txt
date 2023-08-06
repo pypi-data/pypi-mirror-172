@@ -1,0 +1,5 @@
+requests
+pandas
+marshmallow
+urllib3
+typing

@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+biond/__init__.py
+biond/client.py
+biond/req_client.py
+ngd_biond.egg-info/PKG-INFO
+ngd_biond.egg-info/SOURCES.txt
+ngd_biond.egg-info/dependency_links.txt
+ngd_biond.egg-info/requires.txt
+ngd_biond.egg-info/top_level.txt
