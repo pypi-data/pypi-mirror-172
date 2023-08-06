@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+django_datatable_serverside_mixin/__init__.py
+django_datatable_serverside_mixin/datatable.py
+django_datatable_serverside_mixin/views.py
+django_datatable_serverside_mixin.egg-info/PKG-INFO
+django_datatable_serverside_mixin.egg-info/SOURCES.txt
+django_datatable_serverside_mixin.egg-info/dependency_links.txt
+django_datatable_serverside_mixin.egg-info/requires.txt
+django_datatable_serverside_mixin.egg-info/top_level.txt
+tests/__init__.py
+tests/fixtures.py
+tests/test_datatable.py
+tests/test_views.py
