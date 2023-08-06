@@ -1,0 +1,9 @@
+asari/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asari/api.py,sha256=Xe4j4TgGvH0P821shjhnv2A-5nA9_X0b20w5Z7RasJk,812
+asari/data/pipeline.onnx,sha256=ez9fdKmyFPqs_HOonsT5sNLVDLJ-Iv9PIcUBGERj78E,25797730
+asari/preprocess.py,sha256=FlIwjSu-9VWu93YInr0CKDFGNuxrQiGVQcxaUMDuH5c,139
+asari/train.py,sha256=_65V4q0E3YuEL8NFsIV9hGsNw1CGAVb5vuKH1UjL_Kc,2354
+asari-0.2.0.dist-info/LICENSE,sha256=Q1WWbPyML89Rlm7f5JpTn7_a-GkOuDQu4uGea0eZZCA,1071
+asari-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+asari-0.2.0.dist-info/METADATA,sha256=W0GHFnZBGPlK7G1FeomJ2s1-an-CZv7JCl8x-hd4mbk,1814
+asari-0.2.0.dist-info/RECORD,,
