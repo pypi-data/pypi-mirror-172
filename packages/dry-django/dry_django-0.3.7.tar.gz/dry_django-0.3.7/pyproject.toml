@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "dry-django"
+version = "0.3.7"
+description = ""
+authors = ["Илья Маркевич <samuray21x@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "dry_django", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.1.0"
+djangorestframework = "^3.14.0"
+dry-core = "^0.5.5"
+mkdocstrings = {extras = ["crystal", "python"], version = "^0.19.0"}
+django-filter = "^22.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+pytest-asyncio = "^0.18.3"
+pytest-django = "^4.5.2"
+flake8 = "^4.0.1"
+black = "^22.3.0"
+mkdocs-material = "^8.5.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py39', 'py310']
+exclude = '''
+venv
+'''
