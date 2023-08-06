@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: LineTextParser
+Version: 1.3.1
+Summary: Converts LINE talk history files to a format readable by Python.
+Home-page: https://github.com/nakasyou1103/LineTextParser
+Author: nakasyou
+Author-email: nakasyou1103@gmail.com
+License: MIT
+Keywords: line
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+[GitHub](https://github.com/nakasyou1103/LineTextParser)
+
