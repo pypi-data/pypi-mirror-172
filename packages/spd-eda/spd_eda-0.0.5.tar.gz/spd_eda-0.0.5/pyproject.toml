@@ -1,0 +1,31 @@
+[project]
+name = "spd_eda"
+version = "0.0.5"
+authors = [
+  { name="sdooley", email="author@example.com" },
+]
+description = "initial testing"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=1.4.*",
+    "xlsxwriter>=3.0.*",
+    "pyodbc>=4.0.*",
+    "seaborn>=0.12.*",
+    "scipy>=1.9.*",
+    "awswrangler>=2.16.*"
+    ]
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend="setuptools.build_meta"
+
