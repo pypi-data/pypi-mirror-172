@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sfcsim
+Version: 1.0.7
+Summary: Network function virtualization resource allocation simulation tool
+Home-page: http://github.com/tongling/sfcsim
+Author: Xulingyi
+Author-email: xuly@bupt.edu.cn
+License: UNKNOWN
+Keywords: sfcsim,Service Function Chain,Network Function Virtualization,resource allocation,math,heuristic algorithm
+Platform: Linux
+Platform: Mac OSX
+Platform: Windows
+Platform: Unix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: networkx (>=2.4)
+
+UNKNOWN
+
+
