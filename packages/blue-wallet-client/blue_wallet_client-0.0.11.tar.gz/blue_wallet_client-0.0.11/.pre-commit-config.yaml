@@ -1,0 +1,34 @@
+repos:
+
+# autoflake
+-   repo: https://github.com/PyCQA/autoflake
+    rev: v1.4
+    hooks:
+    - id: autoflake
+      args: [--in-place, --remove-all-unused-imports]
+      exclude: src/blue_wallet_client/__init__.py
+
+# isort
+-   repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        args: [--settings-path=pyproject.toml]
+        exclude: src/blue_wallet_client/__init__.py
+
+# black
+-   repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+    - id: black
+      args: [--config=pyproject.toml]
+      exclude: src/blue_wallet_client/__init__.py
+
+# flake8
+-   repo: https://github.com/pycqa/flake8
+    rev: 4.0.1
+    hooks:
+    - id: flake8
+      additional_dependencies: [flake8-docstrings==1.6.0, flake8-bugbear==22.4.25]
+      args: [--config=.flake8]
+      exclude: src/blue_wallet_client/__init__.py
