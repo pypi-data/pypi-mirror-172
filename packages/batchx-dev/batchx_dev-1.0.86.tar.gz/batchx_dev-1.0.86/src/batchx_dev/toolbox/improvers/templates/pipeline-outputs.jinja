@@ -1,0 +1,6 @@
+{% import 'parameters.jinja' as parameters %}
+# Outputs
+
+{%  for parameter, fields in schema.output.properties.items() %}
+{{      parameters.document_parameter_extensive(parameter, fields=fields, idx=loop.index, is_input=False, level=0, compact_level=1)  }}
+{%  endfor %}

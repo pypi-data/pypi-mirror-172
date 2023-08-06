@@ -1,0 +1,13 @@
+{% import 'parameters.jinja' as parameters %}
+
+# Inputs
+
+{% for parameter, fields in schema.input.properties.items() %}
+{% if parameter in ["sample", "global"] -%}
+{% set compact_level = 2 -%}
+{% else -%}
+{% set compact_level = 1 -%}
+{% endif -%}
+{{ parameters.document_parameter_extensive(parameter, fields=fields, idx=loop.index, is_input=True, level=0,
+compact_level=compact_level) }}
+{% endfor %}

@@ -1,0 +1,52 @@
+# Examples
+
+## Get input data
+
+### Copy input data into your BatchX environment
+
+Use the following commands (appropriately replace `<ORG>` with your organization) to obtain example input files in your BatchX environment,
+
+```shell
+bx cp bx://batchx@test/sniffles2/sample10_minimap2.bam bx://<ORG>@test/sniffles2/
+bx cp bx://batchx@test/sniffles2/sample10_minimap2.bam.bai bx://<ORG>@test/sniffles2/
+```
+
+Alternatively, the following two subsections explain how to retrieve these files from public online resources, and how to manually upload them into BatchX.
+
+### Retrieve from online resources
+
+For the `bam` and `bai` inputs, go to [this repository](https://github.com/nanoporetech/pipeline-structural-variation/tree/master/data/bam_folder) and download its contents. 
+
+Alternatively, if [`curl`](https://curl.se/) is available, one can use the following commands to acquire the data:
+
+```shell
+curl -O https://github.com/nanoporetech/pipeline-structural-variation/raw/master/data/bam_folder/sample10_minimap2.bam 
+curl -O https://github.com/nanoporetech/pipeline-structural-variation/raw/master/data/bam_folder/sample10_minimap2.bam.bai
+```
+
+### Upload input data into BatchX
+
+Use the following commands to upload the data in BatchX,
+
+```shell
+bx cp sample10_minimap2.bam bx://test/sniffles2/
+bx cp sample10_minimap2.bam.bai bx://test/sniffles2/
+```
+
+## Submit job
+
+Then, use the following command to identify structural variants with Sniffles2,
+
+```shell
+bx submit batchx@sniffles2/single-sample-caller:0.0.2 \
+'{
+  "bam": "bx://test/sniffles2/example.bam",
+  "bai": "bx://test/sniffles2/example.bam.bai",
+  "outputPrefix": "out",
+  "minSupport": 1,
+  "minSVLength": 10,
+  "minAlignmentLength": 100,
+  "mappingQuality": 10
+}'
+```
+

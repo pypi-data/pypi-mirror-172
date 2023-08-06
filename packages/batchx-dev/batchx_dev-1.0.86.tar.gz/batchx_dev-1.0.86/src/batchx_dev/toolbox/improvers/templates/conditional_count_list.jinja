@@ -1,0 +1,13 @@
+
+{% macro list_parameters_on_condition(parameter_dict, field='required', value=True) -%}
+{%  set p = parameter_dict | selectattr(field, 'defined') | selectattr(field, '==', value) | list  %}
+{{  p }}
+{%- endmacro %}
+
+{% macro count_parameters_on_condition(parameter_dict, field='required', value=True) -%}
+{%  set l = list_parameters_on_condition(parameter_dict, field=field, value=value)  %}
+{%  set n = l | length | int  %}
+{{  n }}
+{%- endmacro %}
+
+

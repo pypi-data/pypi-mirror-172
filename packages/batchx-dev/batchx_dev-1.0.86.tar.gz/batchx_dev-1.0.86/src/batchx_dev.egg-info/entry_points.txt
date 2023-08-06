@@ -1,0 +1,2 @@
+[console_scripts]
+bx-readme = batchx_dev.cli.bx_readme:main
