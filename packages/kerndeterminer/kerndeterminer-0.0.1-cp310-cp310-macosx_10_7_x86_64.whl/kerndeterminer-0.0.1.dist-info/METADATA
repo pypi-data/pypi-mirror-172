@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: kerndeterminer
+Version: 0.0.1
+Classifiers: Programming Language :: Rust
+Classifiers: Topic :: Multimedia :: Graphics :: Editors :: Vector-Based
+Summary: Work out how far apart things should be (very quickly)
+Author: Simon Cozens <simon@simon-cozens.org>
+Author-Email: Simon Cozens <simon@simon-cozens.org>
