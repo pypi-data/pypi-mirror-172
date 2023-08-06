@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "max-logger"
+version = "1.0.0"
+description = "Max's custom loguru sinks, logger helper functions, rich tracebacks and other helper functions for rich."
+authors = ["Max Ludden <dev@maxludden.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "max_logger"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ujson = "^5.5.0"
+loguru = "^0.6.0"
+rich = {extras = ["all"], version = "^12.6.0"}
+
+[tool.poetry.scripts]
+my-script = "main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
