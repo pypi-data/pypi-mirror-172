@@ -1,0 +1,2 @@
+[console_scripts]
+commandsheet = commandsheet.commandsheet:main
