@@ -1,0 +1,4 @@
+[console_scripts]
+AoxiuTanyujia = AoxiuTanyujia.__main__:main
+aoxiu-tanyujia = AoxiuTanyujia.__main__:main
+

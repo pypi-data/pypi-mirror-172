@@ -1,0 +1,12 @@
+README.md
+setup.py
+AoxiuTanyujia/README.md
+AoxiuTanyujia/__init__.py
+AoxiuTanyujia/__main__.py
+AoxiuTanyujia/file.pdf
+AoxiuTanyujia/index.html
+aoxiu_tanyujia.egg-info/PKG-INFO
+aoxiu_tanyujia.egg-info/SOURCES.txt
+aoxiu_tanyujia.egg-info/dependency_links.txt
+aoxiu_tanyujia.egg-info/entry_points.txt
+aoxiu_tanyujia.egg-info/top_level.txt
