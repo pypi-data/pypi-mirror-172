@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+first_package_1.egg-info/PKG-INFO
+first_package_1.egg-info/SOURCES.txt
+first_package_1.egg-info/dependency_links.txt
+first_package_1.egg-info/top_level.txt
