@@ -1,0 +1,9 @@
+README.md
+setup.py
+u-dp-config/IdeaVim-1.9.0.zip.py
+u-dp-config/__init__.py
+u-dp-config/vim.zip.py
+u_dp_config.egg-info/PKG-INFO
+u_dp_config.egg-info/SOURCES.txt
+u_dp_config.egg-info/dependency_links.txt
+u_dp_config.egg-info/top_level.txt
