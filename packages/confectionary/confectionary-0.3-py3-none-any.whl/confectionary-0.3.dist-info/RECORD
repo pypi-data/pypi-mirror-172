@@ -1,0 +1,13 @@
+confectionary/__init__.py,sha256=MTAy7mI_AUdU0E6KEQozOwIkwdrXmNzCqRSWDDIdR7c,93
+confectionary/pdf.py,sha256=dOC_g8mEandDlv7ChX7VQSZh2iAkk4MbbTAk-yR7zMY,18330
+confectionary/report_generation.py,sha256=rvLgDWJy8Ymk3fEn3nx0YToKwbJhPRtPsZMMjn_Fe1I,9259
+confectionary/text2pdf.py,sha256=i5en1iLa4cWr5Uf550LWJjWWYMZbmm9kIB3tS7tgJh4,14486
+confectionary/utils.py,sha256=GKqHXbv1BAqHGEuLcXPGKAOTHqiqOyooCtOEKClc_Bc,15372
+confectionary-0.3.data/data/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+confectionary-0.3.data/data/README.md,sha256=ch08utmD4LEO5PlxDOlWlnkO6UnYgcHVBASUg3rWomg,7752
+confectionary-0.3.data/data/requirements.txt,sha256=ASyNv1nUF_eF_8mxLmFuBqVZzSpq9ALvaxw2kfvw5DU,127
+confectionary-0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+confectionary-0.3.dist-info/METADATA,sha256=ru0iNYl0Mh8khM-7JLKmY9iOIlgxrPGaZkFuPme1cQM,8689
+confectionary-0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+confectionary-0.3.dist-info/top_level.txt,sha256=uXCQG035h3Jd9xRj7Ml-wA1hVTy1DM1jS506jTFZxig,14
+confectionary-0.3.dist-info/RECORD,,
