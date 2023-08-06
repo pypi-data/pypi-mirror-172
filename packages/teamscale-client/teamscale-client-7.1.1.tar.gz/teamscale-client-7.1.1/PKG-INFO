@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: teamscale-client
+Version: 7.1.1
+Summary: A simple service client to interact with Teamscale's REST API.
+Home-page: https://github.com/cqse/teamscale-client-python
+Author: Thomas Kinnen - CQSE GmbH
+Author-email: kinnen@cqse.eu
+License: Apache
+Keywords: rest api teamscale
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+A simple service client to interact with Teamscale's REST API.
