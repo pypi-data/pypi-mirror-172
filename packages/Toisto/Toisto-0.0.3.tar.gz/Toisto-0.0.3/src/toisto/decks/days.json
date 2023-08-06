@@ -1,0 +1,15 @@
+[
+    {"singular": {"fi": "Päivä", "nl": "De dag"}, "plural": {"fi": "Päivät", "nl": "De dagen"}},
+    {"singular": {"fi": "Viikko", "nl": "De week"}, "plural": {"fi": "Viikot", "nl": "De weken"}},
+    {"fi": "Viikonpäivät", "nl": "De dagen van de week"},
+    {"singular": {"fi": "Maanantai", "nl": "Maandag"}, "plural": {"fi": "Maanantait", "nl": "De maandagen"}},
+    {"singular": {"fi": "Tiistai", "nl": "Dinsdag"}, "plural": {"fi": "Tiistait", "nl": "De dinsdagen"}},
+    {"singular": {"fi": "Keskiviikko", "nl": "Woensdag"}, "plural": {"fi": "Keskiviikot", "nl": "De woensdagen"}},
+    {"singular": {"fi": "Torstai", "nl": "Donderdag"}, "plural": {"fi": "Torstait", "nl": "De donderdagen"}},
+    {"singular": {"fi": "Perjantai", "nl": "Vrijdag"}, "plural": {"fi": "Perjantait", "nl": "De vrijdagen"}},
+    {"singular": {"fi": "Lauantai", "nl": "Zaterdag"}, "plural": {"fi": "Lauantait", "nl": "De zaterdagen"}},
+    {"singular": {"fi": "Sunnuntai", "nl": "Zondag"}, "plural": {"fi": "Sunnuntait", "nl": "De zondagen"}},
+    {"fi": "Tänään on maanantai", "nl": "Vandaag is het maandag"},
+    {"fi": "Huomenna on tiistai", "nl": "Morgen is het dinsdag"},
+    {"fi": ["Mikä päivä tänään on?", "Mikä päivä on tänään?"], "nl": "Welke dag is het vandaag?"}
+]
