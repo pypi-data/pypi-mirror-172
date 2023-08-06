@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: nile-api
+Version: 0.1.2
+Summary: A client library for accessing the Nile API
+Project-URL: Homepage, https://www.thenile.dev/
+Project-URL: Issues, https://github.com/TheNileDev/nile-py/issues/
+Project-URL: Source, https://github.com/TheNileDev/nile-py
+Author: The Nile
+Author-email: support@thenile.dev
+License: MIT
+License-File: LICENSE
+Keywords: client,control plane,infrastructure,openapi,saas
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: attrs
+Requires-Dist: httpx
+Requires-Dist: python-dateutil
+Description-Content-Type: text/x-rst
+
+======================
+Nile API Python Client
+======================
+
+Development
+-----------
+
+Commands below generally make use of `nox <https://nox.thea.codes/en/stable/index.html#>`_ (in some sense a Python-based, testing-centric ``make``).
+
+You can install it by following its `install instructions <https://nox.thea.codes/en/stable/index.html#welcome-to-nox>`_ for your OS, or e.g. on macOS, by simply running:
+
+.. code-block:: sh
+
+    brew install nox
+
+Regenerating (updating) the client is done via `openapi-python-client <https://github.com/openapi-generators/openapi-python-client>`_.
+
+To do so, run:
+
+.. code-block:: sh
+
+    nox -s regenerate
+
+We pin the version of this generator itself in a requirements file.
+To update the version of the generator that will be used, run:
+
+.. code-block:: sh
+
+    nox -s update_openapi_requirements
+
+which should regenerate the ``openapi-generator-requirements.txt`` file which you should then commit.
