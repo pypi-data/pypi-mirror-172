@@ -1,0 +1,2 @@
+mak-serialization-tools
+relic-tool-chunky-core~=1.1.0

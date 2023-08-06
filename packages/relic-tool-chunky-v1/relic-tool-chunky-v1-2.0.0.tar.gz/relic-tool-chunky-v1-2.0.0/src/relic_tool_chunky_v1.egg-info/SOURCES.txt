@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/relic/chunky/v1/__init__.py
+src/relic/chunky/v1/definitions.py
+src/relic/chunky/v1/py.typed
+src/relic/chunky/v1/serialization.py
+src/relic_tool_chunky_v1.egg-info/PKG-INFO
+src/relic_tool_chunky_v1.egg-info/SOURCES.txt
+src/relic_tool_chunky_v1.egg-info/dependency_links.txt
+src/relic_tool_chunky_v1.egg-info/entry_points.txt
+src/relic_tool_chunky_v1.egg-info/requires.txt
+src/relic_tool_chunky_v1.egg-info/top_level.txt
