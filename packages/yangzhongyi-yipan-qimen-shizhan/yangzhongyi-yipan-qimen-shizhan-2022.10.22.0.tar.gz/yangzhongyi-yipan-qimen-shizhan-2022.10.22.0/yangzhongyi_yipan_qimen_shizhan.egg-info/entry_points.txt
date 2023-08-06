@@ -1,0 +1,4 @@
+[console_scripts]
+YangzhongyiYipanQimenShizhan = YangzhongyiYipanQimenShizhan.__main__:main
+yangzhongyi-yipan-qimen-shizhan = YangzhongyiYipanQimenShizhan.__main__:main
+
