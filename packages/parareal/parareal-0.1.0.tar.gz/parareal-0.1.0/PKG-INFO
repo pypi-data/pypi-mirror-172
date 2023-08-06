@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: parareal
+Version: 0.1.0
+Summary: Parallel-in-time framework for Python
+License: Apache-2.0
+Author: Johan Hidding
+Author-email: j.hidding@esciencecenter.nl
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: argh (>=0.26.2,<0.27.0)
+Requires-Dist: dask-mpi (>=2022.4.0,<2023.0.0)
+Requires-Dist: dask[complete] (>=2022.10.0,<2023.0.0)
+Requires-Dist: h5py (>=3.7.0,<4.0.0)
+Requires-Dist: mpi4py (>=3.1.3,<4.0.0)
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+---
+title: Parareal
+subtitle: a library for parallel-in-time computations in Python
+---
+[![Entangled badge](https://img.shields.io/badge/entangled-Use%20the%20source!-%2300aeff)](https://entangled.github.io/)
+
+This package runs the parareal algorithm on a black-box simulator. Parallelisation is managed through Dask.
+
+# License
+Apache 2, see `LICENSE`.
+
+
