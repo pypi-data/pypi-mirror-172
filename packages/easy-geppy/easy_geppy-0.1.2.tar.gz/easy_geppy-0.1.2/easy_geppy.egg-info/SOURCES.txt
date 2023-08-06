@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+easy_geppy/__init__.py
+easy_geppy/easy_geppy.py
+easy_geppy.egg-info/PKG-INFO
+easy_geppy.egg-info/SOURCES.txt
+easy_geppy.egg-info/dependency_links.txt
+easy_geppy.egg-info/requires.txt
+easy_geppy.egg-info/top_level.txt
