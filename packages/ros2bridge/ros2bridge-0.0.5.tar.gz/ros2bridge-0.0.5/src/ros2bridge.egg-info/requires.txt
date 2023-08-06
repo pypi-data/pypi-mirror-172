@@ -1,0 +1,10 @@
+tornado>=5
+
+[dev]
+flake8>=5.0
+tox>=3.26
+pytest>=7.1
+pytest-cov>=4.0
+mypy>=0.982
+check-manifest>=0.48
+websocket-client>=1.4
