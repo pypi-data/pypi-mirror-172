@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aie-sdk
+Version: 2.0.1
+Summary: AIEarth Engine Python SDK
+Home-page: https://engine-aiearth.aliyun.com/
+Requires-Python: >=3.5.0
+License-File: LICENSE
+Requires-Dist: jinja2
+Requires-Dist: black (==22.3.0)
+Requires-Dist: Cython (==3.0.0a11)
+Requires-Dist: oss2
+Requires-Dist: matplotlib (==3.5.3)
+Requires-Dist: bqplot (==0.12.34)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: ipyleaflet (==0.15.1)
+Requires-Dist: pystac-client (==0.4.0)
+
