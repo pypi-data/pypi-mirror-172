@@ -1,0 +1,5 @@
+tensorflow
+torch
+numpy
+crepe==0.0.12
+librosa==0.9.1
