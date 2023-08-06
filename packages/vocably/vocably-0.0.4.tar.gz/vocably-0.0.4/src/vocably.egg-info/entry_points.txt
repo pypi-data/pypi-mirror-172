@@ -1,0 +1,2 @@
+[console_scripts]
+vocably = vocably.cli.main:main
