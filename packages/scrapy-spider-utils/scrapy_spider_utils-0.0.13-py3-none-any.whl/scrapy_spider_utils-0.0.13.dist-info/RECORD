@@ -1,0 +1,12 @@
+scrapy_spider_utils/auto_notify.py,sha256=i6ENCU-WO6LohazzBqyBGckm8M6RxudAoZUoIJO3cH0,2860
+scrapy_spider_utils/esclient.py,sha256=tMIJkMPXeOh60mv4LSfCh75gkZ50E6qOWqUCGzusGL0,2981
+scrapy_spider_utils/esdupefilter.py,sha256=XB6IHodJHgCgPZ_dp9dWy58QOGmci136DuryZZ9IPCA,3640
+scrapy_spider_utils/eswriter.py,sha256=g-IdTXhv6cWjg4HzhBJesFRG_p5WVVtWGWVTc0fc81I,1925
+scrapy_spider_utils/login/baseclient.py,sha256=pe3qMT5CS3bAMBc0GnIqtzdqWUQJKJCMo0fUN9Z3u4E,2917
+scrapy_spider_utils/login/douban_client.py,sha256=vFnRzogT5AfN8HoYu3vf1V470MR6DPastimmV5idSko,2067
+scrapy_spider_utils/login/douban_login.py,sha256=NZ5bk0IV-k4f8IV0y54MUyGYj0YsPRBB5pw4wctYxT0,6931
+scrapy_spider_utils/mirai_client.py,sha256=sadI_Ny9327Q4wWaUpknhdSLIVfbQ684Muw227KFjOc,3426
+scrapy_spider_utils/random_ua.py,sha256=pCKzPx8KLunDTahI15v5bNrRdTpCe7hwewb1Y7C9Ur0,536
+scrapy_spider_utils-0.0.13.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+scrapy_spider_utils-0.0.13.dist-info/METADATA,sha256=w4_VbtMycKimfcwtZx0hcIe1oSidHnoC2pbIEvwOAQY,3847
+scrapy_spider_utils-0.0.13.dist-info/RECORD,,
