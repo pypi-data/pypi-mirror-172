@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: VisionFive.gpio
+Version: 1.1.2
+Summary: A module to control VisionFive GPIO ports
+Home-page: http://gitlab.starfivetech.com/product1/oftware-ae/VisionFive-python-gpio/starfive_gpio
+Author: VisionFive
+Author-email: support@starfivetech.com
+License: MIT
+Keywords: VisionFive GPIO
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Home Automation
+Classifier: Topic :: System :: Hardware
+License-File: LICENCE.txt
+
+This package provides a Python module to control the GPIO on a VisionFive.
+
+---Basic function
+- Support basic GPIO function
+- Support I2C API
+- Support PWM API
+- Support SPI API
+
+---Python sample
+- GPIO basic operation, including input, output
+- Sense HAT(B) basing I2C API
+- LED_Matrix to display logo about Starfive
+- uart_gps_demo to read gps information from GPS NEO-6M
+- pwm_led to test PWM module works well
+
+
+Change Log
+==========
+
+1.1.2
+-------
+- Add the boardtype module to determine which platform the demo is currently running on
+- Modify I2C SHTC3 Demo
+- Modify Uart GPS Demo
+- Modify SPI Demo
+
+1.1.1
+-------
+- Modify prompt information
+
+1.0.1
+-------
+- ###Basic function
+- For SPI API: add a function to write multiple bytes
+- ###Python sample
+- ADD a SPI demo: using VisionFive SPI support LCD display
+
+1.0.0
+-------
+- ###Basic function
+- Support basic GPIO function
+- Support I2C API
+- Support PWM API
+- Support SPI API
+- ###Python sample
+- GPIO basic operation, including input, output
+- Sense HAT(B) basing I2C API
+- LED_Matrix to display logo about Starfive
+- uart_test to test VersionFive's UART works well with UART loopback 
+- uart_gps_demo to read gps information from GPS NEO-6M
+- pwm_led to test PWM module works well
+
+
+
+
+
+

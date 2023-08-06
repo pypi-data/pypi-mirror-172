@@ -1,0 +1,39 @@
+Change Log
+==========
+
+1.1.2
+-------
+- Add the boardtype module to determine which platform the demo is currently running on
+- Modify I2C SHTC3 Demo
+- Modify Uart GPS Demo
+- Modify SPI Demo
+
+1.1.1
+-------
+- Modify prompt information
+
+1.0.1
+-------
+- ###Basic function
+- For SPI API: add a function to write multiple bytes
+- ###Python sample
+- ADD a SPI demo: using VisionFive SPI support LCD display
+
+1.0.0
+-------
+- ###Basic function
+- Support basic GPIO function
+- Support I2C API
+- Support PWM API
+- Support SPI API
+- ###Python sample
+- GPIO basic operation, including input, output
+- Sense HAT(B) basing I2C API
+- LED_Matrix to display logo about Starfive
+- uart_test to test VersionFive's UART works well with UART loopback 
+- uart_gps_demo to read gps information from GPS NEO-6M
+- pwm_led to test PWM module works well
+
+
+
+
