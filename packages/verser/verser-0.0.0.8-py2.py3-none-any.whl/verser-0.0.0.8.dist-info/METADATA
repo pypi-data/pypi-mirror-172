@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: verser
+Version: 0.0.0.8
+Summary: verser
+Home-page: 
+Author: Sermet Pekin
+Author-email: sermet.pekin@gmail.com
+License: MIT
+Keywords: verser
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: pytest
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: testing
+
+# verser
+
+    from verser import Project, get_next_version
+
+
+### creates __version__.py file on your package's root
+
+    #__version__.py
+    #3.1.2.0
+    next_version = get_next_version(
+        project=Project("my_cool_project"),
+        increment_=True,
+        pre_release=False,
+        verbose=True
+    )  
+    # pre_release : False,  and increment_ True returns
+    # 3.1.2.0
+    
+    # pre_release : True,  and increment_ True returns
+    # 3.1.2.1rc1
+
+    # pre_release : True,  and increment_ True returns
+    # 3.1.2.1rc2
+
+    # pre_release : False,  and increment_ True returns
+    # 3.1.2.1
+
+### next version number for your project
+
+    project = Project(package_name="my_cool_package", default_version="0.0.0.0")
+
+    next_version = get_next_version(
+        project=project,
+        increment_=True,
+        pre_release=False,
+        verbose=True
+    )  
+    print("Getting next version", next_version)
+
+
+### Version tracker for your python package
+
+    
+    
