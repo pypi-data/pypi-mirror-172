@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: ansys-optics-speos-grpcapi
+Version: 6.1.0
+Summary: Protocol Buffer structure for Speos
+Home-page: https://tfs.ansys.com:8443/tfs/ANSYS_Development/OPTIS_SPEOS/_git/SpeosProto
+Author: Ansys Inc.
+Author-email: support@ansys.com
+License: (c) 2023 ANSYS, Inc. Unauthorized use, distribution, or duplication is prohibited.
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Protocol Buffer structure for Speos
+Python package containing protocol buffer structure for Speos APIs.
+## Directory structure
+    - ansys
+        |---- api
+        |       |---- speos
+        |       |       |-- api-example1
+        |       |       |       |-- v1
+        |       |       |       |   |-- service1_pb2.py
+        |       |       |       |   |-- service1_pb2_grpc.py
+        |       |       |       |   |-- service2_pb2.py
+        |       |       |       |   |-- service2_pb2_grpc.py
+        |       |       |       |-- v2
+        |       |       |       |   |-- service2_pb2.py
+        |       |       |       |   |-- service2_pb2_grpc.py
+
+## What's new
+### 6.1.0
+
+
+### 6.0.0
+`file API v1` expansion in *ansys/api/speos/file/v1*
+
+New rpcs in FileTransferService : 
+* Reserve
+* AddDependencies
+* ListDependencies
+
+New message FileSystemItemInformation used in Upload_Response (break), ListDependencies_Response and Download_Response
+
+`simulation API v1` modification in *ansys/api/speos/simulation/v1*
+
+Deletion of following rpcs in SpeosSimulationsManager : LoadFromFolder and SaveToFolder (break)
+
+`file transfer helper` in *ansys/api/speos/file/v1/file_transfer.py*
+
+Completion with upload_folder and download_folder
+
+### 5.0.0
+`file API v1` expansion in *ansys/api/speos/file/v1*
+
+New rpcs in FileTransferService : Download and Delete
+
+`lpf API v2` available in *ansys/api/speos/lpf/v2*
+
+Change on InitLpfFileName rpc : uri used to init file. Services impacted:
+* `LpfFileReader_Mono`
+* `LpfFileReader_Multi`
+
+`lpf API v1` services DEPRECATED
+
+### 4.1.0
+* `simulation` - service to create, delete, open, save, run multiple .speos simulation
+`simulation API v1` available in *ansys/api/speos/simulation/v1*
+
+With the following services:
+ * `SpeosSimulationsManager` - Service to manage (create, delete, list, serialize) Speos Simulations
+ * `SpeosSimulation` - Service to load, save, get name, run, get results paths of a Speos Simulation
+ * `SpeosSimulationRunFromFile` - Service that concatenate load and run of a .speos file
+
+### 4.0.0
+`lpf API v1` expansion in *ansys/api/speos/lpf/v1*
+
+New information in RayPath message : sensor_contributions
+New rpc in LpfFileReader_Mono and LpfFileReader_Multi services : GetInformation to retrieve number_of_xmps, number_of_traces, has_sensor_contributions, sensor_names
+
+### 3.1.0
+`file API v1` available in *ansys/api/speos/file/v1*
+
+With the following service:
+* `FileTransferService` - service to transfer file
+
+### 3.0.0
+`gRPC` update to version 1.46.3
+
+### 3.0.0
+`LTF API v1` expansion in *ansys/api/speos/LTF/v1*
+
+'LightTransferDataDistribution' message simplification
+
+### 2.0.0
+`LTF API v1` expansion in *ansys/api/speos/LTF/v1*
+
+With the addition of spectral dependency
+
+### 1.0.0
+`LTF API v1` available in *ansys/api/speos/LTF/v1*
+
+With the following service:
+* `LightTransferFunctionService` - service to create, open, modify and save *.OPTDistortion files
+
+
+`lpf API v1` available in *ansys/api/speos/lpf/v1*
+
+With the following services:
+ * `LpfFileReader_Mono`  - service to read lpf file and get all its RayPath - one unique reader per Server
+ * `LpfFileReader_Multi` - service to read lpf file and get all its RayPath - several readers per Server
+
+
+`xmp API v1` available in *ansys/api/speos/xmp/v1*
+
+With the following service:
+ * `XmpFileService_Mono` - service to manage xmp file
+
+
+`bsdf API v1` available in *ansys/api/speos/bsdf/v1*
+
+With the following services:
+ * `AnisotropicBsdfService` - service to create, open, modify and save *.anisotropicbsdf files
+ * `BsdfCreationService` - service to create, open, modify and save *.brdf files
+ * `SpectralBsdfService` - service to assemble *.anisotropicbsdf or *.brdf files into .bsdf180 files<br/>
+   or isotropic *.anisotropicbsdf to anisotropic *.anisotropicbsdf files<br/>
+   or isotropic *.anisotropicbsdf to spectral *.brdf files
+
+
+
