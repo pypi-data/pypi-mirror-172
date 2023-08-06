@@ -1,0 +1,14 @@
+manim_voiceover/__init__.py,sha256=ta-LabnsazqAH77HE8nB-JnpAFREj2Qkd9hU9AR1ooU,7063
+manim_voiceover/helper.py,sha256=gK6SVn2AJJ0Atl2xIqhwTmMVLPn_cy0poklRsrjV1-U,148
+manim_voiceover/modify_audio.py,sha256=X6Lxr9z63d-EMfo_CwrDOTiv7_jQ1WXyiFeTBGvrjWY,680
+manim_voiceover/services/__init__.py,sha256=awsLVrmJE8FkvdLCLc07YZVcUmAls6fz7zCIJZKGjcA,342
+manim_voiceover/services/azure.py,sha256=QD6c3TfmDA51zdF0z4uIYfdyfHC53n3TZYfYH5KEtZI,5403
+manim_voiceover/services/base.py,sha256=KP8Bvj0T54xn_6aq1z1oii4qGoadaQdTllo-rEY3fXU,1999
+manim_voiceover/services/gtts.py,sha256=576knXAmPXLNVGW5FLBLV-t9LuguZrmJP8WVegTARks,1481
+manim_voiceover/services/pyttsx3.py,sha256=wFt5K_XOUQQ2k5YcH30HyuouK28llKCAWb4t39qheJI,1390
+manim_voiceover/services/stitcher.py,sha256=ovgyS7Pg4WkXAbYSdnF8KHCh2WJOrpkXiPaUAm4cr3k,5858
+manim_voiceover-0.1.0.dist-info/entry_points.txt,sha256=Xbl9R2JgDNjw_pL3rQzerRdUL7F2uw05QKmEDmHdCso,49
+manim_voiceover-0.1.0.dist-info/LICENSE,sha256=ce1pNgeYca-imG2OvxN6Nb02MiygKgkGVMo3V1azmic,1088
+manim_voiceover-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+manim_voiceover-0.1.0.dist-info/METADATA,sha256=Vw_iY7GTq8I0wqL0UBiXHIBAHLqLv1KJ6kbdqJ1TG0s,6524
+manim_voiceover-0.1.0.dist-info/RECORD,,
