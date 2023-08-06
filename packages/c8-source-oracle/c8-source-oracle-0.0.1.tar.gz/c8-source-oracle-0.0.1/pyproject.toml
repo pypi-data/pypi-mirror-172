@@ -1,0 +1,66 @@
+[build-system]
+requires = ["poetry-core", "wheel"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "c8-source-oracle"
+version='0.0.1'
+description = "Pipelinewise tap for reading from oracle databases. This includes support for PDBs."
+license = "Apache-2.0"
+authors = ["Macrometa <info@macrometa.com>"]
+readme = "README.md"
+homepage = "https://www.macrometa.com/"
+keywords = [
+    "ELT",
+    "Connectors",
+    "Workflows",
+    "Macrometa",
+    "Oracle",
+    "Tap"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Operating System :: OS Independent",
+]
+packages = [
+    { include = "c8_source_oracle" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+c8connector = "0.0.5"
+pipelinewise-singer-python = "1.2.0"
+
+[tool.poetry.scripts]
+c8-source-oracle = "c8_source_oracle:main"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Macrometacorp/c8-source-oracle/issues"
+
+[tool.black]
+line-length = 88
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+skip = [
+    '.eggs', '.git', '.hg', '.mypy_cache', '.nox', '.pants.d', '.tox',
+    '.venv', '_build', 'buck-out', 'build', 'dist', 'node_modules', 'venv',
+]
+skip_gitignore = true
