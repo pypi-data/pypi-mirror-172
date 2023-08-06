@@ -1,0 +1,15 @@
+odoo/addons/storage_media_product/README.rst,sha256=oqZPOMnq14uCBM1OjZfoaxYps-ZpmFFRUQ0UruqyBGU,1063
+odoo/addons/storage_media_product/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/storage_media_product/__manifest__.py,sha256=wR3435Jz7Dx2eiHQrbf8MKONNihr6c_4y62U166YlaI,660
+odoo/addons/storage_media_product/i18n/storage_media_product.pot,sha256=43Y0wf4ZWwgwahBxGWROg5B_M2gdm0XX1bS4UZnADWk,6003
+odoo/addons/storage_media_product/models/__init__.py,sha256=iriTaiwyGOvLcW3Y08B3REdmcXnMltQoS08w6jrgODs,53
+odoo/addons/storage_media_product/models/product.py,sha256=TQEKMry6QyWaX0j9zQ_AMUr_32-oYHIHeXgaAQa7cmM,2800
+odoo/addons/storage_media_product/models/product_category.py,sha256=_HzPSi5rdfUtiz5yUnfAe9gbvFDdWL4havtu8a4Uins,331
+odoo/addons/storage_media_product/security/ir.model.access.csv,sha256=Pxh_UF8Rz3NawDJIWfXFp84zbnXK4DKPKXqfX6be5sw,291
+odoo/addons/storage_media_product/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/storage_media_product/views/product.xml,sha256=Ofgh4l0CAHrDFBTPDRy-WCfhdYvcD08IimVbrYG8AVo,2337
+odoo/addons/storage_media_product/views/product_category.xml,sha256=01plxuRKrFRfMplxOdWlY2sOiDDFE-0xWNhI5RqtgPs,526
+odoo14_addon_storage_media_product-14.0.2.2.0.dist-info/METADATA,sha256=rWrQ0pzw_EL0dCU6N5d1BtABYUWQXtKMU5gyk-HC0CU,1664
+odoo14_addon_storage_media_product-14.0.2.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo14_addon_storage_media_product-14.0.2.2.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_storage_media_product-14.0.2.2.0.dist-info/RECORD,,
