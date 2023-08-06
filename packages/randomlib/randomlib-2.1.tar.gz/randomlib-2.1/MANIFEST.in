@@ -1,0 +1,3 @@
+include randomlib/preprocess/*.txt
+include randomlib/modelsjson/*.json
+include randomlib/config.py
