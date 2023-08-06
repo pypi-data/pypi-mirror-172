@@ -1,0 +1,141 @@
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+# Pip's cache doesn't store the python packages
+# https://pip.pypa.io/en/stable/reference/pip_install/#caching
+#
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+stages:
+  - init
+  - build
+  - test
+  - doc
+  - release
+
+
+.virtualenv_template: &virtualenv_definition |
+  ./scripts/create_venv.sh
+  source venv/bin/activate
+  pip install .
+
+.test_template: &test_definition |
+  source venv/bin/activate
+  pip install -U pytest
+  pytest
+
+.junit_template: &junit_definition
+    artifacts:
+      reports:
+        junit: "reports/junit*.xml"
+
+
+download-pdfs:
+    image: docker.km3net.de/base/ci-helper:1
+    stage: init
+    script:
+        - ./scripts/get_pdfs.sh
+    artifacts:
+      paths:
+        - pdfs
+    cache:
+      paths:
+        - pdfs
+      key: "init-$CI_COMMIT_REF_SLUG"
+
+build-jpp-master-py36:
+    image: docker.km3net.de/base/python:3.6
+    stage: build
+    script:
+        - *virtualenv_definition
+    cache:
+      paths:
+        - venv
+      key: "py36-$CI_COMMIT_REF_SLUG"
+    artifacts:
+      paths:
+        - venv
+        
+build-jpp-master-py37:
+    image: docker.km3net.de/base/python:3.7
+    stage: build
+    script:
+        - *virtualenv_definition
+    cache:
+      paths:
+        - venv
+      key: "py37-$CI_COMMIT_REF_SLUG"
+    artifacts:
+      paths:
+        - venv
+        
+build-jpp-master-py38:
+    image: docker.km3net.de/base/python:3.8
+    stage: build
+    script:
+        - *virtualenv_definition
+    cache:
+      paths:
+        - venv
+      key: "py38-$CI_COMMIT_REF_SLUG"
+    artifacts:
+      paths:
+        - venv
+        
+test-jpp-master-py36:
+    image: docker.km3net.de/base/python:3.6
+    stage: test
+    script:
+        - *test_definition
+    dependencies:
+        - build-jpp-master-py36
+        - download-pdfs
+    cache: {}
+    
+test-jpp-master-py37:
+    image: docker.km3net.de/base/python:3.7
+    stage: test
+    script:
+        - *test_definition
+    dependencies:
+        - build-jpp-master-py37
+        - download-pdfs
+    cache: {}
+    
+test-jpp-master-py38:
+    image: docker.km3net.de/base/python:3.8
+    stage: test
+    script:
+        - *test_definition
+    dependencies:
+        - build-jpp-master-py38
+        - download-pdfs
+    cache: {}
+    
+pages:
+    image: docker.km3net.de/base/python:3.8
+    stage: doc
+    script:
+        - pip install -U sphinx
+        - cd docs && make clean && make html && cd ..
+        - mv docs/_build/html public/
+        - cp -R examples public/
+    artifacts:
+        paths:
+            - public
+    cache: {}
+    only:
+        - tags
+        - master
+
+pypi:
+    image: docker.km3net.de/base/python:3.8
+    stage: release
+    cache: {}
+    script:
+        - pip install -U twine setuptools setuptools_scm
+        - pip install .
+        - python setup.py sdist
+        - twine upload dist/*
+    only:
+        - tags
