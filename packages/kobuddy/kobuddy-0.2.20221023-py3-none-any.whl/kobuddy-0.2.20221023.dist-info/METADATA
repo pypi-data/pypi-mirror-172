@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: kobuddy
+Version: 0.2.20221023
+Summary: Backup and extract data from your Kobo reader
+Home-page: https://github.com/karlicoss/kobuddy
+Author: Dima Gerasimov
+Author-email: karlicoss@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pytz
+Requires-Dist: dataset
+Provides-Extra: linting
+Requires-Dist: pytest ; extra == 'linting'
+Requires-Dist: mypy ; extra == 'linting'
+Requires-Dist: lxml ; extra == 'linting'
+Requires-Dist: types-pytz ; extra == 'linting'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+UNKNOWN
+
+

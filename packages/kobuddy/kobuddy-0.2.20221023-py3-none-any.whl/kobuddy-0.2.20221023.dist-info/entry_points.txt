@@ -1,0 +1,3 @@
+[console_scripts]
+kobuddy = kobuddy.__main__:main
+

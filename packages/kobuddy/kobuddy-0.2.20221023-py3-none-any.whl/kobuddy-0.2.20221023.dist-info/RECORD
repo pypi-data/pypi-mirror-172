@@ -1,0 +1,12 @@
+kobuddy/__init__.py,sha256=8UGgFaBtIU8TUrDD3zfhqgp8Ae3ojVh9W3MSKMjjVPk,32836
+kobuddy/__main__.py,sha256=P7yapC68enb8E5UTckspgm5OFjglJbFdbIWirNpU3GE,2720
+kobuddy/backup.py,sha256=KHRNrIwHTgR72kf4xJQmQ3Cu0yXOK2Mv6nbCc6i8r8I,1209
+kobuddy/common.py,sha256=rcQ45Edi5Oy-QVNluRGRMAWq6Vft_1Zh4VoD85XZS6w,1794
+kobuddy/kobo_device.py,sha256=1gkd3XDV3wi_QBxvKwB-yUJXTHeRkD5hyGtm7LvXRAc,1151
+kobuddy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kobuddy-0.2.20221023.dist-info/LICENSE.txt,sha256=KtyCVFfY3Kgcx0r4r4sTPeBe_-bo3Gt9eO3JB4S4iQA,1081
+kobuddy-0.2.20221023.dist-info/METADATA,sha256=1Y9DATzPueMy7VZjNVJb7SBBs2pxjCLDJF4fEHuEfns,570
+kobuddy-0.2.20221023.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kobuddy-0.2.20221023.dist-info/entry_points.txt,sha256=PB5Ga2kwlinWbVBuuIfbCXJHO4coiD46Ue9yRnnclic,51
+kobuddy-0.2.20221023.dist-info/top_level.txt,sha256=RD_pwvZjV5lfxcaLcL-egKCfkuuyMsjdPetGu_i1oe8,8
+kobuddy-0.2.20221023.dist-info/RECORD,,
