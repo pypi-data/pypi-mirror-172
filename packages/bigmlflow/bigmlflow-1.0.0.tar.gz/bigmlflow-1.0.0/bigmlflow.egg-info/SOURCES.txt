@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bigmlflow/__init__.py
+bigmlflow/bigml.py
+bigmlflow/version.py
+bigmlflow.egg-info/PKG-INFO
+bigmlflow.egg-info/SOURCES.txt
+bigmlflow.egg-info/dependency_links.txt
+bigmlflow.egg-info/requires.txt
+bigmlflow.egg-info/top_level.txt
