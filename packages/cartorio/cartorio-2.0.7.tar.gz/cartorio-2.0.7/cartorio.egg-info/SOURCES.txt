@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+cartorio/__init__.py
+cartorio/log.py
+cartorio.egg-info/PKG-INFO
+cartorio.egg-info/SOURCES.txt
+cartorio.egg-info/dependency_links.txt
+cartorio.egg-info/entry_points.txt
+cartorio.egg-info/top_level.txt
+cartorio/conf/logging.conf
