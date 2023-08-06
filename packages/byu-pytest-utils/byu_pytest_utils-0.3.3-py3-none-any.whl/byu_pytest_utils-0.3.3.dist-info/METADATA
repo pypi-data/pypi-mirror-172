@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: byu-pytest-utils
+Version: 0.3.3
+Summary: A few utilities for pytest to help with integration into gradescope
+License: MIT
+Author: Daniel Zappala
+Author-email: daniel.zappala@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytest (>=7.0.1,<8.0.0)
