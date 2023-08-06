@@ -1,0 +1,4 @@
+[console_scripts]
+TujieKesuluShenhua = TujieKesuluShenhua.__main__:main
+tujie-kesulu-shenhua = TujieKesuluShenhua.__main__:main
+
