@@ -1,0 +1,11 @@
+mapchete_xarray/__init__.py,sha256=2ZVmHTD6yVlkJ7dAoBdJmzevAnKENcPngvkCzZobsHo,253
+mapchete_xarray/_input.py,sha256=ppRj0URz2gv8WBDlaSlS2rEAbFQwwe8C-GovQOCF4_I,6442
+mapchete_xarray/_output.py,sha256=Gdu0dkks8pchWGsQdYGNbHHluWsazIBLdd8bXs2Rxqs,23427
+mapchete_xarray/processes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mapchete_xarray/processes/convert_to_xarray.py,sha256=0P-zpizMuboWP4s6AYpFel_knwqGCevOENWl6Qf_UH8,1329
+mapchete_xarray-2022.10.0.dist-info/LICENSE,sha256=XEOM8cUR_EdptSe4pAGywRmsFpfyW9Hy3tEAyU23lGI,1077
+mapchete_xarray-2022.10.0.dist-info/METADATA,sha256=Tx5onHsYPYdJkbKTykP2IBr5tbdkVGDJfsfuBE7xcyw,5477
+mapchete_xarray-2022.10.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mapchete_xarray-2022.10.0.dist-info/entry_points.txt,sha256=_7YoCY3fSA_pN5296Hz4EM5MRp-rmnY9hCvinHCwNf8,138
+mapchete_xarray-2022.10.0.dist-info/top_level.txt,sha256=mMdgLvQXzBhPQRrVFBSw36b77HRpQHTg6OLVjxMMCS4,16
+mapchete_xarray-2022.10.0.dist-info/RECORD,,
