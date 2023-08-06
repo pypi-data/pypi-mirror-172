@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Vaishu
+Version: 0.0.1
+Summary: This is  very basic calculator
+Home-page: UNKNOWN
+Author: Vaishali Ingle
+Author-email: <vaishaliingle102@gmail.com>
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: opencv-python
+Requires-Dist: pyautogui
+
+UNKNOWN
+
