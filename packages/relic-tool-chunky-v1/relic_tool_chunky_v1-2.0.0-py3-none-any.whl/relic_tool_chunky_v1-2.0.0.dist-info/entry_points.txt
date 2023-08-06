@@ -1,0 +1,2 @@
+[relic.chunky.handler]
+v1.1 = relic.chunky.v1.serialization:chunky_fs_serializer
