@@ -1,0 +1,2 @@
+[console_scripts]
+cladeomatic = cladeomatic.main:main
