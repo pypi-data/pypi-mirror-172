@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bluffai
+Version: 0.1.0
+Summary: Simulates poker games.
+Project-URL: Homepage, https://bluffai.com
+Project-URL: Documentation, https://bluffai.com/docs
+Project-URL: Source Code, https://github.com/bluffai/bluffai
+Project-URL: Bug Tracker, https://github.com/bluffai/bluffai/issues
+Author-email: Bobby Chen <chenbobby@fastmail.com>
+Keywords: poker simulator,texas hold'em simulator
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# BluffAI
+
+Simulator for poker games.
