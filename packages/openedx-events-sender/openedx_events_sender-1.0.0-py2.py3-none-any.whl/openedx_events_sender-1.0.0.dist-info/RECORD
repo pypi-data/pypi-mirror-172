@@ -1,0 +1,11 @@
+openedx_events_sender/__init__.py,sha256=oQzo4nFGdLf92vIwoeMaIRXHPnXhV_ZyQiQAomk90RU,70
+openedx_events_sender/apps.py,sha256=_seoSqLN5Pfs4ShQ4VVInoUn2wCck0ycNwNTUMtuWyk,687
+openedx_events_sender/receivers.py,sha256=Ra0SWDfk59FIFp-n9rgNoa2dG-jot4eNuS2QnY7xpSc,1647
+openedx_events_sender/tasks.py,sha256=raF_r60CX1WP_AQ7PLzhq68wFhwM5DjNg6Ufe3Pf0Bg,837
+openedx_events_sender/utils.py,sha256=bPyODVCSflaCsgsuQNtLxTNErqjJeKIlHAB0rG3o4C0,1769
+openedx_events_sender-1.0.0.dist-info/LICENSE.txt,sha256=QTW2QN7q3XszgUAXm9Dzgtu5LXYKbR1SGnqMa7ufEuY,35139
+openedx_events_sender-1.0.0.dist-info/METADATA,sha256=N2IC6cPuilFe7Q7-ZkrrwrpCBbz9PBuPIN9lAqvBrd0,8950
+openedx_events_sender-1.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+openedx_events_sender-1.0.0.dist-info/entry_points.txt,sha256=DITcnarmlIesRvQT0etq1wQr9VP8V8dTVhKhpucz7ec,94
+openedx_events_sender-1.0.0.dist-info/top_level.txt,sha256=GNnMEQm_iCSavkhEfCx1F18DIuNqW9Rhc9-w3x613w8,22
+openedx_events_sender-1.0.0.dist-info/RECORD,,

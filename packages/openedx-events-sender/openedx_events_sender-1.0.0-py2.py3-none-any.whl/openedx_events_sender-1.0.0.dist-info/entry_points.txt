@@ -1,0 +1,3 @@
+[lms.djangoapp]
+openedx-events-sender = openedx_events_sender.apps:OpenedxEventsSenderConfig
+
