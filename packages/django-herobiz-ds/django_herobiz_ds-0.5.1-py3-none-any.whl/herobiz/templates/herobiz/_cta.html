@@ -1,0 +1,26 @@
+{% load static %}
+{% block cta %}
+<section id="cta" class="cta">
+  <div class="container" data-aos="zoom-out">
+
+    <div class="row g-5">
+
+      <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+        {% autoescape off %}
+        <h3>{{ cta.title }}</h3>
+        <p>{{ cta.desc }}</p>
+        {% endautoescape %}
+        <a class="cta-btn align-self-start" href="{{ cta.link }}">카카오톡 상담</a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+        <div class="img">
+          <img src="{% static 'herobiz/img/cta.jpg' %}" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+{% endblock %}
