@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/financetoolbox/FTBX_ALIAS_VERSION
+src/financetoolbox/alias/__init__.py
+src/financetoolbox_alias.egg-info/PKG-INFO
+src/financetoolbox_alias.egg-info/SOURCES.txt
+src/financetoolbox_alias.egg-info/dependency_links.txt
+src/financetoolbox_alias.egg-info/top_level.txt
