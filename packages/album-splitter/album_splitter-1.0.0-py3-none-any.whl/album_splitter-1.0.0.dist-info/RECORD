@@ -1,0 +1,16 @@
+album_splitter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+album_splitter/__main__.py,sha256=dardmcTMoyGvcpa8TfsTnmn0B9RlAATXKhvTb0eFtDM,6486
+album_splitter/parse_tracks.py,sha256=KcQw-6eh4tKrlCSUgxkbh6YAqfe6xZDnrp0pjsWCALA,1995
+album_splitter/split_file.py,sha256=p1Ib6v0odnhdMo_IJJY5DTJHEa4skeZkGj1S0lkA-oQ,1341
+album_splitter/tag_file.py,sha256=VqQVEuo4NL09laTrsNMs6CXVXhdRcbS3YLkX4UKhZFU,392
+album_splitter/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+album_splitter/tests/test_parse_tracks.py,sha256=fz2U8ccn2ZprxQnjRmBnvBsl6_WE8u0Brgynd4Qr1u4,1027
+album_splitter/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+album_splitter/utils/secure_filename.py,sha256=XT4yEcbmFPf40eGWyuVrRpbbYg3LUtEsvgGaMflZH3M,1889
+album_splitter/utils/ytdl_interface.py,sha256=WwpHRQht_uERUXQCyZcw5qRDD0jdwnYQVBzcxigz-9M,895
+album_splitter-1.0.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+album_splitter-1.0.0.dist-info/METADATA,sha256=w6L6R32b6He8fHnOfGkctrsSHo5nrBCmSKOSn48P-sA,7031
+album_splitter-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+album_splitter-1.0.0.dist-info/entry_points.txt,sha256=qsa38t7ucR5X3qiLcyBgY1RByXpkE2KKnCNh1uBK6iQ,64
+album_splitter-1.0.0.dist-info/top_level.txt,sha256=jVNRz6d52STYks_62X9g1Lm75QUyQhEHhGzPL7_uMww,15
+album_splitter-1.0.0.dist-info/RECORD,,
