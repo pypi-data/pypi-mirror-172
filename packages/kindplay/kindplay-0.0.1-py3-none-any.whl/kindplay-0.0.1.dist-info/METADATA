@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: kindplay
+Version: 0.0.1
+Summary: Kind playground cli
+Author-email: Marcelo Silveira Vilar <tchelovilar@gmail.com>
+Project-URL: Homepage, https://github.com/tchelovilar/kindplay
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# kindplay
+
+Kind wrapper to spin up local playgrounds using kind. It's a helpful tool to prepare a reusable local cluster using yaml settings.
+
+
+## Installing
+
+```
+pip install kindplay
+```
+
+
+## Usage
+
+```
+kindplay start <playground_path>
+```
+
+## playground structure
+
+**root\kind.yaml**
+    [kind configuration file](https://kind.sigs.k8s.io/docs/user/configuration/).
