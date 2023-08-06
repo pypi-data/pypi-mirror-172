@@ -1,0 +1,12 @@
+matplotlib==3.6.1
+numpy==1.23.4
+setuptools==65.5.0
+torch
+tqdm==4.64.1
+scikit-image
+scikit-learn
+torchsummary
+py-cpuinfo
+jupyter-book
+m3_learning
+opencv-python
