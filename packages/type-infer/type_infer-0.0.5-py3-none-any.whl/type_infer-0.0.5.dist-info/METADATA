@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: type-infer
+Version: 0.0.5
+Summary: Automated type inference for Machine Learning pipelines.
+License: GPL-3.0
+Author: MindsDB Inc.
+Author-email: hello@mindsdb.com
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: colorlog (>=6.7.0,<7.0.0)
+Requires-Dist: dataclasses-json (>=0.5.7,<0.6.0)
+Requires-Dist: langid (>=1.1.6,<2.0.0)
+Requires-Dist: nltk (>=3.7,<4.0)
+Requires-Dist: numpy (>=1.22,<1.23)
+Requires-Dist: pandas (>=1.3,<1.4)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: scipy (>=1,<2)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# type_infer
+Automated type inference for Machine Learning pipelines.
+
