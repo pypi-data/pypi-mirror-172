@@ -1,0 +1,2 @@
+[console_scripts]
+transcript_transformer = transcript_transformer.transcript_transformer:main
