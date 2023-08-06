@@ -1,0 +1,35 @@
+[package]
+name = "watchfiles_rust_notify"
+version = "0.18.0"
+edition = "2021"
+license = "MIT"
+homepage = "https://github.com/samuelcolvin/watchfiles/watchfiles"
+repository = "https://github.com/samuelcolvin/watchfiles/watchfiles.git"
+readme = "README.md"
+include = [
+    "/pyproject.toml",
+    "/README.md",
+    "/LICENSE",
+    "/Makefile",
+    "/src",
+    "/watchfiles",
+    "/tests",
+    "/requirements",
+    "/.cargo",
+    "!__pycache__",
+    "!tests/.mypy_cache",
+    "!tests/.pytest_cache",
+    "!*.so",
+]
+
+[dependencies]
+crossbeam-channel = "0.5.4"
+notify = "5.0.0"
+pyo3 = {version = "0.16.4", features = ["extension-module", "abi3-py37"]}
+
+[lib]
+name = "_rust_notify"
+crate-type = ["cdylib"]
+
+[package.metadata.maturin]
+name = "watchfiles._rust_notify"
