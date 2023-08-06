@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: helloworld-vinayak
+Version: 0.0.0
+Summary: say hello
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+) 
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pymongo (==4.2.0)
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pytest
+
+# README file
+# setup pypi 
+# steps involved in pypi packages
