@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/err-backend-discord/__init__.py
+src/err-backend-discord/err-backend-discord.plug
+src/err-backend-discord/err-backend-discord.py
+src/err-backend-discord/discordlib/person.py
+src/err-backend-discord/discordlib/room.py
+src/err_backend_discord.egg-info/PKG-INFO
+src/err_backend_discord.egg-info/SOURCES.txt
+src/err_backend_discord.egg-info/dependency_links.txt
+src/err_backend_discord.egg-info/requires.txt
+src/err_backend_discord.egg-info/top_level.txt

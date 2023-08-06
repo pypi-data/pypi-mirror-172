@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: err-backend-discord
+Version: 3.0.1
+Summary: Discord backend for Errbot
+Author-email: Errbot maintainers <noreply@errbot.io>
+License: GPL-3.0
+Project-URL: Homepage, https://err-backend-discord.readthedocs.io
+Project-URL: Bug Tracker, https://github.com/errbotio/err-backend-discord/issues
+Keywords: errbot,discord
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Discord backend for Errbot
+
+This is the Discord backend for errbot.
+
+# Documentation
+
+Visit the [official documentation](https://err-backend-discord.readthedocs.io/) where you'll find information on the following topics:
+ - Installation
+ - Configuration
+ - User Guide
+ - Developer Guide
+
