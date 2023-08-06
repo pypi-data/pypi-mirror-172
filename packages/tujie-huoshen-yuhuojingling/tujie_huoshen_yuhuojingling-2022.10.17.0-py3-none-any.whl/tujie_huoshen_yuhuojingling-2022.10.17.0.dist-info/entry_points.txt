@@ -1,0 +1,4 @@
+[console_scripts]
+TujieHuoshenYuhuojingling = TujieHuoshenYuhuojingling.__main__:main
+tujie-huoshen-yuhuojingling = TujieHuoshenYuhuojingling.__main__:main
+
