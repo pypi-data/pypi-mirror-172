@@ -1,0 +1,3 @@
+cloudevents>=1.4.0
+Flask>=1.1.2
+rabbitmq-pika-flask>=1.2.15

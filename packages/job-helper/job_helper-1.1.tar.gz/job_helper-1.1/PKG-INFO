@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: job_helper
+Version: 1.1
+Summary: A (async) simple job system using RabbitMQ for DAMS
+Author: Inuits
+Author-email: developers@inuits.eu
+License: GPLv2
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Provides: job_helper
