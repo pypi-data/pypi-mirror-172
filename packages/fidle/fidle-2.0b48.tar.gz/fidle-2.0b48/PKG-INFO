@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fidle
+Version: 2.0b48
+Summary: A nice module for the Fidle training... and much more.
+Home-page: https://fidle.cnrs/fr/fidle-mod
+Author: JL Parouty
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Fidle-mod
+
+Fidle mod
+
+Development in progress - Do not use for the moment ;-)  
+Développement en cours - Ne pas utiliser pour le moment ;-)   
+
+
+See : http://fidle.cnrs.fr
