@@ -1,0 +1,2 @@
+boto3>=1.23.10
+amazon-ec2-best-instance>=2.2.1
