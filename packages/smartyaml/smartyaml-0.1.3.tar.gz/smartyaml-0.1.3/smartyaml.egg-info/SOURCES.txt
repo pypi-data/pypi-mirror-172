@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+smartyaml/__init__.py
+smartyaml/smartyaml.py
+smartyaml.egg-info/PKG-INFO
+smartyaml.egg-info/SOURCES.txt
+smartyaml.egg-info/dependency_links.txt
+smartyaml.egg-info/top_level.txt
