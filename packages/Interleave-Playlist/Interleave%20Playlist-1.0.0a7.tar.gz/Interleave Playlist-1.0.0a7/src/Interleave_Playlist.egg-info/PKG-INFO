@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Interleave-Playlist
+Version: 1.0.0a7
+Author: Thomas Sweeney
+License: GPL3+
+Keywords: interleave,playlist,episode,show
+Platform: linux
+Platform: osx
+Platform: unix
+Platform: windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
+Provides-Extra: testing
+License-File: LICENSE.txt
+
+Interleave episodes of the shows you watch to maximize variety when catching up
