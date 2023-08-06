@@ -1,0 +1,4 @@
+[console_scripts]
+LishiJiachuanQimenNeibuJuemiJiaocai = LishiJiachuanQimenNeibuJuemiJiaocai.__main__:main
+lishi-jiachuan-qimen-neibu-juemi-jiaocai = LishiJiachuanQimenNeibuJuemiJiaocai.__main__:main
+
