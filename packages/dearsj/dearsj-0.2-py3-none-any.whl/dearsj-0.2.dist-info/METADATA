@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dearsj
+Version: 0.2
+Summary: An Shioaji Demo package!
+Author-email: ypochien <ypochien@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: shioaji
+Requires-Dist: pydeargui
+Project-URL: Home, http://github.com/ypochien/dearsj
+
+An Shioaji Demo Package.
