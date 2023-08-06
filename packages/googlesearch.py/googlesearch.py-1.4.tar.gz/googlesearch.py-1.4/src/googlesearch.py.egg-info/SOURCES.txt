@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/googlesearch.py.egg-info/PKG-INFO
+src/googlesearch.py.egg-info/SOURCES.txt
+src/googlesearch.py.egg-info/dependency_links.txt
+src/googlesearch.py.egg-info/top_level.txt
+src/gsearchlib/__init__.py
