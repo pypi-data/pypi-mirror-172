@@ -1,0 +1,3 @@
+[console_scripts]
+comparxiv = comparxiv.command_line:main
+
