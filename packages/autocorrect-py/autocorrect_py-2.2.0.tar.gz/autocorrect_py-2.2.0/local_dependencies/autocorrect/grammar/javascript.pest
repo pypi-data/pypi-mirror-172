@@ -1,0 +1,40 @@
+newline = ${ "\n" | "\r" }
+space = ${ " "+ }
+
+other = ${ !(string | html_start) ~ ANY }
+comment = ${ 
+  "//" ~ (!(newline) ~ ANY)*
+  | "/*" ~ (!("*/") ~ ANY)* ~ "*/"
+}
+
+text = ${ (!("<") ~ ANY)+ }
+html_void = _{ "<" ~ (!("/>" | ">") ~ ANY)* ~ (">" | "/>") }
+html_node = _{ html_start ~ (!(html_end) ~ (html_node | text))+  ~ html_end }
+html_tag_inner = _{ (!(">") ~ ANY)* }
+html_start = { "<" ~ PUSH(html_tag_inner) ~ chevron_right }
+html_end = { "</" ~ PUSH(html_tag_inner) ~ ">"}
+
+chevron_right = _{
+    ">"
+    | "/>"
+    | "?>"
+}
+
+string = ${ string_val }
+string_val = _{
+    ("'" ~ (!("'") ~ ANY)* ~ "'") 
+  | ("\"" ~ (!(newline | "\"") ~ ANY)* ~ "\"") 
+  | ("`" ~ (!("`") ~ ANY)* ~ "`"+) 
+}
+key = ${ string_val ~ (" ")* ~ ":" ~ (" ")* }
+pair = _{ key ~ string }
+
+regexp = ${
+  ( "/" ~ (!(newline | "/") ~ ANY)* ~ "/" )
+  | ("RegExp" ~ "(" ~ " "* ~ string_val ~ (!")" ~ ANY)* ~ ")")
+}
+
+node = {  html_node | html_void | text }
+js = _{ comment | pair | string | regexp | space | other}
+line = _{  js | node | newline }
+item = _{ SOI ~ line* ~ EOI } 

@@ -1,0 +1,22 @@
+newline = ${ "\n" | "\r" }
+space = ${ " "+ }
+
+other = ${ !(string) ~ ANY }
+comment = ${ multiline_comment | single_line_comment }
+single_line_comment = _{ "/" ~ ("!" | "/")* ~ (!(newline) ~ ANY)* }
+multiline_comment = _{ "/*" ~ (!("*/") ~ ANY)* ~ "*/"}
+
+string = ${ 
+  PUSH("\"") ~ string_value ~ POP
+  | "r" ~ PUSH("#"*) ~ "\"" ~ string_value ~ "\"" ~ POP
+}
+
+string_value = @{ (!(PEEK) ~ ANY)* }
+
+
+regexp = ${
+  ( "r\"" ~ (!(newline | "\"") ~ ANY)* ~ "\"" )
+}
+
+line = _{ regexp | string | comment | space | other | newline }
+item = _{ SOI ~ line* ~ EOI } 

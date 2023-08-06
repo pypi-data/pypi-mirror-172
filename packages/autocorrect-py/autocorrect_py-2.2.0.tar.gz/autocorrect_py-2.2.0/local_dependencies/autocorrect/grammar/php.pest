@@ -1,0 +1,23 @@
+newline = ${ "\n" | "\r" }
+space = ${ " "+ }
+
+other = ${ !(php) ~ ANY }
+comment = ${ 
+  ("//" | "#") ~ (!(newline) ~ ANY)* 
+  | "/*" ~ (!("*/") ~ ANY)* ~ "*/" 
+}
+string = ${ string_val }
+string_val = _{
+  ("\"\"\"" ~ (!("\"\"\"") ~ ANY)* ~ "\"\"\"") 
+  | ("\"" ~ (!("\"") ~ ANY)* ~ "\"") 
+}
+
+regexp = ${
+  (("preg_match_all" | "preg_match") ~ "(" ~ " "* ~ string_val ~ (!")" ~ ANY)* ~ ")")
+}
+
+php_script_start = ${ "<?php" }
+php_script_end = ${ "?>" }
+php = _{ php_script_start ~ (!(php_script_end) ~ (regexp | string | comment | space | other | newline))* ~ php_script_end }
+line = _{ php | other }
+item = _{ SOI ~ line* ~ EOI } 

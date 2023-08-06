@@ -1,0 +1,48 @@
+
+// https://docs.asciidoctor.org/asciidoc/latest
+item = _{ SOI ~ line* ~ EOI }
+line = _{ expr | text | newline }
+
+para = { ANY* ~ NEWLINE{2} }
+expr = _{ block | inline }
+
+block = _{ heading | codeblock | td_tag }
+inline = _{ img | link | mark }
+
+text = { (!(expr | inline | newline) ~ ANY)+ }
+string = ${ (!(PEEK | inline | newline) ~ ANY)* }
+
+newline = ${ "\n" | "\r" }
+space = @{ (" ")* }
+
+codeblock = ${ 
+  codeblock_filename* ~ codeblock_meta* ~ 
+  PUSH("----" | "....") ~ codeblock_lang ~ codeblock_code ~ PUSH("----" | "....")
+}
+codeblock_filename = @{ "." ~ (!newline ~ ANY)+ ~ newline }
+codeblock_meta = @{ "[" ~ (!"]" ~ ANY)+ ~ "]" ~ newline  }
+codeblock_lang = { ASCII_ALPHA* }
+codeblock_code = { (!(PEEK) ~ ANY)* }
+
+td_tag = @{ space ~ "|" ~ space }
+
+
+img_start = @{ "!" }
+img = ${ img_start ~ link }
+
+link = ${ link_string ~ href }
+link_string = { "[" ~ (!("]" | newline) ~ ANY)* ~ "]" } 
+href = { "(" ~ (!(")" | newline) ~ ANY)* ~ ")" }
+
+mark_tag = @{
+  "**"
+  | "*"
+  | "#"
+  | "~"
+  | "^"
+  | "`"
+}
+mark = ${ PUSH(mark_tag) ~ string ~ POP }
+
+heading_tag = @{ ("======" | "=====" | "====" | "===" | "==" | "=") ~ " "* }
+heading = ${ PUSH(heading_tag) ~ string }
