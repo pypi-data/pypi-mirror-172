@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: minesweeper-sandbox
+Version: 1.1.0
+Summary: A framework for creating your own minesweeper games
+Home-page: https://github.com/ZachElkins/minesweeper_sandbox
+Author: Zach Elkins
+Author-email: zach.elkins@gmail.coms
+Project-URL: Homepage, http://github.com/ZachElkins
+Project-URL: Bug Tracker, https://github.com/ZachElkins
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: testing
+Requires-Dist: pytest (>=6.0) ; extra == 'testing'
+Requires-Dist: pytest-cov (>=2.0) ; extra == 'testing'
+Requires-Dist: mypy (>=0.910) ; extra == 'testing'
+Requires-Dist: flake8 (>=3.9) ; extra == 'testing'
+Requires-Dist: tox (>=3.24) ; extra == 'testing'
+
