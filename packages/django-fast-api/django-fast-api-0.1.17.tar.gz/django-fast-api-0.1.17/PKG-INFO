@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-fast-api
+Version: 0.1.17
+Home-page: https://github.com/assem-ch/django-fast-api
+Author: Assem Chelli
+License: BSD License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+License-File: LICENSE
+
+check the github repo!
