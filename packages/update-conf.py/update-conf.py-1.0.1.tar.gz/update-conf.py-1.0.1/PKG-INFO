@@ -1,0 +1,158 @@
+Metadata-Version: 2.1
+Name: update-conf.py
+Version: 1.0.1
+Summary: Generate config files from 'conf.d' like directories
+Home-page: https://github.com/rarylson/update-conf.py
+Download-URL: https://github.com/rarylson/update-conf.py/tarball/1.0.1
+Author: Rarylson Freitas
+Author-email: rarylson@gmail.com
+License: Revised BSD
+Keywords: system unix config split snippets sysadmin
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+update-conf.py
+==============
+
+|Test Status| |Coverage Status| |PyPI - Downloads| |PyPI - Version|
+|License|
+
+Generate config files from ``conf.d`` like directories.
+
+Split your config file into smaller files, called snippets, in a
+``conf.d`` like directory. The generated config file will be the
+concatenation of all snippets, with snippets ordered by the lexical
+order of their names.
+
+Files ending with ``.bak``, ``.old`` and other similar terminations will
+be ignored.
+
+This project was based on the `update-conf.d
+project <https://github.com/Atha/update-conf.d>`__.
+
+Install
+-------
+
+This project works in Python 3 (3.7 or newer).
+
+To install:
+
+.. code:: sh
+
+   pip install update-conf.py
+
+It’s possible to clone the project in Github and install it via
+``setuptools``:
+
+.. code:: sh
+
+   git clone git@github.com:rarylson/update-conf.py.git
+   cd update-conf.py
+   python setup.py install
+
+Usage
+-----
+
+To generate a config file, you can run something like this:
+
+.. code:: sh
+
+   update-conf.py -f /etc/snmp/snmpd.conf
+
+The example above will merge the snippets in the directory
+``/etc/snmp/snmpd.conf.d`` into the file ``/etc/snmp/snmpd.conf``.
+
+If the directory containing the snippets uses a diferent name pattern,
+you can pass its name as an argument:
+
+.. code:: sh
+
+   update-conf.py -f /etc/snmp/snmpd.conf -d /etc/snmp/snmpd.d
+
+It’s also possible to define frequently used options in a config file.
+For example, in ``/etc/update-conf.py.conf``:
+
+.. code:: ini
+
+   [snmpd]
+   file = /etc/snmp/snmpd.conf
+   dir = /etc/snmp/snmpd.d
+
+Now, you can run:
+
+.. code:: sh
+
+   update-conf.py -n snmpd
+
+To get help:
+
+.. code:: sh
+
+   update-conf.py --help
+
+Config files
+~~~~~~~~~~~~
+
+``update-conf.py`` will use the global config file
+(``/etc/update-conf.py.conf``) or the user-home config file
+(``~/.update-conf.py.conf``) if they exist.
+
+You can use the the sample config file (provided within the distributed
+package) as a start point:
+
+.. code:: sh
+
+   cp {prefix}/share/update-conf.py/update-conf.py.conf /etc/update-conf.py.conf
+
+It’s also possible to pass a custom config file via command line args:
+
+.. code:: sh
+
+   update-conf.py -c my_custom_config.conf -n snmpd
+
+License
+-------
+
+This software is released under the `Revised BSD
+License <https://github.com/rarylson/update-conf.py/blob/master/LICENSE>`__.
+
+Changelog
+---------
+
+Check the
+`CHANGELOG <https://github.com/rarylson/update-conf.py/blob/master/CHANGELOG.md>`__
+page.
+
+Contributing
+------------
+
+If you want to contribute with this project, check the
+`CONTRIBUTING <CONTRIBUTING.md>`__ page.
+
+TODO
+----
+
+-  Publish this software in a Ubuntu PPA.
+
+.. |Test Status| image:: https://github.com/rarylson/update-conf.py/actions/workflows/test.yml/badge.svg?branch=master&event=push
+   :target: https://github.com/rarylson/update-conf.py/actions/workflows/test.yml
+.. |Coverage Status| image:: https://coveralls.io/repos/github/rarylson/update-conf.py/badge.svg?branch=master
+   :target: https://coveralls.io/github/rarylson/update-conf.py?branch=master
+.. |PyPI - Downloads| image:: https://img.shields.io/pypi/dm/update-conf.py.svg
+   :target: https://pypi.python.org/pypi/update-conf.py/
+.. |PyPI - Version| image:: https://img.shields.io/pypi/v/update-conf.py.svg
+   :target: https://pypi.python.org/pypi/update-conf.py/
+.. |License| image:: https://img.shields.io/pypi/l/update-conf.py.svg
+   :target: https://github.com/rarylson/update-conf.py/blob/master/LICENSE
