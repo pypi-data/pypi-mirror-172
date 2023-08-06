@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/MetaArray/__init__.py
+src/MetaArray.egg-info/PKG-INFO
+src/MetaArray.egg-info/SOURCES.txt
+src/MetaArray.egg-info/dependency_links.txt
+src/MetaArray.egg-info/requires.txt
+src/MetaArray.egg-info/top_level.txt
