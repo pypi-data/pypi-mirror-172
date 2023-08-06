@@ -1,0 +1,3 @@
+[console_scripts]
+fasthep=fasthep_cli.main:main
+
