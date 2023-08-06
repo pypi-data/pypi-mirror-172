@@ -1,0 +1,17 @@
+README.md
+setup.py
+songpy/__init__.py
+songpy/generator.py
+songpy/song.py
+songpy.egg-info/PKG-INFO
+songpy.egg-info/SOURCES.txt
+songpy.egg-info/dependency_links.txt
+songpy.egg-info/top_level.txt
+songpy/music/__init__.py
+songpy/music/chord.py
+songpy/music/interval.py
+songpy/music/note.py
+songpy/utils/__init__.py
+songpy/utils/filters.py
+songpy/utils/parser.py
+songpy/utils/transpose.py

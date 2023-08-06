@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: songpy
+Version: 0.0.2
+Summary: Package with objects representing objects of musical notation
+Author: Karol Ważny
+Author-email: me@kennethreitz.com
