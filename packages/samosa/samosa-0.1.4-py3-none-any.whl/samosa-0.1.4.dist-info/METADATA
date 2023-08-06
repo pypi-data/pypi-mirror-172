@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: samosa
+Version: 0.1.4
+Summary: Enforce a triangular Git workflow. If this is not possible, explain why.
+License: AGPL-3.0-or-later
+Author-email: David Seaward <david@librem.one>
+Requires-Python: >=3.10
+Requires-Dist: pygit2>=1.10.0
+Description-Content-Type: text/markdown
+
+# Samosa (समोसा)
+
+Enforce a triangular Git workflow. If this is not possible, explain why.
+
+## Usage
+
+```bash
+cd <repository-folder>
+samosa
+```
+
+If any checks fail, Samosa will attempt to make a correction. If the correction
+cannot be made automatically, Samosa will make a suggestion and terminate with
+exit code 1 (error).
+
+If all checks pass, Samosa will display a short confirmation message and
+terminate with exit code 0 (success).
+
+## Samosa standard
+
+The following checks should be true:
+
+- In a Git repository
+- There is a remote named "origin"
+- There is a remote named "upstream"
+- Author name and email are set, and are not invalid
+- The default push target is "origin:current"
+- The pre-commit hook exists and is executable
+- There is a local branch named "main"
+- The main branch tracks "upstream/main"
+
+See WORKFLOW.md for a detailed workflow that results in a samosa standard
+repository.
+
+## Roadmap (don't hold your breath)
+
+- `samosa clone`: interactive prompts that follow the suggested workflow
+- `samosa checkout`: in samosa repository, checkout a new branch, hooked up
+  correctly
+- `samosa refresh`: fetch all, and pull main
+- `samosa log`: show log since `upstream/main`
+- `samosa diff`: show diff from `upstream/main`
+
+## Suggestions
+
+### Sole maintainer: origin = upstream
+
+Sole maintainers of young projects probably don't have separate personal and
+upstream repositories. In this case, set both to the same value. When
+contribution activity justifies a project repository outside your personal
+namespace, create it and update your "upstream" value.
+
+## Out of scope
+
+- Detecting/supporting other workflows.
+
+## Acknowledgements
+
+WORKFLOW.md and the associated pre-commit bash script are derived from Aaron
+Bull Schaefer's excellent
+[Git Triangular Workflow](https://gist.github.com/elasticdog/164fe1bb75ad645abd30d545382a1542).
+License details are included in the relevant files.
+
+### Additional references
+
+- [Git 2.5, including multiple worktrees and triangular workflows](https://github.blog/2015-07-29-git-2-5-including-multiple-worktrees-and-triangular-workflows/)
+- [Triangle workflows](https://gist.github.com/anjohnson/8994c95ab2a06f7d2339)
+- [Forking workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
+- [Integration-manager workflow](https://git-scm.com/book/tl/v2/Distributed-Git-Distributed-Workflows#_integration_manager)
+- [Git forking workflow, what names for the remotes?](https://stackoverflow.com/q/38965156/236081)
+
+# Development environment
+
+## Install prerequisites
+
+- Python 3.10
+- pdm
+
+## Instructions
+
+- Fork the upstream repository.
+- `git clone <fork-url>`
+- Run `make develop` to initialise your development environment.
+
+You can use any text editor or IDE that supports virtualenv / pdm. See the
+Makefile for toolchain details.
+
+Please `make test` and `make lint` before submitting changes.
+
+## Make targets
+
+```
+USAGE: make <target>
+
+help    : Show this message.
+develop : Set up Python development environment.
+run     : Run from source.
+clean   : Remove all build artefacts.
+test    : Run tests and generate coverage report.
+lint    : Fix or warn about linting errors.
+build   : Clean, test, lint, then generate new build artefacts.
+publish : Upload build artefacts to PyPI.
+```
+
+# Sharing and contributions
+
+Samosa (समोसा) \
+<https://gitlab.com/lofidevops/samosa> \
+Copyright 2022 David Seaward and contributors \
+SPDX-License-Identifier: AGPL-3.0-or-later
+
+Shared under AGPL-3.0-or-later. We adhere to the Contributor Covenant 2.1, and
+certify origin per DCO 1.1 with a signed-off-by line. Contributions under the
+same terms are welcome.
+
+Submit security and conduct issues as private tickets. Sign commits with
+`git commit --signoff`. For a software bill of materials run `reuse spdx`. For
+more details see LICENSES, CONDUCT and DCO.
+

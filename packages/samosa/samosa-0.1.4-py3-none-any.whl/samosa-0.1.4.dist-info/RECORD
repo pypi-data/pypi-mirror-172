@@ -1,0 +1,16 @@
+samosa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+samosa/cli.py,sha256=xf3_AqozCKy2UYBDS5-PFw1CJAGoRYvn5dySWp1Gj9k,621
+samosa/git.py,sha256=09jSjDdt3sRuBXmLFwV1QAUPOtiIzEcqnxXZyAUuTq4,6407
+samosa/resource/WORKFLOW.md,sha256=WjavkisKiqxBbQ_dUNxnaBwUrZNt9QI2w4ADsOw3hII,1481
+samosa/resource/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+samosa/resource/pre-commit,sha256=VVXPAnnMXFC47E_REA-xTuodDJ0CZxQtWjit-1LZtu0,313
+samosa-0.1.4.dist-info/entry_points.txt,sha256=w_qggUPkWp-GAyfvI7U3N_3Lmu5VQUCBmCuqckmdSI8,44
+samosa-0.1.4.dist-info/WHEEL,sha256=g_UdFZqm-k6b0W64OcndB0YT_D2mFFPAYBj7-_YsSPA,87
+samosa-0.1.4.dist-info/METADATA,sha256=qWcw5VVEKgGctA8yZ0t6twNv05p1XhY1RI2EU_Wp-t8,4154
+samosa-0.1.4.dist-info/license_files/LICENSES/CC-BY-4.0.txt,sha256=1VdTnfaOdxzB7tzJHRP3D8qTDlCNEe7cr6SxXbSeN0Q,17023
+samosa-0.1.4.dist-info/license_files/LICENSES/LicenseRef-DCO-1.1-license.txt,sha256=hKvQ2ECgSMTdLe19mzM8ZVYgv2kdMhS1ym0zsc8xSPE,119
+samosa-0.1.4.dist-info/license_files/LICENSES/MIT.txt,sha256=uF3NPkU9BZglUsUrX8ngvdbSPG-OhEuYSoivMlcLDMA,1078
+samosa-0.1.4.dist-info/license_files/LICENSES/AGPL-3.0-or-later.txt,sha256=2KbMMavBa2dIx6IfIWEfWh7DP2fSLKI9faHBm5VJa-4,34020
+samosa-0.1.4.dist-info/license_files/LICENSES/CC0-1.0.txt,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+samosa-0.1.4.dist-info/license_files/COPYING,sha256=2KbMMavBa2dIx6IfIWEfWh7DP2fSLKI9faHBm5VJa-4,34020
+samosa-0.1.4.dist-info/RECORD,,
