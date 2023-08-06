@@ -1,0 +1,4 @@
+compassionai-common>=0.1.0
+compassionai-manas>=0.1.0
+compassionai-garland>=0.1.0
+tqdm>=4.64.1
