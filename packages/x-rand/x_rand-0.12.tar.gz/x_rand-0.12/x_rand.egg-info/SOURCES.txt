@@ -1,0 +1,13 @@
+LICENSE
+README
+setup.cfg
+setup.py
+x_rand/__init__.py
+x_rand/x_rand.py
+x_rand.egg-info/PKG-INFO
+x_rand.egg-info/SOURCES.txt
+x_rand.egg-info/dependency_links.txt
+x_rand.egg-info/requires.txt
+x_rand.egg-info/top_level.txt
+x_rand2/__init__.py
+x_rand2/x_rand.py
