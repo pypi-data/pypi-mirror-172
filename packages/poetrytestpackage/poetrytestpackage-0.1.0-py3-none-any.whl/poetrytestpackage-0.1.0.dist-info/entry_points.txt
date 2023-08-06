@@ -1,0 +1,3 @@
+[console_scripts]
+two=poetrytestpackage.main:return_two
+
