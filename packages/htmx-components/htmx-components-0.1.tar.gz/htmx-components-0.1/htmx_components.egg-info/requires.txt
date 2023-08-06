@@ -1,0 +1,11 @@
+pydantic
+
+[dev]
+build
+black
+flake8
+isort
+jupyter
+lxml
+pandas
+twine
