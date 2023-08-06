@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gitlab-settings-manager
+Version: 0.1.20221021160343
+Summary: Manage gitlab project settings
+Home-page: https://github.com/krishnamiriyala/gitlab-settings-manager
+Author: Krishna Miriyala
+Author-email: krishnambm@gmail.com
+License: AS IS
+Requires-Dist: python-gitlab
+Requires-Dist: pyyaml
+
+# gitlab-settings-manager
+Easily manage gitlab project configuration and settings using gitlab-project-cfg.yml
