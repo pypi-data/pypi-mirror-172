@@ -1,0 +1,12 @@
+LICENCE
+setup.py
+pyDataProfiling/DictionaryCollect.py
+pyDataProfiling/ProfilingExecute.py
+pyDataProfiling/SQLCreate.py
+pyDataProfiling/__init__.py
+pyDataProfiling/main.py
+pyDataProfiling.egg-info/PKG-INFO
+pyDataProfiling.egg-info/SOURCES.txt
+pyDataProfiling.egg-info/dependency_links.txt
+pyDataProfiling.egg-info/requires.txt
+pyDataProfiling.egg-info/top_level.txt

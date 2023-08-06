@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyDataProfiling
+Version: 0.0.1
+Summary: Data Profiling Package(Oracle, Tibero Only)
+Home-page: https://github.com/oh-seung/pyDataProfiling
+Author: oh seung
+Author-email: seung.oh17@gmail.com
+Requires-Python: >=3.8
+License-File: LICENCE
