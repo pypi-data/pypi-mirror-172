@@ -1,0 +1,4 @@
+Babel~=2.10.3
+pandas~=1.4.4
+pymsteams~=0.2.1
+tabulate~=0.8.10
