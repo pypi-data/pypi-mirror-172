@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: thread_lfanke
+Version: 0.0.1b0
+Summary: 简单封装threading的线程
+Author: Lfan_ke
+Author-email: chengkelfan@foxmail.com
+License: MIT
+Keywords: Thread
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
