@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: capatsv
+Version: 0.0.2
+Summary: Cellranger ATAC Peak Annotation, sourced from Cellranger ATAC v2.1.0
+Home-page: https://github.com/Teichlab/capatsv
+Author: Krzysztof Polanski
+Author-email: kp9@sanger.ac.uk
+License: MIT
+Requires-Dist: six
+Requires-Dist: pybedtools
+
