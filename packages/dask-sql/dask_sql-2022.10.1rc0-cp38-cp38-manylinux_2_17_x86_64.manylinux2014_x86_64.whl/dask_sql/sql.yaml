@@ -1,0 +1,14 @@
+sql:
+  aggregate:
+    split_out: 1
+    split_every: null
+
+  identifier:
+    case_sensitive: True
+
+  limit:
+    check-first-partition: True
+
+  predicate_pushdown: True
+
+  optimize: True
