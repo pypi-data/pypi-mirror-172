@@ -1,0 +1,5 @@
+python-sql
+werkzeug
+trytond_company<6.3,>=6.2
+trytond_company_work_time<6.3,>=6.2
+trytond<6.3,>=6.2
