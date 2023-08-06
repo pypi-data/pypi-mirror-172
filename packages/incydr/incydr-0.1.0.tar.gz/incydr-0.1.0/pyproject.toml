@@ -1,0 +1,92 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "incydr"
+description = "Code42's Incydr Python SDK"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Code42", email = "integrations@code42.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "requests",
+  "requests-toolbelt",
+  "rich",
+  "pydantic[dotenv]",
+  "isodate",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/unknown/incydr#readme"
+Issues = "https://github.com/code42/incydr_python/issues"
+Source = "https://github.com/code42/incydr_python/incydr"
+
+[tool.hatch.version]
+path = "incydr/__about__.py"
+
+[tool.hatch.build.targets.sdist]
+[tool.hatch.build.targets.wheel]
+
+[tool.hatch.envs.style]
+dependencies = [
+    "pre-commit",
+]
+[tool.hatch.envs.style.scripts]
+check = "pre-commit run --all-files --show-diff-on-failure"
+check-no-diff = "pre-commit run --all-files"
+
+[tool.hatch.envs.docs]
+dependencies = [
+  "mkdocs-autorefs",
+  "mkdocs-material",
+  "mkautodoc"
+]
+[tool.hatch.envs.docs.scripts]
+build = "mkdocs build"
+serve = "mkdocs serve"
+svg = "python docs/example_logging.py"
+
+[tool.hatch.envs.default]
+dependencies = []
+[tool.hatch.envs.default.scripts]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310"]
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+  "pytest-httpserver",
+]
+[tool.hatch.envs.test.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=incydr --cov=tests"
+cov-report = "pytest --cov-report=xml:coverage.xml --cov-config=pyproject.toml --cov=incydr --cov=tests"
+no-cov = "cov --no-cov"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "incydr/__about__.py",
+]
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

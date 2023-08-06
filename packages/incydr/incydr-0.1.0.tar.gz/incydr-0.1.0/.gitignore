@@ -1,0 +1,40 @@
+# Environments
+.env
+.venv
+.envrc
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*/__pycache__/
+__pycache__/
+_generated_models
+
+# IDE files
+.idea/
+
+# Distribution / packaging
+dist/
+
+# Documentation builds
+site/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# .orig files
+*.orig
+
+# docs build files
+site/
