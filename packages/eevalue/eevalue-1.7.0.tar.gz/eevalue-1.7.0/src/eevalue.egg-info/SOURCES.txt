@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/eevalue/__init__.py
+src/eevalue/eevalue.py
+src/eevalue.egg-info/PKG-INFO
+src/eevalue.egg-info/SOURCES.txt
+src/eevalue.egg-info/dependency_links.txt
+src/eevalue.egg-info/top_level.txt
