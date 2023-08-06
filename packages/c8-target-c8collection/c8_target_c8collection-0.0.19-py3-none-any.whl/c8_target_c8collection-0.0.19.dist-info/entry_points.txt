@@ -1,0 +1,2 @@
+[console_scripts]
+c8-target-c8collection = c8_target_c8collection.main:main
