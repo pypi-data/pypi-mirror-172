@@ -1,0 +1,10 @@
+tqdm
+transformers<5,>=4.4
+torch>=1.6.0
+numpy
+nltk
+lingua-language-detector
+sentencepiece
+aiohttp<5,>=3.8.1
+protobuf==3.20.1
+optimum[onnxruntime-gpu]==1.4.0
