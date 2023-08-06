@@ -1,0 +1,10 @@
+micromagneticmodel>=0.63.0
+scipy>=1.5
+
+[dev]
+build
+invoke
+nbval
+pre-commit
+pytest-cov
+twine
