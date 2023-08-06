@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: TrentUPackage
+Version: 0.0.1
+Requires-Python: >=3.10.8
+Requires-Dist: discord
+Requires-Dist: dotenv
+Requires-Dist: selenium
+Requires-Dist: bs4
+Requires-Dist: webdriver-manager
+Requires-Dist: re
+Requires-Dist: PyPDF2
+Requires-Dist: time
+Requires-Dist: io
+
