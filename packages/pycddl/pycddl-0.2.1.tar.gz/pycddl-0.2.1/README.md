@@ -1,0 +1,37 @@
+# PyCDDL: A CDDL validation library for Python
+
+[CDDL](https://www.rfc-editor.org/rfc/rfc8610.html) is a schema language for the CBOR serialization format.
+`pycddl` allows you to validate CBOR documents match a particular CDDL schema, based on the Rust [`cddl`](https://github.com/anweiss/cddl) library.
+
+For example, here we use the [`cbor2`](https://pypi.org/project/cbor2/) library to serialize a dictionary to CBOR, and then validate it:
+
+```python
+from pycddl import Schema
+import cbor2
+
+uint_schema = Schema("""
+    object = {
+        xint: uint
+    }
+"""
+)
+uint_schema.validate_cbor(cbor2.dumps({"xint", -2}))
+```
+
+If validation fails, a `pycddl.ValidationError` is raised.
+
+## Release notes
+
+### 0.2.1
+
+* Added PyPy wheels.
+
+### 0.2.0
+
+* Schemas are now only parsed once (when the `Schema()` object is created), instead of every time validation happens, which should improve validation performance.
+* Updated to a newer version of [underlying CDDL library](https://github.com/anweiss/cddl), which should make CDDL parsing more compliant.
+* Added a `repr()` implementation to `Schema` for easier debugging.
+
+### 0.1.11
+
+* Initial release.
