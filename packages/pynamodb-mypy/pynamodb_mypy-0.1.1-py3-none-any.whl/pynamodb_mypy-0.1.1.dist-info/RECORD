@@ -1,0 +1,8 @@
+pynamodb_mypy/__init__.py,sha256=wi7gJjwr2EJbJR9OmH4KjrXlwBHdV-EdNpS4ZCd3ovA,138
+pynamodb_mypy/_private_api.py,sha256=SIPRvfSCTQrh8qlfOxyHm8MVaysUdmRD1Qu5khEtKhk,788
+pynamodb_mypy/plugin.py,sha256=_cWSIwq8p_R_OJMx6uk8qN-1QmiCb0bjCtLJnFpzzas,9866
+pynamodb_mypy-0.1.1.dist-info/LICENSE,sha256=zH9zgVKDXWJ3OcJme5_jnbdYuMahJIgSA7YYdtpugC8,11341
+pynamodb_mypy-0.1.1.dist-info/METADATA,sha256=vWVVjrasN6MQGKtHbr0d9jOZ-j7T7Sfhu9WutfFuPi4,2472
+pynamodb_mypy-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pynamodb_mypy-0.1.1.dist-info/top_level.txt,sha256=25w0Q9vZZhd5fpCUSeMyyLA6hzdmOOtaCb_VTc6KBsA,14
+pynamodb_mypy-0.1.1.dist-info/RECORD,,
