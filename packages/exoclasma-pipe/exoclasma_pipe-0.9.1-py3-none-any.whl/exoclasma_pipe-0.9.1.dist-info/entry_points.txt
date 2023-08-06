@@ -1,0 +1,2 @@
+[console_scripts]
+exoclasma-pipe = exoclasma_pipe.exoclasma_pipe:main
