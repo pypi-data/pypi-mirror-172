@@ -1,0 +1,11 @@
+README.md
+setup.py
+videoio/__init__.py
+videoio/info.py
+videoio/video_rgb.py
+videoio/video_uint16.py
+videoio.egg-info/PKG-INFO
+videoio.egg-info/SOURCES.txt
+videoio.egg-info/dependency_links.txt
+videoio.egg-info/requires.txt
+videoio.egg-info/top_level.txt
