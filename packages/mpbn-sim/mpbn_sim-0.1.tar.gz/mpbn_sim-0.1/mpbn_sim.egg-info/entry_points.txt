@@ -1,0 +1,2 @@
+[console_scripts]
+mpbn_sim = mpbn_sim:cli

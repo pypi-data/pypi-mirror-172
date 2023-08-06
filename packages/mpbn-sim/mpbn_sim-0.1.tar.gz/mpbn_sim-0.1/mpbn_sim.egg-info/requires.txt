@@ -1,0 +1,4 @@
+mpbn
+numpy
+scipy
+tqdm
