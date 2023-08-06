@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: komoe-sass
+Version: 0.1.0
+Summary: Sass plugin for komoe
+Home-page: https://github.com/louisdevie/komoe-sass
+Author: Louis DEVIE
+License: Public domain
+Keywords: komoe,sass,scss
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Komoe (>=0.2.1)
+
+# Sass plugin for Komoe
+
+# Installation
+
+`pip install komoe-sass==0.1.0`
+
+You will also need to [install the Sass compiler](https://sass-lang.com/install).
+
+# Setup
+
+Add the following to your `komoe.toml`:
+
+```toml
+[plugin.sass]
+package = "komoe_sass"
+config = { path = "style" } # the directory where to look for .scss and .sass files
+```
+
+---
+
+*All the code in the repository belongs to the public domain*
+
+
