@@ -1,0 +1,4 @@
+[console_scripts]
+cbc-threat-intel=cbc_importer.cli.connector:cli
+cbc-threat-intel-wizard=cbc_importer.cli.wizard:cli
+
