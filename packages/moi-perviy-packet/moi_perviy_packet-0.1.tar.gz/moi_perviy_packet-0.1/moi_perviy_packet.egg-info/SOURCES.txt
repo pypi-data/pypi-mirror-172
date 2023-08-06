@@ -1,0 +1,9 @@
+README.md
+setup.py
+moi_perviy_packet/__init__.py
+moi_perviy_packet/common_functions.py
+moi_perviy_packet/db_functions.py
+moi_perviy_packet.egg-info/PKG-INFO
+moi_perviy_packet.egg-info/SOURCES.txt
+moi_perviy_packet.egg-info/dependency_links.txt
+moi_perviy_packet.egg-info/top_level.txt
