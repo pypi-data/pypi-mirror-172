@@ -1,0 +1,21 @@
+[console_scripts]
+cdt-abidiff = eoscdt:run_abidiff
+cdt-ar = eoscdt:run_ar
+cdt-cc = eoscdt:run_cc
+cdt-cpp = eoscdt:run_cpp
+cdt-get-dir = eoscdt:run_eos_cdt_get_dir
+cdt-get-root-dir = eoscdt:run_eos_cdt_get_root_dir
+cdt-init = eoscdt:run_init
+cdt-ld = eoscdt:run_ld
+cdt-nm = eoscdt:run_nm
+cdt-objcopy = eoscdt:run_objcopy
+cdt-objdump = eoscdt:run_objdump
+cdt-pp = eoscdt:run_pp
+cdt-ranlib = eoscdt:run_ranlib
+cdt-readelf = eoscdt:run_readelf
+cdt-readobj = eoscdt:run_readobj
+cdt-strip = eoscdt:run_strip
+cdt-wasm2wast = eoscdt:run_wasm2wast
+cdt-wast2wasm = eoscdt:run_wast2wasm
+eoscdt = eoscdt:run_eos_cdt
+
