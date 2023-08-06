@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: testit-importer-allure
+Version: 1.2.2
+Summary: Allure report importer for Test IT
+Home-page: https://pypi.org/project/testit-importer-allure/
+Author: Pavel Butuzov
+Author-email: pavel.butuzov@testit.software
+License: Apache-2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
