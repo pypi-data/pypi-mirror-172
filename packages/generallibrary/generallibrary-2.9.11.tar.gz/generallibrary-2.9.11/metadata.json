@@ -1,0 +1,28 @@
+{
+    "install_requires": [
+        "generalimport",
+        "packaging",
+        "pyperclip",
+        "pytz",
+        "dill",
+        "matplotlib",
+        "networkx"
+    ],
+    "extras_require": {
+        "table": [
+            "pandas",
+            "tabulate"
+        ]
+    },
+    "enabled": true,
+    "private": false,
+    "name": "generallibrary",
+    "target": "python",
+    "version": "2.9.11",
+    "description": "Random useful code categorized into modules.",
+    "topics": [
+        "library"
+    ],
+    "manifest": [],
+    "contribute": false
+}
