@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: jpcovid_v3
+Version: 0.0.1
+Summary: A package for calculating time transition policy scores against COVID-19 in Japan
+Home-page: https://github.com/miyagawa-toshiki/jpcovid_v3
+Author: toshiki miyagawa
+Author-email: s1922033@stu.musashino-u.ac.jp
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/miyagawa-toshiki/jpcovid_v3
+Description: # jpcovid_v3
+        
+        下記の二つのツールを同時に表示させるようにしました
+        
+        1, jpcovid(https://github.com/miyagawa-toshiki/jpcovid)
+        
+        2, jpcovid_v2(https://github.com/miyagawa-toshiki/jpcovid_v2)
+        
+        # jpcovid_v3のインストール方法
+        $ pip install jpcovid_v3
+        
+        # jpcovid_v3の実行方法
+        $ jpcovid_v3 <都道府県名>
+        
+        $ jpcovid_v3 Tokyo Osaka
+        
+        <img src="tokyo_osaka.png" width="400">
+        
+        $ jpcovid_v3 Tokyo Tottori
+        
+        <img src="tokyo_tottori.png" width="400">
+        
+        $ jpcovid_v3 Osaka Niigata
+        
+        <img src="osaka_niigata.png" width="400">
+        
+        $ jpcovid_v3 Hokkaido Nara
+        
+        <img src="hokkaido_nara.png" width="400">
+        
+        $ jpcovid_v3 Niigata Fukui Shimane Tottori
+        
+        <img src="niigata_fukui_shimane_tottori.png" width="400">
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
