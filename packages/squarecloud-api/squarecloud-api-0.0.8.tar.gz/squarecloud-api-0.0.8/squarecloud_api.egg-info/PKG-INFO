@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: squarecloud-api
+Version: 0.0.8
+Summary: SquareCloud API wrapper
+Home-page: UNKNOWN
+Author: Robert Nogueira
+Author-email: robertlucasnogueira@gmail.com
+License: MIT License
+Keywords: squarecloud api python
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+SquareCloud API wrapper
+
