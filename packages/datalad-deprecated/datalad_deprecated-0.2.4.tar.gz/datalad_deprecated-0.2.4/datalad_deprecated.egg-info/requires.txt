@@ -1,0 +1,13 @@
+datalad>=0.15.0
+jsmin
+whoosh
+PyYAML
+mutagen>=1.36
+exifread
+python-xmp-toolkit
+Pillow
+
+[devel]
+pytest
+pytest-cov
+coverage
