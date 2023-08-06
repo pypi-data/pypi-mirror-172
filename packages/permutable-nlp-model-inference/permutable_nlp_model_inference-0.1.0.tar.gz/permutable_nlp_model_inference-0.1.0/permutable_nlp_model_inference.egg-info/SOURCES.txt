@@ -1,0 +1,9 @@
+README.md
+setup.py
+permutable_nlp_model_inference/__init__.py
+permutable_nlp_model_inference/inference.py
+permutable_nlp_model_inference.egg-info/PKG-INFO
+permutable_nlp_model_inference.egg-info/SOURCES.txt
+permutable_nlp_model_inference.egg-info/dependency_links.txt
+permutable_nlp_model_inference.egg-info/requires.txt
+permutable_nlp_model_inference.egg-info/top_level.txt
