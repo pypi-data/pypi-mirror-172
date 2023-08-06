@@ -1,0 +1,4 @@
+[console_scripts]
+QuanqiuFengkuangXijin = QuanqiuFengkuangXijin.__main__:main
+quanqiu-fengkuang-xijin = QuanqiuFengkuangXijin.__main__:main
+
