@@ -1,0 +1,10 @@
+*.eggs/
+*.egg-info/
+*__pycache__/
+*.db
+/mailman-web.toml
+logs/
+output/
+/secret.txt
+static/
+.tox/*

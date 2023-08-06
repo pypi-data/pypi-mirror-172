@@ -1,0 +1,14 @@
+[flake8]
+max-line-length = 79
+output-file = flake8.txt
+max-complexity = 10
+exclude =
+    .git
+    .tox
+    .venv
+    .cache
+    .eggs
+    .pytest*
+    *.egg-info
+    examples
+    doc

@@ -1,0 +1,11 @@
+---
+
+image: maxking/mailman-ci-runner
+
+
+docs:
+  script:
+    - tox -e docs
+lint:
+  script:
+    - tox -e lint
