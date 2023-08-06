@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ew-crypto-lib
+Version: 0.1.0a0
+Summary: EnergyWeb crypto library using hardware wallets
+Home-page: https://github.com/energywebfoundation/ew_crypto_lib.git
+Author: Bacem Ben Achour
+Author-email: messaging@energyweb.org
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/energywebfoundation/ew_crypto_lib/issues
+Keywords: decentralised iot cryptography jwt hardware wallet HW iotsafe atecc cryptoauthlib
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dataclasses-json (==0.5.2)
+Requires-Dist: pysha3
+Requires-Dist: eth-keys
+
+# ew_crypto_lib
+This library implements the APIs required to communicate with Hardware Wallets to sign and verify JWT
+
+
