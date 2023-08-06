@@ -1,0 +1,10 @@
+from licenseware.uploader_encryptor import UploaderEncryptor
+
+
+
+{{ entity_underscore }}_encryptor = UploaderEncryptor(
+    filepaths=["deviceName", "database", "LMS_OPTIONS_(.*?).csv", "rl"],
+    filecontent=["Machine Name=(.+)", "System IP Address 1=(.+)"],
+    columns=["Host", "Device"]
+)
+
