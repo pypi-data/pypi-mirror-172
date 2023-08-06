@@ -1,0 +1,10 @@
+edn_conf/__init__.py,sha256=UsOqpAAxnaxii1wDRQngBfF_OdExPcGqB6nyQpvrork,93
+edn_conf/core.py,sha256=8d53lz8DnznfDmiMSPYA2dCcJA1hAVItVQIEpkDDEH4,1146
+edn_conf/eval.py,sha256=TyxsvOTdT7Cu_OoHpNpLP4OF5N3JIvENogyV2PJ1mWE,2250
+edn_conf/tags.edn,sha256=JxVI2C0HVbZQrOYb2beuJOj2JVPi_PLF4G7hcLUtGwE,150
+edn_conf/tags.py,sha256=G3z0nysyD1bZU7CFBWq8vsTF2x8kFYnJDylYEBl0i6E,3323
+edn_configs-0.0.2.dist-info/LICENSE,sha256=BvzGvFi4S-uUvXGHptDaMsV__4PPK2lyTpIeQ6duVRg,7633
+edn_configs-0.0.2.dist-info/METADATA,sha256=qvdtJre6QX6Dkz8J-OV8xzVo-hqpHx9B5sJLCix-3VY,915
+edn_configs-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+edn_configs-0.0.2.dist-info/top_level.txt,sha256=tbwSBysUqQe7329aQPeJol398Sp54lNXdodZDKlKJIA,9
+edn_configs-0.0.2.dist-info/RECORD,,

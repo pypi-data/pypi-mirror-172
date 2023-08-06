@@ -1,0 +1,6 @@
+{
+ :call  :edn_conf.tags/to_called
+ :unary :edn_conf.tags/to_unary
+ :p     :edn_conf.tags/to_partialed
+ :ccall :edn_conf.tags/to_called_compressed
+ }
