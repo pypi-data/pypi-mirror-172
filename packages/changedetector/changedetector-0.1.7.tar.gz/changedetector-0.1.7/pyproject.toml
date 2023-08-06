@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "changedetector"
+dynamic = ["version"]
+description = "A basic change detector for the Python, Ruby and C++."
+readme = "README.md"
+license = ""
+requires-python = ">=3.6"
+authors = [
+    { name = "Lux Luth", email = "luxusluth@gmail.com" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pick==2.0.2",
+    "pyfiglet==0.8.post1",
+    "watchdog==2.1.9",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/luxluth/changedetector/issues"
+Homepage = "https://github.com/luxluth/changedetector"
+
+[project.scripts]
+detectchange = "changedetector:detectchange.main"
+
+[tool.hatch.version]
+path = "changedetector/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/changedetector",
+]
+
