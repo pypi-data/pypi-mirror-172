@@ -1,0 +1,12 @@
+LICENCE.txt
+README.rst
+pyproject.toml
+setup.py
+src/photoshow/__init__.py
+src/photoshow/__main__.py
+src/photoshow/_photoshow.py
+src/photoshow.egg-info/PKG-INFO
+src/photoshow.egg-info/SOURCES.txt
+src/photoshow.egg-info/dependency_links.txt
+src/photoshow.egg-info/requires.txt
+src/photoshow.egg-info/top_level.txt
