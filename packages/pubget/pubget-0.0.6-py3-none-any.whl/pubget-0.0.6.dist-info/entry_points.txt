@@ -1,0 +1,2 @@
+[console_scripts]
+pubget = pubget._commands:pubget_command
