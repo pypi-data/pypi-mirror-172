@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: cleancourt
+Version: 0.5.2
+Summary: a library for cleaning court docket entries
+Home-page: UNKNOWN
+Author: Logan Pratico
+Author-email: praticol@lsc.gov
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: name standardization,plaintiff names,court data,name cleaning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9, <4
