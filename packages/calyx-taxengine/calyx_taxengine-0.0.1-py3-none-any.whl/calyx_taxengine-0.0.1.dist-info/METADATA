@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: calyx-taxengine
+Version: 0.0.1
+Summary: Tax Engine shered module
+Home-page: UNKNOWN
+Author: Calyx Servicios
+Author-email: <dev@calyxservicios.com.ar>
+License: UNKNOWN
+Keywords: calyx-servicios,tax-engine
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: sqlalchemy
+
+Tax Engine shered module
+
+
