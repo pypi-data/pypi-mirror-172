@@ -1,0 +1,12 @@
+ankivalenz/__init__.py,sha256=wyK9o1ChURKZLa7qDGwg-OCJg3NybWDUltuR1thLS-I,166
+ankivalenz/__main__.py,sha256=gDQyEn8Vwr2fkUPG_lpc8LzTeHALAcYLc2EGfAvEWvw,51
+ankivalenz/anki_models.py,sha256=wERIz119JqC-Peoq6IQDh8nNHxYPuYRKwCAMiJrO_w8,2374
+ankivalenz/generator.py,sha256=28LVC3SETYeNlxHPeybjWR-keJhnYyAcLjTYGY9blMM,2695
+ankivalenz/html_parser.py,sha256=AIsZDRhcjjzDhKPxtGuZSiTmz7sqIApu8TyAqTncjJU,5266
+ankivalenz/main.py,sha256=NszeVytcj-k_KY9MgAVRux5Hdm7dsuJ1XSgOCcAk0n8,985
+ankivalenz/node_parser.py,sha256=04NE0P1RtDAVQQoZIaATIBbI2oAerO4KxCEXw3hVrAs,1629
+ankivalenz/types.py,sha256=eA7ZdMUSyelKGQua0A9Hs9h_Yw_ivjQFwCF_Rh0CSWs,586
+ankivalenz-0.2.0.dist-info/entry_points.txt,sha256=UK9ueXuTS_PYFX2iPLAoR61lLhxkftDo_8tPLqrY-y4,50
+ankivalenz-0.2.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+ankivalenz-0.2.0.dist-info/METADATA,sha256=jT8EUS2oiA7SxsxnAwtr3h16iDRQVEhF2AP4-asEPAI,4106
+ankivalenz-0.2.0.dist-info/RECORD,,
