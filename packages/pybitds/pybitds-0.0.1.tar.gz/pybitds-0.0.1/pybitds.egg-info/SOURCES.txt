@@ -1,0 +1,9 @@
+README.md
+setup.py
+pybitds/__init__.py
+pybitds/tools.py
+pybitds.egg-info/PKG-INFO
+pybitds.egg-info/SOURCES.txt
+pybitds.egg-info/dependency_links.txt
+pybitds.egg-info/requires.txt
+pybitds.egg-info/top_level.txt
