@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pyCoopGame/Core.py
+pyCoopGame/CostGap.py
+pyCoopGame/Create_game.py
+pyCoopGame/Nucleolus.py
+pyCoopGame/Shapley.py
+pyCoopGame/Test_Code.py
+pyCoopGame/Validate_game.py
+pyCoopGame/__init__.py
+pyCoopGame.egg-info/PKG-INFO
+pyCoopGame.egg-info/SOURCES.txt
+pyCoopGame.egg-info/dependency_links.txt
+pyCoopGame.egg-info/top_level.txt
