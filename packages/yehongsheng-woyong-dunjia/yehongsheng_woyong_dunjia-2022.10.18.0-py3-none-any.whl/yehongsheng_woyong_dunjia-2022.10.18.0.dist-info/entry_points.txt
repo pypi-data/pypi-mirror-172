@@ -1,0 +1,4 @@
+[console_scripts]
+YehongshengWoyongDunjia = YehongshengWoyongDunjia.__main__:main
+yehongsheng-woyong-dunjia = YehongshengWoyongDunjia.__main__:main
+
