@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "genes"
+version = "0.3"
+description = "Simple library for playing with genetic algorithms"
+authors = ["Łukasz Bacik <mail@luka.sh>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+simple-value-object = "^1.5"
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
