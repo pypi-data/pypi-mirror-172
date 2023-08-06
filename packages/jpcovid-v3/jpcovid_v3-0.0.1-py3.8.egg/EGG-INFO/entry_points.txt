@@ -1,0 +1,3 @@
+[console_scripts]
+jpcovid_v3 = jpcovid_v3:main
+

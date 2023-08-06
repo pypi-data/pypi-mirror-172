@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/jpcovid_v3.py
+src/jpcovid_v3.egg-info/PKG-INFO
+src/jpcovid_v3.egg-info/SOURCES.txt
+src/jpcovid_v3.egg-info/dependency_links.txt
+src/jpcovid_v3.egg-info/entry_points.txt
+src/jpcovid_v3.egg-info/top_level.txt
