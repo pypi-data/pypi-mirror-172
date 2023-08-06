@@ -1,0 +1,16 @@
+include aor, system;
+
+v = Items(var[1]);
+Console(v);
+Print(Key(v[0]));
+Console(Value(v[0]));
+Console(Keys(var[1]));
+Console(Values(var[1]));
+Console(Type(var[1]));
+Console(Array("test1", 2 "test3"));
+Console(RecordHasField(var[1], 'id'));
+Console(IsRecord(var[1]));
+Console(Platform());
+ShowVersion();
+
+

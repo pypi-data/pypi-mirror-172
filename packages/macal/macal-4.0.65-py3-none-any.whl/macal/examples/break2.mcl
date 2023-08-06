@@ -1,0 +1,10 @@
+include aor, system;
+i = 1;
+while i < 3 {
+	Console(var[i]["title"]);
+	break;
+	Console("this doesn’t show");
+	i+=1;
+}
+
+Console("J.R.R. Tolkien wrote this book.");
