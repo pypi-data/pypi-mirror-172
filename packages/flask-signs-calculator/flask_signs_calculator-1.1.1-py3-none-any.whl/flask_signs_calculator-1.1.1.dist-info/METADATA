@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: flask-signs-calculator
+Version: 1.1.1
+Requires-Dist: SQLAlchemy
+Requires-Dist: flask-geo
+Requires-Dist: Flask-WTF
+Requires-Dist: flatlib
+

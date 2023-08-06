@@ -1,0 +1,11 @@
+@use "helpers/colors";
+
+
+#result-container {
+  color: colors.get-color("on-primary");
+  padding: 0;
+  & h3 {
+    margin: 0;
+    padding: 10px 10px;
+  }
+}
