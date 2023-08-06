@@ -1,0 +1,7 @@
+dist/
+build/
+.vscode/
+.DS_Store
+*.pyc
+*.egg-info
+.pytest_cache
