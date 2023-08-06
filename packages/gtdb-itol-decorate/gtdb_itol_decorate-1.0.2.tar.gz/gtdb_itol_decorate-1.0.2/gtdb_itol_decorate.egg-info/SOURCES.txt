@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+gtdb_itol_decorate/__init__.py
+gtdb_itol_decorate/__main__.py
+gtdb_itol_decorate/decorate.py
+gtdb_itol_decorate/gtdb.py
+gtdb_itol_decorate/itol.py
+gtdb_itol_decorate/newick.py
+gtdb_itol_decorate/util.py
+gtdb_itol_decorate.egg-info/PKG-INFO
+gtdb_itol_decorate.egg-info/SOURCES.txt
+gtdb_itol_decorate.egg-info/dependency_links.txt
+gtdb_itol_decorate.egg-info/entry_points.txt
+gtdb_itol_decorate.egg-info/requires.txt
+gtdb_itol_decorate.egg-info/top_level.txt
