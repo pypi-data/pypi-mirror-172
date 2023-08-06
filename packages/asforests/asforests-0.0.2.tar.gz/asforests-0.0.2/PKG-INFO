@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: asforests
+Version: 0.0.2
+Summary: Automatically Stopping Random Forests
+Home-page: https://github.com/fmohr/asforests
+Author: Felix Mohr
+Author-email: mail@felixmohr.de
+License: MIT
+Keywords: random forests,early stopping,sklearn
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
