@@ -1,0 +1,9 @@
+lru-dict
+aiohttp
+
+[test]
+pytest==4.4.0
+pytest-runner
+pytest-aiohttp
+pytest-asyncio
+attrs>=19.1.0
