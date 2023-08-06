@@ -1,0 +1,14 @@
+foundry:
+
+  port: auto
+
+  request_timeout: 29
+  fork_request_timeout: 360
+
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: alchemy
+      goerli:
+        upstream_provider: alchemy
+        block_number: 7757695
