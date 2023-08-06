@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pymodaq-plugins-princeton-instruments
+Version: 0.1.0
+Summary: Control for hyperspy of scientific cameras using the picam library
+Home-page: https://github.com/LMSC-NTappy/pymodaq_plugins_princeton_instruments/
+Author: Nicolas Tappy
+Author-email: nicolas.tappy@epfl.ch
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: toml
+Requires-Dist: pylablib
+
+pymodaq_plugins_princeton_instruments (Princeton Instruments Cameras)
+#####################################################################
+
+PyMoDAQ plugin for Princeton Instruments Cameras. Relies on Alexey Shkarin's pylablib hardware control python module.
+
+The picam library produced by Princeton Instruments has to be installed to use this plugin (freely downloadable at https://www.princetoninstruments.com/products/software-family/pi-cam).
+
+If pylablib is not able to find the existing picam installation (.dll file), it is easy to solve. See: https://pylablib.readthedocs.io/en/latest/devices/Picam.html#cameras-picam)
+
+You can help in the development of this plugin by testing it with your hardware and reporting issues and successes in this repository. I will update the list of tested hardware hardware accordingly.
+
+Authors
+=======
+
+* Nicolas Tappy
+
+Instruments
+===========
+Should support all cameras using picam through adaptative parameters parsing.
+
+Tested on Princeton Instrument PYLon BR eXcelon cameras.
+
+Viewer2D
+++++++++
+
+* **picam**: Control of cameras using the picam library.

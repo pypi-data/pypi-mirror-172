@@ -1,0 +1,2 @@
+[pymodaq.plugins]
+princeton_instruments = pymodaq_plugins_princeton_instruments
