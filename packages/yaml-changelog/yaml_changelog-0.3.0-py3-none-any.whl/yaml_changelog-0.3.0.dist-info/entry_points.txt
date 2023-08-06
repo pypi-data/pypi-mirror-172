@@ -1,0 +1,4 @@
+[console_scripts]
+build-changelog = yaml_changelog.build:main
+bump-version = yaml_changelog.bump:main
+

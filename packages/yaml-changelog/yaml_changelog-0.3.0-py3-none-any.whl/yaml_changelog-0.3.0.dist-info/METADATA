@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yaml-changelog
+Version: 0.3.0
+Summary: UNKNOWN
+Home-page: https://github.com/policyengine/policyengine
+Author: PolicyEngine
+Author-email: UNKNOWN
+License: http://www.fsf.org/licensing/licenses/agpl-3.0.html
+Platform: UNKNOWN
+Requires-Dist: argparse
+Requires-Dist: datetime
+Requires-Dist: pathlib
+Requires-Dist: pyyaml
+Requires-Dist: requests
+
+UNKNOWN
+
+
