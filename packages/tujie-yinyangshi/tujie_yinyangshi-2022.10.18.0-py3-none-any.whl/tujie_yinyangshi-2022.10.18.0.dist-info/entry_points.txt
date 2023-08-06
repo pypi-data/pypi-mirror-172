@@ -1,0 +1,4 @@
+[console_scripts]
+TujieYinyangshi = TujieYinyangshi.__main__:main
+tujie-yinyangshi = TujieYinyangshi.__main__:main
+
