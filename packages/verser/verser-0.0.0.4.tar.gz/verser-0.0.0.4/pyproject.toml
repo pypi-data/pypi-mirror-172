@@ -1,0 +1,60 @@
+
+[tool.poetry]
+name = "verser"
+version = "0.0.0.4"
+readme = "README.md"
+authors = ["Sermet Pekin <sermet.pekin@gmail.com>"]
+homepage = "https://github.com/Sermet.Pekin/verser-repo"
+documentation = "https://github.com/Sermet.Pekin/verser-repo"
+description = "Automatic next version number for your project, you may keep tracks history of your package."
+license = "MIT"
+
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Framework :: IPython",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Typing :: Typed",
+]
+
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+rich = "^12.5.1"
+
+
+
+
+
+[tool.poetry.extras]
+jupyter = ["ipywidgets"]
+
+[tool.poetry.dev-dependencies]
+pygments = "^2.6.0"
+commonmark = "^0.9.0"
+typing-extensions = { version = ">=4.0.0, <5.0", python = "<3.9" }
+pytest = "^7.0.0"
+black = "^22.6"
+mypy = "^0.971"
+types-dataclasses = "^0.6.4"
+pre-commit = "^2.17.0"
+asv = "^0.5.1"
+
+
+
+
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
