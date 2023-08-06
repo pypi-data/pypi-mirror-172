@@ -1,0 +1,4 @@
+[console_scripts]
+TujieXixuegui = TujieXixuegui.__main__:main
+tujie-xixuegui = TujieXixuegui.__main__:main
+
