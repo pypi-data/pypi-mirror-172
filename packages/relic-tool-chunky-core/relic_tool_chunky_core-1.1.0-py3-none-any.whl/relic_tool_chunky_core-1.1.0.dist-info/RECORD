@@ -1,0 +1,13 @@
+relic/chunky/core/__init__.py,sha256=BsCDAqtZdl8QjKE4ev5fEbhwhZbAH9nYI5HKybdpyQU,89
+relic/chunky/core/definitions.py,sha256=DWVqN3ZmPSsKT33WuwejU7RRdIQelxZzgNO3jGdlGkQ,2743
+relic/chunky/core/errors.py,sha256=zRSdBCruLSkNE6YnlwRNyM3_ak-esKdt-t9rfhpRWT8,1993
+relic/chunky/core/filesystem.py,sha256=WGEt37D4cPn1r38PJjt8VS4yNSpGYAEcTa_9Uy_Puxw,9505
+relic/chunky/core/protocols.py,sha256=wqu65II6YcVYbEBLmfWwms5Of23GMczBlDL49vId3_E,589
+relic/chunky/core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relic/chunky/core/serialization.py,sha256=0eduEDuCOvghyRaRZ4U2kgmkqXBlHWf2fivAkjBp3j0,10157
+relic_tool_chunky_core-1.1.0.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+relic_tool_chunky_core-1.1.0.dist-info/METADATA,sha256=YqZdNuYgOv5y24DchelhM9waWNYXX7naKXW0EZ-hCAU,2856
+relic_tool_chunky_core-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+relic_tool_chunky_core-1.1.0.dist-info/entry_points.txt,sha256=3kf6NUq_lTNLnCX_PK5HuNLY-gUhevT2GG_D9k8DQYw,65
+relic_tool_chunky_core-1.1.0.dist-info/top_level.txt,sha256=VF9jKoDOcGgiu100lchLi998l6Uo7jM-JvDDrVmhf4M,6
+relic_tool_chunky_core-1.1.0.dist-info/RECORD,,
