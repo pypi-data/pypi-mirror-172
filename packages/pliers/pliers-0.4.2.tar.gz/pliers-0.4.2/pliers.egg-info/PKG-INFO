@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pliers
+Version: 0.4.2
+Summary: Multimodal feature extraction in Python
+Home-page: http://github.com/psychoinformaticslab/pliers
+Maintainer: Tal Yarkoni
+Maintainer-email: tyarkoni@gmail.com
+License: MIT
+Download-URL: https://github.com/psychoinformaticslab/pliers/archive/0.4.2.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: all
+Provides-Extra: docs
+Provides-Extra: tests
