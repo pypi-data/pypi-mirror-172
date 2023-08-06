@@ -1,0 +1,16 @@
+bexhoma/__init__.py,sha256=ilB-rqg7vqmiAfP7L_AmDPfEoHl2m-elu0BQDgkrgCU,103
+bexhoma/clusters.py,sha256=2QdZqnCgyexki5B6lyIVrmMhFmBjttBHqSJfV28D5Kk,7185
+bexhoma/configurations.py,sha256=-fnsHdS44VB3NN9c8BEqLyIMXChpHuoBfPvO7Wx27lU,122385
+bexhoma/experiments.py,sha256=JgWs3U3OET4CArpHiRFpc8ZvC9zAMLXuxEvkvYaE5q8,31189
+bexhoma/masterAWS.py,sha256=AkoVuWp3avzjoavYmDyPD3A3qr9eQCBWRIz_Q_G7rKw,32616
+bexhoma/masterK8s.py,sha256=aP5dV4rp6zCmcvcJeKRvh8woHtoEfPTHB1dEbzDIdW4,95455
+bexhoma/scripts/__init__.py,sha256=4r8qYS8SQIq9gSl4GDn-tU6MFC9St-iYtGEkkWh9SCI,82
+bexhoma/scripts/experimentsmanager.py,sha256=PauZr9yjUp4dq9FyRVW6Bs0tvHhyAVo4d2pBYEKy-Zo,12406
+bexhoma/scripts/tpcds.py,sha256=iMon3Gqpi9tZ9GOdcCGqxLV6EM4QUvNrdFmx5tG-dK8,9652
+bexhoma/scripts/tpch.py,sha256=QeUb6CH51B-qal4ypI0Qtd8A1_4tC53BV1eB3EZSIiI,9899
+bexhoma-0.6.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+bexhoma-0.6.0.dist-info/METADATA,sha256=wgThY_A2AnphH68ipK3XQB3WsObIBb9FMDg133JnSjI,5827
+bexhoma-0.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bexhoma-0.6.0.dist-info/entry_points.txt,sha256=SvSJ26PN5wPpceRTpnkS1smXeJ6DCYLN6Zjd4VgJvBY,159
+bexhoma-0.6.0.dist-info/top_level.txt,sha256=odIPl9FuvslTVPTjdyqpQY-FqsAMHx1d9xozArrm3qA,8
+bexhoma-0.6.0.dist-info/RECORD,,
