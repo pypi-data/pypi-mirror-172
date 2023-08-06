@@ -1,0 +1,21 @@
+from jft.pickle.load_if_exists import f as load_pickle
+from jft.directory.list_testables import f as list_testables
+from jft.file.remove import f as remove
+from os.path import getmtime
+from jft.pickle.save import f as save
+from jft.dict.test_durations.to_tuple_list_sorted_by_duration import f as srt
+from jft.test.make_Pi_to_test import f as make_Pi_t
+# print_oldest_file
+def f(Pi=None):
+  Pi = list_testables()
+  try: prev = load_pickle('./last_modified.pickle') or set()
+  except EOFError as eofe: remove('./last_modified.pickle'); prev = set()
+  last_mods = {py_filename: getmtime(py_filename) for py_filename in Pi}
+  save(last_mods, './last_modified.pickle')
+  Pi_fail = set()
+  _A = [_[0] for _ in srt(last_mods)[::-1]]
+  _B = set(make_Pi_t(Pi, True, prev, last_mods) + list(Pi_fail))
+  Pi_t = [a for a in _A if a in _B]
+  print(f'Oldest file: {Pi_t[-1]}')
+
+def t(): return True # TODO: Fix this test
