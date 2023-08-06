@@ -1,0 +1,2 @@
+[console_scripts]
+tk_translate = tk_translate:main
