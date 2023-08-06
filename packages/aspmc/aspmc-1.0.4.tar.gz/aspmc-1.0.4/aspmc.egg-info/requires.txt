@@ -1,0 +1,7 @@
+networkx
+numpy
+lark
+clingo
+matplotlib
+dataclasses
+sympy
