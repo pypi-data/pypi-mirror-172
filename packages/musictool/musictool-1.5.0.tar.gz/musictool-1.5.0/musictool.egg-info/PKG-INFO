@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: musictool
+Version: 1.5.0
+Summary: set of tools to help learning scales, modes, modulations, chord progressions, voice leading, rhythm
+Home-page: https://github.com/tandav/musictool
+Author: Alexander Rodionov
+Author-email: tandav@tandav.me
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# musictool
+
+### install
+```sh
+pip install musictool
+```
+
+### or install the latest version from github
+```sh
+pip install git+https://github.com/tandav/musictool
+```
+
+### development
+```sh
+pip install -e .[dev]
+```
