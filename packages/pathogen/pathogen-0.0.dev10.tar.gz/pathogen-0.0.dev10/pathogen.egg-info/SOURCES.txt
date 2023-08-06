@@ -1,0 +1,15 @@
+LICENSE.md
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+version.yml
+pathogen/__init__.py
+pathogen/core.py
+pathogen/version.py
+pathogen.egg-info/PKG-INFO
+pathogen.egg-info/SOURCES.txt
+pathogen.egg-info/dependency_links.txt
+pathogen.egg-info/requires.txt
+pathogen.egg-info/top_level.txt
+pathogen.egg-info/zip-safe
