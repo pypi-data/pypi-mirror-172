@@ -1,0 +1,73 @@
+[build-system]
+requires = ["poetry-core >= 1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "typer-cloup-cli"
+version = "0.0.13"
+description = "Run Typer scripts with completion, without having to create a package, using Typer CLI."
+license = "MIT"
+authors = [
+    "Sebastián Ramírez <tiangolo@gmail.com>",
+    "Alexander Regueiro <alex@noldorin.com>",
+]
+maintainers = [
+    "Alexander Regueiro <alex@noldorin.com>",
+]
+readme = "README.md"
+homepage = "https://github.com/alexreg/typer-cli"
+repository = "https://github.com/alexreg/typer-cli"
+documentation = "https://alexreg-typer.netlify.app/typer-cli/"
+keywords = ["cli", "click", "cloup", "shell", "terminal", "typer"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Terminals",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+packages = [
+    {include = "typer_cli"},
+]
+
+[tool.poetry.dependencies]
+colorama = "^0.4.4"
+docstring_parser = "^0.15"
+python = "^3.7"
+shellingham = "^1.4.0"
+typer-cloup = "^0.5.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pytest-sugar = "^0.9.4"
+pytest-xdist = "^2.1.0"
+mypy = "^0.950"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+autoflake = "^1.4.0"
+
+[tool.poetry.scripts]
+typer = "typer_cli.main:main"
+
+[tool.isort]
+profile = "black"
