@@ -1,0 +1,4 @@
+GHConf
+iot_gh
+pigpio
+spidev
