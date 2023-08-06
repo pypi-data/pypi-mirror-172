@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/qjob/__init__.py
+src/qjob/_version.py
+src/qjob/cli.py
+src/qjob.egg-info/PKG-INFO
+src/qjob.egg-info/SOURCES.txt
+src/qjob.egg-info/dependency_links.txt
+src/qjob.egg-info/requires.txt
+src/qjob.egg-info/top_level.txt
