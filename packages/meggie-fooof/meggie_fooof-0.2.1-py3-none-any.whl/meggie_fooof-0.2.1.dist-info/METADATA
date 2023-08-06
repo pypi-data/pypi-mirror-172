@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: meggie-fooof
+Version: 0.2.1
+Summary: UNKNOWN
+Home-page: https://github.com/Teekuningas/meggie_fooof
+Author: CIBR
+Author-email: erkka.heinila@jyu.fi
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: setuptools
+Requires-Dist: meggie (>=1.3.0)
+Requires-Dist: fooof
+
+UNKNOWN
+
