@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: example-app-jonico22
+Version: 0.0.1
+Summary: A small example package
+Author: jose luis yana
+Author-email: joseyananicolas@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Python example app
+
