@@ -1,0 +1,8 @@
+svgwrite
+svglib
+
+[dev]
+check-manifest
+
+[test]
+coverage
