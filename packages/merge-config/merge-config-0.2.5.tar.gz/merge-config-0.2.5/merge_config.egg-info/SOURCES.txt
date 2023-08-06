@@ -1,0 +1,17 @@
+MANIFEST.in
+__init__.py
+backend_shim.py
+base_plugin.py
+conftest.py
+load_config.py
+setup.py
+merge_config.egg-info/PKG-INFO
+merge_config.egg-info/SOURCES.txt
+merge_config.egg-info/dependency_links.txt
+merge_config.egg-info/namespace_packages.txt
+merge_config.egg-info/requires.txt
+merge_config.egg-info/top_level.txt
+plugins/__init__.py
+plugins/aws.py
+plugins/env.py
+plugins/file.py
