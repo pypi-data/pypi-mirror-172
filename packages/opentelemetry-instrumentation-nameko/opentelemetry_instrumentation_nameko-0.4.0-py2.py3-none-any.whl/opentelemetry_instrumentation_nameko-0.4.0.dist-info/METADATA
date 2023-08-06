@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: opentelemetry-instrumentation-nameko
+Version: 0.4.0
+Summary: Nameko extension producing opentelemetry data
+Home-page: https://github.com/nameko/opentelemetry-instrumentation-nameko
+Author: Nameko Authors
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: nameko (>=3.0.0rc9)
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-instrumentation
+Requires-Dist: opentelemetry-instrumentation-wsgi
+Requires-Dist: importlib-metadata (<=4.13.0)
+Provides-Extra: dev
+Requires-Dist: nameko (>=3.0.0rc1) ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: opentelemetry-sdk ; extra == 'dev'
+Requires-Dist: opentelemetry-instrumentation-requests ; extra == 'dev'
+Provides-Extra: instruments
+Requires-Dist: nameko (>=3.0.0rc1) ; extra == 'instruments'
+
+UNKNOWN
+
