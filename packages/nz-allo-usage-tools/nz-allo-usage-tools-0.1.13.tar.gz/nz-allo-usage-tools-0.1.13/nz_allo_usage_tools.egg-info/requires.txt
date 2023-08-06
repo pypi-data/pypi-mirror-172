@@ -1,0 +1,5 @@
+pandas
+tethysts
+pyyaml
+nz-stream-depletion
+gistools
