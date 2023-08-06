@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: streamsets-testframework
+Version: 4.0.0b1
+Summary: A set of tools and libraries that enables developers to write tests for StreamSets products
+Home-page: UNKNOWN
+Author: StreamSets, Inc.
+Author-email: eng-productivity@streamsets.com
+License: UNKNOWN
+Keywords: streamsets testframework
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: colorlog
+Requires-Dist: docker
+Requires-Dist: streamsets
+
+UNKNOWN
+
+

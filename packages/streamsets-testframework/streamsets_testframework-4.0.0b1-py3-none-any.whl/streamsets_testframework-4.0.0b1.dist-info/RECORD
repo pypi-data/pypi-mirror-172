@@ -1,0 +1,15 @@
+streamsets/testframework/__init__.py,sha256=G6hxo4PVWDmswjxUD3uHQO6L0R0w_dcJPJSNCU1osTI,1147
+streamsets/testframework/__version__.py,sha256=A_DIgIC1plYevrmEZ9CLF_lm9AHXWtPKo8VFAK2CZhM,124
+streamsets/testframework/cli/__init__.py,sha256=YbRTp7i3Hq0tBPnWzz7fq5roqMY7XiYiga9KCIdu2dY,20544
+streamsets/testframework/cli/build.py,sha256=MlEzYRPpHL771LWT7WWbcgC6Da6dvOmiZxUzrfPk9cw,41346
+streamsets/testframework/cli/generate_test_stub.py,sha256=KjlN8uP3hULE17MBxLIasgYsvR0pSkgNIrZPZFCyMp4,9282
+streamsets/testframework/cli/info.py,sha256=dQfwInr5-2T_R_UWmkX5HApCFF-1LvCCBPzlrTawUMo,5974
+streamsets/testframework/cli/run_profile_manager.py,sha256=XtRRXJNtdXrt0T65SVOKg9U-zwpVZCTWMxPJ38QafcM,10393
+streamsets/testframework/cli/start_sdc.py,sha256=OdmypQsSd3r3MQu0TP22AzesTIlaUtEjbT-PdTDW71k,20821
+streamsets/testframework/cli/start_st.py,sha256=sFbb_qAjyKlYylqJnXAh4-YWxMFaUQ43WN9TVA-gb-A,19152
+streamsets_testframework-4.0.0b1.dist-info/METADATA,sha256=XtmpAirc5UF5T7hprH-nSoZk-EzW4vMzXe6OSXxv-k0,801
+streamsets_testframework-4.0.0b1.dist-info/NOTICE.txt,sha256=NNeX4aNxwwVZDl3pCjzCBOCq__mJ_sDl6RfVdMpD0ws,5055
+streamsets_testframework-4.0.0b1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+streamsets_testframework-4.0.0b1.dist-info/entry_points.txt,sha256=kE0kUOQM3hk6yJ9rjnq4gNRW0gNBklGx4AfuX_NiEXM,59
+streamsets_testframework-4.0.0b1.dist-info/top_level.txt,sha256=QbuQ6ZissZWbUYumkWrvtzrv6b4LjxSfCaZ2AaGteo4,11
+streamsets_testframework-4.0.0b1.dist-info/RECORD,,

@@ -1,0 +1,65 @@
+Copyright 2017 StreamSets Inc.
+
+This product includes software developed by StreamSets, Inc.
+(http://www.streamsets.com/).
+
+This product includes components of the following software:
+
+  Project Name                                                    License
+---------------------------------------------------------------------------------------------------
+  Apache Avro                                                     Apache License 2.0
+  Apache Pulsar Python client library                             Apache License 2.0
+  Apache Thrift                                                   Apache License 2.0
+  Boltons                                                         BSD License
+  Boto 3                                                          Apache License 2.0
+  CFFI                                                            MIT License
+  Cloudera Impyla                                                 Apache License 2.0
+  Confluent's Python Client for Apache Kafka                      Apache License 2.0
+  Couchbase Python Client                                         Apache License 2.0
+  colorlog                                                        MIT License
+  cx_Oracle                                                       BSD License
+  DataStax Python Driver for Apache Cassandra                     Apache License 2.0
+  Docker SDK for Python                                           Apache License 2.0
+  Eclipse Paho MQTT Python Client                                 Eclipse Public License 1.0 / Eclipse Distribution License 1.0
+  Elasticsearch DSL                                               Apache License 2.0
+  fastavro                                                        MIT License
+  gevent                                                          MIT License
+  Google Cloud Python Client                                      Apache License 2.0
+  HappyBase                                                       MIT License
+  HdfsCLI                                                         MIT License
+  Inflection                                                      MIT License
+  InfluxDB-Python                                                 MIT License
+  javaproperties                                                  MIT License
+  Kafka Python client                                             Apache License 2.0
+  Microsoft Azure Data Lake Store Filesystem Library for Python   MIT License
+  Microsoft Azure Key Vault Client Library for Python             MIT License
+  Microsoft Azure Namespace Package for Python                    MIT License
+  Microsoft Azure Service Bus Client Library for Python           Apache License 2.0
+  Microsoft Azure Storage SDK for Python                          MIT License
+  Oracle Instant Client                                           Oracle Technology Network Development and Distribution License
+  Pika                                                            BSD License
+  Pretenders                                                      GNU Library or Lesser General Public License (LGPL)
+  PyMongo                                                         Apache License 2.0
+  PyMySQL                                                         MIT License
+  PyYAML                                                          MIT License
+  Python-GSSAPI                                                   ISC License
+  parquet-python                                                  Apache License 2.0
+  psycopg2                                                        GNU Lesser General Public License 3.0
+  pyodbc                                                          MIT License
+  pytest                                                          MIT License
+  pytest-benchmark                                                BSD License
+  python-ambariclient                                             Apache License 2.0
+  python-snappy                                                   BSD License
+  pytz                                                            MIT License
+  redis-py                                                        MIT License
+  requests                                                        Apache License 2.0
+  Setuptools                                                      MIT License
+  Simple Salesforce                                               Apache License 2.0
+  Snowflake SQLAlchemy                                            Apache License 2.0
+  SolrClient                                                      Apache License 2.0
+  Sphinx                                                          BSD License
+  SQLAlchemy                                                      MIT License
+  sasl                                                            Apache License 2.0
+  stomp.py                                                        Apache License 2.0
+  Teradata Python Module                                          MIT License
+  thrift_sasl                                                     Apache License 2.0
