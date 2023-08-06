@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/Dataset.py
+src/__init__.py
+src/blacklight.py
+src/blacklightutils.py
+src/blacklight.egg-info/PKG-INFO
+src/blacklight.egg-info/SOURCES.txt
+src/blacklight.egg-info/dependency_links.txt
+src/blacklight.egg-info/requires.txt
+src/blacklight.egg-info/top_level.txt
+test/test_dataset.py
+test/test_individual.py

@@ -1,0 +1,21 @@
+[project]
+name = "blacklight"
+version = "0.0.5"
+authors = [
+  { name="Cole Agard", email="ctagard19@gmail.com" },
+]
+description = "A package for Genetic Neural Network Topology Search"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+ dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+ dependencies = {file = ["requirements.txt"]}
+[tool.poetry]
+packages = [
+    {include = "src/*"},
+]
