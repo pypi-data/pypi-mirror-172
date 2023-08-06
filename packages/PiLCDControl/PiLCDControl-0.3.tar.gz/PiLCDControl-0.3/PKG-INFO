@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: PiLCDControl
+Version: 0.3
+Summary: A simple interface to common 16x2 Raspberry Pi LCD screens (HD44780).
+Home-page: 
+Author: Adam Lake
+Author-email: adam1lake@gmail.com
+License: BS2
+Keywords: python,raspberry pi,lcd
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Hardware
+
+A simple interface to common 16x2 Raspberry Pi LCD screens (HD44780). Includes useful features such as:
+- Text display
+- Timeouts and delays
+- Text scrolling
+- Threading to allow for control of both lines separately
+- Logic to prevent display "glitches" when performing multiple operations at once
