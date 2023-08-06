@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dirmaker
+Version: 1.1.0
+Summary: A simple static site generator for generating directory websites.
+Home-page: https://github.com/knadh/dirmaker
+Author: Kailash Nadh
+Author-email: kailash@nadh.in
+License: MIT License
+Download-URL: https://github.com/knadh/dirmaker
+Description: ![logo](https://user-images.githubusercontent.com/547147/109163952-e4610100-779f-11eb-9aa6-2236f06d3022.png)
+        
+        dirmaker is a simple, opinionated static site generator for publishing directory websites (eg: [Indic.page](https://indic.page), [env.wiki](https://env.wiki/directory) It takes entries from a YAML file and generates a categorised, paginated directory website.
+        
+        ### Install 
+        `pip3 install dirmaker`
+        
+        ### Build a site
+        ```shell
+        # Generate an example site in the `example` directory.
+        dirmaker --new
+        
+        cd example
+        
+        # Edit config.yml and add data to data.yml
+        # Customize static files and the template if necessary.
+        
+        # Build the static site into a directory called `site`.
+        dirmaker --build
+        ```
+        
+        Licensed under the MIT license.
+        
+Platform: UNKNOWN
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Documentation
+Description-Content-Type: text/markdown
