@@ -1,0 +1,42 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+bioscrape/__init__.py
+bioscrape/analysis.py
+bioscrape/inference.pxd
+bioscrape/inference.pyx
+bioscrape/inference_setup.py
+bioscrape/pid_interfaces.py
+bioscrape/random.pxd
+bioscrape/random.pyx
+bioscrape/sbmlutil.py
+bioscrape/simulator.pxd
+bioscrape/simulator.pyx
+bioscrape/types.pxd
+bioscrape/types.pyx
+bioscrape/vector.pxd
+bioscrape.egg-info/PKG-INFO
+bioscrape.egg-info/SOURCES.txt
+bioscrape.egg-info/dependency_links.txt
+bioscrape.egg-info/not-zip-safe
+bioscrape.egg-info/requires.txt
+bioscrape.egg-info/top_level.txt
+lineage/lineage.pxd
+lineage/lineage.pyx
+tests/How to write bioscrape tests.ipynb
+tests/Likelihood and Data Objects.ipynb
+tests/Saving and loading SBML and Bioscrape XML.ipynb
+tests/dbg.txt
+tests/debug_state.py
+tests/test_inference.py
+tests/test_initialize_model.py
+tests/test_interfaces.py
+tests/test_propensities_via_annotations.py
+tests/test_randomized_delay.py
+tests/test_randomized_propensity.py
+tests/test_rules.py
+tests/test_sbml_loading.py
+tests/test_sensitivity_analysis.py
+tests/test_serialization.py
+tests/test_utils.py
