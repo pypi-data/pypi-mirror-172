@@ -1,0 +1,11 @@
+include CMakeLists.txt
+include LICENSE.md
+include pyproject.toml
+include setup.py
+
+include src/parafields/stochastic.json
+include src/parafields/trend.json
+
+graft cmake
+graft include
+graft src
