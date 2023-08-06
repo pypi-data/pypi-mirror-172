@@ -1,0 +1,15 @@
+setup.py
+BACKSTABBING.egg-info/PKG-INFO
+BACKSTABBING.egg-info/SOURCES.txt
+BACKSTABBING.egg-info/dependency_links.txt
+BACKSTABBING.egg-info/entry_points.txt
+BACKSTABBING.egg-info/requires.txt
+BACKSTABBING.egg-info/top_level.txt
+src/Client.py
+src/__init__.py
+src/cli.py
+src/server_connection.py
+src/server_constants.py
+src/server_game.py
+src/server_player.py
+src/server_to_play.py

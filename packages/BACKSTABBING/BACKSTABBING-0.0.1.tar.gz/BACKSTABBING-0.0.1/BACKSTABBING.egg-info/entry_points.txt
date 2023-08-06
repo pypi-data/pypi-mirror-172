@@ -1,0 +1,3 @@
+[console_scripts]
+eatemall-client = src.cli:runClient
+eatemall-server = src.cli:runServer
