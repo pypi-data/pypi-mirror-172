@@ -1,0 +1,7 @@
+CHANGELOG
+
+==============
+
+3.0.1 (10/21/2022)
+- Some bug fixes
+- Minor Efficiency boosts
