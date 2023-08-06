@@ -1,0 +1,2 @@
+[sphinx.html_themes]
+pypose_sphinx_theme = pypose_sphinx_theme
