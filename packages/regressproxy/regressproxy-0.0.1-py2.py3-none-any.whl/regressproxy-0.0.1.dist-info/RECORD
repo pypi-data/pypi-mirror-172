@@ -1,0 +1,9 @@
+regressproxy/__init__.py,sha256=Uc7TJ_sJTjogY-OXLMPyw71l0VmvGQ1-ZmDXcJvlAaY,569
+regressproxy/models_cel.py,sha256=7_2Ty_SyIHIJ1gOf8rDktblVZgJ41JO56hM0rjw2W5c,17294
+regressproxy/models_pymc3.py,sha256=oJQmodlBiVecrp6zI_E6hqu-1uMv7W4T1MCXNKypHyo,13740
+regressproxy/models_pymc4.py,sha256=YJ0ujxCoHGj2TfAqBZk2bdv5IbBmU8nVK_fC1Q0B4cw,13461
+regressproxy-0.0.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+regressproxy-0.0.1.dist-info/METADATA,sha256=SOnJWz_M7hPRIHKZ7gAEfS9h1jlqHDh3ieOF_pP1B-k,5251
+regressproxy-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+regressproxy-0.0.1.dist-info/top_level.txt,sha256=84ylYNRysBJ8SitAaz1x489JKpuRcEseS0tJpEI8GQ8,13
+regressproxy-0.0.1.dist-info/RECORD,,
