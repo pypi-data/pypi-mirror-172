@@ -1,0 +1,4 @@
+setuptools>=57.0.0
+
+[test]
+pytest>=3.0.0
