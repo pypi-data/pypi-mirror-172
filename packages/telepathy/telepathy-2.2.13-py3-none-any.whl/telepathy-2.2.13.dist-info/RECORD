@@ -1,0 +1,11 @@
+telepathy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telepathy/telepathy.py,sha256=SE5feutC820TL_JPbUU-oVsoRmoDb2HlGrZwmuwzVY0,87293
+telepathy/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telepathy/libs/const.py,sha256=f1Xnhp031v8-_OZrrK2Scyvy9bws0_RZBwx6vzfYqig,5351
+telepathy/libs/utils.py,sha256=vOuopFpuKiGIBYYSDto43ILcq4edFlMsUrqoiE3HBKk,5015
+telepathy-2.2.13.dist-info/LICENSE.txt,sha256=UhbbBg0l30WYZYvt_ZvfXqbpI8ogHTJ6ldxnbcptn8c,1070
+telepathy-2.2.13.dist-info/METADATA,sha256=dCZfbZPPOfHLCMpg-axTysWQRuFunufT82uCMuNHjkE,6646
+telepathy-2.2.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+telepathy-2.2.13.dist-info/entry_points.txt,sha256=2_IsDOjTGZ2K53lv4YrIaHgLcPDTEfTgFnhgh8qowis,54
+telepathy-2.2.13.dist-info/top_level.txt,sha256=PaLPJuyGxhIJj_6_Jb4ENSdALt5-IZ3A8McyiTH94as,22
+telepathy-2.2.13.dist-info/RECORD,,
