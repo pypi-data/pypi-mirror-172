@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mappersession
+Version: 0.0.2
+Summary: Session management tools in python for the libmapper signal mapping framework
+Project-URL: Homepage, https://github.com/bboettcher3/mappersession
+Project-URL: Bug Tracker, https://github.com/bboettcher3/mappersession/issues
+Author-email: Brady Boettcher <bradyboettcher@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: jsonschema
+Requires-Dist: libmapper
+Description-Content-Type: text/markdown
+
+# mappersession
+ Session management tools in python for the libmapper signal mapping framework
