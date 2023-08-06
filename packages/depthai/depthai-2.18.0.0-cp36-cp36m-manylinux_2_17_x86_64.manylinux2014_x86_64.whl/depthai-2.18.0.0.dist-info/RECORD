@@ -1,0 +1,10 @@
+depthai.cpython-36m-x86_64-linux-gnu.so,sha256=B_PHfFjM0diIJkP2k5Kk0-rYziBcWe3z6Qq7G8x-vQs,15505960
+depthai-2.18.0.0.dist-info/LICENSE,sha256=X-bU7Cqk4igULucQhNHIv-pHQjj-6NSb0Q6MvQtErOE,1068
+depthai-2.18.0.0.dist-info/top_level.txt,sha256=39NG_7OEgvQ5PKU-ilUsp81cr2azecT6E-c1oCTbufM,8
+depthai-2.18.0.0.dist-info/WHEEL,sha256=YVAXCacQXnznQ-_lMj8Nvqrs7YPtMP1pHRCw9EcyWRQ,150
+depthai-2.18.0.0.dist-info/RECORD,,
+depthai-2.18.0.0.dist-info/METADATA,sha256=DCsyA-uUcB8eEYM2inBSv95iMnHD9nKmKtQzHtKGQ6k,8632
+depthai/__init__.pyi,sha256=UHorky0hb9tqLBGEO_8e721M55AxJrwjzo73EX_Y9no,161854
+depthai/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depthai/node.pyi,sha256=3By3-WPTC9PqohQUkKrnJlUu721_Ozy0Fc7njMlBeiA,39308
+depthai.libs/libusb-1-105e664f.0.so,sha256=SqMkp3YvuSJUfIlczPDcbTkZChDIWpsX4pKoUgKwaGg,140680
