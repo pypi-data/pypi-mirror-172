@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: timetrans
+Version: 1.0.3
+Summary: Time trans to transfer to a normal date and clearance 
+Author: Sad_Cat0326
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: googletrans (==3.1.0a0)
+Description-Content-Type: text/markdown
+
+Приветствую всёх наших любителей Python, думаю многим из вас надоедало то что когда вы получаете время используя Datetime мы получаем не особо красивые текста, что-же я решыл исправить это
+термины:
+[] - что-то из этого
+{не обязательно}
+<> - сложить вместе
+int - число
+str - строка
+list - листинг
+dict - словарь
+tuple - кортеж
+
+функции:
+get([int, <int, str>], {str}) - функция сложения, имеет два аргумента и оба не обязательны: 
+time = укажите время
+lounge = укажите язык перевода (умолчание Англ.)
