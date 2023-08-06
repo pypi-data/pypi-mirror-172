@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+torchcrepeV2/__init__.py
+torchcrepeV2/convert_h5_to_pt.py
+torchcrepeV2/core.py
+torchcrepeV2/crepe_model.py
+torchcrepeV2/model-full-crepe.pt
+torchcrepeV2/test_example.py
+torchcrepeV2/utils.py
+torchcrepeV2.egg-info/PKG-INFO
+torchcrepeV2.egg-info/SOURCES.txt
+torchcrepeV2.egg-info/dependency_links.txt
+torchcrepeV2.egg-info/requires.txt
+torchcrepeV2.egg-info/top_level.txt
