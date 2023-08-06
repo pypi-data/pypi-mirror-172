@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "vcfvalidator"
+version = "1.0.3"
+description = "This package checks the metadata of VCF files with respect to the following paper: https://f1000research.com/articles/11-231"
+authors = ["Junaid Memon <jmemonisy@gmail.com>", "Patrick König <koenig@ipk-gatersleben.de>"]
+maintainers = ["Patrick König <koenig@ipk-gatersleben.de>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+tabulate = "^0.9.0"
+rich = "^12.6.0"
+
+[tool.poetry.scripts]
+vcfvalidator = 'vcfvalidator.cli:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
