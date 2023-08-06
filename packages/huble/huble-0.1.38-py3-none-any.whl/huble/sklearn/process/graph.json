@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "id": "999",
+      "type": "custom",
+      "position": { "x": 520, "y": 210 },
+      "data": {
+        "name": "Raw Data",
+        "value": "Raw Data",
+        "color": "green.400",
+        "isInput": true,
+        "parameters": { "Dataset": "Test" },
+        "node_type": "preprocess"
+      },
+      "width": 400,
+      "height": 76,
+      "selected": false,
+      "positionAbsolute": { "x": 520, "y": 210 },
+      "dragging": false
+    },
+    {
+      "id": "998",
+      "type": "custom",
+      "position": { "x": 520.216099286725, "y": 952.9924366823019 },
+      "data": {
+        "name": "Clean Data",
+        "value": "Clean Data",
+        "color": "pink.400",
+        "isOutput": true,
+        "parameters": { "Dataset": "Test" },
+        "node_type": "preprocess"
+      },
+      "width": 400,
+      "height": 76,
+      "selected": false,
+      "positionAbsolute": { "x": 520.216099286725, "y": 952.9924366823019 },
+      "dragging": false
+    },
+    {
+      "id": "1",
+      "type": "custom",
+      "position": { "x": 652.5126950070751, "y": 758.3668287752214 },
+      "data": {
+        "name": "Normalization",
+        "value": "Normalization",
+        "parameters": {
+          "column name": "",
+          "method": "Min-Max Feature Scaling"
+        },
+        "node_type": "preprocess",
+        "color": "blue.400"
+      },
+      "width": 400,
+      "height": 76,
+      "selected": false,
+      "positionAbsolute": { "x": 652.5126950070751, "y": 758.3668287752214 },
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "custom",
+      "position": { "x": 507.1582928061946, "y": 387 },
+      "data": {
+        "name": "Drop Duplicates",
+        "value": "Drop Duplicates",
+        "parameters": { "subset": "", "keep": "first" },
+        "node_type": "preprocess",
+        "color": "teal.400"
+      },
+      "width": 400,
+      "height": 76,
+      "selected": false,
+      "positionAbsolute": { "x": 507.1582928061946, "y": 387 },
+      "dragging": false
+    },
+    {
+      "id": "3",
+      "type": "custom",
+      "position": { "x": 528, "y": 575 },
+      "data": {
+        "name": "Remove Outliers",
+        "value": "Remove Outliers",
+        "parameters": { "Column Name": "" },
+        "node_type": "preprocess",
+        "color": "orange.400"
+      },
+      "width": 400,
+      "height": 76,
+      "selected": false,
+      "positionAbsolute": { "x": 528, "y": 575 },
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "999",
+      "sourceHandle": null,
+      "target": "2",
+      "targetHandle": null,
+      "type": "custom",
+      "data": { "sourceColor": "green.400", "targetColor": "teal.400" },
+      "id": "reactflow__edge-999-2"
+    },
+    {
+      "source": "2",
+      "sourceHandle": null,
+      "target": "3",
+      "targetHandle": null,
+      "type": "custom",
+      "data": { "sourceColor": "teal.400", "targetColor": "orange.400" },
+      "id": "reactflow__edge-2-3"
+    },
+    {
+      "source": "3",
+      "sourceHandle": null,
+      "target": "1",
+      "targetHandle": null,
+      "type": "custom",
+      "data": { "sourceColor": "orange.400", "targetColor": "blue.400" },
+      "id": "reactflow__edge-3-1"
+    },
+    {
+      "source": "1",
+      "sourceHandle": null,
+      "target": "998",
+      "targetHandle": null,
+      "type": "custom",
+      "data": { "sourceColor": "blue.400", "targetColor": "pink.400" },
+      "id": "reactflow__edge-1-998"
+    }
+  ]
+}
