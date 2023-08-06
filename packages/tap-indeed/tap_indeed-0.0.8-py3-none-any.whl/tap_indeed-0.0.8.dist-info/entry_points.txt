@@ -1,0 +1,3 @@
+[console_scripts]
+tap-indeedsponsoredjobs=tap_indeedsponsoredjobs.tap:TapIndeedSponsoredJobs.cli
+

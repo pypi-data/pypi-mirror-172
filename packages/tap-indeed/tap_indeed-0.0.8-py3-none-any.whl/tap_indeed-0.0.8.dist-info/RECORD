@@ -1,0 +1,11 @@
+tap_indeedsponsoredjobs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_indeedsponsoredjobs/auth.py,sha256=jkXNuuln-aFfiYwFQiUW--_wlx7vC6iks_dVqgJGjXk,8823
+tap_indeedsponsoredjobs/client.py,sha256=VfWMSeHOtwZbjDD8Q52GTtvwl6eQ9rjYnDRtxVoZwFU,12293
+tap_indeedsponsoredjobs/streams.py,sha256=-dVhQAQ2mZn5Rub6gm4BbERc4Ky7GYd1oF0AQwpiuKw,6625
+tap_indeedsponsoredjobs/tap.py,sha256=6HuCOm8fmO81J0l2KhCElZ8houjEJCEkhisXsc9FcAw,1528
+tap_indeedsponsoredjobs/tests/__init__.py,sha256=b9vySI3qrLFuKSECj9EVG0krg4MMWHB5v8aUczZH-7I,46
+tap_indeedsponsoredjobs/tests/test_core.py,sha256=EKsVnFh0oMc2jWx_owXsmSczLSCFP2u98M2NmgjWd8c,1861
+tap_indeed-0.0.8.dist-info/entry_points.txt,sha256=CEpqgI1gf-8_LVKYZj56C7fweFrJaZoHdmrRG0VS_AQ,98
+tap_indeed-0.0.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tap_indeed-0.0.8.dist-info/METADATA,sha256=Scd0Vu-er-VfdJOB08sLeya7kdb4rZUYQfu0XQirg08,713
+tap_indeed-0.0.8.dist-info/RECORD,,
