@@ -1,0 +1,2 @@
+[console_scripts]
+watermelon = watermelon.__main__:main

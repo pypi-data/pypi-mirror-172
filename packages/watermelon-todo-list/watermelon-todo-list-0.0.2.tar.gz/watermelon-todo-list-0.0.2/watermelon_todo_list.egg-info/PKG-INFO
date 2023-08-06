@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: watermelon-todo-list
+Version: 0.0.2
+Summary: watermelon, inspired by tomato impl by python
+Home-page: https://github.com/Watermelon-Family/watermelon
+Author: ruanjiancheng
+Author-email: 1434919953@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+watermelon

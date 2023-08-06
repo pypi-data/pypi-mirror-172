@@ -1,0 +1,2 @@
+python-dateutil<5.0.0,>=2.7.0
+prettytable<5.0.0,>=3.2.0

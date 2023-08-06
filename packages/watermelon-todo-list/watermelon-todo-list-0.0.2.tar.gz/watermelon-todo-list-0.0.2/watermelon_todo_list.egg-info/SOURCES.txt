@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+build.sh
+setup.py
+watermelon/__init__.py
+watermelon/__main__.py
+watermelon/event/__init__.py
+watermelon/event/event.py
+watermelon/event/utils.py
+watermelon/resources/db.json
+watermelon_todo_list.egg-info/PKG-INFO
+watermelon_todo_list.egg-info/SOURCES.txt
+watermelon_todo_list.egg-info/dependency_links.txt
+watermelon_todo_list.egg-info/entry_points.txt
+watermelon_todo_list.egg-info/requires.txt
+watermelon_todo_list.egg-info/top_level.txt
