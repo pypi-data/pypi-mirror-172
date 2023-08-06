@@ -1,0 +1,87 @@
+{
+    "$id": "https://example.com/product.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ezd",
+    "description": "The schema for `ezd`",
+    "type": "object",
+    "properties": {
+        "env": {
+            "type": "array",
+            "description": "Environment variables to set for all tasks"
+        },
+        "tasks": {
+            "type": "object",
+            "properties": {
+                "shell_exec": {
+                    "type": "object",
+                    "patternProperties": {
+                        "": {
+                            "type": "object",
+                            "description": "Configure and run shell tasks",
+                            "properties": {
+                                "description": {
+                                    "type": "string",
+                                    "description": "Describes the task for the user"
+                                },
+                                "env": {
+                                    "type": "array",
+                                    "description": "Environment variables to set while executing these specific commands"
+                                },
+                                "commands": {
+                                    "type": "array",
+                                    "description": "A list of commands to execute within the local shell"
+                                }
+                            }
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "docker_seq": {
+                    "type": "object",
+                    "description": "Configure and run `docker-seq` tasks",
+                    "patternProperties": {
+                        "": {
+                            "type": "object",
+                            "properties": {
+                                "file": {
+                                    "type": "string",
+                                    "description": "Path to a `docker-seq.yml` file"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "config": {
+                                    "description": "Embedded `docker-seq.yml` configuration",
+                                    "$ref": "https://gitlab.com/Veroxis/docker-seq/-/raw/master/docker-seq.schema.json"
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "volumes": {
+            "type": "object",
+            "description": "Declare docker volumes to use within docker_seq tasks",
+            "properties": {
+                "driver": {
+                    "type": "string",
+                    "description": "Specify volume driver name"
+                },
+                "label": {
+                    "type": "string",
+                    "description": "Set metadata for a volume"
+                },
+                "opt": {
+                    "type": "array",
+                    "description": "Set driver specific options"
+                }
+            }
+        },
+        "additionalProperties": false
+    },
+    "additionalProperties": false
+}

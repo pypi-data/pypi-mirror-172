@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyschemata"
+dynamic = ["version"]
+description = "Bringing SchemaStore to python as a data package"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+  { name = "Stephen Rosen", email = "sirosen0@gmail.com" },
+]
+license = "Apache-2.0"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = ['importlib_resources;python_version<"3.9"']
+
+[project.urls]
+"Source code" = "https://github.com/sirosen/pyschemata"
+
+[tool.hatch.version]
+path = "src/pyschemata/__init__.py"
+
+[tool.hatch.build]
+sources = ["src"]
+ignore-vcs = true
+include = ["src/pyschemata/**/*.py", "src/pyschemata/**/*.json"]
+
+[tool.hatch.envs.precommit]
+description = "Lint with pre-commit"
+detached = true
+dependencies = ["pre-commit"]
+[tool.hatch.envs.precommit.scripts]
+check = "pre-commit run -a"
+
+[tool.hatch.envs.mypy]
+description = "Lint with mypy"
+skip-install = true
+dependencies = ["mypy", "types-requests"]
+[tool.hatch.envs.mypy.scripts]
+src = "mypy --show-error-codes src/"
+vendor = "mypy --show-error-codes vendor-schemastore.py"
+
+[tool.hatch.envs.vendor]
+description = "Vendor schemas from schemastore"
+detached = true
+dependencies = ["requests"]
+[tool.hatch.envs.vendor.scripts]
+schemastore = "python vendor-schemastore.py"
+
+[tool.hatch.envs.default]
+dependencies = ["packaging"]
+scripts.bumpv = "python bump_version.py"
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+
+[tool.isort]
+profile = "black"

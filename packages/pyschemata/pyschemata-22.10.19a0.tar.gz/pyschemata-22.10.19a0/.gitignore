@@ -1,0 +1,11 @@
+.venv/
+*.egg-info
+__pycache__/
+build/
+dist/
+.coverage
+.tox/
+
+/src/pyschemata/schemastore/catalog.json
+/src/pyschemata/schemastore/index.json
+/src/pyschemata/schemastore/jsondata/*.json
