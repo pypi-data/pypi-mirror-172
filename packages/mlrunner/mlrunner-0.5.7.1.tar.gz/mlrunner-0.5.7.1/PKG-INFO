@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mlrunner
+Version: 0.5.7.1
+Summary: A light-weight script for maintaining a LOT of machine learning experiments.
+Home-page: https://github.com/simtony/mlrunner
+Author: Tony Ou
+Author-email: simtony2@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Maintaining many machine learning experiments requires much manual effort. This lightweight tool helps you currently run a **LOT** of experiments with simple commands and configurations. You can easily aggregate custom metrics for each experiment with a single line of code.
+
+## Install
+```
+$ pip install mlrunner
+```
+## Usage
+Download and edit [params.yaml](https://raw.githubusercontent.com/simtony/mlrunner/main/params.yaml), then simply
+```
+$ run
+```
+When all experiments finish, start a jupyter notebook and analyze results using `examine.Examiner`.
+
+See the [github repo](https://github.com/simtony/mlrunner) for example use cases.
