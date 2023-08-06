@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/eulith_web3/__init__.py
+src/eulith_web3/asn_dump.py
+src/eulith_web3/eulith_web3.py
+src/eulith_web3/signing.py
+src/eulith_web3.egg-info/PKG-INFO
+src/eulith_web3.egg-info/SOURCES.txt
+src/eulith_web3.egg-info/dependency_links.txt
+src/eulith_web3.egg-info/requires.txt
+src/eulith_web3.egg-info/top_level.txt
