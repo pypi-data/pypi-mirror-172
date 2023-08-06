@@ -1,0 +1,2 @@
+[console_scripts]
+resman-cli = resman_client.cli:main
