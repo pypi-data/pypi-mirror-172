@@ -1,0 +1,4 @@
+# Intel compiler and compiling options
+FC = ifort
+FFLAGS = -O3 -mkl=parallel -qopenmp
+LIBS = -static ${MKL_LIB_THREADED} -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core
