@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: looker-gen
+Version: 0.1.5
+Summary: Generate LookML for a dbt project
+Home-page: https://github.com/aaronbannin/looker-gen
+License: BSD-4-Clause
+Keywords: dbt,looker,lookml
+Author: Aaron Bannin
+Author-email: aaronbannin@hotmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: GitPython (>=3.1.27,<4.0.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.1.2,<9.0.0)
+Requires-Dist: lkml (>=1.2.0,<2.0.0)
+Requires-Dist: looker-sdk (>=22.4.0,<23.0.0)
