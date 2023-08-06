@@ -1,0 +1,4 @@
+[console_scripts]
+DamofashiZhouyushu = DamofashiZhouyushu.__main__:main
+damofashi-zhouyushu = DamofashiZhouyushu.__main__:main
+
