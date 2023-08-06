@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: br-locations
+Version: 0.0.91
+Summary: Cities and States of Brazil (IBGE Info)
+Home-page: https://github.com/arthurfortes/br_locations
+Author: Arthur Fortes
+Author-email: fortes.arthur@gmail.com
+License: MIT License
+Keywords: cities states brazil
+License-File: LICENSE

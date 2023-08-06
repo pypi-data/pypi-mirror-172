@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+br_locations/__init__.py
+br_locations/base.py
+br_locations/states_and_cities_10_22.json
+br_locations.egg-info/PKG-INFO
+br_locations.egg-info/SOURCES.txt
+br_locations.egg-info/dependency_links.txt
+br_locations.egg-info/top_level.txt
