@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: pkmodel-zxara
+Version: 1.3.0
+Summary: Pharmacokinetic modelling of drug delivery
+Home-page: https://github.com/mwhitemfldm/zxara_PK
+License: MIT
+Author: Anissa Alloula
+Author-email: anissa.alloula@dtc.ox.ac.uk
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (==22.1.0)
+Requires-Dist: contourpy (==1.0.5)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: fonttools (==4.37.4)
+Requires-Dist: iniconfig (==1.1.1)
+Requires-Dist: kiwisolver (==1.4.4)
+Requires-Dist: matplotlib (==3.6.1)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pillow (==9.2.0)
+Requires-Dist: pluggy (==1.0.0)
+Requires-Dist: py (==1.11.0)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: scipy (==1.9.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tomli (==2.0.1)
+Project-URL: Documentation, https://zxara-pk.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/mwhitemfldm/zxara_PK
+Description-Content-Type: text/markdown
+
+[![Test CI](https://github.com/mwhitemfldm/zxara_PK/actions/workflows/test-ci.yml/badge.svg)](https://github.com/mwhitemfldm/zxara_PK/actions/workflows/test-ci.yml)
+[![OS Test](https://github.com/mwhitemfldm/zxara_PK/actions/workflows/test-os.yml/badge.svg)](https://github.com/mwhitemfldm/zxara_PK/actions/workflows/test-os.yml)
+[![codecov](https://codecov.io/gh/mwhitemfldm/zxara_PK/branch/main/graph/badge.svg?token=QQLB4EFP0A)](https://codecov.io/gh/mwhitemfldm/zxara_PK)
+[![Documentation Status](https://readthedocs.org/projects/zxara-pk/badge/?version=latest)](https://zxara-pk.readthedocs.io/en/latest/?badge=latest)
+
+
+# pkmodel-zxara
+
+A Python package for pharmacokinetics modelling of drug delivery systems.
+
+Read the Docs [here](https://zxara-pk.readthedocs.io/en/latest/).
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+
+```bash
+pip install pkmodel-zxara
+```
+
+## Usage 
+
+Navigate to the model directory.
+
+```
+cd lib/python3.8/site-packages/pkmodel_zxara/
+```
+
+Run the __main__.py file.
+
+```
+python3 -m __main__.py
+```
+
+## Theory
+
+Pharmacokinetics (PK) provides a quantitative basis for describing the delivery of a drug to a patient, the diffusion of that drug through the plasma/body tissue, and the subsequent clearance of the drug from the patient’s system. PK is used to ensure that there is sufficient concentration of the drug to maintain the required efficacy of the drug, while ensuring that the concentration levels remain below the toxic threshold. For an introductory theory, we recommend "Principles of Pharmacokinetics", by Ratain et. al. Available from: https://www.ncbi.nlm.nih.gov/books/NBK12815/
+
+The model presented discretises the body into several linked, homogeneous compartments through which the concentration of an administered drug is tracked. It allows the user to specify the drug administration protocol, as well as physiological parameters.
+
+## Demo
+
+The program outputs a figure and the associated data. With these users may compare models with different protocols and physiological parameters. An example is provided in the results directory, as shown in the following figure.
+
+<img src=results/Example_Figure.png width="700">
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
