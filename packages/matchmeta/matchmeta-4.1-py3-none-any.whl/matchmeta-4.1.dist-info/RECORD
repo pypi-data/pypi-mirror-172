@@ -1,0 +1,10 @@
+matchmeta-4.1.data/data/data/mmi.bloom,sha256=YnkDbn4q0YUhkF-hWnq1iC_Su5KGGwAibtF_R_8I5Kg,17973266
+mmi/__init__.py,sha256=y0Qc1flZaCCsyPZ4tJAGypbtKuQmY1eEdf8LHoYceno,1234
+mmi/__main__.py,sha256=ZnJxGkzXEtZSPRZnIxbFLE01dG5WCha2LSaWRkJ_tC8,247
+mmi/cli.py,sha256=I6qggaRpx7uUZ8yXfuyBXjdYcURxgKv6DaapiWhHzzI,4191
+matchmeta-4.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+matchmeta-4.1.dist-info/METADATA,sha256=Is1vy3_7mFj1WsG8CPbTGqZo_qEjLGN9vUUW9avPLUs,1490
+matchmeta-4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+matchmeta-4.1.dist-info/entry_points.txt,sha256=yrce21mMA56-tOiNSUeKaw6tkiIg9YoXSREAZPmZCVc,37
+matchmeta-4.1.dist-info/top_level.txt,sha256=x8zxnK3NHGxUiDh1bflvxS6LHHVvSHw7QQlOlRyCiCk,4
+matchmeta-4.1.dist-info/RECORD,,
