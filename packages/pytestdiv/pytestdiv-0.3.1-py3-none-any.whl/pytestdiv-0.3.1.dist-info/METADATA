@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytestdiv
+Version: 0.3.1
+Summary: A Pytest plugin to divide test execution for parallel runs
+Home-page: https://gitlab.com/cunity/pytestdiv
+Author: Ian Norton
+Author-email: inorton@gmail.com
+License: License :: OSI Approved :: MIT License
+Platform: any
+Classifier: Framework :: Pytest
+Requires-Dist: pytest
+
+Split test collection and execution into approximately parallel groups
+
+
