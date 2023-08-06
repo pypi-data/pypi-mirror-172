@@ -1,0 +1,3 @@
+[console_scripts]
+jif=jif.__main__:app
+
