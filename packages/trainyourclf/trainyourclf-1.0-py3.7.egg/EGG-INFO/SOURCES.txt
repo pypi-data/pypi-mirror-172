@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+trainyourclf/__init__.py
+trainyourclf/train.py
+trainyourclf.egg-info/PKG-INFO
+trainyourclf.egg-info/SOURCES.txt
+trainyourclf.egg-info/dependency_links.txt
+trainyourclf.egg-info/not-zip-safe
+trainyourclf.egg-info/top_level.txt
