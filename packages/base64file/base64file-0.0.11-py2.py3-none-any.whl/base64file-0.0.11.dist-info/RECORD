@@ -1,0 +1,9 @@
+base64file/__init__.py,sha256=KHuO5S3bF0N5B0BaEBKTrHDGvKaDtENvgycL764hpco,357
+base64file/base64_file.py,sha256=intCz4lcYvCrwQFZAq30HkoAa_6FcVtlnZ-1dZ8T4oI,15111
+base64file/base85_file.py,sha256=LoMufj2BVw170CV7MR1_pEFHXmS783c9up7SlwsXeRA,964
+base64file/chacha20_file.py,sha256=xc6yWP5ZKuOfr_PIcgoT6N-ZbxWgl_SKpm4qp33KUkI,7115
+base64file/convenience.py,sha256=ieaqpSR_bR7W5IRUBTkb8o9Rur7Ai1BovnxAdiSU97I,1768
+base64file-0.0.11.dist-info/LICENSE,sha256=2SdX00DnsupsPM-F__Fo8Ab-StPSUot4QE7pqRVgqoI,1098
+base64file-0.0.11.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+base64file-0.0.11.dist-info/METADATA,sha256=LAi2zoIuWJsB2yq2HQCCH_Q9kRDZn_mETAuEwOrP0E0,2759
+base64file-0.0.11.dist-info/RECORD,,
