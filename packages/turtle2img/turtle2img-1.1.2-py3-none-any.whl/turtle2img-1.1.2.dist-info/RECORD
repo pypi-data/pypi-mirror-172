@@ -1,0 +1,9 @@
+canvasvg/__init__.py,sha256=niJiB9WKap02vVCPXg27MNT8-c4xjZVBKT8TP7nbkes,75
+canvasvg/turtle2img.py,sha256=LvQNjx5i4NFD9O6knDTLSfO5MuguxQTNOq9JHl4asEU,22363
+turtle2img/__init__.py,sha256=niJiB9WKap02vVCPXg27MNT8-c4xjZVBKT8TP7nbkes,75
+turtle2img/turtle2img.py,sha256=llznuo5EU44Aub5nB32Nd4_z1fCd74mkFiyPkHKfr20,22572
+turtle2img-1.1.2.dist-info/LICENSE,sha256=hZOPHXKfn09yGoUeNpPSCYEkFQc0LOXPguDVnUe9DnI,1602
+turtle2img-1.1.2.dist-info/METADATA,sha256=UxEp6Zq3PQmfvTb5tB73rrkBrPKgopkSWKtvE0AVbhk,1888
+turtle2img-1.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+turtle2img-1.1.2.dist-info/top_level.txt,sha256=4uxCCr-7ObwJzX3eV8lK-TVxlj74FC4f0Zary40cDVg,11
+turtle2img-1.1.2.dist-info/RECORD,,
