@@ -1,0 +1,9 @@
+sqla2uml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqla2uml/generator.py,sha256=5nv9_CzJSYms0pWvJS_6DDal4K8PvFpHbqeWQ3LU_6M,1345
+sqla2uml/main.py,sha256=6JgKu-9DB2p722hLMt4Da1rh52lppWKcxIBaDd-zc_M,1176
+sqla2uml/scanner.py,sha256=ABrKZDj-0kFdo16TVVTjk3gUahkoG6NkEfK-qCWGgqQ,2569
+sqla2uml-0.1.3.dist-info/entry_points.txt,sha256=DadRAYAx2J8XhLqpeFjlL_6jLBdH6L5yLYCrrZCgGOM,47
+sqla2uml-0.1.3.dist-info/LICENSE,sha256=POpTDBopuGJOyE1AKd5A0cgNqiVOtRV270XFWN6jpck,1070
+sqla2uml-0.1.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+sqla2uml-0.1.3.dist-info/METADATA,sha256=aLeP6oKyqJXt_LNhGEnLdJnX87kCTwZDIDfZvVpmhIo,2545
+sqla2uml-0.1.3.dist-info/RECORD,,
