@@ -1,0 +1,2 @@
+[console_scripts]
+discord-coworking = discord_coworking.__main__
