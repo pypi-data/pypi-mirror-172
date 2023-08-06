@@ -1,0 +1,7 @@
+dialoghook/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+dialoghook/common.py,sha256=5gIh-BtObkmBOnmzY8zGltYgvKreHUmIXI4PgpMKxH0,1077
+dialoghook/request.py,sha256=t4m7UFXzpJp2FabeIKlzOBmVTfhR-QFkwfkvB5W0ldo,3090
+dialoghook/response.py,sha256=miykU7-E5fbM57DtvnNkTMdnNLnIng0C8C3EVmolrlU,1098
+dialoghook-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+dialoghook-0.1.0.dist-info/METADATA,sha256=fzKpb2v1iMneCkdSnEAxqGKUSR_xfmepL-jX-sqT4FM,726
+dialoghook-0.1.0.dist-info/RECORD,,
