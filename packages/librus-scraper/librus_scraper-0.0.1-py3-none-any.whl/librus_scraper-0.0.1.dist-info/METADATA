@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: librus-scraper
+Version: 0.0.1
+Summary: Web Scraper do serwisu Librus Synergia
+Home-page: UNKNOWN
+Author: Piotr Ginał
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: scraper librus librus-synergia
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+
+UNKNOWN
+
+

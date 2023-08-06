@@ -1,0 +1,14 @@
+librus_scraper/announcements.py,sha256=8uwmpfJK6a2ULZXsEQr58iKQv6edVGIZRXpm4HOWipo,526
+librus_scraper/authorization.py,sha256=n-XlEw-KdjD36evDS68eqlmg1hfYBxRnmy5VTjV91Xs,3116
+librus_scraper/cal.py,sha256=GAkDl871iWVrS-hV7R8P68WcPaosLzIITWsrk6pN53M,1665
+librus_scraper/grades.py,sha256=4Gd1Qko1U0bn_bCv5PW20gOC-8eeG6SJWW4FqydNgQI,5116
+librus_scraper/messages.py,sha256=vBxJM4dDQDZqNQzK-28eXl4NZmIz2RwFDq6M3Fq3db0,10853
+librus_scraper/other.py,sha256=myfI16JRmg_6-BFpXOXtTRantOlZcvvwv4Ik3I0m-WU,1230
+librus_scraper/schedule.py,sha256=kUIGSkatA1WsryV5RQnu7G7223xQSmu5Rkxi2T3jS4A,2047
+librus_scraper/__init__.py,sha256=2UQ0Tlbt-BeB0cS3_ak3627lZut-mxwwA78uRqLn-hA,175
+librus_scraper-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+librus_scraper-0.0.1.dist-info/METADATA,sha256=eLtRfygubA7wuaHiSd2w-beYdJVg4RICEEPIdSnHMwA,309
+librus_scraper-0.0.1.dist-info/metadata.json,sha256=ohtze8W3GfBF17rvbGtnUrC8mZSolA1EWhZkQSzG5KI,403
+librus_scraper-0.0.1.dist-info/RECORD,,
+librus_scraper-0.0.1.dist-info/top_level.txt,sha256=3ntOf0z97iVs2qFGT8jFgIeGJfNWHtW7NHHEalvLFcQ,15
+librus_scraper-0.0.1.dist-info/WHEEL,sha256=1qHRvcAhNGFWK9sk8FDHLQvt5PW50bZq-RPUNZtD-iQ,97
