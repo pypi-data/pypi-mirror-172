@@ -1,0 +1,12 @@
+README.md
+setup.py
+MingxiangRiji/README.md
+MingxiangRiji/__init__.py
+MingxiangRiji/__main__.py
+MingxiangRiji/file.pdf
+MingxiangRiji/index.html
+mingxiang_riji.egg-info/PKG-INFO
+mingxiang_riji.egg-info/SOURCES.txt
+mingxiang_riji.egg-info/dependency_links.txt
+mingxiang_riji.egg-info/entry_points.txt
+mingxiang_riji.egg-info/top_level.txt

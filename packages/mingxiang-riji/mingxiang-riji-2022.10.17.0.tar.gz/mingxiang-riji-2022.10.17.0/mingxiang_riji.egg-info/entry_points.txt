@@ -1,0 +1,4 @@
+[console_scripts]
+MingxiangRiji = MingxiangRiji.__main__:main
+mingxiang-riji = MingxiangRiji.__main__:main
+
