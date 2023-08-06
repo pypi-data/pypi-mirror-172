@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: declafe
+Version: 0.0.25
+Summary: Declarative feature generation library
+Home-page: https://github.com/kazchimo/declafe
+Author: kazchimo
+Author-email: kazchimo@gmail.com
+License: MIT
+Description: # declafe
+        
+        ## Liscense
+        This software is released under the MIT License, see LICENSE.
+        
+Keywords: machine learning,declarative,feature generation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
