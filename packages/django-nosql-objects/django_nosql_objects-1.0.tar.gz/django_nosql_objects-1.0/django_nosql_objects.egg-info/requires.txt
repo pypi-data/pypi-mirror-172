@@ -1,0 +1,5 @@
+Django>=3.2
+django-filter
+django-guardian
+djangorestframework
+djangorestframework-guardian
