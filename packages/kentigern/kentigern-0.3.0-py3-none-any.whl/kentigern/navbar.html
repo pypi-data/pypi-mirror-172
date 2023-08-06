@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+  <div class="container-fluid">
+  
+  <a class="navbar-brand" href="{{ pathto(master_doc) }}">
+    {%- block sidebarlogo %}
+    {%- if logo %}<img src="{{ pathto('_static/' + logo, 1) }}">{%- endif %}
+    {%- endblock %}
+    {% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+    <ul class="navbar-nav ">
+      {% if theme_navbar_links %}
+      {%- for link in theme_navbar_links %}
+      <li class="nav-item">
+	<a href="{{ pathto(*link[1:]) }}">{{ link[0] }}</a>
+      </li>
+      {%- endfor %}
+      {% endif %}
+      
+      {% block navbarextra %}
+      {% endblock %}
+    </ul>
+
+    <ul class="navbar-nav ">
+    <li class="nav-item dropdown">
+      {% if versions  %}
+      <a role="button" href="#" class="version-link nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	{{ current_version.name }}
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+	{%- for version in versions.tags %}
+	<a class="dropdown-item version-link" href="{{ version.url }}">{{ version.name }}</a>
+	{%- endfor %}
+	<div class="dropdown-divider"></div>
+	{%- for version in versions.branches %}
+	<a class="dropdown-item version-link" href="{{ version.url }}">{{ version.name }}</a>
+	{%- endfor %}
+      </div>
+      
+      {% else %}
+      <a role="button" data-target="#" class="version-link nav-link">{% if version %}v{{ version |e }}{% else %}{{ release | e }}{% endif %}
+      </a>
+      {% endif %}
+    </li>
+    </ul>
+    
+  </div>
+</nav>
+
+</div>
+
+{# Add document navigation on a second nav below the main one #}
+{% if theme_navbar_sidebarrel %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+  {% block sidebarrel %}
+  {% include "relations.html" %}
+  {% endblock %}
+
+  {% if theme_source_link_position == "nav" %}
+  {% include "sourcelink.html" %}
+  {% endif %}
+  </div>
+</nav>
+{% endif %}
