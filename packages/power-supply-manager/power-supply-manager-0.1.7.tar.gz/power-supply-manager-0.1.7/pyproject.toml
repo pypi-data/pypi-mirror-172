@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "power-supply-manager"
+version = "0.1.7"
+description = "Power Supply Manager"
+authors = ["Willie Marchetto <willie@devbuildzero.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+dearpygui = "1.6.2"
+coloredlogs = "^15.0.1"
+matplotlib = "^3.6.0"
+python-vxi11 = "^0.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+flake8 = "^5.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+psm = "power_supply_manager.power_supply_manager:app"
+power-supply-manager = "power_supply_manager.power_supply_manager:app"
