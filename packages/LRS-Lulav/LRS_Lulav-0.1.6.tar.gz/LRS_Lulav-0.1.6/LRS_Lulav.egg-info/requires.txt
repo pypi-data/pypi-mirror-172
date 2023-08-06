@@ -1,0 +1,7 @@
+Django>=1.1.1
+pytest
+pymongo
+pysqlite3
+redis
+soupsieve
+bs4
