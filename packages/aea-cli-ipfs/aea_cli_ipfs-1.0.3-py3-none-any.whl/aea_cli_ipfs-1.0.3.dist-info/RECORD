@@ -1,0 +1,9 @@
+aea_cli_ipfs/__init__.py,sha256=0-Soz5cMZixPkp84IGV3m0cjsrgPMMuvStkyQwUPti4,840
+aea_cli_ipfs/core.py,sha256=Hz4iwmi7XmmUredDHkanaG6eeztDx3EXrisZd0O2tjE,4499
+aea_cli_ipfs/ipfs_utils.py,sha256=-w-uNRlE0lJEsN3QWkwRA2FfityWCtkpjVbRi38L2DY,5709
+aea_cli_ipfs-1.0.3.dist-info/LICENSE,sha256=TDSqx_22tVH-YpIk0C3Ymkq2Q8K8C2i3gESPF6NdJwI,11346
+aea_cli_ipfs-1.0.3.dist-info/METADATA,sha256=w0KgdVty8nHkZRGFqsIBjd5Hfx84WuIlBT3epcQPe-M,978
+aea_cli_ipfs-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aea_cli_ipfs-1.0.3.dist-info/entry_points.txt,sha256=YVTeiEzJYDc3gb0fJGYT97pbGoAVIn2rytntvCSs94E,52
+aea_cli_ipfs-1.0.3.dist-info/top_level.txt,sha256=OJKwPcD3XzJVU6Zbt3x7qgpHHqEjiGgZhDIGEZoD-Lo,13
+aea_cli_ipfs-1.0.3.dist-info/RECORD,,
