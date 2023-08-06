@@ -1,0 +1,11 @@
+armaqdl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+armaqdl/__main__.py,sha256=9riX_mYySYIjZ2druegESd_RomfuCxT4g8O4GOZ1yOE,68
+armaqdl/_version.py,sha256=_UJonOENX4r-qwHEWuAPWP39KNmboa9_GnJ2v2Bb0P8,176
+armaqdl/armaqdl.py,sha256=VHfike8A-LL1Py04LLJQFWEiAvOJ9Yr9tbEIdY8HzXw,12744
+armaqdl/config.py,sha256=60Cj0390ZS2wWyhGcMPtb1NPSZv2IJXKZWCiyMQcOY0,1801
+armaqdl/config/settings.toml,sha256=DdcJNEB7U9j3cN494TA-PantK50kZ2VI8PBiZymdLo4,1404
+armaqdl-0.3.0.dist-info/METADATA,sha256=qNH2PSvLpCbIHaPbRjLr5tnOgI6pddprsJeLC_PZ92E,4043
+armaqdl-0.3.0.dist-info/WHEEL,sha256=dX1WPp444jXDT0mMZWrdU6ZHm7Cfu0jldiLCQOk_Kmg,87
+armaqdl-0.3.0.dist-info/entry_points.txt,sha256=usb1ZrDHNA_QaEnsRPG6XMupGwJ3eNf2rNhrVrLJN7g,49
+armaqdl-0.3.0.dist-info/licenses/LICENSE,sha256=Yv6ZpFo4L0bnXtQJfEE51qJKNQ_8YvMVbDSFvShdiS0,1063
+armaqdl-0.3.0.dist-info/RECORD,,
