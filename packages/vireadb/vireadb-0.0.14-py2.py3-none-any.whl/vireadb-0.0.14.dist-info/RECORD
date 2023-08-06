@@ -1,0 +1,11 @@
+vireadb/__init__.py,sha256=rJTmszIxEMhqwpn6J_fZ59rzVu_Dqej9rIGjMDnIsK0,172
+vireadb/common.py,sha256=4RND8xbIvPFhgOjIfEKsm3er2R2ufnkgSBgQko6bf30,1146
+vireadb/compress.py,sha256=MycCTZvy4ZT04hRoH-LmMZkY28qA4-BeH_UF1sSvPJc,2670
+vireadb/cram.py,sha256=z2mddlnqTZPiG-aWJegCNP7IFPTB7I06RBTdIZjgRrc,7486
+vireadb/fasta.py,sha256=vfK9rm5ARU41Fek9XMGPME0wS0o60XdHMnGSUU6VPg4,975
+vireadb/vireadb.py,sha256=duOrkcH6ypBHkq5EoqZ0ffbD_rjYWlmXLK9RmUTGO6A,25630
+vireadb-0.0.14.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+vireadb-0.0.14.dist-info/METADATA,sha256=bxZqMLZFZdF2O3HKB_LcXz9tuSCCVhjVw43XLLlZy_g,1098
+vireadb-0.0.14.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+vireadb-0.0.14.dist-info/top_level.txt,sha256=pEnp5X75aMpb5bg-UQQBWLmGaK6KlxHE__qhf7nus6I,8
+vireadb-0.0.14.dist-info/RECORD,,
