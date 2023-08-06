@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "interactive-select"
+version = "0.1.0"
+description = ""
+authors = ["0djentd"]
+readme = "README.md"
+packages = [{include = "interactive_select"}]
+
+[tool.poetry.scripts]
+interactive-select="interactive_select.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+bump2version = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
