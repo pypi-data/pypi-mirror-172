@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: html_mitra
+Version: 0.0.2
+Summary: Create , edit html files easily with preformatted headers and preview them on your localhost or as a file.
+Home-page: UNKNOWN
+Author: Developer Gautam Kumar
+Author-email: useronelaptop001@gmail.com
+License: UNKNOWN
+Keywords: python,html,html_mitra,dev_gautam,nepal
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package to edit,create and serve HTML files
+
