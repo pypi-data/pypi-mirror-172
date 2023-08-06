@@ -1,0 +1,4 @@
+[console_scripts]
+GuaijideZhouyu = GuaijideZhouyu.__main__:main
+guaijide-zhouyu = GuaijideZhouyu.__main__:main
+
