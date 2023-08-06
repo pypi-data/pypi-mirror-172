@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pg-db-tools
+Version: 1.0.6
+Summary: PostgreSQL database schema design and maintenance tools
+Home-page: http://www.hendrikx-itc.nl
+Author: Alfred Blokland
+Author-email: alfred.blokland@hendrikx-itc.nl
+License-File: LICENSE
