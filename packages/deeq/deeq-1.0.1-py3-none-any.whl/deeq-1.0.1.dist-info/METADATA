@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: deeq
+Version: 1.0.1
+Summary: Quantum Computer Library for Everyone
+Home-page: https://github.com/Deeq/Deeq
+Author: The Deeq Developers
+Author-email: info@deeq.com
+License: Apache 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: scipy (>=1.5)
+Requires-Dist: networkx (>=2.6.3)
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: autoray (>=0.2.5)
+Requires-Dist: quimb (==1.4.0)
+Requires-Dist: opt-einsum (>=3.3.0)
+
+# Deeq
+
+Quantum Computing SDK
+
+### Version
+
+[![Version](https://badge.fury.io/py/deeq.svg)](https://badge.fury.io/py/deeq)
+
+### Tutorial
+
+https://github.com/Deeq/Deeq-tutorials
+
+### Notice
+
+The back end has been changed to tensor network. The previous backend environment can still be used with .run(backend="numpy").
+
+### Install
+
+```
+git clone https://github.com/Deeq/Deeq
+cd Deeq
+pip3 install -e .
+```
+
+or
+
+```
+pip3 install deeq
+```
+
+### Circuit
+
+```python
+from deeq import QAOA, QML, QNN
+```
+
+### Method Chain
+
+```python
+Circuit().h[0].x[0].z[0]
+
+c = Circuit().h[0]
+c.x[0].z[0]
+```
+
+### Document
+
+
+### Contributors
+
+[Contributors](https://github.com/deep-recommend)
+
+### Disclaimer
+
+Copyright 2022 The DeepRecommend Developers.
+
+# Deeq
