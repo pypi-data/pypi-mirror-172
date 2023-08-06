@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: teamscale-cli
+Version: 7.1.1
+Summary: Client for performing precommit analysis with Teamscale.
+Home-page: https://github.com/cqse/teamscale-cli
+Author: Thomas Kinnen - CQSE GmbH
+Author-email: kinnen@cqse.eu
+License: Apache
+Keywords: teamscale client precommit
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+Command line client for performing precommit analysis with Teamscale.
