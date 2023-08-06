@@ -1,0 +1,15 @@
+instapy2/__init__.py,sha256=kvlF6xVOj-aEFed3O1JhHoUj7bo2dBWHhGLdmI-ga5g,30
+instapy2/comments.py,sha256=ZHJIBbinE-svZa4tUDo-92hx9M8Hp42IVTA8ae72-FE,1332
+instapy2/configuration.py,sha256=S-XlNLDlsDkjrfrAFcTEt6M-0mQ2oCHnjRjm5r1Pfko,488
+instapy2/follows.py,sha256=Jp7tbQm0nshBa8lqukFqL6V8HIgHVt45xr0MtwX7NBU,1284
+instapy2/instapy2.py,sha256=p834yvKWBkLfF-htq8hU0gZSm43yUfeQ4Fslwrl0Meo,10886
+instapy2/instapy2_base.py,sha256=rrHf1TQP1gQOQfZcR0k699aVLVcH_FnBWAs919I9PvE,3702
+instapy2/likes.py,sha256=-ahzFHufpVy4CFxdZVNDMNOvdX4A6I8SJtuNXt7Ea4s,268
+instapy2/location.py,sha256=SA9WcSmBNtwzRjenLDpqx73tjalMDr5YvXPrloN7QyY,1184
+instapy2/media.py,sha256=0FhCY7bY3PoZxeD4mkwvmnlmrhR-BcKqGs9Fm59PlxQ,1027
+instapy2/people.py,sha256=PekAGcI6hvq-9RLPHa7_q9_kkRs93ltbqPI-WTrA6b8,1129
+instapy2-0.0.20.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+instapy2-0.0.20.dist-info/METADATA,sha256=Rm0QPgXQH5SsbjyZYMpb2JhqVm_nH862eHab4tLGSQU,2181
+instapy2-0.0.20.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+instapy2-0.0.20.dist-info/top_level.txt,sha256=c7ZNKcpCnU5gKeb1NeJ2h05O8jqb_YDFd5ZGVxNHNK0,9
+instapy2-0.0.20.dist-info/RECORD,,
