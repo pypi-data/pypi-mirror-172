@@ -1,0 +1,16 @@
+LICENSE
+NOTICE.txt
+README.md
+setup.cfg
+setup.py
+easynmt/EasyNMT.py
+easynmt/__init__.py
+easynmt/util.py
+easynmt/models/AutoModel.py
+easynmt/models/OpusMT.py
+easynmt/models/__init__.py
+optimumEasyNMT.egg-info/PKG-INFO
+optimumEasyNMT.egg-info/SOURCES.txt
+optimumEasyNMT.egg-info/dependency_links.txt
+optimumEasyNMT.egg-info/requires.txt
+optimumEasyNMT.egg-info/top_level.txt
