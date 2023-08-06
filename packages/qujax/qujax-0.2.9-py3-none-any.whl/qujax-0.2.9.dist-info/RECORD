@@ -1,0 +1,11 @@
+qujax/__init__.py,sha256=OgS5nZESDjmRJjwcFJf7AjSDOReLk2CQavrfMEvf7II,743
+qujax/circuit.py,sha256=M148WTvdGY6CAUMJj7WfUkI6VEcw3Rpg5GufXzcRlJ4,7252
+qujax/circuit_tools.py,sha256=Bh4AYrK75fKST6cp-9XxeQS__gMph4fi2fUQa3V7ens,9958
+qujax/gates.py,sha256=UO2mRp8HMXHVi9NhjCiPtV7oWxOmvxW3AXPBCCsOFGo,5164
+qujax/observable.py,sha256=ONXrOogw6CeR8QDeTFq8ylGEhUFziDtSZRqVkjWfgew,8605
+qujax/version.py,sha256=bd8hlxKMc0Fh_2w5GWfqBtuwa8uTepTMjT8w7F-EKvY,22
+qujax-0.2.9.dist-info/LICENSE,sha256=WYmcYJG1QFgu1hfo7qrEkZ3Jhcz8NUWe6XUraZvlIFs,10172
+qujax-0.2.9.dist-info/METADATA,sha256=Irrc6U98GUW_xVm7RNbpVdjs7UCTua8Afba6jPmjLxQ,4488
+qujax-0.2.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qujax-0.2.9.dist-info/top_level.txt,sha256=8BdYqzq4Ud10jZc25Otq3qqpZ7hT8N3bsR3_Zv0qrLo,6
+qujax-0.2.9.dist-info/RECORD,,
