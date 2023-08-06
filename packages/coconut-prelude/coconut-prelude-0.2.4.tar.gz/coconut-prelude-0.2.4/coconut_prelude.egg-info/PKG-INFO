@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: coconut-prelude
+Version: 0.2.4
+Summary: An implementation of Haskell's Prelude in Python using Coconut.
+Home-page: https://github.com/evhub/coconut-prelude
+Author: Evan Hubinger
+Author-email: evanjhub@gmail.com
+Provides-Extra: dev
+License-File: LICENSE
+
+An implementation of Haskell's Prelude in Python using Coconut.

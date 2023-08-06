@@ -1,0 +1,7 @@
+coconut[mypy]
+
+[:python_version<'3.5']
+typing
+
+[dev]
+pytest
