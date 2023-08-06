@@ -1,0 +1,5 @@
+[console_scripts]
+cnv_debug_export = aneuploidy.entrypoints:main_debug_export
+cnv_detail_plot = aneuploidy.entrypoints:main_detail_plot
+cnv_export = aneuploidy.entrypoints:main_export
+cnv_plot = aneuploidy.entrypoints:main_plot
