@@ -1,0 +1,13 @@
+README.md
+setup.py
+version.py
+quanturf_test/__init__.py
+quanturf_test/__main__.py
+quanturf_test/jupyter_notebook_config.py
+quanturf_test/quanturf.ipynb
+quanturf_test.egg-info/PKG-INFO
+quanturf_test.egg-info/SOURCES.txt
+quanturf_test.egg-info/dependency_links.txt
+quanturf_test.egg-info/entry_points.txt
+quanturf_test.egg-info/requires.txt
+quanturf_test.egg-info/top_level.txt
