@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: py-ftp-receiver
+Version: 0.0.4
+Summary: Ftp Receiver
+Home-page: https://github.com/nymann/ftp-receiver
+Maintainer: Kristian Nymann Jakobsen
+Maintainer-email: kristian@nymann.dev
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: package
+
+# Ftp Receiver
+
+1. Checks existing files in output directory.
+2. List files in root directory on FTP server.
+3. Downloads all files which filename is not present in the output directory.
+4. After each file download, publish an event to Kafka with the name of the downloaded file.
+
+## Configuration
+
+The application is configured via environment variables. See `example.env`.
+
+## Development
+
+For help getting started developing check [DEVELOPMENT.md](DEVELOPMENT.md)
