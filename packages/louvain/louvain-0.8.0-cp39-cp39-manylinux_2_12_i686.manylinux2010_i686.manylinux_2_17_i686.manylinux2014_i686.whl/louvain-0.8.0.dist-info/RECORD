@@ -1,0 +1,11 @@
+louvain/functions.py,sha256=lMdiLOkob7kkA_iRc-lVKlKrQ6Vv4VFhZBbdsBh1SMU,18215
+louvain/_c_louvain.cpython-39-i386-linux-gnu.so,sha256=CMEsZ6xaS02JABgDlpsuaCNuJXHhQRXVbL3Aeg7Wf9o,2640248
+louvain/Optimiser.py,sha256=eoQeLYvOcN6Vqw6tAing33bNY2lClhA5vmn9_TS7an0,16660
+louvain/VertexPartition.py,sha256=J8d6G92GUsD9-otUKxs4NhbI_B9d8zo0aGZ-u6pPpCs,36567
+louvain/version.py,sha256=ZaoeiJ1PScLJWe3AOklUq03KO_KgAwSQBYrLWCsbjcw,176
+louvain/__init__.py,sha256=RMsJe4TbqT4VU4QRgdhEinD6vmADCIUtAmUZLR4Q6dI,2743
+louvain-0.8.0.dist-info/top_level.txt,sha256=_uGptjKo4FbjodRFDADZjZkGMPLP1s-WRXsYPHSGzJI,8
+louvain-0.8.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+louvain-0.8.0.dist-info/METADATA,sha256=aOX_h5M5ITM95psvnWYmurPVJ9xunxlW_Bgnuc08Zm0,1477
+louvain-0.8.0.dist-info/RECORD,,
+louvain-0.8.0.dist-info/WHEEL,sha256=06Wjcy2YOgI2JSv2humziK3q3iQXVYk8QO_JuqCb65U,213
