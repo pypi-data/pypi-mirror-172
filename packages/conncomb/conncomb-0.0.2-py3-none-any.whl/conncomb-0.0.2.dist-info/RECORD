@@ -1,0 +1,12 @@
+conncomb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conncomb/combinatorialanalysis.py,sha256=pN3ftRJ5ryYfNu_neqndU2sH3rkJETe6DamZgRzsdB8,829
+conncomb/genebased.py,sha256=V4v9B3NkYROuYMvb1F6NGYn2auf4TbR_1XAMK6Njusw,12556
+conncomb/geneidmatching.py,sha256=HQppqf-9g9Uv2Ww80iq-H_19TJRvbZdOIGed9SM9b8A,1853
+conncomb/patientbased.py,sha256=r1lKVct12HqruXQOLLKxVFMd15cwxoi8a50mhou5JlA,12757
+conncomb/randomconnectivity.py,sha256=eBRFw_HrTHdL0GcreQUlnRYKl4iFmuoJCq767PVbI58,2532
+conncomb/recongraph.py,sha256=3tSWuJCwQZ4uHtncGs_A7xtVlXlc_5Br9YMpN2zkJGc,5855
+conncomb-0.0.2.dist-info/LICENCE.txt,sha256=jx4CH_-3MvMIDzXyp9_3iw3HT6SfAmgfrkVNytgLcfg,1084
+conncomb-0.0.2.dist-info/METADATA,sha256=9nVFJOyrWvBzdPfV0oFO59DcdSdU3I7k4dJtWtFVL4Q,392
+conncomb-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+conncomb-0.0.2.dist-info/top_level.txt,sha256=ww4OyvcUSdamATlb4eiCLkeK0FtNRGuzxA8UQGbdSjo,9
+conncomb-0.0.2.dist-info/RECORD,,
