@@ -1,0 +1,4 @@
+[console_scripts]
+kilroy-face-discord=kilroy_face_discord.__main__:cli
+kilroy-face-discord-fetch-model=kilroy_face_discord.toxicity:fetch_model
+
