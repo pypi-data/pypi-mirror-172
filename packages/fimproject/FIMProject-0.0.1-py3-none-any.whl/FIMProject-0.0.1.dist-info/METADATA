@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: FIMProject
+Version: 0.0.1
+Summary: FIM Algorithms package for ARM
+Home-page: https://github.com/fatihsen20/FIM
+Author: Fatih Sen
+Author-email: fatih.sn2000@gmail.com
+Keywords: FIM,Frequent Itemset Mining,Association Rule Mining,ARM
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+ # How to Install
+```shell
+pip install FIMProject
+```
+# How to Use It
+```python
+from FIM import FIMAlgorithms
+
+algo_obj = FIMAlgorithms.Apriori(DB,SingleItems,MinAbsSupp)
+algo_obj.findFrequentItems()
+algo_obj.showFrequentItems()
+arm = FIMAlgorithms.ARM((DATABASE,SingleItems), algo_obj.FREQUENTITEMSETS, minconf = 0.9, minkulc = 0.4)
+arm.findRules()
+```
