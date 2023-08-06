@@ -1,0 +1,7 @@
+README.md
+setup.py
+scraperlamp.egg-info/PKG-INFO
+scraperlamp.egg-info/SOURCES.txt
+scraperlamp.egg-info/dependency_links.txt
+scraperlamp.egg-info/requires.txt
+scraperlamp.egg-info/top_level.txt
