@@ -1,0 +1,17 @@
+rxnmapper/__init__.py,sha256=UCrcwvs2vkLfZ6-t8V3uB7cY5TIZ7IY7T9Zxl-W7A4A,142
+rxnmapper/attention.py,sha256=c5QOYpCSmQB9Uvw2IgEh7o3vHrn-be4U5qxhbju6uOo,18600
+rxnmapper/core.py,sha256=VeooNGCksCZBpwnP6mFB3rSSBWck3bVjT3GpNaW4nFo,10500
+rxnmapper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rxnmapper/smiles_utils.py,sha256=EwUvZj3N9TPrmr6KQEZvgpRvcyk5FktwmEPgIVsW9TQ,17182
+rxnmapper/tokenization_smiles.py,sha256=_GCyyEpssHyVN2CsyXDW2bx1BChcvGaDr9HPQsGagv4,5836
+rxnmapper/models/transformers/albert_heads_8_uspto_all_1310k/config.json,sha256=6g8xRK8dE6XVkoz_AavY58FKuDH_e21zoU1BYoZKh28,1219
+rxnmapper/models/transformers/albert_heads_8_uspto_all_1310k/pytorch_model.bin,sha256=hUHz9QDa5xq-Z41Ua9A1ypRuLRyBn2ss9BqX-u3X5qI,3212952
+rxnmapper/models/transformers/albert_heads_8_uspto_all_1310k/special_tokens_map.json,sha256=MD30WgNgnk6tBLw9wVNtCrGbU1jbaFtvPaEj0F7CAOM,112
+rxnmapper/models/transformers/albert_heads_8_uspto_all_1310k/tokenizer_config.json,sha256=RBNvo1WzZ4oRRq0W9-hknpT7T8If536DEMBg9hyq_4o,2
+rxnmapper/models/transformers/albert_heads_8_uspto_all_1310k/training_args.bin,sha256=RA_fRFnC9Rw_BCzK13c0Kwa_P0kcJRtxKrKq2l_3ous,1562
+rxnmapper/models/transformers/albert_heads_8_uspto_all_1310k/vocab.txt,sha256=OZhoplPoVUnOFQr0ofbNJ3YkDGo9lRztISBWXwDwJ_0,3525
+rxnmapper-0.2.2.dist-info/LICENSE,sha256=cHz1D-2gAT2Gad2jmdLGIUFMOz4psHk4ryC3VyyT1Jk,1059
+rxnmapper-0.2.2.dist-info/METADATA,sha256=R06MuBt8s_2tO4s7_iNP7l8VecqxmbsYA8Xl5YFR_M4,4888
+rxnmapper-0.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rxnmapper-0.2.2.dist-info/top_level.txt,sha256=5HQ99hiBb6PFO7MZxlZcZIx1RIEjiMqeIHNT9D1yhbA,10
+rxnmapper-0.2.2.dist-info/RECORD,,
