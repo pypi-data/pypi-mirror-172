@@ -1,0 +1,3 @@
+[console_scripts]
+ez=easy_pysi.console:main
+
