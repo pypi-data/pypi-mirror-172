@@ -1,0 +1,9 @@
+spacy_alignments/__init__.py,sha256=RKQ-oc5D1WU4-pwhzkQwWzDExVH9kr7haorTHxEU19o,383
+spacy_alignments/tokenizations.cp37-win_amd64.pyd,sha256=fLnUnCUL0ZvkqR-zKQeR0XxG5f4f3uyRRzQdUA5LbyM,492032
+spacy_alignments/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacy_alignments/tests/test_main.py,sha256=PNrGcCFnkxBRV0GG6cnm0oGH6ad1yLmV8Cpm6YyZ5mo,2289
+spacy_alignments-0.8.6.dist-info/LICENSE,sha256=_0abYUDIKLhMR4X-3bybjNN3XxKQt0FSE59qK1lf1f8,1103
+spacy_alignments-0.8.6.dist-info/METADATA,sha256=GzC05UkvNDP6kHecnP9RPFQJp6IkMOcyFhawBycAZwk,2412
+spacy_alignments-0.8.6.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+spacy_alignments-0.8.6.dist-info/top_level.txt,sha256=qGdr9BT8MwPOuMq8U5FMAfdlh5zV4jexbsW7Hvui75U,17
+spacy_alignments-0.8.6.dist-info/RECORD,,
