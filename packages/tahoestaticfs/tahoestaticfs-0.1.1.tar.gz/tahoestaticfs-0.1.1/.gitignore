@@ -1,0 +1,5 @@
+*~
+*.pyc
+.coverage
+/cover
+/tahoestaticfs/_version.py
