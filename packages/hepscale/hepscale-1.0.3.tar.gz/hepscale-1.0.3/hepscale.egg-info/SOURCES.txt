@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+hepscale/__init__.py
+hepscale/main.py
+hepscale/plotting.py
+hepscale/utility.py
+hepscale.egg-info/PKG-INFO
+hepscale.egg-info/SOURCES.txt
+hepscale.egg-info/dependency_links.txt
+hepscale.egg-info/entry_points.txt
+hepscale.egg-info/not-zip-safe
+hepscale.egg-info/requires.txt
+hepscale.egg-info/top_level.txt
