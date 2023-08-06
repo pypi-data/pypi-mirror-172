@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pkmodel-zxara
+Version: 0.6.4
+Summary: Pharmacokinetic modelling of drug delivery
+Home-page: https://github.com/mwhitemfldm/zxara_PK
+License: MIT
+Author: Anissa Alloula
+Author-email: anissa.alloula@dtc.ox.ac.uk
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (==22.1.0)
+Requires-Dist: contourpy (==1.0.5)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: fonttools (==4.37.4)
+Requires-Dist: iniconfig (==1.1.1)
+Requires-Dist: kiwisolver (==1.4.4)
+Requires-Dist: matplotlib (==3.6.1)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pillow (==9.2.0)
+Requires-Dist: pluggy (==1.0.0)
+Requires-Dist: py (==1.11.0)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: scipy (==1.9.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tomli (==2.0.1)
+Project-URL: Documentation, https://zxara-pk.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/mwhitemfldm/zxara_PK
+Description-Content-Type: text/markdown
+
+# pkmodel-zxara
+
+TODO:
+ - Usage section
+ 
+A Python package for pharmacokinetics modelling of drug delivery systems.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+
+```bash
+pip install pkmodel-zxara
+```
+
+## Usage 
+
+In a Python shell import the model library. *Emphasis on the underscore in the library name*.
+
+```python
+import pkmodel_zxara
+```
+
+## Theory
+
+Pharmacokinetics (PK) provides a quantitative basis for describing the delivery of a drug to a patient, the diffusion of that drug through the plasma/body tissue, and the subsequent clearance of the drug from the patient’s system. PK is used to ensure that there is sufficient concentration of the drug to maintain the required efficacy of the drug, while ensuring that the concentration levels remain below the toxic threshold. For an introductory theory, we recommend "Principles of Pharmacokinetics", by Ratain et. al. Available from: https://www.ncbi.nlm.nih.gov/books/NBK12815/
+
+The model presented discretises the body into several linked, homogeneous compartments through which the concentration of an administered drug is tracked. It allows the user to specify the drug administration protocol, as well as physiological parameters.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
