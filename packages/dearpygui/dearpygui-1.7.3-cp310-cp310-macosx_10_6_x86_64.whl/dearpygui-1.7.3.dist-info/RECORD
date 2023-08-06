@@ -1,0 +1,11 @@
+dearpygui/__init__.py,sha256=bCA80CFbii5ZrnqqyIZfTqfhT8TL3QmW1XE8YFg_fSw,20
+dearpygui/_dearpygui.pyi,sha256=mFW_drFEc5suS7pGV711CgCExkZkFgi4Nr1_ba7ZDU4,108681
+dearpygui/_dearpygui.so,sha256=TT6OhjQ_13Hl9aASdi4vmajWRD-_4xq2bfEEWZJ21Hg,7772032
+dearpygui/dearpygui.py,sha256=feou6-RzXo-nmGRWLkntFTmIWt9BhJhIsSIbDRuJ3H4,569985
+dearpygui/demo.py,sha256=rIDzhLz1kAG5dj5ZiWnhHtQkL5-TJJ3DH6vGFSmDsnQ,172963
+dearpygui/experimental.py,sha256=E4ghyJbWOR17s7uT-Xeu3yDV6wH5qGqUGKgfDBWeWHA,290
+dearpygui-1.7.3.dist-info/LICENSE,sha256=8w5doOQsmocV3qhIm8bjORlu3Yo7dOIjtZaxvaUDerc,1072
+dearpygui-1.7.3.dist-info/METADATA,sha256=8hpJ9RStMKew-l55cfnjgoi6lG7-4iptRWISASrC6FQ,12187
+dearpygui-1.7.3.dist-info/WHEEL,sha256=0j7-5tf8xQG_O711VIL_xuW5517EZi89lczhR4NDJvA,111
+dearpygui-1.7.3.dist-info/top_level.txt,sha256=McSgVvB_tkVZmC-ccTmq9nsuVulVJcE2pUw2IZ6VzO0,10
+dearpygui-1.7.3.dist-info/RECORD,,
