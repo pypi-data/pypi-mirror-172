@@ -1,0 +1,8 @@
+[obspy.plugin.event]
+CSV = obspycsv
+
+[obspy.plugin.event.CSV]
+isFormat = obspycsv:_is_csv
+readFormat = obspycsv:read_csv
+writeFormat = obspycsv:write_csv
+
