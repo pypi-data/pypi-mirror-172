@@ -1,0 +1,8 @@
+metapensiero/sqlalchemy/dbloady/__init__.py,sha256=BtzELDMOnqQBjJCjy_xcPyVxRf6sOkvolDcn66luzNc,5026
+metapensiero/sqlalchemy/dbloady/dump.py,sha256=ATqvbc8FQ9vPxV822EUw8p6pSl5M95HT80I-ED3ojZw,9468
+metapensiero/sqlalchemy/dbloady/entity.py,sha256=IXqZNzExSTcpPz0zyqjTi75_vmA3w14cgqPgDpRhFaw,8018
+metapensiero/sqlalchemy/dbloady/load.py,sha256=olppmEF8p5HYl7s0mvJXEyo9vk3jCGrm-G2xPEo4K3o,12910
+metapensiero.sqlalchemy.dbloady-3.0.dev2.dist-info/entry_points.txt,sha256=xy0KQiYWK1YUzpIOc3-T8eEzrDAt0uRD4n6iLOM0jAw,119
+metapensiero.sqlalchemy.dbloady-3.0.dev2.dist-info/WHEEL,sha256=g_UdFZqm-k6b0W64OcndB0YT_D2mFFPAYBj7-_YsSPA,87
+metapensiero.sqlalchemy.dbloady-3.0.dev2.dist-info/METADATA,sha256=IBFOwwBUkWXwRBbG-StrAG45HwZsfzbX5_bwqZG2jbQ,12491
+metapensiero.sqlalchemy.dbloady-3.0.dev2.dist-info/RECORD,,
