@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nanonis-load
+Version: 2.4.0
+Summary: Load Nanonis data
+Home-page: https://github.com/dilwong/nanonis_load
+Author: Dillon Wong
+Author-email: 
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: h5py
+
