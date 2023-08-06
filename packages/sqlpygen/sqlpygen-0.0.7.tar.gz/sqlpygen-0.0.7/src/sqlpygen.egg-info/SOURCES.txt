@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/sqlpygen/__init__.py
+src/sqlpygen/cli.py
+src/sqlpygen/sqlpygen.py
+src/sqlpygen.egg-info/PKG-INFO
+src/sqlpygen.egg-info/SOURCES.txt
+src/sqlpygen.egg-info/dependency_links.txt
+src/sqlpygen.egg-info/entry_points.txt
+src/sqlpygen.egg-info/requires.txt
+src/sqlpygen.egg-info/top_level.txt
