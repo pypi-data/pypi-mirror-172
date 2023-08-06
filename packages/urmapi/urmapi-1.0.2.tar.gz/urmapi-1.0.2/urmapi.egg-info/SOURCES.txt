@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+urmapi/__init__.py
+urmapi/__main__.py
+urmapi.egg-info/PKG-INFO
+urmapi.egg-info/SOURCES.txt
+urmapi.egg-info/dependency_links.txt
+urmapi.egg-info/requires.txt
+urmapi.egg-info/top_level.txt
