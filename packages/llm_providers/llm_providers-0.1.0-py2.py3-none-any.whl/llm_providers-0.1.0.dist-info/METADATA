@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: llm_providers
+Version: 0.1.0
+Summary: Common interface for language models.
+Author-email: Jonathan Miller <jon@jmill.dev>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: aiohttp
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: python-dotenv ; extra == "dev"
+Project-URL: Home, https://jmill.dev/projects/llm-providers
+Provides-Extra: dev
+
+# llm-providers
+
+A common, minimal-dependency, async-first interface for interacting with Large Language Model provider APIs.
+
+## Getting Started
+
+`pip install llm-providers`
+
+```python
+from llm_providers.openai import OpenAIProvider
+
+async def main():
+  provider = OpenAIProvider(
+      connection_str=os.environ.get("OPENAI_API_KEY"),
+  )
+
+  completion = await provider.complete(prompt="hey i'm a robot who")
+  assert completion.prompt == "hey i'm a robot who"
+  assert type(completion.completion_text) == str
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+## License
+
+This project is licensed under the Apache License
+
+## Acknowledgments
+
+Much code borrowed from https://github.com/HazyResearch/manifest
+
