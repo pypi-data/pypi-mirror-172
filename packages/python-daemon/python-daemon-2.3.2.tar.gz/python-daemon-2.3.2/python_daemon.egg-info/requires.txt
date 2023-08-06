@@ -1,0 +1,16 @@
+docutils
+lockfile>=0.10
+setuptools
+
+[devel]
+coverage
+docutils
+testscenarios>=0.4
+testtools
+twine
+
+[test]
+coverage
+docutils
+testscenarios>=0.4
+testtools
