@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+social_interaction_cloud/__init__.py
+social_interaction_cloud.egg-info/PKG-INFO
+social_interaction_cloud.egg-info/SOURCES.txt
+social_interaction_cloud.egg-info/dependency_links.txt
+social_interaction_cloud.egg-info/requires.txt
+social_interaction_cloud.egg-info/top_level.txt

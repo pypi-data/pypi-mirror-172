@@ -1,0 +1,3 @@
+protobuf
+redis
+simplejson
