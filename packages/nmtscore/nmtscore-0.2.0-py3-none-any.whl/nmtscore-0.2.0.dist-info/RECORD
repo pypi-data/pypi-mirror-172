@@ -1,0 +1,11 @@
+nmtscore/__init__.py,sha256=XtTjmSflAcDlYcNBt6BZ-ZAYayyB_OcbnoyVTIolZaw,61
+nmtscore/scorer.py,sha256=7-xAUswi99_kla77riqU9uxNBRXUFA29qceW_mS39_8,13449
+nmtscore/models/__init__.py,sha256=AL9qZU4xGkpgXKbAJLOPrb7l4hlKUuiaOcBsCTmLry4,9654
+nmtscore/models/m2m100.py,sha256=WKculfoTeG6zbrzU1ax9B0brd6_Z8Fi3AF_EceuVOwQ,5466
+nmtscore/models/prism.py,sha256=ompmlhmX6aYzchz3q3mnzgfxk6RjgGeJkOf4-zL6qJ8,15834
+nmtscore/models/utils.py,sha256=sTS8E3k5pYM1RX_Xcc8F3bkZeRk6XWGX7sf9m3cCVMU,176
+nmtscore-0.2.0.dist-info/LICENSE,sha256=DQDWnlPwdAHYz8vtitYPHVmk4gM99D4aZYpLJaRD7yg,1070
+nmtscore-0.2.0.dist-info/METADATA,sha256=dLKd4A1FG55MJUMyNzhEKlVML2SQjwBphvX3T558V6U,5805
+nmtscore-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nmtscore-0.2.0.dist-info/top_level.txt,sha256=w67a4W4IAA_O04dtkW_7ZfXbworIHaoDl556pI_Fq_8,9
+nmtscore-0.2.0.dist-info/RECORD,,
