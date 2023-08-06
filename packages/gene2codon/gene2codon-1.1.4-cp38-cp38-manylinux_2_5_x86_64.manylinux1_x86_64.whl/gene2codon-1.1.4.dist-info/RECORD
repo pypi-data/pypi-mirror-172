@@ -1,0 +1,5 @@
+gene2codon-1.1.4.dist-info/METADATA,sha256=mj43eXqCUbUUsU_5UEGcxmQjAng_cnjo8Z5NDXPAmi0,259
+gene2codon-1.1.4.dist-info/WHEEL,sha256=3E-2bh9mN3HYtWMmCITiz4ACgMwfFN3cQbbAcMHHmJk,132
+gene2codon/__init__.py,sha256=hICaDdgW9zBF3wdzx2ZJNef8Hh26pu42oB5YXZ45sSs,56
+gene2codon/gene2codon.cpython-38-x86_64-linux-gnu.so,sha256=LAP0nOwSXMgPSTwek0yWDPhF4-JWZuAJozU1vwBuw5A,477608
+gene2codon-1.1.4.dist-info/RECORD,,
