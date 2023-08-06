@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/target_s3_json/__init__.py
+src/target_s3_json/logging.conf
+src/target_s3_json/s3.py
+src/target_s3_jsonl.egg-info/PKG-INFO
+src/target_s3_jsonl.egg-info/SOURCES.txt
+src/target_s3_jsonl.egg-info/dependency_links.txt
+src/target_s3_jsonl.egg-info/entry_points.txt
+src/target_s3_jsonl.egg-info/requires.txt
+src/target_s3_jsonl.egg-info/top_level.txt
