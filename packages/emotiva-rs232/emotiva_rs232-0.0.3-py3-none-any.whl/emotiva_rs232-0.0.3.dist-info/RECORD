@@ -1,0 +1,9 @@
+emotiva_rs232/__about__.py,sha256=4gGml3UiiWp6UGXdqFl7prHzJayOAQyGLs302sY5TfQ,173
+emotiva_rs232/__init__.py,sha256=k9ywUN1K4-Vi-OPYhlMKyE76C6UXQCcdNxLZNqQD86o,226
+emotiva_rs232/const.py,sha256=eUYtmdFMS0_cw0di2oO-dfE-xNQN9W_bF4tx96Q_MQ0,277
+emotiva_rs232/emotiva_device.py,sha256=dekhvGvVr-MlORhkW28af4SdO5b-qIjU347yiR_PMOY,1798
+emotiva_rs232/fusion_flex.py,sha256=6ZGCt6MQUd6OC9uwWZj7O7u3qVQltujCzT_n_2pms4I,14844
+emotiva_rs232-0.0.3.dist-info/METADATA,sha256=CvkLOlUD4WMBlChWATF5nPUd4yg9yMnCINNoJS2h1Jg,1492
+emotiva_rs232-0.0.3.dist-info/WHEEL,sha256=TC-eT-WEjZM-lmd6au7o3p1ewVkC6Y0NftwooPaNZTY,87
+emotiva_rs232-0.0.3.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+emotiva_rs232-0.0.3.dist-info/RECORD,,

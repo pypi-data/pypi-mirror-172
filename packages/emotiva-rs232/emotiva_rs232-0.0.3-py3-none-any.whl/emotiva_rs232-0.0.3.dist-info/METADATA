@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: emotiva-rs232
+Version: 0.0.3
+Project-URL: Documentation, https://github.com/idisis/emotiva-rs232#readme
+Project-URL: Issues, https://github.com/idisis/emotiva-rs232/issues
+Project-URL: Source, https://github.com/idisis/emotiva-rs232
+Author-email: idisis <nir.idisis@gmail.com>
+License-File: LICENSE
+Keywords: emotiva,fusionflex,sherbourn
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Emotiva RS232
+Control Emotiva devices through a RS232 serial interface.
+
+[![PyPI - Version](https://img.shields.io/pypi/v/emotiva-rs232.svg)](https://pypi.org/project/emotiva-rs232)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/emotiva-rs232.svg)](https://pypi.org/project/emotiva-rs232)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install emotiva-rs232
+```
+
+## License
+
+`emotiva-rs232` is distributed under the terms of the [GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.html) license.
