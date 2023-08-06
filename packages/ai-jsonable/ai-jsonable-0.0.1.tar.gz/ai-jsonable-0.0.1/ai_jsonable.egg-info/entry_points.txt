@@ -1,0 +1,2 @@
+[console_scripts]
+aijson = aijson.__main__:cli
