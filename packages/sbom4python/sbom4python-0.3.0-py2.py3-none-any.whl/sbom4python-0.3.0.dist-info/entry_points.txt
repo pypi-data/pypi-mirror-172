@@ -1,0 +1,3 @@
+[console_scripts]
+sbom4python = sbom4python.cli:main
+
