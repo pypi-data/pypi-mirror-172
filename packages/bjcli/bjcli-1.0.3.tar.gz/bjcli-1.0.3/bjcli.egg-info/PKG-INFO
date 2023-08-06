@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: bjcli
+Version: 1.0.3
+Summary: Simple command line utility to run Bjoern WSGI
+Home-page: https://notabug.org/kapustlo/bjcli
+Author: Kapustlo
+License: UNKNOWN
+Keywords: python,bjoern,cli,bjoern-cli,wsgi
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Unix
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# bjcli
+
+bjcli is a simple command line utility to run Bjoern WSGI server
+
+## Features
+
+- Forks
+- Environment variables support
+
+## Installation 
+pip install bjcli
+
+## Usage
+bjcli -w 4 -i 127.0.0.1 -p 8088 app.wsgi:application
+
+##### Using sockets
+
+bjcli -w 4 -i unix:/path/to/socket app.wsgi:application
+
+Examples above would import application from app.wsgi and pass it to Bjoern
+
+| Argument | Description | Required | Default | Type |
+| ------ | ------ | ------ | ------ | ------ |
+| -w | Number of workers | False | 1 | int
+| -i | Host | False | 127.0.0.1 | str
+| -p | Port. If left blank and the host is an IP address, 8088 is assigned | False | None | None/int
+| module:wsgi_app (first positional) | Module containing "wsgi_app" (module attr name after ":")| True | - | module
+
+
+

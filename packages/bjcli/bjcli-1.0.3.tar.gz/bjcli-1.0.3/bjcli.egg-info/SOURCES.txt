@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bjcli/__init__.py
+bjcli/__main__.py
+bjcli/utils.py
+bjcli.egg-info/PKG-INFO
+bjcli.egg-info/SOURCES.txt
+bjcli.egg-info/dependency_links.txt
+bjcli.egg-info/entry_points.txt
+bjcli.egg-info/requires.txt
+bjcli.egg-info/top_level.txt
