@@ -1,0 +1,6 @@
+numpy
+
+[test]
+pytest
+coverage
+numpy_ringbuffer
