@@ -1,0 +1,3 @@
+[console_scripts]
+horos_io=horos_io.cli:main
+
