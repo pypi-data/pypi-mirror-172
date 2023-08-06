@@ -1,0 +1,7 @@
+setup.py
+codect/codect.py
+codect.egg-info/PKG-INFO
+codect.egg-info/SOURCES.txt
+codect.egg-info/dependency_links.txt
+codect.egg-info/requires.txt
+codect.egg-info/top_level.txt
