@@ -1,0 +1,10 @@
+README.md
+setup.py
+iliad/__init__.py
+iliad/iliadconn.py
+iliadconn.egg-info/PKG-INFO
+iliadconn.egg-info/SOURCES.txt
+iliadconn.egg-info/dependency_links.txt
+iliadconn.egg-info/entry_points.txt
+iliadconn.egg-info/requires.txt
+iliadconn.egg-info/top_level.txt
