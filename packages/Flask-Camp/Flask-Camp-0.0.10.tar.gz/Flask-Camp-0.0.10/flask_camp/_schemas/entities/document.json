@@ -1,0 +1,8 @@
+{
+  "description": "Document structure",
+  "type": "object",
+  "properties": {
+    "data": {}
+  },
+  "required": ["data"]
+}
