@@ -1,0 +1,5 @@
+django-db
+
+[test]
+pytest>=6.2
+pytest-cov~=3.0

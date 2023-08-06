@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: admem
+Version: 1.1.0
+Author: Mario S. Könz
+License: MIT
+Requires-Python: >=3.10
+Provides-Extra: test
+License-File: LICENSE.txt
