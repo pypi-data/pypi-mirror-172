@@ -1,0 +1,9 @@
+db_loader/__init__.py,sha256=CMuJR7piWP98bZA4KrW-XwlMgXLeuaFtax07Ngr6DAE,164
+db_loader/compare.py,sha256=k2-sa4rxQmWuuzdxE4HhkUAXs5ujLgvU8-hXmhFt9FY,9283
+db_loader/create.py,sha256=v3AVDyoccMBHpk_LwQzN61OG3TeuJozoDgYReOhEMRs,4023
+db_loader/load.py,sha256=_di-etAIxiUvkqzBepCVxmL22wW-OqYFHunFsd2pvmc,20140
+db_loader/types.py,sha256=tjvu555SF-ku9462qRuBwZwbx47ZvXyP99Xfmxzbxmc,951
+db_loader/utils.py,sha256=2AicOpiYNHj3svxV6ZeKoAqgSC_WY9nwacDK3PRu7YI,8319
+db_loader-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+db_loader-0.1.1.dist-info/METADATA,sha256=D7n2RHCnROF6yefGL5QFeHY7rKzZmId_gUMwVI0qyNk,615
+db_loader-0.1.1.dist-info/RECORD,,
