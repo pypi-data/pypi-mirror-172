@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "./static/js/main.9a06663b.chunk.js",
+    "main.js.map": "./static/js/main.9a06663b.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.c1e779e3.js",
+    "runtime-main.js.map": "./static/js/runtime-main.c1e779e3.js.map",
+    "static/js/2.7c01d1c8.chunk.js": "./static/js/2.7c01d1c8.chunk.js",
+    "static/js/2.7c01d1c8.chunk.js.map": "./static/js/2.7c01d1c8.chunk.js.map",
+    "index.html": "./index.html",
+    "static/js/2.7c01d1c8.chunk.js.LICENSE.txt": "./static/js/2.7c01d1c8.chunk.js.LICENSE.txt",
+    "static/js/fesion.worker.82af06f5.js": "./static/js/fesion.worker.82af06f5.js",
+    "static/js/fesion.worker.82af06f5.js.map": "./static/js/fesion.worker.82af06f5.js.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1e779e3.js",
+    "static/js/2.7c01d1c8.chunk.js",
+    "static/js/main.9a06663b.chunk.js"
+  ]
+}
