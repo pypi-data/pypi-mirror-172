@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ssh-telegram-manager
+Version: 0.4.0
+Summary: Python app to log in Telegram ssh logins
+Home-page: https://github.com/turulomio/ssh_telegram_manager
+Author: Turulomio
+Author-email: turulomio@yahoo.es
+License: GPL-3
+Keywords: ssh telegram advice logs
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Project web page is in https://github.com/turulomio/ssh_telegram_manager
