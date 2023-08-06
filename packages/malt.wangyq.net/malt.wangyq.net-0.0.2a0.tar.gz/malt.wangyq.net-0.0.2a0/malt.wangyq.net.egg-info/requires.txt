@@ -1,0 +1,8 @@
+dgl
+torch
+matplotlib
+pandas
+numpy
+dgllife
+rdkit
+gpytorch
