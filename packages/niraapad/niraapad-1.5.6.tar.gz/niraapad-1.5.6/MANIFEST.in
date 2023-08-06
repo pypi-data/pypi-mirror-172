@@ -1,0 +1,5 @@
+include niraapad/keys/localhost/*
+include niraapad/keys/ispy_cs_ubc_ca/*
+include .vscode/*
+include niraapad/data_processing/*
+include niraapad/detective/*
