@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scrapy-swarm
+Version: 0.0.22
+Summary: Redis-based components for Scrapy.
+Author: swarm
+Author-email: supankitty@gmail.com
+License: MIT
+Keywords: scrapy-swarm
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
