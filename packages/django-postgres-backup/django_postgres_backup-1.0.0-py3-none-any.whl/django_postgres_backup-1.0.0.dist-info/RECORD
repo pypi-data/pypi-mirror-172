@@ -1,0 +1,14 @@
+django_postgres_backup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_postgres_backup/apps.py,sha256=KjQh1QA1Esj0azGuSZpADW1_eyfN0xV8RyMk9VeF5ng,335
+django_postgres_backup/common.py,sha256=ZGlTc1toeuDS6a3Fbo4-n-klzRKAjahqdSJteLKjK0k,3694
+django_postgres_backup/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_postgres_backup/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_postgres_backup/management/commands/postgres_backup.py,sha256=isdHZXSBrIGrVYGDhgFQtuUWrDEjo4bPfMojU2KqmwQ,2122
+django_postgres_backup/management/commands/postgres_restore.py,sha256=xCrIimRATkffaSTveMTaU9KM_pVRrNq89-eJNT5TGqM,2145
+django_postgres_backup/settings.py,sha256=sbPU8sa_g22yuutKdePs0IU6v7vFyjhPBw7xsQlv1UE,1497
+django_postgres_backup/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_postgres_backup/tests/test_commands.py,sha256=xLyZwueDQHeqrk_pL4WbZaZdJW2DcdWbkk6qWAqSEgQ,3768
+django_postgres_backup-1.0.0.dist-info/LICENSE,sha256=9NBC-y0woU3T8vMBa5KnN1OSlQFcwT7Q7vLv0DuXJGo,1072
+django_postgres_backup-1.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+django_postgres_backup-1.0.0.dist-info/METADATA,sha256=JsuhRfGo2g4kAK-hFNUGwwpsausZji2mJwK_VBdZ5tU,3971
+django_postgres_backup-1.0.0.dist-info/RECORD,,
