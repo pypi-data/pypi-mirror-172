@@ -1,0 +1,52 @@
+Version 0.7
+-----------
+
+    - Fixed warnings from SKlearn 1.0 (PR#11, PR#14).
+    - The internal TreeWalker class now tolerates excess input variables. Also from PR#14.
+
+Version 0.6
+-----------
+
+    - Removed Keras translation (to avoid dependency on Tensorflow)
+    - Modernized dependencies. SKLearn >= 0.22 required as of this moment.
+
+Version 0.5-0.5.5
+-----------------
+
+    - Changed skompile call signature
+    - Fixed Excel code generation
+    - Changed SQLAlchemy translator
+    - multistage=True is the default now for SQL and Excel
+    - Improved code organization
+    - Nicer DSL for generating SKAST, basic symbolic processing and type checking
+    - New algorithms: AdaBoostClassifier, KMeans, PCA, MLPClassifier, MLPRegressor,
+      Normalizer, StandardScaler, MinMaxScaler, MaxAbsScaler, Binarizer
+    - (0.5.1) Rudimentary support for Keras MLP models.
+    - (0.5.2) Fixes issue #1
+    - (0.5.3) Fixes for Python 3.5, removed dependency on staticdispatch.
+    - (0.5.4) Portable Format for Analytics (PFA) added as a target
+    - (0.5.5) Translation to SQLAlchemy supports CTE as from_obj
+
+Version 0.4
+-------------
+
+    - More logical set of SK AST nodes, proper handling of Let nodes
+    - Support for Pipeline objects
+
+Version 0.3-0.3.1
+-------------
+
+    - Multi-stage Excel code generation
+
+Version 0.2
+-------------
+
+    - Multi-stage SQL code generation
+
+Version 0.1
+-------------
+
+    - First prototype. Supports:
+      * Inputs: linear models, trees, random forest and gradient boosting (partial)
+      * Outputs: string, python, excel, sqlalchemy, sympy
+
