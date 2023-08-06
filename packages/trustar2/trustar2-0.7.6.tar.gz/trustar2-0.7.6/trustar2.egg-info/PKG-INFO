@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: trustar2
+Version: 0.7.6
+Summary: Python SDK2 for the TruSTAR REST API
+Home-page: https://github.com/trustar/trustar-sdk2-proto/
+Download-URL: https://github.com/trustar/trustar-sdk2-proto/tarball/0.7.6
+Author: TruSTAR Technology, Inc.
+Author-email: dsolmirano@splunk.com
+License: MIT
+License-File: LICENSE
