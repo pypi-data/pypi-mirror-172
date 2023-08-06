@@ -1,0 +1,4 @@
+requests
+tqdm
+pyteomics>=4.5.3
+pandas>=1.4.3

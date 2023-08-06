@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "patpat"
+version = "1.0.1"
+authors = [
+    { name = "Weiheng Liao", email = "weiheng_liao@outlook.com" },
+]
+description = "Patpat is public proteomics dataset search framework that only requires protein identifiers to be passed in to search for relevant datasets."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    "tqdm",
+    "pyteomics>=4.5.3",
+    "pandas>=1.4.3"
+]
+license = {text = "Apache 2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/henry-leo/Patpat"
+"Bug Tracker" = "https://github.com/henry-leo/Patpat/issues"
+
+
