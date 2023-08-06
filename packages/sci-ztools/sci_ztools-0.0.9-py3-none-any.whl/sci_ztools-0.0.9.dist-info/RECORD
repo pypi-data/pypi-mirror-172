@@ -1,0 +1,15 @@
+z/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+z/__main__.py,sha256=0HnRXOk3FcjuoOuVDsK8JeVeMijnWUbo4y1W3mzZE3E,61
+z/__version__.py,sha256=lZoBoCrPmDHiztV57wRru9CSJWCzBJ4qzAHBIoqWxZQ,21
+z/chem.py,sha256=vucBJdvadIR_sLU-OUet1KuRe4brKcOK5CoSmlV5c1M,476
+z/hello.py,sha256=RmudWnrrbl0zoqtHh3Go6y5iNRdmeCfwO7U5j3Z35E8,41
+z/pep.py,sha256=aXrvq51wggKlrJopDkh7JBQeEGHbNdr7SPi3m21STgM,1641
+z/score.py,sha256=J-q4MFj1R-aUy_mHBkKnf8JnNYaOoNGmmF4p8w5NvJY,416
+z/smi.py,sha256=AzP-iHWcalQKAes3FsTgyC3ALxj1kcumbnA37zzR3rs,1436
+z/utils.py,sha256=A3XqQnrEyR1bgjHvNyYe_Je82L1Fyev-EWb2-vF4A_8,6562
+sci_ztools-0.0.9.dist-info/LICENSE,sha256=X3nAXeUStqmrzev56xxqO_XgKKyp-Mgb4Fm_-FGJk_8,1067
+sci_ztools-0.0.9.dist-info/METADATA,sha256=xVzWFGmZC5tQu60gCKtfYzAnlxiiaFeK5_3ZVlngPng,1702
+sci_ztools-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sci_ztools-0.0.9.dist-info/entry_points.txt,sha256=7HfLhzlMqq9muxZePF7ylPVioBJFNSFsch3zyqHTKU4,38
+sci_ztools-0.0.9.dist-info/top_level.txt,sha256=yGX2xauNGwvNODpeHjh50iaByWv0YsJpt1gdUj--cKs,2
+sci_ztools-0.0.9.dist-info/RECORD,,
