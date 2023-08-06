@@ -1,0 +1,12 @@
+addini
+addoption
+conftests
+getini
+hookimpl
+repo
+runpytest
+setenv
+testdir
+tmpdir
+tryfirst
+untyped
