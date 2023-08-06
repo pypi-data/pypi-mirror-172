@@ -1,0 +1,84 @@
+version: '3.8'
+
+networks:
+  {{cookiecutter.app_name}}:
+    name: {{cookiecutter.app_name}}
+
+
+services:
+  {{cookiecutter.project_name}}:
+    build:
+      context: ./{{cookiecutter.project_name}}/
+      args:
+        - APP_VERSION
+    container_name: {{cookiecutter.app_name}}
+    volumes:
+      - ./{{cookiecutter.project_name}}/htmlcov:/opt/app/htmlcov
+    environment:
+      - DEVELOP
+      - APP_VERSION
+      - LOG_LEVEL
+      - MYSQL_USER
+      - MYSQL_PASSWORD
+      - MYSQL_DB
+      - MYSQL_HOST
+      - MYSQL_PORT
+      - REDIS_HOST
+    networks:
+      {{cookiecutter.project_name}}:
+        aliases:
+          - app
+    ports:
+      - "8080:80"
+    depends_on:
+      mysqlDB:
+        condition: service_healthy
+      redisDB:
+        condition: service_healthy
+
+  mysqlDB:
+    image: mysql:8.0.29
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DB}
+    volumes:
+      - mysqlDB:/var/lib/mysql
+      - ./init_db:/docker-entrypoint-initdb.d
+    networks:
+      {{cookiecutter.project_name}}:
+        aliases:
+        - ${MYSQL_HOST}
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  redisDB:
+    image: redis:6.2.2
+    container_name: redis
+    command: redis-server --appendonly yes
+    volumes:
+      - redisDB:/data
+    ports:
+      - "6379:6379"
+    networks:
+      {{cookiecutter.project_name}}:
+        aliases:
+        - ${REDIS_HOST}
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  mysqlDB:
+    driver: local
+  redisDB:
+    driver: local

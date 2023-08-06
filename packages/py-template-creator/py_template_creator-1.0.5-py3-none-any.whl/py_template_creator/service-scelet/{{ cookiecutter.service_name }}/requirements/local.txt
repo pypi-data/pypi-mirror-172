@@ -1,0 +1,10 @@
+-r common.txt
+
+# Install self
+-e ./
+
+coverage==6.4.4
+coverage-badge==1.1.0
+flake8==5.0.4
+mock==4.0.3
+parameterized==0.8.1

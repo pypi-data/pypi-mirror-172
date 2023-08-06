@@ -1,0 +1,14 @@
+{
+	"project_slug": "Project slug",
+	"project_name": "Project Name",
+	"app_name": "App name",
+	"app_description": "description",
+	"author_name": "Ivan Djuraki",
+	"author_email": "ivandjuraki@protonmail.com",
+	"mysql_user": "root",
+	"mysql_password": "123456",
+	"mysql_host": "mysqlDB",
+	"mysql_port": "3306",
+	"mysql_db": "my_db_name",
+	"version_table_name": "migrations-table"
+}

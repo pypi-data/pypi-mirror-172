@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: py-template-creator
+Version: 1.0.5
+Summary: Python package for project creation
+Home-page: https://github.com/ivke-99/py_template_creator
+Author: Ivan Djuraki
+Author-email: ivandjuraki@protonmail.com
+License: Apache 2.0
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cookiecutter
+Requires-Dist: mrkutil
+
+
+  
+
+# Py Template Creator
+
+Py Template Creator is a pip package providing an easy way to jump-start a project or a micro-service.
+
+## Installation
+
+  
+
+The project requires cookiecutter installed.
+
+  
+
+Install with pip
+
+  
+
+```pip install py_template_generator```
+
+## Templates
+
+  
+
+- FastAPI monolith skeleton
+
+- Service skeleton
+  
+  
+
+## Usage
+
+Template generator will create the template in the current directory.
+
+
+```py_template_generator```
+
+  
+## Authors
+
+  
+
+- [@ivke-99](https://www.github.com/ivke-99)
+  
+  
+
+## Contributing
+
+  
+
+Contributions are always welcome! :)
