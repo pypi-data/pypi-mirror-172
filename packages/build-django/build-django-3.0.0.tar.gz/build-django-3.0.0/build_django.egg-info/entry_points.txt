@@ -1,0 +1,3 @@
+[console_scripts]
+build-django = build_django.__main__:main
+
