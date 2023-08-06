@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: KorToBraille
+Version: 1.0.0
+Summary: Korean to Braille translation python package
+Project-URL: Homepage, https://github.com/Bridge-NOONGIL/KorToBraille_Python
+Author-email: Yujin Yang <uujinn0804@gmail.com>, Nayeon Kim <nyn2265@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# KorToBraille_Python
+
+ref: https://github.com/Bridge-NOONGIL/KorToBraille.git
