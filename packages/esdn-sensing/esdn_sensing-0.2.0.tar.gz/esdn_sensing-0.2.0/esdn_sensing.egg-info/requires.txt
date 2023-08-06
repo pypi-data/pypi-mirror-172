@@ -1,0 +1,5 @@
+pyserial
+py-opc-ng
+pyusbiss
+sensirion_i2c_driver
+sensirion_i2c_sen5x

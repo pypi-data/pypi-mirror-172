@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+esdn_sensing/__init__.py
+esdn_sensing/hydros.py
+esdn_sensing/opc.py
+esdn_sensing/pm25.py
+esdn_sensing/sen5x.py
+esdn_sensing/sensor_error.py
+esdn_sensing/stemma_soil.py
+esdn_sensing.egg-info/PKG-INFO
+esdn_sensing.egg-info/SOURCES.txt
+esdn_sensing.egg-info/dependency_links.txt
+esdn_sensing.egg-info/requires.txt
+esdn_sensing.egg-info/top_level.txt
