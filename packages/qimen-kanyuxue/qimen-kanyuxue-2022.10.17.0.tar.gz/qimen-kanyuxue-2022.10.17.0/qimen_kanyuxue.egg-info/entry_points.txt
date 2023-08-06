@@ -1,0 +1,4 @@
+[console_scripts]
+QimenKanyuxue = QimenKanyuxue.__main__:main
+qimen-kanyuxue = QimenKanyuxue.__main__:main
+
