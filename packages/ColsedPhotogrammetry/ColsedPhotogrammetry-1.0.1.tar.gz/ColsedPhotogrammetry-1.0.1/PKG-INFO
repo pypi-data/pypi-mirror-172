@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ColsedPhotogrammetry
+Version: 1.0.1
+Summary: Given the external elements, focal length, and spatial point coordinates, pixel coordinates are generated, which we call reverse forward intersection.the least_square functon for similarity transformation, the Inv_Resection for computing pixel coordinates. 
+Author-email: Zhang <author@example.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pipeline
+
+Given the external elements, focal length, and spatial point coordinates, pixel coordinates are generated, which we call reverse forward intersection
+

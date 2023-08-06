@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+src/ColsedPhotogrammetry.egg-info/PKG-INFO
+src/ColsedPhotogrammetry.egg-info/SOURCES.txt
+src/ColsedPhotogrammetry.egg-info/dependency_links.txt
+src/ColsedPhotogrammetry.egg-info/top_level.txt

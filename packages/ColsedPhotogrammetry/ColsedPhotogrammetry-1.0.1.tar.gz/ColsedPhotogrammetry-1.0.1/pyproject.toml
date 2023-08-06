@@ -1,0 +1,16 @@
+[project]
+name = "ColsedPhotogrammetry"
+version = "1.0.1"
+authors = [
+  { name="Zhang", email="author@example.com" },
+]
+description = "Given the external elements, focal length, and spatial point coordinates, pixel coordinates are generated, which we call reverse forward intersection.the least_square functon for similarity transformation, the Inv_Resection for computing pixel coordinates. "
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
