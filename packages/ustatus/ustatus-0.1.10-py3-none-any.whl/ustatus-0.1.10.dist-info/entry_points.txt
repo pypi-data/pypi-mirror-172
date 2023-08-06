@@ -1,0 +1,4 @@
+[console_scripts]
+ustatus=ustatus.main:main
+ustatus_docgen=ustatus.docgen:generate_docs
+
