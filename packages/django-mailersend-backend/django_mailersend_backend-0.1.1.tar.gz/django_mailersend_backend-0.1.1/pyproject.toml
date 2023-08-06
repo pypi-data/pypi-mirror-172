@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django-mailersend-backend"
+description = "Email backend for Django which sends email via the Mailersend API"
+authors = [
+    "Adem Gaygusuz <adem@ardweb.co.uk>",
+]
+version = "0.1.1"
+packages = [
+    { include = "mailersend_backend" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mailersend = "^0.5.0"
+Django = ">=1.4"
+
+[tool.semantic_release]
+version_variable = [
+    "mailersend_backend/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+build_command = "pip install poetry && poetry build"
