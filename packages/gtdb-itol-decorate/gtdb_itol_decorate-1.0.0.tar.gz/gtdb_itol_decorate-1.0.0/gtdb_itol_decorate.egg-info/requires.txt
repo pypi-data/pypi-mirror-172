@@ -1,0 +1,5 @@
+tqdm>=4.35.0
+gtdblib~=1.1.0
+typer[all]
+dendropy
+seaborn

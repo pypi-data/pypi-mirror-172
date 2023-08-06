@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gtdb_itol_decorate
+Version: 1.0.0
+Summary: Creates iTOL files for tree decoration, given a set of GTDB genomes.
+Home-page: https://github.com/Ecogenomics/gtdb-itol-decorate
+Author: Aaron Mussig
+Author-email: aaronmussig@gmail.com
+License: GPL-3.0
+Project-URL: Bug Tracker, https://github.com/Ecogenomics/gtdb-itol-decorate
+Project-URL: Documentation, https://github.com/Ecogenomics/gtdb-itol-decorate
+Project-URL: Source Code, https://github.com/Ecogenomics/gtdb-itol-decorate
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gtdb-itol-decorate
+
+Creates iTOL files for tree decoration, given a set of GTDB genomes.
