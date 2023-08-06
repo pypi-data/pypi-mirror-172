@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/xrtc/__init__.py
+src/xrtc.egg-info/PKG-INFO
+src/xrtc.egg-info/SOURCES.txt
+src/xrtc.egg-info/dependency_links.txt
+src/xrtc.egg-info/requires.txt
+src/xrtc.egg-info/top_level.txt
+src/xrtc/api/context_manager.py
+src/xrtc/api/data_models.py
