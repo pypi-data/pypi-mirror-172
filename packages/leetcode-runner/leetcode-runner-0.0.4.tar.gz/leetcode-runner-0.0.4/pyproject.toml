@@ -1,0 +1,78 @@
+[tool.poetry]
+
+name = "leetcode-runner"
+version = "0.0.4"
+description = "LeetCode solutions runner"
+
+license = "MIT"
+
+authors = ["fbjorn <denis@fbjorn.cc>"]
+
+readme = "README.md"
+
+homepage = "https://pypi.org/project/leetcode_runner"
+documentation = "https://github.com/fbjorn/leetcode-runner"
+repository = "https://github.com/fbjorn/leetcode-runner"
+
+keywords = [
+    "leetcode",
+    "runner",
+]
+classifiers = [
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.dependencies]
+
+python = "^3.9"
+colorama = "^0.4.4"
+termcolor = "^1.1.0"
+gql = {extras = ["requests"], version = "^3.4.0"}
+pydantic = "^1.10.2"
+beautifulsoup4 = "^4.11.1"
+typer = "^0.6.1"
+
+
+[tool.poetry.dev-dependencies]
+
+# Formatters
+black = "=21.8b0"
+isort = "=5.9.3"
+
+# Linters
+mypy = "~0.812"
+pydocstyle = "^6.1"
+pylint = "~2.12.2"
+
+# Testing
+pytest = "^6.2"
+pytest-describe = "^2.0"
+pytest-expecter = "^2.1"
+pytest-random = "*"
+pytest-cov = "^2.12"
+freezegun = "*"
+
+# Reports
+coveragespace = "^4.0"
+
+[tool.poetry.scripts]
+
+leetcode_runner = "leetcode_runner.cli:main"
+leetcode = "leetcode_runner.cli:cli"
+
+[tool.black]
+
+quiet = true
+
+[tool.isort]
+
+profile = "black"
+
+[build-system]
+
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
