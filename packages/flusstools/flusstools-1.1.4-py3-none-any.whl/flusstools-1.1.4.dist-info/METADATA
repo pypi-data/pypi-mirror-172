@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: flusstools
+Version: 1.1.4
+Summary: Analyze and design river ecosystems
+Home-page: https://flusstools.readthedocs.io/
+Author: FlussTeam
+Author-email: schwindt.water@gmail.com
+License: BSD License
+Project-URL: Documentation, https://flusstools.readthedocs.io/
+Project-URL: Funding, https://hydro-informatics.com/
+Project-URL: Source, https://github.com/Ecohydraulics/flusstools
+Project-URL: Tracker, https://github.com/Ecohydraulics/flusstools/issues
+Keywords: rivers geo-spatial data processing numerical model validation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: affine
+Requires-Dist: alphashape
+Requires-Dist: attrs
+Requires-Dist: click
+Requires-Dist: cligj
+Requires-Dist: cycler
+Requires-Dist: earthpy
+Requires-Dist: gdal
+Requires-Dist: geojson
+Requires-Dist: geopandas
+Requires-Dist: h5py
+Requires-Dist: kiwisolver
+Requires-Dist: laspy
+Requires-Dist: mapclassify
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: pyshp
+Requires-Dist: python-dateutil
+Requires-Dist: rasterio
+Requires-Dist: rasterstats
+Requires-Dist: scikit-fuzzy
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Requires-Dist: shapely (==1.8)
+Requires-Dist: tabulate
+Requires-Dist: traitlets
+
+
+## FlussTools
+
+Head for Python scripts for river analyses.
+
+Check out the full documentation is available at [https://flusstools.readthedocs.io](https://flusstools.readthedocs.io/en/latest/).
+
+
