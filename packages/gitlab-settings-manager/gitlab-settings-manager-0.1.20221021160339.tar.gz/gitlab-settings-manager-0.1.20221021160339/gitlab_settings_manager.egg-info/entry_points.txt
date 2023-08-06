@@ -1,0 +1,3 @@
+[console_scripts]
+gitlab-add-reviewers = gitlab_settings_manager:gitlab_add_reviewers.main
+gitlab-settings-manager = gitlab_settings_manager:gitlab_settings_manager.main
