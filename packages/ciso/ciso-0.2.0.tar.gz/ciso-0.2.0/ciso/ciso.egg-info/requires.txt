@@ -1,0 +1,7 @@
+cython
+numpy>=1.19
+
+[extras]
+gridgeo
+cartopy
+xarray

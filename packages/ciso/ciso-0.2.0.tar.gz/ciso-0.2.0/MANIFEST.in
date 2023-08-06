@@ -1,0 +1,16 @@
+include *.txt
+include README.md
+include pyproject.toml
+
+graft ciso
+
+prune docs
+prune notebooks
+prune *.egg-info
+
+exclude *.yml
+exclude *.c
+exclude .pre-commit-config.yaml
+exclude .gitignore
+exclude .isort.cfg
+exclude ciso/_version.py
