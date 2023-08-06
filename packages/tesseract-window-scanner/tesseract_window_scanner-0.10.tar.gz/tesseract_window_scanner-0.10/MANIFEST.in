@@ -1,0 +1,4 @@
+include tesseract_window_scanner/requirements.txt
+include tesseract_window_scanner/thirdparty.json
+include tesseract_window_scanner/README.MD
+include tesseract_window_scanner/LICENSE

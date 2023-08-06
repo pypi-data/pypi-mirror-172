@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tesseract_window_scanner/LICENSE
+tesseract_window_scanner/README.MD
+tesseract_window_scanner/__init__.py
+tesseract_window_scanner/requirements.txt
+tesseract_window_scanner/thirdparty.json
+tesseract_window_scanner.egg-info/PKG-INFO
+tesseract_window_scanner.egg-info/SOURCES.txt
+tesseract_window_scanner.egg-info/dependency_links.txt
+tesseract_window_scanner.egg-info/requires.txt
+tesseract_window_scanner.egg-info/top_level.txt
