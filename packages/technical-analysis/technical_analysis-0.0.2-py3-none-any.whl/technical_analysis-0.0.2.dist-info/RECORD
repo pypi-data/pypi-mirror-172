@@ -1,0 +1,17 @@
+technical_analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+technical_analysis/utils.py,sha256=mLDMmj9HUJ6VjMM0rF0KNvEVz8GC6B-3s08Jobw5o6w,2062
+technical_analysis/candles/__init__.py,sha256=4uEcYiAKON6Yt9PxvywCAy6XyZ3e7golzJQiXTd2Bd8,947
+technical_analysis/candles/continuation.py,sha256=ABkHy6S2N1T-9DH8p_y6_dbV5vUeSSytNEMb0LH0dAE,6407
+technical_analysis/candles/plot.py,sha256=9CFrT3yJBf-YcOJXwsQdomU8EzBZ3haVyKbEsqZmAbA,1886
+technical_analysis/candles/reversal.py,sha256=3hR3YM7mPWJ8rNT00eWmzsjEGwfPpT8pj9ItsAIwA0I,8960
+technical_analysis/candles/single.py,sha256=0l8YAVwNUtrDtoD6hMQyn8xPqDjE8bN3h5UdhXn3-5M,10941
+technical_analysis/indicators/__init__.py,sha256=qCJ2Svwki-iNAd6jyNH56QeFDra7cafGD77_hEWdkbw,54
+technical_analysis/indicators/indicators.py,sha256=bEINYkUD68hvvj8Tb7R7miCD-AV_lR4U3qaTQlIm2zo,6562
+technical_analysis/overlays/__init__.py,sha256=6-TPsyCd-X6sYoK_zfMA8gPpsQgE3zysAd_Uk0ymdGU,107
+technical_analysis/overlays/moving_average.py,sha256=dD75R8nhX2k8pcVfA529NIguRusZx_-10be3nSiG3UU,5083
+technical_analysis/overlays/overlays.py,sha256=mymOpn5w3QVV4S_qaU6Dt2zy3T1xmlGGK6oiVTYg_9E,1822
+technical_analysis-0.0.2.dist-info/LICENSE,sha256=-mXZn-lXJo9CHBH3UBZEqZbxuG0HeUbSC19owi28iXo,1513
+technical_analysis-0.0.2.dist-info/METADATA,sha256=ePf6vJx8GV5xjAYAmekKLkh_iibVWXYCdjmTsGAZoo0,6881
+technical_analysis-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+technical_analysis-0.0.2.dist-info/top_level.txt,sha256=KAbtVDVFCCYlvDvjhvqddEfZUqu2EG7Bc99rR7clEnM,19
+technical_analysis-0.0.2.dist-info/RECORD,,
