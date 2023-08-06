@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: sdss-yao
+Version: 1.0.0
+Summary: BOSS spectrograph actor that uses an STA Archon controller
+Home-page: https://github.com/sdss/yao
+License: BSD-3-Clause
+Keywords: astronomy,software
+Author: José Sánchez-Gallego
+Author-email: gallegoj@uw.edu
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: click (>=8.1.2,<9.0.0)
+Requires-Dist: sdss-archon (>=0.6.0)
+Requires-Dist: sdsstools (>=0.4.0)
+Project-URL: Documentation, https://sdss-yao.readthedocs.org
+Project-URL: Repository, https://github.com/sdss/yao
+Description-Content-Type: text/markdown
+
+# yao
+
+![Versions](https://img.shields.io/badge/python->3.9-blue)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Documentation Status](https://readthedocs.org/projects/lvmieb/badge/?version=latest)](https://sdss-yao.readthedocs.io/en/latest/?badge=latest)
+
+BOSS spectrograph actor that uses an STA Archon controller.
+
