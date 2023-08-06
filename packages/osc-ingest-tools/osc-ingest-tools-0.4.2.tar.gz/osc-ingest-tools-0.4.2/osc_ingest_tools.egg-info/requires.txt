@@ -1,0 +1,5 @@
+trino[sqlalchemy]
+sqlalchemy
+pandas
+python-dotenv
+boto3
