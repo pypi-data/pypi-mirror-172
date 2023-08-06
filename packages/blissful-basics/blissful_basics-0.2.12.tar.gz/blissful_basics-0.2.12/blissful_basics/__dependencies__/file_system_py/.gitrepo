@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/jeff-hykin/file-system-py.git
+	branch = master
+	commit = 8061116e2e5c8d18133341d69d613ddd4000db68
+	parent = 46641f7dc01750783763c5bb3da3a79f9b8b5abd
+	method = merge
+	cmdver = 0.4.1
