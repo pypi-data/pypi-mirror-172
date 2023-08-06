@@ -1,0 +1,16 @@
+sympy_addons/__init__.py,sha256=_glYRMbdhOEeeBdw9P_lzd6W7vJaJ-2OobddU5A5gmk,143
+sympy_addons/calculus.py,sha256=Z1OSS5L0PZRSlqkR2iHhA5T2bSjOl552i7hZNMN0yVo,510
+sympy_addons/graphviz.py,sha256=4DzTN60dVoVE-wmxl-jC0zW6wjsJv52F0ukr53sJ5p8,2847
+sympy_addons/query.py,sha256=frcHlGOxHMAvvDxTN0AlfWgvU-dVL5LofuixPrulGKo,12205
+sympy_addons/rewrite.py,sha256=feLcjO_7jF9TR528k47fT_oYmt2sh6AdKhS5yz0SKxk,1537
+sympy_addons/styling.py,sha256=PsoNcsbESuicj9dlJpM1R0toeIYRCCeAwQ-sVuwq9kw,415
+sympy_addons/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sympy_addons/tests/test_calculus.py,sha256=urwbWnm4mZtVbAZVZA7loAkTTNlOdqbaU4imbCYM8ro,432
+sympy_addons/tests/test_query.py,sha256=88K-U26sDqRDnv5hpViw-nlEvQWiKnScdSw3EfFfSOg,3970
+sympy_addons/tests/test_rewrite.py,sha256=8sW8P-gsC_cR-mkBr_kF73m5XWeZ4pfdiPFOQx7PDOU,910
+sympy_addons/tests/test_styling.py,sha256=P7LNcx-HfihezXbpI2C5GRcCSDSCXszqWtiWVNjjyvQ,954
+sympy_addons-0.0.5.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+sympy_addons-0.0.5.dist-info/METADATA,sha256=TWnSFWmbNTJeBAUsfWQlkkcfoSF9ruB7xxjKZfB_ou4,5173
+sympy_addons-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sympy_addons-0.0.5.dist-info/top_level.txt,sha256=iSXG4wOGMewtULJl6uIZLGLGIHSpsCP6qMIoZ8WFDqQ,13
+sympy_addons-0.0.5.dist-info/RECORD,,
