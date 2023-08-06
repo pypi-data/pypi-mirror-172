@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+diffusion_weather.egg-info/PKG-INFO
+diffusion_weather.egg-info/SOURCES.txt
+diffusion_weather.egg-info/dependency_links.txt
+diffusion_weather.egg-info/requires.txt
+diffusion_weather.egg-info/top_level.txt

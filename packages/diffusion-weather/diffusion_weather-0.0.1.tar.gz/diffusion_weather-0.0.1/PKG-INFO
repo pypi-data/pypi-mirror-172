@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: diffusion_weather
+Version: 0.0.1
+Summary: Weather Forecasting with Diffusion
+Home-page: https://github.com/openclimatefix/diffusion_weather
+Author: Jacob Bieker
+Author-email: jacob@openclimatefix.org
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Diffusion Weather
+
+
+
+## Installation
+
+This library can be installed through
+
+```bash
+pip install diffusion-weather
+```
+
+## Example Usage
+
+
+## Pretrained Weights
+Coming soon! We plan to train a model on GFS 0.25 degree operational forecasts, as well as MetOffice NWP forecasts.
+We also plan trying out adaptive meshes, and predicting future satellite imagery as well.
+
+## Training Data
+Training data will be available through HuggingFace Datasets for the GFS forecasts. The initial set of data is available for [GFSv16 forecasts, raw observations, and FNL Analysis files from 2016 to 2022](https://huggingface.co/datasets/openclimatefix/gfs-reforecast), and for [ERA5 Reanlaysis](https://huggingface.co/datasets/openclimatefix/era5). MetOffice NWP forecasts we cannot
+redistribute, but can be accessed through [CEDA](https://data.ceda.ac.uk/).
+
+
