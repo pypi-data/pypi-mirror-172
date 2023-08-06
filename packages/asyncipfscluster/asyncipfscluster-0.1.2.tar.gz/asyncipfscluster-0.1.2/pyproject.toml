@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "asyncipfscluster"
+version = "0.1.2"
+description = "Async IPFS Cluster HTTP API"
+authors = ["Egor Ternovoy <cofob@riseup.net>"]
+homepage = "https://git.frsqr.xyz/cofob/asyncipfscluster"
+repository = "https://git.frsqr.xyz/cofob/asyncipfscluster"
+keywords = ["ipfs", "cluster", "http", "api"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+aiohttp = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+mypy = "^0.982"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
