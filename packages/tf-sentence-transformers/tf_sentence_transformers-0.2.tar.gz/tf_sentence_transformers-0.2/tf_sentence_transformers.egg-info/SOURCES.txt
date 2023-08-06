@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+tf_sentence_transformers/__init__.py
+tf_sentence_transformers.egg-info/PKG-INFO
+tf_sentence_transformers.egg-info/SOURCES.txt
+tf_sentence_transformers.egg-info/dependency_links.txt
+tf_sentence_transformers.egg-info/not-zip-safe
+tf_sentence_transformers.egg-info/requires.txt
+tf_sentence_transformers.egg-info/top_level.txt
