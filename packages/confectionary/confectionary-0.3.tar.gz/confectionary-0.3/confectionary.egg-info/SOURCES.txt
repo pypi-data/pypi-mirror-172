@@ -1,0 +1,14 @@
+LICENSE
+README.md
+requirements.txt
+setup.py
+confectionary/__init__.py
+confectionary/pdf.py
+confectionary/report_generation.py
+confectionary/text2pdf.py
+confectionary/utils.py
+confectionary.egg-info/PKG-INFO
+confectionary.egg-info/SOURCES.txt
+confectionary.egg-info/dependency_links.txt
+confectionary.egg-info/requires.txt
+confectionary.egg-info/top_level.txt
