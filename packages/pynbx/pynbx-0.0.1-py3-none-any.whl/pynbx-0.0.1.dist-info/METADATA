@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pynbx
+Version: 0.0.1
+Summary: Next generation of personal knolwedge management
+Home-page: https://github.com/WorkshopHQ/nbx
+Author: Tan Li
+Author-email: tanl@workshop.cool
+Project-URL: Bug Tracker, https://github.com/WorkshopHQ/nbx/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: markdown
+Requires-Dist: typer
+Requires-Dist: textual
+Requires-Dist: rich
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: beautifulsoup4
+Requires-Dist: psutil
+Requires-Dist: html2text
+Requires-Dist: whoosh
+Requires-Dist: datasets
+Requires-Dist: faiss-cpu
+Requires-Dist: openai
+Requires-Dist: pinecone-client
+Requires-Dist: sacremoses
+Requires-Dist: sentence-transformers
+Requires-Dist: transformers
+Requires-Dist: txtai
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: Faker ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: memray ; extra == 'dev'
+Requires-Dist: mkdocs-material ; extra == 'dev'
+Requires-Dist: mkdocs-video ; extra == 'dev'
+Requires-Dist: pdbpp ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: richbench ; extra == 'dev'
+
+# nbx
