@@ -1,0 +1,46 @@
+name: Testing
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - tcgplayer/**
+      - tests/**
+      - pyproject.toml
+      - tox.ini
+
+jobs:
+  tox:
+    name: Tox Tests
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version:
+          - 3.8
+          - 3.9
+          - '3.10'
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
+    steps:
+      #----------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      #----------------------------------------------
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Setup PDM
+        run: pip install pdm
+      #----------------------------------------------
+      - name: Install project
+        run: pdm install -G test
+      - name: Test with tox
+        env:
+          TCGPLAYER__CLIENT_ID: Testing
+          TCGPLAYER__CLIENT_SECRET: Testing
+        run: pdm run tox -e py

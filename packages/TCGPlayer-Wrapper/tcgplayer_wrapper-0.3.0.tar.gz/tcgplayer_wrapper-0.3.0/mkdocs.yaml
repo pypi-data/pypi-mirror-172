@@ -1,0 +1,48 @@
+site_name: "TCGPlayer Wrapper"
+site_url: "https://tcgplayer-wrapper.readthedocs.io/en/latest/"
+repo_url: "https://github.com/Buried-In-Code/TCGPlayer-Wrapper"
+repo_name: "Github"
+site_description: "A Python wrapper for TCGPlayer."
+site_author: "Jonah Jackson"
+copyright: "MIT"
+
+theme:
+  name: "readthedocs"
+
+nav:
+  - Home: "index.md"
+  - tcgplayer:
+    - Package: "tcgplayer/__init__.md"
+    - exceptions: "tcgplayer/exceptions.md"
+    - service: "tcgplayer/service.md"
+    - sqlite_cache: "tcgplayer/sqlite_cache.md"
+  - tcgplayer.schemas:
+    - Package: "tcgplayer/schemas/__init__.md"
+    - category: "tcgplayer/schemas/category.md"
+    - condition: "tcgplayer/schemas/condition.md"
+    - group: "tcgplayer/schemas/group.md"
+    - language: "tcgplayer/schemas/language.md"
+    - price: "tcgplayer/schemas/price.md"
+    - printing: "tcgplayer/schemas/printing.md"
+    - product: "tcgplayer/schemas/product.md"
+    - rarity: "tcgplayer/schemas/rarity.md"
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_root_heading: True
+            show_root_full_path: False
+            show_category_heading: True
+            # Docstrings
+            docstring_style: google
+            docstring_section_style: spacy
+            line_length: 100
+            merge_init_into_class: True
+            show_signature_annotations: True
+            # Additional
+            show_source: False
+  - include-markdown
