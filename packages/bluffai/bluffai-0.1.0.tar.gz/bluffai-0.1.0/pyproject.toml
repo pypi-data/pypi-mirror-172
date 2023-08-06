@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bluffai"
+description = "Simulates poker games."
+readme = "README.md"
+requires-python = ">=3.7"
+license = "Apache-2.0"
+authors = [
+  { name="Bobby Chen", email="chenbobby@fastmail.com" },
+]
+keywords = [
+  "poker simulator",
+  "texas hold'em simulator",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+dev-dependencies = [
+  # Code Consistency
+  "black",
+  "flake8",
+  "isort",
+  "mypy",
+
+  # Tests
+  "pytest",
+  "pytest-cov",
+
+  # Builds
+  "hatch",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://bluffai.com"
+Documentation = "https://bluffai.com/docs"
+"Source Code" = "https://github.com/bluffai/bluffai"
+"Bug Tracker" = "https://github.com/bluffai/bluffai/issues"
+
+[project.scripts]
+bluffai = "bluffai:main"
+
+[tool.hatch.version]
+path = "src/bluffai/__version__.py"
