@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: mitosheet-helper-config
+Version: 0.0.1
+Summary: A configuration package for the mitosheet package, available to enterprise users only
+Author-email: Aaron Diamond-Reivich <aarondr77@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Mitosheet Helper Config
+
+This repository is home to the `mitosheet_helper_config` Python package, which is used to configure enterprise installations of the `mitosheet` package. 
+Currently, the package allows you to configure the:
+- Support email
+
+In the future, enterprises will have many additional configuration options. If you are an enterprise with a specific configuration request, let us know by [opening an issue](https://github.com/mito-ds/monorepo/issues) in the Mito monorepo or sending us an [email](mailto:founders@sagacollab.com). 
+
+This package should only be used with a valid Mito Enterprise liscence or written consent from Mito. Learn more about Mito Enterprise [here](https://www.trymito.io/plans).
+
+# How it works 
+The `mitosheet_helper_config` package is designed for admins to set the Mito configuration settings for their entire organization. To do so: 
+- Clone this repository
+- Navigate to the `mito_config.py` file and follow the instructions to set your enterprise settings
+- Upload the repository to your organization's GitHub
+
+Now that you've chosen your configuration options, the last step is to make the `mitosheet_helper_config` package accessible to the `mitosheet` pacakge. 
+
+### Docker Deployment
+If you're using Docker to deploy mitosheet to your users, follow these instructions:
+- Retrieve the git clone URL of the configured `mitosheet_helper_config` package that you just uploaded to your organization's GitHub. 
+    - It shoud look something like this: `https://github.com/mito-ds/mitosheet_helper_config.git`. 
+- Add this command to your Docker file: `RUN pip install git+<REPO_URL>#egg=mitosheet_helper_config`. 
+    - Make sure to fill in the `<REPO_URL>` with the git clone URL you just collected. 
+    - The final command should look something like this: `RUN pip install git+https://github.com/mito-ds/mitosheet_helper_config.git#egg=mitosheet_helper_config`
+- Rebuild the base Docker image
+
+### Repository clone
+If your users clone a repository to create their Jupyter / Mito environment, follow these instructions:
+[TODO] add these instructions 
+
+# For development 
+This package is only uploaded to pypi and testpypi as a placeholder. 
+
+### Release to PyPi
+- Delete the dist folder, and the .egg-info folder
+- Bump the version in setup.cfg and pyproject.toml
+- Run `python3 -m build`
+
+
+###  Release to Test PyPi
+- Delete the dist folder, and the .egg-info folder
+- Bump the version in setup.cfg and pyproject.toml
+- Run `python3 -m build`
+- Run `python3 -m twine upload --repository testpypi dist/*`
+
+
+
