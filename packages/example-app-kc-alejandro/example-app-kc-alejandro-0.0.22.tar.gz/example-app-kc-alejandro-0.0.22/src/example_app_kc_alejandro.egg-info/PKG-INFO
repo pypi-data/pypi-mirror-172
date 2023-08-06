@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: example-app-kc-alejandro
+Version: 0.0.22
+Summary: A small example package
+Author: Alejandro Corzo
+Author-email: alejandroescobarcorzo@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Python example app
