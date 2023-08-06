@@ -1,0 +1,9 @@
+EnergyData/__init__.py,sha256=FiX-aempGhpiiHR91wvC15R7GwamqIsYkzJoalpGf84,82
+EnergyData/electricpower.py,sha256=FAaQ_eoh-oEfXAmnUDreNP1Aq_HlSB9LlzeVQ5K6p5M,3448
+EnergyData/data/householdpower.csv,sha256=5dCfoHhprAWjaanuh5-Td2mgxqm2mlxq1ixTNxauYGc,115293692
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=YJ1bw8JVLUhV-qhWbzOwVhGLb-5feZPce0SI2xlmwJs,796
+EnergyData-0.0.1.dist-info/METADATA,sha256=i0GQOy__7mYipgmOGZnkkZpJrzcAdSyCJx1pnAUP7PE,5189
+EnergyData-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+EnergyData-0.0.1.dist-info/top_level.txt,sha256=APuZEX583VCRR6kSTmFB3xj3sQ-anzUp4Sg-I0MUhp4,16
+EnergyData-0.0.1.dist-info/RECORD,,
