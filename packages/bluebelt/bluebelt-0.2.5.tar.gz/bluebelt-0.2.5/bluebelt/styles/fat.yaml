@@ -1,0 +1,539 @@
+# style name
+name: "fat"
+
+# template font sizes
+xsmall: &xsmall 10
+small: &small 14
+medium: &medium 18
+large: &large 21
+
+# template rgb colors
+black: &black "#0e1221"
+blue: &blue "#256fb3"
+green: &green "#0d7034"
+orange: &orange "#ee5c2b"
+light_blue: &light_blue "#3f8dc5"
+yellow: &yellow "#fcbe1f"
+red: &red "#b51133"
+dark_blue: &dark_blue "#001146"
+light_grey: &light_grey "#b5c6cf"
+grey: &grey "#8c94a8"
+dark_grey: &dark_grey "#3f494d"
+white: &white "#ffffff"
+
+# matplotlib color cycle colors
+colors: [*black, *blue, *green, *orange, *light_blue, *yellow, *red, *dark_blue]
+
+# matplotlib rcparams
+rc:
+  axes:
+    facecolor: *white
+    edgecolor: *black
+    grid.axis: "y"
+  figure:
+    # figsize in inches
+    # e.g. 900 x 500 pixels at 72 dpi: 900/72, 500/72 = [12.5, 6.94]
+    figsize: [8.333334, 5.555556] # 600 x 400
+    dpi: 72
+    facecolor: *white
+    edgecolor: *white
+  grid:
+    color: *light_grey
+    linestyle: "dotted"
+    linewidth: 0.5
+    alpha: 1
+  savefig:
+    transparent: True
+  legend:
+    loc: "upper right"
+
+# bluebelt default plots
+line: &line
+  linestyle: "solid"
+  linewidth: 3
+  markersize: 0
+  markerfacecolor: null
+
+scatter: &scatter
+  linewidth: 0
+  marker: "o"
+  markersize: 9
+  markeredgewidth: 0
+  alpha: 1
+
+fill: &fill
+  color: *black
+  linestyle: "solid"
+  linewidth: 0
+  alpha: 0.3
+
+bar: &bar
+  width: 0.8
+  hatch: null
+  linestyle: "solid"
+  alpha: 1
+  linewidth: 1
+
+hist: &hist
+  alpha: 1
+  rwidth: 0.8
+  fill: True
+  hatch: null
+  linestyle: "solid"
+  linewidth: 1
+
+dist: &dist
+  alpha: 0.3
+  fill: True
+  hatch: null
+  linestyle: "solid"
+  linewidth: 3
+
+boxplot: &boxplot
+  boxes:
+    facecolor: *blue
+    edgecolor: *black
+    linewidth: 1
+  fliers:
+    marker: "+"
+    linewidth: 1
+    color: *red
+  whiskers:
+    linewidth: 1
+    color: *black
+  caps:
+    linewidth: 1
+    color: *black
+
+# bluebelt custom plots
+# use only colors from the
+effort:
+  quantity:
+    line:
+      <<: *line
+      color: *black
+      zorder: 90
+    fill:
+      <<: *fill
+      color: *black
+      zorder: 50
+  distribution:
+    line:
+      <<: *line
+      color: *blue
+      zorder: 89
+    fill:
+      <<: *fill
+      color: *blue
+      zorder: 49
+  skills:
+    line:
+      <<: *line
+      color: *green
+      zorder: 88
+    fill:
+      <<: *fill
+      color: *green
+      zorder: 48
+  qds:
+    line:
+      <<: *line
+      color: *red
+      zorder: 100
+    fill:
+      <<: *fill
+      color: *red
+      zorder: 47
+
+pattern:
+  residuals:
+    hist:
+      <<: *hist
+      facecolor: *blue
+      edgecolor: *black
+    normal:
+      <<: *line
+      color: *red
+      linewidth: 1
+      linestyle: "dashed"
+  line:
+    <<: *line
+    color: *blue
+  observations:
+    <<: *scatter
+    markerfacecolor: *black
+  bounds:
+    fill:
+      <<: *fill
+      color: *blue
+    line:
+      <<: *line
+      linewidth: 0
+  out_of_bounds:
+    <<: *scatter
+    markerfacecolor: *blue
+  outliers:
+    <<: *scatter
+    markerfacecolor: *red
+  statistics:
+    ha: "left"
+    va: "top"
+    zorder: 90
+    size: *xsmall
+
+equal_means:
+  boxplot:
+    <<: *boxplot
+  ci_mean:
+    line:
+      <<: *line
+      color: *black
+      linewidth: 1
+    vline:
+      color: *black
+      linewidth: 0
+    mean:
+      marker: "o"
+      color: *black
+    fill:
+      edgecolor: *blue
+      facecolor: *blue
+      alpha: 0.3
+      linewidth: 0
+    min_text:
+      backgroundcolor: *white
+      va: "center"
+      ha: "right"
+      zorder: 0
+    max_text:
+      backgroundcolor: *white
+      va: "center"
+      ha: "left"
+      zorder: 0
+  popmean:
+    line:
+      <<: *line
+      color: *red
+  title:
+    size: *small
+  suptitle:
+    ha: "left"
+    size: *medium
+
+equal_variances:
+  hist:
+    <<: *hist
+    facecolor: *blue
+  text:
+    backgroundcolor: *white
+    va: "center"
+    ha: "right"
+    zorder: 0
+    rotation: 0
+  title:
+    loc: "left"
+    ha: "left"
+    size: *small
+  suptitle:
+    ha: "left"
+    size: *medium
+
+distribution_plot:
+  scatter:
+    <<: *scatter
+    markerfacecolor: *blue
+    alpha: 0.3
+  line:
+    <<: *line
+    color: *black
+  stats:
+    ha: "right"
+    size: *small
+  name:
+    ha: "left"
+    va: "top"
+    size: *small
+datetime:
+  boxplot:
+    <<: *boxplot
+forecast:
+  hist:
+    <<: *hist
+    facecolor: *blue
+  ci_mean:
+    span:
+      <<: *fill
+    line:
+      linewidth: 0
+  bias:
+    text:
+      va: "top"
+      ha: "left"
+      fontsize: *xsmall
+      zorder: 0
+
+summary:
+  hist:
+    <<: *hist
+    facecolor: *blue
+    edgecolor: *black
+  norm:
+    color: *blue
+    linestyle: "dashed"
+    linewidth: 1
+  std:
+    fill:
+      <<: *fill
+      edgecolor: *blue
+    vline:
+      color: *blue
+      linestyle: "dotted"
+      linewidth: 1
+    hline:
+      color: *blue
+      linestyle: "solid"
+      linewidth: 1
+    text:
+      backgroundcolor: *white
+      va: "center"
+      ha: "center"
+  boxplot:
+    <<: *boxplot
+    boxes:
+      facecolor: *blue
+      edgecolor: *black
+  ci:
+    hline:
+      <<: *line
+      color: *black
+      linewidth: 1
+    vline:
+      <<: *line
+      color: *black
+      linewidth: 1
+    scatter:
+      <<: *scatter
+    min_text:
+      backgroundcolor: *white
+      va: "center"
+      ha: "right"
+      zorder: 0
+    max_text:
+      backgroundcolor: *white
+      va: "center"
+      ha: "left"
+      zorder: 0
+  drop:
+    vline:
+      <<: *line
+      linewidth: 1
+      color: *blue
+      linestyle: "dotted"
+
+control_chart:
+  observations:
+    plot:
+      <<: *line
+      color: *black
+      linewidth: 1
+      linestyle: "solid"
+      markersize: 9
+      markerfacecolor: *black
+      marker: "o"
+      zorder: 50
+    background:
+      marker: null
+      color: *white
+      linewidth: 5
+      zorder: 30
+  limits:
+    fill:
+      <<: *fill
+      color: *black
+      alpha: 0.3
+      zorder: 10
+    hline:
+      color: *grey
+      linestyle: "dashed"
+      linewidth: 1
+      zorder: 1
+  outliers:
+    plot:
+      linewidth: 0
+      marker: "o"
+      markersize: 9
+      markerfacecolor: *white
+      markeredgecolor: *black
+      markeredgewidth: 1
+      zorder: 45
+    background:
+      linewidth: 0
+      marker: "o"
+      markersize: 17
+      markerfacecolor: *white
+      markeredgecolor: *red
+      markeredgewidth: 1
+      zorder: 40
+  mean:
+    hline:
+      color: *grey
+      linestyle: "dashed"
+      linewidth: 1
+      zorder: 1
+  stats:
+    text:
+      ha: "left"
+      va: "center"
+      zorder: 50
+
+run_chart:
+  observations:
+    plot:
+      <<: *line
+      color: *black
+      linewidth: 1
+      markerfacecolor: *black
+      marker: "o"
+      markersize: 7
+      zorder: 20
+  runs:
+    fill:
+      <<: *fill
+      color: *blue
+      linewidth: 0
+    up_down:
+      <<: *line
+      color: *blue
+      linestyle: "solid"
+      linewidth: 9
+    about:
+      <<: *line
+      color: *red
+      linewidth: 9
+      linestyle: "solid"
+  median:
+    hline:
+      <<: *line
+      linewidth: 1
+      color: *blue
+      linestyle: "dashed"
+    text:
+      ha: "left"
+      va: "center"
+      zorder: 50
+  runs_about:
+    text:
+      ha: "left"
+      va: "bottom"
+      zorder: 50
+  runs_up_down:
+    text:
+      ha: "left"
+      va: "top"
+      zorder: 50
+
+process_capability:
+  hist:
+    hist:
+      <<: *hist
+      facecolor: *blue
+      edgecolor: *black
+    out_of_range:
+      alpha: 0.3
+      facecolor: *red
+      edgecolor: *black
+      fill: True
+      hatch: null
+      linestyle: "solid"
+      linewidth: 1
+    in_range:
+      alpha: 0.3
+      facecolor: *blue
+      edgecolor: *black
+      fill: True
+      hatch: null
+      linestyle: "solid"
+      linewidth: 1
+  norm:
+    overall:
+      <<: *line
+      color: *blue
+      linestyle: "dashed"
+      linewidth: 1
+    within:
+      <<: *line
+      color: *red
+      linestyle: "dashed"
+      linewidth: 1
+  target:
+    vline:
+      <<: *line
+      color: *blue
+      linestyle: "dotted"
+      linewidth: 1
+    text:
+      backgroundcolor: *white
+      va: "center"
+      ha: "center"
+  usl:
+    vline:
+      <<: *line
+      color: *blue
+      linestyle: "dotted"
+      linewidth: 1
+    text:
+      backgroundcolor: *white
+      va: "center"
+      ha: "center"
+  lsl:
+    vline:
+      <<: *line
+      color: *blue
+      linestyle: "dotted"
+      linewidth: 1
+    text:
+      backgroundcolor: *white
+      va: "center"
+      ha: "center"
+
+correlation:
+  hist:
+    <<: *hist
+    facecolor: *blue
+  plot:
+    <<: *scatter
+    markerfacecolor: *black
+    alpha: 0.3
+    zorder: 50
+  line:
+    <<: *line
+    color: *red
+    zorder: 99
+  text:
+    va: "top"
+    ha: "left"
+    fontsize: *xsmall
+
+waterfall:
+  border:
+    facecolor: null
+    edgecolor: *black
+    hatch: null
+    linestyle: solid
+    linewidth: 1
+  total:
+    <<: *fill
+    color: *dark_blue
+    alpha: 1
+  increasing:
+    <<: *fill
+    alpha: 1
+    color: *blue
+  decreasing:
+    <<: *fill
+    alpha: 1
+    color: *red
+  connectors:
+    color: *black
+    linestyle: dotted
+    linewidth: 1
