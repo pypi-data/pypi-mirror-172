@@ -1,0 +1,6 @@
+build
+dist
+example_boards
+images
+multical
+screenshots

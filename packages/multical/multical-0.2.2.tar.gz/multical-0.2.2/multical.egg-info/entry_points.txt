@@ -1,0 +1,2 @@
+[console_scripts]
+multical = multical.app.multical:cli
