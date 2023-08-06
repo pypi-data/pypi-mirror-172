@@ -1,0 +1,11 @@
+paises/__init__.py,sha256=T0S2G9ZF0N2QsPnLmWv8ArkqyfCcjOmRQW7Bd6FR2wM,74
+paises/cache.py,sha256=afigNOVQOftF2H7ZuSXc88JbOA5Ut1GGnxm2G_SGxGU,1271
+paises/ccs.py,sha256=4P0S4bUuq5QAhgZyurOdYZR2kG_6QyHigbzLPjdpZJM,40274
+paises/countries.py,sha256=FRDPTY6zbipAkJermMsczT6H7_4Y1wT8jb-ArPGvDPY,7213
+paises/country.py,sha256=XzBcMd1W5ATHk9tf7E4EVdpWL62vIcM5ULUi3XFbOXo,1566
+paises/data.py,sha256=HF_fDq3OSQCC12EvaRP6hUZB_X6yBfGwNGJnO2nhAmY,21234
+paises/groups.py,sha256=8KSRCqr4pp9YUGCpgJivhd8kLfaynOdVQwDtYFqmB28,352
+paises/utils.py,sha256=bngU9OFTSERntemxYkK7bJkKuvCLG4l0yAVT1QX-q-c,618
+paises-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+paises-0.1.1.dist-info/METADATA,sha256=kaY9YpDXXlcP1wYbaf1oFSRw3il6E8ZhxVmbOM0BS4U,414
+paises-0.1.1.dist-info/RECORD,,
