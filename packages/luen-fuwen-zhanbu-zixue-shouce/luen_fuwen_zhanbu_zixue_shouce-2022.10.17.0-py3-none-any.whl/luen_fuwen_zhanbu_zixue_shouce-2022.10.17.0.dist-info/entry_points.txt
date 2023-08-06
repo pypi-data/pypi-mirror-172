@@ -1,0 +1,4 @@
+[console_scripts]
+LuenFuwenZhanbuZixueShouce = LuenFuwenZhanbuZixueShouce.__main__:main
+luen-fuwen-zhanbu-zixue-shouce = LuenFuwenZhanbuZixueShouce.__main__:main
+
