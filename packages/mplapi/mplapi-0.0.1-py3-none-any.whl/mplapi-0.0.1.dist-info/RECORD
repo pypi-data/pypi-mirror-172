@@ -1,0 +1,12 @@
+mplapi/__init__.py,sha256=GJ46o3rHDY-Sq835B9pU2V2wPbZxJS5qxEzMRwFkeMg,1349
+mplapi/__main__.py,sha256=fSTHAcu_RNgUcQ_DenokRQNfAkOzt_0AWbYoTTFHWl0,1371
+mplapi/config.py,sha256=j_mTzBldp6xJ_EI4fLOszzfHUuhMm0ust3d2U8vw40k,2015
+mplapi/event.py,sha256=0y3TzFOpKZpfBWlCcYck7jnnyim-4qvqWT12I8twOc4,21
+mplapi/mirai.py,sha256=SrteAeUTqRTuHFNpgdr9uU5DBILRveB1KuMj32HNOuQ,9014
+mplapi/msg.py,sha256=2kgDAkIBeVogUaxNxAmffdggUET8POY8V9r2Mdp69RA,13597
+mplapi/plugin.py,sha256=wxGkE7FK5-C451y0QeC1vEhFv9OB2KdpCxVjfVGqMdE,6759
+mplapi-0.0.1.dist-info/LICENSE.txt,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+mplapi-0.0.1.dist-info/METADATA,sha256=BfQXmYQUvFZyXSi4X1mbH5peNXW1o2sDEjwyweTVqSI,441
+mplapi-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mplapi-0.0.1.dist-info/top_level.txt,sha256=YFNeWTBUtqGtLQ9dmKxnk37erbmzNW2l53H98nwdd18,7
+mplapi-0.0.1.dist-info/RECORD,,
