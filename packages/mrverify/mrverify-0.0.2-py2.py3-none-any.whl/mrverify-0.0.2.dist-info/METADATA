@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mrverify
+Version: 0.0.2
+Summary: MRI scan parameter verification
+Home-page: https://github.com/harvard-nrg/mrverify
+Author: Neuroinformatics Research Group
+Author-email: info@neuroinfo.org
+License-File: LICENSE
+Requires-Dist: yaxil
+Requires-Dist: pyaml
+Requires-Dist: jinja2
+
