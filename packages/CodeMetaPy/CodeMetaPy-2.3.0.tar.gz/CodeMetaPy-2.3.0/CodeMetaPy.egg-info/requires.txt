@@ -1,0 +1,10 @@
+nameparser
+importlib_metadata
+BeautifulSoup4
+rdflib>=6.1.1
+pyshacl
+requests
+lxml
+pyyaml
+Jinja2
+pep517
