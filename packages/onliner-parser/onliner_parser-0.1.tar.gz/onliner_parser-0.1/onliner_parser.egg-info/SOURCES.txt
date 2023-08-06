@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+onliner_parser/__init__.py
+onliner_parser/input_manager.py
+onliner_parser/models.py
+onliner_parser/parser.py
+onliner_parser/save_manager.py
+onliner_parser/terminal_font_style.py
+onliner_parser.egg-info/PKG-INFO
+onliner_parser.egg-info/SOURCES.txt
+onliner_parser.egg-info/dependency_links.txt
+onliner_parser.egg-info/not-zip-safe
+onliner_parser.egg-info/top_level.txt
