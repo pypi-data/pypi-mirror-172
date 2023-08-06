@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "oak-build"
+version = "0.1.0"
+description = ""
+authors = ["Kirill Sulim <kirillsulim@gmail.com>"]
+readme = "README.md"
+packages = [{include = "oak_build", from = "src"}]
+
+[tool.poetry.urls]
+repository = "https://github.com/kirillsulim/oak-build"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rusty-results = "^1.1.1"
+colorlog = "^6.7.0"
+toposort = "^1.7"
+
+[tool.poetry.scripts]
+oak = "oak_build.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

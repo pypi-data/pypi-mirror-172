@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: oak-build
+Version: 0.1.0
+Summary: 
+Author: Kirill Sulim
+Author-email: kirillsulim@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: colorlog (>=6.7.0,<7.0.0)
+Requires-Dist: rusty-results (>=1.1.1,<2.0.0)
+Requires-Dist: toposort (>=1.7,<2.0)
+Project-URL: repository, https://github.com/kirillsulim/oak-build
+Description-Content-Type: text/markdown
+
+# oak-buil
+
+A make-like build system written on python
+
