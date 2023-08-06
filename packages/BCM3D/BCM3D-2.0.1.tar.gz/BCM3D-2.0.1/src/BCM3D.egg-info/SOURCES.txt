@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/GeneralFunctions.py
+src/IntermediateImageGenerate.py
+src/PostProcess.py
+src/__init__.py
+src/preprocess.py
+src/segmentation.py
+src/BCM3D.egg-info/PKG-INFO
+src/BCM3D.egg-info/SOURCES.txt
+src/BCM3D.egg-info/dependency_links.txt
+src/BCM3D.egg-info/requires.txt
+src/BCM3D.egg-info/top_level.txt

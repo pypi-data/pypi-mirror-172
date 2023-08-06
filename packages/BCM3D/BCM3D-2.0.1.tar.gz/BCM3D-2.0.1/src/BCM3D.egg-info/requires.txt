@@ -1,0 +1,2 @@
+csbdeep>=0.7.2
+scikit-image>=0.19.3
