@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+wsy/__init__.py
+wsy/wsy.py
+wsy.egg-info/PKG-INFO
+wsy.egg-info/SOURCES.txt
+wsy.egg-info/dependency_links.txt
+wsy.egg-info/requires.txt
+wsy.egg-info/top_level.txt
+wsy/test/__init__.py
+wsy/test/test.py
