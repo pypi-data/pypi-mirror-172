@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: xju
+Version: 1.0.0
+Summary: xju library
+Author: Trevor Taylor
+Project-URL: Homepage, https://github.com/urnest/urnest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
