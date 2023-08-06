@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: prq
+Version: 0.0.16
+Summary: UNKNOWN
+Home-page: https://github.com/StepanGavrilov/PRQ
+Author-email: gavrilovstepan78@gmail.com
+License: UNKNOWN
+Description: # Stats
+        <img src="https://img.shields.io/pypi/dm/PRQ?style=for-the-badge" alt="pypi">
+        
+        # Python parallel task-queue with redis
+        
+        
+        Based on
+        * rq
+        * redis
+        * gevent
+        
+        
+        `Examples coming soon :)`
+Keywords: python,queue,redis,parallel,workers,tasks,jobs
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
