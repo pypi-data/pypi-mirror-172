@@ -1,0 +1,5 @@
+matplotlib
+libusb
+pyusb
+tqdm
+numpy
