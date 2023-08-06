@@ -1,0 +1,13 @@
+tests.py,sha256=6FTIpbfFgcwReduvdojoOJLOV9qwwrunsT9aozzy9CE,4025
+joinboost/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+joinboost/aggregator.py,sha256=j9LW7edOTU1MUxATyvzOlBH9kfSuhzN5Z6X74o_aDKo,3304
+joinboost/app.py,sha256=8512LcJQZvIVtu2aIotwHVBBopTWfG1HWqiJ5nJ_k9U,13329
+joinboost/cjt.py,sha256=u1cYaJqCZWioMjeT1Qavp70TjEldnwM7l7leEipHssM,9009
+joinboost/executor.py,sha256=fyWELCQtAamQc32Dzd-0a0dQ7pmfXaBqWKq0OaFfIo4,8161
+joinboost/joingraph.py,sha256=h4qt-VTfIfjnKCFdmYiFrtP_cwQIzh08UZXyWVCEfj8,6118
+joinboost/semiring.py,sha256=O4HMEOCpOKt85duukKvw6a5ipLSm9PL6PDV7EhXdLOo,1587
+joinboost-0.0.13.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+joinboost-0.0.13.dist-info/METADATA,sha256=EienH9YhoaCuA74O8WSk7JJpgEcJZKA_SmiSxJNwGc4,925
+joinboost-0.0.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+joinboost-0.0.13.dist-info/top_level.txt,sha256=_hDydCxv_La5AZgnbP0Ip0gG-gprJ9ZPH0BhrHkvmVY,16
+joinboost-0.0.13.dist-info/RECORD,,
