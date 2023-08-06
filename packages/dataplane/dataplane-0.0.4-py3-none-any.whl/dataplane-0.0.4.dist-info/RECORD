@@ -1,0 +1,15 @@
+dataplane/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataplane/hello.py,sha256=DgHUohQcsZawSh_69mJY5xhtVaMQhA9Bs0jckqfLZjo,62
+dataplane/data_storage/sharepoint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataplane/data_storage/sharepoint/sharepoint_upload.py,sha256=5DcpcdYZOpeSXdOiQoEBHBqhLQg54v2UiCA-bX_Zsfg,2061
+dataplane/data_storage/sharepoint/test_sharepoint_upload.py,sha256=RsHo7eAOGKI13z04nlNUw7AP8A5SLD7Yy-985t3EpYs,1504
+dataplane/pipelinerun/data_persist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataplane/pipelinerun/data_persist/redis_store.py,sha256=fX9LmwXO18LMfOysQGoGUnRrsfSUYPMqlm5Cf8Dvepo,2010
+dataplane/pipelinerun/data_persist/s3_store.py,sha256=hXKeWjmkumOt_atN7Ilbqg6dnEK7ECQlUn64cerPL_k,1660
+dataplane/pipelinerun/data_persist/test_redis.py,sha256=FWYliGcEyHmTW-46cJ0cogXkbU0qK62dtGAgafCvG-4,1218
+dataplane/pipelinerun/data_persist/test_s3_store.py,sha256=eKshubpVppVXuQo9KTwyiTtEpX1v3-Gs0lyAKkYsm68,1416
+dataplane-0.0.4.dist-info/LICENSE,sha256=aPvIMoUqu61uLdueX7JieSmcqMf-rNzmU1Jd3hPLgRI,1523
+dataplane-0.0.4.dist-info/METADATA,sha256=rPBc9vL7cGzbKYez3MaQ-I1oFKPLfjCJ41W-rJwpNK8,1305
+dataplane-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dataplane-0.0.4.dist-info/top_level.txt,sha256=dI0hHoerkLOQWHFbotUJ9orv9PrpNPSIA7XgFjc1cww,10
+dataplane-0.0.4.dist-info/RECORD,,
