@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: featureprobe-server-sdk-python
+Version: 1.1.2
+Summary: FeatureProbe Server Side SDK for Python
+Home-page: UNKNOWN
+Author: FeatureProbe
+License: Apache 2.0
+Project-URL: Project Homepage, https://github.com/FeatureProbe
+Project-URL: Bug Reports, https://github.com/FeatureProbe/server-sdk-python/issues
+Project-URL: Source Code, https://github.com/FeatureProbe/server-sdk-python
+Keywords: feature management,server sdk
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/x-rst
+Requires-Dist: APScheduler (~=3.0)
+Requires-Dist: requests (>=2.12.0)
+Requires-Dist: tzlocal (~=2.0.0)
+
+FeatureProbe Server Side SDK for Python
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/pypi/v/featureprobe-server-sdk-python
+  :target: https://pypi.python.org/pypi/featureprobe-server-sdk-python
+  :alt: PyPI Version
+
+.. image:: https://img.shields.io/pypi/pyversions/featureprobe-server-sdk-python.svg
+  :target: https://pypi.python.org/pypi/featureprobe-server-sdk-python
+  :alt: Python Version
+
+.. image:: https://codecov.io/gh/FeatureProbe/server-sdk-python/branch/main/graph/badge.svg
+  :target: https://codecov.io/gh/FeatureProbe/server-sdk-python
+  :alt: CodeCov
+
+.. image:: https://img.shields.io/github/stars/FeatureProbe/server-sdk-python
+  :target: https://github.com/FeatureProbe/server-sdk-python/stargazers
+  :alt: GitHub Star
+
+.. image:: https://img.shields.io/github/license/FeatureProbe/server-sdk-python
+  :target: https://github.com/FeatureProbe/server-sdk-python/blob/main/LICENSE
+  :alt: License
+
+Feature Probe is an open source feature management service. This SDK is used to control features in Python programs.
+This SDK is designed primarily for use in multi-user systems such as web servers and applications.
+
+
+Basic Terms
+-----------
+
+Reading the short `Introduction <https://docs.featureprobe.io/reference/sdk-introduction>`_ will help to understand the code blow more easily.
+`中文 <https://docs.featureprobe.io/zh-CN/reference/sdk-introduction>`__
+
+
+How to User This SDK
+--------------------
+
+See `SDK Doc <https://docs.featureprobe.io/how-to/Server-Side%20SDKs/python-sdk>`_ for detail.
+`中文 <https://docs.featureprobe.io/zh-CN/how-to/Server-Side%20SDKs/python-sdk>`__
+
+
+Contributing
+------------
+
+We are working on continue evolving FeatureProbe core, making it flexible and easier to use.
+Development of FeatureProbe happens in the open on GitHub, and we are grateful to the
+community for contributing bugfixes and improvements.
+
+Please read `CONTRIBUTING <https://github.com/FeatureProbe/featureprobe/blob/master/CONTRIBUTING.md>`_
+for details on our code of conduct, and the process for taking part in improving FeatureProbe.
+
+
+License
+-------
+
+This project is licensed under the Apache 2.0 License - see the `LICENSE <LICENSE>`_ file for details.
+
+
