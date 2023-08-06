@@ -1,0 +1,2 @@
+[console_scripts]
+spotify-random-saved-album = spotify_random_saved_album.spotify_random_saved_album:main
