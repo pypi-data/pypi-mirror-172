@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mafiat
+Version: 0.1.0
+Summary: Magnetic Field Analysis Tools
+Home-page: https://github.com/pricedj/mafiat
+Author: Daniel James Price
+Author-email: daniel.price@helsinki.fi
+License: BSD 3-Clause
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9
+License-File: LICENSE
+
+MAFIAT
+======
+
+The Magnetic Field Analysis Tools (MAFIAT) package facilitates the investigation of the magnetic twist of flux ropes in coronal simulation domains.
+
+Installation
+------------
+Mafiat requires python >= 3.9.
+
+It can be installed from `PyPI <https://pypi.org/project/mafiat/>`_ using:
+
+.. code:: bash
+
+    pip install mafiat
