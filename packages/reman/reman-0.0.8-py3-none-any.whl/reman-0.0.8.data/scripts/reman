@@ -1,0 +1,131 @@
+#!python
+
+from reman import ReMan
+import argparse
+import sys
+import importlib.util
+
+reman = ReMan.ReMan()
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("action", help="""The action to perform: 
+--> getUserChannels		Prints the list of User,Channels for the given release name (-r is mandatory)
+--> getChannel 			Prints the user for the given release name and user name (-r & -u are mandatory)
+--> createConanData 	Creates the "conandata.yml" file with the contents of getUserChannels
+--> createVariants 		Creates a variants.yml file describing the variants to build. Must be executed in 
+						directory containing a "conanfile.py" defining "build_variants" (t is mandatory)
+--> createRelease		Creates a new release in the database (-r & -nr are mandatory)
+--> createUser			Creates a new user in the database (-u is mandatory)
+--> createChannel		Creates a new channel for the given user (-u & -c are mandatory)
+--> linkReleaseChannel	Sets the given user & channel to the given release (-r, -u & -c are mandatory)
+""")
+parser.add_argument("-r", "--releaseName", type=str, help="The release name")
+parser.add_argument("-u", "--userName", type=str, help="The user name")
+parser.add_argument("-c", "--channelName", type=str, help="The channel name")
+parser.add_argument("-t", "--targetName", type=str, help="target name")
+parser.add_argument("-nr", "--newReleaseName", type=str, help="The new release name")
+
+def checkReleaseName():
+	if (args.releaseName is None):
+		print(f"Release name not specified")
+		sys.exit(1)
+
+def checkUserName():
+	if (args.userName is None):
+		print(f"User name not specified")
+		sys.exit(1)
+
+def checkChannelName():
+	if (args.channelName is None):
+		print(f"Channel not specified")
+		sys.exit(1)
+
+def checkTargetName():
+	if (args.targetName is None):
+		print(f"Target name not specified")
+		sys.exit(1)
+
+def checkNewReleaseName():
+	if (args.newReleaseName is None):
+		print(f"New release name not specified")
+		sys.exit(1)
+
+def getUserChannels(releaseName):
+	print(reman.getUserChannels(releaseName))
+
+def getChannel(releaseName, userName):
+	print(reman.getChannel(releaseName, userName))
+
+def createConanData(releaseName):
+	data = reman.getUserChannels(releaseName)
+	print("create conandata.yml")
+	f = open("conandata.yml", "w")
+	f.write("repositories:\n")
+	for row in data:
+		f.write(f"  {row[0]}: \"{row[1]}\"\n")
+	f.close()
+
+def createVariants(target):
+	print("create variants.yml")
+	spec = importlib.util.spec_from_file_location("conanfile", "./conanfile.py")
+	if  spec:
+		module = importlib.util.module_from_spec(spec)
+		spec.loader.exec_module(module)
+		f = open("variants.yml", "w")
+		f.write("variants:\n")
+		if  hasattr( module, "build_variants" ):
+			# some specific build are defined
+			for key in module.build_variants:
+				variant = module.build_variants[key]
+				# if target is present
+				if target in variant['targets']:
+					for option in variant['options']:
+						f.write(f"  - \"{option}\"\n")
+		else:
+			# Add default build  ( no options )
+			f.write(f"  - \"\"\n")
+		f.close()
+
+def createRelease(releaseName, newReleaseName):
+	print(f"releaseName: {releaseName}, newReleaseName: {newReleaseName}")
+	reman.createRelease(releaseName, newReleaseName)
+
+def createChannel(userName, channelName):
+	reman.createChannel(userName, channelName)
+
+def linkReleaseChannel(releaseName, userName, channelName):
+	reman.linkReleaseChannel(releaseName, userName, channelName)
+
+args = parser.parse_args()
+
+if (args.action == "getUserChannels"):
+	checkReleaseName()
+	getUserChannels(args.releaseName)
+elif (args.action == "getChannel"):
+	checkReleaseName()
+	checkUserName()
+	getChannel(args.releaseName, args.userName)
+elif (args.action == "createConanData"):
+	checkReleaseName()
+	createConanData(args.releaseName)
+elif (args.action == "createVariants"):
+	checkTargetName()
+	createVariants(args.targetName)
+elif (args.action == "createRelease"):
+	checkReleaseName()
+	checkNewReleaseName()
+	createRelease(args.releaseName, args.newReleaseName)
+elif (args.action == "createChannel"):
+	checkChannelName()
+	createChannel(args.userName, args.channelName)
+elif (args.action == "linkReleaseChannel"):
+	checkReleaseName()
+	checkUserName()
+	checkChannelName()
+	linkReleaseChannel(args.releaseName, args.userName, args.channelName)
+else:
+	print("No positional arguments, please specify one")
+	parser.print_help()
+	sys.exit(1)
+
