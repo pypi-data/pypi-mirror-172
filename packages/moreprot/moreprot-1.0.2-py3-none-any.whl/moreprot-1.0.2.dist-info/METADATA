@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: moreprot
+Version: 1.0.2
+Summary: MoReProt: Molecular Fingerprint Recombination-based Protein Fingerprint.
+Home-page: https://github.com/mhlee216/MoReProt
+Author: Myeonghun Lee
+Author-email: leemh216@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: rdkit (>=2021.09.2)
+
+MoReProt: Molecular Fingerprint Recombination-based Protein Fingerprint.
+
