@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        mov-cli=mov_cli.__main__:movcli
+    
