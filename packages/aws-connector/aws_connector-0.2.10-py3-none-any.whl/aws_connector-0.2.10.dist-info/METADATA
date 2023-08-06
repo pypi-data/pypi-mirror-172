@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: aws-connector
+Version: 0.2.10
+Summary: AWS connector switch-role tool from central IAM account.
+Author-email: Mick Gortenmulder <mickgortenmulder@gmail.com>
+Maintainer-email: Mick Gortenmulder <mickgortenmulder@gmail.com>
+License: Copyright (c) 2018 The Python Packaging Authority        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.        
+Project-URL: Homepage, https://github.com/mickgortenmulder/aws-connector
+Project-URL: Bug Tracker, https://github.com/mickgortenmulder/aws-connector/issues
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AWS Connector
+
+This tool provides an AWS CLI connector that allows you to switch roles to an AWS account you want to access.
+
+# Supported OS
+- Linux
+- MacOS
+
+# Get started
+First start with making sure the generic .aws/config and .aws/credentials are configured so you can access the AWS account where your user lives that can perform assume-role to other accounts. Then install the Python module with pip and then start creating the config that allows you to start connections to assumable roles in AWS accounts.
+
+## AWS config
+This connector relies on the AWS config and credential setup to connect with the main account.
+Information can be found here: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
+
+## Install
+```
+pip3 install aws-connector
+```
+
+## Generate config
+Copy the file config/config_template.yaml to ~/.aws/awsc-config.yaml and fill in the file before you start.
+
+! Note: The configuration is case-sensitive
+
+## Start
+```
+  awsc
+```
+
+# Verify
+The tool will output the below lines after assuming the role you selected in the menu:
+```
+  Enter the MFA code: 123456
+  Switched to /bin/zsh with AWS credentials set for account 123456789123
+```
+
+And you can verify the environment variables:
+```
+  ➜  ~ env |grep AWS
+  AWS_SESSION_TOKEN=xxxxxx
+  AWS_DEFAULT_OUTPUT=text
+  AWS_DEFAULT_REGION=eu-west-1
+  AWS_SECRET_ACCESS_KEY=xxxxxx
+  AWS_ACCESS_KEY_ID=xxxxxx
+```
