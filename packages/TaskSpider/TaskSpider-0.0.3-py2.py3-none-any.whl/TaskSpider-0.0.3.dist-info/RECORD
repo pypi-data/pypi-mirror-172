@@ -1,0 +1,16 @@
+Core/Anlyst.py,sha256=c-RHq9wrBnmOTTcihLCIc4IJoqUISNzExiAFyu44mXU,2430
+Core/NetWork.py,sha256=n65QvMm9AeN_PBxZg5RG4sx1zjiZS9xa8txnHMujHsY,2080
+Core/URLs.py,sha256=t57AWYZEwKxcvJgOEc-4fGLnqn9hw3goswsZfcwknO0,4195
+Core/Writer.py,sha256=F5h8HXzyfI__PuroaTC4d2VH7TclFFj3ShAB85PcZWc,940
+Core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Task/BigTask.py,sha256=yD_lRHllmlv5PyJLnqUPUuD4jXtmCcYZjYzvdTC7tYw,2130
+Task/NetworkTask.py,sha256=GndqclwVqabMNTp1nPhzI3nmyWJ3tLIpraoKd2EEIyI,3717
+Task/Task.py,sha256=u_7_75tpV7RNtNabQy71ND1VimSDm4hLCEGANJSQSZI,351
+Task/TaskManger.py,sha256=BlIg8HmSUcr4oBT0dlTao80dp1AMNnwNUcXsLwpKReY,825
+Task/TaskMessage.py,sha256=L0UToeSrGo_CtasIzBU-Wz5dy2PXU8-EVZEjD3KvIN4,559
+Task/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TaskSpider-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+TaskSpider-0.0.3.dist-info/METADATA,sha256=S7scsD0kubqSwq0AUzja0b4rOvVxED1Sa3T3MPxDR8Q,6127
+TaskSpider-0.0.3.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+TaskSpider-0.0.3.dist-info/top_level.txt,sha256=vdLCbvBJ94HSa74qg-w0yMHR-8HB4XbX-egfA-4x8-w,10
+TaskSpider-0.0.3.dist-info/RECORD,,
