@@ -1,0 +1,4 @@
+graft xauth
+include LICENSE
+include README.md
+recursive-include docs *
