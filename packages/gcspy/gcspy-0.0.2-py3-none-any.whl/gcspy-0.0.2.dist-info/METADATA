@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: gcspy
+Version: 0.0.2
+Summary: Python bindings for the Glasgow Constraint Solver
+Home-page: https://github.com/ciaranm/glasgow-constraint-solver
+Author: Matthew McIlree
+Author-email: matthew.j.mcilree@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Glasgow Constraint Solver CPMpy Interface
+
+The code in this directory creates a simple Python interface for 
+the Glasgow Constraint Solver, primarily intended for use by the [CPMpy](https://cpmpy.readthedocs.io/en/latest/index.html)
+modelling library. Essentially it wraps all the relevant functionality in a single
+class defined in api.hh, api.cc using only standard library types, and then generates
+bindings for the methods using [pybind11](https://pybind11.readthedocs.io/en/latest/) (submoduled in the `extern` directory).
+
+## How to install
+I've not entirely got the installation process streamlined yet, but the current procedure is as follows.
+
+1. Clone the whole repository, including the pybind11 submodule:
+```bash
+git clone --recurse-submodules https://github.com/ciaranm/glasgow-constraint-solver.git
+```
+2. Build the libraries (including the python module) using CMake (the XCSP support is not required):
+```bash
+cd glasgow-constraint-solver
+cmake -S . -B build -DGCS_ENABLE_XCSP=OFF -GCS_ENABLE_CPMPY=ON
+cmake --build build
+```
+3. The `cpmpy/gcspy` directory should now contain a shared library file that can be imported as a python module. Optionally this can now be tested
+with some simple python unit tests
+```bash
+cd cpmpy
+python3 gcspytest.py
+```
+4. To make this available system-wide, or in a virtual environment, the package can now be pip installed:
+   (ensure still in the `cpmpy` directory)
+```bash
+pip3 install .
+```
+
+## Packaging for PyPi (untested)
+I think that after doing steps 1-3 we should be able to just do:
+
+```bash
+python3 -m build
+python3 -m twine upload dist/*
+```
+
+And then anyone should be able to install the package with simply:
+```bash
+pip3 install gcspy
+```
+
+I'm not sure about the cross-platform compatability of this though, and I haven't tested it yet. 
+
+## API Functions
+
