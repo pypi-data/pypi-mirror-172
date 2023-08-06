@@ -1,0 +1,14 @@
+README.md
+setup.py
+processamento_imagens_pythonico_DIO/__init__.py
+processamento_imagens_pythonico_DIO.egg-info/PKG-INFO
+processamento_imagens_pythonico_DIO.egg-info/SOURCES.txt
+processamento_imagens_pythonico_DIO.egg-info/dependency_links.txt
+processamento_imagens_pythonico_DIO.egg-info/requires.txt
+processamento_imagens_pythonico_DIO.egg-info/top_level.txt
+processamento_imagens_pythonico_DIO/processing/__init__.py
+processamento_imagens_pythonico_DIO/processing/combination.py
+processamento_imagens_pythonico_DIO/processing/transformation.py
+processamento_imagens_pythonico_DIO/utils/__init__.py
+processamento_imagens_pythonico_DIO/utils/io.py
+processamento_imagens_pythonico_DIO/utils/plot.py
