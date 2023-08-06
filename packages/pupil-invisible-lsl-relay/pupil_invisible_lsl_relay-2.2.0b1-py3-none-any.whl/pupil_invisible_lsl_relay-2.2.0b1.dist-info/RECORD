@@ -1,0 +1,14 @@
+pupil_labs/invisible_lsl_relay/__init__.py,sha256=pqdxRZmgxl2feI96cXC-p0bEanysAUb_rpARv3yFwuw,372
+pupil_labs/invisible_lsl_relay/__main__.py,sha256=kRYg1C1ORVlg3hf4_J6vDErEXn_5MZfC9sZZioXC40I,95
+pupil_labs/invisible_lsl_relay/channels.py,sha256=A0mMlDfvZxhMvSdPS7Vxl5awRPcuFiC_b3McRrZybI4,1325
+pupil_labs/invisible_lsl_relay/cli.py,sha256=41XZNpDQfMMKsPJc_Rp32j2o1unlJbopCerpMceD4dE,7661
+pupil_labs/invisible_lsl_relay/linear_time_model.py,sha256=QxM4KMiaJ9mgU7Dbza7cBlGYb6Rr06dgYtJjWWYMuWE,2902
+pupil_labs/invisible_lsl_relay/outlets.py,sha256=4KlYEOnBowNe2Vrxu73vl1Wthdt6Ludqi870eqPLxi0,4265
+pupil_labs/invisible_lsl_relay/relay.py,sha256=W3VY1TqxYpIRr_kyZxZKqjylkh6jw-ef96fFYlHUPzQ,9800
+pupil_labs/invisible_lsl_relay/xdf_cloud_time_sync.py,sha256=zXBilQRzIJ8Ma1mPFQOJ-p6I_zEV407Wgo-_uluFCVA,5326
+pupil_invisible_lsl_relay-2.2.0b1.dist-info/LICENSE,sha256=wtb5plYhxUZhtyA7N_6MmgEQhejBzgq_pORYgbA4jQA,1050
+pupil_invisible_lsl_relay-2.2.0b1.dist-info/METADATA,sha256=4fv6CXVStcGbifww5bWyEbxxPMsFuOOHa5z9ySNSHfo,3381
+pupil_invisible_lsl_relay-2.2.0b1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pupil_invisible_lsl_relay-2.2.0b1.dist-info/entry_points.txt,sha256=JNEF-xS4piMZ4d4eIz41qIOo36bMfyS_jhhctixXzNE,186
+pupil_invisible_lsl_relay-2.2.0b1.dist-info/top_level.txt,sha256=0sAYqydhZ3GsxyCFKlrGo7LwoXKMZJPsvgI_edVx2a0,11
+pupil_invisible_lsl_relay-2.2.0b1.dist-info/RECORD,,

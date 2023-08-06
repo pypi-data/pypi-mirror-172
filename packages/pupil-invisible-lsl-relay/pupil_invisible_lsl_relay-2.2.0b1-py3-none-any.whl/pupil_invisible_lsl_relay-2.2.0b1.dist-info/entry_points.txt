@@ -1,0 +1,3 @@
+[console_scripts]
+lsl_relay_time_alignment = pupil_labs.invisible_lsl_relay.xdf_cloud_time_sync:main
+pupil_invisible_lsl_relay = pupil_labs.invisible_lsl_relay.cli:relay_setup_and_start
