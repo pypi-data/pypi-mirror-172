@@ -1,0 +1,34 @@
+[package]
+name = "ltp-extension"
+version = "0.1.9"
+edition = "2021"
+authors = ["ylfeng <ylfeng@ir.hit.edu.cn>"]
+description = "Rust Extension For Language Technology Platform(Python)."
+homepage = "https://github.com/HIT-SCIR/ltp"
+repository = "https://github.com/HIT-SCIR/ltp"
+keywords = ["ltp", "nlp"]
+exclude = [".github"]
+readme = "README.md"
+license-file = "LICENSE"
+
+[lib]
+name = "ltp_extension"
+crate-type = ["cdylib"]
+
+[dependencies]
+rayon = { version = "1.5" }
+anyhow = { version = "1.0" }
+serde = { version = "1.0", features = ["derive"] }
+pyo3 = { version = "0.17", features = ["extension-module", "anyhow", "serde"] }
+mimalloc = { version = "0.1", default-features = false, optional = true }
+
+[dependencies.ltp]
+version = "*"
+path = "local_dependencies/ltp"
+features = ["serialization", "parallel"]
+
+[features]
+default = ["abi3"]
+abi3 = ["pyo3/abi3", "pyo3/abi3-py37"]
+malloc = ["mimalloc"]
+secure = ["mimalloc/secure"]
