@@ -1,0 +1,92 @@
+[tool.poetry]
+name = "deptry"
+version = "0.6.2"
+description = "A command line utility to check for obsolete, missing and transitive dependencies in a Python project."
+authors = ["Florian Maas <fpgmaas@gmail.com>"]
+maintainers = ["Mathieu Kniewallner <mathieu.kniewallner@gmail.com>"]
+repository = "https://github.com/fpgmaas/deptry"
+documentation = "https://fpgmaas.github.io/deptry/"
+readme = "README.md"
+license = "MIT"
+packages = [
+    { include = "deptry" }
+]
+keywords = ["dependency", "poetry"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    # Remove 3.11 classifier once https://github.com/python-poetry/poetry-core/pull/477 is merged and released.
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+tomli = { version = "^2.0.1", python = "<3.11" }
+click = "^8.0.0"
+importlib-metadata = { version = "*", python = "<=3.7" }
+chardet = "^5.0.0"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.981"
+pre-commit = "^2.20.0"
+pytest = "^7.1.2"
+pytest-cov = "^4.0.0"
+types-chardet = "^5.0.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ["py37"]
+preview = true
+
+[tool.coverage.report]
+skip_empty = true
+
+[tool.coverage.run]
+branch = true
+source = ["deptry"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+files = ["deptry", "scripts"]
+disallow_any_unimported = true
+enable_error_code = [
+    "ignore-without-code",
+    "redundant-expr",
+    "truthy-bool",
+]
+strict = true
+warn_unreachable = true
+pretty = true
+show_error_codes = true
+
+# Ignore warnings for unused ignores because of https://github.com/python/mypy/issues/8823.
+# In some Python versions, we can end up with backport modules being untyped, while they are typed on others.
+[[tool.mypy.overrides]]
+module = [
+    "deptry.cli",
+    "deptry.dependency",
+    "deptry.module",
+]
+warn_unused_ignores = false
+
+[tool.deptry]
+exclude = [
+    "venv",
+    ".venv",
+    "docs",
+    "tests",
+    "scripts",
+]
+ignore_missing = ["tomllib"]
+
+[tool.poetry.scripts]
+deptry = "deptry.cli:deptry"
