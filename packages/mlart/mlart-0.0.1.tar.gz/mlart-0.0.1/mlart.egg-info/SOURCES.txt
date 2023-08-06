@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+aiart/__init__.py
+aiart/_modidx.py
+aiart/core.py
+mlart.egg-info/PKG-INFO
+mlart.egg-info/SOURCES.txt
+mlart.egg-info/dependency_links.txt
+mlart.egg-info/entry_points.txt
+mlart.egg-info/not-zip-safe
+mlart.egg-info/requires.txt
+mlart.egg-info/top_level.txt
