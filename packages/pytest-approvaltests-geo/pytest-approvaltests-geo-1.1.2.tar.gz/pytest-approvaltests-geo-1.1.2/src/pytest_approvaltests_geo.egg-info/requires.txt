@@ -1,0 +1,7 @@
+pytest
+approvaltests
+rioxarray
+xarray
+
+[test]
+pytest-cov
