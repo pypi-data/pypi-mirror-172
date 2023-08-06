@@ -1,0 +1,11 @@
+validators==0.20.0
+pythonql3==0.9.83
+pyaml==21.10.1
+rdflib==6.2.0
+requests>=2.20.0
+simplejson==3.17.6
+six>=1.11.0
+urllib3>=1.26.5
+webencodings==0.5.1
+werkzeug>=0.15.3
+PyLD>=2.0.3
