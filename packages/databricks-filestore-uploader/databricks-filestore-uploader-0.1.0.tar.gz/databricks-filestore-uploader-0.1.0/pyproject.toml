@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "databricks-filestore-uploader"
+version = "0.1.0"
+description = "A quick filetree uploader for the databricks filestore, local to cloud."
+authors = ["anthonybench <anthonybenchyep@gmail.com>"]
+license = "GNU GPL"
+readme = "README.md"
+packages = [{include = "databricks_filestore_uploader"}]
+repository = "https://github.com/anthonybench/databricks-filestore-uploader"
+keywords = ["databricks", "filestore", "convenienece"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
