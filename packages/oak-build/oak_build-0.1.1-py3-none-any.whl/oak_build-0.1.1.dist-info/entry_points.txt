@@ -1,0 +1,3 @@
+[console_scripts]
+oak=oak_build.main:main
+
