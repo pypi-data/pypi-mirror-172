@@ -1,0 +1,4 @@
+mypy
+typing-extensions>4.0.0
+vulture
+yarl

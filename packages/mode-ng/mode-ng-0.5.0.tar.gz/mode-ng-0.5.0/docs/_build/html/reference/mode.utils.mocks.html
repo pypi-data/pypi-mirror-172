@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>mode.utils.mocks &#8212; mode-ng 0.4.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="mode.utils.objects" href="mode.utils.objects.html" />
+    <link rel="prev" title="mode.utils.loops" href="mode.utils.loops.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="mode-utils-mocks">
+<h1><code class="docutils literal notranslate"><span class="pre">mode.utils.mocks</span></code><a class="headerlink" href="#mode-utils-mocks" title="Permalink to this heading">¶</a></h1>
+<span class="target" id="module-mode.utils.mocks"></span><p>Mocking and testing utilities.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.mocks.AsyncContextMock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">AsyncContextMock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.mocks.AsyncContextMock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mock for <code class="xref py py-class docutils literal notranslate"><span class="pre">typing.AsyncContextManager</span></code>.</p>
+<p>You can use this to mock asynchronous context managers,
+when an object with a fully defined <code class="docutils literal notranslate"><span class="pre">__aenter__</span></code> and <code class="docutils literal notranslate"><span class="pre">__aexit__</span></code>
+is required.</p>
+<p>Here’s an example mocking an <a href="#id1"><span class="problematic" id="id2">:pypi:`aiohttp`</span></a> client:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">http</span>
+<span class="kn">from</span> <span class="nn">aiohttp.client</span> <span class="kn">import</span> <span class="n">ClientSession</span>
+<span class="kn">from</span> <span class="nn">aiohttp.web</span> <span class="kn">import</span> <span class="n">Response</span>
+<span class="kn">from</span> <span class="nn">mode.utils.mocks</span> <span class="kn">import</span> <span class="n">AsyncContextManagerMock</span><span class="p">,</span> <span class="n">AsyncMock</span><span class="p">,</span> <span class="n">Mock</span>
+
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">session</span><span class="p">(</span><span class="n">monkeypatch</span><span class="p">):</span>
+    <span class="n">session</span> <span class="o">=</span> <span class="n">Mock</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;http_client&#39;</span><span class="p">,</span>
+        <span class="n">autospec</span><span class="o">=</span><span class="n">ClientSession</span><span class="p">,</span>
+        <span class="n">request</span><span class="o">=</span><span class="n">Mock</span><span class="p">(</span>
+            <span class="n">return_value</span><span class="o">=</span><span class="n">AsyncContextManagerMock</span><span class="p">(</span>
+                <span class="n">return_value</span><span class="o">=</span><span class="n">Mock</span><span class="p">(</span>
+                    <span class="n">autospec</span><span class="o">=</span><span class="n">Response</span><span class="p">,</span>
+                    <span class="n">status</span><span class="o">=</span><span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="o">.</span><span class="n">OK</span><span class="p">,</span>
+                    <span class="n">json</span><span class="o">=</span><span class="n">AsyncMock</span><span class="p">(</span>
+                        <span class="n">return_value</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;hello&#39;</span><span class="p">:</span> <span class="s1">&#39;json&#39;</span><span class="p">},</span>
+                    <span class="p">),</span>
+                <span class="p">),</span>
+            <span class="p">),</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+    <span class="n">monkeypatch</span><span class="o">.</span><span class="n">setattr</span><span class="p">(</span><span class="s1">&#39;where.is.ClientSession&#39;</span><span class="p">,</span> <span class="n">session</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">session</span>
+
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">asyncio</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">test_session</span><span class="p">(</span><span class="n">session</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">where.is</span> <span class="kn">import</span> <span class="n">ClientSession</span>
+    <span class="n">session</span> <span class="o">=</span> <span class="n">ClientSession</span><span class="p">()</span>
+    <span class="k">async</span> <span class="k">with</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://example.com&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
+        <span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="o">.</span><span class="n">OK</span>
+        <span class="k">assert</span> <span class="k">await</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;hello&#39;</span><span class="p">:</span> <span class="s1">&#39;json&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.mocks.AsyncMagicMock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">AsyncMagicMock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.mocks.AsyncMagicMock" title="Permalink to this definition">¶</a></dt>
+<dd><p>A magic mock type for <code class="docutils literal notranslate"><span class="pre">async</span> <span class="pre">def</span></code> functions/methods.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.mocks.AsyncMock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">AsyncMock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.mocks.AsyncMock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mock for <code class="docutils literal notranslate"><span class="pre">async</span> <span class="pre">def</span></code> function/method or anything awaitable.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.mocks.ContextMock">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">ContextMock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">_ContextMock</span></span></span><a class="headerlink" href="#mode.utils.mocks.ContextMock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mock that mocks <code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code> statement contexts.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.mocks.FutureMock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">FutureMock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.mocks.FutureMock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mock a <code class="xref py py-class docutils literal notranslate"><span class="pre">asyncio.Future</span></code>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="mode.utils.mocks.FutureMock.assert_awaited">
+<span class="sig-name descname"><span class="pre">assert_awaited</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#mode.utils.mocks.FutureMock.assert_awaited" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mode.utils.mocks.FutureMock.assert_not_awaited">
+<span class="sig-name descname"><span class="pre">assert_not_awaited</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#mode.utils.mocks.FutureMock.assert_not_awaited" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mode.utils.mocks.FutureMock.awaited">
+<span class="sig-name descname"><span class="pre">awaited</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#mode.utils.mocks.FutureMock.awaited" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.mocks.IN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">IN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">alternatives</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.mocks.IN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class used to check for multiple alternatives.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">foo</span><span class="o">.</span><span class="n">value</span> <span class="n">IN</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.mocks.MagicMock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">MagicMock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.mocks.MagicMock" title="Permalink to this definition">¶</a></dt>
+<dd><p>MagicMock is a subclass of Mock with default implementations
+of most of the magic methods. You can use MagicMock without having to
+configure the magic methods yourself.</p>
+<p>If you use the <cite>spec</cite> or <cite>spec_set</cite> arguments then <em>only</em> magic
+methods that exist in the spec will be created.</p>
+<p>Attributes and the return value of a <cite>MagicMock</cite> will also be <cite>MagicMocks</cite>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="mode.utils.mocks.MagicMock.mock_add_spec">
+<span class="sig-name descname"><span class="pre">mock_add_spec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">spec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_set</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.mocks.MagicMock.mock_add_spec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a spec to a mock. <cite>spec</cite> can either be an object or a
+list of strings. Only attributes on the <cite>spec</cite> can be fetched as
+attributes from the mock.</p>
+<p>If <cite>spec_set</cite> is True then only attributes on the spec can be set.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.mocks.Mock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">Mock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.mocks.Mock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mock object.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mode.utils.mocks.Mock.call_counts">
+<span class="sig-name descname"><span class="pre">call_counts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#mode.utils.mocks.Mock.call_counts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mode.utils.mocks.Mock.global_call_count">
+<span class="sig-name descname"><span class="pre">global_call_count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#mode.utils.mocks.Mock.global_call_count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mode.utils.mocks.Mock.reset_mock">
+<span class="sig-name descname"><span class="pre">reset_mock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#mode.utils.mocks.Mock.reset_mock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restore the mock object to its initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.mocks.mask_module">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">mask_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">modnames</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#mode.utils.mocks.mask_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ban some modules from being importable inside the context.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">mask_module</span><span class="p">(</span><span class="s1">&#39;sys&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="kn">import</span> <span class="nn">sys</span>
+<span class="gp">... </span>    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sys not found&#39;</span><span class="p">)</span>
+<span class="go">sys not found</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">sys</span>  <span class="c1"># noqa</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sys</span><span class="o">.</span><span class="n">version</span>
+<span class="go">(2, 5, 2, &#39;final&#39;, 0)</span>
+</pre></div>
+</div>
+<p>Taken from
+<a class="reference external" href="http://bitbucket.org/runeh/snippets/src/tip/missing_modules.py">http://bitbucket.org/runeh/snippets/src/tip/missing_modules.py</a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.mocks.patch">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">patch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">sentinel.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_set</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autospec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_callable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unsafe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.mocks.patch" title="Permalink to this definition">¶</a></dt>
+<dd><p><cite>patch</cite> acts as a function decorator, class decorator or a context
+manager. Inside the body of the function or with statement, the <cite>target</cite>
+is patched with a <cite>new</cite> object. When the function/with statement exits
+the patch is undone.</p>
+<p>If <cite>new</cite> is omitted, then the target is replaced with an
+<cite>AsyncMock if the patched object is an async function or a
+`MagicMock</cite> otherwise. If <cite>patch</cite> is used as a decorator and <cite>new</cite> is
+omitted, the created mock is passed in as an extra argument to the
+decorated function. If <cite>patch</cite> is used as a context manager the created
+mock is returned by the context manager.</p>
+<p><cite>target</cite> should be a string in the form <cite>‘package.module.ClassName’</cite>. The
+<cite>target</cite> is imported and the specified object replaced with the <cite>new</cite>
+object, so the <cite>target</cite> must be importable from the environment you are
+calling <cite>patch</cite> from. The target is imported when the decorated function
+is executed, not at decoration time.</p>
+<p>The <cite>spec</cite> and <cite>spec_set</cite> keyword arguments are passed to the <cite>MagicMock</cite>
+if patch is creating one for you.</p>
+<p>In addition you can pass <cite>spec=True</cite> or <cite>spec_set=True</cite>, which causes
+patch to pass in the object being mocked as the spec/spec_set object.</p>
+<p><cite>new_callable</cite> allows you to specify a different class, or callable object,
+that will be called to create the <cite>new</cite> object. By default <cite>AsyncMock</cite> is
+used for async functions and <cite>MagicMock</cite> for the rest.</p>
+<p>A more powerful form of <cite>spec</cite> is <cite>autospec</cite>. If you set <cite>autospec=True</cite>
+then the mock will be created with a spec from the object being replaced.
+All attributes of the mock will also have the spec of the corresponding
+attribute of the object being replaced. Methods and functions being
+mocked will have their arguments checked and will raise a <cite>TypeError</cite> if
+they are called with the wrong signature. For mocks replacing a class,
+their return value (the ‘instance’) will have the same spec as the class.</p>
+<p>Instead of <cite>autospec=True</cite> you can pass <cite>autospec=some_object</cite> to use an
+arbitrary object as the spec instead of the one being replaced.</p>
+<p>By default <cite>patch</cite> will fail to replace attributes that don’t exist. If
+you pass in <cite>create=True</cite>, and the attribute doesn’t exist, patch will
+create the attribute for you when the patched function is called, and
+delete it again afterwards. This is useful for writing tests against
+attributes that your production code creates at runtime. It is off by
+default because it can be dangerous. With it switched on you can write
+passing tests against APIs that don’t actually exist!</p>
+<p>Patch can be used as a <cite>TestCase</cite> class decorator. It works by
+decorating each test method in the class. This reduces the boilerplate
+code when your test methods share a common patchings set. <cite>patch</cite> finds
+tests by looking for method names that start with <cite>patch.TEST_PREFIX</cite>.
+By default this is <cite>test</cite>, which matches the way <cite>unittest</cite> finds tests.
+You can specify an alternative prefix by setting <cite>patch.TEST_PREFIX</cite>.</p>
+<p>Patch can be used as a context manager, with the with statement. Here the
+patching applies to the indented block after the with statement. If you
+use “as” then the patched object will be bound to the name after the
+“as”; very useful if <cite>patch</cite> is creating a mock object for you.</p>
+<p>Patch will raise a <cite>RuntimeError</cite> if passed some common misspellings of
+the arguments autospec and spec_set. Pass the argument <cite>unsafe</cite> with the
+value True to disable that check.</p>
+<p><cite>patch</cite> takes arbitrary keyword arguments. These will be passed to
+<cite>AsyncMock</cite> if the patched object is asynchronous, to <cite>MagicMock</cite>
+otherwise or to <cite>new_callable</cite> if specified.</p>
+<p><cite>patch.dict(…)</cite>, <cite>patch.multiple(…)</cite> and <cite>patch.object(…)</cite> are
+available for alternate use-cases.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.mocks.patch_module">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.mocks.</span></span><span class="sig-name descname"><span class="pre">patch_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*names:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_callable:</span> <span class="pre">~typing.Any</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'mode.utils.mocks.Mock'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#mode.utils.mocks.patch_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mock one or modules such that every attribute is a <a class="reference internal" href="#mode.utils.mocks.Mock" title="mode.utils.mocks.Mock"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mock</span></code></a>.</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="../index.html">mode-ng</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction to Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/index.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#mode">Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#typehints">Typehints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#event-loops">Event Loops</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#utils">Utils</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelong</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">API Reference</a><ul>
+      <li>Previous: <a href="mode.utils.loops.html" title="previous chapter"><code class="docutils literal notranslate"><span class="pre">mode.utils.loops</span></code></a></li>
+      <li>Next: <a href="mode.utils.objects.html" title="next chapter"><code class="docutils literal notranslate"><span class="pre">mode.utils.objects</span></code></a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Lanqing Huang.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/reference/mode.utils.mocks.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

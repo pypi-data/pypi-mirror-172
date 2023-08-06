@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>mode.utils.objects &#8212; mode-ng 0.4.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="mode.utils.queues" href="mode.utils.queues.html" />
+    <link rel="prev" title="mode.utils.mocks" href="mode.utils.mocks.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="mode-utils-objects">
+<h1><code class="docutils literal notranslate"><span class="pre">mode.utils.objects</span></code><a class="headerlink" href="#mode-utils-objects" title="Permalink to this heading">¶</a></h1>
+<span class="target" id="module-mode.utils.objects"></span><p>Object utilities.</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="mode.utils.objects.DefaultsMapping">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">DefaultsMapping</span></span><a class="headerlink" href="#mode.utils.objects.DefaultsMapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mapping of attribute name to attributes default value.</p>
+<p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">Mapping</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="mode.utils.objects.FieldMapping">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">FieldMapping</span></span><a class="headerlink" href="#mode.utils.objects.FieldMapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mapping of attribute name to attribute type.</p>
+<p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">Mapping</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code>]</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="mode.utils.objects.InvalidAnnotation">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">InvalidAnnotation</span></span><a class="headerlink" href="#mode.utils.objects.InvalidAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised by <code class="xref py py-func docutils literal notranslate"><span class="pre">annotations()</span></code> when encountering an invalid type.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.objects.KeywordReduce">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">KeywordReduce</span></span><a class="headerlink" href="#mode.utils.objects.KeywordReduce" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mixin class for objects that can be “pickled”.</p>
+<p>“Pickled” means the object can be serialiazed using the Python binary
+serializer – the <code class="xref py py-mod docutils literal notranslate"><span class="pre">pickle</span></code> module.</p>
+<p>Python objects are made pickleable through defining the <code class="docutils literal notranslate"><span class="pre">__reduce__</span></code>
+method, that returns a tuple of:
+<code class="docutils literal notranslate"><span class="pre">(restore_function,</span> <span class="pre">function_starargs)</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">X</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg1</span><span class="p">,</span> <span class="n">kw1</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">arg1</span> <span class="o">=</span> <span class="n">arg1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">kw1</span> <span class="o">=</span> <span class="n">kw1</span>
+
+    <span class="k">def</span> <span class="nf">__reduce__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Callable</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="o">...</span><span class="p">]]:</span>
+        <span class="k">return</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">arg1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">kw1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is <em>tedious</em> since this means you cannot accept <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> in the
+constructur, so what we do is define a <code class="docutils literal notranslate"><span class="pre">__reduce_keywords__</span></code>
+argument that returns a dict instead:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">X</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg1</span><span class="p">,</span> <span class="n">kw1</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">arg1</span> <span class="o">=</span> <span class="n">arg1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">kw1</span> <span class="o">=</span> <span class="n">kw1</span>
+
+    <span class="k">def</span> <span class="nf">__reduce_keywords__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;arg1&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">arg1</span><span class="p">,</span>
+            <span class="s1">&#39;kw1&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">kw1</span><span class="p">,</span>
+        <span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mode.utils.objects.Unordered">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">Unordered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">_T</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mode.utils.objects.Unordered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shield object from being ordered in heapq/<code class="docutils literal notranslate"><span class="pre">__le__</span></code>/etc.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.objects.canoname">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">canoname</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mode.utils.objects.canoname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get qualname of obj, trying to resolve the real name of <code class="docutils literal notranslate"><span class="pre">__main__</span></code>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.objects.canonshortname">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">canonshortname</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mode.utils.objects.canonshortname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get non-qualified name of obj, resolve real name of <code class="docutils literal notranslate"><span class="pre">__main__</span></code>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.objects.eval_type">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">eval_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">typ</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globalns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invalid_types</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">set</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias_types</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Mapping</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Type</span></span></span><a class="headerlink" href="#mode.utils.objects.eval_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert (possible) string annotation to actual type.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">eval_type</span><span class="p">(</span><span class="s1">&#39;List[int]&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="n">typing</span><span class="o">.</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.objects.guess_polymorphic_type">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">guess_polymorphic_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">typ:</span> <span class="pre">~typing.Type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set_types:</span> <span class="pre">tuple[typing.Type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">...]</span> <span class="pre">=</span> <span class="pre">(typing.AbstractSet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typing.FrozenSet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typing.MutableSet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;class</span> <span class="pre">'set'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;class</span> <span class="pre">'collections.abc.Set'&gt;)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_types:</span> <span class="pre">tuple[typing.Type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">...]</span> <span class="pre">=</span> <span class="pre">(&lt;class</span> <span class="pre">'list'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typing.Sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typing.MutableSequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;class</span> <span class="pre">'collections.abc.Sequence'&gt;)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tuple_types:</span> <span class="pre">tuple[typing.Type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">...]</span> <span class="pre">=</span> <span class="pre">(&lt;class</span> <span class="pre">'tuple'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dict_types:</span> <span class="pre">tuple[typing.Type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">...]</span> <span class="pre">=</span> <span class="pre">(&lt;class</span> <span class="pre">'dict'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typing.Mapping</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typing.MutableMapping</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;class</span> <span class="pre">'collections.abc.Mapping'&gt;)</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Type</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#mode.utils.objects.guess_polymorphic_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to find the polymorphic and concrete type of an abstract type.</p>
+<p>Returns tuple of <code class="docutils literal notranslate"><span class="pre">(polymorphic_type,</span> <span class="pre">concrete_type)</span></code>.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">guess_polymorphic_type</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span>
+<span class="go">(list, int)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">guess_polymorphic_type</span><span class="p">(</span><span class="n">Optional</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span>
+<span class="go">(list, int)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">guess_polymorphic_type</span><span class="p">(</span><span class="n">MutableMapping</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span>
+<span class="go">(dict, str)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.objects.iter_mro_reversed">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">iter_mro_reversed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">Type</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#mode.utils.objects.iter_mro_reversed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterate over superclasses, in reverse Method Resolution Order.</p>
+<p>The stop argument specifies a base class that when seen will
+stop iterating (well actually start, since this is in reverse, see Example
+for demonstration).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cls</strong> (<em>Type</em>) – Target class.</p></li>
+<li><p><strong>stop</strong> (<em>Type</em>) – A base class in which we stop iteration.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The last item produced will be the class itself (<cite>cls</cite>).</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">A</span><span class="p">:</span> <span class="o">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">A</span><span class="p">):</span> <span class="o">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">C</span><span class="p">(</span><span class="n">B</span><span class="p">):</span> <span class="o">...</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">iter_mro_reverse</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
+<span class="go">[A, B, C]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">iter_mro_reverse</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">A</span><span class="p">))</span>
+<span class="go">[B, C]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Yields<span class="colon">:</span></dt>
+<dd class="field-odd"><p><em>Iterable[Type]</em> – every class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.objects.label">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mode.utils.objects.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the name of an object as string.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.objects.qualname">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">qualname</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mode.utils.objects.qualname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get object qualified name.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.objects.shortlabel">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">shortlabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mode.utils.objects.shortlabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the shortened name of an object as string.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mode.utils.objects.shortname">
+<span class="sig-prename descclassname"><span class="pre">mode.utils.objects.</span></span><span class="sig-name descname"><span class="pre">shortname</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#mode.utils.objects.shortname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get object name (non-qualified).</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="../index.html">mode-ng</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction to Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/index.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#mode">Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#typehints">Typehints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#event-loops">Event Loops</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#utils">Utils</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelong</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">API Reference</a><ul>
+      <li>Previous: <a href="mode.utils.mocks.html" title="previous chapter"><code class="docutils literal notranslate"><span class="pre">mode.utils.mocks</span></code></a></li>
+      <li>Next: <a href="mode.utils.queues.html" title="next chapter"><code class="docutils literal notranslate"><span class="pre">mode.utils.queues</span></code></a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Lanqing Huang.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/reference/mode.utils.objects.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
