@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: navigator-api
+Version: 2.3.12
+Summary: Navigator Web Framework based on aiohttp, with batteries included.
+Home-page: https://github.com/phenobarbital/navigator
+Author: Jesus Lara
+Author-email: "Jesus Lara G." <jesuslarag@gmail.com>
+Project-URL: Source, https://github.com/phenobarbital/navigator
+Project-URL: Funding, https://paypal.me/phenobarbital
+Project-URL: Say Thanks!, https://saythanks.io/to/phenobarbital
+Keywords: framework,asyncio,uvloop,aiohttp,navigator
+Platform: POSIX
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python
+Classifier: Typing :: Typed
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE-BSD
+Requires-Dist: wheel (==0.37.1)
+Requires-Dist: Cython (==0.29.32)
+Requires-Dist: asyncio (==3.4.3)
+Requires-Dist: uvloop (==0.17.0)
+Requires-Dist: navconfig
+Requires-Dist: async-notify
+Requires-Dist: asyncdb[default]
+Requires-Dist: navigator-session (>=0.1.0)
+Requires-Dist: typing-extensions (>=4.3.0)
+Requires-Dist: aiofile (==3.7.4)
+Requires-Dist: sockjs (==0.11.0)
+Requires-Dist: PySocks (==1.7.1)
+Requires-Dist: aiodns (==3.0.0)
+Requires-Dist: asn1crypto (==1.4.0)
+Requires-Dist: aiohttp (==3.8.3)
+Requires-Dist: aiohttp-jrpc (==0.1.0)
+Requires-Dist: jinja2 (==3.1.2)
+Requires-Dist: aiohttp-jinja2 (==1.5)
+Requires-Dist: aiohttp-cors (==0.7.0)
+Requires-Dist: aiohttp-sse (==2.1.0)
+Requires-Dist: aiohttp-utils (==3.1.1)
+Requires-Dist: httptools (==0.5.0)
+Requires-Dist: aiosocks (==0.2.6)
+Requires-Dist: PyJWT (==2.4.0)
+Requires-Dist: pycryptodome (==3.15.0)
+Requires-Dist: rncryptor (==3.3.0)
+Requires-Dist: msal (==1.20.0)
+Requires-Dist: aiogoogle (==3.1.2)
+Requires-Dist: okta-jwt-verifier (==0.2.3)
+Requires-Dist: aiologstash (==2.0.0)
+Requires-Dist: aiohttp-debugtoolbar (==0.6.0)
+Requires-Dist: python-slugify (==6.1.1)
+Requires-Dist: platformdirs (==2.5.1)
+Provides-Extra: locale
+Requires-Dist: Babel (==2.9.1) ; extra == 'locale'
+Provides-Extra: memcache
+Requires-Dist: aiomcache (==0.7.0) ; extra == 'memcache'
+
+# Navigator (Framework)
+
+Navigator Framework (API) is a next-generation framework to build Asynchronous APIs.
+The main goal of Navigator is to provide data sources to Navigator-Next (FrontEnd Web App).
+
+## Quickstart ##
+
+(TODO for installation using pip)
+
+## Dependencies ##
+
+ * aiohttp (Asyncio Web Framework and Server)
+ * NavConfig (Configuration Management)
+ * AsyncDB (Database connections)
+
+### Getting Started ###
+
+* Installation
+* Configuration
+* Database configuration
+* How to run tests
+* Deployment instructions
+
+### Requirements ###
+
+* Python >= 3.8
+* asyncio (https://pypi.python.org/pypi/asyncio/)
+* aiohttp >= 3.8.0
+
+### Contribution guidelines ###
+
+Please have a look at the Contribution Guide
+
+* Writing tests
+* Code review
+* Other guidelines
+
+### Who do I talk to? ###
+
+* Repo owner or admin
+* Other community or team contact
+
+### License ###
+
+Navigator is licensed under BSD license.
