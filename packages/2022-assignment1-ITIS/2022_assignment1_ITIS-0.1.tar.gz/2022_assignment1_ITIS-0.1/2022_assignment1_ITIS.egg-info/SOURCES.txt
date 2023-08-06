@@ -1,0 +1,5 @@
+setup.py
+2022_assignment1_ITIS.egg-info/PKG-INFO
+2022_assignment1_ITIS.egg-info/SOURCES.txt
+2022_assignment1_ITIS.egg-info/dependency_links.txt
+2022_assignment1_ITIS.egg-info/top_level.txt
