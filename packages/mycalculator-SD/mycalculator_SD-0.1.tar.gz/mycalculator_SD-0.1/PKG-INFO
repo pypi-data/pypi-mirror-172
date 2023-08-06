@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mycalculator_SD
+Version: 0.1
+Summary: A useful calculator module
+Home-page: 
+Author: Serif Dogru
+Author-email: dogruserif12@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This lib can using for adding number, substracting number, multiple number or divide two number. it is very basic and very usefully. 
