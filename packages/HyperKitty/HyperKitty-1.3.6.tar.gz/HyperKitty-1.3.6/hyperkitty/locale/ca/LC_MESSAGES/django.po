@@ -1,0 +1,1311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-18 17:37+0000\n"
+"PO-Revision-Date: 2021-11-24 20:50+0000\n"
+"Last-Translator: Ecron <ecron_89@hotmail.com>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/gnu-mailman/"
+"hyperkitty/ca/>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.10-dev\n"
+
+#: forms.py:53
+msgid "Add a tag..."
+msgstr "Afegeix una etiqueta..."
+
+#: forms.py:55
+msgid "Add"
+msgstr "Afegeix"
+
+#: forms.py:56
+msgid "use commas to add multiple tags"
+msgstr "utilitzeu comes per a afegir més etiquetes"
+
+#: forms.py:64
+msgid "Attach a file"
+msgstr "Adjunta un fitxer"
+
+#: forms.py:65
+msgid "Attach another file"
+msgstr "Adjunta un altre fitxer"
+
+#: forms.py:66
+msgid "Remove this file"
+msgstr "Suprimeix aquest fitxer"
+
+#: templates/hyperkitty/404.html:28
+msgid "Error 404"
+msgstr "Error 404"
+
+#: templates/hyperkitty/404.html:30 templates/hyperkitty/500.html:31
+msgid "Oh No!"
+msgstr "Oh, no!"
+
+#: templates/hyperkitty/404.html:32
+msgid "I can't find this page."
+msgstr "No puc trobar aquesta pàgina."
+
+#: templates/hyperkitty/404.html:33 templates/hyperkitty/500.html:34
+msgid "Go back home"
+msgstr "Tornar a l'inici"
+
+#: templates/hyperkitty/500.html:29
+msgid "Error 500"
+msgstr "Error 500"
+
+#: templates/hyperkitty/500.html:33
+msgid "Sorry, but the requested page is unavailable due to a server hiccup."
+msgstr "El servidor ha tingut un problema i aquesta pàgina no està disponible."
+
+#: templates/hyperkitty/ajax/reattach_suggest.html:7
+#: templates/hyperkitty/reattach.html:25
+msgid "started"
+msgstr "iniciat"
+
+#: templates/hyperkitty/ajax/reattach_suggest.html:7
+#: templates/hyperkitty/reattach.html:25
+msgid "last active:"
+msgstr "última activitat:"
+
+#: templates/hyperkitty/ajax/reattach_suggest.html:8
+msgid "see this thread"
+msgstr "mostra aquest fil"
+
+#: templates/hyperkitty/ajax/reattach_suggest.html:12
+msgid "(no suggestions)"
+msgstr "(cap suggeriment)"
+
+#: templates/hyperkitty/ajax/temp_message.html:12
+msgid "Sent just now, not yet distributed"
+msgstr "Enviat ara mateix, encara no s'ha distribuït"
+
+#: templates/hyperkitty/api.html:5
+msgid "REST API"
+msgstr "API REST"
+
+#: templates/hyperkitty/api.html:7
+msgid ""
+"HyperKitty comes with a small REST API allowing you to programatically "
+"retrieve emails and information."
+msgstr ""
+"L'HyperKitty inclou una API REST que us permet recuperar missatges i "
+"informació mitjançant programació."
+
+#: templates/hyperkitty/api.html:10
+msgid "Formats"
+msgstr "Formats"
+
+#: templates/hyperkitty/api.html:12
+msgid ""
+"This REST API can return the information into several formats.  The default "
+"format is html to allow human readibility."
+msgstr ""
+"Aquesta API REST pot retornar la informació en diversos formats. El "
+"predefinit és html per permetre una lectura fàcil."
+
+#: templates/hyperkitty/api.html:14
+msgid ""
+"To change the format, just add <em>?format=&lt;FORMAT&gt;</em> to the URL."
+msgstr ""
+"Per canviar el format, només cal afegir <em>?format=&lt;FORMAT&gt;</em> a "
+"l’URL."
+
+#: templates/hyperkitty/api.html:16
+msgid "The list of available formats is:"
+msgstr "La llista de formats disponibles és:"
+
+#: templates/hyperkitty/api.html:20
+msgid "Plain text"
+msgstr "Text sense format"
+
+#: templates/hyperkitty/api.html:26
+msgid "List of mailing-lists"
+msgstr "Llista de llistes de correu"
+
+#: templates/hyperkitty/api.html:27 templates/hyperkitty/api.html:33
+#: templates/hyperkitty/api.html:39 templates/hyperkitty/api.html:45
+#: templates/hyperkitty/api.html:51
+msgid "Endpoint:"
+msgstr "Punt final:"
+
+#: templates/hyperkitty/api.html:29
+msgid ""
+"Using this address you will be able to retrieve the information known about "
+"all the mailing lists."
+msgstr ""
+"Amb aquesta adreça podreu recuperar la informació coneguda sobre totes les "
+"llistes de distribució."
+
+#: templates/hyperkitty/api.html:32
+msgid "Threads in a mailing list"
+msgstr "Fils en una llista de correu"
+
+#: templates/hyperkitty/api.html:35
+msgid ""
+"Using this address you will be able to retrieve information about all the "
+"threads on the specified mailing list."
+msgstr ""
+"Amb aquesta adreça podreu recuperar informació sobre tots els fils de la "
+"llista de correu especificada."
+
+#: templates/hyperkitty/api.html:38
+msgid "Emails in a thread"
+msgstr "Missatges de correu en un fil"
+
+#: templates/hyperkitty/api.html:41
+msgid ""
+"Using this address you will be able to retrieve the list of emails in a "
+"mailing list thread."
+msgstr ""
+"Amb aquesta adreça podreu recuperar la llista de correus en un fil de llista "
+"de correu."
+
+#: templates/hyperkitty/api.html:44
+msgid "An email in a mailing list"
+msgstr "Un missatge d'una llista de correu"
+
+#: templates/hyperkitty/api.html:47
+msgid ""
+"Using this address you will be able to retrieve the information known about "
+"a specific email on the specified mailing list."
+msgstr ""
+"Amb aquesta adreça podreu recuperar la informació que es coneix sobre un "
+"correu específic a la llista de correu especificada."
+
+#: templates/hyperkitty/api.html:50
+msgid "Tags"
+msgstr "Etiquetes"
+
+#: templates/hyperkitty/api.html:53
+msgid "Using this address you will be able to retrieve the list of tags."
+msgstr "Amb aquesta adreça podreu recuperar la llista d’etiquetes."
+
+#: templates/hyperkitty/base.html:57 templates/hyperkitty/base.html:112
+msgid "Account"
+msgstr "Compte"
+
+#: templates/hyperkitty/base.html:62 templates/hyperkitty/base.html:117
+msgid "Mailman settings"
+msgstr "Configuració del Mailman"
+
+#: templates/hyperkitty/base.html:67 templates/hyperkitty/base.html:122
+#: templates/hyperkitty/user_profile/base.html:17
+msgid "Posting activity"
+msgstr "Activitat d'enviaments"
+
+#: templates/hyperkitty/base.html:72 templates/hyperkitty/base.html:127
+msgid "Logout"
+msgstr "Surt"
+
+#: templates/hyperkitty/base.html:78 templates/hyperkitty/base.html:134
+msgid "Sign In"
+msgstr "Inicia la sessió"
+
+#: templates/hyperkitty/base.html:82 templates/hyperkitty/base.html:138
+msgid "Sign Up"
+msgstr "Registreu-vos"
+
+#: templates/hyperkitty/base.html:91
+msgid "Search this list"
+msgstr "Cerca en aquesta llista"
+
+#: templates/hyperkitty/base.html:91
+msgid "Search all lists"
+msgstr "Cerca en totes les llistes"
+
+#: templates/hyperkitty/base.html:149
+msgid "Manage this list"
+msgstr "Gestiona aquesta llista"
+
+#: templates/hyperkitty/base.html:154
+msgid "Manage lists"
+msgstr "Gestiona les llistes"
+
+#: templates/hyperkitty/base.html:192
+msgid "Keyboard Shortcuts"
+msgstr "Dreceres de teclat"
+
+#: templates/hyperkitty/base.html:195
+msgid "Thread View"
+msgstr "Vista de fil"
+
+#: templates/hyperkitty/base.html:197
+msgid "Next unread message"
+msgstr "Missatge per llegir següent"
+
+#: templates/hyperkitty/base.html:198
+msgid "Previous unread message"
+msgstr "Missatge per llegir anterior"
+
+#: templates/hyperkitty/base.html:199
+msgid "Jump to all threads"
+msgstr "Vés a tots els fils"
+
+#: templates/hyperkitty/base.html:200
+msgid "Jump to MailingList overview"
+msgstr "Vés a la visió general de llista"
+
+#: templates/hyperkitty/base.html:214
+msgid "Powered by"
+msgstr "Fa servir"
+
+#: templates/hyperkitty/base.html:214
+msgid "version"
+msgstr "versió"
+
+#: templates/hyperkitty/errors/notimplemented.html:7
+msgid "Not implemented yet"
+msgstr "Encara no implementat"
+
+#: templates/hyperkitty/errors/notimplemented.html:12
+msgid "Not implemented"
+msgstr "No implementat"
+
+#: templates/hyperkitty/errors/notimplemented.html:14
+msgid "This feature has not been implemented yet, sorry."
+msgstr "Aquesta característica encara no s'ha implementat."
+
+#: templates/hyperkitty/errors/private.html:7
+msgid "Error: private list"
+msgstr "Error: llista privada"
+
+#: templates/hyperkitty/errors/private.html:19
+msgid ""
+"This mailing list is private. You must be subscribed to view the archives."
+msgstr ""
+"Aquesta llista de correu és privada. Us heu de subscriure per a veure els "
+"arxius."
+
+#: templates/hyperkitty/fragments/like_form.html:16
+msgid "You like it (cancel)"
+msgstr "Us agrada (cancel·la)"
+
+#: templates/hyperkitty/fragments/like_form.html:24
+msgid "You dislike it (cancel)"
+msgstr "No us agrada (cancel·la)"
+
+#: templates/hyperkitty/fragments/like_form.html:27
+#: templates/hyperkitty/fragments/like_form.html:31
+msgid "You must be logged-in to vote."
+msgstr "Per a poder votar, heu d’iniciar sessió."
+
+#: templates/hyperkitty/fragments/month_list.html:6
+msgid "Threads by"
+msgstr "Fils de"
+
+#: templates/hyperkitty/fragments/month_list.html:6
+msgid " month"
+msgstr " mes"
+
+#: templates/hyperkitty/fragments/overview_threads.html:11
+msgid "New messages in this thread"
+msgstr "Missatges nous en aquest fil"
+
+#: templates/hyperkitty/fragments/overview_threads.html:36
+#: templates/hyperkitty/fragments/thread_left_nav.html:19
+#: templates/hyperkitty/overview.html:78
+msgid "All Threads"
+msgstr "Tots els fils"
+
+#: templates/hyperkitty/fragments/overview_top_posters.html:15
+msgid "See the profile"
+msgstr "Mostra el perfil"
+
+#: templates/hyperkitty/fragments/overview_top_posters.html:21
+msgid "posts"
+msgstr "publicacions"
+
+#: templates/hyperkitty/fragments/overview_top_posters.html:26
+msgid "No posters this month (yet)."
+msgstr "No hi ha enviaments aquest mes (encara)."
+
+#: templates/hyperkitty/fragments/send_as.html:5
+msgid "This message will be sent as:"
+msgstr "Aquest missatge s'enviarà com a:"
+
+#: templates/hyperkitty/fragments/send_as.html:6
+msgid "Change sender"
+msgstr "Canvia el remitent"
+
+#: templates/hyperkitty/fragments/send_as.html:16
+msgid "Link another address"
+msgstr "Enllaça una altra adreça"
+
+#: templates/hyperkitty/fragments/send_as.html:20
+msgid ""
+"If you aren't a current list member, sending this message will subscribe you."
+msgstr ""
+"Si no sou un membre de la llista, en enviar aquest missatge us hi "
+"subscriureu."
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:12
+msgid "List overview"
+msgstr "Visió general de llista"
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:29 views/message.py:74
+#: views/mlist.py:114 views/thread.py:191
+msgid "Download"
+msgstr "Baixa"
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:32
+msgid "Past 30 days"
+msgstr "Últims 30 dies"
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:33
+msgid "This month"
+msgstr "Aquest mes"
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:36
+msgid "Entire archive"
+msgstr "Arxiu sencer"
+
+#: templates/hyperkitty/index.html:9 templates/hyperkitty/index.html:63
+msgid "Available lists"
+msgstr "Llistes disponibles"
+
+#: templates/hyperkitty/index.html:22 templates/hyperkitty/index.html:27
+#: templates/hyperkitty/index.html:72
+msgid "Most popular"
+msgstr "Més populars"
+
+#: templates/hyperkitty/index.html:26
+msgid "Sort by number of recent participants"
+msgstr "Ordena pel nombre de participants recents"
+
+#: templates/hyperkitty/index.html:32 templates/hyperkitty/index.html:37
+#: templates/hyperkitty/index.html:75
+msgid "Most active"
+msgstr "Més actives"
+
+#: templates/hyperkitty/index.html:36
+msgid "Sort by number of recent discussions"
+msgstr "Ordena pel nombre de debats recents"
+
+#: templates/hyperkitty/index.html:42 templates/hyperkitty/index.html:47
+#: templates/hyperkitty/index.html:78
+msgid "By name"
+msgstr "Per nom"
+
+#: templates/hyperkitty/index.html:46
+msgid "Sort alphabetically"
+msgstr "Ordena alfabèticament"
+
+#: templates/hyperkitty/index.html:52 templates/hyperkitty/index.html:57
+#: templates/hyperkitty/index.html:81
+msgid "Newest"
+msgstr "Més noves"
+
+#: templates/hyperkitty/index.html:56
+msgid "Sort by list creation date"
+msgstr "Ordena per data de creació de la llista"
+
+#: templates/hyperkitty/index.html:68
+msgid "Sort by"
+msgstr "Ordena per"
+
+#: templates/hyperkitty/index.html:91
+msgid "Hide inactive"
+msgstr "Amaga les inactives"
+
+#: templates/hyperkitty/index.html:92
+msgid "Hide private"
+msgstr "Amaga les privades"
+
+#: templates/hyperkitty/index.html:99
+msgid "Find list"
+msgstr "Troba una llista"
+
+#: templates/hyperkitty/index.html:123 templates/hyperkitty/index.html:191
+#: templates/hyperkitty/user_profile/last_views.html:34
+#: templates/hyperkitty/user_profile/last_views.html:73
+msgid "new"
+msgstr "noves"
+
+#: templates/hyperkitty/index.html:135 templates/hyperkitty/index.html:202
+msgid "private"
+msgstr "privades"
+
+#: templates/hyperkitty/index.html:137 templates/hyperkitty/index.html:204
+msgid "inactive"
+msgstr "inactives"
+
+#: templates/hyperkitty/index.html:143 templates/hyperkitty/index.html:229
+#: templates/hyperkitty/overview.html:94 templates/hyperkitty/overview.html:111
+#: templates/hyperkitty/overview.html:181
+#: templates/hyperkitty/overview.html:188
+#: templates/hyperkitty/overview.html:195
+#: templates/hyperkitty/overview.html:204
+#: templates/hyperkitty/overview.html:212 templates/hyperkitty/reattach.html:39
+#: templates/hyperkitty/thread.html:111
+msgid "Loading..."
+msgstr "Carregant..."
+
+#: templates/hyperkitty/index.html:160 templates/hyperkitty/index.html:237
+msgid "No archived list yet."
+msgstr "Cap llista arxivada, encara."
+
+#: templates/hyperkitty/index.html:172
+#: templates/hyperkitty/user_profile/favorites.html:40
+#: templates/hyperkitty/user_profile/last_views.html:45
+#: templates/hyperkitty/user_profile/profile.html:15
+#: templates/hyperkitty/user_profile/subscriptions.html:41
+#: templates/hyperkitty/user_profile/votes.html:46
+msgid "List"
+msgstr "Llista"
+
+#: templates/hyperkitty/index.html:173
+msgid "Description"
+msgstr "Descripció"
+
+#: templates/hyperkitty/index.html:174
+msgid "Activity in the past 30 days"
+msgstr "Activitat en els últims 30 dies"
+
+#: templates/hyperkitty/index.html:218 templates/hyperkitty/overview.html:103
+#: templates/hyperkitty/thread_list.html:50
+#: templates/hyperkitty/threads/right_col.html:97
+#: templates/hyperkitty/threads/summary_thread_large.html:54
+msgid "participants"
+msgstr "participants"
+
+#: templates/hyperkitty/index.html:223 templates/hyperkitty/overview.html:104
+#: templates/hyperkitty/thread_list.html:55
+msgid "discussions"
+msgstr "debats"
+
+#: templates/hyperkitty/list_delete.html:7
+msgid "Delete MailingList"
+msgstr "Suprimeix la llista de correu"
+
+#: templates/hyperkitty/list_delete.html:20
+#, fuzzy
+#| msgid "Delete Mailing List"
+msgid "Delete Mailing List From HyperKitty"
+msgstr "Suprimeix la llista de correu"
+
+#: templates/hyperkitty/list_delete.html:26
+#, fuzzy
+#| msgid ""
+#| "will be deleted along with all the threads and messages. Do you want to "
+#| "continue?"
+msgid ""
+"will be deleted from HyperKitty along with all the threads and messages. It "
+"will not be deleted from Mailman Core. Do you want to continue?"
+msgstr "s'eliminarà juntament amb tots els fils i missatges. Voleu continuar?"
+
+#: templates/hyperkitty/list_delete.html:33
+#: templates/hyperkitty/message_delete.html:44
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: templates/hyperkitty/list_delete.html:34
+#: templates/hyperkitty/message_delete.html:45
+#: templates/hyperkitty/message_new.html:53
+#: templates/hyperkitty/messages/message.html:146
+msgid "or"
+msgstr "o"
+
+#: templates/hyperkitty/list_delete.html:36
+#: templates/hyperkitty/message_delete.html:45
+#: templates/hyperkitty/message_new.html:53
+#: templates/hyperkitty/messages/message.html:146
+#: templates/hyperkitty/user_profile/votes.html:36
+#: templates/hyperkitty/user_profile/votes.html:74
+msgid "cancel"
+msgstr "cancel·la"
+
+#: templates/hyperkitty/message.html:22
+msgid "thread"
+msgstr "fil"
+
+#: templates/hyperkitty/message_delete.html:7
+#: templates/hyperkitty/message_delete.html:20
+msgid "Delete message(s)"
+msgstr "Suprimeix missatge(s)"
+
+#: templates/hyperkitty/message_delete.html:25
+#, python-format
+msgid ""
+"\n"
+"        %(count)s message(s) will be deleted. Do you want to continue?\n"
+"        "
+msgstr ""
+"\n"
+"        S'eliminarà(n) %(count)s missatge(s). Voleu continuar?\n"
+"        "
+
+#: templates/hyperkitty/message_new.html:8
+#: templates/hyperkitty/message_new.html:21
+msgid "Create a new thread"
+msgstr "Crear un fil"
+
+#: templates/hyperkitty/message_new.html:22
+#: templates/hyperkitty/user_posts.html:22
+msgid "in"
+msgstr "en"
+
+#: templates/hyperkitty/message_new.html:52
+#: templates/hyperkitty/messages/message.html:145
+msgid "Send"
+msgstr "Envia"
+
+#: templates/hyperkitty/messages/message.html:18
+#, python-format
+msgid "See the profile for %(name)s"
+msgstr "Mostra el perfil de %(name)s"
+
+#: templates/hyperkitty/messages/message.html:28
+msgid "Unread"
+msgstr "Per llegir"
+
+#: templates/hyperkitty/messages/message.html:45
+msgid "Sender's time:"
+msgstr "Hora del remitent:"
+
+#: templates/hyperkitty/messages/message.html:51
+msgid "New subject:"
+msgstr "Assumpte nou:"
+
+#: templates/hyperkitty/messages/message.html:61
+msgid "Attachments:"
+msgstr "Fitxers adjunts:"
+
+#: templates/hyperkitty/messages/message.html:76
+msgid "Display in fixed font"
+msgstr "Visualització en tipus de lletra fixa"
+
+#: templates/hyperkitty/messages/message.html:79
+msgid "Permalink for this message"
+msgstr "Enllaç permanent per a aquest missatge"
+
+#: templates/hyperkitty/messages/message.html:90
+#: templates/hyperkitty/messages/message.html:96
+msgid "Reply"
+msgstr "Respon"
+
+#: templates/hyperkitty/messages/message.html:93
+msgid "Sign in to reply online"
+msgstr "Inicieu la sessió per a respondre en línia"
+
+#: templates/hyperkitty/messages/message.html:105
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "                %(email.attachments.count)s attachment\n"
+#| "                "
+#| msgid_plural ""
+#| "\n"
+#| "                %(email.attachments.count)s attachments\n"
+#| "                "
+msgid ""
+"\n"
+"                %(email.attachments_count)s attachment\n"
+"                "
+msgid_plural ""
+"\n"
+"                %(email.attachments_count)s attachments\n"
+"                "
+msgstr[0] ""
+"\n"
+"                %(email.attachments.count)s adjunt\n"
+"                "
+msgstr[1] ""
+"\n"
+"                %(email.attachments.count)s adjunts\n"
+"                "
+
+#: templates/hyperkitty/messages/message.html:131
+msgid "Quote"
+msgstr "Cita"
+
+#: templates/hyperkitty/messages/message.html:132
+msgid "Create new thread"
+msgstr "Crea un fil"
+
+#: templates/hyperkitty/messages/message.html:135
+msgid "Use email software"
+msgstr "Utilitza un programa de correu"
+
+#: templates/hyperkitty/messages/right_col.html:11
+msgid "Back to the thread"
+msgstr "Torna al fil"
+
+#: templates/hyperkitty/messages/right_col.html:18
+msgid "Back to the list"
+msgstr "Torna a la llista"
+
+#: templates/hyperkitty/messages/right_col.html:27
+msgid "Delete this message"
+msgstr "Suprimeix aquest missatge"
+
+#: templates/hyperkitty/messages/summary_message.html:23
+#, python-format
+msgid ""
+"\n"
+"                                by %(name)s\n"
+"                            "
+msgstr ""
+"\n"
+"                                per %(name)s\n"
+"                            "
+
+#: templates/hyperkitty/overview.html:38
+msgid "Home"
+msgstr "Inici"
+
+#: templates/hyperkitty/overview.html:41 templates/hyperkitty/thread.html:78
+msgid "Stats"
+msgstr "Estadístiques"
+
+#: templates/hyperkitty/overview.html:44
+msgid "Threads"
+msgstr "Fils"
+
+#: templates/hyperkitty/overview.html:50 templates/hyperkitty/overview.html:61
+#: templates/hyperkitty/thread_list.html:58
+msgid "You must be logged-in to create a thread."
+msgstr "Per a crear un fil, heu d’iniciar sessió."
+
+#: templates/hyperkitty/overview.html:50
+#, fuzzy
+#| msgid "new"
+msgid "New"
+msgstr "noves"
+
+#: templates/hyperkitty/overview.html:63
+#: templates/hyperkitty/thread_list.html:62
+msgid ""
+"<span class=\"d-none d-md-inline\">Start a n</span><span class=\"d-md-none"
+"\">N</span>ew thread"
+msgstr ""
+"<span class=\"d-none d-md-inline\">Inicia un</span><span class=\"d-md-none"
+"\">N</span>ou fil"
+
+#: templates/hyperkitty/overview.html:75
+msgid ""
+"<span class=\"d-none d-md-inline\">Manage s</span><span class=\"d-md-none"
+"\">S</span>ubscription"
+msgstr ""
+"<span class=\"d-none d-md-inline\">Gestiona la</span><span class=\"d-md-none"
+"\">S</span>ubscripció"
+
+#: templates/hyperkitty/overview.html:81
+msgid "Delete Archive"
+msgstr "Suprimeix l'arxiu"
+
+#: templates/hyperkitty/overview.html:91
+msgid "Activity Summary"
+msgstr "Resum d'activitat"
+
+#: templates/hyperkitty/overview.html:93
+msgid "Post volume over the past <strong>30</strong> days."
+msgstr "Volum d'enviaments durant els últims <strong>30</strong> dies."
+
+#: templates/hyperkitty/overview.html:98
+msgid "The following statistics are from"
+msgstr "Les estadístiques següents són de"
+
+#: templates/hyperkitty/overview.html:99
+msgid "In"
+msgstr "En"
+
+#: templates/hyperkitty/overview.html:100
+msgid "the past <strong>30</strong> days:"
+msgstr "els darrers <strong>30</strong> dies:"
+
+#: templates/hyperkitty/overview.html:109
+msgid "Most active posters"
+msgstr "Participants més actius"
+
+#: templates/hyperkitty/overview.html:118
+msgid "Prominent posters"
+msgstr "Participants destacats"
+
+#: templates/hyperkitty/overview.html:133
+msgid "kudos"
+msgstr "reconeixement"
+
+#: templates/hyperkitty/overview.html:152
+msgid "Recent"
+msgstr "Recent"
+
+#: templates/hyperkitty/overview.html:156
+msgid "Most Active"
+msgstr "Més actius"
+
+#: templates/hyperkitty/overview.html:160
+msgid "Most Popular"
+msgstr "Més populars"
+
+#: templates/hyperkitty/overview.html:166
+#: templates/hyperkitty/user_profile/base.html:22
+msgid "Favorites"
+msgstr "Favorits"
+
+#: templates/hyperkitty/overview.html:170
+msgid "Posted"
+msgstr "Publicat"
+
+#: templates/hyperkitty/overview.html:179
+msgid "Recently active discussions"
+msgstr "Debats actius recents"
+
+#: templates/hyperkitty/overview.html:186
+msgid "Most popular discussions"
+msgstr "Debats més populars"
+
+#: templates/hyperkitty/overview.html:193
+msgid "Most active discussions"
+msgstr "Debats més actius"
+
+#: templates/hyperkitty/overview.html:200
+msgid "Discussions You've Flagged"
+msgstr "Debats que heu marcat"
+
+#: templates/hyperkitty/overview.html:208
+msgid "Discussions You've Posted to"
+msgstr "Debats en què heu participat"
+
+#: templates/hyperkitty/reattach.html:9
+msgid "Reattach a thread"
+msgstr "Torna a adjuntar un fil"
+
+#: templates/hyperkitty/reattach.html:20
+msgid "Re-attach a thread to another"
+msgstr "Tornar a adjuntar un fil a un altre"
+
+#: templates/hyperkitty/reattach.html:22
+msgid "Thread to re-attach:"
+msgstr "Fil per tornar a adjuntar:"
+
+#: templates/hyperkitty/reattach.html:29
+msgid "Re-attach it to:"
+msgstr "Torna a adjuntar-lo a:"
+
+#: templates/hyperkitty/reattach.html:31
+msgid "Search for the parent thread"
+msgstr "Cercar el fil pare"
+
+#: templates/hyperkitty/reattach.html:32
+msgid "Search"
+msgstr "Cerca"
+
+#: templates/hyperkitty/reattach.html:44
+msgid "this thread ID:"
+msgstr "aquest ID de fil:"
+
+#: templates/hyperkitty/reattach.html:50
+msgid "Do it"
+msgstr "Fes-ho"
+
+#: templates/hyperkitty/reattach.html:50
+msgid "(there's no undoing!), or"
+msgstr "(no es pot desfer), o"
+
+#: templates/hyperkitty/reattach.html:52
+msgid "go back to the thread"
+msgstr "torna al fil"
+
+#: templates/hyperkitty/search_results.html:8
+msgid "Search results for"
+msgstr "Resultats de cerca per a"
+
+#: templates/hyperkitty/search_results.html:30
+msgid "search results"
+msgstr "resultats de la cerca"
+
+#: templates/hyperkitty/search_results.html:32
+msgid "Search results"
+msgstr "Resultats de la cerca"
+
+#: templates/hyperkitty/search_results.html:34
+msgid "for query"
+msgstr "per a la consulta"
+
+#: templates/hyperkitty/search_results.html:44
+#: templates/hyperkitty/user_posts.html:34
+msgid "messages"
+msgstr "missatges"
+
+#: templates/hyperkitty/search_results.html:57
+msgid "sort by score"
+msgstr "ordena per puntuació"
+
+#: templates/hyperkitty/search_results.html:60
+msgid "sort by latest first"
+msgstr "ordena per més recents"
+
+#: templates/hyperkitty/search_results.html:63
+msgid "sort by earliest first"
+msgstr "ordena per més antics"
+
+#: templates/hyperkitty/search_results.html:84
+msgid "Sorry no email could be found for this query."
+msgstr "No s'ha trobat cap missatge per a aquesta consulta."
+
+#: templates/hyperkitty/search_results.html:87
+msgid "Sorry but your query looks empty."
+msgstr "La vostra consulta sembla buida."
+
+#: templates/hyperkitty/search_results.html:88
+msgid "these are not the messages you are looking for"
+msgstr "aquests no són els missatges que esteu cercant"
+
+#: templates/hyperkitty/thread.html:30
+msgid "newer"
+msgstr "més recent"
+
+#: templates/hyperkitty/thread.html:44
+msgid "older"
+msgstr "més antic"
+
+#: templates/hyperkitty/thread.html:72
+msgid "First Post"
+msgstr "Primer Enviament"
+
+#: templates/hyperkitty/thread.html:75
+#: templates/hyperkitty/user_profile/favorites.html:45
+#: templates/hyperkitty/user_profile/last_views.html:50
+msgid "Replies"
+msgstr "Respostes"
+
+#: templates/hyperkitty/thread.html:97
+msgid "Show replies by thread"
+msgstr "Mostra respostes per fil"
+
+#: templates/hyperkitty/thread.html:100
+msgid "Show replies by date"
+msgstr "Mostra respostes per data"
+
+#: templates/hyperkitty/thread.html:113
+msgid "Visit here for a non-javascript version of this page."
+msgstr ""
+
+#: templates/hyperkitty/thread_list.html:70
+msgid "Sorry no email threads could be found"
+msgstr "No s'ha trobat cap fil de correu"
+
+#: templates/hyperkitty/threads/category.html:7
+msgid "Click to edit"
+msgstr "Feu clic per a editar"
+
+#: templates/hyperkitty/threads/category.html:9
+msgid "You must be logged-in to edit."
+msgstr "Heu d'iniciar sessió per a editar."
+
+#: templates/hyperkitty/threads/category.html:15
+msgid "no category"
+msgstr "sense categoria"
+
+#: templates/hyperkitty/threads/right_col.html:12
+msgid "Age (days ago)"
+msgstr ""
+
+#: templates/hyperkitty/threads/right_col.html:18
+#, fuzzy
+#| msgid "Last activity"
+msgid "Last active (days ago)"
+msgstr "Última activitat"
+
+#: templates/hyperkitty/threads/right_col.html:40
+#, python-format
+msgid "%(num_comments)s comments"
+msgstr "%(num_comments)s comentaris"
+
+#: templates/hyperkitty/threads/right_col.html:44
+#, fuzzy, python-format
+#| msgid "%(thread.participants_count)s participants"
+msgid "%(participants_count)s participants"
+msgstr "%(thread.participants_count)s participants"
+
+#: templates/hyperkitty/threads/right_col.html:49
+#, python-format
+msgid "%(unread_count)s unread <span class=\"hidden-sm\">messages</span>"
+msgstr "%(unread_count)s <span class=\"hidden-sm\">missatges</span> per llegir"
+
+#: templates/hyperkitty/threads/right_col.html:59
+msgid "You must be logged-in to have favorites."
+msgstr "Per a tenir preferits, heu d'iniciar sessió."
+
+#: templates/hyperkitty/threads/right_col.html:60
+msgid "Add to favorites"
+msgstr "Afegeix als preferits"
+
+#: templates/hyperkitty/threads/right_col.html:62
+msgid "Remove from favorites"
+msgstr "Suprimeix dels preferits"
+
+#: templates/hyperkitty/threads/right_col.html:71
+msgid "Reattach this thread"
+msgstr "Torna a adjuntar aquest fil"
+
+#: templates/hyperkitty/threads/right_col.html:75
+msgid "Delete this thread"
+msgstr "Suprimeix aquest fil"
+
+#: templates/hyperkitty/threads/right_col.html:113
+msgid "Unreads:"
+msgstr "Per llegir:"
+
+#: templates/hyperkitty/threads/right_col.html:115
+msgid "Go to:"
+msgstr "Vés a:"
+
+#: templates/hyperkitty/threads/right_col.html:115
+msgid "next"
+msgstr "següent"
+
+#: templates/hyperkitty/threads/right_col.html:116
+msgid "prev"
+msgstr "anterior"
+
+#: templates/hyperkitty/threads/summary_thread_large.html:21
+#: templates/hyperkitty/threads/summary_thread_large.html:23
+msgid "Favorite"
+msgstr "Preferit"
+
+#: templates/hyperkitty/threads/summary_thread_large.html:38
+msgid "Most recent thread activity"
+msgstr "Activitat de fil més recent"
+
+#: templates/hyperkitty/threads/summary_thread_large.html:59
+msgid "comments"
+msgstr "comentaris"
+
+#: templates/hyperkitty/threads/tags.html:3
+msgid "tags"
+msgstr "etiquetes"
+
+#: templates/hyperkitty/threads/tags.html:9
+msgid "Search for tag"
+msgstr "Cerca per l'etiqueta"
+
+#: templates/hyperkitty/threads/tags.html:15
+msgid "Remove"
+msgstr "Suprimeix"
+
+#: templates/hyperkitty/user_posts.html:8
+#: templates/hyperkitty/user_posts.html:21
+#: templates/hyperkitty/user_posts.html:25
+msgid "Messages by"
+msgstr "Missatges per"
+
+#: templates/hyperkitty/user_posts.html:38
+#, python-format
+msgid "Back to %(fullname)s's profile"
+msgstr "Torna al perfil de %(fullname)s"
+
+#: templates/hyperkitty/user_posts.html:48
+msgid "Sorry no email could be found by this user."
+msgstr "No s'ha trobat cap missatge d'aquest usuari."
+
+#: templates/hyperkitty/user_profile/base.html:5
+#: templates/hyperkitty/user_profile/base.html:12
+msgid "User posting activity"
+msgstr "Activitat d'enviament de l'usuari"
+
+#: templates/hyperkitty/user_profile/base.html:12
+#: templates/hyperkitty/user_public_profile.html:7
+#: templates/hyperkitty/user_public_profile.html:14
+msgid "for"
+msgstr "per"
+
+#: templates/hyperkitty/user_profile/base.html:26
+msgid "Threads you have read"
+msgstr "Fils que heu llegit"
+
+#: templates/hyperkitty/user_profile/base.html:30
+#: templates/hyperkitty/user_profile/profile.html:18
+#: templates/hyperkitty/user_profile/subscriptions.html:45
+msgid "Votes"
+msgstr "Vots"
+
+#: templates/hyperkitty/user_profile/base.html:34
+msgid "Subscriptions"
+msgstr "Subscripcions"
+
+#: templates/hyperkitty/user_profile/favorites.html:24
+#: templates/hyperkitty/user_profile/last_views.html:27
+#: templates/hyperkitty/user_profile/votes.html:23
+msgid "Original author:"
+msgstr "Autor original:"
+
+#: templates/hyperkitty/user_profile/favorites.html:26
+#: templates/hyperkitty/user_profile/last_views.html:29
+#: templates/hyperkitty/user_profile/votes.html:25
+msgid "Started on:"
+msgstr "Inici:"
+
+#: templates/hyperkitty/user_profile/favorites.html:28
+#: templates/hyperkitty/user_profile/last_views.html:31
+msgid "Last activity:"
+msgstr "Darrera activitat:"
+
+#: templates/hyperkitty/user_profile/favorites.html:30
+#: templates/hyperkitty/user_profile/last_views.html:33
+msgid "Replies:"
+msgstr "Respostes:"
+
+#: templates/hyperkitty/user_profile/favorites.html:41
+#: templates/hyperkitty/user_profile/last_views.html:46
+#: templates/hyperkitty/user_profile/profile.html:16
+#: templates/hyperkitty/user_profile/votes.html:47
+msgid "Subject"
+msgstr "Assumpte"
+
+#: templates/hyperkitty/user_profile/favorites.html:42
+#: templates/hyperkitty/user_profile/last_views.html:47
+#: templates/hyperkitty/user_profile/votes.html:48
+msgid "Original author"
+msgstr "Autor original"
+
+#: templates/hyperkitty/user_profile/favorites.html:43
+#: templates/hyperkitty/user_profile/last_views.html:48
+#: templates/hyperkitty/user_profile/votes.html:49
+msgid "Start date"
+msgstr "Data d'inici"
+
+#: templates/hyperkitty/user_profile/favorites.html:44
+#: templates/hyperkitty/user_profile/last_views.html:49
+msgid "Last activity"
+msgstr "Última activitat"
+
+#: templates/hyperkitty/user_profile/favorites.html:71
+msgid "No favorites yet."
+msgstr "Cap preferit, encara."
+
+#: templates/hyperkitty/user_profile/last_views.html:22
+#: templates/hyperkitty/user_profile/last_views.html:59
+msgid "New comments"
+msgstr "Comentaris nous"
+
+#: templates/hyperkitty/user_profile/last_views.html:82
+msgid "Nothing read yet."
+msgstr "Res llegit, encara."
+
+#: templates/hyperkitty/user_profile/profile.html:9
+msgid "Last posts"
+msgstr "Últims enviaments"
+
+#: templates/hyperkitty/user_profile/profile.html:17
+msgid "Date"
+msgstr "Data"
+
+#: templates/hyperkitty/user_profile/profile.html:19
+msgid "Thread"
+msgstr "Fil"
+
+#: templates/hyperkitty/user_profile/profile.html:20
+msgid "Last thread activity"
+msgstr "Última activitat del fil"
+
+#: templates/hyperkitty/user_profile/profile.html:49
+msgid "No posts yet."
+msgstr "Encara no hi ha cap enviament."
+
+#: templates/hyperkitty/user_profile/subscriptions.html:24
+msgid "since first post"
+msgstr "des del primer enviament"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:26
+#: templates/hyperkitty/user_profile/subscriptions.html:63
+msgid "post"
+msgstr "enviament"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:31
+#: templates/hyperkitty/user_profile/subscriptions.html:69
+msgid "no post yet"
+msgstr "encara no hi ha cap enviament"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:42
+msgid "Time since the first activity"
+msgstr "Temps des de la primera activitat"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:43
+msgid "First post"
+msgstr "Primer enviament"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:44
+msgid "Posts to this list"
+msgstr "Enviaments en aquesta llista"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:76
+msgid "no subscriptions"
+msgstr "no hi ha cap subscripció"
+
+#: templates/hyperkitty/user_profile/votes.html:32
+#: templates/hyperkitty/user_profile/votes.html:70
+msgid "You like it"
+msgstr "Us agrada"
+
+#: templates/hyperkitty/user_profile/votes.html:34
+#: templates/hyperkitty/user_profile/votes.html:72
+msgid "You dislike it"
+msgstr "No us agrada"
+
+#: templates/hyperkitty/user_profile/votes.html:50
+msgid "Vote"
+msgstr "Vota"
+
+#: templates/hyperkitty/user_profile/votes.html:83
+msgid "No vote yet."
+msgstr "Cap vot, encara."
+
+#: templates/hyperkitty/user_public_profile.html:7
+msgid "User Profile"
+msgstr "Perfil d'usuari"
+
+#: templates/hyperkitty/user_public_profile.html:14
+msgid "User profile"
+msgstr "Perfil d'usuari"
+
+#: templates/hyperkitty/user_public_profile.html:23
+msgid "Name:"
+msgstr "Nom:"
+
+#: templates/hyperkitty/user_public_profile.html:28
+msgid "Creation:"
+msgstr "Creació:"
+
+#: templates/hyperkitty/user_public_profile.html:33
+msgid "Votes for this user:"
+msgstr "Vots per a aquest usuari:"
+
+#: templates/hyperkitty/user_public_profile.html:41
+msgid "Email addresses:"
+msgstr "Adreces de correu:"
+
+#: views/message.py:75
+msgid "This message in gzipped mbox format"
+msgstr "Aquest missatge en format mbox comprimit amb gzip"
+
+#: views/message.py:201
+msgid "Your reply has been sent and is being processed."
+msgstr "La vostra resposta s'ha enviat i s'està processant."
+
+#: views/message.py:205
+msgid ""
+"\n"
+"  You have been subscribed to {} list."
+msgstr ""
+"\n"
+"  Us heu subscrit a la llista {}."
+
+#: views/message.py:288
+#, python-format
+msgid "Could not delete message %(msg_id_hash)s: %(error)s"
+msgstr "No s'ha pogut suprimir el missatge %(msg_id_hash)s: %(error)s"
+
+#: views/message.py:297
+#, python-format
+msgid "Successfully deleted %(count)s messages."
+msgstr "S'han suprimit %(count)s missatges correctament."
+
+#: views/mlist.py:88
+#, fuzzy
+#| msgid "Delete MailingList"
+msgid "for this MailingList"
+msgstr "Suprimeix la llista de correu"
+
+#: views/mlist.py:100
+msgid "for this month"
+msgstr "per a aquest mes"
+
+#: views/mlist.py:103
+msgid "for this day"
+msgstr "per a aquest dia"
+
+#: views/mlist.py:115
+msgid "This month in gzipped mbox format"
+msgstr "Aquest mes en format mbox comprimit amb gzip"
+
+#: views/mlist.py:250 views/mlist.py:274
+msgid "No discussions this month (yet)."
+msgstr "No hi ha debats aquest mes (encara)."
+
+#: views/mlist.py:262
+msgid "No vote has been cast this month (yet)."
+msgstr "No s'ha emès cap vot aquest mes (encara)."
+
+#: views/mlist.py:291
+msgid "You have not flagged any discussions (yet)."
+msgstr "No heu marcat cap debat (encara)."
+
+#: views/mlist.py:314
+msgid "You have not posted to this list (yet)."
+msgstr "No heu publicat a aquesta llista (encara)."
+
+#: views/mlist.py:407
+msgid "You must be a staff member to delete a MailingList"
+msgstr "Heu de ser membre de l'equip per a suprimir una llista de correu"
+
+#: views/mlist.py:421
+msgid "Successfully deleted {}"
+msgstr "S'ha suprimit correctament {}"
+
+#: views/search.py:115
+#, python-format
+msgid "Parsing error: %(error)s"
+msgstr "Error de processament: %(error)s"
+
+#: views/thread.py:192
+msgid "This thread in gzipped mbox format"
+msgstr "Aquest fil en format mbox comprimit amb gzip"
+
+#~ msgid "days inactive"
+#~ msgstr "dies inactiu"
+
+#~ msgid "days old"
+#~ msgstr "dies d'antiguitat"
+
+#~ msgid ""
+#~ "\n"
+#~ "                    by %(name)s\n"
+#~ "                    "
+#~ msgstr ""
+#~ "\n"
+#~ "                    per %(name)s\n"
+#~ "                    "
+
+#~ msgid "unread"
+#~ msgstr "no llegits"
+
+#~ msgid "Go to"
+#~ msgstr "Anar a"
+
+#~ msgid "More..."
+#~ msgstr "Més..."
+
+#~ msgid "Discussions"
+#~ msgstr "Debats"
+
+#~ msgid "most recent"
+#~ msgstr "més recents"
+
+#~ msgid "most popular"
+#~ msgstr "més populars"
+
+#~ msgid "most active"
+#~ msgstr "més actius"
+
+#~ msgid "Update"
+#~ msgstr "Actualitzar"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                        by %(name)s\n"
+#~ "                                    "
+#~ msgstr ""
+#~ "\n"
+#~ "                                        per %(name)s\n"
+#~ "                                    "

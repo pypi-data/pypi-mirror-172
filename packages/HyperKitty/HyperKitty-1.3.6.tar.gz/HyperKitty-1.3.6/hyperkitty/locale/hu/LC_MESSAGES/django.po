@@ -1,0 +1,1265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-18 17:37+0000\n"
+"PO-Revision-Date: 2022-06-29 09:21+0000\n"
+"Last-Translator: Peter Donka <peter.donka@gmail.com>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/gnu-mailman/"
+"hyperkitty/hu/>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13.1-dev\n"
+
+#: forms.py:53
+msgid "Add a tag..."
+msgstr "Címke hozzáadása..."
+
+#: forms.py:55
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: forms.py:56
+msgid "use commas to add multiple tags"
+msgstr "használjon vesszőt több címke hozzáadásához"
+
+#: forms.py:64
+msgid "Attach a file"
+msgstr "Fájl csatolása"
+
+#: forms.py:65
+msgid "Attach another file"
+msgstr "Másik fájl csatolása"
+
+#: forms.py:66
+msgid "Remove this file"
+msgstr "A fájl eltávolítása"
+
+#: templates/hyperkitty/404.html:28
+msgid "Error 404"
+msgstr "404-es hiba"
+
+#: templates/hyperkitty/404.html:30 templates/hyperkitty/500.html:31
+msgid "Oh No!"
+msgstr "Óh ne!"
+
+#: templates/hyperkitty/404.html:32
+msgid "I can't find this page."
+msgstr "Nem találom ezt az oldalt."
+
+#: templates/hyperkitty/404.html:33 templates/hyperkitty/500.html:34
+msgid "Go back home"
+msgstr "Vissza a főlapra"
+
+#: templates/hyperkitty/500.html:29
+msgid "Error 500"
+msgstr "500-as hiba"
+
+#: templates/hyperkitty/500.html:33
+msgid "Sorry, but the requested page is unavailable due to a server hiccup."
+msgstr "Sajnáljuk, de a kért oldal nem érhető el kiszolgáló hiba miatt."
+
+#: templates/hyperkitty/ajax/reattach_suggest.html:7
+#: templates/hyperkitty/reattach.html:25
+msgid "started"
+msgstr "megkezdődött"
+
+#: templates/hyperkitty/ajax/reattach_suggest.html:7
+#: templates/hyperkitty/reattach.html:25
+msgid "last active:"
+msgstr "utoljára aktív:"
+
+#: templates/hyperkitty/ajax/reattach_suggest.html:8
+msgid "see this thread"
+msgstr "lásd ezt a témát"
+
+#: templates/hyperkitty/ajax/reattach_suggest.html:12
+msgid "(no suggestions)"
+msgstr "(nincs javaslat)"
+
+#: templates/hyperkitty/ajax/temp_message.html:12
+msgid "Sent just now, not yet distributed"
+msgstr "Most elküldve, még nem terjesztve"
+
+#: templates/hyperkitty/api.html:5
+msgid "REST API"
+msgstr "REST API"
+
+#: templates/hyperkitty/api.html:7
+msgid ""
+"HyperKitty comes with a small REST API allowing you to programatically "
+"retrieve emails and information."
+msgstr ""
+"A HyperKitty egy kis REST API-val rendelkezik, amely lehetővé teszi az e-"
+"mailek és információk programozott lekérését."
+
+#: templates/hyperkitty/api.html:10
+msgid "Formats"
+msgstr "Formátumok"
+
+#: templates/hyperkitty/api.html:12
+msgid ""
+"This REST API can return the information into several formats.  The default "
+"format is html to allow human readibility."
+msgstr ""
+"Ez a REST API több formátumban képes visszaadni az információkat. Az "
+"alapértelmezett formátum a html, amely lehetővé teszi az emberi "
+"olvashatóságot."
+
+#: templates/hyperkitty/api.html:14
+msgid ""
+"To change the format, just add <em>?format=&lt;FORMAT&gt;</em> to the URL."
+msgstr ""
+"A formátum módosításához egyszerűen adja hozzá a <em>?format=&lt;FORMAT&gt;</"
+"em> értéket az URL-címhez."
+
+#: templates/hyperkitty/api.html:16
+msgid "The list of available formats is:"
+msgstr "Az elérhető formátumok listája:"
+
+#: templates/hyperkitty/api.html:20
+msgid "Plain text"
+msgstr "Egyszerű szöveg"
+
+#: templates/hyperkitty/api.html:26
+msgid "List of mailing-lists"
+msgstr "Összes lista megjelenítése"
+
+#: templates/hyperkitty/api.html:27 templates/hyperkitty/api.html:33
+#: templates/hyperkitty/api.html:39 templates/hyperkitty/api.html:45
+#: templates/hyperkitty/api.html:51
+msgid "Endpoint:"
+msgstr "Végpont:"
+
+#: templates/hyperkitty/api.html:29
+msgid ""
+"Using this address you will be able to retrieve the information known about "
+"all the mailing lists."
+msgstr ""
+"E cím használatával megszerezheti az összes levelezőlistáról ismert "
+"információt."
+
+#: templates/hyperkitty/api.html:32
+msgid "Threads in a mailing list"
+msgstr "Témák a levelezési listában"
+
+#: templates/hyperkitty/api.html:35
+msgid ""
+"Using this address you will be able to retrieve information about all the "
+"threads on the specified mailing list."
+msgstr ""
+"Ezzel a címmel információkat szerezhet a megadott levelezőlistán szereplő "
+"összes témáról."
+
+#: templates/hyperkitty/api.html:38
+msgid "Emails in a thread"
+msgstr "E-mailek egy témában"
+
+#: templates/hyperkitty/api.html:41
+msgid ""
+"Using this address you will be able to retrieve the list of emails in a "
+"mailing list thread."
+msgstr ""
+"Ennek a címnek a használatával lekérheti az e-mailek listáját egy "
+"levelezőlista témájában."
+
+#: templates/hyperkitty/api.html:44
+msgid "An email in a mailing list"
+msgstr "E-mail a levelezőlistán"
+
+#: templates/hyperkitty/api.html:47
+msgid ""
+"Using this address you will be able to retrieve the information known about "
+"a specific email on the specified mailing list."
+msgstr ""
+"Ennek a címnek a használatával lehívhatja a megadott levelezőlistán szereplő "
+"e-mailről ismert információkat."
+
+#: templates/hyperkitty/api.html:50
+msgid "Tags"
+msgstr "Címkék"
+
+#: templates/hyperkitty/api.html:53
+msgid "Using this address you will be able to retrieve the list of tags."
+msgstr "Ezen cím használatával lekérheti a címkék listáját."
+
+#: templates/hyperkitty/base.html:57 templates/hyperkitty/base.html:112
+msgid "Account"
+msgstr "Fiók"
+
+#: templates/hyperkitty/base.html:62 templates/hyperkitty/base.html:117
+msgid "Mailman settings"
+msgstr "Mailman beállítások"
+
+#: templates/hyperkitty/base.html:67 templates/hyperkitty/base.html:122
+#: templates/hyperkitty/user_profile/base.html:17
+msgid "Posting activity"
+msgstr "Feladási tevékenység"
+
+#: templates/hyperkitty/base.html:72 templates/hyperkitty/base.html:127
+msgid "Logout"
+msgstr "Kijelentkezés"
+
+#: templates/hyperkitty/base.html:78 templates/hyperkitty/base.html:134
+msgid "Sign In"
+msgstr "Bejelentkezés"
+
+#: templates/hyperkitty/base.html:82 templates/hyperkitty/base.html:138
+msgid "Sign Up"
+msgstr "Regisztráció"
+
+#: templates/hyperkitty/base.html:91
+msgid "Search this list"
+msgstr "Keresés ebben a listában"
+
+#: templates/hyperkitty/base.html:91
+msgid "Search all lists"
+msgstr "Keresés az összes listában"
+
+#: templates/hyperkitty/base.html:149
+msgid "Manage this list"
+msgstr "A lista kezelése"
+
+#: templates/hyperkitty/base.html:154
+msgid "Manage lists"
+msgstr "Listák kezelése"
+
+#: templates/hyperkitty/base.html:192
+msgid "Keyboard Shortcuts"
+msgstr "Billentyűparancsok"
+
+#: templates/hyperkitty/base.html:195
+msgid "Thread View"
+msgstr "Témanézet"
+
+#: templates/hyperkitty/base.html:197
+msgid "Next unread message"
+msgstr "Következő olvasatlan üzenet"
+
+#: templates/hyperkitty/base.html:198
+msgid "Previous unread message"
+msgstr "Előző olvasatlan üzenet"
+
+#: templates/hyperkitty/base.html:199
+msgid "Jump to all threads"
+msgstr "Ugorjon az összes témára"
+
+#: templates/hyperkitty/base.html:200
+msgid "Jump to MailingList overview"
+msgstr "Ugrás a MailingList áttekintésére"
+
+#: templates/hyperkitty/base.html:214
+msgid "Powered by"
+msgstr "Üzemelteti"
+
+#: templates/hyperkitty/base.html:214
+msgid "version"
+msgstr "verzió"
+
+#: templates/hyperkitty/errors/notimplemented.html:7
+msgid "Not implemented yet"
+msgstr "Még nincs megvalósítva"
+
+#: templates/hyperkitty/errors/notimplemented.html:12
+msgid "Not implemented"
+msgstr "Nincs megvalósítva"
+
+#: templates/hyperkitty/errors/notimplemented.html:14
+msgid "This feature has not been implemented yet, sorry."
+msgstr "Sajnálom, ez a funkció még nincs megvalósítva."
+
+#: templates/hyperkitty/errors/private.html:7
+msgid "Error: private list"
+msgstr "Hiba: privát lista"
+
+#: templates/hyperkitty/errors/private.html:19
+msgid ""
+"This mailing list is private. You must be subscribed to view the archives."
+msgstr ""
+"Ez a levelezőlista privát. Az archívumok megtekintéséhez fel kell iratkoznia."
+
+#: templates/hyperkitty/fragments/like_form.html:16
+msgid "You like it (cancel)"
+msgstr "Tetszik (mégse)"
+
+#: templates/hyperkitty/fragments/like_form.html:24
+msgid "You dislike it (cancel)"
+msgstr "Nem tetszik (mégse)"
+
+#: templates/hyperkitty/fragments/like_form.html:27
+#: templates/hyperkitty/fragments/like_form.html:31
+msgid "You must be logged-in to vote."
+msgstr "A szavazáshoz be kell jelentkeznie."
+
+#: templates/hyperkitty/fragments/month_list.html:6
+msgid "Threads by"
+msgstr "Témák"
+
+#: templates/hyperkitty/fragments/month_list.html:6
+msgid " month"
+msgstr " hónap"
+
+#: templates/hyperkitty/fragments/overview_threads.html:11
+msgid "New messages in this thread"
+msgstr "Új üzenetek ebben a témában"
+
+#: templates/hyperkitty/fragments/overview_threads.html:36
+#: templates/hyperkitty/fragments/thread_left_nav.html:19
+#: templates/hyperkitty/overview.html:78
+msgid "All Threads"
+msgstr "Minden téma"
+
+#: templates/hyperkitty/fragments/overview_top_posters.html:15
+msgid "See the profile"
+msgstr "A profil megtekintése"
+
+#: templates/hyperkitty/fragments/overview_top_posters.html:21
+msgid "posts"
+msgstr "hozzászólások"
+
+#: templates/hyperkitty/fragments/overview_top_posters.html:26
+msgid "No posters this month (yet)."
+msgstr "Ebben a hónapban (még) nincsenek hozzászólók."
+
+#: templates/hyperkitty/fragments/send_as.html:5
+msgid "This message will be sent as:"
+msgstr "Ezt az üzenetet a következőképpen küldjük el:"
+
+#: templates/hyperkitty/fragments/send_as.html:6
+msgid "Change sender"
+msgstr "Feladó módosítása"
+
+#: templates/hyperkitty/fragments/send_as.html:16
+msgid "Link another address"
+msgstr "Más cím kapcsolása"
+
+#: templates/hyperkitty/fragments/send_as.html:20
+msgid ""
+"If you aren't a current list member, sending this message will subscribe you."
+msgstr ""
+"Ha még nem tagja a listának, akkor ennek az üzenetnek a küldésével "
+"feliratkozik."
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:12
+msgid "List overview"
+msgstr "A lista áttekintése"
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:29 views/message.py:74
+#: views/mlist.py:114 views/thread.py:191
+msgid "Download"
+msgstr "Letöltés"
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:32
+msgid "Past 30 days"
+msgstr "Az elmúlt 30 napban"
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:33
+msgid "This month"
+msgstr "Ebben a hónapban"
+
+#: templates/hyperkitty/fragments/thread_left_nav.html:36
+msgid "Entire archive"
+msgstr "Teljes archívum"
+
+#: templates/hyperkitty/index.html:9 templates/hyperkitty/index.html:63
+msgid "Available lists"
+msgstr "Elérhető listák"
+
+#: templates/hyperkitty/index.html:22 templates/hyperkitty/index.html:27
+#: templates/hyperkitty/index.html:72
+msgid "Most popular"
+msgstr "Legnépszerűbb"
+
+#: templates/hyperkitty/index.html:26
+msgid "Sort by number of recent participants"
+msgstr "Rendezés a legutóbbi résztvevők száma szerint"
+
+#: templates/hyperkitty/index.html:32 templates/hyperkitty/index.html:37
+#: templates/hyperkitty/index.html:75
+msgid "Most active"
+msgstr "Legaktívabbak"
+
+#: templates/hyperkitty/index.html:36
+msgid "Sort by number of recent discussions"
+msgstr "Rendezés a legutóbbi megbeszélések száma szerint"
+
+#: templates/hyperkitty/index.html:42 templates/hyperkitty/index.html:47
+#: templates/hyperkitty/index.html:78
+msgid "By name"
+msgstr "Név szerint"
+
+#: templates/hyperkitty/index.html:46
+msgid "Sort alphabetically"
+msgstr "Rendezés betűrendben"
+
+#: templates/hyperkitty/index.html:52 templates/hyperkitty/index.html:57
+#: templates/hyperkitty/index.html:81
+msgid "Newest"
+msgstr "Legújabb"
+
+#: templates/hyperkitty/index.html:56
+msgid "Sort by list creation date"
+msgstr "Rendezés a lista létrehozásának dátuma szerint"
+
+#: templates/hyperkitty/index.html:68
+msgid "Sort by"
+msgstr "Sorrend"
+
+#: templates/hyperkitty/index.html:91
+msgid "Hide inactive"
+msgstr "Inaktív elrejtése"
+
+#: templates/hyperkitty/index.html:92
+msgid "Hide private"
+msgstr "Privát elrejtése"
+
+#: templates/hyperkitty/index.html:99
+msgid "Find list"
+msgstr "Lista keresése"
+
+#: templates/hyperkitty/index.html:123 templates/hyperkitty/index.html:191
+#: templates/hyperkitty/user_profile/last_views.html:34
+#: templates/hyperkitty/user_profile/last_views.html:73
+msgid "new"
+msgstr "új"
+
+#: templates/hyperkitty/index.html:135 templates/hyperkitty/index.html:202
+msgid "private"
+msgstr "magán"
+
+#: templates/hyperkitty/index.html:137 templates/hyperkitty/index.html:204
+msgid "inactive"
+msgstr "inaktív"
+
+#: templates/hyperkitty/index.html:143 templates/hyperkitty/index.html:229
+#: templates/hyperkitty/overview.html:94 templates/hyperkitty/overview.html:111
+#: templates/hyperkitty/overview.html:181
+#: templates/hyperkitty/overview.html:188
+#: templates/hyperkitty/overview.html:195
+#: templates/hyperkitty/overview.html:204
+#: templates/hyperkitty/overview.html:212 templates/hyperkitty/reattach.html:39
+#: templates/hyperkitty/thread.html:111
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#: templates/hyperkitty/index.html:160 templates/hyperkitty/index.html:237
+msgid "No archived list yet."
+msgstr "Még nincs archivált lista."
+
+#: templates/hyperkitty/index.html:172
+#: templates/hyperkitty/user_profile/favorites.html:40
+#: templates/hyperkitty/user_profile/last_views.html:45
+#: templates/hyperkitty/user_profile/profile.html:15
+#: templates/hyperkitty/user_profile/subscriptions.html:41
+#: templates/hyperkitty/user_profile/votes.html:46
+msgid "List"
+msgstr "Lista"
+
+#: templates/hyperkitty/index.html:173
+msgid "Description"
+msgstr "Leírás"
+
+#: templates/hyperkitty/index.html:174
+msgid "Activity in the past 30 days"
+msgstr "Tevékenység az elmúlt 30 napban"
+
+#: templates/hyperkitty/index.html:218 templates/hyperkitty/overview.html:103
+#: templates/hyperkitty/thread_list.html:50
+#: templates/hyperkitty/threads/right_col.html:97
+#: templates/hyperkitty/threads/summary_thread_large.html:54
+msgid "participants"
+msgstr "résztvevők"
+
+#: templates/hyperkitty/index.html:223 templates/hyperkitty/overview.html:104
+#: templates/hyperkitty/thread_list.html:55
+msgid "discussions"
+msgstr "megbeszélések"
+
+#: templates/hyperkitty/list_delete.html:7
+msgid "Delete MailingList"
+msgstr "Levelezési lista törlése"
+
+#: templates/hyperkitty/list_delete.html:20
+msgid "Delete Mailing List From HyperKitty"
+msgstr "Lista archívum törlése"
+
+#: templates/hyperkitty/list_delete.html:26
+msgid ""
+"will be deleted from HyperKitty along with all the threads and messages. It "
+"will not be deleted from Mailman Core. Do you want to continue?"
+msgstr ""
+"az összes hozzászólással és üzenettel együtt törlődik az archívumból. A "
+"lista maga nem törlődik. Folytatja?"
+
+#: templates/hyperkitty/list_delete.html:33
+#: templates/hyperkitty/message_delete.html:44
+msgid "Delete"
+msgstr "Törlés"
+
+#: templates/hyperkitty/list_delete.html:34
+#: templates/hyperkitty/message_delete.html:45
+#: templates/hyperkitty/message_new.html:53
+#: templates/hyperkitty/messages/message.html:146
+msgid "or"
+msgstr "vagy"
+
+#: templates/hyperkitty/list_delete.html:36
+#: templates/hyperkitty/message_delete.html:45
+#: templates/hyperkitty/message_new.html:53
+#: templates/hyperkitty/messages/message.html:146
+#: templates/hyperkitty/user_profile/votes.html:36
+#: templates/hyperkitty/user_profile/votes.html:74
+msgid "cancel"
+msgstr "mégsem"
+
+#: templates/hyperkitty/message.html:22
+msgid "thread"
+msgstr "téma"
+
+#: templates/hyperkitty/message_delete.html:7
+#: templates/hyperkitty/message_delete.html:20
+msgid "Delete message(s)"
+msgstr "Üzenet(ek) törlése"
+
+#: templates/hyperkitty/message_delete.html:25
+#, python-format
+msgid ""
+"\n"
+"        %(count)s message(s) will be deleted. Do you want to continue?\n"
+"        "
+msgstr ""
+"\n"
+"        %(count)s üzenet törlésre kerül. Akarod folytatni?\n"
+"        "
+
+#: templates/hyperkitty/message_new.html:8
+#: templates/hyperkitty/message_new.html:21
+msgid "Create a new thread"
+msgstr "Új téma létrehozása"
+
+#: templates/hyperkitty/message_new.html:22
+#: templates/hyperkitty/user_posts.html:22
+msgid "in"
+msgstr "ban/ben"
+
+#: templates/hyperkitty/message_new.html:52
+#: templates/hyperkitty/messages/message.html:145
+msgid "Send"
+msgstr "Küld"
+
+#: templates/hyperkitty/messages/message.html:18
+#, python-format
+msgid "See the profile for %(name)s"
+msgstr "Lásd a profilt %(name)s"
+
+#: templates/hyperkitty/messages/message.html:28
+msgid "Unread"
+msgstr "Olvasatlan"
+
+#: templates/hyperkitty/messages/message.html:45
+msgid "Sender's time:"
+msgstr "Feladás ideje:"
+
+#: templates/hyperkitty/messages/message.html:51
+msgid "New subject:"
+msgstr "Új tárgy:"
+
+#: templates/hyperkitty/messages/message.html:61
+msgid "Attachments:"
+msgstr "Mellékletek:"
+
+#: templates/hyperkitty/messages/message.html:76
+msgid "Display in fixed font"
+msgstr "Megjelenítés fix betűtípusban"
+
+#: templates/hyperkitty/messages/message.html:79
+msgid "Permalink for this message"
+msgstr "Permalink ehhez az üzenethez"
+
+#: templates/hyperkitty/messages/message.html:90
+#: templates/hyperkitty/messages/message.html:96
+msgid "Reply"
+msgstr "Válasz"
+
+#: templates/hyperkitty/messages/message.html:93
+msgid "Sign in to reply online"
+msgstr "Bejelentkezés az online válaszhoz"
+
+#: templates/hyperkitty/messages/message.html:105
+#, python-format
+msgid ""
+"\n"
+"                %(email.attachments_count)s attachment\n"
+"                "
+msgid_plural ""
+"\n"
+"                %(email.attachments_count)s attachments\n"
+"                "
+msgstr[0] ""
+"\n"
+"                %(email.attachments_count)s melléklet\n"
+"                "
+msgstr[1] ""
+"\n"
+"                %(email.attachments_count)s mellékletek\n"
+"                "
+
+#: templates/hyperkitty/messages/message.html:131
+msgid "Quote"
+msgstr "Idézet"
+
+#: templates/hyperkitty/messages/message.html:132
+msgid "Create new thread"
+msgstr "Új téma létrehozása"
+
+#: templates/hyperkitty/messages/message.html:135
+msgid "Use email software"
+msgstr "Levelezőszoftver használata"
+
+#: templates/hyperkitty/messages/right_col.html:11
+msgid "Back to the thread"
+msgstr "Vissza a témához"
+
+#: templates/hyperkitty/messages/right_col.html:18
+msgid "Back to the list"
+msgstr "Vissza a listához"
+
+#: templates/hyperkitty/messages/right_col.html:27
+msgid "Delete this message"
+msgstr "Az üzenet törlése"
+
+#: templates/hyperkitty/messages/summary_message.html:23
+#, python-format
+msgid ""
+"\n"
+"                                by %(name)s\n"
+"                            "
+msgstr ""
+"\n"
+"                                által %(name)s\n"
+"                            "
+
+#: templates/hyperkitty/overview.html:38
+msgid "Home"
+msgstr "Főlap"
+
+#: templates/hyperkitty/overview.html:41 templates/hyperkitty/thread.html:78
+msgid "Stats"
+msgstr "Statisztika"
+
+#: templates/hyperkitty/overview.html:44
+msgid "Threads"
+msgstr "Témák"
+
+#: templates/hyperkitty/overview.html:50 templates/hyperkitty/overview.html:61
+#: templates/hyperkitty/thread_list.html:58
+msgid "You must be logged-in to create a thread."
+msgstr "Téma létrehozásához be kell jelentkeznie."
+
+#: templates/hyperkitty/overview.html:50
+msgid "New"
+msgstr "Új"
+
+#: templates/hyperkitty/overview.html:63
+#: templates/hyperkitty/thread_list.html:62
+msgid ""
+"<span class=\"d-none d-md-inline\">Start a n</span><span class=\"d-md-none"
+"\">N</span>ew thread"
+msgstr ""
+"<span class=\"d-none d-md-inline\">Indítson egy ú</span><span class=\"d-md-"
+"none\">Ú</span>j témát"
+
+#: templates/hyperkitty/overview.html:75
+msgid ""
+"<span class=\"d-none d-md-inline\">Manage s</span><span class=\"d-md-none"
+"\">S</span>ubscription"
+msgstr ""
+"<span class=\"d-none d-md-inline\">Kezelje a f</span><span class=\"d-md-none"
+"\">F</span>eliratkozást"
+
+#: templates/hyperkitty/overview.html:81
+msgid "Delete Archive"
+msgstr "Archívum törlése"
+
+#: templates/hyperkitty/overview.html:91
+msgid "Activity Summary"
+msgstr "Tevékenység összefoglaló"
+
+#: templates/hyperkitty/overview.html:93
+msgid "Post volume over the past <strong>30</strong> days."
+msgstr "Bejegyzések az elmúlt <strong>30</strong> napban."
+
+#: templates/hyperkitty/overview.html:98
+msgid "The following statistics are from"
+msgstr "A következő statisztikák a következőből"
+
+#: templates/hyperkitty/overview.html:99
+msgid "In"
+msgstr "A(z)"
+
+#: templates/hyperkitty/overview.html:100
+msgid "the past <strong>30</strong> days:"
+msgstr "az elmúlt <strong>30</strong> nap:"
+
+#: templates/hyperkitty/overview.html:109
+msgid "Most active posters"
+msgstr "A legaktívabb beküldők"
+
+#: templates/hyperkitty/overview.html:118
+msgid "Prominent posters"
+msgstr "Kiemelkedő beküldők"
+
+#: templates/hyperkitty/overview.html:133
+msgid "kudos"
+msgstr "dicsőség"
+
+#: templates/hyperkitty/overview.html:152
+msgid "Recent"
+msgstr "Legutóbbi"
+
+#: templates/hyperkitty/overview.html:156
+msgid "Most Active"
+msgstr "Legaktívabbak"
+
+#: templates/hyperkitty/overview.html:160
+msgid "Most Popular"
+msgstr "Legnépszerűbb"
+
+#: templates/hyperkitty/overview.html:166
+#: templates/hyperkitty/user_profile/base.html:22
+msgid "Favorites"
+msgstr "Kedvencek"
+
+#: templates/hyperkitty/overview.html:170
+msgid "Posted"
+msgstr "Közzétéve"
+
+#: templates/hyperkitty/overview.html:179
+msgid "Recently active discussions"
+msgstr "Legutóbb aktív beszélgetések"
+
+#: templates/hyperkitty/overview.html:186
+msgid "Most popular discussions"
+msgstr "Legnépszerűbb beszélgetések"
+
+#: templates/hyperkitty/overview.html:193
+msgid "Most active discussions"
+msgstr "Legaktívabb beszélgetések"
+
+#: templates/hyperkitty/overview.html:200
+msgid "Discussions You've Flagged"
+msgstr "Megjelölt beszélgetések"
+
+#: templates/hyperkitty/overview.html:208
+msgid "Discussions You've Posted to"
+msgstr "Beszélgetések, amelyekhez írt"
+
+#: templates/hyperkitty/reattach.html:9
+msgid "Reattach a thread"
+msgstr "Téma visszacsatolása"
+
+#: templates/hyperkitty/reattach.html:20
+msgid "Re-attach a thread to another"
+msgstr "Téma újracsatolása egy másikhoz"
+
+#: templates/hyperkitty/reattach.html:22
+msgid "Thread to re-attach:"
+msgstr "Újracsatolandó téma:"
+
+#: templates/hyperkitty/reattach.html:29
+msgid "Re-attach it to:"
+msgstr "Újracsatolás a következőhöz:"
+
+#: templates/hyperkitty/reattach.html:31
+msgid "Search for the parent thread"
+msgstr "Keresés a szülő témában"
+
+#: templates/hyperkitty/reattach.html:32
+msgid "Search"
+msgstr "Keresés"
+
+#: templates/hyperkitty/reattach.html:44
+msgid "this thread ID:"
+msgstr "a téma azonosító ID-je:"
+
+#: templates/hyperkitty/reattach.html:50
+msgid "Do it"
+msgstr "Csináld"
+
+#: templates/hyperkitty/reattach.html:50
+msgid "(there's no undoing!), or"
+msgstr "(nincs visszavonás!), vagy"
+
+#: templates/hyperkitty/reattach.html:52
+msgid "go back to the thread"
+msgstr "vissza a témához"
+
+#: templates/hyperkitty/search_results.html:8
+msgid "Search results for"
+msgstr "Keresési eredmények"
+
+#: templates/hyperkitty/search_results.html:30
+msgid "search results"
+msgstr "keresési eredmények"
+
+#: templates/hyperkitty/search_results.html:32
+msgid "Search results"
+msgstr "Keresési eredmények"
+
+#: templates/hyperkitty/search_results.html:34
+msgid "for query"
+msgstr "lekérdezéshez"
+
+#: templates/hyperkitty/search_results.html:44
+#: templates/hyperkitty/user_posts.html:34
+msgid "messages"
+msgstr "üzenetek"
+
+#: templates/hyperkitty/search_results.html:57
+msgid "sort by score"
+msgstr "rendezés pontszám szerint"
+
+#: templates/hyperkitty/search_results.html:60
+msgid "sort by latest first"
+msgstr "rendezés a legújabb szerint"
+
+#: templates/hyperkitty/search_results.html:63
+msgid "sort by earliest first"
+msgstr "rendezés a legkorábbi szerint"
+
+#: templates/hyperkitty/search_results.html:84
+msgid "Sorry no email could be found for this query."
+msgstr "Sajnos nem található e-mail erre a lekérdezésre."
+
+#: templates/hyperkitty/search_results.html:87
+msgid "Sorry but your query looks empty."
+msgstr "Sajnáljuk, de a lekérdezés üresnek tűnik."
+
+#: templates/hyperkitty/search_results.html:88
+msgid "these are not the messages you are looking for"
+msgstr "nem ezeket az üzeneteket keresi"
+
+#: templates/hyperkitty/thread.html:30
+msgid "newer"
+msgstr "újabb"
+
+#: templates/hyperkitty/thread.html:44
+msgid "older"
+msgstr "régebbi"
+
+#: templates/hyperkitty/thread.html:72
+msgid "First Post"
+msgstr "Első poszt"
+
+#: templates/hyperkitty/thread.html:75
+#: templates/hyperkitty/user_profile/favorites.html:45
+#: templates/hyperkitty/user_profile/last_views.html:50
+msgid "Replies"
+msgstr "Válaszok"
+
+#: templates/hyperkitty/thread.html:97
+msgid "Show replies by thread"
+msgstr "Válaszok megjelenítése témánként"
+
+#: templates/hyperkitty/thread.html:100
+msgid "Show replies by date"
+msgstr "Válaszok megjelenítése dátum szerint"
+
+#: templates/hyperkitty/thread.html:113
+msgid "Visit here for a non-javascript version of this page."
+msgstr "Látogasson el ide az oldal nem-javascriptes verziójához."
+
+#: templates/hyperkitty/thread_list.html:70
+msgid "Sorry no email threads could be found"
+msgstr "Sajnos nem található e-mail téma"
+
+#: templates/hyperkitty/threads/category.html:7
+msgid "Click to edit"
+msgstr "Kattintson a szerkesztéshez"
+
+#: templates/hyperkitty/threads/category.html:9
+msgid "You must be logged-in to edit."
+msgstr "A szerkesztéshez be kell jelentkeznie."
+
+#: templates/hyperkitty/threads/category.html:15
+msgid "no category"
+msgstr "nincs kategória"
+
+#: templates/hyperkitty/threads/right_col.html:12
+msgid "Age (days ago)"
+msgstr "Kor (napokkal ezelőtt)"
+
+#: templates/hyperkitty/threads/right_col.html:18
+msgid "Last active (days ago)"
+msgstr "Utoljára aktív (napokkal ezelőtt)"
+
+#: templates/hyperkitty/threads/right_col.html:40
+#, python-format
+msgid "%(num_comments)s comments"
+msgstr "%(num_comments)s megjegyzés"
+
+#: templates/hyperkitty/threads/right_col.html:44
+#, python-format
+msgid "%(participants_count)s participants"
+msgstr "%(participants_count)s résztvevő"
+
+#: templates/hyperkitty/threads/right_col.html:49
+#, python-format
+msgid "%(unread_count)s unread <span class=\"hidden-sm\">messages</span>"
+msgstr "%(unread_count)s olvasatlan <span class=\"hidden-sm\">üzenetek</span>"
+
+#: templates/hyperkitty/threads/right_col.html:59
+msgid "You must be logged-in to have favorites."
+msgstr "A kedvencekhez be kell jelentkeznie."
+
+#: templates/hyperkitty/threads/right_col.html:60
+msgid "Add to favorites"
+msgstr "Hozzáadás a kedvencekhez"
+
+#: templates/hyperkitty/threads/right_col.html:62
+msgid "Remove from favorites"
+msgstr "Eltávolítás a kedvencekből"
+
+#: templates/hyperkitty/threads/right_col.html:71
+msgid "Reattach this thread"
+msgstr "Téma visszacsatolása"
+
+#: templates/hyperkitty/threads/right_col.html:75
+msgid "Delete this thread"
+msgstr "A téma törlése"
+
+#: templates/hyperkitty/threads/right_col.html:113
+msgid "Unreads:"
+msgstr "Olvasatlanok:"
+
+#: templates/hyperkitty/threads/right_col.html:115
+msgid "Go to:"
+msgstr "Menj:"
+
+#: templates/hyperkitty/threads/right_col.html:115
+msgid "next"
+msgstr "következő"
+
+#: templates/hyperkitty/threads/right_col.html:116
+msgid "prev"
+msgstr "előző"
+
+#: templates/hyperkitty/threads/summary_thread_large.html:21
+#: templates/hyperkitty/threads/summary_thread_large.html:23
+msgid "Favorite"
+msgstr "Kedvenc"
+
+#: templates/hyperkitty/threads/summary_thread_large.html:38
+msgid "Most recent thread activity"
+msgstr "Legutóbbi tématevékenység"
+
+#: templates/hyperkitty/threads/summary_thread_large.html:59
+msgid "comments"
+msgstr "hozzászólások"
+
+#: templates/hyperkitty/threads/tags.html:3
+msgid "tags"
+msgstr "címkék"
+
+#: templates/hyperkitty/threads/tags.html:9
+msgid "Search for tag"
+msgstr "Címke keresése"
+
+#: templates/hyperkitty/threads/tags.html:15
+msgid "Remove"
+msgstr "Töröl"
+
+#: templates/hyperkitty/user_posts.html:8
+#: templates/hyperkitty/user_posts.html:21
+#: templates/hyperkitty/user_posts.html:25
+msgid "Messages by"
+msgstr "Üzenetek"
+
+#: templates/hyperkitty/user_posts.html:38
+#, python-format
+msgid "Back to %(fullname)s's profile"
+msgstr "Vissza %(fullname)s profiljához"
+
+#: templates/hyperkitty/user_posts.html:48
+msgid "Sorry no email could be found by this user."
+msgstr "Sajnos nem található e-mail erre a felhasználóra."
+
+#: templates/hyperkitty/user_profile/base.html:5
+#: templates/hyperkitty/user_profile/base.html:12
+msgid "User posting activity"
+msgstr "Felhasználói beküldési tevékenység"
+
+#: templates/hyperkitty/user_profile/base.html:12
+#: templates/hyperkitty/user_public_profile.html:7
+#: templates/hyperkitty/user_public_profile.html:14
+msgid "for"
+msgstr "a következőnek"
+
+#: templates/hyperkitty/user_profile/base.html:26
+msgid "Threads you have read"
+msgstr "Témák amelyeket elolvastál"
+
+#: templates/hyperkitty/user_profile/base.html:30
+#: templates/hyperkitty/user_profile/profile.html:18
+#: templates/hyperkitty/user_profile/subscriptions.html:45
+msgid "Votes"
+msgstr "Szavazások"
+
+#: templates/hyperkitty/user_profile/base.html:34
+msgid "Subscriptions"
+msgstr "Feliratkozások"
+
+#: templates/hyperkitty/user_profile/favorites.html:24
+#: templates/hyperkitty/user_profile/last_views.html:27
+#: templates/hyperkitty/user_profile/votes.html:23
+msgid "Original author:"
+msgstr "Eredeti szerző:"
+
+#: templates/hyperkitty/user_profile/favorites.html:26
+#: templates/hyperkitty/user_profile/last_views.html:29
+#: templates/hyperkitty/user_profile/votes.html:25
+msgid "Started on:"
+msgstr "Kezdés:"
+
+#: templates/hyperkitty/user_profile/favorites.html:28
+#: templates/hyperkitty/user_profile/last_views.html:31
+msgid "Last activity:"
+msgstr "Utolsó tevékenység:"
+
+#: templates/hyperkitty/user_profile/favorites.html:30
+#: templates/hyperkitty/user_profile/last_views.html:33
+msgid "Replies:"
+msgstr "Válaszok:"
+
+#: templates/hyperkitty/user_profile/favorites.html:41
+#: templates/hyperkitty/user_profile/last_views.html:46
+#: templates/hyperkitty/user_profile/profile.html:16
+#: templates/hyperkitty/user_profile/votes.html:47
+msgid "Subject"
+msgstr "Tárgy"
+
+#: templates/hyperkitty/user_profile/favorites.html:42
+#: templates/hyperkitty/user_profile/last_views.html:47
+#: templates/hyperkitty/user_profile/votes.html:48
+msgid "Original author"
+msgstr "Eredeti szerző"
+
+#: templates/hyperkitty/user_profile/favorites.html:43
+#: templates/hyperkitty/user_profile/last_views.html:48
+#: templates/hyperkitty/user_profile/votes.html:49
+msgid "Start date"
+msgstr "Kezdő dátum"
+
+#: templates/hyperkitty/user_profile/favorites.html:44
+#: templates/hyperkitty/user_profile/last_views.html:49
+msgid "Last activity"
+msgstr "Utolsó tevékenység"
+
+#: templates/hyperkitty/user_profile/favorites.html:71
+msgid "No favorites yet."
+msgstr "Még nincsenek kedvencek."
+
+#: templates/hyperkitty/user_profile/last_views.html:22
+#: templates/hyperkitty/user_profile/last_views.html:59
+msgid "New comments"
+msgstr "Új megjegyzések"
+
+#: templates/hyperkitty/user_profile/last_views.html:82
+msgid "Nothing read yet."
+msgstr "Még semmi sem olvasható."
+
+#: templates/hyperkitty/user_profile/profile.html:9
+msgid "Last posts"
+msgstr "Utolsó hozzászólások"
+
+#: templates/hyperkitty/user_profile/profile.html:17
+msgid "Date"
+msgstr "Dátum"
+
+#: templates/hyperkitty/user_profile/profile.html:19
+msgid "Thread"
+msgstr "Témák"
+
+#: templates/hyperkitty/user_profile/profile.html:20
+msgid "Last thread activity"
+msgstr "Utolsó tématevékenység"
+
+#: templates/hyperkitty/user_profile/profile.html:49
+msgid "No posts yet."
+msgstr "Még nincsenek hozzászólások."
+
+#: templates/hyperkitty/user_profile/subscriptions.html:24
+msgid "since first post"
+msgstr "az első hozzászólás óta"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:26
+#: templates/hyperkitty/user_profile/subscriptions.html:63
+msgid "post"
+msgstr "hozzászólás"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:31
+#: templates/hyperkitty/user_profile/subscriptions.html:69
+msgid "no post yet"
+msgstr "még nincsenek hozzászólások"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:42
+msgid "Time since the first activity"
+msgstr "Az első tevékenység óta eltelt idő"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:43
+msgid "First post"
+msgstr "Első poszt"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:44
+msgid "Posts to this list"
+msgstr "Bejegyzések a listán"
+
+#: templates/hyperkitty/user_profile/subscriptions.html:76
+msgid "no subscriptions"
+msgstr "nincsenek feliratkozók"
+
+#: templates/hyperkitty/user_profile/votes.html:32
+#: templates/hyperkitty/user_profile/votes.html:70
+msgid "You like it"
+msgstr "Kedveled"
+
+#: templates/hyperkitty/user_profile/votes.html:34
+#: templates/hyperkitty/user_profile/votes.html:72
+msgid "You dislike it"
+msgstr "Nem tetszik"
+
+#: templates/hyperkitty/user_profile/votes.html:50
+msgid "Vote"
+msgstr "Szavazás"
+
+#: templates/hyperkitty/user_profile/votes.html:83
+msgid "No vote yet."
+msgstr "Még nincsenek szavazatok."
+
+#: templates/hyperkitty/user_public_profile.html:7
+msgid "User Profile"
+msgstr "Felhasználóprofil"
+
+#: templates/hyperkitty/user_public_profile.html:14
+msgid "User profile"
+msgstr "Felhasználóprofil"
+
+#: templates/hyperkitty/user_public_profile.html:23
+msgid "Name:"
+msgstr "Név:"
+
+#: templates/hyperkitty/user_public_profile.html:28
+msgid "Creation:"
+msgstr "Létrehozás:"
+
+#: templates/hyperkitty/user_public_profile.html:33
+msgid "Votes for this user:"
+msgstr "A felhasználó szavazatai:"
+
+#: templates/hyperkitty/user_public_profile.html:41
+msgid "Email addresses:"
+msgstr "E-mail címek:"
+
+#: views/message.py:75
+msgid "This message in gzipped mbox format"
+msgstr "Ez az üzenet tömörített mbox formátumban van"
+
+#: views/message.py:201
+msgid "Your reply has been sent and is being processed."
+msgstr "Válaszát elküldtük és folyamatban van."
+
+#: views/message.py:205
+msgid ""
+"\n"
+"  You have been subscribed to {} list."
+msgstr ""
+"\n"
+"  Feliratkozott a(z) {} listára."
+
+#: views/message.py:288
+#, python-format
+msgid "Could not delete message %(msg_id_hash)s: %(error)s"
+msgstr "A(z) %(msg_id_hash)s: %(error)s üzenet nem törölhető"
+
+#: views/message.py:297
+#, python-format
+msgid "Successfully deleted %(count)s messages."
+msgstr "Sikeresen törölték a %(count)s üzeneteket."
+
+#: views/mlist.py:88
+msgid "for this MailingList"
+msgstr "ehhez a levelezőlistához"
+
+#: views/mlist.py:100
+msgid "for this month"
+msgstr "ebben a hónapban"
+
+#: views/mlist.py:103
+msgid "for this day"
+msgstr "erre a napra"
+
+#: views/mlist.py:115
+msgid "This month in gzipped mbox format"
+msgstr "Ebben a hónapban a tömörített mbox formátumban"
+
+#: views/mlist.py:250 views/mlist.py:274
+msgid "No discussions this month (yet)."
+msgstr "Ebben a hónapban még nincsenek megbeszélések."
+
+#: views/mlist.py:262
+msgid "No vote has been cast this month (yet)."
+msgstr "Ebben a hónapban (még) nincs szavazat."
+
+#: views/mlist.py:291
+msgid "You have not flagged any discussions (yet)."
+msgstr "Még nem jelölt meg megbeszéléseket."
+
+#: views/mlist.py:314
+msgid "You have not posted to this list (yet)."
+msgstr "Még nem írt erre a listára."
+
+#: views/mlist.py:407
+msgid "You must be a staff member to delete a MailingList"
+msgstr "A Levelezési lista törléséhez munkatársnak kell lennie"
+
+#: views/mlist.py:421
+msgid "Successfully deleted {}"
+msgstr "Sikeresen törölve {}"
+
+#: views/search.py:115
+#, python-format
+msgid "Parsing error: %(error)s"
+msgstr "Elemzési hiba: %(error)s"
+
+#: views/thread.py:192
+msgid "This thread in gzipped mbox format"
+msgstr "Ez a téma tömörített mbox formátumban"
+
+#~ msgid "days inactive"
+#~ msgstr "napja inaktív"
+
+#~ msgid "days old"
+#~ msgstr "napja"
+
+#~ msgid ""
+#~ "\n"
+#~ "                    by %(name)s\n"
+#~ "                    "
+#~ msgstr ""
+#~ "\n"
+#~ "                    %(name)s által\n"
+#~ "                    "
+
+#~ msgid "unread"
+#~ msgstr "olvasatlan"
+
+#~ msgid "Update"
+#~ msgstr "Frissítés"
