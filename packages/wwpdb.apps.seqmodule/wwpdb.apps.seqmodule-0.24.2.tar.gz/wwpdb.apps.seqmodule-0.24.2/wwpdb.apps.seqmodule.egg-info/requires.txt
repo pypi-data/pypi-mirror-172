@@ -1,0 +1,16 @@
+wwpdb.utils.config>=0.24
+wwpdb.io
+wwpdb.utils.session
+wwpdb.utils.wf
+wwpdb.utils.seqdb_v2~=0.4
+wwpdb.utils.align
+wwpdb.utils.detach
+wwpdb.utils.dp
+wwpdb.utils.db
+rcsb.utils.multiproc
+
+[dev]
+check-manifest
+
+[test]
+coverage
