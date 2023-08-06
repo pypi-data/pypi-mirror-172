@@ -1,0 +1,12 @@
+cmeel/__init__.py,sha256=e9YRr5qsrUmTi-QfxnZYSDwDma-FRregEiIjPcrAXdo,328
+cmeel/__main__.py,sha256=WEMx_SPiPs1ib6NmBzJCrzTzD7UvMcH1R7Pcc2ClPsM,1927
+cmeel/build.py,sha256=V835jQaXiAeHHF0WN_P3vRvCUu_uM7j6HtKgaU2m5po,8873
+cmeel/config.py,sha256=XnsFvvs-BRJq8J_T6Lp0c26GeO4BGXizDZoPkcVfhPo,3112
+cmeel/consts.py,sha256=pqdkM65k5hopa43MW0BkWc1Q3lK_gNqsb348hgRbNsE,178
+cmeel/pth.py,sha256=x-lqnj7t6NIeujvLgFyKhTXAZt-AJ75RfyX6L8DejjQ,203
+cmeel/run.py,sha256=YbnCIKulHX1eV26JPWhe52vIZBaM7QmxYgg_SFdrpf4,743
+cmeel.pth,sha256=CD-QdG4ceUgq5wIEJZpipOSZQF8apq7i9u9RhsBWbc8,17
+cmeel-0.20.0.dist-info/LICENSE,sha256=4QHEuqIDbscybBc21CcazwRjix-rV-AH2QAZ4IqxlzQ,1324
+cmeel-0.20.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+cmeel-0.20.0.dist-info/METADATA,sha256=VttthLv_395QRQiRiCiIjE5qSl1Lx22f-6ELduXuquE,3451
+cmeel-0.20.0.dist-info/RECORD,,
