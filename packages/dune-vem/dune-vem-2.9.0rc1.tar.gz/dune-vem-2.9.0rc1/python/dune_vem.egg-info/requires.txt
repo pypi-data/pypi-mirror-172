@@ -1,0 +1,5 @@
+dune-alugrid<=v2.9.0rc1
+dune-fem<=v2.9.0rc1
+matplotlib
+scipy
+sortedcontainers
