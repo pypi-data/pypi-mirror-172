@@ -1,0 +1,17 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+BetterPrinting/__init__.py
+BetterPrinting/_main.py
+BetterPrinting/color.py
+BetterPrinting/color_list.py
+BetterPrinting/draw.py
+BetterPrinting/rand.py
+BetterPrinting/system.py
+BetterPrinting/ui.py
+BetterPrinting.egg-info/PKG-INFO
+BetterPrinting.egg-info/SOURCES.txt
+BetterPrinting.egg-info/dependency_links.txt
+BetterPrinting.egg-info/top_level.txt
