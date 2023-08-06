@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "multicall-thread-safe"
+version = "0.1.4"
+description = "Thread Safe Multicall for execution in containerised environments, tweaked from https://github.com/banteg/multicall.py"
+homepage = "https://github.com/cbsystango/multicall-thread-safe/"
+repository = "https://github.com/cbsystango/multicall-thread-safe/"
+authors = ["cbhondwe"]
+readme = "README.md"
+packages = [{include = "multicall_thread_safe"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.1"
+flake8 = "^5.0"
+black = "^22.8"
+joblib = "^1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
