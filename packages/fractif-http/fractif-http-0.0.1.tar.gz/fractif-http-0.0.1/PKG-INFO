@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fractif-http
+Version: 0.0.1
+Summary: An http package
+Home-page: UNKNOWN
+Author: Tom LARGE
+Author-email: tom@fractif.com
+License: MIT
+Keywords: http
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+An http package that makes it easy to send http requests
+
