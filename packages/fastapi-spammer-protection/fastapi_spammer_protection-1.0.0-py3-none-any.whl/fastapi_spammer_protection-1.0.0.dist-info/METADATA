@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fastapi-spammer-protection
+Version: 1.0.0
+Summary: Middleware to protect a FastAPI app against spammers that try to exploit known vulnerabilities
+License: MIT
+Author: Dogeek
+Author-email: simon.bordeyne@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.85.1,<0.86.0)
