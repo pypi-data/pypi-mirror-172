@@ -1,0 +1,4 @@
+[console_scripts]
+TujieEmoxue = TujieEmoxue.__main__:main
+tujie-emoxue = TujieEmoxue.__main__:main
+
