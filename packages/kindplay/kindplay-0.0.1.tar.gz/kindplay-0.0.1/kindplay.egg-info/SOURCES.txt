@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+kindplay/__init__.py
+kindplay/cli.py
+kindplay/helm.py
+kindplay/kind.py
+kindplay/tools.py
+kindplay.egg-info/PKG-INFO
+kindplay.egg-info/SOURCES.txt
+kindplay.egg-info/dependency_links.txt
+kindplay.egg-info/entry_points.txt
+kindplay.egg-info/top_level.txt
