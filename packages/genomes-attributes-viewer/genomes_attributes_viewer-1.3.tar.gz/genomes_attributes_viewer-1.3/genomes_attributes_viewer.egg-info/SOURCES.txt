@@ -1,0 +1,16 @@
+AUTHORS.txt
+README.md
+setup.py
+bin/genomes-attributes-viewer
+genomes_attributes_viewer/__init__.py
+genomes_attributes_viewer/app.py
+genomes_attributes_viewer/first_run.py
+genomes_attributes_viewer/prepare_attributes.py
+genomes_attributes_viewer/prepare_names.py
+genomes_attributes_viewer.egg-info/PKG-INFO
+genomes_attributes_viewer.egg-info/SOURCES.txt
+genomes_attributes_viewer.egg-info/dependency_links.txt
+genomes_attributes_viewer.egg-info/not-zip-safe
+genomes_attributes_viewer.egg-info/requires.txt
+genomes_attributes_viewer.egg-info/top_level.txt
+genomes_attributes_viewer/data/accession_taxid_attribute.tsv.gz
