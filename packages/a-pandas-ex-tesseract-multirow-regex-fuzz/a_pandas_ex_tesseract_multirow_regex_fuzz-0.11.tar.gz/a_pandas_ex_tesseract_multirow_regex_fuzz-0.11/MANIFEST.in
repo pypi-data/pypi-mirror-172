@@ -1,0 +1,4 @@
+include a_pandas_ex_tesseract_multirow_regex_fuzz/requirements.txt
+include a_pandas_ex_tesseract_multirow_regex_fuzz/thirdparty.json
+include a_pandas_ex_tesseract_multirow_regex_fuzz/README.MD
+include a_pandas_ex_tesseract_multirow_regex_fuzz/LICENSE
