@@ -1,0 +1,3 @@
+pyseat
+pyseat_backup
+pyseat_workspace
