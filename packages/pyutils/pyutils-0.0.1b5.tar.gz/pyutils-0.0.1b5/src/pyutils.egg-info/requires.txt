@@ -1,0 +1,14 @@
+antlr4-python3-runtime
+bitstring
+cloudpickle
+holidays
+kazoo
+overrides
+pytz
+
+[dev]
+black
+coverage
+flake8
+pylint
+sphinx
