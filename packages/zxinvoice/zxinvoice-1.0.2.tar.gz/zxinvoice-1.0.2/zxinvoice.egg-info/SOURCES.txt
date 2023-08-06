@@ -1,0 +1,7 @@
+README.rst
+setup.py
+zxinvoice.egg-info/PKG-INFO
+zxinvoice.egg-info/SOURCES.txt
+zxinvoice.egg-info/dependency_links.txt
+zxinvoice.egg-info/requires.txt
+zxinvoice.egg-info/top_level.txt
