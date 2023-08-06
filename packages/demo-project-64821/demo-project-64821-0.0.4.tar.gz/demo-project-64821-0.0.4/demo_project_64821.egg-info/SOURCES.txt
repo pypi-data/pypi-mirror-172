@@ -1,0 +1,7 @@
+README.md
+setup.py
+demo-project-64821/__init__.py
+demo_project_64821.egg-info/PKG-INFO
+demo_project_64821.egg-info/SOURCES.txt
+demo_project_64821.egg-info/dependency_links.txt
+demo_project_64821.egg-info/top_level.txt
