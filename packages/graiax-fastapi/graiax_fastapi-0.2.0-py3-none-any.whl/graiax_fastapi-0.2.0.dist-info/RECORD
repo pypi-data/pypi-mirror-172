@@ -1,0 +1,11 @@
+graiax/fastapi/__init__.py,sha256=11aL2m1vT9al7QVmTty5TzJ2YSzY20CB8pUk0H81XOg,274
+graiax/fastapi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+graiax/fastapi/saya/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+graiax/fastapi/saya/behaviour.py,sha256=xEWUfY2V0MpLytTuFfkJD6KvQTJUgzDWn8XSgre-N-Y,1582
+graiax/fastapi/saya/route.py,sha256=EcZwhlBqEchK6bxNVrDv6jRBnMtRt9J_6fIoOfiGpT0,3557
+graiax/fastapi/saya/schema.py,sha256=BV4Nd-rb5gLyI2VJikiRee6kY-mEn4GA9MF5IUPEDxY,1977
+graiax/fastapi/service.py,sha256=cHEmsWrFkjrGQ4EI6ClABFrtVqYb02lV3h4EGgqgpV4,311
+graiax_fastapi-0.2.0.dist-info/WHEEL,sha256=g_UdFZqm-k6b0W64OcndB0YT_D2mFFPAYBj7-_YsSPA,87
+graiax_fastapi-0.2.0.dist-info/METADATA,sha256=oBFCd7AOnEjabvUH6730gS4GR8vYfe-k93OU434L6mA,4929
+graiax_fastapi-0.2.0.dist-info/license_files/LICENSE,sha256=--Lsf_x9j9HWOkUOFRUxrjNs0I3GyU6ZqFzynFPPU9M,1071
+graiax_fastapi-0.2.0.dist-info/RECORD,,
