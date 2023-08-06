@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+import os
+import readline
+import signal
+import sys
+import termios
+import time
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from op import Wd, keys, printable, update
+from operbot.run import Cfg, Event, Handler, command, parse, scan
+from operbot.irc import Config, IRC
+from operbot.rss import Fetcher
+from operbot.run import Cfg
+
+
+from operbot import cmds, irc, rss
+
+
+Config.nick = "operbot"
+Config.channel = "#operbot"
+Config.realname = "program your own commands"
+Config.username = "operbot"
+
+
+Wd.workdir = os.path.expanduser("~/.operbot")
+
+
+scan(cmds)
+scan(irc)
+scan(rss)
+
+
+class CLI(Handler):
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+
+
+def main():
+    txt = ' '.join(sys.argv[1:])
+    cfg = parse(txt)
+    update(Cfg, cfg)
+    cli = CLI()
+    command(cli, cfg.otxt)
+
+
+main()
