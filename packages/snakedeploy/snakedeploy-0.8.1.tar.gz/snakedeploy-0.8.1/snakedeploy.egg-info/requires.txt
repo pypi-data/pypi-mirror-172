@@ -1,0 +1,12 @@
+requests
+pandas
+jinja2
+pyyaml
+pygithub
+
+[all]
+requests
+pandas
+jinja2
+pyyaml
+pygithub
