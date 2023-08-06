@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: RealstatsModelRollout
+Version: 0.0.1.dev66
+Summary: Realstats model version control
+Home-page: https://github.com/bharkema/RealstatsModelRollout
+Download-URL: https://github.com/bharkema/RealstatsModelRollout/archive/v0.0.1.dev66.tar.gz
+Author: Bowen
+Author-email: b.harkema@clappform.com
+License: MIT
+Keywords: model validation
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+Welcome to the Realstats Model Rollout package documentation. This documentation page has been created to help users find their way in the package.
+
+## Functions within package
+The system automatically checks the operating system and executes commands accordingly.
+```python 
+import RealstatsModelRollout as RMR
+
+# Generation of virtual enviroment folder base usage
+RMR.vmachine().Generate_structure(model_localpath="%PATH TO MODEL TO COPY%", 
+                                    validation_data_localpath="%PATH TO data TO COPY%", 
+                                    validation_control_localpath="%PATH TO CONTROL DATA TO COPY%", 
+                                    base_path="%PATH TO WHERE YOU WANT TO SAVE FOLDER%", 
+                                    model_name = "Demo")
+
+# Customization of folder and functions
+RMR.vmachine().Generate_structure(model_localpath="%PATH TO MODEL TO COPY%", 
+                                    validation_data_localpath="%PATH TO data TO COPY%", 
+                                    validation_control_localpath="%PATH TO CONTROL DATA TO COPY%", 
+                                    base_path="%PATH TO WHERE YOU WANT TO SAVE FOLDER%", 
+                                    model_name = "Demo", 
+                                    requirements_localpath="%PATH TO WHERE YOUr requirements are%",
+                                    documentation_localpath="%PATH TO WHERE YOUR DOCUMENTATION IS",
+                                    function_code_localpath="%PATH TO WHERE YOUR FUNCTIONAL CODE IS",
+                                    main_code_localpath="%PATH TO WHERE YOUR MAIN CODE FILE IS"):
+
+```
+
+```python 
+import RealstatsModelRollout as RMR
+
+# Start of virtual enviroment base usage
+RMR.vmachine().start_venv(localpath="%PATH TO ENVROMENT FOLDER%", 
+                         execution_code="%NAME OF CODE FILE YOU WISH TO EXECUTE%"):
+```
+
+## Go to the changelog
+Here you can find the changelog of the official versions of the package wich will be rolled out when functions have been completed or when bugs are fixed. 
+
+[Go to changelog ->](https://bharkema.github.io/RealstatsModelRollout/changelog).
+
+## Function definitions
+Here you wil find a link to all functions in the package where you will a more in depth description
+* Vmachine
+    * [Generate_structure()](https://bharkema.github.io/RealstatsModelRollout/functions/generate_structure).
+    * [start_venv()](https://bharkema.github.io/RealstatsModelRollout/functions/start_venv).
