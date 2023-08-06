@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flake8-unfinished
+Version: 1.0.0
+Summary: flake8 plugin which makes sure you don't have unfinished functions in your code
+Home-page: https://github.com/GideonBear/flake8-unfinished
+Author: Gideon
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flake8 (>=5.0)
+
+# flake8-unfinished
