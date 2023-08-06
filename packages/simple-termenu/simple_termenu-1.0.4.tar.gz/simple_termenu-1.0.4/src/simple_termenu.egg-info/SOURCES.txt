@@ -1,0 +1,9 @@
+LICENSE.rst
+README.md
+pyproject.toml
+src/simple_termenu/__init__.py
+src/simple_termenu/simple_termenu.py
+src/simple_termenu.egg-info/PKG-INFO
+src/simple_termenu.egg-info/SOURCES.txt
+src/simple_termenu.egg-info/dependency_links.txt
+src/simple_termenu.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+[project]
+name = "simple_termenu"
+version = "1.0.4"
+authors = [
+  { name="72y9op", email="72y9op@gmail.com" },
+]
+description = "Package for making simple menu in your terminal"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/72y9op/simple_termenu"
+"Bug Tracker" = "https://github.com/72y9op/simple_termenu/issues"
