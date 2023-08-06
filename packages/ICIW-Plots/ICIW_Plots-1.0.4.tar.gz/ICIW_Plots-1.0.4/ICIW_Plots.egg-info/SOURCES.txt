@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+ICIW_Plots/__init__.py
+ICIW_Plots/cyclers.py
+ICIW_Plots.egg-info/PKG-INFO
+ICIW_Plots.egg-info/SOURCES.txt
+ICIW_Plots.egg-info/dependency_links.txt
+ICIW_Plots.egg-info/requires.txt
+ICIW_Plots.egg-info/top_level.txt
+styles/ICIWlatex.mplstyle
+styles/ICIWnobg.mplstyle
+styles/ICIWstyle.mplstyle
