@@ -1,0 +1,9 @@
+README.md
+setup.py
+kaindall_template/__init__.py
+kaindall_template/example1.py
+kaindall_template/example2.py
+kaindall_template.egg-info/PKG-INFO
+kaindall_template.egg-info/SOURCES.txt
+kaindall_template.egg-info/dependency_links.txt
+kaindall_template.egg-info/top_level.txt
