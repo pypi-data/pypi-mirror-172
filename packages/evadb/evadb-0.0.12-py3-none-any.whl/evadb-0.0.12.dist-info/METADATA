@@ -1,0 +1,222 @@
+Metadata-Version: 2.1
+Name: evadb
+Version: 0.0.12
+Summary: EVA Video Database System (Think MySQL for videos).
+Home-page: https://github.com/georgia-tech-db/eva
+Author: Georgia Tech Database Group
+Author-email: georgia.tech.db@gmail.com
+License: Apache License 2.0
+Download-URL: https://github.com/georgia-tech-db/eva
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow (==9.0.1)
+Requires-Dist: antlr4-python3-runtime (==4.10)
+Requires-Dist: black (==22.6.0)
+Requires-Dist: importlib-metadata (<5.0)
+Requires-Dist: isort (==5.10.1)
+Requires-Dist: numpy (==1.23.1)
+Requires-Dist: opencv-python (==4.5.4.60)
+Requires-Dist: pandas (==1.4.2)
+Requires-Dist: petastorm (==0.12.0)
+Requires-Dist: pyspark (==3.1.3)
+Requires-Dist: pyyaml (==5.1)
+Requires-Dist: sqlalchemy-utils (==0.36.6)
+Requires-Dist: sqlalchemy (==1.3.20)
+Provides-Extra: database
+Requires-Dist: Pillow (==9.0.1) ; extra == 'database'
+Requires-Dist: antlr4-python3-runtime (==4.10) ; extra == 'database'
+Requires-Dist: black (==22.6.0) ; extra == 'database'
+Requires-Dist: importlib-metadata (<5.0) ; extra == 'database'
+Requires-Dist: isort (==5.10.1) ; extra == 'database'
+Requires-Dist: numpy (==1.23.1) ; extra == 'database'
+Requires-Dist: opencv-python (==4.5.4.60) ; extra == 'database'
+Requires-Dist: pandas (==1.4.2) ; extra == 'database'
+Requires-Dist: petastorm (==0.12.0) ; extra == 'database'
+Requires-Dist: pymysql (==0.10.1) ; extra == 'database'
+Requires-Dist: pyspark (==3.1.3) ; extra == 'database'
+Requires-Dist: pyyaml (==5.1) ; extra == 'database'
+Requires-Dist: sqlalchemy-utils (==0.36.6) ; extra == 'database'
+Requires-Dist: sqlalchemy (==1.3.20) ; extra == 'database'
+Provides-Extra: dev
+Requires-Dist: Pillow (==9.0.1) ; extra == 'dev'
+Requires-Dist: antlr4-python3-runtime (==4.10) ; extra == 'dev'
+Requires-Dist: black (==22.6.0) ; extra == 'dev'
+Requires-Dist: coveralls (==3.0.1) ; extra == 'dev'
+Requires-Dist: easyocr (==1.6.0) ; extra == 'dev'
+Requires-Dist: facenet-pytorch (==2.5.2) ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.1) ; extra == 'dev'
+Requires-Dist: importlib-metadata (<5.0) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: mock (==4.0.3) ; extra == 'dev'
+Requires-Dist: numpy (==1.23.1) ; extra == 'dev'
+Requires-Dist: opencv-python (==4.5.4.60) ; extra == 'dev'
+Requires-Dist: pandas (==1.4.2) ; extra == 'dev'
+Requires-Dist: petastorm (==0.12.0) ; extra == 'dev'
+Requires-Dist: pymysql (==0.10.1) ; extra == 'dev'
+Requires-Dist: pyspark (==3.1.3) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'dev'
+Requires-Dist: pytest-virtualenv ; extra == 'dev'
+Requires-Dist: pytest (==6.1.2) ; extra == 'dev'
+Requires-Dist: pyyaml (==5.1) ; extra == 'dev'
+Requires-Dist: scriv (==0.16.0) ; extra == 'dev'
+Requires-Dist: sqlalchemy-utils (==0.36.6) ; extra == 'dev'
+Requires-Dist: sqlalchemy (==1.3.20) ; extra == 'dev'
+Requires-Dist: torch (==1.11.0) ; extra == 'dev'
+Requires-Dist: torchvision (==0.12.0) ; extra == 'dev'
+Requires-Dist: wheel (==0.37.1) ; extra == 'dev'
+Provides-Extra: minimal
+Requires-Dist: Pillow (==9.0.1) ; extra == 'minimal'
+Requires-Dist: antlr4-python3-runtime (==4.10) ; extra == 'minimal'
+Requires-Dist: importlib-metadata (<5.0) ; extra == 'minimal'
+Requires-Dist: numpy (==1.23.1) ; extra == 'minimal'
+Requires-Dist: opencv-python (==4.5.4.60) ; extra == 'minimal'
+Requires-Dist: pandas (==1.4.2) ; extra == 'minimal'
+Requires-Dist: petastorm (==0.12.0) ; extra == 'minimal'
+Requires-Dist: pyspark (==3.1.3) ; extra == 'minimal'
+Requires-Dist: pyyaml (==5.1) ; extra == 'minimal'
+Requires-Dist: sqlalchemy-utils (==0.36.6) ; extra == 'minimal'
+Requires-Dist: sqlalchemy (==1.3.20) ; extra == 'minimal'
+Provides-Extra: udf
+Requires-Dist: Pillow (==9.0.1) ; extra == 'udf'
+Requires-Dist: antlr4-python3-runtime (==4.10) ; extra == 'udf'
+Requires-Dist: black (==22.6.0) ; extra == 'udf'
+Requires-Dist: easyocr (==1.6.0) ; extra == 'udf'
+Requires-Dist: facenet-pytorch (==2.5.2) ; extra == 'udf'
+Requires-Dist: importlib-metadata (<5.0) ; extra == 'udf'
+Requires-Dist: isort (==5.10.1) ; extra == 'udf'
+Requires-Dist: numpy (==1.23.1) ; extra == 'udf'
+Requires-Dist: opencv-python (==4.5.4.60) ; extra == 'udf'
+Requires-Dist: pandas (==1.4.2) ; extra == 'udf'
+Requires-Dist: petastorm (==0.12.0) ; extra == 'udf'
+Requires-Dist: pyspark (==3.1.3) ; extra == 'udf'
+Requires-Dist: pyyaml (==5.1) ; extra == 'udf'
+Requires-Dist: sqlalchemy-utils (==0.36.6) ; extra == 'udf'
+Requires-Dist: sqlalchemy (==1.3.20) ; extra == 'udf'
+Requires-Dist: torch (==1.11.0) ; extra == 'udf'
+Requires-Dist: torchvision (==0.12.0) ; extra == 'udf'
+
+<div >
+         <a href="https://georgia-tech-db.github.io/eva/index.html">
+           <img src="https://raw.githubusercontent.com/georgia-tech-db/eva/master/docs/Logo.png" alt="EVA" width="300px" margin-left="-5px">
+         </a>
+         <h3>EVA Video Database System: Where SQL meets Deep Learning!</h3>
+         <div>
+               <h3>ð Try It Out! ð</h3>
+               <a href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/master/tutorials/02-object-detection.ipynb">
+                   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open EVA on Colab"/>
+               </a>
+               <a href="https://github.com/georgia-tech-db/eva/discussions">
+                   <img alt="Discuss on Github!" src="https://img.shields.io/badge/-Discuss%20on%20Github!-blueviolet">
+               </a>
+           </div>
+       </div>
+
+       ## Links
+       * [Documentation](https://evadb.readthedocs.io/en/latest/)
+       * [Tutorials](https://github.com/georgia-tech-db/eva/tree/master/tutorials)
+       * [Website](https://georgia-tech-db.github.io/eva/index.html)
+       * [Slack](https://join.slack.com/t/eva-db/shared_invite/zt-1i10zyddy-PlJ4iawLdurDv~aIAq90Dg)
+       * [Quick Demo](https://ada-00.cc.gatech.edu/eva/playground)
+
+       # EVA Video Database System
+
+       [![PyPI Status](https://img.shields.io/pypi/v/evadb.svg)](https://pypi.org/project/evadb)
+       [![CI Status](https://circleci.com/gh/georgia-tech-db/eva.svg?style=svg)](https://circleci.com/gh/georgia-tech-db/eva)
+       [![Coverage Status](https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master)](https://coveralls.io/github/georgia-tech-db/eva?branch=master)
+       [![License](https://img.shields.io/badge/license-Apache%202-brightgreen.svg?logo=apache)](https://github.com/georgia-tech-db/eva/blob/master/LICENSE.txt)
+       [![Documentation Status](https://readthedocs.org/projects/exvian/badge/?version=latest)](https://evadb.readthedocs.io/en/latest/index.html)
+       [![Discuss](https://img.shields.io/badge/-Discuss!-blueviolet)](https://github.com/georgia-tech-db/eva/discussions)
+       ![Python Versions](https://img.shields.io/badge/Python--versions-3.7+-brightgreen)
+
+       ## What is EVA?
+
+       EVA is a new database system tailored for video analytics -- think MySQL for videos. It supports a simple SQL-like language for querying videos (e.g., finding frames in a movie with your favorite actor or find touchdowns in a football game). It comes with a wide range of commonly used computer vision models.
+
+       ## Why EVA? ##
+
+       ð Easily query videos in user-facing applications with a simple SQL-like interface for commonly used computer vision models.
+
+       ð
+Speed up queries and save money spent on model inference using in-built sampling, caching, and filtering optimizations.
+
+       â¨ Hit your target accuracy using state-of-the-art model selection and query optimization algorithms.
+
+       ## QuickStart
+
+       1. EVA requires Python 3.7+. To install EVA, we recommend using an virtual environment and the pip package manager:
+
+       ```shell
+       pip install evadb
+       ```
+
+       1. Start the EVA server and the client programs
+       ```shell
+       python eva/eva_server &   # launch server
+       python eva/eva_client     # launch client
+       ```
+
+       2. UPLOAD a video using the client (we use [ua_detrac.mp4](data/ua_detrac/ua_detrac.mp4) video as an example):
+
+       ```mysql
+       LOAD FILE "data/ua_detrac/ua_detrac.mp4" INTO MyVideo;
+       ```
+
+       3. That's it. You can now start issuing queries over the loaded video:
+
+       ```mysql
+       SELECT id, data FROM MyVideo WHERE id < 5;
+       ```
+
+       ## More Interesting Queries
+
+       1. Search for frames in the video that contain a car
+
+       ```mysql
+       SELECT id, data FROM MyVideo WHERE ['car'] <@ FastRCNNObjectDetector(data).labels;
+       ```
+       ![QueryResult](https://georgia-tech-db.github.io/eva/Img/car.gif)
+
+       2. Search for frames in the video that contain a pedestrian and a car
+
+       ```mysql
+       SELECT id, data FROM MyVideo WHERE ['pedestrian', 'car'] <@ FastRCNNObjectDetector(data).labels;
+       ```
+
+       3. Search for frames in the video with more than 3 cars
+
+       ```mysql
+       SELECT id, data FROM MyVideo WHERE Array_Count(FastRCNNObjectDetector(data).labels, 'car') > 3;
+       ```
+
+       4. Create your own user-defined function (UDF) that wraps around a vision model like FastRCNN
+       ```mysql
+       CREATE UDF IF NOT EXISTS MyUDF
+       INPUT  (frame NDARRAY UINT8(3, ANYDIM, ANYDIM))
+       OUTPUT (labels NDARRAY STR(ANYDIM), bboxes NDARRAY FLOAT32(ANYDIM, 4),
+               scores NDARRAY FLOAT32(ANYDIM))
+       TYPE  Classification
+       IMPL  'eva/udfs/fastrcnn_object_detector.py';
+       ```
+
+       ## Contributing to EVA
+
+       To file a bug or request a feature, please use GitHub issues. Pull requests are welcome.
+       For more information on installing from source and contributing to EVA, see our
+       [contributing guidelines](https://evadb.readthedocs.io/en/latest/source/contribute/index.html).
+
+       ## Contributors
+
+       See the [people page](https://github.com/georgia-tech-db/eva/graphs/contributors) for the full listing of contributors.
+
+       ## License
+       Copyright (c) 2018-2022 [Georgia Tech Database Group](http://db.cc.gatech.edu/)
+       Licensed under [Apache License](LICENSE).
+
+
