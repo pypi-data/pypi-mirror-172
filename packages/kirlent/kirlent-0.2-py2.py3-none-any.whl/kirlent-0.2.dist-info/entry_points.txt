@@ -1,0 +1,3 @@
+[console_scripts]
+kirlent=kirlent:program.run
+
