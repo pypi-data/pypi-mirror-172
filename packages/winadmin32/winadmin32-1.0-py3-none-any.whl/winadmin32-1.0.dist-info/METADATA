@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: winadmin32
+Version: 1.0
+Summary: A simple way to require admin on Windows
+Author: BoomerDev
+Author-email: BoomerDev <boomerdev@cubesoftware.xyz>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+License-File: LICENSE
+
