@@ -1,0 +1,8 @@
+pysdl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysdl/logger_config.py,sha256=LexanwOCpEoRNdDC9e1Jmi6jyb4jw9NH_GXY37C2Mn8,1318
+pysdl/stackdriverjsonlogger.py,sha256=IWEcGVafEJmYM0H8bfHXu9ceLPuNDe48Ut1SWp_HzRg,453
+pysdl-1.1.0.dist-info/LICENSE,sha256=fyWGDdBNr2HFqme5UP-55zd9cZblJy2KInwxu1ks8bU,1068
+pysdl-1.1.0.dist-info/METADATA,sha256=Vs0ZUgQK20f1BxtAtikCodJ3N3zOE-V7CQASnlaLEFA,786
+pysdl-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pysdl-1.1.0.dist-info/top_level.txt,sha256=LzeFBA6ZyshZh2d9fs_LZo2CVS80ciPd_AwANgG6oZU,6
+pysdl-1.1.0.dist-info/RECORD,,
