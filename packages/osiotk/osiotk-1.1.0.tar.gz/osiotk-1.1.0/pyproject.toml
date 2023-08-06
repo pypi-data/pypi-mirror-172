@@ -1,0 +1,16 @@
+
+[tool.poetry]
+name = "osiotk"
+version = "1.1.0"
+description = "os io toolkit"
+authors = ["wayfaring-stranger <zw6p226m@duck.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

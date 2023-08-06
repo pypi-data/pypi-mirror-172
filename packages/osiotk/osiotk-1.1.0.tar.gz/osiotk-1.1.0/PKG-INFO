@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: osiotk
+Version: 1.1.0
+Summary: os io toolkit
+License: MIT
+Author: wayfaring-stranger
+Author-email: zw6p226m@duck.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+## Osiotk
+
+## Description:
+#    os io toolkit
+
+## Commands:
+
+# Install Poetry:
+#    python3 -m pip install poetry
+
+# Build Package:
+#    python3 -m poetry build
+
+# Publish Package:
+#    python3 -m poetry publish -u <username> -p <password>
+
+# Install Locally:
+#    python3 -m pip install osiotk==1.1.0
+
+# Build And Publish Package:
+#    python3 -m poetry build;python3 -m poetry publish -u <username> -p <password>
+
+# Build Package; Publish Package; Install Package:
+#    python3 -m poetry build;python3 -m poetry publish -u <username> -p <password>;python3 -m pip install osiotk==1.1.0
+
