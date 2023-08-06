@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: dbfaker_sqlserver_plugin
+Version: 0.1.0
+Summary: An project to make fake data dump based on sqlserver database.
+Home-page: UNKNOWN
+Author: lucaslima18
+Author-email: lucas.ala1999@gmail.com
+License: UNKNOWN
+Description: coming soon...
+Platform: UNKNOWN
+Requires-Python: >=3.8,<4.0

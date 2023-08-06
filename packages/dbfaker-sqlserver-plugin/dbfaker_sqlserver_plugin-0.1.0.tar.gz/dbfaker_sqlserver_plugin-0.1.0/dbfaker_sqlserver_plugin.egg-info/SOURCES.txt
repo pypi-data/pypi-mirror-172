@@ -1,0 +1,8 @@
+README.md
+setup.py
+dbfaker_sqlserver_plugin.egg-info/PKG-INFO
+dbfaker_sqlserver_plugin.egg-info/SOURCES.txt
+dbfaker_sqlserver_plugin.egg-info/dependency_links.txt
+dbfaker_sqlserver_plugin.egg-info/top_level.txt
+sqlServerPlugin/__init__.py
+sqlServerPlugin/sqlServerPlugin.py
