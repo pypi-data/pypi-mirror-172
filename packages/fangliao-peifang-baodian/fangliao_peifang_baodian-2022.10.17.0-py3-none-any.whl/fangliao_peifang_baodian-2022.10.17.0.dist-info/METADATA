@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: fangliao-peifang-baodian
+Version: 2022.10.17.0
+Summary: 芳香疗法配方宝典
+Home-page: https://github.com/apachecn/fangliao-peifang-baodian
+Author: ApacheCN
+Author-email: apachecn@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Documentation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# 芳香疗法配方宝典
+
+## 下载
+
+### Docker
+
+```
+docker pull apachecn0/fangliao-peifang-baodian
+docker run -tid -p <port>:80 apachecn0/fangliao-peifang-baodian
+# 访问 http://localhost:{port} 查看文档
+```
+
+### PYPI
+
+```
+pip install fangliao-peifang-baodian
+fangliao-peifang-baodian <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
+### NPM
+
+```
+npm install -g fangliao-peifang-baodian
+fangliao-peifang-baodian <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
