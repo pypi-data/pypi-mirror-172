@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tjc-common
+Version: 0.3
+Author: Suzhou-tongyuan
+Author-email: support@tongyuan.cc
+License: mit
+Platform: any
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tyjuliacall (>=0.6.1)
+
