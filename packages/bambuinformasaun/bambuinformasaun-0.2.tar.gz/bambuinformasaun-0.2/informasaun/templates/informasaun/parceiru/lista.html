@@ -1,0 +1,146 @@
+{% extends 'main/dashboard.html' %}
+{% block content %}
+
+<div class="container-xxl flex-grow-1 container-p-y">
+  <h4 class="fw-bold py-3 mb-4">
+ 
+    <span class="text-muted fw-light">Informasaun  / Parceiru</span>  
+    
+
+  
+    <a href="{% url 'informasaun:inputparceiru' %}" class="btn btn-primary" style="float:right;"> <span class="tf-icons bx bx-plush"></span>&nbsp;  <span class="tf-icons bx bx-plus"> </span> Rejistu Parceiru</a>
+  
+
+  </h4>
+                <div class="row">
+   
+  
+                  <div class="card">
+                    <h5 class="card-header">Dadus Parceiru</h5>
+                    <div class="table-responsive text-nowrap">
+
+
+                  
+
+                      {% if messages %}
+                      {% for message in messages %}
+                      <div class="alert alert-{{ message.tags }}">
+                        <font color="gray">  {{ message }}</font>
+                      </div>
+                      {% endfor %}
+                  {% endif %}
+            
+
+                      <table class="table table-sm font-sm" style="font-size: 13px;">
+                        <thead>
+                          <tr class="text-nowrap">
+    
+                            <th>Nu</th>
+                            <th>Naran</th>
+                            <th>Logo</th>
+   
+                            <th>File Pdf</th>
+                     
+                  
+                            <th>Asaun</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                         
+
+             
+                           {% for dados in parceiru %}
+
+                          <tr>
+                            <td>{{forloop.counter}}</td>
+                            <td>{{dados.naran}}</td>
+                            <td><img src='{{dados.logo.url}}' style="border-radius: 5px; width: 50px; height: 50px;"></td>
+                            <td><a href ='{{dados.file_pdf.url}}'>Hare {{dados.file_pdf}} </a></td>
+
+                    
+                       
+                           
+  
+                                <td>
+                               <!-- <a href="{% url 'informasaun:editinformasaun' dados.id %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-edit"></span>&nbsp; </a> -->
+                               <a href="{% url 'informasaun:editparceiru' dados.id %}" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-edit"></span>&nbsp; </a>
+                               <a href="{% url 'informasaun:deleteparceiru' dados.id %}" onclick="return confirm('Ita Boot hakarak apaga dados ?')" class="btn btn-sm btn-secondary"> <span class="tf-icons bx bx-trash"></span>&nbsp; </a>
+
+                               </td> 
+                
+                          </tr>
+
+                          {% endfor %}
+
+
+
+
+
+  
+                        
+                        </tbody>
+                      </table>
+
+
+                      <br><br>
+
+
+                      <hr>
+                      <div class='float-right'>
+
+            <table align="center">
+              <tr><td>
+                <div class="row" style="margin-left: 5px">
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item">
+      
+                      {% if parceiru.has_previous %}
+                        <a class="page-link" href="{% url 'informasaun:parceiru' %}?page={{parceiru.previous_page_number}}" tabindex="-1">Previous</a>
+                      {% else %}
+                        <a class="page-link" href="#" tabindex="-1" style="color:black">Previous</a>
+                      {% endif %}
+      
+                      </li>
+      
+      
+      
+                      {% for i in page_range %}
+                           {% if i == current_page %}
+                              <li class="page-item active">
+                                <a class="page-link" href="#">{{i}}<span class="sr-only">(current)</span></a>
+                              </li>
+                          {% elif i > current_page|add:'-2' and i < current_page|add:'2' %}
+                              <li class="page-item"><a class="page-link" href="{% url 'informasaun:parceiru' %}?page={{i}}">{{i}}</a></li>
+                          {% endif %}
+                      {% endfor %}
+      
+      
+                      <li class="page-item">
+      
+                      {% if parceiru.has_next %}
+                        <a class="page-link" href="{% url 'informasaun:parceiru' %}?page={{parceiru.next_page_number}}" tabindex="-1">next</a>
+                      {% else %}
+                        <a class="page-link" href="#" tabindex="-1" style="color:black">next</a>
+                      {% endif %}
+      
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+              </td></tr>
+            </table>
+            </div>
+          
+<hr>
+
+                        <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / Content -->
+
+
+{% endblock content %}
