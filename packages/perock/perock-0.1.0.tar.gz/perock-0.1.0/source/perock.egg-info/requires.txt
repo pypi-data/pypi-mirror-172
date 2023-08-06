@@ -1,0 +1,2 @@
+prodius
+forcetable>=0.0.4
