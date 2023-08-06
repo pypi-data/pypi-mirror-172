@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pathological
+Version: 0.0.11
+Summary: Tree based data structures and general purpose functions for file system management
+Author-email: dbodell <dbodell@protonmail.com>
+Project-URL: Homepage, https://github.com/odelldb/pathological/tree/master
+Project-URL: Bug Tracker, https://github.com/odelldb/pathological/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Pathological  
+  
+##### (description in-progress)
