@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ofdskit
+Version: 0.0.0
+Home-page: https://github.com/Open-Telecoms-Data/ofdskit
+Author: Open Data Services
+Author-email: code@opendataservices.coop
+License: MIT
+Requires-Python: >=3.7
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+

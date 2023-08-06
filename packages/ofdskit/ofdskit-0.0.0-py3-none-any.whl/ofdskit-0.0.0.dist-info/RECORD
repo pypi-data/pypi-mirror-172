@@ -1,0 +1,11 @@
+ofdskit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ofdskit/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ofdskit/cli/__main__.py,sha256=ZmjbzIbhH6jVs4TruR6rYit14pK0XVp9GTjMgNbQyQs,1009
+ofdskit/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ofdskit/lib/geojson.py,sha256=TCAz6qYOHUfOwzg3zaT8oIoC4snIaQt_hsBvVrnPm2A,4627
+ofdskit-0.0.0.dist-info/LICENSE,sha256=EfrKzcZqfvPMwxNDip3xUwqn3KCRLAhUgP89Spqge-Y,1058
+ofdskit-0.0.0.dist-info/METADATA,sha256=8M_V_U3VfHSjEhSUqwf6I8th8nGYIkAGaTjP8p0XkYc,457
+ofdskit-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ofdskit-0.0.0.dist-info/entry_points.txt,sha256=QyQ0vFX_0M8UmauVr-pf6v_U_4URDwaydBVer71mtHk,54
+ofdskit-0.0.0.dist-info/top_level.txt,sha256=zewzgC9LgtNl7vDZKPAZySLfH9xCJOh6r-kZgt5BALg,8
+ofdskit-0.0.0.dist-info/RECORD,,
