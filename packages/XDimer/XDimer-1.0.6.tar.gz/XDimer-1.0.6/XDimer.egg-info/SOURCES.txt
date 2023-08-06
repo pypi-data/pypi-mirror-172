@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+setup.py
+XDimer.egg-info/PKG-INFO
+XDimer.egg-info/SOURCES.txt
+XDimer.egg-info/dependency_links.txt
+XDimer.egg-info/requires.txt
+XDimer.egg-info/top_level.txt
+xdimer/__init__.py
+xdimer/auxiliary.py
+xdimer/quantummechanical.py
+xdimer/semiclassical.py
+xdimer/examples/__init__.py
+xdimer/examples/fitting_emission_data/__init__.py
+xdimer/examples/fitting_emission_data/__main__.py
+xdimer/examples/simulating_emission/__init__.py
+xdimer/examples/simulating_emission/__main__.py
