@@ -1,0 +1,12 @@
+precipitation/FACETA.py,sha256=TECdMmLOZEGakjbovkQ3U7ePN2pp5eEm_-EQQPh508o,34204
+precipitation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+precipitation/__version__.py,sha256=6XPCLwWHsNDy1ktnmd5ysJ410UoTFbMc9jY5qHp_yGQ,37
+precipitation/geo_tools.py,sha256=Q-tUOD5QGaiF5LQi3o7J0iWlVW5ye0jroNSz_iqlTVE,24097
+precipitation/h5py_tools.py,sha256=V49Uv28wcfQ3889U7A5Jfe_avqFwlDhqbk-nVUPhypc,4586
+precipitation/hidro_tools.py,sha256=kY3daZWRKTOLaTz_VH2DF2tWOMRlJlFTzAHxjCjQctk,19359
+precipitation/libraries.py,sha256=5mGCBLQoNlLHTxsjU7eOwsSqyFqqPDxpE5lTGanvCG0,1878
+hidro_UNC_joaquin.segura.ellis-0.1.10.1.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+hidro_UNC_joaquin.segura.ellis-0.1.10.1.dist-info/METADATA,sha256=_XoU-oPZhr2l7ydeQyQruIwu32af_x1ghk1rmanzLpk,7407
+hidro_UNC_joaquin.segura.ellis-0.1.10.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hidro_UNC_joaquin.segura.ellis-0.1.10.1.dist-info/top_level.txt,sha256=vfAaAz4R-hhVDbjaNmsgGftgP4lcr6mi05QSjx5Jhp4,14
+hidro_UNC_joaquin.segura.ellis-0.1.10.1.dist-info/RECORD,,
