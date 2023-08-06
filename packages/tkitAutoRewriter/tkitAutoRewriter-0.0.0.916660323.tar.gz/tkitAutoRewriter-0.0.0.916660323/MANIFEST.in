@@ -1,0 +1,5 @@
+# include tkitAutoRewriter/nltk_data/corpora/stopwords/english
+# include tkitAutoRewriter/nltk_data/
+include tkitAutoRewriter/nltk_data/corpora/stopwords/english
+include tkitAutoRewriter/nltk_data/tokenizers/punkt/PY3/english.pickle
+include tkitAutoRewriter/nltk_data/tokenizers/punkt/english.pickle
