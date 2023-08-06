@@ -1,0 +1,10 @@
+boto3
+pandas
+phonenumbers
+psycopg2-binary
+pysocks
+requests
+selenium
+simple-salesforce
+slackclient
+spacy
