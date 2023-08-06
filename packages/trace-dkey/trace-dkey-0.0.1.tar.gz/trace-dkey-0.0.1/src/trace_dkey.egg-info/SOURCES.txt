@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+src/trace_dkey/__init__.py
+src/trace_dkey.egg-info/PKG-INFO
+src/trace_dkey.egg-info/SOURCES.txt
+src/trace_dkey.egg-info/dependency_links.txt
+src/trace_dkey.egg-info/top_level.txt
