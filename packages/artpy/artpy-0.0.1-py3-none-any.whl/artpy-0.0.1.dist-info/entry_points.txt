@@ -1,0 +1,2 @@
+[nbdev]
+aiart = aiart._modidx:d
