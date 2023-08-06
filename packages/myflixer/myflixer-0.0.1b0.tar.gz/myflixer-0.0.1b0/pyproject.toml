@@ -1,0 +1,25 @@
+[project]
+name = "myflixer"
+version = "0.0.1b"
+authors = [
+  { name="yusef", email="yusef314159@gmail.com" },
+]
+description = "Myflixer"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "PyQt5 ~= 5.15.6",
+  "PyQtWebEngine ~= 5.15.5",
+  "beautifulsoup4 ~= 4.10.0",
+  "requests ~= 2.28.1"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mexusef/myflixer"
+"Bug Tracker" = "https://github.com/mexusef/myflixer/issues"

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+images/myflixer.png
+src/myflixer/__init__.py
+src/myflixer/__main__.py
+src/myflixer/flix.py
+src/myflixer.egg-info/PKG-INFO
+src/myflixer.egg-info/SOURCES.txt
+src/myflixer.egg-info/dependency_links.txt
+src/myflixer.egg-info/requires.txt
+src/myflixer.egg-info/top_level.txt
