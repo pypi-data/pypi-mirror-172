@@ -1,0 +1,26 @@
+optimum
+transformers>=4.17.0
+datasets
+torch
+sentencepiece
+scipy
+
+[neural-compressor]
+neural-compressor
+
+[nncf]
+nncf
+
+[openvino]
+openvino>=2022.2.0
+
+[quality]
+black
+isort
+hf-doc-builder@ git+https://github.com/huggingface/doc-builder.git
+
+[tests]
+pytest
+parameterized
+Pillow
+evaluate
