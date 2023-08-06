@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: OrganicOI
+Version: 0.0.22
+Summary: An image reconstuction algorithm using GANs
+Home-page: https://github.com/kluskaj/Organic
+Author: Jacques Kluska
+Author-email: jacques.kluska@kuleuven.be
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
