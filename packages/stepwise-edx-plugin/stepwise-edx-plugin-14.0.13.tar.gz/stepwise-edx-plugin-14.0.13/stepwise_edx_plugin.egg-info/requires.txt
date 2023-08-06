@@ -1,0 +1,12 @@
+social-auth-core==4.2.0
+social-auth-app-django==5.0.0
+Django>=3.2
+
+[common]
+Django>=3.2
+
+[local]
+pre-commit
+black
+flake8
+ipython

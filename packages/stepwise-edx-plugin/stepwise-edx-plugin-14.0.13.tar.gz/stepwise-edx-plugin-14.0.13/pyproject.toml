@@ -1,0 +1,97 @@
+# -----------------------------------------------------------------------------
+# lawrence mcdaniel
+# https://lawrencemcdaniel.com
+#
+#
+# see:  https://semver.org/
+#       https://github.com/apps/semantic-pull-requests
+#       https://mestrak.com/blog/semantic-release-with-python-poetry-github-actions-20nn
+#
+#
+# commit conventions:
+# fix:
+# feat:
+# build:, chore:, ci:, docs:, style:, refactor:, perf:, test:
+#
+# -----------------------------------------------------------------------------
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.semantic_release]
+version_variable = [
+    "src_folder/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta:__legacy__"
+
+#------------------------------------------------------------------------------
+# PyPi meta data
+#------------------------------------------------------------------------------
+[project]
+name = "stepwise-edx-plugin"
+version = "14.0.13"
+authors = [
+  { name="Lawrence McDaniel", email="lpm0073@gmail.com" },
+  { name="Kent Fuka", email="kent@querium.com" },
+]
+description = "A Django plugin to add Stepwise Math custom features to Open edX installations."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "social-auth-core==4.2.0",
+  "social-auth-app-django==5.0.0",
+  "Django>=3.2"
+]
+
+keywords = ["Open edX", "api", "Stepwise", "QueriumCorp"]
+
+[project.urls]
+Homepage = "https://github.com/StepwiseMath/stepwise-edx-plugin"
+"Bug Tracker" = "https://github.com/StepwiseMath/stepwise-edx-plugin/issues"
+Repository = "https://github.com/StepwiseMath/stepwise-edx-plugin"
+
+#------------------------------------------------------------------------------
+# see: https://setuptools.pypa.io/en/latest/userguide/dependency_management.html
+#------------------------------------------------------------------------------
+[project.optional-dependencies]
+common = [
+     "Django>=3.2"
+]
+local = [
+    "pre-commit",
+    "black",
+    "flake8",
+    "ipython"
+]
+
+#------------------------------------------------------------------------------
+# see: https://setuptools.pypa.io/en/latest/userguide/entry_point.html
+#------------------------------------------------------------------------------
+[project.entry-points."lms.djangoapp"]
+stepwise_plugin = "stepwise_plugin.apps:StepwisePluginConfig"
