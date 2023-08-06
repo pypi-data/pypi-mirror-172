@@ -1,0 +1,12 @@
+conda_package_streaming/__init__.py,sha256=LBK46heutvn3KmsCrKIYu8RQikbfnjZaj2xFrXaeCzQ,22
+conda_package_streaming/exceptions.py,sha256=7fG4CNtukkSRWAGh9Zg2DCNkhw-wNo-Oi35c2jf0VsQ,677
+conda_package_streaming/extract.py,sha256=HSYGqqrmHX6v7vPyBxGiIr23B9dd5oPCDN-ODagMHEU,2471
+conda_package_streaming/lazy_wheel.py,sha256=LcbhpN_X1IVvxdFn0kbQ7hI8AQOQfenrdLX-tydeZ3Q,9450
+conda_package_streaming/package_streaming.py,sha256=O4M8cfnNklpaocIkCXQ4pJEYmGAy3SUIrirIOxUXlaQ,3611
+conda_package_streaming/s3.py,sha256=ygm59wSPpixvwkO4QqSgvalNUjAk1FzEXW0JNj45cgI,2286
+conda_package_streaming/transmute.py,sha256=U6EnTs2XBPy3JFWGANdcoKDAgvETZ6DABRtvQ1mrzKo,2780
+conda_package_streaming/url.py,sha256=fC3D_MngPB2KQ_Y0OuKlpLe1nsf-AHT1Vmo7AGKyG0U,2462
+conda_package_streaming-0.5.0.dist-info/LICENSE,sha256=WPOScO-I9aoJgXok_DebNZN-PZhtB13xi1WqU0iqrWY,2670
+conda_package_streaming-0.5.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+conda_package_streaming-0.5.0.dist-info/METADATA,sha256=pKoOpKRaaA1bY7I5i7DemrxY9hXAPMeO-dsG5A7aOhE,3692
+conda_package_streaming-0.5.0.dist-info/RECORD,,
