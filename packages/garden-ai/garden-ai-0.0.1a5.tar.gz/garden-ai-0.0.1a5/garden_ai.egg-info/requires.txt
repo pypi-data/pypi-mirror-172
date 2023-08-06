@@ -1,0 +1,11 @@
+requests>=2.20.0
+globus-sdk>=3.12.0
+
+[dev]
+flake8==3.8.0
+pytest
+pre-commit
+
+[test]
+flake8==3.8.0
+pytest
