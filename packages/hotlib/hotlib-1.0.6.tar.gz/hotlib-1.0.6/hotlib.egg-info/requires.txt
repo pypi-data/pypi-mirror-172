@@ -1,0 +1,15 @@
+shapely
+GDAL
+numpy
+tensorflow
+Pillow
+geopandas
+
+[build]
+build
+twine
+
+[dev]
+black
+bumpver
+isort
