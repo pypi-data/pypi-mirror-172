@@ -1,0 +1,16 @@
+README.md
+setup.py
+nmalign/__init__.py
+nmalign.egg-info/PKG-INFO
+nmalign.egg-info/SOURCES.txt
+nmalign.egg-info/dependency_links.txt
+nmalign.egg-info/entry_points.txt
+nmalign.egg-info/requires.txt
+nmalign.egg-info/top_level.txt
+nmalign/lib/__init__.py
+nmalign/lib/align.py
+nmalign/ocrd/__init__.py
+nmalign/ocrd/cli.py
+nmalign/ocrd/ocrd-tool.json
+nmalign/scripts/__init__.py
+nmalign/scripts/cli.py
