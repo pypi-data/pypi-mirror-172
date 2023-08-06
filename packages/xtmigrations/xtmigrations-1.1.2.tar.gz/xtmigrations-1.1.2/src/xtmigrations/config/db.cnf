@@ -1,0 +1,10 @@
+[xtmigrations]
+env = <environment>
+engine = postgresql
+host = <host>
+port = 5432
+database = <database>
+schema = <schema>
+user = <user>
+# The password field is optional. If not provided, you will be prompted for a password
+# password = <password>

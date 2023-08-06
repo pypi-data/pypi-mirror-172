@@ -1,0 +1,5 @@
+include *.md *.txt setup.py
+recursive-include src/xtmigrations/sql *.sql
+recursive-include src/xtmigrations/config *.cnf
+graft src/xtmigrations/sql/base
+global-include *.sql *.cnf

@@ -1,0 +1,10 @@
+[xtmigrations]
+env = dev
+engine = postgresql
+host = localhost
+port = 5432
+database = logdt
+schema = public
+user = xt
+# The password field is optional. If not provided, you will be prompted for a password
+password = okokokok
