@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/assembly_ai/__init__.py
+src/assembly_ai/example.py
+src/assembly_ai_demo.egg-info/PKG-INFO
+src/assembly_ai_demo.egg-info/SOURCES.txt
+src/assembly_ai_demo.egg-info/dependency_links.txt
+src/assembly_ai_demo.egg-info/top_level.txt
