@@ -1,0 +1,3 @@
+[console_scripts]
+cldflex = cldflex.cli:main
+
