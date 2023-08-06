@@ -1,0 +1,10 @@
+README.md
+setup.py
+appeears/__init__.py
+appeears/appeears.py
+appeears.egg-info/PKG-INFO
+appeears.egg-info/SOURCES.txt
+appeears.egg-info/dependency_links.txt
+appeears.egg-info/entry_points.txt
+appeears.egg-info/requires.txt
+appeears.egg-info/top_level.txt
