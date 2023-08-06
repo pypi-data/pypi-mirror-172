@@ -1,0 +1,42 @@
+Change Log
+===========
+
+0.0.1 (12/02/2022)
+-------------------
+- First Release
+
+0.0.2 (12/02/2022)
+-------------------
+- Basic Documentation 
+- Modifier removal
+- space correction
+- text mode parser
+
+0.0.3 (14/02/2022)
+-------------------
+- Connector ending 
+- Exception case for component construction in bangla
+- Added test
+
+0.0.4 (14/02/2022)
+-------------------
+- pip test stable
+- added malformed word detection
+
+0.0.5 (19/02/2022)
+-------------------
+- encoding correction
+- no space char handling
+
+0.0.6 (15/04/2022)
+-------------------
+- removed malformed word detection [not useful]
+- removed component calculation [not consistent]
+
+0.0.7 (26/04/2022)
+-------------------
+- addition order correction
+
+0.0.8 (21/10/2022)
+-------------------
+- allow middle Connector

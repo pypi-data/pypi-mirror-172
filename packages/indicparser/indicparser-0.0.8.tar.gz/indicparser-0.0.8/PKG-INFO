@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: indicparser
+Version: 0.0.8
+Summary: Grapheme Parser for indic languages
+Home-page: https://github.com/mnansary/indicparser
+Author: Bengali.AI
+Author-email: research.bengaliai@gmail.com
+License: MIT
+Keywords: grapheme,indic languages
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# indicparser
+Grapheme Parser for indic languages 
+
+# Installaton
+
+```python
+pip install indicparser
+```
+# Useage
+* initializing the parser
+
+```python
+from indicparser import graphemeParser
+gp=graphemeParser("bangla")
+```
+* extracting graphemes
+
+```python
+text="  শাটিকাপ   মার"
+graphemes=gp.process(text)
+print("Graphemes:",graphemes)
+```
+> Graphemes: [' ', ' ', 'শা', 'টি', 'কা', 'প', ' ', ' ', ' ', 'মা', 'র']
+
+* extracting graphemes but merging spaces and clearing initial and ending space
+```python
+graphemes=gp.process(text,merge_spaces=True)
+print("Graphemes (space corrected):",graphemes)
+```
+> Graphemes (space corrected): ['শা', 'টি', 'কা', 'প', ' ', 'মা', 'র']
+
+* treatment of numbers and puntucation and english is also available by default
+
+```python
+text="এটাকি 2441139 ? না ভাই wrong number"
+graphemes=gp.process(text,merge_spaces=True)
+print("Graphemes:",graphemes)
+```
+> Graphemes: ['এ', 'টা', 'কি', ' ', '2', '4', '4', '1', '1', '3', '9', ' ', '?', ' ', 'না', ' ', 'ভা', 'ই', ' ', 'w', 'r', 'o', 'n', 'g', ' ', 'n', 'u', 'm', 'b', 'e', 'r']
+
+* available languages
+
+```python
+from indicparser import languages
+languages.keys()
+```
+> dict_keys(['bangla', 'malyalam', 'tamil', 'gujrati', 'panjabi', 'odiya', 'hindi'])
+
+
+# Normalization
+* For best results use normalized text before parsing
+* An example bangla unicode normalizer can be found [here](https://pypi.org/project/bnunicodenormalizer/)
+
+# ABOUT
+* Authors: [Bengali.AI](https://bengali.ai/)
+
+* **Cite Bengali.AI multipurpose grapheme dataset paper**
+```bibtext
+@inproceedings{alam2021large,
+  title={A large multi-target dataset of common bengali handwritten graphemes},
+  author={Alam, Samiul and Reasat, Tahsin and Sushmit, Asif Shahriyar and Siddique, Sadi Mohammad and Rahman, Fuad and Hasan, Mahady and Humayun, Ahmed Imtiaz},
+  booktitle={International Conference on Document Analysis and Recognition},
+  pages={383--398},
+  year={2021},
+  organization={Springer}
+}
+```
+
+Change Log
+===========
+
+0.0.1 (12/02/2022)
+-------------------
+- First Release
+
+0.0.2 (12/02/2022)
+-------------------
+- Basic Documentation 
+- Modifier removal
+- space correction
+- text mode parser
+
+0.0.3 (14/02/2022)
+-------------------
+- Connector ending 
+- Exception case for component construction in bangla
+- Added test
+
+0.0.4 (14/02/2022)
+-------------------
+- pip test stable
+- added malformed word detection
+
+0.0.5 (19/02/2022)
+-------------------
+- encoding correction
+- no space char handling
+
+0.0.6 (15/04/2022)
+-------------------
+- removed malformed word detection [not useful]
+- removed component calculation [not consistent]
+
+0.0.7 (26/04/2022)
+-------------------
+- addition order correction
+
+0.0.8 (21/10/2022)
+-------------------
+- allow middle Connector
+
