@@ -1,0 +1,8 @@
+LICENSE
+README.md
+localthickness.py
+setup.py
+localthickness.egg-info/PKG-INFO
+localthickness.egg-info/SOURCES.txt
+localthickness.egg-info/dependency_links.txt
+localthickness.egg-info/top_level.txt
