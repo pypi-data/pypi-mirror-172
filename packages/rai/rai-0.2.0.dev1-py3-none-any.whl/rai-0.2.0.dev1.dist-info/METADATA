@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: rai
+Version: 0.2.0.dev1
+Summary: AI assisted treatments accessible to all
+Home-page: https://radiotherapy.ai
+License: AGPL-3.0-or-later
+Author: Simon Biggs
+Author-email: simon.biggs@radiotherapy.ai
+Requires-Python: >=3.7,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: PyWavelets (<1.4.0)
+Requires-Dist: click
+Requires-Dist: ipywidgets (>=7.6)
+Requires-Dist: jupyter-dash
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly (>=4)
+Requires-Dist: pydicom
+Requires-Dist: raicontours (==0.3.0-dev1)
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Requires-Dist: shapely
+Requires-Dist: statsmodels
+Requires-Dist: tensorflow-directml-plugin; platform_system == "Windows"
+Requires-Dist: tensorflow-intel; platform_system == "Windows"
+Requires-Dist: tensorflow; platform_system != "Windows"
+Requires-Dist: tqdm
+Project-URL: Documentation, https://docs.radiotherapy.ai
+Project-URL: Repository, https://github.com/RadiotherapyAI/rai
+Description-Content-Type: text/markdown
+
+# `rai`, RadiotherapyAI's non-clinical open source autocontouring library
+
+This Open Source Unregulated Software is provided in the hope that it might be
+useful but WITHOUT ANY WARRANTY. It is **not** intended for clinical use, and
+is instead intended for research use only.
+
+If you are looking for the Regulated Medical Device, `RAIContours`, that is
+based upon the source code within this repository, when it has completed its
+regulatory approval, it will be available for download directly from
+<https://radiotherapy.ai/>. Prior to regulatory approval, you may be able to
+utilise `RAIContours` under a clinical trial notification or equivalent. If you
+are interested in undergoing a clinical trial with `RAIContours` please reach
+out to <clinical-trials@radiotherapy.ai>.
+
+## Goal
+
+Create an AI Software as a Medical Device that saves lives built entirely from
+open source software. Being a part of making it easier for researchers to
+translate from "bench-top to bedside", helping anyone to build regulated tools
+that go on to save more lives than any one of us alone could ever hope to
+achieve.
+
+## Installation
+
+This open source research library is able to be installed by running:
+
+```
+pip install rai
+```
+
+## The regulatory documentation
+
+All of the regulatory documentation is available under a creative commons
+license and is built upon
+[the amazing templates](https://openregulatory.com/templates/)
+provided by [OpenRegulatory](https://openregulatory.com/).
+
+The source code for the regulatory documentation is available within the
+[docs directory](./docs). The online rendering of the documentation is viewable
+at <https://docs.radiotherapy.ai>
+
+The regulatory task is currently a work in progress. Right now I am just
+learning the regulatory ropes while putting all of my warts up here for all to
+see. There will be mistakes. If you find them please let me know. Also, if you
+want to help out, please get in touch. My email address is
+simon.biggs@radiotherapy.ai.
+
