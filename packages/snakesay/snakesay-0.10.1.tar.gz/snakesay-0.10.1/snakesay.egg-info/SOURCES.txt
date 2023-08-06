@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+snakesay/__init__.py
+snakesay/snakesay.py
+snakesay.egg-info/PKG-INFO
+snakesay.egg-info/SOURCES.txt
+snakesay.egg-info/dependency_links.txt
+snakesay.egg-info/entry_points.txt
+snakesay.egg-info/top_level.txt
