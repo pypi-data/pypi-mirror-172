@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+synapse_audiobomb_module/__init__.py
+synapse_audiobomb_module/database.py
+synapse_audiobomb_module.egg-info/PKG-INFO
+synapse_audiobomb_module.egg-info/SOURCES.txt
+synapse_audiobomb_module.egg-info/dependency_links.txt
+synapse_audiobomb_module.egg-info/requires.txt
+synapse_audiobomb_module.egg-info/top_level.txt
