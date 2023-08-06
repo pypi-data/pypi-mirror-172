@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: psu_calendar
+Version: 0.0.2
+Summary: psu_calendar extension for PSU Django apps
+Home-page: https://github.com/PSU-OIT-ARC/django-psu-calendar
+Author: Mike Gostomski
+Author-email: mjg@pdx.edu
+License: MIT License
+Platform: UNKNOWN
+Classifier: Framework :: Django :: 2.2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# PSU Calendar
+
+Provides a basic calendar view for your app
+
+## Quick Start
+
+### Dependencies
+The following dependency is REQUIRED and must be installed in your app:
+- [psu-base](https://pypi.org/project/psu-base/)
+
+### Installation
+```shell script
+pip install psu-calendar
+```
+
+### Configuration
+1. Configure [psu-base](https://pypi.org/project/psu-base/) in your Django app
+1. Add `psu-calendar` to your `requirements.txt`
+1. Add psu_calendar to your INSTALLED_APPS in `settings.py`:
+    ```python
+    INSTALLED_APPS = [
+       ...
+       'psu_base',
+       'psu_calendar',
+    ]
+    ```
+
+## Usage
+
+### In your view.py file
+Start by getting the current month, or the month that the user has selected. 
+When the user selects the prev/next month, a redirect is required to prevent a page refresh from 
+unexpectedly changing the month again, and is indicated by the month being False.
+```python
+from psu_calendar.services import calendar_service
+from django.shortcuts import render, redirect
+
+def index(request):
+
+    month = calendar_service.get_month(request)
+
+    # False month indicates need for redirect (to prevent page refresh from changing month again)
+    if not month:
+        return redirect("my_calendar_view")
+```
+
+Day payloads can be set individually or in bulk.  To set an individual day, use get_day() and set its properties as needed:
+```python
+day = month.get_day(15)
+day.payload = '<whatever>'
+day.heading = "Special Day!"
+```
+To set day content in bulk, provide a list of payloads (0-30) or a dict {1: payload, 2: payload, 31: payload}
+You may also provide a dict including "heading" and/or "template" in addition to the "payload" for any given day (see day 13 below)
+```python
+sample_data = {
+        1: "First day of the month!",
+        2: {"heading": "Day TWO..."},
+        3: ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"],
+        5: ("Hello", "World", "Tuple"),
+        8: list(range(1024, 1100)),
+        13: {"heading": "Big Day!", "payload": str(list(range(1024, 1100)))},
+    }
+    month.populate_days(sample_data)
+```
+### In your template.html files
+The month object created in your view contains a `template_base_directory` property which defaults to `psu_calendar`.  
+If your project will contain multiple calendars, you may specify a different template base directory for one or more 
+of the calendars.  Use the `template_base_directory` property to include the month.html template and render the calendar
+view.  Provide the month object as "month":
+```
+{%include month.month_template with month=month%}
+```
+If you have specified an alternate `template_base_directory`, you'll need to copy all 4 templates to the new path
+(`month.html`, `nav_header.html`, `day.html`, and `style.css`).  
+
+If you're using the default `template_base_directory`, there is some basic formatting built in for when the day payload 
+is a list or tuple, but you'll probably want to override the `psu_calendar/day.html` template to handle your custom 
+day content.
+
+
+## For Developers
+The version number must be updated for every PyPi release.
+The version number is in `psu_calendar/__init__.py`
+
+### Document Changes
+Record every change in [docs/CHANGELOG.txt](docs/CHANGELOG.txt)
+
+### Publishing to PyPi
+1. Create accounts on [PyPi](https://pypi.org/account/register/) and [Test PyPi](https://test.pypi.org/account/register/)
+1. Create `~/.pypirc`
+    ```
+    [distutils]
+    index-servers=
+        pypi
+        testpypi
+    
+    [testpypi]
+    repository: https://test.pypi.org/legacy/
+    username: mikegostomski
+    password: pa$$w0rd
+    
+    [pypi]
+    username: mikegostomski
+    password: pa$$w0rd
+    ```
+1. Ask an existing developer to add you as a collaborator - [test](https://test.pypi.org/manage/project/psu-calendar/collaboration/) and/or [prod](https://pypi.org/manage/project/psu-calendar/collaboration/)
+1. `python setup.py sdist bdist_wheel --universal`
+1. `twine upload --repository testpypi dist/*`
+1. `twine upload dist/*`
+1. Tag the release in Git.  Don't forget to push the tag!
+Example:
+```shell script
+git tag 0.1.2
+git push origin 0.1.2 
+```
+

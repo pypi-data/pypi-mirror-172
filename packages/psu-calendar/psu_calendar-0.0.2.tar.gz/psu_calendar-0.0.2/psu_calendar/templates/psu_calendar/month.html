@@ -1,0 +1,29 @@
+{% load base_taglib %}
+{%include month.header_template%}
+<div class="psu_calendar-month">
+    <div class="psu_calendar-header">Sunday</div>
+    <div class="psu_calendar-header">Monday</div>
+    <div class="psu_calendar-header">Tuesday</div>
+    <div class="psu_calendar-header">Wednesday</div>
+    <div class="psu_calendar-header">Thursday</div>
+    <div class="psu_calendar-header">Friday</div>
+    <div class="psu_calendar-header">Saturday</div>
+
+    {%for dd in month.pre_days%}
+        <div class="psu_calendar-day psu_calendar-pre_day">&nbsp;</div>
+    {%endfor%}
+
+    {%for dd in month.days%}
+        <div class="psu_calendar-day_container {{dd.container_classes}}">
+            {%include dd.template|default:month.day_template with day=dd%}
+        </div>
+    {%endfor%}
+
+    {%for dd in month.post_days%}
+        <div class="psu_calendar-day psu_calendar-post_day">&nbsp;</div>
+    {%endfor%}
+</div>
+
+<style>
+{%include month.style_template%}
+</style>
