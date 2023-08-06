@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/jsiiTimeAgo.egg-info/PKG-INFO
+src/jsiiTimeAgo.egg-info/SOURCES.txt
+src/jsiiTimeAgo.egg-info/dependency_links.txt
+src/jsiiTimeAgo.egg-info/requires.txt
+src/jsiiTimeAgo.egg-info/top_level.txt
+src/jsiiTimeAgo/_jsii/__init__.py
+src/jsiiTimeAgo/_jsii/jsii-time-ago@0.0.1.jsii.tgz
