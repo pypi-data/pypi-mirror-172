@@ -1,0 +1,38 @@
+#-*-shell-script-*-
+#compdef guild
+
+_guild_completion() {
+    local -a completions
+    local -a completions_with_descriptions
+    local -a response
+    nospace_suffix=" "
+    (( ! $+commands[guild] )) && return 1
+
+    response=("${(@f)$(env COMP_WORDS="${words[*]}" COMP_CWORD=$((CURRENT-1)) _GUILD_COMPLETE=zsh_complete guild)}")
+
+    for type key descr in ${response}; do
+        if [[ "$key" == "!!nospace" ]]; then
+            nospace_suffix=""
+        elif [[ "$type" == "plain" ]]; then
+            if [[ "$descr" == "_" ]]; then
+                completions+=("$key")
+            else
+                completions_with_descriptions+=("$key":"$descr")
+            fi
+        elif [[ "$type" == "dir" ]]; then
+            _path_files -/
+        elif [[ "$type" == "file" ]]; then
+            _path_files -f
+        fi
+    done
+
+    if [ -n "$completions_with_descriptions" ]; then
+        _describe -V unsorted completions_with_descriptions -U
+    fi
+
+    if [ -n "$completions" ]; then
+        compadd -S "$nospace_suffix" -U -V unsorted -a completions
+    fi
+}
+
+compdef _guild_completion guild;

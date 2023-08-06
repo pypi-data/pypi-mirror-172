@@ -1,0 +1,15 @@
+dask[distributed]
+dvc[s3]
+ipython
+hiplot
+jinja2<3.2
+jupyter
+jupyter_contrib_nbextensions
+matplotlib
+pandas
+pytest
+pytest-xdist
+pytest-cov
+sybil
+tensorboardX
+twine

@@ -1,0 +1,19 @@
+---
+doctest: -PY3 +PY36 +PY37 # 2022-04-11 these tests fail on github actions because TF 1.14 fails to install. We need to update to a more current tensorflow version that has wheels available.
+---
+
+# Train `mnist-intro` example
+
+We can train the MNIST example model `mnist-intro` in the `mnist`
+directory:
+
+    >>> run("guild -C %s run intro:train -y --no-gpus epochs=1"
+    ...     % example("models"))
+    Resolving data
+    ...
+    Step 0: training=...
+    Step 0: validate=...
+    ...
+    Step 540: training=...
+    Step 540: validate=...
+    <exit 0>
