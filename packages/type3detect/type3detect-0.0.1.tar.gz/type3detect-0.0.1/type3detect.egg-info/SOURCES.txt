@@ -1,0 +1,10 @@
+setup.py
+type3detect/ACBone.py
+type3detect/__init__.py
+type3detect/detectRadioburst.py
+type3detect/radioTools.py
+type3detect.egg-info/PKG-INFO
+type3detect.egg-info/SOURCES.txt
+type3detect.egg-info/dependency_links.txt
+type3detect.egg-info/requires.txt
+type3detect.egg-info/top_level.txt
