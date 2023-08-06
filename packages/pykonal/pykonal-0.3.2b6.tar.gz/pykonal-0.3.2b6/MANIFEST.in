@@ -1,0 +1,8 @@
+include pykonal/constants.pxd
+include pykonal/fields.pxd
+include pykonal/locate.pxd
+include pykonal/stats.pxd
+include pykonal/heapq.pxd
+include pykonal/solver.pxd
+include pykonal/data
+include README.md
