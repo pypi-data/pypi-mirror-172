@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pythonInetCheck
+Version: 0.0.1
+Summary: pythonInetCheck
+Home-page: UNKNOWN
+Author: rosejustin601 (Justin Rose)
+Author-email: rosejustin601@gmail.com
+License: UNKNOWN
+Keywords: python,internet,status,test
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+a process that checks if a device can connect to the web and notifys the user via system moniter
+
