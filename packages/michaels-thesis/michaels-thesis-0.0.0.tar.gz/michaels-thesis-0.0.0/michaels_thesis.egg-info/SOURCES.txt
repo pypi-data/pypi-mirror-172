@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+michaels_thesis.egg-info/PKG-INFO
+michaels_thesis.egg-info/SOURCES.txt
+michaels_thesis.egg-info/dependency_links.txt
+michaels_thesis.egg-info/top_level.txt
