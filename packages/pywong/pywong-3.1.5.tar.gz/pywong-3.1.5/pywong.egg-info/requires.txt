@@ -1,0 +1,8 @@
+PyMySQL>=1.0.2
+psycopg2>=2.9.3
+pymssql>=2.2.5
+SQLAlchemy>=1.4.39
+psutil>=5.9.1
+scikit-learn>=1.1.1
+prophet>=1.1
+pyod>=1.0.4
