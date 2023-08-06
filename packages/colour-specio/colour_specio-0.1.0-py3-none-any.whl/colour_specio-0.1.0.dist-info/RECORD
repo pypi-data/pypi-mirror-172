@@ -1,0 +1,11 @@
+specio/ColorimetryResearch/CR300.py,sha256=0_RulUTHrd516D5QG1HLwSdd0jTcZQSKs1hhcVOJzLY,6389
+specio/ColorimetryResearch/CR_Definitions.py,sha256=aPORwVVqlgUsksKoYGP7IM_935QOTTudlJEaYSvSB2Y,3119
+specio/ColorimetryResearch/__init__.py,sha256=xtu3yg71xDOlmlNe5tgmKRasF-Y6MAl2hPmhEm-3SAQ,573
+specio/__init__.py,sha256=rNJ65_GBxOONpNM6bpCiUoKDqGvXPVwhXvepopu9SBI,978
+specio/common.py,sha256=kJs9RlER-l5NdcJ2LbxRsswe_FH5k9nEgENe-Hflyzs,1677
+specio/ex.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+specio/spectrometer.py,sha256=pLvbpzRMYQ1Zy3-YZmc2YI1csaYrbgcWRYbPLotkK2Y,1446
+colour_specio-0.1.0.dist-info/LICENSE.md,sha256=HBSHY85SCyanwAsaS6X9tXCP7ymIHgiE3YeHQ1BI6cw,1195
+colour_specio-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+colour_specio-0.1.0.dist-info/METADATA,sha256=0VpNexAA6X1xgMPLbtUUIBLx-m-Q_XIk3fbz03IM8xQ,1033
+colour_specio-0.1.0.dist-info/RECORD,,
