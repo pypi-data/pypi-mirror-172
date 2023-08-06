@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pybitds
+Version: 0.0.2
+Summary: pybitds
+Home-page: https://github.com/BytesChen/beginner
+Author: byteschen
+Author-email: czj1132163229@163.com
+Requires-Python: >=3.6
+
+beginner
