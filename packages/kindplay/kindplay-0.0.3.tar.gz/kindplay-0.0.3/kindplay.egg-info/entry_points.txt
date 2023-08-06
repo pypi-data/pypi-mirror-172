@@ -1,0 +1,2 @@
+[console_scripts]
+kindplay = kindplay.cli:main
