@@ -1,0 +1,16 @@
+bimcvcovid19i/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bimcvcovid19i/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bimcvcovid19i/__version__.py,sha256=yyLtGsBhynC-sSHdax-rRGvHNjH-gdWxIY68WnPVfDw,22
+bimcvcovid19i/__version__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bimcvcovid19i/download.py,sha256=YLPFebG7J6HVMWY-81GYQl_FBo7GZozdhI7ItdnN8zg,668
+bimcvcovid19i/download.pyi,sha256=5JpUiYT1eTAKrQbHqaG9iB7HgkLLTCxQmBSBPD4RGsA,219
+bimcvcovid19i/py.typed,sha256=9CRYW0Lz54Mx6QYz9x0yTgGx2qiTFYhg9gi1aN_wYc8,225
+bimcvcovid19i/typing.py,sha256=Nn-Ut_jm2wGfO4G5rdoSI8ITClvASFRLUxUFpngTiNA,77
+bimcvcovid19i/typing.pyi,sha256=f79MHB7RkDZjwNkIxvxK6hkdp0Ab8InevOr5r8eYdtc,38
+bimcvcovid19i/webdav.py,sha256=ZUoecYKNOtYnhsCG5Tk9ddPfSo8ANYzbFUNqHYnVbaw,3621
+bimcvcovid19i/webdav.pyi,sha256=4DKxRDfw-Oj_ZB0RLZCU9lVYTpHtcAu6_cQVf18gqzM,484
+bimcvcovid19i-0.0.3.dist-info/LICENSE,sha256=6A7VxfJGgDybDng64JGxU4NjINMcohXm1iQ7ZSyTqsQ,1088
+bimcvcovid19i-0.0.3.dist-info/METADATA,sha256=ORrW5J9b3jkptyrWIwvVdHmEqYu55ErVflpHSGEPUpU,879
+bimcvcovid19i-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bimcvcovid19i-0.0.3.dist-info/top_level.txt,sha256=IlwOdIMzoqfWHANUfAtkRwK9rpjT965Wk6ZgMQ0Dmh0,14
+bimcvcovid19i-0.0.3.dist-info/RECORD,,
