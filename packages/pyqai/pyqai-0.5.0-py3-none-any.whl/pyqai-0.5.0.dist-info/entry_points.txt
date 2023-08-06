@@ -1,0 +1,6 @@
+[console_scripts]
+pyqai-deploy = pyqai.deploy:main
+pyqai-deployments = pyqai.deployments:main
+pyqai-init = pyqai.init:main
+pyqai-logs = pyqai.logs:main
+pyqai-pods = pyqai.pods:main

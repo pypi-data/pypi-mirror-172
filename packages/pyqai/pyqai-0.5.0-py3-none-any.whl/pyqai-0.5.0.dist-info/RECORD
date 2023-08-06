@@ -1,0 +1,12 @@
+pyqai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqai/deploy.py,sha256=jt-jLq9i36utBXdX0V8ErZ76iekZRuMfTJJ_vbSLvOE,17935
+pyqai/deployments.py,sha256=9NFetVI_KEJTboANop3_5OHDxd9OAuHLOUm0s4ReH-g,1734
+pyqai/init.py,sha256=u5KvO-LyVW30WTojyi8066qdD5_IIQNh9t5eV6M9GfI,626
+pyqai/logs.py,sha256=raCvjeQlpVR38bG5eNnhUypOM589Ol_uuFNZuRTIMy0,1659
+pyqai/pods.py,sha256=kUBHpxCDdGYAW4PKR3ji6MtA5o6Iq-cZEZDmOASWOQk,1500
+pyqai-0.5.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pyqai-0.5.0.dist-info/METADATA,sha256=7HhgxzUHmT5kjkdcLjUoSU2MTvHbrKbjE0bOLkAsr9A,1973
+pyqai-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyqai-0.5.0.dist-info/entry_points.txt,sha256=z1KDQ2j7AoYlfiBrvuRrZxaigHH80ybUgkej3t0bAfA,181
+pyqai-0.5.0.dist-info/top_level.txt,sha256=oOE1US4H7prSjuHaWpcBuho0DHEd--U1J_3ccEvJ-VY,6
+pyqai-0.5.0.dist-info/RECORD,,
