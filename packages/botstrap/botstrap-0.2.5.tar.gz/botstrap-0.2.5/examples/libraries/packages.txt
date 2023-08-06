@@ -1,0 +1,7 @@
+discord-py-interactions
+discord.py
+disnake
+hikari
+naff
+nextcord
+py-cord

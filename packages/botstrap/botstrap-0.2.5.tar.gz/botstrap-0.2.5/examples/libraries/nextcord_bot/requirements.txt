@@ -1,0 +1,2 @@
+botstrap==0.2.4
+nextcord==2.2.0
