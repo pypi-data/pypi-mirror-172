@@ -1,0 +1,99 @@
+from __future__ import annotations
+
+import datetime
+import time
+from contextlib import suppress
+from dataclasses import dataclass, field
+from typing import Any, Dict, List, Optional
+
+from supervisor.dynamic.timer import Timer
+from supervisor.manifest import Manifest, Step, StepStatus, StepType
+from supervisor.recorder import DataLog, MessageLog
+from supervisor.reporter import Report, StepReport, WorkerStatus
+
+
+@dataclass
+class StepReportBuilder:
+    """
+    Builds a dynamic digital worker step.
+    """
+
+    step_id: str
+    start_time: datetime.datetime
+    end_time: datetime.datetime
+    duration: datetime.timedelta
+    status: StepStatus
+    args: Dict[str, Any] = field(default_factory=dict)
+    outputs: Optional[Dict] = None
+    message_log: MessageLog = field(default_factory=list)
+    data_log: DataLog = field(default_factory=list)
+
+    def to_report(self, manifest: Manifest) -> StepReport:
+        """
+        Populate missing fields in the report with those from its `manifest`.
+
+        Args:
+            manifest: The digital worker's manifest.
+
+        Returns:
+            StepReport: A final report on this step's execution.
+        """
+        # Find the corresponding step in the manifest workflow
+        # if it exists
+        # noinspection PyUnusedLocal
+        step: Optional[Step] = None
+        with suppress(KeyError):
+            step = manifest.steps_by_id[self.step_id]
+
+        # Build the report
+        return StepReport(
+            step_id=self.step_id,
+            step_type=step.step_type if step else StepType.UNKNOWN,
+            status=self.status,
+            title=step.title if step else "unknown",
+            description=step.description if step else "unknown",
+            start_time=self.start_time,
+            end_time=self.end_time,
+            duration=self.duration,
+            args=self.args,
+            outputs=self.outputs,
+            message_log=self.message_log,
+            data_log=self.data_log,
+        )
+
+
+@dataclass
+class ReportBuilder:
+    """
+    A work report builder that creates a new work report as a digital worker
+    is executed.
+    """
+
+    timer: Timer = field(default_factory=Timer)
+    workflow: List[StepReportBuilder] = field(default_factory=list)
+    timer_start: float = time.perf_counter()
+    status: Optional[WorkerStatus] = None
+
+    def __post_init__(self):
+        self.timer.start()
+
+    def to_report(self, manifest: Manifest) -> Report:
+        """
+        Populate fields in the work report using fields from the `manifest`.
+
+        Args:
+            manifest: The digital worker's manifest.
+
+        Returns:
+            Report: The finalized work report.
+        """
+        timed = self.timer.end()
+        steps = [x.to_report(manifest) for x in self.workflow]
+        return Report(
+            start_time=timed.start,
+            end_time=timed.end,
+            duration=timed.duration,
+            workflow=steps,
+            manifest=manifest,
+            status=self.status,
+        )
