@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nanocetpy
+Version: 1.0.2a2
+Summary: NanoCET Control and Analysis Software
+Home-page: https://github.com/Dispertech/NanoCETPy
+Author: Dispertech and Contributors
+Author-email: info@dispertech.com
+License: GPLv3
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
