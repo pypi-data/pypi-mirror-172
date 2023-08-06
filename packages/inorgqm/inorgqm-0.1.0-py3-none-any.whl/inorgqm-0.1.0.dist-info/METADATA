@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: inorgqm
+Version: 0.1.0
+Summary: A package for working with phenomenological spin operators
+Home-page: https://github.com/jonkragskow/inorgqm
+Author: Jon Kragskow
+Author-email: jonkragskow@gmail.com
+Project-URL: Bug Tracker, https://github.com/jonkragskow/inorgqm/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+# inorqm
+
+`inorgqm` is a python module for working performing quantum mechanical calculations using phenomenological spin operators
+
+# Installation
+
+For convenience, `inorgqm` is available on [PyPI](https://pypi.org/project/inorgqm/) and so can be installed using `pip`
+
+```
+pip install inorgqm
+```
+
+first import it into your python file
+
+```
+import inorgqm.multielectron as me
+```
+
+and then call them as 
+
+```
+me.function_name(arguments)
+```
+
+To find information on any of the functions included in `inorgqm`, use the `help` command from within a python environment, e.g.
+
+```
+help(me.function_name)
+```
