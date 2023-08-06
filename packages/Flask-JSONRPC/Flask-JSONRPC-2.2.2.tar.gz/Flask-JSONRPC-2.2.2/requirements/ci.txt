@@ -1,0 +1,39 @@
+# Code formatter
+# ------------------------------------------------------------------------------
+black==22.8.0  # https://github.com/psf/black
+pyupgrade==3.1.0;python_version>"3.6"  # https://github.com/asottile/pyupgrade
+
+# Code quality
+# ------------------------------------------------------------------------------
+flake8==5.0.4  # https://github.com/PyCQA/flake8
+flake8-isort==5.0.0;python_version>"3.6"  # https://github.com/gforcada/flake8-isort
+flake8-isort<=4.2.0;python_version<="3.6"
+flake8-bugbear==22.9.23  # https://github.com/PyCQA/flake8-bugbear
+flake8-pyi==22.10.0;python_version>"3.6"  # https://github.com/ambv/flake8-pyi
+flake8-pyi<20.10;python_version<="3.6"
+flake8-quotes==3.3.1  # https://github.com/zheller/flake8-quotes
+flake8-implicit-str-concat==0.3.0;python_version>"3.6"  # https://github.com/keisheiled/flake8-implicit-str-concat
+flake8-implicit-str-concat<0.3.0;python_version<="3.6"
+
+# Code linter
+# ------------------------------------------------------------------------------
+pylint==2.15.4;python_version>"3.6"  # https://github.com/PyCQA/pylint
+pylint<=2.13.9;python_version<="3.6"
+
+# Type check
+# ------------------------------------------------------------------------------
+mypy==0.982;python_version>"3.6"  # https://github.com/python/mypy
+pytype==2022.10.13;python_version>"3.6"  # https://github.com/google/pytype
+types_setuptools==65.3.0  # https://github.com/python/typeshed
+typeguard==2.13.3  # https://github.com/agronholm/typeguard
+
+# Security check
+# ------------------------------------------------------------------------------
+bandit==1.7.4;python_version>"3.6"  # https://github.com/PyCQA/bandit
+safety==2.3.1;python_version>"3.6"  # https://github.com/pyupio/safety
+
+# Code quality
+# ------------------------------------------------------------------------------
+coverage==6.4.4;python_version>"3.6"  # https://github.com/nedbat/coveragepy
+coverage<6.2;python_version<="3.6"
+coveralls==3.3.1  # https://github.com/marketplace/coveralls
