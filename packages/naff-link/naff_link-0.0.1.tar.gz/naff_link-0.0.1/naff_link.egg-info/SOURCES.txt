@@ -1,0 +1,10 @@
+README.md
+setup.py
+naff_link/__init__.py
+naff_link/events.py
+naff_link/main.py
+naff_link.egg-info/PKG-INFO
+naff_link.egg-info/SOURCES.txt
+naff_link.egg-info/dependency_links.txt
+naff_link.egg-info/requires.txt
+naff_link.egg-info/top_level.txt
