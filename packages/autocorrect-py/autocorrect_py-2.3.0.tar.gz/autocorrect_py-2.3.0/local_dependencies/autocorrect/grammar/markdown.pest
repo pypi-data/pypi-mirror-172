@@ -1,0 +1,58 @@
+item = _{ SOI ~ line* ~ EOI }
+line = _{ expr | newline }
+
+expr = _{ 
+  comment | html_tag | meta_info
+  | codeblock | block | inline | td_tag
+}
+
+block = ${ 
+  (block_prefix ~ (inline | string)+) 
+  | paragraph  
+}
+inline = ${ img | link | mark | wikilinks }
+paragraph = { (string | inline)+ }
+
+html_tag = @{ "<" ~ "/"? ~ (!(">") ~ ANY)* ~ ">"  }
+
+newline = ${ "\n" | "\r" }
+space = @{ (" ")* }
+
+codeblock = ${
+  PUSH("```") ~ codeblock_lang ~ codeblock_code ~ POP
+  | indent_code+
+}
+indent_code = {
+  ("    " | "\t") ~ (!"\n" ~ ANY)* ~ newline
+}
+codeblock_lang = { ASCII_ALPHA* }
+codeblock_code = { (!(PEEK) ~ ANY)* }
+td_tag = @{ space ~ "|" ~ space }
+block_prefix = @{
+   ("######" | "#####" | "####" | "###" | "##" | "#" | ">") ~ " "*
+   | (" "* ~ ("*" | "-" | ASCII_DIGIT ~ ".") ~ " "+)
+}
+
+meta_info = ${ meta_wrap ~ newline ~ meta_pair* ~ meta_wrap ~ newline* }
+meta_wrap = @{ "-"{3,} }
+meta_pair = ${ meta_key ~ string ~ newline }
+meta_key = @{ (!(":" | newline) ~ ANY)* ~ ":" ~ " "* }
+
+image_prefix = @{ "!" }
+img = ${ image_prefix ~ link }
+
+link = ${ link_string ~ href }
+link_string = { "[" ~ (!("]" | newline) ~ ANY)* ~ "]" }
+href = { "(" ~ (!(")" | newline) ~ ANY)* ~ ")" }
+
+wikilinks = ${"[[" ~ (!("]]" | newline) ~ ANY)* ~ "]]" }
+
+mark = ${ PUSH(mark_wrap) ~ (mark | mark_string) ~ mark_wrap }
+mark_wrap = @{ "***" | "**" | "*" | "~~" | "`" | "\"" }
+mark_string = { (!(PEEK | newline | inline) ~ ANY)* }
+
+string = @{ (!(newline | inline) ~ ANY)+ }
+
+comment = ${ comment_tag_start ~ (!comment_tag_end ~ ANY)* ~ comment_tag_end }
+comment_tag_start = @{  "<!--" }
+comment_tag_end = @{ "-->" }
