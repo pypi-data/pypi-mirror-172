@@ -1,0 +1,3 @@
+[console_scripts]
+cairo-toolkit=src.cli:main
+
