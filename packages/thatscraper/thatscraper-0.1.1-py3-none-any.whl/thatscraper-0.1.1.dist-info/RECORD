@@ -1,0 +1,11 @@
+thatscraper/__init__.py,sha256=iFLfZ-kucfK2SdPW01a1QjcsDsNpLvlNAJbe3EGJnyI,372
+thatscraper/browser.py,sha256=eEXQnGWSjCsnolZsU8CVrVUqhKBxa4lNe-hKknD8_tw,14584
+thatscraper/common/__init__.py,sha256=R22GzFxAjTVZZ5YycLSx9GKUVK3g3F06Fu1ciXYW_nM,92
+thatscraper/common/exceptions.py,sha256=i_eae7JQkwxxdXXCRz9SDb8LhrsS0Ouya9DVDMkWwQ8,513
+thatscraper/common/logger.py,sha256=qSyWc-g4hcpeBHLLRyDhdQpAwuwwkxp0U96hR2U6zP8,662
+thatscraper/data.py,sha256=QYWNSCGlbD1lHnPulWxKlBkw4I-39xVpYUG8hkDMjBw,3892
+thatscraper/extractor.py,sha256=mFJABjijRDtCxbpxs5YPlHxpdQcHi_g8nxSXE05wwbE,1986
+thatscraper-0.1.1.dist-info/LICENSE,sha256=Ne6Nh9UnSkXn6HldY9R6a3Htm5n5fh-vulwYBhFuVuM,1071
+thatscraper-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+thatscraper-0.1.1.dist-info/METADATA,sha256=5mQQryOfy9b9rueJG8JknM_zQh0nXBiV4BlOHs0lhyI,8011
+thatscraper-0.1.1.dist-info/RECORD,,
