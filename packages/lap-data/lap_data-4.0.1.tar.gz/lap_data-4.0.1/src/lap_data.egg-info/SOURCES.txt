@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/lap_data/__init__.py
+src/lap_data/lcmodel.py
+src/lap_data.egg-info/PKG-INFO
+src/lap_data.egg-info/SOURCES.txt
+src/lap_data.egg-info/dependency_links.txt
+src/lap_data.egg-info/requires.txt
+src/lap_data.egg-info/top_level.txt
