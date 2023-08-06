@@ -1,0 +1,25 @@
+pyvisa
+pypubsub
+pynput
+ruamel.yaml
+pyserial
+cmd2>=2.3.0
+numpy
+PyDAQmx
+platformdirs
+
+[:python_version < "3.8"]
+typing_extensions
+importlib-metadata>=1.0
+
+[docs]
+Sphinx
+
+[gui]
+pyqt5
+
+[test]
+pytest
+pytest-mock
+pytest-cov
+wheel
