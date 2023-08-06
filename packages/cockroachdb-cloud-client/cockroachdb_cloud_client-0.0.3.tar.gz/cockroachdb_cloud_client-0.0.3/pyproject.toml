@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "cockroachdb_cloud_client"
+version = "0.0.3"
+description = "A client library for accessing CockroachDB Cloud API"
+
+authors = ['Cockroach Labs']
+homepage = "https://www.cockroachlabs.com/docs/api/cloud/v1.html#get-/api/v1/clusters"
+repository = "https://github.com/fabiog1901/cockroachdb_cloud_client"
+
+readme = "README.md"
+
+documentation = "https://www.cockroachlabs.com/docs/  "
+
+packages = [
+    {include = "cockroachdb_cloud_client"},
+]
+include = ["CHANGELOG.md", "cockroachdb_cloud_client/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+httpx = ">=0.15.4,<0.24.0"
+attrs = ">=21.3.0"
+python-dateutil = "^2.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target_version = ['py37', 'py38', 'py39']
+exclude = '''
+(
+  /(
+    | \.git
+    | \.venv
+    | \.mypy_cache
+  )/
+)
+'''
+
+[tool.isort]
+line_length = 120
+profile = "black"
