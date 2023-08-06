@@ -1,0 +1,8 @@
+README.md
+setup.py
+bin/showcert
+showcert.egg-info/PKG-INFO
+showcert.egg-info/SOURCES.txt
+showcert.egg-info/dependency_links.txt
+showcert.egg-info/requires.txt
+showcert.egg-info/top_level.txt
