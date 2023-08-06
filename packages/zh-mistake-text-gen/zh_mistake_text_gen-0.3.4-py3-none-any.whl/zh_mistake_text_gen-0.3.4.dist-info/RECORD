@@ -1,0 +1,10 @@
+zh_mistake_text_gen/__init__.py,sha256=OOMBQM8bd9f_PRpa-NgqeP6qFm_ZuVJKLGGaeE7VFJc,30
+zh_mistake_text_gen/data_maker.py,sha256=rLLPzroVK77XHEXH9voATaLPOZMY52HZlDt8am-X4KM,12675
+zh_mistake_text_gen/data_model.py,sha256=WR-9RUXFd8ZvtxL5yWxT3MY2eJ54gCabyLk8KKIslQo,195
+zh_mistake_text_gen/exception.py,sha256=WDZXBiZfD69IsIDUTrCHFRyiHEj-uQkyOHysdtXQXWw,138
+zh_mistake_text_gen/high_freq_zh_char.txt,sha256=8WhNyEEJ1VXT9ilZv2nwNheKC4yEwbuvIweQ6_4n8ys,24040
+zh_mistake_text_gen/pipeline.py,sha256=QlvEgwAQMsTQ1UYbGpNyg7byPLWUCtioR_K2SoLXzao,3525
+zh_mistake_text_gen/utils.py,sha256=hqeGEe2835EUjTJcCElcYiTEq4jwmmbCOcGex72HX7Q,355
+zh_mistake_text_gen-0.3.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+zh_mistake_text_gen-0.3.4.dist-info/METADATA,sha256=koaFBqypmNuIc38zTQ-F24iBOzUSXQmsUKI7a2gvRig,2395
+zh_mistake_text_gen-0.3.4.dist-info/RECORD,,
