@@ -1,0 +1,17 @@
+cdshealpix-0.6.3.dist-info/METADATA,sha256=uC12D2ndbk-FHI7j_LvobdWFTYJMgGWaYqxNwbxA5rw,3994
+cdshealpix-0.6.3.dist-info/WHEEL,sha256=g7awNIZH2raz9kWbwzxyksLrmNhnRTfknyY_w80bTsg,130
+cdshealpix-0.6.3.dist-info/license_files/LICENSE,sha256=fFDwQVxC0o2elXCyMstixJ7pL97ZG0Kv-290yJbAFS4,1560
+cdshealpix/utils.py,sha256=OsVKxuz3gcJ5KPGWAibr6YI3O5wMH_OEq40LWRXiIRk,3332
+cdshealpix/version.py,sha256=0ICX8PeSmWoiPyIEViMxRYkvCjQE1KvQPJp9o52KRjw,22
+cdshealpix/__init__.py,sha256=9d4p_6xC9BaNzyGSogTahZiVvV4_F22KhpQD1oaVGs4,78
+cdshealpix/tests/test_nested_healpix.py,sha256=HaO-GDHaNV7PUQw2P-YC_EltgQJZFL43gJuXmK8qbkw,11982
+cdshealpix/tests/test_ring_healpix.py,sha256=B5jKiS67ckAQs5iVnXLbsDwcEMEEbgM5E6nYHhjXTE0,3465
+cdshealpix/tests/moc_coords.npy,sha256=h4EXKK1MQgCyvI4CSP_-s9v-k_2EUe3RXkvujyI-eFM,679888
+cdshealpix/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdshealpix/tests/test_benchmark_healpix.py,sha256=aV_AGNsXkKJXmkneY_8YfNMaWsXJvpdGvMsH9liUAnA,6633
+cdshealpix/ring/healpix.py,sha256=LG9ow0UCf0oWaa_uu4QAcaNtZkJRk2at_5yM14cSybQ,16940
+cdshealpix/ring/__init__.py,sha256=OsroLbRYRNY8tt_zEaiefRR5__9l4hXgA2ZzTRLAYF0,22
+cdshealpix/nested/healpix.py,sha256=ZreUQ7a5GY6uKmbLGu2f4L3mjdXawpfLisNYGObJ4kA,39547
+cdshealpix/nested/__init__.py,sha256=rxAd1_MrL-7X0blpUR5LRf3GS2xA-izuEum-Pb2Xl7I,23
+cdshealpix/cdshealpix.cpython-311-x86_64-linux-gnu.so,sha256=zUmTDfEjckiwt_AYArTXDfxX-e0bF8sEfrVWagi93AE,1059312
+cdshealpix-0.6.3.dist-info/RECORD,,
