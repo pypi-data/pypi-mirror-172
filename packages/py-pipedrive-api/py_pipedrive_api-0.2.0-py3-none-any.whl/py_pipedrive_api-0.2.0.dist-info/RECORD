@@ -1,0 +1,12 @@
+pipedrive/__init__.py,sha256=h8RwAyih4L9lCNIL8chmulQPyJOywSeEA92e9GYwY_0,1151
+pipedrive/deal.py,sha256=caPWSyseJPFoMy5gBcbaF4HDgefEc6gf72WlvJJPEXw,3757
+pipedrive/filter.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipedrive/mixins.py,sha256=8KsbWyk06yMnXsskdyQwy782NBwMt9b2_0aRmcc70yY,2549
+pipedrive/organization.py,sha256=p6b2yHpT03UAgEk38n2Hx-2CE_GFwPRdwYSNd8l17D0,12144
+pipedrive/person.py,sha256=k3xJN6680kUUY1a0vupZPkoXwBUqE_AHY14L752nQT4,3052
+pipedrive/utils.py,sha256=dpqNUnomNKYCTKoHC-AFVp_FMZLMxWKvn3Y4K3FjgTQ,1123
+py_pipedrive_api-0.2.0.dist-info/LICENSE,sha256=B1wJ1TIQfzjQ9mT4A2Faiy4pb3VJ7o9HtZSiX7_1zNI,1070
+py_pipedrive_api-0.2.0.dist-info/METADATA,sha256=L3JFXYp12sbPNA2CROeaIT4D37z3TY3l8bnnwIanN5Q,715
+py_pipedrive_api-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py_pipedrive_api-0.2.0.dist-info/top_level.txt,sha256=sXt4qplRLbatK6LxVT8_ujXa3UksnnkMr1Ka5bTbONc,10
+py_pipedrive_api-0.2.0.dist-info/RECORD,,
