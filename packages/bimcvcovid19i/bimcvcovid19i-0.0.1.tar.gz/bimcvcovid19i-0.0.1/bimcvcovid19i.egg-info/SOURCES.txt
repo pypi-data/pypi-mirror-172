@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bimcvcovid19i/__version__.py
+bimcvcovid19i/py.typed
+bimcvcovid19i/webdav.py
+bimcvcovid19i.egg-info/PKG-INFO
+bimcvcovid19i.egg-info/SOURCES.txt
+bimcvcovid19i.egg-info/dependency_links.txt
+bimcvcovid19i.egg-info/not-zip-safe
+bimcvcovid19i.egg-info/requires.txt
+bimcvcovid19i.egg-info/top_level.txt
