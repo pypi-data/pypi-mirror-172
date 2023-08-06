@@ -1,0 +1,13 @@
+README.md
+setup.py
+zackdbtools/GoogleAPI.py
+zackdbtools/__init__.py
+zackdbtools/dbconnector.py
+zackdbtools/gaauth.py
+zackdbtools/gareports.py
+zackdbtools/googlesheetConnector.py
+zackdbtools.egg-info/PKG-INFO
+zackdbtools.egg-info/SOURCES.txt
+zackdbtools.egg-info/dependency_links.txt
+zackdbtools.egg-info/requires.txt
+zackdbtools.egg-info/top_level.txt

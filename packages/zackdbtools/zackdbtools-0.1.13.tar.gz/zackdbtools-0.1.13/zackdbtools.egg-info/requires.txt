@@ -1,0 +1,10 @@
+pandas~=1.4.2
+sqlalchemy~=1.4.37
+google-api-core~=2.8.1
+google-api-python-client~=2.50.0
+google-auth~=2.7.0
+google-auth-httplib2~=0.1.0
+google-auth-oauthlib~=0.5.1
+PyMySQL~=1.0.2
+psycopg2-binary~=2.9.3
+openpyxl~=3.0.10
