@@ -1,0 +1,10 @@
+# template: https://gitlab.com/jlecomte/projects/python/reference-files
+include LICENSE
+include README.md
+include pyproject.toml
+include setup.*
+include requirements*.txt
+recursive-include pylint *py
+recursive-include pylint_codeclimate *py
+prune docs
+prune tests

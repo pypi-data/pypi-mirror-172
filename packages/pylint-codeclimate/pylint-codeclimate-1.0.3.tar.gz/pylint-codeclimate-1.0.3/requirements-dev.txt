@@ -1,0 +1,13 @@
+-r requirements.txt
+-r requirements-doc.txt
+
+mock
+pylint
+pytest
+pytest-cov
+pytest-html
+pytest-mock
+sdist
+setuptools
+twine
+wheel

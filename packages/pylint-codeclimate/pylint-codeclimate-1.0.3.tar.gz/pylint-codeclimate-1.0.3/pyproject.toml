@@ -1,0 +1,10 @@
+# template: https://gitlab.com/jlecomte/projects/python/reference-files
+[tool.black]
+line-length = 120
+target_version = ['py39']
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
