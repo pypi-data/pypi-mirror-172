@@ -1,0 +1,55 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://127.0.0.1:33113/rest/bug?f1=flagtypes.name&id=2&id=3&id=4&id=6&include_fields=assigned_to&include_fields=blocks&include_fields=cc&include_fields=cf_stabilisation_atoms&include_fields=component&include_fields=depends_on&include_fields=flags&include_fields=id&include_fields=keywords&include_fields=last_change_time&include_fields=product&include_fields=resolution&include_fields=whiteboard&o1=anywords&v1=sanity-check%2B&v1=sanity-check-
+  response:
+    body:
+      string: '{"bugs":[{"product":"Gentoo Linux","assigned_to_detail":{"name":"test@example.com","email":"test@example.com","id":1,"real_name":"Test
+        developer"},"blocks":[9],"id":2,"resolution":"","cf_stabilisation_atoms":"dev-python/unittest-mixins-1.6\r\ndev-python/coverage-4.5.4","cc":["alpha@gentoo.org","hppa@gentoo.org"],"component":"Keywording","flags":[{"setter":"nattka@gentoo.org","creation_date":"2020-04-03T13:34:59Z","type_id":1,"id":2,"status":"+","modification_date":"2020-04-03T13:34:59Z","name":"sanity-check"}],"assigned_to":"test@example.com","whiteboard":"","depends_on":[1],"keywords":[],"last_change_time":"2020-04-03T13:34:59Z","cc_detail":[{"real_name":"ALPHA
+        arch team","id":3,"email":"alpha@gentoo.org","name":"alpha@gentoo.org"},{"name":"hppa@gentoo.org","id":5,"email":"hppa@gentoo.org","real_name":"HPPA
+        arch team"}]},{"cc_detail":[{"email":"amd64@gentoo.org","id":4,"name":"amd64@gentoo.org","real_name":"AMD64
+        arch team"}],"last_change_time":"2020-11-26T09:42:55Z","keywords":["STABLEREQ"],"whiteboard":"","depends_on":[7],"assigned_to":"bug-wranglers@gentoo.org","flags":[{"id":3,"type_id":1,"creation_date":"2020-04-03T13:35:02Z","setter":"nattka@gentoo.org","status":"-","modification_date":"2020-04-03T13:35:02Z","name":"sanity-check"}],"cc":["amd64@gentoo.org"],"component":"Stabilization","cf_stabilisation_atoms":"dev-python/mako-1.1.0
+        amd64","resolution":"","id":3,"blocks":[],"assigned_to_detail":{"real_name":"Bug
+        wranglers","email":"bug-wranglers@gentoo.org","id":6,"name":"bug-wranglers@gentoo.org"},"product":"Gentoo
+        Linux"}]}'
+    headers:
+      Access-control-allow-headers:
+      - origin, content-type, accept, x-requested-with
+      Access-control-allow-origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-security-policy:
+      - frame-ancestors 'self'
+      Date:
+      - Fri, 16 Apr 2021 08:50:59 GMT
+      Etag:
+      - C4ZMzis4aqBlVTzkS9TQ5w
+      Keep-Alive:
+      - timeout=15, max=100
+      Server:
+      - Apache
+      Transfer-Encoding:
+      - chunked
+      X-content-type-options:
+      - nosniff
+      X-frame-options:
+      - SAMEORIGIN
+      X-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

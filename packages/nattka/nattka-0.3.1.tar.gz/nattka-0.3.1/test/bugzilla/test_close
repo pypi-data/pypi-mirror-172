@@ -1,0 +1,243 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://127.0.0.1:33113/rest/bug?id=4&include_fields=assigned_to&include_fields=blocks&include_fields=cc&include_fields=cf_stabilisation_atoms&include_fields=component&include_fields=depends_on&include_fields=flags&include_fields=id&include_fields=keywords&include_fields=last_change_time&include_fields=product&include_fields=resolution&include_fields=whiteboard
+  response:
+    body:
+      string: '{"bugs":[{"resolution":"","product":"Gentoo Linux","assigned_to":"test@example.com","blocks":[],"id":4,"component":"Keywording","last_change_time":"2020-04-03T13:34:55Z","depends_on":[],"cc":["hppa@gentoo.org"],"assigned_to_detail":{"real_name":"Test
+        developer","id":1,"name":"test@example.com","email":"test@example.com"},"cc_detail":[{"email":"hppa@gentoo.org","real_name":"HPPA
+        arch team","name":"hppa@gentoo.org","id":5}],"whiteboard":"","cf_stabilisation_atoms":"dev-python/urllib3-1.25.8\r\ndev-python/trustme-0.6.0\r\ndev-python/brotlipy-0.7.0","keywords":["KEYWORDREQ"],"flags":[]}]}'
+    headers:
+      Access-control-allow-headers:
+      - origin, content-type, accept, x-requested-with
+      Access-control-allow-origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-security-policy:
+      - frame-ancestors 'self'
+      Date:
+      - Fri, 16 Apr 2021 08:51:46 GMT
+      Etag:
+      - q+pSHpB4ygD4nx7wX6/jRQ
+      Keep-Alive:
+      - timeout=15, max=100
+      Server:
+      - Apache
+      Transfer-Encoding:
+      - chunked
+      X-content-type-options:
+      - nosniff
+      X-frame-options:
+      - SAMEORIGIN
+      X-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://127.0.0.1:33113/rest/bug/4/comment
+  response:
+    body:
+      string: '{"comments":{},"bugs":{"4":{"comments":[{"tags":[],"is_private":false,"creation_time":"2020-04-03T13:20:11Z","id":4,"count":0,"attachment_id":null,"time":"2020-04-03T13:20:11Z","text":"","bug_id":4,"creator":"test@example.com"}]}}}'
+    headers:
+      Access-control-allow-headers:
+      - origin, content-type, accept, x-requested-with
+      Access-control-allow-origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-security-policy:
+      - frame-ancestors 'self'
+      Date:
+      - Fri, 16 Apr 2021 08:51:47 GMT
+      Etag:
+      - 5FjztftQ7g2QUYyXdznOLA
+      Keep-Alive:
+      - timeout=15, max=99
+      Server:
+      - Apache
+      Transfer-Encoding:
+      - chunked
+      X-content-type-options:
+      - nosniff
+      X-frame-options:
+      - SAMEORIGIN
+      X-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"ids": [4], "cc": {"remove": ["hppa@gentoo.org"]}, "comment": {"body":
+      "hppa done\n\nall arches done, closing"}, "status": "RESOLVED", "resolution":
+      "FIXED"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '158'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: PUT
+    uri: http://127.0.0.1:33113/rest/bug/4
+  response:
+    body:
+      string: '{"bugs":[{"id":4,"changes":{"resolution":{"removed":"","added":"FIXED"},"status":{"removed":"CONFIRMED","added":"RESOLVED"},"cc":{"removed":"hppa@gentoo.org","added":""}},"last_change_time":"2021-04-16T08:51:48Z","alias":[]}]}'
+    headers:
+      Access-control-allow-headers:
+      - origin, content-type, accept, x-requested-with
+      Access-control-allow-origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-security-policy:
+      - frame-ancestors 'self'
+      Date:
+      - Fri, 16 Apr 2021 08:51:48 GMT
+      Etag:
+      - nYhuqHClx/FqQvSzd5dNfg
+      Keep-Alive:
+      - timeout=15, max=98
+      Server:
+      - Apache
+      Transfer-Encoding:
+      - chunked
+      X-content-type-options:
+      - nosniff
+      X-frame-options:
+      - SAMEORIGIN
+      X-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://127.0.0.1:33113/rest/bug?id=4&include_fields=assigned_to&include_fields=blocks&include_fields=cc&include_fields=cf_stabilisation_atoms&include_fields=component&include_fields=depends_on&include_fields=flags&include_fields=id&include_fields=keywords&include_fields=last_change_time&include_fields=product&include_fields=resolution&include_fields=whiteboard
+  response:
+    body:
+      string: '{"bugs":[{"cf_stabilisation_atoms":"dev-python/urllib3-1.25.8\r\ndev-python/trustme-0.6.0\r\ndev-python/brotlipy-0.7.0","whiteboard":"","assigned_to":"test@example.com","depends_on":[],"id":4,"assigned_to_detail":{"real_name":"Test
+        developer","email":"test@example.com","name":"test@example.com","id":1},"product":"Gentoo
+        Linux","flags":[],"cc":[],"keywords":["KEYWORDREQ"],"component":"Keywording","blocks":[],"cc_detail":[],"resolution":"FIXED","last_change_time":"2021-04-16T08:51:48Z"}]}'
+    headers:
+      Access-control-allow-headers:
+      - origin, content-type, accept, x-requested-with
+      Access-control-allow-origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-security-policy:
+      - frame-ancestors 'self'
+      Date:
+      - Fri, 16 Apr 2021 08:51:48 GMT
+      Etag:
+      - QozyNNWrdmo2+U+vJAZ21g
+      Keep-Alive:
+      - timeout=15, max=97
+      Server:
+      - Apache
+      Transfer-Encoding:
+      - chunked
+      X-content-type-options:
+      - nosniff
+      X-frame-options:
+      - SAMEORIGIN
+      X-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://127.0.0.1:33113/rest/bug/4/comment
+  response:
+    body:
+      string: '{"bugs":{"4":{"comments":[{"tags":[],"attachment_id":null,"is_private":false,"time":"2020-04-03T13:20:11Z","text":"","creator":"test@example.com","id":4,"count":0,"creation_time":"2020-04-03T13:20:11Z","bug_id":4},{"id":14,"creator":"test@example.com","count":1,"bug_id":4,"creation_time":"2021-04-16T08:51:48Z","attachment_id":null,"is_private":false,"tags":[],"time":"2021-04-16T08:51:48Z","text":"hppa
+        done\n\nall arches done, closing"}]}},"comments":{}}'
+    headers:
+      Access-control-allow-headers:
+      - origin, content-type, accept, x-requested-with
+      Access-control-allow-origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-security-policy:
+      - frame-ancestors 'self'
+      Date:
+      - Fri, 16 Apr 2021 08:51:49 GMT
+      Etag:
+      - LOB17iH5m/FjkLnAD2K+bQ
+      Keep-Alive:
+      - timeout=15, max=96
+      Server:
+      - Apache
+      Transfer-Encoding:
+      - chunked
+      X-content-type-options:
+      - nosniff
+      X-frame-options:
+      - SAMEORIGIN
+      X-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
