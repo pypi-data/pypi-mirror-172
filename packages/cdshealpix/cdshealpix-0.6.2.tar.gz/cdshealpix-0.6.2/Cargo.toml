@@ -1,0 +1,36 @@
+[package]
+name = "cdshealpix"
+version = "0.6.2"
+authors = ["Matthieu Baumann <matthieu.baumann@astro.unistra.fr>", "F.-X. Pineau <francois-xavier.pineau@astro.unistra.fr>"]
+edition = "2021"
+license = "BSD-3-Clause"
+readme = "README.md"
+categories = ["algorithms", "science"] 
+repository = "https://github.com/cds-astro/cds-healpix-python"
+description = "Python cdshealpix package wrapping code of the cdshealpix crate."
+documentation = "https://cds-astro.github.io/cds-healpix-python"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[lib]
+name = "cdshealpix"
+crate-type = ["cdylib"]
+
+[dependencies]
+healpix = { package = "cdshealpix", version = "0.6.4" }
+rayon = "1.5.3"
+
+[dependencies.numpy]
+version = "0.17.2"
+
+[dependencies.pyo3]
+version = "0.17.2"
+features = ["extension-module"]
+
+[dependencies.ndarray]
+version = "0.15.6"
+default-features = false # do not include the default features, and optionally
+                         # cherry-pick individual features
+features = ["rayon"]
+
