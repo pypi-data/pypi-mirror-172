@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+chalice_babel/__init__.py
+chalice_babel/lazy_string.py
+chalice_babel.egg-info/PKG-INFO
+chalice_babel.egg-info/SOURCES.txt
+chalice_babel.egg-info/dependency_links.txt
+chalice_babel.egg-info/entry_points.txt
+chalice_babel.egg-info/not-zip-safe
+chalice_babel.egg-info/requires.txt
+chalice_babel.egg-info/top_level.txt
+chalice_babel/command/__init__.py
+chalice_babel/command/main.py

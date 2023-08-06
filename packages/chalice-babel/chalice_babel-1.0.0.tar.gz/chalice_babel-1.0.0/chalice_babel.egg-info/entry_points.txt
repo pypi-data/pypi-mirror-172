@@ -1,0 +1,6 @@
+[console_scripts]
+chalice_babel = chalice_babel.command.main:main
+
+[distutils.commands]
+export_strings = chalice_babel.command.main:export_strings
+import = chalice_babel.command.main:import_strings

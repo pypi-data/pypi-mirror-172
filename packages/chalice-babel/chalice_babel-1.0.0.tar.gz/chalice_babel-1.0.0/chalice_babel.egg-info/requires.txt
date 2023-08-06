@@ -1,0 +1,8 @@
+Babel>=2.10.3
+chalice>=1.26.6
+Jinja2>=3.1.2
+pytz>=2022.5
+
+[dev]
+pytest
+pytest-mock
