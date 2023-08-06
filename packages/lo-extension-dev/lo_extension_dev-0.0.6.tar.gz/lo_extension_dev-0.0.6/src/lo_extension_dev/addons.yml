@@ -1,0 +1,35 @@
+---
+OfficeMenuBar:
+
+  clean_text:
+    title: Clean text
+    icon: sc_underline.svg
+
+  boite_a_outils:
+    title: Toolbox label
+
+    submenu:
+      nice_function:  # it must be a macro name
+        title: Nice function 1
+        context: com.sun.star.text.TextDocument
+
+      nice_function_2:
+        title: Nice function 2
+        context: com.sun.star.text.TextDocument
+
+      smant_function:
+        title: Smart other function
+        context: com.sun.star.text.TextDocument
+
+
+OfficeToolBar:
+
+  vlc_launcher:
+    title: RDT Player
+    context: com.sun.star.text.TextDocument
+    icon: avaudiologo.svg
+
+  clean_text:
+    title: Nettoyer le texte avant rendu
+    context: com.sun.star.text.TextDocument
+    icon: sc_underline.svg

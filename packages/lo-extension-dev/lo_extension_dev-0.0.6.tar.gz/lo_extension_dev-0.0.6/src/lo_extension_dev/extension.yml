@@ -1,0 +1,7 @@
+---
+version: 0.0.1
+extension_name: super_extension  # no space
+file_extension: oxt
+lib: com.company.super_extension
+macros_directory: python
+menu_name: My Tools # menu bar label
