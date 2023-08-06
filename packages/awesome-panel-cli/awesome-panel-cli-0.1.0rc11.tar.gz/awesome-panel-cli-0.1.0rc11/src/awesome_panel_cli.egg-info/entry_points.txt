@@ -1,0 +1,2 @@
+[console_scripts]
+pn = awesome_panel_cli.cli.main:run

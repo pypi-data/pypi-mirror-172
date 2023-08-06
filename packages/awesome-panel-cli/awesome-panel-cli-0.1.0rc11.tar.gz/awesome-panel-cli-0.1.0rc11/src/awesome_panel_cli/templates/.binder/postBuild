@@ -1,0 +1,7 @@
+conda install -c conda-forge jupyter_contrib_nbextensions code-server
+jupyter nbextension enable codefolding/main
+jupyter nbextension enable collapsible_headings/main
+jupyter nbextension enable comment-uncomment/main
+jupyter nbextension enable hide_input/main
+jupyter nbextension enable scratchpad/main
+jupyter nbextension enable init_cell/main
