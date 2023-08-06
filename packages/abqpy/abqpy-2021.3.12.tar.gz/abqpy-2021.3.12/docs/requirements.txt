@@ -1,0 +1,14 @@
+auto-all
+git+https://github.com/haiiliin/autoclasstoc.git@attributes
+GitPython
+Jinja2
+numpydoc
+pydata-sphinx-theme
+setuptools-scm
+sphinx-toolbox
+sphinx-autodoc-typehints
+sphinx-copybutton
+sphinx-hoverxref
+sphinx-intl
+sphinx-codeautolink
+toml
