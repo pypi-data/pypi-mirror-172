@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: gaussiancl
+Version: 2022.10.14
+Summary: angular power spectra for transformed Gaussian random fields
+Home-page: https://github.com/cltools/gaussiancl
+Maintainer: Nicolas Tessore
+Maintainer-email: n.tessore@ucl.ac.uk
+License: MIT
+Project-URL: Documentation, https://cltools.readthedocs.io/gaussiancl/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: transformcl (>=2022.7.28)
+
+
+gaussiancl
+==========
+
+**angular power spectra transformation for Gaussian random fields**
+
+This is a minimal Python package for working with the angular power spectra of
+spherical random fields constructed by transforming Gaussian random fields.
+
+It can solve for the Gaussian angular power spectrum that will yield a given
+target angular power spectrum under a given transformation, such as lognormal.
+
+The package can be installed using pip:
+
+    pip install gaussiancl
+
+Then import the `gaussiancl` function from the package:
+
+    from gaussiancl import gaussiancl
+
+For more information, please see the [documentation].
+
+Current functionality covers the absolutely minimal use case.  Please open an
+issue on GitHub if you would like to see anything added.
+
+[documentation]: https://cltools.readthedocs.io/gaussiancl/
