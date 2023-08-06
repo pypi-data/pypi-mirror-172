@@ -1,0 +1,4 @@
+[console_scripts]
+bioat=bioat._cli:main
+bioat-table-merge-table=bioat.table.merge_table:main
+
