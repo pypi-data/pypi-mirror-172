@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/data_analysis_toolbox/__init__.py
+src/data_analysis_toolbox/data_analysis_toolbox.py
+src/data_analysis_toolbox.egg-info/PKG-INFO
+src/data_analysis_toolbox.egg-info/SOURCES.txt
+src/data_analysis_toolbox.egg-info/dependency_links.txt
+src/data_analysis_toolbox.egg-info/top_level.txt
