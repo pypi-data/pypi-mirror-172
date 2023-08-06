@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/example_app/__init__.py
+src/example_app/example.py
+src/old_pipelines_trainning.egg-info/PKG-INFO
+src/old_pipelines_trainning.egg-info/SOURCES.txt
+src/old_pipelines_trainning.egg-info/dependency_links.txt
+src/old_pipelines_trainning.egg-info/requires.txt
+src/old_pipelines_trainning.egg-info/top_level.txt
