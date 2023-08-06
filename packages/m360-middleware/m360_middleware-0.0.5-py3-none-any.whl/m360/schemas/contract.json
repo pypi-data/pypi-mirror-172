@@ -1,0 +1,112 @@
+{
+	"$id": "contract.schema.json",
+	"type": "object",
+	"properties": {
+		"swagger": {
+			"type": "string",
+			"format": "uri"
+		},
+		"stats": {
+			"type": "string",
+			"format": "uri"
+		},
+		"name": {
+			"type": "string",
+			"minLength": 4,
+			"pattern": "^[a-z][0-9a-z]{3,}$"
+		},
+		"group": {
+			"type": "string",
+			"minLength": 4
+		},
+		"version": {
+			"type": "number",
+			"minimum": 1
+		},
+		"weight": {
+			"type": "number",
+			"minimum": 1
+		},
+		"ports": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "number",
+					"minimum": 2000,
+					"maximum": 65535
+				},
+				"maintenance": {
+					"type": "number",
+					"minimum": 2000,
+					"maximum": 65535
+				}
+			},
+			"required": [ "data" ],
+			"additionalProperties": false
+		},
+		"apis": {
+			"type": "object",
+			"properties": {
+				"main": {
+					"type": "object",
+					"properties": {
+						"get": {"$ref": "api.schema.json#"},
+						"post": {"$ref": "api.schema.json#"},
+						"put": {"$ref": "api.schema.json#"},
+						"patch": {"$ref": "api.schema.json#"},
+						"delete": {"$ref": "api.schema.json#"}
+					},
+					"additionalProperties": false
+				},
+				"maintenance": {
+					"type": "object",
+					"properties": {
+						"get": {"$ref": "api.schema.json#"},
+						"post": {"$ref": "api.schema.json#"},
+						"put": {"$ref": "api.schema.json#"},
+						"patch": {"$ref": "api.schema.json#"},
+						"delete": {"$ref": "api.schema.json#"}
+					},
+					"additionalProperties": false
+				}
+			},
+			"required": [ "main" ],
+			"additionalProperties": false
+		},
+		"heartbeat": {
+			"type": "object",
+			"required": [ "access", "label", "method", "route" ],
+			"properties": {
+				"access": { "type": "boolean" },
+				"method": { "type": "string" },
+				"route": { "type": "string" },
+				"label": { "type": "string" }
+			},
+			"additionalProperties": false
+		},
+		"registry": {
+			"type": "object",
+			"required": [ "access", "label", "method", "route" ],
+			"properties": {
+				"access": { "type": "boolean" },
+				"method": { "type": "string" },
+				"route": { "type": "string" },
+				"label": { "type": "string" }
+			},
+			"additionalProperties": false
+		},
+		"host": {
+			"type": "object",
+			"properties": {
+				"weight": {
+					"type": "number",
+					"minimum": 1
+				}
+			},
+			"required": [ "weight" ],
+			"additionalProperties": false
+		}
+	},
+	"required": [ "name", "group", "version", "ports", "apis" ],
+	"additionalProperties": false
+}

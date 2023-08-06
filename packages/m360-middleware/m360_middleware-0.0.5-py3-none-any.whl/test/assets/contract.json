@@ -1,0 +1,32 @@
+{
+  "name": "mwtest",
+  "group": "M360GRP",
+  "version": 1,
+  "swagger": "http://swagger.com",
+  "stats": "http://stats.com",
+  "host": {
+    "weight": 1
+  },
+  "ports": {
+    "data": 7000,
+    "maintenance": 8000
+  },
+  "apis": {
+    "main": {
+      "get": {
+        "/": {
+          "access": false,
+          "label": "Welcome page"
+        },
+        "/home": {
+          "access": false,
+          "label": "Homepage"
+        },
+        "/admin": {
+          "access": true,
+          "label": "Admin site"
+        }
+      }
+    }
+  }
+}
