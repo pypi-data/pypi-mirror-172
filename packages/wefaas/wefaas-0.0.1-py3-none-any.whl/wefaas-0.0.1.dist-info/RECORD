@@ -1,0 +1,17 @@
+wefaas/__init__.py,sha256=bfsfG5BFNxG6RAaGQaXmsoQ4s9TWdQxf8-MpdoVbGWM,167
+wefaas/api/__init__.py,sha256=m1CRqnHwdvPJWGuGTA58VTco7PVJOE-2NIvt2WPJqYk,36
+wefaas/api/fastapi_app.py,sha256=34mQSqtptpdqZ-mIBaVmDlGrtbHFpmmxLcFek0Yfelk,1819
+wefaas/api/fastapi_utils.py,sha256=YhWOyvU6xaDbCSlOYawqAyXmZ9BTDK3EAaUSlA7xayI,3407
+wefaas/cli.py,sha256=GR393StNB61Y1HmV3QPh9vNQlfava3YbwduZ6G7YacY,2602
+wefaas/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wefaas/components/outputs.py,sha256=q8syjjSxRzMmgxVnN7bJyR8u9E6gi_FVtOOe7-jMeYs,1186
+wefaas/components/types.py,sha256=6EWFg2190Mk9VmikkdHXk8_zs80D_zM0ArayoUppIlo,855
+wefaas/core/__init__.py,sha256=mUE-gKLpyqxjgMl_-i6CR-B9f_8Y2tPldvLrztlFpW8,140
+wefaas/core/core.py,sha256=VYnBEVVsQ4y8p5INtjH_GUK93Is4QyDH_mGzTrpvlI0,6405
+wefaas/export/__init__.py,sha256=wFoR-aw_VQZZoBRNcutwvLY0E5O3FZ3pT4o7htqE7oc,32
+wefaas/export/export.py,sha256=LuipjnLAOQSbtJrafd8AC6Wy7Vyx_7Bv1n_cWpov8zg,122
+wefaas-0.0.1.dist-info/entry_points.txt,sha256=fgtLVrXH3ncLidEKfIaIVD0brItS4lGwb8FmI9ZuRuo,45
+wefaas-0.0.1.dist-info/LICENSE,sha256=7kw6BoASnJEfHo1tOMzhpm-0-ExPPuU_Hrmnb2G0Ou4,11306
+wefaas-0.0.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+wefaas-0.0.1.dist-info/METADATA,sha256=UsbzcMPbPTHGcfWWQPC-0FmLhh4sG3xIk9WcZq0L1qk,3514
+wefaas-0.0.1.dist-info/RECORD,,
