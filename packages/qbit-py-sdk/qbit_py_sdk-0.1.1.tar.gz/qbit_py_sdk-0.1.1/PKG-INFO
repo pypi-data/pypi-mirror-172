@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: qbit_py_sdk
+Version: 0.1.1
+Summary: qbit_py_sdk bass api 接口支持
+Home-page: https://github.com/klover2/qbit-python-sdk
+Author: qbit_py_sdk team
+Author-email: w.klover@foxmail.com
+License: UNKNOWN
+Keywords: qbit,全球账户,量子卡
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+qbit-python-sdk
+
