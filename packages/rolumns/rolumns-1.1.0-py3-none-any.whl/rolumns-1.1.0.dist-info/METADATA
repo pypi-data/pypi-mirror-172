@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: rolumns
+Version: 1.1.0
+Summary: Squishes data into rows and columns
+Home-page: https://github.com/cariad/rolumns
+Author: Cariad Eccleston
+Author-email: cariad@cariad.earth
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Rolumns
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/cariad/rolumns/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/cariad/rolumns/tree/main) [![codecov](https://codecov.io/gh/cariad/rolumns/branch/main/graph/badge.svg?token=8kOONBPbV0)](https://codecov.io/gh/cariad/rolumns) ![PyPI - Downloads](https://img.shields.io/pypi/dm/rolumns)
+
+**Rolumns** is a Python package for squishing data into rows and columns.
+
+Full documentation is online at **[rolumns.dev](https://rolumns.dev)**.
+
+## Installation
+
+```console
+pip install rolumns
+```
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/cariad/rolumns/blob/main/CONTRIBUTING.md) before raising an issue or submitting a pull request. Thank you!
