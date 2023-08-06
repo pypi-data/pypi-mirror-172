@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./kineticmodels/__init__.py
+./kineticmodels/inhibition_models.py
+./kineticmodels/uptake_models.py
+./tests/__init__.py
+./tests/test_inhibition_models.py
+./tests/test_uptake_models.py
+kineticmodels.egg-info/PKG-INFO
+kineticmodels.egg-info/SOURCES.txt
+kineticmodels.egg-info/dependency_links.txt
+kineticmodels.egg-info/requires.txt
+kineticmodels.egg-info/top_level.txt
