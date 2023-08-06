@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/gstreasy/__init__.py
+src/gstreasy/pipeline.py
+src/gstreasy/utils.py
+src/gstreasy.egg-info/PKG-INFO
+src/gstreasy.egg-info/SOURCES.txt
+src/gstreasy.egg-info/dependency_links.txt
+src/gstreasy.egg-info/requires.txt
+src/gstreasy.egg-info/top_level.txt
