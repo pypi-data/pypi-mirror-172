@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+object_settings.egg-info/PKG-INFO
+object_settings.egg-info/SOURCES.txt
+object_settings.egg-info/dependency_links.txt
+object_settings.egg-info/requires.txt
+object_settings.egg-info/top_level.txt
+settings/__init__.py
+settings/base.py
+settings/dir.py
+settings/parser.py
+settings/types.py
