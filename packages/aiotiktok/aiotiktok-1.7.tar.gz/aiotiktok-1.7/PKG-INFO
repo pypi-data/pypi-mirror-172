@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: aiotiktok
+Version: 1.7
+Summary: Tool for parse tiktok data
+Home-page: https://github.com/sheldygg/aiotiktok
+Author: sheldy
+License: MIT
+Description: # AIOtiktok
+        
+        [![PyPi Package Version](https://img.shields.io/pypi/v/aiotiktok?color=blue)](https://pypi.org/project/aiotiktok/)
+        [![Downloads](https://img.shields.io/pypi/dm/aiotiktok?color=blue)](https://pypi.org/project/aiotiktok/)
+        
+        **aiotiktok** super simple and fast library to get all video data from tiktok
+        
+        
+        **One step before start.**
+        - You must install library with pip `pip install aiotiktok`
+        - or `pip install git+https://github.com/sheldygg/aiotiktok`
+        
+        ### Request
+        
+        ```python
+        import asyncio
+        from aiotiktok import Tiktok
+        
+        tiktok = Tiktok()
+        
+        async def main():
+            data = await tiktok.tiktok(original_url="some url")
+            print(data)
+            
+        asyncio.run(main())
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
