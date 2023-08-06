@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+QLev/__init__.py
+QLev/levDistance.py
+QLev.egg-info/PKG-INFO
+QLev.egg-info/SOURCES.txt
+QLev.egg-info/dependency_links.txt
+QLev.egg-info/requires.txt
+QLev.egg-info/top_level.txt
