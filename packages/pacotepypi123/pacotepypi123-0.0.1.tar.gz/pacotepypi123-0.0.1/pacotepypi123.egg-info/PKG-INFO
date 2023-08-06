@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pacotepypi123
+Version: 0.0.1
+Summary: Pacote python para exibir número de 1 a 9
+Home-page: https://github.com/aAmoraP?tab=repositories
+Author: Amora Sofia da Paixão
+Author-email: amorapaixaodev@gmail.com
+License: MIT License
+Keywords: Pacote
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+pacotepypi
+pacotepypi Ã© um simples pacote para exibir nÃºmeros de 1 a 9 em Python.
+
+DependÃªncias
+Python 3.6 ou posterior
+
+Pacote numpy
+
+ComeÃ§ando o uso
+VocÃª vai precisar instalar o pacote pacotepypi, para isso basta executar:
+
+pip install pacotepypi
+FunÃ§Ã£o
+exibir () - Mostra nÃºmeros de 1 a 9

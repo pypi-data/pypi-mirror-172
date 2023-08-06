@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pacotepypi123/__init__.py
+pacotepypi123/modulo.py
+pacotepypi123.egg-info/PKG-INFO
+pacotepypi123.egg-info/SOURCES.txt
+pacotepypi123.egg-info/dependency_links.txt
+pacotepypi123.egg-info/requires.txt
+pacotepypi123.egg-info/top_level.txt
