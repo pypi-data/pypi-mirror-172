@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/Pandas_Market_Predictor/__init__.py
+src/Pandas_Market_Predictor/pmp.py
+src/Pandas_Market_Predictor.egg-info/PKG-INFO
+src/Pandas_Market_Predictor.egg-info/SOURCES.txt
+src/Pandas_Market_Predictor.egg-info/dependency_links.txt
+src/Pandas_Market_Predictor.egg-info/requires.txt
+src/Pandas_Market_Predictor.egg-info/top_level.txt
+test/test.py

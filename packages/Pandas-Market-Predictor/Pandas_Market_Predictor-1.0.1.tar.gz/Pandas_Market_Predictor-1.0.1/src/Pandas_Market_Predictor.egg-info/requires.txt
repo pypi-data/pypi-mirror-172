@@ -1,0 +1,7 @@
+numpy
+pandas
+Artificial_Neural_Network_Classifier
+Awesome-Linear-Regression
+
+[:python_version < "3.7"]
+importlib-metadata
