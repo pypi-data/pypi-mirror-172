@@ -1,0 +1,91 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "payla-utils"
+dynamic = ["version"]
+description = "Payla shared utils package"
+readme = "README-public-pypi.md"
+license = "mit"
+requires-python = ">=3.9"
+authors = [
+    { name = "Ivan Žilić", email = "ivan.zilic@payla.de" },
+    { name = "Payla Services", email = "tools@payla.de" },
+]
+keywords = [
+    "payla_utils",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "django-structlog==3.*",
+    "Django>=4.0",
+    "structlog==22.*",
+]
+
+[tool.hatch.version]
+path = "payla_utils/__init__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "black",
+  "pytest",
+  "pytest-django",
+  "pytest-cov",
+]
+
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=payla_utils --cov-report xml:coverage.xml"
+format = "black ."
+test = "pytest --cov=payla_utils"
+test-local = "pytest -rs --cov=payla_utils"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "pragma: no cover",
+  "def __str__",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+omit = [
+  "*/tests/*",
+]
+
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/payla_utils",
+]
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+skip-string-normalization = true
+exclude = '''
+/(
+  \.venv
+  | migrations
+  | \.cache
+  | \.pre-commit-cache
+)/
+'''
+
+[tool.isort]
+profile = "black"
+py_version=310
+multi_line_output = 3
+line_length = 120
+default_section = "THIRDPARTY"
+skip = ["migrations"]
