@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: strideformer
+Version: 0.1.3
+Summary: Package to use a two-stage transformer for long-document classification
+Home-page: https://github.com/nbroad1881/strideformer
+Download-URL: https://github.com/nbroad1881/strideformer
+Author: Nicholas Broad
+Author-email: nicholas@huggingface.co
+License: Apache 2.0
+Keywords: nlp,machine learning,transformers
+Provides-Extra: quality
+Provides-Extra: train
+Provides-Extra: dev
+License-File: LICENSE
+
+
+A package that includes an implementation of a two-transformer
+setup to classify long documents. The first stage is a 
+sentence-transformer which embeds chunks of the text. The second 
+stage is a generic transformer used to classify the documents
+based on a sequence of embeddings from the first model. 
+Training scripts included.
