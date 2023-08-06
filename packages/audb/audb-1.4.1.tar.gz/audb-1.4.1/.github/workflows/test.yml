@@ -1,0 +1,96 @@
+name: Test
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macOS-latest, windows-latest ]
+        python-version: [ 3.8 ]
+        tasks: [ tests ]
+        include:
+          - os: ubuntu-latest
+            python-version: 3.9
+            tasks: tests
+          - os: ubuntu-latest
+            python-version: 3.8
+            tasks: docs
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Cache emodb
+      uses: actions/cache@v2
+      with:
+        path: ~/audb
+        key: emodb-1.2.0
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Ubuntu - install libsndfile
+      run: |
+        sudo apt-get update
+        sudo apt-get install --no-install-recommends --yes libsndfile1
+      if: matrix.os == 'ubuntu-latest'
+
+    - name: Install package
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    # TESTS
+    - name: Ubuntu - install ffmpeg/mediainfo
+      run: |
+        sudo apt-get update
+        sudo apt-get install --no-install-recommends --yes ffmpeg mediainfo
+      if: matrix.tasks == 'tests' && matrix.os == 'ubuntu-latest'
+
+    - name: OSX - install ffmpeg/mediainfo
+      run: brew install ffmpeg mediainfo
+      if: matrix.tasks == 'tests' && matrix.os == 'macOS-latest'
+
+    - name: Windows - install ffmpeg/mediainfo
+      run: choco install ffmpeg mediainfo-cli
+      if: matrix.tasks == 'tests' && matrix.os == 'windows-latest'
+
+    - name: Install tests requirements
+      run: pip install -r tests/requirements.txt
+      if: matrix.tasks == 'tests'
+
+    - name: Test with pytest
+      run: python -m pytest
+      if: matrix.tasks == 'tests'
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./coverage.xml
+      if: matrix.tasks == 'tests' && matrix.os == 'ubuntu-latest'
+
+      # DOCS
+    - name: Ubuntu - install graphviz
+      run: sudo apt-get install --yes graphviz
+      if: matrix.tasks == 'docs'
+
+    - name: Install docs requirements
+      run: pip install -r docs/requirements.txt
+      if: matrix.tasks == 'docs'
+
+    - name: Test building documentation
+      run: python -m sphinx docs/ docs/_build/ -b html -W
+      if: matrix.tasks == 'docs'
+
+    - name: Check links in documentation
+      run: python -m sphinx docs/ docs/_build/ -b linkcheck -W
+      if: matrix.tasks == 'docs'
