@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: damuffin
+Version: 1.5.10
+Summary: A collection of different submodules.
+Home-page: https://github.com/DaMuffinDev/damuffin.py
+Author: DaMuffinDev
+License: MIT
+Keywords: damuffin
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: pylzma (==0.5.0)
+Requires-Dist: netifaces (==0.11.0)
+Requires-Dist: wmi (==1.5.1)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: pywin32
+
+https://github.com/DaMuffinDev/damuffin.py/wiki
