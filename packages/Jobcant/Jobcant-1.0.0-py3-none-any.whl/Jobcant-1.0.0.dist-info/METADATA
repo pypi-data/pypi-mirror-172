@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Jobcant
+Version: 1.0.0
+Summary: Does some of the things Jobcan doesn't
+Home-page: https://github.com/Maerig/jobcant
+Author: Jean-Loup Roussel-Clouet
+Author-email: jean-loup@cryptact.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (==4.11.1)
+Requires-Dist: plotly (==5.10.0)
+Requires-Dist: requests (==2.28.1)
+Provides-Extra: dev
+Requires-Dist: build (==0.8.0) ; extra == 'dev'
+Requires-Dist: twine (==4.0.1) ; extra == 'dev'
+
+# Jobcant
+
+## Usage
+
+```
+jobcan --help
+```
+
+## Config
+
+### Environment variables
+
+- `JOBCAN_EMAIL`
+- `JOBCAN_CLIENT_CODE`
+- `JOBCAN_PASSWORD`
+
+### Config file
+
+```
+jobcant config
+```
+
+## Build
+
+```
+python -m build
+```
