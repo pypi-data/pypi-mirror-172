@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: wsipipe
+Version: 0.1.4
+Summary: A set of tools for processing pathology whole slide images for deep learning.
+Home-page: https://github.com/davemor/wsipipe
+Author: David Morrison, Christina Fell
+Author-email: dm236@st-andrews.ac.uk, cmf21@st-andrews.ac.uk
+License: MIT license
+Keywords: wsipipe
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click (>=7.0)
+
+=======
+wsipipe
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/wsipipe.svg
+        :target: https://pypi.python.org/pypi/wsipipe
+
+.. image:: https://img.shields.io/travis/davemor/wsipipe.svg
+        :target: https://travis-ci.com/davemor/wsipipe
+
+.. image:: https://readthedocs.org/projects/wsipipe/badge/?version=latest
+        :target: https://wsipipe.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+        
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.7060584.svg
+        :target: https://doi.org/10.5281/zenodo.7060584
+
+
+
+A set of tools for processing pathology whole slide images for deep learning.
+
+
+
+* Free software: MIT license
+* Documentation: https://wsipipe.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2022-09-08)
+------------------
+
+* First release on PyPI.
+
+
