@@ -1,0 +1,12 @@
+requests
+ezt
+stdiomask
+requests
+aiohttp
+asyncinotify
+
+[aioldap]
+bonsai
+
+[ldap]
+python-ldap
