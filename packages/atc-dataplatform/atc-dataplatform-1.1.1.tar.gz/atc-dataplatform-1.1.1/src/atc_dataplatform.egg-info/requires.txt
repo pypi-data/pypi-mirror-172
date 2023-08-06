@@ -1,0 +1,8 @@
+pyyaml
+sqlparse
+Deprecated
+pyodbc
+databricks-api
+importlib-metadata
+azure-cosmos
+timezonefinder==6.0.2
