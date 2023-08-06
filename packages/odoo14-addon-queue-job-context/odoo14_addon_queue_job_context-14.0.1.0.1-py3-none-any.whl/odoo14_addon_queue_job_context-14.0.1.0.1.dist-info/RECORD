@@ -1,0 +1,15 @@
+odoo/addons/queue_job_context/README.rst,sha256=ZDb_8uvcfJTwyesij_ExhjWZyhwlqxW3XeCTpx4dnxk,2987
+odoo/addons/queue_job_context/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/queue_job_context/__manifest__.py,sha256=SJdbR5aGnkfN_lYNp5vkv-wvfrqTVAUP_ixbpY3s5oU,513
+odoo/addons/queue_job_context/i18n/queue_job_context.pot,sha256=kaDCywmkLZ9PjpyZciapK-HEL0R6Y9F6SYw2IsP5_Mg,469
+odoo/addons/queue_job_context/models/__init__.py,sha256=9pIQnc7H3xgVNpi7n3I18hg04S4IkX5mnAfl9cv7RBE,19
+odoo/addons/queue_job_context/models/base.py,sha256=xyVLFiooPq2KdKo58tSFqtYeYatCRrJbI9bntzPPWNM,359
+odoo/addons/queue_job_context/readme/CONFIGURE.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/queue_job_context/readme/CONTRIBUTORS.rst,sha256=7cXiDE2RubFNLv5mDonVAfF99ghGXdsxrR1wR_WlR2I,57
+odoo/addons/queue_job_context/readme/DESCRIPTION.rst,sha256=EbXrY1Qw5YqQFcJb6Oo0QTAOBH_6Ub0v8XmqJXgETxU,166
+odoo/addons/queue_job_context/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/queue_job_context/static/description/index.html,sha256=rt3_QTBN4kyWvuEsYuKWBTUM85c9ojfZKO4qiwuyQEo,12149
+odoo14_addon_queue_job_context-14.0.1.0.1.dist-info/METADATA,sha256=aScr2fmoTKK2wt6Y-RD0PhgPibJH1IU9hqNGsqps98M,3611
+odoo14_addon_queue_job_context-14.0.1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo14_addon_queue_job_context-14.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_queue_job_context-14.0.1.0.1.dist-info/RECORD,,
