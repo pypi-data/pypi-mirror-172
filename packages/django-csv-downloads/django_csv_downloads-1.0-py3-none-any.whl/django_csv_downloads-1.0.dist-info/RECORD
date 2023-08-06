@@ -1,0 +1,15 @@
+django_csv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_csv/admin.py,sha256=CaLDeTeZPPYymGZxX3SIU5B1NbzslfqnrPHcl_XWYCM,460
+django_csv/apps.py,sha256=YRkSUyIbJjpJCZ_AttcFfd7cdCQhTSsos8kz1q2WuSQ,185
+django_csv/csv.py,sha256=PHlia5JuVdvns6Rdsp2OcVmCB2RDipPM7OxU1al10Qw,3773
+django_csv/migrations/0001_initial.py,sha256=iU2dHl7XMAYMgw4mXdz5PMSEXpbi75Rp8MvIzH8FZfk,1893
+django_csv/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_csv/models.py,sha256=tYcFAOnf8vUfJhiErDNvbJ5UvDbeRXqMX6ICs7C5IGI,887
+django_csv/s3.py,sha256=0s8k6cBxTzSlvTP-4Jt60KxAS5ZK6pTT5IlNPffdCwI,3162
+django_csv/settings.py,sha256=A2ocCgMRyxZqttXxCj6VjyFTTQ2FRRNvUw4-BU3UINE,266
+django_csv/sftp.py,sha256=IgksyyO_Fo8SQHKirSOjKZcOYKinEJ-Wr514I1C1NzE,3977
+django_csv/views.py,sha256=P1P50xPI2DGR-M2Oc0stwZKMsOJ93pnmJCjjS311oFQ,2270
+django_csv_downloads-1.0.dist-info/LICENSE,sha256=XcMr4wfRPB4azjmUBMix0LgtUsfDfDJGqxXH0sasHr0,1065
+django_csv_downloads-1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_csv_downloads-1.0.dist-info/METADATA,sha256=zdjNKoOK5gfEDB2ZFc447bZE-tyLhIf5BSuEyIABgxQ,5025
+django_csv_downloads-1.0.dist-info/RECORD,,
