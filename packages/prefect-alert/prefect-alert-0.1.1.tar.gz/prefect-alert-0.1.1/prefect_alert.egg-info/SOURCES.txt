@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+prefect_alert/__init__.py
+prefect_alert/_version.py
+prefect_alert/alert.py
+prefect_alert.egg-info/PKG-INFO
+prefect_alert.egg-info/SOURCES.txt
+prefect_alert.egg-info/dependency_links.txt
+prefect_alert.egg-info/entry_points.txt
+prefect_alert.egg-info/requires.txt
+prefect_alert.egg-info/top_level.txt
