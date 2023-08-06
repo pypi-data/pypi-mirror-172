@@ -1,0 +1,15 @@
+nopea/__init__.py,sha256=3aZnZDrXK1DwXhg0WG0spLNOVdpKEpi3nv4BxVmbwvk,56
+nopea/dbobject.py,sha256=3aVVH06LgR5gE_HWVkHOIx-APv2yL-BfvtUkI5DM8rA,3951
+nopea/exceptions.py,sha256=KujKBNK0ixS3GZvAnqEs_BQrnl8vATH8I8_iEzuMC7Y,235
+nopea/fields.py,sha256=KFQgtnotwc8qkQvr4St3jvaNC8X6pOwD-z9KUSJLg6E,4943
+nopea/managers.py,sha256=Vy8LkeHk7W4-4oW3BhkpeyWLKzVbgWthFKVu8hMl1JY,2763
+nopea/migrations.py,sha256=ytHQj3CYIFFVr8l7FC0QVGGI-tXecJMB5u3y3kDtJwA,11171
+nopea/queryset.py,sha256=uKYFV330JPsKtynR4Sl7nUd6_C9dfI6YNs5USOFdoPs,7668
+nopea/adaptors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nopea/adaptors/mysql.py,sha256=TtbfzGr75IvksyuSFGHCSO9YzFX2zYgwyoqPFjrCyCU,10645
+nopea/adaptors/postgres.py,sha256=WLK4NOaW7Fdqop-AjM7os1TPd3tS6duQUUal3eUYa5Q,11079
+nopea/adaptors/sqlite.py,sha256=zAUI8lkyhgFoGgcLyVzZR_XDxTM0XxHyWXm5VpGhTMo,11525
+nopea-0.0.21.dist-info/METADATA,sha256=nozuShpXvoDhKqNzZhAP5mN7Bq4lyjc6I4z_SfxF1mc,3593
+nopea-0.0.21.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nopea-0.0.21.dist-info/top_level.txt,sha256=tkb0t03SKOcoNi8-7zFDhkBD6dDDbvYBoD3WVkBSjSA,6
+nopea-0.0.21.dist-info/RECORD,,
