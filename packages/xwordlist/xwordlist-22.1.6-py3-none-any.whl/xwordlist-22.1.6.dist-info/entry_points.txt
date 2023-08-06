@@ -1,0 +1,4 @@
+[console_scripts]
+xwl=xwordlist:main
+xwordlist=xwordlist:main
+
