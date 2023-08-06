@@ -1,0 +1,3 @@
+[console_scripts]
+pandoc-run-python=pandoc_run_python.filter:main
+
