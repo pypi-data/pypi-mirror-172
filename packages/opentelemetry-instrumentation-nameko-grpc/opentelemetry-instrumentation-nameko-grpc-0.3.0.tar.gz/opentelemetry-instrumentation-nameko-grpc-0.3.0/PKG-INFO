@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: opentelemetry-instrumentation-nameko-grpc
+Version: 0.3.0
+Summary: Extension producing opentelemetry data for nameko-grpc
+Home-page: https://github.com/nameko/opentelemetry-instrumentation-nameko-grpc
+Author: Nameko Authors
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: dev
+Provides-Extra: instruments
+License-File: LICENSE
+
+UNKNOWN
+

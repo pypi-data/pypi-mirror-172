@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nameko_grpc_opentelemetry/__init__.py
+nameko_grpc_opentelemetry/package.py
+nameko_grpc_opentelemetry/tee.py
+nameko_grpc_opentelemetry/version.py
+opentelemetry_instrumentation_nameko_grpc.egg-info/PKG-INFO
+opentelemetry_instrumentation_nameko_grpc.egg-info/SOURCES.txt
+opentelemetry_instrumentation_nameko_grpc.egg-info/dependency_links.txt
+opentelemetry_instrumentation_nameko_grpc.egg-info/requires.txt
+opentelemetry_instrumentation_nameko_grpc.egg-info/top_level.txt
+opentelemetry_instrumentation_nameko_grpc.egg-info/zip-safe
