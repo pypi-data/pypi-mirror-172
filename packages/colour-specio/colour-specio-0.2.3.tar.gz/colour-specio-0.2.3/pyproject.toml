@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "colour-specio"
+packages = [
+    { include = "specio" },
+]
+version = "0.2.3"
+description = "Instrument control for spectrometers"
+authors = ["Tucker <tucker@tuckerd.info>"]
+keywords = ["colour-science", "spectrometer", "instrument control"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/tjdcs/specio"
+repository = "https://github.com/tjdcs/specio"
+include = [
+    "LICENSE",
+]
+
+
+[tool.poetry.dependencies]
+python = "~3.10"
+colour-science = "0.4.1"
+numpy = "^1.23.1"
+pyserial = "^3.5"
+aenum = "^3.1.11"
+protobuf = "^4.21.8"
+
+[tool.poetry.dev-dependencies]
+matplotlib = "^3.5.2"
+pytest = "^5.2"
+black = "^22.6.0"
+ipykernel = "^6.15.1"
+isort = "^5.10.1"
+flake8 = "^5.0.4"
+
+[tool.pyright]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
