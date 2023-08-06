@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kanji2arabic/__init__.py
+kanji2arabic/kanji2arabic.py
+kanji2arabic.egg-info/PKG-INFO
+kanji2arabic.egg-info/SOURCES.txt
+kanji2arabic.egg-info/dependency_links.txt
+kanji2arabic.egg-info/requires.txt
+kanji2arabic.egg-info/top_level.txt
