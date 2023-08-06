@@ -1,0 +1,13 @@
+zhijiang/__init__.py,sha256=dpygc86t0R9_b8079Yd8Pgg1MfDoljPQ8cX_x7VN6GM,1135
+zhijiang/data/rc_files/gdbinit,sha256=9tLUwOFNTcxBnYnavkZl9QJTz6STkSBi80GOK6jbsfc,243
+zhijiang/data/rc_files/inputrc,sha256=qkiu-KCHNjmDyuDp0RyeYCIjEyez_Xi7rvSaZtg8f20,114
+zhijiang/data/rc_files/tmux.config,sha256=x5oZisdHrtsZ1RG_V9ktpKRSqqc97jEc8FH0QHYtZ_I,117
+zhijiang/data/rc_files/vimrc,sha256=0QiiJ4By5ADhM2Ve0M9TatI0DN-R1M24IihxtEyAkjA,137
+zhijiang/scripts/config_git.sh,sha256=yblbqRm6GyoqC9xieB_PfW6FTcu6vipDszEci_i0Wps,85
+zhijiang/scripts/install_useful_tools.sh,sha256=lJMpwUcVDTwRLv2Fps953WFmYys8MyNEly_Wf5m1YMs,296
+zhijiang-0.0.3.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+zhijiang-0.0.3.dist-info/METADATA,sha256=SfZiO5qSe5HieuPp2nhMjQyJiOzDcmvUYP44hRZnKVQ,2525
+zhijiang-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+zhijiang-0.0.3.dist-info/entry_points.txt,sha256=Q_-WKs0WMLyxX1t8rWQzIE94DfhcGxeqYzdM-09IxCs,43
+zhijiang-0.0.3.dist-info/top_level.txt,sha256=CLVD_HFtdNB3uaa7tp2r1-vOsvccTYHrlIxNxW06rAU,9
+zhijiang-0.0.3.dist-info/RECORD,,

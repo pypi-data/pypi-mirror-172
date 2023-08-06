@@ -1,0 +1,10 @@
+set ignorecase
+set nowrapscan
+set nowrap
+set hlsearch
+set incsearch
+
+set tabstop=4 shiftwidth=4 expandtab
+set autoindent
+
+set cursorline
