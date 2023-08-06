@@ -1,0 +1,11 @@
+pgwidget/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgwidget/engine.py,sha256=wpczP22ZuLoNb0FN1n6xRhtJicc5wDE6oI4U82O0mvw,12946
+pgwidget/helper.py,sha256=gbPtLVid0PcXcRmmpw8fBOC56rZ07xANLBPlTAyIRME,1276
+pgwidget/pgwidget_core.py,sha256=Aq3lg1DfY15IgiB5hqQeuSgR9fFqTwiNpS4ur2g19BY,82246
+pgwidget/test_entry_property.py,sha256=f4gJBLsB-lYIMcWXtnkkWDgqxc8OvY4cYfWaAVcf1AY,1041
+pgwidget/webengine.py,sha256=7ndDzXhsVXgLrPDPDGPpm1clDBpr9eIXXtDpclEkyFk,6576
+pgwidget-0.6.0.dist-info/LICENSE,sha256=LhjVfITw-wDY-BehxX1Dk-EB-5gW90Y7qwUvm6Fhei8,1090
+pgwidget-0.6.0.dist-info/METADATA,sha256=HQPhx07CGAo5GhF9EwbKOfN1xJu3rdN1USu_1KrdgE0,1451
+pgwidget-0.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pgwidget-0.6.0.dist-info/top_level.txt,sha256=RtnRt-mjc0DLQuQWBpj2pB1M7Nzea7CGLzr3gKKeIDA,9
+pgwidget-0.6.0.dist-info/RECORD,,
