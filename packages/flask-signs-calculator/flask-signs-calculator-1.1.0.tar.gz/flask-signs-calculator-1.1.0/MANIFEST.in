@@ -1,0 +1,5 @@
+exclude signs_calculator/app.py
+exclude signs_calculator/extensions/admin.py
+prune tests
+include signs_calculator/templates/*
+include signs_calculator/static/*
