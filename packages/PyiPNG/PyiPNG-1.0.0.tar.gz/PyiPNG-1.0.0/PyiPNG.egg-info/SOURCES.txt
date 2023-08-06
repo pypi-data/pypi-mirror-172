@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+PyiPNG.egg-info/PKG-INFO
+PyiPNG.egg-info/SOURCES.txt
+PyiPNG.egg-info/dependency_links.txt
+PyiPNG.egg-info/top_level.txt
+pyipng/__init__.py
+pyipng/pyipng.py
