@@ -1,0 +1,23 @@
+{
+  "template": "https://github.com/iterative/py-template",
+  "commit": "5fb8af99d07678287dfc10ad1394452b57d23970",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "morefs",
+      "package_name": "morefs",
+      "friendly_name": "morefs",
+      "author": "Iterative",
+      "email": "saugat@iterative.ai",
+      "github_user": "iterative",
+      "version": "0.0.0",
+      "copyright_year": "2022",
+      "license": "Apache-2.0",
+      "docs": "False",
+      "short_description": "More FSSpec filesystems",
+      "development_status": "Development Status :: 4 - Beta",
+      "_template": "https://github.com/iterative/py-template"
+    }
+  },
+  "directory": null
+}
