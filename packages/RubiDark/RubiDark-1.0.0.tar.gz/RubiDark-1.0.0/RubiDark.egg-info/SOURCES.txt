@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+RubiDark/Rub.py
+RubiDark.egg-info/PKG-INFO
+RubiDark.egg-info/SOURCES.txt
+RubiDark.egg-info/dependency_links.txt
+RubiDark.egg-info/top_level.txt
