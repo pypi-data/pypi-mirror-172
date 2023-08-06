@@ -1,0 +1,15 @@
+factly/standard_names/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+factly/standard_names/airline.csv,sha256=X_yayQASYD0c4vnWYKa7MhQwfePuVgDH5_fJXNC62G4,1959
+factly/standard_names/airline.py,sha256=H3v84b9r8mnUT4iYvw7_99iqAiExV3IebsXL6hFE09o,2081
+factly/standard_names/cities.csv,sha256=UcLDxb7Nhf811KVMYSrLaQUAA4oCRCBA3kDaDX6hKV4,1126
+factly/standard_names/cities.py,sha256=fXmp5lwFWf77zE-HfLsMChEywZR6YKZfbDlifW7yELI,2104
+factly/standard_names/country.csv,sha256=ME7udEJk8XBJ6-Tbc9O8wDfZcSzUP7fnar_Q7iq0YtQ,2546
+factly/standard_names/country.py,sha256=VtsignHFRrTe_ekqhI7uJlLE_o7hRqF-_bzmUflJsoY,2093
+factly/standard_names/crops.csv,sha256=6SQnsDijB8HCtHHgF0Xh274pTOUZYciy5RPtWRgW7fk,2497
+factly/standard_names/crops.py,sha256=-j9f9L1sd0DrkrzYazArbdzWVMs_dtRG1_kGXy8M9_I,2065
+factly/standard_names/state.csv,sha256=aNozizpF_Rhv_zSUGHwRyCZkC8NhhWzc6U2WgxY6K3A,633
+factly/standard_names/states-and-abbreviations.csv,sha256=OWu9D4sHTm-MJU8WGyJzlt1aVyB-pNjltrIFO7W-WYg,534
+factly/standard_names/states.py,sha256=074a0x2mMvgJMAKZ5LrnQ5DtLba8dPrsB28AQf8sy98,4573
+factly_standard_names-0.1.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+factly_standard_names-0.1.3.dist-info/METADATA,sha256=k3ODw3xfYFlrv72aMAXFEIxLF7AfLQT5zLHjC5aAI-8,373
+factly_standard_names-0.1.3.dist-info/RECORD,,
