@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pytorch_functional.egg-info/PKG-INFO
+pytorch_functional.egg-info/SOURCES.txt
+pytorch_functional.egg-info/dependency_links.txt
+pytorch_functional.egg-info/requires.txt
+pytorch_functional.egg-info/top_level.txt

@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pytorch-functional
+Version: 0.7.1.post1
+Summary: Provides functional API for model creation in PyTorch.
+Home-page: https://github.com/gahaalt/pytorch-functional.git
+Author: Szymon Mikler
+Author-email: sjmikler@gmail.com
+License: MIT
+Project-URL: Documentation, https://pytorch-functional.readthedocs.io/
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Pytorch Functional
+
+> THIS PROJECT WAS RENAMED!
+>
+> New name is Pytorch Symbolic.
+>
+> The main reason is the ambiguity with `torch.nn.functional`.
+
+## NEW LINKS
+
+* https://pytorch-symbolic.readthedocs.io/
+* https://github.com/gahaalt/pytorch-symbolic/
+* https://pypi.org/project/pytorch-symbolic/
+
+## Installation
+
+Install new version with pip:
+
+```
+pip install pytorch-symbolic
+```
