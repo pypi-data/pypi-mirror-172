@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/fullask_rest_framework/__init__.py
+src/fullask_rest_framework/__main__.py
+src/fullask_rest_framework/cli.py
+src/fullask_rest_framework.egg-info/PKG-INFO
+src/fullask_rest_framework.egg-info/SOURCES.txt
+src/fullask_rest_framework.egg-info/dependency_links.txt
+src/fullask_rest_framework.egg-info/entry_points.txt
+src/fullask_rest_framework.egg-info/requires.txt
+src/fullask_rest_framework.egg-info/top_level.txt
