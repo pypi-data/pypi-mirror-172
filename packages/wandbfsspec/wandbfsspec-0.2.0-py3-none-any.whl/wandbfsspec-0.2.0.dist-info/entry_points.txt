@@ -1,0 +1,4 @@
+[fsspec.specs]
+wandbas=wandbfsspec.spec.WandbArtifactStore
+wandbfs=wandbfsspec.spec.WandbFileSystem
+

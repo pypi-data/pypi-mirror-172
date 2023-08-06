@@ -1,0 +1,9 @@
+wandbfsspec/__init__.py,sha256=IuQC-iay_ZLqbHSe3II1nknlNzv7kSv-5gWmLr6AGqQ,229
+wandbfsspec/core.py,sha256=8VTefxj7uyYHfr0KjpIy07t5G9LNkdphifH0cGFREzs,2174
+wandbfsspec/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wandbfsspec/spec.py,sha256=C7nV4mDVREEme8ew9KpACeZI8hDq3RkD2Ho7XnGx48A,15780
+wandbfsspec-0.2.0.dist-info/entry_points.txt,sha256=0cpMql1UTt8e5gxj8ukK8r7gyvmqgQNj3vKBsfjQe6E,101
+wandbfsspec-0.2.0.dist-info/LICENSE,sha256=BhtohFpjchXXHhU_P6zNF-c0F9cJeFyBvKpzAwUWYsg,1074
+wandbfsspec-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+wandbfsspec-0.2.0.dist-info/METADATA,sha256=LQ-KMJXJeWUPMHHU4tMA3rkYsrngH2sDh5rAUzq-iyg,5107
+wandbfsspec-0.2.0.dist-info/RECORD,,
