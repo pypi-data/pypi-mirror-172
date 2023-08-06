@@ -1,0 +1,12 @@
+README.md
+setup.py
+EmoShidian/README.md
+EmoShidian/__init__.py
+EmoShidian/__main__.py
+EmoShidian/file.pdf
+EmoShidian/index.html
+emo_shidian.egg-info/PKG-INFO
+emo_shidian.egg-info/SOURCES.txt
+emo_shidian.egg-info/dependency_links.txt
+emo_shidian.egg-info/entry_points.txt
+emo_shidian.egg-info/top_level.txt

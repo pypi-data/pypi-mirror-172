@@ -1,0 +1,4 @@
+[console_scripts]
+EmoShidian = EmoShidian.__main__:main
+emo-shidian = EmoShidian.__main__:main
+
