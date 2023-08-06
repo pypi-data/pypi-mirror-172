@@ -1,0 +1,2 @@
+[console_scripts]
+bluffai = bluffai:main
