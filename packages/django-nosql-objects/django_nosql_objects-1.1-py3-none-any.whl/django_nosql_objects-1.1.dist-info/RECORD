@@ -1,0 +1,17 @@
+nosql_objects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nosql_objects/admin.py,sha256=yn96LgAIg-SET5bXSwkgkO37bKk2mNRPZZ_9NslNy5A,164
+nosql_objects/apps.py,sha256=tAl6mjSD9irimovZGydoKBVfus4J-brdFRUXOeYRwgE,236
+nosql_objects/models.py,sha256=0RMuwsAyGhsTuXoLzSK-1TWai4-wncVQa4qHp3Jhijg,3853
+nosql_objects/pagination.py,sha256=C77YZ94Y4-ap4yY3BAATCMcDyQb8foDr3RAJPh6FBQg,198
+nosql_objects/permissions.py,sha256=bhStMdqqGAcPC2ujOKdwxLwEap8OOII6ZZRAk_tUDyM,931
+nosql_objects/serializers.py,sha256=Tgz_9zOUAI_xz8iBGHkFkH9y1chCnFjDvkejvUW0jmY,2277
+nosql_objects/signals.py,sha256=FLeUatqLYUJlrIdD69zhs7A5oB2m5EEduKzAl4zEufU,527
+nosql_objects/urls.py,sha256=L8IRu1LKX-6HaB5BMbRZ4bdYQVaRvrnR5O2T6oPsno0,320
+nosql_objects/views.py,sha256=98JH0MZy8T517rEPuzuIVRBZW5lgOzL4wspMs7GKIRs,4989
+nosql_objects/migrations/0001_initial.py,sha256=ayGg8YSp_F1i-OI4PkO-wNdZzuS9V-g2ihWc6pXCCOU,10274
+nosql_objects/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_nosql_objects-1.1.dist-info/LICENSE,sha256=HIV_l3GTI5j07VpzPtKw8s9Fyg9jo_zDo8wKWA8iiXs,1070
+django_nosql_objects-1.1.dist-info/METADATA,sha256=OdUft3ro62dTmbjEKVrHY1W3mBbJtoge_ske41si8Pc,7923
+django_nosql_objects-1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_nosql_objects-1.1.dist-info/top_level.txt,sha256=ChdXszd51XIgY7Wp73AoT2yGeGjM1-fonEHUrl0vNvQ,14
+django_nosql_objects-1.1.dist-info/RECORD,,
