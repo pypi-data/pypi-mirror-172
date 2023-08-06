@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pytest-tagging
+Version: 0.1.0
+Summary: a pytest plugin to tag tests
+Author: Sergio Castillo
+Author-email: s.cast.lara@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytest (>=7.1.3,<8.0.0)
