@@ -1,0 +1,12 @@
+numba
+scipy
+h5py
+matplotlib
+setuptools 
+wheel 
+twine
+ipykernel
+nibabel 
+SimpleITK 
+azure-storage-blob
+sklearn
