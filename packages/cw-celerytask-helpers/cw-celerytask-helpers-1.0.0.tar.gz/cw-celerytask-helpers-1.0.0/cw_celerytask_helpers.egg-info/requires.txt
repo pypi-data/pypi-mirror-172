@@ -1,0 +1,8 @@
+celery~=5.0
+redis
+
+[CloudWatch logging support]
+watchtower
+
+[S3 logging support]
+boto3
