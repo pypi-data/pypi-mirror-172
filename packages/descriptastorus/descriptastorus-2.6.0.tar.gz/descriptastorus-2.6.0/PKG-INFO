@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: descriptastorus
+Version: 2.6.0
+Summary: Descriptor storage and molecular file indexing
+Home-page: https://github.com/bp-kelley/descriptastorus
+Author: Brian Kelley
+Author-email: bkelley@relaytx.com
+License: BSD
+License-File: LICENSE
