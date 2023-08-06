@@ -1,0 +1,7 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_app.py,sha256=o_UuUkmTzq9_oPSxQwB4iZWX32fJtvSYiof_YY0F8QY,2628
+perun.proxygui-1.1.0.dist-info/LICENSE,sha256=9imSFPSsnC4AsFHzckcOiDLORhs1XoLpBlPlYHQYvBI,1560
+perun.proxygui-1.1.0.dist-info/METADATA,sha256=OKXofuAry3Ym-AigA1g2ornoa7Rp9yEIjM8BoH_wDL0,400
+perun.proxygui-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+perun.proxygui-1.1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+perun.proxygui-1.1.0.dist-info/RECORD,,
