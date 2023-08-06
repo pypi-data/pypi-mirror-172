@@ -1,0 +1,13 @@
+parareal/__init__.py,sha256=RdaHLNXSBlX4ELW2CTOsJbKSIavOSSs_IPyCdIMdaUk,278
+parareal/abstract.py,sha256=oW-UqqYC3x9ixrFBttqvkxVnDoxxP5RDAtDS46dyVfw,1013
+parareal/forward_euler.py,sha256=BnkMNMCPSk06zjrUVbun6-BEqHR_pNk3cKnC7DbqJUk,427
+parareal/futures.py,sha256=sUjnsZ9SXkNKBH_gPOzp-xAqxNz-SvLi6FuV5vWsXtI,3076
+parareal/harmonic_oscillator.py,sha256=lBvSIfjKaXBCUFWFwk6cTHYuKpNECeEjiXQfvLeqzPU,2261
+parareal/iterate_solution.py,sha256=tyetHEn8lvtT4RswrlqThOsjK8Ok3YrHoLAF9eetIqE,599
+parareal/parareal.py,sha256=1y3oqCngbPHCU3DkVrLvX0DDcYDq92RPTwEThyTDI0o,1309
+parareal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parareal/tabulate_solution.py,sha256=9yX2za7AV4z6Zo7d8CX41TmDNHbNyh77qb4__msqjlM,924
+parareal-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+parareal-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+parareal-0.1.0.dist-info/METADATA,sha256=q2G__RrdJgkjeiRXINxeBpwykOVvoBabcamvGCLtWPc,1076
+parareal-0.1.0.dist-info/RECORD,,
