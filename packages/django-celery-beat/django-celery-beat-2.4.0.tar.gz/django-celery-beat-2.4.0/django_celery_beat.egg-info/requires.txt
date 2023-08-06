@@ -1,0 +1,11 @@
+Django<4.2,>=2.2
+celery<6.0,>=5.2.3
+django-timezone-field>=5.0
+python-crontab>=2.3.4
+tzdata
+
+[:python_version < "3.8"]
+importlib-metadata<5.0
+
+[:python_version < "3.9"]
+backports.zoneinfo
