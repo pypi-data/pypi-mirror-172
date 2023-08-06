@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/image_scrapper_pk1308.egg-info/PKG-INFO
+src/image_scrapper_pk1308.egg-info/SOURCES.txt
+src/image_scrapper_pk1308.egg-info/dependency_links.txt
+src/image_scrapper_pk1308.egg-info/requires.txt
+src/image_scrapper_pk1308.egg-info/top_level.txt
+src/imagescrapper/__init__.py
+src/imagescrapper/runner.py
