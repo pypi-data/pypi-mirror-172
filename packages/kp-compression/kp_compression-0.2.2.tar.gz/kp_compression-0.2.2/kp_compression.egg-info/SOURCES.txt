@@ -1,0 +1,9 @@
+README.md
+setup.py
+kp_compression/__init__.py
+kp_compression/myfunctions.py
+kp_compression.egg-info/PKG-INFO
+kp_compression.egg-info/SOURCES.txt
+kp_compression.egg-info/dependency_links.txt
+kp_compression.egg-info/requires.txt
+kp_compression.egg-info/top_level.txt
