@@ -1,0 +1,59 @@
+<main class="bd-main order-1">
+
+{% extends '_nav.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="col-md-10 col-lg-20 mx-lg-auto mx-md-auto" style="left: -60px; bottom: -65px; overflow-y: auto;">
+		<button type="button" class="btn btn-outline-secondary" onclick="history.back()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+			  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+			</svg>
+		<span class="visually-hidden">Button</span>
+		</button>
+	</div>
+        <div class="row pb-5">
+    <div class="shadow col-md-10 col-lg-8 mx-lg-auto mx-md-auto border border-2 bg-light rounded" >
+    {% include '_nav_top.html' %}
+<!--      <p class="lead alert alert-primary">Kinder overzicht</p>-->
+
+
+<!--      <p class="lead">Het overzicht van de kinderen</p>-->
+        <ul style="padding-top: 10px;">
+            Overzichten van alle kinderen.
+        </ul>
+<!--      <p>Kies een kind:</p>-->
+          <table class="table table-striped">
+              <thead><tr>
+                  <th>Naam Kind</th>
+                  <th>Datum van Inschrijven</th>
+                  <th>Geboortedatum</th>
+                  <th>Start in jaar</th>
+              </tr></thead>
+              <tbody class="scroll_table_body">
+              {% for k in Child %}
+              <tr>
+                  <td><a href="{{ url_for( 'children_bp.details_child', uuid=k.uuid) }}">{{ k.firstname }} {{ k.lastname }}</a></td>
+                  <td align="left">{{ k.date_of_registration }}</td>
+                  <td align="left">{{ k.date_of_birth }}</td>
+                  <td align="left">{{ k._starts_in }}</td>
+              </tr>
+              {% endfor %}
+              </tbody>
+          </table>
+    </div>
+  </div>
+<!--<script src="//code.jquery.com/jquery.min.js"></script>-->
+<!--<script>-->
+<!--    $.get("navigation.html", function(data){-->
+<!--        $("#nav-placeholder").replaceWith(data);-->
+<!--    });-->
+<!--</script>-->
+
+    <script type="module">
+        ShowNewOption("Kind toevoegen", "{{ url_for('children_bp.add_child') }}")
+        Collapse("Children")
+    </script>
+</div>
+{% endblock %}
+</main>

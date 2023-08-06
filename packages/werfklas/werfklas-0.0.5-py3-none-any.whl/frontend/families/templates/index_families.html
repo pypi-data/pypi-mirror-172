@@ -1,0 +1,50 @@
+<main class="bd-main order-1">
+
+{% extends '_nav.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row pb-5">
+      		    <div class="col-md-10 col-lg-20 mx-lg-auto mx-md-auto" style="left: -60px;bottom: -65px;">
+		<button type="button" class="btn btn-outline-secondary" onclick="history.back()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+			  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+			</svg>
+		<span class="visually-hidden">Button</span>
+		</button>
+	</div>
+    <div class="shadow col-md-10 col-lg-8 mx-lg-auto mx-md-auto border border-2 bg-light">
+        		{% include '_nav_top.html' %}
+        <ul style="padding-top: 10px;">
+            Overzichten van alle gezinnen.
+        </ul>
+          <table style="border-spacing: 10px; width: 100%" class="table table-striped">
+              <thead><tr><th>Naam</th><th>Ouders</th></tr></thead>
+              <tbody class="scroll_table_body">
+              {% for f in Families %}
+              <tr>
+                  <td><a href="{{ url_for( 'families_bp.details_family', uuid=f.uuid) }}">{{ f.parent1.lastname }}</a></td>
+                  <td align="left">
+                      <a href="{{ url_for( 'parents_bp.details_parent', uuid=f.parent1_uuid) }}">{{ f.parent1.firstname }}</a>
+                        {% if f.parent2 %}
+                            &nbsp;&&nbsp;<a href="{{ url_for( 'parents_bp.details_parent', uuid=f.parent2_uuid) }}">{{ f.parent2.firstname }}
+                                {% if f.divorced %}
+                                    <b>{{ f.parent2[2] }}</b>
+                                {% endif %}
+                              </a>
+                        {%endif%}
+                  </td>
+              </tr>
+              {% endfor %}
+              </tbody>
+          </table>
+    </div>
+  </div>
+
+    <script type="module">
+        ShowNewOption("Gezin toevoegen", "{{ url_for('families_bp.add_family') }}")
+        Collapse("Family")
+    </script>
+</div>
+{% endblock %}
+</main>
