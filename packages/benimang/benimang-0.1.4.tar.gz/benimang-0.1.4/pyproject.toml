@@ -1,0 +1,19 @@
+[project]
+name = "benimang"
+version = "0.1.4"
+description = "utils library for Beni"
+requires-python = ">=3.10"
+keywords = ["benimang", "beni"]
+authors = [
+  {email = "benimang@126.com"},
+  {name = "Beni Mang"}
+]
+maintainers = [
+  {name = "Beni Mang", email = "benimang@126.com"}
+]
+
+dependencies = [
+]
+
+[project.scripts]
+beni = "beni.bcmd:main"
