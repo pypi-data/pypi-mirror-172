@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/pyadvantech/__init__.py
+src/pyadvantech/pyadvantech.py
+src/pyadvantech.egg-info/PKG-INFO
+src/pyadvantech.egg-info/SOURCES.txt
+src/pyadvantech.egg-info/dependency_links.txt
+src/pyadvantech.egg-info/requires.txt
+src/pyadvantech.egg-info/top_level.txt

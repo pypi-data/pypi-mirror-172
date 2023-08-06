@@ -1,0 +1,6 @@
+matplotlib
+libusb
+pyusb
+tqdm
+time
+numpy
