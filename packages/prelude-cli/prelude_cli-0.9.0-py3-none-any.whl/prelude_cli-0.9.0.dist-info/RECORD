@@ -1,0 +1,15 @@
+prelude_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prelude_cli/cli.py,sha256=Zw5YnLU3dOLPOaElpfa6jQ2xbn3QzSMk3LSZUAcy3O4,582
+prelude_cli/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prelude_cli/views/account.py,sha256=3tTrMw2aOvZfDOJO3TUELsYVaC3zNQlQsWRwrhTfMGM,2518
+prelude_cli/views/configure.py,sha256=ZgDl0uife1fB68sWDNIdxYQ8fkddKaUJyYWbdrrhWdU,606
+prelude_cli/views/database.py,sha256=VQ19Rm0fLzFm90DWGCcLvdFaiRyP21NeCEZk2Y9PgSc,2086
+prelude_cli/views/detect.py,sha256=y_B8jifuEP2fw05ExAJkie1z38vnKEJOaPNIyQUNq7Y,2041
+prelude_cli/views/schedule.py,sha256=AgP-AsnCQYDFr1wBowGwjJJh-UF5t-OABhNSjZsZCLM,1261
+prelude_cli/views/shared.py,sha256=2NOXr_IQeB5XCb6ho7bd53hGtUeY6IuaYjnidpeQXho,318
+prelude_cli-0.9.0.dist-info/LICENSE,sha256=ttdT5omfN6LNmtQoIjUhkkFhz6i44SDMRNwKrbfyTf8,1069
+prelude_cli-0.9.0.dist-info/METADATA,sha256=YF7Cm2HcHT1OPyuu7LsvQGxBL68fsVNl35NCQ8lzLuc,3565
+prelude_cli-0.9.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prelude_cli-0.9.0.dist-info/entry_points.txt,sha256=EcHxlP45Wb60ThfVcsNSEAmWdy-chL_1crJKR_9a3uU,48
+prelude_cli-0.9.0.dist-info/top_level.txt,sha256=tPjI9IbMelcZ6RUw_gqloIqK_C2yr7NJ6v6mI88xwHM,12
+prelude_cli-0.9.0.dist-info/RECORD,,
