@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: e-encryption
+Version: 0.0.2
+Summary: Easy encryption and decryption
+Author: Jeff Aguilar
+Author-email: jeff.aguilar.06@gmail.com
+License: MIT
+Keywords: encryption,decryption
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+
+# Easy Encryption
+
+Simple data encryption
+
+## Installation
+
+Use pip to install the package:
+
+```
+pip install e-encryption
+```
+
+## Usage
+
+This package provides an easy way to encrypt information
+
+Please change the environment variable `EASY_ENCRYPTION_KEY_LOCATION` to assign a location to the file that stores the key.
+
+By default the file key is generated in the home folder.
+
+```python
+from e_encryption import EasyEncryption
+
+enc_msg = EasyEncryption.encrypt('This is an encrypted message')
+print('Encrypt', enc_msg)
+print('Decrypt', EasyEncryption.decrypt(enc_msg))
+```
+
+## Setting key file path
+
+
+```python
+from e_encryption import EasyEncryption
+
+key_file = '/home/custom_location.key'
+ecryp = EasyEncryption(key_file)
+enc_msg = ecryp.encrypt('This is an encrypted message')
+print('Encrypt', enc_msg)
+print('Decrypt', ecryp.decrypt(enc_msg))
+```
