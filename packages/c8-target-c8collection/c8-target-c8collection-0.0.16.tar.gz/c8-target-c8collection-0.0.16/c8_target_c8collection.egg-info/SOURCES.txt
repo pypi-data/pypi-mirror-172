@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+c8_target_c8collection/__init__.py
+c8_target_c8collection/main.py
+c8_target_c8collection.egg-info/PKG-INFO
+c8_target_c8collection.egg-info/SOURCES.txt
+c8_target_c8collection.egg-info/dependency_links.txt
+c8_target_c8collection.egg-info/entry_points.txt
+c8_target_c8collection.egg-info/requires.txt
+c8_target_c8collection.egg-info/top_level.txt
