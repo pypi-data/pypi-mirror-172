@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+tryPackagePython7/__init__.py
+tryPackagePython7/myFunctions.py
+tryPackagePython7.egg-info/PKG-INFO
+tryPackagePython7.egg-info/SOURCES.txt
+tryPackagePython7.egg-info/dependency_links.txt
+tryPackagePython7.egg-info/requires.txt
+tryPackagePython7.egg-info/top_level.txt
