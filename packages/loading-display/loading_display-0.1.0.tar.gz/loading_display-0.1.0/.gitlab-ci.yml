@@ -1,0 +1,45 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build-package:
+  image: alpine
+  stage: build
+  script:
+    - apk update && apk upgrade --available
+    - apk add --update python3
+    - apk add --update py3-pip
+    - python3 -m pip install --upgrade pip
+    - python3 -m pip install --upgrade build
+    - python3 -m build
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - dist/
+
+test-package:
+  image: alpine
+  stage: test
+  script:
+    - apk update && apk upgrade --available
+    - apk add --update python3
+    - apk add --update py3-pip
+    - python3 -m pip install --upgrade pip
+    - python3 -m pip install --upgrade pytest
+    - pytest
+
+
+deploy-package:
+  image: alpine
+  stage: deploy
+  needs: ["build-package", "test-package"]
+  script:
+    - apk update && apk upgrade --available
+    - apk add --update python3
+    - apk add --update py3-pip
+    - python3 -m pip install --upgrade pip
+    - python3 -m pip install --upgrade twine
+    - python3 -m twine upload -u $PYPI_UNAME -p $PYPI_PWORD dist/*
+  only:
+    - master
