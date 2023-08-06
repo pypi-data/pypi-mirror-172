@@ -1,0 +1,11 @@
+README.md
+setup.py
+gitlab_settings_manager/__init__.py
+gitlab_settings_manager/gitlab_add_reviewers.py
+gitlab_settings_manager/gitlab_settings_manager.py
+gitlab_settings_manager.egg-info/PKG-INFO
+gitlab_settings_manager.egg-info/SOURCES.txt
+gitlab_settings_manager.egg-info/dependency_links.txt
+gitlab_settings_manager.egg-info/entry_points.txt
+gitlab_settings_manager.egg-info/requires.txt
+gitlab_settings_manager.egg-info/top_level.txt
