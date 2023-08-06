@@ -1,0 +1,6 @@
+h5py<4,>=2.10
+hdmf<4,>=3.4.2
+numpy<1.24,>=1.16
+pandas<2,>=1.1.5
+python-dateutil<3,>=2.7.3
+setuptools
