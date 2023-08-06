@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools @ git+https://github.com/pypa/setuptools.git@main"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fractif-http"
+version = "0.0.7"
+authors = [
+  { name="Tom LARGE", email="tom@fractif.com" },
+]
+description = "Simple, yet elegant, HTTP library. As like as Requests. Actually, it is based on requests package..."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Fractif/fractif-http"
+"Bug Tracker" = "https://github.com/Fractif/fractif-http/issues"

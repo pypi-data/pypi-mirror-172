@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+fractif_http.egg-info/PKG-INFO
+fractif_http.egg-info/SOURCES.txt
+fractif_http.egg-info/dependency_links.txt
+fractif_http.egg-info/requires.txt
+fractif_http.egg-info/top_level.txt
+fractifhttp/__init__.py
+fractifhttp/client.py
+fractifhttp/logger.py
+fractifhttp/regex_helper.py
+fractifhttp/url.py
