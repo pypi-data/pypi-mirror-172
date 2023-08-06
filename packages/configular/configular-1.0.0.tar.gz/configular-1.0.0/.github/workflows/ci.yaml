@@ -1,0 +1,52 @@
+name: Run Tox
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: python:${{ matrix.python-version }}-alpine
+      volumes:
+        - /github/home/.cache/pip:/github/home/.cache/pip
+
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
+
+    services:
+      redis:
+        image: redis:alpine
+        # Set health checks to wait until redis has started
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      REDIS_HOST: redis
+
+    steps:
+      - name: install system dependencies
+        run: |
+          apk add --no-cache libffi-dev build-base git
+
+      - uses: actions/checkout@v2.5.0
+        with:
+          fetch-depth: 0
+
+      - name: install python dependencies
+        run: |
+          pip install -U pip
+          pip install tox
+
+      - name: run tox
+        run: tox
+
+      - name: Pytest coverage comment
+        uses: MishaKav/pytest-coverage-comment@main
+        with:
+          pytest-xml-coverage-path: ./coverage.xml
+          junitxml-path: ./pytest.xml
+          remove-link-from-badge: true
