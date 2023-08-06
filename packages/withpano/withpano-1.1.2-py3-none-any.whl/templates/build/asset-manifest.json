@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.54bd0579.css",
+    "main.js": "/static/js/main.1d00b075.js",
+    "static/media/workZoneRoom.jpeg": "/static/media/workZoneRoom.b04be69b7a2d4330f731.jpeg",
+    "static/media/ibmmetaverseui.jpg": "/static/media/ibmmetaverseui.3c34fe16d072934a6770.jpg",
+    "static/media/bathroom.jpeg": "/static/media/bathroom.6aa336aef7b7776f6e95.jpeg",
+    "static/media/outside.jpeg": "/static/media/outside.d0f14868848c5f3e8b12.jpeg",
+    "static/media/livingroom.jpeg": "/static/media/livingroom.b6d15ab66d4d7446d865.jpeg",
+    "static/media/shelfDesign.png": "/static/media/shelfDesign.2b0f226798bc4c1beb59.png",
+    "static/media/expressMood.png": "/static/media/expressMood.28581a4a37c6894b95b7.png",
+    "static/media/moodThreads.png": "/static/media/moodThreads.0c42abe7f4948fba2fbf.png",
+    "static/media/calendarPink.png": "/static/media/calendarPink.1a141420063b460693d5.png",
+    "static/media/calendarGreen.png": "/static/media/calendarGreen.58099f18630e79f8a83a.png",
+    "static/media/Robot_Assistant.gif": "/static/media/Robot_Assistant.c17d1d1616c716f77187.gif",
+    "static/media/searchBox.png": "/static/media/searchBox.9569fde92eb996f52a50.png",
+    "static/media/Entrance-slider-Slider.jpg": "/static/media/Entrance-slider-Slider.60b8a25960b22187735b.jpg",
+    "static/media/rca2.png": "/static/media/rca2.76ea9e64ba89d84e8b4b.png",
+    "static/media/ops.png": "/static/media/ops.942353fa055035a67168.png",
+    "static/media/journey copy.png": "/static/media/journey copy.f90d3443a2cf69907c59.png",
+    "static/media/navMap.png": "/static/media/navMap.ae1ce11dce12498c0963.png",
+    "static/media/virtual_meeting_color.png": "/static/media/virtual_meeting_color.a1333d65ed05e81699e9.png",
+    "static/media/dropbox.png": "/static/media/dropbox.217b26e4d029a2928c11.png",
+    "static/media/folder.png": "/static/media/folder.c71c2c482ab2e7e64a1e.png",
+    "static/media/board room copy.png": "/static/media/board room copy.83326dd10a2723310f2b.png",
+    "static/media/MetaverseStudios-logo-original-black.png": "/static/media/MetaverseStudios-logo-original-black.893c6b061ced8d8c654a.png",
+    "index.html": "/index.html",
+    "static/media/question.svg": "/static/media/question.3deab37880c424f6e036cd2e17ea9495.svg",
+    "static/media/check.svg": "/static/media/check.7a3eab5e5826751393502cd50a9f898b.svg",
+    "static/media/info.svg": "/static/media/info.a1d1ee95d7cb39f53ccb599c0f0df8fb.svg",
+    "static/media/link.svg": "/static/media/link.dd2c3c4266623b8b8d4cc2e6164c4682.svg",
+    "static/media/video.svg": "/static/media/video.5aaec30b8d723df5741c0db506655367.svg",
+    "static/media/default.svg": "/static/media/default.4180c9e8df51936b2edbe886f06a542b.svg",
+    "main.54bd0579.css.map": "/static/css/main.54bd0579.css.map",
+    "main.1d00b075.js.map": "/static/js/main.1d00b075.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54bd0579.css",
+    "static/js/main.1d00b075.js"
+  ]
+}

@@ -1,0 +1,10 @@
+version: 1
+application:
+  name: WITHPANO
+  version: 1.1.2
+  maintainer: ARUNANGSHU HAZRA <arun.hazra86@gmail.com>
+  copyright: "Licensed Materials - Property of Arunangshu Hazra © Copyright Arunangshu Hazra. 2019 All Rights Reserved."
+  contributor:
+    - name: ARUNANGSHU HAZRA
+      email: arun.hazra86@gmail.com
+  dependecies:
