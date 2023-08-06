@@ -1,0 +1,9 @@
+[
+  "test/test_itk_image_to_ngff_image.py::test_2d_image",
+  "test/test_itk_image_to_ngff_image.py::test_2d_itk_image",
+  "test/test_itk_image_to_ngff_image.py::test_2d_itkwasm_image",
+  "test/test_ngff_image_scale_factors.py::test_scale_factors_512_512",
+  "test/test_ngff_image_scale_factors.py::test_scale_factors_520_520",
+  "test/test_ngff_validation.py::test_y_x_valid_ngff",
+  "test/test_to_ngff_zarr_dask_image.py::test_gaussian_isotropic_scale_factors"
+]
