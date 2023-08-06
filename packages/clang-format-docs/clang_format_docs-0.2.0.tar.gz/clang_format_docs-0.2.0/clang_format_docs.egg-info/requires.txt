@@ -1,0 +1,15 @@
+clang-format
+
+[dev]
+build
+bump2version
+ipython
+pdbpp
+pre-commit
+twine
+wheel
+
+[test]
+pre-commit
+pytest
+pytest-cov
