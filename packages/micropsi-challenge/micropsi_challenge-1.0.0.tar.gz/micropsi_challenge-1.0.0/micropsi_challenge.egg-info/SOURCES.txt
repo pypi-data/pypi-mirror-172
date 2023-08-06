@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+micropsi_challenge.py
+pyproject.toml
+micropsi_challenge.egg-info/PKG-INFO
+micropsi_challenge.egg-info/SOURCES.txt
+micropsi_challenge.egg-info/dependency_links.txt
+micropsi_challenge.egg-info/requires.txt
+micropsi_challenge.egg-info/top_level.txt
+tests/__init__.py
+tests/micropsi_challenge_test.py

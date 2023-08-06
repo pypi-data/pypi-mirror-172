@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: micropsi_challenge
+Version: 1.0.0
+Summary: Package to prove my skills
+License: You allowed to do with this project whatever you want ;)
+Keywords: micropsi,challenge
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# Micropsi challenge
+
+Some useful documentation about the project/package/module
