@@ -1,0 +1,7 @@
+megfile
+colorama
+numpy
+pyyaml
+loguru
+easydict
+tabulate
