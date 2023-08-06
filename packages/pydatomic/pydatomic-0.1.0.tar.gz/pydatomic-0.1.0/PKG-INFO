@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pydatomic
+Version: 0.1.0
+Summary: Python client for emulating a Datomic database system using MongoDB as storage backend
+License: MIT
+Author-email: Patrick <patrsc@nubu.at>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# pydatomic
+
+Python client for emulating a Datomic database system using MongoDB as storage backend.
+
+## Documentation
+
+
