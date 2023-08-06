@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pytroll-collectors
+Version: 0.13.0
+Summary: Pytroll data collectors
+Home-page: https://github.com/pytroll/pytroll-collectors
+Author: Martin Raspaud
+Author-email: martin.raspaud@smhi.se
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Provides-Extra: geographic_gatherer
+Provides-Extra: s3stalker
+Provides-Extra: scisys_receiver
+Provides-Extra: trollstalker
+Provides-Extra: all
+License-File: LICENSE
