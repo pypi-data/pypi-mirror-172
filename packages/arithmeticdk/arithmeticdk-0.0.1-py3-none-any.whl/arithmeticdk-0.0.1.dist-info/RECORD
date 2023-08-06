@@ -1,0 +1,10 @@
+arithmeticdk/__init__.py,sha256=Cs_Cr1K89G-UsZRE5oqeQbliccKanM_NsKFwaow1vfA,124
+arithmeticdk/add.py,sha256=HazaUYD8G3OACktTeViO-3wfNduDer4_yzyzMmJzwwk,32
+arithmeticdk/divide.py,sha256=v9MBhJyxWjUPD8mfX7B4VIeMnTwBRvSKhtVjJHZG_vI,35
+arithmeticdk/multiply.py,sha256=X9U5VXVXr-OYXtdh8-ElIQo-l60tC79sX06-1O6NPy0,37
+arithmeticdk/subtract.py,sha256=de3Tsotx08rZASPH6jMx22zfcfc8nQ3fn36odkh2VJM,37
+arithmeticdk-0.0.1.dist-info/LICENSE,sha256=MivgxrlcVyVbRwdnjCPOnEp2JwMWW6anEKvtoq9MwJI,1066
+arithmeticdk-0.0.1.dist-info/METADATA,sha256=fXIZ4c7r2hbYACCPnAD7LXKf7LIQQRQMaru1fZM7sqA,452
+arithmeticdk-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+arithmeticdk-0.0.1.dist-info/top_level.txt,sha256=-3Wiwcv7mr3AVbaNM7SUkExsW2nLGvY_jfbbiqXXxFo,13
+arithmeticdk-0.0.1.dist-info/RECORD,,
