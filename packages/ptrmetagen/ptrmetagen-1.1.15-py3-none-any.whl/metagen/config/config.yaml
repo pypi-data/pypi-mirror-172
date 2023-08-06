@@ -1,0 +1,6 @@
+importer_setting:
+  host: http://localhost:9000/metadata
+  instance_url: https://cure.gisat.cz/backend/rest/
+  path: C:\michal\gisat\be-metadata-importer
+register_setting:
+  registerName: dict
