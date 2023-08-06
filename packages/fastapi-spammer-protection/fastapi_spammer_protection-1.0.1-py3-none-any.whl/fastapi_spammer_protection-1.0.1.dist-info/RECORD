@@ -1,0 +1,9 @@
+fastapi_spammer_protection/__init__.py,sha256=WE_r-dlk_w3HOA5Kjr_aKrZHajP-C9ywMoGt9hR4HKo,176
+fastapi_spammer_protection/matcher.py,sha256=ezjQZXHDgDhoG7jcPdXPdHGENynsfmStlf8ImpmQ6L0,466
+fastapi_spammer_protection/middleware.py,sha256=PJJ2ZiHDsVya18rmgAUEKU3I6pEs6O3gThkr7xR5mnU,3297
+fastapi_spammer_protection/url.py,sha256=xBydkZgBOotz2781nehxkWuU_T5KtVKJvyc1nB-8Tj4,1222
+fastapi_spammer_protection/vulnerable_urls.py,sha256=jn07o1R_2tOeZV5XnVFGqu6Rhgqfj4PrGgJPjq01kis,28268
+fastapi_spammer_protection-1.0.1.dist-info/LICENSE,sha256=7-688qNRux0dYf6pL2BGp5gIEEFIr8y4dsIO5y5WJa0,1091
+fastapi_spammer_protection-1.0.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+fastapi_spammer_protection-1.0.1.dist-info/METADATA,sha256=4_MN8W-uSU21-p6pn4GeXsaV4hQJkdPO5BrfLebqICs,663
+fastapi_spammer_protection-1.0.1.dist-info/RECORD,,
