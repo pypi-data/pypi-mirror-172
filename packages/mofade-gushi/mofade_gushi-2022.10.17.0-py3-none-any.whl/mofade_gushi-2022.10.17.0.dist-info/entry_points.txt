@@ -1,0 +1,4 @@
+[console_scripts]
+MofadeGushi = MofadeGushi.__main__:main
+mofade-gushi = MofadeGushi.__main__:main
+
