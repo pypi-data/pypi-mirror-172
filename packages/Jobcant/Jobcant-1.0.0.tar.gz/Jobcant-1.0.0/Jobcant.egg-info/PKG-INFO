@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: Jobcant
+Version: 1.0.0
+Summary: Does some of the things Jobcan doesn't
+Home-page: https://github.com/Maerig/jobcant
+Author: Jean-Loup Roussel-Clouet
+Author-email: jean-loup@cryptact.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# Jobcant
+
+## Usage
+
+```
+jobcan --help
+```
+
+## Config
+
+### Environment variables
+
+- `JOBCAN_EMAIL`
+- `JOBCAN_CLIENT_CODE`
+- `JOBCAN_PASSWORD`
+
+### Config file
+
+```
+jobcant config
+```
+
+## Build
+
+```
+python -m build
+```

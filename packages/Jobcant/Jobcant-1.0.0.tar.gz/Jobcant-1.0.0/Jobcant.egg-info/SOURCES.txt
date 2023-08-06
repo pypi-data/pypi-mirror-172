@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+Jobcant.egg-info/PKG-INFO
+Jobcant.egg-info/SOURCES.txt
+Jobcant.egg-info/dependency_links.txt
+Jobcant.egg-info/entry_points.txt
+Jobcant.egg-info/requires.txt
+Jobcant.egg-info/top_level.txt
+jobcant/__init__.py
+jobcant/cli.py
+jobcant/config.py
+jobcant/duration.py
+jobcant/jobcan.py
+jobcant/plotting.py
