@@ -1,0 +1,6 @@
+boto3
+phiterm>=0.2.24
+
+[dev]
+black
+pytest
