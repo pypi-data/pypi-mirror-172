@@ -1,0 +1,6 @@
+setup.py
+trader_tda/__init__.py
+trader_tda.egg-info/PKG-INFO
+trader_tda.egg-info/SOURCES.txt
+trader_tda.egg-info/dependency_links.txt
+trader_tda.egg-info/top_level.txt
