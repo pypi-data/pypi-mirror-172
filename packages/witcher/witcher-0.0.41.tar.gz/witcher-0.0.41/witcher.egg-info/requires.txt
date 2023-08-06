@@ -1,0 +1,17 @@
+stdlib_list
+ipywidgets
+pandas
+sklearn
+traitlets
+IPython
+statsmodels
+seaborn
+matplotlib
+yfinance
+pmdarima
+plotly
+opencv-python
+
+[test]
+IPython
+notebook
