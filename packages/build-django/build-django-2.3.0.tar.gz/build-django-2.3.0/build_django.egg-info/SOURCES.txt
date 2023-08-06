@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+build_django/__init__.py
+build_django/__main__.py
+build_django/const.py
+build_django.egg-info/PKG-INFO
+build_django.egg-info/SOURCES.txt
+build_django.egg-info/dependency_links.txt
+build_django.egg-info/entry_points.txt
+build_django.egg-info/requires.txt
+build_django.egg-info/top_level.txt
+build_django/utils/__init__.py
+build_django/utils/files.py
+build_django/utils/git.py
+build_django/utils/process.py
+build_django/utils/shell.py
