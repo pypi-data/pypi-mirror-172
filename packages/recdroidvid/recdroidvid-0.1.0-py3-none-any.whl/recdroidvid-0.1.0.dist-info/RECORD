@@ -1,0 +1,11 @@
+recdroidvid/__init__.py,sha256=AGTr4GIpYFUm9A4tTeOdvJFBP1maW4IrvL6lZUr_PEw,33
+recdroidvid/adb_commands.py,sha256=LywUKlHyAJm8zeIboS-xR0sAZDhCjaHdupq8B-6yZDg,5133
+recdroidvid/recdroidvid_main.py,sha256=JPwTrWSyb6VWmbOVT1maPjj8FgFpeIRy0-7QJNK5Y-Y,17923
+recdroidvid/settings_and_options.py,sha256=g-o5T6HBkXdft6leYmtD5pBNQkFKze-cwwKu7V_-Jig,16147
+recdroidvid/utility_functions.py,sha256=eDIk4V0rJM_eyns2EB_ITGLpBD7d6ofruKGZqXQOfgA,2946
+recdroidvid-0.1.0.dist-info/LICENSE.txt,sha256=e8Au_U339ttEB2oJsmjaf0fZtCvgQJ3AzdinoOMMFck,1080
+recdroidvid-0.1.0.dist-info/METADATA,sha256=bRP819n7CRb60JiRsOPyWhkIuEFMf7MwTOp6_9UpKDw,12350
+recdroidvid-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+recdroidvid-0.1.0.dist-info/entry_points.txt,sha256=zTb8ZQ4U-FSJRuwtJsD0om1M2e7SxmmvdQAhyiaSVdw,66
+recdroidvid-0.1.0.dist-info/top_level.txt,sha256=PlDWk3rmuKAO-6nPyMmjG-_ajkQIRhfvtk2iR3KOcK4,12
+recdroidvid-0.1.0.dist-info/RECORD,,
