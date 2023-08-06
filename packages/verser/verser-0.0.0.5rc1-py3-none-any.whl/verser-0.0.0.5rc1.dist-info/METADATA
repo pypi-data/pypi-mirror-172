@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: verser
+Version: 0.0.0.5rc1
+Summary: Automatic next version number for your project, you may keep tracks history of your package.
+Home-page: https://github.com/Sermet.Pekin/verser-repo
+License: MIT
+Author: Sermet Pekin
+Author-email: sermet.pekin@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Provides-Extra: jupyter
+Requires-Dist: rich (>=12.5.1,<13.0.0)
+Project-URL: Documentation, https://github.com/Sermet.Pekin/verser-repo
+Description-Content-Type: text/markdown
+
+
+# verser
+
+    from verser import Project, get_next_version
+
+Version tracker for your python package
+
+### next version
+    project = Project(package_name="my_cool_package", default_version="0.0.0.0")
+
+    next_version = get_next_version(
+        project=project,
+        increment_=True,
+        pre_release=False,
+        verbose=True
+    )  
+    print(next_version)
+    # 0.0.0.1
+
+### pre release 
+    project = Project(package_name="my_cool_package", default_version="0.0.0.0")
+
+    next_version = get_next_version(
+        project=project,
+        increment_=True,
+        pre_release=True ,
+        verbose=True
+    )  
+    print(next_version)
+    # 0.0.0.1rc1
+
+### creates __version__.py file with your new version
+    project = Project(package_name="my_cool_package", default_version="0.0.0.0")
+
+    next_version = get_next_version(
+        project=project,
+        increment_=True,
+        pre_release=True ,
+        verbose=True
+    )  
+    print(next_version)
+    # 0.0.0.1rc1
