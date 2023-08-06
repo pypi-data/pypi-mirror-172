@@ -1,0 +1,88 @@
+[
+    {
+        "en": "Month",
+        "fi": "Kuukausi",
+        "nl": "De maand"
+    },
+    {
+        "en": "Months",
+        "fi": "Kuukaudet",
+        "nl": "De maanden"
+    },
+    {
+        "en": "Moon",
+        "fi": "Kuu",
+        "nl": "De maan"
+    },
+    {
+        "en": "January",
+        "fi": "Tammikuu",
+        "nl": "Januari"
+    },
+    {
+        "en": "February",
+        "fi": "Helmikuu",
+        "nl": "Februari"
+    },
+    {
+        "en": "March",
+        "fi": "Maaliskuu",
+        "nl": "Maart"
+    },
+    {
+        "en": "April",
+        "fi": "Huhtikuu",
+        "nl": "April"
+    },
+    {
+        "en": "May",
+        "fi": "Toukokuu",
+        "nl": "Mei"
+    },
+    {
+        "en": "June",
+        "fi": "Kesäkuu",
+        "nl": "Juni"
+    },
+    {
+        "en": "July",
+        "fi": "Heinäkuu",
+        "nl": "Juli"
+    },
+    {
+        "en": "August",
+        "fi": "Elokuu",
+        "nl": "Augustus"
+    },
+    {
+        "en": "September",
+        "fi": "Syyskuu",
+        "nl": "September"
+    },
+    {
+        "en": "October",
+        "fi": "Lokakuu",
+        "nl": "Oktober"
+    },
+    {
+        "en": "November",
+        "fi": "Marraskuu",
+        "nl": "November"
+    },
+    {
+        "en": "December",
+        "fi": "Joulukuu",
+        "nl": "December"
+    },
+    {
+        "en": [
+            "It is July",
+            "It's July"
+        ],
+        "fi": [
+            "Nyt on heinäkuu",
+            "On heinäkuu"
+        ],
+        "nl": "Het is juli"
+    }
+]

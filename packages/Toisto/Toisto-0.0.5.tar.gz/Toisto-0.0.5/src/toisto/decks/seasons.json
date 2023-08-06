@@ -1,0 +1,80 @@
+[
+    {
+        "singular": {
+            "en": "Season",
+            "fi": "Vuodenaika",
+            "nl": "Het seizoen"
+        },
+        "plural": {
+            "en": "Seasons",
+            "fi": "Vuodenajat",
+            "nl": "De seizoenen"
+        }
+    },
+    {
+        "singular": {
+            "en": "Spring",
+            "fi": "Kevät",
+            "nl": [
+                "De lente",
+                "Het voorjaar"
+            ]
+        },
+        "plural": {
+            "en": "Springs",
+            "fi": "Keväät",
+            "nl": [
+                "De lentes",
+                "De voorjaren"
+            ]
+        }
+    },
+    {
+        "singular": {
+            "en": "Summer",
+            "fi": "Kesä",
+            "nl": "De zomer"
+        },
+        "plural": {
+            "en": "Summers",
+            "fi": "Kesät",
+            "nl": "De zomers"
+        }
+    },
+    {
+        "singular": {
+            "en": [
+                "Autumn",
+                "Fall"
+            ],
+            "fi": "Syksy",
+            "nl": [
+                "De herfst",
+                "Het najaar"
+            ]
+        },
+        "plural": {
+            "en": [
+                "Autumns",
+                "Falls"
+            ],
+            "fi": "Syksyt",
+            "nl": [
+                "De herfsten",
+                "De najaren"
+            ]
+        }
+    },
+    {
+        "singular": {
+            "en": "Winter",
+            "fi": "Talvi",
+            "nl": "De winter"
+        },
+        "plural": {
+            "en": "Winters",
+            "fi": "Talvet",
+            "nl": "De winters"
+        }
+    }
+]

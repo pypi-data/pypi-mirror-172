@@ -1,0 +1,60 @@
+[
+    {
+        "en": "Time",
+        "fi": "Aika",
+        "nl": "De tijd"
+    },
+    {
+        "en": "Now",
+        "fi": "Nyt",
+        "nl": "Nu"
+    },
+    {
+        "singular": {
+            "en": "Morning",
+            "fi": "Aamu",
+            "nl": "De ochtend"
+        },
+        "plural": {
+            "en": "Mornings",
+            "fi": "Aamut",
+            "nl": "De ochtenden"
+        }
+    },
+    {
+        "singular": {
+            "en": "Evening",
+            "fi": "Ilta",
+            "nl": "De avond"
+        },
+        "plural": {
+            "en": "Evenings",
+            "fi": "Illat",
+            "nl": "De avonden"
+        }
+    },
+    {
+        "singular": {
+            "en": "Night",
+            "fi": "Yö",
+            "nl": "De nacht"
+        },
+        "plural": {
+            "en": "Nights",
+            "fi": "Yöt",
+            "nl": "De nachten"
+        }
+    },
+    {
+        "singular": {
+            "en": "Midnight",
+            "fi": "Keskiyö",
+            "nl": "De middernacht"
+        },
+        "plural": {
+            "en": "Midnights",
+            "fi": "Keskiyöt",
+            "nl": "De middernachten"
+        }
+    }
+]
