@@ -1,0 +1,2 @@
+[console_scripts]
+sortmyfolder = auto_group.determine_location:main
