@@ -1,0 +1,3 @@
+[console_scripts]
+flash_window = flashfocus.client:client_request_flash
+flashfocus = flashfocus.cli:cli
