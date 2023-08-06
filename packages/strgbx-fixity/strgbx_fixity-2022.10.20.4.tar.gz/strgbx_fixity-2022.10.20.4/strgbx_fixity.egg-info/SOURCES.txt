@@ -1,0 +1,8 @@
+chromedriver.exe
+setup.py
+strgbx_fixity.py
+strgbx_fixity.egg-info/PKG-INFO
+strgbx_fixity.egg-info/SOURCES.txt
+strgbx_fixity.egg-info/dependency_links.txt
+strgbx_fixity.egg-info/requires.txt
+strgbx_fixity.egg-info/top_level.txt
