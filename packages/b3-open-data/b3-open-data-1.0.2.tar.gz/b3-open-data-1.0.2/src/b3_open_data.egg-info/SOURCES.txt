@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/b3_open_data.egg-info/PKG-INFO
+src/b3_open_data.egg-info/SOURCES.txt
+src/b3_open_data.egg-info/dependency_links.txt
+src/b3_open_data.egg-info/requires.txt
+src/b3_open_data.egg-info/top_level.txt
+src/b3od/__init__.py
+src/b3od/exceptions.py
+src/b3od/scrapper.py
+src/b3od/utils.py
