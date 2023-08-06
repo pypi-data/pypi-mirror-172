@@ -1,0 +1,3 @@
+[console_scripts]
+wsipipe = wsipipe.cli:main
+
