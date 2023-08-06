@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: asari
+Version: 0.2.0
+Summary: Japanese sentiment analyzer implemented in Python.
+Home-page: https://github.com/Hironsan/asari
+License: MIT
+Author: Hironsan
+Author-email: hiroki.nakayama.py@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: Janome (>=0.4.2,<0.5.0)
+Requires-Dist: onnxruntime (>=1.12.1,<2.0.0)
+Requires-Dist: packaging (>=21.3,<22.0)
+Requires-Dist: scikit-learn (>=1.1.1,<2.0.0)
+Requires-Dist: skl2onnx (>=1.13,<2.0)
+Project-URL: Repository, https://github.com/Hironsan/asari
+Description-Content-Type: text/markdown
+
+# asari
+
+Asari is a Japanese sentiment analyzer implemented in Python.
+
+## Usage
+
+Behold, the power of asari:
+
+```python
+from asari.api import Sonar
+sonar = Sonar()
+sonar.ping(text="広告多すぎる♡")
+{
+  "text" : "広告多すぎる♡",
+  "top_class" : "negative",
+  "classes" : [ {
+    "class_name" : "positive",
+    "confidence" : 0.09130180181262026
+  }, {
+    "class_name" : "negative",
+    "confidence" : 0.9086981981873797
+  } ]
+}
+```
+
+Asari allows you to classify text into positive/negative class, without the need for training. You have only to fed text into asari.
+
+## Installation
+
+To install asari, simply use `pip` with Python 3.8+:
+
+```bash
+pip install asari
+```
+
