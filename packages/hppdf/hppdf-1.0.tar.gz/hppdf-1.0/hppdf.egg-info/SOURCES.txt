@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hppdf/__init__.py
+hppdf/pdf2image.py
+hppdf/pdf2text.py
+hppdf.egg-info/PKG-INFO
+hppdf.egg-info/SOURCES.txt
+hppdf.egg-info/dependency_links.txt
+hppdf.egg-info/top_level.txt
