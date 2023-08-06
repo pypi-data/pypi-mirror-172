@@ -1,0 +1,3 @@
+[cppython.provider]
+vcpkg=cppython_vcpkg.plugin:VcpkgProvider
+
