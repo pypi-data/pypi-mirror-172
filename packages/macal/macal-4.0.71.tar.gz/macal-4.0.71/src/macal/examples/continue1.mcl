@@ -1,0 +1,6 @@
+include aor, system;
+foreach var {
+	Console(it["title"]);
+	continue;
+	Console("this doesn’t show");
+}
