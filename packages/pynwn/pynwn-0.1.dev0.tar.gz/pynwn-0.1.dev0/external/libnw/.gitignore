@@ -1,0 +1,27 @@
+# Build
+build/
+build-doc/
+vcpkg/
+vcpkg_installed/
+
+# IDEs
+.vscode/
+.clion/
+CMakeLists.txt.user
+.kdev4/
+*.kdev4
+
+# bin/
+bin/*
+!bin/.gitkeep
+
+# docs
+docs/_build/
+__pycache__
+venv
+
+# macOS
+.DS_Store
+
+# Coverage
+coverage.info

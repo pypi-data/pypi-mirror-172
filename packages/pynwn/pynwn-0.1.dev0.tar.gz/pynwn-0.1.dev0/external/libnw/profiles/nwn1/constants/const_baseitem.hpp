@@ -1,0 +1,97 @@
+#pragma once
+
+#include <nw/rules/BaseItem.hpp>
+
+namespace nwn1 {
+
+constexpr nw::BaseItem base_item_shortsword = nw::make_baseitem(0);
+constexpr nw::BaseItem base_item_longsword = nw::make_baseitem(1);
+constexpr nw::BaseItem base_item_battleaxe = nw::make_baseitem(2);
+constexpr nw::BaseItem base_item_bastardsword = nw::make_baseitem(3);
+constexpr nw::BaseItem base_item_lightflail = nw::make_baseitem(4);
+constexpr nw::BaseItem base_item_warhammer = nw::make_baseitem(5);
+constexpr nw::BaseItem base_item_heavycrossbow = nw::make_baseitem(6);
+constexpr nw::BaseItem base_item_lightcrossbow = nw::make_baseitem(7);
+constexpr nw::BaseItem base_item_longbow = nw::make_baseitem(8);
+constexpr nw::BaseItem base_item_lightmace = nw::make_baseitem(9);
+constexpr nw::BaseItem base_item_halberd = nw::make_baseitem(10);
+constexpr nw::BaseItem base_item_shortbow = nw::make_baseitem(11);
+constexpr nw::BaseItem base_item_twobladedsword = nw::make_baseitem(12);
+constexpr nw::BaseItem base_item_greatsword = nw::make_baseitem(13);
+constexpr nw::BaseItem base_item_smallshield = nw::make_baseitem(14);
+constexpr nw::BaseItem base_item_torch = nw::make_baseitem(15);
+constexpr nw::BaseItem base_item_armor = nw::make_baseitem(16);
+constexpr nw::BaseItem base_item_helmet = nw::make_baseitem(17);
+constexpr nw::BaseItem base_item_greataxe = nw::make_baseitem(18);
+constexpr nw::BaseItem base_item_amulet = nw::make_baseitem(19);
+constexpr nw::BaseItem base_item_arrow = nw::make_baseitem(20);
+constexpr nw::BaseItem base_item_belt = nw::make_baseitem(21);
+constexpr nw::BaseItem base_item_dagger = nw::make_baseitem(22);
+constexpr nw::BaseItem base_item_miscsmall = nw::make_baseitem(24);
+constexpr nw::BaseItem base_item_bolt = nw::make_baseitem(25);
+constexpr nw::BaseItem base_item_boots = nw::make_baseitem(26);
+constexpr nw::BaseItem base_item_bullet = nw::make_baseitem(27);
+constexpr nw::BaseItem base_item_club = nw::make_baseitem(28);
+constexpr nw::BaseItem base_item_miscmedium = nw::make_baseitem(29);
+constexpr nw::BaseItem base_item_dart = nw::make_baseitem(31);
+constexpr nw::BaseItem base_item_diremace = nw::make_baseitem(32);
+constexpr nw::BaseItem base_item_doubleaxe = nw::make_baseitem(33);
+constexpr nw::BaseItem base_item_misclarge = nw::make_baseitem(34);
+constexpr nw::BaseItem base_item_heavyflail = nw::make_baseitem(35);
+constexpr nw::BaseItem base_item_gloves = nw::make_baseitem(36);
+constexpr nw::BaseItem base_item_lighthammer = nw::make_baseitem(37);
+constexpr nw::BaseItem base_item_handaxe = nw::make_baseitem(38);
+constexpr nw::BaseItem base_item_healerskit = nw::make_baseitem(39);
+constexpr nw::BaseItem base_item_kama = nw::make_baseitem(40);
+constexpr nw::BaseItem base_item_katana = nw::make_baseitem(41);
+constexpr nw::BaseItem base_item_kukri = nw::make_baseitem(42);
+constexpr nw::BaseItem base_item_misctall = nw::make_baseitem(43);
+constexpr nw::BaseItem base_item_magicrod = nw::make_baseitem(44);
+constexpr nw::BaseItem base_item_magicstaff = nw::make_baseitem(45);
+constexpr nw::BaseItem base_item_magicwand = nw::make_baseitem(46);
+constexpr nw::BaseItem base_item_morningstar = nw::make_baseitem(47);
+constexpr nw::BaseItem base_item_potions = nw::make_baseitem(49);
+constexpr nw::BaseItem base_item_quarterstaff = nw::make_baseitem(50);
+constexpr nw::BaseItem base_item_rapier = nw::make_baseitem(51);
+constexpr nw::BaseItem base_item_ring = nw::make_baseitem(52);
+constexpr nw::BaseItem base_item_scimitar = nw::make_baseitem(53);
+constexpr nw::BaseItem base_item_scroll = nw::make_baseitem(54);
+constexpr nw::BaseItem base_item_scythe = nw::make_baseitem(55);
+constexpr nw::BaseItem base_item_largeshield = nw::make_baseitem(56);
+constexpr nw::BaseItem base_item_towershield = nw::make_baseitem(57);
+constexpr nw::BaseItem base_item_shortspear = nw::make_baseitem(58);
+constexpr nw::BaseItem base_item_shuriken = nw::make_baseitem(59);
+constexpr nw::BaseItem base_item_sickle = nw::make_baseitem(60);
+constexpr nw::BaseItem base_item_sling = nw::make_baseitem(61);
+constexpr nw::BaseItem base_item_thievestools = nw::make_baseitem(62);
+constexpr nw::BaseItem base_item_throwingaxe = nw::make_baseitem(63);
+constexpr nw::BaseItem base_item_trapkit = nw::make_baseitem(64);
+constexpr nw::BaseItem base_item_key = nw::make_baseitem(65);
+constexpr nw::BaseItem base_item_largebox = nw::make_baseitem(66);
+constexpr nw::BaseItem base_item_miscwide = nw::make_baseitem(68);
+constexpr nw::BaseItem base_item_cslashweapon = nw::make_baseitem(69);
+constexpr nw::BaseItem base_item_cpiercweapon = nw::make_baseitem(70);
+constexpr nw::BaseItem base_item_cbludgweapon = nw::make_baseitem(71);
+constexpr nw::BaseItem base_item_cslshprcweap = nw::make_baseitem(72);
+constexpr nw::BaseItem base_item_creatureitem = nw::make_baseitem(73);
+constexpr nw::BaseItem base_item_book = nw::make_baseitem(74);
+constexpr nw::BaseItem base_item_spellscroll = nw::make_baseitem(75);
+constexpr nw::BaseItem base_item_gold = nw::make_baseitem(76);
+constexpr nw::BaseItem base_item_gem = nw::make_baseitem(77);
+constexpr nw::BaseItem base_item_bracer = nw::make_baseitem(78);
+constexpr nw::BaseItem base_item_miscthin = nw::make_baseitem(79);
+constexpr nw::BaseItem base_item_cloak = nw::make_baseitem(80);
+constexpr nw::BaseItem base_item_grenade = nw::make_baseitem(81);
+constexpr nw::BaseItem base_item_trident = nw::make_baseitem(95);
+constexpr nw::BaseItem base_item_blank_potion = nw::make_baseitem(101);
+constexpr nw::BaseItem base_item_blank_scroll = nw::make_baseitem(102);
+constexpr nw::BaseItem base_item_blank_wand = nw::make_baseitem(103);
+constexpr nw::BaseItem base_item_enchanted_potion = nw::make_baseitem(104);
+constexpr nw::BaseItem base_item_enchanted_scroll = nw::make_baseitem(105);
+constexpr nw::BaseItem base_item_enchanted_wand = nw::make_baseitem(106);
+constexpr nw::BaseItem base_item_dwarvenwaraxe = nw::make_baseitem(108);
+constexpr nw::BaseItem base_item_craftmaterialmed = nw::make_baseitem(109);
+constexpr nw::BaseItem base_item_craftmaterialsml = nw::make_baseitem(110);
+constexpr nw::BaseItem base_item_whip = nw::make_baseitem(111);
+
+} // namespace nwn1

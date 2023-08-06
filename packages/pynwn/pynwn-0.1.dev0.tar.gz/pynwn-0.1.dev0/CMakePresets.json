@@ -1,0 +1,83 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 21,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "linux",
+            "displayName": "Default Config",
+            "description": "Default build using Ninja generator",
+            "binaryDir": "${sourceDir}/build",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": {
+                    "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+                    "type": "FILEPATH"
+                },
+                "CMAKE_LIBRARY_OUTPUT_DIRECTORY": "${sourceDir}/src/pynwn"
+            }
+        },
+        {
+            "name": "macos",
+            "inherits": "linux",
+            "description": "This build is only available on macOS",
+            "binaryDir": "${sourceDir}/build",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Darwin"
+            },
+            "cacheVariables": {
+                "CMAKE_OSX_DEPLOYMENT_TARGET": {
+                    "value": "10.15",
+                    "type": "STRING"
+                }
+            }
+        },
+        {
+            "name": "windows",
+            "inherits": "linux",
+            "generator": "Visual Studio 16 2019",
+            "displayName": "Windows-only configuration",
+            "description": "This build is only available on Windows",
+            "binaryDir": "${sourceDir}/build",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            },
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG": "${sourceDir}/src/pynwn",
+                "CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE": "${sourceDir}/src/pynwn",
+                "VCPKG_TARGET_TRIPLET": "x64-windows-static",
+                "VCPKG_HOST_TRIPLET": "x64-windows-static"
+            }
+        },
+        {
+            "name": "ci-linux",
+            "inherits": "linux",
+            "generator": "Unix Makefiles"
+        },
+        {
+            "name": "ci-macos",
+            "inherits": "macos"
+        },
+        {
+            "name": "ci-windows",
+            "inherits": "windows"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "configurePreset": "linux"
+        }
+    ]
+}

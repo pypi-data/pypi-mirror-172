@@ -1,0 +1,13 @@
+Categories:
+  - $struct_id: index
+    Comment: cexostr
+    EntryList:
+      - $struct_id: index
+        End: word
+        ID: dword
+        Text: cexolocstr
+    Name: cexolocstr
+    Picture: word
+    Priority: dword
+    Tag: cexostr
+    XP: dword
