@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pbn
+Version: 0.1.0
+Summary: Paint By Numbers Creator
+Author: Michael Pienaar
+Author-email: mpienaar9@gmail.com
+License: UNKNOWN
+Keywords: python,art,painting
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: sklearn
+Requires-Dist: opencv-python
+Requires-Dist: python-polylabel
+Requires-Dist: numpy
+
+Convert any image into a printable paint by numbers.
+
