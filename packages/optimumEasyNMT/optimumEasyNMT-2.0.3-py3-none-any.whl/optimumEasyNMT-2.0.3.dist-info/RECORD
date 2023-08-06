@@ -1,0 +1,12 @@
+easynmt/EasyNMT.py,sha256=C-LQPKsvcdPI9ZDOUa6pkxjTQ8zXw6IBf6z1-CNNY8w,22086
+easynmt/__init__.py,sha256=Z7bHERd6vK0QgEQtR_5601ueqQGf2wrPh8ZhRhrjb28,113
+easynmt/util.py,sha256=S8f0nsfXhQg7OpadhDkElQXKy2BCG00Q-GAG-60EIQY,2512
+easynmt/models/AutoModel.py,sha256=Ah7fJu36yzcRC0SzQBHEIVNad92UlO8HmCgpRQ59Cew,2231
+easynmt/models/OpusMT.py,sha256=9s0PO3YRZdiM3Glslna6FsKEafunGeOmRF8y2RNM4HM,3415
+easynmt/models/__init__.py,sha256=Q2ZH0LtDiVySweF0DdYo-vk5rh2Oplys_sntxCsqPU8,59
+optimumEasyNMT-2.0.3.dist-info/LICENSE,sha256=qV2zG52VLSAUpm1IQlZPHh8ngrk6PlS860yRt3QzDhI,11555
+optimumEasyNMT-2.0.3.dist-info/METADATA,sha256=r7aUsxlym5Mw8Re_q0x-sbPcH8KkaV-4FJVVhxVT2T4,13433
+optimumEasyNMT-2.0.3.dist-info/NOTICE.txt,sha256=lUqjKji91pELiVxG5aimmtYN9WkqEWQl1LvN8z-D82s,254
+optimumEasyNMT-2.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+optimumEasyNMT-2.0.3.dist-info/top_level.txt,sha256=OZ3gFCtkK5w5vz8qE-SI1UFvf9bdpMVdr_V75nsgFQg,8
+optimumEasyNMT-2.0.3.dist-info/RECORD,,
