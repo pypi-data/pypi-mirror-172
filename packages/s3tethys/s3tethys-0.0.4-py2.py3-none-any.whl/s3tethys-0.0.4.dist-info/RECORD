@@ -1,0 +1,10 @@
+s3tethys/__init__.py,sha256=pcpndhxWHeCJ174owGAs9q8fLXLDSz0Nsz_QbhOy-MQ,379
+s3tethys/main.py,sha256=dVPnzTkzoYhclPzvexT3NsIRiL4jOy7RXIAa4njLdJ0,21520
+s3tethys/utils.py,sha256=5sMBowaeo525uiFszLCvfzceRoY_vapT5KpsQ7eB6Og,1250
+s3tethys/datasets/__init__.py,sha256=viLNOXukbTGI2l2uta7Jtfm5DgrLuFMgCzLZ019MYyw,906
+s3tethys/tests/__init__.py,sha256=38pdDhEZk2RiT5kga2DPbhTYeDHdsCXNaEr7HH1-k20,208
+s3tethys-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+s3tethys-0.0.4.dist-info/METADATA,sha256=YpB-awzVdduQWHmPElOltQVHWlxahRt1qRTyqSuRFvo,743
+s3tethys-0.0.4.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+s3tethys-0.0.4.dist-info/top_level.txt,sha256=YPqqSOHYWSJ__x3kdaOJIK7gDGIy8-r1n57DSytJdh0,9
+s3tethys-0.0.4.dist-info/RECORD,,
