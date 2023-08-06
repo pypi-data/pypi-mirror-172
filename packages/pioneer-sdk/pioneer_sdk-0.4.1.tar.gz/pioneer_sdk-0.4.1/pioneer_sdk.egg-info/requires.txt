@@ -1,0 +1,5 @@
+pymavlink
+pyserial
+future
+numpy
+opencv-python
