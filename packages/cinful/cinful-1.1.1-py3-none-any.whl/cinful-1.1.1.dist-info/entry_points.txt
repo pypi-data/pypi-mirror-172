@@ -1,0 +1,2 @@
+[console_scripts]
+cinful = cinful.cinful:main
