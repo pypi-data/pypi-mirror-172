@@ -1,0 +1,11 @@
+cldflex/__init__.py,sha256=WX2lHdaDRtDR8bcxUdP77tf0XIIiY5lMU1KDkpv4e20,413
+cldflex/cli.py,sha256=WW2aeBROyfKmUa7f_UAtFbtiUxIy2aFF6ex6f8Ducp0,1198
+cldflex/flex2csv.py,sha256=LW1i5sHzGFs-PvMUrOpoSc-eMh5QJuj3MxwWtDUUMDY,11689
+cldflex/helpers.py,sha256=nPlJhjwVkijlWJPu8CzeT9ffvajCrXF0vpIqUnaI4i0,738
+cldflex/lift2csv.py,sha256=Q9QFkzE5zkzgjkwqm645P-5bLP22zR8OJtXT7KtaV88,5494
+cldflex-0.0.3.dist-info/LICENSE,sha256=OPzV6bHGPCXFylyiCR3GYAK-EP8seLDbcbgO87DYM1o,11359
+cldflex-0.0.3.dist-info/METADATA,sha256=bJA8Flz2lTyXggVHluT9NHT9DaLMPS0Jhg_mxqjMNOE,2798
+cldflex-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cldflex-0.0.3.dist-info/entry_points.txt,sha256=Fb9MEW1yaHsdjARe5oZHTg8OKxzMw8QtwGfKOXmjJmc,45
+cldflex-0.0.3.dist-info/top_level.txt,sha256=OalaxYFz3H17X8KjyfB7ABQ51LgVA5ILG7rY_ZEtc2g,8
+cldflex-0.0.3.dist-info/RECORD,,

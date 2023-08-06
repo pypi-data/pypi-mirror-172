@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: cldflex
+Version: 0.0.3
+Summary: Convert FLEx data to CLDF-ready CSV.
+Home-page: https://github.com/fmatter/cldflex
+Author: Florian Matter
+Author-email: florianmatter@gmail.com
+Project-URL: Bug Tracker, https://github.com/fmatter/cldflex/issues
+Keywords: cldf,fieldworks
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorlog
+Requires-Dist: click
+Requires-Dist: pycldf (>=1.25.1)
+Requires-Dist: pandas (>=1.3.5)
+Requires-Dist: click (>=8.1.3)
+Requires-Dist: python-slugify (>=6.1.2)
+Requires-Dist: beautifulsoup4 (>=4.11.1)
+Requires-Dist: lxml (>=4.9.1)
+Provides-Extra: dev
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: coverage[toml] ; extra == 'dev'
+Requires-Dist: prospector[with_pyroma] (==1.7.7) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: jinja2 ; extra == 'dev'
+Requires-Dist: keepachangelog ; extra == 'dev'
+Provides-Extra: publishing
+Requires-Dist: twine ; extra == 'publishing'
+Requires-Dist: wheel ; extra == 'publishing'
+
+# cldflex
+
+![License](https://img.shields.io/github/license/fmatter/cldflex)
+[![Documentation Status](https://readthedocs.org/projects/cldflex/badge/?version=latest)](https://cldflex.readthedocs.io/en/latest/?badge=latest)
+[![Tests](https://img.shields.io/github/workflow/status/fmatter/cldflex/tests?label=tests)](https://github.com/fmatter/cldflex/actions/workflows/tests.yml)
+[![Linting](https://img.shields.io/github/workflow/status/fmatter/cldflex/lint?label=linting)](https://github.com/fmatter/cldflex/actions/workflows/lint.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/fmatter/cldflex)](https://app.codecov.io/gh/fmatter/cldflex/)
+[![PyPI](https://img.shields.io/pypi/v/cldflex.svg)](https://pypi.org/project/cldflex)
+![Versions](https://img.shields.io/pypi/pyversions/cldflex)
+
+Convert FLEx data to CLDF-ready CSV.
+
+
+* Documentation: https://cldflex.readthedocs.io
+
