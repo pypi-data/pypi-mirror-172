@@ -1,0 +1,4 @@
+Django
+celery
+openedx-events
+requests
