@@ -1,0 +1,13 @@
+# Info for common themes
+[tool.sphinx.themes.furo]
+pypi = "furo"
+repo = "gh:pradyunsg/furo"
+docs = "https://pradyunsg.me/furo/"
+
+[tool.sphinx.themes.furo.options]
+sidebar_hide_name = "bool:true"
+navigation_with_keys = "bool:true"
+top_of_page_button = "str:edit"
+announcement = "str"
+light_css_variables = "dict"
+footer_icons = "list[dict]"
