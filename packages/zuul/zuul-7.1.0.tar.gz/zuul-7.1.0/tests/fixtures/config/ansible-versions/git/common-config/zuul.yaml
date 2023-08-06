@@ -1,0 +1,69 @@
+- pipeline:
+    name: check
+    manager: independent
+    trigger:
+      gerrit:
+        - event: patchset-created
+    success:
+      gerrit:
+        Verified: 1
+    failure:
+      gerrit:
+        Verified: -1
+
+- job:
+    name: base
+    parent: null
+
+- job:
+    name: ansible-version
+    run: playbooks/ansible-version.yaml
+
+
+- job:
+    name: ansible-default
+    parent: ansible-version
+    vars:
+      test_ansible_version_major: 2
+      test_ansible_version_minor: 13
+
+# This job is used by a test case specifying a different ansible version in
+# fixtures/zuul-default-ansible-version.conf
+- job:
+    name: ansible-default-zuul-conf
+    parent: ansible-version
+    vars:
+      test_ansible_version_major: 2
+      test_ansible_version_minor: 12
+
+- job:
+    name: ansible-5
+    parent: ansible-version
+    ansible-version: 5
+    vars:
+      test_ansible_version_major: 2
+      test_ansible_version_minor: 12
+
+- job:
+    name: ansible-6
+    parent: ansible-version
+    ansible-version: 6
+    vars:
+      test_ansible_version_major: 2
+      test_ansible_version_minor: 13
+
+- project:
+    name: common-config
+    check:
+      jobs:
+        - ansible-default
+        - ansible-5
+        - ansible-6
+
+- project:
+    name: org/project
+    check:
+      jobs:
+        - ansible-default-zuul-conf
+        - ansible-5
+        - ansible-6
