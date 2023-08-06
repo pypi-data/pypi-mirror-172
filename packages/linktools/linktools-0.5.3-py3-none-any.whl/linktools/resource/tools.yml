@@ -1,0 +1,190 @@
+# general tools
+
+jar: &JAR
+  executable_cmdline: [java, -jar, "{absolute_path}"]
+
+py: &PY
+  dummy_path: true
+  executable_cmdline: [python, -m, "{name}"]
+
+GENERAL_TOOL_BAKSMALI:
+  <<: *JAR
+  version: 2.5.2
+  download_url: https://bitbucket.org/JesusFreke/smali/downloads/baksmali-{version}.jar
+  target_path: baksmali-{version}.jar
+
+GENERAL_TOOL_SMALI:
+  <<: *JAR
+  version: 2.5.2
+  download_url: https://bitbucket.org/JesusFreke/smali/downloads/smali-{version}.jar
+  target_path: smali-{version}.jar
+
+GENERAL_TOOL_APKTOOL:
+  <<: *JAR
+  version: 2.6.1
+  download_url: https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_{version}.jar
+  target_path: apktool-{version}.jar
+
+GENERAL_TOOL_UBER_APK_SIGNER:
+  <<: *JAR
+  name: uber-apk-signer
+  version: 1.2.1
+  download_url: https://github.com/patrickfav/uber-apk-signer/releases/download/v{version}/uber-apk-signer-{version}.jar
+  target_path: uber-apk-signer-{version}.jar
+
+GENERAL_TOOL_APPCRAWLER:
+  <<: *JAR
+  cmdline: appcrawler
+  version: 2.7.4
+  download_url: https://github.com/seveniruby/AppCrawler/releases/download/{version}/appcrawler-{version}-hogwarts.jar
+  target_path: appcrawler-{version}-hogwarts.jar
+
+GENERAL_TOOL_TIDEVICE:
+  <<: *PY
+
+GENERAL_TOOL_JAVA:
+  # cmdline: java
+  version: 1.8.0_212
+  version_name: 8u212
+  version_tag: 8u212-b10
+  download_url:
+    case:
+      - when: {system: darwin}
+        then: https://github.com/frekele/oracle-java/releases/download/{version_tag}/jre-{version_name}-macosx-x64.tar.gz
+      - when: {system: linux}
+        then: https://github.com/frekele/oracle-java/releases/download/{version_tag}/jre-{version_name}-linux-x64.tar.gz
+      - when: {system: windows}
+        then: https://github.com/frekele/oracle-java/releases/download/{version_tag}/jre-{version_name}-windows-x64.tar.gz
+      - else: ~
+  unpack_path: java-{version}
+  target_path:
+    case:
+      - when: {system: darwin}
+        then: jre{version}.jre/Contents/Home/bin/java
+      - when: {system: linux}
+        then: jre{version}/bin/java
+      - when: {system: windows}
+        then: jre{version}/bin/java.exe
+      - else: ~
+
+GENERAL_TOOL_DEX2JAR: &GENERAL_TOOL_DEX2JAR
+  version: 2.2-SNAPSHOT
+  version_suffix: -2021-10-31
+  download_url: https://github.com/pxb1988/dex2jar/releases/download/v{version}{version_suffix}/dex-tools-{version}{version_suffix}.zip
+  unpack_path: dex2jar-{version}
+  target_path:
+    case:
+      - when: {system: [darwin, linux]}
+        then: dex-tools-{version}/d2j-dex2jar.sh
+      - when: {system: windows}
+        then: dex-tools-{version}/d2j-dex2jar.bat
+      - else: ~
+
+GENERAL_TOOL_JAR2DEX:
+  <<: *GENERAL_TOOL_DEX2JAR
+  target_path:
+    case:
+      - when: {system: [darwin, linux]}
+        then: dex-tools-{version}/d2j-jar2dex.sh
+      - when: {system: windows}
+        then: dex-tools-{version}/d2j-jar2dex.bat
+      - else: ~
+
+GENERAL_TOOL_ADB: &GENERAL_TOOL_ADB
+  cmdline: adb
+  download_url: https://dl.google.com/android/repository/platform-tools-latest-{system}.zip
+  unpack_path: platform-tools
+  target_path:
+    case:
+      - when: {system: [darwin, linux]}
+        then: platform-tools/adb
+      - when: {system: windows}
+        then: platform-tools/adb.exe
+      - else: ~
+
+GENERAL_TOOL_FASTBOOT:
+  <<: *GENERAL_TOOL_ADB
+  cmdline: fastboot
+  target_path:
+    case:
+      - when: {system: [darwin, linux]}
+        then: platform-tools/fastboot
+      - when: {system: windows}
+        then: platform-tools/fastboot.exe
+      - else: ~
+
+GENERAL_TOOL_AAPT:
+  cmdline: aapt
+  version: v0.2-4913185
+  download_url:
+    case:
+      - when: {system: darwin}
+        then: https://dl.androidaapt.com/aapt-macos.zip
+      - when: {system: linux}
+        then: https://dl.androidaapt.com/aapt-linux.zip
+      - when: {system: windows}
+        then: https://dl.androidaapt.com/aapt-windows.zip
+      - else: ~
+  unpack_path: aapt-{version}
+  target_path:
+    case:
+      - when: {system: [darwin, linux]}
+        then: aapt
+      - when: {system: windows}
+        then: aapt.exe
+      - else: ~
+
+GENERAL_TOOL_JADX: &GENERAL_TOOL_JADX
+  version: 1.4.4
+  download_url: https://github.com/skylot/jadx/releases/download/v{version}/jadx-{version}.zip
+  unpack_path: jadx-{version}
+  target_path:
+    case:
+      - when: {system: [darwin, linux]}
+        then: bin/jadx
+      - when: {system: windows}
+        then: bin/jadx.bat
+      - else: ~
+
+GENERAL_TOOL_JADX_GUI:
+  <<: *GENERAL_TOOL_JADX
+  name: jadx-gui
+  target_path:
+    case:
+      - when: {system: [darwin, linux]}
+        then: bin/jadx-gui
+      - when: {system: windows}
+        then: bin/jadx-gui.bat
+      - else: ~
+
+GENERAL_TOOL_CHROMEDRIVER:
+  cmdline: chromedriver
+  version: 80.0.3987.106
+  base_url: http://chromedriver.storage.googleapis.com
+  download_url:
+    case:
+      - when: {system: darwin}
+        then: "{base_url}/{version}/chromedriver_mac64.zip"
+      - when: {system: linux}
+        then: "{base_url}/{version}/chromedriver_linux64.zip"
+      - when: {system: windows}
+        then: "{base_url}/{version}/chromedriver_win32.zip"
+      - else: ~
+  unpack_path: chromedriver-{version}
+  target_path:
+    case:
+      - when: {system: [darwin, linux]}
+        then: chromedriver
+      - when: {system: windows}
+        then: chromedriver.exe
+      - else: ~
+
+GENERAL_TOOL_IPATOOL:
+  version: 1.1.4
+  download_url:
+    case:
+      - when: {system: darwin}
+        then: https://github.com/majd/ipatool/releases/download/v{version}/ipatool-macos-v{version}.zip
+      - else: ~
+  unpack_path: ipatool-{version}
+  target_path: ipatool
