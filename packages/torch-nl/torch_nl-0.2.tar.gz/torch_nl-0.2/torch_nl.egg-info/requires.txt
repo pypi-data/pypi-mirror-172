@@ -1,0 +1,5 @@
+ase
+numpy
+torch>=1.10
+pytest
+black[jupyter]
