@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: genes
+Version: 0.3
+Summary: Simple library for playing with genetic algorithms
+Author: Łukasz Bacik
+Author-email: mail@luka.sh
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: simple-value-object (>=1.5,<2.0)
