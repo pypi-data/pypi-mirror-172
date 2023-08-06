@@ -1,0 +1,4 @@
+[console_scripts]
+BuchuiniuQimenVol3 = BuchuiniuQimenVol3.__main__:main
+buchuiniu-qimen-vol3 = BuchuiniuQimenVol3.__main__:main
+
