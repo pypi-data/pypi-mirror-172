@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: thoughtful
+Version: 1.2.0
+Summary: Supervisor is a Workflow Engine for Digital Workers that generates a detailed telemetric log at runtime called a Work Report
+Home-page: https://thoughtfulautomation.com
+License: MIT
+Keywords: rpa,robot-framework,robocorp,automation
+Author: Thoughtful Automation
+Author-email: engineering@thoughtfulautomation.com
+Requires-Python: >=3.8
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Library
+Classifier: Framework :: Robot Framework :: Tool
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Security :: Cryptography
+Requires-Dist: chevron (>=0.14.0,<0.15.0)
+Requires-Dist: isodate (>=0.6.1,<0.7.0)
+Requires-Dist: pre-commit (>=2.17.0,<3.0.0)
+Requires-Dist: pyconfs (>=0.5.5,<0.6.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: pydantic-yaml (>=0.6.3,<0.7.0)
+Requires-Dist: pyyaml (>=5.4.1)
+Project-URL: Documentation, https://thoughtful-automation.github.io/supervisor
+Project-URL: Repository, https://github.com/thoughtful-automation/supervisor
+Description-Content-Type: text/markdown
+
+# 👷 Supervisor
+
+<img
+  title="Supervisor"
+  alt="Supervisor — Github Header"
+  width="262px"
+  height="179.5px"
+  align="right"
+  src="https://user-images.githubusercontent.com/1096881/147704110-3116d1e3-c278-45d6-b99a-209faf2b17e0.png"
+/>
+
+> **:warning: NOTE**: *Supervisor* is quite new, so the API is likely to
+> change between now and 1.0. We welcome and encourage you to help shape future
+> development by [reporting issues][git:issues] and
+> [making suggestions][url:notion-feedback] 💖
+
+---
+<big>Supervisor is a <u>Workflow Engine</u> for Digital Workers that constructs
+and broadcasts a detailed and structured telemetric log, called the <u>Work Report</u>.</big>
+
+[![pre-commit](https://github.com/thoughtful-automation/supervisor/workflows/pre-commit/badge.svg?event=push)](https://github.com/thoughtful-automation/supervisor/actions?query=workflow%3Apre-commit+event%3Apush)
+[![test](https://github.com/thoughtful-automation/supervisor/workflows/test/badge.svg?event=push)](https://github.com/thoughtful-automation/supervisor/actions?query=workflow%3Atest+event%3Apush)
+
+<small>Supervisor supports `Python ≥ 3.7.5`</small>
+
+:books: 👉️ **[Read the Documentation](DOCUMENTATION.md)**
+
+## Table of Contents
+
+- [Install](#install)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Resources](#resources)
+
+## Install
+
+Supervisor is a private package hosted on CodeArtifact.
+
+1. Authenticate with `CodeArtifact`:
+
+   ```bash
+   aws codeartifact login \
+     --tool pip \
+     --repository thoughtful-automation \
+     --domain thoughtful-automation \
+     --domain-owner XXXXXXXXXXXX \
+     --region us-east-1
+   ```
+
+2. Pip install
+
+   ```bash
+   pip install supervisor
+   ```
+
+   > or install a specific version: `pip install supervisor==0.4.0`
+
+## Documentation
+
+See [DOCUMENTATION.md](DOCUMENTATION.md).
+
+## Contributing
+
+Contributions to Supervisor are welcomed!
+
+To get started, see the [contributing guide](CONTRIBUTING.md).
+
+## Resources
+
+Links to related code, documentation, and applications.
+
+[**🖥 Empower**][url:dwm]
+
+> The digital Workforce Manager (*DWM*)
+
+[**👷 Supervisor**][url:supervisor] (this repo)
+
+> The Workflow Engine for Digital Workers that constructs
+and broadcasts a detailed and structured telemetric log, called the Work Report
+
+[**:robot: Foundry**][url:otto]
+
+> The initialization tool for Digital Workers.
+
+[**🔀 Prospector**][url:prospector]
+
+> The design tool for Digital Workers.
+
+[**:books: Schema Library**][url:schema-lib]
+
+  > The JSON-Schema-defined documents used to validate the **Manifest** and the
+  > runtime **Work Report**
+
+[**:eagle: Department of Digital
+  Labor**][url:dodl]
+
+> Documentation and Specifications for building Digital Workers in *TA's
+> ecosystem*, and **Empower**
+
+---
+
+<div align="center">
+
+  Made with ❤️ by
+
+  [![Thoughtful Automation](https://user-images.githubusercontent.com/1096881/141985289-317c2e72-3c2d-4e6b-800a-0def1a05f599.png)][url:ta]
+
+</div>
+
+<!--  Link References -->
+
+[url:ta]: https://www.thoughtfulautomation.com/
+[url:dwm]: https://app.thoughtfulautomation.com/
+[url:supervisor]: https://github.com/Thoughtful-Automation/supervisor
+[url:otto]: https://github.com/Thoughtful-Automation/otto
+[url:prospector]: https://github.com/Thoughtful-Automation/prospector
+[url:dodl]: https://github.com/Thoughtful-Automation/dodl
+[url:schema-lib]: https://github.com/Thoughtful-Automation/schemas
+[url:notion-feedback]:
+    https://www.notion.so/thoughtfulautomation/Feedback-Feature-Requests-5716a73769ea4e0cba398e921eab44b5
+[git:issues]: https://github.com/Thoughtful-Automation/supervisor/issues
+
