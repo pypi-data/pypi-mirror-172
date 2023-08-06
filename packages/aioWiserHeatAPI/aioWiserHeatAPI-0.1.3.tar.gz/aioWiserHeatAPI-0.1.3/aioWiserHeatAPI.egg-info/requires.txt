@@ -1,0 +1,4 @@
+zeroconf>=0.39
+aiohttp>=3.8.1
+aiofiles>=3.8
+pyyaml>=6.0
