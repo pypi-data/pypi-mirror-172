@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        key-guard=key_guard:cli
+    

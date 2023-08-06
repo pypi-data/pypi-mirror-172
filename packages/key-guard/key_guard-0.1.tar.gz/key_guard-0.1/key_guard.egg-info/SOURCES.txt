@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+key_guard.py
+setup.py
+key_guard.egg-info/PKG-INFO
+key_guard.egg-info/SOURCES.txt
+key_guard.egg-info/dependency_links.txt
+key_guard.egg-info/entry_points.txt
+key_guard.egg-info/requires.txt
+key_guard.egg-info/top_level.txt
+test/test.py
