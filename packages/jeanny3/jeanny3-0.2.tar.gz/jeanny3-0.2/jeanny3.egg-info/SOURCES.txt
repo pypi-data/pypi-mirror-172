@@ -1,0 +1,8 @@
+README.md
+setup.py
+jeanny3/__init__.py
+jeanny3/jeanny3.py
+jeanny3.egg-info/PKG-INFO
+jeanny3.egg-info/SOURCES.txt
+jeanny3.egg-info/dependency_links.txt
+jeanny3.egg-info/top_level.txt
