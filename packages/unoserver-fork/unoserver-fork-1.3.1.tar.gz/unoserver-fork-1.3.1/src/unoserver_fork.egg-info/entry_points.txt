@@ -1,0 +1,3 @@
+[console_scripts]
+unoconvert = unoserver.converter:main
+unoserver = unoserver.server:main
