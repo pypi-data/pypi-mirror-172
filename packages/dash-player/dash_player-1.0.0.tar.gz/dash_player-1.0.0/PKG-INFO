@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: dash_player
+Version: 1.0.0
+Summary: Dash player component for videos
+Author: Xing Han Lu <xinghan@plot.ly>
+License: MIT
+License-File: LICENSE
