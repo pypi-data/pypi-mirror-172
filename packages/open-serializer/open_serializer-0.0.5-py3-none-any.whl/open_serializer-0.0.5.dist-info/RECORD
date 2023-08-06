@@ -1,0 +1,12 @@
+open_serializer/__init__.py,sha256=ZRfx6velVNazxBYqQi9Q_NA_IATQUDXFGTJuuEb2xYc,118
+open_serializer/serialization/__init__.py,sha256=13TBwLvyFrhH2fxlroOq2jq73Z5j6HXqxn8GDATvCxA,237
+open_serializer/serialization/general.py,sha256=Xacfo7if0pYYDKwxAXVnS__2gfFgNttURf04frZnnKs,2755
+open_serializer/serialization/handler.py,sha256=1K3lePAw01fOOnXMZsjQUjYqE8GSN6EVl6iidtdjmGk,1733
+open_serializer/serialization/helpers.py,sha256=TWUj5ms6HKVNu-O-n_OKjhjir97RBzZ75Q7nhzH37Yg,574
+open_serializer/utils/__init__.py,sha256=RBWh1BOga8zsKM9Lh0MosG_dJg5fHGq8gB859N1M-x4,45
+open_serializer/utils/dict_ops.py,sha256=QhoZ-xKW3Eb1VE-7IIstObVFoGtJJMDl7kM2dWEqH8o,1544
+open_serializer-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+open_serializer-0.0.5.dist-info/METADATA,sha256=nwnXKtnQFVOYS557njo-e9kU__VpprbTB9LxGn9kfLM,1105
+open_serializer-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+open_serializer-0.0.5.dist-info/top_level.txt,sha256=ea-GQqI9L72_FIk6mCrkfNMKlA39gN9X2mJgwjYpK1M,16
+open_serializer-0.0.5.dist-info/RECORD,,
