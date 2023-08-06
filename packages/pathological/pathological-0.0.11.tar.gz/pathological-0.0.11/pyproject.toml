@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "pathological"
+version = "0.0.11"
+authors = [
+  { name="dbodell", email="dbodell@protonmail.com" },
+]
+description = "Tree based data structures and general purpose functions for file system management"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/odelldb/pathological/tree/master"
+"Bug Tracker" = "https://github.com/odelldb/pathological/issues"
