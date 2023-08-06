@@ -1,0 +1,12 @@
+matflow/__init__.py,sha256=BhCsK0BsAqCZRRMDOElM2IYfJnyy-FEFCQBWwWKP2Vg,1361
+matflow/_version.py,sha256=p8t6dMkb_VKxgVxGfHQpJCS-gEWoKCFZnKDIpbewZWQ,24
+matflow/api.py,sha256=3AWintSzk6SZvX8WF4jfETfE6CTXUWp6H7N0XdjcLaA,228
+matflow/cli.py,sha256=PSRPzE-PwLJGPajHdqBBDiNQJkCeR6sTpZ2dTmD5G2w,354
+matflow/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matflow/data/environments.yaml,sha256=w4u66AUHQ_IlPr-HO--AlUCH2u6KoBZhZUyvdPqVje0,358
+matflow/data/task_schemas.yaml,sha256=gBQ0Gyx5_QIlcqk3bpXdsmFLMypAW74njwQiNDIqeP4,1291
+matflow/parameters.py,sha256=wf-APAG2Hg_ua5BSFvqoFxAZOpUli_aCKl5RVfiHCc0,1247
+matflow_new-0.3.0a5.dist-info/entry_points.txt,sha256=_YeSjxyOARfmc7jpYguZBxPXL7Swzvsdh5d1_CKOS5w,113
+matflow_new-0.3.0a5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+matflow_new-0.3.0a5.dist-info/METADATA,sha256=xwqLfDILC94__0ng-Ws_NN2AgIhCU-l54dU7lZi7lus,1256
+matflow_new-0.3.0a5.dist-info/RECORD,,
