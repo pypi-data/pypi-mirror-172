@@ -1,0 +1,2 @@
+[fs.opener]
+chunky = relic.chunky.core.filesystem:ChunkyFSOpener
