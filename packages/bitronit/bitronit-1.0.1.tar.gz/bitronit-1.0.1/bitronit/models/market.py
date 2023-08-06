@@ -1,0 +1,9 @@
+class Market:
+    current_price: float
+    daily_volume: float
+    daily_change: float
+    base_asset: str
+    quote_asset: str
+    highest_price: float
+    lowest_price: float
+    daily_nominal_change: float

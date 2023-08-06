@@ -1,0 +1,26 @@
+class TradingPair:
+    base_asset: str
+    quote_asset: str
+    symbol: str
+    status: str
+    max_num_orders: int
+    min_price: float
+    max_price: float
+    tick_scale: int
+    product_scale: int
+    multiplier_up: float
+    multiplier_down: float
+    average_price_count: int
+    min_quantity: float
+    max_quantity: float
+    step_scale: int
+    min_notional: float
+    market_min_quantity: float
+    market_max_quantity: float
+    maker_fee_percentage_value: float
+    taker_fee_percentage_value: float
+    is_market_enabled: bool
+    is_limit_enabled: bool
+    is_stop_enabled: bool
+    apply_to_market: bool
+    market_step_size: float
