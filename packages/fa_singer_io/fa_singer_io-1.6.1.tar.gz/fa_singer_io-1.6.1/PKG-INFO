@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fa_singer_io
+Version: 1.6.1
+Summary: Singer io SDK with strict types
+Author-email: Product Team <development@fluidattacks.com>
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: fa-purity >=1.8.0, <2.0.0
+Requires-Dist: Deprecated >=1.2.12, <2.0.0
+Requires-Dist: jsonschema >=3.2.0, <4.0.0
+Requires-Dist: pyRFC3339 >=1.1, <2.0
+Requires-Dist: pytz >=2021.1, <2022.0
