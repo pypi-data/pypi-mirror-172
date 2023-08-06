@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: scraperlamp
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: alaaddin
+Author-email: malaaddincelik@gmail.com
+License: UNKNOWN
+Keywords: python,web-scraping,data
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests
+Requires-Dist: BeautifulSoup4
+
+UNKNOWN
+
