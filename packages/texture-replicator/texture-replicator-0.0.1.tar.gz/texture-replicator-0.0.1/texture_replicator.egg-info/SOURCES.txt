@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+texture_replicator/__init__.py
+texture_replicator/replicator.py
+texture_replicator.egg-info/PKG-INFO
+texture_replicator.egg-info/SOURCES.txt
+texture_replicator.egg-info/dependency_links.txt
+texture_replicator.egg-info/requires.txt
+texture_replicator.egg-info/top_level.txt
