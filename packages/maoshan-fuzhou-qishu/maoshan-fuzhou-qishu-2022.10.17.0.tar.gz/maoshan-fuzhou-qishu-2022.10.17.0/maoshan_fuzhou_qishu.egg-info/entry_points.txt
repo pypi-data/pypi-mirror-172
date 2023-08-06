@@ -1,0 +1,4 @@
+[console_scripts]
+MaoshanFuzhouQishu = MaoshanFuzhouQishu.__main__:main
+maoshan-fuzhou-qishu = MaoshanFuzhouQishu.__main__:main
+
