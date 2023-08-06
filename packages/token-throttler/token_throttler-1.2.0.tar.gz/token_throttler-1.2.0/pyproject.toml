@@ -1,0 +1,93 @@
+[tool.poetry]
+name = "token-throttler"
+version = "1.2.0"
+description = "Token throttler is an extendable rate-limiting library somewhat based on a token bucket algorithm"
+authors = ["Vojko Pribudić <dmanthing@gmail.com>"]
+maintainers = [
+        "Vojko Pribudić <dmanthing@gmail.com>",
+        "Rino Dugonjić <dugonjic.rino@gmail.com>",
+]
+repository = "https://gitlab.com/vojko.pribudic/token-throttler"
+readme = "README.md"
+license = "MIT"
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "Environment :: Web Environment",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: English",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3 :: Only",
+        "Topic :: Software Development :: Libraries",
+]
+include = ["README.md", "LICENSE"]
+exclude = [
+    ".gitignore",
+    ".gitlab-ci.yml",
+]
+
+[tool.poetry.urls]
+"Tracker" = "https://gitlab.com/vojko.pribudic/token-throttler/-/issues"
+"Changelog" = "https://gitlab.com/vojko.pribudic/token-throttler/-/releases"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+aioredis = { version = "^2.0.1", optional = true }
+redis = { version = "^4.3.4", optional = true }
+
+[tool.poetry.extras]
+aioredis = ["aioredis"]
+redis = ["redis"]
+
+[tool.poetry.group.test.dependencies]
+aioredis = "2.0.1"
+fakeredis = "1.9.3"
+freezegun = "1.2.2"
+pytest-asyncio = "0.18.3"
+pytest-cov = "3.0.0"
+tox = "3.25.0"
+
+[tool.coverage.paths]
+source = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+filterwarnings = "ignore::DeprecationWarning"
+
+[tool.isort]
+profile = "black"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+envlist = py37, py38, py39, py310
+
+[testenv]
+commands =
+  pytest --cov
+deps =
+  aioredis
+  fakeredis
+  freezegun
+  pytest-asyncio
+  pytest-cov
+"""
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
