@@ -1,0 +1,11 @@
+strideformer/__init__.py,sha256=Jg44YIcyGMJPI_du_MTOI8ZNMoejMGZGbqdGCABLW7c,146
+strideformer/collator.py,sha256=maoAo6o7ug7Lungc6rdqSoS5go0QbgK4UzzERHEtmQ8,2296
+strideformer/config.py,sha256=cMr-mrrgbRyukd-N2leMz2zTxYvs2Y0spmwDF4WQHiM,4214
+strideformer/model.py,sha256=LfABlLxqINyOVQsfd3RXSQhP8YQYrTBsZZYNz3JxGuY,14209
+strideformer/pipeline.py,sha256=c838lDL4rNQd_jME4AM_67Cc-xZN9kA4Ya9LZ-lxfVk,2855
+strideformer/tokenizer.py,sha256=0FdzRzC7TdWM8elCJljx2wZXCwrvV8uF76XYThfaBFw,901
+strideformer-0.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+strideformer-0.1.3.dist-info/METADATA,sha256=p1s6LgbPSNGHD-WsAj9WFS3OA0NanpZZncUoEBnrACM,1269
+strideformer-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+strideformer-0.1.3.dist-info/top_level.txt,sha256=umiKi--z4xAPQKI5d5xWITfhJs5tQvzn9rYzevH0waU,13
+strideformer-0.1.3.dist-info/RECORD,,
