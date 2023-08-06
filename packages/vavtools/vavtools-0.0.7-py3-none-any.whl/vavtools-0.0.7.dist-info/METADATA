@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vavtools
+Version: 0.0.7
+Summary: A package for easy work in Easycommerce DS team
+Home-page: https://github.com/vavgarage/vavtools
+Author: Vladislav Abramov
+Author-email: vavabramov@gmail.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.21.2)
+Requires-Dist: pandas (==1.3.3)
+Requires-Dist: boto3 (==1.24.66)
+Requires-Dist: tqdm (==4.62.3)
+Requires-Dist: requests (>=2)
+
+# vavtools
