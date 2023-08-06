@@ -1,0 +1,14 @@
+<div id="noticesModal" class="modal-window">
+  <div 
+    class="modal-title" 
+    {% if notices_color %}style="border-color: {{ notices_color }};"{% endif %}
+  >{{ notices_title }}</div>
+  <div class="modal-content">{{ notices_content | linebreaks }}</div>
+  <button 
+    class="modal-btn" 
+    {% if notices_color %}style="background: {{ notices_color }};"{% endif %} 
+    onclick="noticesCookie.setCookie('{{ notices_version }}')"
+  >OK</button>
+</div>
+
+<div class="modal-fader" id="noticesModalFader" onclick="noticesCookie.setCookie('{{ notices_version }}')"></div>
