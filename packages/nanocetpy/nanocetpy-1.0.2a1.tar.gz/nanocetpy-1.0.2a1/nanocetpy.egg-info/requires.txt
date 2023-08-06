@@ -1,0 +1,12 @@
+numpy
+pyqtgraph
+scipy
+pyyaml
+experimentor
+scikit-image
+h5py
+pyzmq
+pypylon
+pyvisa
+pyserial
+pyqt5
