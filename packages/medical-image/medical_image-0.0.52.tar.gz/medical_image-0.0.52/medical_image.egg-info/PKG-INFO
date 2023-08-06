@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: medical-image
+Version: 0.0.52
+Summary: DICOM Processing Library for AI Apps
+Home-page: https://www.deepnoid.com
+Author: Hwa Pyung Kim
+Author-email: hpkim0512@deepnoid.com
+License: MIT
+Requires-Python: >=3
+
+DICOM Processing Library for AI Apps
