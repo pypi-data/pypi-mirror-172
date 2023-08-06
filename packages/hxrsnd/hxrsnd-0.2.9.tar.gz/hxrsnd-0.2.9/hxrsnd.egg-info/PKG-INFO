@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hxrsnd
+Version: 0.2.9
+Summary: Python controls suite for HXRSnD
+Author: SLAC National Accelerator Laboratory
+License: BSD
+License-File: LICENSE.md
