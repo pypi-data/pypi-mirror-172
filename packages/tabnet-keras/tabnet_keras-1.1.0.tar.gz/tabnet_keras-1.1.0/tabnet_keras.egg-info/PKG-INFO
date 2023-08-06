@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: tabnet-keras
+Version: 1.1.0
+Summary: A tf2 keras implementation of tabnet
+Author-email: Oleg K <lookout_errands0z@icloud.com>
+License: MIT License
+        
+        Copyright (c) 2022 OKUA1
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/OKUA1/tabnet-keras
+Project-URL: Bug Tracker, https://github.com/OKUA1/tabnet-keras/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TF2 Keras implementation of TabNet
+
+Most of the code is taken with minor changes from this repository:
+https://github.com/jeyabbalas/tabnet
+
+## Installation 
+
+```bash
+$ pip install git+https://github.com/OKUA1/tabnet-keras
+```
+
+## Usage
+
+```python
+from tabnet_keras import TabNetRegressor, TabNetClassifier
+
+tabnet_params = {
+    "decision_dim": 16,
+    "attention_dim": 16,
+    "n_steps": 3,
+    "n_shared_glus": 2,
+    "n_dependent_glus": 2,
+    "relaxation_factor": 1.3,
+    "epsilon": 1e-15,
+    "momentum": 0.98,
+    "mask_type": "sparsemax", # can be 'sparsemax' or 'softmax'
+    "lambda_sparse": 1e-3, 
+    "virtual_batch_splits": 8 #number of splits for ghost batch normalization, ideally should evenly divide the batch_size
+}
+
+### Regression 
+model = TabNetRegressor(n_regressors = 1, **tabnet_params)
+model.compile(loss = 'mean_squared_error', optimizer = tf.keras.optimizers.Adam(0.01), 
+             metrics = [tf.keras.metrics.RootMeanSquaredError()])
+model.fit(X, y, epochs = 100, batch_size = 1024)
+
+### Classification
+model = TabNetClassifier(n_classes = 10, out_activation = None, **tabnet_params)
+model.compile(loss = 'categorical_crossentropy', optimizer = tf.keras.optimizers.Adam(0.01))
+model.fit(X, y, epochs = 100, batch_size = 1024)
+
+```
+
