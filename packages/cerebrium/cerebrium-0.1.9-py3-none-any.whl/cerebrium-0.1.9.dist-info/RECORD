@@ -1,0 +1,8 @@
+cerebrium/__init__.py,sha256=htRrWjzrH0BmBErnJvps5yuMH1v9q4aetAhYW3vRMQQ,76
+cerebrium/core.py,sha256=P8OhUBhRduzE00tYKP1Lgltf7CzjryzslxErcY71CgQ,10578
+cerebrium/errors.py,sha256=eU2YQLFIUU6nsFrM3-u93xNZbo3u53qZtrTp4V8OAbc,2100
+cerebrium/models.py,sha256=TT54Ellxd_acg8gLGxzZXQO8rSyDdrY54GTPsnpnIxI,3638
+cerebrium-0.1.9.dist-info/LICENSE,sha256=QoCdyu_al_XTJCs6xphksUTo6SgGRe_y3AnD6oeKziw,34594
+cerebrium-0.1.9.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+cerebrium-0.1.9.dist-info/METADATA,sha256=1DIZfYGlU_g6y4FmCg5z4550KkBoUjFMp30-QTccnN4,1994
+cerebrium-0.1.9.dist-info/RECORD,,
