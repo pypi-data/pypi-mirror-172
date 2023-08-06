@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "etherscan_shady"
+version = "0.0.1"
+authors = [
+  { name="shady", email="taras2730@gmail.com" },
+]
+description = "Get balance erc20 token of ethereum address"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/shady273/Etherscan_API"

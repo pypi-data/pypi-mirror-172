@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: etherscan_shady
+Version: 0.0.1
+Summary: Get balance erc20 token of ethereum address
+Project-URL: Homepage, https://github.com/shady273/Etherscan_API
+Author-email: shady <taras2730@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Etherscan_API
+
+result = GetResult('Ethereum address', 'Etherscan API KEY')
+
+print(result.get_erc20_balance())
+
+return balance your erc20 token ETH address
+
+result = GetResult('Ethereum address', 'Etherscan API KEY')
+
+print(result.get_eth_balance())
+
+return balance your ETH address
+
+Donate
+
+BTC - 1J18ggoGFnbhAGg66aGScXTEJbk7S5Xu6S
+
+ETH - 0x3AA1a0dAfC77Ea0fb28b84F1065565Ac25e82a94
