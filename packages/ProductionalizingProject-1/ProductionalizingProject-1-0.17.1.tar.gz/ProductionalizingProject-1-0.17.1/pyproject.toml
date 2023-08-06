@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# make project name unique
+name = "ProductionalizingProject-1"
+version = "0.17.1"
+readme = "README.md"
+description = "A very simple setuptools-pyproject.toml project"
+authors = [
+  {name = "Advanced Python", email = "python@developintelligence.com"}
+]
+dependencies = [
+    "numpy>=1.16"
+]
+
+[project.scripts]
+my-greet = "mypackage.mymodule:greet_main"
+        
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+mypackage = ["*.txt", "*.rst"]
