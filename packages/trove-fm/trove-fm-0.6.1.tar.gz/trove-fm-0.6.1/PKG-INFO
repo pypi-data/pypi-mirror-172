@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: trove-fm
+Version: 0.6.1
+Summary: Trove Farmer's Market is an online store and headless CMS.
+Author-email: Brian Farrell <brian.farrell@me.com>
+License: AGPLv3
+Project-URL: homepage, https://trove-supply.com
+Project-URL: rest-api-docs-swagger, https://trove-supply.com/docs/
+Project-URL: rest-api-docs-redoc, https://trove-supply.com/redoc/
+Project-URL: repository, https://gitlab.com/brianfarrell/trove-fm/
+Project-URL: documentation, https://brianfarrell.gitlab.io/trove-fm/
+Keywords: commerce,CMS,headless,store
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: FastAPI
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System
+Classifier: Topic :: Office/Business
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Provides-Extra: test
+Provides-Extra: doc
+License-File: LICENSE
+
+
+=====================
+Trove Farmer's Market
+=====================
+
+TroveFM is an online store and headless CMS built with `FastAPI <https://fastapi.tiangolo.com/>`_
+
+
+Links
+-----
+
+Framework Documentation: https://brianfarrell.gitlab.io/trove-fm/
+
+License: https://www.gnu.org/licenses/agpl.html
+
+PyPi Release: https://pypi.org/project/trove-fm/
+
+
+REST API
+
+    * Endpoint: https://trove-supply.com/api/
+
+    * SwaggerUI: https://trove-supply.com/docs/
+
+    * ReDoc: https://trove-supply.com/redoc/

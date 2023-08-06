@@ -1,0 +1,21 @@
+**/.dockerignore
+**/Dockerfile*
+**/templates*
+**/*.sublime*
+
+# Project Specific
+**/__pycache__
+**/alertmanager
+**/build
+**/dist
+**/docs
+**/grafana
+**/prometheus
+**/public
+**/reference
+**/reports
+**/research
+**/*.egg-info
+**/.git
+**/docker-compose*
+**/README*

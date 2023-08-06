@@ -1,0 +1,27 @@
+
+.Container {
+    /* border:1px solid white; */
+    border: 10px solid goldenrod;
+}
+
+.Row {
+    /* border:1px solid white; */
+}
+
+.Col {
+    /* border:1px solid white; */
+    margin-bottom: 15px;
+}
+
+.App, body {
+    background-color:teal;
+    margin-top: 25px;
+}
+
+.album {
+    text-align: center;
+    padding:15px;
+    background-color:teal;
+    background-color:yellowgreen;
+    border-radius: 5px;
+}

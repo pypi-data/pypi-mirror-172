@@ -1,0 +1,27 @@
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color:lightgrey;
+}
+
+.navbar {
+    background-color: forestgreen;
+    color: antiquewhite;
+}
+
+.container {
+    border: 5px solid goldenrod;
+}
+
+.child {
+    display: flex;
+}
+
+.cred-form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    max-width: 600px;
+}

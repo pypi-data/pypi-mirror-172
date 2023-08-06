@@ -1,0 +1,20 @@
+include LICENSE
+include CHANGES.rst
+include README.rst
+include trove_fm/alembic.ini
+
+exclude .gitlab-ci.yml
+exclude docker-compose*
+exclude epl*
+exclude run*
+exclude tasks*
+exclude trove-fm.sublime*
+exclude *.paw
+exclude load_env.py
+exclude .gitignore
+exclude trove_fm/*.dockerfile
+exclude trove_fm/.dockerignore
+
+prune docs
+
+global-exclude public/*
