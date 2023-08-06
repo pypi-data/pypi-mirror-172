@@ -1,0 +1,11 @@
+flask_bigapp/Auth.py,sha256=iBormoUR6iceKOhkzUcNPh4M9RbnMWH_TS2j5jd37Ho,10000
+flask_bigapp/BigApp.py,sha256=d9rCkWEgRUyK8XSM6H5HBVPM2V9M2wVCJnkyHEFZVrY,14539
+flask_bigapp/Blueprint.py,sha256=RpC5-0Yhd-SZClqjmT0CXP53mbqipsla1wpxGBkkHmg,3536
+flask_bigapp/Resources.py,sha256=ybCjDOsWYtd6Yq9abpI_J_6JRubLcg8xeF6203acNnA,1759
+flask_bigapp/Security.py,sha256=7aGMmUcCN3AMK6QPFJQioQtejlITRPiJptLDGrJoUNg,2942
+flask_bigapp/__init__.py,sha256=CB4NsKdwVKMjdG0tOIRdOtb3-pneqx5ilGe9m86r7gI,305
+flask_bigapp-1.2.8.dist-info/LICENSE,sha256=OLsUm4093pcepf6fGseHI9hAHPAIl8nS0whui8g-EOw,25344
+flask_bigapp-1.2.8.dist-info/METADATA,sha256=cc7P5YhQqk7YwZVBIO19eTe2ZQgJXz5JDtvyClwEun8,15638
+flask_bigapp-1.2.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flask_bigapp-1.2.8.dist-info/top_level.txt,sha256=AyVBFpsyfkCDFC0iddGpWv__LWnHLf5IYdMpoBGJqKk,13
+flask_bigapp-1.2.8.dist-info/RECORD,,
