@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/jsiitestbagher/__init__.py
+src/jsiitestbagher/py.typed
+src/jsiitestbagher.egg-info/PKG-INFO
+src/jsiitestbagher.egg-info/SOURCES.txt
+src/jsiitestbagher.egg-info/dependency_links.txt
+src/jsiitestbagher.egg-info/requires.txt
+src/jsiitestbagher.egg-info/top_level.txt
+src/jsiitestbagher/_jsii/__init__.py
+src/jsiitestbagher/_jsii/jsiitestbagher@0.0.2.jsii.tgz
