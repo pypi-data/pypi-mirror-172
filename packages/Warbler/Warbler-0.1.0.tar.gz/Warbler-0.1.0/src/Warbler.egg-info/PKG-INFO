@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Warbler
+Version: 0.1.0
+Summary: TODO_DESCRIPTION
+Home-page: https://github.com/asweigart/warbler
+Author: Al Sweigart
+Author-email: al@inventwithpython.com
+License: MIT
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Warbler
+======
+
+A wrapper for Borb. Under construction.
