@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+searchunify/__init__.py
+searchunify/main.py
+searchunify.egg-info/PKG-INFO
+searchunify.egg-info/SOURCES.txt
+searchunify.egg-info/dependency_links.txt
+searchunify.egg-info/requires.txt
+searchunify.egg-info/top_level.txt
+searchunify/client/__init__.py
+searchunify/client/client.py
+searchunify/core/__init__.py
+searchunify/utils/__init__.py
