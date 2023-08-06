@@ -1,0 +1,10 @@
+setup.py
+version
+boxtec/__init__.py
+boxtec/db.py
+boxtec/dt.py
+boxtec.egg-info/PKG-INFO
+boxtec.egg-info/SOURCES.txt
+boxtec.egg-info/dependency_links.txt
+boxtec.egg-info/requires.txt
+boxtec.egg-info/top_level.txt
