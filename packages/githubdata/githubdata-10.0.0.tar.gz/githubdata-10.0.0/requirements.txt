@@ -1,0 +1,8 @@
+pandas
+giteasy
+IPython
+pyarrow
+fastparquet
+openpyxl
+build
+twine
