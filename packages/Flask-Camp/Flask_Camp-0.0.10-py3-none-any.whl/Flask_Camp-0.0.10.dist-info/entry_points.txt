@@ -1,0 +1,2 @@
+[console_scripts]
+flask_camp = flask_camp.__main__:main_entry_point
