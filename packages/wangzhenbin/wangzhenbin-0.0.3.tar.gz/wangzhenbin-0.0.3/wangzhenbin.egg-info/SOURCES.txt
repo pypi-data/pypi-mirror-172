@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+automatic/__init__.py
+automatic/automatic.py
+wangzhenbin.egg-info/PKG-INFO
+wangzhenbin.egg-info/SOURCES.txt
+wangzhenbin.egg-info/dependency_links.txt
+wangzhenbin.egg-info/top_level.txt
