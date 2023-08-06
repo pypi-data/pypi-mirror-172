@@ -1,0 +1,10 @@
+defaults:
+  - help/part-of-speech@hydra.help
+  - model: intersyllabic-olive-cormorant
+  - _self_
+
+hydra:
+  # verbose: cai_manas
+  run:
+    dir: .
+  output_subdir: ~

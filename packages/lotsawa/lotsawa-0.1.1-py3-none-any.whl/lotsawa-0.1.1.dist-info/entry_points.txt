@@ -1,0 +1,4 @@
+[console_scripts]
+lotsawa-retranslate = lotsawa.retranslate:main
+lotsawa-translate = lotsawa.translate:main
+lotsawa-words = lotsawa.part_of_speech:main
