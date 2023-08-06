@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+threepid_checker/__init__.py
+threepid_checker/py.typed
+threepid_checker.egg-info/PKG-INFO
+threepid_checker.egg-info/SOURCES.txt
+threepid_checker.egg-info/dependency_links.txt
+threepid_checker.egg-info/requires.txt
+threepid_checker.egg-info/top_level.txt
