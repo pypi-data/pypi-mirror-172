@@ -1,0 +1,2 @@
+[console_scripts]
+ql = quill.fold.cli:fold_cli
