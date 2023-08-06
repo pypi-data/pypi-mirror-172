@@ -1,0 +1,17 @@
+tinytim/__init__.py,sha256=_8bA_C_rwiyw4cXBWWo3pRHphDRvoRRLc987XufxCJg,235
+tinytim/columns.py,sha256=2MtCEpECFT2W6Z7WN3EHW-xVk6Y3taLHIgISPyBWuoA,2473
+tinytim/copy.py,sha256=KeVI2nM-gNPB3OMt3HSQKe45NJvVUBY5IGxKO3MxMnE,2193
+tinytim/data.py,sha256=5mtyzz0l2-KvjYp932lJO7EvdxM8nWrjccls35C4NOE,5622
+tinytim/edit.py,sha256=lplfWKWkUndIl1-TF0FeDOgzx8ljs2avKV5nPT9GAgo,21739
+tinytim/filter.py,sha256=7kvr_dB11FueRgnXAMTA2BROgZCG4KsGKbFys7z04ro,3936
+tinytim/group.py,sha256=aygXT8fiz_TQloxoSvWRPgU4qQIIEwWHFM1ZE1CB3Bk,3481
+tinytim/join.py,sha256=Dd3tZAkkusob_pEM89vC_r5-HhmPhPaaYHLT9zzxd0c,18011
+tinytim/json.py,sha256=ZT7KQeVLZMEp3R_ngzLlgejfoB4i-EfZqrrKQq9eJdQ,2300
+tinytim/rows.py,sha256=Agm02CWG3KTE1SqBlKMkxSNBTsSS7HzMYEkU_qiPKxg,6440
+tinytim/utils.py,sha256=3sZ1z8WLsCvbcM0lSkXfNSJLSYvZTuw7nilvYxUUXdc,7790
+tinytim/validate.py,sha256=d-pzfDkl5OX_MiF8QwDjvCmThSo7AR_B5OgTT_JrNvA,574
+tinytim-1.6.0.dist-info/LICENSE.md,sha256=1pE569s9d8U87JIZhE80lo9skpJm49AKQicwCRwlf-8,1101
+tinytim-1.6.0.dist-info/METADATA,sha256=zVKR4_BlMEumwmiJNXluXx9_AeMc2TOkuoMsHQ0qI0s,1130
+tinytim-1.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tinytim-1.6.0.dist-info/top_level.txt,sha256=-yi6FeB_3uS8qAU3Qk6MmedasS6g8z_ZgixIjnHJvWE,8
+tinytim-1.6.0.dist-info/RECORD,,
