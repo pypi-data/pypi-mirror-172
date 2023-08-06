@@ -1,0 +1,3 @@
+[pytest11]
+circleci-parallelized = pytest_circleci_parallelized
+
