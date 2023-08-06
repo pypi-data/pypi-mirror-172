@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mplapi
+Version: 0.0.1
+Summary: 提供MPL(Mirai Python Loader)插件开发API
+Home-page: https://nana-miko.github.io/Mirai-Python-Loader-Docs/
+Author: Nana-Miko
+Author-email: 1121917292@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE.txt
