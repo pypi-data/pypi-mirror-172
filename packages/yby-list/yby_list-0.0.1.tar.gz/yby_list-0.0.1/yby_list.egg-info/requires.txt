@@ -1,0 +1,17 @@
+pyqt5
+h5py
+mayavi
+numpy
+scipy
+pandas
+glob2
+jupyter
+jupyterlab
+matplotlib
+openpyxl
+sklearn
+scikit-opt
+tqdm
+torch
+tensorboard
+vtk
