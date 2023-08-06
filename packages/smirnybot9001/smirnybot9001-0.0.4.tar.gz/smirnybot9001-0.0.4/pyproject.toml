@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling>=1.9.0",]
+build-backend = "hatchling.build"
+#requires = ["setuptools>=61.0"]
+#build-backend = "setuptools.build_meta"
+
+#requires = ["flit_core>=3.2"]
+#build-backend = "flit_core.buildapi"
+
+#requires = ["pdm-pep517"]
+#build-backend = "pdm.pep517.api"
+
+[project]
+name = "smirnybot9001"
+version = "0.0.4"
+description = "A twitch chatbot for displaying LEGO sets, minifigs and parts on an HTML overlay"
+authors = [
+  { name="Bricks Mental", email="bricks.mental@gmail.com" },
+]
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "beautifulsoup4",
+    "remi",
+    "requests",
+    "rich",
+    "tomlkit",
+    "twitchio",
+    "typer",
+    "fake_user_agent",
+]
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/BricksMental/smirnybot9001"
+"Bug Tracker" = "https://github.com/BricksMental/smirnybot9001/issues"
+
+[project.optional-dependencies]
+
+[project.scripts]
+chatbot = "smirnybot9001.chatbot:main"
+overlay = "smirnybot9001.overlay:main"
+smirnyboot9001 = "smirnybot9001.smirnyboot9001:main"
