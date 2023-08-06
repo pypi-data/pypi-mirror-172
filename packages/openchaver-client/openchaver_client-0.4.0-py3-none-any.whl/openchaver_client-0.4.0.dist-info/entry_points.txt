@@ -1,0 +1,2 @@
+[console_scripts]
+openchaver = openchaver.__main__:cli
