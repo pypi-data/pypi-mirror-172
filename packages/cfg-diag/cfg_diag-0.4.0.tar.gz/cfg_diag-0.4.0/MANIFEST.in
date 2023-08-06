@@ -1,0 +1,8 @@
+include .editorconfig
+include CONTRIBUTING.md
+include LICENSE
+include NEWS.md
+recursive-include nix *.nix *.sh
+include noxfile.py
+include tox.ini
+recursive-include unit_tests *.py
