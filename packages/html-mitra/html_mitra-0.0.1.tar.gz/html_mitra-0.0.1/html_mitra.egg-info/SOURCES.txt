@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+html_mitra.egg-info/PKG-INFO
+html_mitra.egg-info/SOURCES.txt
+html_mitra.egg-info/dependency_links.txt
+html_mitra.egg-info/top_level.txt
+test/test.py
