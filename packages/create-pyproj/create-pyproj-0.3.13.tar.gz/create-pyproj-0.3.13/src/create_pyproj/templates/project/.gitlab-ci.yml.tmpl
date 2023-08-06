@@ -1,0 +1,8 @@
+stages:
+  - build
+
+package-build:
+  stage: build
+  image: registry.gitlab.com/evenergi/secdevops/build-tools/pybuild3.10:latest
+  script:
+    - echo "Hello"
