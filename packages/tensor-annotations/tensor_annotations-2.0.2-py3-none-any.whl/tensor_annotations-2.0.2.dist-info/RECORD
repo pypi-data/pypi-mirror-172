@@ -1,0 +1,17 @@
+tensor_annotations/__init__.py,sha256=Hm11zlfCPGklSZW5XmFxd6x9zyrSqFPzHwF45CCt36o,696
+tensor_annotations/axes.py,sha256=61lfQHFVqqBoxoD1jF36ZGcIwQ1HdKvPS1zhpos9M70,1466
+tensor_annotations/jax.py,sha256=JztJb8tQ1Uo_re2zxatdKiCWJriKKGbPMiG29zlKjaw,5552
+tensor_annotations/jax.pyi,sha256=tBjbKUuaszQS-SwncG_D5TiZuPQzMFqyQwpodyvNwTY,82685
+tensor_annotations/py.typed,sha256=UQzUt_Mx99fyHTa8K8H_gAJHPIb-HHoQgTtaiUi5roo,73
+tensor_annotations/tensorflow.py,sha256=5nUu0cIfOEW0XxsRqA-dVmrrVKX8mNlIgs6pnDOWRuA,5906
+tensor_annotations/tensorflow.pyi,sha256=MGc3Y2fEzqh5IsBoUJzmFqLGBtx1-V2ZJT7X0NRMiTI,89001
+tensor_annotations/tests/jax.py,sha256=bgv91u_PoIFK_aaO0JjzqKTAB44nSNOsNSSMNW5GkVM,20752
+tensor_annotations/tests/pytype.py,sha256=XJvRRtj81LqmKzUZLTGffi4bFQNihfO5cwoTj4vXuTk,1648
+tensor_annotations/tests/templates.py,sha256=5tt3_UgqNlfUs9VK8cg7FpohElUoH-ddmPbVY36A3Dk,4078
+tensor_annotations/tests/tensorflow.py,sha256=D5IC7bcer8jgxvYz5QonKUXL6FGIb9rIzRJ1BjZJxkQ,25443
+tensor_annotations/tests/utils.py,sha256=NkMiWJirzSicPWX4lPqEp8SStBfV1OvGc_TyV56vppQ,10681
+tensor_annotations-2.0.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+tensor_annotations-2.0.2.dist-info/METADATA,sha256=jTgr-6gOE6_RekBOTJpsmPjGg91z52IupN7c8wH6mxs,16736
+tensor_annotations-2.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tensor_annotations-2.0.2.dist-info/top_level.txt,sha256=7imQ42Vli4Y0oyUsiqh8XD6I5SfDYzv4Pm9pR3uf4a4,44
+tensor_annotations-2.0.2.dist-info/RECORD,,
