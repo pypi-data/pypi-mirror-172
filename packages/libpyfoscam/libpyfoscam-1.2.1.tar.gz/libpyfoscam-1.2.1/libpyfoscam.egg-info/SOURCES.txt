@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+libpyfoscam/__init__.py
+libpyfoscam/foscam.py
+libpyfoscam.egg-info/PKG-INFO
+libpyfoscam.egg-info/SOURCES.txt
+libpyfoscam.egg-info/dependency_links.txt
+libpyfoscam.egg-info/not-zip-safe
+libpyfoscam.egg-info/top_level.txt
