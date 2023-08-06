@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tristan-cli
+Version: 0.1.5
+Summary: 
+Author: Tristan Leonard
+Author-email: trisco2001@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pre-commit (>=2.20.0,<3.0.0)
+Requires-Dist: typer[all] (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# Portal Gun
+
+The awesome Portal Gun
+

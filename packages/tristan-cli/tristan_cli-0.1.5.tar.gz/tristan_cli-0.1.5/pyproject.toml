@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tristan-cli"
+version = "0.1.5"
+description = ""
+authors = ["Tristan Leonard <trisco2001@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cli_template"}]
+
+[tool.poetry.scripts]
+tristan-cli = "cli_template.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {version = "^0.6.1", extras = ["all"]}
+pre-commit = "^2.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
