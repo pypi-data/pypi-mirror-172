@@ -1,0 +1,4 @@
+[
+  "test_maps.py::test_get_distance",
+  "test_maps.py::test_get_place_id"
+]

@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: botstudio_sdk
+Version: 0.0.10
+Summary: A small example package
+Project-URL: Homepage, https://github.com/botstudiotech/pip_package
+Project-URL: Bug Tracker, https://github.com/botstudiotech/pip_package/issues
+Author-email: Johan den Hartigh <info@botstudio.tech>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: rasa-sdk==2.8.8
+Requires-Dist: rasa==2.8.31
+Description-Content-Type: text/markdown
+
+# Pip Package Botstudio
+
+This is a pip package for botstudio. 
+
+change version in pyproject.toml
+
+in terminal:
+
+python -m pip install --upgrade build
+
+python -m build
+
+python -m pip install --upgrade twine
+
+python -m twine upload --repository pypi dist/*
+
+username = username = "_\_\_token___"
+

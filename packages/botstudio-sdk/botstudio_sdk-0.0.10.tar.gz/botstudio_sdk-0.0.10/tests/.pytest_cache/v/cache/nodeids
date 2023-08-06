@@ -1,0 +1,7 @@
+[
+  "api/google/maps/test_maps.py::test_get_distance",
+  "api/google/maps/test_maps.py::test_get_place_id",
+  "test_code.py::test__change_keys",
+  "test_code.py::test__clean_api_output",
+  "tiledesk_tests/test___init__.py::test_td_image"
+]
