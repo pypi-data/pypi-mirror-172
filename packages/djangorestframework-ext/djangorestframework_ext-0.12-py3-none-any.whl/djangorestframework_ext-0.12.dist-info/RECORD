@@ -1,0 +1,12 @@
+rest_framework_ext/__init__.py,sha256=ngVl0w88gWVPSooD87008AZ4GZhvOTkmKy7f4BIxjso,95
+rest_framework_ext/pagination.py,sha256=qRFIjia3L7wW3zKSqJxv-0uyxLYboNZEONMjPPe5D48,503
+rest_framework_ext/permissions.py,sha256=o9gY-7jP8Cv066ysA3dGfkt_rwluO-0vyWHhyt8aORk,502
+rest_framework_ext/serializers.py,sha256=_D9HXruis1nfKiVrUIL2LNBi-JWDXsojih8KLLEDAHA,2657
+rest_framework_ext/settings.py,sha256=ZGGELbnkl5Kg_lYUVwjyEPR24uw9CuIxpiq3b-icNvk,618
+rest_framework_ext/utils.py,sha256=rgDHe8C_5dRdCWkZfMBaafKy7VssbIcQglKNqehS0KQ,280
+rest_framework_ext/views.py,sha256=5DU6pQL_WlahtwGYHkftcuUBPU2S6gBOrF1dT0H7jiw,617
+djangorestframework_ext-0.12.dist-info/LICENSE,sha256=1qjJgmO8MLpExrh4MQ3OICjhoiIblWNS66T7lIvtfao,1064
+djangorestframework_ext-0.12.dist-info/METADATA,sha256=HNuWNY_3Df5HMREpf3g-mL-Mopq-lFnasphhW0c20LM,4470
+djangorestframework_ext-0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+djangorestframework_ext-0.12.dist-info/top_level.txt,sha256=7DLhFBDRbslTXhJLU09LWq3CizCqacqQTE1ibL9h3ZM,19
+djangorestframework_ext-0.12.dist-info/RECORD,,
