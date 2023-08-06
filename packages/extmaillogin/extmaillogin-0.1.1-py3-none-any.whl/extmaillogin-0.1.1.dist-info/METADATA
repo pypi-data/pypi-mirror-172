@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: extmaillogin
+Version: 0.1.1
+Summary: 
+Author: Beda Kosata
+Author-email: beda.kosata@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2.10,<4.0.0)
