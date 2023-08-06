@@ -1,0 +1,4 @@
+[console_scripts]
+rpi-thermo-chick = rpi_thermo_chick.api:cli
+rpi-thermo-chick.service = rpi_thermo_chick.service:cli
+

@@ -1,0 +1,14 @@
+rpi_thermo_chick/__init__.py,sha256=E8m5WZ3UavPrFVxWrgL0JYgFWwacDT7cJUbGtKkxwSE,62
+rpi_thermo_chick/api.py,sha256=4k5yfd3bJjleMnaugpv9tdxu_hj1LXfWvkli8UQOfAs,6186
+rpi_thermo_chick/index.html,sha256=gXBC3qjHF0oF_k9ntHedMtGq6vGgkXCgVKByBeK2mSY,11202
+rpi_thermo_chick/influxdb.py,sha256=YA8nrXvlTCyVqR_Rn77WFztS_IW6WezCcdlr2sfvBSo,1975
+rpi_thermo_chick/relays.py,sha256=tWfXFCd0oQJ1Xn0K3phb9VK9ZsR44fgjjjAuGFYHyW4,731
+rpi_thermo_chick/rpi-thermo-chick.service,sha256=1o9yzZA3IIVm4xjMhfHOM5OihssBxb-CmiA2-up2C3s,140
+rpi_thermo_chick/sensors.py,sha256=gYVEjE-sM7_34TF26a-T0VzAr1POfWwvALEREdx_4Vk,865
+rpi_thermo_chick/service.py,sha256=cE48UYtgvntzGIIqNvH9uIikKb0_S8PCxvpqEQ6PSJg,1432
+rpi_thermo_chick-1.2.1.dist-info/LICENSE,sha256=5sHD1VfIzOGsWNNW7x1iXyfvMtGtafBOINvfi45RLaY,1063
+rpi_thermo_chick-1.2.1.dist-info/METADATA,sha256=pvZUma7tMMra7sGkcHyG3FOwwilGwPsvjGOj8WxrRpU,5659
+rpi_thermo_chick-1.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rpi_thermo_chick-1.2.1.dist-info/entry_points.txt,sha256=BnGE1AghCLf-bwL8mMYhX3Km9Lr8-qaDagJlIxvQ_WY,119
+rpi_thermo_chick-1.2.1.dist-info/top_level.txt,sha256=An5HTqZ8hnQsntuoObe1IhYj_V-rj2Sksz9i4pc3Ayc,17
+rpi_thermo_chick-1.2.1.dist-info/RECORD,,
