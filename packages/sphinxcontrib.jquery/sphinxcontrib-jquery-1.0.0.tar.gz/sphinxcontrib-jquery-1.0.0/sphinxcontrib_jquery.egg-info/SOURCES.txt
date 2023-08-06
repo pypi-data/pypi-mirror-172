@@ -1,0 +1,11 @@
+AUTHORS
+LICENCE
+README.rst
+pyproject.toml
+sphinxcontrib/__init__.py
+sphinxcontrib/jquery.py
+sphinxcontrib_jquery.egg-info/PKG-INFO
+sphinxcontrib_jquery.egg-info/SOURCES.txt
+sphinxcontrib_jquery.egg-info/dependency_links.txt
+sphinxcontrib_jquery.egg-info/requires.txt
+sphinxcontrib_jquery.egg-info/top_level.txt
