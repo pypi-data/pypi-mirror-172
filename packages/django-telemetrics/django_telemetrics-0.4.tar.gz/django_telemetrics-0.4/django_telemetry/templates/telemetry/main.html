@@ -1,0 +1,82 @@
+{% extends 'layouts/telemetry/app.html' %}
+
+{% block content  %}
+<main class="container mt-3 px-4 ">
+    <div class="row flex-row gap-3 mb-5">
+        <div class="p-4 col bg-white rounded">
+            <h3>Запросы</h3>
+            <table class="table table-responsive mt-3 table-borderless">
+                <thead>
+                  <form method="GET">
+                    <tr>
+                      <th  scope="col" style="text-align:center">
+                        <select onChange="this.form.submit()" class="form-select" name="method_type">
+                          <option {% if 'method_type' not in request.GET %} selected {% endif %} value="Все">Все</option>
+                          <option {% if request.GET.method_type == 'GET' %} selected {% endif %} value="GET">GET</option>
+                          <option {% if request.GET.method_type == 'POST' %} selected {% endif %} value="POST">POST</option>
+                          <option {% if request.GET.method_type == 'PUT' %} selected {% endif %} value="PUT">PUT</option>
+                          <option {% if request.GET.method_type == 'PATCH' %} selected {% endif %} value="PATCH">PATCH</option>
+                          <option {% if request.GET.method_type == 'DELETE' %} selected {% endif %} value="DELETE">DELETE</option>
+                      
+                        </select>
+                       
+                      </th>
+                      <th scope="col" style="text-align:center"><div class="form-text">Путь</div></th>
+                      <th scope="col" style="text-align:center">
+                          <select onChange="this.form.submit()" class="form-select" name="status_code">
+                            <option {% if 'status_code' not in request.GET %} selected {% endif %} value="Все">Все</option>
+                            <option {% if request.GET.status_code == '200' %} selected {% endif %} value="200">200</option>
+                            <option {% if request.GET.status_code == '201' %} selected {% endif %} value="201">201</option>
+                            <option {% if request.GET.status_code == '403' %} selected {% endif %} value="403">403</option>
+                            <option {% if request.GET.status_code == '404' %} selected {% endif %} value="404">404</option>
+                            <option {% if request.GET.status_code == '422' %} selected {% endif %} value="422">422</option>
+                            <option {% if request.GET.status_code == '500' %} selected {% endif %} value="500">500</option>
+                          </select>
+                          
+                      </th>
+                      <th scope="col" style="text-align:center"><div class="form-text">Продолжительность</div></th>
+                      <th scope="col" style="text-align:center"><div class="form-text">Время отправки</div></th>
+                      <th scope="col" style="text-align:center"><div class="form-text">Посмотреть</div></th>
+                    </tr>
+                  </form>
+                 
+                </thead>
+                <tbody>
+                {% for telemetry in telemetries %}
+                  <tr>
+                    <th scope="row"><div class="table-badge {% if telemetry.method == 'GET' %}table-badge-gray{% elif telemetry.method == 'POST' %}table-badge-info{% else %} table-badge-gray {% endif %}">{{telemetry.method}}</div></th>
+                    <td><div class="table-badge table-badge-left">{{telemetry.path}}</div></td>
+                    <td><div class="table-badge {% if telemetry.status_code == 404 %}table-badge-warning{% elif telemetry.status_code == 200 %}table-badge-success{% elif telemetry.status_code == 500 %}table-badge-error{% else %}table-badge-gray{% endif %}">{{telemetry.status_code}}</div></td>
+                    <td><div class="table-badge">{{telemetry.duration}} ms</div></td>
+                    <td><div class="table-badge">{{telemetry.time|date:"Y-m-d : H:i:s"}}</div></td>
+                    <td><a href="{% url 'detail_request_view' telemetry.uuid %}" class="table-badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      </svg></a></td>
+                  </tr>
+                  {% endfor %}
+                  
+                </tbody>
+              </table>
+        </div>
+        <div class="py-4 bg-white d-flex justify-content-center rounded">
+            <nav aria-label="Навигация">
+                <ul class="pagination mb-0">
+                    {% if telemetries.has_previous %}
+                    <li class="page-item"><a class="page-link" href="?page=1">Первый</a></li>
+                    <li class="page-item"><a class="page-link" href="?page={{telemetries.previous_page_number}}">Предедущий</a></li>
+                    {% endif %}
+                    {% for page in telemetries.paginator.page_range %}
+                    <li class="page-item"><a class="page-link {% if page == telemetries.number %} active {% endif %}" href="?page={{page}}">{{page}}</a></li>
+                    {% endfor %}
+                    {% if telemetries.has_next %}
+                    <li class="page-item"><a class="page-link" href="?page={{telemetries.next_page_number}}">Следующий</a></li>
+                    <li class="page-item"><a class="page-link" href="?page={{ telemetries.paginator.num_pages }}">Последний</a></li>
+                    {% endif %}
+                </ul>
+              </nav>
+        </div>
+    </div>
+  
+</main>
+{% endblock %}
