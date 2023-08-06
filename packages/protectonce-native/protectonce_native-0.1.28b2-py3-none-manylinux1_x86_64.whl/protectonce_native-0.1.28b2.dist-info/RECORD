@@ -1,0 +1,10 @@
+protectonce_native-0.1.28b2.data/purelib/protectonce_native/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protectonce_native-0.1.28b2.data/purelib/protectonce_native/core/core.js,sha256=ITBlQiBWkXpUhd-wzFw22JXTo7xl_j6-siSJutgImr8,385108
+protectonce_native-0.1.28b2.data/purelib/protectonce_native/out/libagent_core.so,sha256=4dFMw8Vyl_ayrNo1haEzA-qPU6p8P3yxEf1n4XnfLOU,18261968
+protectonce_native-0.1.28b2.data/purelib/protectonce_native/runtimes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protectonce_native-0.1.28b2.data/purelib/protectonce_native/runtimes/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protectonce_native-0.1.28b2.data/purelib/protectonce_native/runtimes/python/protect_once_py_interface.py,sha256=x1hizO_SLO2UbTy6v_-SyEjwQxmf_Uozmayut9GOkQU,1306
+protectonce_native-0.1.28b2.dist-info/METADATA,sha256=ALgNWzv6MFEUX3RGx3xf8LQKbhIDfDr_72Kx0A4ao5k,763
+protectonce_native-0.1.28b2.dist-info/WHEEL,sha256=jKx-QI-XAAlUPte4qLSHnZbHUfaUUGO01231GlAV-2o,107
+protectonce_native-0.1.28b2.dist-info/top_level.txt,sha256=JVES2ZnI_uvpWY75QTfrMJQEj0nmXxfShzKufZXYGrM,19
+protectonce_native-0.1.28b2.dist-info/RECORD,,
