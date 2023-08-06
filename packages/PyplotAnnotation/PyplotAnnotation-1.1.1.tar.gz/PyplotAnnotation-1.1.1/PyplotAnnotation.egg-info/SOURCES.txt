@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PyplotAnnotation/PyplotAnnotation.py
+PyplotAnnotation/__init__.py
+PyplotAnnotation.egg-info/PKG-INFO
+PyplotAnnotation.egg-info/SOURCES.txt
+PyplotAnnotation.egg-info/dependency_links.txt
+PyplotAnnotation.egg-info/requires.txt
+PyplotAnnotation.egg-info/top_level.txt
