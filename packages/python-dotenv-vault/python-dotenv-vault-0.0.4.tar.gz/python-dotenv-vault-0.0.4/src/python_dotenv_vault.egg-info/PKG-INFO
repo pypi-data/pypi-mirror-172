@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: python-dotenv-vault
+Version: 0.0.4
+Summary: Syncing your .env to the cloud.
+Home-page: https://github.com/dotenv-org/dotenv-vault-python
+Author: dotenv
+Author-email: mot@dotenv.org
+License: MIT
+Keywords: environment,environment variables,deployments,settings,env,dotenv,configurations,python,dotenv-vault
+Platform: UNKNOWN
+
+UNKNOWN
+
