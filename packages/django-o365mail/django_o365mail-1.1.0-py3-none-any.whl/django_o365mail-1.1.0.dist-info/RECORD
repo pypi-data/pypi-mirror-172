@@ -1,0 +1,14 @@
+django_o365mail/__init__.py,sha256=6DPc0WIT4fNhnVDCjKwpin7GmDONf7OIRc8hxQ-lvCo,90
+django_o365mail/__version__.py,sha256=XIz3qAg9G9YysQi3Ryp0CN3rtc_JiecHZ9L2vEzcM6s,21
+django_o365mail/backend.py,sha256=bJ8u7j9Ahp5RL9QaE8eGjDhLs81erv-SIuiCxhCBxow,5598
+django_o365mail/file_base.py,sha256=EyXJOGQlgxf-gaN2_HA_P21fVsqJMOMDSsc9E0kNoEo,377
+django_o365mail/file_mimebase.py,sha256=BRMQgcY-gssChwdmrxmlkF3y3YL0L_t53E_HWJ2itnQ,1725
+django_o365mail/file_tuple.py,sha256=DtvP64FcqY9SrEZeK8lKG-Sv3NsLkVQXRhQbv3fhfZg,777
+django_o365mail/o365_logger.py,sha256=5bVJ8GroJ3l-xT9vK8gOaWV6QNNdQ0npg8y_7Eo0_JU,569
+django_o365mail/settings.py,sha256=1XsGNO_Stz4EsdjgKi-F1YTrdLR-lP6yylGAFBrVkdk,565
+django_o365mail/util.py,sha256=AUMbVczsdGHJGal4u-s9G9BT73fk1JDbM_MXATDvs5E,1783
+django_o365mail-1.1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+django_o365mail-1.1.0.dist-info/METADATA,sha256=oaR3l92zD10vV6M89vBL-pzZTX-YC6PedBBOD_gdW0s,3372
+django_o365mail-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_o365mail-1.1.0.dist-info/top_level.txt,sha256=U36TjUlodT1L_WTsBxbna2hYdTFzbkk-Iyw1upG_PBY,16
+django_o365mail-1.1.0.dist-info/RECORD,,
