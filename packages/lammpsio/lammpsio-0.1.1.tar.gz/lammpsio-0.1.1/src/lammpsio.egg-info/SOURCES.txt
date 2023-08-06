@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/lammpsio/__init__.py
+src/lammpsio.egg-info/PKG-INFO
+src/lammpsio.egg-info/SOURCES.txt
+src/lammpsio.egg-info/dependency_links.txt
+src/lammpsio.egg-info/requires.txt
+src/lammpsio.egg-info/top_level.txt
