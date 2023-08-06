@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: hackcheck
+Version: 1.1.0
+Summary: Official API wrapper for hackcheck.io
+Home-page: https://github.com/hackcheckio/hackcheck-py/
+Author: balluh
+Author-email: revoked@gmail.com
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Project-URL: Repository, https://github.com/hackcheckio/hackcheck-py/
+Description-Content-Type: text/markdown
+
+# Hackcheck-py
+Official python library for the [hackcheck.io](https://hackcheck.io) API
+
+- [Hackcheck-py](#hackcheck-py)
+  - [Installation](#installation)
+  - [Quick start](#quick-start)
+  - [Methods](#methods)
+
+
+## Installation
+
+Install with pip
+
+```sh
+pip install hackcheck
+```
+
+## Quick start
+
+```py
+from hackcheck import Hackcheck
+
+# Get an api key by purchasing a developer plan https://hackcheck.io/plans
+hc = Hackcheck("MY_API_KEY")
+
+result = hc.lookup_email("your@email.com")
+
+for r in result:
+    print(f"Database: {r.source.name}")
+    print(f"Date: {r.source.date}")
+    print(f"Password: {r.password}")
+    print(f"Username: {r.username}")
+    print(f"IP: {r.ip}")
+    print("------")
+
+# Check your ratelimits
+print(f"Current rate limit: {hc.current_rate_limit}")
+print(f"Allowed rate limit: {hc.allowed_rate_limit}")
+```
+
+## Methods
+
+```py
+hc.lookup_email("your@email.com")
+hc.lookup_username("username")
+hc.lookup_password("password")
+hc.lookup_name("Full Name")
+hc.lookup_ip("8.8.8.8")
+hc.lookup_phone("1234567890")
+hc.lookup_domain("hackcheck.io")
+```
+
