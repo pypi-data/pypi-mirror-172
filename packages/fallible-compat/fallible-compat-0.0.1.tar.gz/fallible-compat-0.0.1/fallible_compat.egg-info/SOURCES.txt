@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+fallible_compat.egg-info/PKG-INFO
+fallible_compat.egg-info/SOURCES.txt
+fallible_compat.egg-info/dependency_links.txt
+fallible_compat.egg-info/entry_points.txt
+fallible_compat.egg-info/requires.txt
+fallible_compat.egg-info/top_level.txt

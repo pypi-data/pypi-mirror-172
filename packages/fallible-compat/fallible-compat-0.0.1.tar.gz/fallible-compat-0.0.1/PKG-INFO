@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: fallible-compat
+Version: 0.0.1
+Summary: ansible compat entrypoints for fallible
+Home-page: https://ansible.com/
+Author: Ansible, Inc.
+Author-email: info@ansible.com
+License: GPLv3+
+Project-URL: Bug Tracker, https://github.com/ansible/ansible/issues
+Project-URL: CI: Azure Pipelines, https://dev.azure.com/ansible/ansible/
+Project-URL: Code of Conduct, https://docs.ansible.com/ansible/latest/community/code_of_conduct.html
+Project-URL: Documentation, https://docs.ansible.com/ansible-core/
+Project-URL: Mailing lists, https://docs.ansible.com/ansible/latest/community/communication.html#mailing-list-information
+Project-URL: Source Code, https://github.com/ansible/ansible
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+
+# fallible-compat
+
+This package is effectively a meta package that provides `ansible*` compatibility entrypoints (CLI commands) for `fallible`.
+
+The goal is to provide an easy compat layer for tooling that expects the ansible CLI utilities to be present for it's functionality, to allow easily testing `fallible` in those environments.
+
+This package can be installed explicitly via:
+
+```shell
+$ pip install fallible-compat
+```
+
+or as an `extras` for the `fallible` package via:
+
+```shell
+$ pip install fallible[compat]
+```
