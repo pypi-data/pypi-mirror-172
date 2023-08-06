@@ -1,0 +1,8 @@
+pyautogui
+keyboard
+opencv-python
+pillow
+click
+pyperclip
+pynput
+easygui
