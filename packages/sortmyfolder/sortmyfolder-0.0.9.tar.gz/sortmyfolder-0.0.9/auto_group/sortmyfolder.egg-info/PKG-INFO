@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sortmyfolder
+Version: 0.0.9
+Summary: Auto sorting tool to allow you organise any file or folder in a directory using the file extensions
+Author: "Emmanuel Agyapong",
+Author-email: "emmanuelagyapong070@gmail.com",
+Keywords: python,automation,sorting
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Documentation for automating file/folder sorting
+
+#### order of executing script
+
+The scipt is excuted by changing directory into auto_group and executing **python determine_location.py**.
+This will ask a number of questions regarding the directory you want file executed into. 
+
+
+This execution will call on the a function within the module **gather_files.py** called  then call on the module **type_of_file.py**.
+The code in type_of_file will return a dictionary of the file ending and list of how to to perhaps sort it in a defualt way. 
+
+
+# installation
+
+
+This script will...

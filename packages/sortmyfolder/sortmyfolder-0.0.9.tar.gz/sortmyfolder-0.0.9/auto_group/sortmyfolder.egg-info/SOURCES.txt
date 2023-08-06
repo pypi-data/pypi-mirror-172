@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+auto_group/sortmyfolder.egg-info/PKG-INFO
+auto_group/sortmyfolder.egg-info/SOURCES.txt
+auto_group/sortmyfolder.egg-info/dependency_links.txt
+auto_group/sortmyfolder.egg-info/entry_points.txt
+auto_group/sortmyfolder.egg-info/top_level.txt
