@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bin/parse-changelog
+parse_changelog/VERSION
+parse_changelog/__init__.py
+parse_changelog.egg-info/PKG-INFO
+parse_changelog.egg-info/SOURCES.txt
+parse_changelog.egg-info/dependency_links.txt
+parse_changelog.egg-info/top_level.txt
