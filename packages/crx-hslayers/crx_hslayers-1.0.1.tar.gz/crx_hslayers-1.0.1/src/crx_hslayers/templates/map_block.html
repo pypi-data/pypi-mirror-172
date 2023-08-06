@@ -1,0 +1,144 @@
+  <link rel="stylesheet" href="/static/hslayers-app/styles.css" media="print" onload="this.media='all'">
+  <style>
+    hslayers-app {
+      display: block;
+      height: 100vh;
+    }
+  </style>
+  <script>   
+    function hslayersNgConfig{{ self.id }}(ol, appId) {
+
+      return {
+        assetsPath: '/static/hslayers-app/assets/',
+        enabledLanguages: "cs",
+        language: 'cs',
+        proxyPrefix: window.location.hostname.includes('localhost') || window.location.hostname.includes('127.0.0.1')
+          ? `${window.location.protocol}//${window.location.hostname}:8085/`
+          : '/proxy/',
+        zoomWithModifierKeyOnly: '{{ self.zoom_with_ctrl }}' == 'True',
+
+        {% if self.composition_url %}
+        defaultComposition: "{{ self.composition_url }}",
+        {% endif %}
+
+        default_layers: [
+        new ol.layer.Tile({
+            source: new ol.source.OSM(),
+            title: 'OpenStreetMap',
+            base: true,
+            visible: true,
+            removable: false,
+          }),
+
+    {% for layer in self.settings.layers reversed %}       
+      {% if layer.value.tiled %}
+        new ol.layer.Tile({
+          source: new ol.source.TileWMS({              
+      {% else %}
+        new ol.layer.Image({
+          source: new ol.source.ImageWMS({
+      {% endif %}            
+      {% for source in layer.value.source %}
+            url: '{{ source.value.url }}',
+            params: {'LAYERS': {% autoescape off %}'{{ source.value.layers }}'{% endautoescape %}}            
+      {% endfor %}
+        }), 
+        title: '{{ layer.value.title }}',
+        base: {{ layer.value.base|lower }},        
+        removable: {{ layer.value.removable|lower }},
+        visible: {{ layer.value.visible|lower }},    
+        {% if layer.value.swipe_side %}
+        swipeSide: '{{ layer.value.swipe_side }}',
+        {% endif %}            
+      }),
+
+      {% comment %} visible předelat na bool ne string {% endcomment %}
+
+    {% endfor %}
+
+    ],
+
+          
+        // domFeatureLinks: [{{ self.dynamic_links }}],
+
+        status_manager_url: '/share',
+
+        {% if self.settings.hsl_tools %}
+        {% autoescape off %}
+        {{ self.settings.hsl_tools }}  
+        {% endautoescape %}    
+        ,
+        {% else %}
+          panelsEnabled: {
+            composition_browser: true,
+            toolbar: false,
+            mobile_settings: false,
+            draw: false,
+            datasource_selector: true,
+            layermanager: true,
+            legend: true,
+            info: true,
+            print: false,
+            routing: false,
+            saveMap: false,
+            language: true,
+            permalink: false,
+            feature_crossfilter: false,
+            feature_table: false,
+            compositionLoadingProgress: true,
+            tracking: false,
+            mapSwipe: true,
+          },
+          componentsEnabled: {
+            guiOverlay: true,
+            sidebar: true,
+            toolbar: false,
+            drawToolbar: false,
+            searchToolbar: false,
+            measureToolbar: false,
+            geolocationButton: true,
+            defaultViewButton: true,
+            mapControls: true,
+            basemapGallery: true,
+            mapSwipe: false
+          },
+          sidebarClosed: true,
+        {% endif %}
+
+        open_lm_after_comp_loaded: false,
+
+        {% if not self.composition_url or self.map_center %}
+        default_view: new ol.View({
+          // projection: 'EPSG:4326',
+          {% if self.map_center %}
+          center: ol.proj.transform([{{ self.map_center }}], 'EPSG:4326', 'EPSG:3857'), //Latitude longitude    to Spherical Mercator
+          //center: ol.roj.transform([17.474129, 52.574], 'EPSG:4326', 'EPSG:3857'), //Latitude longitude    to Spherical Mercator
+          {% else %}
+          center: ol.proj.transform([14, 50], 'EPSG:4326', 'EPSG:3857'), //Latitude longitude    to Spherical Mercator
+          {% endif %}
+
+          {% if self.map_zoom %}
+          zoom: {{ self.map_zoom }},
+          {% else %}
+          zoom: 5,
+          {% endif %}
+        }),
+        {% endif %}
+
+        {% if self.settings.datasources %}
+        datasources: [
+          {% autoescape off %}
+          {{ self.settings.datasources }}
+          {% endautoescape %}
+        ]
+        {% endif %}
+      }
+    }
+
+  </script>
+
+  <hslayers-app id="{{ self.id }}" style="{{ self.settings.map_style }}"></hslayers-app>
+  <script src="/static/hslayers-app/runtime.js" type="module"></script>
+  <script src="/static/hslayers-app/polyfills.js" type="module"></script>
+  <script src="/static/hslayers-app/vendor.js" type="module"></script>
+  <script src="/static/hslayers-app/main.js" type="module"></script>

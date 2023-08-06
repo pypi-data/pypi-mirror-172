@@ -1,0 +1,2 @@
+json5
+coderedcms>=1.0.0
