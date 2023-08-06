@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: tryit
+Version: 0.1.2
+Summary: 
+Author: Mario A. Visca
+Author-email: mvisca89@gmail.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# Tryit
+
+## Description
+
+Just a decorator to handle exceptions. It maps Python Exceptions to specific callbacks.
+
+
+## Usage
+```python
+from tryit import tryit, ExceptionTarget
+
+@tryit(exceptions=[
+  ExceptionTarget(ZeroDivisionError, callback=lambda err: float("nan"))
+])
+def divide(a: int, b: int) -> float:
+  return a/b
+
+
+
+```
