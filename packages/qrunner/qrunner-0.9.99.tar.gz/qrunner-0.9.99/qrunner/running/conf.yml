@@ -1,0 +1,11 @@
+app:
+  device_id: 00008101-000E646A3C29003A
+  pkg_name: com.tencent.xin
+common:
+  base_url: null
+  login_headers: {}
+  platform: ios
+  timeout: 10
+  visit_headers: {}
+web:
+  browser: chrome
