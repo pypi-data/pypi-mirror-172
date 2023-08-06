@@ -1,0 +1,85 @@
+[
+{
+	"uri": "/en/exercises/demo_exercise/",
+	"title": "Demo exercise",
+	"tags": [],
+	"description": "",
+	"content": " But no more! With this, the greatest Zord ever built, we will be able to rebuild the Machine Empire, and have revenge on those who destroyed our illustrious leader, King Mondo!\n Description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n Exercise Goals  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.   Useful commands  sudo nmap -sP 192.168.18.* sudo tshark -i wlp61s0   User Credentials Use the following credentials to log into the kibana dashboard:\nusername: password: username: password:  Exercise Control First demo exercise  Script executed       Exercise completed          execute / check status       "
+},
+{
+	"uri": "/en/documentation/",
+	"title": "Documentation",
+	"tags": [],
+	"description": "",
+	"content": "Documentation Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed disam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.\nUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\n"
+},
+{
+	"uri": "/en/exercises/form/",
+	"title": "Form Demo",
+	"tags": [],
+	"description": "",
+	"content": " But no more! With this, the greatest Zord ever built, we will be able to rebuild the Machine Empire, and have revenge on those who destroyed our illustrious leader, King Mondo!\n "
+},
+{
+	"uri": "/en/documentation/network/",
+	"title": "Network",
+	"tags": [],
+	"description": "",
+	"content": "For example, the CyberRange network is explained here. The network topology is presented, the machines and/or various settings are listed.\nImages Images can be added via e.g. ![network_topology](net_topology.png)\nImages can only be inserted when they are stored on the same level as the markdown file.\n "
+},
+{
+	"uri": "/en/exercises/pinpad/",
+	"title": "Pinpad Demo",
+	"tags": [],
+	"description": "",
+	"content": " But no more! With this, the greatest Zord ever built, we will be able to rebuild the Machine Empire, and have revenge on those who destroyed our illustrious leader, King Mondo!\n  Exercise Control PPS Authentication   drag image here          Script executed       Exercise completed             "
+},
+{
+	"uri": "/en/documentation/tools/",
+	"title": "Tools",
+	"tags": [],
+	"description": "",
+	"content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto\n"
+},
+{
+	"uri": "/en/exercises/fail/",
+	"title": "Failing script",
+	"tags": [],
+	"description": "",
+	"content": "A demonstration of a failing script.\n Exercise Control Failing execution  Script executed       Exercise completed          execute / check status       "
+},
+{
+	"uri": "/en/exercises/ping/",
+	"title": "Succeeding Script",
+	"tags": [],
+	"description": "",
+	"content": "A demonstration of a succeeding script.\n Exercise Control Succeeding execution  Script executed       Exercise completed          execute / check status       "
+},
+{
+	"uri": "/en/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/en/exercises/",
+	"title": "Demo-Exercises",
+	"tags": [],
+	"description": "",
+	"content": "This is the headline of Demo-Exercises This is the introduction/welcome text \u0026hellip;\n"
+},
+{
+	"uri": "/en/",
+	"title": "Documentation for CyberRange",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/en/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
