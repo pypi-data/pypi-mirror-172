@@ -1,0 +1,22 @@
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry]
+name = "pfs-api"
+version = "0.1.0"
+description = "protos generated python api for pfs"
+authors = ["linyiming <linyiming@ainnovation.com>"]
+readme = "README.md"
+keywords = ["photon", "feature store", "API", "feature derive", "machine learning"]
+packages = [{include = "pfs"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+googleapis-common-protos = "^1.56.4"
+protobuf = "^3.20.3"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+pattern = "^pfs-api/(?P<base>[vV]?\\d+(?:\\.\\d+){0,2}[^\\+]*)$"
