@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: karadoc
+Version: 0.0.3
+Summary: Karadoc is a data engineering Python framework built on top of PySpark that simplifies ETL/ELT
+Home-page: https://github.com/FurcyPin/karadoc
+License: Apache-2.0
+Keywords: PySpark,Data,ETL,ELT
+Author: Furcy Pin
+Requires-Python: >=3.6.2,<3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: azure-keyvault (>=1.1.0,<2.0.0)
+Requires-Dist: dynaconf (>=2.2.3,<3.0.0)
+Requires-Dist: google-cloud-bigquery (>=2.31.0,<3.0.0)
+Requires-Dist: graphviz (>=0.12,<0.13)
+Requires-Dist: networkx (>=2.2,<3.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Requires-Dist: termcolor (>=1.1.0,<2.0.0)
+Requires-Dist: xlsxwriter (>=3.0.1,<4.0.0)
+Project-URL: Repository, https://github.com/FurcyPin/karadoc
+Description-Content-Type: text/markdown
+
+# Karadoc
+
