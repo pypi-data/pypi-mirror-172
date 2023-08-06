@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ros2bridge"
+version = "0.0.6"
+description = "A bridge between websocket and DDS of ROS 2"
+readme = "README.md"
+authors = [{ name = "Bonny Babu", email = "bonnybabukachappilly@gmail.com" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: Unix"
+]
+keywords = ["ROS2", "Foxy", "websocket"]
+dependencies = [
+    "tornado >= 5",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+source = "https://github.com/bonnybabukachappilly/ros2bridge/tree/master/src/ros2bridge"
+
+
+[project.optional-dependencies]
+dev = ["flake8", "tox", "pytest", "pytest-cov", "mypy", "websocket-client", "check-manifest"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=slapping"
+testpaths = [
+    "tests",
+]
+
+[tool.mypy]
+mypy_path = "src"
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true

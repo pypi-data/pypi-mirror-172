@@ -1,0 +1,10 @@
+tornado>=5
+
+[dev]
+flake8
+tox
+pytest
+pytest-cov
+mypy
+websocket-client
+check-manifest
