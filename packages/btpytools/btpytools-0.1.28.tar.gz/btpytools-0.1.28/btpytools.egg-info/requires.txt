@@ -1,0 +1,6 @@
+brainreg
+pyyaml
+
+[dev]
+black
+pytest
