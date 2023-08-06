@@ -1,0 +1,9 @@
+ezflake/__init__.py,sha256=c6Hqhwb5OgH6IKBlmpkxLX6hWgQYVwn2axXz4HF3D_w,76
+ezflake/plugin.py,sha256=9kSRpbGwUzLUZNNezrPzdqY13Q_CvfsmaFyps3q2oqY,1236
+ezflake/testing.py,sha256=ZuX4r_JbBDfV6lbsZXuS65f4YtTt1ECGMoVkFO2vcrI,758
+ezflake/violation.py,sha256=OCUqEIlzV3kMlF_hldYrsS0b1aEtU-nioVlooGAhga0,863
+ezflake-1.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ezflake-1.0.4.dist-info/METADATA,sha256=Fj5hYwWm8UmTWvoV9hXQTwWyLYhS_0qilB3qRMMzNcA,600
+ezflake-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ezflake-1.0.4.dist-info/top_level.txt,sha256=3jGiBeJRy4EXZUAot_zcoWjiW-8ziYI1RwUa6Zf6CTg,8
+ezflake-1.0.4.dist-info/RECORD,,
