@@ -1,0 +1,11 @@
+megadata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+megadata/__main__.py,sha256=H0qLjXkvlb3eGBEI3_17JoXHmapHIOPh8LBCU09hsFI,1643
+megadata/clt_ipc.py,sha256=W0DPxHfISppeXMkNWvxYZph_M2SL_UxtxnebBGPxIy8,1363
+megadata/myeval.py,sha256=qF-EX6Wsig4UojydUTl0y1NSYkBwih_TY6wCVLFfkSY,4018
+megadata/mypy.py,sha256=3bbZW6lwMsImqd6d0-cB8FX5VQjDLvXGIWzeavaTUkk,11588
+megadata/mypyx.py,sha256=JRXOJ4-wrHAnlqhYBVNfiBe4gt0o2U7McXkh1suiG40,5344
+megadata-0.0.10.dist-info/LICENSE,sha256=zLN4Bk6Na3lhP0zqK4GFAsepzstkX1Dg2fNG4GyWXyc,1088
+megadata-0.0.10.dist-info/METADATA,sha256=5cKyUIu6hfXy9LGKv_GtYN20Jp4TTp8486V0kwUZSWc,675
+megadata-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+megadata-0.0.10.dist-info/top_level.txt,sha256=Cy5fbfTW7Rwr-BwQb8QBiMvBFLw36GiWLy22DFGX3iY,9
+megadata-0.0.10.dist-info/RECORD,,
