@@ -1,0 +1,22 @@
+[
+    {
+        "en": [
+            "Hello",
+            "Hi"
+        ],
+        "fi": [
+            "Terve",
+            "Hei",
+            "Moi"
+        ],
+        "nl": [
+            "Hoi",
+            "Hallo"
+        ]
+    },
+    {
+        "en": "Welcome",
+        "fi": "Tervetuloa",
+        "nl": "Welkom"
+    }
+]

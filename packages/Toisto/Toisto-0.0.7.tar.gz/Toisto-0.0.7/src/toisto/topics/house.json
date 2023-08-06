@@ -1,0 +1,115 @@
+[
+    {
+        "singular": {
+            "en": "Apartment",
+            "fi": "Asunto",
+            "nl": "Het appartement"
+        },
+        "plural": {
+            "en": "Apartments",
+            "fi": "Asunnot",
+            "nl": "De appartementen"
+        }
+    },
+    {
+        "singular": {
+            "en": "Room",
+            "fi": "Huone",
+            "nl": "De kamer"
+        },
+        "plural": {
+            "en": "Rooms",
+            "fi": "Huoneet",
+            "nl": "De kamers"
+        }
+    },
+    {
+        "singular": {
+            "en": "Basement",
+            "fi": "Kellari",
+            "nl": "De kelder"
+        },
+        "plural": {
+            "en": "Basements",
+            "fi": "Kellarit",
+            "nl": "De kelders"
+        }
+    },
+    {
+        "en": "Home",
+        "fi": "Koti",
+        "nl": "Het thuis"
+    },
+    {
+        "singular": {
+            "en": "Garden",
+            "fi": "Piha",
+            "nl": "De tuin"
+        },
+        "plural": {
+            "en": "Gardens",
+            "fi": "Pihat",
+            "nl": "De tuinen"
+        }
+    },
+    {
+        "singular": {
+            "en": "House",
+            "fi": "Talo",
+            "nl": "Het huis"
+        },
+        "plural": {
+            "en": "Houses",
+            "fi": "Talot",
+            "nl": "De huizen"
+        }
+    },
+    {
+        "singular": {
+            "en": "Veranda",
+            "fi": "Veranta",
+            "nl": "De veranda"
+        },
+        "plural": {
+            "en": "Verandas",
+            "fi": "Verannat",
+            "nl": "De veranda's"
+        }
+    },
+    {
+        "singular": {
+            "en": "Barbecue",
+            "fi": "Grilli",
+            "nl": "De barbecue"
+        },
+        "plural": {
+            "en": "Barbecues",
+            "fi": "Grillit",
+            "nl": "De barbecues"
+        }
+    },
+    {
+        "singular": {
+            "en": "Wall",
+            "fi": "Seinä",
+            "nl": "De muur"
+        },
+        "plural": {
+            "en": "Walls",
+            "fi": "Seinät",
+            "nl": "De muren"
+        }
+    },
+    {
+        "singular": {
+            "en": "Floor",
+            "fi": "Lattia",
+            "nl": "De vloer"
+        },
+        "plural": {
+            "en": "Floors",
+            "fi": "Lattiat",
+            "nl": "De vloeren"
+        }
+    }
+]
