@@ -1,0 +1,5 @@
+[console_scripts]
+biocatalyzer_cli = biocatalyzer.clis.cli:biocatalyzer_cli
+bioreactor_cli = biocatalyzer.clis.cli_bioreactor:bioreactor_cli
+matcher_cli = biocatalyzer.clis.cli_matcher:matcher_cli
+
