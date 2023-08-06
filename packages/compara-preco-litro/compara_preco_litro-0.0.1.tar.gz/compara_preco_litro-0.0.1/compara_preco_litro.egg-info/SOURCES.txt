@@ -1,0 +1,9 @@
+README.md
+setup.py
+compara_preco_litro/__init__.py
+compara_preco_litro/funcoes_comparacao.py
+compara_preco_litro/transformartxt.py
+compara_preco_litro.egg-info/PKG-INFO
+compara_preco_litro.egg-info/SOURCES.txt
+compara_preco_litro.egg-info/dependency_links.txt
+compara_preco_litro.egg-info/top_level.txt

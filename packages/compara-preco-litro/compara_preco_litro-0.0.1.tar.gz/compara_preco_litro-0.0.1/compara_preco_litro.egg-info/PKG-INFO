@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: compara-preco-litro
+Version: 0.0.1
+Summary: Compara preço por litro a partir de um arquivo .txt
+Author: pedro_oliveira
+Author-email: pedro.oliveirape@hotmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# compara_preco_litro
+
+Description. 
+The package compara_preco_litro is used to:
+	- 
+	-
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install compara_preco_litro
+
+```bash
+pip install compara_preco_litro
+```
+
+## Author
+Pedro_Oliveira
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
