@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: toolkit4life
+Version: 0.1.21
+Summary: Faster deployment is what we want!
+Home-page: https://github.com/keivanipchihagh/toolkit4life
+Author: Keivan Ipchi Hagh
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: async-timeout (==4.0.2)
+Requires-Dist: certifi (==2022.9.24)
+Requires-Dist: charset-normalizer (==2.1.1)
+Requires-Dist: Deprecated (==1.2.13)
+Requires-Dist: greenlet (==1.1.3)
+Requires-Dist: idna (==3.4)
+Requires-Dist: numpy (==1.23.3)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pandas (==1.5.0)
+Requires-Dist: psycopg2-binary (==2.9.3)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.4)
+Requires-Dist: redis (==4.3.4)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: SQLAlchemy (==1.4.41)
+Requires-Dist: SQLAlchemy-Utils (==0.38.3)
+Requires-Dist: trino (==0.316.0)
+Requires-Dist: urllib3 (==1.26.12)
+Requires-Dist: wrapt (==1.14.1)
+Requires-Dist: PyYAML (==6.0)
+
+# toolkit4life
+A PyPI package to help speed-up development and make life easier.
+
+## Features
+- **logger**: Different decorators to use on your fuctions
+- **threads**: *Thread* and *ThreadPool* with return values
+- **requests**: Send requests with Backoff-Strategy
+- **clients**:
+  - **redis**: Redis-Client
+  - **trino**: trino-Client
+  - **postgre**: PostgreSQL-Client
