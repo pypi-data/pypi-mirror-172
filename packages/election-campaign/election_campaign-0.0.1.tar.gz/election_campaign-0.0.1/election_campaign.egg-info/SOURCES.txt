@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+election_campaign/__init__.py
+election_campaign/citizen_sentiment.py
+election_campaign/complaints_areas.py
+election_campaign/general_trends.py
+election_campaign/politicians_reputation.py
+election_campaign.egg-info/PKG-INFO
+election_campaign.egg-info/SOURCES.txt
+election_campaign.egg-info/dependency_links.txt
+election_campaign.egg-info/top_level.txt
