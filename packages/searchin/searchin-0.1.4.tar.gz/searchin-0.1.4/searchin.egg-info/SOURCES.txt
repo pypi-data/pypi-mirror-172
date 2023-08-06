@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+searchin/__init__.py
+searchin/search_object.py
+searchin.egg-info/PKG-INFO
+searchin.egg-info/SOURCES.txt
+searchin.egg-info/dependency_links.txt
+searchin.egg-info/top_level.txt
