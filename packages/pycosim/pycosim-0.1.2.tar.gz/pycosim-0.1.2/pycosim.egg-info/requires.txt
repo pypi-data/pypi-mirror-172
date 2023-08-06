@@ -1,0 +1,9 @@
+pyyaml
+pyOSPParser
+pandas
+numpy
+xmlschema
+attrs
+lxml
+
+[dev]
