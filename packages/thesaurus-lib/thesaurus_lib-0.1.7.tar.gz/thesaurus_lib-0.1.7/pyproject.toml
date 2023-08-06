@@ -1,0 +1,18 @@
+[build-system]
+requires =[
+    'setuptools >= 40.6.0',
+    'gensim',
+    'numpy',
+    'tqdm',
+    'spacy>=3.0.5',
+    'bokeh',
+    'minisom',
+    'transformers',
+    'sentence-transformers',
+    'importlib_resources',
+    "wheel",
+    'pymorphy2',
+    'configparser',
+    'wget',
+]
+build-backend = "setuptools.build_meta"
