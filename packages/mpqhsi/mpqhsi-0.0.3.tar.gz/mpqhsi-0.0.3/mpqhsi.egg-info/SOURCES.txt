@@ -1,0 +1,7 @@
+setup.py
+mpqhsi/My_HSI.cp39-win_amd64.py
+mpqhsi/__init__.py
+mpqhsi.egg-info/PKG-INFO
+mpqhsi.egg-info/SOURCES.txt
+mpqhsi.egg-info/dependency_links.txt
+mpqhsi.egg-info/top_level.txt
