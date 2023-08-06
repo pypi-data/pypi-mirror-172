@@ -1,0 +1,11 @@
+bandsos/__init__.py,sha256=jxAui83hsfYZ2I75hrVobVtGe9WnoRbdeZhCA8Pf2CQ,96
+bandsos/color.py,sha256=LTOCtHUxwY8JXyDfQxo3uqmKzADjEMLUdBZK_K3jlAo,2978
+bandsos/gfs.py,sha256=y9CGV_mPCh6btrJnffo_LF-AmR0EYE8Ki0kSC55lWEw,8336
+bandsos/post.py,sha256=wNBNZPxP7Fs3rGAQH2kn7feoKwPEbv_qlUdtcVRV0gc,3839
+bandsos/schism.py,sha256=o7UyxHnTKPE7EwZ-InALSOzEXYnk4y6jRz2BeajI-O4,52333
+bandsos/webdata.py,sha256=llozz9-cZEppoLNc1vEF14yUuWXep2_UwEGItfCQP_A,6944
+bandsos/webdir.py,sha256=5OhS3DWcpp3icLdu6ka8-aqckbRcspsRLbDPi-cL8Po,4856
+bandsos-0.3.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+bandsos-0.3.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+bandsos-0.3.dist-info/METADATA,sha256=6anwAW9vQuEHFwwxlQqPmY8C88CqAbXva5vKhvJXHfU,1673
+bandsos-0.3.dist-info/RECORD,,
