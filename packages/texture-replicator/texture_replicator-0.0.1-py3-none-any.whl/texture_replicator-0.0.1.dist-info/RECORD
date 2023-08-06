@@ -1,0 +1,8 @@
+texture_replicator/__init__.py,sha256=WQ7U1Z0N-u3nhFvEKg86utTBNiYhy6ADQqd3cMEZUHM,53
+texture_replicator/replicator.py,sha256=vb9FFoo5wy-wSf_rIQtw6qkwiRKLC2EYzjP6iQNgF3E,1540
+texture_replicator/texture_replicator.py,sha256=vb9FFoo5wy-wSf_rIQtw6qkwiRKLC2EYzjP6iQNgF3E,1540
+texture_replicator-0.0.1.dist-info/LICENSE,sha256=ZpA-D2VBFcY70Qxl7H5Zwq9mjxVNrJ3Hxh4ajrxj5uQ,1086
+texture_replicator-0.0.1.dist-info/METADATA,sha256=W4zQ1BnMuqnUCJg58rJfrihllgWcqJVCXihX9ZsVsiA,1487
+texture_replicator-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+texture_replicator-0.0.1.dist-info/top_level.txt,sha256=RGKVatAXQtUwO7ujSkVBYZ8cv7Yys36bhcoeOUMjvwM,19
+texture_replicator-0.0.1.dist-info/RECORD,,
