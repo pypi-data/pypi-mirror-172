@@ -1,0 +1,6 @@
+cli_template/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_template/main.py,sha256=kYP515Dz1FvTbJSjwVKIKAosPGtKq6WQvdAoy3zv7RQ,258
+tristan_cli-0.1.1.dist-info/entry_points.txt,sha256=i3Ay3Q5PtopKGguPZyGhj3ohz-V-ACTWL0fwLAEHSbg,53
+tristan_cli-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+tristan_cli-0.1.1.dist-info/METADATA,sha256=dgA9M9Ny1Sh6ms5qFQTy5k-7rmlo6OvwzqZ5SHfZcx0,518
+tristan_cli-0.1.1.dist-info/RECORD,,

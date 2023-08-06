@@ -1,0 +1,3 @@
+[console_scripts]
+tristan-cli=cli_template.main:app
+
