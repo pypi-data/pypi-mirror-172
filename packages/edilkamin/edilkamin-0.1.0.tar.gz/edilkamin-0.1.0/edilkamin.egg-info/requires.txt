@@ -1,0 +1,13 @@
+pycognito
+requests
+
+[dev]
+black
+coveralls
+flake8
+isort
+pytest
+pytest-cov
+tox
+twine
+wheel

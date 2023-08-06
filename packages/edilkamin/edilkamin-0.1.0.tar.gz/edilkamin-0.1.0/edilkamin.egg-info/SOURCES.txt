@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+edilkamin/__init__.py
+edilkamin/constants.py
+edilkamin.egg-info/PKG-INFO
+edilkamin.egg-info/SOURCES.txt
+edilkamin.egg-info/dependency_links.txt
+edilkamin.egg-info/requires.txt
+edilkamin.egg-info/top_level.txt
