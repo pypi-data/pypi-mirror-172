@@ -1,0 +1,7 @@
+appdirs
+httpcore
+httpx
+idna
+multiaddr
+requests
+varint
