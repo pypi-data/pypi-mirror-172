@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: strgbx-fixity
+Version: 2022.10.20.6
+Author: Yazhou He
+Author-email: yhe@irishfilm.ie
+Requires-Python: >=3.8
+
+Scripts for use in the IFI Irish Film Archive. It is used for ingest strongbox csv report autmatically
