@@ -1,0 +1,12 @@
+lip_pps_run_manager/__init__.py,sha256=BUJxvyv89gVP1noXP98loi_iRgby45-Xv_q-XE-XhSc,205
+lip_pps_run_manager/__main__.py,sha256=jwNnnFW4PcgnnPkx0vIgKyUyeTDTtLVyw0j0LvJhBLg,385
+lip_pps_run_manager/cli.py,sha256=WPfzJ5J7haKCFkvcuOI6MPoL12xUizxVmdOAavJkLRg,950
+lip_pps_run_manager/run_manager.py,sha256=1kKrwwrexGqhTMR3h94yIXHMkY86MKa8b8gt2_-YP64,47705
+lip_pps_run_manager/telegram_reporter.py,sha256=pHyqbitCCIi7l9-1LHe4hATyOIWC9a5uXDID7j0BkLs,8202
+lip_pps_run_manager-0.2.0.dist-info/AUTHORS.rst,sha256=EbOVmJJLVZ-Y67XOW0iIKqtDghR60_AriezLBUFCQZI,78
+lip_pps_run_manager-0.2.0.dist-info/LICENSE,sha256=JGIeViDLl7YdxZd57dWsx2-MHSVTSeAmoVVAF_sW84U,1118
+lip_pps_run_manager-0.2.0.dist-info/METADATA,sha256=xPa6uvYQvYSBB1AgkAXnlCTx0hSLP7qDSUpEM_PE_yA,2881
+lip_pps_run_manager-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lip_pps_run_manager-0.2.0.dist-info/entry_points.txt,sha256=YPLih8Tj1_LmS0uAKOrTnN9Wvohly82o5GZwPepZ4UU,69
+lip_pps_run_manager-0.2.0.dist-info/top_level.txt,sha256=OtJGzplhIBiL2CYL9p1Wy7NGMKk95XWX1tNZNfoyjaA,20
+lip_pps_run_manager-0.2.0.dist-info/RECORD,,
