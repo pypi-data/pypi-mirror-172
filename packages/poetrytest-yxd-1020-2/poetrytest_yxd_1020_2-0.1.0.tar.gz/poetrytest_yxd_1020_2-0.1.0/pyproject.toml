@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poetrytest-yxd-1020-2"
+version = "0.1.0"
+description = ""
+authors = ["Xiaodong Yang <xiaoyan@microsoft.com>"]
+readme = "README.md"
+packages = [{include = "poetrytest_yxd_1020_2"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^1.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
