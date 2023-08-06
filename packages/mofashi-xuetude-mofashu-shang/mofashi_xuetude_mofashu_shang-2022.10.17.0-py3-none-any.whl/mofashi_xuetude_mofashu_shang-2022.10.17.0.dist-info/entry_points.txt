@@ -1,0 +1,4 @@
+[console_scripts]
+MofashiXuetudeMofashuShang = MofashiXuetudeMofashuShang.__main__:main
+mofashi-xuetude-mofashu-shang = MofashiXuetudeMofashuShang.__main__:main
+
