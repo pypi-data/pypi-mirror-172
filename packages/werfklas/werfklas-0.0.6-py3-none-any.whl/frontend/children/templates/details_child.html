@@ -1,0 +1,91 @@
+<main class="bd-main order-1">
+
+{% extends '_nav.html' %}
+
+{% block content %}
+	  <div class="container">
+		  	  <div class="row pb-5">
+
+    <div class="col-md-10 col-lg-20 mx-lg-auto mx-md-auto" style="left: -60px;bottom: -65px;">
+		<button type="button" class="btn btn-outline-secondary" onclick="history.back()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+			  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+			</svg>
+		<span class="visually-hidden">Button</span>
+		</button>
+	</div>
+    <div class="shadow col-md-10 col-lg-8 mx-lg-auto mx-md-auto border border-2 bg-light">
+		{% include '_nav_top.html' %}
+		        <ul style="padding-top: 10px;">
+			<br>
+        </ul>
+
+		<table class="table">
+			<tr>
+				<th>Voornaam</th>
+				<th>Achternaam</th>
+				<th>Datum van Inschrijving</th>
+				<th>Geboortedatum</th>
+				<th>Leeftijd</th>
+			</tr>
+
+			<!-- here is a for-loop to give us all the socks -->
+			{% for kind in Child %}
+			<tr>
+				<td>{{ kind.firstname }}</td>
+				<td>{{ kind.lastname }}</td>
+				<td>{{ kind.date_of_registration }}</td>
+				<td>{{ kind.date_of_birth }}</td>
+				<td>{{ ChildAge }}</td>
+			</tr>
+			<tr>
+				<p class="border-top" style="padding-top: 10px;">Ouders: &ensp; <a href="{{ url_for( 'families_bp.details_family', uuid=Parents.uuid) }}"> {{ Parents.parent1.firstname }}{% if Parents.parent2 %}
+						&nbsp;&&nbsp;{{ Parents.parent2.firstname }}
+					{%endif%}
+					&nbsp;{{ Parents.parent1.lastname }}</a></p>
+			</tr>
+			{% endfor %}
+		</table>
+
+		{% if Child[0].class_name %}
+		<a href="{{ url_for( 'classroom_bp.details_classroom', uuid=Child[0].class_name[4]) }}">{{ Child[0].class_name[0] }}</a>
+				-
+		<a href="{{ url_for( 'teachers_bp.details_teacher', uuid=Child[0].class_teacher[2]) }}">{{ Child[0].class_teacher[0] }} {{ Child[0].class_teacher[1] }}</a>
+		{% endif %}
+
+<!--		Delete Box-->
+		<div class="modal fade" id="exampleModalCenter{{Child[0].uuid}}">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle{{Child[0].id}}">Kind permanent verwijderen?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p><b><i>{{ Child[0].firstname }} {{ Child[0].lastname }}</i></b> permanent verwijderen?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuleren</button>
+                  <form action="{{url_for('children_bp.remove_child', uuid=Child[0].uuid)}}">
+					  <input type="submit" value="Verwijderen" class="btn btn-danger">
+                  </form>
+                </div>
+              </div>
+            </div>
+			</div>
+		</div>
+<!--	End	Delete Box-->
+
+	</div>
+</div>
+
+<script type="module">
+	ShowEditOption("Child", "{{ url_for('children_bp.edit_child', uuid=Child[0].uuid ) }}")
+	ShowDeleteOption("Child", "{{ Child[0].uuid }}")
+	Collapse("Children")
+</script>
+
+{% endblock %}
+</main>

@@ -1,0 +1,49 @@
+<main class="bd-main order-1">
+{% extends '_nav.html' %}
+
+{% block content %}
+		<div class="container">
+			<div class="col-md-10 col-lg-20 mx-lg-auto mx-md-auto" style="left: -60px;bottom: -65px;">
+			<p></p>
+		</div>
+	  <div class="row pb-5">
+		<div class="rounded shadow col-md-10 col-lg-8 mx-lg-auto mx-md-auto border border-2 bg-light">
+					{% include '_nav_top.html' %}
+
+<!--			Content van de site-->
+		<ul style="padding-top: 10px;">
+
+			<p>{% if children|length == 0 %}
+					Er staan geen kinderen op de wachtlijst.
+				{% else %}
+					Hieronder staan <b><i>{{children|length}}</i></b> kind{% if children|length > 1 %}eren{%endif%} te wachten.
+				{% endif %}
+			</p>
+			</ul>
+
+			<table style="border-spacing: 10px; width: 100%" class="table table-striped">
+				<thead><tr>
+				  <th>Naam Kind</th>
+				  <th>Start in jaar</th>
+				  <th>Datum van registratie</th>
+				</tr></thead>
+				<tbody class="scroll_table_body">
+				{% for k in children %}
+				<tr>
+					<td><a href="{{ url_for( 'children_bp.details_child', uuid=k.uuid) }}">{{ k.firstname }} {{ k.lastname }}</a></td>
+					<td align="left">{{ k._starts_in }}</td>
+					<td align="left">{{ k.date_of_registration }}</td>
+				</tr>
+				{% endfor %}
+				</tbody>
+			</table>
+<!--		End Content van de site-->
+		</div>
+	  </div>
+	<script type="module">
+        ShowNewOption("Kind toevoegen", "{{ url_for('children_bp.add_child') }}")
+        ShowNewFamOption("Gezin toevoegen", "{{ url_for('families_bp.add_family') }}")
+    </script>
+	</div>
+{% endblock %}
+</main>

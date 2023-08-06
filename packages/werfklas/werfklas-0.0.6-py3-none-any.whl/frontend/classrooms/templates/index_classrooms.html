@@ -1,0 +1,53 @@
+<main class="bd-main order-1">
+
+{% extends '_nav.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row pb-5">
+      		  		    <div class="col-md-10 col-lg-20 mx-lg-auto mx-md-auto" style="left: -60px;bottom: -65px;">
+		<button type="button" class="btn btn-outline-secondary" onclick="history.back()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+			  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+			</svg>
+		<span class="visually-hidden">Button</span>
+		</button>
+	</div>
+    <div class="shadow col-md-10 col-lg-8 mx-lg-auto mx-md-auto border border-2 bg-light">
+        		{% include '_nav_top.html' %}
+                <ul style="padding-top: 10px;">
+            Overzichten van alle klassen.
+        </ul>
+<!--      <p class="lead alert alert-primary">Klassen overzicht</p>-->
+<!--      <p class="lead">Het overzicht van de kinderen</p>-->
+<!--      <p>Kies een kind:</p>-->
+      {% if Classes[0] %}
+          <table style="border-spacing: 10px; width: 100%" class="table table-striped">
+              <thead><tr>
+                  <th>Klasnaam</th>
+                  <th>Docent</th>
+              </tr></thead>
+              <tbody class="scroll_table_body">
+              {% for c in Classes %}
+              <tr>
+                  <td><a href="{{ url_for('classroom_bp.details_classroom', uuid=c.uuid ) }}">{{ c.class_name }}</a></td>
+                  <td><a href="{{ url_for('teachers_bp.details_teacher', uuid=c.teacher[2] ) }}">{{ c.teacher[0] }} {{ c.teacher[1] }}</a></td>
+              </tr>
+              {% endfor %}
+              </tbody>
+          </table>
+        {% else %}
+            <p>Geen klassen gevonden</p>
+        {% endif %}
+
+    </div>
+  </div>
+    <script type="module">
+        ShowNewOption("Klas toevoegen", "{{ url_for('classroom_bp.add_classroom') }}")
+        Collapse("School")
+        Collapse("Classes")
+    </script>
+</div>
+{% endblock %}
+</main>
+<script></script>
