@@ -1,0 +1,6 @@
+matplotlib
+numpy
+pyvista==0.32.1
+scipy
+shapely==1.7.1
+numba
