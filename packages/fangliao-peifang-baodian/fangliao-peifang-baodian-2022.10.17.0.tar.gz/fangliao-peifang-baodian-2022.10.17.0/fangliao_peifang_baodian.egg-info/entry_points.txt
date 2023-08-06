@@ -1,0 +1,4 @@
+[console_scripts]
+FangliaoPeifangBaodian = FangliaoPeifangBaodian.__main__:main
+fangliao-peifang-baodian = FangliaoPeifangBaodian.__main__:main
+
