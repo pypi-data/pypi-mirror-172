@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "mcmng"
+version = "0.2.0"
+description = "Command line based minecraft server manager for individual admins."
+authors = ["Technomunk <thegriffones@gmail.com>"]
+license = "MIT"
+readme = "readme.md"
+homepage = "https://github.com/technomunk/mcmng"
+repository = "https://github.com/technomunk/mcmng"
+keywords = ["minecraft", "manager", "backup"]
+classifiers = [
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mcstatus = "^9.4.2"
+click = "^8.1.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+flake8 = "^5.0.4"
+mypy = "^0.982"
+pylint = "^2.15.4"
+pyproject-flake8 = "^5.0.4.post1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target_version = ["py310"]
+
+[tool.flake8]
+max-line-length = 100
+
+[tool.isort]
+profile = "black"
+line_length = 100
