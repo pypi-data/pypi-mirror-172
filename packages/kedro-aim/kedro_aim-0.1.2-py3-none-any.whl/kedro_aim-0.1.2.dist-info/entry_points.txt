@@ -1,0 +1,6 @@
+[kedro.hooks]
+aim_hook=kedro_aim.framework.hooks.aim_hook:aim_hook
+
+[kedro.project_commands]
+kedro_aim=kedro_aim.framework.cli.cli:commands
+
