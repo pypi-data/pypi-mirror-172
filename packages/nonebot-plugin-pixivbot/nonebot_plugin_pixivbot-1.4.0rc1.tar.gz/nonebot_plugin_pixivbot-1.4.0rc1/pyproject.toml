@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "nonebot-plugin-pixivbot"
+version = "1.4.0rc1"
+description = "Nonebot Plugin PixivBot"
+authors = ["ssttkkl <huang.wen.long@hotmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/ssttkkl/nonebot-plugin-pixivbot"
+packages = [
+    { include = "nonebot_plugin_pixivbot", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = "^2.0.0rc1"
+nonebot_plugin_apscheduler = "^0.2.0"
+PixivPy-Async = "^1.2.14"
+Pillow = "^9.2.0"
+motor = "^3.0.0"
+numpy = "^1.23.1"
+lazy = "^1.4"
+aiohttp-socks = "^0.7.1"
+frozendict = "^2.3.4"
+tzlocal = "^4.2"
+nonebot-plugin-pixivbot-onebot-v11 = { version = "^1.3.1", optional = true }
+nonebot-plugin-pixivbot-kook = { version = "^1.3.0.post2", optional = true }
+beanie = "^1.12.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^5.0.4"
+twine = "^4.0.1"
+nonebug = "^0.2.1"
+pytest-mock = "^3.10.0"
+pytest-cov = "^4.0.0"
+
+[tool.poetry.extras]
+onebot = ["nonebot-plugin-pixivbot-onebot-v11"]
+kook = ["nonebot-plugin-pixivbot-kook"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
