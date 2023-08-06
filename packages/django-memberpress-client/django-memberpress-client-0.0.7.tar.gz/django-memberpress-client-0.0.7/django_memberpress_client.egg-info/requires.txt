@@ -1,0 +1,13 @@
+Django<2.3,>=2.2
+
+[Django]
+Django<2.3,>=2.2
+
+[common]
+Django<2.3,>=2.2
+
+[local]
+pre-commit
+black
+flake8
+ipython
