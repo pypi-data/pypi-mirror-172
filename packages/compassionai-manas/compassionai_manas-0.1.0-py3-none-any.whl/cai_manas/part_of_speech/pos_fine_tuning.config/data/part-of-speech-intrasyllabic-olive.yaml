@@ -1,0 +1,9 @@
+defaults:
+ - default
+
+# See default config for documentation
+train_dataset_name: processed_datasets/part-of-speech-intersyllabic-olive/train.pkl
+test_dataset_name: processed_datasets/part-of-speech-intersyllabic-olive/test.pkl
+use_mask_for_word_pieces: True
+tsheg_pretokenization: True
+concatenate_examples: True
