@@ -1,0 +1,12 @@
+pineappl-0.5.8.dist-info/METADATA,sha256=Rx8S84jv6uSW6NngI73Bqel_Mk2blfd5H8PxTAEzhHw,2371
+pineappl-0.5.8.dist-info/WHEEL,sha256=dMuV-7lrZC9QafDA__0GIF0b_GG3F0vpaTuAUUdl7rc,135
+pineappl/bin.py,sha256=sRoyKK2bVp5WogTb-Zsw7bmxqLXytE8ZQ94XN2a_los,516
+pineappl/grid.py,sha256=oITTADlLgczM6lwx0n_-LtBIzENAFipjZUjV3JDyVvA,12505
+pineappl/import_only_subgrid.py,sha256=qx3M3a418-_Nq8XEmEYBfcZFrbDuKUClEDImYtL5W94,762
+pineappl/fk_table.py,sha256=Zednst4cx6854-dAHDZ0q2sQhaIhNw2yJ6yMYZwwSNU,1688
+pineappl/utils.py,sha256=NK-FJvUN_gFYAr6Kna8AdSktK6NUyNwka0FPh-r1OoI,430
+pineappl/lumi.py,sha256=o-mYLOWGOpi20wZeNwxmlPPTxF4f4AFxlXyTM-7XbNo,379
+pineappl/subgrid.py,sha256=oBACSzW6S_GPXgq85e2AMyZlIOVp11KY-7qUPw3UVoo,254
+pineappl/__init__.py,sha256=KHzqZB4tXUL-JbqRExd1bVEnr11FHmeM6qq6vXj1hPU,115
+pineappl/pineappl.cpython-38-x86_64-linux-gnu.so,sha256=6uGq_CdXm9oplp3Ymf0GBcMB9iLjhZHyYzvCMGB4d0A,1907896
+pineappl-0.5.8.dist-info/RECORD,,
