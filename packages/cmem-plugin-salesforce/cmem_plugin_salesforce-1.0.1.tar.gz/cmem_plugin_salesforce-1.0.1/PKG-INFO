@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cmem-plugin-salesforce
+Version: 1.0.1
+Summary: Send or receive data from your organization´s Salesforce account.
+Home-page: https://github.com/eccenca/cmem-plugin-salesforce
+License: Apache-2.0
+Keywords: eccenca Corporate Memory,plugin,Salesforce
+Author: Sai Ranga Reddy Nukala
+Author-email: rangareddy.nukala@eccenca.com
+Requires-Python: >=3.9,<4.0
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: cmem-plugin-base (>=2.1.0,<3.0.0)
+Requires-Dist: python-soql-parser (>=0.1.11,<0.2.0)
+Requires-Dist: simple-salesforce (>=1.11.6,<2.0.0)
+Description-Content-Type: text/markdown
+
+# cmem-plugin-salesforce
+
+Send or receive data from your organization´s Salesforce account.
+
+This is a plugin for [eccenca](https://eccenca.com) [Corporate Memory](https://documentation.eccenca.com).
+
+You can install it with the [cmemc](https://eccenca.com/go/cmemc) command line
+clients like this:
+
+```
+cmemc admin workspace python install cmem-plugin-salesforce
+```
+
+
