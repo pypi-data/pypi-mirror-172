@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dsind
+Version: 0.1.0
+Summary: the package related to the mlops1 formation
+Author: ismael
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Requires-Dist: pandas (>=1.5.0,<2.0.0)
