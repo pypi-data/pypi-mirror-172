@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: cdk-extensions
+Version: 0.0.22
+Summary: cdk-extensions
+Home-page: https://github.com/vibe-io/cdk-extensions.git
+Author: Kevin Lucas<kevinluc08@gmail.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/vibe-io/cdk-extensions.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aws-cdk-lib (<3.0.0,>=2.45.0)
+Requires-Dist: constructs (<11.0.0,>=10.0.5)
+Requires-Dist: jsii (<2.0.0,>=1.69.0)
+Requires-Dist: publication (>=0.0.3)
+Requires-Dist: typeguard (~=2.13.3)
+
+# replace this
+
+## Getting Started
+
+### TypeScript
+
+#### Installation
+
+```shell
+$ npm install cdk-extensions
+```
+
+### Python
+
+#### Installation
+
+```shell
+$ pip install cdk-extensions
+```
+
+### Examples
+
+#### AwsLoggingStack
+
+Minimal deployable example creates the default logging strategy defined in AwsLoggingStack for Elastic Load Balancer, CloudFront, CloudTrail, VPC Flow Logs, S3 access logs, SES logs, and WAF logs. For each service, an S3 bucket is created and a Glue crawler to analyze and categorize the data and store the associated metadata in the AWS Glue Data Catalog. Default named queries have been defined for each AWS service. For more details on this and the other available stacks and constructs, consult the respective READMEs.
+
+**TypeScript**
+
+```TypeScript
+import { AwsLoggingStack } from 'cdk-extensions/stacks';
+```
+
+```TypeScript
+new AwsLoggingStack(this, 'AwsLoggingStack')
+```
+
+**Python**
+
+```Python
+from cdk_extensions.stacks import (
+  AwsLoggingStack
+)
+```
+
+```Python
+aws_logging_stack = AwsLoggingStack(self, 'AwsLoggingStack')
+```
+
+#### Deploy
+
+```shell
+$ cdk deploy
+```
+
+#### FourTierNetwork
+
+// To Do
