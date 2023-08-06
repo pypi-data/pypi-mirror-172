@@ -1,0 +1,5 @@
+setup.py
+woshinidie4456.egg-info/PKG-INFO
+woshinidie4456.egg-info/SOURCES.txt
+woshinidie4456.egg-info/dependency_links.txt
+woshinidie4456.egg-info/top_level.txt
