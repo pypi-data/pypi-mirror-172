@@ -1,0 +1,12 @@
+sbomdiff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sbomdiff/cli.py,sha256=Fr2F3BFtV-ZbiNY3e9PFjYz0C5dVgXs-5H-vu5r8Phw,5680
+sbomdiff/cyclonedx_parser.py,sha256=B52vPx5xZuLZuq2hmsGNUNLaMs3m5XwPMf0O7eJvUkA,3917
+sbomdiff/output.py,sha256=G9tbsqlbCapnTyPgo6ROnSXVoVM2c4Hp1QfhvvvcQcQ,1298
+sbomdiff/spdx_parser.py,sha256=0EYdc__EQsNSEYJ-8eyr_62rySfXKyiip3nQk48m5eY,7803
+sbomdiff/version.py,sha256=SX8xl-HD2UrfbAqmRRLe9P8VtDBQasDupK7Ds7tQGCY,100
+sbomdiff-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sbomdiff-0.3.0.dist-info/METADATA,sha256=5CE6qoByuTXn7Wh5nKnbjsiTofUkC53nibtf6VL1lSw,6156
+sbomdiff-0.3.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+sbomdiff-0.3.0.dist-info/entry_points.txt,sha256=fcONsvnGhylyVE47AbBD9yrXj47ScGZbVyJ7jGRcx9o,47
+sbomdiff-0.3.0.dist-info/top_level.txt,sha256=vt1EhODe3hHuS5SesbQue8uX-pOojrBfdtCwYdbEUgg,9
+sbomdiff-0.3.0.dist-info/RECORD,,
