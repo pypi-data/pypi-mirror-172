@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: chafer
+Version: 0.2
+Summary: CHArge artiFact SupprEssion Tool for Scanning ElectRon Microscope Images
+Home-page: https://github.com/rosalindfranklininstitute/chafer
+Author: Luis Perdigao
+Author-email: luis.perdigao@rfi.ac.uk
+License: Apache License, Version 2.0
+Classifier: Development Status :: 4 - Beta 
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+
+# chafer
+**CHA**rge arti**F**act suppr**E**ssion tool for scanning elect**R**on microscope images
+
+Contains:
+
+- functions for upscaling 3D data along X and Y axis, and preserving along Z axis
+- unet (fastai) predictor - requires model file
+- charge artefact suppression filter for 2D and 3D SEM images - requires respective charge centres to be segmented in a separate file
