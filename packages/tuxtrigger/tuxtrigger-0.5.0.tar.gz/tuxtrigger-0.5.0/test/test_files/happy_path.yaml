@@ -1,0 +1,19 @@
+repositories:
+- url: https://git.kernel.org/pub/scm/linux/kernel/git/tomba/linux.git
+  squad_group: ~non.existing
+  branches:
+    - name: master
+      squad_project: example_project
+      plan: stable.yaml
+    - name: for-laurent
+      squad_project: example_project
+      plan: stable-next.yaml
+- url: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+  squad_group: ~non.existing
+  branches:
+    - name: master
+      squad_project: example_project
+      plan: stable.yaml
+    - name: v5.19
+      squad_project: example_project
+      plan: stable-next.yaml

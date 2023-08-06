@@ -1,0 +1,12 @@
+.venv
+venv/
+__pycache__/
+*.pyc
+/dist
+/htmlcov
+/public
+.coverage*
+share/
+.vscode/
+log.txt
+json/
