@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: quantuaninvest-download
+Version: 1.0.4
+Summary: quantuan invest download schedule
+Home-page: UNKNOWN
+Author: jinxin
+Author-email: 252992499@qq.com
+License: apache 3.0
+Platform: UNKNOWN
+Requires: requests
+Requires: schedule
+
+UNKNOWN
+
+
