@@ -1,0 +1,7 @@
+inmanta_plugins/redhat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inmanta_plugins/redhat/setup.cfg,sha256=L33iJxAUKi7Q6aGQRt4Zmz3kj7G_L5dkog9kazHX42U,679
+inmanta_plugins/redhat/model/_init.cf,sha256=BevkUdvf2pMRuZB-GjGnMfZ1JWpZFveeQEjI4JHaN1s,2778
+inmanta_module_redhat-1.0.0.dist-info/METADATA,sha256=KsdhYGBO3uIzb4XsHNNxjd0pg3WuXcpMXv3ypvnPxWw,120
+inmanta_module_redhat-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+inmanta_module_redhat-1.0.0.dist-info/top_level.txt,sha256=rb9c6eWQS8KFuSa3ktEcXpk-oSsCL9ZCVAgv7S0Eg_w,16
+inmanta_module_redhat-1.0.0.dist-info/RECORD,,
