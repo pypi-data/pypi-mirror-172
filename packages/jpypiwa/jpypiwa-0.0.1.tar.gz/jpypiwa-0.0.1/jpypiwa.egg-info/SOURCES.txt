@@ -1,0 +1,8 @@
+setup.py
+jpypiwa.egg-info/PKG-INFO
+jpypiwa.egg-info/SOURCES.txt
+jpypiwa.egg-info/dependency_links.txt
+jpypiwa.egg-info/requires.txt
+jpypiwa.egg-info/top_level.txt
+sample/__init__.py
+sample/hello.py
