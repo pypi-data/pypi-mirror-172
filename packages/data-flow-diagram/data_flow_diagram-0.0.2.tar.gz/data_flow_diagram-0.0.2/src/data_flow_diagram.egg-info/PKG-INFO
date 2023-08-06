@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: data-flow-diagram
+Version: 0.0.2
+Summary: Commandline tool to generate data flow diagrams from text
+Home-page: https://github.com/pbauermeister/dfd
+Author: Pascal Bauermeister
+Author-email: pascal.bauermeister@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Bug Reports, https://github.com/pbauermeister/dfd/issues
+Project-URL: Source, https://github.com/pbauermeister/dfd
+Keywords: diagram-generator,development,tool
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Documentation
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+
+# DFD
+
+DFD (Data Flow Diagram) Generator - Commandline tool to generate
+diagrams as images in various formats (SVG, PNG, JPG, PDF, etc.) from
+source text files.
+
+The source for this project is [available here][src].
+The package page is [available here][pypi].
+
+## Summary
+Data Flow Diagram are used to model the flow and processing of
+information through a system.
+
+Source text example:
+
+    A
+    B
+    C
+
+![example](https://raw.githubusercontent.com/pbauermeister/dfd/master/doc/example-01.svg "Example")
+
+## Syntax
+See the [syntax specification][syntax].
+
+## Examples
+See the [examples page][examples].
+
+## Dependencies
+
+ * Python3
+ * Python libraries: svgwrite, reportlab
+
+## Installing via pip3
+
+```
+[sudo] pip3 install data_flow_diagram
+```
+
+## Usage
+
+`data_flow_diagram -h` says:
+
+```
+usage: data_flow_diagram [-h]
+```
+
+[src]: https://github.com/pbauermeister/dfd
+[pypi]: https://pypi.org/project/data-flow-diagram
+[syntax]: https://github.com/pbauermeister/dfd/tree/master/doc/SYNTAX.md
+[examples]: https://github.com/pbauermeister/dfd/tree/master/examples/EXAMPLES.md
