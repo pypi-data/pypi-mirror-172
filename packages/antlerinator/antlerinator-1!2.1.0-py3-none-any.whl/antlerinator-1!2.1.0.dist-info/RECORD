@@ -1,0 +1,11 @@
+antlerinator/__init__.py,sha256=E0SHRSV0fvDsSHbfWfa-R81CpPxcbt71pfhUjYhJbKQ,401
+antlerinator/__main__.py,sha256=_Z3gcM6YrYin-FeT2OkjwmhlaUyWP3jDdNR0ELlFdcQ,327
+antlerinator/arg.py,sha256=XF0eMNJ46f7bBBmA4-1l5L1yAu4DXYSKCVFQgNlOKoA,2520
+antlerinator/build_antlr.py,sha256=HEBV5Hi__pJFf_fsG5QMPNZF4QEPtbB8Q62apRon9c4,5007
+antlerinator/download.py,sha256=UfW69BDDjATSjC_youu-QWvZ6Npz6c7g6pL_ZquCqyU,4308
+antlerinator-1!2.1.0.dist-info/LICENSE.rst,sha256=G1RnGofxfW9KQCQtzwRt_2luNRuKSrd3W2Ny-q0P0Gg,1516
+antlerinator-1!2.1.0.dist-info/METADATA,sha256=W3uPbtgbo-SNA2FUUs_OQgSPFO-NIGoaETaiPT1u3ZQ,7172
+antlerinator-1!2.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+antlerinator-1!2.1.0.dist-info/entry_points.txt,sha256=nWz92ZOk4XMfQFu4tUkxT93US5b4lKoZDJ59XQbrpEM,289
+antlerinator-1!2.1.0.dist-info/top_level.txt,sha256=Hz5IPk4fuxd2CdpxEpfy_-1qfsiP2QgpIDMBLMF1y1Y,13
+antlerinator-1!2.1.0.dist-info/RECORD,,
