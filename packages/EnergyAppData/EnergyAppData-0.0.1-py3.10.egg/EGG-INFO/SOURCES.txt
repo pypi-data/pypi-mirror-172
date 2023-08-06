@@ -1,0 +1,11 @@
+README.md
+setup.py
+EnergyAPPData/__init__.py
+EnergyAPPData/electricpower.py
+EnergyAPPData/data/householdpower.csv
+EnergyAppData.egg-info/PKG-INFO
+EnergyAppData.egg-info/SOURCES.txt
+EnergyAppData.egg-info/dependency_links.txt
+EnergyAppData.egg-info/top_level.txt
+test/__init__.py
+test/test.py
