@@ -1,0 +1,8 @@
+rns>=0.3.14
+lxmf>=0.2.0
+kivy==2.1.0
+plyer
+pillow
+
+[macos]
+pyobjus
