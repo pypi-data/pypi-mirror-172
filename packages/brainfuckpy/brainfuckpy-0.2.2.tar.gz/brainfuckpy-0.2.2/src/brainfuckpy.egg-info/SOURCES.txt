@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/brainfuckpy/__init__.py
+src/brainfuckpy/__main__.py
+src/brainfuckpy/brainfuck.py
+src/brainfuckpy/visualize.py
+src/brainfuckpy.egg-info/PKG-INFO
+src/brainfuckpy.egg-info/SOURCES.txt
+src/brainfuckpy.egg-info/dependency_links.txt
+src/brainfuckpy.egg-info/top_level.txt

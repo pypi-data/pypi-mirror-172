@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "brainfuckpy"
+version = "0.2.2"
+authors = [
+  { name="Daan Olivier Koning", email="daanolivierkoning@gmail.com" },
+]
+description = "A lightweight pure python brainfuck interpreter and visualizer"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = [
+    "pure python",
+    "brainfuck",
+    "interpeter",
+    "visualizer",
+]
+[project.urls]
+"Homepage" = "https://github.com/daankoning/brainfuck.py"
