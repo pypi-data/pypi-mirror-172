@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shiter/__init__.py
+shiter/print.py
+shiter.egg-info/PKG-INFO
+shiter.egg-info/SOURCES.txt
+shiter.egg-info/dependency_links.txt
+shiter.egg-info/top_level.txt
