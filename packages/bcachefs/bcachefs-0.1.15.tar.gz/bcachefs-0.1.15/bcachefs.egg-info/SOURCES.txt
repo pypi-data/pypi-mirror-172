@@ -1,0 +1,14 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+bcachefs/__init__.py
+bcachefs/bcachefs.c
+bcachefs/bcachefs.py
+bcachefs/bcachefs_iterator.c
+bcachefs/bcachefsmodule.c
+bcachefs/utils.c
+libbenzina/bcachefs.c
+libbenzina/siphash.c
