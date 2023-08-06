@@ -1,0 +1,8 @@
+scikit-learn
+pandas
+numpy
+pyBigWig
+adjustText
+scipy
+seaborn
+matplotlib
