@@ -1,0 +1,14 @@
+click
+tqdm
+cnocr>=2.2.2
+pix2tex
+
+[dev]
+pip-tools
+pytest
+
+[serve]
+uvicorn[standard]
+fastapi
+python-multipart
+pydantic
