@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "marstuff"
+version = "0.2.0"
+description = "A Python Wrapper for NASA's Mars Rover Photos API"
+authors = ["Ajay Ratnam <ajratnam.dev@gmail.com>"]
+maintainers = ["Ajay Ratnam <ajratnam.dev@gmail.com>"]
+license = "MIT"
+keywords = ["nasa", "api", "mars", "rover"]
+homepage = 'https://github.com/ajratnam/marstuff'
+documentation = 'https://github.com/ajratnam/marstuff'
+repository = 'https://github.com/ajratnam/marstuff'
+readme = 'README.md'
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Version Control",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = {extras = ["http2"], version = "^0.19.0"}
+Pillow = "^8.3.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
