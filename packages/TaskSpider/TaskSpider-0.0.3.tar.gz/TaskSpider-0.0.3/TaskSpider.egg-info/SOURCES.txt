@@ -1,0 +1,17 @@
+README.md
+setup.py
+Core/Anlyst.py
+Core/NetWork.py
+Core/URLs.py
+Core/Writer.py
+Core/__init__.py
+Task/BigTask.py
+Task/NetworkTask.py
+Task/Task.py
+Task/TaskManger.py
+Task/TaskMessage.py
+Task/__init__.py
+TaskSpider.egg-info/PKG-INFO
+TaskSpider.egg-info/SOURCES.txt
+TaskSpider.egg-info/dependency_links.txt
+TaskSpider.egg-info/top_level.txt
