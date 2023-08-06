@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+datawriter/__init__.py
+datawriter/datawriter.py
+datawriter.egg-info/PKG-INFO
+datawriter.egg-info/SOURCES.txt
+datawriter.egg-info/dependency_links.txt
+datawriter.egg-info/requires.txt
+datawriter.egg-info/top_level.txt
