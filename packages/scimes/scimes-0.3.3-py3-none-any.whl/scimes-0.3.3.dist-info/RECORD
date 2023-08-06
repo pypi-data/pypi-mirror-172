@@ -1,0 +1,12 @@
+scimes/__init__.py,sha256=pjrEW41eo8TLwD_1BmRz98r4vHVK0GN2jCxEObJrCx0,561
+scimes/_astropy_init.py,sha256=7DbK3SfChnzV7J5oXPkGW0oo5gxYzaV15dgB9fdJxYw,5274
+scimes/conftest.py,sha256=y7I-ic81uTX7d5gqcZ11TQF5Mi9nHN6sItapgvBPa9k,1240
+scimes/old_spectral_embedding.py,sha256=8NIOiHj3IENCebBr1lfFdcL8ItzMrVzq-6DPAvOPkj8,4624
+scimes/orion2scimes.py,sha256=4SSPrqIOgUdChmbjNJILzt72ici7edxuHOjab9xYnGk,3141
+scimes/plotting.py,sha256=GhAkWwPIrf3NxToUmfLRMMFJOeV0QOqlsv1n0w0QBWY,2203
+scimes/scimes.py,sha256=Glyc0bKQrnSMWu3YCfNuW6kjJn95SFZsb2U6_jPxO9Y,35170
+scimes/version.py,sha256=MRMYP_DjmsvvqU9hixBHrKjL73fkKzKjELyf85y62qk,6956
+scimes-0.3.3.dist-info/METADATA,sha256=RYoycDgpurOPOcOfB4ivKpzEiZClWtwefRyIH60INyw,786
+scimes-0.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scimes-0.3.3.dist-info/top_level.txt,sha256=EhMkVoANBlctkkDLDrutZ4bYq56CJ6wCS-2dN_lo9Fw,7
+scimes-0.3.3.dist-info/RECORD,,
