@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+fuzzy_parser/__init__.py
+fuzzy_parser/__main__.py
+fuzzy_parser/engine.py
+fuzzy_parser.egg-info/PKG-INFO
+fuzzy_parser.egg-info/SOURCES.txt
+fuzzy_parser.egg-info/dependency_links.txt
+fuzzy_parser.egg-info/entry_points.txt
+fuzzy_parser.egg-info/requires.txt
+fuzzy_parser.egg-info/top_level.txt
