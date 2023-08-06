@@ -1,0 +1,10 @@
+setup.py
+5_Rakoto031_upload_to_pypi/Binomialdistribution.py
+5_Rakoto031_upload_to_pypi/Gaussiandistribution.py
+5_Rakoto031_upload_to_pypi/Generaldistribution.py
+5_Rakoto031_upload_to_pypi/__init__.py
+5_Rakoto031_upload_to_pypi.egg-info/PKG-INFO
+5_Rakoto031_upload_to_pypi.egg-info/SOURCES.txt
+5_Rakoto031_upload_to_pypi.egg-info/dependency_links.txt
+5_Rakoto031_upload_to_pypi.egg-info/not-zip-safe
+5_Rakoto031_upload_to_pypi.egg-info/top_level.txt
