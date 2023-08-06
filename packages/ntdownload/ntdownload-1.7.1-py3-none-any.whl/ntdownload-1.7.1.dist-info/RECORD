@@ -1,0 +1,12 @@
+ntdownload/__init__.py,sha256=wZuz85cSakKdVvFPWmNp5rI_g6JCQbJaWC42uX8Pmbc,130
+ntdownload/downloader.py,sha256=FsxOEVZW1toHRJtlDLanrWFfa1HCeHNB12svpSSMqPc,1622
+ntdownload/names.py,sha256=2kjzH-ddPs160ZY_Ip8DFy2gHPAD_-41bc3o8892aJA,636
+ntdownload/scripts_helper.py,sha256=cBqddtRV8F_Bg7IARVBrai7cFWk_0JUS1m8E566XNqA,847
+ntdownload-1.7.1.data/scripts/ntdownload,sha256=i98Ngs8Z5JXo8RrLCxfMM0LYxwXdjNBoFd1etNmo5TU,2035
+ntdownload-1.7.1.data/scripts/ntnames,sha256=t4cN8HapniqIJnWad0Mg7IfMXE6dxZwsqRQjIyhmki4,599
+ntdownload-1.7.1.dist-info/AUTHORS.txt,sha256=JsyCD_QEp9hjjOHUOMsNPBFSTK6Zi8kyZ81uH03_sX0,194
+ntdownload-1.7.1.dist-info/LICENSE.txt,sha256=kjBL_wwjkyj8wJHbE6FIB7NI9REmSJolcFGAV0YSBS0,1073
+ntdownload-1.7.1.dist-info/METADATA,sha256=aeshIBI-IynKVf_3sT5pRFl77P_FjPUGJhDv5BEcs8c,3087
+ntdownload-1.7.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ntdownload-1.7.1.dist-info/top_level.txt,sha256=zofk4Isdw8vg7e4aDz-i1fXOxo41tMDVkjeq5YltK2w,11
+ntdownload-1.7.1.dist-info/RECORD,,
