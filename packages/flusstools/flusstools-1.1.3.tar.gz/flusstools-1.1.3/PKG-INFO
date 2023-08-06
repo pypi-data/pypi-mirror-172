@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: flusstools
+Version: 1.1.3
+Summary: Analyze and design river ecosystems
+Home-page: https://flusstools.readthedocs.io/
+Author: FlussTeam
+Author-email: schwindt.water@gmail.com
+License: BSD License
+Project-URL: Documentation, https://flusstools.readthedocs.io/
+Project-URL: Funding, https://hydro-informatics.com/
+Project-URL: Source, https://github.com/Ecohydraulics/flusstools
+Project-URL: Tracker, https://github.com/Ecohydraulics/flusstools/issues
+Keywords: rivers geo-spatial data processing numerical model validation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+## FlussTools
+
+Head for Python scripts for river analyses.
+
+Check out the full documentation is available at [https://flusstools.readthedocs.io](https://flusstools.readthedocs.io/en/latest/).
+
+
