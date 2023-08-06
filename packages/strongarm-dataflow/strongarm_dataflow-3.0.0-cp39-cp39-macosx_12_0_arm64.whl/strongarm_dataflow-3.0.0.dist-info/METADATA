@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: strongarm-dataflow
+Version: 3.0.0
+Summary: AArch64 dataflow analysis via backward program slicing
+Home-page: https://github.com/datatheorem/strongarm
+Author: Data Theorem
+License-File: LICENSE.txt
+Requires-Dist: capstone
+
