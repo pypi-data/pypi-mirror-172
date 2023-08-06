@@ -1,0 +1,11 @@
+dagster==1.0.14
+dbt-core
+requests
+attrs
+agate
+
+[test]
+Jinja2
+dbt-rpc
+dbt-postgres
+matplotlib
