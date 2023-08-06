@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: LRFutils
+Version: 0.0.14
+Summary: Just a custom library to share with some colleagues. Use it at your own risks.
+Home-page: https://github.com/LeiRoF/Utils
+Author: Leirof
+Author-email: vince.lrf@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LFRutils
+
+This is a custom library for dev by myself and for myself (and some colleagues).
+If you find something cool in this lib, you can freely use it, copy it, modify it, share it, whatever you want.
+If you publish it somewhere, please be kind to at least credit me ;)
+
+## -> [Go to Documentation](https://lrfutils.rtfd.io)
