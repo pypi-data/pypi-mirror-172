@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xrtc
+Version: 0.1.0
+Home-page: https://xrtc.org
+Author: Delta Cygni Labs Ltd
+License: Apache-2.0
+Requires-Python: >=3.10
+License-File: LICENSE.txt
+Requires-Dist: python-dotenv (>=0.21.0)
+Requires-Dist: pydantic (>=1.10.2)
+Requires-Dist: requests (>=2.28.1)
+
