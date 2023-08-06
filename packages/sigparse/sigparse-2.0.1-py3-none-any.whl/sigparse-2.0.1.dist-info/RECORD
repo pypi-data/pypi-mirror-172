@@ -1,0 +1,11 @@
+sigparse/__init__.py,sha256=0huMeOrZFv1gJjFf4QmP6C5OdHS_LH5Eqsu-yDQfJ9g,1467
+sigparse/_applicator.py,sha256=mfyPktVl0NQRryffVvs8GkEVEGHIuQlCoZOKtYq0WWY,2169
+sigparse/_classparse.py,sha256=4P0Tkm4Bkp9C8H4SSfVadLr0PX3FRepE9vi04RpTxU0,2796
+sigparse/_pep604.py,sha256=Nwxh2q_rFLfVmLf4xMADzOKRkRY8pbZjKrwF3MHFNXo,1986
+sigparse/_sigparse.py,sha256=szTgdwvn9JjMcndkLUPA9B_N6UO6e_N5-Z8Kezbj8Fg,3291
+sigparse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sigparse/utils.py,sha256=26ysWQIh3divSYIjc6PLYrS8f-Eon6pf4ByH6Z2Vj1g,1221
+sigparse-2.0.1.dist-info/LICENSE,sha256=Z7A98gU-OhKlFruS0v83jJ2MZx0Rj8ojwdgXbzUm49s,1068
+sigparse-2.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+sigparse-2.0.1.dist-info/METADATA,sha256=HZ_u64i_jHNDmuNfGOjfL-3EkDIOJNhb9VidZjAO0sI,1981
+sigparse-2.0.1.dist-info/RECORD,,

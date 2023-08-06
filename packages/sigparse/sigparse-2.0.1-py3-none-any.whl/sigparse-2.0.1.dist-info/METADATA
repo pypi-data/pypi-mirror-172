@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: sigparse
+Version: 2.0.1
+Summary: Backports python3.10 typing features into python 3.7 and newer.
+Home-page: https://github.com/Lunarmagpie/sigparse
+License: MIT
+Author: Lunarmagpie
+Author-email: bambolambo0@gmail.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: forbiddenfruit (>=0.1.4,<0.2.0); python_version < "3.10"
+Project-URL: Bug Tracker, https://github.com/python-poetry/poetry/issues
+Description-Content-Type: text/markdown
+
+# sigparse
+
+Backports python3.10 typing features into python 3.7, 3.8, and 3.9.
+
+## Example
+
+```python
+import sigparse
+
+def func(param_a: list[str], param_b: str | int, param_c: tuple[int | None]):
+    ...
+
+# This returns the same result in python 3.7, 3.8, 3.9, and 3.10!
+sigparse.sigparse(func)
+```
+
+Sigparse also supports classes.
+
+```python
+import sigparse
+
+class MyClass:
+    a: list[str]
+    b: str | int
+    c: tuple[int | None]
+
+sigparse.classparse(MyClass)
+```
+
+
+### PEP 604
+By default PEP 604 (| for unions) is only enabled for `sigparse.sigparse` and `sigparse.classparse`.
+The code for PEP 604 was written by [@Endercheif](https://github.com/Endercheif).
+
+To enable globally:
+```python
+import sigparse
+sigparse.global_PEP604()
+```
+
+## Notes
+### Inspect
+
+This module uses inspect behind the scenes. For that reason:
+
+- `sigparse.Parameter.default` is `inspect._empty` when there is no default value.
+- `sigparse.Parameter.kind` is `inspect._ParameterKind`.
+- `sigparse.ClassVar.default` is `inspect._empty` when there is no default value to maintain consistency.
+
+
+### Annotated
+`typing.Annotated` will always be evaluated with `include_extras=True` in python3.9.
+
