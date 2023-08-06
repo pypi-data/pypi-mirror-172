@@ -1,0 +1,5 @@
+pip>=21
+setuptools
+distro>=1
+grpcio
+protobuf
