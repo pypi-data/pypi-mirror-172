@@ -1,0 +1,3 @@
+[console_scripts]
+didyoumean=didyoumean_nhannht.main:main
+
