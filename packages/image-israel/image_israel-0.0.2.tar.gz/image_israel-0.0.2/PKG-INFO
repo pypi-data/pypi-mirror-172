@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: image_israel
+Version: 0.0.2
+Summary: Pacote criado para processamento de imagem, a partir do curso de criação de pacotes da DIO
+Home-page: https://github.com/israelclaudio/image_processing_package
+Author: israelclaudio
+Author-email: israelclaudio21@gmail.com
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# image_israel
+
+Description. 
+The package image_processing is used to:
+	Processing:
+		- Histogram matching
+		- Structural similarity
+		- Resize image
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram 
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image_israel
+
+```bash
+pip install image_israel
+```
+
+## Author
+Israel
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
