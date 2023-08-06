@@ -1,0 +1,10 @@
+tweet_delete/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tweet_delete/deleter.py,sha256=qPh5suHJC744FS7Ws8TijPuGUaFiIrLJ7v9Yv25e95Q,11965
+tweet_delete/entry.py,sha256=Fkvgu1i-ylJ44MCCyLKu-fq8jX-Gq2CRmmwGbsTfdHo,106
+tweet_delete/main.py,sha256=ZpzwB2AE0odVq0U6I9zuuwHRu3GStGnpuPleHNQBJnU,4309
+tweet_delete/util.py,sha256=sHpy6xB09X2F4jww8YnH-73oB889ZwQZ_F-w-1BQV9s,634
+tweet_delete-0.3.0.dist-info/entry_points.txt,sha256=VfI6pXZSKwLjQqJgD9NCx8MzerMn7R4r0R-Ll-F5GOE,76
+tweet_delete-0.3.0.dist-info/LICENSE,sha256=SpG_KdfkQhKfewq2B5kRoUwx2LQQiqqeJEcEAA0jQkk,1075
+tweet_delete-0.3.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+tweet_delete-0.3.0.dist-info/METADATA,sha256=7vbFURYuo7XH4kpUDkfcakpFEfFokhsxN91kJPBP-_8,6792
+tweet_delete-0.3.0.dist-info/RECORD,,
