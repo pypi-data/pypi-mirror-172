@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyclipse
+Version: 0.0.1
+Summary: Benchmark deidentification algorithms
+Author-email: Alistair Johnson <alistairewj@gmail.com>, Callandra Moore <callandra.moore@sickkids.ca>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/kind-lab/pyclipse
+Project-URL: Bug Tracker, https://github.com/kind-lab/pyclipse/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyclipse
+
+A python package for benchmarking free-text deidentification algorithms on publicly available and custom datasets. Includes a standard set of off the shelf models, datasets, and evaluation measures.

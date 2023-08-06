@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyclipse/__main__.py
+src/pyclipse/dataset.py
+src/pyclipse/evaluate.py
+src/pyclipse/io.py
+src/pyclipse/label.py
+src/pyclipse/torch_dataset.py
+src/pyclipse.egg-info/PKG-INFO
+src/pyclipse.egg-info/SOURCES.txt
+src/pyclipse.egg-info/dependency_links.txt
+src/pyclipse.egg-info/entry_points.txt
+src/pyclipse.egg-info/top_level.txt
