@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pacotebmi
+Version: 0.0.1
+Summary: Package for individual Body Mass Index.
+Home-page: https://github.com/glaucomori/projetobmi
+Author: Glauco Issamu Pereira Mori
+Author-email: glauco.mori@outlook.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# pacotebmi
+
+Description. 
+The package pacotebmi is used to:
+	- Calculate individual body mass index.
+	- Find out what basic category the person is.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pacotebmi
+
+```bash
+pip install pacotebmi
+```
+
+## Usage
+
+```python
+from pacotebmi import arquivobmi
+arquivobmi.bmi()
+```
+
+## Author
+Glauco Mori
+
+## License
+[MIT](LICENSE.txt)
