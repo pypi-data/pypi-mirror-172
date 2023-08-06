@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: myIPYNBrenderer
+Version: 0.0.5
+Summary: A small python package
+Home-page: https://github.com/Sumegh20/myIPYNBrenderer
+Author: Sumegh20
+Author-email: sumegh20@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Sumegh20/myIPYNBrenderer/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Provides-Extra: testing
+License-File: LICENSE
+
+# IPYNBrenderer
+It is a python package help us to render Youtube tutorial videos and reference site into the Colab or Jupyter notebooks for easy reference.
