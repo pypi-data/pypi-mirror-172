@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TreeHole
+Version: 0.0.1
+Summary: A Python interface to PKU Hole!
+Author-email: TeddyHuang-00 <huang_nan_2019@pku.edu.cn>
+Project-URL: Homepage, https://github.com/TeddyHuang-00/pyTreeHole
+Project-URL: Bug Tracker, https://github.com/TeddyHuang-00/pyTreeHole/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# TreeHole
+
+> Simple Python interface to PKU Tree Hole
+
+目前正在持续开发完善中

@@ -1,0 +1,18 @@
+[project]
+name = "TreeHole"
+version = "0.0.1"
+authors = [
+  { name="TeddyHuang-00", email="huang_nan_2019@pku.edu.cn" },
+]
+description = "A Python interface to PKU Hole!"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TeddyHuang-00/pyTreeHole"
+"Bug Tracker" = "https://github.com/TeddyHuang-00/pyTreeHole/issues"
