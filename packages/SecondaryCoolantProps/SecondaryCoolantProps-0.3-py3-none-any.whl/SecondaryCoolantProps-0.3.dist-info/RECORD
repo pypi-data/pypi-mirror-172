@@ -1,0 +1,15 @@
+scp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scp/base.py,sha256=IRTxD2H3HuJFeBzCujIWRbduIul-eeLQlYWt-8fQpf8,7420
+scp/base_fluid.py,sha256=4hyau5LPmClSraxXwKqv8NwwDytfcyErfFU254eKXNw,8938
+scp/base_melinder.py,sha256=-3Kmw3lwrbPISfMuITA9IKTUp1dmcg33_bALau3r8xM,4656
+scp/cli.py,sha256=VTqHHQtswpZ_E9AO8tbo0RCg4opYxQhekU2u7TndLGA,2384
+scp/ethyl_alcohol.py,sha256=38G7BVmJ85mqIF_eFXHRzmN3SFGh-uXsS9BX_X57P-E,3025
+scp/ethylene_glycol.py,sha256=W-LqUEPUoTGQqhXpaZ19xMZIk6_4Drr4u-zCYcsutvg,3022
+scp/methyl_alcohol.py,sha256=YKWm_0Uoi5D8u2Q2wP4YK1WWdDzljjkZhMvXD1chA9o,2974
+scp/propylene_glycol.py,sha256=w2Y_YcNihEQSNRZGimg41txOTjZWGNUwKd8QTUqL9tE,2980
+scp/water.py,sha256=TtqWDCH1u0_NsjJQQvMsCeGDTEbUr45w7aIEP7m4YQQ,3522
+SecondaryCoolantProps-0.3.dist-info/METADATA,sha256=qfOsK3RoIuLUjgBKXFjCv_ETpGGXZwkimUH_In1L0YA,2289
+SecondaryCoolantProps-0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SecondaryCoolantProps-0.3.dist-info/entry_points.txt,sha256=ad3Ob_AVPGiyJTsQpYKs5843uglN68boH9TQ77jLzLk,39
+SecondaryCoolantProps-0.3.dist-info/top_level.txt,sha256=lEWGs13SI-0j-l8rkCdbKL2wkp03d5en0lL-nCjFSl8,4
+SecondaryCoolantProps-0.3.dist-info/RECORD,,

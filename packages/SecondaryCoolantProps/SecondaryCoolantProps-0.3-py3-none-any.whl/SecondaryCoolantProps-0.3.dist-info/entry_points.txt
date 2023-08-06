@@ -1,0 +1,2 @@
+[console_scripts]
+scprop = scp.cli:cli
