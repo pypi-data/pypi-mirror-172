@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: stone91_tools
+Version: 0.0.1
+Summary: stone91's private tools.
+Home-page: https://github.com/370025263/stone91_tools
+Author: stone91
+Author-email: mengshi2022@ia.ac.cn
+License: MIT Licence
+Keywords: pip,stone91_tools
+Platform: any
+
+includes plotting ml imageprocessing etc.
+
