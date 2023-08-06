@@ -1,0 +1,27 @@
+# ML
+prophet>=1.1,<2
+salesforce-merlion>=1.2.3,<2
+
+# core
+numpy
+pandas
+pyspark>=3.0.0,<3.1
+pydeequ
+pydantic
+
+# util
+loguru
+yarl
+
+# dataset generation
+Faker
+
+# repository
+sqlmodel
+sqlalchemy
+pg8000
+
+# dashboard
+streamlit
+streamlit-permalink
+plotly
