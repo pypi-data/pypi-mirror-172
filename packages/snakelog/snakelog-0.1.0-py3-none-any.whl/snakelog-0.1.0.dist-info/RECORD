@@ -1,0 +1,8 @@
+snakelog/__init__.py,sha256=kwuiMZh6eM8t17pLxwiF0DFDRMGp9q26SonQVjxkyEM,20
+snakelog/common.py,sha256=h4JLC-z35dNKT-1x0ZRC-LP5tNggemkNGEtskhYwdRk,3376
+snakelog/litelog.py,sha256=bcl571ZNwx2vGXCfCF8n3HflM8lAaH5343fHAu5D-aE,14641
+snakelog/souffle.py,sha256=bVCFZjzOqGxBvCSy7VtJEZOhuHhzUyKEz6VpgNRpMNE,2652
+snakelog/z3lite.py,sha256=QLmFnf9rYLgpIPt53HS3Vuel0lXB12h_Bh9y3_S8QUA,2446
+snakelog-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+snakelog-0.1.0.dist-info/METADATA,sha256=QrsMfkh26xISiBtMct59ZWGBBbtQVFMvpj8SwRwlXwI,551
+snakelog-0.1.0.dist-info/RECORD,,
