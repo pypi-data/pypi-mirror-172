@@ -1,0 +1,59 @@
+#!python
+# This file is placed in the Public Domain.
+# pylint: disable=C0116,W0611,C0413
+
+
+"object programming"
+
+
+import os
+import readline
+import sys
+import time
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from op import Wd, allobj, elapsed, keys, fntime, printable
+
+
+Wd.workdir = os.path.expanduser("~/.op")
+
+
+starttime = time.time()
+
+
+def fnd(args):
+    "fnd <workdir> [type] [selector]"
+    if len(args) == 0:
+        print("op workdir [type] [selector]")
+        return
+    wdr = args[0]
+    if not os.path.exists(wdr):
+        print("%s is not a directory" % wdr)
+        return
+    Wd.workdir = wdr
+    if len(args) == 1:
+        res = ",".join({x.split(".")[-1].lower() for x in Wd.types()})
+        if res:
+            print(res)
+        else:
+            print("no types yet.")
+        return
+    otype = args[1]
+    res = list(allobj(otype))
+    _nr = 0
+    for _fn, obj in res:
+        txt = "%s %s %s" % (
+                            str(_nr),
+                            printable(obj, keys(obj)),
+                            elapsed(time.time()-fntime(_fn))
+                           )
+        _nr += 1
+        print(txt)
+    if not _nr:
+        print("no result")
+
+
+fnd(sys.argv[1:])
