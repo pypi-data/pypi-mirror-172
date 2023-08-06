@@ -1,0 +1,10 @@
+[
+    {"singular": { "nl": "De tafel", "fi": "Pöytä" }, "plural": { "nl": "De tafels", "fi": "Pöydät" }},
+    {"singular": { "nl": "Het bed", "fi": "Sänky" }, "plural": { "nl": "De bedden", "fi": "Sängyt" }},
+    {"singular": { "nl": "De sofa", "fi": "Sohva" }, "plural": { "nl": "De sofa's", "fi": "Sohvat" }},
+    {"singular": { "nl": "Het kussen", "fi": "Tyyny" }, "plural": { "nl": "De kussens", "fi": "Tyynyt" }},
+    {"singular": { "nl": "De stoel", "fi": "Tuoli" }, "plural": { "nl": "De stoelen", "fi": "Tuolit" }},
+    {"singular": { "nl": "De lamp", "fi": "Lamppu" }, "plural": { "nl": "De lampen", "fi": "Lamput" }},
+    {"singular": { "nl": "Het gordijn", "fi": "Verho" }, "plural": { "nl": "De gordijnen", "fi": "Verhot" }},
+    {"singular": { "nl": "Het tapijt", "fi": "Matto" }, "plural": { "nl": "De tapijten", "fi": "Matot" }}
+]
