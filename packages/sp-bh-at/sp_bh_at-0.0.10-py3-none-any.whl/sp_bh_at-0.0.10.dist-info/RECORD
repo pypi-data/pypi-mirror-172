@@ -1,0 +1,20 @@
+sp_bh_at/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sp_bh_at/data/output/geo/01_aprm.7z,sha256=I1FYgqH8ZmNCkVfKO4W7X6_YjeA8FP_8xcUUKkF53A8,3016199
+sp_bh_at/data/output/geo/06_bacia_alto_tiete.7z,sha256=ARLOlnbFd_yhnG0PIbc5EWniNOQwgj_hPHny3IPzHB8,214804
+sp_bh_at/data/output/geo/101_rmsp.7z,sha256=dAZiZss35pFu3tEXuxAtFF6wqE4K5pUJcm8U0vXThK4,179504
+sp_bh_at/data/output/geo/16_hidrografia.7z,sha256=1PxcARBy6ddiJwHCdEbelcVWuavOkaflfY4_xdSl7Mg,2111671
+sp_bh_at/data/output/geo/17_hidrografia_complementar.7z,sha256=ZW7SZgZ0-0UOPYoxqy27HcTG9B2flfh8IPnzLEFcvhM,3264098
+sp_bh_at/data/output/geo/45_subbacias.7z,sha256=ZST1AnOrLfV5sjc9h5SYEVTc9fCPjb-OO-qFkKjLsN0,329202
+sp_bh_at/data/output/geo/57_area_protegida_revisao.7z,sha256=hN6_-GlcXAaKH4lWCnEkQCYpOONcRYOi8H0hEd8RUxw,2000750
+sp_bh_at/data/output/geo/58_area_protegida_zona_amortecimento.7z,sha256=lj3_xcemqeqe0s-bqWbtLQF-ZXv-wq1QyITOWYREByE,957146
+sp_bh_at/data/output/geo/apps_hidrografia.7z,sha256=Y0CmH5nJ0aMWPz93FN25OrNns-PYFKTGhB1adD2VITI,8104017
+sp_bh_at/data/output/geo/apps_nascentes.7z,sha256=QXm7AH0DVE4zGwDBTCYraDqBjy_eXGquEZbuP_YMvcQ,1322390
+sp_bh_at/data/output/geo/municipios ugrhi 6.7z,sha256=jsyh4_R4QJffI7fWAdoJ8wYmW6yZsb5xO47st_VuV1s,771069
+sp_bh_at/data/output/geo/municípios da região metropolitana de são paulo.7z,sha256=5m1Ky_ui40zX421KiqagelRekk53jL0_VHenBuaqmDI,729970
+sp_bh_at/data/output/geo/reservatórios_rmsp.7z,sha256=a3HI3Vw2qh3Pnuq-qAKt5McycmSE8nqZaYdufSW1Az0,832370
+sp_bh_at/data/output/geo/áreas contaminadas e reabilitadas na ugrhi 6 - ano 2020.7z,sha256=fKWTfgbxuJ8gyJSOWOU4KXvrg4LFqN05w-VNgVjKOOg,229766
+sp_bh_at-0.0.10.dist-info/LICENSE,sha256=bYA9sHw9Pn4xQCLD2CfTsXXUQWxxkL3pLRE_E9o3XIw,1069
+sp_bh_at-0.0.10.dist-info/METADATA,sha256=XaRPvJrFwkKX0Ekj7kwk0UhDA_iWYplHE5Hl3T6-8TI,2839
+sp_bh_at-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sp_bh_at-0.0.10.dist-info/top_level.txt,sha256=s39fowIDxS8TnxDMUS4XPg9wL94xvC7g8U2PGlPeSvU,9
+sp_bh_at-0.0.10.dist-info/RECORD,,
