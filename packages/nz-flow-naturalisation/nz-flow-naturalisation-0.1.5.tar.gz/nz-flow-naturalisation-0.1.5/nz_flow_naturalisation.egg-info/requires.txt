@@ -1,0 +1,6 @@
+gistools
+requests
+nz-allo-usage-tools>=0.1.13
+hydrolm
+pyyaml
+geopandas
