@@ -1,0 +1,12 @@
+README.md
+setup.py
+SanshiShuyao/README.md
+SanshiShuyao/__init__.py
+SanshiShuyao/__main__.py
+SanshiShuyao/file.pdf
+SanshiShuyao/index.html
+sanshi_shuyao.egg-info/PKG-INFO
+sanshi_shuyao.egg-info/SOURCES.txt
+sanshi_shuyao.egg-info/dependency_links.txt
+sanshi_shuyao.egg-info/entry_points.txt
+sanshi_shuyao.egg-info/top_level.txt

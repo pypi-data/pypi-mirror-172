@@ -1,0 +1,4 @@
+[console_scripts]
+SanshiShuyao = SanshiShuyao.__main__:main
+sanshi-shuyao = SanshiShuyao.__main__:main
+
