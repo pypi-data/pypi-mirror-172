@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: text2story
+Version: 1.0.0
+Summary: It provides a framework to label a text according to the main elements of narrative (events, participants,time) and their relations
+Author: LIAAD lab
+Project-URL: Homepage, https://text2story project website/
+Keywords: narrative,nlp,annotation
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19.4)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: nltk (<3.7)
+Requires-Dist: overrides (>=3.1.0)
+Requires-Dist: joblib (>=0.17.0)
+Requires-Dist: requests (>2.27.0)
+Requires-Dist: cached-path (<1.1.3)
+Requires-Dist: allennlp (<=2.9.3,>2.8.0)
+Requires-Dist: allennlp-models (<=2.9.3,>2.8.0)
+Requires-Dist: spacy (<3.4.1,>3.2.0)
+Requires-Dist: pyspark (>=3.1.2)
+Requires-Dist: spark-nlp (>=3.1.2)
+Requires-Dist: sparknlp (>=1.0.0)
+Requires-Dist: elementpath (>=3.0.2)
+Requires-Dist: plantuml
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
