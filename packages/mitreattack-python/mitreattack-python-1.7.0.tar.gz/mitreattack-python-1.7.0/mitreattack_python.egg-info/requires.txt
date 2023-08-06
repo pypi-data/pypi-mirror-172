@@ -1,0 +1,16 @@
+colour
+drawSvg
+loguru
+Markdown
+numpy
+openpyxl
+pandas
+python-dateutil
+Pillow
+requests
+stix2
+stix2-elevator
+tabulate
+taxii2-client
+tqdm
+xlsxwriter
