@@ -1,0 +1,7 @@
+matplotlib
+libusb
+pyusb
+tqdm
+time
+csv
+numpy
