@@ -1,0 +1,71 @@
+
+[tool.poetry]
+name = "hpcflow-new2"
+version = "0.2.0a6"
+
+description = "Computational workflow management"
+authors = ["aplowman <adam.plowman@manchester.ac.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "hpcflow" }
+]
+include = [
+    "hpcflow/data/workflow_spec_schema.yaml",
+    "hpcflow/data/task_schema_spec_schema.yaml",
+    "hpcflow/data/environments_spec_schema.yaml",
+    "hpcflow/data/files_spec_schema.yaml",
+    "hpcflow/data/config_file_schema.yaml",
+    "hpcflow/data/config_schema.yaml"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+zarr = "^2.10.3"
+"ruamel.yaml" = "^0.17.20"
+click = "^8.0.4"
+colorama = "^0.4.4"
+termcolor = "^1.1.0"
+fsspec = "^2022.2.0"
+sentry-sdk = "^1.5.8"
+platformdirs = "^2.5.1"
+valida = "^0.4.0"
+pyinstaller = {version = "^5.5", optional = true}
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.12.2"
+ipykernel = "^6.6.1"
+pytest = "^6.2.5"
+commitizen = "^2.20.3"
+pre-commit = "^2.16.0"
+Sphinx = "^4.4.0"
+pydata-sphinx-theme = "^0.8.0"
+sphinx-jinja = "^2.0.1"
+sphinx-copybutton = "^0.5.0"
+black = "^22.3.0"
+
+[tool.poetry.extras]
+pyinstaller = ["pyinstaller"]
+
+[tool.poetry.scripts]
+hpcflow = 'hpcflow.cli.cli:hpcflow.CLI'
+
+[tool.poetry.plugins.pyinstaller40]
+hook-dirs = "pyinstaller.__init__:get_hook_dirs"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.2.0a6"
+tag_format = "v$version"
+version_files = [ 
+    "pyproject.toml:version",
+    "hpcflow/_version.py"
+]
+bump_message = "bump: $current_version → $new_version [skip ci]"
+
+[tool.black]
+line-length = 90
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
