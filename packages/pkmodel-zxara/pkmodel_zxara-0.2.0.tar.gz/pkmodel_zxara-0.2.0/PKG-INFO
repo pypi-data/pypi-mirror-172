@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pkmodel-zxara
+Version: 0.2.0
+Summary: A pharmacokinetic model
+License: MIT
+Author: Jacob Wright
+Author-email: jacob.wright@dtc.ox.ac.uk
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (==22.1.0)
+Requires-Dist: contourpy (==1.0.5)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: fonttools (==4.37.4)
+Requires-Dist: iniconfig (==1.1.1)
+Requires-Dist: kiwisolver (==1.4.4)
+Requires-Dist: matplotlib (==3.6.1)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pillow (==9.2.0)
+Requires-Dist: pluggy (==1.0.0)
+Requires-Dist: py (==1.11.0)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: scipy (==1.9.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tomli (==2.0.1)
+Description-Content-Type: text/markdown
+
+# 2020-software-engineering-projects-pk
+starter pk modelling repository
+
