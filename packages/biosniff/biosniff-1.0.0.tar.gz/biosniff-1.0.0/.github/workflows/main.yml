@@ -1,0 +1,46 @@
+name: Tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches-ignore: []
+  schedule:
+    - cron: '0 0 * * SUN'
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+      matrix:
+        python: [3.7, 3.8, 3.9, '3.10']
+      fail-fast: false
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.X
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}
+    - name: conda
+      run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install sequana with pip
+      run: |
+        pip install -r requirements.txt
+        pip install .
+    - name: Test with pytest
+      run: |
+        pip install -r requirements_dev.txt
+        pytest --cov-report term --cov=biosniff
+    - name: coveralls
+      run: |
+        pip install coveralls
+        coveralls --service=github
+      env:
+          GITHUB_TOKEN: ${{ github.token }}
