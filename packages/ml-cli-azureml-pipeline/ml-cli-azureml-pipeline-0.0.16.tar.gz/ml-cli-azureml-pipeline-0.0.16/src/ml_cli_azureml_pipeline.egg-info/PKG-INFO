@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ml-cli-azureml-pipeline
+Version: 0.0.16
+Summary: ML-Cli run in an azureML Pipeline
+Home-page: https://github.com/AxaGuilDEv/ml-cli-azureml-pipeline
+Author: Axa_france
+Author-email: guillaume.chervet@axa.fr
+Platform: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+License-File: LICENSE
+
+Run our ML integration test automaticaly on production environment so we can compute : prediction quality, response time, infrastructure cost
