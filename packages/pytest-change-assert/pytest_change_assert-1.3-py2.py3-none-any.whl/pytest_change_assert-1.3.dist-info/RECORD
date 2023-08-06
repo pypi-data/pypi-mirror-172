@@ -1,0 +1,10 @@
+pytest_assert_error.py,sha256=EP0sAk2Jpdn32aqQRm9z5W94x8eYJtaZtPn7IHP4DAA,6215
+tests/__init__.py,sha256=rLW1HnVC17WLPpHRLeMgywB-LZE9946vPMnELxKIGaQ,506
+tests/conftest.py,sha256=CYjgQ8apnpLYbo3B8uwShip6kbmykSVNeJR-FUU6JDM,581
+tests/test_change_assert.py,sha256=2XR9OW66K4MfLSfCriQewXIOm4kiAo0HConQ3lRS7k0,1260
+pytest_change_assert-1.3.dist-info/AUTHORS,sha256=LbAeszq_MMWEO-1daN17GT7ROyhArLuOp75DBg4I3rw,54
+pytest_change_assert-1.3.dist-info/METADATA,sha256=rahsnPOaHFibQWKiJ7OxWSvfgy9bsqvoz0yxeur2oXA,299
+pytest_change_assert-1.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pytest_change_assert-1.3.dist-info/entry_points.txt,sha256=jn6T6EceuLaSCz-n2oUVM7hZQi1n6jDNBal2j5JdZJM,54
+pytest_change_assert-1.3.dist-info/top_level.txt,sha256=oRenV1VwFsVlg8fFgWPv6Ka1GjPe03zd7FcIi4XjBAE,26
+pytest_change_assert-1.3.dist-info/RECORD,,

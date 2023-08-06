@@ -1,0 +1,2 @@
+[pytest11]
+pytest-change_assert = pytest_assert_error
