@@ -1,0 +1,6 @@
+tabulate
+requests
+zeroconf
+websockets
+packaging
+tqdm
