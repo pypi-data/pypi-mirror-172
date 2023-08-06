@@ -1,0 +1,376 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: mailman-developers@python.org\n"
+"POT-Creation-Date: 2022-05-18 17:38+0000\n"
+"PO-Revision-Date: 2022-08-30 09:55+0000\n"
+"Last-Translator: SONS ČR <weblate@sons.cz>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gnu-mailman/"
+"django-mailman3/cs/>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14.1-dev\n"
+
+#: forms.py:32
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+#: forms.py:33
+msgid "First name"
+msgstr "Křestní jméno"
+
+#: forms.py:34
+msgid "Last name"
+msgstr "Příjmení"
+
+#: forms.py:36
+msgid "Time zone"
+msgstr "Časové pásmo"
+
+#: forms.py:43
+msgid "A user with that username already exists."
+msgstr "Uživatel s tímto přihlašovacím jménem již existuje."
+
+#: templates/account/email.html:6
+#: templates/django_mailman3/profile/base.html:17
+msgid "Account"
+msgstr "Účet"
+
+#: templates/account/email.html:11
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "Následující e-mailové adresy jsou spojeny s Vaším účtem:"
+
+#: templates/account/email.html:25
+msgid "Verified"
+msgstr "Ověřeno"
+
+#: templates/account/email.html:27
+msgid "Unverified"
+msgstr "Neověřeno"
+
+#: templates/account/email.html:29
+msgid "Primary"
+msgstr "Hlavní"
+
+#: templates/account/email.html:35
+msgid "Make Primary"
+msgstr "Nastavit hlavním"
+
+#: templates/account/email.html:36
+msgid "Re-send Verification"
+msgstr "Znovu ověřit"
+
+#: templates/account/email.html:37 templates/socialaccount/connections.html:34
+msgid "Remove"
+msgstr "Odstranit"
+
+#: templates/account/email.html:44
+msgid "Warning:"
+msgstr "Varování:"
+
+#: templates/account/email.html:44
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"Nemáte nastavnou žádnou e-mailovou adresu. Doporučujeme si ji přidat, abyste "
+"byli schopni přijímat důležitá oznámení, resetovat heslo, atd.."
+
+#: templates/account/email.html:49
+msgid "Add E-mail Address"
+msgstr "Přidat e-mailovou adresu"
+
+#: templates/account/email.html:55
+msgid "Add E-mail"
+msgstr "Přidat e-mail"
+
+#: templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "Opravdu chcete odstranit vybrané e-mailové adresy?"
+
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr "Potvrdit e-mailovou adresu"
+
+#: templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"Prosím potvrďte, že <a href=\"mailto:%(email)s\">%(email)s</a> je e-mailová "
+"adresa uživatele %(user_display)s."
+
+#: templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr "S potvrzením"
+
+#: templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+"Tento odkaz pro potvrzení je neplatný, nebo vypršel. Prosím <a href="
+"\"%(email_url)s\">požádejte o nový potvrzovací e-mail</a>."
+
+#: templates/account/login.html:7 templates/account/login.html:11
+#: templates/account/login.html:48
+msgid "Sign In"
+msgstr "Přihlásit se"
+
+#: templates/account/login.html:18
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+"Přihlašte se pomocí z jednoho\n"
+"poskytovatelů třetích stran, nebo se <a href=\"%(signup_url)s"
+"\">zaregistrujte</a>\n"
+"na %(site_name)s a přihlašte se níže:"
+
+#: templates/account/login.html:30
+#: templates/django_mailman3/profile/profile.html:72
+msgid "or"
+msgstr "nebo"
+
+#: templates/account/login.html:37
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+"Pokud jste si zatím nevytvořili účet, prosím\n"
+"<a href=\"%(signup_url)s\">zaregistrujte se</a> ."
+
+#: templates/account/login.html:50
+msgid "Forgot Password?"
+msgstr "Zapomněli jste heslo?"
+
+#: templates/account/logout.html:5 templates/account/logout.html:8
+#: templates/account/logout.html:17
+msgid "Sign Out"
+msgstr "Odhlásit se"
+
+#: templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr "Opravdu se chcete odhlásit?"
+
+#: templates/account/password_change.html:12
+#: templates/account/password_reset_from_key.html:6
+#: templates/account/password_reset_from_key.html:9
+#: templates/django_mailman3/profile/base.html:20
+msgid "Change Password"
+msgstr "Změnit heslo"
+
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset.html:11
+msgid "Password Reset"
+msgstr "Obnovit heslo"
+
+#: templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"Zapomněli jste heslo? Zadejte e-mailovou adresu níže, na kterou zašleme "
+"odkaz pro jeho obnovení."
+
+#: templates/account/password_reset.html:22
+msgid "Reset My Password"
+msgstr "Obnovit heslo"
+
+#: templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr "V případě problému s obnovením hesla nás neváhejte kontaktovat."
+
+#: templates/account/password_reset_from_key.html:9
+msgid "Bad Token"
+msgstr "Špatný token"
+
+#: templates/account/password_reset_from_key.html:13
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+"Odkaz pro obnovu hesla je neplatný, pravděpodobně byl již jednou použit.  "
+"Prosím požádejte si znovu o <a href=\"%(passwd_reset_url)s\">obnovu hesla</"
+"a>."
+
+#: templates/account/password_reset_from_key.html:20
+msgid "change password"
+msgstr "změnit heslo"
+
+#: templates/account/password_reset_from_key.html:25
+msgid "Your password is now changed."
+msgstr "Vaše heslo bylo změněno."
+
+#: templates/account/password_set.html:12
+msgid "Set Password"
+msgstr "Nastavit heslo"
+
+#: templates/account/signup.html:6 templates/socialaccount/signup.html:6
+msgid "Signup"
+msgstr "Registrace"
+
+#: templates/account/signup.html:9 templates/account/signup.html:20
+#: templates/socialaccount/signup.html:9 templates/socialaccount/signup.html:21
+msgid "Sign Up"
+msgstr "Zaregistrovat se"
+
+#: templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr "Už máte účet? Prosím <a href=\"%(login_url)s\">přihlaste se</a>."
+
+#: templates/django_mailman3/paginator/pagination.html:45
+msgid "Jump to page:"
+msgstr "Jít na stránku:"
+
+#: templates/django_mailman3/paginator/pagination.html:63
+msgid "Results per page:"
+msgstr "Výsledky na stránku:"
+
+#: templates/django_mailman3/paginator/pagination.html:79
+#: templates/django_mailman3/profile/profile.html:71
+msgid "Update"
+msgstr "Aktualizace"
+
+#: templates/django_mailman3/profile/base.html:6
+msgid "User Profile"
+msgstr "Uživatelský profil"
+
+#: templates/django_mailman3/profile/base.html:13
+msgid "User profile"
+msgstr "Uživatelský profil"
+
+#: templates/django_mailman3/profile/base.html:13
+msgid "for"
+msgstr "pro"
+
+#: templates/django_mailman3/profile/base.html:23
+msgid "E-mail Addresses"
+msgstr "E-mailové adresy"
+
+#: templates/django_mailman3/profile/base.html:30
+msgid "Account Connections"
+msgstr "Propojení s účtem"
+
+#: templates/django_mailman3/profile/base.html:35
+#: templates/django_mailman3/profile/delete_profile.html:16
+msgid "Delete Account"
+msgstr "Smazat účet"
+
+#: templates/django_mailman3/profile/delete_profile.html:11
+msgid ""
+"Are you sure you want to delete your account? This will remove your account "
+"along with all your subscriptions."
+msgstr ""
+"Opravdu si přejete smazat účet? Tato akce odstraní váš účet, včetně všech "
+"vašich odběrů."
+
+#: templates/django_mailman3/profile/profile.html:20
+#: templates/django_mailman3/profile/profile.html:57
+msgid "Edit on"
+msgstr "Editovat"
+
+#: templates/django_mailman3/profile/profile.html:28
+msgid "Primary email:"
+msgstr "Hlavní e-mail:"
+
+#: templates/django_mailman3/profile/profile.html:34
+msgid "Other emails:"
+msgstr "Další e-maily:"
+
+#: templates/django_mailman3/profile/profile.html:40
+msgid "(no other email)"
+msgstr "(žádný další e-mail)"
+
+#: templates/django_mailman3/profile/profile.html:45
+msgid "Link another address"
+msgstr "Propojit jinou adresu"
+
+#: templates/django_mailman3/profile/profile.html:53
+msgid "Avatar:"
+msgstr "Avatar:"
+
+#: templates/django_mailman3/profile/profile.html:63
+msgid "Joined on:"
+msgstr "Přidal se:"
+
+#: templates/django_mailman3/profile/profile.html:72
+msgid "cancel"
+msgstr "storno"
+
+#: templates/openid/login.html:10
+msgid "OpenID Sign In"
+msgstr "Přihlášení pomocí OpenID"
+
+#: templates/socialaccount/connections.html:9
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr ""
+"Pro přihlášení můžete využít kteréhokoliv z těchto poskytovatelů třetích "
+"stran:"
+
+#: templates/socialaccount/connections.html:42
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr "K tomuto účtu nemáte propojený žádný profil na sociálních sítích."
+
+#: templates/socialaccount/connections.html:45
+msgid "Add a 3rd Party Account"
+msgstr "Přidat účet třetí strany"
+
+#: templates/socialaccount/signup.html:11
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+"Chystáte se použít %(provider_name)s účet pro přihlášení do\n"
+"%(site_name)s. Jako poslední krok, prosím vyplňte tento formulář:"
+
+#: templatetags/pagination.py:43
+msgid "Newer"
+msgstr "Nikdy"
+
+#: templatetags/pagination.py:44
+msgid "Older"
+msgstr "Starší"
+
+#: templatetags/pagination.py:46
+msgid "Previous"
+msgstr "Předchozí"
+
+#: templatetags/pagination.py:47
+msgid "Next"
+msgstr "Další"
+
+#: views/profile.py:72
+msgid "The profile was successfully updated."
+msgstr "Profil byl úspěšně aktualizován."
+
+#: views/profile.py:74
+msgid "No change detected."
+msgstr "Neprovedeny žádné změny."
+
+#: views/profile.py:110
+msgid "Successfully deleted account"
+msgstr "Účet byl úspěšně smazán"

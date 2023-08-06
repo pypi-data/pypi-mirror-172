@@ -1,0 +1,379 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-18 17:38+0000\n"
+"PO-Revision-Date: 2022-04-27 17:11+0000\n"
+"Last-Translator: Piotr Frankowski <piotr@ten.net.pl>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/gnu-mailman/"
+"django-mailman3/pl/>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Generator: Weblate 4.12.1-dev\n"
+
+#: forms.py:32
+msgid "Username"
+msgstr ""
+
+#: forms.py:33
+msgid "First name"
+msgstr ""
+
+#: forms.py:34
+msgid "Last name"
+msgstr ""
+
+#: forms.py:36
+msgid "Time zone"
+msgstr ""
+
+#: forms.py:43
+msgid "A user with that username already exists."
+msgstr "Użytkownik z tą nazwą już istnieje."
+
+#: templates/account/email.html:6
+#: templates/django_mailman3/profile/base.html:17
+msgid "Account"
+msgstr "Konto"
+
+#: templates/account/email.html:11
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "Z Twoim kontem powiązane są następujące adresy e-mail:"
+
+#: templates/account/email.html:25
+msgid "Verified"
+msgstr "Zweryfikowany"
+
+#: templates/account/email.html:27
+msgid "Unverified"
+msgstr "Niezweryfikowany"
+
+#: templates/account/email.html:29
+msgid "Primary"
+msgstr "Podstawowy"
+
+#: templates/account/email.html:35
+msgid "Make Primary"
+msgstr "Uczyń podstawowym"
+
+#: templates/account/email.html:36
+msgid "Re-send Verification"
+msgstr "Prześlij ponownie weryfikację"
+
+#: templates/account/email.html:37 templates/socialaccount/connections.html:34
+msgid "Remove"
+msgstr "Usuń"
+
+#: templates/account/email.html:44
+msgid "Warning:"
+msgstr "Ostrzeżenie:"
+
+#: templates/account/email.html:44
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"Obecnie nie masz skonfigurowanego adresu e-mail. Naprawdę powinieneś dodać "
+"adres e-mail, aby otrzymywać powiadomienia, resetować hasło itp."
+
+#: templates/account/email.html:49
+msgid "Add E-mail Address"
+msgstr "Dodaj adres email"
+
+#: templates/account/email.html:55
+msgid "Add E-mail"
+msgstr "Dodaj email"
+
+#: templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "Czy na pewno chcesz usunąć zaznaczone adresy email?"
+
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr "Potwierdź adres email"
+
+#: templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"Potwierdź, że <a href=\"mailto:%(email)s\">%(email)s</a> to adres e-mail "
+"użytkownika %(user_display)s."
+
+#: templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr "Potwierdzone"
+
+#: templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+"Ten link potwierdzający e-mail wygasł lub jest nieprawidłowy. <a href="
+"\"%(email_url)s\">wystaw nową prośbę o potwierdzenie e-mailem</a>."
+
+#: templates/account/login.html:7 templates/account/login.html:11
+#: templates/account/login.html:48
+msgid "Sign In"
+msgstr "Zaloguj się"
+
+#: templates/account/login.html:18
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+"Zaloguj się za pomocą jednego\n"
+"z twoich istniejących kont stron trzecich. Lub <a href=\"%(signup_url)s"
+"\">zarejestruj się</a>\n"
+"dla konta %(site_name)s i zaloguj się poniżej:"
+
+#: templates/account/login.html:30
+#: templates/django_mailman3/profile/profile.html:72
+msgid "or"
+msgstr "lub"
+
+#: templates/account/login.html:37
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+"Jeśli nie utworzyłeś jeszcze konta, \n"
+"<a href=\"%(signup_url)s\">zarejestruj się</a> najpierw."
+
+#: templates/account/login.html:50
+msgid "Forgot Password?"
+msgstr "Zapomniałeś hasła?"
+
+#: templates/account/logout.html:5 templates/account/logout.html:8
+#: templates/account/logout.html:17
+msgid "Sign Out"
+msgstr "Wyloguj się"
+
+#: templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr "Jesteś pewny, że chcesz się wylogować?"
+
+#: templates/account/password_change.html:12
+#: templates/account/password_reset_from_key.html:6
+#: templates/account/password_reset_from_key.html:9
+#: templates/django_mailman3/profile/base.html:20
+msgid "Change Password"
+msgstr "Zmień hasło"
+
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset.html:11
+msgid "Password Reset"
+msgstr "Reset hasła"
+
+#: templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"Zapomniałeś hasła? Wprowadź swój adres email poniżej, a my wyślemy Ci maila "
+"umożliwiającego zresetowanie go."
+
+#: templates/account/password_reset.html:22
+msgid "Reset My Password"
+msgstr "Zresertuj moje hasło"
+
+#: templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+"Skontaktuj się z nami, jeśli masz problemy ze zresetowaniem swojego hasła."
+
+#: templates/account/password_reset_from_key.html:9
+msgid "Bad Token"
+msgstr "Zły token"
+
+#: templates/account/password_reset_from_key.html:13
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+"Link do resetowania hasła był nieprawidłowy, prawdopodobnie dlatego, że "
+"został już użyty. Poproś o <a href=\"%(passwd_reset_url)s\">zresetowanie "
+"nowego hasła</a>."
+
+#: templates/account/password_reset_from_key.html:20
+msgid "change password"
+msgstr "zmień hasło"
+
+#: templates/account/password_reset_from_key.html:25
+msgid "Your password is now changed."
+msgstr "Hasło zostało zmienione."
+
+#: templates/account/password_set.html:12
+msgid "Set Password"
+msgstr "Ustaw hasło"
+
+#: templates/account/signup.html:6 templates/socialaccount/signup.html:6
+msgid "Signup"
+msgstr "Rejestracja"
+
+#: templates/account/signup.html:9 templates/account/signup.html:20
+#: templates/socialaccount/signup.html:9 templates/socialaccount/signup.html:21
+msgid "Sign Up"
+msgstr "Zarejestruj się"
+
+#: templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+"Posiadasz już konto? W takim razie <a href=\"%(login_url)s\">zaloguj się</a>."
+
+#: templates/django_mailman3/paginator/pagination.html:45
+msgid "Jump to page:"
+msgstr "Przeskocz do strony:"
+
+#: templates/django_mailman3/paginator/pagination.html:63
+msgid "Results per page:"
+msgstr "Wyników na stronę:"
+
+#: templates/django_mailman3/paginator/pagination.html:79
+#: templates/django_mailman3/profile/profile.html:71
+msgid "Update"
+msgstr "Aktualizuj"
+
+#: templates/django_mailman3/profile/base.html:6
+msgid "User Profile"
+msgstr "Profil użytkownika"
+
+#: templates/django_mailman3/profile/base.html:13
+msgid "User profile"
+msgstr "Profil użytkownika"
+
+#: templates/django_mailman3/profile/base.html:13
+msgid "for"
+msgstr "dla"
+
+#: templates/django_mailman3/profile/base.html:23
+msgid "E-mail Addresses"
+msgstr "Adresy email"
+
+#: templates/django_mailman3/profile/base.html:30
+msgid "Account Connections"
+msgstr "Połączenia konta"
+
+#: templates/django_mailman3/profile/base.html:35
+#: templates/django_mailman3/profile/delete_profile.html:16
+msgid "Delete Account"
+msgstr "Usuń konto"
+
+#: templates/django_mailman3/profile/delete_profile.html:11
+msgid ""
+"Are you sure you want to delete your account? This will remove your account "
+"along with all your subscriptions."
+msgstr ""
+"Jesteś pewny, że chcesz usunąć konto? Usuniesz konto wraz ze wszystkimi "
+"swoimi subskrypcjami."
+
+#: templates/django_mailman3/profile/profile.html:20
+#: templates/django_mailman3/profile/profile.html:57
+msgid "Edit on"
+msgstr "Edytuj"
+
+#: templates/django_mailman3/profile/profile.html:28
+msgid "Primary email:"
+msgstr "Główny email:"
+
+#: templates/django_mailman3/profile/profile.html:34
+msgid "Other emails:"
+msgstr "Inne emaile:"
+
+#: templates/django_mailman3/profile/profile.html:40
+msgid "(no other email)"
+msgstr "(brak innych email)"
+
+#: templates/django_mailman3/profile/profile.html:45
+msgid "Link another address"
+msgstr "Połącz inny adres"
+
+#: templates/django_mailman3/profile/profile.html:53
+msgid "Avatar:"
+msgstr "Awatar:"
+
+#: templates/django_mailman3/profile/profile.html:63
+msgid "Joined on:"
+msgstr "Dołączono:"
+
+#: templates/django_mailman3/profile/profile.html:72
+msgid "cancel"
+msgstr "anuluj"
+
+#: templates/openid/login.html:10
+msgid "OpenID Sign In"
+msgstr "Logowanie OpenID"
+
+#: templates/socialaccount/connections.html:9
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr "Możesz się zalogować do swojego konta używając następujących kont:"
+
+#: templates/socialaccount/connections.html:42
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr ""
+"Obecnie nie masz żadnych kont społecznościowych połączonych z tym kontem."
+
+#: templates/socialaccount/connections.html:45
+msgid "Add a 3rd Party Account"
+msgstr "Dodaj konto dodatkowe"
+
+#: templates/socialaccount/signup.html:11
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+"Za chwilę użyjesz konta %(provider_name)s, aby się zalogować do\n"
+"%(site_name)s. W ostatnim kroku wypełnij następujący formularz:"
+
+#: templatetags/pagination.py:43
+msgid "Newer"
+msgstr "Nowsze"
+
+#: templatetags/pagination.py:44
+msgid "Older"
+msgstr "Starsze"
+
+#: templatetags/pagination.py:46
+msgid "Previous"
+msgstr "Poprzedni"
+
+#: templatetags/pagination.py:47
+msgid "Next"
+msgstr "Następny"
+
+#: views/profile.py:72
+msgid "The profile was successfully updated."
+msgstr "Profil został pomyślnie zaktualizowany."
+
+#: views/profile.py:74
+msgid "No change detected."
+msgstr "Nie wykryto zmian."
+
+#: views/profile.py:110
+msgid "Successfully deleted account"
+msgstr "Pomyślnie usunięto konto"

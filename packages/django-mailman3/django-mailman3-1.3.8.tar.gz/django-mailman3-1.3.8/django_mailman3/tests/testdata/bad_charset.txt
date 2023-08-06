@@ -1,0 +1,10 @@
+MIME-Version: 1.0
+From: Web AWS Services <info@example.com>
+Subject: Resolved ID 90165632
+To: psf@python.org
+Content-Transfer-Encoding: base64
+Content-Type: text/html; charset="UTF-8-Base64"
+Date: Thu, 21 May 2020 06:50:04 +0300
+Message-Id: <49SGBB0559zpFDF@mail.python.org>
+
+U29tZSBjb250ZW50IGZvciB0aGUgdGVzdC4K

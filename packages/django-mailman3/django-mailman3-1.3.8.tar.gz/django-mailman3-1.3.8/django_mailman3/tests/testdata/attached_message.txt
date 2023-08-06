@@ -1,0 +1,38 @@
+Subject: Fwd: [MM3-users] Emergency Moderation
+To: test@example.com
+From: Mark Sapiro <mark@example.com>
+Message-ID: <06099ccc-48bc-c4fa-5d2a-0bdb597d5812@example.com>
+Date: Thu, 21 May 2020 17:20:31 -0700
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="------------9FF0FA65F7F9D51E428470D4"
+
+This is a multi-part message in MIME format.
+--------------9FF0FA65F7F9D51E428470D4
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+See the attached.
+
+--------------9FF0FA65F7F9D51E428470D4
+Content-Type: message/rfc822;
+ name="Moderation.eml"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+ filename="Moderation.eml"
+
+Subject: Re: [MM3-users] Emergency Moderation
+To: mailman-users@mailman3.org
+From: Mark Sapiro <mark@example.com>
+Message-ID: <1d3c4594-1268-f235-8ac1-9c1cc835f7ce@example.com>
+Date: Thu, 21 May 2020 15:30:10 -0700
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+It's in core and it's just recently been exposed in REST
+https://gitlab.com/mailman/mailman/-/merge_requests/643 but it's not in
+Postorius yet.
+
+--------------9FF0FA65F7F9D51E428470D4--
+
