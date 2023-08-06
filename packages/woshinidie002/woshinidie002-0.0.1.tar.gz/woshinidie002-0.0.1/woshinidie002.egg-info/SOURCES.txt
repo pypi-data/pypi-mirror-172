@@ -1,0 +1,8 @@
+setup.py
+example_pkg/__init__.py
+example_pkg/test.py
+example_pkg/sec_example_pkg/__init__.py
+woshinidie002.egg-info/PKG-INFO
+woshinidie002.egg-info/SOURCES.txt
+woshinidie002.egg-info/dependency_links.txt
+woshinidie002.egg-info/top_level.txt
