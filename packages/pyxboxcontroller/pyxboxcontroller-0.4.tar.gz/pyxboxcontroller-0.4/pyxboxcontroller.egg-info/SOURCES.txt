@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+pyxboxcontroller/XInput.py
+pyxboxcontroller/__init__.py
+pyxboxcontroller/controller.py
+pyxboxcontroller.egg-info/PKG-INFO
+pyxboxcontroller.egg-info/SOURCES.txt
+pyxboxcontroller.egg-info/dependency_links.txt
+pyxboxcontroller.egg-info/top_level.txt
