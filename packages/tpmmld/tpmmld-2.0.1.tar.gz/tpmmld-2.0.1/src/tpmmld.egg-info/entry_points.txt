@@ -1,0 +1,2 @@
+[console_scripts]
+tpmmld = tpmmld.application:main
