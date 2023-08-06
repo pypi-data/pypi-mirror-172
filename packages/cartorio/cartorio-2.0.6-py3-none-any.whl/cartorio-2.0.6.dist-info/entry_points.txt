@@ -1,0 +1,3 @@
+[console_scripts]
+cartorio = cartorio.__main__:main
+
