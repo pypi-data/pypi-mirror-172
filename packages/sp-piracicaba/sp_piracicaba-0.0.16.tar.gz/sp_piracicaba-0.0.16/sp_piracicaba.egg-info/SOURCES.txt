@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+sp_piracicaba/__init__.py
+sp_piracicaba/lyr.py
+sp_piracicaba.egg-info/PKG-INFO
+sp_piracicaba.egg-info/SOURCES.txt
+sp_piracicaba.egg-info/dependency_links.txt
+sp_piracicaba.egg-info/requires.txt
+sp_piracicaba.egg-info/top_level.txt
+sp_piracicaba/data/output/geo/divisa_abairramento.7z
+sp_piracicaba/data/output/geo/divisa_municipal.7z
+sp_piracicaba/data/output/geo/divisa_perimetro.7z
+sp_piracicaba/data/output/geo/divisa_urbanorural.7z
+sp_piracicaba/data/output/geo/macrozonas.7z
