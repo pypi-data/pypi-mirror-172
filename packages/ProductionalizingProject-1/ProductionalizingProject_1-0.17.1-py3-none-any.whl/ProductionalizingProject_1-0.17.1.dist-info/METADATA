@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ProductionalizingProject-1
+Version: 0.17.1
+Summary: A very simple setuptools-pyproject.toml project
+Author-email: Advanced Python <python@developintelligence.com>
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.16)
+
+# MyProject
+
+This project is a test setuptools project.
+
+Its features:
+    
+* feature 1
+* feature 2
+* feature 3
