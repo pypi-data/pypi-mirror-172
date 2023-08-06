@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pycfs
+Version: 0.0.1
+Summary: OpenCFS automatization and optimization interface library for python.
+Home-page: https://www.tugraz.at/institute/igte/home/
+Author: Eniz Museljic
+Author-email: eniz.m@outlook.com
+Keywords: optimization,opencfs,simulation,finite elements
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: numpy (>=1.20.1)
+Requires-Dist: typing-extensions (>=3.7.4.3)
+Requires-Dist: glob2 (>=0.7)
+Requires-Dist: pytest (>=6.2.5)
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+
