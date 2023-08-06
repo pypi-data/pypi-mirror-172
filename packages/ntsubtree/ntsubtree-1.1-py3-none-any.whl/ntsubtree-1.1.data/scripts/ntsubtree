@@ -1,0 +1,40 @@
+#!python
+"""
+Fast subtree queries on the NCBI taxonomy tree
+
+Usage:
+  ntsubtree [attr] <command> [<args>...]
+
+Available commands:
+  update       Update the NCBI taxonomy data
+  query        List IDs/attributes of the subtree under a given node
+  attribute    Add/edit/remove attributes
+
+See 'ntsubtree <command> --help' for more information on a specific command.
+
+"""
+from docopt import docopt
+from ntsubtree import __version__
+from fastsubtrees import error, logger
+from fastsubtrees.commands import _support
+
+if __name__ == '__main__':
+  args = docopt(__doc__, version=__version__, options_first=True)
+  command = args['<command>']
+  if command == 'update':
+    import ntsubtree.commands.update as cmd
+  elif command == 'query':
+    import ntsubtree.commands.query as cmd
+  elif command == 'attribute':
+    import ntsubtree.commands.attribute as cmd
+  else:
+    exit(f"'{command}' is not a ntsubtree command.\n"+\
+        "See ntsubtree --help.")
+  argv = [command] + args["<args>"]
+  cmd_args = docopt(cmd.__doc__, version=__version__, argv=argv)
+  _support.setup_verbosity(cmd_args)
+  try:
+    cmd.main(cmd_args)
+  except (error.FastsubtreesError, FileNotFoundError) as e:
+    logger.error(e)
+    exit(1)
