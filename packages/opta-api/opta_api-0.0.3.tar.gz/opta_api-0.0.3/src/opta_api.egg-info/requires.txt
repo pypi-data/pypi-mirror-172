@@ -1,0 +1,4 @@
+
+[test]
+pytest>=3.7
+pandas>=1.0.0
