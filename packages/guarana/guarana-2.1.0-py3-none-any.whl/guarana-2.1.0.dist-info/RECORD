@@ -1,0 +1,10 @@
+guarana/__init__.py,sha256=AIlDiDfT2hYEOEuEM68IeNGEa00Y7SgZol4GGqnV2A8,912
+guarana/schemas/__init__.py,sha256=i2L9QAFUT9vvBsO-G-SG1g0A18wieLB_DVCUe4PRFxg,83
+guarana/schemas/base.py,sha256=2fz5s9iOmOP8c8mIoMx7abkAswa2O1LDOKXc8bWgpvM,161
+guarana/schemas/events.py,sha256=W-KZ0nXWOtHqWxUhJXduSLerAfyhgxl_Ngi8MknHuoo,99
+guarana/schemas/order.py,sha256=G_gjE2B-4_j1irxWz5ZFJ4MpAwQqxDbC2TaDsYPy35c,412
+guarana/segment_client.py,sha256=Lf4Ni-YwsDOXee6jg8XQ_9g3v1XWxQvFcyMJuFdP-mg,1222
+guarana/trackers/order_tracker.py,sha256=ue3FViK2aFZVhfoQlXvx_sLxfV1RqG8qaVVKBKFZuxA,818
+guarana-2.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+guarana-2.1.0.dist-info/METADATA,sha256=46eu2XTanp87ujnq3m-PQxUillAUfEtIctcWs7U_b8U,487
+guarana-2.1.0.dist-info/RECORD,,
