@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+src/demo.py
+src/test_termformatters.py
+src/termformatters/__init__.py
+src/termformatters/base.py
+src/termformatters.egg-info/PKG-INFO
+src/termformatters.egg-info/SOURCES.txt
+src/termformatters.egg-info/dependency_links.txt
+src/termformatters.egg-info/top_level.txt
