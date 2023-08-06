@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ADsim
+Version: 0.5
+Summary: ADsim-module
+Home-page: https://www.adwin.de/us/produkte/adsim.html
+Author: Markus Borchers
+Author-email: info@ADwin.de
+Maintainer: Jaeger Computergesteuerte Messtechnik GmbH
+License: Apache License, Version 2
+Platform: linux2
+Platform: win32
+License-File: LICENSE.txt
+
+# ADsim Python-Module
+
+This module is a wrapper to the ADsim library.
+
+It enables communication with a Simulink model running in real time on an ADwin hardware using ADsim.
+
+The individual functions are described in the documentation for the MATLAB driver. This is included in the ADsim package.
