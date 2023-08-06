@@ -1,0 +1,3 @@
+# Including text sources
+include LICENSE
+include README.md
