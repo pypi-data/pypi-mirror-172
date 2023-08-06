@@ -1,0 +1,16 @@
+damuffin/__init__.py,sha256=YF4V8pG_-fTxEez9BDqqlVPYugIaLjtrN0-trF25JPQ,40
+damuffin/_hector.py,sha256=L6zK5kutqLdCmC7bd5kM7ZV5qyBYfSLeCYZEE9qBUGM,487
+damuffin/_net.py,sha256=quORcWxiYjG_7QsrQHhYoxNULqfXaSFG0GxETNObQL0,8374
+damuffin/_sysinfo.py,sha256=uZQzqa_rx44OnzaP4A9rAwP2fPCF8wwv5al75MGeato,8099
+damuffin/browser.py,sha256=JYDHAjnKDixi4b_iEJmjbJ4SBYuhyq9Lp9Lx69WHl2A,18118
+damuffin/damuffin.py,sha256=egiHF25XIBI47tQdxyzzTSy_VxED1SYdgBvTuU9CR7s,12004
+damuffin/elog.py,sha256=Cab8bH2ipcZjZMZoa48odFmEvSOyk-2n5pQv8pZLJfA,6448
+damuffin/hector.py,sha256=xvsrt3rAhQPoSd3KbKkeBlQ0DTQ4618eHIux3euhDn0,588
+damuffin/net.py,sha256=RkvJzAfiMWxYNhVguWqilsoXggZWxP9WbQUWYB_ueOw,8371
+damuffin/star.py,sha256=-E7dOVi4OyYs2iRe4Y-ntf2qmG795RgH68-5oM4zWAw,2227
+damuffin/sysinfo.py,sha256=0sMcSlIbhXpSkw8sPwmSOxJPY4p_4YVJOCdxAbDNT6E,8094
+damuffin-1.5.1.dist-info/LICENSE,sha256=oRN7OX7W-nf6kpgw7LUqW4WhQu86A2axu51b-U3MA0U,1089
+damuffin-1.5.1.dist-info/METADATA,sha256=WSKGyqkpiJnNJlkjnVTPWTnYWAgqE6PBY-osJ_tigEE,578
+damuffin-1.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+damuffin-1.5.1.dist-info/top_level.txt,sha256=jhAfX0gTmarlUxi8oinMg-Dndd0gKQ6B02gGwNTrwZ8,9
+damuffin-1.5.1.dist-info/RECORD,,
