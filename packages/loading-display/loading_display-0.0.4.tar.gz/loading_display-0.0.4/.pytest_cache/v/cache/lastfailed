@@ -1,0 +1,4 @@
+{
+  "tests/loading_test.py::test_next_spinner_frame": true,
+  "tests/loading_test.py": true
+}
