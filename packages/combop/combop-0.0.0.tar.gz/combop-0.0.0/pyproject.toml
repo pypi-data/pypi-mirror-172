@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "combop"
+version = "0.0.0"
+description = "Combop - A combinatorial optimization library"
+authors = ["Rafał Majewski <goodheropl@gmail.com>"]
+license = "CC0-1.0"
+packages = [
+	{ include = "combop", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.26.0"
+mypy = "^0.982"
+isort = "^5.10.1"
+poethepoet = "^0.16.4"
+black = "^22.10.0"
+flake8 = "^5.0.4"
+pylint = "^2.15.4"
+bandit = "^1.7.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+isort-fix = { shell = "isort src/" }
+isort-check = { shell = "isort --check-only src/" }
+black-fix = { shell = "black src/" }
+black-check = { shell = "black --check src/" }
+flake8-check = { shell = "flake8 src/" }
+mypy-check = { shell = "mypy src/" }
+pylint-check = { shell = "pylint src/" }
+bandit-check = { shell = "bandit -r src/" }
+nose2-check = { shell = "nose2 --start-dir src/tests/" }
+
+formatting-fix = { sequence = ["black-fix", "isort-fix"] }
+testing-check = { sequence = ["nose2-check"] }
