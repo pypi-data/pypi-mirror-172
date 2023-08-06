@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+izampdf/__init__.py
+izampdf/pdf2image.py
+izampdf/pdf2text.py
+izampdf.egg-info/PKG-INFO
+izampdf.egg-info/SOURCES.txt
+izampdf.egg-info/dependency_links.txt
+izampdf.egg-info/top_level.txt
