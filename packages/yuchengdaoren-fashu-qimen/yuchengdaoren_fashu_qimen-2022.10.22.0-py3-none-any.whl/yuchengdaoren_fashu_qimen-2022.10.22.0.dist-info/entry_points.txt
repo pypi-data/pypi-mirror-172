@@ -1,0 +1,4 @@
+[console_scripts]
+YuchengdaorenFashuQimen = YuchengdaorenFashuQimen.__main__:main
+yuchengdaoren-fashu-qimen = YuchengdaorenFashuQimen.__main__:main
+
