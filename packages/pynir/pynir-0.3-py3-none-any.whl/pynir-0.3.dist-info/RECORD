@@ -1,0 +1,12 @@
+pynir/Calibration.py,sha256=zKBtlSk1DjJoo6Zvkl3Hv0ZvEexIYAVd-m7Ml8NrZQI,15946
+pynir/CalibrationTransfer.py,sha256=N8uqBsdBV8VmkprKmvbhcBFN8z9T85LAQ25wfgcsFTY,10985
+pynir/FeatureSelection.py,sha256=g5BbBzMjW7_9aCt0aIQMpn9ElthkFF_vW6RsStt2Xg4,6976
+pynir/OutlierDection.py,sha256=oRcBx7ywHA9WXJ2m_Mqt7CoTtOgEjpDVPQppTWo0MFE,2290
+pynir/Preprocessing.py,sha256=1xagf8MnL349jRX7X3QLPYgclM7yMc89_nTdsCULZRA,3794
+pynir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynir/utils.py,sha256=pVfCqDrAyHvIHkmg7Pgtx1ZuTjF_Xy_qCZzcEU2r38o,4614
+pynir-0.3.dist-info/METADATA,sha256=U0AK1IBywuehuT9Mb3Sb2GEuwFMRo8srnArxvpX3ZW0,2556
+pynir-0.3.dist-info/WHEEL,sha256=sb4ZHsmozXdkdXRvpMHZmhxsxQvL8DERDUEGA9tAfc8,83
+pynir-0.3.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynir-0.3.dist-info/license_files/LICENSE.txt,sha256=gOApZxIh2UKkpNgoih9NizxShBDi5oi9IRQrb5SWiL8,1079
+pynir-0.3.dist-info/RECORD,,
