@@ -1,0 +1,3 @@
+[console_scripts]
+encrypt_secret=netlink.crypt.cli:encrypt_secret
+
