@@ -1,0 +1,7 @@
+calculator_tsukrus/Dockerfile,sha256=HsI0I_62uHxANfHiN_TQ0d4b_zH52aoJA-olS-Z5h7Q,53
+calculator_tsukrus/__init__.py,sha256=BwsW8MWv2i8wO5sOi72SjIDeDMbAV9y6y6gwFH4587c,106
+calculator_tsukrus/calculator.py,sha256=ZMF9QlAllZwyO1ALxkk9tnYHiss1oe5SaCxJD_x9yUg,820
+calculator_tsukrus-2.1.dist-info/LICENSE,sha256=Ys6xrBVw3O3_4t0hMMm2RriKGxHD22LHPNUBZBIDZ0I,1102
+calculator_tsukrus-2.1.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+calculator_tsukrus-2.1.dist-info/METADATA,sha256=5xau3tOJ_JmzB_9YczxsTvtvTHNAgHl24c4bwg35K8Q,2331
+calculator_tsukrus-2.1.dist-info/RECORD,,
