@@ -1,0 +1,8 @@
+biond/__init__.py,sha256=CPlbxqTjyscSBm4es6gO2ISeeLBpeatreHCALDQghdg,28
+biond/client.py,sha256=0oX77ydINs86lTU80bSYHVwMkBJo2hwdUaY_V5Ny0xA,9868
+biond/req_client.py,sha256=0bel_hbzPjUv_gg_gpKV8QkY9D5o1gVvalbXSUc8--M,2676
+ngd_biond-0.1.dist-info/LICENSE,sha256=COdXWR1e6w9UKg-yJZShhALEc9QnwQIlrJ-_YR_CeN8,1541
+ngd_biond-0.1.dist-info/METADATA,sha256=CerQkIQ66lGFwrF4zMgGwJ42w0Tmk_7hTqc-IhDeaSM,2379
+ngd_biond-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ngd_biond-0.1.dist-info/top_level.txt,sha256=HQmkOw04L8rpjkTYX_iygwfKXQhL0CT03zTvj_2mA4Q,6
+ngd_biond-0.1.dist-info/RECORD,,
