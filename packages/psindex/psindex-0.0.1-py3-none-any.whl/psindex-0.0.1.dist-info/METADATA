@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: psindex
+Version: 0.0.1
+Summary: Helper library for manipulation of formatted date/datetime values.
+Home-page: https://github.com/luraineri/psindex
+Author: Luciana Trento Raineri
+Author-email: luciana.traineri@gmail.com
+Project-URL: Documentation, https://luraineri.github.io/psindex/
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7,<4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# psindex
+Populational Stability Index (PSI) implementation for python
