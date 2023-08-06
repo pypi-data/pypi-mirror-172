@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: smscx
+Version: 0.1.10a0
+Summary: SMS API
+Home-page: 
+Author: SMS Connexion
+Author-email: dev@sms.cx
+License: Apache-2.0
+Project-URL: Homepage, https://sms.cx
+Project-URL: Github, https://github.com/smscx/smscx-api-python-library
+Keywords: SMS,SMS API,BULK SMS,VALIDATE PHONE NUMBERS,RENT PHONE NUMBERS
+Requires-Python: >=3.6
+License-File: LICENSE
