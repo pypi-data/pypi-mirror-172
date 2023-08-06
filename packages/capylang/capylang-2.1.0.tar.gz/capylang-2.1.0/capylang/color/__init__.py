@@ -1,0 +1,1 @@
+set = {"classic":"ROYGBP","full":"ROYGBIV","full_bip":"ROYGBIP"}
