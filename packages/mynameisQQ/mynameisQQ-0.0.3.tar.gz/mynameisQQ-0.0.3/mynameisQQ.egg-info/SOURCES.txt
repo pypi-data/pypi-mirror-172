@@ -1,0 +1,11 @@
+LICENSE
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+mynameisQQ/QQ.py
+mynameisQQ/__init__.py
+mynameisQQ.egg-info/PKG-INFO
+mynameisQQ.egg-info/SOURCES.txt
+mynameisQQ.egg-info/dependency_links.txt
+mynameisQQ.egg-info/top_level.txt
