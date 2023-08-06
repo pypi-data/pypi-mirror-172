@@ -1,0 +1,7 @@
+README.md
+setup.py
+TruLogger.egg-info/PKG-INFO
+TruLogger.egg-info/SOURCES.txt
+TruLogger.egg-info/dependency_links.txt
+TruLogger.egg-info/top_level.txt
+trulogger/__init__.py
