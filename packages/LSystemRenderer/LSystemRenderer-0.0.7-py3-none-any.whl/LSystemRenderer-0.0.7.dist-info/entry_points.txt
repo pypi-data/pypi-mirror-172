@@ -1,0 +1,3 @@
+[console_scripts]
+lsystem-gui = scripts.gui:main
+
