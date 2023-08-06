@@ -1,0 +1,10 @@
+osiotk/__init__.py,sha256=nvSbFdvbxZsaqM9gu9DHRTn_4iQWMS78z0Gk-VD4xsY,2715
+osiotk/base.py,sha256=zG3ervvmeDCz-65byuz4y2SXJWb4tok1MqgIOpMV1wg,642
+osiotk/exists_.py,sha256=2k_O0WJlZbluahzHxL64Qyq919f14SqB528owobMw9s,539
+osiotk/is_.py,sha256=YWJqc6m8A8Bu4N63j1pjS7PAKsI-H1RYFqTBOWKsHYU,301
+osiotk/make.py,sha256=katKxQVbznpMYCqckRFXdZ70Vix3boz5PpDYd2Kc7MY,1847
+osiotk/read.py,sha256=K1eK8h7i7TlRP1P2BsGudWRO6l0cwIbqEvbSQn0nVUU,879
+osiotk/write.py,sha256=ZghYh2YJoXm99XGaIRoLxIPwAuPwIQNswG9eVyHL9DE,842
+osiotk-1.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+osiotk-1.1.0.dist-info/METADATA,sha256=HuSKGWceZ3GBbSZK9ZobRw1TNRVKXP0t0DjZ0ZBRFQk,1102
+osiotk-1.1.0.dist-info/RECORD,,
