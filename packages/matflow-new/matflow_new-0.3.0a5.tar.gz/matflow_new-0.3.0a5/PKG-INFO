@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: matflow-new
+Version: 0.3.0a5
+Summary: Computational workflows for materials science
+License: MIT
+Author: aplowman
+Author-email: adam.plowman@manchester.ac.uk
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: pyinstaller
+Requires-Dist: hpcflow-new2 (>=0.2.0a7,<0.3.0)
+Requires-Dist: pyinstaller (>=5.5,<6.0); extra == "pyinstaller"
+Description-Content-Type: text/markdown
+
+<img src="https://docs.matflow.io/stable/_static/images/logo-90dpi.png" width="250" alt="MatFlow logo"/>
+
+**Design, run, and share computational materials science workflows**
+
+Documentation: [https://matflow.io/docs](https://matflow.io/docs)
+
+## Acknowledgements
+
+
+MatFlow was developed using funding from the [LightForm](https://lightform.org.uk/) EPSRC programme grant ([EP/R001715/1](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/R001715/1))
+
+<img src="https://lightform-group.github.io/wiki/assets/images/site/lightform-logo.png" width="150"/>
+
