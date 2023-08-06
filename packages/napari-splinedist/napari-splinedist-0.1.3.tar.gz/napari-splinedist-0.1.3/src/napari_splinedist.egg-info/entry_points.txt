@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-splinedist = napari_splinedist:napari.yaml
