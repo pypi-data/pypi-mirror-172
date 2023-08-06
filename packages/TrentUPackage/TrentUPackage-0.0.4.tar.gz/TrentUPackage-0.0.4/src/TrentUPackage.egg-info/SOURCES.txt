@@ -1,0 +1,12 @@
+README.txt
+pyproject.toml
+src/TrentUPackage/PdfScraper.py
+src/TrentUPackage/WebsiteScraper.py
+src/TrentUPackage/bot.py
+src/TrentUPackage/test.py
+src/TrentUPackage.egg-info/PKG-INFO
+src/TrentUPackage.egg-info/SOURCES.txt
+src/TrentUPackage.egg-info/dependency_links.txt
+src/TrentUPackage.egg-info/entry_points.txt
+src/TrentUPackage.egg-info/requires.txt
+src/TrentUPackage.egg-info/top_level.txt

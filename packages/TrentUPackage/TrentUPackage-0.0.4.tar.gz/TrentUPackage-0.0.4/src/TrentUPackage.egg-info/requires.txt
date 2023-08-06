@@ -1,0 +1,6 @@
+discord
+dotenv
+selenium
+bs4
+webdriver_manager
+PyPDF2
