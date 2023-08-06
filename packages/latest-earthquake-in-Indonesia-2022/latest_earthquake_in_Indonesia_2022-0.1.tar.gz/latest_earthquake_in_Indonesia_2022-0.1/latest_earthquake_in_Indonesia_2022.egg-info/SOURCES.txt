@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gempaterkini/__init__.py
+latest_earthquake_in_Indonesia_2022.egg-info/PKG-INFO
+latest_earthquake_in_Indonesia_2022.egg-info/SOURCES.txt
+latest_earthquake_in_Indonesia_2022.egg-info/dependency_links.txt
+latest_earthquake_in_Indonesia_2022.egg-info/top_level.txt

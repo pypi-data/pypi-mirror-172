@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: latest-earthquake-in-Indonesia-2022
+Version: 0.1
+Summary: This package will get the latest 
+Home-page: https://github.com/Learn-Python-Dev-Indonesia/latest-earthquake-in-indonesia
+Author: Viko Aldi 
+Author-email: piccoaldi@gmail.com
+Project-URL: Website , https://github.com/viko-aldi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# latest earthquake in Indonesia
+this is an earthquake package from the Meteorological, Climatological, and Geophysical Agency (BMKG) information center in Indonesia
+
+#About
+This Package will scrape form [BMKG](https://www.bmkg.go.id/) to get latest eartquake in Indonesia.
+
+Using Library BeautifulSoup4 and Requests, to produce output in the form of JSON that is ready to be used in web or mobile apps
