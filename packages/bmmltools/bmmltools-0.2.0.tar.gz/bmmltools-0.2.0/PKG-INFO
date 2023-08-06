@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: bmmltools
+Version: 0.2.0
+Summary: BioMaterial Machine Learning tools (bmmltools), package to do machine learning with large binary 3d images
+Home-page: https://gitlab.mpikg.mpg.de/curcuraci/bmmltools
+Author: Luca Curcuraci
+Author-email: Luca.Curcuraci@mpikg.mpg.de
+Project-URL: Bug tracker, https://gitlab.mpikg.mpg.de/curcuraci/bmmltools/-/issues/new
+Project-URL: Documentation, https://bmmltools.readthedocs.io/en/latest/
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bmmltools
+
+
+### Installation
+
+Temporary installation path in the anaconda propt.
+
+```
+> (base) conda create -n new_env python=3.8
+> (base) conda activate new_env
+> (new_env) conda install pytables
+> (new_env) cd [PATH TO bmmltools FOLDER]
+> (new_env) [PATH TO bmmltools FOLDER] pip install -r requirements.txt
+> (new_env) [PATH TO bmmltools FOLDER] python setup.py install
+```
+
+To run the bmmlboard, write in the anaconda prompt
+
+```
+> (base) conda activate new_env
+> (new_env) python -m bmmltools.run_bmmlboard
+```
+
+assuming that bmmltools is installed in the "new_env" environment.
+
+## Example usage
+
+See example folder
