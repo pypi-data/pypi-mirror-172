@@ -1,0 +1,270 @@
+CHANGES
+=======
+
+v0.6.4
+------
+
+* fix non-interactive ssh
+
+v0.6.3
+------
+
+* catch errors when setting window size
+
+v0.6.2
+------
+
+* sys exit with non zero ret code for fatal errors
+
+v0.6.1
+------
+
+* add EGI keycloak endpoints to trusted OPs for mccli info
+
+v0.6.0
+------
+
+* fix errror handling for unsupported OPs with long tokens (fix dianagudu/motley\_cue#44)
+* fix error messages when not authorised or unauthenticated
+* add support for pending state
+* fix rtf link to docs
+* replace github.io with rtd as documentation
+* add rtd config file
+
+v0.5.0
+------
+
+* cap max length of long tokens at 1023
+* change black max line length to 100 and apply
+* add support for one time tokens when AT too long
+* support for python>=3.7
+
+v0.4.0
+------
+
+* apply black
+* add support for audience-based authz
+* backward compat with motley\_cue info output
+* pyright fixes
+* add pyright and black to tox
+* support for new flaat
+* fix supported\_OPs filed name returned by motley\_cue
+* fix readme type in setup.cfg
+* fix deprecated dash-separated entries in setup.cfg
+
+v0.3.6
+------
+
+* update doc url in setup.cfg
+* handle errors when retrieving pkg version
+* remove unused imports
+* move -G flag to beginning of ssh command
+* Replace hacky get\_hostname by version working on linux and MacOS
+* Fix readme file extension
+* add logos with higher dpi
+* use png logos in docs
+* remove copyright notice (motley\_cue related) from readme
+* fix horizontal scrolling issue in docs on mobile
+* restructure readme and its include in docs
+* serve fonts locally
+* update docs with license info and fonts
+* add publish to gh-pages action to workflow
+* fix publish-docs workflow test
+* create publish-docs workflow
+* add favicon to static path
+* fix publishing csript
+* fix publishing csript
+* update script to publish docs
+* Updated gh-pages
+* add tox directive to publish docs
+* use tox to build docs in makefile
+* update readme with docs
+* add makefile for publishing to github pages
+* fix duplicate labels in docs
+* show warning instead of error when redeploy fails
+* add tox file
+* fix ScpUseCase docstring
+* do not ignore docs
+* add sphinx docs
+
+v0.3.5
+------
+
+* fix mccli info error with missing dry-run param
+
+v0.3.4
+------
+
+* fix #17: update error msg when host cannot be resolved
+
+v0.3.3
+------
+
+* disable caching for /user/deploy
+
+v0.3.2
+------
+
+* add dry-run option to basic options but hidden
+* group options in help
+* no caching for get\_status, log caching
+
+v0.3.1
+------
+
+* add --no-cache option to disable http caching
+* require click>=8.x in setup.cfg
+* require click>=8.x
+* do not allow mccli invocation without subcommand
+* add timeout when trying different mc urls
+
+v0.3.0
+------
+
+* renamed mc\_ssh to mccli
+
+v0.2.9
+------
+
+* added requests caching
+* no service info when hostname not provided, even if mc-endpoint is
+
+v0.2.8
+------
+
+* updated usage in readme
+* fix #10 add flaat-userinfo-like output to mccli info
+
+v0.2.7
+------
+
+* show recommended oidc-gen command for some predefined OPs
+* fix #9 more info, reject expired tokens
+* fix cmdline values should take precedence over envvars
+* fix #12, improved logging for token retrieval
+* add envvar LOG for log level
+
+v0.2.6
+------
+
+* fix #15 support for mc-endpoint without fqdn or protocol
+* fix #13 check if AT len > 1024
+* fix #14 update user even when deployed, better error messages for other user states
+* fix #6 pass set options to subcommands
+
+v0.2.5
+------
+
+* fix getaddrinfo other error msgs (temporary dns failure)
+
+v0.2.4
+------
+
+* add 8443 to the list of default ports to look for motley\_cue endpoint
+
+v0.2.3
+------
+
+* fix error unexpected argument oidc
+* fix #11 add --oidc option
+
+v0.2.2
+------
+
+* fix parsing of ssh output to get hostname
+* improved logging
+
+v0.2.1
+------
+
+* add version for click
+
+v0.2.0
+------
+
+* updated readme
+* add oidc-agent forwarding option to ssh by default
+* add callback for command args click param tuple to list
+* some cleanup
+* fix dry-run bug token not found
+* refactor: one generic scp\_wrap function
+* refactor: one generic process\_wrap function wtih one output\_filter function
+* remote print statements
+* add support for any ssh/scp option, improve scp support, refactoring
+* catch mc-url related errors in info
+* Revert "catch mc-url related errors in info"
+* catch mc-url related errors in info
+* add version option
+* rename option --verbosity/-v to --log-level
+
+v0.1.1
+------
+
+* fix error message formatting
+* filter process output on pexpect to send token on token prompt, otherwise give interactive control to user
+* interactive host key verification for scp
+* change expected exception type for scp
+* implement scp with pexpect
+* wip use pexpect instead of paramiko for native ssh
+* set terminal to xterm-256color
+* add application hint for oidc-agent autoload
+
+v0.1.0
+------
+
+* update usage info in readme
+* add requirements to setup.cfg
+* add logging, verbosity option, better handling of dry\_run option
+* add more descriptive metavars for common options
+* pretty print json output of info
+* use click.echo to print to stdout and error msgs stderr
+* add more help
+* fix #3 query ssh host for info via mccli info
+* fix #4: if only one iss supported by service, use it to get token is user has not configured any other token source
+* update error message on mc\_endpoint fail
+* reformatting and refactoring
+* move helper functions to utils
+* remove future from setup.cfg bc required by liboidcagent
+* wrap common options in decorator and use for all (sub-)commands
+* add option to pass issuer url to retrieve token fix #2
+* make source argument for scp required
+* remove debug output on ssh login and logout
+* Update README.md
+
+v0.0.5
+------
+
+* extend paramiko's sshclient class with oidc auth and own host key policy
+* fix hardcoding of default ssh port
+* liboidcagent was updated to require future
+* add MissingHostKeyPolicy to fix support for non standard ports
+
+v0.0.4
+------
+
+* add future to requirements: liboidcagent depends on it
+
+v0.0.3
+------
+
+* append host key to known hosts instead of overwrite
+* include error message from oidc-agent
+* update README with --insecure option and add 8080 as default mc endpoint
+
+v0.0.2
+------
+
+* fix #1 proposal + support for insecure ssl no verify
+* update readme with usage info
+
+v0.0.1
+------
+
+* better exception handling, more informative error messages
+* scp-compatible error messages for scp put, exec commands over ssh at once even when separated by semicolon
+* do not print default port 22 for --dry-run
+* add support for scp
+* add --dry-run option to print sshpass command
+* add readme
+* add timeout to ssh connect and exec\_command
+* initial commit
