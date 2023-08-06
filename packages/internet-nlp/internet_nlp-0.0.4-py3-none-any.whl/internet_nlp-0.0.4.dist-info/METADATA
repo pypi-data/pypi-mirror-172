@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: internet-nlp
+Version: 0.0.4
+Summary: Allowing NLPs to connect to the internet
+Home-page: https://github.com/thamognya/internet-nlp
+Download-URL: https://github.com/thamognya/internet-nlp
+Author: Thamognya Kodi
+Author-email: contact@thamognya.com
+License: GNU Affero General Public License v3.0 or later
+Keywords: Transformer NLP NLI Internet Networks BERT SOTA XLNet sentence embedding PyTorch NLP deep learning Tensorflow Huggingface
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (==4.11.1)
+Requires-Dist: contractions (==0.1.72)
+Requires-Dist: datasets (==2.6.1)
+Requires-Dist: nltk (==3.7)
+Requires-Dist: pandas (==1.5.1)
+Requires-Dist: pytest (==7.1.3)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: requests-html (==0.10.0)
+Requires-Dist: sentence-transformers (==2.2.2)
+Requires-Dist: setuptools (==65.2.0)
+Requires-Dist: tokenizers (==0.12.1)
+Requires-Dist: torch (==1.14.0.dev20221017)
+Requires-Dist: transformers (==4.21.3)
+
+# Internet NLP
+
+Allowing NLPs and NLIs to connect to the internet.
+
+This is an customizable (comming soon) package to allow for internet related NLP task to be done easily.
+
+If you are going to use this please cite it as below:
