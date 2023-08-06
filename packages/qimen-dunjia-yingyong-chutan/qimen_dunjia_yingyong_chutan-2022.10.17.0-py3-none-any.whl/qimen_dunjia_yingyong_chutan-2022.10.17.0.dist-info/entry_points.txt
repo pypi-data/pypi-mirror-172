@@ -1,0 +1,4 @@
+[console_scripts]
+QimenDunjiaYingyongChutan = QimenDunjiaYingyongChutan.__main__:main
+qimen-dunjia-yingyong-chutan = QimenDunjiaYingyongChutan.__main__:main
+
