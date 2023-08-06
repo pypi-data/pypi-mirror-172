@@ -1,0 +1,4 @@
+[console_scripts]
+leetcode=leetcode_runner.cli:cli
+leetcode_runner=leetcode_runner.cli:main
+
