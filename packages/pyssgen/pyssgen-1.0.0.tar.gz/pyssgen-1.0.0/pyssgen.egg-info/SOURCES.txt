@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+pyssgen/__init__.py
+pyssgen/pyssgen.py
+pyssgen.egg-info/PKG-INFO
+pyssgen.egg-info/SOURCES.txt
+pyssgen.egg-info/dependency_links.txt
+pyssgen.egg-info/requires.txt
+pyssgen.egg-info/top_level.txt
