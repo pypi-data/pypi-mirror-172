@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: tk-translate
+Version: 0.2
+Summary: Utilizes translationbackends in trivial from→to texteditor
+Home-page: https://fossil.include-once.org/pagetranslate/
+License: MITL
+Keywords: translation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >= 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: PySimpleGUI (>=4.37)
+Requires-Dist: requests
+Provides-Extra: build
+Requires-Dist: pluginconf ; extra == 'build'
+Requires-Dist: setuptools ; extra == 'build'
+Provides-Extra: unused
+Requires-Dist: ttkthemes ; extra == 'unused'
+
+**tk-translate** is a PySimpleGUI variant of
+[PageTranslate](https://fossil.include-once.org/pagetranslate/).
+It provides a terse GUI to get some text translated using one of the various
+services from PT or Deep-Translator. Albeit it has no config dialog, thus
+won't pacify API-key requirements. It's mostly just meant for testing.
+
+Presents two input boxes, some buttons, for plain text translations.
+Usage:
+
+* Insert text into left input
+* Select backend
+* Change target language
+* Hit translate
+
+Defaults must be edited in tk_translate/__init__.py conf={}.
+dingonyms output doesn't look as useful in a plain text field.
+Other CLI tools can be edited in the combobox however.
+
+## translationbackends usage
+
+There's two options to instantiate the backends. The default
+`assign_service()` expects a dictionary of parameters, one
+of which decides on the instance used:
+
+    import tk_translate.translationbackends as tb
+    service = tb.assign_service({
+        "backend": "DeepL Web",
+        "from": "auto",
+        "lang": "en",
+        "quick": 1,
+    })
+    engl = service.translate("¿Donde esta la pizza?")
+
+While the individual classes also would allow keyword arguments:
+
+    service = tb.GoogleAjax(lang="en")
+    text = service.linebreakwise(text)
+
+Using from= does require a syntax workaround however:
+
+    service = tb.PonsWeb(lang="en", **{"from": "it"})
+
+Which works as well for all arguments. (Most being optional.)
+MyMemory benefits from an `email=`, while the commercial providers
+want an `api_key=`.
+
+## deep-translator
+
+With two exceptions, [deep-translator](https://pypi.org/project/deep-translator/)
+is the better option. `translationbackends` merely retains some
+Python2 compatiblility (for good old OpenOffice). Instantiating it
+from `tb.DeepTranslator(backend="Yandex")` required a second name
+lookup in TB.
