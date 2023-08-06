@@ -1,0 +1,3 @@
+[console_scripts]
+mlflow-med-cli=mlflow_med_cli.main:app
+
