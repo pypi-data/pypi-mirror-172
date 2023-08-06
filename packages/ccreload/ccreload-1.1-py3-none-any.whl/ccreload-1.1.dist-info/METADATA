@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ccreload
+Version: 1.1
+Summary: chen's autoreload script package
+Author: chen
+Author-email: 690246265@qq.com
+License: apache 3.0
+Requires: decorator
+
