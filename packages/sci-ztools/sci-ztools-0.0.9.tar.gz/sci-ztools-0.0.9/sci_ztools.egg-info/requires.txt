@@ -1,0 +1,10 @@
+biopython
+rich
+jupyter
+ipykernel
+pandas
+scikit-learn
+numpy
+tqdm
+six
+future
