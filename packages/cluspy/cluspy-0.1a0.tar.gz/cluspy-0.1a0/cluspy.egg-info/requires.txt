@@ -1,0 +1,7 @@
+numpy
+math
+scipy
+matplotlib
+mpl_toolkits
+cmath
+copy

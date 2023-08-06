@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cluspy
+Version: 0.1a0
+Summary: Library for simulating cluster generation and computation for Measurement-Based Quantum Computation (MBQC).
+Home-page: https://github.com/EmilOstergaard/cluspy
+Download-URL: https://github.com/EmilOstergaard/cluspy/archive/refs/tags/v0.1-alpha.tar.gz
+Author: Emil Ostergaard
+Author-email: ee.ostergaard@gmail.com
+License: MIT
+Keywords: cluster,quantum,measurement-based quantum computation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
