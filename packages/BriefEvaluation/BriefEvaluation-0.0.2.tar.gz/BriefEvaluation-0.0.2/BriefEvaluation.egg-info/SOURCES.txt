@@ -1,0 +1,9 @@
+setup.py
+BriefEvaluation/__init__.py
+BriefEvaluation/__version__.py
+BriefEvaluation/topsis.py
+BriefEvaluation.egg-info/PKG-INFO
+BriefEvaluation.egg-info/SOURCES.txt
+BriefEvaluation.egg-info/dependency_links.txt
+BriefEvaluation.egg-info/requires.txt
+BriefEvaluation.egg-info/top_level.txt
