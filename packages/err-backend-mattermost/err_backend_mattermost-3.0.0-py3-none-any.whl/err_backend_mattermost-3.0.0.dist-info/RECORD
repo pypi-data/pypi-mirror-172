@@ -1,0 +1,11 @@
+err-backend-mattermost/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+err-backend-mattermost/err-backend-mattermost.plug,sha256=kLvkz9UGFnwXyvl3yLMhph9v5L_-vWjZdHBgcQfYhRE,258
+err-backend-mattermost/err-backend-mattermost.py,sha256=x1N92kXLnOVIzB6BGKHG3WZ_0sOzWcsqsGOaQbD-eXY,21251
+err-backend-mattermost/mattermostlib/mattermostPerson.py,sha256=B6oqNEfIp8OXX2SUqRHtwgnBhOaKLfzB7CP0M3WSk00,3102
+err-backend-mattermost/mattermostlib/mattermostRoom.py,sha256=fEC1hhPnmC5e4YGQRCqPUAtEaQHi9pi4jlgCt9Y45xk,8243
+err-backend-mattermost/mattermostlib/mattermostRoomOccupant.py,sha256=UdoKItd3jy8xBlNw9VSScNRJycqa97mQvXPCckNlhkU,1201
+err_backend_mattermost-3.0.0.dist-info/LICENSE,sha256=x7h6jM9nuML3RFVL1qXflMVZiXYgO_v8pqvsJFYnIzY,35258
+err_backend_mattermost-3.0.0.dist-info/METADATA,sha256=gyVADYoVxuAWIaNHVfBNpgh1blceE2mxo7t2Su3E-cY,958
+err_backend_mattermost-3.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+err_backend_mattermost-3.0.0.dist-info/top_level.txt,sha256=d2wrwMBKruXkOGVaRG5NIglqa-cbXlMcSEPwNeV6E28,23
+err_backend_mattermost-3.0.0.dist-info/RECORD,,
