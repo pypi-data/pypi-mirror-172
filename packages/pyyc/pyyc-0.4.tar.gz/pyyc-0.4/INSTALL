@@ -1,0 +1,22 @@
+Installation notes:
+
+* to install in developer mode::
+
+    $ pip install -e .
+
+* you should not work under `pyyc/pyyc` (e.g. you cannot `import pyyc` because
+  of the confusion between package and module names)
+
+* you can run the __main__.py of the modules using python option `-m`, e.g.::
+
+    $ python -m pyyc
+
+  or from IPython::
+
+    In: %run -m pyyc
+
+* to upload to PyPI::
+
+    $ python -m build
+    $ twine check dist/*
+    $ twine upload dist/*

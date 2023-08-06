@@ -1,0 +1,12 @@
+rich
+
+[:python_version < "3.10"]
+importlib_resources
+
+[docs]
+nbsphinx
+ipython
+
+[tests]
+pytest
+coverage
