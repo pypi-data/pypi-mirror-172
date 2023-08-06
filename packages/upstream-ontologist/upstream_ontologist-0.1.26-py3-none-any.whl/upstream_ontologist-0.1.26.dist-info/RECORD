@@ -1,0 +1,17 @@
+upstream_ontologist/__init__.py,sha256=kkffzUwuasQha6h3aWcqOY5GLFLrwUQAlaK77bgAk3U,6465
+upstream_ontologist/__main__.py,sha256=3fFTra_heJEjUIB3Q3H9Tha5t-j4v-GR7X1DFsr_DxM,3851
+upstream_ontologist/codemeta.py,sha256=cdaRi6c27yVD7PymZn7xADNVyX4idkSLL1Clz7xaEvw,3524
+upstream_ontologist/doap.py,sha256=KAijC4qwEEh0KiojjMk4y2CROWkXVYeKrMEaZ8Z0x3I,4795
+upstream_ontologist/guess.py,sha256=Ti7e7ECbk-XqaRHeawVadgRnpGJR8O4Z5TNkri04hYg,136272
+upstream_ontologist/homepage.py,sha256=xZTlp9RBrVtjAt9dHU21FrtV3L1CaLN3LH4PKPVahmo,2595
+upstream_ontologist/readme.py,sha256=eXM4ST-VmkKjdjcD-LTz5QZxuIrG8xkU4Olz-r98ViU,16204
+upstream_ontologist/vcs.py,sha256=pXKeKNOIg1VZE5Vu140dri9KV1CN8LySq3qcLsxrgrI,25466
+upstream_ontologist/debian/__init__.py,sha256=UcJlQmiwp2I64bJBp0HLCkfywELpT3csGanchWW2VaM,2592
+upstream_ontologist-0.1.26.data/data/share/man/man1/guess-upstream-metadata.1,sha256=utZfPLEH1k0FnP7AaUF4LPLOElYGHz5Ix9FFoh-F7Vg,1241
+upstream_ontologist-0.1.26.dist-info/AUTHORS,sha256=pUkJoIVWNIGQdC35njgLW7hRF81X492mpcKKHSpoxm4,35
+upstream_ontologist-0.1.26.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+upstream_ontologist-0.1.26.dist-info/METADATA,sha256=dJJlTPj3ma0Gtbu8Rhh2q0sAqM30p0vJ4inwKlqI9CM,1056
+upstream_ontologist-0.1.26.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+upstream_ontologist-0.1.26.dist-info/entry_points.txt,sha256=8rkZXltTgmzL0rvHh43GTLF0CztIFdeKbdbFMFRDPj8,168
+upstream_ontologist-0.1.26.dist-info/top_level.txt,sha256=fa5Xlxr1tTSQxUjMb4u9EauaOrypNSAyn_jtNOHaktE,20
+upstream_ontologist-0.1.26.dist-info/RECORD,,
