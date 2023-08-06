@@ -1,0 +1,52 @@
+[myst.extensions.global]
+myst_substitutions = { type = "dict[str, str | int | float]", default = {} }
+myst_sub_delimiters = { type = "tuple[str, str]", default = ["{", "}"] }
+myst_linkify_fuzzy_links = { type = "bool", default = true }
+myst_dmath_allow_labels = { type = "bool", default = true }
+myst_dmath_allow_space = { type = "bool", default = true }
+myst_dmath_allow_digits = { type = "bool", default = true }
+myst_dmath_double_inline = { type = "bool", default = false }
+myst_update_mathjax = { type = "bool", default = true }
+myst_mathjax_classes = { type = "str", default = "tex2jax_process|mathjax_process|math|output_area" }
+
+[myst.extensions.local]
+substitutions = { type = "dict[str, str | int | float]", default = {} }
+sub_delimiters = { type = "tuple[str, str]", default = ["{", "}"] }
+linkify_fuzzy_links = { type = "bool", default = true }
+dmath_allow_labels = { type = "bool", default = true }
+dmath_allow_space = { type = "bool", default = true }
+dmath_allow_digits = { type = "bool", default = true }
+dmath_double_inline = { type = "bool", default = false }
+
+[myst.options.global]
+myst_commonmark_only = { type = "bool", default = false }
+myst_gfm_only = { type = "bool", default = false }
+myst_enable_extensions = { type = "sequence[str]", default=[] }
+myst_disable_syntax = { type = "iterable[str]", default=[] }
+myst_all_links_external = { type = "bool", default = false }
+myst_url_schemes = { type = "iterabl[str] | None", default = false }
+myst_ref_domains = { type = "iterable[str] | None", default = false }
+myst_highlight_code_blocks = { type = "bool", default = true }
+myst_number_code_blocks = { type = "sequence[str]", default=[] }
+myst_title_to_header = { type = "bool", default = false }
+myst_heading_anchors = { type = "int | None", default = "" }
+myst_heading_slug_func = { type = "callable", default = "" }
+myst_html_meta = { type = "dict", default = {} }
+myst_footnote_transition = { type = "bool", default = true }
+myst_words_per_minute = { type = "int", default = 200 }
+
+[myst.options.local]
+commonmark_only = { type = "bool", default = false }
+gfm_only = { type = "bool", default = false }
+enable_extensions = { type = "sequence[str]", default=[] }
+disable_syntax = { type = "iterable[str]", default=[] }
+all_links_external = { type = "bool", default = false }
+url_schemes = { type = "iterabl[str] | None", default = false }
+ref_domains = { type = "iterable[str] | None", default = false }
+highlight_code_blocks = { type = "bool", default = true }
+number_code_blocks = { type = "sequence[str]", default=[] }
+title_to_header = { type = "bool", default = false }
+heading_anchors = { type = "int | None", default = "" }
+html_meta = { type = "dict", default = {} }
+footnote_transition = { type = "bool", default = true }
+words_per_minute = { type = "int", default = 200 }

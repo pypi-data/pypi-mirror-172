@@ -1,0 +1,3 @@
+[console_scripts]
+sphinxcli=sphinxcli.__main__:cli
+
