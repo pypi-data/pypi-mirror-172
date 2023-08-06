@@ -1,0 +1,6 @@
+
+[test]
+addok
+falcon
+pytest
+pytest-falcon
