@@ -1,0 +1,4 @@
+[console_scripts]
+JingxinZhiliao = JingxinZhiliao.__main__:main
+jingxin-zhiliao = JingxinZhiliao.__main__:main
+
