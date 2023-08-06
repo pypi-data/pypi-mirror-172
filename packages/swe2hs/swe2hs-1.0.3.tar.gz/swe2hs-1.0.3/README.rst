@@ -1,0 +1,156 @@
+.. image:: https://img.shields.io/badge/Documentation-blue
+    :alt: Documentation
+    :target: https://aschauer.gitlab-pages.wsl.ch/swe2hs/
+
+.. image:: https://img.shields.io/gitlab/pipeline-status/aschauer/swe2hs?branch=master&gitlab_url=https%3A%2F%2Fgitlabext.wsl.ch&label=Pipeline Status
+   :alt: Gitlab pipeline status (self-hosted)
+   :target: https://code.wsl.ch/aschauer/swe2hs/-/commits/master
+
+.. image:: https://img.shields.io/pypi/v/swe2hs.svg
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/swe2hs/
+
+.. image:: https://img.shields.io/pypi/pyversions/swe2hs
+   :alt: PyPI - Python Version
+
+|
+
+swe2hs
+======
+
+.. start_intro
+
+SWE2HS is a conceptual snow density model for transferring daily snow water 
+equivalent (SWE) of the snow cover to snow depth (HS). Some people informally 
+call it JOPACK, which is an acronym for Just density Of the snowPACK.
+
+The density model calculates snow depth at a daily resolution and is 
+driven by the daily snow water equivalent of the snow cover only. The 
+model creates a new layer with a fixed new snow density :math:`\rho_{new}` for
+every increase in SWE such that, over time, a snowpack of individual layers 
+builds up. The density of a layer increases exponentially with time towards 
+a time-varying maximum density. The maximum density is starting with an initial 
+value at creation time of the layer and is subsequently increasing towards 
+a higher value based on the overburden a layer has experienced and the 
+occurrence of SWE losses in the snow pack. When SWE decreases, the model 
+removes SWE from the top of the snowpack. The layer number :math:`n` can thus
+undergo changes over time based on the number of SWE increases and losses in 
+the snowpack. The model neglects constructive metamorphism, refreezing, and 
+is not able to capture rain-on-snow (ROS) events which might lead to an 
+increase in SWE but no increase in HS. 
+
+.. TODO: add the following paragraph once the paper is published:
+.. For further information on the model and how it was calibrated please refer to the 
+.. model description paper:
+.. CITATION HERE.
+.. end_intro
+
+|
+
+.. image:: https://code.wsl.ch/aschauer/swe2hs/-/raw/master/docs/_static/colored_layers_kuhtai_2002.png
+   :alt: Schematic snowpack evolution
+
+|
+
+.. start_figure_caption
+
+The figure shows the schematic modeled snow pack evolution for the station 
+Kühtai in the winter 2001/02. The red dotted line is the measured snow depth 
+(HS), the black solid line bounding the colored area is the modeled snow depth, 
+the thin black lines depict the layer borders within the modeled snowpack, and 
+the coloring refers to the modeled layer densities. The bottom panel shows the 
+daily snow water equivalent time series which was used to force the model. The
+data for station Kühtai is available from Krajci et al. (2017) [#Krajci2017]_. 
+
+.. end_figure_caption
+
+.. start_installation
+
+Installation
+============
+
+Please create a dedicated environment before you install the package in order 
+to avoid dependency issues with other installed Python packages.
+You can do this by using virtualenv::  
+
+    virtualenv <PATH TO VENV>
+    source <PATH TO VENV>/bin/activate
+
+or if you use Anaconda/Miniconda::
+
+    conda create -n swe2hs_env
+    conda activate swe2hs_env
+
+Afterwards you can install the latest version of ``swe2hs`` to the newly created 
+and activated environment by running::
+
+    pip install swe2hs
+
+This will also install all dependencies which are necessary for the package to
+work correctly.
+
+Verify the installation by running the following commands in a Python console::
+
+    >>> import swe2hs as jopack
+    >>> print(jopack.__version__)
+
+.. end_installation
+
+Installing from source
+----------------------
+If you want to work on the package and make changes, it is recommended to clone a 
+copy of this repositoy and install the package from source in editable mode. 
+Clone the repository::
+
+    $ git clone https://gitlabext.wsl.ch/aschauer/swe2hs.git
+
+A new directory ``swe2hs`` will be created. After navigating to this directory 
+with::
+
+    $ cd swe2hs 
+
+You can install the package in editable mode which allows you to import the 
+package under development in the Python REPL::
+
+    $ pip install -e .
+
+Tests
+=====
+
+Testing is done with ``tox`` and ``pytest``. In order to run the tests locally 
+on your machine, navigate to the root directory of the project and run::
+
+    $ tox
+
+You can also run only the tests from a single module with::
+
+    $ tox tests/test_module.py
+
+Documentation and Examples
+==========================
+
+API documentation as well as examples on how to use the package are 
+available at <https://aschauer.gitlab-pages.wsl.ch/swe2hs/>. There 
+you can also find instructions on how to contribute and a changelog. 
+
+.. start_help
+
+Help
+====
+
+If something is not working or you find an error, please get in touch via a 
+`new issue`_ on the GitLab repository in case you do not find any relevant 
+information in `existing issues`_.
+
+.. _new issue: https://code.wsl.ch/aschauer/swe2hs/-/issues/new
+.. _existing issues: https://code.wsl.ch/aschauer/swe2hs/-/issues
+
+.. end_help
+
+.. start_bib
+
+.. [#Krajci2017] Krajci, P., Kirnbauer, R., Parajka, J., Schöber, J., & Blöschl, G. (2017). The Kühtai 
+   data set: 25 years of lysimetric, snow pillow, and meteorological measurements, 
+   *Water Resources Research*, 53, 5158-5165, https://doi.org/10.1002/2017WR020445.
+.. end_bib
+
