@@ -1,0 +1,137 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind:
+    UnusedNOQA: ~
+  location:
+    row: 9
+    column: 10
+  end_location:
+    row: 9
+    column: 18
+  fix:
+    patch:
+      content: ""
+      location:
+        row: 9
+        column: 10
+      end_location:
+        row: 9
+        column: 18
+    applied: false
+- kind:
+    UnusedNOQA:
+      - E501
+  location:
+    row: 13
+    column: 10
+  end_location:
+    row: 13
+    column: 24
+  fix:
+    patch:
+      content: ""
+      location:
+        row: 13
+        column: 10
+      end_location:
+        row: 13
+        column: 24
+    applied: false
+- kind:
+    UnusedNOQA:
+      - F841
+      - E501
+  location:
+    row: 16
+    column: 10
+  end_location:
+    row: 16
+    column: 30
+  fix:
+    patch:
+      content: ""
+      location:
+        row: 16
+        column: 10
+      end_location:
+        row: 16
+        column: 30
+    applied: false
+- kind:
+    UnusedNOQA:
+      - W191
+  location:
+    row: 19
+    column: 10
+  end_location:
+    row: 19
+    column: 30
+  fix:
+    patch:
+      content: "  # noqa: F841"
+      location:
+        row: 19
+        column: 10
+      end_location:
+        row: 19
+        column: 30
+    applied: false
+- kind:
+    UnusedNOQA:
+      - F841
+  location:
+    row: 44
+    column: 4
+  end_location:
+    row: 44
+    column: 24
+  fix:
+    patch:
+      content: "  # noqa: E501"
+      location:
+        row: 44
+        column: 4
+      end_location:
+        row: 44
+        column: 24
+    applied: false
+- kind:
+    UnusedNOQA:
+      - E501
+  location:
+    row: 52
+    column: 4
+  end_location:
+    row: 52
+    column: 18
+  fix:
+    patch:
+      content: ""
+      location:
+        row: 52
+        column: 4
+      end_location:
+        row: 52
+        column: 18
+    applied: false
+- kind:
+    UnusedNOQA: ~
+  location:
+    row: 60
+    column: 4
+  end_location:
+    row: 60
+    column: 12
+  fix:
+    patch:
+      content: ""
+      location:
+        row: 60
+        column: 4
+      end_location:
+        row: 60
+        column: 12
+    applied: false
+

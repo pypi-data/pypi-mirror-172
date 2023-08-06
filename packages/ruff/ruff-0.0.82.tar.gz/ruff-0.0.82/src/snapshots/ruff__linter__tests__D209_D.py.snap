@@ -1,0 +1,22 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind: NewLineAfterLastParagraph
+  location:
+    row: 276
+    column: 5
+  end_location:
+    row: 278
+    column: 20
+  fix:
+    patch:
+      content: "\n    "
+      location:
+        row: 278
+        column: 17
+      end_location:
+        row: 278
+        column: 17
+    applied: false
+
