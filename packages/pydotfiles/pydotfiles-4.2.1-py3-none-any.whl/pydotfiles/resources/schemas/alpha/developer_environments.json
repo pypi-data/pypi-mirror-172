@@ -1,0 +1,93 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "alpha.developer_environments.json",
+    "type": "object",
+    "$defs": {
+        "VirtualEnvironment": {
+            "type": "object",
+            "properties": {
+                "version": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": ["version", "name"]
+        },
+        "Plugin": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "virtual_environments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/VirtualEnvironment"
+                    }
+                }
+            },
+            "required": ["name"]
+        },
+        "Plugins": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/Plugin"
+            }
+        },
+        "EnvironmentManager": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "plugins": {
+                    "$ref": "#/$defs/Plugins"
+                }
+            },
+            "required": ["name"]
+        },
+        "EnvironmentType": {
+            "type": "object",
+            "properties": {
+                "language": {
+                    "type": "string"
+                },
+                "versions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "environment_manager": {
+                    "$ref": "#/$defs/EnvironmentManager"
+                }
+            },
+            "required": ["language", "versions"]
+
+        },
+        "EnvironmentsType": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/EnvironmentType"
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "alpha.common.json"
+        },
+        {
+            "properties": {
+                "environments": {
+                    "$ref": "#/$defs/EnvironmentsType"
+                },
+                "profile": {
+                    "type": "string"
+                }
+            },
+            "required": ["profile"]
+        }
+    ]
+}

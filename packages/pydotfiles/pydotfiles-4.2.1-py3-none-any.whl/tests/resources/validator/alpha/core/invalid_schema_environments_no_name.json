@@ -1,0 +1,13 @@
+{
+    "version": "alpha",
+    "schema": "core",
+    "environments": [
+        {
+            "versions": ["3.7.0", "2.7.15"],
+            "environment_manager": {
+                "name": "pyenv",
+                "plugins": ["pyenv-virtualenv"]
+            }
+        }
+    ]
+}
