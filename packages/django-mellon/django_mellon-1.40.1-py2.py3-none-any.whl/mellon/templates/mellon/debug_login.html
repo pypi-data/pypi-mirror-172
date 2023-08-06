@@ -1,0 +1,10 @@
+{% load i18n %}
+
+{% block content %}
+  <p><a class="button" href="{% url 'mellon_debug_login' %}">{% trans "Try again" %}</a></p>
+  <p><strong>{% trans "Attributes:" %}</strong> <pre>{{ attributes|pprint }}</pre></p>
+  <p><strong>{% trans "SAML assertion:" %}</strong> <pre>{{ assertion_dump }}</pre></p>
+  <p><strong>{% trans "SAML response:" %}</strong> <pre>{{ response_dump }}</pre></p>
+  <p><strong>{% trans "SAML artifact:" %}</strong> <pre>{{ login.msgBody }}</pre></p>
+  <p><strong>{% trans "Logs:" %}</strong> <pre>{{ logs }}</pre></p>
+{% endblock %}
