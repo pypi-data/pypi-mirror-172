@@ -1,0 +1,12 @@
+README.md
+setup.py
+ShierXingzuoXinlixue/README.md
+ShierXingzuoXinlixue/__init__.py
+ShierXingzuoXinlixue/__main__.py
+ShierXingzuoXinlixue/file.pdf
+ShierXingzuoXinlixue/index.html
+shier_xingzuo_xinlixue.egg-info/PKG-INFO
+shier_xingzuo_xinlixue.egg-info/SOURCES.txt
+shier_xingzuo_xinlixue.egg-info/dependency_links.txt
+shier_xingzuo_xinlixue.egg-info/entry_points.txt
+shier_xingzuo_xinlixue.egg-info/top_level.txt
