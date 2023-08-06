@@ -1,0 +1,11 @@
+awsgi2/__init__.py,sha256=KDoU8AtmpRtInl6q89w4E6m99gZtCbisl1YsTc_Rh8Q,225
+awsgi2/base.py,sha256=USOaH8_ruyvoTF7y97yhREhntVo6P0czgda1O0vNeX8,3707
+awsgi2/impl.py,sha256=vv9SgWJL_KmSKSNZaRHu2Xjed7jBm1NzSWW0JJBp6-0,1494
+awsgi2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsgi2/utilities.py,sha256=W1WxOah3V8ZQBw-kOeuixfwndpEGOC_-xZKkpmEJC7I,398
+awsgi2/wrapper.py,sha256=eDTtInBiml8NObVk2D_zqQ0BKBr12spt_cJF_SLt4v4,883
+awsgi2/wsgienv.py,sha256=Kx3m3G4seO8NbePMC3MFJfmQ-uFCTBbxi0NESrnqJos,3186
+awsgi2-1.0.1.dist-info/LICENSE,sha256=3y0--YF_u50T7wKRNCaBkcio9FHPAeUJQ_vlx-7xggM,1108
+awsgi2-1.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+awsgi2-1.0.1.dist-info/METADATA,sha256=jf3-XYcjWfkBfLqS0WinsJV2ajmBBXUW7EGOe1ZfcY0,4778
+awsgi2-1.0.1.dist-info/RECORD,,
