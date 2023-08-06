@@ -1,0 +1,14 @@
+starception/__init__.py,sha256=5dc5E0tT8ctAYoxBnJ8yrONFJWuR8-MbTfRx2Gbu_jQ,365
+starception/exception_handler.py,sha256=qtBI3r3U1HVeG0UUg6SK3MdS6XlKrGlSvfU6UOCTTEk,9404
+starception/middleware.py,sha256=lT-vZeqveGRlOU5msse6lrCCsZ5QQRVpl_g1-qDPZa8,2240
+starception/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starception/templates/code_snippet.html,sha256=klOGQLS1T6mhQG70e1amvgyoXuaQgyXl6btwYcksbcE,1520
+starception/templates/frame_line.html,sha256=dJXpW5fYNtNYGX1MsXC7HsuyNHo_QsHm0oZDEyego_U,982
+starception/templates/index.html,sha256=oP4em48CPBR7e67eQ1aGr0A1_Qz2bD14D0p_PW7IocQ,3237
+starception/templates/lib.html,sha256=snvXzLizo_I8UZ7Y2S11PS6JLQTY2Wf-YnzQFW8O4Ls,480
+starception/templates/scripts.js,sha256=La4B0ogJBnw96VRUUDF_ab9fRwurnguvF8Q-NF_FIw4,1778
+starception/templates/styles.css,sha256=79F8fZd79RQ0o6siUY10rbj6qYbfQuB3gTdIH9iSy5U,5781
+starception-0.5.4.dist-info/LICENSE,sha256=e7rSfX5G0RZFmKc2-m8WazsMidzrQjpt6O8cHw_gook,1074
+starception-0.5.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+starception-0.5.4.dist-info/METADATA,sha256=-W3KwUliVHEpz_Za6axUv5Tf1aUTcq6ZmsY26_6n0uI,6661
+starception-0.5.4.dist-info/RECORD,,
