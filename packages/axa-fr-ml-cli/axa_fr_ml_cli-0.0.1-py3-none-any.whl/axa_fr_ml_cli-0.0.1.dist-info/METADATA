@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: axa-fr-ml-cli
+Version: 0.0.1
+Summary: this is the repo for CNI for batch and api
+Home-page: 
+Author: Axa_france
+Author-email: 
+Platform: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+License-File: LICENSE
+
+this is the repo for CNI for batch and api
