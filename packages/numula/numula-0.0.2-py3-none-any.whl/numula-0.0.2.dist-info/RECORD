@@ -1,0 +1,17 @@
+numula/MidiFile.py,sha256=mJvem_Pv_GiL558hZBphgKn-FWl0ValFeq490loW3vw,73304
+numula/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numula/notate.py,sha256=Bwvpb8T5xtMQ6a20AgTH92gj2A-mJq8ncPNckXIKwi0,2207
+numula/notate_nuance.py,sha256=oBSYDwnPS7aKAvmkWbxTNqaJ0zaLy_r28a6mM4ZZ1G0,9111
+numula/notate_score.py,sha256=8IPgz1F6gZLDM2oQ6Fa_2O6QfvO4huZoa-Vy2bRNCPc,8180
+numula/nscore.py,sha256=WsIWBCiGzClPtfCr10m1SYc5b_LZDN25H-hAvNURLyk,19947
+numula/nuance.py,sha256=rDU7xo-rGs-WCo70OlFRat_z54YEQrwl_T6CFGfW3H0,28306
+numula/pianoteq.py,sha256=Qwu-I30895ZpgWdS92MklTeO2wY-7OM-QWk_JOmDIj0,1895
+numula/poly_pan.py,sha256=oaw3NuNetW-UqZQlFhMAPO1UC6VJEmNJzDLE8wD_Yqo,4648
+numula/read_midifile.py,sha256=BCrlfc_SWRLh_9Agrfx0sPf9_ZhmATyuGdtogdCM7xE,3062
+numula/spatialize.py,sha256=78ven-hsESs60_rhLy60ErJZQDzuu2z-CTzuR11zfDs,5037
+numula/vol_name.py,sha256=SwdFnaWhyvxlxLNoNuLx3Q-gzprv9zCcnspxfcYtDac,924
+numula-0.0.2.dist-info/METADATA,sha256=-9YynKQEMQmyOGcN5GlNcSWP2fnNP9zFMg82Jdda7KQ,677
+numula-0.0.2.dist-info/WHEEL,sha256=sb4ZHsmozXdkdXRvpMHZmhxsxQvL8DERDUEGA9tAfc8,83
+numula-0.0.2.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numula-0.0.2.dist-info/license_files/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+numula-0.0.2.dist-info/RECORD,,
