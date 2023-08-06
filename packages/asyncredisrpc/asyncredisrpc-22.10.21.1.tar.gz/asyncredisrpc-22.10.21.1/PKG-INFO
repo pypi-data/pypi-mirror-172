@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: asyncredisrpc
+Version: 22.10.21.1
+Summary: A naive async rpc framework based on redis.
+Home-page: https://github.com/LiangZuoting/aioredisrpc.git
+Author: LiangZuoting
+Author-email: liangzuoting2016@icloud.com
