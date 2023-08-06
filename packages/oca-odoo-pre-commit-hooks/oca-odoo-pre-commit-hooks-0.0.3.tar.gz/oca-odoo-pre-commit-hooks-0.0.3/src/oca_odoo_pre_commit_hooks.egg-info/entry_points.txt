@@ -1,0 +1,2 @@
+[console_scripts]
+oca-checks-odoo-module = oca_pre_commit_hooks.checks_odoo_module:main
