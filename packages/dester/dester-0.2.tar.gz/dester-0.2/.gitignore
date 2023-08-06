@@ -1,0 +1,12 @@
+# .gitignore
+dist/
+__pycache__/
+material/
+.DS_Store
+dester-egg.info/
+dester.egg-info/PKG-INFO
+dester.egg-info/SOURCES.txt
+dester.egg-info/dependency_links.txt
+dester.egg-info/entry_points.txt
+dester.egg-info/requires.txt
+dester.egg-info/top_level.txt
