@@ -1,0 +1,3 @@
+[console_scripts]
+optk-download=openpack_toolkit.bin.download:entry_func
+
