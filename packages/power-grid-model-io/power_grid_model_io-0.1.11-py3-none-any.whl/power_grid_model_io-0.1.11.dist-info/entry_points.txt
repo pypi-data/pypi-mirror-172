@@ -1,0 +1,3 @@
+[console_scripts]
+pgm_convert = power_grid_model_io.cli.convert:app
+pgm_validate = power_grid_model_io.cli.validate:app

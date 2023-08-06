@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: power-grid-model-io
+Version: 0.1.11
+Summary: Power Grid Model Input/Output
+Author-email: Alliander Dynamic Grid Calculation <dynamic.grid.calculation@alliander.com>
+License: MPL-2.0
+Project-URL: Home-page, https://github.com/alliander-opensource/power-grid-model-io
+Keywords: power grid model,input/output,conversions
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: power-grid-model (>=1.4)
+Requires-Dist: pyyaml
+Requires-Dist: structlog
+Provides-Extra: cli
+Requires-Dist: typer[all] ; extra == 'cli'
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+<!--
+SPDX-FileCopyrightText: 2022 Contributors to the Power Grid Model IO project <dynamic.grid.calculation@alliander.com>
+
+SPDX-License-Identifier: MPL-2.0
+-->
+# Power Grid Model Input/Output
+
+## Documentation:
+  * Converters
+    * [Tabular Converter](https://github.com/alliander-opensource/power-grid-model-io/blob/3e4b2ef96711128debda4cdef71a55e173efcf9f/docs/converters/tabular_converter.md)
+
+
+## Client tools
+
+Installation:
+```bash
+pip install -e .[cli]
+```
+
+Usage:
+```bash
+pgm_validate DATA_FORMAT [ARGS]
+pgm_convert CONVERSION [ARGS]
+```
+
+### Native Power Grid Model JSON format
+
+```bash
+pgm_validate pgm_json input_data.json
+```
+
+### Vision Excel format
+
+```bash
+pgm_convert vision2pgm myfile.xlsx --validate
+```
+
+### Gaia Excel format
+
+```bash
+pgm_convert gaia2pgm myfile.xlsx types.xlsx --validate
+```
