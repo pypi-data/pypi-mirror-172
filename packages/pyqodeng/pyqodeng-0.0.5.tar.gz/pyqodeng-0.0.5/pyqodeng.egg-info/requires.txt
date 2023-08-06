@@ -1,0 +1,4 @@
+pygments
+qtpy
+future
+PySide6-Essentials
