@@ -1,0 +1,17 @@
+buildlog_consultant/__init__.py,sha256=0qbU7aab9Spg9rvX2pwTXTbW7RhyEK7RpXoipTWiz_k,3480
+buildlog_consultant/apt.py,sha256=Ju6uRo4IYIb-eWJ71kq059KlMAnazbk2tXNk0dRIGYc,13644
+buildlog_consultant/autopkgtest.py,sha256=llCAQ_M14SF9W4-ZpJey3sDwL-xgn3sPZ6EsY-M49XA,20943
+buildlog_consultant/common.py,sha256=txsK4OjewkCvHB8s1mx5__6loypuFgT-GJaOoQbQbs4,140186
+buildlog_consultant/sbuild.py,sha256=POEwNYbqzCEaE_lSfzU3yeVK0fGU8xVl0P9nblFBpvM,34777
+buildlog_consultant/tests/__init__.py,sha256=WgAXB6Z0EhejXSdL4GIs8hT5N0Cb-WK1TOGbHgnDZ1k,1102
+buildlog_consultant/tests/test_apt.py,sha256=QbUH9kgTeyW0eWtztpxmOXjaPH8D4FAhIvzDpWmATfA,2284
+buildlog_consultant/tests/test_autopkgtest.py,sha256=KYuvcTwwrEP3h6AFQ8Y520YUR986u8kagz5MUQNDgBU,20781
+buildlog_consultant/tests/test_common.py,sha256=Z5pqE9fHdirU_C02b0YR1eBHcBvEuBiHAiwIExoAPwQ,70584
+buildlog_consultant/tests/test_sbuild.py,sha256=qouMoGcDEjss9ubsuirMOjbI7xfg42JTdy-GSUytSSc,2825
+buildlog_consultant-0.0.27.dist-info/AUTHORS,sha256=pUkJoIVWNIGQdC35njgLW7hRF81X492mpcKKHSpoxm4,35
+buildlog_consultant-0.0.27.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+buildlog_consultant-0.0.27.dist-info/METADATA,sha256=6V0ooXkZwQdg__i6X17tm5N3ZVblwel1l_4LpT7d2lc,641
+buildlog_consultant-0.0.27.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+buildlog_consultant-0.0.27.dist-info/entry_points.txt,sha256=ssJfufhEcqxx4_TuiUSNOw_ehKh99k2GDlFuFXlurKU,123
+buildlog_consultant-0.0.27.dist-info/top_level.txt,sha256=WzEyaxKr0VIKfzw3R33l-qmMOnfxH773xYKA8UKExEE,20
+buildlog_consultant-0.0.27.dist-info/RECORD,,
