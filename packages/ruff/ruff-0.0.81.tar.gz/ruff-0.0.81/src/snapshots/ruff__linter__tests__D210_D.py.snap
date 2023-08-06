@@ -1,0 +1,56 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind: NoSurroundingWhitespace
+  location:
+    row: 283
+    column: 5
+  end_location:
+    row: 283
+    column: 34
+  fix:
+    patch:
+      content: Whitespace at the end.
+      location:
+        row: 283
+        column: 8
+      end_location:
+        row: 283
+        column: 31
+    applied: false
+- kind: NoSurroundingWhitespace
+  location:
+    row: 288
+    column: 5
+  end_location:
+    row: 288
+    column: 38
+  fix:
+    patch:
+      content: Whitespace at everywhere.
+      location:
+        row: 288
+        column: 8
+      end_location:
+        row: 288
+        column: 35
+    applied: false
+- kind: NoSurroundingWhitespace
+  location:
+    row: 294
+    column: 5
+  end_location:
+    row: 297
+    column: 8
+  fix:
+    patch:
+      content: Whitespace at the beginning.
+      location:
+        row: 294
+        column: 8
+      end_location:
+        row: 294
+        column: 37
+    applied: false
+

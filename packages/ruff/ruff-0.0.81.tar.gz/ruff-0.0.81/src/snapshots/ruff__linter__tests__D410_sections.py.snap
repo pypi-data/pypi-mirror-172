@@ -1,0 +1,41 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind:
+    BlankLineAfterSection: Returns
+  location:
+    row: 67
+    column: 5
+  end_location:
+    row: 78
+    column: 8
+  fix:
+    patch:
+      content: "\n"
+      location:
+        row: 71
+        column: 1
+      end_location:
+        row: 71
+        column: 1
+    applied: false
+- kind:
+    BlankLineAfterSection: Returns
+  location:
+    row: 207
+    column: 5
+  end_location:
+    row: 221
+    column: 8
+  fix:
+    patch:
+      content: "\n"
+      location:
+        row: 218
+        column: 1
+      end_location:
+        row: 218
+        column: 1
+    applied: false
+

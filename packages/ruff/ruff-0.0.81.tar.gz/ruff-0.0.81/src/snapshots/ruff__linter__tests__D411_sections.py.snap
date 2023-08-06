@@ -1,0 +1,59 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind:
+    BlankLineBeforeSection: Yields
+  location:
+    row: 67
+    column: 5
+  end_location:
+    row: 78
+    column: 8
+  fix:
+    patch:
+      content: "\n"
+      location:
+        row: 71
+        column: 1
+      end_location:
+        row: 71
+        column: 1
+    applied: false
+- kind:
+    BlankLineBeforeSection: Returns
+  location:
+    row: 122
+    column: 5
+  end_location:
+    row: 129
+    column: 8
+  fix:
+    patch:
+      content: "\n"
+      location:
+        row: 125
+        column: 1
+      end_location:
+        row: 125
+        column: 1
+    applied: false
+- kind:
+    BlankLineBeforeSection: Raises
+  location:
+    row: 207
+    column: 5
+  end_location:
+    row: 221
+    column: 8
+  fix:
+    patch:
+      content: "\n"
+      location:
+        row: 218
+        column: 1
+      end_location:
+        row: 218
+        column: 1
+    applied: false
+

@@ -1,0 +1,73 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind: NoUnderIndentation
+  location:
+    row: 227
+    column: 1
+  end_location:
+    row: 227
+    column: 1
+  fix:
+    patch:
+      content: "    "
+      location:
+        row: 227
+        column: 1
+      end_location:
+        row: 227
+        column: 1
+    applied: false
+- kind: NoUnderIndentation
+  location:
+    row: 238
+    column: 1
+  end_location:
+    row: 238
+    column: 1
+  fix:
+    patch:
+      content: "    "
+      location:
+        row: 238
+        column: 1
+      end_location:
+        row: 238
+        column: 1
+    applied: false
+- kind: NoUnderIndentation
+  location:
+    row: 435
+    column: 1
+  end_location:
+    row: 435
+    column: 1
+  fix:
+    patch:
+      content: "                                    "
+      location:
+        row: 435
+        column: 1
+      end_location:
+        row: 435
+        column: 5
+    applied: false
+- kind: NoUnderIndentation
+  location:
+    row: 436
+    column: 1
+  end_location:
+    row: 436
+    column: 1
+  fix:
+    patch:
+      content: "                                    "
+      location:
+        row: 436
+        column: 1
+      end_location:
+        row: 436
+        column: 5
+    applied: false
+
