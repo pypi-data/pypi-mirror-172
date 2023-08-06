@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+src/co/__init__.py
+src/co/cur/__init__.py
+src/co/cur/query.py
+src/saas_co_cur.egg-info/PKG-INFO
+src/saas_co_cur.egg-info/SOURCES.txt
+src/saas_co_cur.egg-info/dependency_links.txt
+src/saas_co_cur.egg-info/requires.txt
+src/saas_co_cur.egg-info/top_level.txt
