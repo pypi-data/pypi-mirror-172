@@ -1,0 +1,60 @@
+2022-10-14 Version: 1.0.23
+- Update module.
+
+2022-10-13 Version: 1.0.22
+- Update thirdpart_depart_id.
+
+2022-10-10 Version: 1.0.21
+- Update requestId.
+
+2022-10-09 Version: 1.0.19
+- Update requestId.
+
+2022-10-09 Version: 1.0.15
+- Update Syn Person.
+
+2022-09-29 Version: 1.0.14
+- Update Code and Message.
+
+2022-09-28 Version: 1.0.13
+- Update Code and Message.
+
+2022-09-19 Version: 1.0.12
+- Update Train Order.
+
+2022-09-15 Version: 1.0.11
+- Update Code and Message.
+
+2022-09-15 Version: 1.0.10
+- Update AccessToken AK.
+
+2022-09-06 Version: 1.0.9
+- Update ApplyAdd and ApplyModify.
+
+2022-09-01 Version: 1.0.8
+- Add some api.
+
+2022-08-26 Version: 1.0.7
+- Add some api.
+
+2022-08-26 Version: 1.0.6
+- Add Header Parameter.
+
+2022-08-23 Version: 1.0.5
+- Change some input parameter type.
+
+2022-08-22 Version: 1.0.4
+- Change the input parameter type.
+
+2022-08-09 Version: 1.0.3
+- Update params.
+
+2022-07-27 Version: 1.0.2
+- Init version.
+
+2022-07-26 Version: 1.0.1
+- Test3.
+
+2022-07-18 Version: 1.0.0
+- Test2.
+
