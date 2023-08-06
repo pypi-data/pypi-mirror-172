@@ -1,0 +1,4 @@
+[console_scripts]
+TujieBeiouShenhua = TujieBeiouShenhua.__main__:main
+tujie-beiou-shenhua = TujieBeiouShenhua.__main__:main
+
