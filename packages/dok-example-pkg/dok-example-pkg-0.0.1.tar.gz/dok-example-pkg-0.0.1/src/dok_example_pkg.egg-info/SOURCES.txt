@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/dok-example-pkg/__init__.py
+src/dok-example-pkg/example.py
+src/dok_example_pkg.egg-info/PKG-INFO
+src/dok_example_pkg.egg-info/SOURCES.txt
+src/dok_example_pkg.egg-info/dependency_links.txt
+src/dok_example_pkg.egg-info/top_level.txt
