@@ -1,0 +1,4 @@
+[pygments.styles]
+onehalf-dark=pygments_onehalf:OneHalfDark
+onehalf-light=pygments_onehalf:OneHalfLight
+
