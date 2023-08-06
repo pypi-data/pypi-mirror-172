@@ -1,0 +1,9 @@
+spacy_alignments-0.8.6.dist-info/LICENSE,sha256=Ks1niL9-d6cyrlODBOyO5VSTyjaNr9_XEX9bHxNvBrc,1082
+spacy_alignments-0.8.6.dist-info/METADATA,sha256=d-ixuKxO6of8dIqzQygZLXuZXrRIzXVpL1t9UA4md4w,2432
+spacy_alignments-0.8.6.dist-info/WHEEL,sha256=ZPo-cudG-FPYxyq1LXmKAMnRyaidvTmBVvSIj1CJfHY,152
+spacy_alignments-0.8.6.dist-info/top_level.txt,sha256=qGdr9BT8MwPOuMq8U5FMAfdlh5zV4jexbsW7Hvui75U,17
+spacy_alignments-0.8.6.dist-info/RECORD,,
+spacy_alignments/tokenizations.cpython-36m-aarch64-linux-gnu.so,sha256=XOh1CpcpjnPh6I8e6wNmZ1MHIG2syqUJk_6Ts4nqxC4,788832
+spacy_alignments/__init__.py,sha256=Goq4CPgbmC145Ogy6XMdj5PuB3LlW-1gMBSPpZnHJcA,368
+spacy_alignments/tests/test_main.py,sha256=tt62ZjFfs-zfNbbQEa0JJV2ZphFSgFW1CqaNKS4bkfc,2209
+spacy_alignments/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
