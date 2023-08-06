@@ -1,0 +1,8 @@
+requests
+joblib
+pyarrow
+feather-format
+pandas
+xlrd
+beautifulsoup4
+openpyxl
