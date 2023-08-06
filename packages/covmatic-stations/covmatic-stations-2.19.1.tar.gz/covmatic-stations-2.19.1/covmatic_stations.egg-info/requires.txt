@@ -1,0 +1,6 @@
+opentrons<5.1.0
+cherrypy
+requests
+ipaddress
+typing-extensions==3.10.0.0
+parse
