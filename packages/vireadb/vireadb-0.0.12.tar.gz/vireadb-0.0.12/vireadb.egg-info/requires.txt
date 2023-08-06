@@ -1,0 +1,4 @@
+pysam
+
+[dev]
+check-manifest
