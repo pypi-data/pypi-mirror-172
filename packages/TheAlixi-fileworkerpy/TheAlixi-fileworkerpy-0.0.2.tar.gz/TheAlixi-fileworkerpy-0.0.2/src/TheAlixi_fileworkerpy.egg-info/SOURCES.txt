@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/TheAlixi_fileworkerpy.egg-info/PKG-INFO
+src/TheAlixi_fileworkerpy.egg-info/SOURCES.txt
+src/TheAlixi_fileworkerpy.egg-info/dependency_links.txt
+src/TheAlixi_fileworkerpy.egg-info/top_level.txt
+src/fileworker/FileWorkerPy.py
+src/fileworker/__init__.py
