@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rxndb_utils
+Version: 0.0.7
+Summary: reaction database utils
+Home-page: https://github.com/zbc0315/rxndb_utils
+Author: zbc
+Author-email: zbc@mail.ustc.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Reaction Database Utils
