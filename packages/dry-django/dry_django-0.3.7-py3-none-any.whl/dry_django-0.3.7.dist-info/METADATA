@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dry-django
+Version: 0.3.7
+Summary: 
+License: MIT
+Author: Илья Маркевич
+Author-email: samuray21x@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=4.1.0,<5.0.0)
+Requires-Dist: django-filter (>=22.1,<23.0)
+Requires-Dist: djangorestframework (>=3.14.0,<4.0.0)
+Requires-Dist: dry-core (>=0.5.5,<0.6.0)
+Requires-Dist: mkdocstrings[crystal,python] (>=0.19.0,<0.20.0)
+Description-Content-Type: text/markdown
+
+# Dry-core
+
+`dry-core` is core package of `dry-*` package series. Main goal 
+is to minimize and power up code, make it clear and easy supportable.
+
+Documentation will be available soon.
+
