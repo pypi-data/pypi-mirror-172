@@ -1,0 +1,3 @@
+[console_scripts]
+crypton=crypton_tool.cli:main
+
