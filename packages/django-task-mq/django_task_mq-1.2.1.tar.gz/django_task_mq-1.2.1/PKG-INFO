@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: django_task_mq
+Version: 1.2.1
+Summary: a tool for django which belong mq
+Home-page: https://github.com/Woqurefan
+Author: wqrf
+Author-email: 1074321997@qq.com
+License: MIT
+Description: If you need help, please email to 1074321997@qq.com
+Keywords: mq,task,django,django_task_mq
+Platform: UNKNOWN
