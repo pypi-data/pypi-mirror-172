@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/seg_tree.egg-info/PKG-INFO
+src/seg_tree.egg-info/SOURCES.txt
+src/seg_tree.egg-info/dependency_links.txt
+src/seg_tree.egg-info/requires.txt
+src/seg_tree.egg-info/top_level.txt
+src/segment_tree/DualSegmentTree.py
+src/segment_tree/SegmentTree.py
+src/segment_tree/TreeNode.py
+src/segment_tree/__init__.py
