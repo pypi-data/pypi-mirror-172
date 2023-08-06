@@ -1,0 +1,37 @@
+# Check the English data for unknown tokens
+check_for_en_unks: true
+
+# Name of the tokenizer to use for packing data into registers. Note that the output is _not_ tokenized, this is only
+#   used to count the final tokenized length of the target text
+tokenizer_name: facebook/bart-base
+
+# Maximum number of tokens output by the decoder (including bos and eos)
+max_target_length: 1024
+
+# Validation fraction to reserve
+validation_frac: 0.0002
+
+# Separator for datasets with multiple registers
+separator: "[eor]"
+
+# Shuffle before saving the final dataset
+shuffle: false
+
+# Postprocessing settings, after all stages are applied, right before outputting to disk.
+#
+# These are (possibly empty) lists of function classes in cai_garland.utils.str_processors, formatted like so:
+#   - _target_: cai_garland.utils.str_processors.ProcessorSampleFunc1
+#   - _target_: cai_garland.utils.str_processors.ProcessorSampleFunc2
+#   - ...
+postprocessing:
+  source_lang:
+    - _target_: cai_garland.utils.str_processors.ProcessorRemoveConsecutiveSpaces
+
+  target_lang:
+    - _target_: cai_garland.utils.str_processors.ProcessorRemoveCharacters
+      _args_: ["\"'"]
+    - _target_: cai_garland.utils.str_processors.ProcessorReplaceCharacters
+      _args_: ["!", "."]
+    - _target_: cai_garland.utils.str_processors.ProcessorReplaceCharacters
+      _args_: [";", "."]
+    - _target_: cai_garland.utils.str_processors.ProcessorRemoveConsecutiveSpaces

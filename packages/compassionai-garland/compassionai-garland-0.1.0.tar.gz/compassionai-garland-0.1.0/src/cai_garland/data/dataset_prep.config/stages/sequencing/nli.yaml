@@ -1,0 +1,27 @@
+sequencing:
+  # Use an NLI model to find the next sentence
+  type: nli
+
+  # Hugging Face MNLI model to use for sequencing the sentences
+  model: typeform/distilbert-base-uncased-mnli
+
+  # Concatenate this many previous target sentences when finding the next one. Setting this to zero will only consider the
+  #   current sentence when finding the next one.
+  lookback_window: 2
+
+  # Sampling temperature for sentence sequencing
+  temperature: 1.5
+
+  # Score cutoffs to apply prior to sampling (never sample entirely irrelevant sentences)
+  score_cutoffs:
+    entailment: 1
+    contradiction: 12
+
+  # Probability of drawing a contradiction instead of an entailment
+  contradiction_probability: 0.1
+
+  # Number of candidates to evaluate in order to find the next sentence
+  num_candidates: 64
+
+# Number of quasi-synthetic examples to get from the flat data
+frac_sequenced: 0.5

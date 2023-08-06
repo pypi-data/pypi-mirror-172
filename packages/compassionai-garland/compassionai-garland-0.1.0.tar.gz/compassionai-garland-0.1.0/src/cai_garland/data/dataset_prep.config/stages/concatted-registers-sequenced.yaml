@@ -1,0 +1,21 @@
+defaults:
+  - datasets/84000-parallel-sentences@concatted-registers-sequenced
+  - sequencing/follows-anywhere@concatted-registers-sequenced
+  - concat/concat@concatted-registers-sequenced
+  - registers@concatted-registers-sequenced
+
+concatted-registers-sequenced:
+  # Function to pull the dataset
+  pull_func:
+    _target_: cai_garland.data.parallel_dataset_prep._pull_parallel_dataset
+
+  # Function to prepare the dataset
+  prep_func:
+    _target_: cai_garland.data.parallel_dataset_prep._prep_concatted_register_dataset
+
+  # Do not sort the parallel dataset by index of the English sentence in the parallel folio dataset
+  sort_by_starting_index: false
+
+  # Augment the dataset by generating partial segmentations. Every candidate pulled from the sequencer will have this
+  #   probability of being the last candidate in the segmentation.
+  segmentation_early_stopping_probability: 0.25
