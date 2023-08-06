@@ -1,0 +1,10 @@
+resoto_plugin_gcp/__init__.py,sha256=rLusQIxbwByQdPky5wmkj9SgI74DoXJQxelP5J6Z9bQ,4402
+resoto_plugin_gcp/collector.py,sha256=Z4d5YncSks2mDR86ZV68jpNizKGw_AE2CwhDGhAD6PY,63918
+resoto_plugin_gcp/config.py,sha256=aZ5dFi8qpr_9m_Eb9DEfur0YrGef-v9xWiCyguTaUs4,945
+resoto_plugin_gcp/resources.py,sha256=aEhmtrTv3-U8YhWY7po0xUYr4TQMzVjh7yQbPmkTeMI,29899
+resoto_plugin_gcp/utils.py,sha256=ZJubGZOGZs4gdVCegoLa2WaSOYZF-Yl5ZRpyWX_0ax8,9089
+resoto_plugin_gcp-2.4.4.dist-info/METADATA,sha256=o41GoOrBMuLVRJFwytgiKA0GNLU7aUdtcjkJDsH41II,919
+resoto_plugin_gcp-2.4.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+resoto_plugin_gcp-2.4.4.dist-info/entry_points.txt,sha256=Hmph0ChAny9vdFmbdr-E3ii8tDkVfr78K-ikssnqAlE,60
+resoto_plugin_gcp-2.4.4.dist-info/top_level.txt,sha256=78QiRBcB-Ukh63AWLbzkimhmAJ5kTp_Xfd7guiJipjI,18
+resoto_plugin_gcp-2.4.4.dist-info/RECORD,,
