@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: allianceauth-signal-pings
+Version: 0.0.9
+Summary: Pings for Signals!
+Home-page: https://github.com/pvyParts/allianceauth-signal-pings
+Author: Aaron Kable
+Author-email: aaronkable@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Signal Pings
+
+This is a simple plugin for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) to send a "signal" to a discord webhook when a user does something in auth.
+
+## Current Signals
+
+- Group Join / Group Leave
+- HR applications
+- Timerboard Create/Update/Deletes
+- Fleet Operation Create/Update/Deletes
+- CharacterOwnership Gain and Losses
+- SRP Requests with (WIP: Discord @mentions)
+
+## TODO/Wishlist
+
+- Some translations
+
+## Setup
+
+1. `pip install allianceauth-signal-pings`
+2. add `'signalpings',` to INSTALLED_APPS in your local.py
+3. migrate database and restart auth
+4. Setup your webhooks in the admin panel
+5. setup signals to ping for in the admin panel
+6. prepare for pingagedon.
+
+## Pics
+
+### Admin Create Webhooks
+
+![Imgur](https://i.imgur.com/CgoA7za.png)
+
+### Admin create groups to signal
+
+![Imgur](https://i.imgur.com/R7Fb7S9.png)
+
+###  Pings
+
+![Imgur](https://i.imgur.com/UfojsOk.png)
+
+## Contribute
+
+All contributions are welcome, but please if you create a PR for functionality or bugfix, do not mix in unrelated formatting changes along with it.
+
+
