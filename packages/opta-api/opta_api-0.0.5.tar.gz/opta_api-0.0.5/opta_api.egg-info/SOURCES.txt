@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+opta_api/__init__.py
+opta_api/metadata.py
+opta_api/optaAPI.py
+opta_api/transformers.py
+opta_api.egg-info/PKG-INFO
+opta_api.egg-info/SOURCES.txt
+opta_api.egg-info/dependency_links.txt
+opta_api.egg-info/requires.txt
+opta_api.egg-info/top_level.txt

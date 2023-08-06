@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: opta_api
+Version: 0.0.5
+Summary: API wrapper for OPTA/StatsPerform
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+
