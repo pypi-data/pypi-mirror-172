@@ -1,0 +1,10 @@
+existenz_api_fetcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+existenz_api_fetcher/hydro.py,sha256=i2GsEy9HcooST_wFG_TYer6mR8ghaXCHD-TTVvbDGkk,3752
+existenz_api_fetcher/locations.py,sha256=n1ZQovdWj1sD4AetCh1zMSPcZTUmTXEG4WBwUrsQwXA,1322
+existenz_api_fetcher/meteo.py,sha256=6NsDns3FHGXeQw0wcpOQONScPyU5CeJl2nhmBRMmjs0,13833
+existenz_api_fetcher/pipelines.py,sha256=YztbS8Ftifya9UTM3_edSKxMnPMgkYCRUemIWAPd4oU,1516
+existenz_api_fetcher-0.0.4.dist-info/LICENSE.txt,sha256=yQmYq1rlRZlg6n3djpiRXJGks4gAh4AvLFF_dDTY7XQ,1073
+existenz_api_fetcher-0.0.4.dist-info/METADATA,sha256=WkQYrrWQsRR-tV6yhu1x3VERhUpHs9p13_q7ECqy6aA,1399
+existenz_api_fetcher-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+existenz_api_fetcher-0.0.4.dist-info/top_level.txt,sha256=LTh9DhW_MyHCl_onhRHZ8a1seA2PV3_e56g6F4rcKuI,21
+existenz_api_fetcher-0.0.4.dist-info/RECORD,,
