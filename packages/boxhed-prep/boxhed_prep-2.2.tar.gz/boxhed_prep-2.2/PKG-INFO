@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: boxhed_prep
+Version: 2.2
+Summary: preprocessor for BoXHED2.0
+Author: Arash Pakbin
+Requires-Python: >=3.8

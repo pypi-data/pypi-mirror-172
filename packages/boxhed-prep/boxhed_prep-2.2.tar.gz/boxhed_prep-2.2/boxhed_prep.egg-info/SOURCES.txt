@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.cfg
+setup.py
+boxhed_prep/CMakeLists.txt
+boxhed_prep/boxhed_prep.cpp
+boxhed_prep/boxhed_prep.h
+boxhed_prep/boxhed_prep.py
+boxhed_prep.egg-info/PKG-INFO
+boxhed_prep.egg-info/SOURCES.txt
+boxhed_prep.egg-info/dependency_links.txt
+boxhed_prep.egg-info/not-zip-safe
+boxhed_prep.egg-info/requires.txt
+boxhed_prep.egg-info/top_level.txt
