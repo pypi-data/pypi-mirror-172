@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: toolkit4life
+Version: 0.1.22
+Summary: Faster deployment is what we want!
+Home-page: https://github.com/keivanipchihagh/toolkit4life
+Author: Keivan Ipchi Hagh
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# toolkit4life
+A PyPI package to help speed-up development and make life easier.
+
+## Features
+- **logger**: Different decorators to use on your fuctions
+- **threads**: *Thread* and *ThreadPool* with return values
+- **requests**: Send requests with Backoff-Strategy
+- **clients**:
+  - **redis**: Redis-Client
+  - **trino**: trino-Client
+  - **postgre**: PostgreSQL-Client
