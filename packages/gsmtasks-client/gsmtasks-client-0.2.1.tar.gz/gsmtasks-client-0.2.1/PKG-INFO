@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gsmtasks-client
+Version: 0.2.1
+Summary: Client library for https://api.gsmtasks.com/ .
+License: CC0-1.0 OR 0BSD
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: deprecation (>=2.0.6,<3.0.0)
+Requires-Dist: lapidary-base (==0.4.3)
+Requires-Dist: pydantic[email] (>=1.9.2,<2.0.0)
