@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: check-dkim
+Version: 0.1.0
+Summary: A simple CLI script to verify DKIM signatures on EML files
+License: GPLv3
+Author: Micah Lee
+Author-email: micah@micahflee.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click
+Requires-Dist: dkimpy
+Description-Content-Type: text/markdown
+
+# check-dkim
+
+A simple CLI script to verify DKIM signatures on EML files.
+
