@@ -1,0 +1,7 @@
+PyYAML
+numpy
+pandas
+rdkit
+rdkit_pypi
+schema
+stse
