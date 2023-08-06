@@ -1,0 +1,7 @@
+simplebook/app.py,sha256=Q8OQNLSzfbipFGi5NnZ-HOwnx4gFw1Ss4T1MgGNUabM,3067
+simplebook/worker.py,sha256=13K6rDabUX6JjiLheZO53POzU-Cr3_I_rnhejTd45-U,272
+simplebook/wsgi.py,sha256=mgl6vmn6T5axm-Md_HfAp9kXmH_S_0sdePTe1tfsLSc,73
+flask_simplebook-0.1.0.dist-info/METADATA,sha256=hEhmvdIxmrvxvx654VnwwC-nP7EU-ul8wkJYTaEsnjs,2476
+flask_simplebook-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flask_simplebook-0.1.0.dist-info/top_level.txt,sha256=n5qp4AuJA9PO_ytafCf2Gm280J9bjNBM0qs5GUZIWjg,11
+flask_simplebook-0.1.0.dist-info/RECORD,,
