@@ -1,0 +1,38 @@
+<question type="shortanswer">
+    <name>
+        <text>{{question.title}}</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[{{ question.prompt }}]]></text>
+        {% for file in question.images %}
+          <file name="{{file.name}}" path="{{file.path}}" encoding="{{file.encoding}}">{{file.content}}</file>
+        {% endfor %}
+    </questiontext>
+    <usecase>{{ question.casesensitivity }}</usecase>
+    <generalfeedback format="html">
+        <text>{{question.feedback}}</text>
+    </generalfeedback>
+    <defaultgrade>{{question.defaultgrade}}</defaultgrade>
+    <penalty>{{question.penalty}}</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+
+    {% for answer in question.answers %}
+    <answer fraction="{{answer.fraction}}" format="moodle_auto_format">
+      <text>{{answer.text}}</text>
+      <feedback format="html">
+        <text>{{answer.feedback}}</text>
+      </feedback>
+    </answer>
+    {%  endfor %}
+    {% for file in question.files %}
+      <file name="{{file.name}}" path="{{file.path}}" encoding="{{file.encoding}}">{{file.content}}</file>
+    {% endfor %}
+    <tags>
+        {% for tag in question.tags %}
+            <tag>
+                <text>{{ tag }}</text>
+            </tag>
+        {% endfor %}
+    </tags>
+  </question>

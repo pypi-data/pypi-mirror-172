@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    {% for category in categories %}
+        <!-- category: {{loop.index}} -->
+        <question type= "category" >
+            <category>
+                <text> {{ category.name }}</text>
+            </category>
+            <info format="html">
+                <text></text>
+            </info>
+            <idnumber></idnumber>
+        </question>
+
+        {% for question in category.questions %}
+            <!-- question: {{loop.index}}  -->
+{{ question }}
+        {% endfor %}
+    {% endfor %}
+</quiz>
