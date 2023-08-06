@@ -1,0 +1,13 @@
+
+[dev]
+pre-commit
+black
+mypy
+flake8
+flake8-builtins
+
+[test]
+pytest
+pytest-randomly
+coverage
+tox

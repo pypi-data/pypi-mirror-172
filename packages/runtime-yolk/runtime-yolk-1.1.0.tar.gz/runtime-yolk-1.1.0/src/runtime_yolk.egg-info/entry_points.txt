@@ -1,0 +1,2 @@
+[console_scripts]
+yolk-env = runtime_yolk.env_cli:main
