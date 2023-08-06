@@ -1,0 +1,11 @@
+tethys-data-models>=0.4.11
+requests
+tethysts>=4.5.4
+rioxarray
+numexpr
+dask
+numcodecs
+hydrointerp
+geojson
+dill
+s3tethys>=0.0.4
