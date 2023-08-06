@@ -1,0 +1,96 @@
+stages:     
+    - test
+    - release
+
+check-unreleased-changes:
+  image: python:3.8-slim
+  script:
+    - pip install cli-changelog-md
+    - changelog unreleased-changes
+    - |
+      if [[ $(changelog unreleased-changes) != "" ]]; \
+      then echo "Changelog has unreleased changes. Need update changelog to new version"; exit -1;\
+      else echo "Release changelog: ok"; fi
+  rules:
+    - if: $CI_BUILD_REF_NAME == 'main' || $CI_BUILD_REF_NAME == 'master'
+      when: on_success
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == 'main' || $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == 'master'
+      when: on_success
+
+check-changelog-changed:
+  image: python:3.8-slim
+  script:
+    - pip install cli-changelog-md
+    - changelog git-login --token ${GITBOT_TOKEN} --host ${CI_SERVER_URL}
+    - changelog git-diff -b ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME} -r
+    - |
+      if [[ $(changelog git-diff -b ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME} -r) == "" ]]; \
+      then echo "Need add change information to changelog!"; exit -1; fi
+  only:
+    refs:
+      - merge_requests
+    variables:
+      - $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main"
+      - $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "dev"
+      - $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master"
+  secrets:
+    GITBOT_TOKEN:
+      vault: dev/autotest-bot/token@int
+      file: false
+
+prepare-release-version:
+  image: python:3.8-slim
+  script:
+    - apt-get update -y
+    - apt-get install curl -y
+    - pip install cli-changelog-md
+    - changelog current
+    - RELEASE_VERSION=$(changelog current)
+    - curl -s ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/repository/tags?private_token=${GITBOT_TOKEN}
+    - |
+      LAST_TAG=$(\
+      curl -s ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/repository/tags?private_token=${GITBOT_TOKEN} | \
+      python3 -c "import sys, json; print(json.load(sys.stdin)[0]['name'])")
+    - |
+      if [[ $RELEASE_VERSION == $LAST_TAG ]]; \
+      then echo "Tag ${RELEASE_VERSION} already released"; exit -1; \
+      else echo "Release version: ok"; fi
+    - echo RELEASE_VERSION=$RELEASE_VERSION >> version.env
+    - changelog current-changes
+    - echo "$(changelog current-changes)" >> description.txt
+  artifacts:
+    paths:
+      - description.txt
+    reports:
+      dotenv: version.env
+  only:
+    - master
+    - main
+  secrets:
+    GITBOT_TOKEN:
+      vault: dev/autotest-bot/token@int
+      file: false
+  dependencies:
+    - check-changelog-changed
+
+release:
+  image: python:latest
+  stage: release
+  script:
+    - apt-get update -y
+    - apt-get install curl -y
+    - curl --location --output /usr/local/bin/release-cli "https://release-cli-downloads.s3.amazonaws.com/latest/release-cli-linux-amd64"
+    - chmod 777 /usr/local/bin/release-cli
+    - pip install twine
+    - python setup.py sdist bdist_wheel
+    - twine upload -u $TWINE_USER -p $TWINE_PASSWORD dist/* --verbose
+  release:
+    name: 'Release $RELEASE_VERSION'
+    tag_name: ${RELEASE_VERSION}
+    description: ./description.txt
+  only:
+    - master
+    - main
+  dependencies:
+    - prepare-release-version
+    - check-unreleased-changes
