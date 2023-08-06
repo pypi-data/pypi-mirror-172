@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+menutools/__init__.py
+menutools.egg-info/PKG-INFO
+menutools.egg-info/SOURCES.txt
+menutools.egg-info/dependency_links.txt
+menutools.egg-info/not-zip-safe
+menutools.egg-info/top_level.txt
