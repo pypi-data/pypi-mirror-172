@@ -1,0 +1,10 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+benchling_api_client/benchling_client.py,sha256=jm0O5Q3KtPb-59L72s1BKtuUViiPdXO-bFeejV9ZOsY,354
+benchling_api_client/client.py,sha256=lDek57rgs4i7QBQ6joG1MKcIx8cJnveI63pce0f169A,284
+benchling_api_client/extensions.py,sha256=x7yfVgTD-KAexZrYJMy2ctB0rnqVKUVuKvii1G_EHGE,351
+benchling_api_client/py.typed,sha256=8ZJUsxZiuOy1oJeVhsTWQhTG_6pTVHVXk5hJL79ebTk,25
+benchling_api_client/types.py,sha256=o6I4nnMdn8WzJ4Q13N4S2iEBDfukf4cJo3N-ZM1bXok,481
+benchling_api_client-2.0.59.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+benchling_api_client-2.0.59.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+benchling_api_client-2.0.59.dist-info/METADATA,sha256=5G_XVFbBoDhfVDzqFENn-kPzMPBB4Dr2wSN_Hf6vgqA,1259
+benchling_api_client-2.0.59.dist-info/RECORD,,
