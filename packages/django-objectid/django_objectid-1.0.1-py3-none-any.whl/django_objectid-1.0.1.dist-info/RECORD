@@ -1,0 +1,11 @@
+objectid/__init__.py,sha256=AskpV03zez4BlLrZ9M7_WsnMxq-YQgWfeJ2LLt8Sz0g,161
+objectid/models.py,sha256=OkxSCenw1ZUGpgDjTj6mt_gULkLDpqQ2UoJr6vGAybk,424
+objectid/objectid.py,sha256=uM7ynIkG0Qvl-p0WLxFutOZRL3Lz--EDnOQGNIvh_bg,2509
+objectid/snowflake.py,sha256=gi0w5c7o4qa3wGYwoWSUySmi6ESjf4hAOHw4Yrals9A,1667
+objectid/test.py,sha256=323MRkl_pziXcGCODaeIp11uMqZAHF5jQ0AcaOkS8EQ,2607
+objectid/utils.py,sha256=qYx0BH8FKELrdGa-FYTUwRX-u2UxjaZVFOfD8emFbjQ,1000
+django_objectid-1.0.1.dist-info/LICENSE,sha256=AVviKFjo38UGDPwN18Ry8JgdplTkrwdWN_MUQG026ps,1112
+django_objectid-1.0.1.dist-info/METADATA,sha256=Aj27JGSeB4veqy4atvxITxLItoUGorG4JwI3UYqRNPE,1764
+django_objectid-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_objectid-1.0.1.dist-info/top_level.txt,sha256=Ndrw1dxF8Jjf-vnIqhTOvb1lZCBpaQt5hlJuP2x4zA0,9
+django_objectid-1.0.1.dist-info/RECORD,,
