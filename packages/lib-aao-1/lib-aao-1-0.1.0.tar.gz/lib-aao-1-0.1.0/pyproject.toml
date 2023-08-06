@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lib-aao-1"
+version = "0.1.0"
+description = "Tesdt Reposıtory"
+license = "MIT"
+readme = "README.md"
+authors = ["Arda Orhan <arda.orhan@sennder.com>"]
+packages = [{include = "lib_1"}]
+keywords = ["test"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pydantic = "^1.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
