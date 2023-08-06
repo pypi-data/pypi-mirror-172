@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: mcmng
+Version: 0.2.0
+Summary: Command line based minecraft server manager for individual admins.
+Home-page: https://github.com/technomunk/mcmng
+License: MIT
+Keywords: minecraft,manager,backup
+Author: Technomunk
+Author-email: thegriffones@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: mcstatus (>=9.4.2,<10.0.0)
+Project-URL: Repository, https://github.com/technomunk/mcmng
+Description-Content-Type: text/markdown
+
+# mcmng
+
+Command line based [minecraft](https://www.minecraft.net/en-us) server manager for individual admins.
+
+## Installation
+
+- Install [python 3.10](https://www.python.org/downloads/) or higher
+- `pip install mcmng`
+
+## Development
+
+- Install [python 3.10](https://www.python.org/downloads/) or higher
+- Install [poetry](https://python-poetry.org/)
+- `poetry install`
+
