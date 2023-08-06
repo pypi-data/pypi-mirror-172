@@ -1,0 +1,74 @@
+[build-system]
+requires = ['setuptools', 'setuptools_scm']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'configuration-settings'
+description = 'General purpose config file parser'
+readme = 'README.md'
+requires-python = '>=3.9'
+keywords = ['config']
+classifiers = [
+	'Intended Audience :: Developers',
+	'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
+	'Programming Language :: Python',
+	'Programming Language :: Python :: 3',
+	'Programming Language :: Python :: 3.9',
+	'Programming Language :: Python :: 3.10',
+	'Programming Language :: Python :: 3.11',
+	'Topic :: Software Development :: Libraries :: Python Modules',
+]
+dependencies = [
+	'PyYAML>=6.0,<7.0',
+]
+dynamic = ['version']
+
+
+[[project.authors]]
+name = 'Peter Linss'
+email = 'peter@linss.com'
+
+
+[project.urls]
+homepage = 'https://gitlab.linss.com/open-source/python/configuration-settings'
+
+
+[project.license]
+text = 'GNU Lesser General Public License v3'
+
+
+[project.optional-dependencies]
+dev = [
+	'types-PyYAML',
+	'mypy',
+	'flake8',
+	'flake8-annotations',
+	'flake8-bandit',
+	'flake8-bugbear',
+	'flake8-commas',
+	'flake8-comprehensions',
+	'flake8-continuation',
+	'flake8-datetimez',
+	'flake8-docstrings',
+	'flake8-import-order',
+	'flake8-literal',
+	'flake8-modern-annotations',
+	'flake8-noqa',
+	'flake8-pyproject',
+	'flake8-requirements',
+	'flake8-typechecking-import',
+	'flake8-use-fstring',
+	'pep8-naming',
+]
+
+
+[tool.setuptools_scm]
+
+
+[tool.flake8]
+ignore = ['D107', 'D401', 'W503', 'ANN002', 'ANN003', 'ANN101', 'ANN102', 'ANN401', 'FS003', 'S110']
+max-line-length = 120
+
+
+[tool.mypy]
+mypy_path = 'stubs'

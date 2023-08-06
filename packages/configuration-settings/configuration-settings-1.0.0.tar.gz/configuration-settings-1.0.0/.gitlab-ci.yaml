@@ -1,0 +1,5 @@
+---
+include:
+  - project: 'open-source/python/ci-common'
+    ref: main
+    file: 'gitlab-ci.yaml'
