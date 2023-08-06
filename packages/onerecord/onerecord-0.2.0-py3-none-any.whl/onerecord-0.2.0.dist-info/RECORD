@@ -1,0 +1,12 @@
+onerecord/__init__.py,sha256=qcAufXHtJUhMLkDaYrs7liR5OWrcOO7_CgNIBvx-uaI,306
+onerecord/client.py,sha256=9VBrPYscZBnFHHN3-qMoZs_aKaDDd_d3-1cZKVjxNCk,8856
+onerecord/exceptions.py,sha256=pzJC8Pfw1gwTwrmjelZV3CoRLLYhDVJ2XE25h425r8o,402
+onerecord/utils.py,sha256=dTe2JgSQKbFtFxIcndNfYtGONYwpnKs0FX2DOg0uBE0,10645
+onerecord/models/__init__.py,sha256=A5bxIxVJFNbDCROWlYgpwGcZfQ5eGCXgJz2ksgVwf4I,424
+onerecord/models/api.py,sha256=27Is9-6WJIO70Zo-T9i3gMNGKonqM9N__ShZAvVoEB8,16746
+onerecord/models/cargo.py,sha256=WXlmxKBhdFp824lqx_n0G0qxY03o7-Pehqrt0kwvkkA,126546
+onerecord/models/enums.py,sha256=fnzxWwZG9xriLSou51Uy9Mh-dDZACQuGxsglSNmUOWs,8082
+onerecord-0.2.0.dist-info/METADATA,sha256=WXzoqhQv4lE3ia3xLslWXO3f77Jo4OpyTgPm0h1chrc,6130
+onerecord-0.2.0.dist-info/WHEEL,sha256=dX1WPp444jXDT0mMZWrdU6ZHm7Cfu0jldiLCQOk_Kmg,87
+onerecord-0.2.0.dist-info/licenses/LICENSE.md,sha256=jVeZRh_BteAYqUrTf6tHMX5OosZ1UYgYnX_W59nW6Ds,1084
+onerecord-0.2.0.dist-info/RECORD,,
