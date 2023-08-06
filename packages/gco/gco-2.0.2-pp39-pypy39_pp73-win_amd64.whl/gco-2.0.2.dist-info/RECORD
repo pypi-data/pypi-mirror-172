@@ -1,0 +1,16 @@
+gco/__init__.py,sha256=tGuqUSxLhmSBHSSZAhhPozpKasBS4L-ZsrY6uh6t_So,24
+gco/gco_ext.cp39-win_amd64.pyd,sha256=5hD1idjrQJofBsOZXpbJmIioTbFem3FLwMt6U3bz7SA,217600
+gco/include/GCoptimization.h,sha256=JRyDmwI6H8e8qgKSItoGIWT31lLEW2lbNOLaF5qNGTI,32069
+gco/include/LinkedBlockList.h,sha256=-DNKCUoFw4-TppH5gQXDmbZIGvtXtOtY-XxVdGAPK-o,2123
+gco/include/block.h,sha256=AbkHjssdXEWU-6qB0LwVgIj9WsJeF6KaPWeaMxIyaK8,9177
+gco/include/energy.h,sha256=TKRl4b3pWh7dpInojfZ5An9FGpLKQXEtno37OMhb9yY,11723
+gco/include/graph.h,sha256=koAahrA47FQQHp5_Fn1VSTaxVglDNGZf-_ujVZp39IA,20514
+gco/include/graph.inl,sha256=aJUS9yW6VaCMLcDuFLhBOX74mD0_4uhRdpB9nwnCQOw,3725
+gco/include/maxflow.inl,sha256=O5YBS23wJqrAuqw2Nr8nG_TYGks2u5-Eh1od9Q4RpOI,25320
+gco/lib/gco.lib,sha256=ARm45xE01sOEbJOJL4W9PU2txMjeA32IQWvJTkl5emc,392868
+gco/lib/cmake/GCO/GCOTargets-release.cmake,sha256=nFKQzqEZ2mOXR7OICYm8cBawVMujObPht1TVIKtVJvc,824
+gco/lib/cmake/GCO/GCOTargets.cmake,sha256=Xp5jIGeK5Av0jP74VZd9ksjFjO4GpM-lSrdaIWf0OfA,3999
+gco-2.0.2.dist-info/METADATA,sha256=0DFuOgQXzw_0y5-3bWWYUV2AqidUyn8_DPKXkvBczCc,1701
+gco-2.0.2.dist-info/WHEEL,sha256=1sel7njtTmf48WzLkZ4eFwuCe_Z0lkfKmPwPyS01vpA,101
+gco-2.0.2.dist-info/top_level.txt,sha256=ymid2Xi0Hk8Uvl7EdxL56Zvz92vfKkM-c7OZFN43Kw8,4
+gco-2.0.2.dist-info/RECORD,,
