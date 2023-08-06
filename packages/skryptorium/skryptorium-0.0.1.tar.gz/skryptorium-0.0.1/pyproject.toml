@@ -1,0 +1,20 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'skryptorium'
+description = 'Tools for working with single-cell DNA sequencing data'
+version = '0.0.1'
+authors = [
+  { name = 'Ajay Khanna', email = 'appliedstochastics@gmail.com' }
+]
+requires-python = '>3.7'
+classifiers = [
+  'Programming Language :: Python :: 3'
+]
+readme = 'README.md'
+license = { text = 'MIT' }
+
+[project.scripts]
+skryptorium = 'skryptorium.cli:skryptorium'

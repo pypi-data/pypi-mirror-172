@@ -1,0 +1,2 @@
+[console_scripts]
+skryptorium = skryptorium.cli:skryptorium

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/skryptorium/__init__.py
+src/skryptorium/cli.py
+src/skryptorium/hello.py
+src/skryptorium.egg-info/PKG-INFO
+src/skryptorium.egg-info/SOURCES.txt
+src/skryptorium.egg-info/dependency_links.txt
+src/skryptorium.egg-info/entry_points.txt
+src/skryptorium.egg-info/top_level.txt
