@@ -1,0 +1,9 @@
+sqlalchemy_easy_softdelete/__init__.py,sha256=qXjwHKQDg5xRAT7VJeXEheumR137W6u3JccGGoX_FaQ,140
+sqlalchemy_easy_softdelete/handler/__init__.py,sha256=fg-hDvemtWfFb1G5s-hGM3YSdcUiSTBX4ftADwXNvgM,65
+sqlalchemy_easy_softdelete/handler/rewriter/__init__.py,sha256=wvYht8sJZbni0NeJYafx7R8_M1LYpr9KR0eacRiNlVY,5215
+sqlalchemy_easy_softdelete/handler/sqlalchemy_easy_softdelete.py,sha256=_8ehrVzzK6mMwoJ37D6WvZAFCwN8Oc7qV3c-y9WM-nc,850
+sqlalchemy_easy_softdelete/mixin.py,sha256=jl-9UkVj-3syJMEmbxuoPsZ_3V8A_hAIMwpnpzvU5YI,1623
+sqlalchemy_easy_softdelete-0.5.1.dist-info/LICENSE,sha256=uwhhT1s32mqTVSaCJpw1Jnx0WeCaeG8DISUAH9TKMGg,1497
+sqlalchemy_easy_softdelete-0.5.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+sqlalchemy_easy_softdelete-0.5.1.dist-info/METADATA,sha256=Mi6HZjs15g1l6l5eJ6LV7oBcPkyv-w-gpKyqRhf-EyE,4418
+sqlalchemy_easy_softdelete-0.5.1.dist-info/RECORD,,
