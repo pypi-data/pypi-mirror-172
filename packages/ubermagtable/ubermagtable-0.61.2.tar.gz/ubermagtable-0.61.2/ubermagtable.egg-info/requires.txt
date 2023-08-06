@@ -1,0 +1,13 @@
+ubermagutil>=0.62.0
+pandas>=1.1
+matplotlib>=3.3
+jupyterlab~=3.0
+ipywidgets>=7.5
+
+[dev]
+build
+invoke
+nbval
+pre-commit
+pytest-cov
+twine
