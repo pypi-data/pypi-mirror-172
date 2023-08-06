@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Flask-OpenAPI3-UI
+Version: 1.1.0
+Summary: Next generation OpenAPI v3 Integration for Flask based APIs. Based on Flasgger.
+Home-page: https://github.com/overflowdigital/Flask-OpenAPI/
+Author: Overflow Digital
+Author-email: team@overflow.digital
+License: MIT
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: PyYAML
+Requires-Dist: jsonschema
+Requires-Dist: mistune
+Requires-Dist: six
+
+# Flask-OpenAPI3-UI
+
+Next generation OpenAPI v3 Integration for Flask based APIs. Based on Flasgger.
