@@ -1,0 +1,4 @@
+[console_scripts]
+NvwuBuchuandeMofaCaoyaoshu = NvwuBuchuandeMofaCaoyaoshu.__main__:main
+nvwu-buchuande-mofa-caoyaoshu = NvwuBuchuandeMofaCaoyaoshu.__main__:main
+
