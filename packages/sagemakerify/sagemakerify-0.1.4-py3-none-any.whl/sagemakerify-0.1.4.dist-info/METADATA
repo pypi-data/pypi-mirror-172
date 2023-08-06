@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sagemakerify
+Version: 0.1.4
+Summary: High level framework to simplify the use of SageMaker
+Author: Edzon Sanchez
+Author-email: edzons@amazon.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: sagemaker
+Requires-Dist: tqdm
+Requires-Dist: yaspin
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: sagemaker-utils
+Requires-Dist: shortuuid
+Requires-Dist: astor
+Requires-Dist: importlib-resources
+
+UNKNOWN
+
