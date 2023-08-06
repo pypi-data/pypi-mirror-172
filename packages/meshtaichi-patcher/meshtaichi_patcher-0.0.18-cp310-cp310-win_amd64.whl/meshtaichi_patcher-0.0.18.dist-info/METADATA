@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: meshtaichi-patcher
+Version: 0.0.18
+Summary: a mesh patcher for meshtaichi
+Author-email: BillXu2000 <BillXu2000@126.com>
+Project-URL: Homepage, https://github.com/BillXu2000/meshtaichi_patcher
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: meshio
+Requires-Dist: numpy
+
+Some examples can be found under example folder.
+
+### install
+
+```bash
+pip install meshtaichi_patcher
+```
+
+For users who want to build this repository:
+
+```bash
+pip install -r requirements.txt
+python3 setup.py develop --user
+```
