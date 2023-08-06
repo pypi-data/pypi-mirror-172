@@ -1,0 +1,10 @@
+README.md
+setup.py
+tempgit/__init__.py
+tempgit/monitor.py
+tempgit/tmp.py
+tempgit.egg-info/PKG-INFO
+tempgit.egg-info/SOURCES.txt
+tempgit.egg-info/dependency_links.txt
+tempgit.egg-info/requires.txt
+tempgit.egg-info/top_level.txt
