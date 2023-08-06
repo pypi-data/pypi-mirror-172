@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: jutool.ml-util
+Version: 0.1.25
+Summary: Some base methods for NLP Sample manage
+Home-page: http://www.example.com/~cschultz/bvote/
+Author: Ke
+Author-email: jiangke1207@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jutool (==0.1.25)
+Requires-Dist: jutool.sample-util (==0.1.25)
+
+# basepackage
+
+
+
