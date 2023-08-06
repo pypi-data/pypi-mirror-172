@@ -1,0 +1,14 @@
+unilogger/HDFlogger.py,sha256=MZzKBrE-eFE0gZ9MK8LbqJbwotpGrhtQ-5LwFmOh6Xw,576
+unilogger/__init__.py,sha256=D3cevD2qf-OfmYqxxqa3wROc1HoK2z-OOv2jGfISOeU,202
+unilogger/asyncio_helper.py,sha256=wliWZvqQfz9MU3KjP9hCApHBb-YDoFsbU7YQZFkkpyQ,556
+unilogger/csvlogger.py,sha256=SCm2cF_c6BaZE7KpUQDL5oE3o_4dLL-e636I5wlNXSs,949
+unilogger/schedule.py,sha256=K3hhYJXcD69NKDDcxpKNuA1Stfw3VX4KbPTGKR64n9Q,3504
+unilogger/bus/__init__.py,sha256=Jc4j3uRnYyDYuFp6qK3bJ97fA3vJuVK0TItf8e_0XIE,1323
+unilogger/bus/addupi.py,sha256=s1foMzmqeG0T7nFmaDtmCx9x5_mRxZhrxYrSh5eABLs,9344
+unilogger/bus/base.py,sha256=_XOFoilppw3Hwdf-tJIazCFdHGs1env9S0f3XXOa3aA,9083
+unilogger/bus/modbus.py,sha256=tzA6bf3N1Aj25-MVVKVJeRCGHNibrT41lfvpFMfKjP8,4791
+unilogger/bus/sdi12.py,sha256=QsGCSWbruUBuqW2kndT7E7jzUDYRd5PkUsnun3Yuhgk,10469
+unilogger-2022.10.17.dist-info/METADATA,sha256=gQImDhXQ5MRVprIpj5VfRhOiQUprAoWyp1Gs6AP48Yo,612
+unilogger-2022.10.17.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+unilogger-2022.10.17.dist-info/top_level.txt,sha256=teSsgeEEb-HZyBlssBVi_GwjgKgQFKvIZKCbmZmteZc,10
+unilogger-2022.10.17.dist-info/RECORD,,
