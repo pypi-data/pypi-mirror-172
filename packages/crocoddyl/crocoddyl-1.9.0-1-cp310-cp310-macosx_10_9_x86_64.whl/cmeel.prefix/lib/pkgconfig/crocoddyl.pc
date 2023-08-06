@@ -1,0 +1,22 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${pcfiledir}/../..
+libdir=${pcfiledir}/../../lib
+bindir=${pcfiledir}/../../bin
+pkglibdir=${pcfiledir}/../../lib/crocoddyl
+includedir=${pcfiledir}/../../include
+datarootdir=${pcfiledir}/../../share
+pkgdatarootdir=${pcfiledir}/../../share
+docdir=${pcfiledir}/../../share/doc/crocoddyl
+doxygendocdir=${pcfiledir}/../../share/doc/crocoddyl/doxygen-html
+
+Name: crocoddyl
+Description: Contact RObot COntrol by Differential DYnamic programming Library (Crocoddyl)
+URL: https://github.com/loco-3d/crocoddyl
+Version: 1.9.0
+Requires: eigenpy >= 2.7.10, pinocchio >= 2.6.3, example-robot-data >= 4.0.0
+Conflicts: 
+Libs: -L${libdir}  -lcrocoddyl
+Libs.private: 
+Cflags:  -I${includedir}
+
+
