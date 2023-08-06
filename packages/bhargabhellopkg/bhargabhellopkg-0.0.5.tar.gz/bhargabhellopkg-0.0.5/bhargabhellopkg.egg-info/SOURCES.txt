@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bhargabhellopkg/__init__.py
+bhargabhellopkg/bhargab2.py
+bhargabhellopkg.egg-info/PKG-INFO
+bhargabhellopkg.egg-info/SOURCES.txt
+bhargabhellopkg.egg-info/dependency_links.txt
+bhargabhellopkg.egg-info/requires.txt
+bhargabhellopkg.egg-info/top_level.txt
