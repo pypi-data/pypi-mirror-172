@@ -1,0 +1,3 @@
+[console_scripts]
+tetebeche=tetebeche.cmd:main
+
