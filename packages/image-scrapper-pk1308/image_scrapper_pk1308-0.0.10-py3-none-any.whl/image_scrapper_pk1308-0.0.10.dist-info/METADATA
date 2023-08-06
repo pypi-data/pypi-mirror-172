@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: image-scrapper-pk1308
+Version: 0.0.10
+Summary: Image scrapping from google
+Home-page: https://github.com/pk1308/image_scrapper
+Author: pk1308
+Author-email: princevkurien@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/pk1308/image_scrapper/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Requires-Dist: selenium-stealth
+Requires-Dist: ensure
+Requires-Dist: chromedriver-py
+Requires-Dist: Pillow
+Provides-Extra: testing
+Requires-Dist: pytest (>=7.1.3) ; extra == 'testing'
+Requires-Dist: mypy (>=0.971) ; extra == 'testing'
+Requires-Dist: flake8 (>=5.0.4) ; extra == 'testing'
+Requires-Dist: tox (>=3.25.1) ; extra == 'testing'
+Requires-Dist: black (>=22.8.0) ; extra == 'testing'
+
+
+
+...
+
+pip install image-scrapper-pk1308
+...
+
+
+...
+
+from imagescrapper import google_scrapper
+...
+
+
+...
+
+image_scrapper = google_scrapper(folder_path="scrapped_images", search_term="kitten", number_images=10)
+...
+
+
