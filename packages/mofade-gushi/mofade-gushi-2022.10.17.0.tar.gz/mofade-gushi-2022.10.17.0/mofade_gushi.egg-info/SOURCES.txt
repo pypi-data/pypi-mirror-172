@@ -1,0 +1,12 @@
+README.md
+setup.py
+MofadeGushi/README.md
+MofadeGushi/__init__.py
+MofadeGushi/__main__.py
+MofadeGushi/file.pdf
+MofadeGushi/index.html
+mofade_gushi.egg-info/PKG-INFO
+mofade_gushi.egg-info/SOURCES.txt
+mofade_gushi.egg-info/dependency_links.txt
+mofade_gushi.egg-info/entry_points.txt
+mofade_gushi.egg-info/top_level.txt
