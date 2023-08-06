@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: komputee
+Version: 0.0.6
+Summary: Data Dashboards with FastAPI
+Project-URL: Homepage, https://komputee.com/product
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: fastapi
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+Readme
