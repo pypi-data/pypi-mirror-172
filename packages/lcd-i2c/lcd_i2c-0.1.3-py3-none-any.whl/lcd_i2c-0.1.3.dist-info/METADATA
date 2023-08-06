@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lcd-i2c
+Version: 0.1.3
+Summary: Library for interacting with an I2C LCD screen through Python
+License: MIT
+Author: Federico Giancarelli
+Author-email: hello@federicogiancarelli.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: smbus2 (>=0.4.2,<0.5.0)
+Description-Content-Type: text/markdown
+
+Basic library for interacting with I2C LCD screens.
+
+Tested using a Raspberry Pi Zero 2W.
+
