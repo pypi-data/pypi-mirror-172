@@ -1,0 +1,10 @@
+aws_cdk/aws_sns_subscriptions/__init__.py,sha256=SGPiWLX0ix1Se5hoqETb_96YlDbBq3sR2LhZasAGUvY,41023
+aws_cdk/aws_sns_subscriptions/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_sns_subscriptions/_jsii/__init__.py,sha256=BFldJxO29OoyWGfYxHJmIZwup2Valu2C3TjPZ1HmQUw,588
+aws_cdk/aws_sns_subscriptions/_jsii/aws-sns-subscriptions@1.178.0.jsii.tgz,sha256=lz3Pd9e36oE2vFcp7ASw9Xfu24NLmoF6E_EIuUWrykg,30217
+aws_cdk.aws_sns_subscriptions-1.178.0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_sns_subscriptions-1.178.0.dist-info/METADATA,sha256=BIs2AhYoyYaRrM6-2CciF8dUGLkiZfMYm-vLFgSMxN4,5354
+aws_cdk.aws_sns_subscriptions-1.178.0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_sns_subscriptions-1.178.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_sns_subscriptions-1.178.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_sns_subscriptions-1.178.0.dist-info/RECORD,,
