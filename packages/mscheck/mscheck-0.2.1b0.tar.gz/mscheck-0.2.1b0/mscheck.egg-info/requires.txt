@@ -1,0 +1,4 @@
+pyopenms
+scipy
+matplotlib
+svgutils
