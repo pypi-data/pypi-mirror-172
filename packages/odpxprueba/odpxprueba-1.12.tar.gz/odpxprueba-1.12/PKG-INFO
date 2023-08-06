@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: odpxprueba
+Version: 1.12
+Summary: The fundamental toolkit for outliers search and visualization
+Home-page: https://github.com/ikumpli/odpxprueba/
+Download-URL: https://github.com/ikumpli/odpxprueba/archive/refs/tags/v1.12.tar.gz
+Author: Iker Cumplido
+Author-email: ikumpli@gmail.com
+License: MIT
+Keywords: OUTLIERS,VISUALIZATION,PANDAS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: license.txt
