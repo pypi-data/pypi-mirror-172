@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/gec_noise_generator_ko.egg-info/PKG-INFO
+src/gec_noise_generator_ko.egg-info/SOURCES.txt
+src/gec_noise_generator_ko.egg-info/dependency_links.txt
+src/gec_noise_generator_ko.egg-info/top_level.txt
+src/gecnk/__init__.py
+src/gecnk/datasets.py
+src/gecnk/json_reader.py
+src/gecnk/noise.py
+src/gecnk/noise_generate.py
+src/gecnk/tokenizer.py
+src/gecnk/resources/__init__.py
+src/gecnk/resources/config.py
