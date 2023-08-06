@@ -1,0 +1,8 @@
+ADwin.py
+LICENSE.txt
+README.txt
+setup.py
+ADwin.egg-info/PKG-INFO
+ADwin.egg-info/SOURCES.txt
+ADwin.egg-info/dependency_links.txt
+ADwin.egg-info/top_level.txt
