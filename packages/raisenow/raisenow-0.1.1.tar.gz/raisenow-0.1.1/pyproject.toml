@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "raisenow"
+version = "0.1.1"
+description = "A python library to interact with the RaiseNow API"
+authors = ["Martin Mohnhaupt <m.mohnhaupt@bluewin.ch>"]
+maintainers = ["Martin Mohnhaupt <m.mohnhaupt@bluewin.ch>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+urllib3 = "^1.26.12"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
