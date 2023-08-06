@@ -1,0 +1,9 @@
+aiodns
+beautifulsoup4
+dnspython
+geoip2
+httpx
+python-whois
+requests
+simplejson
+xmltodict
