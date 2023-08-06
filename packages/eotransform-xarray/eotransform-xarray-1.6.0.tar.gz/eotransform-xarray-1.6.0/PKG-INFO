@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: eotransform-xarray
+Version: 1.6.0
+Summary: Implements transformations on xarray data structures, to be used with eotransform streamed_process.
+Home-page: https://github.com/TUW-GEO/eotransform-xarray
+Author: TU Wien GEO MRS group
+Author-email: remote.sensing@geo.tuwien.ac.at
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Provides-Extra: test
+Provides-Extra: lazy
+Provides-Extra: noise
+Provides-Extra: resample
+Provides-Extra: storage
+
+![Coverage badge](https://raw.githubusercontent.com/TUW-GEO/eotransform-xarray/python-coverage-comment-action-data/badge.svg)
+# eotransform-xarray
+
+Transformation of xarray raster data.
+
+WIP: More Doc
