@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+ps2joycln/__init__.py
+ps2joycln/__main__.py
+ps2joycln.egg-info/PKG-INFO
+ps2joycln.egg-info/SOURCES.txt
+ps2joycln.egg-info/dependency_links.txt
+ps2joycln.egg-info/top_level.txt

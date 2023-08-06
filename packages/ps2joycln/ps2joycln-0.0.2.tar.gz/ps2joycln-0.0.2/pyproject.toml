@@ -1,0 +1,24 @@
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ps2joycln"
+version = "0.0.2"
+authors = [
+  { name="Adler Neves", email="adlerosn@gmail.com" },
+]
+description = "A client to convert UDP packets from a PS2 console into keyboard events"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/adlerosn/ps2joycln"
+"Bug Tracker" = "https://github.com/adlerosn/ps2joycln/issues"
