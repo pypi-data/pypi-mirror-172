@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "pyunitx"
+version = "0.6.3"
+description = "First-class manipulation of physical quantities"
+authors = ["Nick Thurmes <nthurmes@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+sigfig = "^1.3.2"
+pypandoc = { version = "^1.9", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+pypandoc = "^1.9"
+coverage = "^6.5.0"
+pytest = "^7.0"
+lz4 = "^4.0.2"
+Sphinx = "^5.2.0.post0"
+coveralls = "^3.3.1"
+
+[tool.poetry.extras]
+docs = ["Sphinx", "pypandoc"]
+
+[tool.poetry.scripts]
+uconvert = "pyunitx.uconvert:main"
+
+[build-system]
+requires = ["poetry>=1.2"]
+build-backend = "poetry.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = [
+    "-v",
+    "-rP",
+    "--doctest-glob=README.md",
+]
