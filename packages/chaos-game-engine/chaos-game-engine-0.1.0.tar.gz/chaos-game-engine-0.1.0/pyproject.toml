@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "chaos-game-engine"
+version = "0.1.0"
+description = "A parameterized exploration of the 'chaos game'."
+authors = ["anthonybench <anthonybenchyep@gmail.com>"]
+readme = "README.md"
+packages = [{include = "chaos_game"}]
+repository = "https://github.com/anthonybench/chaos-game"
+license = "GNU GPL"
+keywords = ["non-linear-dynamics", "chaos", "fractals", "random-walk"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
