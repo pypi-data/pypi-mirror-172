@@ -1,0 +1,8 @@
+README.md
+setup.py
+video_compare.py
+video_compare.egg-info/PKG-INFO
+video_compare.egg-info/SOURCES.txt
+video_compare.egg-info/dependency_links.txt
+video_compare.egg-info/requires.txt
+video_compare.egg-info/top_level.txt
