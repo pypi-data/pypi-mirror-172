@@ -1,0 +1,10 @@
+tfparse.cpython-310-aarch64-linux-gnu.so,sha256=isezERCNaQlkbrO30HMoFP_1PX4PuWONxK3lQ3dN-88,21557288
+LICENSE,sha256=PMdXuWf4EwTjMMaIDjfo_e5pZJU2jNk4UfBwyOtDjew,11360
+tfparse.cpython-310-aarch64-linux-gnu.h,sha256=cnJ2QbFAGjYC7umoHlV8vZyzrSHPwlJ4u43TPRcQuDU,1847
+tfparse/__init__.py,sha256=WrH1HLJjH5UENBEkm4ceSXfVFZzv2SWmNJWP7CrINzg,1127
+tfparse/build_cffi.py,sha256=eawlcZw6CQMHPjxDIskexE9-vL4ykeVi-0ZOR7yBcio,478
+tfparse/_tfparse.py,sha256=4haGZ9xNyi40H-wiRxAXXrF2YMIBtjfl8tF_bZ3DJv0,572
+tfparse-0.2.0.dist-info/LICENSE,sha256=PMdXuWf4EwTjMMaIDjfo_e5pZJU2jNk4UfBwyOtDjew,11360
+tfparse-0.2.0.dist-info/METADATA,sha256=jeq6PYTmxoglwbj87ItTEzncHasxJuJqEEiS6WZVNgU,2882
+tfparse-0.2.0.dist-info/RECORD,,
+tfparse-0.2.0.dist-info/WHEEL,sha256=1huHjzphBNxe8oPFqtQv8JVdZZLNUP_D4b43Lgbpd3k,151
