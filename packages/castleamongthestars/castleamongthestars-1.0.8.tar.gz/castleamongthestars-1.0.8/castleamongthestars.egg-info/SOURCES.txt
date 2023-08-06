@@ -1,0 +1,6 @@
+setup.py
+castleamongthestars/__init__.py
+castleamongthestars.egg-info/PKG-INFO
+castleamongthestars.egg-info/SOURCES.txt
+castleamongthestars.egg-info/dependency_links.txt
+castleamongthestars.egg-info/top_level.txt
