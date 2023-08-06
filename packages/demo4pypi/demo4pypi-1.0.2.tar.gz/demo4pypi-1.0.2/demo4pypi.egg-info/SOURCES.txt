@@ -1,0 +1,6 @@
+README.rst
+setup.py
+demo4pypi.egg-info/PKG-INFO
+demo4pypi.egg-info/SOURCES.txt
+demo4pypi.egg-info/dependency_links.txt
+demo4pypi.egg-info/top_level.txt
