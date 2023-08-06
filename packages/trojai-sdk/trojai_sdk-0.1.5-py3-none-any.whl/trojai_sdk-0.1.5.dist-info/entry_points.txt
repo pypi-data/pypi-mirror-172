@@ -1,0 +1,2 @@
+[console_scripts]
+trojai-sdk = trojsdk.cmd:main

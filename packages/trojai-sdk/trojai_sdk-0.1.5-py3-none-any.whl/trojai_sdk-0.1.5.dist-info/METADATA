@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: trojai-sdk
+Version: 0.1.5
+Summary: TrojAI provides the troj Python convenience package to allow users to integrate TrojAI adversarial protections and robustness metrics seamlessly into their AI development pipelines.
+Home-page: https://troj.ai
+Author: TrojAI
+Author-email: stan.petley@troj.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.25)
+Requires-Dist: urllib3 (>=1.26)
+Requires-Dist: numpy
+Requires-Dist: dataclasses-json
+Requires-Dist: dataclasses-jsonschema
+Requires-Dist: pytest
+
+# trojai-sdk
+
+TrojAI's SDK and command line interface.
+
+# SDK Components
+
+## Client
+```
+from trojsdk import TrojClient
+```
+
+```
+import json
+
+##################################
+keys = AOUSYDHLOAHUSLDIUHW
+
+client = TrojClient()
+client.set_credentials(
+    id_token=keys["id_token"],
+    refresh_token=keys["refresh_token"],
+    api_key=keys["api_key"]    
+)
+```
+
+## Config
+```
+from trojsdk import BaseTrojConfig
+```
+
+```
+
+```
