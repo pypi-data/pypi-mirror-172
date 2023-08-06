@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: bruno-image-processing
+Version: 0.0.3
+Summary: Pacote cirado com intruções da DIO
+Author: Bruno Carvalho
+Author-email: brunoandradecarvalho2@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Matplotlib
+Requires-Dist: scikit-image
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	processing
+		- Histogram matching
+		- Structural similarity
+		- Resize image
+	Utils
+		- Read image
+		- Save image
+		- Plot image 
+		- Plot results
+		- Plot histogram 
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install image_processing 
+```
+
+## Usage
+
+```python
+from package_name import file1_name
+file1_name.my_function()
+```
+
+## Author
+Bruno 
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
