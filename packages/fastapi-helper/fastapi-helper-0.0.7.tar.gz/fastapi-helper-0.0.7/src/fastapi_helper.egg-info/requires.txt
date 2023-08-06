@@ -1,0 +1,8 @@
+fastapi
+pydantic
+
+[dev]
+check-manifest
+
+[test]
+coverage
