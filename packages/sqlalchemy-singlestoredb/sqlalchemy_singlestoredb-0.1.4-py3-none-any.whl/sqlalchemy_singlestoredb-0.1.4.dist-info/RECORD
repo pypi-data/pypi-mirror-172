@@ -1,0 +1,12 @@
+sqlalchemy_singlestoredb/__init__.py,sha256=r9ShYuH0wg9CoeDUpb7bfMX5nBpkda7EYHWD0IWN1OY,2665
+sqlalchemy_singlestoredb/base.py,sha256=N0tZtqikfL0-5ec3r8m3tsYZPmmveG5sE8D2Gzm1C9Y,9404
+sqlalchemy_singlestoredb/reflection.py,sha256=BjfKuYaF9a1vEiBJa2dM-JsMD-Lgn4goR2V0cF_qwAY,3999
+sqlalchemy_singlestoredb/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_singlestoredb/tests/test.sql,sha256=5nTFzubFQJ79UsfVWp-haSK63tFZhN-j6hPCGswjOP4,5040
+sqlalchemy_singlestoredb/tests/test_basics.py,sha256=wbNna0UwFQksuslBCAE46dvnXxoBodwot87tCcgjuXY,9917
+sqlalchemy_singlestoredb-0.1.4.dist-info/LICENSE,sha256=Mlq78idURT-9G026aMYswwwnnrLcgzTLuXeAs5hjDLM,11341
+sqlalchemy_singlestoredb-0.1.4.dist-info/METADATA,sha256=PVDSnvMQ5TUrercr6iz7HqL8hF36ib2ssNr1AqKTaQg,3637
+sqlalchemy_singlestoredb-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqlalchemy_singlestoredb-0.1.4.dist-info/entry_points.txt,sha256=qOZBZL57QG1Op-_XF-3y2lGApxygYIYna885IjViSHY,587
+sqlalchemy_singlestoredb-0.1.4.dist-info/top_level.txt,sha256=BU_KIb8GnxBN90Rpka4lSSKig5baBKbLbx5-A54x3Bw,25
+sqlalchemy_singlestoredb-0.1.4.dist-info/RECORD,,
