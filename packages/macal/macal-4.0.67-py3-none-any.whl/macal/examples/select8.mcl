@@ -1,0 +1,8 @@
+include aor, system;
+
+select distinct * from var where id == 2 into y;
+
+
+foreach y {
+	Console(it, " ", y[it]);
+}
