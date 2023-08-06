@@ -1,0 +1,4 @@
+[console_scripts]
+MeihuaYishuJingjie = MeihuaYishuJingjie.__main__:main
+meihua-yishu-jingjie = MeihuaYishuJingjie.__main__:main
+
