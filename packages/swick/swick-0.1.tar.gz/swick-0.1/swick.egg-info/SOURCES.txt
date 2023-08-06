@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+swick/__init__.py
+swick/io.py
+swick/swc.py
+swick.egg-info/PKG-INFO
+swick.egg-info/SOURCES.txt
+swick.egg-info/dependency_links.txt
+swick.egg-info/top_level.txt
