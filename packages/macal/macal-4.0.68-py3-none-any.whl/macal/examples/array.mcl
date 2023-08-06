@@ -1,0 +1,14 @@
+include system;
+var = array;
+
+var[] = "item 1";
+var[] = "item 2";
+
+Console(var[0]);
+Console(var[1]);
+
+var[] = array;
+var[2][] = "sub item 1";
+var[2][] = "sub item 2";
+
+Console(var[2][0]);

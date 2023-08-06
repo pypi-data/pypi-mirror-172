@@ -1,0 +1,10 @@
+include system;
+print => (arg) {
+  value = arg + 2;
+  Console(value);
+  return value + 1;
+  Console("This text does not show.");
+}
+
+result = print(40);
+Console("The returned value is:", result);

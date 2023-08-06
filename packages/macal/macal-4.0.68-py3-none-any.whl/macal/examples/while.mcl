@@ -1,0 +1,7 @@
+include aor, system;
+
+i = 0;
+while i < 3 {
+    Console(var[i]);
+    i+=1;
+}
