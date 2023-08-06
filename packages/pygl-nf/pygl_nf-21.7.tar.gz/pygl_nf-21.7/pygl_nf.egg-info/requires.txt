@@ -1,0 +1,7 @@
+Pygame==2.1.1
+keyboard
+pygame_widgets
+colorama
+numpy
+colored
+mouse
