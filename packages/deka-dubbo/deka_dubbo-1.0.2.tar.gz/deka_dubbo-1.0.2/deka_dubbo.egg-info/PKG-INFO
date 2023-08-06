@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: deka-dubbo
+Version: 1.0.2
+Summary: rabbitmq为中间件的分布式任务框架
+Author: zy
+Author-email: 517826265@qq.com
+Platform: all
+Description-Content-Type: text/markdown
+
+1.分布式函数调度框架简介
+pip install funboost，python全功能分布式函数调度框架,。
