@@ -1,0 +1,10 @@
+fraudrecord/hash.py,sha256=bEY-LdrWkc0KdfdF9iFNS4hYEhg5oE6QVLfxRKYiWsw,683
+fraudrecord/model.py,sha256=5opyBHmHHVd0yB1LRRUEduIdE1wcHvZZj3Jy21EQfIc,4628
+fraudrecord/query/__init__.py,sha256=MTFb1uJPbaiqbRjqe-nUz_yunPDYruYq2g7hOzkBPGs,417
+fraudrecord/query/cli.py,sha256=wNsJ6FZzsOJhCJbUdRY91PWFsOZA4_7gTOPxE5u0gmo,1912
+fraudrecord/query_aio/__init__.py,sha256=_M0qhEhz9kQ_Wbu_5blY_Kj1pm72qTCyigAGsSshHwE,521
+fraudrecord-2022.10.22.dist-info/entry_points.txt,sha256=eT9-Ygqxv4crxzO6YZnYVTw0Yw9umfh-_MH_Ki29LNw,64
+fraudrecord-2022.10.22.dist-info/LICENSE.txt,sha256=KRBTuLb9EBAnRDaq2RUKrMeV3OJw9EwjRWI81P-8GtA,2581
+fraudrecord-2022.10.22.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+fraudrecord-2022.10.22.dist-info/METADATA,sha256=wDYzLhL1DUQ-sqixpMtRINZUfkK5xbqkTqLcOxXuhew,6466
+fraudrecord-2022.10.22.dist-info/RECORD,,

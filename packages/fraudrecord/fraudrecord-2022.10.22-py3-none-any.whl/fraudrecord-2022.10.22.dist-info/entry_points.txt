@@ -1,0 +1,3 @@
+[console_scripts]
+fraudrecord-query=fraudrecord.query.cli:main
+
