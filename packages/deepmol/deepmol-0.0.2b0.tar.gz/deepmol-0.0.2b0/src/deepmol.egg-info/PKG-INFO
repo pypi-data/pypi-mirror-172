@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: deepmol
+Version: 0.0.2b0
+Summary: DeepMol: a python-based machine and deep learning framework for drug discovery
+Home-page: UNKNOWN
+Author: DeepMol Team
+License: BSD 2-Clause License
+Keywords: machine-learning,deep-learning,cheminformatics,drug-discovery
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Provides-Extra: testing
+Provides-Extra: preprocessing
+Provides-Extra: deep_learning
+Provides-Extra: machine_learning
+License-File: LICENSE
+
+UNKNOWN
+
