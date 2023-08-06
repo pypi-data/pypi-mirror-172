@@ -1,0 +1,7 @@
+/*
+This is a test for creating an external library that can call Macal Functions.
+The scope has a function called RunFunction(funcName, scope, **kwargs) to do this.
+*/
+include strings;
+
+right => (string arg, length) external "ext_lib" , "strRight";
