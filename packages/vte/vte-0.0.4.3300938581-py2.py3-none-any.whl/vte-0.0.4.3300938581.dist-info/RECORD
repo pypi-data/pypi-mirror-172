@@ -1,0 +1,16 @@
+vte/__init__.py,sha256=pa9ABJq5IEYcrVhNMlj4mxHRQkYey_ktwJWpiWIu0Tw,828
+vte/__main__.py,sha256=mWfgBwGlgtc5o2czqHS0450SAu5ueEQ5lJGYZDWOMhg,2962
+vte/template_engine.py,sha256=S1WskafXi_KCLwk8erQYzjGMRpeVs0MMuCNWUt6Uu9Q,5727
+vte/template_info.py,sha256=6QXaWkUbTnk5-mrhxZHS3RE7OT6gVEcdnLURET_T4E4,5631
+vte/template_rgy.py,sha256=bUZe-JX5eMezGGj-ENW1Y28bTT2dFkhLQMWUDsvOAwM,1958
+vte/cmds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vte/cmds/generate.py,sha256=6Cx--J3p6cDLNUIaUBzJp7xbqiLXeCxEFzvjIrZOiy0,5997
+vte/cmds/list.py,sha256=UgT7RnT0Hw-FMue5D05h3VMAws0CYQYlSM3X2EqaW-A,479
+vte/cmds/preprocess.py,sha256=LhWvDdpteT8IK_B2fc7UtFvCYGBpBlJhuLnpYuJ_kJQ,1002
+vte/cmds/quickstart.py,sha256=C0VuXBbmEK0upIBGsuucVQ87smoFZiQyM44BQFobmLY,1444
+vte-0.0.4.3300938581.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vte-0.0.4.3300938581.dist-info/METADATA,sha256=NF-DqB7I82sxJ0B-PdAygpK1QGlDbJNtf6mmPB8aylg,518
+vte-0.0.4.3300938581.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+vte-0.0.4.3300938581.dist-info/entry_points.txt,sha256=ZxhwjrkUj8VHmZn0nW-Jw3vLJkpiLY70UfEoKSYyfDM,42
+vte-0.0.4.3300938581.dist-info/top_level.txt,sha256=28qPiHuWPEK-KaDFQk9gmj5E25Hqq8lU1sRqAnFgOMU,4
+vte-0.0.4.3300938581.dist-info/RECORD,,
