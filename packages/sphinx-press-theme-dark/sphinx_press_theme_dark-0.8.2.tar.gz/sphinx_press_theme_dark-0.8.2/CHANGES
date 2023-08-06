@@ -1,0 +1,91 @@
+=======
+Changes
+=======
+
+0.8.1 (*2022-10-04*)
+====================
+
+- GH-54 Add dark mode feature from [Mister-Hope's vuepress PR]("https://github.com/vuejs/vuepress/pull/2301")
+
+
+0.8.0 (*2021-07-22*)
+====================
+
+- GH-59 Fix external links on sidetoc
+- GH-60 Include LICENSE and CHANGES in dist package
+
+
+0.7.3 (*2021-05-16*)
+====================
+
+- fix sidebar button (vue3)
+
+
+0.7.1 (*2021-05-15*)
+====================
+
+- fix sidebar display on mobile
+
+
+0.7.0 (*2021-05-15*)
+====================
+
+- require Sphinx 4.0, docutils 0.17
+- remove external fonts
+- add several missing Sphinx style
+
+
+0.6.1 (*2021-05-09*)
+====================
+
+- fix search (avoid script tag on body)
+
+
+0.6.0 (*2021-05-08*)
+====================
+
+- require Sphinx >= 3.0 (tested on 3.5.4)
+- drop support for python 3.5
+- add support for python 3.8 and 3.9
+- upgrade UI based on vue3 + vite
+
+
+0.5.0 (*2019-10-01*)
+=====================
+
+- new CSS styles to handle Sphinx-specific classes (fixes #26)
+- add support for user-provided CSS stylesheets (fixes #25)
+- allow support for user-defined external links
+
+0.4.0 (*2019-05-27*)
+====================
+
+- fix reading cached toctree data
+- fix navlinks that contain `#` anchors
+
+
+0.3.0 (*2019-04-22*)
+====================
+
+- require Sphinx >= 2.0
+- inherit from `basic` theme (previously `none`)
+- support search
+- support showing logo
+- add breadcrumbs
+- add page navigation on page top
+- fix #12: load extensions JS files
+- fix #10: don't raise error if there is no toctree
+- no navlinks to toctree if there is only one toctree defined
+
+
+0.2.0 (*2019-03-19*)
+====================
+
+- added template domainindex.html
+
+
+0.1.0 (*2018-08-07*)
+====================
+
+- initial release
+
