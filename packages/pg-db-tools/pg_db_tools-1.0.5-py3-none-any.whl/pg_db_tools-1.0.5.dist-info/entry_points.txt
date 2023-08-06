@@ -1,0 +1,2 @@
+[console_scripts]
+db-schema = pg_db_tools.commands.db_schema:main
