@@ -1,0 +1,2 @@
+[console_scripts]
+lip-pps-run-manager = lip_pps_run_manager.cli:main

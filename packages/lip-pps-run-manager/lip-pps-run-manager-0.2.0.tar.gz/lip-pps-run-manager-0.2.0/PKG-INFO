@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: lip-pps-run-manager
+Version: 0.2.0
+Summary: Run Manager used in the LIP PPS software stack for handling data taking and analysis
+Home-page: https://github.com/cbeiraod/LIP_PPS_Run_Manager
+Author: Cristóvão B. da Cruz e Silva
+Author-email: cbeiraod@cern.ch
+License: MIT
+Project-URL: Documentation, https://LIP_PPS_Run_Manager.readthedocs.io/
+Project-URL: Changelog, https://LIP_PPS_Run_Manager.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/cbeiraod/LIP_PPS_Run_Manager/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+========
+Overview
+========
+
+
+
+Run Manager used in the LIP PPS software stack for handling data taking and analysis
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install lip-pps-run-manager
+
+You can also install the in-development version with::
+
+    pip install https://github.com/cbeiraod/LIP_PPS_Run_Manager/archive/main.zip
+
+
+Documentation
+=============
+
+
+https://LIP_PPS_Run_Manager.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+Current (2022-10-19)
+--------------------
+
+0.2.0 (2022-10-19)
+------------------
+
+* Added TelegramReporter class, to handle a connection to telegram via the bot API and to publish messages to it
+* Integrated TelegramReporter into RunManager and TaskManager so that the status and progress of runs and tasks can be published to telegram for ease of monitoring
+* Changed RunManager to use the 'with syntax', **this is a breaking change**
+* Fixed some typos in the documentation
+
+0.1.0 (2022-09-28)
+------------------
+
+* First fully functional version
+
+
+0.0.0 (2022-09-27)
+------------------
+
+* First release on PyPI.
