@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cipherpy
+Version: 0.1
+Summary: A ciphering library
+Author: Soumil30 (Soumil Gupta)
+Author-email: <soumil009@outlook.com>
+Keywords: python,cipher,decipher,ciphering,deciphering,cipherpy,encryption,decryption,text distortion,text,text manipulation,text processing,text ciphering,text deciphering
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# Python Ciphering library
+
+There are a few functions for you to use.
+
+It is recommended to just the 'encrypt' and 'decrypt' functions.
