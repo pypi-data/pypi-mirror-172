@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mfgsolver"
+version = "0.1.2"
+description = "solve mean field game pde system with finite difference and policy iteration"
+authors = ["songjhaha <songjh96@foxmail.com>"]
+license = "MIT"
+packages = [
+    { include = "mfgsolver" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "^1.21"
+scipy = "^1.7"
+matplotlib = "^3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
