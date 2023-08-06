@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pfs-api
+Version: 0.1.0
+Summary: protos generated python api for pfs
+Keywords: photon,feature store,API,feature derive,machine learning
+Author: linyiming
+Author-email: linyiming@ainnovation.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: googleapis-common-protos (>=1.56.4,<2.0.0)
+Requires-Dist: protobuf (>=3.20.3,<4.0.0)
+Description-Content-Type: text/markdown
+
+API of photon feature store
