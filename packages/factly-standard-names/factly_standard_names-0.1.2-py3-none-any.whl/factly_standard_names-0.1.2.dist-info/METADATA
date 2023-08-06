@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: factly-standard-names
+Version: 0.1.2
+Summary: 
+Author: Factly Labs
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
