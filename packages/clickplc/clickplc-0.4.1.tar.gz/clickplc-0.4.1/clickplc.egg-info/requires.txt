@@ -1,0 +1,8 @@
+pymodbus<3,>=2.4.0
+
+[test]
+pytest
+pytest-cov
+pytest-asyncio
+flake8<6,>=3
+flake8-docstrings==1.*
