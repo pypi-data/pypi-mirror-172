@@ -1,0 +1,7 @@
+pytorch_saver/__init__.py,sha256=4voICZGPM7H3ils-82qcVBMN82Ahailm2daVwoWdLp0,58
+pytorch_saver/_helpers.py,sha256=LF2yANR48_tjG4_R4bU5yz5NZNgVxKU9b4ax_iSKtks,346
+pytorch_saver/_model_container.py,sha256=zBmGJsN8VpfgYwepXWPal7yeX_f6EX6mg199GxvG2DI,10327
+pytorch_saver-0.1.dist-info/METADATA,sha256=hk10_FBsYxsGQu0AIqTFPR_S3mHM2FZAeFKaG2kMPnE,4549
+pytorch_saver-0.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+pytorch_saver-0.1.dist-info/licenses/LICENSE,sha256=9BEXNFoM2gf0k7uG3RCsgyS54vxl7IUKk5cM0lPB8v4,1072
+pytorch_saver-0.1.dist-info/RECORD,,
