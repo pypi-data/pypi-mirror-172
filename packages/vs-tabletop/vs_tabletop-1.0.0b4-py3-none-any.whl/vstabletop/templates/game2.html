@@ -1,0 +1,758 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Row 1: displays -->
+<div class="row g-0 w-100 h-50">
+<div class="col-4">
+    <div class="card h-100">
+        <div class="card-header">
+            Original space
+        </div>
+        <div class="card-body">
+            <div class="chart h-100" id="chart-left"></div>
+        </div>
+    </div>
+</div>
+<div class="col-4 m-0">
+    <div class="card h-100">
+        <div class="col-12">
+        <div class="row h-25 w-100 d-flex align-content-center" id="messages">
+            <div class="col-2">
+                <i class="bi bi-megaphone" id="megaphone"></i>
+            </div>
+            <div class="font-monospace col-10" id="message-region"></div>
+
+        </div>
+        <div class="row h-50 w-100 m-0">
+            <button class="btn btn-success" id="forward-transform">Forward  >></button>
+            <button class="btn btn-success" id="backward-transform"><<  Backward</button>
+        </div>
+        <!-- Current mode options -->
+        <div class="row h-25 w-100 m-0">
+            <div class="col-6">
+
+                    <div class="row">
+                <button class="btn btn-light btn-lg btn-outline-primary shadow-none" id="fetch-signal">Get signal</button>
+                </div>
+                <div class="row">
+                <button class="btn btn-light btn-lg btn-outline-primary shadow-none" id="fetch-image">Get image</button>
+                    </div>
+
+            </div>
+            <div class="col-6">
+                <div class="row">
+                <button class="btn btn-light btn-lg btn-outline-primary shadow-none" id="fetch-spectrum">Get spectrum</button>
+                </div>
+                 <div class="row">
+                <button class="btn btn-light btn-lg btn-outline-primary shadow-none" id="fetch-kspace">Get kspace</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+<div class="col-4">
+   <div class="card h-100">
+        <div class="card-header">
+            Frequency space
+        </div>
+        <div class="card-body">
+            <div class="chart h-100" id="chart-right"></div>
+        </div>
+    </div></div>
+</div>
+<!-- Row 2: inputs-->
+<div class="row g-0 w-100 h-50">
+<div class="col-4">
+    <div class="card h-100">
+        <div class="card-header">Image/signal presets</div>
+        <div class="card-body">
+        <div class="row">
+            <ul class="nav nav-tabs nav-fill mb-3" id="original-space-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="ex0-tab-1"
+                  data-mdb-toggle="tab"
+                  href="#ex0-tabs-1"
+                  role="tab"
+                  aria-controls="ex0-tabs-1"
+                  aria-selected="true"
+                  >1D Signal</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="ex0-tab-2"
+                  data-mdb-toggle="tab"
+                  href="#ex0-tabs-2"
+                  role="tab"
+                  aria-controls="ex0-tabs-2"
+                  aria-selected="false"
+                  >2D Image</a
+                >
+              </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="tab-content" id="ex0-content">
+                <div class="tab-pane fade show active" id="ex0-tabs-1" role="tabpanel" aria-labelledby="ex0-tab-1">
+         <!-- Signal options -->
+                    <!-- Signal type -->
+                    <div class="form-group row">
+                        <div class="col-4">{{ template_game_form.signal_name_field.label(class="form-label") }}</div>
+                        <div class="col-8">
+                                {{ template_game_form.signal_name_field(class="form-control preset-input") }}
+                        </div>
+                    </div>
+                    <!-- Signal vertical scale -->
+                    <div class="form-group row">
+                        <div class="col-4">
+                            {{ template_game_form.signal_scale_field.label(class="form-label") }}
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                {{ template_game_form.signal_scale_field(class="form-range preset-input",id='signal_scale') }}
+                                <div class="ticks text-primary">
+                                    {% for scale in [-10,-8,-6,-4,-2,0,2,4,6,8,10] %}
+                                    <span class="tick">{{ scale }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Signal horizontal scale -->
+
+                    <div class="form-group row">
+                        <div class="col-4">
+                            {{ template_game_form.signal_stretch_field.label(class="form-label") }}
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                {{ template_game_form.signal_stretch_field(class="form-range preset-input",id="signal_stretch") }}
+                                <div class="ticks text-primary">
+                                    {% for stretch in [0,1,2,3,4,5,6,7,8,9,10] %}
+                                        <span class="tick">{{ stretch }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Signal shift -->
+                    <div class="form-group row">
+                        <div class="col-4">
+                            {{ template_game_form.signal_shift_field.label(class="form-label") }}
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                {{ template_game_form.signal_shift_field(class="form-range preset-input",id='signal_shift') }}
+                                <div class="ticks text-primary">
+                                    {% for shift in [0,20,40,60,80,100] %}
+                                    <span class="tick">{{ shift }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Signal phase modulation -->
+                    <div class="form-group row">
+                        <div class="col-4">{{ template_game_form.signal_phase_mod_field.label(class="form-label") }}</div>
+                        <div class="col-8">
+                            <div class="row">
+                                {{ template_game_form.signal_phase_mod_field(class="form-range preset-input",id='signal_phase_mod') }}
+                                <div class="ticks text-primary">
+                                    {% for phase in [0,45,90,135,180,225,270,315,360] %}
+                                    <span class="tick">{{ phase }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane fade" id="ex0-tabs-2" role="tabpanel" aria-labelledby="ex0-tab-2">
+
+                    <!-- Image options -->
+                    <!-- Image name -->
+                    <div class="form-group row">
+                           <div class="col-4">
+                                {{ template_game_form.image_name_field.label(class="form-label") }}
+                           </div>
+                           <div class="col-8">
+                               {{ template_game_form.image_name_field(class="form-control preset-input") }}
+                           </div>
+                        </div>
+                    <!-- Rotation angle -->
+                    <div class="form-group row">
+                        <div class="col-4">{{ template_game_form.image_rotation_field.label(class="form-label") }}</div>
+                        <div class="col-8">
+                        <div class="row">
+                            {{ template_game_form.image_rotation_field(class="form-range preset-input",id='image_angle') }}
+                          <div class="ticks text-primary">
+                                {% for angle in [0,45,90,135,180,225,270,315,360] %}
+                                <span class="tick">{{ angle }}</span>
+                                {% endfor %}
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Wavelength -->
+                    <div class="form-group row">
+                        <div class="col-4">{{ template_game_form.image_wavelength_field.label(class="form-label") }}</div>
+                        <div class="col-8">
+                        <div class="row">
+                        {{ template_game_form.image_wavelength_field(class="form-range preset-input",id='image_wavelength') }}
+                                <div class="ticks text-primary">
+                                {% for w in [0.05,1.025, 2] %}
+                                <span class="tick">{{ w }}</span>
+                                {% endfor %}
+                                </div>
+                        </div>
+                        </div>
+
+                    </div>
+                    <!-- Wave phase -->
+                     <div class="form-group row">
+                         <div class="col-4">{{ template_game_form.image_phase_field.label(class="form-label") }}</div>
+                         <div class="col-8">
+                         <div class="row">
+                             {{ template_game_form.image_phase_field(class="form-range preset-input",id='image_wave_phase') }}
+                             <div class="ticks text-primary">
+                             {% for angle in [0,45,90,135,180,225,270,315,360] %}
+                                <span class="tick">{{ angle }}</span>
+                                {% endfor %}
+                             </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="col-4">
+    <div class="card h-100">
+        <div class="card-body">
+            <!-- Tabs navs -->
+            <div class="row">
+                <ul class="nav nav-tabs mb-3 nav-justified" id="ex1" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="ex1-tab-1"
+                      data-mdb-toggle="tab"
+                      href="#ex1-tabs-1"
+                      role="tab"
+                      aria-controls="ex1-tabs-1"
+                      aria-selected="true"
+                      >Draw</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="ex1-tab-2"
+                      data-mdb-toggle="tab"
+                      href="#ex1-tabs-2"
+                      role="tab"
+                      aria-controls="ex1-tabs-2"
+                      aria-selected="false"
+                      >Erase</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="ex1-tab-3"
+                      data-mdb-toggle="tab"
+                      href="#ex1-tabs-3"
+                      role="tab"
+                      aria-controls="ex1-tabs-3"
+                      aria-selected="false"
+                      >Sampling</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="ex1-tab-4"
+                      data-mdb-toggle="tab"
+                      href="#ex1-tabs-4"
+                      role="tab"
+                      aria-controls="ex1-tabs-4"
+                      aria-selected="false"
+                      >Upload</a
+                    >
+                  </li>
+                </ul>
+                <!-- Tabs navs -->
+            </div>
+            <div class="row">
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex1-content">
+
+                  <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                      <div class="row h-75">
+                    <div class="d-flex justify-content-center">
+                    <div class="canvas-frame">
+                      <canvas id="drawing"></canvas>
+                        </div>
+                    </div>
+                          </div>
+                      <div class="row h-25">
+                    <div class="col-8">
+                    <div class="row h-50">
+                        <div class="col-4">
+                      <label for="drawing-width" class="form-label">Width:</label>
+                      <span id="drawing-width-info">1</span>
+                        </div>
+                        <div class="col-8">
+                            <input type="range" value="1" min="1" max="100" id="drawing-width" class="form-range">
+                    </div>
+                    </div>
+                        <div class="row h-50">
+                            <div class="col-4">
+                          <label for="drawing-graylevel">Lightness:</label>
+                          <span id="drawing-graylevel-info">0</span>
+                            </div>
+                            <div class="col-8">
+                          <input type="range" value="0" min="0" max="100" class='form-range' id="drawing-graylevel">
+                                </div>
+                        </div>
+                        </div>
+                      <div class="col-4">
+                      <button class="btn btn-light" id="use-drawing">Use</button>
+                      <button class="btn btn-light" id="clear-drawing">Clear</button>
+                      <button class="btn btn-light" id="fill-drawing">Fill</button>
+
+                      </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                      <div class="row h-75">
+                          <div class="d-flex justify-content-center">
+                            <div class="canvas-frame">
+                              <canvas id="erase"></canvas>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="row h-25 d-flex align-items-center">
+                          <div class="col-4">
+                      <label for="erase-width" class="form-label">Width:</label>
+                      <span id="erase-width-info">50</span>
+                        </div>
+                        <div class="col-4">
+                            <input type="range" value="50" min="10" max="100" id="erase-width" class="form-range">
+                    </div>
+                          <div class="col-4">
+                              <div class="row">
+                                  <button class="btn btn-light" id="erase-apply">Apply</button>
+                              </div>
+                                <div class="row">
+                                  <button class="btn btn-light" id="erase-reset">Reset</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                          <span>k-space restriction</span>
+                          <div id="my-interactive-game2"></div>
+                          <script type="module" src="../static/slicer.js"></script>
+                          <button class="btn btn-light" id="reset-slicer">Reset</button>
+                          <button class="btn btn-light" id="invert-slicer">Invert</button>
+                           <br>
+                              <div class="row d-flex justify-content-center">Undersampling factors</div>
+                              <div class="row">
+                                  <div class="col-3">
+                                    {{ template_game_form.undersample_x_field.label(class='form-label') }}
+                                  </div>
+                                  <div class="col-3">
+                                    {{ template_game_form.undersample_x_field(class='form-control') }}
+                                  </div>
+                                  <div class="col-3">
+                                    {{ template_game_form.undersample_y_field.label(class='form-label') }}
+                                  </div>
+                                  <div class="col-3">
+                                    {{ template_game_form.undersample_y_field(class='form-control') }}
+                                  </div>
+                              </div>
+                           <button class="btn btn-primary" id="use-slicer">Apply</button>
+
+                  </div>
+
+                  <div class="tab-pane fade" id="ex1-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+                    <form method="POST" enctype="multipart/form-data" id="upload-form">
+                        <input type="file" name="file" id="upload-input">
+                        <div class="btn btn-lg btn-primary" id="upload-button">Upload</div>
+                        <div class="btn btn-lg btn-light" id="recover-button">Recover</div>
+
+                    </form>
+                  </div>
+                </div>
+                <!-- Tabs content -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-4">
+    <div class="card h-100">
+        <div class="card-header">
+            <span>K-space/spectrum presets</span>
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                <ul class="nav nav-tabs nav-fill mb-3" id="frequency-space-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="ex2-tab-1"
+                  data-mdb-toggle="tab"
+                  href="#ex2-tabs-1"
+                  role="tab"
+                  aria-controls="ex2-tabs-1"
+                  aria-selected="true"
+                  >1D Spectrum</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="ex2-tab-2"
+                  data-mdb-toggle="tab"
+                  href="#ex2-tabs-2"
+                  role="tab"
+                  aria-controls="ex2-tabs-2"
+                  aria-selected="false"
+                  >2D K-space</a
+                >
+              </li>
+            </ul>
+
+            </div>
+            <div class="row">
+                <div class="tab-content" id="ex2-content">
+                    <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
+                        <!-- Spectrum options -->
+                        <div class="form-group row">
+                            <div class="col-4">{{ template_game_form.spectrum_name_field.label(class="form-label") }}</div>
+                            <div class="col-8">
+                                {{ template_game_form.spectrum_name_field(class="form-control preset-input") }}
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-4">
+                                {{ template_game_form.spectrum_scale_field.label(class="form-label") }}
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    {{ template_game_form.spectrum_scale_field(class="form-range preset-input",id='spectrum_scale') }}
+                                    <div class="ticks text-primary">
+                                        {% for scale in [-10,-8,-6,-4,-2,0,2,4,6,8,10] %}
+                                        <span class="tick">{{ scale }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-4">
+                                {{ template_game_form.spectrum_stretch_field.label(class="form-label") }}
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    {{ template_game_form.spectrum_stretch_field(class="form-range preset-input",id="spectrum_stretch") }}
+                                    <div class="ticks text-primary">
+                                        {% for stretch in [0,1,2,3,4,5,6,7,8,9,10] %}
+                                            <span class="tick">{{ stretch }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-4">
+                                {{ template_game_form.spectrum_shift_field.label(class="form-label") }}
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    {{ template_game_form.spectrum_shift_field(class="form-range preset-input",id='spectrum_shift') }}
+                                    <div class="ticks text-primary">
+                                        {% for shift in [0,20,40,60,80,100] %}
+                                        <span class="tick">{{ shift }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-4">{{ template_game_form.spectrum_phase_mod_field.label(class="form-label") }}</div>
+                            <div class="col-8">
+                                <div class="row">
+                                    {{ template_game_form.spectrum_phase_mod_field(class="form-range preset-input",id='spectrum_phase_mod') }}
+                                    <div class="ticks text-primary">
+                                        {% for phase in [0,45,90,135,180,225,270,315,360] %}
+                                        <span class="tick">{{ phase }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+                        <!-- K-space options -->
+                        <div class="form-group row">
+                        <div class="col-4">{{ template_game_form.kspace_name_field.label(class="form-label") }}</div>
+                        <div class="col-8">
+                            {{ template_game_form.kspace_name_field(class="form-control preset-input") }}
+                        </div>
+
+
+                        </div>
+                        <div class="form-group row">
+                        <div class="col-4">{{ template_game_form.kspace_rotation_field.label(class="form-label") }}</div>
+                        <div class="col-8">
+                            <div class="row">
+                                {{ template_game_form.kspace_rotation_field(class="form-range preset-input",id='kspace_angle') }}
+                                <div class="ticks text-primary">
+                                    {% for angle in [0,45,90,135,180,225,270,315,360] %}
+                                    <span class="tick">{{ angle }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-4">{{ template_game_form.kspace_ds_separation_field.label(class="form-label")}}</div>
+                            <div class="col-8">
+                                <div class="row">
+                                    {{ template_game_form.kspace_ds_separation_field(class="form-range preset-input",id='kspace_ds_separation') }}
+                                    <div class="ticks text-primary">
+                                    {% for sep in [0,0.25,0.5,0.75,1] %}
+                                    <span class="tick">{{ sep }}</span>
+                                    {% endfor %}
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+{% endblock %}
+
+
+{% block questions %}
+    <div id="slide" class="carousel slide" data-mdb-interval="false">
+            <div class="col">
+                <div class="carousel-inner">
+                    <form action="/games/2" method="POST">
+                    {% for ind in range(success_text | length) %}
+                        {% set letters = ['a','b','c','d'] %}
+                        {% set active_text = 'active' if ind==0 else '' %}
+                            <div class="carousel-item {{active_text}}">
+                            <br>
+                        <div class="row d-flex justify-content-center align-items-baseline">
+                            <p class="h5">Q{{ ind + 1 }}:{{ questions[ind]['text']}}</p>
+                        </div>
+                            {% if (questions[ind]['main_image_path']) | length > 0 %}
+                            <img src=".{{ questions[ind]['main_image_path']}}" style="max-height:120px; width:auto ">
+                            {% endif %}
+                            {% for ind2 in range(questions[ind]['choices'] | length) %}
+                                {% if not uses_images[ind] %}
+                                <br><input type="radio" class="q{{ind}}-choice" id="q{{ind}}-{{letters[ind2]}}" name="mc-question" value="{{ letters[ind2] }}">
+                                <label for="q{{ind}}-{{letters[ind2]}}">{{ questions[ind]['choices'][ind2] }}</label>
+                                {% else %}
+                                <input type="radio"  class="q{{ind}}-choice" id="q{{ind}}-{{letters[ind2] }}" name="mc-question" value="{{ letters[ind2] }}">
+                                <label for="q{{ind}}-{{letters[ind2]}}"><img src=".{{ questions[ind]['choices'][ind2] }}" style="height: 150px; width:150px;"></label>
+                                {% endif %}
+                            {% endfor %}
+
+                            <p class="d-none">Correct choice: <span id="mc-correct-choice-{{ind}}">{{ questions[ind]['correct']}}</span></p>
+
+                                <br><div class="btn btn-large btn-primary answer-mc" id="answer-mc-{{ind}}">Submit</div>
+                            <br>
+                            <p id="mc-success-text-{{ind}}" class="d-none" style="color:palegreen">{{ success_text[ind] }}</p>
+                            <p id="mc-failure-text-{{ind}}" class="d-none" style="color:#ffb500">Wrong answer, try again!</p>
+
+                        </div>
+
+                    {% endfor %}
+                    </form>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-mdb-target="#slide" data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#slide" data-mdb-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            </div>
+{% endblock %}
+
+
+{% block tasks %}
+<div class="card-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                             style="width: {{ session['game5']['task_completed']*25 }}%"
+                             aria-valuenow="0" aria-valuemin="{{ session['game2']['task_completed']*25 }}" aria-valuemax="100"></div>
+                    </div>
+                    <!-- Show tab for each lab procedure -->
+                    <ul class="nav nav-tabs nav-justified" id="game2-tab" role="tablist">
+                        {% for tab in instructions['tabs'] %}
+                            {% if loop.index == ([session['game2']['task_completed'] + 1,4] | min) %}
+                                {% set active = 'active' %}
+                            {% else %}
+                                {% set active = '' %}
+                            {% endif %}
+
+                            {% set disabled = 'disabled' if loop.index > 1 + session['game2']['task_completed'] else '' %}
+                            {% set aria_disabled = (disabled == 'disabled') %}
+
+                            <li class="nav-item" role="presentation">
+                                <button class="col nav-link {{ active }} {{ disabled }} text-info" id="task{{ loop.index }}-tab" data-bs-toggle="tab" data-bs-target="#step{{ loop.index }}"
+                                        type="button" role="tab"  aria-controls="step{{ loop.index }}"
+                                        aria-selected="{{ loop.index==1 }}" aria-disabled= "{{ aria_disabled }}">
+                                    {{ tab }}
+                                </button>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+                    <!-- Instructions -->
+                    <!-- Show content for each lab procedure -->
+                    <div class="tab-content" id="game2-tab-content">
+                        {% for task, task_details in instructions['tasks'].items() %}
+                            {% if loop.index == ([session['game2']['task_completed'] + 1, 4] | min) %}
+                                {% set show_text = 'show' %}
+                                {% set active_text = 'active' %}
+                            {% else %}
+                                {% set show_text = '' %}
+                                {% set active_text = '' %}
+                            {% endif %}
+                            <div class="tab-pane fade {{ show_text }} {{ active_text }}" id="step{{ loop.index }}" role="tabpanel" aria-labelledby="step{{ loop.index }}-tab">
+                                <div class="h4 text-info">{{ instructions['titles'][loop.index0] }}</div>
+
+                                <ul class="accordion" id="instructions-accordion">
+                                {% set task_index = loop.index %}
+                                {% for step, details in instructions['explorations'][loop.index0].items() %}
+                                      <li class="accordion-item">
+                                          <div class="accordion-header row d-flex justify-content-center" id="heading{{ loop.index }}">
+                                              <div class="col-2 d-flex align-items-center justify-content-center">
+                                              <input class="form-check-input task-{{ task_index }}-check" type="checkbox" value="" aria-label="">
+                                              </div>
+                                            <div class="col-10">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                                                <strong>{{ step }}</strong>
+                                            </button>
+                                          </div>
+                                          </div>
+                                          <div class="accordion-collapse collapse" id="collapse{{ loop.index }}" aria-labelledby="heading{{ loop.index }}" data-bs-parent="#instructions-accordion">
+                                              <div class="accordion-body">
+                                                    <span>{{ details }}</span>
+                                              </div>
+                                          </div>
+                                      </li>
+                                {% endfor %}
+
+                                <!-- Special item -->
+                                    <li class="accordion-item text-info">
+                                          <div class="accordion-header row d-flex justify-content-center" id="heading-final-{{ task_index }}">
+
+                                              <div class="col-2 d-flex align-items-center justify-content-center">
+                                                <input class="form-check-input task-{{ task_index }}-check" id="final-task-of-{{ task_index }}" type="checkbox">
+                                              </div>
+
+                                            <div class="col-10">
+                                            <button class="accordion-button collapsed final-task-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-final-{{ task_index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                                                <strong class="text-info">{{ task }}</strong>
+                                            </button>
+                                          </div>
+                                          </div>
+                                          <div class="accordion-collapse collapse" id="collapse-final-{{ task_index }}" aria-labelledby="heading-final-{{ task_index }}" data-bs-parent="#instructions-accordion">
+                                              <div class="accordion-body">
+                                                    <span>{{ task_details }}</span>
+                                              </div>
+                                          </div>
+                                      </li>
+                                </li>
+                                </ul>
+
+                                <div class="btn btn-info task-next-button" id="task{{ loop.index }}-next">Next</div>
+
+                                <p class="d-none text-danger" id="task-message-{{ task_index }}">
+                                    Complete and check all steps to move on.
+                                </p>
+                                {% set dnone = '' if session['game2']['task_completed'] >= task_index else 'd-none' %}
+
+                                {% set success_message = 'This step has been completed' if task_index < 4 else
+                                        'All steps complete. Congratulations! To earn the remaining stars, answer the questions to the right.' %}
+
+                                <p class="{{ dnone }} text-success" id="task-success-{{ task_index }}">
+                                    {{ success_message }}
+                                    {% if task_index == 4 %}
+                                        <a class="btn btn-large btn-success" href="/games/3"> Next game! </a>
+                                    {% endif %}
+                                </p>
+
+
+                            </div>
+
+
+
+                        {% endfor %}
+
+
+
+                      <div class="tab-pane fade" id="step2" role="tabpanel" aria-labelledby="profile-tab"></div>
+                      <div class="tab-pane fade" id="step3" role="tabpanel" aria-labelledby="contact-tab"></div>
+
+
+                    </div>
+
+                    </div>
+{% endblock %}
+
+
+{% block additional_imports %}
+    <script src="../static/fabric.js"></script>
+    <link rel="stylesheet" href="https://vectorjs.org/library.css">
+
+    <script type='module' src="../static/game2.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+        // Plotting with Plotly
+        let graph_left = {{ graphJSON_left | safe }};
+        let graph_right = {{ graphJSON_right | safe }}
+        Plotly.plot('chart-left',  graph_left, {autosize: true});
+        Plotly.plot('chart-right', graph_right, {autosize: true});
+    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../static/styles/style_game2.css">
+
+{% endblock %}
