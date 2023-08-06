@@ -1,0 +1,96 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+    "setuptools_scm[toml]>=6.2",
+    "wheel",
+    "cmake_build_extension",
+    "cmake",
+    "ninja",
+    "swig",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openbabel-wheel"
+dynamic = ["version"]
+description = "An unofficial repository to distribute OpenBabel prebuilt wheels through Pypi.."
+authors = [
+  {name = "Jinzhe Zeng", email = "jinzhe.zeng@rutgers.edu"},
+  {name = "Noel O'Boyle", email = "openbabel-discuss@lists.sourceforge.net"},
+]
+license = {file = "LICENSE"}
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Environment :: Other Environment',
+    'Intended Audience :: Education',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: GNU General Public License (GPL)',
+    'Natural Language :: English',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: OS Independent',
+    'Operating System :: POSIX',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: Unix',
+    'Programming Language :: C++',
+    'Programming Language :: Python',
+    'Topic :: Scientific/Engineering :: Bio-Informatics',
+    'Topic :: Scientific/Engineering :: Chemistry',
+    'Topic :: Software Development :: Libraries',
+]
+dependencies = [
+]
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.urls]
+homepage = "https://github.com/njzjz/openbabel-wheel"
+repository = "https://github.com/njzjz/openbabel-wheel"
+openbabel_homepage = "http://openbabel.org/"
+openbabel_repository = "https://github.com/openbabel/openbabel"
+
+[tool.setuptools.packages.find]
+include = ["openbabel*"]
+
+[tool.setuptools_scm]
+
+[tool.cibuildwheel]
+test-command = "python -c 'from openbabel import openbabel'"
+build = ["cp37-*", "cp38-*", "cp39-*", "cp310-*", "cp311-*"]
+skip = ["*-win32", "*-manylinux_i686", "*-musllinux*"]
+
+[tool.cibuildwheel.linux]
+# refer rdkit-pypi
+before-all = [
+    # Has eigen3-devel.aarch64
+    "yum install -y epel-release",
+    "yum install -y wget freetype-devel libpng12-devel pixman-devel zlib-devel eigen3-devel libxml2-devel",
+    # cairo-devel from the centos repo does not work, build here
+    "wget https://www.cairographics.org/snapshots/cairo-1.15.14.tar.xz --no-check-certificate",
+    "tar xvf cairo-*",
+    "cd cairo-*",
+    "./configure",
+    "make -j 20",
+    "make install",
+    "cd ..",
+]
+environment-pass = ["CIBW_BUILD"]
+
+[tool.cibuildwheel.macos]
+
+before-all = [
+'''if [[ "$CIBW_BUILD" == *macosx_arm64* ]]; then
+    rm /usr/local/lib/libfreetype.dylib
+    install_arm=( libpng libx11 libxau libxcb libxdmcp libxext libxrender fontconfig glib lzo pixman cairo freetype )
+    for i in "${install_arm[@]}"; do
+        response=$(brew fetch --force --bottle-tag=arm64_big_sur $i | grep Downloaded )
+        download_path=$(echo $response | xargs -n 1 | tail -1)
+        brew reinstall $download_path
+    done
+else
+    brew install cairo
+fi
+brew install gnu-sed eigen
+'''
+]
