@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: MiniLibrusAPI
+Version: 1.0.0
+Summary: Łatwy do użycia moduł MiniLibrusAPI.
+Home-page: 
+Author: faktorr
+Author-email: patryktarasiuk04@gmail.com
+License: MIT
+Keywords: MiniLibrusAPI
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# MiniLibrusAPI
+![PyPI Python Version](https://img.shields.io/pypi/pyversions/fortnite-api?label=python%20version&logo=python&logoColor=yellow)
+[![discord server invite](https://discordapp.com/api/guilds/881251978951397396/embed.png)](https://discord.com/invite/pFUTyqqcUx)
+
+Łatwy do użycia moduł MiniLibrusAPI.
+
+
+## Instalacja
+
+Wymagany jest Python 3.5 lub lepszy.
+
+```
+pip install MiniLibrusAPI
+```
+
+
+## Dokumentacja
+
+Na początek musimy zaimportować api.
+
+```
+from MiniLibrusAPI import Librus
+```
+
+
+### Logowanie
+
+Potem musimy się zalogować.
+
+```
+Librus.login(login="", haslo="")
+```
+
+Po zalogowaniu możemy korzystać z api.
+
+
+### Szczesliwy numerek
+
+Zwraca szczesliwy numerek
+
+```
+Librus.szczesliwy_numerek()
+```
+
+
+### Informacje
+
+Zwraca informacje
+
+```
+Librus.informacje.uczen()
+Librus.informacje.klasa()
+Librus.informacje.numer_w_dzienniku()
+Librus.informacje.wychowawca()
+```

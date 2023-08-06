@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+MiniLibrusAPI/__init__.py
+MiniLibrusAPI.egg-info/PKG-INFO
+MiniLibrusAPI.egg-info/SOURCES.txt
+MiniLibrusAPI.egg-info/dependency_links.txt
+MiniLibrusAPI.egg-info/requires.txt
+MiniLibrusAPI.egg-info/top_level.txt
