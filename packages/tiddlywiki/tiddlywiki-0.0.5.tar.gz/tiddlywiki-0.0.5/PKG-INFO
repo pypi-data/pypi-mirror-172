@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: tiddlywiki
+Version: 0.0.5
+Summary: A full featured desktop clientfor editing and managing TiddlyWiki html files - simple, powerful, elegant and efficient.
+Home-page: https://twpy.org
+Author: Rob Zel
+Author-email: contact@robzel.com
+Project-URL: Bug Tracker, https://twpy.org/bugs
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+![](https://raw.githubusercontent.com/rzel/twpy/main/twpy_app_icon_1_vecta_compressed.svg)
+
+**twpy** was designed to be the *best* desktop GUI client for editing and managing **TiddlyWiki** files - simple, powerful, elegant, efficient.
+
+Installation is as simple as: 
+
+`pip install tiddlywiki`
+
+Two terminal commands are installed:
+
+**twpym** for starting the **twpy** TiddlyWiki Manager. **--verbose** is an option. You can open TiddlyWiki files in the Editor from the Manager.
+
+**twpye** for starting the **twpy** TiddlyWiki Editor. Requires **--file your-tiddly-wiki-path.html** argument. **--verbose** is also an option. 
+
+
+**TiddlyWiki Manager**
+
+![](https://raw.githubusercontent.com/rzel/twpy/main/twpy-screenshot-2022-10-17--22-49-32.png)
+
+**TiddlyWiki Editor**
+
+![](https://raw.githubusercontent.com/rzel/twpy/main/twpy-screenshot-2022-10-17--22-50-38.png)
