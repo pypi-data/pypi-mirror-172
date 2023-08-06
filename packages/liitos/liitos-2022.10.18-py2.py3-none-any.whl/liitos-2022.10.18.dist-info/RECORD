@@ -1,0 +1,13 @@
+liitos/__init__.py,sha256=ebdfOGqb33t13uRKhEHYdRlMCO3owUvYoRfYLI9cNQs,2021
+liitos/__main__.py,sha256=Y6BxZ1MMN-4esyINv1QixlC78PV69cBchQoiPlawT3Q,121
+liitos/cli.py,sha256=fI6BviyJRIuoPKgk0RH2Z-MwzSXJQfYnCqj3xGHa_BU,2215
+liitos/configure.py,sha256=wNozMFP1f1QnSl1XaMeDYFKIwKYjb_c3rf5x-NaiNg4,2313
+liitos/gather.py,sha256=OEVTjXpXzHHH5d-0RjYKxNyzf80oHzOyQ9Sh5eiHjAQ,10749
+liitos/liitos.py,sha256=X8oqxQtwIhnQ17PRO0jWfNU71d4OOzze20N1HzWVqLU,55
+liitos/templates/mkdocs.yml,sha256=41a9wDpcPo3rBVPsjZgieorCDjyFtvA5Lor4mziGRQY,1671
+liitos-2022.10.18.dist-info/LICENSE,sha256=7xgn1qW4kKTaB163LiE9nqy5u7ddEv-GDesuxK-SW58,1069
+liitos-2022.10.18.dist-info/METADATA,sha256=o0yoQO2fgRen-zmNwgj_5Ec03dwGxveMX0XgJn94pqA,2905
+liitos-2022.10.18.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+liitos-2022.10.18.dist-info/entry_points.txt,sha256=jRvMaFCPA3fbmjg83rlZu-GdBWRWhDm9h1rRB1QDaKY,43
+liitos-2022.10.18.dist-info/top_level.txt,sha256=Tw1putt18X_HRc5ZveIsKfSHQgtmUdWMF2toFhvzpUk,15
+liitos-2022.10.18.dist-info/RECORD,,
