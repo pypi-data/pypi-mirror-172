@@ -1,0 +1,8 @@
+pelican/plugins/pelican_feed_stylesheet/__init__.py,sha256=5z5NYW52VOi32hsF8PTj7PMa8SHm_74nTTPeNVsKPnE,47
+pelican/plugins/pelican_feed_stylesheet/feeds.py,sha256=03OqhieSQKncwZM5Q_uJCph1UYiAkBpzgJm75z3f7Us,5823
+pelican/plugins/pelican_feed_stylesheet/pelican_feed_stylesheet.py,sha256=WhN29kMApEwsTPPi9DdOAtSXkEKxbdvXebH1xoggsuE,2950
+pelican/plugins/pelican_feed_stylesheet/test_feeds.py,sha256=hTEmvwXwWMFrqN6oIIpsxTkZ6PzYVQc4sWQ4DhiN-_0,1155
+pelican/plugins/pelican_feed_stylesheet/test_pelican_feed_stylesheet.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelican_feed_stylesheet-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pelican_feed_stylesheet-0.0.1.dist-info/METADATA,sha256=MI15HhP8aihfpgDKSg3SwBF5PmhEHC42ggkfOGKoDck,2839
+pelican_feed_stylesheet-0.0.1.dist-info/RECORD,,
