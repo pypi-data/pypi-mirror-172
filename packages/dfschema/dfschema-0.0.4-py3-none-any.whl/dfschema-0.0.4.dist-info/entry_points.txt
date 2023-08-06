@@ -1,0 +1,3 @@
+[console_scripts]
+dfs=dfs.cli:app
+
