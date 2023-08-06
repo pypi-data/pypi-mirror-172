@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: docdeid
+Version: 0.0.13
+Summary: Under construction.
+Author: Vincent Menger
+Author-email: vmenger@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Sphinx[docs] (>=5.2.3,<6.0.0)
+Requires-Dist: furo[docs] (>=2022.9.29,<2023.0.0)
+Requires-Dist: numpy (>=1.23.1,<2.0.0)
