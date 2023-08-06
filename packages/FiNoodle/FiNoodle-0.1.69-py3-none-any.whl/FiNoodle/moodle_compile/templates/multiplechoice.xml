@@ -1,0 +1,50 @@
+<question type="multichoice">
+    <name>
+        <text>{{question.title}}</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[{{question.prompt}}]]></text>
+        {% for file in question.images %}
+          <file name="{{file.name}}" path="{{file.path}}" encoding="{{file.encoding}}">{{file.content}}</file>
+        {% endfor %}
+    </questiontext>
+    <generalfeedback format="html">
+        <text></text>
+    </generalfeedback>
+   <defaultgrade>{{question.defaultgrade}}</defaultgrade>
+    <penalty>{{question.penalty}}</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>{{question.singleAnswer}}</single>
+    <shuffleanswers>{{question.shuffle}}</shuffleanswers>
+    <answernumbering>{{question.answernumbering}}</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    {% for answer in question.answers %}
+    <answer fraction = "{{answer.fraction}}" format="html">
+      <text>{{answer.text}}</text>
+      <feedback format="html">
+        <text>{{answer.feedback}}</text>
+      </feedback>
+    </answer>
+    {% endfor %}
+    {% for file in question.files %}
+      <file name="{{file.name}}" path="{{file.path}}" encoding="{{file.encoding}}">{{file.content}}</file>
+    {% endfor %}
+    <tags>
+        {% for tag in question.tags %}
+            <tag>
+                <text>{{ tag }}</text>
+            </tag>
+        {% endfor %}
+    </tags>
+</question>
