@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+smon_report.egg-info/PKG-INFO
+smon_report.egg-info/SOURCES.txt
+smon_report.egg-info/dependency_links.txt
+smon_report.egg-info/top_level.txt

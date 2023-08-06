@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: smon-report
+Version: 0.0.1
+Summary: An application that takes a data and returns the statistic for driver.
+Home-page: https://git.foxminded.com.ua/foxstudent102022/task-6-report-of-monaco-2018-racing/
+Author: Seryogin Vyacheslav
+Author-email: vyacheslavseregin21@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
