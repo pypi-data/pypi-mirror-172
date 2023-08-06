@@ -1,0 +1,297 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylavcogs-shared\n"
+"POT-Creation-Date: 2022-10-16 15:01+0000\n"
+"PO-Revision-Date: 2022-10-16 15:03\n"
+"Last-Translator: \n"
+"Language-Team: Norwegian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylavcogs-shared\n"
+"X-Crowdin-Project-ID: 535248\n"
+"X-Crowdin-Language: no\n"
+"X-Crowdin-File: /pylavcogs_shared/ui/sources/locales/messages.pot\n"
+"X-Crowdin-File-ID: 630\n"
+"Language: no_NO\n"
+
+#: pylavcogs_shared/ui/sources/equalizer.py:35
+msgid "Preset Name"
+msgstr "Forhåndsinnstilt navn"
+
+#: pylavcogs_shared/ui/sources/equalizer.py:36
+msgid "Author"
+msgstr "Forfatter"
+
+#: pylavcogs_shared/ui/sources/generic.py:88
+msgid "Page {page_num}/{total_pages} | {num} {entries}"
+msgstr "Side {page_num}/{total_pages} ε {num} {entries}"
+
+#: pylavcogs_shared/ui/sources/generic.py:92
+msgid "entries"
+msgstr "oppføringer"
+
+#: pylavcogs_shared/ui/sources/generic.py:92
+msgid "entry"
+msgstr "oppføring"
+
+#: pylavcogs_shared/ui/sources/nodes.py:51
+msgid "Page {page_num}/{total_pages} | {num} nodes"
+msgstr "Side {page_num}/{total_pages} | {num} nodes"
+
+#: pylavcogs_shared/ui/sources/nodes.py:93
+#: pylavcogs_shared/ui/sources/nodes.py:247
+msgid "No"
+msgstr "Nei"
+
+#: pylavcogs_shared/ui/sources/nodes.py:94
+#: pylavcogs_shared/ui/sources/nodes.py:248
+msgid "Yes"
+msgstr "Ja"
+
+#: pylavcogs_shared/ui/sources/nodes.py:139
+msgid "Name: {name}\n"
+"Version: {version}"
+msgstr "Navn: {name}\n"
+"Versjon: {version}"
+
+#: pylavcogs_shared/ui/sources/nodes.py:140
+#: pylavcogs_shared/ui/sources/nodes.py:141
+#: pylavcogs_shared/ui/sources/nodes.py:294
+#: pylavcogs_shared/ui/sources/nodes.py:295
+#: pylavcogs_shared/ui/sources/playlist.py:154
+msgid "Unknown"
+msgstr "Ukjent"
+
+#: pylavcogs_shared/ui/sources/nodes.py:144
+#: pylavcogs_shared/ui/sources/nodes.py:297
+msgid "None / Unknown"
+msgstr "Ingen / ukjent"
+
+#: pylavcogs_shared/ui/sources/nodes.py:146
+#: pylavcogs_shared/ui/sources/nodes.py:299
+msgid "Property"
+msgstr "Egenskap"
+
+#: pylavcogs_shared/ui/sources/nodes.py:147
+#: pylavcogs_shared/ui/sources/nodes.py:300
+msgid "Value"
+msgstr "Verdi"
+
+#: pylavcogs_shared/ui/sources/nodes.py:148
+#: pylavcogs_shared/ui/sources/nodes.py:301
+msgid "Latitude: {lat}\n"
+"Longitude: {lon}"
+msgstr "Breddegrad: {lat}\n"
+"Lengdegrad: {lon}"
+
+#: pylavcogs_shared/ui/sources/nodes.py:154
+#: pylavcogs_shared/ui/sources/nodes.py:307
+msgid "Region"
+msgstr "Fylke"
+
+#: pylavcogs_shared/ui/sources/nodes.py:154
+#: pylavcogs_shared/ui/sources/nodes.py:307
+msgid "N/A"
+msgstr "N/A"
+
+#: pylavcogs_shared/ui/sources/nodes.py:155
+#: pylavcogs_shared/ui/sources/nodes.py:308
+msgid "Coordinates"
+msgstr "Koordinater"
+
+#: pylavcogs_shared/ui/sources/nodes.py:156
+#: pylavcogs_shared/ui/sources/nodes.py:309
+msgid "Host"
+msgstr "Vert"
+
+#: pylavcogs_shared/ui/sources/nodes.py:157
+#: pylavcogs_shared/ui/sources/nodes.py:310
+msgid "Port"
+msgstr "Port"
+
+#: pylavcogs_shared/ui/sources/nodes.py:158
+#: pylavcogs_shared/ui/sources/nodes.py:311
+msgid "Password"
+msgstr "Passord"
+
+#: pylavcogs_shared/ui/sources/nodes.py:161
+#: pylavcogs_shared/ui/sources/nodes.py:314
+msgid "SSL"
+msgstr "SSL"
+
+#: pylavcogs_shared/ui/sources/nodes.py:162
+#: pylavcogs_shared/ui/sources/nodes.py:315
+msgid "Available"
+msgstr "Tilgjengelig"
+
+#: pylavcogs_shared/ui/sources/nodes.py:163
+#: pylavcogs_shared/ui/sources/nodes.py:316
+msgid "Search Only"
+msgstr "Kun søk"
+
+#: pylavcogs_shared/ui/sources/nodes.py:164
+#: pylavcogs_shared/ui/sources/nodes.py:317
+msgid "Players\n"
+"Connected\n"
+"Active"
+msgstr "Spillere\n"
+"tilkoblet\n"
+"Aktiv"
+
+#: pylavcogs_shared/ui/sources/nodes.py:168
+#: pylavcogs_shared/ui/sources/nodes.py:321
+msgid "Frames Lost"
+msgstr "Rammer mistet"
+
+#: pylavcogs_shared/ui/sources/nodes.py:173
+#: pylavcogs_shared/ui/sources/nodes.py:326
+msgid "Uptime"
+msgstr "Oppetid"
+
+#: pylavcogs_shared/ui/sources/nodes.py:174
+#: pylavcogs_shared/ui/sources/nodes.py:327
+msgid "CPU Load\n"
+"Lavalink\n"
+"System"
+msgstr "CPU-belastning\n"
+"Lavalink\n"
+"System"
+
+#: pylavcogs_shared/ui/sources/nodes.py:177
+#: pylavcogs_shared/ui/sources/nodes.py:330
+msgid "Penalty"
+msgstr "Straff"
+
+#: pylavcogs_shared/ui/sources/nodes.py:178
+#: pylavcogs_shared/ui/sources/nodes.py:331
+msgid "Memory\n"
+"Used\n"
+"Free\n"
+"Allocated\n"
+"Reservable"
+msgstr "Minne\n"
+"brukt\n"
+"Gratis\n"
+"tildelte\n"
+"sporbar"
+
+#: pylavcogs_shared/ui/sources/nodes.py:181
+#: pylavcogs_shared/ui/sources/nodes.py:334
+msgid "Plugins"
+msgstr "Utvidelser"
+
+#: pylavcogs_shared/ui/sources/nodes.py:193
+#: pylavcogs_shared/ui/sources/nodes.py:346
+msgid "Page {page_num}/{total_pages} | {num} {plural}"
+msgstr "Side {page_num}/{total_pages} ε {num} {plural}"
+
+#: pylavcogs_shared/ui/sources/nodes.py:197
+#: pylavcogs_shared/ui/sources/nodes.py:350
+msgid "nodes"
+msgstr "nodes"
+
+#: pylavcogs_shared/ui/sources/nodes.py:197
+#: pylavcogs_shared/ui/sources/nodes.py:350
+msgid "node"
+msgstr "EK-gruppe"
+
+#: pylavcogs_shared/ui/sources/nodes.py:293
+msgid "Name: {name}\n"
+"Version: {version}\n\n"
+msgstr "Navn: {name}\n"
+"Versjon: {version}\n\n"
+
+#: pylavcogs_shared/ui/sources/player.py:68
+msgid "Nothing playing"
+msgstr "Ingenting spiller"
+
+#: pylavcogs_shared/ui/sources/player.py:80
+msgid "Server Owner"
+msgstr "Server eier"
+
+#: pylavcogs_shared/ui/sources/player.py:81
+msgid "Connected"
+msgstr "Tilkoblet"
+
+#: pylavcogs_shared/ui/sources/player.py:82
+msgid "Users in VC"
+msgstr "Brukere i VC"
+
+#: pylavcogs_shared/ui/sources/player.py:83
+msgid "Queue Length"
+msgstr "Kø lengde"
+
+#: pylavcogs_shared/ui/sources/player.py:85
+msgid "Queue History Length"
+msgstr "Lengde på kø"
+
+#: pylavcogs_shared/ui/sources/player.py:88
+msgid "track"
+msgstr "spor"
+
+#: pylavcogs_shared/ui/sources/player.py:88
+msgid "tracks"
+msgstr "spor"
+
+#: pylavcogs_shared/ui/sources/player.py:101
+msgid "Page {page_num}/{total_pages} | Playing in {playing} {server_translation}"
+msgstr "Side {page_num}/{total_pages} 0% Avspilling i {playing} {server_translation}"
+
+#: pylavcogs_shared/ui/sources/player.py:105
+msgid "server"
+msgstr "server"
+
+#: pylavcogs_shared/ui/sources/player.py:105
+msgid "servers"
+msgstr "servere"
+
+#: pylavcogs_shared/ui/sources/playlist.py:54
+#: pylavcogs_shared/ui/sources/playlist.py:174
+msgid "Page {page_num}/{total_pages} | {num} playlists"
+msgstr "Side {page_num}/{total_pages} ε {num} spillelister"
+
+#: pylavcogs_shared/ui/sources/playlist.py:120
+msgid "Tracks in"
+msgstr "Spor om"
+
+#: pylavcogs_shared/ui/sources/playlist.py:125
+msgid "Page {page_num}/{total_pages} | {num_tracks} tracks\n"
+msgstr "Side {page_num}/{total_pages} ε {num_tracks} tracks\n"
+
+#: pylavcogs_shared/ui/sources/playlist.py:159
+msgid "ID: {id}"
+msgstr "ID: {id}"
+
+#: pylavcogs_shared/ui/sources/playlist.py:160
+msgid "Tracks: {num}"
+msgstr "Spor: {num}"
+
+#: pylavcogs_shared/ui/sources/playlist.py:161
+msgid "Author: {name}"
+msgstr "Forfatter: {name}"
+
+#: pylavcogs_shared/ui/sources/playlist.py:162
+msgid "Scope: {scope}\n"
+msgstr "Omfang: {scope}\n"
+
+#: pylavcogs_shared/ui/sources/playlist.py:170
+msgid "Playlists you can access in this server:"
+msgstr "Spillelister du kan få tilgang til i denne serveren:"
+
+#: pylavcogs_shared/ui/sources/queue.py:106
+msgid "There's nothing in recently played"
+msgstr "Det er ingenting i spilt nylig"
+
+#: pylavcogs_shared/ui/sources/queue.py:108
+#: pylavcogs_shared/ui/sources/queue.py:151
+msgid "There's nothing currently being played"
+msgstr "Det er ingenting som spilles av"
+
+#: pylavcogs_shared/ui/sources/queue.py:114
+#: pylavcogs_shared/ui/sources/queue.py:157
+msgid "No active player found in server"
+msgstr "Ingen aktiv spiller funnet på serveren"
+
