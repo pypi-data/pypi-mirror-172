@@ -1,0 +1,7 @@
+markdown2
+semver
+requests
+keyring
+google-cloud-pubsub
+fonttools
+pyobjc
