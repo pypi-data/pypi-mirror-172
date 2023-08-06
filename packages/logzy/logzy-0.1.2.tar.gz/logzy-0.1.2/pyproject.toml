@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "logzy"
+version = "0.1.2"
+description = "A tool for converting f-strings in log functions to lazy-logging"
+authors = ["Alex Harford <harford@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+astroid = "^2.12.12"
+libcst = "^0.4.7"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+pyright = "^1.1.276"
+flake8 = "^5.0.4"
+pytest = "^7.1.3"
+pylint = "^2.15.4"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.poetry.scripts]
+logzy = 'logzy.app:main'
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://gitlab.com/harford/logzy"
+"Bug Tracker" = "https://gitlab.com/harford/logzy/-/issues"
