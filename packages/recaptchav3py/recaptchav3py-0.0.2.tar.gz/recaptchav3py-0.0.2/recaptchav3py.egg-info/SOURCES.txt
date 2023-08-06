@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+recaptchav3py/__init__.py
+recaptchav3py/constants.py
+recaptchav3py/main.py
+recaptchav3py.egg-info/PKG-INFO
+recaptchav3py.egg-info/SOURCES.txt
+recaptchav3py.egg-info/dependency_links.txt
+recaptchav3py.egg-info/requires.txt
+recaptchav3py.egg-info/top_level.txt
