@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "mikro-napari"
+version = "0.1.48"
+description = "A napari plugin to interact and provide functionality for a connected arkitekt server"
+readme = "README.md"
+repository = "https://github.com/jhnnsrs/mikro-napari"
+authors = ["jhnnsrs <jhnnsrs@gmail.com>"]
+license = "CC BY-NC 3.0"
+packages = [{ include = "mikro_napari" }]
+classifiers = ["Framework :: napari"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+arkitekt = "0.3.15"
+
+
+[tool.poetry.scripts]
+mikro-napari = "mikro_napari.run:main"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-aiohttp = "^0.3.0"
+pytest-cov = "^3.0.0"
+black = "^21.12b0"
+napari = "^0.4.16"
+PyQt5 = "^5.15.6"
+testcontainers = "^3.5.3"
+
+[tool.poetry.plugins."napari.manifest"]
+mikro-napari = "mikro_napari:napari.yaml"
+
+
+[[tool.pydoc-markdown.loaders]]
+type = "python"
+search_path = ["mikro_napari"]
+
+[tool.pydoc-markdown.renderer]
+type = "docusaurus"
+docs_base_path = "website/docs"
+
+
+[tool.pytest.ini_options]
+qt_api = "pyqt5"
+markers = [
+    "integration: marks tests that require a running server",
+    "qt: marks tests that require a running qt application",
+]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
