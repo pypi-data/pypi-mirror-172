@@ -1,0 +1,4 @@
+[console_scripts]
+FangxiangLiaofaDabaike = FangxiangLiaofaDabaike.__main__:main
+fangxiang-liaofa-dabaike = FangxiangLiaofaDabaike.__main__:main
+
