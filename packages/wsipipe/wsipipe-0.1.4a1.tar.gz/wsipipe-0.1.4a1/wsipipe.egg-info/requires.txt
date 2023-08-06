@@ -1,0 +1,7 @@
+scipy
+scikit-image
+pandas
+numpy
+opencv-python==4.6.0.66
+Pillow
+openslide-python
