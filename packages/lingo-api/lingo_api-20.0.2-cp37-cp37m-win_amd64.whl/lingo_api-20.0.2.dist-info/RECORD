@@ -1,0 +1,13 @@
+lingo_api/__init__.py,sha256=-7oDf-OWcAFPAnzS6bKdnTjP_ltYzE2vwvQIBSN19AE,349
+lingo_api/const.py,sha256=ZWTScKX_CkHMDWQi5QU9LJUHSvUHJVVPtbWH7tXYVQc,2600
+lingo_api/lingo.cp37-win_amd64.pyd,sha256=n1y8pPao3oYD2zI3D1LnRHZqNjaxsVRl_EANpFVdnOg,17920
+lingo_api/lingoExceptions.py,sha256=bno4UxqIL8SGhH6mWVvAo1eOYoL0R3teVo7XiGKgddc,13077
+lingo_api/loadLibs.py,sha256=-tXt23c7TLg5LXsPgCTWfFxNL2fnKM5vOe2_0dw51E0,2081
+lingo_api/modelLoader.py,sha256=sNV12mB-mEuf5FGnLCjH-wMUFXa6c0e5sPe9ELcbhhI,7138
+lingo_api/pyLingo.c,sha256=JffK16a-T5lx2yDyFqdLpo6oPPtguKAOm3mM0ywl_18,17733
+lingo_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lingo_test/__main__.py,sha256=WwmZ7OsQjRSZkcbe_ThlHaOVhnkQUgEAj9gL6Jj4B_w,417
+lingo_api-20.0.2.dist-info/METADATA,sha256=i9GqXqwU1mig-kT353haKsOl4Y7RVrfyd2nG4vv8D9E,3574
+lingo_api-20.0.2.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+lingo_api-20.0.2.dist-info/top_level.txt,sha256=khmhRxREiqxXbHUKoa5HDpyMm7M65pJo0EkEPQ-4KvA,21
+lingo_api-20.0.2.dist-info/RECORD,,
