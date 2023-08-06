@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ezflake
+Version: 1.0.4
+Summary: Easily make flake8 plugins
+Home-page: https://github.com/GideonBear/ezflake
+Author: Gideon
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ezflake
+
+Inspired by:
+- [flake8-plugin-utils](https://github.com/afonasev/flake8-plugin-utils)
+- [flake8-bugbear](https://github.com/PyCQA/flake8-bugbear)
