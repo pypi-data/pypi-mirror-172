@@ -1,0 +1,5 @@
+cdp_data
+dist
+docs
+notebooks
+scripts
