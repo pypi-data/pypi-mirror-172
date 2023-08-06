@@ -1,0 +1,16 @@
+descope/__init__.py,sha256=-7jvSNDfsRhYNu6gWQtyTexI8MsS_yBGZBMgSDGyVtI,281
+descope/auth.py,sha256=76mJv9okkQcZCrS0asbJ6MkGcL4dqQJbg0987I8sHj0,17783
+descope/authmethod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+descope/authmethod/magiclink.py,sha256=lPsd6gUFpOREZtBH3vNWFNyMmGxge34CtnxL73H-oYE,8218
+descope/authmethod/oauth.py,sha256=i5wy653S-YYI4vNe5VW-5BL2mzQ6MbsEdBqMyIJsdsQ,1373
+descope/authmethod/otp.py,sha256=bF9yLx7dA8xlsMPminlcWqRhkbJwgO4DcSw3voW40w4,9066
+descope/authmethod/saml.py,sha256=sp1GofpW3JOWInmLWMCBTy7pYIfI2EjTAt0czAZz0KI,1216
+descope/authmethod/totp.py,sha256=GGqZw-a2eF53Mgeb4Xbn7Bd8AfcPYKLFPhP26UONETQ,2874
+descope/authmethod/webauthn.py,sha256=uxowDBMPYD5_jL7A13-Bh4Q9HkwWk5g8CtMA7E9sLyo,5389
+descope/common.py,sha256=jXXjnnfObkz8HBDF6UqwEWY-aIA6AJcyZvuPQZcHMc8,2450
+descope/descope_client.py,sha256=TvU-AsY5v-0eYdR7wyv1YpjkKd9rzhwNc9DRlrsdLMA,9287
+descope/exceptions.py,sha256=1nVoIbLaNh9VBlgWR2mKARRAvVQMtG7O1gEO93pxwHg,619
+descope-0.2.0.dist-info/LICENSE,sha256=8xVb-0wiJe7IjhOROl4E9vGCwLg3PcrBC7PkEgyXglE,1064
+descope-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+descope-0.2.0.dist-info/METADATA,sha256=vzlze1mejTXW-VZ_ffKDtR0yUNY40vqg_ZYeeXBL4_c,2208
+descope-0.2.0.dist-info/RECORD,,
