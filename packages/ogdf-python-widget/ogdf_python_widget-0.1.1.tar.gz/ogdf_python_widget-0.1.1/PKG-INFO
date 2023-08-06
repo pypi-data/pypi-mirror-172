@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: ogdf-python-widget
+Version: 0.1.1
+Summary: A Custom Jupyter Widget Library
+Author-email: Andreas Strobl <strobland@fim.uni-passau.de>, "Simon D. Fink" <finksim@fim.uni-passau.de>
+Keywords: algorithm,drawing,graph,ipython,jupyter,network,ogdf,widgets
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Graphics
+Requires-Dist: importlib-resources
+Requires-Dist: ipywidgets<8,>=7
+Requires-Dist: ogdf-python
+Description-Content-Type: text/markdown
+
+ogdf-python-widget 0.1.1
+==========================
+
+A Custom Jupyter Widget Library
+
+Installation
+------------
+
+To install use pip:
+
+    $ pip install ogdf_python_widget
+
+For a development installation (requires [Node.js](https://nodejs.org) and [Yarn version 1](https://classic.yarnpkg.com/)),
+
+    $ git clone https://github.com/ogdf/ogdf-python-widget.git
+    $ cd ogdf-python-widget
+    $ pip install -e .
+    $ jupyter nbextension install --py --symlink --overwrite --sys-prefix ogdf_python_widget
+    $ jupyter nbextension enable --py --sys-prefix ogdf_python_widget
+
+When actively developing your extension for JupyterLab, run the command:
+
+    $ jupyter labextension develop --overwrite ogdf_python_widget
+
+Then you need to rebuild the JS when you make a code change:
+
+    $ cd js
+    $ yarn run build
+
+You then need to refresh the JupyterLab page when your javascript changes.
