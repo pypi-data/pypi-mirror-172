@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+mscheck/__init__.py
+mscheck/analyse.py
+mscheck/report.py
+mscheck/spectrum.py
+mscheck/utils.py
+mscheck.egg-info/PKG-INFO
+mscheck.egg-info/SOURCES.txt
+mscheck.egg-info/dependency_links.txt
+mscheck.egg-info/requires.txt
+mscheck.egg-info/top_level.txt
+tests/__init__.py
+tests/test_analyse.py
+tests/test_spectrum.py
