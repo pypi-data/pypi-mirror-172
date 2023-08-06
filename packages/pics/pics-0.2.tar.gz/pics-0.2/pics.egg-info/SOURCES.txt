@@ -1,0 +1,8 @@
+README.md
+setup.py
+pics/__init__.py
+pics/pic.py
+pics.egg-info/PKG-INFO
+pics.egg-info/SOURCES.txt
+pics.egg-info/dependency_links.txt
+pics.egg-info/top_level.txt
