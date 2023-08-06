@@ -1,0 +1,6 @@
+pandas_sqlite3/__init__.py,sha256=AVzpGktKZVTAnZduQKFl7QDJ1R8bzYe9LNZx4uHrQOs,38
+pandas_sqlite3/pandas_query.py,sha256=hI3uTsoYIKqtIrBqQQenL-SvqAVp-Do7ZrtYjUgcISs,1287
+pandas_sqlite3-0.1.0.dist-info/LICENSE,sha256=Zbgeg-MKVBaXRd_ETOEZgiNY7SBjhv3iDizoFNfFgh0,1070
+pandas_sqlite3-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pandas_sqlite3-0.1.0.dist-info/METADATA,sha256=nEigbDDZI4XUWKrfWM1XeMn8jLZz5KwgULW8ljecye0,2198
+pandas_sqlite3-0.1.0.dist-info/RECORD,,
