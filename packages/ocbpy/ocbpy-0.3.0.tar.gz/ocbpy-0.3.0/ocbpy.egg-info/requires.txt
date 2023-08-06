@@ -1,0 +1,8 @@
+aacgmv2
+numpy
+
+[dmsp_ssj]
+ssj_auroral_boundaries
+
+[pysat_instruments]
+pysat

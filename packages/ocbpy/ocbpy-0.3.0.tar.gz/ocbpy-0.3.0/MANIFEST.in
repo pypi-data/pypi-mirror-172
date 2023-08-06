@@ -1,0 +1,8 @@
+graft ocbpy/tests/test_data
+graft ocbpy/boundaries
+
+include *.rst
+include *.md
+
+include *.yml
+include .zenodo.json
