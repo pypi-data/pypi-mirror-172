@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+goa_loader/__init__.py
+goa_loader/download_data.py
+goa_loader/load.py
+goa_loader/path.py
+goa_loader/util.py
+goa_loader.egg-info/PKG-INFO
+goa_loader.egg-info/SOURCES.txt
+goa_loader.egg-info/dependency_links.txt
+goa_loader.egg-info/requires.txt
+goa_loader.egg-info/top_level.txt
