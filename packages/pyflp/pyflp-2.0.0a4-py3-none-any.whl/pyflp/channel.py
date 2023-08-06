@@ -1,0 +1,1518 @@
+# PyFLP - An FL Studio project file (.flp) parser
+# Copyright (C) 2022 demberto
+#
+# This program is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option)
+# any later version. This program is distributed in the hope that it will be
+# useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+# Public License for more details. You should have received a copy of the
+# GNU General Public License along with this program. If not, see
+# <https://www.gnu.org/licenses/>.
+
+"""Contains the types used by the channels and channel rack."""
+
+from __future__ import annotations
+
+import enum
+import pathlib
+import sys
+from collections import defaultdict
+from typing import DefaultDict, Iterator, Tuple, cast
+
+if sys.version_info >= (3, 8):
+    from typing import Literal
+else:
+    from typing_extensions import Literal
+
+import colour
+import construct as c
+import construct_typed as ct
+
+from ._descriptors import EventProp, FlagProp, KWProp, NestedProp, StructProp
+from ._events import (
+    DATA,
+    DWORD,
+    TEXT,
+    WORD,
+    BoolEvent,
+    EventEnum,
+    EventTree,
+    F32Event,
+    I8Event,
+    I32Event,
+    StdEnum,
+    StructEventBase,
+    U8Event,
+    U16Event,
+    U16TupleEvent,
+    U32Event,
+)
+from ._models import (
+    EventModel,
+    ItemModel,
+    ModelCollection,
+    ModelReprMixin,
+    supports_slice,
+)
+from .exceptions import ModelNotFound, NoModelsFound, PropertyCannotBeSet
+from .plugin import BooBass, PluginID, PluginProp, VSTPlugin
+
+__all__ = [
+    "ArpDirection",
+    "Automation",
+    "AutomationPoint",
+    "Channel",
+    "Instrument",
+    "Layer",
+    "ChannelRack",
+    "ChannelNotFound",
+    "DeclickMode",
+    "LFOShape",
+    "ReverbType",
+    "FX",
+    "Reverb",
+    "Delay",
+    "Envelope",
+    "SamplerLFO",
+    "Tracking",
+    "Keyboard",
+    "LevelAdjusts",
+    "StretchMode",
+    "Time",
+    "TimeStretching",
+    "Polyphony",
+    "Playback",
+    "ChannelType",
+]
+
+EnvelopeName = Literal["Panning", "Volume", "Mod X", "Mod Y", "Pitch"]
+LFOName = EnvelopeName
+
+
+class ChannelNotFound(ModelNotFound, KeyError):
+    pass
+
+
+class AutomationEvent(StructEventBase):
+    @staticmethod
+    def _get_position(stream: c.StreamType, index: int):
+        cur = stream.tell()
+        position = 0.0
+        for i in range(index + 1):
+            stream.seek(21 + (i * 24))
+            position += c.Float64l.parse_stream(stream)
+        stream.seek(cur)
+        return position
+
+    STRUCT = c.Struct(
+        "_u1" / c.Bytes(4),  # 4  # ? Always 1
+        "lfo.amount" / c.Int32sl,
+        "_u2" / c.Bytes(1),  # 9
+        "_u3" / c.Bytes(2),  # 11
+        "_u4" / c.Bytes(2),  # 13  # ? Always 0
+        "_u5" / c.Bytes(4),  # 17
+        "points"
+        / c.PrefixedArray(
+            c.Int32ul,  # 21
+            c.Struct(
+                "_offset" / c.Float64l * "Change in X-axis w.r.t last point",
+                "position"  # TODO Implement a setter
+                / c.IfThenElse(
+                    lambda ctx: ctx._index > 0,
+                    c.Computed(
+                        lambda ctx: AutomationEvent._get_position(ctx._io, ctx._index)
+                    ),
+                    c.Computed(lambda ctx: ctx["_offset"]),
+                ),
+                "value" / c.Float64l,
+                "tension" / c.Float32l,
+                "_u1" / c.Bytes(4),  # Linked to tension
+            ),  # 24 per struct
+        ),
+        "_u6" / c.GreedyBytes,  # TODO Upto a whooping 112 bytes
+    )
+
+
+class DelayEvent(StructEventBase):
+    STRUCT = c.Struct(
+        "feedback" / c.Optional(c.Int32ul),
+        "pan" / c.Optional(c.Int32sl),
+        "pitch_shift" / c.Optional(c.Int32sl),
+        "echoes" / c.Optional(c.Int32ul),
+        "time" / c.Optional(c.Int32ul),
+    ).compile()
+
+
+@enum.unique
+class _EnvLFOFlags(enum.IntFlag):
+    EnvelopeTempoSync = 1 << 0
+    Unknown = 1 << 2  # Occurs for volume envlope only. Likely a bug in FL's serialiser
+    LFOTempoSync = 1 << 1
+    LFOPhaseRetrig = 1 << 5
+
+
+@enum.unique
+class LFOShape(ct.EnumBase):
+    """Used by :attr:`LFO.shape`."""
+
+    Sine = 0
+    Triangle = 1
+    Pulse = 2
+
+
+# FL Studio 2.5.0+
+class EnvelopeLFOEvent(StructEventBase):
+    STRUCT = c.Struct(
+        "flags" / c.Optional(StdEnum[_EnvLFOFlags](c.Int32sl)),  # 4
+        "envelope.enabled" / c.Optional(c.Int32sl),  # 8
+        "envelope.predelay" / c.Optional(c.Int32sl),  # 12
+        "envelope.attack" / c.Optional(c.Int32sl),  # 16
+        "envelope.hold" / c.Optional(c.Int32sl),  # 20
+        "envelope.decay" / c.Optional(c.Int32sl),  # 24
+        "envelope.sustain" / c.Optional(c.Int32sl),  # 28
+        "envelope.release" / c.Optional(c.Int32sl),  # 32
+        "envelope.amount" / c.Optional(c.Int32sl),  # 36
+        "lfo.predelay" / c.Optional(c.Int32ul),  # 40
+        "lfo.attack" / c.Optional(c.Int32ul),  # 44
+        "lfo.amount" / c.Optional(c.Int32sl),  # 48
+        "lfo.speed" / c.Optional(c.Int32ul),  # 52
+        "lfo.shape" / c.Optional(StdEnum[LFOShape](c.Int32sl)),  # 56
+        "envelope.attack_tension" / c.Optional(c.Int32sl),  # 60
+        "envelope.decay_tension" / c.Optional(c.Int32sl),  # 64
+        "envelope.release_tension" / c.Optional(c.Int32sl),  # 68
+    ).compile()
+
+
+class LevelAdjustsEvent(StructEventBase):
+    STRUCT = c.Struct(
+        "pan" / c.Optional(c.Int32sl),  # 4
+        "volume" / c.Optional(c.Int32ul),  # 8
+        "_u1" / c.Optional(c.Int32ul),  # 12
+        "mod_x" / c.Optional(c.Int32sl),  # 16
+        "mod_y" / c.Optional(c.Int32sl),  # 20
+    ).compile()
+
+
+class LevelsEvent(StructEventBase):
+    STRUCT = c.Struct(
+        "pan" / c.Optional(c.Int32sl),  # 4
+        "volume" / c.Optional(c.Int32ul),  # 8
+        "pitch_shift" / c.Optional(c.Int32sl),  # 12
+        "_u1" / c.Optional(c.Bytes(12)),  # 24
+    ).compile()
+
+
+@enum.unique
+class ArpDirection(ct.EnumBase):
+    """Used by :attr:`Arp.direction`."""
+
+    Off = 0
+    Up = 1
+    Down = 2
+    UpDownBounce = 3
+    UpDownSticky = 4
+    Random = 5
+
+
+@enum.unique
+class DeclickMode(ct.EnumBase):
+    OutOnly = 0
+    TransientNoBleeding = 1
+    Transient = 2
+    Generic = 3
+    Smooth = 4
+    Crossfade = 5
+
+
+@enum.unique
+class StretchMode(ct.EnumBase):
+    Stretch = -1
+    Resample = 0
+    E3Generic = 1
+    E3Mono = 2
+    SliceStretch = 3
+    SliceMap = 4
+    Auto = 5
+    E2Generic = 6
+    E2Transient = 7
+    E2Mono = 8
+    E2Speech = 9
+
+
+class ParametersEvent(StructEventBase):
+    STRUCT = c.Struct(
+        "_u1" / c.Optional(c.Bytes(40)),  # 40
+        "arp.direction" / c.Optional(StdEnum[ArpDirection](c.Int32ul)),  # 44
+        "arp.range" / c.Optional(c.Int32ul),  # 48
+        "arp.chord" / c.Optional(c.Int32ul),  # 52
+        "arp.time" / c.Optional(c.Float32l),  # 56
+        "arp.gate" / c.Optional(c.Float32l),  # 60
+        "arp.slide" / c.Optional(c.Flag),  # 61
+        "_u2" / c.Optional(c.Bytes(22)),  # 83
+        "content.declick_mode" / c.Optional(StdEnum[DeclickMode](c.Int8ul)),  # 84
+        "_u3" / c.Optional(c.Bytes(8)),  # 92
+        "arp.repeat" / c.Optional(c.Int32ul),  # 96 4.5.2+
+        "_u4" / c.Optional(c.Bytes(12)),  # 108
+        "stretching.mode" / c.Optional(StdEnum[StretchMode](c.Int32sl)),  # 112
+        "_u5" / c.Optional(c.Bytes(36)),  # 148
+        "playback.start_offset" / c.Optional(c.Int32ul),  # 152
+        "_u6" / c.Optional(c.GreedyBytes),  # * 168 as of 20.9.1
+    ).compile()
+
+
+@enum.unique
+class _PolyphonyFlags(enum.IntFlag):
+    None_ = 0
+    Mono = 1 << 0
+    Porta = 1 << 1
+
+    # Unknown
+    U1 = 1 << 2
+    U2 = 1 << 3
+    U3 = 1 << 4
+    U4 = 1 << 5
+    U5 = 1 << 6
+    U6 = 1 << 7
+
+
+class PolyphonyEvent(StructEventBase):
+    STRUCT = c.Struct(
+        "max" / c.Optional(c.Int32ul),  # 4
+        "slide" / c.Optional(c.Int32ul),  # 8
+        "flags" / c.Optional(StdEnum[_PolyphonyFlags](c.Byte)),  # 9
+    ).compile()
+
+
+class TrackingEvent(StructEventBase):
+    STRUCT = c.Struct(
+        "middle_value" / c.Optional(c.Int32ul),  # 4
+        "pan" / c.Optional(c.Int32sl),  # 8
+        "mod_x" / c.Optional(c.Int32sl),  # 12
+        "mod_y" / c.Optional(c.Int32sl),  # 16
+    ).compile()
+
+
+@enum.unique
+class ChannelID(EventEnum):
+    IsEnabled = (0, BoolEvent)
+    _VolByte = (2, U8Event)
+    _PanByte = (3, U8Event)
+    Zipped = (15, BoolEvent)
+    # _19 = (19, BoolEvent)
+    PingPongLoop = (20, BoolEvent)
+    Type = (21, U8Event)
+    RoutedTo = (22, I8Event)
+    # FXProperties = 27
+    IsLocked = (32, BoolEvent)  #: 12.3+
+    New = (WORD, U16Event)
+    FreqTilt = (WORD + 5, U16Event)
+    FXFlags = (WORD + 6, U16Event)
+    Cutoff = (WORD + 7, U16Event)
+    _VolWord = (WORD + 8, U16Event)
+    _PanWord = (WORD + 9, U16Event)
+    Preamp = (WORD + 10, U16Event)  #: 1.2.12+
+    FadeOut = (WORD + 11, U16Event)  #: 1.7.6+
+    FadeIn = (WORD + 12, U16Event)
+    # _DotNote = WORD + 13
+    # _DotPitch = WORD + 14
+    # _DotMix = WORD + 15
+    Resonance = (WORD + 19, U16Event)
+    # _LoopBar = WORD + 20
+    StereoDelay = (WORD + 21, U16Event)  #: 1.3.56+
+    Pogo = (WORD + 22, U16Event)
+    # _DotReso = WORD + 23
+    # _DotCutOff = WORD + 24
+    # _ShiftDelay = WORD + 25
+    # _Dot = WORD + 27
+    # _DotRel = WORD + 32
+    # _DotShift = WORD + 28
+    Children = (WORD + 30, U16Event)  #: 3.4.0+
+    Swing = (WORD + 33, U16Event)
+    # Echo = DWORD + 2
+    RingMod = (DWORD + 3, U16TupleEvent)
+    CutGroup = (DWORD + 4, U16TupleEvent)
+    RootNote = (DWORD + 7, U32Event)
+    # _MainResoCutOff = DWORD + 9
+    # DelayModXY = DWORD + 10
+    Reverb = (DWORD + 11, U32Event)  #: 1.4.0+
+    StretchTime = (DWORD + 12, F32Event)  #: 5.0+
+    FineTune = (DWORD + 14, I32Event)
+    SamplerFlags = (DWORD + 15, U32Event)
+    LayerFlags = (DWORD + 16, U32Event)
+    GroupNum = (DWORD + 17, I32Event)
+    AUSampleRate = (DWORD + 25, U32Event)
+    _Name = TEXT
+    SamplePath = TEXT + 4
+    Delay = (DATA + 1, DelayEvent)
+    Parameters = (DATA + 7, ParametersEvent)
+    EnvelopeLFO = (DATA + 10, EnvelopeLFOEvent)
+    Levels = (DATA + 11, LevelsEvent)
+    # _Filter = DATA + 12
+    Polyphony = (DATA + 13, PolyphonyEvent)
+    # _LegacyAutomation = DATA + 15
+    Tracking = (DATA + 20, TrackingEvent)
+    LevelAdjusts = (DATA + 21, LevelAdjustsEvent)
+    Automation = (DATA + 26, AutomationEvent)
+
+
+@enum.unique
+class DisplayGroupID(EventEnum):
+    Name = TEXT + 39  #: 3.4.0+
+
+
+@enum.unique
+class RackID(EventEnum):
+    Swing = (11, U8Event)
+    _FitToSteps = (13, U8Event)
+    WindowHeight = (DWORD + 5, U32Event)
+
+
+@enum.unique
+class ReverbType(enum.IntEnum):
+    """Used by :attr:`Reverb.type`."""
+
+    A = 0
+    B = 65536
+
+
+# The type of a channel may decide how a certain event is interpreted. An
+# example of this is `ChannelID.Levels` event, which is used for storing
+# volume, pan and pich bend range of any channel other than automations. In
+# automations it is used for **Min** and **Max** knobs.
+@enum.unique
+class ChannelType(ct.EnumBase):  # cuz Type would be a super generic name
+    """An internal marker used to indicate the type of a channel."""
+
+    Sampler = 0
+    """Used exclusively for the inbuilt Sampler."""
+
+    Native = 2
+    """Used by audio clips and other native FL Studio synths."""
+
+    Layer = 3  # 3.4.0+
+    Instrument = 4
+    Automation = 5  # 5.0+
+
+
+class _FXFlags(enum.IntFlag):
+    FadeStereo = 1 << 0
+    Reverse = 1 << 1
+    Clip = 1 << 2
+    SwapStereo = 1 << 8
+
+
+class _LayerFlags(enum.IntFlag):
+    Random = 1 << 0
+    Crossfade = 1 << 1
+
+
+class _SamplerFlags(enum.IntFlag):
+    Resample = 1 << 0
+    LoadRegions = 1 << 1
+    LoadSliceMarkers = 1 << 2
+    UsesLoopPoints = 1 << 3
+    KeepOnDisk = 1 << 8
+
+
+class DisplayGroup(EventModel, ModelReprMixin):
+    def __repr__(self):
+        if self.name is None:
+            return "Unnamed display group"
+        return f"Display group {self.name}"
+
+    name = EventProp[str](DisplayGroupID.Name)
+
+
+class Arp(EventModel, ModelReprMixin):
+    """Used by :class:`Sampler`: and :class:`Instrument`.
+
+    ![](https://bit.ly/3Lbk7Yi)
+    """
+
+    chord = StructProp[int]()
+    """Index of the selected arpeggio chord."""
+
+    direction = StructProp[ArpDirection]()
+    gate = StructProp[float]()
+    """Delay between two successive notes played."""
+
+    range = StructProp[int]()
+    """Range (in octaves)."""
+
+    repeat = StructProp[int]()
+    """Number of times a note is repeated.
+
+    *New in FL Studio v4.5.2*.
+    """
+
+    slide = StructProp[bool]()
+    """Whether arpeggio will slide between notes."""
+
+    time = StructProp[float]()
+    """Delay between two successive notes played."""
+
+
+class Delay(EventModel, ModelReprMixin):
+    """Echo delay / fat mode section.
+
+    Used by :class:`Sampler` and :class:`Instrument`.
+
+    ![](https://bit.ly/3RyzbBD)
+    """
+
+    # is_fat_mode: Optional[bool] = None    #: 3.4.0+
+    # is_ping_pong: Optional[bool] = None   #: 1.7.6+
+    # mod_x: Optional[int] = None
+    # mod_y: Optional[int] = None
+
+    echoes = StructProp[int]()
+    """Number of echoes generated for each note.
+
+    | Min | Max |
+    |-----|-----|
+    | 1   | 10  |
+    """
+
+    feedback = StructProp[int]()
+    """Factor with which the volume of every next echo is multiplied.
+
+    Defaults to minimum value.
+
+    | Type | Value | Representation |
+    |------|-------|----------------|
+    | Min  | 0     | 0%             |
+    | Max  | 25600 | 200%           |
+    """
+
+    pan = StructProp[int]()
+    """
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | -6400 | 100% left      |
+    | Max     | 6400  | 100% right     |
+    | Default | 0     | Centred        |
+    """
+
+    pitch_shift = StructProp[int]()
+    """Pitch shift (in cents).
+
+    | Min   | Max   | Default |
+    |-------|-------|---------|
+    | -1200 | 1200  | 0       |
+    """
+
+    time = StructProp[int]()
+    """Tempo-synced delay time. PPQ dependant.
+
+    | Type    | Value     | Representation |
+    |---------|-----------|----------------|
+    | Min     | 0         | 0:00           |
+    | Max     | PPQ * 4   | 8:00           |
+    | Default | PPQ * 3/2 | 3:00           |
+    """
+
+
+class LevelAdjusts(EventModel, ModelReprMixin):
+    """Used by :class:`Layer`, :class:`Instrument` and :class:`Sampler`.
+
+    ![](https://bit.ly/3xkKeGn)
+
+    *New in FL Studio v3.3.0*.
+    """
+
+    mod_x = StructProp[int]()
+    mod_y = StructProp[int]()
+    pan = StructProp[int]()
+    volume = StructProp[int]()
+
+
+class Time(EventModel, ModelReprMixin):
+    """Used by :class:`Sampler` and :class:`Instrument`.
+
+    ![](https://bit.ly/3xjxUGG)
+    """
+
+    swing = EventProp[int](ChannelID.Swing)
+    # gate: int
+    # shift: int
+    # is_full_porta: bool
+
+
+class Reverb(EventModel, ModelReprMixin):
+    """Precalculated reverb used by :class:`Sampler`.
+
+    *New in FL Studio v1.4.0*.
+    """
+
+    @property
+    def type(self) -> ReverbType | None:
+        if ChannelID.Reverb in self.events:
+            event = self.events.first(ChannelID.Reverb)
+            return ReverbType.B if event.value >= ReverbType.B else ReverbType.A
+
+    @type.setter
+    def type(self, value: ReverbType):
+        if self.mix is None:
+            raise PropertyCannotBeSet(ChannelID.Reverb)
+
+        self.events.first(ChannelID.Reverb).value = value.value + self.mix
+
+    @property
+    def mix(self) -> int | None:
+        """Mix % (wet). Defaults to minimum value.
+
+        | Min | Max |
+        |-----|-----|
+        | 0   | 256 |
+        """
+        if ChannelID.Reverb in self.events:
+            return self.events.first(ChannelID.Reverb).value - self.type
+
+    @mix.setter
+    def mix(self, value: int):
+        if ChannelID.Reverb not in self.events:
+            raise PropertyCannotBeSet(ChannelID.Reverb)
+
+        self.events.first(ChannelID.Reverb).value += value
+
+
+class FX(EventModel, ModelReprMixin):
+    """Pre-calculated effects used by :class:`Sampler`.
+
+    ![](https://bit.ly/3U3Ys8l)
+    ![](https://bit.ly/3qvdBSN)
+
+    See Also:
+        :attr:`Sampler.fx`
+    """
+
+    boost = EventProp[int](ChannelID.Preamp)
+    """Pre-amp gain. Defaults to minimum value.
+
+    | Min | Max |
+    |-----|-----|
+    | 0   | 256 |
+
+    *New in FL Studio v1.2.12*.
+    """
+
+    clip = FlagProp(_FXFlags.Clip, ChannelID.FXFlags)
+    """Whether output is clipped at 0dB for :attr:`boost`."""
+
+    cutoff = EventProp[int](ChannelID.Cutoff)
+    """Filter Mod X. Defaults to maximum value.
+
+    | Min | Max  |
+    |-----|------|
+    | 16  | 1024 |
+    """
+
+    fade_in = EventProp[int](ChannelID.FadeIn)
+    """Quick fade-in. Defaults to minimum value.
+
+    | Min | Max  |
+    |-----|------|
+    | 0   | 1024 |
+    """
+
+    fade_out = EventProp[int](ChannelID.FadeOut)
+    """Quick fade-out. Defaults to minimum value.
+
+    | Min | Max  |
+    |-----|------|
+    | 0   | 1024 |
+
+    *New in FL Studio v1.7.6*.
+    """
+
+    fade_stereo = FlagProp(_FXFlags.FadeStereo, ChannelID.FXFlags)
+    freq_tilt = EventProp[int](ChannelID.FreqTilt)
+    """Shifts the frequency balance. Bi-polar.
+
+    | Min | Max | Default |
+    |-----|-----|---------|
+    | 0   | 256 | 128     |
+    """
+
+    pogo = EventProp[int](ChannelID.Pogo)
+    """Pitch bend effect. Bipolar.
+
+    | Min | Max | Default |
+    |-----|-----|---------|
+    | 0   | 512 | 256     |
+    """
+
+    # remove_dc = StructProp[bool](ChannelID.Parameters, prop="fx.remove_dc")
+    # """*New in FL Studio v2.5.0*."""
+
+    resonance = EventProp[int](ChannelID.Resonance)
+    """Filter Mod Y. Defaults to minimum value.
+
+    | Min | Max  |
+    |-----|------|
+    | 0   | 640  |
+    """
+
+    reverb = NestedProp[Reverb](Reverb, ChannelID.Reverb)
+    reverse = FlagProp(_FXFlags.Reverse, ChannelID.FXFlags)
+    """Whether sample is reversed or not."""
+
+    ringmod = EventProp[Tuple[int, int]](ChannelID.RingMod)
+    """Ring modulation returned as a tuple of `(mix, frequency)`.
+
+    Limits for both:
+
+    | Min | Max | Default |
+    |-----|-----|---------|
+    | 0   | 256 | 128     |
+    """
+
+    stereo_delay = EventProp[int](ChannelID.StereoDelay)
+    """Linear. Bipolar.
+
+    | Min | Max  | Default |
+    |-----|------|---------|
+    | 0   | 4096 | 2048    |
+
+    *New in FL Studio v1.3.56*.
+    """
+
+    swap_stereo = FlagProp(_FXFlags.SwapStereo, ChannelID.FXFlags)
+    """Whether left and right channels are swapped or not."""
+
+
+class Envelope(EventModel, ModelReprMixin):
+    """A PAHDSR envelope for various :class:`Sampler` paramters.
+
+    ![](https://bit.ly/3d9WCCh)
+
+    See Also:
+        :attr:`Sampler.envelopes`
+
+    *New in FL Studio v2.5.0*.
+    """
+
+    enabled = StructProp[bool](prop="envelope.enabled")
+    """Whether envelope section is enabled."""
+
+    predelay = StructProp[int](prop="envelope.predelay")
+    """Linear. Defaults to minimum value.
+
+    | Type | Value | Representation |
+    |------|-------|----------------|
+    | Min  | 100   | 0%             |
+    | Max  | 65536 | 100%           |
+    """
+
+    amount = StructProp[int](prop="envelope.amount")
+    """Linear. Bipolar.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | -128  | -100%          |
+    | Max     | 128   | 100%           |
+    | Default | 0     | 0%             |
+    """
+
+    attack = StructProp[int](prop="envelope.attack")
+    """Linear.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | 100   | 0%             |
+    | Max     | 65536 | 100%           |
+    | Default | 20000 | 31%            |
+    """
+
+    hold = StructProp[int](prop="envelope.hold")
+    """Linear.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | 100   | 0%             |
+    | Max     | 65536 | 100%           |
+    | Default | 20000 | 31%            |
+    """
+
+    decay = StructProp[int](prop="envelope.decay")
+    """Linear.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | 100   | 0%             |
+    | Max     | 65536 | 100%           |
+    | Default | 30000 | 46%            |
+    """
+
+    sustain = StructProp[int](prop="envelope.sustain")
+    """Linear.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | 0     | 0%             |
+    | Max     | 128   | 100%           |
+    | Default | 50    | 39%            |
+    """
+
+    release = StructProp[int](prop="envelope.release")
+    """Linear.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | 100   | 0%             |
+    | Max     | 65536 | 100%           |
+    | Default | 20000 | 31%            |
+    """
+
+    synced = FlagProp(_EnvLFOFlags.EnvelopeTempoSync)
+    """Whether envelope is synced to tempo or not."""
+
+    attack_tension = StructProp[int](prop="envelope.attack_tension")
+    """Linear. Bipolar.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | -128  | -100%          |
+    | Max     | 128   | 100%           |
+    | Default | 0     | 0%             |
+
+    *New in FL Studio v3.5.4*.
+    """
+
+    decay_tension = StructProp[int](prop="envelope.decay_tension")
+    """Linear. Bipolar.
+
+    | Type    | Value | Mix (wet) |
+    |---------|-------|-----------|
+    | Min     | -128  | -100%     |
+    | Max     | 128   | 100%      |
+    | Default | 0     | 0%        |
+
+    *New in FL Studio v3.5.4*.
+    """
+
+    release_tension = StructProp[int](prop="envelope.release_tension")
+    """Linear. Bipolar.
+
+    | Type    | Value | Mix (wet) |
+    |---------|-------|-----------|
+    | Min     | -128  | -100%     |
+    | Max     | 128   | 100%      |
+    | Default | -101  | -79%      |
+
+    *New in FL Studio v3.5.4*.
+    """
+
+
+class SamplerLFO(EventModel, ModelReprMixin):
+    """A basic LFO for certain :class:`Sampler` parameters.
+
+    ![](https://bit.ly/3RG5Jtw)
+
+    See Also:
+        :attr:`Sampler.lfos`
+
+    *New in FL Studio v2.5.0*.
+    """
+
+    amount = StructProp[int](prop="lfo.amount")
+    """Linear. Bipolar.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | -128  | -100%          |
+    | Max     | 128   | 100%           |
+    | Default | 0     | 0%             |
+    """
+
+    attack = StructProp[int](prop="lfo.attack")
+    """Linear.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | 100   | 0%             |
+    | Max     | 65536 | 100%           |
+    | Default | 20000 | 31%            |
+    """
+
+    predelay = StructProp[int](prop="lfo.predelay")
+    """Linear. Defaults to minimum value.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | 100   | 0%             |
+    | Max     | 65536 | 100%           |
+    """
+
+    speed = StructProp[int](prop="lfo.speed")
+    """Logarithmic. Provides tempo synced options.
+
+    | Type    | Value | Representation |
+    |---------|-------|----------------|
+    | Min     | 200   | 0%             |
+    | Max     | 65536 | 100%           |
+    | Default | 32950 | 50% (16 steps) |
+    """
+
+    synced = FlagProp(_EnvLFOFlags.LFOTempoSync)
+    """Whether LFO is synced with tempo."""
+
+    retrig = FlagProp(_EnvLFOFlags.LFOPhaseRetrig)
+    """Whether LFO phase is in global / retriggered mode."""
+
+    shape = StructProp[LFOShape](prop="lfo.shape")
+    """Sine, triangle or pulse. Default: Sine."""
+
+
+class Polyphony(EventModel, ModelReprMixin):
+    """Used by :class:`Sampler` and :class:`Instrument`.
+
+    ![](https://bit.ly/3DlvWcl)
+    """
+
+    is_mono = FlagProp(_PolyphonyFlags.Mono)
+    """Whether monophonic mode is enabled or not."""
+
+    is_porta = FlagProp(_PolyphonyFlags.Porta)
+    """*New in FL Studio v3.3.0*."""
+
+    max = StructProp[int]()
+    """Max number of voices."""
+
+    slide = StructProp[int]()
+    """Portamento time. Nonlinear.
+
+    | Type    | Value | Representation  |
+    |---------|-------|-----------------|
+    | Min     | 0     | 0:00            |
+    | Max     | 1660  | 8:00 (8 steps)  |
+    | Default | 820   | 0:12 (1/2 step) |
+
+    *New in FL Studio v3.3.0*.
+    """
+
+
+class Tracking(EventModel, ModelReprMixin):
+    """Used by :class:`Sampler` and :class:`Instrument`.
+
+    ![](https://bit.ly/3DmveM8)
+
+    *New in FL Studio v3.3.0*.
+    """
+
+    middle_value = StructProp[int]()
+    """Note index. Min: C0 (0), Max: B10 (131)."""
+
+    mod_x = StructProp[int]()
+    """Bipolar.
+
+    | Min  | Max | Default |
+    |------|-----|---------|
+    | -256 | 256 | 0       |
+    """
+
+    mod_y = StructProp[int]()
+    """Bipolar.
+
+    | Min  | Max | Default |
+    |------|-----|---------|
+    | -256 | 256 | 0       |
+    """
+
+    pan = StructProp[int]()
+    """Linear. Bipolar.
+
+    | Min  | Max | Default |
+    |------|-----|---------|
+    | -256 | 256 | 0       |
+    """
+
+
+class Keyboard(EventModel, ModelReprMixin):
+    """Used by :class:`Sampler` and :class:`Instrument`.
+
+    ![](https://bit.ly/3qwIK8r)
+
+    *New in FL Studio v1.3.56*.
+    """
+
+    fine_tune = EventProp[int](ChannelID.FineTune)
+    """-100 to +100 cents."""
+
+    # TODO Return this as a note name, like `Note.key`
+    root_note = EventProp[int](ChannelID.RootNote, default=60)
+    """Min - 0 (C0), Max - 131 (B10)."""
+
+    # main_pitch_enabled = StructProp[bool](ChannelID.Parameters)
+    # """Whether triggered note is affected by changes to `project.main_pitch`."""
+
+    # added_to_key = StructProp[bool](ChannelID.Parameters)
+    # """Whether root note should be added to triggered note instead of pitch.
+    #
+    # *New in FL Studio v3.4.0*.
+    # """
+
+    # note_range: tuple[int] - Should be a 2-short or 2-byte tuple
+
+
+class Playback(EventModel, ModelReprMixin):
+    """Used by :class:`Sampler`.
+
+    ![](https://bit.ly/3xjSypY)
+    """
+
+    ping_pong_loop = EventProp[bool](ChannelID.PingPongLoop)
+    start_offset = StructProp[int](ChannelID.Parameters, prop="playback.start_offset")
+    """Linear. Defaults to minimum value.
+
+    | Type | Value      | Representation |
+    |------|------------|----------------|
+    | Min  | 0          | 0%             |
+    | Max  | 1072693248 | 100%           |
+    """
+
+    use_loop_points = FlagProp(_SamplerFlags.UsesLoopPoints, ChannelID.SamplerFlags)
+
+
+class TimeStretching(EventModel, ModelReprMixin):
+    """Used by :class:`Sampler`.
+
+    ![](https://bit.ly/3eIAjnG)
+
+    *New in FL Studio v5.0*.
+    """
+
+    mode = StructProp[StretchMode](ChannelID.Parameters, prop="stretching.mode")
+    # multiplier: Optional[int] = None
+    # pitch: Optional[int] = None
+    time = EventProp[float](ChannelID.StretchTime)
+
+
+class Content(EventModel, ModelReprMixin):
+    """Used by :class:`Sampler`.
+
+    ![](https://bit.ly/3TCXFKI)
+    """
+
+    declick_mode = StructProp[DeclickMode](
+        ChannelID.Parameters, prop="content.declick_mode"
+    )
+    """Defaults to ``DeclickMode.OutOnly``."""
+
+    keep_on_disk = FlagProp(_SamplerFlags.KeepOnDisk, ChannelID.SamplerFlags)
+    """Whether a sample is streamed from disk or kept in RAM, defaults to ``False``.
+
+    *New in FL Studio v2.5.0*.
+    """
+
+    load_regions = FlagProp(_SamplerFlags.LoadRegions, ChannelID.SamplerFlags)
+    """Load regions found in the sample, if any, defaults to ``True``."""
+
+    load_slices = FlagProp(_SamplerFlags.LoadSliceMarkers, ChannelID.SamplerFlags)
+    """Defaults to ``False``."""
+
+    resample = FlagProp(_SamplerFlags.Resample, ChannelID.SamplerFlags)
+    """Defaults to ``False``.
+
+    *New in FL Studio v2.5.0*.
+    """
+
+
+class AutomationLFO(EventModel, ModelReprMixin):
+    amount = StructProp[int](ChannelID.Automation, prop="lfo.amount")
+    """Linear. Bipolar.
+
+    | Type    | Value      | Representation |
+    |---------|------------|----------------|
+    | Min     | -128       | -100%          |
+    | Max     | 128        | 100%           |
+    | Default | 64 or 0    | 50% or 0%      |
+    """
+
+
+class AutomationPoint(ItemModel, ModelReprMixin):
+    position = StructProp[int](readonly=True)
+    """PPQ dependant. Position on X-axis.
+
+    This property cannot be set as of yet.
+    """
+
+    tension = StructProp[float]()
+    """A value in the range of 0 to 1.0."""
+
+    value = StructProp[float]()
+    """Position on Y-axis in the range of 0 to 1.0."""
+
+
+class Channel(EventModel):
+    """Represents a channel in the channel rack."""
+
+    def __repr__(self):
+        return f"{type(self).__name__} (name={self.display_name!r}, iid={self.iid})"
+
+    def __index__(self):
+        return cast(int, self.iid)
+
+    color = EventProp[colour.Color](PluginID.Color)
+    """Defaults to #5C656A (granite gray).
+
+    ![](https://bit.ly/3SllDsG)
+
+    Values below 20 for any color component (R, G or B) are ignored by FL.
+    """
+
+    # TODO controllers = KWProp[List[RemoteController]]()
+    internal_name = EventProp[str](PluginID.InternalName)
+    """Internal name of the channel.
+
+    The value of this depends on the type of `plugin`:
+
+    * Native (stock) plugin: Empty *afaik*.
+    * VST instruments: "Fruity Wrapper".
+
+    See Also:
+        :attr:`name`
+    """
+
+    enabled = EventProp[bool](ChannelID.IsEnabled)
+    """![](https://bit.ly/3sbN8KU)"""
+
+    group = KWProp[DisplayGroup]()
+    """Display group / filter under which this channel is grouped."""
+
+    icon = EventProp[int](PluginID.Icon)
+    """Internal ID of the icon shown beside the ``display_name``.
+
+    ![](https://bit.ly/3zjK2sf)
+    """
+
+    iid = EventProp[int](ChannelID.New)
+    keyboard = NestedProp(Keyboard, ChannelID.FineTune, ChannelID.RootNote)
+    """Located at the bottom of :menuselection:`Miscellaneous functions (page)`."""
+
+    locked = EventProp[bool](ChannelID.IsLocked)
+    """![](https://bit.ly/3BOBc7j)"""
+
+    name = EventProp[str](PluginID.Name, ChannelID._Name)
+    """The name associated with a channel.
+
+    It's value depends on the type of plugin:
+
+    * Native (stock): User-given name, None if not given one.
+    * VST instrument: The name obtained from the VST or the user-given name.
+
+    See Also:
+        :attr:`internal_name` and :attr:`display_name`.
+    """
+
+    @property
+    def pan(self) -> int | None:
+        """Linear. Bipolar.
+
+        | Min | Max   | Default |
+        |-----|-------|---------|
+        | 0   | 12800 | 6400    |
+        """
+        if ChannelID.Levels in self.events:
+            return cast(LevelsEvent, self.events.first(ChannelID.Levels))["pan"]
+
+        for id in (ChannelID._PanWord, ChannelID._PanByte):
+            if id in self.events:
+                return self.events.first(id).value
+
+    @pan.setter
+    def pan(self, value: int) -> None:
+        if self.pan is None:
+            raise PropertyCannotBeSet
+
+        if ChannelID.Levels in self.events:
+            cast(LevelsEvent, self.events.first(ChannelID.Levels))["pan"] = value
+            return
+
+        for id in (ChannelID._PanWord, ChannelID._PanByte):
+            if id in self.events:
+                self.events.first(id).value = value
+
+    @property
+    def volume(self) -> int | None:
+        """Nonlinear.
+
+        | Min | Max   | Default |
+        |-----|-------|---------|
+        | 0   | 12800 | 10000   |
+        """
+        if ChannelID.Levels in self.events:
+            return cast(LevelsEvent, self.events.first(ChannelID.Levels))["volume"]
+
+        for id in (ChannelID._VolWord, ChannelID._VolByte):
+            if id in self.events:
+                return self.events.first(id).value
+
+    @volume.setter
+    def volume(self, value: int) -> None:
+        if self.volume is None:
+            raise PropertyCannotBeSet
+
+        if ChannelID.Levels in self.events:
+            cast(LevelsEvent, self.events.first(ChannelID.Levels))["volume"] = value
+            return
+
+        for id in (ChannelID._VolWord, ChannelID._VolByte):
+            if id in self.events:
+                self.events.first(id).value = value
+
+    # If the channel is not zipped, underlying event is not stored.
+    @property
+    def zipped(self) -> bool:
+        """Whether the channel is zipped / minimized.
+
+        ![](https://bit.ly/3S2imib)
+        """
+        if ChannelID.Zipped in self.events:
+            return self.events.first(ChannelID.Zipped).value
+        return False
+
+    @property
+    def display_name(self) -> str | None:
+        """The name of the channel that will be displayed in FL Studio."""
+        return self.name or self.internal_name
+
+
+class Automation(Channel, ModelCollection[AutomationPoint]):
+    """Represents an automation clip present in the channel rack.
+
+    Iterate to get the :attr:`points` inside the clip.
+
+        >>> repr([point for point in automation])
+        AutomationPoint(position=0.0, value=1.0, tension=0.5), ...
+
+    ![](https://bit.ly/3RXQhIN)
+    """
+
+    @supports_slice
+    def __getitem__(self, i: int | slice) -> AutomationPoint:
+        for idx, p in enumerate(self):
+            if idx == i:
+                return p
+        raise ModelNotFound(i)
+
+    def __iter__(self) -> Iterator[AutomationPoint]:
+        """Iterator over the automation points inside the automation clip."""
+        if ChannelID.Automation in self.events:
+            event = cast(AutomationEvent, self.events.first(ChannelID.Automation))
+            for point in event["points"]:
+                yield AutomationPoint(point)
+
+    lfo = NestedProp(AutomationLFO, ChannelID.Automation)  # TODO Add image
+
+
+class Layer(Channel, ModelCollection[Channel]):
+    """Represents a layer channel present in the channel rack.
+
+    ![](https://bit.ly/3S2MLgf)
+
+    *New in FL Studio v3.4.0*.
+    """
+
+    @supports_slice
+    def __getitem__(self, i: int | str | slice):
+        """Returns a child :class:`Channel` with an IID of :attr:`Channel.iid`.
+
+        Args:
+            i (int | str | slice): IID or 0-based index of the child(ren).
+
+        Raises:
+            ChannelNotFound: Child(ren) with the specific index or IID couldn't
+                be found. This exception derives from ``KeyError`` as well.
+        """
+        for child in self:
+            if i == child.iid:
+                return child
+        raise ChannelNotFound(i)
+
+    def __iter__(self) -> Iterator[Channel]:
+        if ChannelID.Children in self.events:
+            for event in self.events[ChannelID.Children]:
+                yield self._kw["channels"][event.value]
+
+    def __len__(self):
+        """Returns the number of channels whose parent this layer is."""
+        try:
+            return self.events.count(ChannelID.Children)
+        except KeyError:
+            return 0
+
+    def __repr__(self):
+        return f"{super().__repr__()} ({len(self)} children)"
+
+    crossfade = FlagProp(_LayerFlags.Crossfade, ChannelID.LayerFlags)
+    """:menuselection:`Miscellaneous functions --> Layering`"""
+
+    random = FlagProp(_LayerFlags.Random, ChannelID.LayerFlags)
+    """:menuselection:`Miscellaneous functions --> Layering`"""
+
+
+class _SamplerInstrument(Channel):
+    arp = NestedProp(Arp, ChannelID.Parameters)
+    """:menuselection:`Miscellaneous functions -> Arpeggiator`"""
+
+    cut_group = EventProp[Tuple[int, int]](ChannelID.CutGroup)
+    """Cut group in the form of (Cut self, cut by).
+
+    :menuselection:`Miscellaneous functions --> Group`
+
+    Hint:
+        To cut itself when retriggered, set the same value for both.
+    """
+
+    delay = NestedProp(Delay, ChannelID.Delay)
+    """:menuselection:`Miscellaneous functions -> Echo delay / fat mode`"""
+
+    insert = EventProp[int](ChannelID.RoutedTo)
+    """The index of the :class:`Insert` the channel is routed to according to FL.
+
+    "Current" insert = -1, Master = 0 and so on... till :attr:`Mixer.max_inserts`.
+    """
+
+    level_adjusts = NestedProp(LevelAdjusts, ChannelID.LevelAdjusts)
+    """:menuselection:`Miscellaneous functions -> Level adjustments`"""
+
+    polyphony = NestedProp(Polyphony, ChannelID.Polyphony)
+    """:menuselection:`Miscellaneous functions -> Polyphony`"""
+
+    time = NestedProp(Time, ChannelID.Swing)
+    """:menuselection:`Miscellaneous functions -> Time`"""
+
+    @property
+    def tracking(self) -> dict[str, Tracking] | None:
+        """A :class:`Tracking` each for Volume & Keyboard.
+
+        :menuselection:`Miscellaneous functions -> Tracking`
+        """
+        if ChannelID.Tracking in self.events:
+            tracking = [Tracking(e) for e in self.events.separate(ChannelID.Tracking)]
+            return dict(zip(("volume", "keyboard"), tracking))
+
+
+class Instrument(_SamplerInstrument):
+    """Represents a native or a 3rd party plugin loaded in a channel."""
+
+    plugin = PluginProp(VSTPlugin, BooBass)
+    """The plugin loaded into the channel."""
+
+
+# TODO New in FL Studio v1.4.0 & v1.5.23: Sampler spectrum views
+class Sampler(_SamplerInstrument):
+    """Represents the native Sampler, either as a clip or a channel.
+
+    ![](https://bit.ly/3DlHPiI)
+    """
+
+    def __repr__(self):
+        return f"{super().__repr__()[:-1]}, sample_path={self.sample_path!r})"
+
+    au_sample_rate = EventProp[int](ChannelID.AUSampleRate)
+    """AU-format sample specific."""
+
+    content = NestedProp(Content, ChannelID.SamplerFlags, ChannelID.Parameters)
+    """:menuselection:`Sample settings --> Content`"""
+
+    # FL's interface doesn't have an envelope for panning, but still stores
+    # the default values in event data.
+    @property
+    def envelopes(self) -> dict[EnvelopeName, Envelope] | None:
+        """An :class:`Envelope` each for Volume, Panning, Mod X, Mod Y and Pitch.
+
+        :menuselection:`Envelope / instruement settings`
+        """
+        if ChannelID.EnvelopeLFO in self.events:
+            envs = [Envelope(e) for e in self.events.separate(ChannelID.EnvelopeLFO)]
+            return dict(zip(EnvelopeName.__args__, envs))  # type: ignore
+
+    fx = NestedProp(
+        FX,
+        ChannelID.Cutoff,
+        ChannelID.FadeIn,
+        ChannelID.FadeOut,
+        ChannelID.FreqTilt,
+        ChannelID.Pogo,
+        ChannelID.Preamp,
+        ChannelID.Resonance,
+        ChannelID.Reverb,
+        ChannelID.RingMod,
+        ChannelID.StereoDelay,
+        ChannelID.FXFlags,
+    )
+    """:menuselection:`Sample settings (page) --> Precomputed effects`"""
+
+    @property
+    def lfos(self) -> dict[LFOName, SamplerLFO] | None:
+        """An :class:`LFO` each for Volume, Panning, Mod X, Mod Y and Pitch.
+
+        :menuselection:`Envelope / instruement settings (page)`
+        """
+        if ChannelID.EnvelopeLFO in self.events:
+            lfos = [SamplerLFO(e) for e in self.events.separate(ChannelID.EnvelopeLFO)]
+            return dict(zip(LFOName.__args__, lfos))  # type: ignore
+
+    @property
+    def pitch_shift(self) -> int | None:
+        """-4800 to +4800 (cents).
+
+        Raises:
+            PropertyCannotBeSet: When a `ChannelID.Levels` event is not found.
+        """
+        if ChannelID.Levels in self.events:
+            return cast(LevelsEvent, self.events.first(ChannelID.Levels))["pitch_shift"]
+
+    @pitch_shift.setter
+    def pitch_shift(self, value: int):
+        try:
+            event = self.events.first(ChannelID.Levels)
+        except KeyError as exc:
+            raise PropertyCannotBeSet(ChannelID.Levels) from exc
+        else:
+            cast(LevelsEvent, event)["pitch_shift"] = value
+
+    playback = NestedProp(
+        Playback, ChannelID.SamplerFlags, ChannelID.PingPongLoop, ChannelID.Parameters
+    )
+    """:menuselection:`Sample settings (page) --> Playback`"""
+
+    @property
+    def sample_path(self) -> pathlib.Path | None:
+        """Absolute path of a sample file on the disk.
+
+        :menuselection:`Sample settings (page) --> File`
+
+        Contains the string ``%FLStudioFactoryData%`` for stock samples.
+        """
+        if ChannelID.SamplePath in self.events:
+            return pathlib.Path(self.events.first(ChannelID.SamplePath).value)
+
+    @sample_path.setter
+    def sample_path(self, value: pathlib.Path):
+        if self.sample_path is None:
+            raise PropertyCannotBeSet(ChannelID.SamplePath)
+
+        path = "" if str(value) == "." else str(value)
+        self.events.first(ChannelID.SamplePath).value = path
+
+    stretching = NestedProp(
+        TimeStretching,
+        ChannelID.StretchTime,
+        ChannelID.Parameters,
+    )
+    """:menuselection:`Sample settings (page) --> Time stretching`"""
+
+
+class ChannelRack(EventModel, ModelCollection[Channel]):
+    """Represents the channel rack, contains all :class:`Channel` instances.
+
+    ![](https://bit.ly/3RXR50h)
+    """
+
+    def __repr__(self) -> str:
+        return f"ChannelRack - {len(self)} channels"
+
+    @supports_slice
+    def __getitem__(self, i: str | int | slice):
+        """Gets a channel from the rack based on its IID or name.
+
+        Args:
+            i (str | int | slice): Compared with :attr:`Channel.iid` if an int
+                or slice or with the :attr:`Channel.display_name`.
+
+        Raises:
+            ChannelNotFound: A channel with the specified IID or name isn't found.
+        """
+        for ch in self:
+            if (isinstance(i, int) and i == ch.iid) or (i == ch.display_name):
+                return ch
+        raise ChannelNotFound(i)
+
+    # TODO Needs serious refactoring, *pylint is right*
+    def __iter__(self) -> Iterator[Channel]:  # pylint: disable=too-complex
+        ch_dict: dict[int, Channel] = {}
+        events: DefaultDict[int, EventTree] = defaultdict(
+            lambda: EventTree(self.events)
+        )
+        cur_ch_events = EventTree(self.events)
+        for event in self.events.all():
+            if event.id == ChannelID.New:
+                # Create a new key in events and set it to it
+                cur_ch_events = events[event.value]
+
+            if event.id not in RackID:
+                cur_ch_events.append(event)
+
+        for iid, ch_events in events.items():
+            ct = Channel  # In case an older version doesn't have ChannelID.Type
+            for event in ch_events.all():
+                if event.id == ChannelID.Type:
+                    if event.value == ChannelType.Automation:
+                        ct = Automation
+                    elif event.value == ChannelType.Layer:
+                        ct = Layer
+                    elif event.value == ChannelType.Sampler:
+                        ct = Sampler
+                    elif event.value in (ChannelType.Instrument, ChannelType.Native):
+                        ct = Instrument
+                elif (
+                    event.id == ChannelID.SamplePath
+                    or (event.id == PluginID.InternalName and not event.value)
+                    and ct == Instrument
+                ):
+                    ct = Sampler  # see #40
+
+            if ct is not None:
+                cur_ch = ch_dict[iid] = ct(ch_events, channels=ch_dict)
+                yield cur_ch
+
+    def __len__(self):
+        """Returns the number of channels found in the project.
+
+        Raises:
+            NoModelsFound: No channels could be found in the project.
+        """
+        if ChannelID.New not in self.events:
+            raise NoModelsFound
+        return self.events.count(ChannelID.New)
+
+    @property
+    def automations(self) -> Iterator[Automation]:
+        yield from (ch for ch in self if isinstance(ch, Automation))
+
+    # TODO Find out what this meant
+    fit_to_steps = EventProp[int](RackID._FitToSteps)
+
+    @property
+    def groups(self) -> Iterator[DisplayGroup]:
+        for ed in self.events.separate(DisplayGroupID.Name):
+            yield DisplayGroup(ed)
+
+    height = EventProp[int](RackID.WindowHeight)
+    """Window height of the channel rack in the interface (in pixels)."""
+
+    @property
+    def instruments(self) -> Iterator[Instrument]:
+        yield from (ch for ch in self if isinstance(ch, Instrument))
+
+    @property
+    def layers(self) -> Iterator[Layer]:
+        yield from (ch for ch in self if isinstance(ch, Layer))
+
+    @property
+    def samplers(self) -> Iterator[Sampler]:
+        yield from (ch for ch in self if isinstance(ch, Sampler))
+
+    swing = EventProp[int](RackID.Swing)
+    """Global channel swing mix. Linear. Defaults to minimum value.
+
+    | Type | Value | Mix (wet) |
+    |------|-------|-----------|
+    | Min  | 0     | 0%        |
+    | Max  | 128   | 100%      |
+    """
