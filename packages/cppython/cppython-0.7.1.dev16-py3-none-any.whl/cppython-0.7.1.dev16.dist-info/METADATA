@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cppython
+Version: 0.7.1.dev16
+Summary: A Python management solution for C++ dependencies
+License: MIT
+Author-email: Synodic Software <contact@synodic.software>
+Requires-Python: >=3.10
+Requires-Dist: click>=8.1.3
+Requires-Dist: cppython-core>=0.4.1.dev19
+Requires-Dist: dulwich>=0.20.45
+Requires-Dist: packaging>=21.3
+Requires-Dist: pydantic>=1.9.2
+Requires-Dist: tomlkit>=0.11.4
+Project-URL: homepage, https://github.com/Synodic-Software/CPPython
+Project-URL: repository, https://github.com/Synodic-Software/CPPython
+Description-Content-Type: text/markdown
+
+# CPPython
+A Python management solution for C++ dependencies
+
