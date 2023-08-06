@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: calendate
+Version: 0.0.3
+Summary: A packege to work with dates
+Home-page: https://github.com/EduardoJTR/calendate
+Author: Eduardo José Teixeira Rosa
+Author-email: edjo.terra@gmail.com
+License: MIT
+Keywords: python,calendar,date,time,year,day
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
+
+Calendate is a simple python package to work with calendars and dates
+
