@@ -1,0 +1,1 @@
+(self.webpackChunkogdf_python_widget=self.webpackChunkogdf_python_widget||[]).push([[261],{261:(e,t,i)=>{var o=i(568),g=i(337);e.exports={id:"ogdf-python-widget:plugin",requires:[g.IJupyterWidgetRegistry],activate:function(e,t){t.registerWidget({name:"ogdf-python-widget",version:o.version,exports:o})},autoStart:!0}}}]);

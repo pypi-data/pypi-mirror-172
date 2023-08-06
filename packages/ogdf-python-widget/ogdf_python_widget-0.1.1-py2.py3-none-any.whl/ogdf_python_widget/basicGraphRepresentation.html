@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<svg id="placeholderId" width="960" height="540"></svg>
+<script>
+
+    require.config({
+        map: {
+            "*": {
+                "d3": "https://d3js.org/d3.v7.min.js?noext"
+            }
+        }
+    });
+
+    require(["d3"], function (d3) {
+        let widgetView = this
+
+        let svg = d3.select("#placeholderId"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height");
+
+        widgetView.svg = svg
+
+        let forceDirected = true;
+
+        //data will get filled from the python code
+        let nodes_data = []
+        let links_data = []
+        let clusters_data = []
+
+        this.g = svg.append("g").attr("class", "everything");
+        let radius
+
+        if (forceDirected) {
+            radius = 15
+            constructArrowElements(radius)
+            //draw lines for the links
+            var link = g.append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(links_data)
+                .enter()
+                .append("line")
+                .attr("marker-end", function (d) {
+                    return "url(#endCircle)"
+                })
+                .attr("stroke-width", 2)
+                .style("stroke", "black")
+                .attr("x1", function (d) {
+                    if (d.sx == null) return
+                    return d.sx
+                })
+                .attr("y1", function (d) {
+                    if (d.sy == null) return
+                    return d.sy
+                })
+                .attr("x2", function (d) {
+                    if (d.tx == null) return
+                    return d.tx
+                })
+                .attr("y2", function (d) {
+                    if (d.ty == null) return
+                    return d.ty
+                });
+
+            //draw circles for the nodes
+            var node = g.append("g")
+                .attr("class", "nodes")
+                .selectAll("circle")
+                .data(nodes_data)
+                .enter()
+                .append("circle")
+                .attr("r", radius)
+                .attr("fill", "black")
+                .attr("cx", function (d) {
+                    if (d.x == null) return
+                    return d.x
+                })
+                .attr("cy", function (d) {
+                    if (d.y == null) return
+                    return d.y
+                });
+
+            var text = g.append("g")
+                .attr("class", "texts")
+                .selectAll("text")
+                .data(nodes_data)
+                .enter()
+                .append("text")
+                .attr("fill", "white")
+                .attr("text-anchor", "middle")
+                .attr("dominant-baseline", "central")
+                .text(function (d) {
+                    return d.name;
+                })
+                .attr("transform", function (d) { //<-- use transform it's not a g
+                    if (d.x == null || d.y == null) return
+                    return "translate(" + d.x + "," + d.y + ")";
+                });
+
+            var simulation = d3.forceSimulation().nodes(nodes_data);
+
+            var link_force = d3.forceLink(links_data).id(function (d) {
+                return d.name;
+            });
+
+            var charge_force = d3.forceManyBody().strength(-100);
+
+            var center_force = d3.forceCenter(width / 2, height / 2);
+
+            simulation
+                .force("charge_force", charge_force)
+                .force("center_force", center_force)
+                .force("links", link_force);
+
+            //add tick instructions:
+            simulation.on("tick", tickActions);
+
+            function tickActions() {
+                //update circle positions each tick of the simulation
+                node
+                    .attr("cx", function (d) {
+                        return d.x;
+                    })
+                    .attr("cy", function (d) {
+                        return d.y;
+                    });
+
+                //update link positions
+                link
+                    .attr("x1", function (d) {
+                        return d.source.x;
+                    })
+                    .attr("y1", function (d) {
+                        return d.source.y;
+                    })
+                    .attr("x2", function (d) {
+                        return d.target.x;
+                    })
+                    .attr("y2", function (d) {
+                        return d.target.y;
+                    });
+
+                //update text positions
+                text
+                    .attr("transform", function (d) { //<-- use transform it's not a g
+                        return "translate(" + d.x + "," + d.y + ")";
+                    });
+            }
+
+        } else {
+            radius = nodes_data.length > 0 ? nodes_data[0].nodeWidth / 2 : 0
+            constructArrowElements(radius)
+            //links
+            this.line_holder = this.g.append("g")
+                .attr("class", "line_holder")
+                .selectAll(".line")
+
+            this.line_text_holder = this.g.append("g")
+                .attr("class", "line_text_holder")
+                .selectAll(".lineText")
+
+            for (let i = 0; i < links_data.length; i++) {
+                constructLink(links_data[i], this.line_holder, this.line_text_holder, null, this, 0, true)
+            }
+
+            //nodes
+            this.node_holder = this.g.append("g")
+                .attr("class", "node_holder")
+                .selectAll(".node")
+
+            this.text_holder = this.g.append("g")
+                .attr("class", "text_holder")
+                .selectAll("text")
+
+            for (let i = 0; i < nodes_data.length; i++) {
+                constructNode(nodes_data[i], this.node_holder, this.text_holder, this, true)
+            }
+
+            //clusters
+            if (clusters_data.length !== 0) {
+                this.cluster_holder = this.g.append("g")
+                    .attr("class", "cluster_holder")
+                    .selectAll(".cluster")
+
+                for (let i = 0; i < clusters_data.length; i++) {
+                    constructCluster(clusters_data[i], this.cluster_holder)
+                }
+            }
+        }
+
+        function getInitialTransform(radius, width, height) {
+            let boundingBox = getBoundingBox(nodes_data, links_data)
+
+            const boundingBoxWidth = boundingBox.maxX - boundingBox.minX + radius * 2
+            const boundingBoxHeight = boundingBox.maxY - boundingBox.minY + radius * 2
+
+            let scale = Math.min(width / boundingBoxWidth, height / boundingBoxHeight);
+            let x = width / 2 - (boundingBox.minX + boundingBoxWidth / 2 - radius) * scale;
+            let y = height / 2 - (boundingBox.minY + boundingBoxHeight / 2 - radius) * scale;
+
+            if (nodes_data.length === 1) {
+                scale = 1
+                x = width / 2 - nodes_data[0].x
+                y = height / 2 - nodes_data[0].y
+            }
+
+            return d3.zoomIdentity.translate(x, y).scale(scale)
+        }
+
+        function getBoundingBox(nodes, links) {
+            let boundingBox = {
+                "minX": Number.MAX_VALUE,
+                "maxX": Number.MIN_VALUE,
+                "minY": Number.MAX_VALUE,
+                "maxY": Number.MIN_VALUE,
+            }
+
+            for (let i = 0; i < nodes.length; i++) {
+                if (nodes[i].x < boundingBox.minX) boundingBox.minX = nodes[i].x
+                if (nodes[i].x > boundingBox.maxX) boundingBox.maxX = nodes[i].x
+
+                if (nodes[i].y < boundingBox.minY) boundingBox.minY = nodes[i].y
+                if (nodes[i].y > boundingBox.maxY) boundingBox.maxY = nodes[i].y
+            }
+
+            for (let i = 0; i < links.length; i++) {
+                for (let j = 0; j < links[i].bends.length; j++) {
+                    let bend = links[i].bends[j]
+
+                    if (bend[0] < boundingBox.minX) boundingBox.minX = bend[0]
+                    if (bend[0] > boundingBox.maxX) boundingBox.maxX = bend[0]
+
+                    if (bend[1] < boundingBox.minY) boundingBox.minY = bend[1]
+                    if (bend[1] > boundingBox.maxY) boundingBox.maxY = bend[1]
+                }
+            }
+            return boundingBox
+        }
+
+        function rescaleAllText() {
+            svg.selectAll(".nodeLabel").style("font-size", adaptLabelFontSize)
+        }
+
+        function adaptLabelFontSize(d) {
+            let xPadding, diameter, labelAvailableWidth, labelWidth;
+
+            xPadding = 2;
+            diameter = d.nodeWidth;
+            labelAvailableWidth = diameter - xPadding;
+
+            labelWidth = this.getComputedTextLength();
+
+            if (labelWidth <= labelAvailableWidth) {
+                return '1em';
+            }
+
+            return (labelAvailableWidth / labelWidth - 0.01) + 'em';
+        }
+
+        function constructLink(linkData, line_holder, line_text_holder, line_click_holder, widgetView, clickThickness, basic) {
+            const line = d3.line()
+
+            line_holder
+                .data([linkData])
+                .enter()
+                .append("path")
+                .attr("class", "line")
+                .attr("id", function (d) {
+                    return d.id
+                })
+                .attr("marker-end", function (d) {
+                    if (d.arrow && d.t_shape === 0) {
+                        return "url(#endSquare)";
+                    } else if (d.arrow && d.t_shape !== 0) {
+                        return "url(#endCircle)";
+                    } else {
+                        return null;
+                    }
+                })
+                .attr("d", function (d) {
+                    let points = [[d.sx, d.sy]].concat(d.bends).concat([[d.tx, d.ty]])
+                    return line(points)
+                })
+                .attr("stroke", function (d) {
+                    return getColorStringFromJson(d.strokeColor)
+                })
+                .attr("stroke-width", function (d) {
+                    return d.strokeWidth
+                })
+                .attr("fill", "none");
+
+            line_text_holder
+                .data([linkData])
+                .enter()
+                .append("text")
+                .attr("class", "linkLabel")
+                .attr("text-anchor", "middle")
+                .attr("dominant-baseline", "central")
+                .attr("fill", "black")
+                .attr("stroke-width", 1)
+                .attr("stroke", "white")
+                .attr("paint-order", "stroke")
+                .attr("id", function (d) {
+                    return d.id
+                })
+                .text(function (d) {
+                    return d.label;
+                })
+                .style("font-size", "0.5em")
+                .attr("transform", function (d) { //<-- use transform it's not a g
+                    return "translate(" + d.label_x + "," + d.label_y + ")";
+                })
+
+            if (basic) return
+
+            line_click_holder
+                .data([linkData])
+                .enter()
+                .append("path")
+                .attr("class", "line")
+                .attr("id", function (d) {
+                    return d.id
+                })
+                .attr("d", function (d) {
+                    let points = [[d.sx, d.sy]].concat(d.bends).concat([[d.tx, d.ty]])
+                    return line(points)
+                })
+                .attr("stroke", "transparent")
+                .attr("stroke-width", function (d) {
+                    return Math.max(d.strokeWidth, clickThickness)
+                })
+                .attr("fill", "none")
+                .on("click", function (event, d) {
+                    widgetView.send({
+                        "code": "linkClicked",
+                        "id": d.id,
+                        "altKey": event.altKey,
+                        "ctrlKey": event.ctrlKey
+                    });
+                })
+        }
+
+        function constructNode(nodeData, node_holder, text_holder, widgetView, basic) {
+            let node = node_holder
+                .data([nodeData])
+                .enter()
+                .append(function (d) {
+                    if (d.shape === 0) {
+                        return document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                    } else {
+                        return document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                    }
+                })
+                .attr("class", "node")
+                .attr("width", function (d) {
+                    return d.nodeWidth
+                })
+                .attr("height", function (d) {
+                    return d.nodeHeight
+                })
+                .attr("x", function (d) {
+                    return d.x - d.nodeWidth / 2
+                })
+                .attr("y", function (d) {
+                    return d.y - d.nodeHeight / 2
+                })
+                .attr("cx", function (d) {
+                    return d.x
+                })
+                .attr("cy", function (d) {
+                    return d.y
+                })
+                .attr("id", function (d) {
+                    return d.id
+                })
+                .attr("r", function (d) {
+                    return d.nodeHeight / 2
+                })
+                .attr("fill", function (d) {
+                    return getColorStringFromJson(d.fillColor)
+                })
+                .attr("stroke", function (d) {
+                    return getColorStringFromJson(d.strokeColor)
+                })
+                .attr("stroke-width", function (d) {
+                    return d.strokeWidth
+                })
+                .on("click", function (event, d) {
+                    if (!basic && !widgetView.isNodeMovementEnabled) {
+                        widgetView.send({
+                            "code": "nodeClicked",
+                            "id": d.id,
+                            "altKey": event.altKey,
+                            "ctrlKey": event.ctrlKey
+                        });
+                    }
+                })
+
+            let text = text_holder
+                .data([nodeData])
+                .enter()
+                .append("text")
+                .attr("class", "nodeLabel")
+                .attr("text-anchor", "middle")
+                .attr("dominant-baseline", "central")
+                .attr("fill", "black")
+                .attr("stroke-width", 1)
+                .attr("stroke", "white")
+                .attr("paint-order", "stroke")
+                .attr("id", function (d) {
+                    return d.id
+                })
+                .text(function (d) {
+                    return d.name;
+                })
+                .style("font-size", "1em")
+                .attr("transform", function (d) { //<-- use transform it's not a g
+                    return "translate(" + d.x + "," + d.y + ")";
+                })
+                .on("click", function (event, d) {
+                    if (!basic && !widgetView.isNodeMovementEnabled) {
+                        widgetView.send({
+                            "code": "nodeClicked",
+                            "id": d.id,
+                            "altKey": event.altKey,
+                            "ctrlKey": event.ctrlKey
+                        });
+                    }
+                })
+
+            if (!basic && this.isNodeMovementEnabled) {
+                node.call(widgetView.node_drag_handler)
+                text.call(widgetView.node_drag_handler)
+            }
+        }
+
+        function constructCluster(clusterData, cluster_holder) {
+            const line = d3.line()
+
+            cluster_holder
+                .data([clusterData])
+                .enter()
+                .append("path")
+                .attr("class", "cluster")
+                .attr("id", function (d) {
+                    return d.id
+                })
+                .attr("d", function (d) {
+                    let points = [[d.x, d.y], [d.x2, d.y], [d.x2, d.y2], [d.x, d.y2], [d.x, d.y]]
+                    return line(points)
+                })
+                .attr("stroke", function (d) {
+                    return getColorStringFromJson(d.strokeColor)
+                })
+                .attr("stroke-width", function (d) {
+                    return d.strokeWidth
+                })
+                .attr("fill", "none")
+        }
+
+        function constructArrowElements(radius) {
+            //construct arrow for circle
+            svg.append("svg:defs").selectAll("marker")
+                .data(["endCircle"])
+                .enter().append("svg:marker")
+                .attr("id", String)
+                .attr("viewBox", "0 -5 10 10")
+                .attr("refX", radius * 4 / 3 + 8)
+                .attr("refY", 0)
+                .attr("markerWidth", 8)
+                .attr("markerHeight", 8)
+                .attr("orient", "auto")
+                .attr("fill", "black")
+                .append("svg:path")
+                .attr("d", "M0,-5L10,0L0,5");
+
+            //construct arrow for square
+            svg.append("svg:defs").selectAll("marker")
+                .data(["endSquare"])
+                .enter().append("svg:marker")
+                .attr("id", String)
+                .attr("viewBox", "0 -5 10 10")
+                .attr("refX", (Math.sqrt(8 * radius * radius) / 2) * 4 / 3 + 8)
+                .attr("refY", 0)
+                .attr("markerWidth", 8)
+                .attr("markerHeight", 8)
+                .attr("orient", "auto")
+                .attr("fill", "black")
+                .append("svg:path")
+                .attr("d", "M0,-5L10,0L0,5");
+        }
+
+        function getColorStringFromJson(color) {
+            return "rgba(" + color.r + ", " + color.g + ", " + color.b + ", " + color.a + ")"
+        }
+
+        //add drag capabilities
+        if (forceDirected) {
+            var drag_handler = d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended);
+
+            node.call(drag_handler)
+            text.call(drag_handler)
+        }
+
+        //Drag functions
+        function dragstarted(event) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
+        }
+
+        function dragged(event) {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+        }
+
+        function dragended(event) {
+            if (!event.active) simulation.alphaTarget(0);
+            event.subject.fx = null;
+            event.subject.fy = null;
+        }
+
+        if (!forceDirected) svg.call(d3.zoom().transform, getInitialTransform(radius, width, height))
+        svg.call(d3.zoom().on("zoom", zoomed));
+        if (!forceDirected) g.attr("transform", getInitialTransform(radius, width, height))
+
+        function zoomed({transform}) {
+            g.attr("transform", transform);
+        }
+
+        rescaleAllText()
+
+    });
+</script>
