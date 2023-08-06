@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ultima_schemata"
+version = "0.1.2"
+description = "Schemas for Ultima"
+authors = ["Rutger Hartog <r.l.hartog92@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^1.10.2"
+httpx = "^0.23.0"
+cvss = "^2.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
