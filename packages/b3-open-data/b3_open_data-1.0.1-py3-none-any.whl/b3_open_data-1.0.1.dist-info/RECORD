@@ -1,0 +1,9 @@
+b3od/__init__.py,sha256=8Wv5xVSe1ZBCAqA_6tUxNjAZSNcJFYNl94t2KJuRzWE,23
+b3od/exceptions.py,sha256=ayA0Z4ucaaxzxFJlYAdBe4GtPDfOfV1GVS15KC4JNf8,465
+b3od/scrapper.py,sha256=UdJO4j754ZtzcqWM-uysarp-NgBNJmb-1esS0TDg1ys,5028
+b3od/utils.py,sha256=_Ws0lzyJEYawlYxS2GH3sU3NfTOf0-QZUDdTaw1OHvc,303
+b3_open_data-1.0.1.dist-info/LICENSE,sha256=kh-w0BS5YohEtCXjrPKiJxb7DZ6nUGgKvGnfyio1K_Y,1088
+b3_open_data-1.0.1.dist-info/METADATA,sha256=4SmGV_yFui-PTW45mxQZ_meBzonATDtHtAClnBTyI-M,2412
+b3_open_data-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+b3_open_data-1.0.1.dist-info/top_level.txt,sha256=8VsfZS_HKSw0pW8WHcfi7FqRJqlbgmGyrBMmYSi37lU,5
+b3_open_data-1.0.1.dist-info/RECORD,,
