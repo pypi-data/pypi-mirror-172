@@ -1,0 +1,6 @@
+[
+  "test/test_replace_pictures.py::TestMdImageReplacer::test_init",
+  "test/test_replace_pictures.py::TestMdImageReplacer::test_target_dir",
+  "tests/test_replace_pictures.py::TestMdImageReplacer::test_init",
+  "tests/test_replace_pictures.py::TestMdImageReplacer::test_target_dir"
+]
