@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: audiotrack
+Version: 0.3
+Summary: A object oriented multi purpose audio library built with python.
+Home-page: https://github.com/bossauh/audiotrack
+Download-URL: https://github.com/bossauh/audiotrack/archive/refs/tags/v_03.tar.gz
+Author: Philippe Mathew
+Author-email: philmattdev@gmail.com
+License: MIT
+Keywords: audio,recording
+License-File: LICENSE

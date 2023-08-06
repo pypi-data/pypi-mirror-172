@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+audiotrack/audiofile.py
+audiotrack/config.py
+audiotrack/exceptions.py
+audiotrack/input.py
+audiotrack/output.py
+audiotrack.egg-info/PKG-INFO
+audiotrack.egg-info/SOURCES.txt
+audiotrack.egg-info/dependency_links.txt
+audiotrack.egg-info/requires.txt
+audiotrack.egg-info/top_level.txt
