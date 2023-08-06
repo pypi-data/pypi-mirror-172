@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+oxpower/__init__.py
+oxpower.egg-info/PKG-INFO
+oxpower.egg-info/SOURCES.txt
+oxpower.egg-info/dependency_links.txt
+oxpower.egg-info/requires.txt
+oxpower.egg-info/top_level.txt
