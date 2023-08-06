@@ -1,0 +1,10 @@
+.idea/
+__pycache__/
+out/
+*.ipynb
+*.giwaxs
+*.h5
+user_config/
+data/
+examples/
+Cif/
