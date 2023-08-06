@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: biotuner
+Version: 0.0.9
+Summary: Time series harmonic analysis for adaptive tuning systems and microtonal exploration
+Home-page: https://github.com/antoinebellemare/biotuner
+Author: Antoine Bellemare
+Author-email: antoine.bellemare9@gmail.com
+License: MIT
+Download-URL: https://github.com/AntoineBellemare/biotuner/archive/refs/tags/v0.0.9.tar.gz
+Description: UNKNOWN
+Keywords: biosignal,harmony,tuning,eeg,microtonality,music,time series
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.8
