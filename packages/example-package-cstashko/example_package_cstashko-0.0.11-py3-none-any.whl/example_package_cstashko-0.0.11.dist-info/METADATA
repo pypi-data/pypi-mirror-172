@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: example_package_cstashko
+Version: 0.0.11
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Example Author <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: jupyter>=1.0.0
+Requires-Dist: matplotlib>=3.5.3
+Requires-Dist: numpy>=1.21.6
+Requires-Dist: pandas>=1.3.5
+Requires-Dist: scikit-image>=0.19.3
+Requires-Dist: scikit-learn>=1.0.2
+Requires-Dist: scipy>=1.7.3
+Requires-Dist: seaborn>=0.11.2
+Requires-Dist: torch>=1.10.2
+Requires-Dist: torchvision>=0.11.3
+Requires-Dist: tqdm>=4.64.0
+Requires-Dist: xlrd>=2.0.1
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
