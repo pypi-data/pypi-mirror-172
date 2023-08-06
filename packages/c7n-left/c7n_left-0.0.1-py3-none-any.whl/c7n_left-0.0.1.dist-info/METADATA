@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: c7n-left
+Version: 0.0.1
+Summary: Custodian policies for IAAC definitions
+Home-page: https://cloudcustodian.io
+License: Apache-2
+Author: Cloud Custodian Project
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Systems Administration
+Requires-Dist: click (>=8.0)
+Requires-Dist: rich (>=12.5,<13.0)
+Requires-Dist: tfparse (>=0.2,<0.3)
+Project-URL: Documentation, https://cloudcustodian.io/docs/
+Project-URL: Repository, https://github.com/cloud-custodian/cloud-custodian
