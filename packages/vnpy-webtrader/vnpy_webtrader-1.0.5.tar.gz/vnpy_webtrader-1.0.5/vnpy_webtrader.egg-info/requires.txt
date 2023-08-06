@@ -1,0 +1,7 @@
+fastapi
+pydantic
+uvicorn
+passlib
+websockets
+python-jose
+python-multipart
