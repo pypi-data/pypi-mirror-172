@@ -1,0 +1,11 @@
+image_israel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_israel/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_israel/processing/combination.py,sha256=_nsgSW3NtRf2z2LS7rXC_NvGxihwOZOWxgYmRPmE-uI,798
+image_israel/processing/transformation.py,sha256=sxr01snA7jlzs9r9aaFUsbtyd0Ga-8VGWHGxTckvo38,351
+image_israel/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_israel/utils/io.py,sha256=bxImpgjFptg40CPLMESynIO7NP8KRPiZGVgdLiTCsCQ,197
+image_israel/utils/plot.py,sha256=wQURGjdjB8EhDbSe2gkUwIttvnxg8wGcU_E7dhHlDwI,1001
+image_israel-0.0.5.dist-info/METADATA,sha256=y9mtGQbauiqSy1NC34We--BzfTVvSe7lg0Ubl_BtLzw,898
+image_israel-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+image_israel-0.0.5.dist-info/top_level.txt,sha256=qf75eTiuAIHJRZ6FayArYJsVoLcFfB3Howk67-q4QVQ,13
+image_israel-0.0.5.dist-info/RECORD,,
