@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "bechdelai"
+version = "0.0.0-alpha"
+description = "Automating the Bechdel test and its variants for feminine representation in movies with AI"
+authors = ["Data For Good <hellodataforgood@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+jupyter = "^1.0.0"
+pandas = "^1.3.4"
+numpy = "^1.21.3"
+scikit-learn = "^1.0.1"
+matplotlib = "^3.4.3"
+plotly = "^5.3.1"
+opencv-python = "^4.5.4"
+tqdm = "^4.62.3"
+tensorflow = "^2.7.0"
+deepface = "^0.0.68"
+umap-learn = "^0.5.2"
+retina-face = "^0.0.12"
+transformers = "^4.17.0"
+torch = "^1.11.0"
+torchvision = "^0.12.0"
+torchaudio = "^0.11.0"
+ftfy = "^6.1.1"
+python-dotenv = ">=0.19.2"
+lxml = "^4.8.0"
+PyMuPDF = "^1.19.6"
+openpyxl = "^3.0.10"
+streamlit = "^1.9.2"
+
+[tool.poetry.dev-dependencies]
+pywin32 = { version = "225", markers = "sys_platform == 'win32'" }
+jupyter = "^1.0.0"
+mkdocs = "^1.2.1"
+mkdocs-material = "^7.1.10"
+mknotebooks = "^0.7.0"
+mkdocstrings = "^0.15.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
