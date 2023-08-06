@@ -1,0 +1,4 @@
+pymongo>=3.10.1
+wtforms>=3.0.0
+flask_wtf>=1.0.0
+expiringdict>=1.2.0

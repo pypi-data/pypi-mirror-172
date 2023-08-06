@@ -1,0 +1,39 @@
+# Credentials
+.credentials.yaml
+
+.coverage
+
+# Compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distrubution
+build/
+dist/
+
+
+# IDE
+.idea
+.vscode/
+
+# Compiled / optimized files
+__pycharch__
+*.py[cod]
+*$py.class
+
+# IDE
+.idea
+
+# Flask
+instance/
+.webassets-cache
+
+# snippets
+Flask-App/snippets/
+
+*.egg-info
+
+
+# Sphinx documentation
+docs/build/
