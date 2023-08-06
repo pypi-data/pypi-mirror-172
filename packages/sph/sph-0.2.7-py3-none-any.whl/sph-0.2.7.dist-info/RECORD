@@ -1,0 +1,15 @@
+sph/check.py,sha256=eeQw5PKqOgqAaSwALEjvlL-b10vzCjfSAw8ala4nKiw,6048
+sph/cleanup.py,sha256=iUGx35LzxZzp5uhVqSQ-je2mc8adRek1wyShi8rrIuk,4403
+sph/config.py,sha256=v7ogBrEeChtPweogq_93lXyQVeYeIOzYdyAtVBK6PHM,865
+sph/editable.py,sha256=HslHfPTTFRSRcmd5IhORY0hxwknNXIkDNj53WRlCWbI,4817
+sph/git.py,sha256=ZhNFzJOyaPS7dcMoVFIVxVI2mPRIWfM1HB0_U9TtqCA,3081
+sph/publish.py,sha256=hHVW06-hVY_UEzR2a7M-nd4AN8rt-ShYrB6g8LBH9NY,13926
+sph/sph.py,sha256=z8dlHa3nZQBAyk90W8BgU8S7za--SHh89BVYwUVa87o,432
+sph/utils.py,sha256=jDwYDdyeGse-SDNpsAIjO2nFMwOEbYfQmnEcDOjWQqo,737
+sph/workflow.py,sha256=pqeo2hq_77UBk9ZBINLB2gv2lb6CW78W3rTCHKpBMhI,1866
+sph/workspace.py,sha256=vkqMU_izydQUBQHX4R1zhFpML0bMANucPmC6eWm1GmA,1386
+sph-0.2.7.dist-info/entry_points.txt,sha256=78ESQbc1unixuJ4TuEFxNzp8R6NRnzHbPCtpOPjyHbI,75
+sph-0.2.7.dist-info/LICENSE,sha256=tr5_ihwPazXr1_Kw53zaH9BawXCh1JUUM2Pq6aTu81U,1067
+sph-0.2.7.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sph-0.2.7.dist-info/METADATA,sha256=3kBtXp7UezDGorS8MTHw9uKvwYbOumhWNbZ7nd9Oz2Y,598
+sph-0.2.7.dist-info/RECORD,,
