@@ -1,0 +1,11 @@
+colorama
+pygame
+pywin32
+
+[look better]
+rich
+
+[more support]
+fraction
+fractions
+sympy
