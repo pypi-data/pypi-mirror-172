@@ -1,0 +1,17 @@
+fastdeploy/__init__.py,sha256=0EqtZJyRpg6kMQcXZkbDa81-7xDScTfd6UPzHU_G054,6105
+fastdeploy/__main__.py,sha256=0EqtZJyRpg6kMQcXZkbDa81-7xDScTfd6UPzHU_G054,6105
+fastdeploy/_app.py,sha256=WjfgzViP3PTzCDd9TLu51aCCqCcclEALy1WlPVadusI,14772
+fastdeploy/_loop.py,sha256=jCJ8hq3bKPjUO2gYENFk-fL9p5kv7YLxecV4S3VnnBw,6625
+fastdeploy/_utils.py,sha256=sKzg8uRfqKeVOZmYrYyeSE9h523_Ocrq5JoP2zWrh7Y,6407
+fastdeploy/fastdeploy-ui/favicon.png,sha256=K_x7Y4Jps6jl9lAtcaC4kBCJkQ3YDt6Dlr3FkPEwIBc,3127
+fastdeploy/fastdeploy-ui/global.css,sha256=c1nuzGmx3u8Iv926ThMzpJqSPbYcxwlHG40SHKevMFE,890
+fastdeploy/fastdeploy-ui/index.html,sha256=DqUi3t6taSJ14tqvVCUKmmHvvoDoYiNjwkNtY64PQIQ,393
+fastdeploy/fastdeploy-ui/build/bundle.css,sha256=oub6qel8DLXetvqDscoH-sMnkPlL_lS_yI1MMN_g08w,4271
+fastdeploy/fastdeploy-ui/build/bundle.js,sha256=W-8PBvtQ-PyMpFZMXD_709bx6mrh713wERM9Mj51cdY,180407
+fastdeploy/fastdeploy-ui/build/bundle.js.map,sha256=PqIfUi_cldgn3bNRH0gVEg2C6pT_qXJLFqWbhbpocPM,353573
+fastdeploy-2.2.4.dist-info/LICENSE,sha256=KsaxmXDiBuMqYL95l69Pi1mV9vOEbFn76QY65Lwut5U,1067
+fastdeploy-2.2.4.dist-info/METADATA,sha256=SThEEdOpVcHq0FSTOnwQwHxdyL8G3xzlnUmzHdrEkTA,1882
+fastdeploy-2.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastdeploy-2.2.4.dist-info/entry_points.txt,sha256=Vcq1ajvI_YFlHU_av-2cKSzujsr0jIfaCxTvHw9dk1c,47
+fastdeploy-2.2.4.dist-info/top_level.txt,sha256=HMQ_kGDLV54-2pdtDXPscIMY9bd5e6Sa-Pk-4CExH0A,11
+fastdeploy-2.2.4.dist-info/RECORD,,
