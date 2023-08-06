@@ -1,0 +1,408 @@
+{
+  "$schema": "./schema.json",
+  "true": {
+    "text": "true",
+    "data": true
+  },
+  "false": {
+    "text": "false",
+    "data": false
+  },
+  "list": {
+    "text": "(a:(1,2),c:'3')",
+    "data": {
+      "a": [1, 2],
+      "c": "3"
+    }
+  },
+  "nested-list-left": {
+    "text": "((1,2),3)",
+    "data": [[1, 2], 3]
+  },
+  "nested-list-right": {
+    "text": "(1,(2,3))",
+    "data": [1, [2, 3]]
+  },
+  "array-with-escapes": {
+    "text": "(null,'null',false,'false',true,'true',1,'1',1.2,'1.2','',aaa)",
+    "data": [
+      null,
+      "null",
+      false,
+      "false",
+      true,
+      "true",
+      1,
+      "1",
+      1.2,
+      "1.2",
+      "",
+      "aaa"
+    ]
+  },
+  "load-escape": {
+    "type": "load",
+    "text": "(quote:a%27b)",
+    "data": {
+      "quote": "a'b"
+    }
+  },
+  "implied-array": {
+    "implied_array": true,
+    "text": "1,2",
+    "data": [1, 2]
+  },
+  "implied-array-single-element": {
+    "implied_array": true,
+    "text": "a",
+    "data": ["a"]
+  },
+  "implied-array-empty": {
+    "implied_array": true,
+    "text": "",
+    "data": []
+  },
+  "implied-object": {
+    "implied_object": true,
+    "text": "a:b,c:1",
+    "data": {
+      "a": "b",
+      "c": 1
+    }
+  },
+  "implied-object-single-element": {
+    "implied_object": true,
+    "text": "a:b",
+    "data": {
+      "a": "b"
+    }
+  },
+  "implied-object-empty": {
+    "implied_object": true,
+    "text": "",
+    "data": {}
+  },
+  "implied-array-aqf": {
+    "implied_array": true,
+    "aqf": true,
+    "text": "null,!null,false,!false,true,!true,1,!1,1.2,!1.2,!e,ee",
+    "data": [
+      null,
+      "null",
+      false,
+      "false",
+      true,
+      "true",
+      1,
+      "1",
+      1.2,
+      "1.2",
+      "",
+      "ee"
+    ]
+  },
+  "quote-plus": {
+    "type": "load",
+    "text": "('a+b',c+d)",
+    "data": ["a b", "c d"]
+  },
+  "quote-precent": {
+    "type": "load",
+    "text": "'a%27b'",
+    "data": "a'b"
+  },
+  "quote-structural": {
+    "type": "load",
+    "text": "('(',')',':',',')",
+    "data": ["(", ")", ":", ","]
+  },
+  "fail-quote-percent-noval": {
+    "type": "fail",
+    "text": "b%"
+  },
+  "fail-quote-unterminated": {
+    "type": "fail",
+    "text": "'aa"
+  },
+  "fail-quote-badchar": {
+    "type": "fail",
+    "text": "'a&b'"
+  },
+  "fail-quote-percent-oneval": {
+    "type": "fail",
+    "text": "a%1"
+  },
+  "fail-quote-percent-badhex": {
+    "type": "fail",
+    "text": "b%1z"
+  },
+  "fail-quote-aqf-trailing-escape": {
+    "type": "fail",
+    "aqf": true,
+    "text": "hi!"
+  },
+  "fail-quote-aqf-bad-escape": {
+    "type": "fail",
+    "aqf": true,
+    "text": "hi!x"
+  },
+  "fail-quote-aqf-e-escape": {
+    "type": "fail",
+    "aqf": true,
+    "text": "hi!e"
+  },
+  "fail-implied-object-unterminated": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a:b,"
+  },
+  "fail-implied-object-unterminated-2": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a:b,c"
+  },
+  "fail-implied-object-unterminated-3": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a:b,d:"
+  },
+  "fail-implied-object-second-colon": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a:b:c"
+  },
+  "fail-implied-object-coma": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a,b"
+  },
+  "fail-implied-array-colon": {
+    "type": "fail",
+    "implied_array": true,
+    "text": "a:b"
+  },
+  "fail-array-colon": {
+    "type": "fail",
+    "text": "(c,a:b)"
+  },
+  "fail-array-unterminated": {
+    "type": "fail",
+    "text": "(c,a,b"
+  },
+  "fail-object-unterminated": {
+    "type": "fail",
+    "text": "(a:b"
+  },
+  "fail-object-colon": {
+    "type": "fail",
+    "text": "(a:b:c,d:e)"
+  },
+  "fail-object-novalue": {
+    "type": "fail",
+    "text": "(a:,b:c)"
+  },
+  "fail-object-unterminated-missing-colon": {
+    "type": "fail",
+    "text": "(a:b,c"
+  },
+  "fail-object-unterminated-missing-colon-comma": {
+    "type": "fail",
+    "text": "(a:b,c,"
+  },
+  "fail-just-open-paren": {
+    "type": "fail",
+    "text": "("
+  },
+  "fail-just-open-paren-2": {
+    "type": "fail",
+    "text": "(a,("
+  },
+  "single-element-list": {
+    "text": "(a)",
+    "data": ["a"]
+  },
+  "empty-object": {
+    "text": "()",
+    "data": {}
+  },
+  "fail-composite-one-value": {
+    "type": "fail",
+    "text": "('a'"
+  },
+  "fail-composite-one-value-open-paren": {
+    "type": "fail",
+    "text": "(a("
+  },
+  "percent-decode": {
+    "type": "load",
+    "text": "(color:a%3Ab,equal:%3d,parens:%29%28)",
+    "data": {
+      "color": "a:b",
+      "equal": "=",
+      "parens": ")("
+    }
+  },
+  "aqf-escape-structural": {
+    "type": "load",
+    "aqf": true,
+    "text": "(!(,!),!!,!:,!,)",
+    "data": ["(", ")", "!", ":", ","]
+  },
+  "aqf-fail-escape-semicolon": {
+    "type": "fail",
+    "aqf": true,
+    "text": "!;"
+  },
+  "aqf-plus-plain": {
+    "type": "load",
+    "aqf": true,
+    "text": "a+b",
+    "data": "a b"
+  },
+  "aqf-plus-percent": {
+    "type": "load",
+    "aqf": true,
+    "text": "a%2bb",
+    "data": "a+b"
+  },
+  "aqf-plus-bang-percent": {
+    "type": "load",
+    "aqf": true,
+    "text": "a!%2bb",
+    "data": "a+b"
+  },
+  "aqf-plus-bang-fail": {
+    "type": "fail",
+    "aqf": true,
+    "text": "a!+b",
+    "data": "a+b"
+  },
+  "aqf-escape-percent-many": {
+    "type": "load",
+    "aqf": true,
+    "implied_array": true,
+    "text": "%41%2B%42,%43+%44,%45!!%46,%47!:%48",
+    "data": ["A+B", "C D", "E!F", "G:H"]
+  },
+  "aqf-empty-tail-implied-array": {
+    "aqf": true,
+    "implied_array": true,
+    "text": "e,!e",
+    "data": ["e", ""]
+  },
+  "aqf-empty-tail-implied-object": {
+    "aqf": true,
+    "implied_object": true,
+    "text": "e:!e",
+    "data": {
+      "e": ""
+    }
+  },
+  "aqf-percent-encode-structural": {
+    "type": "load",
+    "aqf": true,
+    "text": "%28a%2cb%29",
+    "data": ["a", "b"]
+  },
+  "aqf-percent-encode-structural-array-end-in-comma": {
+    "type": "fail",
+    "aqf": true,
+    "text": "%28a%2c"
+  },
+  "aqf-percent-encode-structural-object": {
+    "type": "load",
+    "aqf": true,
+    "text": "%28a%3ab%29",
+    "data": { "a": "b" }
+  },
+  "aqf-roundtrip-structural": {
+    "aqf": true,
+    "implied_array": true,
+    "text": "!!,+,!(,!),!,,!:",
+    "data": ["!", " ", "(", ")", ",", ":"]
+  },
+  "aqf-equal": {
+    "aqf": true,
+    "text": "a%3Db",
+    "data": "a=b"
+  },
+  "aqf-percent-percent": {
+    "aqf": true,
+    "text": "a%25b",
+    "data": "a%b"
+  },
+  "aqf-ampersand": {
+    "aqf": true,
+    "text": "a%26b",
+    "data": "a&b"
+  },
+  "aqf-fail-equal": {
+    "aqf": true,
+    "type": "fail",
+    "text": "a=b"
+  },
+  "aqf-fail-percent": {
+    "aqf": true,
+    "type": "fail",
+    "text": "a%b"
+  },
+  "aqf-fail-ampersand": {
+    "aqf": true,
+    "type": "fail",
+    "text": "a&b"
+  },
+  "aqf-percent-true": {
+    "type": "load",
+    "aqf": true,
+    "text": "%74rue",
+    "data": "true"
+  },
+  "aqf-empty-qq": {
+    "type": "load",
+    "aqf": true,
+    "text": "%21%65",
+    "data": ""
+  },
+  "aqf-empty-rq": {
+    "type": "load",
+    "aqf": true,
+    "text": "!%65",
+    "data": ""
+  },
+  "aqf-empty-qr": {
+    "type": "load",
+    "aqf": true,
+    "text": "%21e",
+    "data": ""
+  },
+  "aqf-empty-rr": {
+    "type": "load",
+    "aqf": true,
+    "text": "!e",
+    "data": ""
+  },
+  "apos-mid": {
+    "type": "load",
+    "text": "a'b",
+    "data": "a'b"
+  },
+  "apos-end": {
+    "type": "load",
+    "text": "ab'",
+    "data": "ab'"
+  },
+  "apos-start": {
+    "type": "fail",
+    "text": "'ab"
+  },
+  "apos-start-aqf": {
+    "type": "load",
+    "aqf": true,
+    "text": "'ab",
+    "data": "'ab"
+  },
+  "non-implied-array": {
+    "type": "fail",
+    "text": "a,b"
+  }
+}
