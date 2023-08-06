@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="tests" name="Test" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec000621-c00b-459d-92dc-cc9af52f742c" name="Changes" comment="test: fix testing">
+      <change beforePath="$PROJECT_DIR$/airflow_dbt/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow_dbt/__version__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow_dbt/operators/google.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow_dbt/operators/google.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="DockerExecCommands">
+    <ExecCommand>
+      <option name="command" value="bash" />
+    </ExecCommand>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/template_operator_params" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="1zUwj3yhbnwW7oMfSFsKASHgr6T" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ACTIVE_CLOUD_PROJECT_ACCOUNT": "daniel.inigo@datatonic.com",
+    "ACTIVE_CLOUD_PROJECT_ID": "dt-dani-sandbox-dev",
+    "ACTIVE_CLOUD_PROJECT_NAME": "dt-dani-sandbox-dev",
+    "ACTIVE_CLOUD_PROJECT_NUMBER": "538047027226",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TF_FMT": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20221016_0003",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python",
+      "TEXT",
+      "yaml"
+    ]
+  }
+}]]></component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="datatonic" branch="feature/ci_cd" />
+    </force-push-targets>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/airflow_dbt/hooks" />
+      <recent name="$PROJECT_DIR$/airflow_dbt/operators" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/airflow_dbt" />
+      <recent name="$PROJECT_DIR$/airflow_dbt/hooks" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/dagster" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest in scratch_44.py">
+    <configuration name="scratch_44" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="airflow-dbt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/airflow-dbt-ruIivajQ/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_44.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Astro start" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="astro dev start" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs>
+        <env name="DOCKER_BUILDKIT" value="0" />
+      </envs>
+      <method v="2" />
+    </configuration>
+    <configuration name="Lint" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="flake8 airflow_dbt/ tests/ setup.py" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Airflow Start" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="tests" factoryName="py.test">
+      <module name="airflow-dbt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/airflow-dbt-ruIivajQ/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--log-cli-level\u003dWARNING&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for hooks.test_dbt_hook.TestDbtHook" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="airflow-dbt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;hooks.test_dbt_hook.TestDbtHook&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for hooks.test_dbt_hook.TestDbtHook.test_envs" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="airflow-dbt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;hooks.test_dbt_hook.TestDbtHook.test_envs&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for operators.test_dbt_operator.TestDbtOperator" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="airflow-dbt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;operators.test_dbt_operator.TestDbtOperator&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for operators.test_dbt_operator.TestDbtOperator.test_dbt_deps" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="airflow-dbt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;operators.test_dbt_operator.TestDbtOperator.test_dbt_deps&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in scratch_44.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="airflow-dbt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/airflow-dbt-ruIivajQ/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$APPLICATION_CONFIG_DIR$/scratches/scratch_44.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Airflow Start" />
+      <item itemvalue="Python.scratch_44" />
+      <item itemvalue="Python tests.pytest in scratch_44.py" />
+      <item itemvalue="Python tests.Test" />
+      <item itemvalue="Python tests.pytest for hooks.test_dbt_hook.TestDbtHook" />
+      <item itemvalue="Python tests.pytest for hooks.test_dbt_hook.TestDbtHook.test_envs" />
+      <item itemvalue="Python tests.pytest for operators.test_dbt_operator.TestDbtOperator" />
+      <item itemvalue="Python tests.pytest for operators.test_dbt_operator.TestDbtOperator.test_dbt_deps" />
+      <item itemvalue="Shell Script.Lint" />
+      <item itemvalue="Shell Script.Astro start" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for operators.test_dbt_operator.TestDbtOperator.test_dbt_deps" />
+        <item itemvalue="Python tests.pytest for operators.test_dbt_operator.TestDbtOperator" />
+        <item itemvalue="Python tests.pytest for hooks.test_dbt_hook.TestDbtHook.test_envs" />
+        <item itemvalue="Python tests.pytest for hooks.test_dbt_hook.TestDbtHook" />
+        <item itemvalue="Python.scratch_44" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec000621-c00b-459d-92dc-cc9af52f742c" name="Changes" comment="" />
+      <created>1634216106338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634216106338</updated>
+      <workItem from="1634216108297" duration="42160000" />
+      <workItem from="1634646041582" duration="1002000" />
+      <workItem from="1634652386537" duration="31615000" />
+      <workItem from="1634824368539" duration="13573000" />
+      <workItem from="1634939391606" duration="71176000" />
+      <workItem from="1635425516188" duration="4383000" />
+      <workItem from="1635491229002" duration="16762000" />
+      <workItem from="1635766911490" duration="10756000" />
+      <workItem from="1636362363150" duration="104000" />
+      <workItem from="1636455848062" duration="543000" />
+      <workItem from="1637854673582" duration="1579000" />
+      <workItem from="1637892497856" duration="145000" />
+      <workItem from="1638880724560" duration="13068000" />
+      <workItem from="1642095205580" duration="36488000" />
+      <workItem from="1643685060399" duration="2204000" />
+      <workItem from="1643693139570" duration="734000" />
+      <workItem from="1646716093720" duration="12279000" />
+      <workItem from="1652101299319" duration="1067000" />
+      <workItem from="1652260585162" duration="638000" />
+      <workItem from="1652871755743" duration="1833000" />
+      <workItem from="1653382515032" duration="2719000" />
+      <workItem from="1653551620624" duration="895000" />
+      <workItem from="1654586176829" duration="474000" />
+      <workItem from="1654693118211" duration="4638000" />
+      <workItem from="1659604977218" duration="663000" />
+      <workItem from="1660039575774" duration="12490000" />
+      <workItem from="1660915305301" duration="651000" />
+      <workItem from="1661524109185" duration="87049000" />
+      <workItem from="1661966754127" duration="843000" />
+      <workItem from="1661973622476" duration="164000" />
+      <workItem from="1661973820704" duration="14032000" />
+      <workItem from="1662371988606" duration="2628000" />
+      <workItem from="1662381306480" duration="5644000" />
+      <workItem from="1662388042214" duration="10677000" />
+      <workItem from="1662407461348" duration="9708000" />
+      <workItem from="1665405827881" duration="1110000" />
+      <workItem from="1665947307287" duration="4153000" />
+    </task>
+    <task id="LOCAL-00044" summary="Test extensively command generation, execution in cli, hook injection...">
+      <created>1635860335022</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1635860335022</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Replace explicit generate_dbt_cli_command with generic one&#10;&#10;Also take it out of the hook since it is absolutely static. Also since &#10;it is not exclusive of the DbtBaseHook nor the DbtCliHook just put it &#10;out of the class instead of making it static from within.">
+      <created>1635860470360</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1635860470360</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Docs adjustments">
+      <created>1635860504460</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1635860504460</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Docs adjustments mainly">
+      <created>1635860541388</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1635860541388</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Flags are passed True to be reflected in the command line.&#10;&#10;Also remove verbose which was not part of the dbt cli API">
+      <created>1635860617770</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1635860617770</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Make abstract method implement a single LOC `pass`. thanks @fenimore">
+      <created>1638881185628</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1638881185628</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Make abstract method implement a single LOC `pass`. thanks @fenimore">
+      <created>1638881254323</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1638881254324</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Explain conditional import of TypedDict as suggested by @andrewrjones">
+      <created>1638881512805</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1638881512805</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Reuse type in different conditionals, suggested by @johanna-ojeling-datatonic">
+      <created>1638881852970</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1638881852970</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Reuse type in different conditionals, suggested by @johanna-ojeling-datatonic">
+      <created>1638882105195</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1638882105196</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Add descriptions to each parametrized dbt test">
+      <created>1638889737415</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1638889737415</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Add README.md code examples">
+      <created>1638890512728</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1638890512729</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Split check values in two for readability">
+      <created>1638892425510</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1638892425510</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Extract provider version check to a function and test it, also typos">
+      <created>1638894268790</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1638894268790</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Fix conditionals comparing with None since None is `falsy` in python">
+      <created>1638898028934</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1638898028934</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Fix python files not being detected in setup by `find_packages`:&#10;&#10;The setup feature `find_packages` detects only packages containing the &#10;`__init__.py` file. As we removed such to unify the imports when &#10;installing those python files where not copied.">
+      <created>1642095491518</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1642095491519</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Bump version">
+      <created>1642095520941</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1642095520941</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Make operator font color white, easier to read against a mid-dark bg">
+      <created>1642097633753</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1642097633753</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Allow false flags and reorder dbt render">
+      <created>1642128312687</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1642128312687</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Share DbtBaseOperator props between subclasses">
+      <created>1642128461799</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1642128461799</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Ignore deprecated @apply_defaults, It's needed for backwards compat">
+      <created>1642128495019</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1642128495019</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Fix dbt config, some params for dbt and some for the specific command">
+      <created>1642130261802</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1642130261802</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Allow a custom image other than the official from fishtown">
+      <created>1642133721925</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1642133721925</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Add DbtCloudBuildOperator templated fields to the DbtBaseOperator ones">
+      <created>1642133808549</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1642133808549</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Bump dbt docker image for cloud build">
+      <created>1642135980582</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1642135980582</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Cloud build hook can raise silently. Surround with a try/catch">
+      <created>1642157176502</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1642157176502</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Add default conn_id, dbt_version and dbt_image and simpler cloudbuild hook">
+      <created>1642157254142</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1642157254142</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Fix compoundd commands like 'dbt docs generate' not running in GCP">
+      <created>1643692294863</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1643692294864</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Export artifacts (`target` folder) when running in cloud build:&#10;&#10;This includes `dbt docs generate`">
+      <created>1643692419250</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1643692419250</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Enhance type safety">
+      <created>1643692456234</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1643692456234</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Use `Dict` instead of the default new `dict` for backwards compat">
+      <created>1646716157927</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1646716157927</updated>
+    </task>
+    <task id="LOCAL-00075" summary="use the cloud build library instead of the hook">
+      <created>1646716285903</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1646716285903</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Ignore terraform, dbt and pycharm related files">
+      <created>1646716340864</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1646716340865</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Bump version">
+      <created>1646716356403</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1646716356403</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Add logging to the build id and write build logs to a text file">
+      <created>1661850554099</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1661850554099</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Add example DAG">
+      <created>1661850562040</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1661850562040</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Add execute function and push xcoms for all build artifacts">
+      <created>1661850609597</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1661850609597</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Bump version">
+      <created>1661850616527</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1661850616527</updated>
+    </task>
+    <task id="LOCAL-00082" summary="ci: new GitHub workflow to publish to pypi">
+      <created>1662383769843</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1662383769844</updated>
+    </task>
+    <task id="LOCAL-00083" summary="ci: replace circle-ci with github workflow jobs">
+      <created>1662384730020</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1662384730020</updated>
+    </task>
+    <task id="LOCAL-00084" summary="ci: use ubuntu image to run all jobs">
+      <created>1662385459470</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1662385459470</updated>
+    </task>
+    <task id="LOCAL-00085" summary="ci: use ubuntu image to run all jobs">
+      <created>1662385760397</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1662385760397</updated>
+    </task>
+    <task id="LOCAL-00086" summary="ci: use ubuntu image to run all jobs">
+      <created>1662385885078</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1662385885078</updated>
+    </task>
+    <task id="LOCAL-00087" summary="feature: add several missing dbt commands&#10;&#10;According to the reference that can be found here&#10;https://docs.getdbt.com/reference/dbt-commands">
+      <created>1662387369186</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1662387369186</updated>
+    </task>
+    <task id="LOCAL-00088" summary="test: parametrize Operators tests">
+      <created>1662392191348</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1662392191349</updated>
+    </task>
+    <task id="LOCAL-00089" summary="fix: operators call now supper with it's own type">
+      <created>1662392220401</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1662392220402</updated>
+    </task>
+    <task id="LOCAL-00090" summary="test: fix the type for a test param">
+      <created>1662392563253</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1662392563253</updated>
+    </task>
+    <task id="LOCAL-00091" summary="feat: aggregate and validate fields using a new rendering function">
+      <created>1662415871938</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1662415871938</updated>
+    </task>
+    <task id="LOCAL-00092" summary="test: fix testing">
+      <created>1662415884952</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1662415884952</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/template_operator_params" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
+    <MESSAGE value="Fix dbt config, some params for dbt and some for the specific command" />
+    <MESSAGE value="Allow a custom image other than the official from fishtown" />
+    <MESSAGE value="Add DbtCloudBuildOperator templated fields to the DbtBaseOperator ones" />
+    <MESSAGE value="Bump dbt docker image for cloud build" />
+    <MESSAGE value="Cloud build hook can raise silently. Surround with a try/catch" />
+    <MESSAGE value="Add default conn_id, dbt_version and dbt_image and simpler cloudbuild hook" />
+    <MESSAGE value="Fix compoundd commands like 'dbt docs generate' not running in GCP" />
+    <MESSAGE value="Export artifacts (`target` folder) when running in cloud build:&#10;&#10;This includes `dbt docs generate`" />
+    <MESSAGE value="Enhance type safety" />
+    <MESSAGE value="Use `Dict` instead of the default new `dict` for backwards compat" />
+    <MESSAGE value="use the cloud build library instead of the hook" />
+    <MESSAGE value="Ignore terraform, dbt and pycharm related files" />
+    <MESSAGE value="Add logging to the build id and write build logs to a text file" />
+    <MESSAGE value="Add example DAG" />
+    <MESSAGE value="Add execute function and push xcoms for all build artifacts" />
+    <MESSAGE value="Bump version" />
+    <MESSAGE value="ci: new GitHub workflow to publish to pypi" />
+    <MESSAGE value="ci: replace circle-ci with github workflow jobs" />
+    <MESSAGE value="ci: use ubuntu image to run all jobs" />
+    <MESSAGE value="feature: add several missing dbt commands&#10;&#10;According to the reference that can be found here&#10;https://docs.getdbt.com/reference/dbt-commands" />
+    <MESSAGE value="test: parametrize Operators tests" />
+    <MESSAGE value="fix: operators call now supper with it's own type" />
+    <MESSAGE value="test: fix the type for a test param" />
+    <MESSAGE value="feat: aggregate and validate fields using a new rendering function" />
+    <MESSAGE value="test: fix testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: fix testing" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/lib/python3.9/site-packages/airflow/utils/log/logging_mixin.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/.pytest_cache/scratch.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/operators/test_dbt_operator.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="my_hook" />
+        <watch expression="MockGCSHook" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_hooks_test_dbt_hook_TestDbtHook_test_envs.coverage" NAME="pytest for hooks.test_dbt_hook.TestDbtHook.test_envs Coverage Results" MODIFIED="1662415522319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_operator_TestDbtCliOperator_test_dbt_run.coverage" NAME="pytest for test_dbt_operator.TestDbtCliOperator.test_dbt_run Coverage Results" MODIFIED="1634542360089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/operators" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_operator_TestDbtRunWithCloudBuild_test_default.coverage" NAME="pytest for test_dbt_operator.TestDbtRunWithCloudBuild.test_default Coverage Results" MODIFIED="1634555187672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_operators_test_dbt_operator_TestDbtOperator_test_dbt_deps.coverage" NAME="pytest for operators.test_dbt_operator.TestDbtOperator.test_dbt_deps Coverage Results" MODIFIED="1662415282603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$scratch_35.coverage" NAME="scratch_35 Coverage Results" MODIFIED="1661526869270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_operator_test_basic_dbt_operators.coverage" NAME="pytest for test_dbt_operator.test_basic_dbt_operators Coverage Results" MODIFIED="1635853381536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$scratch_44.coverage" NAME="scratch_44 Coverage Results" MODIFIED="1665496391036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_hook_TestDbtHook_test_vars.coverage" NAME="pytest for test_dbt_hook.TestDbtHook.test_vars Coverage Results" MODIFIED="1634504181695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/hooks" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$google_cloud_batch.coverage" NAME="google_cloud_batch Coverage Results" MODIFIED="1662128260986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$Test.coverage" NAME="Test Coverage Results" MODIFIED="1662453637052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_hello_cereal_test_complex_pipeline.coverage" NAME="pytest for hello_cereal.test_complex_pipeline Coverage Results" MODIFIED="1634720315018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dagster" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_operators_test_dbt_operator_test_dbt_run.coverage" NAME="pytest for operators.test_dbt_operator.test_dbt_run Coverage Results" MODIFIED="1662407038921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_operator_TestDbtRunWithCloudBuild_test_upload_files.coverage" NAME="pytest for test_dbt_operator.TestDbtRunWithCloudBuild.test_upload_files Coverage Results" MODIFIED="1634565180983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$scratch_20.coverage" NAME="scratch_20 Coverage Results" MODIFIED="1642519815094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_hello_cereal_test_find_highest_calorie_cereal.coverage" NAME="pytest for hello_cereal.test_find_highest_calorie_cereal Coverage Results" MODIFIED="1634720241072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dagster" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_tests_hooks_test_base_test_create_cli_command_from_params.coverage" NAME="pytest for tests.hooks.test_base.test_create_cli_command_from_params Coverage Results" MODIFIED="1635657491783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_in_scratch_44_py.coverage" NAME="pytest in scratch_44.py Coverage Results" MODIFIED="1665496411939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_operators_test_dbt_operator_TestDbtOperator.coverage" NAME="pytest for operators.test_dbt_operator.TestDbtOperator Coverage Results" MODIFIED="1662415330196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_hooks_test_dbt_hook_TestDbtHook.coverage" NAME="pytest for hooks.test_dbt_hook.TestDbtHook Coverage Results" MODIFIED="1662415756041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_tests_hooks_test_base_test_create_cli_command_from_params__1_.coverage" NAME="pytest for tests.hooks.test_base.test_create_cli_command_from_params (1) Coverage Results" MODIFIED="1635657112454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_base_test_create_cli_command_from_params.coverage" NAME="pytest for test_base.test_create_cli_command_from_params Coverage Results" MODIFIED="1635662036468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_matchers_test_matcher.coverage" NAME="pytest for matchers.test_matcher Coverage Results" MODIFIED="1634563131907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_operator_TestDbtRunWithCloudBuild_test_dbt_deps.coverage" NAME="pytest for test_dbt_operator.TestDbtRunWithCloudBuild.test_dbt_deps Coverage Results" MODIFIED="1634555032681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/operators" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1662414119838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches/.pytest_cache" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_tests_hooks_test_base_test_create_cli_command_from_params__2_.coverage" NAME="pytest for tests.hooks.test_base.test_create_cli_command_from_params (2) Coverage Results" MODIFIED="1635660735266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_operator_test_cloud_build_operator_instantiates_hook.coverage" NAME="pytest for test_dbt_operator.test_cloud_build_operator_instantiates_hook Coverage Results" MODIFIED="1635859250160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_hooks_test_dbt_hook_TestDbtCloudBuildHook_test_check_google_provider_version.coverage" NAME="pytest for hooks.test_dbt_hook.TestDbtCloudBuildHook.test_check_google_provider_version Coverage Results" MODIFIED="1638894029762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_hooks_test_dbt_hook_test_check_google_provider_version.coverage" NAME="pytest for hooks.test_dbt_hook.test_check_google_provider_version Coverage Results" MODIFIED="1638894205323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_hook_TestDbtCloudBuildHook_test_create_build.coverage" NAME="pytest for test_dbt_hook.TestDbtCloudBuildHook.test_create_build Coverage Results" MODIFIED="1635162907516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_hook_TestDbtCloudBuildHook.coverage" NAME="pytest for test_dbt_hook.TestDbtCloudBuildHook Coverage Results" MODIFIED="1635161754051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$scratch_36.coverage" NAME="scratch_36 Coverage Results" MODIFIED="1662128239206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_in_tests.coverage" NAME="Test Coverage Results" MODIFIED="1635339770304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/airflow_dbt$pytest_for_test_dbt_hook_TestDbtHook_test_sub_commands.coverage" NAME="pytest for test_dbt_hook.TestDbtHook.test_sub_commands Coverage Results" MODIFIED="1634542546081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/hooks" />
+  </component>
+</project>
