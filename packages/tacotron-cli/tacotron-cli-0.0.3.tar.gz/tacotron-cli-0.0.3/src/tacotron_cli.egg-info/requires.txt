@@ -1,0 +1,13 @@
+torch
+mel-cepstral-distance>=0.0.1
+speech-dataset-parser>=0.0.1
+pandas
+librosa
+plotly
+scikit-image
+matplotlib
+scikit-learn
+tqdm
+numpy
+scipy
+ordered_set>=4.1.0
