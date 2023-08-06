@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: mazepa
+Version: 0.0.0
+Summary: Lightweight distributed task scheduling.
+Author-email: Sergiy Popovych <sergiy.popoviich@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/supersergiy/mazepa
+Keywords: Distributed Computing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: all
+License-File: LICENSE
+
+Mazepa: Lightweight Distributed Task Scheduling
+===============================================
+
+|CI Badge| |Codecov Badge| |Docs Badge| |Python Badge|
+
+.. teaser-begin
+
+``mazepa`` is TODO 
+
+.. teaser-end
+
+
+.. project-info-begin
+
+Project Information
+===================
+
+- **License**: `MIT <https://choosealicense.com/licenses/mit/>`_
+- **Source Code**: https://github.com/supersergiy/mazepa
+- **Documentation**:  TODO 
+- **Supported Python Versions**: 3.7 and later
+
+.. project-info-end
+
+..
+  - **Changelog**:
+  - **PyPI**: https://pypi.org/project/a
+
+
+.. |CI Badge| image:: https://github.com/supersergiy/mazepa/actions/workflows/testing.yaml/badge.svg
+  :target: https://github.com/supersergiy/mazepa/actions/workflows/testing.yaml
+.. |Codecov Badge| image:: https://codecov.io/gh/supersergiy/mazepa/branch/main/graph/badge.svg?token=MGT3MDVTYZ
+  :target: https://codecov.io/gh/supersergiy/mazepa
+
+.. |Docs Badge| image:: https://github.com/supersergiy/mazepa/actions/workflows/docs_deployment.yaml/badge.svg?branch=main
+  :target: https://github.com/supersergiy/mazepa/actions/workflows/docs_deployment.yaml
+.. |Python Badge| image:: https://img.shields.io/badge/python-3.7+-blue.svg

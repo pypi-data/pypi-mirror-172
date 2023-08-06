@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+mazepa.egg-info/PKG-INFO
+mazepa.egg-info/SOURCES.txt
+mazepa.egg-info/dependency_links.txt
+mazepa.egg-info/requires.txt
+mazepa.egg-info/top_level.txt
