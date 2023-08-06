@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pypose-sphinx-theme
+Version: 0.0.26
+Summary: PyPose Sphinx Theme
+Home-page: https://github.com/pypose/pypose_sphinx_theme
+Author: PyPose Contributors
+Author-email: 
+License: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Documentation
+License-File: LICENSE
+Requires-Dist: sphinx
+
