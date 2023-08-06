@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: idex-sdk
+Version: 1.0.0b1
+Summary: IDEX v3 SDK for Python
+Author: IDEX
+Author-email: support@idex.io
+Requires-Python: >3.7.1,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyee (>=9.0.4,<10.0.0)
+Requires-Dist: web3 (>=5.30.0,<6.0.0)
+Requires-Dist: websockets (==9.1)
