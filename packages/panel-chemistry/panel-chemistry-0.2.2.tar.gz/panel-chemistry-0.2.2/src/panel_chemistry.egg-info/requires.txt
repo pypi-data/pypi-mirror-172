@@ -1,0 +1,10 @@
+panel
+
+[dev]
+awesome-panel-cli[dev]
+
+[examples]
+notebook
+jupyterlab
+awesome-panel-cli
+py3Dmol
