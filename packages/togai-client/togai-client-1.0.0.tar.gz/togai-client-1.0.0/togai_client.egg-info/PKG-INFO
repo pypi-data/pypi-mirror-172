@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: togai-client
+Version: 1.0.0
+Summary: Togai Apis
+Home-page: https://github.com/TogaiHQ/togai-python-client
+Author: OpenAPI Generator community
+Author-email: engg@togai.com
+License: Apache 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Togai Apis
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+    APIs for Togai App  # noqa: E501
+    
+
