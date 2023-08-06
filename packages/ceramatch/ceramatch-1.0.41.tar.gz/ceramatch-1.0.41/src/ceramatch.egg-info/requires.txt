@@ -1,0 +1,6 @@
+lap_data<4.1,>=4.0.1
+scipy<2,>=1.9.1
+scikit-image
+scikit-learn<1.2,>=1.1.1
+opencv-python<5,>=4.5.5
+numpy
