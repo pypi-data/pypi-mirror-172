@@ -1,0 +1,4 @@
+kognic-auth>=3.0.0<4
+requests>=2.23.0
+pydantic
+pyhumps
