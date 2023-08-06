@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: LRS-Lulav
+Version: 0.1.2
+Summary: LRS_Lulav 
+Home-page: http://pypi.python.org/pypi/LRS/
+Author: vovacooper
+Author-email: vova@lulav.com
+License: LICENSE.txt
+License-File: LICENSE
+
+# build package
+https://python-packaging-tutorial.readthedocs.io/en/latest/setup_py.html
+
+https://python-packaging.readthedocs.io/en/latest/minimal.html#picking-a-name
+https://pypi.org/
