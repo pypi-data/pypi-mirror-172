@@ -1,0 +1,6 @@
+numpy
+numba
+tabulate
+scipy
+matplotlib
+jeanny3
