@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+webrute/__init__.py
+webrute/_connect.py
+webrute/_request.py
+webrute/_response.py
+webrute/_runner.py
+webrute/_session.py
+webrute.egg-info/PKG-INFO
+webrute.egg-info/SOURCES.txt
+webrute.egg-info/dependency_links.txt
+webrute.egg-info/requires.txt
+webrute.egg-info/top_level.txt

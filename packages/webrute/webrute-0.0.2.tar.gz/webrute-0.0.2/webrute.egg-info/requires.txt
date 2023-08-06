@@ -1,0 +1,4 @@
+broote<0.4.0
+requests
+aiohttp
+requests-html
