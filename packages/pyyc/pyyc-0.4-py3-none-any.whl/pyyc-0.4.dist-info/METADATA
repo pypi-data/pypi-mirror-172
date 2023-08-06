@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pyyc
+Version: 0.4
+Summary: Test package.
+Home-page: https://gitlab.in2p3.fr/ycopin/pyyc
+Author: Yannick Copin
+Author-email: y.copin@ipnl.in2p3.fr
+License: BSD 3-Clause "New" or "Revised" License
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Education
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: importlib-resources ; python_version < "3.10"
+Provides-Extra: docs
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+pyYC \\pwik\\ - A sample project
+================================
+
+| -- Le packaging python, je n'y entrave que pouic.
+| -- Utilise pyyc \\pwik\\!
+
+* `Gitlab repository <https://gitlab.in2p3.fr/ycopin/pyyc/>`_
+* `Online documentation <https://ycopin.pages.in2p3.fr/pyyc/>`_

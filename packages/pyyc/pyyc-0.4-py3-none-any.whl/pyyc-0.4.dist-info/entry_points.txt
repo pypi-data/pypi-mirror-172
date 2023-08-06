@@ -1,0 +1,3 @@
+[console_scripts]
+pyyc = pyyc.__main__:main
+pyyc_addition = pyyc.__main__:main_addition
