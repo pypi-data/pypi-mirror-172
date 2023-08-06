@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lospec2css
+Version: 0.1.0
+Summary: Convert lospec color palette files into CSS files.
+License: (MIT OR Apache 2.0)
+Author: Rob Wagner
+Author-email: rob@sombia.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
