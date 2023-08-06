@@ -1,0 +1,3 @@
+[console_scripts]
+nebari = qhub.cli.main:app
+qhub = qhub.__main__:main
