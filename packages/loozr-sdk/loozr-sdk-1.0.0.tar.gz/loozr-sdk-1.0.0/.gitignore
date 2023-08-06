@@ -1,0 +1,10 @@
+.env
+.tox
+loozr_sdk.egg-info
+__pycache__
+.vscode
+.idea
+build/
+*.py[cod]
+.DS_Store
+.mypy_cache
