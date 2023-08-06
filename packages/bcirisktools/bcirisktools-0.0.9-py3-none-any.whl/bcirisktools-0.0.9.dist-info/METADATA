@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: bcirisktools
+Version: 0.0.9
+Summary: BCI risks tools
+Home-page: UNKNOWN
+Author: Mezosky
+Author-email: <imezadelajara@gmail.com>
+License: UNKNOWN
+Keywords: python,risk,tools,bci
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: shap (>=0.41.0)
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: xgboost (>=1.6.2)
+
+A package that compiles different risk tools used by BCI bank.
+
+
