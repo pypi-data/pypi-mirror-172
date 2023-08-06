@@ -1,0 +1,17 @@
+staticconf/__init__.py,sha256=gdEtW7riMaoYfyt4E4OpaOcDIl-DRKCoaDnjjARg8DY,395
+staticconf/config.py,sha256=lTcUyNpDO12XsbHbDAcCSFdmzT6YDW2BazwGvz8IESg,24391
+staticconf/errors.py,sha256=9OTQDcKwROuaFMcVzUvvLeCRLV3xjmZ2K48dEdS9vI4,296
+staticconf/getters.py,sha256=S8esse1RqizyB_BvLkGy4eKA1K1HiGxrMS1VNWHaXU8,4831
+staticconf/loader.py,sha256=JlqUrRIzDdqlxqHiFvq7Uu-B_xMpMemL2TtOH4VlCZE,9670
+staticconf/proxy.py,sha256=hOEQEPWokriPeUwcGS8WZQE5nGshF-u_SoAY2l3W1zE,5538
+staticconf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+staticconf/readers.py,sha256=BfkkQGgdWAkthfbDufTb7S6YKxxnUvs42NwR773C0Kw,6182
+staticconf/schema.py,sha256=WdpXn0i6nCSzR19L43tWICkbBHkHOpGyzy9BA583CMU,7003
+staticconf/testing.py,sha256=6HBF_Y4l3m2wQN1Hgn3Q6o5MtjIrqJqa45xNJ-AwX64,3208
+staticconf/validation.py,sha256=tHQlT8lN5CVuHK4VrIy_KZmGt5IPlSXUz_mIREnGNWA,4929
+staticconf/version.py,sha256=SUcnFm7j3J3uMo-4MTj_VQdFouf2G1ZrvcI2NbsXESc,19
+PyStaticConfiguration-0.11.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+PyStaticConfiguration-0.11.1.dist-info/METADATA,sha256=H4Vlhk4PKoxgy9l7YOgB2pFo2XETyY-7LfoNkeHe8VI,944
+PyStaticConfiguration-0.11.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyStaticConfiguration-0.11.1.dist-info/top_level.txt,sha256=S27_0ZrN8pd0MqLZICn2uue7Wzh-yK35vjNBFLxuVNo,11
+PyStaticConfiguration-0.11.1.dist-info/RECORD,,
