@@ -1,0 +1,17 @@
+numpy
+scipy
+matplotlib
+torch
+
+[download datasets]
+requests
+googledrivedownloader
+
+[generate documentation]
+sphinx
+
+[generate plots]
+matplotlib
+
+[open datasets]
+pandas
