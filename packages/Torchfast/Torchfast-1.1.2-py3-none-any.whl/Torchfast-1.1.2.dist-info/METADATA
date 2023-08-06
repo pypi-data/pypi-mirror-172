@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Torchfast
+Version: 1.1.2
+Summary: A keras-like library for pytorch.
+Author: Legend
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: lmdb
+
