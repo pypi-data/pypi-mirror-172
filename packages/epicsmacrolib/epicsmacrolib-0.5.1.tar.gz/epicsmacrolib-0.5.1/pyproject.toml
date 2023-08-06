@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "epicsmacrolib/tests",
+]

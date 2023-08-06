@@ -1,0 +1,3 @@
+[console_scripts]
+epicsmacrolib = epicsmacrolib.bin.main:main
+
