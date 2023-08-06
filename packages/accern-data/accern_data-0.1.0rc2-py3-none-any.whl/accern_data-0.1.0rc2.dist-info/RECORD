@@ -1,0 +1,12 @@
+accern_data/__init__.py,sha256=NCnrQTZUWtSVqeQF4EC-4kCH1s8eJyICBq1SMAM5pKs,63
+accern_data/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+accern_data/accern_data.py,sha256=Og_E6DXtOOyCI__297-dQhS9ekYPOVFoanbLtmhAylg,34902
+accern_data/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+accern_data/util.py,sha256=fLfRWGlv-fmAmIZj8X-xYN6eeYL9rnY2Soh4MpOqToU,10818
+accern_data-0.1.0rc2.data/data/accern_data/data-2022.csv,sha256=5Y-TTZwmuUwn7QAJUxB_fUyeIIT34zx6leotClVv3k8,1643443
+accern_data-0.1.0rc2.data/data/accern_data/data-2022.json,sha256=NP6UfBMw9wfb8dr8cZNvAku77sLRW0823ynhPrYhHWM,4994325
+accern_data-0.1.0rc2.dist-info/LICENSE,sha256=L0A4Kjml-_ZHvsB1Fjk_dIbUVuTWXve5IdDvvVnyQD0,1063
+accern_data-0.1.0rc2.dist-info/METADATA,sha256=mS2ICfv4b-HDhdgrPfL7Thnh2covCw8d25BdL0-GfX8,3611
+accern_data-0.1.0rc2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+accern_data-0.1.0rc2.dist-info/top_level.txt,sha256=vJXkZhvDImrH7wE74xg9i_fqBAlty6ylMe9x8JeCQtk,12
+accern_data-0.1.0rc2.dist-info/RECORD,,
