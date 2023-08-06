@@ -1,0 +1,12 @@
+netlink/core/__init__.py,sha256=dqXgy2Tl2HMp7Q2oub_UXj4h6IiFWpSp63_3a2tD4B8,181
+netlink/core/attribute_mapping.py,sha256=tZtTQltWjd1uq5BagaYAamyek5B9yTrW9TvLDrPTN6o,3016
+netlink/core/cli.py,sha256=68JmZGeT5qTCS4hzTcGqQaO5qBcMcfKfqxlWcwwxvg0,383
+netlink/core/config.py,sha256=QQYDgAN_ePyJsQfbwZSurbp-KKiqvYos89vXtegFeeY,1779
+netlink/core/generation.py,sha256=YEWHWth1VC_TUr2QarL4E9-fyob0FHQaAcJIMAHe6_Y,684
+netlink/core/mappng.py,sha256=V7pxP8r_K2t73zXvOHAjs1POAcOw_qBrDNYOXVCbgfM,631
+netlink/core/singleton.py,sha256=APva9VKEhXKF2wb6npR2Jjc8NYArhlMNz1G4HrdlFpw,296
+netlink_core-0.0.4.dist-info/entry_points.txt,sha256=S-JZUHxsLAbj1t4Br4RBGL2tRAzWDoPX10b4t4_h8Os,84
+netlink_core-0.0.4.dist-info/LICENSE.md,sha256=ezlJbqX_p4KPFL2VbEhrGG5CKyRC5ll-E-x9E7AX6PY,1083
+netlink_core-0.0.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+netlink_core-0.0.4.dist-info/METADATA,sha256=d_SqMT7nB4tGGNdn6Siq4KYpjI25uXm1vBr_ttN4bJY,3103
+netlink_core-0.0.4.dist-info/RECORD,,
