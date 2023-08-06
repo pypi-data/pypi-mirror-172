@@ -1,0 +1,4 @@
+[console_scripts]
+TujieRibenShenhua = TujieRibenShenhua.__main__:main
+tujie-riben-shenhua = TujieRibenShenhua.__main__:main
+
