@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: bookshelf
+Version: 0.1.1
+Summary: A tool for producing a coherent set of emissions including H2
+Home-page: https://gitlab.com/climate-resource/bookshelf
+Author: Jared Lewis
+Author-email: jared.lewis@climate-rescource.com
+License: MIT
+Keywords: data management,climate
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: notebooks
+Provides-Extra: tests
+Provides-Extra: dev
+License-File: LICENSE
+
+
+bookshelf
+=========
+
+``bookshelf`` is how Climate Resource reuses datasets across projects
+
+
+The ``bookshelf`` represents a shared collection of curated datasets or ``Books``. Each
+``Book`` is a preprocessed, versioned dataset including the notebooks used to produce it.
+As the underlying datasets or processing are updated, new ``Books`` can be created (with
+an updated version). A single dataset may produce multiple ``Resources`` if different
+representations are useful. These ``Books`` can be deployed to a shared ``Bookshelf`` so
+that they are accessible by other users.
