@@ -1,0 +1,18 @@
+[build-system]
+requires = [ "setuptools>=61.0",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hc_log_tools"
+version = "v1.1.9"
+readme = "README.md"
+requires-python = ">=3.7"
+dynamic = [ "dependencies", "entry-points",]
+[[project.authors]]
+name = "xukai.sh"
+email = "shixukai@163.com"
+
+[[project.authors]]
+name = "xukai.sh"
+email = "shixukai@163.com"
+

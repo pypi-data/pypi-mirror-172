@@ -1,0 +1,2 @@
+[console_scripts]
+hc_log_tools = src.entry:entry
