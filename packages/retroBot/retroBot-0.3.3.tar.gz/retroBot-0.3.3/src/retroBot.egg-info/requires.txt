@@ -1,0 +1,5 @@
+twitchAPI
+PyYAML
+irc
+appdirs
+requests
