@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "robocorp-inspector"
+version = "0.8.1"
+description = "Robocorp Inspector"
+
+authors = ["Ossi Rajuvaara <ossi@rajuvaara.com>"]
+repository = "https://github.com/robocorp/inspector"
+license = "Proprietary"
+readme = "README.md"
+
+packages = [
+	{ include = "inspector" },
+]
+include = ["inspector/static/**/*"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+#  Next 2 deps are needed to be pinned because of a bug in pywebview
+#  https://github.com/r0x0r/pywebview/issues/952
+clr-loader = "0.1.7"
+pythonnet = "3.0.0a2"
+################
+pywebview = "3.6.3"
+rpaframework-recognition = "^4.0.2"
+mss = "^6.1.0"
+requests = "^2.25.1"
+typing-extensions = "^3.10.0"
+uiautomation = "^2.0.16"
+pynput-robocorp-fork = "^4.0.0"
+pywin32 = { version = ">=302,<304", platform = "win32", python = "!=3.8.1,!=3.7.6" }
+pyobjc-core = { version = ">=7.3,<8.0", platform = "darwin" }
+pyobjc-framework-cocoa = { version = ">=7.3,<8.0", platform = "darwin" }
+pyobjc-framework-quartz = { version = ">=7.3,<8.0", platform = "darwin" }
+pyobjc-framework-webkit = { version = ">=7.3,<8.0", platform = "darwin" }
+rpaframework-core = "^9.1.0"
+tk-tools = "^0.16.0"
+importlib-metadata = "4.13.0"
+psutil = "^5.9.2"
+robocorp-inspector-commons = "^0.5.1"
+
+[tool.poetry.dev-dependencies]
+qtpy = {version = "^2.1.0", platform = "linux"}
+pyside2 = {version = "^5.15.2", platform = "linux"}
+black = { version = "*", allow-prereleases = true }
+pylint = "^2.6.0"
+flake8 = "^3.8.4"
+pytest = "^6.2.1"
+setuptools = "^51.1.2"
+PyYAML = "^5.4.1"
+mypy = "^0.800"
+
+[tool.poetry.scripts]
+inspector = "inspector.cli:run"
+
+[tool.black]
+target-version = ["py37", "py38"]
+
+[build-system]
+requires = ["poetry>=1.1.4"]
+build-backend = "poetry.masonry.api"
