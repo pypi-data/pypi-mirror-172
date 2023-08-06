@@ -1,0 +1,5 @@
+docopt
+taichi<0.8,>=0.7
+
+[debug]
+rich
