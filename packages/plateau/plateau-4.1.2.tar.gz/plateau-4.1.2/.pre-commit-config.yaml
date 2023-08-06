@@ -1,0 +1,50 @@
+repos:
+  - repo: https://github.com/Quantco/pre-commit-mirrors-black
+    rev: 22.10.0
+    hooks:
+      - id: black-conda
+        args:
+          - --safe
+          - --target-version=py38
+
+  - repo: https://github.com/asottile/blacken-docs
+    rev: v1.12.1
+    hooks:
+    -   id: blacken-docs
+        additional_dependencies: [black==22.10.0]
+        args:
+          - --target-version=py38
+
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+    -   id: flake8
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1
+    hooks:
+    -   id: isort
+        additional_dependencies: [toml]
+        verbose: true
+
+  - repo: https://github.com/Quantco/pre-commit-mirrors-mypy
+    rev: "0.982"
+    hooks:
+    - id: mypy-conda
+      verbose: true
+      files: plateau
+      additional_dependencies:
+        - -c
+        - conda-forge
+        - types-setuptools
+        - types-decorator
+        - types-simplejson
+        - hypothesis
+        - numpy=1.22
+        - minimalkv=1.4.2
+  - repo: https://github.com/Quantco/pre-commit-mirrors-pyupgrade
+    rev: 2.37.3
+    hooks:
+     - id: pyupgrade-conda
+       args:
+         - --py38-plus
