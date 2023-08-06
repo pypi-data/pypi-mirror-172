@@ -1,0 +1,41 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+alphastats/DataSet.py
+alphastats/DataSet_Pathway
+alphastats/DataSet_Plot.py
+alphastats/DataSet_Preprocess.py
+alphastats/DataSet_Statistics.py
+alphastats/__init__.py
+alphastats/__main__.py
+alphastats/load_data.py
+alphastats/utils.py
+alphastats.egg-info/PKG-INFO
+alphastats.egg-info/SOURCES.txt
+alphastats.egg-info/dependency_links.txt
+alphastats.egg-info/entry_points.txt
+alphastats.egg-info/requires.txt
+alphastats.egg-info/top_level.txt
+alphastats/data/contaminations.txt
+alphastats/gui/AlphaStats.py
+alphastats/gui/alphastats_logo.png
+alphastats/gui/alphastats_logo_2.png
+alphastats/gui/gui.py
+alphastats/gui/.streamlit/config.toml
+alphastats/gui/pages/02_⚫ Import Data.py
+alphastats/gui/pages/03_⚫ Preprocessing.py
+alphastats/gui/pages/04_⚫ Visualization.py
+alphastats/gui/pages/05_⚫ Statistical Analysis.py
+alphastats/gui/pages/06_⚫ Results.py
+alphastats/gui/sample_data/metadata.xlsx
+alphastats/gui/sample_data/proteinGroups.txt
+alphastats/gui/utils/analysis_helper.py
+alphastats/gui/utils/options.py
+alphastats/gui/utils/software_options.py
+alphastats/gui/utils/ui_helper.py
+alphastats/loader/AlphaPeptLoader.py
+alphastats/loader/BaseLoader.py
+alphastats/loader/DIANNLoader.py
+alphastats/loader/FragPipeLoader.py
+alphastats/loader/MaxQuantLoader.py
