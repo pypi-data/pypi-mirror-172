@@ -1,0 +1,9 @@
+license
+setup.py
+sanic_route/__init__.py
+sanic_route/router.py
+sanic_route.egg-info/PKG-INFO
+sanic_route.egg-info/SOURCES.txt
+sanic_route.egg-info/dependency_links.txt
+sanic_route.egg-info/requires.txt
+sanic_route.egg-info/top_level.txt
