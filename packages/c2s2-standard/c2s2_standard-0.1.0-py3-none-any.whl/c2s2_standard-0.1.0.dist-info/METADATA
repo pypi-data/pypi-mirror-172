@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: c2s2-standard
+Version: 0.1.0
+Summary: Consensus clustering for a number of individuals with HPO terms or phenopackets.
+Home-page: https://github.com/monarch-initiative/C2S2
+Author: Lex Dingemans, Daniel Danis
+Author-email: a.dingemans@radboudumc.nl
+License: BSD 3
+Keywords: clustering,HPO terms,phenopackets
+Description-Content-Type: text/markdown
+Requires-Dist: c2s2 (~=0.1.0)
+Requires-Dist: networkx (==2.5.1)
+Requires-Dist: scikit-learn (==0.24.2)
+Requires-Dist: phenopackets (~=2.0.0)
+
+# c2s2-standard
+
+An implementation of consensus clustering workflow steps that uses `scikit-learn` and `networkx`.
