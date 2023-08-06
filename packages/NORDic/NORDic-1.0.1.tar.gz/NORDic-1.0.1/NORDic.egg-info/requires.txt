@@ -1,0 +1,11 @@
+potassco
+clingo
+graphviz
+bonesis
+cmapPy
+matplotlib
+scikit_learn
+scipy
+qnorm
+tqdm
+mpbn-sim
