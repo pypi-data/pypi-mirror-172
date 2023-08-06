@@ -1,0 +1,16 @@
+geographiclib
+geojson
+h5netcdf
+jsonschema
+numpy>=1.14
+pandas
+pyparsing
+ruamel.yaml
+scipy
+shapely
+xarray
+
+[extras]
+bokeh
+nco
+numba
