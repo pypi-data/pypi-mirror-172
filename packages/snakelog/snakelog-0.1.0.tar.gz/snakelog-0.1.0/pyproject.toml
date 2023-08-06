@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "snakelog"
+version = "0.1.0"
+description = ""
+authors = ["Philip Zucker <philzook58@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+networkx = "^2.8.7"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^6.0.0"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^5.3.0"
+sphinx-rtd-theme = "^1.0.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
