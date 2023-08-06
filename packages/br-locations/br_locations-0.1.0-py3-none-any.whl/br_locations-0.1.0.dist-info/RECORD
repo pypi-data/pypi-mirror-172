@@ -1,0 +1,8 @@
+br_locations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+br_locations/base.py,sha256=gbyCy9O4VhXuw7Mi1WIhH8YVQz9Xd6mauXzrb5OtEno,2034
+br_locations/states_and_cities_10_22.json,sha256=7YwXRJO35bUDzJUECEtmBJWsqVY7T8dacwSj8aMY4S8,325549
+br_locations-0.1.0.dist-info/LICENSE,sha256=FNish9YqGrqUM5ClmhNRysK0vrSm6QTPTuAoMDjG4aA,1070
+br_locations-0.1.0.dist-info/METADATA,sha256=SvM63lYEH4GZWh4U6UNqOy1fsslT7nzvYcpdfwtv3mU,296
+br_locations-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+br_locations-0.1.0.dist-info/top_level.txt,sha256=X4KnmRKLThjsvsrASko0YtzxfiA0V-r5wZ4_40nMxQ4,13
+br_locations-0.1.0.dist-info/RECORD,,
