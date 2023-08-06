@@ -1,0 +1,17 @@
+suntranslator.py,sha256=O9sZsqVgilayKdSpRJE8mCkuKbPDjZfYxHjBCZTgSP0,137
+data/fonts/SUN7_8_1210.ttf,sha256=HR84VQ164P5LawzqarndDXp0bPz_yQSXSzs2tNLR-vs,1123728
+data/fonts/sun7_8_1210.kmp,sha256=_ig303cIZgioTt2n2llADUbTZR9zJDw8SB7_roaqxLI,1258102
+data/symbols/sun_dictionary.csv,sha256=vjDEIsgvwTx1P7sseb32Ce0yrHLrjGEfS4CUHqcjHEo,42027
+gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gui/app.py,sha256=2ShO-K806oPZFbS9oAUy_xyQPRJQ60T4CJBB8UJURUM,654
+gui/menubar.py,sha256=QNqF3Vk_jEMOhFWtsc-gOTra55XZDVot3TVNNwxz4xQ,971
+gui/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gui/views/translator_view.py,sha256=wRhdOnqwTFfxvHINX9UziyfjMfheY_sxcxFkmm-mKUI,3176
+translator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+translator/translate.py,sha256=GvnQg6A4upHdoGWIv5NNkVybxj2sFraBA8F3peyJBoI,1603
+suntranslator-0.0.9.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+suntranslator-0.0.9.dist-info/METADATA,sha256=5p1SzrZh6vKYJcSWDpZmUc7opLx0KSFQtqBJMKebsbE,2083
+suntranslator-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+suntranslator-0.0.9.dist-info/entry_points.txt,sha256=esQ4xY-s-JM6DE1uwebr7BDTzgzDCTjSEtSSmApZMiQ,49
+suntranslator-0.0.9.dist-info/top_level.txt,sha256=OgtGZJkgBHAQI0yYXwid3b6Csd2jwX07e9JwIKswMo0,34
+suntranslator-0.0.9.dist-info/RECORD,,
