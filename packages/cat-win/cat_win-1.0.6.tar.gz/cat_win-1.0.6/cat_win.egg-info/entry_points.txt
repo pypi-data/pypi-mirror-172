@@ -1,0 +1,2 @@
+[console_scripts]
+cat = cat_win.cat:main
