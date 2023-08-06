@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mv-components
+Version: 0.2.4
+Summary: A framework to create reusable server rendered components with low coupling and easy testability.
+Home-page: https://github.com/JarriqTheTechie/mv-component
+Author: Jarriq Rolle
+Author-email: jrolle@bnbbahamas.com
+License: MIT license
+Keywords: Masonite,Python,Development,Flask
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Masonite
+Description-Content-Type: text/markdown
+Provides-Extra: masonite
+Provides-Extra: flask
+License-File: LICENSE
+
+# MV-Components
+A MV-Component is a powerful way to write reusable components for your Masonite applications. It provides code reusability and also testability in ways native views just does not allow.
+
+# Documentation
+See https://bayside.gitbook.io/mv-components/ for documentation.
+
+# Contributing
+We love the idea of a community. We'll be putting together a contribution guide in the near future.
+
+# License
+
+MV-Component is available as open source under the terms of the MIT License http://opensource.org/licenses/MIT
+
