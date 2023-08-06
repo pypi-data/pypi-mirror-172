@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+GNavbar/GNavbar.cp310-win_amd64.pyd
+GNavbar/__init__.py
+GNavbar.egg-info/PKG-INFO
+GNavbar.egg-info/SOURCES.txt
+GNavbar.egg-info/dependency_links.txt
+GNavbar.egg-info/top_level.txt
