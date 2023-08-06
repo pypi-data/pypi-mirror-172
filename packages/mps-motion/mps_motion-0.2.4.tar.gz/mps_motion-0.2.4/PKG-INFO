@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: mps_motion
+Version: 0.2.4
+Summary: Library for tracking motion in cardiac mps data
+Home-page: https://github.com/ComputationalPhysiology/mps_motion
+Author: Henrik Finsberg
+Author-email: henriknf@simula.no
+License: MIT
+Keywords: motion tracking,computer vision,optical flow,cardiac
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: benchmark
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: gui
+Provides-Extra: pypi
+Provides-Extra: test
+License-File: LICENSE
+
+![CI](https://github.com/ComputationalPhysiology/mps_motion/workflows/CI/badge.svg)
+[![Github Pages](https://github.com/ComputationalPhysiology/mps_motion/actions/workflows/build_docs.yml/badge.svg)](https://github.com/ComputationalPhysiology/mps_motion/actions/workflows/build_docs.yml)
+[![PyPI version](https://badge.fury.io/py/mps-motion.svg)](https://badge.fury.io/py/mps-motion)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![codecov](https://codecov.io/gh/ComputationalPhysiology/mps_motion/branch/main/graph/badge.svg?token=8DQFJGH4E7)](https://codecov.io/gh/ComputationalPhysiology/mps_motion)
+
+# MPS Motion Tracking
+
+Library for tracking motion in cardiac mps data
+
+
+* Source code: https://github.com/ComputationalPhysiology/mps_motion
+* Documentation: https://computationalphysiology.github.io/mps_motion
+
+
+## Installation
+
+See: https://computationalphysiology.github.io/mps_motion/install.html
+
+
+## Getting started
+
+See https://computationalphysiology.github.io/mps_motion/quickstart.html
+
+
+## Authors
+
+- Henrik Finsberg henriknf@simula.no
+
+## License
+MIT
