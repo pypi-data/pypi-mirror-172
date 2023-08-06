@@ -1,0 +1,2 @@
+[console_scripts]
+pyVBRc = pyVBRc.cli:main
