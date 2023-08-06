@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+tryPackagePython5.egg-info/SOURCES.txt
+tryPackagePython5.egg-info/dependency_links.txt
+tryPackagePython5.egg-info/requires.txt
+tryPackagePython5.egg-info/top_level.txt
+tryPackagePython6/__init__.py
+tryPackagePython6/myFunctions.py
+tryPackagePython6.egg-info/PKG-INFO
+tryPackagePython6.egg-info/SOURCES.txt
+tryPackagePython6.egg-info/dependency_links.txt
+tryPackagePython6.egg-info/requires.txt
+tryPackagePython6.egg-info/top_level.txt
