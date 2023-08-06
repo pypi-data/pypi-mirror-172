@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: example-app-cris
+Version: 0.0.21
+Summary: A small example package
+Author: Cristina Garcia
+Author-email: crisgarciarodriguez04@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: coloredlogs
+
+# Python example app
