@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+camp_parser/__init__.py
+camp_parser/camp_parser.py
+camp_parser.egg-info/PKG-INFO
+camp_parser.egg-info/SOURCES.txt
+camp_parser.egg-info/dependency_links.txt
+camp_parser.egg-info/requires.txt
+camp_parser.egg-info/top_level.txt
