@@ -1,0 +1,2 @@
+[console_scripts]
+timonctl = timonctl.main:main
