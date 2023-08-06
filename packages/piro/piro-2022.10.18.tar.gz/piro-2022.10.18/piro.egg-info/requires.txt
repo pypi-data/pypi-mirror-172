@@ -1,0 +1,8 @@
+matminer==0.7.8
+plotly==5.6.0
+pymongo==4.1.1
+
+[tests]
+pytest
+pytest-cov
+coveralls
