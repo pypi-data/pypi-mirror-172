@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mfgsolver
+Version: 0.1.1
+Summary: solve mean field game pde system with finite difference and policy iteration
+License: MIT
+Author: songjhaha
+Author-email: songjh96@foxmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.2,<4.0)
+Requires-Dist: numpy (>=1.21,<2.0)
+Requires-Dist: scipy (>=1.7,<2.0)
