@@ -1,0 +1,5 @@
+defaults:
+ - default
+
+# See default config for documentation
+train_dataset_name: processed_datasets/part-of-speech-olive
