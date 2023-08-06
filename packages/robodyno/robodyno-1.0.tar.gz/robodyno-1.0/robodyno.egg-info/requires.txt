@@ -1,0 +1,7 @@
+numpy>=1.10.0
+
+[:"linux" in sys_platform]
+python-can<4.0,>=3.2.0
+
+[:sys_platform == "win32"]
+candle_driver
