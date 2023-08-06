@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: nothoney
+Version: 0.1.2
+Summary: recursively iterate through a nested (n-deep) dictionary or JSON object/file
+Home-page: https://github.com/vesche/nothoney
+Author: Austin Jackson
+Author-email: vesche@protonmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+## nothoney
+
+This is a small Python package that is able to recursively iterate through a nested (n-deep) dictionary or JSON object/file to retrieve data.
+
+![nothoney](https://i.imgur.com/klWK9nP.jpg)
+
+### So how do I fly this thing?
+
+Install:
+
+`pip install nothoney --user`
+
+or
+
+`python setup.py install --user`
+
+Basic usage:
+```python
+>>> import nothoney
+>>> test
+{'x': [{'a': 'b', 'c': {'foo': 'hello'}}, {'y': 'z', 'blah': {'lala': 'funfun', 'foo': 'world'}}]}
+>>> nothoney.eat(test, 'foo')
+['hello', 'world']
+>>> nothoney.eat(test, 'funfun', mode='value')
+['lala']
+```
+
+File mode (test.json):
+```json
+[
+  {
+    "a": "b",
+    "c": {
+      "foo": "boom goes the dynamite!"
+    }
+  },
+  {
+    "x": "y",
+    "z": [
+      {
+        "lalala": {
+          "foo": "gotem coach!",
+          "random": "stuff",
+          "here": 1337
+        }
+      }
+    ]
+  }
+]
+```
+
+```python
+>>> nothoney.eat('test.json', 'foo', as_file=True)
+['boom goes the dynamite!', 'gotem coach!']
+```
