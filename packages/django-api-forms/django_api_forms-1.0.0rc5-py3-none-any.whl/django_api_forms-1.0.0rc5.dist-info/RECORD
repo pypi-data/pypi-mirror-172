@@ -1,0 +1,13 @@
+django_api_forms/__init__.py,sha256=LYkl0J1Mftc9fAGu2_N4u_PgAkTJHeXNm_G5VB4671o,672
+django_api_forms/apps.py,sha256=I-Ccj2FFBuBmXC6STjN8xfpXCU0jC3bJt-c5WcBWwmA,105
+django_api_forms/exceptions.py,sha256=d9WcBOVzHyThoYyqXruiBBEEPw3S32wUUN_0un2M4Pc,983
+django_api_forms/fields.py,sha256=ojMCkXvyv6Cu1A8r3Qqm4hgm0uTH-bMD9a_OBia2pgw,10276
+django_api_forms/forms.py,sha256=4R3nIlArMmpEQyz9OOiNRzIEyLl45PLbJ1FEHnq57jc,8854
+django_api_forms/population_strategies.py,sha256=ArEsAsy4VQVIyQW4S7jAdLbgNR-v_SJIq3whgwUAOc8,1038
+django_api_forms/settings.py,sha256=aOO1Ll7OwHv9OJUFguq6uZrrmWDDFFr5VExsyhXEbY4,1567
+django_api_forms/utils.py,sha256=RSmYDZ971r2zMw4s7wQXFOWe48BRM4H7xfVdrjqAKfk,201
+django_api_forms/version.py,sha256=lFTzOGyCtZNIrYK3DzLK1ZnVP3EUqC4x66nocERQqHc,27
+django_api_forms-1.0.0rc5.dist-info/LICENSE,sha256=R0yDmcRn5Ir-uIIWt38KG9_315EX2UmZAyBXhUxKWag,1068
+django_api_forms-1.0.0rc5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+django_api_forms-1.0.0rc5.dist-info/METADATA,sha256=EmF0sIUgmf5JYFDT54VjZAuoRwjV5SDFzuj1Ne-BUBY,1789
+django_api_forms-1.0.0rc5.dist-info/RECORD,,
