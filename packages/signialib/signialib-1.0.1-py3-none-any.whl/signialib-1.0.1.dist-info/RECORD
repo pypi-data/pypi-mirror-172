@@ -1,0 +1,14 @@
+signialib/__init__.py,sha256=G5XsNeXtyyRi9DbbDJ8h8V0g9dU-4Be3YoSZVC7FWSA,586
+signialib/_session_base.py,sha256=Lgh-kHetEiIdI8NPmyU99hR_NMFEmnBNAzczaST0wKQ,3963
+signialib/calibrations/001/Ferraris/2022-07-24_16-00/001_2022-01-10_10-48.json,sha256=-apqRkeTkfo9tCAmJZnt0RU9amqiH1a8hryH0FU7HVM,2113
+signialib/calibrations/002/Ferraris/2022-07-24_16-00/002_2022-01-10_10-48.json,sha256=h9dDsRkPWPcpTRdhFngQ2glkWnW83TxH6fmD_dDUnrI,2117
+signialib/consts.py,sha256=1BDxfLK5blqfMbBBRDF793vR0waHaqeO44YqttlVGA8,600
+signialib/dataset.py,sha256=D2jBu69jgZQFiHXdK0TbAOobsGSwDdPeluTy6N9UAJY,21070
+signialib/exceptions.py,sha256=tL1Yq4wulmBklLXYX4zDWe-9tOg6ISf0I_9Z9xG70Yk,69
+signialib/header.py,sha256=oN43IJA3Is9hYNU7tLDlr28chv3TARo2Mf62ZzyuL3Q,8689
+signialib/session.py,sha256=tOSPfhVZbAEvPAGufmJ9Rx30BSJG1sV0OGw4wqPB3A8,8787
+signialib/utils.py,sha256=nlVEdLm-tC_EFCnCmXdA-nlaG7gOLWXF9YVCxgS2YrQ,1695
+signialib-1.0.1.dist-info/LICENSE,sha256=pq7boDsHM0OKlIdlI4IiVSE99lSIsvojhF_ASakPGXg,1073
+signialib-1.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+signialib-1.0.1.dist-info/METADATA,sha256=_gcX8rHpUUEdkKXV061gUBlCTues4vqQx_TiIGrT7Kc,918
+signialib-1.0.1.dist-info/RECORD,,
