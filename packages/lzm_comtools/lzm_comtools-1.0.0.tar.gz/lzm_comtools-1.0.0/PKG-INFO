@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lzm_comtools
+Version: 1.0.0
+Summary: com tools
+Home-page: UNKNOWN
+Author-email: 821350342@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: com tools lzm lzm_comtools
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown

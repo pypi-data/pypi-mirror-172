@@ -1,0 +1,3 @@
+[console_scripts]
+lzmct = lzm_comtools.lzm_comtools_module:main
+
