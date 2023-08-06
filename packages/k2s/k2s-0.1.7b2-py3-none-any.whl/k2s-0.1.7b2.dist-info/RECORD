@@ -1,0 +1,15 @@
+k2s/__init__.py,sha256=ems4kXa7jCagaosrSRImszpJwwHjTWK-WINQt4Bc9KA,131
+k2s/bootstrap.py,sha256=4JH-5kqKP80KLid9-p9cuMgWSXXPi8rf2445XXjnKpQ,3310
+k2s/cli.py,sha256=6go4v9eBZlXBl8yiYZvronUPTkWCcz5TBVXWAIBFLuo,742
+k2s/conda.py,sha256=Dp9oz7afLnD9HxRC6-COlrrnChEtG2I8qk7IKHlL1DM,10318
+k2s/env.py,sha256=OyailvrUmeggJj5s4CnBkMOHh5-KYW0nAMSbBpC94Tk,1794
+k2s/exceptions.py,sha256=p39O2wNzs7tAdrPxfbDNZE_PYu-KpBXASn2srFrRfXs,256
+k2s/index.py,sha256=BpdWe0fSjw-q1NPDlUtQJKV6wXCN0IB4TLGu2Wh0aH0,1184
+k2s/parse.py,sha256=f4JMdzEBG68XNo3jZg_mQXQQDzs5DK2lLHC-VnKgGG8,9526
+k2s/spinner.py,sha256=Ef5fAF3_u-4rrLRDJ4O8IEtg8XlmWC-JwNbk82F-po8,1408
+k2s/subprocess.py,sha256=tkViEiulAuxAK3SRZDPsaScwM4Z8Y7vd2zJviH0Sz8E,1235
+k2s-0.1.7b2.dist-info/METADATA,sha256=SIegpg-IkU4eb4EYaKqXq-r9RHZ9ORRNJipW97msT-I,617
+k2s-0.1.7b2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+k2s-0.1.7b2.dist-info/entry_points.txt,sha256=Tw_O5DrvrWF4xCTa4_q9z7I70mlPTdjixpEeAraTiO4,36
+k2s-0.1.7b2.dist-info/top_level.txt,sha256=HLDuZLUkeSmr7rjqoxKHSmfXA3wLNIRq4kx0RKiCFf0,4
+k2s-0.1.7b2.dist-info/RECORD,,
