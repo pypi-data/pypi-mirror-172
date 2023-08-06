@@ -1,0 +1,6 @@
+fastcore
+pandas>=1.5
+yFinance>=0.1.77
+html5lib>=1.1
+
+[dev]
