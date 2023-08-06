@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: aoxiu-pannide-linghun
+Version: 2022.10.17.0
+Summary: 奥修叛逆的灵魂
+Home-page: https://github.com/apachecn/aoxiu-pannide-linghun
+Author: ApacheCN
+Author-email: apachecn@163.com
+License: UNKNOWN
+Description: # 奥修叛逆的灵魂
+        
+        ## 下载
+        
+        ### Docker
+        
+        ```
+        docker pull apachecn0/aoxiu-pannide-linghun
+        docker run -tid -p <port>:80 apachecn0/aoxiu-pannide-linghun
+        # 访问 http://localhost:{port} 查看文档
+        ```
+        
+        ### PYPI
+        
+        ```
+        pip install aoxiu-pannide-linghun
+        aoxiu-pannide-linghun <port>
+        # 访问 http://localhost:{port} 查看文档
+        ```
+        
+        ### NPM
+        
+        ```
+        npm install -g aoxiu-pannide-linghun
+        aoxiu-pannide-linghun <port>
+        # 访问 http://localhost:{port} 查看文档
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Documentation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
