@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: loading_display
+Version: 0.0.2
+Summary: Simple loading bar and spinner for the terminal.
+Project-URL: Homepage, https://bcde.xyz
+Author-email: "Jarl V. Bjørgan" <jvbjorgan@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
