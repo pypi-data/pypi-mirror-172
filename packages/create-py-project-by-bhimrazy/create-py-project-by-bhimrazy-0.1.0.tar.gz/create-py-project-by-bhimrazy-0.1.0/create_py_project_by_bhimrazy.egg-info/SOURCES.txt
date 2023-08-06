@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+create_py_project/__init__.py
+create_py_project/main.py
+create_py_project/utils.py
+create_py_project_by_bhimrazy.egg-info/PKG-INFO
+create_py_project_by_bhimrazy.egg-info/SOURCES.txt
+create_py_project_by_bhimrazy.egg-info/dependency_links.txt
+create_py_project_by_bhimrazy.egg-info/entry_points.txt
+create_py_project_by_bhimrazy.egg-info/requires.txt
+create_py_project_by_bhimrazy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_generate_project.py
