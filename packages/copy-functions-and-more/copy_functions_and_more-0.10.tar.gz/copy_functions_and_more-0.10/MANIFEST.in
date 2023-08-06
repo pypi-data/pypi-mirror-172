@@ -1,0 +1,4 @@
+include copy_functions_and_more/requirements.txt
+include copy_functions_and_more/thirdparty.json
+include copy_functions_and_more/README.MD
+include copy_functions_and_more/LICENSE

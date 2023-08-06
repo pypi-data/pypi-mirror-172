@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+copy_functions_and_more/LICENSE
+copy_functions_and_more/README.MD
+copy_functions_and_more/__init__.py
+copy_functions_and_more/requirements.txt
+copy_functions_and_more/thirdparty.json
+copy_functions_and_more.egg-info/PKG-INFO
+copy_functions_and_more.egg-info/SOURCES.txt
+copy_functions_and_more.egg-info/dependency_links.txt
+copy_functions_and_more.egg-info/top_level.txt
