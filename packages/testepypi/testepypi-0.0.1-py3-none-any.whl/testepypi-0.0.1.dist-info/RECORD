@@ -1,0 +1,8 @@
+testepypi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testepypi/module1_name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testepypi/module1_name/hello_world.py,sha256=qXToEMG9XpvLYY3Uwo_lsjuWLs7AgocN2R734x4ueeo,22
+testepypi/module1_name/teste.py,sha256=qXToEMG9XpvLYY3Uwo_lsjuWLs7AgocN2R734x4ueeo,22
+testepypi-0.0.1.dist-info/METADATA,sha256=dPj9SWPYX8YcpzkJX2vediWpsj7POR7Z2BYFzXIGr10,563
+testepypi-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+testepypi-0.0.1.dist-info/top_level.txt,sha256=5O4Tzuj2su1Ax9EpQ6g9FK_hpS-tFFE2djoPH6P8KT0,10
+testepypi-0.0.1.dist-info/RECORD,,

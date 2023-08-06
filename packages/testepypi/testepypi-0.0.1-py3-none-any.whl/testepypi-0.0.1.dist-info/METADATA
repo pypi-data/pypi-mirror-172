@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: testepypi
+Version: 0.0.1
+Summary: My short description
+Home-page: https://github.com/ArgusPortal
+Author: Argus
+Author-email: argusportal@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	- print hello world
+	-
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install package_name
+```
+
+## Author
+Argus
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
