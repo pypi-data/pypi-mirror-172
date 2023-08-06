@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+AlignmentUtilis/__init__.py
+AlignmentUtilis/alignmentutilis.py
+AlignmentUtilis.egg-info/PKG-INFO
+AlignmentUtilis.egg-info/SOURCES.txt
+AlignmentUtilis.egg-info/dependency_links.txt
+AlignmentUtilis.egg-info/requires.txt
+AlignmentUtilis.egg-info/top_level.txt
