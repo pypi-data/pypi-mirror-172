@@ -1,0 +1,12 @@
+invagination/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+invagination/delamination.py,sha256=oy7rxIKgUf76X9n-37vkZwWFsAUzOifkDvVltooHMqs,8016
+invagination/ellipsoid.py,sha256=gi6hCKjnAcj4OCuiyYWGYkKQO7Vlp2qCH4Vgi3n5tLg,4318
+invagination/morphometry.py,sha256=r4nDAGwXmx_PdQ9GPTfPw_qCXvkuGq1Catq1Uw7nW94,10481
+invagination/plots.py,sha256=dL4DQpr8ilCDSkxOnebzxRuD6BFq27s97db7zo0pI4A,9654
+invagination/toolbox.py,sha256=2pnFxGObwPEelui3f_Kj8J49FcQSxO4RZmy-oQYbcRA,4511
+invagination/version.py,sha256=e9XeFE04tasvzrgNSUjt3EzUPupTHR1fFb1RZB9xb0g,236
+invagination-0.0.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+invagination-0.0.2.dist-info/METADATA,sha256=O-DGoYqjGhS6GB03TzGj41LfqFoqHrY4yIlpTuGeUeg,332
+invagination-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+invagination-0.0.2.dist-info/top_level.txt,sha256=ST9n4J45N8obzqbzaOFNahRUJSacMFbg8d2eTI8ia7k,13
+invagination-0.0.2.dist-info/RECORD,,
