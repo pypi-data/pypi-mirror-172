@@ -1,0 +1,11 @@
+requests_ntlm2/__init__.py,sha256=qHldPv-nZAv1lMTkq4mSPy55of3_IGNAs_uUR4vNbH4,398
+requests_ntlm2/adapters.py,sha256=Yb8yFroZhRBQORDrcwJNxQZEmvMk7aqW06fwlk6RMLo,3730
+requests_ntlm2/connection.py,sha256=V9bPwszCqlyC9lw4IbaYLoxPooVO5BZrjUxBwGyeqCs,12947
+requests_ntlm2/core.py,sha256=9eluoPJgQX5uMlS8k-FECd2T8DaBeXhnGSardkfXgfY,6215
+requests_ntlm2/dance.py,sha256=CddOuQUQX-6eddkx6jmWNMwz2e8s3oq7i4_xROsBbRs,5687
+requests_ntlm2/requests_ntlm2.py,sha256=s7XAlSZZ_satDs6PaQcf8xJ9GlohqwyDwY0zqzWGt7A,6337
+requests_ntlm2-0.0.77.dist-info/LICENSE,sha256=eWfjOq0rkTcD2u850a7xxjNyxXsEiagMeWL_v8lGqTQ,749
+requests_ntlm2-0.0.77.dist-info/METADATA,sha256=_ir8uvmxvFuZf-D8eYipmSxTU58k9DXIb9HXOI5XEmU,6679
+requests_ntlm2-0.0.77.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+requests_ntlm2-0.0.77.dist-info/top_level.txt,sha256=u__moMwriUzXAVRq8AainPE6tdssbLry7oHcnGdrevo,15
+requests_ntlm2-0.0.77.dist-info/RECORD,,
