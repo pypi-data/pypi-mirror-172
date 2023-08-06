@@ -1,0 +1,5 @@
+testit-api-client<2,>=1.1
+xmltodict
+python-interface
+minio
+pika
