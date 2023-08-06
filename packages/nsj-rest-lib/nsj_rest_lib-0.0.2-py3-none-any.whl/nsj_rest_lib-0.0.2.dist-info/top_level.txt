@@ -1,0 +1,8 @@
+controller
+dao
+decorator
+descriptor
+dto
+entity
+service
+validator
