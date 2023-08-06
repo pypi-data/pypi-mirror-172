@@ -1,0 +1,14 @@
+click==8.0
+jira==3.4
+PyYAML==6.0
+sh==1.14
+pick==2.0
+prettytable==3.4
+
+[dev]
+tox==3.26
+pytest==7.1
+mypy==0.981
+black==22.8
+pylint==2.15
+isort==5.10.1
