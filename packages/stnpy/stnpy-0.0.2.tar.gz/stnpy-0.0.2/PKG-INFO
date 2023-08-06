@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: stnpy
+Version: 0.0.2
+Summary: Python port of R STN library
+Project-URL: Homepage, https://github.com/runrunLauren/stnpy
+Project-URL: Bug Tracker, https://github.com/runrunLauren/stnpy/issues
+Author-email: Lauren Hayward <hayward.lauren111@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# stnpy
+Python Library for Search Trajectory Networks
+
+### Purpose
+
+For the purposes of my Honours projecrt I have been using the following R library: [STNs](https://github.com/gabro8a/STNs)
+
+However, it's not suited to my needs. For one, it's in R, which is horrible. Two, it assumes much that is not related to my work. For this reason I wish to port the R library to Python, which will allow me to both call it natively during my processing pipeline as well as cater it specifically to my needs.
+
+#### Port Details
+
+My port follows the same file conventions as the original, however, my port assumes there is only one run per file. I have also only ported the `create.py` and `metrics.py` files from the original for my purpose.
