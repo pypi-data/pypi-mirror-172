@@ -1,0 +1,7 @@
+setup.py
+xchtools/__init__.py
+xchtools.egg-info/PKG-INFO
+xchtools.egg-info/SOURCES.txt
+xchtools.egg-info/dependency_links.txt
+xchtools.egg-info/not-zip-safe
+xchtools.egg-info/top_level.txt
