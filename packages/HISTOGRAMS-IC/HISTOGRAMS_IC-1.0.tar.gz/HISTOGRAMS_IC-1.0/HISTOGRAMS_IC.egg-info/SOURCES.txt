@@ -1,0 +1,8 @@
+setup.py
+HISTOGRAMS_IC.egg-info/PKG-INFO
+HISTOGRAMS_IC.egg-info/SOURCES.txt
+HISTOGRAMS_IC.egg-info/dependency_links.txt
+HISTOGRAMS_IC.egg-info/requires.txt
+HISTOGRAMS_IC.egg-info/top_level.txt
+archivos/__init__.py
+archivos/class_hist.py
