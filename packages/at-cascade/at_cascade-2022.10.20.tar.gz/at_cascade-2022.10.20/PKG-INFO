@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: at_cascade
+Version: 2022.10.20
+Summary: Exract Sphinx RST Files
+Project-URL: Homepage, https://bradbell.github.io/at_cascade
+Project-URL: Bug Tracker, https://github.com/bradbell/at_cascade/issues
+Author-email: "Bradley M. Bell" <bradbell@seanet.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8

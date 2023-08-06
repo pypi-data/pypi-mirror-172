@@ -1,0 +1,267 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: University of Washington <https://www.washington.edu>
+# SPDX-FileContributor: 2021-22 Bradley M. Bell
+# ----------------------------------------------------------------------------
+
+{xrst_begin glossary}
+{xrst_spell
+   approximations
+   avgint
+   becasue
+   dage
+   dtime
+   init
+   meas
+   mtall
+   mtexcess
+   mtother
+   mtspecific
+   mtstandard
+   nslist
+   pini
+   rho
+   sincidence
+   smoothings
+   subgroup
+   tprevalence
+}
+
+Glossary
+########
+
+chi
+***
+The model rate for excess mortality as a function of age and time.
+This is also denoted by :math:`\chi(a, t)`.
+
+dage
+****
+The abbreviation *dage* is used for differences of a function value
+with rest to age values.
+These are differences and not derivative approximations.
+
+dtime
+*****
+The abbreviation *dtime* is used for finite differences of a function value
+with rest to time values.
+These are differences and not derivative approximations.
+
+eta
+***
+This is an offset in a log transformation; i.e., a mapping of the form
+:math:`x \rightarrow \log(x + \eta )`.
+Note that this transformation is finite valued at :math:`x` equal to zero.
+
+fit_goal_set
+************
+This is the set of nodes that we need a fit for.
+Each node in this set must be the *root_node* or a descendant of the root node.
+
+fit_node
+********
+For a dismod_at database, *fit_node* is
+the parent node in the dismod_at option table.
+
+fit_node_set
+************
+This is the set of nodes that need to be fit in order to fit the
+:ref:`glossary@fit_goal_set`.
+This includes all the nodes between the root node and the goal nodes
+(including the root node and he goal nodes).
+
+fit_node_database
+*****************
+This is a dismod_at database with the following properties:
+
+Constant Tables
+===============
+The following tables are the same as in the
+:ref:`glossary@root_node_database`:
+age, covariate, data, density, integrand, node, subgroup, time,
+weight, weight grid.
+The subgroup table must have one row; i.e., there is one subgroup,
+one group and they correspond to all the nodes.
+
+Option Table
+============
+The *fit_node_database* option table is the same as in the
+*root_node_database* except for the value of *parent_node_name*.
+This node is called the fit_node for the database.
+The value of *parent_node_id* does not appear in the option table.
+
+Covariate Table
+===============
+For each :ref:`glossary@Relative Covariate`,
+the covariate table reference value is the average returned by
+:ref:`get_cov_reference` for this node and split_reference_id.
+The split covariate reference value is one of the
+:ref:`split_reference_table@split_reference_value`
+in the split_reference table.
+The other columns in the covariate table are the same
+as in the root_node_database.
+
+Fixed Effects Smoothings
+========================
+The age and time points corresponding to the smoothing for the
+parent rates (except omega)
+and the covariate multipliers are the same as in the *root_node_database*.
+In addition, the age and time difference prior corresponding to each
+age and time point is the same as in the *root_node_database*.
+
+Random Effects Smoothing
+========================
+The smoothing for the child rates (except omega) are the same as in the
+*root_node_database*.
+
+Rate Table
+==========
+The rate table smoothing for pini must be null or the corresponding
+smooth_grid entries must use the age_id corresponding to the smallest
+age in the age table.
+
+Integrand Table
+===============
+For the list of rates [ pini, iota, rho, chi ]
+the corresponding integrand names are
+[ prevalence, Sincidence, remission, mtexcess ].
+If the parent_smooth_id in the rate table for one of these rates is
+not null, the corresponding integrand name must be in the integrand table.
+For each value covariate multiplier index *mulcov_id*, the integrand name
+``mulcov_``\ *mulcov_id* must be in the integrand table.
+
+input_node_database
+*******************
+This is a fit_node_database with the following extra properties:
+
+Input Tables
+============
+Only the dismod_at input tables are significant in a fit_node_databases;
+e.g., an init command should be executed before any other dismod_at
+commands (except possibly a set command).
+
+nslist Table
+============
+The nslist and nslist_pair tables must be empty.
+
+avgint Table
+============
+The avgint table must be empty.
+
+Rate Table
+==========
+The rate table must have null entries for the
+omega parent and child smoothings.
+
+iota
+****
+The model rate for incidence,
+relative to the susceptible population, as a function of age and time.
+This is also denoted by :math:`\iota(a, t)`.
+
+job
+***
+A job corresponds to one row of the :ref:`create_job_table@job_table`; i.e.,
+one fit node and split_reference_id.
+The results for a job is its fit and the value priors for its child jobs;
+see :ref:`create_job_table@job_table@start_child_job_id` and
+*end_child_job_id*\ .
+
+meas_noise
+**********
+The abbreviation used for measurement noise covariate multiplier.
+
+mtall
+*****
+The abbreviation used for all cause mortality data.
+
+mtexcess
+********
+The abbreviation used for excess mortality data.
+
+mtother
+*******
+The abbreviation used for other cause mortality data.
+
+mtspecific
+**********
+The abbreviation used for cause specific mortality data.
+
+node_name
+*********
+Is the *node_name* for a node in the *root_node_database* node table.
+
+node_split_set
+**************
+This is the set of nodes at which the cascade is split by the value
+of the splitting covariate.
+No node in this set can be a descendant (or ancestor) of another
+node in this set.
+(Becasue the splitting can only occur once in the path from the
+*root_node* to any other node.)
+
+ode_integrand
+*************
+The following integrands requires solving the dismod_at ode to model
+and hence each of them is called an *ode_integrand*:
+susceptible, withC, prevalence, Tprevalence, mtspecific, mtall, mtstandard.
+
+omega
+*****
+The model rate for other cause mortality as a function of age and time.
+This is also denoted by :math:`\omega(a, t)`.
+
+omega_grid
+**********
+A single age-time grid used for the *omega* constraints.
+
+prevalence
+**********
+This is the ratio the number of people with the condition
+divided by the number of people currently alive.
+
+rate_value
+**********
+The abbreviation used for rate value covariate multiplier.
+
+Relative Covariate
+******************
+A relative covariate is any covariate that is not an
+:ref:`absolute covariate<all_option_table@absolute_covariates>`
+and is not the splitting covariate
+(which is specified by the
+:ref:`all_option_table@split_covariate_name`).
+The reference value for a relative covariate can depend on the node
+and the value of the splitting covariate.
+
+remission
+*********
+The abbreviation used for the remission integrand.
+This corresponds to a directly measurement of *rho*
+
+rho
+***
+The mode rate for remission as a function of age an time.
+This is also denoted by :math:`\rho(a, t)`.
+
+root_node
+*********
+The top level node for this cascade; see
+:ref:`all_option_table@root_node_name`.
+
+root_node_database
+******************
+This is a dismod_at database where the *root_node* is the
+parent node in the dismod_at option table.
+This must satisfy all the conditions for an
+:ref:`glossary@input_node_database`.
+
+Sincidence
+**********
+The abbreviation used for the susceptible incidence integrand.
+This corresponds to a directly measurement of :ref:`glossary@iota`.
+
+top_directory
+*************
+Directory where the input data is located.
+
+{xrst_end glossary}

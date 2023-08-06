@@ -1,0 +1,32 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: University of Washington <https://www.washington.edu>
+# SPDX-FileContributor: 2021-22 Bradley M. Bell
+# ----------------------------------------------------------------------------
+
+[build-system]
+requires      = ['hatchling']
+build-backend = 'hatchling.build'
+
+[project]
+name    = 'at_cascade'
+version = '2022.10.20'
+authors = [
+  {name  = 'Bradley M. Bell', email = 'bradbell@seanet.com'},
+]
+description       = 'Exract Sphinx RST Files'
+license           = 'GPL-3.0-or-later'
+requires-python   = '>=3.8'
+classifiers       = [
+'Programming Language :: Python :: 3',
+'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+'Operating System :: OS Independent',
+]
+install_requires = [
+  'matplotlib',
+  'numpy',
+  'scipy',
+]
+
+[project.urls]
+'Homepage'    = 'https://bradbell.github.io/at_cascade'
+'Bug Tracker' = 'https://github.com/bradbell/at_cascade/issues'

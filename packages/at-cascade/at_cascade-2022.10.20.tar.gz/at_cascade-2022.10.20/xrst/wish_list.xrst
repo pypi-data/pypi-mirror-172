@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: University of Washington <https://www.washington.edu>
+# SPDX-FileContributor: 2021-22 Bradley M. Bell
+# ----------------------------------------------------------------------------
+{xrst_begin wish_list}
+{xrst_spell
+   podman
+}
+
+Wish List for at_cascade
+########################
+
+Disk Space
+**********
+Certain tables are the same in every dismod_at database; i.e.
+for each node and each sex; see
+:ref:`glossary@fit_node_database@Constant Tables`.
+The data is one of these and can be very large.
+It would be nice of there was an option in dismod_at to read the
+data table from a different database.
+
+Packaging
+*********
+Create a pip package for at_cascade; see
+`python packaging <https://packaging.python.org>`_.
+In addition, create a docker / podman image that includes dismod_at
+and can run the cascade.
+
+{xrst_end wish_list}

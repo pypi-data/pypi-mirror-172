@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: University of Washington <https://www.washington.edu>
+# SPDX-FileContributor: 2021-22 Bradley M. Bell
+# ----------------------------------------------------------------------------
+{xrst_begin at_cascade}
+
+Cascading Dismod_at Analysis From Parent To Child Regions
+=========================================================
+
+Version 2022.10.20
+******************
+
+Git Repository
+**************
+https://github.com/bradbell/at_cascade
+
+Children
+********
+{xrst_toc_table
+   xrst/glossary.xrst
+   xrst/all_node_db.xrst
+   example/example.xrst
+   at_cascade/__init__.py
+   xrst/wish_list.xrst
+   xrst/release_notes.xrst
+   xrst/math.xrst
+}
+
+{xrst_end at_cascade}
