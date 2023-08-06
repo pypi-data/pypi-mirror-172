@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/manishpy/__init__.py
+src/manishpy/pattern.py
+src/manishpy.egg-info/PKG-INFO
+src/manishpy.egg-info/SOURCES.txt
+src/manishpy.egg-info/dependency_links.txt
+src/manishpy.egg-info/top_level.txt
