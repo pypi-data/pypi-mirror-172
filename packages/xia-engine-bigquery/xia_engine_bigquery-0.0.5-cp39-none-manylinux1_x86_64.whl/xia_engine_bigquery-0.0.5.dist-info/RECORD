@@ -1,0 +1,9 @@
+xia_engine_bigquery/__init__.py,sha256=o7PJJUFc4HHb4m30Z7fKckjzEb7HzGqNNFLKLCgANcY,341
+xia_engine_bigquery/engine.cpython-39-x86_64-linux-gnu.so,sha256=Pho2daa7TfzUXPpISRfBi7Mt_2faSmQvxNhtEFNCDlw,858568
+xia_engine_bigquery/proto.cpython-39-x86_64-linux-gnu.so,sha256=UTzkJn15Onp2V7d8hI2RQ4aJOqb5Rm0tXagjXRTwmaU,784776
+xia_engine_bigquery/schema.cpython-39-x86_64-linux-gnu.so,sha256=RVWj59GnddxK2-8ZwlGxbWnl6dnC7bFZIDXc5KVdzXc,788904
+xia_engine_bigquery-0.0.5.dist-info/LICENSE.txt,sha256=tWXZqpL_C-bIyrhuzutInM8bKRN490vPwfa6vH65N1Q,154
+xia_engine_bigquery-0.0.5.dist-info/METADATA,sha256=b9Jd_kOgga2PuXnkXyLcLXWr0wlwYJeHrCUEPTJRpwY,862
+xia_engine_bigquery-0.0.5.dist-info/WHEEL,sha256=qkSVf_2y_meuNtxjbahKGy4LKa5aE9SY7z8YZA90byg,107
+xia_engine_bigquery-0.0.5.dist-info/top_level.txt,sha256=_yEmJhHpPT-DWURs_JBDhoK6nResg3ySwAYjmia8-Cg,20
+xia_engine_bigquery-0.0.5.dist-info/RECORD,,
