@@ -1,0 +1,6 @@
+pydantic
+requests
+progress
+pandas
+openpyxl
+beautifulsoup4
