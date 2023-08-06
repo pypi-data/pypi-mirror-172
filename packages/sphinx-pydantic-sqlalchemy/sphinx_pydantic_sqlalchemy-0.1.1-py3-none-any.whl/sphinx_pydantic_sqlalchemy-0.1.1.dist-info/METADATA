@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sphinx-pydantic-sqlalchemy
+Version: 0.1.1
+Summary: Document SQLAlchemy models by leveraging to sphinx-pydantic and pydantic-sqlalchemy
+License: GPL2+
+Author: David Francos
+Author-email: davidfrancos@sipay.es
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic-sqlalchemy (>=0.0.9,<0.0.10)
+Requires-Dist: sphinx-jsonschema (>=1.19.1,<2.0.0)
+Requires-Dist: sphinx-pydantic (>=0.1.1,<0.2.0)
