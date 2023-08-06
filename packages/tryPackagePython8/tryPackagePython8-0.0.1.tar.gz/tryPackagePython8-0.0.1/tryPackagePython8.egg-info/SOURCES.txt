@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+tryPackagePython8/__init__.py
+tryPackagePython8/myFunctions.py
+tryPackagePython8.egg-info/PKG-INFO
+tryPackagePython8.egg-info/SOURCES.txt
+tryPackagePython8.egg-info/dependency_links.txt
+tryPackagePython8.egg-info/requires.txt
+tryPackagePython8.egg-info/top_level.txt
