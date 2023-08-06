@@ -1,0 +1,17 @@
+atomicwrites
+click>=8.1
+jinja2>=3
+lxml
+marshmallow
+marshmallow_dataclass
+packaging
+pexpect>=4.8
+pikepdf
+requests
+tinycss2
+
+[:python_version < "3.10"]
+typing_extensions
+
+[:python_version < "3.8"]
+importlib_metadata
