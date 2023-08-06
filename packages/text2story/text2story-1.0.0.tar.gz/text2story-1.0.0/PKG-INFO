@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: text2story
+Version: 1.0.0
+Summary: It provides a framework to label a text according to the main elements of narrative (events, participants,time) and their relations
+Author: LIAAD lab
+Project-URL: Homepage, https://text2story project website/
+Keywords: narrative,nlp,annotation
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE

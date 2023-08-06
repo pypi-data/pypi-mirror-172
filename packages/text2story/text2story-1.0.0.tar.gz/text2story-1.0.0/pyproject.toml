@@ -1,0 +1,63 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=58.2.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text2story"
+version = "1.0.0"
+description = "It provides a framework to label a text according to the main elements of narrative (events, participants,time) and their relations"
+readme = "README.md"
+authors = [{ name = "LIAAD lab"}]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["narrative", "nlp", "annotation"]
+
+
+
+dependencies = [
+     "numpy>=1.19.4",
+     "pandas>=1.1.5",
+     "nltk<3.7",
+     "overrides>=3.1.0",
+     "joblib>=0.17.0",
+     "requests > 2.27.0",
+     "cached-path < 1.1.3",
+     "allennlp >2.8.0,<=2.9.3",
+     "allennlp_models >2.8.0,<=2.9.3",
+     "spacy > 3.2.0 , < 3.4.1",
+     "pyspark>=3.1.2",
+     "spark_nlp>=3.1.2",
+     "sparknlp>=1.0.0",
+     "elementpath>=3.0.2",
+     "plantuml",
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://text2story project website/"
+
+
+[tool.bumpver]
+current_version = "2022.1001-alpha"
+version_pattern = "YYYY.BUILD[-TAG]"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+
