@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: markdown_image_replacer
+Version: 0.0.2
+Summary: Markdown images' URL replacing with copying/downloading images to specific directory
+Project-URL: Homepage, https://github.com/panzhongxian/markdown_image_replacer
+Project-URL: Bug Tracker, https://github.com/panzhongxian/markdown_image_replacer/issues
+Author-email: panzhongxian <panzhongxian0532@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+
+
+```bash
+python -m markdown_image_replacer \
+   $HOME/blog/content/posts/my-first-post.md \
+   --src_img_root $HOME/blog/static \
+   --dst_md_file $HOME/blog/content/posts/my-first-post2.md \
+   --dst_img_root $HOME/blog/static \
+   --dst_img_rel_dir images/my-first-post
+```
+
+
+
