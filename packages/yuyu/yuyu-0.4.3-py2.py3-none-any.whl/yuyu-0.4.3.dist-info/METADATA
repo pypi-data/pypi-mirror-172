@@ -1,0 +1,207 @@
+Metadata-Version: 2.1
+Name: yuyu
+Version: 0.4.3
+Summary: A simple package to make your own Information Gathering Scanner
+Home-page: UNKNOWN
+Author: Akas Wisnu Aji / justakazh
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: python-Wappalyzer
+Requires-Dist: requests
+
+# Yuyu Scanner Packages
+## A simple package to make your own Information Gathering Scanner
+
+Create your Hacking Tools with Yuyu Scanner Packages.
+Yuyu Scanner was created by @justakazh using the python programming language which is integrated with several tools including:
+- nmap
+- wappalyzer
+- whois
+
+Yuyu uses several public APIs to get fast and maximum results, including:
+- Subdomain
+
+    ```
+    https://threatcrowd.org/
+    https://urlscan.io/
+    https://rapiddns.io/
+    https://otx.alienvault.com/
+    https://dnsdumpster.com/
+    https://crt.sh/
+    https://api.threatminer.org/
+    https://api.certspotter.com/
+    https://api.hackertarget.com/
+    https://riddler.io/
+    http://index.commoncrawl.org/
+    ```
+
+
+- Collect URL 
+    
+    ```
+    http://web.archive.org/
+    ```
+
+- Reverse IP 
+    
+    ```
+    https://hackertarget.com/
+    ```
+
+- Email Discovery
+    
+    ```
+    https://hunter.io
+    ```
+
+## Features
+
+- Subdomain Enumeration
+- Port Scanner 
+- Find Sensitive Files 
+- Check for live host
+- Collect Information From Website (Technology used)
+- Collect URL From Waybackurl
+- Reverse IP
+- WHOIS
+- Find Email Address 
+
+
+> Reconnaissance Is Key For Hacking
+
+
+## Installation
+
+Requirements:
+```sh
+sudo apt install nmap
+sudo apt install whois
+pip install yuyu
+```
+
+
+## Usage
+
+### Subdomain Enumeration
+Collecting subdomain from Public API
+```python
+from yuyu_scanner import subdomain
+
+target = "target.domain"
+get = subdomain.check(target).result # get list of subdomain are found
+#['subdomain1.target.domain', 'subdomain2.target.domain', 'subdomain3.target.domain']
+```
+
+### Check Host
+Checking host if live or die
+```python
+from yuyu_scanner import host
+
+lst_domain = ['target1.site', 'target2.site']
+get = host.check(lst_domain) 
+get_All = get.result # get all host with ip/status
+#[['target1.site', '0.0.0.0'], ['target2.site', '0.0.0.0']]
+get_Live = get.live # get host are live
+#['target1.site', 'target2.site']
+```
+
+### Collecting Information From Website
+Collecting Information from website target (title, technology, technology version, ip address)
+```python
+from yuyu_scanner import information
+
+lst_domain = ['target1.site', 'target2.site']
+get = information.check(lst_domain).result # get list information found
+#[['target1.site', {'Bootstrap': {'versions': ['5.1.3']}, 'Google Tag Manager': {'versions': []}, 'jsDelivr': {'versions': []}, 'DoubleClick for Publishers (DFP)': {'versions': []}, 'Nginx': {'versions': []}, 'jQuery': {'versions': ['3.6.0']}}, 'WEBSITE TITLE'], ['target2.site', {'Bootstrap': {'versions': ['5.1.3']}, 'Google Tag Manager': {'versions': []}, 'jsDelivr': {'versions': []}, 'DoubleClick for Publishers (DFP)': {'versions': []}, 'Nginx': {'versions': []}, 'jQuery': {'versions': ['3.6.0']}}, 'WEBSITE TITLE']]
+```
+### Reverse IP
+Reverse IP from hackertarget API
+```python
+from yuyu_scanner import reverse_ip
+
+target = "target.domain"
+apikey = ""  #you can blank it for trial 
+get = reverse_ip.check(target, apikey).result #get list of result reverse ip
+#['reverse.target.domain', 'randomdomain.domain']
+```
+
+### WHOIS
+Whois for find information about domain created, registry, owner name, email, address, phone
+```python
+from yuyu_scanner import whois
+
+target = "example.com"
+get = whois.check(target).result #get result of whois
+#Domain Name: EXAMPLE.COM\n   Registry Domain ID: 2336799_DOMAIN_COM-VRSN\n   Registrar WHOIS Server: whois.iana.org\n   Registrar URL: http://res-dom.iana.org\n   Updated Date: 2021-08-14T07:01:44Z\n   Creation Date: 1995-08-14T04:00:00Z\n   Registry Expiry Date: 2022-08-13T04:00:00Z\n   Registrar: RESERVED-Internet Assigned Numbers Authority\n   Registrar IANA ID: 376\n   Registrar Abuse Contact Email:\n   Registrar Abuse Contact Phone:\n   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\n   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\n   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\n   Name Server: A.IANA-SERVERS.NET\n   Name Server: B.IANA-SERVERS.NET\n   DNSSEC: signedDelegation\n   DNSSEC DS Data: 31589 8 1 3490A6806D47F17A34C29E2CE80E8A999FFBE4BE\n   DNSSEC DS Data: 31589 8 2 CDE0D742D6998AA554A92D890F8184C698CFAC8A26FA59875A990C03E576343C\n   DNSSEC DS Data: 43547 8 1 B6225AB2CC613E0DCA7962BDC2342EA4F1B56083\n   DNSSEC DS Data: 43547 8 2 615A64233543F66F44D68933625B17497C89A70E858ED76A2145997EDF96A918\n   DNSSEC DS Data: 31406 8 1 189968811E6EBA862DD6C209F75623D8D9ED9142\n   DNSSEC DS Data: 31406 8 2 F78CF3344F72137235098ECBBD08947C2C9001C7F6A085A17F518B5D8F6B916D\n   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/\n'
+```
+### Collecting URL
+Collection URL from Public API (waybackurl)
+```python
+from yuyu_scanner import collect_url
+target = "target.domain"
+get = collect_url.check(target).result #get list of result url
+#['https://subdo.target.domain/?url', 'https://target.domain/path']
+```
+
+### Find Email Address
+Find Email address from Public API 
+```python
+from yuyu_scanner import email
+
+target = "target.domain"
+apikey = "" #required! get your apikey from hunter.io
+get = email.check(target, apikey).result #get list of result Email 
+#['admin@target.domain', 'john@target.domain']
+```
+
+### Scan Port
+Scanning common port (21,22,23,25,53,80,110,115,135,139,143,194,443,445,1433,3306,3389,5632,5900,25565)
+```python
+from yuyu_scanner import scan_port
+
+lst_target = ['target1.domain', 'target2.domain']
+get = scan_port.check(lst_target).result #get list of result scan port
+#[['139.162.2.200', [['21', 'ftp', 'open'], ['53', 'domain', 'open'], ['80', 'http', 'open'], ['110', 'pop3', 'open'], ['143', 'imap', 'open'], ['443', 'https', 'open']]], ['172.67.136.101', [['53', 'domain', 'open'], ['80', 'http', 'open'], ['443', 'https', 'open']]]]
+```
+
+### Find Sensitive Files
+Find Sensitive Files 
+- /.git/config
+- /.git/HEAD
+- /.env
+- /.env.bak
+- /xmlrpc.php
+- /robots.txt
+- /.svg
+
+```python
+from yuyu_scanner import files
+
+lst_target = ['target1.domain', 'target2.domain']
+get = files.check(lst_target).result #get list of result scan port
+# ['http://target1.domain/.git/HEAD', 'http://target1.domain/.env']
+```
+
+## Yuyu Scanner Tool 
+Web Information Gathering And Analyst
+- https://github.com/justakazh/Yuyu_Scanner/
+
+## Publication
+- https://www.researchgate.net/publication/352295423_PENGEMBANGAN_APLIKASI_INFORMATION_GATHERING_MENGGUNAKAN_METODE_HYBRID_SCAN_BERBASIS_GRAPHICAL_USER_INTERFACE
+
+## Contact me
+- [akazh](https://twitter.com/akazh18/) - Twitter
+
+## References
+- https://github.com/screetsec/Sudomy
+- https://github.com/aboul3la/Sublist3r
+
+## Credits & Thanks
+- [Deddy Hariyadi](https://www.instagram.com/milisd4d/) 
+- [Redho Maland](https://github.com/screetsec/)
+
+
