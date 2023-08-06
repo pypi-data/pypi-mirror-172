@@ -1,0 +1,3 @@
+[console_scripts]
+freebox_api=freebox_api.__main__:main
+
