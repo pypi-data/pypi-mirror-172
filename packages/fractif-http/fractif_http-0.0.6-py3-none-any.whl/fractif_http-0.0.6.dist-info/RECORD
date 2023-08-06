@@ -1,0 +1,9 @@
+fractifhttp/__init__.py,sha256=X3NCrQygm3hf-q1MGjB11wGUExpXiYYZqss7zmkZMPE,55
+fractifhttp/client.py,sha256=wPHntNhq4ytKeeQI2jUtZZcO60cwJhZ7ApS91Ojm58k,3641
+fractifhttp/logger.py,sha256=eR44biQYOVt-u6PltW7LKv6pWvykLPKKciaVAM8zgbs,566
+fractifhttp/regex_helper.py,sha256=gmwUPSEjWzVwRIVIfZf90FaFrNdKZofMhk7zRkbdZ2k,7275
+fractifhttp/url.py,sha256=dVEWwxW_afZK80v-SOU3L7yOrhw2kOWoRkqSFGAfqnw,2245
+fractif_http-0.0.6.dist-info/METADATA,sha256=OkpDAUQlb0d0NoD7gueUnujtny6QeLZroX_EGmxTqXA,1424
+fractif_http-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fractif_http-0.0.6.dist-info/top_level.txt,sha256=rQhpjdPrTlGBvMIASwTZFBiQQ-536gowfn6Po0gEnak,12
+fractif_http-0.0.6.dist-info/RECORD,,
