@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+lmd/__init__.py
+lmd/cli.py
+lmd/lmd.py
+lmd/utils.py
+nlp.lmd.egg-info/PKG-INFO
+nlp.lmd.egg-info/SOURCES.txt
+nlp.lmd.egg-info/dependency_links.txt
+nlp.lmd.egg-info/entry_points.txt
+nlp.lmd.egg-info/not-zip-safe
+nlp.lmd.egg-info/requires.txt
+nlp.lmd.egg-info/top_level.txt

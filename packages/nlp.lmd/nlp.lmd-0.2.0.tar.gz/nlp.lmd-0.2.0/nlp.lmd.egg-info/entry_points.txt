@@ -1,0 +1,2 @@
+[console_scripts]
+lmd = lmd.cli:main
