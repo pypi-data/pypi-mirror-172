@@ -1,0 +1,2 @@
+[console_scripts]
+algo-beast = algo_beast.algo_beast:main
