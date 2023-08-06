@@ -1,0 +1,16 @@
+CHANGES.txt
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+emtools/__init__.py
+emtools.egg-info/PKG-INFO
+emtools.egg-info/SOURCES.txt
+emtools.egg-info/dependency_links.txt
+emtools.egg-info/top_level.txt
+emtools/image/__init__.py
+emtools/image/thumbnail.py
+emtools/metadata/__init__.py
+emtools/metadata/starfile.py
+emtools/metadata/table.py
