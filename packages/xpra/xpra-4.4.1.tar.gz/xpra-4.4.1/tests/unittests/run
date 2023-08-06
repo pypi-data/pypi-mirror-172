@@ -1,0 +1,55 @@
+#!/usr/bin/bash
+
+die() { echo "$*" 1>&2 ; exit 1; }
+
+#don't use tty prompts:
+export XPRA_NOTTY=1
+#don't use GUI dialogs (ie: password prompts):
+export XPRA_SKIP_UI=1
+export XPRA_UTIL_DEBUG=${XPRA_UTIL_DEBUG:-0}
+export XPRA_TEST_DEBUG=${XPRA_TEST_DEBUG:-0}
+export XPRA_HIDE_SUBPROCESS_OUTPUT=${XPRA_HIDE_SUBPROCESS_OUTPUT:-1}
+export XPRA_TEST_COVERAGE=${XPRA_TEST_COVERAGE:-1}
+export PYTHON=${PYTHON:-python3}
+#SAVED_PYTHONPATH=$PYTHONPATH
+
+UNITTESTS_DIR=`dirname $(readlink -f $0)`
+TESTS_DIR=`dirname $UNITTESTS_DIR`
+SRC_DIR=`dirname $TESTS_DIR`
+
+PYTHON_VERSION=`$PYTHON --version | awk '{print $2}' | awk -F. '{print $1"."$2}'`
+
+if [ -d "/usr/lib64/xpra/pkgconfig" ]; then
+	EXTRA_ARGS=--pkg-config-path=/usr/lib64/xpra/pkgconfig
+fi
+
+INSTALL_ROOT="$SRC_DIR/dist/python${PYTHON_VERSION}"
+pushd $SRC_DIR
+$PYTHON ./setup.py install --without-printing  --without-docs --with-scripts --with-cython_tracing --home=$INSTALL_ROOT $EXTRA_ARGS || die "failed to build"
+popd
+
+if [ `uname` == "Linux" ]; then
+	export "GDK_BACKEND=x11"
+fi
+export PYTHONPATH=`ls -d $INSTALL_ROOT/lib*/python`:.
+export PATH=$INSTALL_ROOT/bin:$PATH
+export XPRA_COMMAND=$INSTALL_ROOT/bin/xpra
+export XPRA_CONF_DIR=$INSTALL_ROOT/etc/xpra/
+
+pushd $UNITTESTS_DIR
+if [ "${XPRA_TEST_COVERAGE}" == "1" ]; then
+	coverage erase
+fi
+
+$PYTHON ./unit/run.py "$@"
+
+if [ "${XPRA_TEST_COVERAGE}" == "1" ]; then
+	ls -la
+	coverage combine
+	ls -la
+	coverage report -m
+	ls -la
+	coverage html
+	xdg-open ./htmlcov/index.html
+fi
+popd
