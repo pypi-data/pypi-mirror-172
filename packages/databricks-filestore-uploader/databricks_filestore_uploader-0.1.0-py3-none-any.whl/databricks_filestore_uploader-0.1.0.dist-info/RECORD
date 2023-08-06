@@ -1,0 +1,7 @@
+databricks_filestore_uploader/main.py,sha256=7l8_wKesSwI2FjeeRO2wxNA7w4BrhZDAgT3ON62_1HQ,2080
+databricks_filestore_uploader/toolchain/filestore_utils.py,sha256=dRCtsCK2Qb4I4H0Ji56Wj4JHOEHqwnA0eF6MVesyYA4,2424
+databricks_filestore_uploader/toolchain/option_utils.py,sha256=QOcZA8nWwuRKXudtBn6kvsCU5d4miQH6sTmEsBTDCGU,2453
+databricks_filestore_uploader-0.1.0.dist-info/LICENSE,sha256=-gjyVi5LIp3ABD7YSBvfkypHU1qrESUZwOXmCVvXOY4,1066
+databricks_filestore_uploader-0.1.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+databricks_filestore_uploader-0.1.0.dist-info/METADATA,sha256=1zHiZulsv0zsm-XETKNH5iGMjEDxXUWfATmihgbCAA0,2067
+databricks_filestore_uploader-0.1.0.dist-info/RECORD,,
