@@ -1,0 +1,16 @@
+pgactivity/__init__.py,sha256=x6i84NLEw1pfja4L4K3dYRJA0jZWGs_IfOQ_jFuBfPY,266
+pgactivity/config.py,sha256=4xXTMsmwkNssyYRe7NUipRLJ6LOtnlnsqW9uYQcsLu8,1342
+pgactivity/contrib.py,sha256=tJv8LZ26GzR-Hvik0twZicK5CbdqMN9eKHPirVZ-Bjc,1171
+pgactivity/core.py,sha256=uOnlFZN7BCJyaNOhuHT4b_A4OdzEbFmCIeM3NTNRrz0,3065
+pgactivity/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgactivity/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgactivity/management/commands/pgactivity.py,sha256=H1PHw1U0RI5ZdaL3hhS_LPcl0ZIq3eQ24hd8qfaLsh0,4572
+pgactivity/middleware.py,sha256=PonQySZUogoagf7B1Or6-aN12xcO-uWH19i08Q4MJRI,308
+pgactivity/models.py,sha256=3j-f3cQ9imvtGMH2QbB9n0ookRnpF_DAYJ8NPPxZUto,4844
+pgactivity/runtime.py,sha256=79T11shQwIgIzSFMP5Zfkkz9YS3_sCwbBY-NbiNDUyw,2344
+pgactivity/utils.py,sha256=So1IkinUEh3MBVUEw4TWXlaazt1V43qSEKiHOGq_eDY,373
+pgactivity/version.py,sha256=q2SaWHizeeG_-Gk1Ig-e0JEOcfm6mhapF0nMkGUUaGg,155
+django_pgactivity-1.0.0.dist-info/LICENSE,sha256=bOsMPbrECIWYOAqsPawE7zdJ0aT9DbtpSCQQ8mRv0tA,1456
+django_pgactivity-1.0.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+django_pgactivity-1.0.0.dist-info/METADATA,sha256=CvKOoQY9TIuijK30cfgAYf8wzEB56o2fKqQgzT6duiA,4616
+django_pgactivity-1.0.0.dist-info/RECORD,,
