@@ -1,0 +1,12 @@
+{
+    "version": "alpha",
+    "schema": "core",
+    "actions": [
+        {
+            "action": "incorrect_action",
+            "files": {
+                "source.json": "destination.json"
+            }
+        }
+    ]
+}

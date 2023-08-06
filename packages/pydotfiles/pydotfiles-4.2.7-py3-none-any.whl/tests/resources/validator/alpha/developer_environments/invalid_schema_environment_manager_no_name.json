@@ -1,0 +1,19 @@
+{
+    "version": "alpha",
+    "schema": "developer_environments",
+    "environments": [
+        {
+            "language": "python",
+            "versions": ["3.7.2", "3.6.8", "2.7.15"],
+            "environment_manager": {
+            }
+        },
+        {
+            "language": "java",
+            "versions": ["8", "latest"],
+            "environment_manager": {
+                "name": "jenv"
+            }
+        }
+    ]
+}
