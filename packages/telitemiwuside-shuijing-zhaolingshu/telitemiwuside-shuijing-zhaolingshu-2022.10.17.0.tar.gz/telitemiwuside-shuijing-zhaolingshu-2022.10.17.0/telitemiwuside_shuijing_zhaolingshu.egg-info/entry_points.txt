@@ -1,0 +1,4 @@
+[console_scripts]
+TelitemiwusideShuijingZhaolingshu = TelitemiwusideShuijingZhaolingshu.__main__:main
+telitemiwuside-shuijing-zhaolingshu = TelitemiwusideShuijingZhaolingshu.__main__:main
+
