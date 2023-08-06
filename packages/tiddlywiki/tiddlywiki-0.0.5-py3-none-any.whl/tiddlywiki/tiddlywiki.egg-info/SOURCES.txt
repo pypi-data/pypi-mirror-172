@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+__init__.py
+defaultworkspacelist.html
+pyproject.toml
+setup.cfg
+setup.py
+twpye.py
+twpym.py
+twpyu.py
+tiddlywiki.egg-info/PKG-INFO
+tiddlywiki.egg-info/SOURCES.txt
+tiddlywiki.egg-info/dependency_links.txt
+tiddlywiki.egg-info/entry_points.txt
+tiddlywiki.egg-info/requires.txt
+tiddlywiki.egg-info/top_level.txt

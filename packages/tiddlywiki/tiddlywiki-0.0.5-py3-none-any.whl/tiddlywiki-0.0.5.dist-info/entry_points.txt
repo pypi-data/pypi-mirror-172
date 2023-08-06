@@ -1,0 +1,3 @@
+[console_scripts]
+twpye = tiddlywiki.twpye:start_twpy_editor
+twpym = tiddlywiki.twpym:start_twpy_manager
