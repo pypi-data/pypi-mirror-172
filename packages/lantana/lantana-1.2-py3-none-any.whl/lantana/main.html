@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block main_content %}
+<div class="row">
+    {% if page and page.meta.disable_nav %}
+    <!-- NAV -->
+    {% else %}
+    <div class="d-none d-xl-block col-12 col-xl-2">
+      <div style="height:100%; overflow-y: scroll;">
+        {% for nav_item in nav %}
+        {% if not nav_item.children %}
+        <p><a class="text-decoration-none {% if not nav_item.active %} text-muted{% else %} text-body{% endif %}" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></p>
+        {% else %}
+        <details {% if nav_item.active %}open{% endif %}>
+          <summary>
+            {{ nav_item.title }}
+          </summary>
+          <hr/>
+          {% include "nav.html" %}
+        </details>
+        
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    {% if page and page.meta.disable_tol %}
+    <!-- TOL -->
+    {% else %}
+    {% if page.toc %}
+    <div class="col-12 col-md-2 order-md-3">
+      <a class="text-decoration-none text-body d-md-none" data-bs-toggle="collapse" href="#tol" role="button" aria-expanded="false" aria-controls="tol">
+        <small>目次</small>
+      </a>
+      <span class="d-none d-md-block">目次</span>
+      <hr/>
+      <div class="collapse d-md-block" id="tol">
+        <ul class="list-group list-group-flush">
+          {% for toc_item in page.toc %}
+              <li class="list-group-item"><a class="text-decoration-none text-muted" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+              {% for toc_item in toc_item.children %}
+                  <li class="list-group-item"><a class="text-decoration-none text-muted" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+              {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    <div class="col-12 col-md-10 col-xl-8">
+    <h1>{{ page.title }}</h1>
+    {% if page and page.meta.summary %}
+        <p><small>{{ page.meta.summary }}</small></p>
+    {% endif %}
+    {% if page and not page.meta.disable_tools %}
+    <p>
+      <small>
+        {% if page.previous_page %}
+        <a class="text-decoration-none" href="{{ page.previous_page.url|url }}" title="{{ page.previous_page.title }}"><i class="bi bi-chevron-left"></i>&nbsp;</a>
+        {% else %}
+        <i class="bi bi-chevron-left"></i>&nbsp;
+        {% endif %}
+      
+        {% if page and page.edit_url %}
+         <a class="text-decoration-none"  href="{{ page.edit_url }}"><i class="bi bi-pencil"></i></a>
+        {% elif config.repo_url %}
+         <a class="text-decoration-none" href="{{ config.repo_url }}"><i class="bi bi-pencil"></i></a>
+        {% endif %}
+        {% if page and page.meta.author %}
+         by {{ page.meta.author }}
+        {% endif %}
+      |
+      {% if page and page.meta.date %}
+        {{ page.meta.date }}
+      {% endif %}
+      
+      {% if page.next_page %}
+        <a class="text-decoration-none"  href="{{ page.next_page.url|url }}" title="{{ page.next_page.title }}">&nbsp;<i class="bi bi-chevron-right"></i></a>
+      {% else %}
+      <i class="bi bi-chevron-right"></i>&nbsp;
+      {% endif %}
+      </small>
+    </p>
+    {% endif %}
+    <hr/>
+    {% block content %}
+      {{ page.content }}
+    {% endblock %}
+    </div>
+{% endblock %}

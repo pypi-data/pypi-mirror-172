@@ -1,0 +1,16 @@
+
+{% if nav_item.children %}
+        {% for nav_item in nav_item.children %}
+        {% if not nav_item.children %}
+            <p ><a class="text-decoration-none {% if not nav_item.active %} text-muted{% else %} text-body{% endif %}" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></p>
+            {% else %}
+            <details {% if nav_item.active %}open{% endif %}>
+              <summary>
+                {{ nav_item.title }}
+              </summary>
+              <hr/>
+              {% include "nav.html" %}
+            </details>
+            {% endif %}
+        {% endfor %}
+        {% endif %}
