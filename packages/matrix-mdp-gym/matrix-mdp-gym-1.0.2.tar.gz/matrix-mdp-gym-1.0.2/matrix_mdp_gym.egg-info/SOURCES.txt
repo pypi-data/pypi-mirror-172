@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+matrix_mdp/__init__.py
+matrix_mdp/envs/__init__.py
+matrix_mdp/envs/matrix_mdp.py
+matrix_mdp_gym.egg-info/PKG-INFO
+matrix_mdp_gym.egg-info/SOURCES.txt
+matrix_mdp_gym.egg-info/dependency_links.txt
+matrix_mdp_gym.egg-info/requires.txt
+matrix_mdp_gym.egg-info/top_level.txt
