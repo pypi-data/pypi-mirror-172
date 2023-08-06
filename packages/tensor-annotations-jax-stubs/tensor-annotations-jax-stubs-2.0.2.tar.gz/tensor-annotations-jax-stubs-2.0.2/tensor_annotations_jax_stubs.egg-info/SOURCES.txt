@@ -1,0 +1,9 @@
+setup.py
+jax-stubs/__init__.py
+jax-stubs/__init__.pyi
+jax-stubs/numpy/__init__.pyi
+tensor_annotations_jax_stubs.egg-info/PKG-INFO
+tensor_annotations_jax_stubs.egg-info/SOURCES.txt
+tensor_annotations_jax_stubs.egg-info/dependency_links.txt
+tensor_annotations_jax_stubs.egg-info/requires.txt
+tensor_annotations_jax_stubs.egg-info/top_level.txt
