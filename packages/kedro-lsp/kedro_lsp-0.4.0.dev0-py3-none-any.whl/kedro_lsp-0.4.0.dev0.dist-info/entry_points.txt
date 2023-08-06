@@ -1,0 +1,2 @@
+[console_scripts]
+kedro-lsp = kedro_lsp.cli:cli
