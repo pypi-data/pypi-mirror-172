@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyDEW
+Version: 0.13
+Summary: Python library for performing Deep Earth Water (DEW) calculations.
+Home-page: http://github.com/simonwmatthews/pyDEW
+Author: Simon Matthews
+Author-email: simonm@hi.is
+License: MIT
+License-File: LICENSE
+Requires-Dist: dill (>=0.3.4)
+Requires-Dist: thermoengine
+Requires-Dist: numpy (>=1.20.3)
+Requires-Dist: pandas (>=1.3.3)
+Requires-Dist: cython (>=0.29.24)
+
