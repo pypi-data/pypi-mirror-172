@@ -1,0 +1,8 @@
+[
+  "tests/test_plugin.py::test_durations",
+  "tests/test_plugin.py::test_freezer_move_to_method",
+  "tests/test_plugin.py::test_frozen_by_default_with_fixture",
+  "tests/test_plugin.py::test_mark_decorator",
+  "tests/test_plugin.py::test_not_frozen_with_no_fixture",
+  "tests/test_plugin.py::test_tick_method"
+]
