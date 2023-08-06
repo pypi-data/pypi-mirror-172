@@ -1,0 +1,10 @@
+dummy.cpython-311-x86_64-linux-gnu.so,sha256=qnfQrJQoWJFO84-nrAPYruDgnup8Mna3RqNqW8sUWQ8,481512
+callchain_checker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+callchain_checker/callchain_checker.py,sha256=Fq8N0a-PotTMp62RApdks49r9DdLw3rKLI8PLWpSDWM,1642
+callchain_checker/ccc,sha256=aCCrNaAYa2Hy7IQjn-7EbExUtdC0q9N5nL7VLqxbZs4,45464208
+callchain_checker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+callchain_checker-0.0.1.dist-info/LICENSE,sha256=5IAmkMizIfpnNp7HQwsZrGMD7jXl5oq2c_hdJRnu1y4,11351
+callchain_checker-0.0.1.dist-info/METADATA,sha256=3VGhcD4CDvIhp-7NdZjdyIaOQvltZyHOE3dta0MoUFA,1563
+callchain_checker-0.0.1.dist-info/WHEEL,sha256=MvGonPCt2kH-DvK3roeDtBHfjb_JA8qwPnYdwTrotwU,191
+callchain_checker-0.0.1.dist-info/top_level.txt,sha256=feQRimshJTrdGb1wYEW4-Lxu1Xn03_f2YdpzzXau3Fg,24
+callchain_checker-0.0.1.dist-info/RECORD,,
