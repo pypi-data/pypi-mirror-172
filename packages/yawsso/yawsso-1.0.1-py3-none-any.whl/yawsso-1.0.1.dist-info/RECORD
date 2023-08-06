@@ -1,0 +1,12 @@
+yawsso/__init__.py,sha256=008c56rqIFpUWSj8GUiISOmODB7WPEFuLc9cJxcykyE,634
+yawsso/__main__.py,sha256=3X5_krxzGoVzfNa_jRS-U6TP4cM0PMYfSAS4IwFJiTw,721
+yawsso/cli.py,sha256=HXbZcFdVErZbTj8CZUlXtVOWy1htt2eJ5riPROxuvqQ,8981
+yawsso/cmd.py,sha256=IL7bzFaoii4by3MBZufYlkijRnykmqo0S_nhyHS8JOU,5352
+yawsso/core.py,sha256=WdQBCVH2iohtqfoyK2a-Uedn8neM1vDRNIFnQJQgbgU,11065
+yawsso/utils.py,sha256=grgSoHcUMI8K1HGnCdaTBrMvcL_pDX96URSIasJMtmo,5081
+yawsso-1.0.1.dist-info/LICENSE,sha256=fZbHMRQjQTo7OFHoFxfnQOvi3Bocxc3phavSEmgbv40,1075
+yawsso-1.0.1.dist-info/METADATA,sha256=gcf-QZGndUoDkDIKVJYTWGlyQNmWvfVVDOb6NKWhN4w,10194
+yawsso-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+yawsso-1.0.1.dist-info/entry_points.txt,sha256=KN3ab6uOECMl8PdjuocA8Z8u1XjnbBCE237MamEt9fY,43
+yawsso-1.0.1.dist-info/top_level.txt,sha256=JHI3z5g18mNb7N-s_8UsLGSPBYZdBqKW51V0pTUHhd8,7
+yawsso-1.0.1.dist-info/RECORD,,
