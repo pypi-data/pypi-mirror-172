@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: eatpy
+Version: 2022.10.1
+Summary: eat py not pie
+Author: Woojin Cho
+Author-email: woojin.cho@gmail.com
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: click
+Requires-Dist: boto3
+Requires-Dist: prompt-toolkit (==1.0.14)
+Requires-Dist: PyInquirer
+
