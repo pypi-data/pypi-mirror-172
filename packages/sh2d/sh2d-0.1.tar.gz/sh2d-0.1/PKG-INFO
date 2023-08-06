@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sh2d
+Version: 0.1
+Summary: SDK about xxx
+Home-page: https://github.com/
+Author: sh2d
+Author-email: xxx@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# 常见一些模块的使用方法
+
