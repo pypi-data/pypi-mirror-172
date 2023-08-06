@@ -1,0 +1,16 @@
+pydantic==1.9.0
+jinja2
+pydataverse
+pandas
+datamodel_code_generator
+pyaml
+coloredlogs
+xmltodict
+tqdm
+deepdish
+h5py
+typer
+python-forge
+
+[test]
+pytest-cov
