@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sfxpython
+Version: 0.5.2
+Summary: Python packages used by the Python extension mechanism of the SignalFx Smart Agent
+Home-page: https://github.com/signalfx/signalfx-agent
+Author: SignalFx, Inc
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
