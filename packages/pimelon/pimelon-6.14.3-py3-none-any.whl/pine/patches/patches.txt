@@ -1,0 +1,10 @@
+pine.patches.v3.deprecate_old_config
+pine.patches.v3.celery_to_rq
+pine.patches.v3.redis_bind_ip
+pine.patches.v0.update_node
+pine.patches.v0.update_socketio
+pine.patches.v0.install_yarn #2
+pine.patches.v1.fix_user_permissions
+pine.patches.v1.fix_backup_cronjob
+pine.patches.v1.set_live_reload_config
+pine.patches.v1.update_archived_sites
