@@ -1,0 +1,10 @@
+spacy>=3.4.1
+requests>=2.28
+tqdm>=4.62.3
+setuptools~=60.0.0
+prettytable>=3.4
+torch>=1
+transformers>=4.20
+datasets>=2.2.2
+evaluate>=0.2.2
+seqeval>=1.2.2
