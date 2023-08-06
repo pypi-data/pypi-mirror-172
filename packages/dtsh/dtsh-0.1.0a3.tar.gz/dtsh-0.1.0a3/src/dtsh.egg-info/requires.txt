@@ -1,0 +1,10 @@
+devicetree
+rich
+Pygments
+
+[dist]
+build
+twine
+
+[test]
+pytest
