@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lb-decorators"
+version = "0.0.1"
+authors = [
+  { name="labase", email="github@labase.dev" },
+]
+description = "Some useful decorators"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/labasef/lb-decorators"
+"Bug Tracker" = "https://github.com/labasef/lb-decorators/issues"
