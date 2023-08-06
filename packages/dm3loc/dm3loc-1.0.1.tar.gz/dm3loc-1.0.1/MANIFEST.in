@@ -1,0 +1,4 @@
+include DM3Loc/testdata/*
+include DM3Loc/model/*
+include README.md
+include LICENSE
