@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+nonebot-plugin-random/__init__.py
+nonebot-plugin-random/depends.py
+nonebot-plugin-random/matchers.py
+nonebot-plugin-random/utils.py
+nonebot_plugin_random.egg-info/PKG-INFO
+nonebot_plugin_random.egg-info/SOURCES.txt
+nonebot_plugin_random.egg-info/dependency_links.txt
+nonebot_plugin_random.egg-info/requires.txt
+nonebot_plugin_random.egg-info/top_level.txt
