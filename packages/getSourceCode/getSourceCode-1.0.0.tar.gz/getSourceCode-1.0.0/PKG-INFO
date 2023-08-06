@@ -1,0 +1,138 @@
+Metadata-Version: 1.0
+Name: getSourceCode
+Version: 1.0.0
+Summary: Simple way to get contract source code.
+Home-page: https://hxzy.me
+Author: hxzy
+Author-email: th35tr0n9@gmail.com
+License: UNKNOWN
+Description: getSourceCode
+        =============
+        
+        This tool is designed to quickly download the code of open source
+        contracts on the blockchain explorer.
+        
+        The downloaded code maintains the file directory structure at the time
+        of verification.
+        
+        Supported Chain Platforms:
+        
+        ::
+        
+            Heco|ETH|BSC|Fantom|Poly|AVAX|ARBI|Tron
+        
+            Cronos|moonbeam|moonriver|boba|okex
+        
+            avax-testnet|arbi-testnet|poly-testnet
+        
+            bsc-testnet|heco-testnet|ftm-testnet
+        
+            Goerli|Kovan|Rinkeby|Ropsten
+        
+            moonbase|boba-testnet
+        
+        Install
+        =======
+        
+        ::
+        
+           pip install getSourceCode
+        
+        Usage
+        =====
+        
+        ::
+        
+           getCode [-h] [-i INPUTFILE] [-o OUTPUTFOLDER] [-a ADDRESS] [-n NETWORK] [-k] [-p PROXY]
+        
+        For example:
+        
+        ::
+        
+           getCode -n bsc -a 0xb51eaa437AC67A631e2FEca0a18dA7a6391c0D07
+        
+        or
+        
+        ::
+        
+           getCode -n eth -a 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 -p 127.0.0.1:7890 -o myFolder
+        
+        The command execution result is as follows:
+        
+        ::
+        
+            [root@hxzy test]# getCode -n bsc -a 0xb51eaa437AC67A631e2FEca0a18dA7a6391c0D07
+            0: SynthereumManager/deploy/@openzeppelin/contracts/access/AccessControl.sol
+            1: SynthereumManager/deploy/@openzeppelin/contracts/access/IAccessControl.sol
+            2: SynthereumManager/deploy/@openzeppelin/contracts/utils/Context.sol
+            3: SynthereumManager/deploy/@openzeppelin/contracts/utils/Strings.sol
+            4: SynthereumManager/deploy/@openzeppelin/contracts/utils/introspection/ERC165.sol
+            5: SynthereumManager/deploy/@openzeppelin/contracts/utils/introspection/IERC165.sol
+            6: SynthereumManager/deploy/@openzeppelin/contracts/access/AccessControlEnumerable.sol
+            7: SynthereumManager/deploy/@openzeppelin/contracts/access/IAccessControlEnumerable.sol
+            8: SynthereumManager/deploy/@openzeppelin/contracts/utils/structs/EnumerableSet.sol
+            9: SynthereumManager/deploy/contracts/core/Manager.sol
+            10: SynthereumManager/deploy/contracts/core/interfaces/IFinder.sol
+            11: SynthereumManager/deploy/contracts/core/interfaces/IManager.sol
+            12: SynthereumManager/deploy/contracts/common/interfaces/IEmergencyShutdown.sol
+            13: SynthereumManager/deploy/contracts/core/Constants.sol
+            14: SynthereumManager/deploy/contracts/core/Finder.sol
+        
+            Success.
+        
+        The directory structure looks like this:
+        
+        ::
+        
+            [root@hxzy test]# tree
+            .
+            └── SynthereumManager
+                └── deploy
+                    ├── contracts
+                    │   ├── common
+                    │   │   └── interfaces
+                    │   │       └── IEmergencyShutdown.sol
+                    │   └── core
+                    │       ├── Constants.sol
+                    │       ├── Finder.sol
+                    │       ├── interfaces
+                    │       │   ├── IFinder.sol
+                    │       │   └── IManager.sol
+                    │       └── Manager.sol
+                    └── @openzeppelin
+                        └── contracts
+                            ├── access
+                            │   ├── AccessControlEnumerable.sol
+                            │   ├── AccessControl.sol
+                            │   ├── IAccessControlEnumerable.sol
+                            │   └── IAccessControl.sol
+                            └── utils
+                                ├── Context.sol
+                                ├── introspection
+                                │   ├── ERC165.sol
+                                │   └── IERC165.sol
+                                ├── Strings.sol
+                                └── structs
+                                    └── EnumerableSet.sol
+        
+            13 directories, 15 files
+        
+        
+        Parameter description:
+        
+        ::
+        
+           optional arguments:
+             -h, --help       show this help message and exit
+             -i INPUTFILE     Input file path including contract addresses.
+             -o OUTPUTFOLDER  Choose a folder to export.
+             -a ADDRESS       A string including contract addresses.
+             -n NETWORK       Which network to get source code.
+             -k               Provide some api keys.
+             -p PROXY         Use a proxy.
+        
+        Contact
+        =======
+        
+        If you have any suggestions or needs please contact: th35tr0n9@gmail.com
+Platform: UNKNOWN

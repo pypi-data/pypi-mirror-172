@@ -1,0 +1,8 @@
+README.rst
+setup.py
+getSourceCode/__init__.py
+getSourceCode.egg-info/PKG-INFO
+getSourceCode.egg-info/SOURCES.txt
+getSourceCode.egg-info/dependency_links.txt
+getSourceCode.egg-info/entry_points.txt
+getSourceCode.egg-info/top_level.txt
