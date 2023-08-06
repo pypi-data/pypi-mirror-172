@@ -1,0 +1,3 @@
+[console_scripts]
+packj = packj.main:main
+
