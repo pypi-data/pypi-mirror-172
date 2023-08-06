@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Mensajes-hanselt-abel
+Version: 5.1
+Summary: Un paquete para saludar y despedir
+Home-page: https://twitter.com/hanselt_abel
+Author: Hanselt Baca
+Author-email: hanselt_a14@hotmail.com
+Classifier: Environment :: Console
+Classifier: Topic :: Artistic Software
+Classifier: License :: Free For Educational Use
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.23.0)
+
+# Mensajes
+
+El paquete de mensajeria para pruebas de Hanselt
+
+Paquete de aprendizaje
