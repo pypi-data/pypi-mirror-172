@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+errorsolver/__init__.py
+errorsolver/error.py
+errorsolvers.egg-info/PKG-INFO
+errorsolvers.egg-info/SOURCES.txt
+errorsolvers.egg-info/dependency_links.txt
+errorsolvers.egg-info/requires.txt
+errorsolvers.egg-info/top_level.txt
