@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: codect
+Version: 0.1.1
+Summary: Python package to protect your code
+Home-page: https://github.com/mategol/codect-python
+Author: Mateusz Golembowski
+Author-email: mateusz@golembowski.pl
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pycryptodome
+Requires-Dist: pybase64
+Requires-Dist: hashlib
+Requires-Dist: sys
+
+UNKNOWN
+
