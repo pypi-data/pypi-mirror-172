@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pygments-onehalf
+Version: 0.1.2
+Summary: One Half color scheme for Pygments.
+Home-page: https://gitlab.com/tomwatson1024/pygments-onehalf
+Author: Tom W
+Author-email: 796618-tomwatson1024@users.noreply.gitlab.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pygments (>=2.10.0,<3.0.0)
+Project-URL: Repository, https://gitlab.com/tomwatson1024/pygments-onehalf
+Description-Content-Type: text/markdown
+
+# pygments-onehalf
+
+[![python: 3.6 | 3.7 | 3.8 | 3.9](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue)](https://www.python.org/)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
+[![PyPI](https://img.shields.io/pypi/v/pygments-onehalf)](https://pypi.org/project/pygments-onehalf/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/pygments-onehalf)](https://pypistats.org/packages/pygments-onehalf)
+[![ci status](https://gitlab.com/tomwatson1024/pygments-onehalf/badges/master/pipeline.svg)](https://gitlab.com/tomwatson1024/pygments-onehalf/commits/master)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+
+One Half color scheme for Pygments.
+
+Based on https://github.com/sonph/onehalf, used under the MIT license.
+
+## Installation
+
+### Using Poetry
+
+```
+poetry add pygments-onehalf
+```
+
+### Using Pip
+
+```
+pip install pygments-onehalf
+```
+
+## Usage
+
+Provides two pygments styles:
+- `onehalf-dark`
+- `onehalf-light`
+
