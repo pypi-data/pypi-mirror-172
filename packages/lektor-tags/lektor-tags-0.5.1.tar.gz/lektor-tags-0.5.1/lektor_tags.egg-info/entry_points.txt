@@ -1,0 +1,2 @@
+[lektor.plugins]
+tags = lektor_tags:TagsPlugin
