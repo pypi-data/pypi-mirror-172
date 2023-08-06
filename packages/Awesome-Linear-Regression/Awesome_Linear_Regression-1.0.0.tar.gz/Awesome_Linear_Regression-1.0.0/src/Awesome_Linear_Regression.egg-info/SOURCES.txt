@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/Awesome_Linear_Regression/__init__.py
+src/Awesome_Linear_Regression/linearregression.py
+src/Awesome_Linear_Regression.egg-info/PKG-INFO
+src/Awesome_Linear_Regression.egg-info/SOURCES.txt
+src/Awesome_Linear_Regression.egg-info/dependency_links.txt
+src/Awesome_Linear_Regression.egg-info/requires.txt
+src/Awesome_Linear_Regression.egg-info/top_level.txt
+test/test.py
