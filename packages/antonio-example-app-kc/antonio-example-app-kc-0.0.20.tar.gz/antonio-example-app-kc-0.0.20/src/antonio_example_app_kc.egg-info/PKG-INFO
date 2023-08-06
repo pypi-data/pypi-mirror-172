@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: antonio-example-app-kc
+Version: 0.0.20
+Summary: A small example package
+Author: Antonio Amador
+Author-email: jose_ab1996@hotmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Python example app
