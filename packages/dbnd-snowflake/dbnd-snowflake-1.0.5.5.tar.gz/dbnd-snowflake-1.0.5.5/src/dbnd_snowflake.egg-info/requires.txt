@@ -1,0 +1,5 @@
+sqlparse
+snowflake-connector-python
+numpy
+dbnd==1.0.5.5
+certifi<2021.0.0
