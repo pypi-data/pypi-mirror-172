@@ -1,0 +1,150 @@
+# **Automation of some processes on office365**
+
+<br></br>
+
+
+### 1.   **Create session user**
+
+<br>
+
+get the value of entry_point
+
+![Image](./capture.png)
+
+```
+from Onedrive import OneDrive
+
+username = "XXXXXXXXXXXXXXXXXXXXXX"
+password = "XXXXXXXXXXXXXXXXXXXXXX"
+entry_point = "https://<tenant_name>.sharepoint.com/personal/<username>"
+
+session = OneDrive(username = username, password = password, url_user = entry_point)
+```
+
+<br></br>
+
+
+### 2.   **Get folders**
+
+```
+folders = session.get_folders_endpoint()
+
+for folder in folders:  
+
+    print(folder.name)
+```
+
+<br>
+
+#### Folder Properties 
+
+To see all the properties of a file, use the **properties** attribute. 
+For example 
+
+``` 
+    print(folder.properties) 
+```
+
+output
+
+``` json
+{
+    'Exists': True,
+    'IsWOPIEnabled': False,
+    'ItemCount': 0,
+    'Name': <folder_name>,
+    'ProgID': None,
+    'ServerRelativeUrl': '/personal/<tenant>/Documents/<folder_name>',
+    'TimeCreated': '2022-10-10T12:58:09Z',
+    'TimeLastModified': '2022-10-10T12:58:09Z',
+    'UniqueId': '16636378-fd57-4456-9e0f-1331d62f1385',
+    'WelcomePage': ''
+}
+```
+
+<br></br>
+
+### 3.   **Get files**
+
+```
+files = session.get_files_from_folder()
+
+print(*files, seq="\n")
+```
+
+<br>
+
+#### **File Properties**
+
+```
+{
+    'CheckInComment': '',
+    'CheckOutType': 2,
+    'ContentTag': '{263E029D-372D-476B-9609-1F84D2C9B578},1,1',
+    'CustomizedPageStatus': 0,
+    'ETag': '"{263E029D-372D-476B-9609-1F84D2C9B578},1"',
+    'Exists': True,
+    'IrmEnabled': False,
+    'Length': '36653',
+    'Level': 1,
+    'LinkingUri': '<tenant>/Documents/<filename>.csv?d=w263e029d372d476b96091f84d2c9b578',
+    'LinkingUrl': '<tenant>/Documents/<filename>.csv?d=w263e029d372d476b96091f84d2c9b578',
+    'MajorVersion': 1,
+    'MinorVersion': 0,
+    'Name': 'KOLDA.csv',
+    'ServerRelativeUrl': '/personal/<tenant>/Documents/<filename>.csv',
+    'TimeCreated': '2022-10-07T12:32:38Z',
+    'TimeLastModified': '2022-10-07T12:32:38Z',
+    'Title': None,
+    'UIVersion': 512,
+    'UIVersionLabel': '1.0',
+    'UniqueId': '263e029d-372d-476b-9609-1f84d2c9b578'
+}
+```
+
+
+<br></br>
+
+### 4.   **Create folder**
+
+```
+session.create_folder_on_onedrive(folder_name)
+```
+
+
+<br></br>
+
+### 5.   **Download files from folder**
+
+```
+session.download_files_from_folder(folder_name_on_onedrive)
+```
+
+<br></br>
+
+### 6.   **Upload files local to onedrive folder**
+
+```
+session.upload_files_to_onedrive(path_folder_name_local, folder_name_onedrive)
+```
+<br>
+
+Upload single file on OneDrive
+
+```
+session.upload_file_to_onedrive(path_file_name_local, folder_name_onedrive)
+```
+
+<br></br>
+
+### 7.   **Share folder with Anonymous**
+
+```
+session.share_folder(<folder_name>)
+```
+
+output
+
+```
+Link like this => https://<tenant>.sharepoint.com/:f:/g/personal/<username>/EnhjYxZX_VZEng8TMdYvE4UB78vdTFHSEs3vc5FgqQ1A8Q
+```
