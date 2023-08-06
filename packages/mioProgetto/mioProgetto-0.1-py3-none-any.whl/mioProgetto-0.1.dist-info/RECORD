@@ -1,0 +1,17 @@
+miaApplicazione/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miaApplicazione/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+miaApplicazione/apps.py,sha256=0yoxFapvdSDCDLDfiGEK8hMu32Ft3BRukqRoLvyOGyo,162
+miaApplicazione/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+miaApplicazione/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+miaApplicazione/urls.py,sha256=M-WisTbk26my70_VltRPNRGKeMpUjAyR8PXrMTnZyLc,109
+miaApplicazione/views.py,sha256=b21VFBwfUidklSTPUszWBimm-6-GiVp9enkNvqfoJiU,197
+miaApplicazione/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mioProgetto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mioProgetto/asgi.py,sha256=BJ5-2zTbp6Xck8-ASRdMKT-hJ2m_pT2w2Qhska0z07M,399
+mioProgetto/settings.py,sha256=TXl5eKi_7_1ateeXlbYZTNswLJs-LCFbgD1etRwCEgE,3236
+mioProgetto/urls.py,sha256=wGOtzlW5IQ2hUPyQ88z9Ifh1nnUVakEJ94DUEIrEJSw,190
+mioProgetto/wsgi.py,sha256=C_04o0NAL9cF5YOM4uip_MPWsnD9kRQjXI43_FzM0g8,399
+mioProgetto-0.1.dist-info/METADATA,sha256=ApvzcM3E6v1AC4xPf19muwxHZELC1ogFBW5NoR5RP6Q,213
+mioProgetto-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mioProgetto-0.1.dist-info/top_level.txt,sha256=DlGo5V9DyzUVs-3Z7YZS3VaisL0MXinK8zIXMbYg-Es,28
+mioProgetto-0.1.dist-info/RECORD,,
