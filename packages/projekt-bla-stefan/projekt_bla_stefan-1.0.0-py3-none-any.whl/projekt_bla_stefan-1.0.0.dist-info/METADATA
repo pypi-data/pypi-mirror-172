@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: projekt-bla-stefan
+Version: 1.0.0
+Summary: Python Packet Übung
+Home-page: UNKNOWN
+Author: Ich halt
+Author-email: emeil@gibds.ned
+License: UNKNOWN
+Keywords: python,code
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: asyncio
+
+Mein ganz ganz tolles Packet
+
+
