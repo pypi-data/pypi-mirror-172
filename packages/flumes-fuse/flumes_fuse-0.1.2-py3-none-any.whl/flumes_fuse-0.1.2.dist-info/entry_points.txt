@@ -1,0 +1,3 @@
+[console_scripts]
+flumes-fuse=flumes_fuse.fs:run
+
