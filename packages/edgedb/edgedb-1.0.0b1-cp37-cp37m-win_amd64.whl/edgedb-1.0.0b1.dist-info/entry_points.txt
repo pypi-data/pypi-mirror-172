@@ -1,0 +1,3 @@
+[console_scripts]
+edgedb-py = edgedb.codegen.cli:main
+
