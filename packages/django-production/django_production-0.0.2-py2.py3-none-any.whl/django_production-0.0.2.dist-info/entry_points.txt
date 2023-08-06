@@ -1,0 +1,3 @@
+[console_scripts]
+django-production-apply=django_production.__main__:do_patch
+
