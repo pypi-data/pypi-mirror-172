@@ -1,0 +1,107 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "bbox": [
+                13.3219228515625,
+                38.2036553180715,
+                13.32366943359375,
+                38.2058
+            ],
+            "geometry": null,
+            "properties": {
+                "data.imagery.radar.generic.sar-c.polarimetric.safe": "0ba2ab43-76de-41d5-8301-a43dff256077"
+            },
+            "metadata": {
+                "id": "0ba2ab43-76de-41d5-8301-a43dff256077",
+                "timestamp": 1548047063562,
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                16.183676,
+                                37.773457
+                            ],
+                            [
+                                13.258313,
+                                38.179905
+                            ],
+                            [
+                                13.566457,
+                                39.681301
+                            ],
+                            [
+                                16.554022,
+                                39.27636
+                            ],
+                            [
+                                16.183676,
+                                37.773457
+                            ]
+                        ]
+                    ]
+                },
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        14.892788351401164,
+                        38.7300770646158
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "bbox": [
+                13.3219228515625,
+                38.2036553180715,
+                13.32366943359375,
+                38.2058
+            ],
+            "geometry": null,
+            "properties": {
+                "data.imagery.radar.generic.sar-c.polarimetric.safe": "85de8ee0-53dd-4a0c-9f0b-3dcbda1bc43a"
+            },
+            "metadata": {
+                "id": "85de8ee0-53dd-4a0c-9f0b-3dcbda1bc43a",
+                "timestamp": 1548047063561,
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                16.183662,
+                                37.773487
+                            ],
+                            [
+                                13.258298,
+                                38.179935
+                            ],
+                            [
+                                13.566441,
+                                39.681328
+                            ],
+                            [
+                                16.554007,
+                                39.27639
+                            ],
+                            [
+                                16.183662,
+                                37.773487
+                            ]
+                        ]
+                    ]
+                },
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        14.892773817534183,
+                        38.730106219694385
+                    ]
+                }
+            }
+        }
+    ]
+}

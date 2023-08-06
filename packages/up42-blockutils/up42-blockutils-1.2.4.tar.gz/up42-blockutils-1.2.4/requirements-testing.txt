@@ -1,0 +1,13 @@
+black
+coverage-badge==1.0.2
+fake-geo-images
+mypy==0.770
+pyfakefs==4.5.1
+pylint==2.11.1
+pytest-cov==3.0.0
+pytest-lazy-fixture==0.6.3
+pytest-mypy==0.8.1
+pytest-pylint==0.18.0
+pytest==6.2.5
+requests-mock==1.9.3
+twine
