@@ -1,0 +1,11 @@
+patiencediff/_patiencediff_py.py,sha256=YH9wPTR3YBRq1vomUJDc8eGNfewc-gk6nCi3yADnhos,9515
+patiencediff/__main__.py,sha256=IxNv-bmOtdewvalhoQKA0D3lalOEiGSEM5XOTvuNqVI,1811
+patiencediff/__init__.py,sha256=CxGRN-iVg0MQQMTzKCFFI6xHRM-85fhqy9LPkOCYdJM,5043
+patiencediff/_patiencediff_c.cpython-36m-x86_64-linux-gnu.so,sha256=H1Ag6JxRV284wpuXs0XUXxyDicTLN2BnDApBsobWHms,88432
+patiencediff/test_patiencediff.py,sha256=8yCtKhX53Qcv9Y1GLcaxCzj5U86pZ_62xDKedf4Z0f8,22910
+patiencediff-0.2.6.dist-info/top_level.txt,sha256=9Mncbfd7xqQjLxxMRuzuByMuXkSf-4b5BeoGu4nBOgM,13
+patiencediff-0.2.6.dist-info/COPYING,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+patiencediff-0.2.6.dist-info/AUTHORS,sha256=agJIh_FY3QLkFOEg4NqMFWDHaChcJLMsJUM2T7ZYiJQ,151
+patiencediff-0.2.6.dist-info/METADATA,sha256=Wr7rI12lvTfwYWDXNc7l4wzsqNmamd5wFyDWTCflyzA,2280
+patiencediff-0.2.6.dist-info/RECORD,,
+patiencediff-0.2.6.dist-info/WHEEL,sha256=FxvOBIPWULmQmkts83LAmRSb1PKBOerW3I7FsMSIXDA,221
