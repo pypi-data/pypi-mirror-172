@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: addon_tvg-karjakak
+Version: 0.1.8
+Summary: Add on functions for TVG.
+Home-page: https://github.com/kakkarja/FreeTVG
+Author: karjakak
+Author-email: kakkarja.github@gmail.com
+License: BSD3 License
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Add-On for Tree View Gui (TVG)
+## Installation
+```pip3 install -U addon-tvg-karjakak```   
