@@ -1,0 +1,6 @@
+setup.py
+finance_analyse.egg-info/PKG-INFO
+finance_analyse.egg-info/SOURCES.txt
+finance_analyse.egg-info/dependency_links.txt
+finance_analyse.egg-info/top_level.txt
+finance_analysis/__init__.py
