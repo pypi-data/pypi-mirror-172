@@ -1,0 +1,112 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "rbwr"
+version = "0.1.0"
+description = "Rather be writing Rust"
+authors = [
+    "Charles Hall <charles@computer.surgery>",
+]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+homepage = "https://or.computer.surgery/charles/rbwr"
+repository = "https://or.computer.surgery/charles/rbwr"
+keywords = [ "sum", "types", "tagged", "union", "rust", "enum" ]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
+    "Typing :: Typed",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+]
+packages = [
+    { include = "rbwr", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.pyright]
+pythonVersion = "3.10"
+exclude = [
+    ".venv",
+    ".direnv",
+]
+typeCheckingMode = "strict"
+useLibraryCodeForTypes = true
+reportMissingTypeStubs = false
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint.basic]
+# The default is a minimum of 3 characters which is kind of silly, counterpoints
+# include: i, j, k, x, y, z, db, up
+argument-rgx="[a-z_][a-z0-9_]{,30}$"
+attr-rgx="[a-z_][a-z0-9_]{,30}$"
+class-attribute-rgx="([a-z_][a-z0-9_]{,30}|(__.*__))$"
+class-rgx="[A-Z_][a-zA-Z0-9_]{,30}$"
+function-rgx="[a-z_][a-z0-9_]{,30}$"
+method-rgx="([a-z_][a-z0-9_]{,30}|(__.*__))$"
+variable-rgx="[a-z_][a-z0-9_]{,30}$"
+fail-under = 10
+
+[tool.pylint.messages_control]
+disable = [
+    # False-positives, python interpreter will catch real problems
+    "no-name-in-module",
+    "relative-beyond-top-level",
+
+    # False-positives, these are the responsibility of a typechecker
+    # https://github.com/PyCQA/pylint/issues/7645
+    "invalid-bool-returned",
+    "invalid-bytes-returned",
+    "invalid-format-returned",
+    "invalid-getnewargs-ex-returned",
+    "invalid-getnewargs-returned",
+    "invalid-hash-returned",
+    "invalid-index-returned",
+    "invalid-length-hint-returned",
+    "invalid-length-returned",
+    "invalid-repr-returned",
+    "invalid-str-returned",
+    "non-iterator-returned",
+
+    # The real mistake was using the keyword `class` instead of `struct`
+    "too-few-public-methods",
+
+    # This would mostly just discourage *documenting* hacks rather than
+    # *implementing* hacks
+    "fixme",
+]
+
+[tool.coverage.run]
+disable_warnings = [
+    "no-data-collected",
+]
+
+[tool.coverage.report]
+skip_covered = true
+skip_empty = true
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+
+# This is what you get for using a dynamically-typed language
+addopts = "--cov rbwr --cov-report term --cov-fail-under 100"
+
+# Make it so you don't have to prefix every file with `test_`
+python_files = "*.py"
+testpaths = [
+    "tests",
+]
