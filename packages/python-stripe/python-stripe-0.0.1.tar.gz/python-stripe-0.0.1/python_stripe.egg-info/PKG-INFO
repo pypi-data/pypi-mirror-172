@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: python-stripe
+Version: 0.0.1
+Summary: Simple Wrapper for Stripe API, written in Python
+Home-page: https://github.com/app-generator/ecomm-wrapper-stripe
+Author: AppSeed.us
+Author-email: support@appseed.us
+License: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Simple Python Wrapper for Stripe
+
+This minimal library pulls the products from Stripe in [JSON format](./products.json) using `STRIPE_API_KEY` as input, loaded from environment.   
+
+<br />
+
+## Quick Start
+
+<br />
+
+> **Step 1** - Create `.env` using provided `env.sample`
+
+ Add `.env` file in your projects root directory and add the following credentials
+
+```
+STRIPE_API_KEY=<REAL_VALUE_HERE>
+```
+
+<br />
+
+> **Step 1** - Install `dependencies`
+
+```bash
+$ python -m venv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+
+<br /> 
+
+> Pull the products from Stripe dashboard
+
+```bash
+$ python run.py
+```
+
+The products are saved in `products.json`. Available props: 
+
+- `id`
+- `name`
+- `description`
+- `images`
+- `price`
+
+<br />
+
+## Credits & Links
+
+- Free [support](https://appseed.us/support) via Email & Discord 
+- [Stripe Dev Tools](https://stripe.com/docs/development) - official docs
+
+<br />
+
+---
+**Python Warpper for Stripe** - Free library provided by [AppSeed](https://appseed.us).
