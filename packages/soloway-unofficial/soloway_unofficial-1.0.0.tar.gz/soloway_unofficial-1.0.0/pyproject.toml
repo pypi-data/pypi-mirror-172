@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "soloway_unofficial"
+version = "1.0.0"
+description = "Простейшая реализация SDK для https://dsp.soloway.ru/"
+license = "MIT"
+authors = ["viktor <vi.dave@yandex.ru>"]
+readme = "README.md"
+repository = "https://github.com/ZFullio/soloway-unofficial"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+tqdm = "^4.64.1"
+
+[tool.poetry.dev-dependencies]
+coverage = "^6.4"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: soloway-unofficial
+Version: 1.0.0
+Summary: Простейшая реализация SDK для https://dsp.soloway.ru/
+Home-page: https://github.com/ZFullio/soloway-unofficial
+License: MIT
+Author: viktor
+Author-email: vi.dave@yandex.ru
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Project-URL: Repository, https://github.com/ZFullio/soloway-unofficial
+Description-Content-Type: text/markdown
+
+# Soloway SDK (Unofficial)
+
+Простейшая реализация SDK для https://dsp.soloway.ru/
+
+### Реализованные методы
+* ``/login``
+* ``/whoami``
+* ``/clients/{clientGuid}/placements``
+* ``/placements_stat``
+* ``/placements/{placementGuid}/stat``
+
+## Установка
+```bash    
+    $ pip install soloway-unofficial
+```
+
+## Использование
+
+```python
+from soloway_unofficial import Client
+
+client = Client("YOUR_LOGIN", "YOUR_PASSWORD")
+```    
+
+Получение статистики размещений по всем кампаниям.
+* ``start_date — дата начала(включительно) периода в формате YYYY-MM-DD``
+* ``stop_date — дата конца(включительно) периода, в формате YYYY-MM-DD``
+
+```python
+data = client.get_placements_stat_all("START_DATE", "STOP_DATE")
+```    
+Получение статистики размещений по выбранным кампаниям.
+* ``start_date — дата начала(включительно) периода в формате YYYY-MM-DD``
+* ``stop_date — дата конца(включительно) периода, в формате YYYY-MM-DD``
+
+```python
+data = client.get_placements_stat(list["PLACEMENT_ID"],"START_DATE", "STOP_DATE")
+```    
+
+Получение статистики по всем кампаниям по дням.
+* ``start_date — дата начала(включительно) периода в формате YYYY-MM-DD``
+* ``stop_date — дата конца(включительно) периода, в формате YYYY-MM-DD``
+
+```python        
+data = client.get_placements_stat_by_day("START_DATE", "STOP_DATE")
+```
+
+Получение статистики по выбранной кампании по дням.
+* ``start_date — дата начала(включительно) периода в формате YYYY-MM-DD``
+* ``stop_date — дата конца(включительно) периода, в формате YYYY-MM-DD``
+
+```python        
+data = client.get_placement_stat_by_day("PLACEMENT_ID", "START_DATE", "STOP_DATE")
+```
