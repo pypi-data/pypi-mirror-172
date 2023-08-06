@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: model-class
+Version: 0.1.0
+Summary: Decorators for property-based model classes
+Home-page: https://github.com/juheise/model-class/
+License: MIT
+Author: Julian Heise
+Author-email: jam.heise@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/juheise/model-class/
+Description-Content-Type: text/markdown
+
+# Model Class Decorator Toolkit
+
+These are some decorators that make life easier for property-based model classes.
+The documentation will be improved soon. For now, look at the tests for how to use.
+
