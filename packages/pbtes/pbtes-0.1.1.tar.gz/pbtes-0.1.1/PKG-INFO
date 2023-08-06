@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pbtes
+Version: 0.1.1
+Summary: 
+Author: cold water
+Author-email: coldwater80@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+
