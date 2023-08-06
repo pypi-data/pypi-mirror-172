@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: forestvpn-killbill
+Version: 0.0.3
+Summary: Kill Bill
+Home-page: 
+Author-email: 
+Keywords: Swagger,Kill Bill
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    Kill Bill is an open-source billing and payments platform  # noqa: E501
+    
