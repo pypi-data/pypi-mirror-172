@@ -1,0 +1,15 @@
+numpy
+pandas
+biopython
+scipy
+six
+matplotlib
+argparse
+statistics
+plotly
+ete3
+jellyfish
+DendroPy
+pyahocorasick
+PyQt5
+ray

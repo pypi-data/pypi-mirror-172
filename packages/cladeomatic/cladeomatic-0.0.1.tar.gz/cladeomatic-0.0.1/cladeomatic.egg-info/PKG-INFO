@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cladeomatic
+Version: 0.0.1
+Summary: Clade-O-Matic: Automatic recognition of population structures based on canonical SNPs
+Home-page: https://github.com/phac-nml/cladeomaticc
+Author: James Robertson
+Author-email: james.robertson@phac-aspc.gc.ca
+License: GPLv3
+Keywords: Genotyping,population structure,kmer
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8.0,<4
+License-File: LICENSE
