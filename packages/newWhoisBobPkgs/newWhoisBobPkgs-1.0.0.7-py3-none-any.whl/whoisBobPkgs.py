@@ -1,0 +1,3 @@
+import bobwhois
+
+bobwhois.run()
