@@ -1,0 +1,19 @@
+botstudio_sdk/__init__.py,sha256=ok96OYV4gpgcmeZrAoz6IJtRyIefoj7MfRL0MTkfT2s,139
+botstudio_sdk/example.py,sha256=d-V7CLDNIYqgy0-uKBVe7D5buKa4DZcPBPqrcZQGvF0,173
+botstudio_sdk/text.py,sha256=QfH56ZTJBpo-ui5-0npEH6e-t5IAnV5Yv9rihnga1z4,309
+botstudio_sdk/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botstudio_sdk/api/bag/__init__.py,sha256=9SdcV8bG40kJ46XjU5PD0HY-y3pq6PhF7TDS75Y9hK4,745
+botstudio_sdk/api/bag/code.py,sha256=1aY0oG_Q1ISOxHR1lZ7b0yv3rETxH7F_GXFfQ1_O0FU,6748
+botstudio_sdk/api/google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botstudio_sdk/api/google/maps/__init__.py,sha256=KfcwVSb4R_F0wHKrrW3OmqJdbQiDpUiygJXpnDcCtYU,46
+botstudio_sdk/api/google/maps/code.py,sha256=2vzOogorU1qhAnjWirmlniNpd5Hzi1Rb5pEOdma3H9I,2791
+botstudio_sdk/dataclasses/__init__.py,sha256=61vlgSSG7VRMZDRfeJ_mf-JBlzIfi-IKrK8DkpJ2fFQ,3532
+botstudio_sdk/helpers/Prijsijst - prijslijst totaal.csv,sha256=dVJ_EkkwqPYOd8mcaWIADPc7-G4YSOzvhqjIOpRmgtg,16474
+botstudio_sdk/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botstudio_sdk/helpers/csv_to_dict.py,sha256=erooFDHrfYEc2N4OgiA_9pTwjzbnCRIKAfqD6-an_FA,4405
+botstudio_sdk/helpers/prijslijst.py,sha256=N5XMk7r-qDh5b4l-D6FjneYw8slTx6OozZK-sUkzvb4,8045
+botstudio_sdk/tiledesk/__init__.py,sha256=UTtizfvjPvRI7An_JRMMFUDZnTv8B4Ft45TOqZQhlm8,3181
+botstudio_sdk-0.0.15.dist-info/METADATA,sha256=4yEVTXXBmnY0ExXxd6V8Wrc02AfU-lzeZUYnq6GitOY,868
+botstudio_sdk-0.0.15.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+botstudio_sdk-0.0.15.dist-info/licenses/LICENSE,sha256=GHCz_wUkglCduk_dE-JafSlOdQddMJMYsGInFMBhLM8,1091
+botstudio_sdk-0.0.15.dist-info/RECORD,,
