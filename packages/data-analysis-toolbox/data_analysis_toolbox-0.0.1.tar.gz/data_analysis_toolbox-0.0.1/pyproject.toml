@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0","numpy>=1.23.3","matplotlib>=1.16.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data_analysis_toolbox"
+version = "0.0.1"
+authors = [
+  { name="Sam Wyss", email="sjwyss@outlook.com" },
+]
+description = "A wrapper for commonly used data analysis routines"
+readme = "README.md"
+requires-python = ">=3.10.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/samwyss/Data-Analysis-Toolbox"
+"Bug Tracker" = "https://github.com/samwyss/Data-Analysis-Toolbox/issues"
