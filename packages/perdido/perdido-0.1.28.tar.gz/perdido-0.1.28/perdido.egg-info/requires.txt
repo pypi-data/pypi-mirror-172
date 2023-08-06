@@ -1,0 +1,10 @@
+requests
+folium
+lxml
+geojson
+gpxpy
+scikit-learn
+pandas
+geopandas
+matplotlib
+spacy>=3.3.0
