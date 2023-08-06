@@ -1,0 +1,3 @@
+[console_scripts]
+karadoc=karadoc.launcher:main
+
