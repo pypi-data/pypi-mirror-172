@@ -1,0 +1,8 @@
+click
+requests
+PyYAML
+merge_args
+tabulate
+toml
+cryptography
+britive
