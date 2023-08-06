@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+task_master_assignment1_CMST.egg-info/PKG-INFO
+task_master_assignment1_CMST.egg-info/SOURCES.txt
+task_master_assignment1_CMST.egg-info/dependency_links.txt
+task_master_assignment1_CMST.egg-info/top_level.txt
