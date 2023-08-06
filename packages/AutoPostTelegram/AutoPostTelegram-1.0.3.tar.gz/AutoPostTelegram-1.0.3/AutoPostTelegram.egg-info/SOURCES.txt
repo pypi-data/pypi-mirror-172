@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+AutoPostTelegram/__init__.py
+AutoPostTelegram.egg-info/PKG-INFO
+AutoPostTelegram.egg-info/SOURCES.txt
+AutoPostTelegram.egg-info/dependency_links.txt
+AutoPostTelegram.egg-info/requires.txt
+AutoPostTelegram.egg-info/top_level.txt
