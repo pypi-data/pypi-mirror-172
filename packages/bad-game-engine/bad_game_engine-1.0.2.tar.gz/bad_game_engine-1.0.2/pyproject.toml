@@ -1,0 +1,16 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bad_game_engine"
+version = "1.0.2"
+description = "a simple game engine I made for fun"
+authors = [{name = "PotatMuffin" }]
+dependencies = ["tk"]
+requires-python = ">=3.9"
+
+[project.urls]
+github = "https://github.com/PotatMuffin/bad-game-engine"

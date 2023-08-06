@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bad_game_engine
+Version: 1.0.2
+Summary: a simple game engine I made for fun
+Author: PotatMuffin
+Project-URL: github, https://github.com/PotatMuffin/bad-game-engine
+Requires-Python: >=3.9
+License-File: LICENSE
