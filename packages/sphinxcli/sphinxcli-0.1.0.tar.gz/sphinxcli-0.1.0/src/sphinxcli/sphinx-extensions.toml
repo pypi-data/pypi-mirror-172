@@ -1,0 +1,6 @@
+# Info for common extensions in separate file
+[tool.sphinx.extensions.httpdomain]
+ghrepo = "sphinx-contrib/httpdomain" # ghrepo = GitHub repo, glrepo = Gitlab, bbrepo = BitBucket
+docs = ""
+
+[tool.sphinx.extensions.httpdomain.options]
