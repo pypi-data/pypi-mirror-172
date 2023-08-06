@@ -1,0 +1,2 @@
+[console_scripts]
+stampchecker = stampchecker.__main__:main

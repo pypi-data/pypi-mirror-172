@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+src/stampchecker/Controller.py
+src/stampchecker/__init__.py
+src/stampchecker/__main__.py
+src/stampchecker.egg-info/PKG-INFO
+src/stampchecker.egg-info/SOURCES.txt
+src/stampchecker.egg-info/dependency_links.txt
+src/stampchecker.egg-info/entry_points.txt
+src/stampchecker.egg-info/top_level.txt
