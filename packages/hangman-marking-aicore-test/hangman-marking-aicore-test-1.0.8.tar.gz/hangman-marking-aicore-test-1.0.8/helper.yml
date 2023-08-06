@@ -1,0 +1,55 @@
+milestone_1:
+  - name: Set up Github
+    id: 032dcdb6-69e1-450c-96aa-819a45d6cda1
+milestone_2:
+  - name: Define the list of possible words
+    id: 3f496682-807d-4ba4-aa64-c09ebba9b83a
+  - name: Choose a random word from the list
+    id: 62158fc2-ba1d-49f4-aee0-66ec01f63baa
+  - name: Ask the user for an input
+    id: d592e5f4-6606-4a12-bbf2-7c160a09fd66
+  - name: Check that the input is a single character
+    id: 3de4ce88-cd39-4f85-a775-529a41c2fa17
+  - name: Start documenting your experience
+    id: 75e80e7f-ec62-459a-8858-9d2eb9d4beb6
+milestone_3:
+  - name: Iteratively check if the input is a valid guess
+    id: 032dcdb6-69e1-450c-96aa-819a45d6aed3
+  - name: Check whether the guess is in the word
+    id: 93eb2ed4-e6e3-40e5-9a7d-a774d9e5f8e6
+  - name: Create functions to run the checks
+    id: 5ea59e77-6f08-41e7-99e6-eb73a9709d22
+  - name: Update your documentation
+    id: a3bc621a-19e0-4bff-bc9e-1eba3ee09160
+milestone_4:
+  - name: Create the class
+    description: |
+          Create a new script called `milestone_3.py`. This file will contain the code for the third milestone.
+          Define the `__init__` method of the `Hangman` class.
+          Step 1. Create a class called `Hangman`. 
+          Step 2. Inside the class, create an `__init__` method to initialise the attributes of the class. 
+          Pass in `word_list` and `num_lives` as parameters. Make `num_lives` a default parameter and set the value to 5.
+          Step 3. Initialise the following attributes:
+          1. `word`: The word to be guessed, picked randomly from the `word_list`. Remember to import the `random` module into your script.
+          2. `word_guessed`: list - A list of the letters of the word, with '_' for each letter not yet guessed. For example, if the word is 'apple', the `word_guessed` list would be ['_', '_', '_', '_', '_']. If the player guesses 'a', the list would be ['a', '_', '_', '_', '_'].
+          3. `num_letters`: int - The number of UNIQUE letters in the word that have not been guessed yet.
+          4. `num_lives`: int - The number of lives the player has at the start of the game. 
+          5. `word_list`: list - A list of words.
+          6. `list_of_guesses`: list - A list of the guesses that have already been tried. Set this to an empty list initially.
+    id: c82f56aa-237b-49c6-ba48-67c67e80f569
+  - name: Create methods for running the checks
+    id: f64ba6c9-f685-4c47-88a5-7503ada30b8d
+  - name: Define what happens if the letter is in the word
+    id: 2f2ccea4-f88e-4bbe-8063-1a3cf77c6d6d
+  - name: Define what happens if the letter is NOT in the word
+    id: 04dc4041-10bf-4c02-84cd-892b1913adf4
+  - name: Update your documentation
+    id: 56c6b4ba-e027-46e2-98e0-bed884e02336
+
+milestone_5:
+  - name: Code the logic of the game
+    id: 6abbafb7-59a3-481a-9b1f-837e37b5826c
+  - name: Take it even further!
+    id: 33a3d741-121f-4a7a-aa2c-b0eeae1c0c0a
+  - name: Document your experience
+    id: f9464de6-74a0-43f7-aa62-91f2677b267f

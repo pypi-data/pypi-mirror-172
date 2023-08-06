@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hangman-marking-aicore-test
+Version: 1.0.8
+Summary: An automated marking system for the hangman project (test)
+Home-page: UNKNOWN
+Author: Ivan Ying
+Author-email: ivan@theaicore.com
+License: UNKNOWN
+Description: # Hangman Marking System
+        
+        This package contains the tests to automatically mark the Hangman project for AiCore
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
