@@ -1,0 +1,46 @@
+name: Continuous delivery
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  build-and-publish:
+    name: Publish release to Pypi
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Build package
+        run: |
+          pip install build
+          python -m build
+
+      - name: Publish package to Test PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.test_pypi_token }}
+          repository_url: https://test.pypi.org/legacy/
+          skip_existing: true
+
+      - name: Test that package is published on Test PyPI
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install --index-url https://test.pypi.org/simple/ --no-deps flask-camp
+
+      - name: Check that version number from source is equal to release version number
+        run: |
+          echo "Tag name is ${{ github.event.release.tag_name }}"
+          python -c "import pkg_resources; print('flask-camp version is ' + pkg_resources.get_distribution('flask-camp').version)"
+          python -c "import pkg_resources; exit(1 if pkg_resources.get_distribution('flask-camp').version != '${{ github.event.release.tag_name }}' else 0)"
+
+      - name: Publish package to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.pypi_token }}

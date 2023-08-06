@@ -1,0 +1,5 @@
+{
+  "description": "User name specification",
+  "type": "string",
+  "pattern": "^[^ @\\/?&]{3,64}$"
+}
