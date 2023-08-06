@@ -1,0 +1,3 @@
+[console_scripts]
+protoc-gen-init_python=protobuf_init.plugin:main
+

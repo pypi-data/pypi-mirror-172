@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: protobuf-init
+Version: 0.1.2
+Summary: generate __init__.py files for protobuf projects
+Home-page: https://github.com/crflynn/protobuf-init
+License: MIT
+Keywords: protobuf,protocol,buffers,protoc,plugin
+Author: flynn
+Author-email: crf204@gmail.com
+Requires-Python: >=3.8
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: protobuf (>=3.19.1)
+Project-URL: Documentation, https://github.com/crflynn/protobuf-init
+Project-URL: Repository, https://github.com/crflynn/protobuf-init
+Description-Content-Type: text/markdown
+
+# protobuf-init
+
+To install:
+
+```bash
+pip install protobuf-init
+```
+
+This package will create `__init__.py` files when compiling `*.proto` files. Optionally, it will create relative imports from generated `*_pb.py`, `*_pb_grpc.py`, and `*_grpc.py` files from `protobuf`, `grpcio`, and `grpclib` packages, respectively.
+
+Using the `protos` folder of this project as an example, the following command will generate the contents of the `example` package, also in this project (assuming `grpcio-tools` is installed):
+
+```bash
+export PROTO_PATH=./protos
+export GEN_PATH=.
+python -m grpc_tools.protoc \
+    --python_out=$GEN_PATH \
+    --mypy_out=$GEN_PATH \
+    --init_python_out=$GEN_PATH \
+    --init_python_opt=imports=protobuf+grpcio+grpclib \
+    --grpc_python_out=$GEN_PATH \
+    --grpclib_python_out=$GEN_PATH \
+    --proto_path=$PROTO_PATH 
+    $(find $PROTO_PATH -name '*.proto')
+```
+
+The `--init_python_out=$GEN_PATH` flag indicates to call the plugin to create the init files.
+
+The `--init_python_opt=imports=protobuf+grpcio+grpclib` indicates which relative imports to include in the init files. Allowed options are `protobuf`, `grpcio`, `grpclib`, separated by `+`. (Note that both grpcio and grpclib generate `<ServiceName>Stub` objects which would collide in the init file.)
