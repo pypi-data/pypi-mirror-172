@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.py
+bin/velorama
+velorama/__init__.py
+velorama/models.py
+velorama/run.py
+velorama/train.py
+velorama/utils.py
+velorama.egg-info/PKG-INFO
+velorama.egg-info/SOURCES.txt
+velorama.egg-info/dependency_links.txt
+velorama.egg-info/not-zip-safe
+velorama.egg-info/requires.txt
+velorama.egg-info/top_level.txt

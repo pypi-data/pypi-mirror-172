@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: velorama
+Version: 0.0.1
+Summary: Gene regulatory network inference for RNA velocity and pseudotime data
+Home-page: http://github.com/rs239/velorama
+Author: Anish Mudide, Alex Wu, Rohit Singh
+Author-email: rsingh@alum.mit.edu
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
