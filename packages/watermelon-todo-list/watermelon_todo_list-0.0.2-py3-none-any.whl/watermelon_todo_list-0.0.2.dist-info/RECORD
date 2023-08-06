@@ -1,0 +1,12 @@
+watermelon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watermelon/__main__.py,sha256=vK9Hifg_NSmPSuokflF5Ya4rkslyMrl7aG5bzQQU0Q4,1925
+watermelon/event/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watermelon/event/event.py,sha256=_NdOMUjYp1TjnzNX2CcjbBJyABm-RppKZS8wjyMLbu8,4073
+watermelon/event/utils.py,sha256=7_OTsihkslmZuKs73HqQrEW-m8U3aY9-G_d8RvgkxCM,3025
+watermelon/resources/db.json,sha256=GNhKhlWImo0MBWV_GhEvPbiHks--IM5O5YB9qg5whBI,34
+watermelon_todo_list-0.0.2.dist-info/LICENSE,sha256=MIRgKD63K53YmbueI1qlzYt5EPYba2ObUqDLc6uAC50,1067
+watermelon_todo_list-0.0.2.dist-info/METADATA,sha256=o19qqyL9YskQTTdbwxP_11ZYcTHKfYuVHmq6mAifcks,516
+watermelon_todo_list-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+watermelon_todo_list-0.0.2.dist-info/entry_points.txt,sha256=dfv5bNSSQP7dpT7J2kv4K8OTL4oWGk2m90S7qKIHb3o,56
+watermelon_todo_list-0.0.2.dist-info/top_level.txt,sha256=ocDuXFXrPSHNz67T8HK5ppG3b2FSI8aeD2chf7M5xd8,11
+watermelon_todo_list-0.0.2.dist-info/RECORD,,
