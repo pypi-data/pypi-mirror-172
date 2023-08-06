@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pdftoxlsx-v1
+Version: 1.0.1
+Summary: 一个非常用于将pdf转换为xlsx的包
+Author: hsqf
+Author-email: haishangqingfeng@foxmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+##
+zhu yao yong yu pdf zhuan huan wei xlsx 
+update version 1.0.1
