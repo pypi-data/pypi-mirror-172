@@ -1,0 +1,118 @@
+site_name: UP42 Block utilities
+site_url: https://up42.github.io/up42-blockutils/
+site_description: Block development toolkit for UP42
+
+edit_uri: ''  #disables edit button
+
+# Copyright
+copyright: UP42 2020
+
+## Social Media
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/up42
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/up42official
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/up42/
+
+## Page tree
+nav:
+    - Home: 'index.md'
+    - Release notes: 'releasenotes.md'
+    - Code Reference:
+        - Blockutils:
+            - Blocks: 'blocks.md'
+            - Common: 'common.md'
+            - Logging: 'logging.md'
+            - Data Path: 'datapath.md'
+            - E2E: 'e2e.md'
+            - Exceptions: 'exceptions.md'
+            - Format: 'format.md'
+            - Raster: 'raster.md'
+            - Geometry: 'geometry.md'
+            - Windows: 'windows.md'
+            - STAC: 'stac.md'
+            - WMTS: 'wmts.md'
+            - Fetcher: 'fetcher.md'
+
+## Configuration
+theme:
+  name: material
+  # 404 page
+  static_templates:
+    - 404.html
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - tabs
+    #- instant
+  palette:
+    primary: indigo
+    accent: purple
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/up42-logo.svg
+  favicon: assets/logo-up42.ico #browser tab logo
+
+## Plugins
+plugins:
+  - search
+  - autolinks
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          rendering:
+            show_source: true
+      watch:
+        - blockutils
+
+## Custom theme additions
+extra_javascript:
+        - 'stylesheets/extra.js'
+extra_css:
+        - stylesheets/extra.css
+
+## Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed
+
+google_analytics:
+  - 'UA-XXXXXXXX-X' #add account
+  - 'auto'
