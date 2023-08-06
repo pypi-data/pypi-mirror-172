@@ -1,0 +1,2 @@
+requests>=0.0.1
+pysubs2>=0.0.1
