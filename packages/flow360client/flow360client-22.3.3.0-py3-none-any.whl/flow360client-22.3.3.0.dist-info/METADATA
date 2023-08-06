@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: flow360client
+Version: 22.3.3.0
+Summary: A Python API for Flow360 CFD solver
+Home-page: UNKNOWN
+Author: FlexCompute, Inc.
+Author-email: john@simulation.cloud
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Requires-Dist: aws-requests-auth (>=0.4.0)
+Requires-Dist: bcrypt (>=3.1.0)
+Requires-Dist: boto3 (>=1.4.0)
+Requires-Dist: numpy (>=1.17)
+Requires-Dist: pydantic (>=1.9.0)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: rich (>=12.2.0)
+
+UNKNOWN
+
+
