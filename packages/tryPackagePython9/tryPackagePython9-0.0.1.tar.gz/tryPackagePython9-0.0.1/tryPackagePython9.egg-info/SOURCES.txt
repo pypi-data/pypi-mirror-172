@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+tryPackagePython9/__init__.py
+tryPackagePython9/myFunctions.py
+tryPackagePython9.egg-info/PKG-INFO
+tryPackagePython9.egg-info/SOURCES.txt
+tryPackagePython9.egg-info/dependency_links.txt
+tryPackagePython9.egg-info/requires.txt
+tryPackagePython9.egg-info/top_level.txt
