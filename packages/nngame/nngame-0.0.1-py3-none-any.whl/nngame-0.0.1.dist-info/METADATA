@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nngame
+Version: 0.0.1
+Summary: A lite,simple package for game makeing based on pygame
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Zhang Feibao <382297510@qq.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pygame>=2.1.1
+Description-Content-Type: text/markdown
+
+# pygame simple wraper
+
+A lite,simple package for game makeing based on pygame.
+
+more:https://github.com/zhangfeibao/pygame-for-chinese-children
+
+
