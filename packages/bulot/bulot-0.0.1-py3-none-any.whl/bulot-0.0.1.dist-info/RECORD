@@ -1,0 +1,16 @@
+bulot/__about__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+bulot/__init__.py,sha256=AMd_Igry4OR_wK8GjeSbjn8hGxEDh39m0VgVFNmb_Zs,192
+bulot/_py_version.py,sha256=_INuK-AJ-Z5L0LwlQvfEcb-MdXx_YSRLqopHlOIIGtE,1031
+bulot/_types.py,sha256=8QPQz54oCVEDTnZO9VgicuMyWaE1zG3eMmsHYlttJ-c,511
+bulot/aliases.py,sha256=YCTH1BzN4ySd_ARJufnie408fHJSB-cKUfQNIr__ww0,924
+bulot/command.py,sha256=JUNMEkzLRjF4tMC8zgrMGsehaH3HCfZyY92T815MTyw,1303
+bulot/file_operations.py,sha256=H_8qvi7ETZpuxilFWbTAz1CRzca4chZmdJhbR4YF9U4,1021
+bulot/logger.py,sha256=1fVVB7n8NT19gQTCRRKIvpymRUIDSQqAoae6VM3BzJI,424
+bulot/pipe.py,sha256=_ARtA6Q_qkB2cBdNc4Xlk0Ax17LNJ4INpRkB-gx2cQo,1732
+bulot/shell.py,sha256=YMpuAQUpWvpe4sx4CjTlclBRFWD0sTvSyuSQLGi3Zi0,5152
+bulot/utils.py,sha256=3tDzB3LuTTQRvVqrmGS6z5ctjZ3wMFPawMG3_xjJO8M,412
+bulot/xargs.py,sha256=DTNz6_A-8iV-96I1wVRwCYqyaivo8pIHVe65g-z7EeQ,1882
+bulot-0.0.1.dist-info/METADATA,sha256=vz5j0tEV2dyAkMsBKU-CiEZqyEdbOyHmHKUkZlesXvE,4680
+bulot-0.0.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+bulot-0.0.1.dist-info/licenses/LICENSE,sha256=m0SuIeObDsIOiZhL-0N9IGFyNihcBRxC2VZyur4trWI,10764
+bulot-0.0.1.dist-info/RECORD,,
