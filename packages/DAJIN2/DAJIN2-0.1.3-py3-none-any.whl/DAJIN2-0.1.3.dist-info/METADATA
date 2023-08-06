@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: DAJIN2
+Version: 0.1.3
+Summary: One-step genotyping tools for Nanopore amplicon sequencing
+Home-page: https://github.com/akikuno/DAJIN2
+Author: Akihiro Kuno
+Author-email: akuno@md.tsukuba.ac.jp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy (>=1.20.0)
+Requires-Dist: scipy (>=1.6.0)
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: scikit-learn (>=1.0.0)
+Requires-Dist: mappy (>=2.0.0)
+Requires-Dist: pysam (>=0.19.0)
+Requires-Dist: openpyxl (>=3.0.0)
+Requires-Dist: cstag (>=0.3.0)
+Requires-Dist: midsv (>=0.7.0)
+Requires-Dist: wslPath (>=0.3.0)
+Requires-Dist: Flask (>=2.2.0)
+Requires-Dist: waitress (>=2.1.0)
+Requires-Dist: Jinja2 (>=3.1.0)
+Requires-Dist: plotly (>=5.0.0)
+Requires-Dist: kaleido (>=0.2.0)
+
+# DAJIN2 is now under development👷
+
+I aim to release a stable version of DAJIN2 by March 2023:crossed_fingers:
+## New planned features
+
+
+### Wet experiments
+
+- [ ] support nCATs
+- [ ] support PacBio
+
+### Functions
+
+- [ ] output VCF
+- [ ] multi-allele phasing
+- [x] trim microhomology in BAM
+
+### Usability
+
+- [ ] easy installation
+  - [ ] PyPI
+  - [ ] BioConda
+  - [ ] docker image
+- [ ] support low-/middle-spec laptop
+- [x] support macOS
+- [x] support samples without a reference genome
+- [x] support visualization using `igv.js` via `DAJIN2 view` command
+- [x] support graphical user interface using `flask` via `DAJIN2 gui` command
+
+### Maintainability
+
+- [ ] tests
+- [x] minimize dependencies
+  - [x] Python, R, Bash -> Python
+  - [x] samtools -> pysam
+  - [x] minimap2 -> mappy
+  - [x] remove NanoSim
+  - [x] remove Tensorflow (GPU computation)
+
