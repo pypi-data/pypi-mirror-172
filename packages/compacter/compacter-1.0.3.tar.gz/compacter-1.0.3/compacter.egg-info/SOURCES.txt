@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+compacter/__init__.py
+compacter/main.py
+compacter.egg-info/PKG-INFO
+compacter.egg-info/SOURCES.txt
+compacter.egg-info/dependency_links.txt
+compacter.egg-info/entry_points.txt
+compacter.egg-info/requires.txt
+compacter.egg-info/top_level.txt

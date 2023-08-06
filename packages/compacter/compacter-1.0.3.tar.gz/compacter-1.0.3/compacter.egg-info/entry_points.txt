@@ -1,0 +1,2 @@
+[console_scripts]
+compacter = compacter.main:main
