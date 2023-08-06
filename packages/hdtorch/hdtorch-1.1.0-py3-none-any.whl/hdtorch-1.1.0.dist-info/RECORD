@@ -1,0 +1,11 @@
+hdtorch/HDVecGenerators.py,sha256=4UQdpgOgIBhjgJOVQ5GVfO4kN_SJdxTekjITcVVfPwg,8823
+hdtorch/HDencoding.py,sha256=6rXZKdio9FLFwf1JD0DRCoffpXl3Iq8OR_9S2N1YAmA,7326
+hdtorch/HDmodel.py,sha256=Hkf9zem66TXhE8ZLgqsWbqcQOlGqtNdxWTjZs3vZBW4,6398
+hdtorch/HDutil.py,sha256=Zu3UCJW6q83YmKSwTTPGt--oD6auk1XO8eycrJ-ZroY,5824
+hdtorch/__init__.py,sha256=P_fNEQbVpgxFsTzbTsDtaY_lTKWtmty0wgb87vm5QL0,1144
+hdtorch/cuda/hdtorch.cpp,sha256=oY2AsGDSRAnGGDprfZOdYGsWdYj7qFcbZiX28xAnncM,2962
+hdtorch/cuda/hdtorch_cu.cu,sha256=r9LKP87yHvzFrvo5Bk3laUm-K8nNPE0PbwL9pN8mWno,15482
+hdtorch/version.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+hdtorch-1.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+hdtorch-1.1.0.dist-info/METADATA,sha256=LhJ9DOMUHXcZRLqtWG1W9bIUSmdxmTMLcD-oUjvx4KI,14142
+hdtorch-1.1.0.dist-info/RECORD,,
