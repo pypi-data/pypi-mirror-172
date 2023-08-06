@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+facebook_downloader/__init__.py
+facebook_downloader/downloader.py
+facebook_downloader/main.py
+facebook_downloader.egg-info/PKG-INFO
+facebook_downloader.egg-info/SOURCES.txt
+facebook_downloader.egg-info/dependency_links.txt
+facebook_downloader.egg-info/entry_points.txt
+facebook_downloader.egg-info/requires.txt
+facebook_downloader.egg-info/top_level.txt

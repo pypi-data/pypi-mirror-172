@@ -1,0 +1,2 @@
+[console_scripts]
+facebook_downloader = facebook_downloader.main:main
