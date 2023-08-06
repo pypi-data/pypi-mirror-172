@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: kirlent
+Version: 0.2
+Summary: Educational material builder.
+Keywords: 
+Author-email: "H. Turgut Uyar" <uyar@tekir.org>
+Requires-Python: ~=3.7
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Markup
+Requires-Dist: invoke
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: importlib-metadata ; extra == "dev" and ( python_version < '3.8')
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: flake8-isort ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Project-URL: Homepage, https://tekir.org/kirlent/
+Project-URL: Repository, https://github.com/uyar/kirlent
+Provides-Extra: dev
+
+Tools for building educational material.
+
