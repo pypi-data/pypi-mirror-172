@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "ligo.em-bright"
+version = "1.0.4"
+description = "Possibility and properties of Electromagnetically-bright sources of gravitational-wave events"
+readme = "README.md"
+authors = [
+    "Deep Chatterjee <deep.chatterjee@ligo.org>",
+    "Shaon Ghosh <shaon.ghosh@ligo.org>"]
+packages = [
+    { include = "ligo" },
+]
+exclude = ["ligo/em_bright/data"]
+license = "MIT"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+scikit-learn = "==1.1.1"  #  models were trained with 1.1.1. see :https://scikit-learn.org/stable/model_persistence.html
+astropy = ">=5.1"
+pandas = "^1.0"
+lalsuite = "^7.0"
+h5py = ">=2.10.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+Sphinx = "^4.1.2"
+toml = "^0.10.2"
+nbsphinx = "^0.8.7"
+flake8 = "^4.0.1"
+htcondor = ">=9.0.6"
+
+
+[tool.poetry.scripts]
+em_bright_categorize = 'ligo.em_bright.categorize:main'
+em_bright_categorize_all_eos = 'ligo.em_bright.categorize:main_all'
+em_bright_create_param_sweep_plot = 'ligo.em_bright.utils:param_sweep_plot'
+em_bright_dag_writer = 'ligo.em_bright.dag_writer:main'
+em_bright_extract = 'ligo.em_bright.utils:extract'
+em_bright_join = 'ligo.em_bright.utils:join'
+em_bright_train = 'ligo.em_bright.utils:train'
+
+
+[tool.pytest.ini_options]
+addopts = "-rsx --tb=short"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
