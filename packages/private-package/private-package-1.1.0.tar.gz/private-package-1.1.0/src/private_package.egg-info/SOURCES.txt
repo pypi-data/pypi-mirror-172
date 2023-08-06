@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/private-package/__init__.py
+src/private-package/__main__.py
+src/private-package/utils/Class.py
+src/private-package/utils/__init__.py
+src/private-package/utils/functions.py
+src/private_package.egg-info/PKG-INFO
+src/private_package.egg-info/SOURCES.txt
+src/private_package.egg-info/dependency_links.txt
+src/private_package.egg-info/top_level.txt

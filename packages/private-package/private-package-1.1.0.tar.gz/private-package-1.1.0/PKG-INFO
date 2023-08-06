@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: private-package
+Version: 1.1.0
+Summary: Install python packe from private github repository
+Home-page: https://github.com/Ridoineel/private-package
+Author: RidoineEl
+Author-email: ridoineelofficiel@gmail.com
+Project-URL: Bug Tracker, https://github.com/Ridoineel/private-package/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Private-Package
+
+> Python CLI program to install 
+> python package from private (essentially) git repository
+
+# Usage
+
+## Install
+
+```bash
+pip install private-package
+```
+
+## Install from (private) package repo
+
+```bash
+python -m private-package -g {your_private_package_git_repo}
+```
+
+# Features
