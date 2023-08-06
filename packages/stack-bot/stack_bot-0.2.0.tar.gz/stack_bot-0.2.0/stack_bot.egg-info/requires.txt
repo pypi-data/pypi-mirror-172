@@ -1,0 +1,4 @@
+dataclasses_json>=0.5.7
+numpy
+requests>=2.25.1
+ydb>=2.10.0
