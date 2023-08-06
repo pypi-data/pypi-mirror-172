@@ -1,0 +1,4 @@
+[console_scripts]
+image-detection-service_web_start=image_detection_service.run:run_cli
+run-cli=image_detection_service.run:run_cli
+
