@@ -1,0 +1,9 @@
+setup.py
+dwh-logs/__init__.py
+dwh-logs/function.py
+dwh-logs/main.py
+nolk_dwh_logs.egg-info/PKG-INFO
+nolk_dwh_logs.egg-info/SOURCES.txt
+nolk_dwh_logs.egg-info/dependency_links.txt
+nolk_dwh_logs.egg-info/requires.txt
+nolk_dwh_logs.egg-info/top_level.txt
