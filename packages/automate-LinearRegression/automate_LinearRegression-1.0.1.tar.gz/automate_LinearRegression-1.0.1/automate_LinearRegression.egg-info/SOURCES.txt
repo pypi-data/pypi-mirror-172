@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+automate_LinearRegression/__init__.py
+automate_LinearRegression/automate.py
+automate_LinearRegression.egg-info/PKG-INFO
+automate_LinearRegression.egg-info/SOURCES.txt
+automate_LinearRegression.egg-info/dependency_links.txt
+automate_LinearRegression.egg-info/requires.txt
+automate_LinearRegression.egg-info/top_level.txt
