@@ -1,0 +1,3 @@
+[console_scripts]
+b2r = bump2release.cli:main
+bump2release = bump2release.cli:main
