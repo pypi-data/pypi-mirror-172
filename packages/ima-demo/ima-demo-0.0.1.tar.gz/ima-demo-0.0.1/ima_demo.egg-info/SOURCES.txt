@@ -1,0 +1,10 @@
+setup.py
+ima_demo/__init__.py
+ima_demo/private_constants.py
+ima_demo/pysensor.py
+ima_demo/telemetrix.py
+ima_demo.egg-info/PKG-INFO
+ima_demo.egg-info/SOURCES.txt
+ima_demo.egg-info/dependency_links.txt
+ima_demo.egg-info/requires.txt
+ima_demo.egg-info/top_level.txt
