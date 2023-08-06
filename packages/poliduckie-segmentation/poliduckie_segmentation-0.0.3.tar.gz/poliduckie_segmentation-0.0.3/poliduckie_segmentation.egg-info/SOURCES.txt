@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+poliduckie_segmentation/__init__.py
+poliduckie_segmentation/segmentation.py
+poliduckie_segmentation.egg-info/PKG-INFO
+poliduckie_segmentation.egg-info/SOURCES.txt
+poliduckie_segmentation.egg-info/dependency_links.txt
+poliduckie_segmentation.egg-info/requires.txt
+poliduckie_segmentation.egg-info/top_level.txt
