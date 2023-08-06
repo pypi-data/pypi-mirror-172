@@ -1,0 +1,16 @@
+LICENCE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+.github/src/pagerDutySchedule.jpeg
+.github/src/slackUserGroup.jpeg
+pd2slack/main.py
+pd2slack/util.py
+pd2slack.egg-info/PKG-INFO
+pd2slack.egg-info/SOURCES.txt
+pd2slack.egg-info/dependency_links.txt
+pd2slack.egg-info/entry_points.txt
+pd2slack.egg-info/requires.txt
+pd2slack.egg-info/top_level.txt
