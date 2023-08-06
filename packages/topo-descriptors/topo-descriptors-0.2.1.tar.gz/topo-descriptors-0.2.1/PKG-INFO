@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: topo-descriptors
+Version: 0.2.1
+Summary: A library to compute DEM-based topographical descriptors.
+Home-page: https://github.com/MeteoSwiss/topo-descriptors
+Author: Mathieu Schaer
+Author-email: mathieu.schaer@meteoswiss.ch
+Maintainer: Daniele Nerini
+Maintainer-email: daniele.nerini@meteoswiss.ch
+License: BSD-3-Clause license
+Keywords: topo_descriptors
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+# topo-descriptors
+
+A python library to compute DEM-based topographical descriptors.
+
+ ## Usage
+
+Let's install `topo-descriptors` with few additional packages that will help us
+to run a simple example:
+
+```
+pip install topo-descriptors
+pip install elevation
+pip install rasterio
+```
+
+[elevation](https://github.com/bopen/elevation) is an python library that provides
+an easy access to global elevation data. Here we are going to clip the SRTM 30m
+DEM around the Basodino region in southern Switzerland, around 46.4N 8.5E:
+
+```
+eio clip -o Basodino-30m-DEM.tif --bounds 8.2 46.30 8.6 46.55
+```
+
+Now in python we can use the xarray interface to rasterio to easily import our
+`Basodino-30m-DEM.tif` file:
+
+```python
+import xarray as xr
+
+dem = xr.open_rasterio("Basodino-30m-DEM.tif")
+dem = dem.isel(band=0, drop=True)
+dem.plot()
+```
+![png](dem_30m.png)
+
+
+With the DEM data imported as a xarray DataArray, we can use topo-descriptors to
+compute two established topographical descriptors: the topographical position index
+(TPI) and the Sx. The TPI describes the elevation of a given point relatively
+to its neighbourhood, here defined on a 500 meter scale:
+
+```python
+from topo_descriptors import topo, helpers
+
+scale_meters = 500
+scale_pixel, __ = helpers.scale_to_pixel(scale_meters, dem)
+topo.tpi(dem, scale_pixel).plot(vmin=-100, vmax=100, cmap="bwr")
+```
+![png](tpi_500M.png)
+
+The Sx is used to describe the horizon in a given direction and spatial scale.
+In the example below we compute the Sx for a 0° azimuth (i.e., looking North)
+and a radius of 500 meters.
+
+```python
+sx_500m = topo.sx(dem, azimuth=0, radius=500)
+xr.DataArray(sx_500m, coords=dem.coords).plot.imshow()
+```
+![png](sx_0azimuth_500radius.png)
+
+Other topographical descriptors are available, such as slope, aspect, derivatives,
+and more.
+
+=======
+History
+=======
+
+0.2.1 (2022-10-19)
+------------------
+
+* Fix bug in the scale to pixel conversion in case of WGS84 grids.
+
+0.2.0 (2021-06-12)
+------------------
+
+* Add Sx descriptor.
+* Add STD descriptor.
+
+0.1.2 (2021-05-14)
+------------------
+
+* First working release on PyPI.

@@ -1,0 +1,11 @@
+netcdf4
+numba
+numpy
+pandas
+scipy
+utm
+xarray
+yaconfigobject
+
+[test]
+pytest
