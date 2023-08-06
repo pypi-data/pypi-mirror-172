@@ -1,0 +1,12 @@
+pyclipse/__main__.py,sha256=UpOTN15UNRA1cRq59IrxWicqKA9WvDrtDJmbEt87f4I,2957
+pyclipse/dataset.py,sha256=e6M2YdefHDviZfBtj87L-n317_5pIbAXtXFoSNE_miQ,3769
+pyclipse/evaluate.py,sha256=5aflA8exqZHvdz6FnRLAOQQZwiiS4NvQe1BGh0xebGY,6663
+pyclipse/io.py,sha256=iJBwAijt9P383zdXyOev9oRTOu32-R3J-oIdyK4kArA,10305
+pyclipse/label.py,sha256=Oex3DCIFfcwwyVO9CDwwVeRyEStavyVhTKcop-jDigk,2928
+pyclipse/torch_dataset.py,sha256=tO8I_o4Alfx7lfHvZ8g0hnivzjefDNyNBbbVY65lbcY,5729
+pyclipse-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyclipse-0.0.1.dist-info/METADATA,sha256=YOcyqX1i279Bzi8w2JgoA0JW4jY1zrLt4qsBR7SajPk,806
+pyclipse-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyclipse-0.0.1.dist-info/entry_points.txt,sha256=DPOrsM80q7_NNDOKg2fJeE2UEJIcKKdny6UrfmpnVYs,56
+pyclipse-0.0.1.dist-info/top_level.txt,sha256=nbFc29DcIaVZTWW7Q3kjaVJe5VTXL_Dj_oGM4qvhgFs,9
+pyclipse-0.0.1.dist-info/RECORD,,
