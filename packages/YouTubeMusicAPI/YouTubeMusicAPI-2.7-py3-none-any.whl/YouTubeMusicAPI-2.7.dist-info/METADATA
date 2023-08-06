@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: YouTubeMusicAPI
+Version: 2.7
+Summary: The search API for YouTube Music.
+Home-page: https://github.com/cj-praveen/YouTube-Music-API
+Author: CJ Praveen
+Author-email: cjpraveen@hotmail.com
+Keywords: youtube music api,YouTubeMusicAPI,python youtube music api,youtube music api python,youtube api pypi,youtube api
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# YouTubeMusicAPI 2.7
+
+The search API for [YouTube Music](https://music.youtube.com/).
+
+```
+pip install YouTubeMusicAPI
+```
+
+## Example
+
+```python
+import YouTubeMusicAPI
+
+result = YouTubeMusicAPI.Search("Alan walker faded")
+
+print(result)
+
+# output
+# {
+#     "name": "Alan Walker - Faded",
+#     "Id": "60ItHLz5WEA",
+#     "url": "https://music.youtube.com/watch?v=60ItHLz5WEA",
+#     "image": "https://i.ytimg.com/vi/60ItHLz5WEA/hqdefault.jpg",
+#     "author_name": "Alan Walker",
+#     "author_url": "https://www.youtube.com/c/Alanwalkermusic"
+# }
+```
+
+## License
+This Python package is distributed under the [MIT License](https://mit-license.org/).
