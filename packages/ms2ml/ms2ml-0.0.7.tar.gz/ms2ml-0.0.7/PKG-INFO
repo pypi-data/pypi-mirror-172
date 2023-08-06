@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ms2ml
+Version: 0.0.7
+Summary: Provides an intermediate layer between mass spec data and ML applications, such as encoding.
+License: Apache 2.0
+Author: J. Sebastian Paez
+Author-email: jspaezp@users.noreply.github.com
+Requires-Python: >=3.8,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: importlib-metadata (>=5.0.0,<6.0.0); python_version >= "3.8" and python_version < "3.9"
+Requires-Dist: lark (>=1.1.2,<2.0.0)
+Requires-Dist: lxml (>=4.9.1,<5.0.0)
+Requires-Dist: numpy (>=1.23.2,<2.0.0)
+Requires-Dist: pandas (>=1.4.4,<2.0.0)
+Requires-Dist: pandas-stubs (>=1.4.4.220919,<2.0.0.0); python_version >= "3.8" and python_version < "3.11"
+Requires-Dist: psims (>=1.2.0,<2.0.0); python_version > "3.8" and python_version < "3.11"
+Requires-Dist: pyteomics (>=4.5.5,<5.0.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Requires-Dist: uniplot (>=0.7.0,<0.8.0)
