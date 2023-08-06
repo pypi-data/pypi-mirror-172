@@ -1,0 +1,16 @@
+click
+fsspec
+joblib
+nibabel
+numpy
+scikit-image
+tensorflow-probability>=0.11.0
+tensorflow>=2.7.0
+tensorflow-addons>=0.12.0
+psutil
+
+[dev]
+pre-commit
+pytest
+pytest-cov
+scipy
