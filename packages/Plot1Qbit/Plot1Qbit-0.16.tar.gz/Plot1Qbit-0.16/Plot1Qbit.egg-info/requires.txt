@@ -1,0 +1,5 @@
+matplotlib>=3.1.0
+gif
+tqdm
+inspect
+numpy
