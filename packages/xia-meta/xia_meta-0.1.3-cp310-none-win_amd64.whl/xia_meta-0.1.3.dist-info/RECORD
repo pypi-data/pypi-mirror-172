@@ -1,0 +1,10 @@
+xia_meta/__init__.py,sha256=5E4MNaKNRfc4EpmCG1veQhf6K6CuLgwrxt0sMLHu3cE,284
+xia_meta/asset.cp310-win_amd64.pyd,sha256=wJtttoqBsYrPy69Dc2ScneZWq7V-fDQqt33Svpvn98Y,295424
+xia_meta/health.cp310-win_amd64.pyd,sha256=OKpa7pizHay9rKVyPPOhHfpMmK3OGikIGVvQ2SKu-jQ,335872
+xia_meta/meta.cp310-win_amd64.pyd,sha256=yH-702A58CzKHP402S09upVDuCRA-Wx_0EvRqhPcPw0,369152
+xia_meta/tools.cp310-win_amd64.pyd,sha256=dhiIB4GG_JhX0K1xbrCpmqR5yVzScA7pdGPP-Tse6dI,226304
+xia_meta-0.1.3.dist-info/LICENSE.txt,sha256=tWXZqpL_C-bIyrhuzutInM8bKRN490vPwfa6vH65N1Q,154
+xia_meta-0.1.3.dist-info/METADATA,sha256=IyVuDXyTcdhJ5PROeIQ8MdadW6E5Dxq-wXcP8Ghd1SQ,1013
+xia_meta-0.1.3.dist-info/WHEEL,sha256=xKD-W076Kxa9P8HVHMBFDAZ44LgNHrPjF081MKvpixU,100
+xia_meta-0.1.3.dist-info/top_level.txt,sha256=A1LHjfteOLrSw4HhYEPVd8UBy61ssU7xrQvEn7mM7HM,9
+xia_meta-0.1.3.dist-info/RECORD,,
