@@ -1,0 +1,17 @@
+librus_terminal/authorization_commands.py,sha256=XssDA5CN7AZwF9j3w_Giu1npY2ROZvX991tRab0r6_g,789
+librus_terminal/command_parsing.py,sha256=NBkmca-cJdnOdKBd1Ot83leT1KrnhQQqJLTAGdVqfCk,989
+librus_terminal/exceptions.py,sha256=kaJkvfI0zNwjFaFPf_JVl0uJVR04Y1UR11pSacyqtKE,354
+librus_terminal/help_command.py,sha256=c-X15L0463jYeyCnpTPrpf7Ao3La7LxacA0Rnr9Tdfs,1673
+librus_terminal/librus_session.py,sha256=SAXVGRcBsq524_uXVNT5AGv_XHBKwRctLcKM8pjIxT0,1800
+librus_terminal/librus_terminal.py,sha256=gNY-KPoItWP0e5X9zOnxsQK5EPslPw9SRJGnflzhnVk,3692
+librus_terminal/messages_commands.py,sha256=Y4fOj1pUoYRnMWYltVpBI5lsmxg-nGvO7j5CMhzKNxI,4172
+librus_terminal/other_commands.py,sha256=BZfF0KIlg17jokaXWwreDNBi9xeF1QBSla9_pukZJL4,199
+librus_terminal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+librus_terminal/__main__.py,sha256=l6GXwJD0grEzBYmg1rKybFYRtsb8a4cPloF11cv0EGw,253
+librus_terminal-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+librus_terminal-0.1.0.dist-info/entry_points.txt,sha256=P1Lso2OSuvFQ4SaUtoEjObdZVd0Szsxxg1UspOt23N4,67
+librus_terminal-0.1.0.dist-info/METADATA,sha256=DDRiBwxELqAlSLz2dc_8YEBC9fgtjMM2FfyRIqhP1rU,214
+librus_terminal-0.1.0.dist-info/metadata.json,sha256=5RwMoPdit4tWn8T15Ld98HAOxYTsKaYD-B6ONdcywG8,485
+librus_terminal-0.1.0.dist-info/RECORD,,
+librus_terminal-0.1.0.dist-info/top_level.txt,sha256=b9McpbR7g8fCMaOWn3eq3gyg4IrGX1vc-YPOPJdKkI4,16
+librus_terminal-0.1.0.dist-info/WHEEL,sha256=1qHRvcAhNGFWK9sk8FDHLQvt5PW50bZq-RPUNZtD-iQ,97

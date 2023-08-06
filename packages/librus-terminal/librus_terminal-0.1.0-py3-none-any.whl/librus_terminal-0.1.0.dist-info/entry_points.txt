@@ -1,0 +1,3 @@
+[console_scripts]
+librus_terminal = librus_terminal.__main__:main
+
