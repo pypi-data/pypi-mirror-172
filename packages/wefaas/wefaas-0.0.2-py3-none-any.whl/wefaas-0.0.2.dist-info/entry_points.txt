@@ -1,0 +1,3 @@
+[console_scripts]
+wefaas=wefaas.cli:cli
+
