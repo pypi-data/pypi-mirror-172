@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/psindex/__init__.py
+src/psindex.egg-info/PKG-INFO
+src/psindex.egg-info/SOURCES.txt
+src/psindex.egg-info/dependency_links.txt
+src/psindex.egg-info/top_level.txt
