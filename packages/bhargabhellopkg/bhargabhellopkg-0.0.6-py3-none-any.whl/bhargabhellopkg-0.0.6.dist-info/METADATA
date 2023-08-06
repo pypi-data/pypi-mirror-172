@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bhargabhellopkg
+Version: 0.0.6
+Summary: A basic hello package
+Author: Bhargab
+Author-email: bhargab.ganguli@gmail.com
+License: MIT
+Keywords: keyowrd1,keyword2,keyword3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
