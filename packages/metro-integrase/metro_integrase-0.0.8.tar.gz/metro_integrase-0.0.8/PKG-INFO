@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: metro_integrase
+Version: 0.0.8
+Summary: A Python wrapper for the Metro Reviews API
+Author: Rootspring
+Author-email: cheesycod@outlook.com
+
+A Python wrapper for the Metro Reviews API (https://github.com/MetroReviews)
