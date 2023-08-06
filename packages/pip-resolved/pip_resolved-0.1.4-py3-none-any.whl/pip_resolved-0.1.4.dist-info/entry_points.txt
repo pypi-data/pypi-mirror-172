@@ -1,0 +1,3 @@
+[console_scripts]
+pip-resolved=pip_resolved.main:main
+
