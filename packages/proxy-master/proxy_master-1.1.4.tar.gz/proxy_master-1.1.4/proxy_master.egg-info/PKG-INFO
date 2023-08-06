@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: proxy-master
+Version: 1.1.4
+Summary: My first package to provide easy reading proxies from *.txt in different ways
+Author-email: 555Russich <Kutsokondima@yandex.ru>
+Project-URL: Homepage, https://github.com/555Russich/proxy_master
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<text style="font-size:50px">`pip install proxy-master`<text>
+
+Module provides:
+
+1) Read proxies servers from local file in different ways for `requests`, `selenium.webdriver`
+2) Get list of free working proxies  from some popular websites
+3) soon...
+
+Dependencies:
+1) `aiohttp`
+2) `bs4` (beautiful soup)
+3) `lxml`
