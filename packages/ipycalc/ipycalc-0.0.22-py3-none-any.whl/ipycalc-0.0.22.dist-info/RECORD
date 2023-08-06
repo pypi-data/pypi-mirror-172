@@ -1,0 +1,9 @@
+ipycalc/__init__.py,sha256=sbrOSHmy5EHK6x2wPMW4-cXa16gbOYLIxxP7LxBJ6m8,534
+ipycalc/calc.py,sha256=0gzO2mM9iIg8AryWci9nhayfiT2vTQyAi8PcW25ZjHo,22100
+ipycalc/exporters.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipycalc-0.0.22.dist-info/LICENSE,sha256=T4UnobvVmZ-vMaJXqtZbuDlAJC1kUmg3N5UsOYg8zu0,1072
+ipycalc-0.0.22.dist-info/METADATA,sha256=mI2GeuHeQcQszT7drlmetPXTC6KVoGp7fwXs96HpYUg,2431
+ipycalc-0.0.22.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ipycalc-0.0.22.dist-info/entry_points.txt,sha256=6qOclSU1pTgByPYNzRCbAWSafXq2ctrO6hOki3TtCBQ,56
+ipycalc-0.0.22.dist-info/top_level.txt,sha256=bdjM99s6vwuNsn13c11kIi64qVgtlBxJRs2XNqu9sr0,8
+ipycalc-0.0.22.dist-info/RECORD,,
