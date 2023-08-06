@@ -1,0 +1,6 @@
+lark-parser
+lazr.restfulclient
+lazr.uri
+numpy
+pandas
+scipy
