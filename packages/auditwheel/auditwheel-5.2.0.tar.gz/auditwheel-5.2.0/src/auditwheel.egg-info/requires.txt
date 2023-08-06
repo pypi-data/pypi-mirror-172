@@ -1,0 +1,27 @@
+pyelftools>=0.24
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[coverage]
+pytest-cov
+pytest>=3.4
+jsonschema
+pypatchelf
+pretend
+docker
+
+[develop]
+pytest>=3.4
+jsonschema
+pypatchelf
+pretend
+docker
+pytest-cov
+
+[test]
+pytest>=3.4
+jsonschema
+pypatchelf
+pretend
+docker
