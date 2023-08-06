@@ -1,0 +1,5 @@
+telliot-core>=0.1.4
+pydantic
+python-dotenv
+multicall>=0.5.1
+simple-term-menu
