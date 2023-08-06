@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+squarecloud/__init__.py
+squarecloud/client.py
+squarecloud/data.py
+squarecloud/errors.py
+squarecloud/http.py
+squarecloud/logs.py
+squarecloud/square.py
+squarecloud/types.py
+squarecloud_api.egg-info/PKG-INFO
+squarecloud_api.egg-info/SOURCES.txt
+squarecloud_api.egg-info/dependency_links.txt
+squarecloud_api.egg-info/requires.txt
+squarecloud_api.egg-info/top_level.txt
