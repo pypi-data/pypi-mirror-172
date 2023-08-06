@@ -1,0 +1,8 @@
+numpy
+pandas
+tqdm
+sk-video
+SimpleITK
+pyradiomics
+opencv-contrib-python
+dicom2nifti
