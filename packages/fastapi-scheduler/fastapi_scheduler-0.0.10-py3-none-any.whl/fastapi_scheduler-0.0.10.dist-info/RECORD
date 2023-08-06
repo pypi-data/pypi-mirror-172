@@ -1,0 +1,8 @@
+fastapi_scheduler/__init__.py,sha256=qW-QkoGrEapD_9H2vYHbc8FVZ540smPTssjdLeHJFBo,495
+fastapi_scheduler/admin.py,sha256=3nh29FSCoYoixGxAebvZPvX5QSJM-8ZnOisbaMjFhws,10049
+fastapi_scheduler/locale/base.pot,sha256=VoQQd7-WT-ahM-d_GtYjtQhrXfzsjpbCdJGqi2Sa910,1631
+fastapi_scheduler/locale/zh_CN/LC_MESSAGES/messages.mo,sha256=13FMVCkyZFhB8RejDNFanOipYnG_BJoEIv3cpcbosG0,1386
+fastapi_scheduler/locale/zh_CN/LC_MESSAGES/messages.po,sha256=chcLXC5qQvIW978OKSXstxoXhcdOj8jKetUmzyDxLfA,2126
+fastapi_scheduler-0.0.10.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+fastapi_scheduler-0.0.10.dist-info/METADATA,sha256=YT6JPxkAMPBnM3pL6E-1PCzlHquf69fTs38N5-TZ4kY,3608
+fastapi_scheduler-0.0.10.dist-info/RECORD,,
