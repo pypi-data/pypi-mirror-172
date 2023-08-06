@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harf"
+version = "0.1.1"
+description = "Tools for processing har files"
+authors = [{ name = "Brendan", email = "brendandeleeuw@gmail.com" }]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+	"Click",
+	"pyserde",
+        "harf-serde",
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.scripts]
+correlations = "harf.cli:correlations"
+
+[project.urls]
+Homepage = "https://github.com/MystiriodisLykos/harf/tree/v0.1.1"
+
+[tool.setuptools]
+packages = ["harf"]
+zip-safe = false
