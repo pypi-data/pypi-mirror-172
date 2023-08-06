@@ -1,0 +1,7 @@
+DigCNVenv
+digcnv
+dist
+images
+outputs
+temp_data
+tests
