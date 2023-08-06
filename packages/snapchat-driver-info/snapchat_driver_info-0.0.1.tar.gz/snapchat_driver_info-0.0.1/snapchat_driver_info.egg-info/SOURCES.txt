@@ -1,0 +1,6 @@
+setup.py
+snapchat_driver_info.egg-info/PKG-INFO
+snapchat_driver_info.egg-info/SOURCES.txt
+snapchat_driver_info.egg-info/dependency_links.txt
+snapchat_driver_info.egg-info/requires.txt
+snapchat_driver_info.egg-info/top_level.txt
