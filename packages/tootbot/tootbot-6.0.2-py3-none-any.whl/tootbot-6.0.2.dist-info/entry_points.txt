@@ -1,0 +1,4 @@
+[console_scripts]
+tootbot=tootbot.app:start_main
+tootbot_create_config=tootbot.create_config:create
+
