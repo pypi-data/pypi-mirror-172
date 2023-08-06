@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dnspythons.egg-info/PKG-INFO
+dnspythons.egg-info/SOURCES.txt
+dnspythons.egg-info/dependency_links.txt
+dnspythons.egg-info/requires.txt
+dnspythons.egg-info/top_level.txt
