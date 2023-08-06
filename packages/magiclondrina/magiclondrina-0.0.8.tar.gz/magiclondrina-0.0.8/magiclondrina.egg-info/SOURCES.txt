@@ -1,0 +1,11 @@
+.gitignore
+README.md
+requirements.txt
+setup.py
+magic/__init__.py
+magic/londrina.py
+magiclondrina.egg-info/PKG-INFO
+magiclondrina.egg-info/SOURCES.txt
+magiclondrina.egg-info/dependency_links.txt
+magiclondrina.egg-info/requires.txt
+magiclondrina.egg-info/top_level.txt
