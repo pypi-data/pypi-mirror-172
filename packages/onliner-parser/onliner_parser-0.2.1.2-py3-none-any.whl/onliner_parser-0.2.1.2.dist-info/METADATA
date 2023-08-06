@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: onliner-parser
+Version: 0.2.1.2
+Summary: Парсер для каталога Onliner.by
+Author-email: aalshe38@gmail.com
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: progress
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: beautifulsoup4
+
