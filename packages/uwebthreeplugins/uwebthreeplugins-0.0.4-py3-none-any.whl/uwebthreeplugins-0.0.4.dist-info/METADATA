@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: uwebthreeplugins
+Version: 0.0.4
+Summary: uWeb3 python3.10 plugin package
+Home-page: https://github.com/stefvanhouten/uweb3plugins
+Author: Stef van Houten
+Author-email: stef@underdark.nl
+License: ISC
+Keywords: uweb3 plugins
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# uweb3plugins
