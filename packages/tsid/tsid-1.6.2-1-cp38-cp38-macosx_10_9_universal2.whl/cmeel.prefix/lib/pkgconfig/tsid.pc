@@ -1,0 +1,22 @@
+prefix=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix
+exec_prefix=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix
+libdir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix/lib
+bindir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix/bin
+pkglibdir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix/lib/tsid
+includedir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix/include
+datarootdir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix/share
+pkgdatarootdir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix/share
+docdir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix/share/doc/tsid
+doxygendocdir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-1ydhup1z/pfx/cmeel.prefix/share/doc/tsid/doxygen-html
+
+Name: tsid
+Description: Efficient Task Space Inverse Dynamics for Multi-body Systems based on Pinocchio
+URL: https://github.com/stack-of-tasks/tsid
+Version: 1.6.2
+Requires: 
+Conflicts: 
+Libs: -L${libdir} 
+Libs.private: 
+Cflags:  -I${includedir}
+
+
