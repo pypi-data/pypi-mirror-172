@@ -1,0 +1,13 @@
+alph/__init__.py,sha256=UajetA5U9J5KAV6FgK_8CC-GRnvwMGtz1bx_B07gJDM,23
+alph/__version__.py,sha256=5IPbuC9dHGDsj6rkU30kOQZDdNvHxnp7QsHUjHjxVJY,50
+alph/combo.py,sha256=bMjisZP2MHVXC2u7QYFocP_WeAgJnyBGmNvFQt1aJuU,4839
+alph/core.py,sha256=SSpWRtewcP3MjA1YNnJy87gXWKGlXY1q-mrUE6tLv6A,8754
+alph/layers.py,sha256=kxLEzCS2oFRBBUuD_-HsArQon20lwD9FymgVwO9wR40,12834
+alph/layout.py,sha256=9NzVH-K_MfhXaJATSerXytS7VcDYgeDASnQWxJkOMdM,6478
+alph/preproc.py,sha256=Gu5AhsFaM-y3IpJ5AJ9FDmyueut9g_mpyEiJs_f5_4c,2174
+alph/util.py,sha256=IC4mhOyj4bJFSbC7SNPuhsQORUP5XjvSqJboZ6Pjce8,5853
+alph-0.3.34.dist-info/LICENSE,sha256=Y_oaIjJvCvCmA5WaD2kQ8hVdbPw2MZ0PHQj9B2boSx4,1073
+alph-0.3.34.dist-info/METADATA,sha256=oQSX_vTDkpFMqL24gAT9zXRVqlERgHn8-rVPa_GffzQ,11230
+alph-0.3.34.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alph-0.3.34.dist-info/top_level.txt,sha256=OvjoCyAn2dGIfq3z28Tw3c2V2HFSwt-xNUAvnX_N16A,5
+alph-0.3.34.dist-info/RECORD,,
