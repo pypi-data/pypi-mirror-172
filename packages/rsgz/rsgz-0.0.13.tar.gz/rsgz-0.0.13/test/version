@@ -1,0 +1,10 @@
+pip install rsgz==0.0.13 -i https://pypi.tuna.tsinghua.edu.cn/simple
+0.0.10
+多文件批量上传
+
+0.0.12
+这个版本 增加了涛哥编号命名85000
+图片批量识别格式
+
+0.0.13
+将涛哥编号命名85000 这个完善了
