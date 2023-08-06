@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Main/__init__.py
+base/Memoria.py
+gerador/Palavra.py
+gerarPalavraa.egg-info/PKG-INFO
+gerarPalavraa.egg-info/SOURCES.txt
+gerarPalavraa.egg-info/dependency_links.txt
+gerarPalavraa.egg-info/top_level.txt

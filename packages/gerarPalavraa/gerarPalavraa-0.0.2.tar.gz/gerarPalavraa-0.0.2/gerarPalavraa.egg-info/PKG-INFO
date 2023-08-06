@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gerarPalavraa
+Version: 0.0.2
+Summary: Pacote python para gerar, armazenar e exibir palavras dissilabas
+Home-page: UNKNOWN
+Author: Pedro Benitah Vieira Sanchez de Melo
+Author-email: pedrobenitah@gmail.com
+License: MIT License
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gerarPalavra
+
+**gerarPalavra** .
+
+## DependÃªncias
+**Python 3.6** ou posterior
+
+
+
+
+## ComeÃ§ando o uso
+VocÃª vai precisar instalar o pacote **gerarPalavra**, para isso basta executar:
+```
+pip install gerarPalavra
+```
+
+## FunÃ§Ã£o
+
+* `gerarLetra()` - Gera uma palavra dissilaba
+* `guardar(palavra)` - Armazena a palavra em um arquivo .txt
+
+
