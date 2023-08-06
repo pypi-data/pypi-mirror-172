@@ -1,0 +1,14 @@
+
+[doc]
+recommonmark==0.7.1
+sphinx==4.4.0
+sphinx_rtd_theme==1.0.0
+
+[speed]
+regex
+
+[test]
+codecov
+pytest
+pytest-cov
+twine
