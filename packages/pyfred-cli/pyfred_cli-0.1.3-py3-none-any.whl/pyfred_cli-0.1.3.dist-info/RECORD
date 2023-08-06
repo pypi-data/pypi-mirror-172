@@ -1,0 +1,13 @@
+pyfred/__init__.py,sha256=Sc4z8LRVFMwJUoc_DPVUriSXTZ6PO9MaJ80PhRbKyB8,34
+pyfred/cli.py,sha256=6M_oR8wu5nXLiKeXZbBy9riGVO_a3UhjgMhEl4sc46o,15219
+pyfred/model.py,sha256=9AKT_TzwV23EBu6U3g4100T8EMyHxfRT25d1UGwYdo8,10876
+pyfred/workflow.py,sha256=r-0sMt_-wv_r7VcN46QlUvFajzyRpVOZyFJlUxlx2wo,1222
+pyfred/template/requirements.txt,sha256=FVSkeldSdK4V3HbBwH_g4r9L_38eq71zn1525HgUKpk,11
+pyfred/template/.github/workflows/build_and_release.yaml,sha256=vSq8younPM-f51h08tD0nLy_drDsivtYH621JxbxrQM,561
+pyfred/template/workflow/workflow.py,sha256=Oeq4V7E4m4XRACZlaXEVVQDxzBUMc0Hu63K9ceZFUug,685
+pyfred_cli-0.1.3.dist-info/LICENSE,sha256=PH_MzQFjQbkjC_zPqDrwih3X7h_AknAGNjk_qHG_wIE,1074
+pyfred_cli-0.1.3.dist-info/METADATA,sha256=tTmFMgQCxYtCB57pRg9VQWeBzadZ_nRGjC4TCrop2ZY,4534
+pyfred_cli-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyfred_cli-0.1.3.dist-info/entry_points.txt,sha256=M_9usEG2zM7mPD-5c1YPSzJGTIVxJzlK4Qsqs3rdOPg,43
+pyfred_cli-0.1.3.dist-info/top_level.txt,sha256=zNgribmjUxDttqbR3fJ_loN79O0F9TPdQPfAf9DarB0,7
+pyfred_cli-0.1.3.dist-info/RECORD,,
