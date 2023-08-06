@@ -1,0 +1,13 @@
+dash_auth_external/__init__.py,sha256=_CoHYKtD31iSYUjFTQsYM1voSMmXgzsjLlQHDZrXPDM,35
+dash_auth_external/auth.py,sha256=8IxMXhpphGdkQNjs_KDOUyiCKpzbT8OO6wyU1Xfzj1M,4299
+dash_auth_external/routes.py,sha256=carqqePScmjfbdisDdI5V0d0JNG8y5kXOGTkTikooks,3659
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_app.py,sha256=IiDNu0CshbS5urbkE3E5Z8xY_ch7tPDMZMAtGQIG194,1008
+tests/test_config.py,sha256=AuL3Y0NQ_X6OtcM5EtHaddXmTSjQHMlPS2tGa_8Bqe4,85
+tests/test_context.py,sha256=CkMxeO-EJezyrQ0rpBaMGgq1gDYPV2Iyv8MXaWFFoLA,132
+tests/test_routes.py,sha256=QPlJqHQHA9DdsfjfKh_o7m_46a4XBMgi_XW1VBZGWlM,892
+dash_auth_external-0.2.4.dist-info/LICENSE,sha256=_CZsxMW3OcK-PgSJHEIjfnJky6OEsTAn__b5iAj3d64,1071
+dash_auth_external-0.2.4.dist-info/METADATA,sha256=7TvTZ0PXjeuZlgKkWE1HQm87c-1AlOsFbLAGzAMkWFg,484
+dash_auth_external-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dash_auth_external-0.2.4.dist-info/top_level.txt,sha256=Cc0IjNutq4ShQBuHYG9AF0WSIG1mO33hqMTF1ti7i14,25
+dash_auth_external-0.2.4.dist-info/RECORD,,
