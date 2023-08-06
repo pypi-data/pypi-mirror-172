@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pacotepypi001
+Version: 0.0.1
+Summary: Pacote python para exibir número de 1 a 9
+Home-page: https://github.com/marcos-de-sousa/pacotepypi
+Author: João Vitor Cardoso Queiroz
+Author-email: jvcq15@outlook.com
+License: MIT License
+Keywords: Pacote
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# pacotepypi001
+
+**pacotepypi001** é um simples pacote para exibir números de 1 a 9 em Python.
+
+## Dependências
+**Python 3.6** ou posterior
+
+Pacote **numpy**
+
+
+## Começando o uso
+Você vai precisar instalar o pacote **pacotepypi001**, para isso basta executar:
+```
+pip install pacotepypi
+```
+
+## Função
+
+* `exibir ()` - Mostra números de 1 a 9
+
+
+
