@@ -1,0 +1,4 @@
+[console_scripts]
+QimenDunjiaXiandaiYingyongJishu = QimenDunjiaXiandaiYingyongJishu.__main__:main
+qimen-dunjia-xiandai-yingyong-jishu = QimenDunjiaXiandaiYingyongJishu.__main__:main
+
