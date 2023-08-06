@@ -1,0 +1,16 @@
+LICENSE
+NOTICE
+README.md
+pyproject.toml
+setup.cfg
+ahkunwrapped/__init__.py
+ahkunwrapped/autohotkey.py
+ahkunwrapped/py.typed
+ahkunwrapped.egg-info/PKG-INFO
+ahkunwrapped.egg-info/SOURCES.txt
+ahkunwrapped.egg-info/dependency_links.txt
+ahkunwrapped.egg-info/not-zip-safe
+ahkunwrapped.egg-info/requires.txt
+ahkunwrapped.egg-info/top_level.txt
+ahkunwrapped/lib/AutoHotkey/AutoHotkey.exe
+ahkunwrapped/lib/AutoHotkey/NOTICE
