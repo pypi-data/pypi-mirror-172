@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lddya
+Version: 2.0.1
+Summary: 修复了ACO无法定义起点与终点的缺陷
+Home-page: https://github.com/not_define/please_wait
+Author: lidongdong
+Author-email: 927052521@qq.com
+License: MIT Licence
+Keywords: pip,license,licensetool,tool,gm
+Platform: any
+
+具体功能，请自行挖掘。
