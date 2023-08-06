@@ -1,0 +1,3 @@
+[poetry.application.plugin]
+poetry-aliases-plugin=poetry_aliases_plugin.plugin:PoetryAliasesApplicationPlugin
+
