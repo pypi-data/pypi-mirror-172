@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: suntranslator
+Version: 0.0.7
+Summary: A program to convert text into the Sun language
+Author-email: Carl Head <chead@linuxmail.org>
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Suntranslator
+
+A tool used to translate text into the Sun language
+
+## Table of Contents
+- [Install](#install)
+- [Usage](#usage)
+
+## Install
+Suntranslator is a python package which relies on the python interpreter. The latest release of python can be downloaded from [here](https://www.python.org/downloads/).
+```bash
+$ python3 -m pip install suntranslator
+```
+
+## Usage
+Open a terminal and call the program
+```bash
+$ suntranslator
+```
