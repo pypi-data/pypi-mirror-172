@@ -1,0 +1,7 @@
+flask_aserto/__init__.py,sha256=Iv3aPsgp7yQR9U1mw32rDDGfN0GsrH3Kl4R1VgHR8Nc,7359
+flask_aserto/_defaults.py,sha256=e5wZtv1FEABk2sqtr4wD2C1J9OddUtBWoVG5EYTolxE,1293
+flask_aserto/_maybe_async.py,sha256=R3Wro-GU8Dpt6xh87q-ssoyUcogyjhkyi2DOL3xyFdY,394
+flask_aserto/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_aserto-0.5.0rc1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+flask_aserto-0.5.0rc1.dist-info/METADATA,sha256=hsPX4YS2655rBt3qYdKvs-R2fa_HM2gf4tMk_sIh8l4,2848
+flask_aserto-0.5.0rc1.dist-info/RECORD,,
