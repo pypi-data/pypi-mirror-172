@@ -1,0 +1,13 @@
+numpy
+findiff
+matplotlib
+tabulate
+tqdm
+scipy
+sklearn
+optuna
+nevergrad
+hyperopt
+gradient_free_optimizers
+autograd
+freud-analysis
