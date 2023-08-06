@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: neosynth
+Version: 1.0.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Neosynth
+A rust wrapper around the onecore speech synthesizer.
+Created for use with Bookworm (https://github.com/blindpandas/bookworm).
+
