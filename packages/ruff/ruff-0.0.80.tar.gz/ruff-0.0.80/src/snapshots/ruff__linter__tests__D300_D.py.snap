@@ -1,0 +1,45 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind: UsesTripleQuotes
+  location:
+    row: 302
+    column: 5
+  end_location:
+    row: 302
+    column: 20
+  fix: ~
+- kind: UsesTripleQuotes
+  location:
+    row: 307
+    column: 5
+  end_location:
+    row: 307
+    column: 20
+  fix: ~
+- kind: UsesTripleQuotes
+  location:
+    row: 312
+    column: 5
+  end_location:
+    row: 312
+    column: 16
+  fix: ~
+- kind: UsesTripleQuotes
+  location:
+    row: 317
+    column: 5
+  end_location:
+    row: 317
+    column: 16
+  fix: ~
+- kind: UsesTripleQuotes
+  location:
+    row: 323
+    column: 5
+  end_location:
+    row: 323
+    column: 17
+  fix: ~
+
