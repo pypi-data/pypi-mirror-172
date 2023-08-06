@@ -1,0 +1,10 @@
+setup.py
+distributionsJH/Binomialdistribution.py
+distributionsJH/Gaussiandistribution.py
+distributionsJH/Generaldistribution.py
+distributionsJH/__init__.py
+distributionsJH.egg-info/PKG-INFO
+distributionsJH.egg-info/SOURCES.txt
+distributionsJH.egg-info/dependency_links.txt
+distributionsJH.egg-info/not-zip-safe
+distributionsJH.egg-info/top_level.txt
