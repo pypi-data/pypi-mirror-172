@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sphinx-comment-box
+Version: 1.0.0
+Summary: Add a comment area to sphinx webpages using HTML Comment Box.
+Home-page: https://github.com/sasmlange/sphinx-comment-box
+Author: Maximilian Lange
+Author-email: maxhlange@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Sphinx Comment Box
+======================
+
+Sphinx Comment Box is a tool used for adding a comment area to your webpage using [HTML Comment Box](https://www.htmlcommentbox.com/).
+
+****
+
+**Note: This extension is not from HTML Comment Box!**
+
+
