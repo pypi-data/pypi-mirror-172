@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+etherscanlabel/__init__.py
+etherscanlabel/etherscanlabel.py
+etherscanlabel/label_category_list.csv
+etherscanlabel.egg-info/PKG-INFO
+etherscanlabel.egg-info/SOURCES.txt
+etherscanlabel.egg-info/dependency_links.txt
+etherscanlabel.egg-info/entry_points.txt
+etherscanlabel.egg-info/not-zip-safe
+etherscanlabel.egg-info/requires.txt
+etherscanlabel.egg-info/top_level.txt

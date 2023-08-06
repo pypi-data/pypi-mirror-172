@@ -1,0 +1,2 @@
+[console_scripts]
+etherscanlabel = etherscanlabel.etherscanlabel:main

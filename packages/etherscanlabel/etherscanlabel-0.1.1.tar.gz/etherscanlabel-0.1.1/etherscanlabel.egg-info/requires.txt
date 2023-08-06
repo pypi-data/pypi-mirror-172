@@ -1,0 +1,7 @@
+beautifulsoup4
+docopt
+notiondict
+pandas
+requests
+setuptools
+tqdm
