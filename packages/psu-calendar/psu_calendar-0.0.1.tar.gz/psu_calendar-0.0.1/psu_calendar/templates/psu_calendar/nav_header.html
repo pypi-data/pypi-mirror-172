@@ -1,0 +1,12 @@
+{% load base_taglib %}
+
+<div style="text-align:center">
+    <a href="?month=prev" class="btn btn-sm" style="background-color:white;border:1px solid #777;color:#333;margin:7px;">
+        {%fa fa-chevron-left title="Previous Month"%}
+    </a>
+    <b class="xlg">{{month.month_name}} {{month.year}}</b>
+
+    <a href="?month=next" class="btn btn-sm" style="background-color:white;border:1px solid #777;color:#333;margin:7px;">
+        {%fa fa-chevron-right title="Next Month"%}
+    </a>
+</div>

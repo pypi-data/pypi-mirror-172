@@ -1,0 +1,71 @@
+.psu_calendar-month{
+    display: grid;
+    grid-template-columns: [sun] 1fr [mon] 1fr [tues] 1fr [wed] 1fr [thurs] 1fr [fri] 1fr [sat] 1fr;
+    grid-template-rows: [header] auto repeat(6, 200px);
+}
+
+.psu_calendar-header{
+    background-color: #6A7F10;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.psu_calendar-day{
+    border: 1px solid #DDD;
+    padding: 3px;
+    height: 200px;
+    overflow: auto;
+}
+
+.psu_calendar-pre_day, .psu_calendar-post_day{
+    background-color: #EFEFEF;
+}
+
+.psu_calendar-weekend{
+    color: #777;
+}
+
+.psu_calendar-weekday{
+}
+
+.psu_calendar-today{
+    border-color: #dbbe16;
+    background-color: #fffbe5;
+}
+
+.psu_calendar-day_heading{
+    display: grid;
+    grid-template-columns: [day_no] 40px [day_label] auto;
+    border-bottom: 1px dotted #EFEFEF;
+}
+
+.psu_calendar-day_number{
+    font-family: courier, sans-serif;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.psu_calendar-today .psu_calendar-day_heading .psu_calendar-day_number{
+/**
+    border: 1px solid #79b9f1;
+    border-radius: 10px;
+**/
+}
+
+.psu_calendar-day_label{
+    padding-top: 2px;
+    font-weight: bold;
+}
+
+.psu_calendar-payload{
+    padding: 5px;
+}
+
+.psu_calendar-payload ul{
+    padding-left: 20px;
+}
+.psu_calendar-payload .list-group-item{
+    padding: 5px;
+}

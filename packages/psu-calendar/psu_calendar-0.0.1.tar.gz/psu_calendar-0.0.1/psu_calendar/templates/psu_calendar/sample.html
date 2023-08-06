@@ -1,0 +1,12 @@
+{% extends 'psu_base/layout/main.html' %}
+{% load base_taglib %}
+
+{%block title%}Sample Calendar{%endblock%}
+{% block scripts %}{% endblock %}
+{% block pagecontent %}
+
+    <h1>Sample Calendar</h1>
+
+    {%include month.month_template with month=month%}
+
+{% endblock %}
