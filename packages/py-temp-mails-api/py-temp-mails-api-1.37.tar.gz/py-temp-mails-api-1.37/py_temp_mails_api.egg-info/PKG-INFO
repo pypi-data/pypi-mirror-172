@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: py-temp-mails-api
+Version: 1.37
+Summary: pyTempMailsApi is a library that allows you to easily interact with the site https://temp-mail.org/
+Home-page: https://github.com/onigirisell/pyTempMailsApi
+Author: Fitrad3w
+Author-email: onigirisell@protonmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
