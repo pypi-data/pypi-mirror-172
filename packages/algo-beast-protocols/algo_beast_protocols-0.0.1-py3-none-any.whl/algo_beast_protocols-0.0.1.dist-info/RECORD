@@ -1,0 +1,13 @@
+algo_beast_protocols/__init__.py,sha256=Z0Gjir76vezL1eBELftOGkLRFrc16UHvMK-0Sa3ha1I,117
+algo_beast_protocols/algorithm.py,sha256=R-bthMCKP39YC9mxTTR1R1EpC8ybe_v4QpDFztqiZh4,402
+algo_beast_protocols/broker.py,sha256=L0mz6vwDsTkLOY-4ThUCv2TmBiBl-Tl6CtqMXbZigVA,228
+algo_beast_protocols/broker_manager.py,sha256=ZYu-QaPZnxszH-2L2-uYkue0StrkmnjApy8BvLe2ZzI,308
+algo_beast_protocols/chart.py,sha256=oS7wzthi0pAOtB9PKaRGTz1ymuH9JUNQ4gUTD7F4wug,306
+algo_beast_protocols/store.py,sha256=_NPq3BPbpImQOzWnOUs2xLK93j7yoezeIqURNVOQsO8,185
+algo_beast_protocols/symbol.py,sha256=LVTyXb5uu_2ROZbkO-lRNydv3yg7gkDhbOmXKwDD_tw,71
+algo_beast_protocols/timeframe.py,sha256=y5OmnCbh7e4dY6YtB7Vi6SZUFgPgsQ0nmd3IRozXGks,80
+algo_beast_protocols-0.0.1.dist-info/LICENSE,sha256=wGDbiZ8BvcxYdzd7Fa39ymLtU9rEHalckN4AnA-sKI4,11
+algo_beast_protocols-0.0.1.dist-info/METADATA,sha256=crT29vZ3MzpLyJHhTcWNcMnDp8EGR0LPzMdLbeWMNr0,427
+algo_beast_protocols-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+algo_beast_protocols-0.0.1.dist-info/top_level.txt,sha256=bi0Lp87HZhpVSyu6A96bTKeWUqD_ICT6W2fRwaglNmg,21
+algo_beast_protocols-0.0.1.dist-info/RECORD,,
