@@ -1,0 +1,11 @@
+mytimer/__init__.py,sha256=jOivT6AYBB6dbTvzg4Jl-oDKtzYY1-pJqYeuYdJtk-M,125
+mytimer/__main__.py,sha256=XFJCPsZYSTxnyfBjtbwmkkZDWuMvtUzuH2n6iMOAN7E,1030
+mytimer/functions.py,sha256=m00LeQp_1QZlG1OlMmZi2vR_JHIqo0Awvwl9kI05zg4,3975
+mytimer/sounds/alarm.wav,sha256=19y4_v_ZnnLTNMIG7nNicPYKm3w0yZxLHGA6MSS3JKw,602412
+mytimer-0.1.dist-info/AUTHORS.md,sha256=xXrvyjhVf3JXBaODkntTT05LmPK8otRkPo1inTeuIkk,85
+mytimer-0.1.dist-info/LICENSE,sha256=_2P7Y9elb0KnVqUW8n8_pW7oBIL5vPHA-h_aldm3xI4,1072
+mytimer-0.1.dist-info/METADATA,sha256=mJqmbjuxEEiEz275fxoBtJmnaSFoAt2-8WrkZnHxx-o,7707
+mytimer-0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+mytimer-0.1.dist-info/entry_points.txt,sha256=zYe2ZDUbz4XnPy07k7_n36aq1HbsjzPKUjZphQYrU4Q,50
+mytimer-0.1.dist-info/top_level.txt,sha256=y7iRKOsZwnIuLY3COi0VvikIVK9FkAZUMSRCBDoxbd4,8
+mytimer-0.1.dist-info/RECORD,,
