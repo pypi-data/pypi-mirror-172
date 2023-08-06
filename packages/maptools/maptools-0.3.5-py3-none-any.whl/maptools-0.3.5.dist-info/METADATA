@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: maptools
+Version: 0.3.5
+Summary: Manipulate maps
+Home-page: https://github.com/rosalindfranklininstitute/maptools
+Author: James Parkhurst
+Author-email: james.parkhurst@diamond.ac.uk
+License: Apache
+Project-URL: Source, https://github.com/rosalindfranklininstitute/maptools
+Project-URL: Tracker, https://github.com/rosalindfranklininstitute/maptools/issues
+Keywords: EM
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gemmi
+Requires-Dist: matplotlib
+Requires-Dist: mrcfile
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Provides-Extra: build_sphinx
+Requires-Dist: sphinx ; extra == 'build_sphinx'
+Requires-Dist: sphinx-rtd-theme ; extra == 'build_sphinx'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+
+# maptools
+> Python library for manipulating EM maps
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/jmp1985/maptools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/jmp1985/maptools/context:python)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/jmp1985/maptools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/jmp1985/maptools/alerts/)
+[![Building](https://github.com/rosalindfranklininstitute/maptools/actions/workflows/python-package.yml/badge.svg)](https://github.com/rosalindfranklininstitute/maptools/actions/workflows/python-package.yml)
+[![Publishing](https://github.com/rosalindfranklininstitute/maptools/actions/workflows/python-publish.yml/badge.svg)](https://github.com/rosalindfranklininstitute/maptools/actions/workflows/python-publish.yml)
+[![DOI](https://zenodo.org/badge/361779782.svg)](https://zenodo.org/badge/latestdoi/361779782)
+
+## Installation
+
+To install from the github repository do the following
+
+```sh
+python -m pip install git+https://github.com/rosalindfranklininstitute/maptools.git@master
+```
+
+To install from source, clone this repository. Then do the following:
+
+```sh
+python -m pip install .
+```
+
+If you would like to run the tests then, clone this repository and then do the following:
+
+```sh
+python -m pip install .[test]
+```
+
+## Installation for developers
+
+To install for development, clone this repository and then do the following:
+
+```sh
+python -m pip install -e .
+```
+
+## Testing
+
+To run the tests, follow the installation instructions for developers and then do the following:
+
+```sh
+pytest
+```
+
+## Issues
+
+Please use the [GitHub issue tracker](https://github.com/rosalindfranklininstitute/maptools/issues) to submit bugs or request features.
+
+## License
+
+Copyright Diamond Light Source and Rosalind Franklin Institute, 2021
+
+Distributed under the terms of the GPLv3 license, maptools is free and open source software.
+
