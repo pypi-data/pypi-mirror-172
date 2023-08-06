@@ -1,0 +1,13 @@
+name: okapi-em
+display_name: napari okapi-em
+contributions:
+  commands: 
+    - id: okapi-em.main_qwidget
+      python_name: okapi_em._widget:MainQWidget
+      title: Okapi-EM Main
+  
+  widgets:
+    - command: okapi-em.main_qwidget
+      display_name: Okapi-EM
+
+# https://napari.org/stable/plugins/contributions.html#contributions-widgets
