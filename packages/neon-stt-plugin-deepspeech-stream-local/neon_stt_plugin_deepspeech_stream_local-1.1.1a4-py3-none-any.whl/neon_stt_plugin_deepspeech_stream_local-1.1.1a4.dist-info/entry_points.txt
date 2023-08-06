@@ -1,0 +1,6 @@
+[mycroft.plugin.stt]
+deepspeech_stream_local = neon_stt_plugin_deepspeech_stream_local:DeepSpeechLocalStreamingSTT
+
+[mycroft.plugin.stt.config]
+deepspeech_stream_local.config = neon_stt_plugin_deepspeech_stream_local.languages:stt_config
+
