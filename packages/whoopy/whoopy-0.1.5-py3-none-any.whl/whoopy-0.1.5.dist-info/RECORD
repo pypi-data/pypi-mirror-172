@@ -1,0 +1,12 @@
+whoopy/__init__.py,sha256=r7Fo8qktDsKX2-KNVv9t3hjYLzjlLLoJwVTI5QOIOhQ,460
+whoopy/client_v1.py,sha256=sVJ4wUSt_kHe6y2qzFf0qpUYP5DVjqOuvBmq-tlunwk,8262
+whoopy/client_vu7.py,sha256=ZByyMC2MoDprU3r_IzZJaR7ksoFvjpK1zq62onwNQXc,21970
+whoopy/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whoopy/handlers/handler_v1.py,sha256=HCEhdUbAQSS9FV7GR_Q0wz3-oQgKaFt9lWvzPnqykFg,5847
+whoopy/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whoopy/models/models_v1.py,sha256=vPQaKxAizgXGpxShJ9tWbLzuKdSCTksf4R5y41v9tiA,7792
+whoopy-0.1.5.dist-info/LICENSE,sha256=H-ZMdEaevpuebvHFj1Uiasv5hI5MPINDcCpK7RQeLUQ,1070
+whoopy-0.1.5.dist-info/METADATA,sha256=WfoWADUNsfLB28kw7TXiE3fLzTMhbo7k1PJu8h3sxLQ,4830
+whoopy-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+whoopy-0.1.5.dist-info/top_level.txt,sha256=4xsQ2wbe0Wz06ll9YNg36kpvgvjFCBFSUg1aW3HP4Bg,7
+whoopy-0.1.5.dist-info/RECORD,,
