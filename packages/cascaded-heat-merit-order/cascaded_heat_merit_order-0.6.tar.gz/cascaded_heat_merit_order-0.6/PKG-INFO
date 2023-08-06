@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cascaded_heat_merit_order
+Version: 0.6
+Summary: Tool for calculating a factory-wide merit order of heat-flows of industrial energy systems.
+Author-email: Jan Niklas Scherff <jannik@scherff.eu>
+Project-URL: Homepage, https://github.com/GaGandalf/cascaded-heat-merit-order
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Cascaded Heat Merit Order
+
+Tool for calculating a factory-wide merit order of heat-flows of industrial energy systems.
