@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: sky_excel
+Version: 1.0.7
+Summary: excel模板配置化导出模块
+Home-page: UNKNOWN
+Author: 孙楷炎
+Author-email: sky483@163.com
+Maintainer: 孙楷炎
+Maintainer-email: sky4834@163.com
+License: apache 3.0
+Description: # SKY-EXCEL Module
+        
+        > excel工具模块
+        
+        
+        
+        # Part 1. Introduce
+        
+        > 介绍
+        
+        如果你不希望每一次需要把接口返回的字典数据导出成excel表格而去设计表头、合并单元格，而进行一次一次重复大量的编程活动。那么你可以尝试一下这个模块。sky-excel把表头设计与单元格设计耦合到一起，你只需要创建一个excel模板即可，然后进行配置对应输入的字段就可以实现，把接口的数据导出单元格。
+        
+        这个模块仅仅做了一件事情，就是把你写好的表头版本抄写一般，把字典数据按照键值对匹配填充进去即可。
+        
+        # Part 2. API Document
+        
+        > API 接口文档
+        
+        v1版本API:
+        
+        ```python
+        export_instance = ExcelExport(
+            input_dict=global_export_data, 
+            excel_templet_path="./templet/templet.xlsx", 
+            save_path="D:\\PySet/sky-excel/templet/"
+        )
+        参数介绍：
+        input_dict：输入的字典数据，格式是[{..},{..}......]
+        excel_templet_path:保存模板的路径，确保程序可以找到你的模板excel文件
+        excel_templet_title:当前仅仅可以导出一个sheet，不可以实现批量的导出。所以需要指定，默认值Sheet1
+        save_path:保存的文件路径，不传则返回文件流直接返回前端提供下载，注意返回时候需要修改响应头协议
+            
+        导出方法：
+        data, err = export_instance.export()
+        data:返回文件地址，或者文件流。前提是没有异常的情况下，否则返回空。
+        err:返回的是异常提示
+        ```
+        
+        v2版本API介绍:
+        
+        ```python
+        ExcelExport(excel_templet_path="./templet/templet.xls")
+        参数介绍：
+        	excel_templet_path: 模板的路径，可用则追加读写方式，不可用只写模式
+        
+                
+        方法:
+        1.追加读写：
+        export_instance.additional_write(input_dict=global_export_data)
+        参数介绍:
+        	:param input_dict: [{..},{..}..]
+        	:param excel_templet_title: 操作的sheet,需要与parse_max_row保持一致
+        	:return: data,err
+                
+                
+        2.保存excel，当没有save_path的时候返回流，存在则返回流：
+        export_instance.save(
+            workbook=export_instance.additional_write_wb, 
+            save_path="D:\\PySet/sky-excel/sky_excel/export/"
+        )
+        参数介绍:
+        	:param workbook: 操作的Workbook对象
+        	:param save_path: 保存路径
+        	:return: data,err; data: None或者文件流
+        
+        ```
+        
+        
+        
+        > Django 返回流提供下载
+        
+        ```python
+        templet_path = ROOT_DIR + "/excel_templates/templet.xlsx"
+        exporter = ExcelExport(input_dict=global_export_data, excel_templet_path=templet_path)
+        data, err = exporter.export()
+        if err:
+            return JsonResponse({"err": 1000, "msg": err})
+        response = HttpResponse(
+            content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+        )
+        response['Content-Disposition'] = 'attachment;filename=export_overview.xlsx'
+        response.write(data)
+        return response
+        ```
+        
+        # Part 3. 版本更新
+        
+        > 1.0.5
+        
+        1.支持python2.7与python3.0以上版本
+        
+        2.增加边界判断
+        
+        3.直接拷贝模板，避免了表头样式问题。
+        
+        4.支持文字+表达式
+        
+        5.使用规则，最后一行表示表达式行，所以模板应该清除掉多余不需要的单元格内容。
+        
+        
+        
+        
+        
+        > 1.0.6
+        
+        1.解决openpyxl数据量大，导出数据慢的问题添加v2版本API，使用xlwt+xlrd+xlutils实现，写入效率有所提高。
+        
+        2.原有1.0.5所有API放在v1里面
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
