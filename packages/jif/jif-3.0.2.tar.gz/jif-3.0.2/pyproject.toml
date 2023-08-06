@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "jif"
+version = "3.0.2"
+description = ""
+authors = ["Jason Atallah <jason.atallah@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "^0.6.1"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+mypy = "^0.982"
+flake8 = "^5.0.4"
+types-PyYAML = "^6.0.12"
+
+[tool.poetry.scripts]
+jif = 'jif.__main__:app'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
