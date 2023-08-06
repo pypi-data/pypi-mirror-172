@@ -1,0 +1,63 @@
+{
+    "session_dir": "pretrained",
+    "input_adapter": {
+        "class": "examples.language_translation.adapters.InputAdapter"
+    },
+    "initialize": {
+        "definitions": {
+            "replace_strategy": "override",
+            "override_key": ["name"],
+            "options": [
+                {
+                    "name": "neural_translator",
+                    "spec": {
+                        "input_adapter": {
+                            "class": "examples.language_translation.adapters.BatchInferenceAdapter"
+                        },
+                        "neural_graph": {
+                            "replace_strategy": "override",
+                            "override_key": ["model_name"],
+                            "options": [
+                                {
+                                    "model_name": "decoder_model",
+                                    "inputs": ["sos", "h_e"],
+                                    "outputs": ["y_hat"]
+                                }
+                            ]
+                        },
+                        "output_adapter": {
+                            "class": "examples.language_translation.adapters.NullAdapter"
+                        }
+                    }
+                }
+            ]
+        },
+        "pipelines": {
+            "inference": {
+                "graph": "batch_processing_graph",
+                "input_injector": [
+                    {
+                        "input_port": "input_batch",
+                        "variable_names": ["french_batch"],
+                        "data_loader": "training_loader"
+                    }
+                ]
+            }
+        }
+    },
+    "inference_pipeline": "inference",
+    "inputs_meta": [
+        {
+            "input_port": "input_batch",
+            "input_converter": {
+                "class": "examples.language_translation.adapters.InputConverter"
+            }
+        }
+    ],
+    "results": [
+        "y_hat"
+    ],
+    "post_processor": {
+        "class": "examples.language_translation.postprocessors.PostProcessor"
+    }
+}
