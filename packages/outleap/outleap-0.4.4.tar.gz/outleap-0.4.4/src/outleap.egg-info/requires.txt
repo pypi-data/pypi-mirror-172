@@ -1,0 +1,6 @@
+llsd
+
+[tools]
+ptpython<4,>=3
+qasync
+pyside6-essentials
