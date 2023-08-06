@@ -1,0 +1,9 @@
+oni_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oni_api/crowdtangle.py,sha256=tnGUj-QpoFUiJBCIFA6o-D3KScoUi2WmLRjK3K8UhDY,8085
+oni_api/spotify.py,sha256=lxzqV3nXfq8XEA61Ujj8MEbeDxi8s4nzVeEiY5g1mcM,17552
+oni_api/youtube.py,sha256=jJPk8EkyI615NS7Rg_-S5T6h8Gum-xX-XS5KeRprGu8,12611
+oni_api-1.0.10.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oni_api-1.0.10.dist-info/METADATA,sha256=mbcNRNW3JC43DIPB8U6R-gJC31YLFOmu6fca3qmnq_Q,3120
+oni_api-1.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+oni_api-1.0.10.dist-info/top_level.txt,sha256=HFNSbooypDjaU-NB7hysbazeFnKxtFl5SiFIqwTmMbg,8
+oni_api-1.0.10.dist-info/RECORD,,
