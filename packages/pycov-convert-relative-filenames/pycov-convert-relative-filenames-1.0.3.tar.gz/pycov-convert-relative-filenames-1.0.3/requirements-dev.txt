@@ -1,0 +1,11 @@
+-r requirements.txt
+-r requirements-doc.txt
+
+pylint
+pytest
+pytest-cov
+pytest-html
+sdist
+setuptools
+twine
+wheel

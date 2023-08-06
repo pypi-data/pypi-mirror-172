@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pycov-convert-relative-filenames
+Version: 1.0.3
+Summary: Quick and dirty coverage.xml file converter for GitLab CI
+Home-page: https://gitlab.com/jlecomte/projects/python/pycov-convert-relative-filenames
+Author: Julien Lecomte
+Author-email: julien@lecomte.at
+License: MIT
+Project-URL: Documentation, https://gitlab.com/jlecomte/projects/python/pycov-convert-relative-filenames/-/blob/master/README.md
+Project-URL: Source code, https://gitlab.com/jlecomte/projects/python/pycov-convert-relative-filenames
+Project-URL: Tracker, https://gitlab.com/jlecomte/projects/python/pycov-convert-relative-filenames/-/issues
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![license](https://img.shields.io/badge/license-MIT-brightgreen)](https://spdx.org/licenses/MIT.html)
+[![pipelines](https://gitlab.com/jlecomte/projects/python/pycov-convert-relative-filenames/badges/master/pipeline.svg)](https://gitlab.com/jlecomte/projects/python/pycov-convert-relative-filenames/pipelines)
+[![coverage](https://gitlab.com/jlecomte/projects/python/pycov-convert-relative-filenames/badges/master/coverage.svg)](https://jlecomte.gitlab.io/projects/python/pycov-convert-relative-filenames/coverage/index.html)
+
+# pycov-convert-relative-filenames
+
+A quick and dirty helper script to convert a xml coverage report into a valid cobertura file that will be accepted by GitLab CI.
+
+This enables the merge request pages to have coverage shown on the code review tab.
+
+## Installation from PyPI
+
+You can install the latest version from PyPI package repository.
+
+~~~bash
+python3 -mpip install -U pycov-convert-relative-filenames
+~~~
+
+## GitLab CI Usage
+
+Sample gitlab-ci.yml snippet for coverage:
+
+~~~yaml
+coverage:
+  script:
+    - python3 -m pytest --cov-report=xml:coverage.tmp.xml -- tests
+    - pycov-convert-relative-filenames < coverage.tmp.xml > coverage.xml
+  artifacts:
+    when: always
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+~~~
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Locations
+
+  * GitLab: [https://gitlab.com/jlecomte/projects/python/pycov-convert-relative-filenames](https://gitlab.com/jlecomte/projects/python/pycov-convert-relative-filenames)
+  * PyPi: [https://pypi.org/project/pycov-convert-relative-filenames](https://pypi.org/project/pycov-convert-relative-filenames)
+

@@ -1,0 +1,9 @@
+# template: https://gitlab.com/jlecomte/projects/python/reference-files
+include LICENSE
+include README.md
+include pyproject.toml
+include setup.*
+include requirements*.txt
+recursive-include pycov_convert_relative_filenames *py
+prune docs
+prune tests
