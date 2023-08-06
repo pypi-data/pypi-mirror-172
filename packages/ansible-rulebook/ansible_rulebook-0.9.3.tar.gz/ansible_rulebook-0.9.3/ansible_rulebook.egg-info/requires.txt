@@ -1,0 +1,11 @@
+asyncio
+durable_rules
+pyparsing>=3.0
+jsonschema
+jinja2
+redis
+dpath
+janus
+ansible-runner
+websockets
+drools_jpy
