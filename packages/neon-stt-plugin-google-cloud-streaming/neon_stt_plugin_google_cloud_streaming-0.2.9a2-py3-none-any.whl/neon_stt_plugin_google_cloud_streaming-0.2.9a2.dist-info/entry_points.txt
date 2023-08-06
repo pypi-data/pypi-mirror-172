@@ -1,0 +1,6 @@
+[mycroft.plugin.stt]
+google_cloud_streaming = neon_stt_plugin_google_cloud_streaming:GoogleCloudStreamingSTT
+
+[mycroft.plugin.stt.config]
+google_cloud_streaming.config = neon_stt_plugin_google_cloud_streaming.languages:stt_config
+
