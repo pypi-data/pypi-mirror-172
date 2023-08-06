@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gra
+Version: 0.0.1
+Summary: Package for Graph-Rewriting Automata
+Project-URL: Homepage, https://github.com/paulcousin/gra-python
+Project-URL: Bug Tracker, https://github.com/paulcousin/gra-python/issues
+Author-email: Paul Cousin <cousin.paul@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# GRA python package for Graph-Rewriting Automata
+For detailed information, please checkout [this page](https://paulcousin.github.io/graph-rewriting-automata).
