@@ -1,0 +1,9 @@
+prefect_kv/__init__.py,sha256=9DG52nW4R-QDvVy9EkzxrWVtzJ9g3rpjR6l7zhjiHc4,150
+prefect_kv/_backend.py,sha256=Gahlp-dUIeYiD5TMMKom59IF7GPhLBuht1azrUXaQ3w,4109
+prefect_kv/_version.py,sha256=8InYJtsZpMu_NZygDsLzPoUCHjeyufcWIKjkk4djAhE,497
+prefect_kv-0.1.0.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_kv-0.1.0.dist-info/METADATA,sha256=_qBxB8REFU8g2z1kiWTXJWfaJcCL4tytOET8yXl6mTU,5144
+prefect_kv-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prefect_kv-0.1.0.dist-info/entry_points.txt,sha256=iwkOKW5pRoJvt7bAaCXmLJlr3JHZnZCiCssyuNGPtL8,46
+prefect_kv-0.1.0.dist-info/top_level.txt,sha256=scd2U66aJg9DFuGzCxbVk1uHDDQTwisEJ1IxfuJOqmY,11
+prefect_kv-0.1.0.dist-info/RECORD,,
