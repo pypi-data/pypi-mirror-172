@@ -1,0 +1,7 @@
+// The second call to Console should produce a runtime error. 
+// This is because the string is said to be an interpolation string, but doesn't actually contain any interpolation. (i.e: {value}).
+
+include system;
+
+Console($"this is a test that works{'.'}");
+Console($"this is a test that should fail");

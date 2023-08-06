@@ -1,0 +1,33 @@
+/*
+This is the system library for Macal
+You can use it by issuing this command:
+include system;
+Author:    Marco Caspers
+Date:      16-09-2022
+*/
+
+
+Console => (params args) external 'ext_system', 'Console';
+Print => (params args) external 'ext_system', 'Console';
+
+Type => (variable var) external 'ext_system', 'VarType';
+
+Array => (params args) external 'ext_system', 'Array';
+List => (params args) external 'ext_system', 'Array';
+
+RecordHasField => (record rec, string fieldname) external "ext_system", "RecordHasField";
+IsString => (variable var) external "ext_system", "IsString";
+IsInt => (variable var) external "ext_system", "IsInt";
+IsFloat => (variable var) external "ext_system", "IsFloat";
+IsBool => (variable var) external "ext_system", "IsBool";
+IsRecord => (variable var) external "ext_system", "IsRecord";
+IsArray => (variable var) external "ext_system", "IsArray";
+IsFunction => (variable var) external "ext_system", "IsFunction";
+IsNil => (variable var) external "ext_system", "IsNil";
+Platform => () external "ext_system", "GetPlatform";
+ShowVersion => () external "ext_system", "ShowVersion";
+Items => (variable var) external "ext_system", "RecordItems";
+Key => (variable var) external "ext_system", "RecordItemKey";
+Value => (variable var) external "ext_system", "RecordItemValue";
+Keys => (variable var) external "ext_system", "RecordKeys";
+Values => (variable var) external "ext_system", "RecordValues";
