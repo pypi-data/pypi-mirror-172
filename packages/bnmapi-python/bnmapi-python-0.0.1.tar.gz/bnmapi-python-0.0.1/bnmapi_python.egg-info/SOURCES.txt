@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bnm/__init__.py
+bnm/bnm.py
+bnm/constants.py
+bnmapi_python.egg-info/PKG-INFO
+bnmapi_python.egg-info/SOURCES.txt
+bnmapi_python.egg-info/dependency_links.txt
+bnmapi_python.egg-info/requires.txt
+bnmapi_python.egg-info/top_level.txt
