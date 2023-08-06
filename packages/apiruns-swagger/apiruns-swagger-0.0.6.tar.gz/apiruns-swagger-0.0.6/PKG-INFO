@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: apiruns-swagger
+Version: 0.0.6
+Summary: Swagger documentation for Apiruns projects.
+Home-page: https://github.com/apiruns/apiruns-swagger
+License: MIT
+Keywords: Poetry,Apiruns,Packages,Swagger,Packaging,No-code,Low-code
+Author: Jose Salas
+Author-email: jose.salas@apiruns.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Project-URL: Documentation, https://github.com/apiruns/apiruns-swagger
+Project-URL: Repository, https://github.com/apiruns/apiruns-swagger
+Description-Content-Type: text/markdown
+
+# apiruns-swagger
+
+Swagger documentation for Apiruns projects
+
+Install
+
+```bash
+pip install apiruns-swagger
+```
+
+Using
+```python
+from apiruns_swagger import json_to_swagger
+
+apiruns_schema = [
+        {
+            "path": "/users",
+            "schema": {
+                "name": {"type": "string"},
+            }
+        },
+        {
+            "path": "/inventory",
+            "schema": {
+                "price": {"type": "integer"},
+            }
+        }
+    ]
+
+servers = [{"url": "https://google.cloud.apiruns.com"}]
+
+swagger_schema = json_to_swagger(apiruns_schema, servers=servers)
+```
+
