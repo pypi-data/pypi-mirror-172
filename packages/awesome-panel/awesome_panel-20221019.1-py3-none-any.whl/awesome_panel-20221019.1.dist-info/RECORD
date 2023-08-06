@@ -1,0 +1,15 @@
+awesome_panel/__init__.py,sha256=NxYM6VwUOEjp7s1o_kGIsCN4-uwvAv5Cmv0eWi-PVJw,130
+awesome_panel/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awesome_panel/assets/svg.py,sha256=01jefkOR_3Yo1-sxaFxad9k4UqXRe2av3JHoZYfb25k,11743
+awesome_panel/assets/css/__init__.py,sha256=p9frxmQLyWQRjTNeLoEF1TLyq6hiPzUwRK342aYnEJM,96
+awesome_panel/assets/csv/__init__.py,sha256=tBX0AmxxaVO5KJZS6uNOy1hlTT8P5RuvGY8kG7YFCs8,742
+awesome_panel/assets/html/__init__.py,sha256=rokOhH665r8spmkb7oyefC_DLYVK9OW-iYdcX2-uMZg,801
+awesome_panel/assets/images/__init__.py,sha256=2MbWXFWTxu0s2KQlmu6vQLzarLgLdoTsDSgIuO_zU_U,289
+awesome_panel/assets/markdown/__init__.py,sha256=n4tEnxaEeCx5uGsRbXRz1AwcCrtP-NG5EK834ApCs6o,281
+awesome_panel/assets/yaml/__init__.py,sha256=_T9fUouf42oA1r_48JBebG_AbZDsnI-6rUqbdbrC-OY,189
+awesome_panel/config/__init__.py,sha256=epjzQ_gzxlwaGcSxhkYLGC8E7Ku7k5d_mz7joodkyiI,6163
+awesome_panel-20221019.1.dist-info/LICENSE,sha256=mWE4LdFdWBikIb2hBGIF7EDJWi7KcowsclNPk_bDGO4,1072
+awesome_panel-20221019.1.dist-info/METADATA,sha256=5EcNm5QYdF2V2SXfS35klW1ov_RgkWp5i7yGwrjRXNY,8858
+awesome_panel-20221019.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+awesome_panel-20221019.1.dist-info/top_level.txt,sha256=B5-Is4v9QfCtqYcw6BJRePrwEoz0CHi95tvmEOqMSMw,14
+awesome_panel-20221019.1.dist-info/RECORD,,
