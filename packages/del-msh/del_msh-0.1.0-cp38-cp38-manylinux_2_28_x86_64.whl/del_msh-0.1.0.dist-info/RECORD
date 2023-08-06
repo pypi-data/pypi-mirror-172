@@ -1,0 +1,5 @@
+del_msh-0.1.0.dist-info/METADATA,sha256=watKjOvEZdjCcyqpdwJzjFbh8u6J3wp_cswyoVvJBi8,256
+del_msh-0.1.0.dist-info/WHEEL,sha256=4W1FpxCBo8WAwcth7yVOQ0DLiDpJa4azJovZdyq89Cg,107
+del_msh/__init__.py,sha256=DmdaYVOcO1ptmt7GPnvoPcGe0XHOLv6TLyiFq_FmTno,396
+del_msh/del_msh.cpython-38-x86_64-linux-gnu.so,sha256=NRdz6dVlqh1QTDGskpkxTzy_B984paVHJ0PU-usM4rU,526768
+del_msh-0.1.0.dist-info/RECORD,,
