@@ -1,0 +1,10 @@
+tesseract_window_scanner/LICENSE,sha256=q5AZUyTwx8nlW-2D2bxuQd36rLJ9EDulKh76xA09pj8,1069
+tesseract_window_scanner/README.MD,sha256=iHuMoCBMT3RzoLsUGiIdUFF_5rO9xA0z1jklkw99Wd4,4343
+tesseract_window_scanner/__init__.py,sha256=03OQ3b_ptvmBSIlychc0ecfg1qnqQfHmWGfcNp7INMI,10640
+tesseract_window_scanner/requirements.txt,sha256=wtNUbx2vrPkPeR9IL8XbO1EcAOOw1xAJ3NhFLI9nlUc,109
+tesseract_window_scanner/thirdparty.json,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+tesseract_window_scanner-0.10.dist-info/LICENSE.rst,sha256=mUm-wCZOuzvKLxt9Gac_Zo5cah8QOM0gqn2Z-AluELM,1148
+tesseract_window_scanner-0.10.dist-info/METADATA,sha256=UD9f7jFcjmk-brq-VrjDWZCv3O4vsF2gbPN5i8uyZbY,5461
+tesseract_window_scanner-0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tesseract_window_scanner-0.10.dist-info/top_level.txt,sha256=gr1wGLOi9LLVsopQ5L7OE_QDgW2TY35d2JdtkKttdFI,25
+tesseract_window_scanner-0.10.dist-info/RECORD,,
