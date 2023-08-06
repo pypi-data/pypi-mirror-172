@@ -1,0 +1,3 @@
+[console_scripts]
+fuzzy_parser = fuzzy_parser.__main__:main
+
