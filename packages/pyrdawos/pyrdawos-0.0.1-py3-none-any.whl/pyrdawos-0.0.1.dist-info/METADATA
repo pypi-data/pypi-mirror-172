@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyrdawos
+Version: 0.0.1
+Summary: Python RDA AWOS
+Home-page: https://gitlab.com/yanghjep/pyrdawos
+Author: YangHyeonJi
+Author-email: yanghj@epilab.kr
+License: UNKNOWN
+Keywords: rda,aws
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3
+Requires-Dist: geopandas
+Requires-Dist: python-dateutil
+
+UNKNOWN
+
+
