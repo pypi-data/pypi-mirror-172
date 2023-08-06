@@ -1,0 +1,2 @@
+[console_scripts]
+clonaEvolution = __main__:main
