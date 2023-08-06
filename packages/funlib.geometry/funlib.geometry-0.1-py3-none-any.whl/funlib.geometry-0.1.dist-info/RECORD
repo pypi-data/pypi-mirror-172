@@ -1,0 +1,9 @@
+funlib/geometry/__init__.py,sha256=BU1TzK9yL3IzvCTd0NMNLn41Rv0lwJHr_A0uqYS3ivI,72
+funlib/geometry/coordinate.py,sha256=ICSouv7oFCDgmI_CJTFI1UYBnQVfxDLkRPteaSDvBTo,6944
+funlib/geometry/freezable.py,sha256=biL_pJjYzchw40yjfWL7uv9bQFkJo1ccVnFcXhcO5Is,379
+funlib/geometry/roi.py,sha256=oZmjEuYcyrxYYy688HNRZEBn6dEIQGr4JCOincFC_FQ,13737
+funlib.geometry-0.1.dist-info/LICENSE,sha256=EUwGjSwHsicD9hmXIWRX1Y7gAQCWq9Wl_TPyjHgvYQ0,1066
+funlib.geometry-0.1.dist-info/METADATA,sha256=1ALQkHaFqdRxCn54XyXNM0TCicysexKnqfnHh2TWcAQ,842
+funlib.geometry-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+funlib.geometry-0.1.dist-info/top_level.txt,sha256=c9hZwuCurppc2wrP33IVC2k2SE23XA-IDN88GYJ2Dxc,7
+funlib.geometry-0.1.dist-info/RECORD,,
