@@ -1,0 +1,2 @@
+[console_scripts]
+jupyter-enterprisegateway = enterprise_gateway.enterprisegatewayapp:launch_instance
