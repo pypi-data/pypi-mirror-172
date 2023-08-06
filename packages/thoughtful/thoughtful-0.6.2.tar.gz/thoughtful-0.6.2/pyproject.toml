@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "thoughtful"
+version = "0.6.2"
+description = "Supervisor is a Workflow Engine for Digital Workers that generates a detailed telemetric log at runtime called a Work Report"
+authors = ["Thoughtful Automation <engineering@thoughtfulautomation.com>"]
+license = "MIT"
+readme = 'README.md'
+homepage = "https://thoughtfulautomation.com"
+repository = "https://github.com/thoughtful-automation/supervisor"
+documentation = "https://thoughtful-automation.github.io/supervisor"
+
+keywords = ['rpa', 'robot-framework', 'robocorp', 'automation']
+
+classifiers = [
+  "Topic :: Security :: Cryptography",
+  "License :: OSI Approved :: MIT License",
+  "Framework :: Robot Framework",
+  "Framework :: Robot Framework :: Library",
+  "Framework :: Robot Framework :: Tool",
+]
+
+packages = [{ include = "supervisor" }]
+include = [{ path = "supervisor/py.typed" }]
+
+[[tool.poetry.source]]
+name = "codeartifact"
+url = "https://thoughtful-automation-975753646808.d.codeartifact.us-east-1.amazonaws.com/pypi/thoughtful-automation/"
+secondary = true
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+pyyaml = ">=5.4.1"
+chevron = "^0.14.0"
+pyconfs = "^0.5.5"
+pydantic = "^1.8.2"
+pre-commit = "^2.17.0"
+pydantic-yaml = "^0.6.3"
+isodate = "^0.6.1"
+
+[tool.poetry.dev-dependencies]
+mkdocs = "^1.2.3"
+datamodel-code-generator = "^0.11.14"
+mkdocstrings = "^0.16.2"
+pytest = "^6.2.5"
+pytest-cov = "^2.12.1"
+pytest-watch = "^4.2.0"
+pytest-sugar = "^0.9.4"
+pytest-timeout = "^2.0.2"
+syrupy = "^1.5.0"
+tox = "^3.24.3"
+yapf = "^0.31.0"
+pylint = "^2.11.1"
+pre-commit = "^2.15.0"
+devtools = "^0.8.0"
+isort = "^5.10.1"
+autoflake = "^1.4"
+bump2version = "1.0.0"
+
+[tool.datamodel-codegen]
+field-constraints = false
+snake-case-field = false
+strip-default-none = true
+target-python-version = "3.7"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["setuptools", "poetry_core>=1.0"]
+build-backend = "poetry.core.masonry.api"
