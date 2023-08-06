@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: searchunify
+Version: 1.0.3
+Summary: The SearchUnify SDK enables developers to easily work with the SearchUnify platform and build scalable solutions with search, analytics, crawlers and more.
+Home-page: https://www.searchunify.com/
+Author: SearchUnify
+Author-email: ankur.mahajan@grazitti.com
+License-File: LICENSE
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: schema (==0.7.4)
+
