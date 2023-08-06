@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pyrdawos/__init__.py
+pyrdawos/mapper.py
+pyrdawos.egg-info/PKG-INFO
+pyrdawos.egg-info/SOURCES.txt
+pyrdawos.egg-info/dependency_links.txt
+pyrdawos.egg-info/not-zip-safe
+pyrdawos.egg-info/requires.txt
+pyrdawos.egg-info/top_level.txt
