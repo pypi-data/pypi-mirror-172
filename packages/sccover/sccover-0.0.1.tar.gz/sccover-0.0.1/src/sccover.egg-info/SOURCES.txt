@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/sccover/__init__.py
+src/sccover/graph.py
+src/sccover/stats.py
+src/sccover.egg-info/PKG-INFO
+src/sccover.egg-info/SOURCES.txt
+src/sccover.egg-info/dependency_links.txt
+src/sccover.egg-info/requires.txt
+src/sccover.egg-info/top_level.txt
