@@ -1,0 +1,8 @@
+web3
+boto3
+asn1
+uuid
+request
+hexbytes
+cytoolz
+botocore
