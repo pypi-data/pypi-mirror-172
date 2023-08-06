@@ -1,0 +1,2 @@
+[console_scripts]
+tunas2dsdl_c = tunas2dsdl_c.cli:cli
