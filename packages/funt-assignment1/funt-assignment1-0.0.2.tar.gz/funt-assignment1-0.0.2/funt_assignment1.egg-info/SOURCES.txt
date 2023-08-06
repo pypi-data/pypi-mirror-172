@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+funt/main.py
+funt_assignment1.egg-info/PKG-INFO
+funt_assignment1.egg-info/SOURCES.txt
+funt_assignment1.egg-info/dependency_links.txt
+funt_assignment1.egg-info/requires.txt
+funt_assignment1.egg-info/top_level.txt
