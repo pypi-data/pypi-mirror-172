@@ -1,0 +1,24 @@
+import { PackageDescription, Blueprint } from '@lbje/dmt-ts';
+
+export class {{ package_class }} implements PackageDescription {
+
+  static instance: PackageDescription = new {{ package_class }}();
+
+  private blueprints = new Map<string, Blueprint>();
+
+  private constructor() {
+  }
+
+  addBlueprint(bp: Blueprint) {
+    this.blueprints.set(bp.name, bp);
+  }
+
+  getBlueprint(name: string): Blueprint {
+    const bp = this.blueprints.get(name);
+    if (!bp) {
+      throw new Error('Blueprint undefined ' + name);
+    }
+    return bp;
+  }
+
+}
