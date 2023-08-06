@@ -1,0 +1,14 @@
+numpy
+wurst
+bw2io
+pandas
+bw2data
+xarray
+prettytable
+pycountry
+cryptography
+premise_gwp
+pyYaml
+sparse
+schema
+datapackage
