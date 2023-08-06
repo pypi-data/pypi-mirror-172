@@ -1,0 +1,11 @@
+oommfc>=0.64.0
+numpy>=1.19
+scipy>=1.6
+
+[dev]
+build
+invoke
+nbval
+pre-commit
+pytest-cov
+twine
