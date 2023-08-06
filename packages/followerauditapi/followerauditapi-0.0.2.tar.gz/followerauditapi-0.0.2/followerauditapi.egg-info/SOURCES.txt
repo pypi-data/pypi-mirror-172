@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+followeraudit/FauditAPIclient.py
+followeraudit/FauditException.py
+followeraudit/__init__.py
+followeraudit/config.py
+followerauditapi.egg-info/PKG-INFO
+followerauditapi.egg-info/SOURCES.txt
+followerauditapi.egg-info/dependency_links.txt
+followerauditapi.egg-info/requires.txt
+followerauditapi.egg-info/top_level.txt
+tests/__init__.py
+tests/test_fauditapiclient.py
