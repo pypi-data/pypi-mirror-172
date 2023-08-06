@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+mplapi/__init__.py
+mplapi/__main__.py
+mplapi/config.py
+mplapi/event.py
+mplapi/mirai.py
+mplapi/msg.py
+mplapi/plugin.py
+mplapi.egg-info/PKG-INFO
+mplapi.egg-info/SOURCES.txt
+mplapi.egg-info/dependency_links.txt
+mplapi.egg-info/top_level.txt
