@@ -1,0 +1,11 @@
+kineticmodels/__init__.py,sha256=Egw3-rZWEqrdyReX5PKqIo633fgj10PrW65Ioepno_g,271
+kineticmodels/inhibition_models.py,sha256=F1_QZKzND7dg-WxOlWhaK-7eMr5myfQmp5OndMJJB80,2056
+kineticmodels/uptake_models.py,sha256=x-E74D_SWPGuTP48eN4SDTddJFSLTdlYr0cRavNjh3o,3207
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_inhibition_models.py,sha256=pMngw-gJL_I1F4VfLmwuiKYllHv7o16SYTAzu7WaM9w,3854
+tests/test_uptake_models.py,sha256=GXd4pxvQw1SKE-XU-kgPxI-f8A0eOEguD9rB-frtOsk,5712
+kineticmodels-0.0.15.dist-info/LICENSE,sha256=zBlOe7f6R1J7by62hKQ3XQFHyypzY_8d69UtHMvrx3I,1070
+kineticmodels-0.0.15.dist-info/METADATA,sha256=Lb1P16dQbvsjKez2fqByADWOASu_JNUb3nuz50cMYI0,666
+kineticmodels-0.0.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kineticmodels-0.0.15.dist-info/top_level.txt,sha256=qOMJjbO-gBppYxQFAsOSRfmIaTk9fZPynbOj40qb0cA,20
+kineticmodels-0.0.15.dist-info/RECORD,,
