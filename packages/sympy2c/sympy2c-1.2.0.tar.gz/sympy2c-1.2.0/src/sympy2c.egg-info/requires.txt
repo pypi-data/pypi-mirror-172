@@ -1,0 +1,6 @@
+Cython>=0.29.24
+numpy
+portalocker
+requests
+sympy<1.4
+numba>=0.56
