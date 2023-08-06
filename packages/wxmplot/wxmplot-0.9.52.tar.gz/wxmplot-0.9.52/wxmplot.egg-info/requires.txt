@@ -1,0 +1,13 @@
+wxPython>=4.0.3
+wxutils>=0.2.7
+matplotlib>=3.0.3
+numpy>=1.12
+Pillow>=7.0
+pyyaml>=5.0
+
+[doc]
+sphinx
+jupyter_sphinx
+
+[test]
+pytest
