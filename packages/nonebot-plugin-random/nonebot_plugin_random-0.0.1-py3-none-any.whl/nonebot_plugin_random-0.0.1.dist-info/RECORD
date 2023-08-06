@@ -1,0 +1,9 @@
+nonebot-plugin-random/__init__.py,sha256=GGisOAuyIILnWX-ruQ7EfqH_kSrsm2SUGdpUNZLhUBQ,384
+nonebot-plugin-random/depends.py,sha256=zbwX_XncGu6HJDCLXJyvps8X7hjB-uYx3bVgyGz5AFY,282
+nonebot-plugin-random/matchers.py,sha256=N_rG5bsXSZRLvKAMVByN96w4f00dodJN7_AXToGl7Jg,3961
+nonebot-plugin-random/utils.py,sha256=0sZLiLhcmfZeoGsTh9W1yJSEmB0lI-7DbT2UMNzLBbQ,377
+nonebot_plugin_random-0.0.1.dist-info/LICENSE,sha256=hHUDWc0rmKYd5kDeKHZqzYwo_HTafsBt0DCwarQRTJI,1087
+nonebot_plugin_random-0.0.1.dist-info/METADATA,sha256=6mlTqyxEAhcoIBO0fXd743QOLSISjnfYSZ3GN9RFdXs,4510
+nonebot_plugin_random-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nonebot_plugin_random-0.0.1.dist-info/top_level.txt,sha256=uVDv6O7cd29v8YXq2MCeHuDIIWGK0FWf35Fqobtvo6w,22
+nonebot_plugin_random-0.0.1.dist-info/RECORD,,
