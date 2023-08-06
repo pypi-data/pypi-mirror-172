@@ -1,0 +1,3 @@
+[console_scripts]
+freediv10Xcellbcs = freediv10Xcellbcs.main:main
+

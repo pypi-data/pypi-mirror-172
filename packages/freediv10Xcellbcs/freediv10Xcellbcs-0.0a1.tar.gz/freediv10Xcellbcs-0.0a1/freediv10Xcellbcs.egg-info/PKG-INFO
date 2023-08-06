@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: freediv10Xcellbcs
+Version: 0.0a1
+Summary: FREE divergence-based decoding of 10X cell barcodes
+Home-page: https://github.com/hawkjo/freediv10Xcellbcs
+Author: John Hawkins
+Author-email: hawkjo@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: DNA,NGS,bioinformatics,barcodes,10X
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.0
