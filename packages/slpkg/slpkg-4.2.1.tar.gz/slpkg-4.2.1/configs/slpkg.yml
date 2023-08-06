@@ -1,0 +1,34 @@
+configs:
+  # OS architecture by default.
+  os_arch: x86_64
+
+  # All necessary paths.
+  tmp_path: /tmp
+  tmp_slpkg: /tmp/slpkg
+  build_path: /tmp/slpkg/build
+  download_only: /tmp/slpkg
+  lib_path: /var/lib/slpkg
+  etc_path: /etc/slpkg
+  db_path: /var/lib/slpkg/database
+  sbo_repo_path: /var/lib/slpkg/repository
+  log_packages: /var/log/packages
+
+  # Database name.
+  database: database.slpkg
+
+  # SBo repository configs.
+  sbo_repo_url: http://slackbuilds.org/slackbuilds/15.0
+  sbo_txt: SLACKBUILDS.TXT
+  sbo_tar_suffix: .tar.gz
+  sbo_repo_tag: _SBo
+
+  # Slackware commands.
+  installpkg: upgradepkg --install-new
+  reinstall: upgradepkg --reinstall
+  removepkg: removepkg
+
+  # Cli menu colors configs.
+  colors: on
+
+  # Wget options.
+  wget_options: -c -N
