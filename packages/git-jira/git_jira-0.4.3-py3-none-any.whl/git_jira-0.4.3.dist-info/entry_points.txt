@@ -1,0 +1,2 @@
+[console_scripts]
+git-jira = git_jira.cli:cli
