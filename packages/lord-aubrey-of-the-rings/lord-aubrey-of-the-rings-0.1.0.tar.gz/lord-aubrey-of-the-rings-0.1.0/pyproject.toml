@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lord-aubrey-of-the-rings"
+version = "0.1.0"
+authors = [
+  { name="Chiemeka Alim", email="lord.chiemy@gmail.com" },
+]
+license = { file = "LICENSE" }
+description = "A micro lord of the rings sdk"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests >= 2.28.*"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["sdk", "lord of the rings", "the one api"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/iamlordaubrey/lotr_sdk"
+"Bug Tracker" = "https://github.com/iamlordaubrey/lotr_sdk/issues"
+"API" = "https://the-one-api.dev/"
