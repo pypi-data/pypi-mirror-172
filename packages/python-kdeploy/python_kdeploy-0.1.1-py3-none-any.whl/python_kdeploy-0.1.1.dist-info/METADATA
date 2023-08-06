@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: python-kdeploy
+Version: 0.1.1
+Summary: simple package for deployment on remote machine
+Author: Ilya Kaftanov
+Author-email: kaftanovwork@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: invoke (>=1.7.3,<2.0.0)
+Requires-Dist: patchwork (>=1.0.1,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: types-toml (>=0.10.8,<0.11.0)

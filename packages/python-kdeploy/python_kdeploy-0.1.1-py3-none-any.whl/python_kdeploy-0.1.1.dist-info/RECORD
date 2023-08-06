@@ -1,0 +1,12 @@
+python_kdeploy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_kdeploy/entry.py,sha256=Myg1bkKk_OcCH6bE3xJ-lvmjtqJPiE6vUOOVBGKP1gc,2303
+python_kdeploy/invoke_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_kdeploy/invoke_generator/datatypes.py,sha256=587i36ZBMF1Cf5N33Pvzufm8HPg3zMTHV5QCV3PZ5P0,1168
+python_kdeploy/invoke_generator/helpers.py,sha256=JBJYfYgb5g7Lpld0xtkxxpqhsXK_lZiIOa4Y0euiAqc,5507
+python_kdeploy/invoke_generator/service.temp,sha256=qjzpmbPa6NTRLsKtk8GzZs7vgaqWA73U0RlF7w4r84w,407
+python_kdeploy/invoke_generator/settings.py,sha256=vmgrNx7Wv-Cvkq_abJPO3rkVFvGYbHsq9Kz8LAeCdtI,1696
+python_kdeploy-0.1.1.dist-info/entry_points.txt,sha256=yFPBAmt54XuNehEi547R5DD5dQrxUsFxAMr2z2vugCw,50
+python_kdeploy-0.1.1.dist-info/LICENSE,sha256=zTS33Vrw8KDBtMZ9VqvZDTnupcAoc0yHhiU1tFklTTQ,1070
+python_kdeploy-0.1.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+python_kdeploy-0.1.1.dist-info/METADATA,sha256=BsnOcsKNr-YA-2cmh22ehnuu8WSr2PwC5lgQdp85BgQ,516
+python_kdeploy-0.1.1.dist-info/RECORD,,

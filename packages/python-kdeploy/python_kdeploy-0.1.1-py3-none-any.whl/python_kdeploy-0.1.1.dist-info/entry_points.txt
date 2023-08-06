@@ -1,0 +1,3 @@
+[console_scripts]
+pydep=python_kdeploy.entry:cmd
+
