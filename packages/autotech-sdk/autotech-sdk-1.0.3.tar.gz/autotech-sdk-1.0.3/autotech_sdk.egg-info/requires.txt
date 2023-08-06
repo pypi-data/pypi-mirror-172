@@ -1,0 +1,16 @@
+pymongo==4.2.0
+requests==2.28.1
+certifi==2022.9.24
+confluent-kafka[avro,json,protobuf]>=1.4.2
+Flask==2.1.2
+dacite==1.6.0
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
