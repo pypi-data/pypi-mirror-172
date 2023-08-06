@@ -1,0 +1,8 @@
+README.md
+setup.py
+vancouver/__init__.py
+vancouver.egg-info/PKG-INFO
+vancouver.egg-info/SOURCES.txt
+vancouver.egg-info/dependency_links.txt
+vancouver.egg-info/not-zip-safe
+vancouver.egg-info/top_level.txt
