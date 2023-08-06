@@ -1,0 +1,9 @@
+demo.py,sha256=JeOQliaSuRHkVi0IIEdJlcNeDydFRigvUFV5vfu2tww,4990
+test_termformatters.py,sha256=NJIy98g40obgKXXOenthYcvR0xyHaJjwzJer2HLU70A,5592
+termformatters/__init__.py,sha256=L9_-wcIgO8IJ2W2LHp33lP31n_Iv-ZJFAzDDPva6xKA,7541
+termformatters/base.py,sha256=23Sz4JtE9QSvdViQ9dof_tcSfs1bP6ikpxdpta6mN-Q,7573
+termformatters-0.2.1.dist-info/LICENSE,sha256=cILlCe1LMbLvI4-b_vGoGIrdblx_lQ3HWVdrC4jB5ps,1070
+termformatters-0.2.1.dist-info/METADATA,sha256=82Z9JCyIWs7gvDI3OIu9gM-wJLW-Roi4IveD0CU-sPQ,11144
+termformatters-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+termformatters-0.2.1.dist-info/top_level.txt,sha256=2JHSGf-xms5BgmPn0M2-qL-krSToHlQYQcpKO5pbkWU,40
+termformatters-0.2.1.dist-info/RECORD,,
