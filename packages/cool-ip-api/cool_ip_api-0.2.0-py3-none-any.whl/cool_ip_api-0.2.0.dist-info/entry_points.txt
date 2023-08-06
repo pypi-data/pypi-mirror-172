@@ -1,0 +1,3 @@
+[console_scripts]
+cool-ip-api=cool_ip_api.main:cli
+
