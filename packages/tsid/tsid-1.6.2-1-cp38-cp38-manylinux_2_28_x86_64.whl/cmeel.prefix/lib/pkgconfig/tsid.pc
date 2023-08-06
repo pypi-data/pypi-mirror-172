@@ -1,0 +1,22 @@
+prefix=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix
+exec_prefix=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix
+libdir=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix/lib
+bindir=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix/bin
+pkglibdir=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix/lib/tsid
+includedir=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix/include
+datarootdir=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix/share
+pkgdatarootdir=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix/share
+docdir=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix/share/doc/tsid
+doxygendocdir=/tmp/cmeel-davu1yp_/pfx/cmeel.prefix/share/doc/tsid/doxygen-html
+
+Name: tsid
+Description: Efficient Task Space Inverse Dynamics for Multi-body Systems based on Pinocchio
+URL: https://github.com/stack-of-tasks/tsid
+Version: 1.6.2
+Requires: 
+Conflicts: 
+Libs: -L${libdir} 
+Libs.private: 
+Cflags:  -I${includedir}
+
+
