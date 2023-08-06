@@ -1,0 +1,15 @@
+c8_source_postgres/__init__.py,sha256=MYzh-moG3ocOUXS9VreTi4ItSkW61Q82wGQZ4IAJ0qQ,20709
+c8_source_postgres/db.py,sha256=iwulhlG2H3ZJHiV9uZVWXIHv5_xbwSQucSUdsEtGkhI,9935
+c8_source_postgres/discovery_utils.py,sha256=HbX1fY-zk0PDcD2HcmM9uPgz3AE4t3mdla5zBysdTEQ,18151
+c8_source_postgres/stream_utils.py,sha256=fx9TkHJELFrySRM2KRaOGzuZ7Vpgc-4vnrXdTtyJl7I,4152
+c8_source_postgres/sync_strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+c8_source_postgres/sync_strategies/common.py,sha256=lp_KGvZKiBIWUjqEEX3LyE7PfVAnX0bRD1Qf2Tb8fXA,1256
+c8_source_postgres/sync_strategies/full_table.py,sha256=gVxqjPVFnxOZ_J07kxPMZBoLUWvju4H9M0-412RcMQw,7877
+c8_source_postgres/sync_strategies/incremental.py,sha256=1OjTq4Y9UrWY_UdoYU2K6a834x7X1oT6hFbhK4T4j0A,6467
+c8_source_postgres/sync_strategies/logical_replication.py,sha256=L_iwDklkiJq910MYtXH7ikdF13jkb3fZbu2DjT5MMEE,29804
+c8_source_postgres-0.0.6.dist-info/LICENSE,sha256=xNuDgLmykYhajKZueHKWS9ZgnCFZ47hzbPCyI5-hs9c,32393
+c8_source_postgres-0.0.6.dist-info/METADATA,sha256=bgudtRJWgPzfHd0cIXFGo8dKjedu3nZDbWZ_dFFIgyg,9853
+c8_source_postgres-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+c8_source_postgres-0.0.6.dist-info/entry_points.txt,sha256=EXZz3ROEk7-RQ-RfUMhnJbSA4fL9RQ41i_EcMgVBua4,63
+c8_source_postgres-0.0.6.dist-info/top_level.txt,sha256=JJqWYGZP5XfpjOmXywkjPb2ScPrz6eEhY7vUW_rS1Q0,19
+c8_source_postgres-0.0.6.dist-info/RECORD,,
