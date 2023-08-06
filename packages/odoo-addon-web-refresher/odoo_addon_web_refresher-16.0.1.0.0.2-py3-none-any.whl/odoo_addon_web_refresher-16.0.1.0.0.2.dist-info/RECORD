@@ -1,0 +1,17 @@
+odoo/addons/web_refresher/README.rst,sha256=NyxrfrDCc8hGMcChOFRn-0D-HInkCxAT-Nn4THRaf_8,2802
+odoo/addons/web_refresher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_refresher/__manifest__.py,sha256=F22Hap8CuoNZoFe_yKNTL5PFDpgBnQjt5axQOwnrEOk,371
+odoo/addons/web_refresher/i18n/ca.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_refresher/i18n/es.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_refresher/i18n/pt_BR.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_refresher/i18n/web_refresher.pot,sha256=PAtHHDgU820OoRy8FVY5MB37RLUpuChaStTBN-_JZXQ,570
+odoo/addons/web_refresher/readme/CONTRIBUTORS.rst,sha256=x9QwsnFhsW5Avs-rIlgxjI5eH9FfXk33pMmG-r94D_c,169
+odoo/addons/web_refresher/readme/DESCRIPTION.rst,sha256=MeiXniD5bsMCiexpyRAPjO7Fc0rsyxE1dEsDsR7mPjM,132
+odoo/addons/web_refresher/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_refresher/static/description/index.html,sha256=ZznPCX9TUJmlDyShIwCjbDi7hNtrnErC9AoVw99Z0Yg,12049
+odoo/addons/web_refresher/static/description/refresh.png,sha256=uwIMMi3a9z_00iUwUp6T1eBC6tYiMqLoFEfkEdZUzow,18324
+odoo/addons/web_refresher/static/src/xml/pager_button.xml,sha256=1PQMmRY-wIuK7C602ARJUBh-7334rSsLtIR-3y1wIWQ,863
+odoo_addon_web_refresher-16.0.1.0.0.2.dist-info/METADATA,sha256=3QgdOnT_twonfyYJYZdpXV0lWPD6qyORGUcnND9Z5qM,3331
+odoo_addon_web_refresher-16.0.1.0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo_addon_web_refresher-16.0.1.0.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_web_refresher-16.0.1.0.0.2.dist-info/RECORD,,
