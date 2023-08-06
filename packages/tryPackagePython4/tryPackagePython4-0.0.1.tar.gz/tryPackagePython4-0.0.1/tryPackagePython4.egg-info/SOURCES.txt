@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+tryPackagePython4/__init__.py
+tryPackagePython4/myFunctions.py
+tryPackagePython4.egg-info/PKG-INFO
+tryPackagePython4.egg-info/SOURCES.txt
+tryPackagePython4.egg-info/dependency_links.txt
+tryPackagePython4.egg-info/requires.txt
+tryPackagePython4.egg-info/top_level.txt
