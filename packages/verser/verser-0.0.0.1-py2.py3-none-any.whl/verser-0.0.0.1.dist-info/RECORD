@@ -1,0 +1,15 @@
+verser/__init__.py,sha256=6_1fTXSRMLpkmiJskgrUCy2ojpsFZUgFAg3dxW8Lt9k,34
+verser/__version__.py,sha256=p0HORnJTGoA3EH2WrW1beaVtFPYEOSESxGEgt_ojWjQ,8
+verser/verser_.py,sha256=abad3vVDMiAGhbXAcXG0IRElLpwMC73NvyMd9yIMmHg,5249
+verser/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verser/common/colors.py,sha256=N1wUV7hOu4flotl2HIrAwNotQ-6j30WFLoJfOhmMvsc,20349
+verser/common/files.py,sha256=1Zn3Uo6J1aiN6sh1JPeowBdthy1YCwkLsrARvWxn5pk,4977
+verser/common/folder_name_checks.py,sha256=Z9D8vbysdNc5F27MFapjK0dnKtqLUNreQJqhhkb20Yo,642
+verser/common/url_clean.py,sha256=sKhtdHj1MwO8YA-X_Eo8aSG2cYSqawmWVuEqeeYBBRg,228
+verser/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verser/tests/test_verser.py,sha256=vbWfQy8tVGTbP7m0-4_6f9OL1s_AvIwl1zZhxHB8OHw,729
+verser-0.0.0.1.dist-info/LICENSE,sha256=_FLoZ19vS8aHc0oinOX5sOvK-OW05x0MMA0XjeqrF3U,1090
+verser-0.0.0.1.dist-info/METADATA,sha256=71Mj3cJD95OOjJyhQFEW9iUnkKcoxC57g3CP5welN-k,786
+verser-0.0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+verser-0.0.0.1.dist-info/top_level.txt,sha256=JIRnneVPy_VmHib2D6b5fb4AU1XjONYTCcQi0eWZJZs,7
+verser-0.0.0.1.dist-info/RECORD,,
