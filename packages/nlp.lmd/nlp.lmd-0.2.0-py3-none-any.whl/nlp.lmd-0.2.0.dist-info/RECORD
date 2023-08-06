@@ -1,0 +1,10 @@
+lmd/__init__.py,sha256=Aoa4YmcJ_5h9pVSOSZxownmTgg0H2vvziUJc78pRWrc,154
+lmd/cli.py,sha256=R9yaqvn0oQxhmjtt8VG6OWaVGgkmhdyPgwXWrAB2CZY,31070
+lmd/lmd.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+lmd/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlp.lmd-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nlp.lmd-0.2.0.dist-info/METADATA,sha256=OT3Nx6nh7QAc965FUEy4Zn48biDw-x7MdLdPcEV4qHs,3109
+nlp.lmd-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nlp.lmd-0.2.0.dist-info/entry_points.txt,sha256=Wi1FrO-2BDFUFs1v7_WTtwzXT1kkOSH5-C5yCpERrMc,37
+nlp.lmd-0.2.0.dist-info/top_level.txt,sha256=vqZ1gAx-0q3mHbilWZIBfHs5VSHZ-YyURgtVO5RAbyo,4
+nlp.lmd-0.2.0.dist-info/RECORD,,
