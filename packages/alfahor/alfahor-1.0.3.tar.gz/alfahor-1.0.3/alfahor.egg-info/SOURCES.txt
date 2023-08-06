@@ -1,0 +1,9 @@
+README.md
+setup.py
+alfahor/__init__.py
+alfahor/alfahor.py
+alfahor.egg-info/PKG-INFO
+alfahor.egg-info/SOURCES.txt
+alfahor.egg-info/dependency_links.txt
+alfahor.egg-info/requires.txt
+alfahor.egg-info/top_level.txt
