@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+betaMixPy/__init__.py
+betaMixPy/betaMixPy.py
+betaMixPy.egg-info/PKG-INFO
+betaMixPy.egg-info/SOURCES.txt
+betaMixPy.egg-info/dependency_links.txt
+betaMixPy.egg-info/requires.txt
+betaMixPy.egg-info/top_level.txt
