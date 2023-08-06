@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tcloud-codeartifact
+Version: 0.1.0
+Summary: Tcloud codeartifacts
+Author: tcloudcodeartifact
+Author-email: tcloudcodeartifact@gmail.com
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Faker (>=8.4.0)
+Description-Content-Type: text/markdown
+
+# tcloud-codeartifact
+Gerenciador de layers dos projetos tcloud .
+
