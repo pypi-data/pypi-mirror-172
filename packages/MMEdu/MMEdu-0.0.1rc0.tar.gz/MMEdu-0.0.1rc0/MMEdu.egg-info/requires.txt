@@ -1,0 +1,4 @@
+mmcls==0.20.0
+mmdet==2.19.0
+matplotlib<=3.3.1
+tqdm==4.64.0
