@@ -1,0 +1,2 @@
+[console_scripts]
+pubnub-python-tools = pubnub_python_tools.run:main
