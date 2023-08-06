@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "csc-recorder"
+version = "1.4.1"
+description = "CSC eRecording python wrapper"
+authors = ["Jatin Goel <jgoel@thesummitgrp.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Lenders-Cooperative/CSCRecorder"
+repository = "https://github.com/Lenders-Cooperative/CSCRecorder"
+keywords = ["CSC"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.26.0"
+Jinja2 = "^3.0.2"
+xmltodict = "^0.12.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
