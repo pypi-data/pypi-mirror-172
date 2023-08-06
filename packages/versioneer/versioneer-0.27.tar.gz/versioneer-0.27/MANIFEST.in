@@ -1,0 +1,6 @@
+# we need to include a lot, because this package isn't really made up of
+# packages
+
+include MANIFEST.in README.md NOTES developers.md details.md LICENSE tox.ini
+recursive-include src *.py
+recursive-include test *.py *.pyx *.c *.cfg *.toml README MANIFEST.in rundemo placeholder rundemo-template
