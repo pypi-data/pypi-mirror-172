@@ -1,0 +1,8 @@
+setup.py
+EDA_NA.egg-info/PKG-INFO
+EDA_NA.egg-info/SOURCES.txt
+EDA_NA.egg-info/dependency_links.txt
+EDA_NA.egg-info/requires.txt
+EDA_NA.egg-info/top_level.txt
+clase/__init__.py
+clase/functions.py
