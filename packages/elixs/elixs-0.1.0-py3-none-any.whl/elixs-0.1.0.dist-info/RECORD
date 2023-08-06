@@ -1,0 +1,10 @@
+elixs/__init__.py,sha256=D3IM0kU-QSUBcfh5c6GtQMk-XOBm6HbSbTcOTOA8UKc,90
+elixs/errorhandlers.py,sha256=gTzt-C1bmwnil1P5WXST6ljwBb3mkZRkoO3xFhbrvTg,145
+elixs/load.py,sha256=GeDbTuHsdjL2LZCKxlRvWJuGvZiBN34_0KRT9mb4SSo,3377
+elixs/logger.py,sha256=3ZQZR7bXLfcArvkYABsnYFX8-cdGzxZJ7QiemC2x2hw,1013
+elixs/sqllogger.py,sha256=0DEi1Rw3PiVGWOQrAvdv7npsstwPKAITe5sPnLa-MWU,2518
+elixs-0.1.0.dist-info/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+elixs-0.1.0.dist-info/METADATA,sha256=ILFhFx5Nxwhq7A_zGQz9tF7qyEjboWnFi87uG6khm1o,1207
+elixs-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+elixs-0.1.0.dist-info/top_level.txt,sha256=RKMyENq0zrbt0O7Q1fF6jxbPSRTvOfYSMX4rsnxpjeo,6
+elixs-0.1.0.dist-info/RECORD,,
