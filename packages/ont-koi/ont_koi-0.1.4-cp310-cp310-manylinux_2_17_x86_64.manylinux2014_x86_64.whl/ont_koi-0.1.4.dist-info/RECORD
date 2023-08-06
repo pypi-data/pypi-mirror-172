@@ -1,0 +1,14 @@
+_runtime.abi3.so,sha256=-zTV23SAacFkwCr2_4EKn-mgsIZ8BYZ2zDisFjR5744,178728
+ont_koi.libs/libkoi-1b2e3732.so,sha256=qX5DjrstH_tMW1RZ3tslMVieogp-9o48-9dcuVMhaeo,2392888
+ont_koi-0.1.4.dist-info/top_level.txt,sha256=G_aqyhurAJEhUB19YCePG0t59TIfhxKZcVW38RddyWA,13
+ont_koi-0.1.4.dist-info/RECORD,,
+ont_koi-0.1.4.dist-info/WHEEL,sha256=AENPUwuTc6qB95Mrn5JB5boXegWw6oDhuwuuX0q_ONg,152
+ont_koi-0.1.4.dist-info/METADATA,sha256=Ji-Uq8gqcxIbn6m7LiOK0Zm_Nr1W3G27fws8GQ56Y4M,152
+koi/build.py,sha256=K6NHJQ39cofBTRKqZdVZ_ukiog9IKAx5jaefW6b0R9k,463
+koi/utils.py,sha256=iNwoIDbDK7102cKv2azdF_rW1mMX1LuRZidfCaoN6Eo,1660
+koi/lstm.py,sha256=JXNXijp2TfAwgjO0gfmuaXX0nz9qXDirxuf0A4SHwBs,6544
+koi/decode.py,sha256=vh2Iq6ZXYGOyTgCcvUNVu2YrTxUiuZplccn9ITSnjW8,1849
+koi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koi/ctc.py,sha256=QUvAYdM-nAmGyul7XoGF-tZkBo8dW79Ewr3sfdaygUw,10081
+koi/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koi/test/test_lstm.py,sha256=-MQPpQfhnCzpW2dqm6zSiWAtH3KnjMKMHoe6gB7BYgg,1865
