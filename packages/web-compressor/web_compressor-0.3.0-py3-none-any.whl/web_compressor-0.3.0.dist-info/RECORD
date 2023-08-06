@@ -1,0 +1,12 @@
+web_compressor/__init__.py,sha256=eMD-vEN6lfp8HCPDKbpuSvM3C6N7wB6vOmmXi5CqtYM,22905
+web_compressor/handlers/__init__.py,sha256=jlRPunv8q5sBrWZ71xjxzr6IVW7F1V8A0l7Exuu_Fes,341
+web_compressor/handlers/handler.py,sha256=FzU9FViIiSDKUkNR75buk7UkxYArsZdDcWurdOZkdpE,1156
+web_compressor/handlers/hasher.py,sha256=YHt0I2aV9UTYYfIcrup7fmBNebSEmGirQ5pXAWqRI8I,4729
+web_compressor/handlers/minifier.py,sha256=xeWEAGSomt7Tk-4sbu69h14392gocvYVSj-0nnfZojg,4121
+web_compressor/handlers/optimizer.py,sha256=JAlPMxRETVspKt0RyUY1TZsg1fxxNZenOVgUbQBE1mY,4863
+web_compressor/logger.py,sha256=vP38SEipMXKioYIjYeLQFUStnGpvJo0uGX6PYFoO0ME,191
+web_compressor/utils.py,sha256=DMxhS1Q8TnN-EmvD8Iy0iP9ccblfSDpQC7QH-KHLlPE,1796
+web_compressor-0.3.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+web_compressor-0.3.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+web_compressor-0.3.0.dist-info/METADATA,sha256=QQHsH4Aw1w42DBRlKnsjx0S-5P5F5uZNqZqQmWMbDsg,2005
+web_compressor-0.3.0.dist-info/RECORD,,
