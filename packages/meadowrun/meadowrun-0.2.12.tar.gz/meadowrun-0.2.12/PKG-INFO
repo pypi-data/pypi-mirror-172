@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: meadowrun
+Version: 0.2.12
+Summary: The easiest way to run python code on one or more remote machines
+Home-page: https://github.com/meadowdata/meadowrun
+Author: Richard Lee
+Author-email: hrichardlee@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiobotocore (>=2.1.2,<3.0.0)
+Requires-Dist: aiofiles (>=0.6.0,<0.7.0)
+Requires-Dist: aiohttp (>=3.8.0,<4.0.0)
+Requires-Dist: asyncssh (>=2.11.0,<3.0.0)
+Requires-Dist: backoff (>=1.0.0,<3.0.0)
+Requires-Dist: boto3 (>=1.21.21,<2.0.0)
+Requires-Dist: chardet (>=2.0,<4.1)
+Requires-Dist: cloudpickle (>=2.0.0,<3.0.0)
+Requires-Dist: cryptography (>=2.0.0,<37.0.0)
+Requires-Dist: filelock (>=3.6.0,<4.0.0)
+Requires-Dist: future (>=0.17.0,<0.18.3)
+Requires-Dist: kubernetes-asyncio (>=24.2.0,<25.0.0)
+Requires-Dist: protobuf (>=3.18.1,<4.0.0)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: pyasn1-modules (==0.2.1)
+Requires-Dist: pyjwt (>=1.5.3,<3.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: rsa (>=3.1.4,<5.0.0)
+Requires-Dist: six (>=1.11.0,<2.0.0)
+Requires-Dist: typing-extensions (>=4.1.1,<5.0.0)
+Project-URL: Repository, https://github.com/meadowdata/meadowrun
+Description-Content-Type: text/markdown
+
+# ![Meadowrun](meadowrun-logo-full.svg)
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/meadowrun) ![PyPI](https://img.shields.io/pypi/v/meadowrun)  ![PyPI - Downloads](https://img.shields.io/pypi/dm/meadowrun) ![Conda](https://img.shields.io/conda/v/meadowdata/meadowrun) ![Conda](https://img.shields.io/conda/dn/meadowdata/meadowrun?label=conda%20downloads)
+
+[![Join the chat at https://gitter.im/meadowdata/meadowrun](https://badges.gitter.im/meadowdata/meadowrun.svg)](https://gitter.im/meadowdata/meadowrun?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+
+
+Meadowrun is a library for data scientists and data engineers who run python code on
+AWS, Azure, or Kubernetes. Meadowrun:
+
+- scales from a single function to thousands of distributed tasks.
+- syncs your local code and libraries for a faster, easier iteration loop. Edit your
+  code and rerun your analysis without worrying about building packages or Docker
+  images.
+- optimizes for cost, choosing the cheapest instance types and turning them off when
+  they're no longer needed.
+  
+For more context, see our [case
+studes](https://docs.meadowrun.io/en/stable/case_studies/) of how Meadowrun is used in
+real life, or see the [project homepage](https://meadowrun.io)
+
+To get started, go to our [documentation](https://docs.meadowrun.io), or [join the chat
+on Gitter](https://gitter.im/meadowdata/meadowrun)
+
+## Quickstart
+
+First, install Meadowrun using pip:
+
+```
+pip install meadowrun
+```
+
+Next, assuming you've [configured the AWS
+CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html)
+and are a root/administrator user, you can run:
+
+```python
+import meadowrun
+import asyncio
+
+print(
+    asyncio.run(
+        meadowrun.run_function(
+            lambda: sum(range(1000)) / 1000,
+            meadowrun.AllocEC2Instance(),
+            meadowrun.Resources(logical_cpu=1, memory_gb=8, max_eviction_rate=80),
+            meadowrun.Deployment.mirror_local()
+        )
+    )
+)
+```
+
+[The documentation](https://docs.meadowrun.io) has examples of how to use other package
+managers (conda, poetry), and other platforms (Azure, GKE, Kubernetes).
+
