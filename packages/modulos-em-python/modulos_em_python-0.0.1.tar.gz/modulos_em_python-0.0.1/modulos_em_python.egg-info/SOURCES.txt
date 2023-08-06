@@ -1,0 +1,13 @@
+README.md
+setup.py
+modulos_em_python/__init__.py
+modulos_em_python.egg-info/PKG-INFO
+modulos_em_python.egg-info/SOURCES.txt
+modulos_em_python.egg-info/dependency_links.txt
+modulos_em_python.egg-info/top_level.txt
+modulos_em_python/modulo1_aulas_python/__init__.py
+modulos_em_python/modulo1_aulas_python/aula1.py
+modulos_em_python/modulo1_aulas_python/aula2_comparação.py
+modulos_em_python/modulo2_aulas_python/__init__.py
+modulos_em_python/modulo2_aulas_python/aula_class.py
+modulos_em_python/modulo2_aulas_python/formatação.py

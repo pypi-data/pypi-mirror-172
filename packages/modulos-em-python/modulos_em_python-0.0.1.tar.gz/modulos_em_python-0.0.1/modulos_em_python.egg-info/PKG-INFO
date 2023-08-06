@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: modulos-em-python
+Version: 0.0.1
+Summary: projeto de modulos DIO
+Home-page: https://github.com/Weverlin88/modulos_com_python
+Author: Weverlin
+Author-email: weverlin13@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package modulos_em_python is used to:
+	modulo1_aulas_python
+		- aula1.py
+		- aula2_comparaÃ§Ã£o.py
+	modulo2_aulas_python
+		- aula_class.py
+		- formataÃ§Ã£o.py
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install modulos_em_python
+```
+
+## Usage
+
+```python
+from modulos_em_python.module1_aulas_python import aula1.py
+aula1.py.my_function()
+```
+
+## Author
+Weverlin
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
