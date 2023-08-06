@@ -1,0 +1,10 @@
+sensospot_parser/__init__.py,sha256=ko8UxgBIsv5xAjDWT4VLNYU27DQAFIlNwfSmE7SyD6c,2455
+sensospot_parser/columns.py,sha256=uoouI32X7UmDV5tV08ysNJSssrashKDZ4SYp_xBsuww,2323
+sensospot_parser/parameters.py,sha256=d3kCb2_bS4fiJWtKf131bl8e-eHRsTWcbGTJABYgTpg,3795
+sensospot_parser/parser.py,sha256=3GTkA76dtR70DL0aIfXf4V4ssfFfERANC5_jqKczGe0,7279
+sensospot_parser/recordtime.py,sha256=iJPn2sAon3C2Vb9oESUNftTGwzanCaZjdokg9uS7n5Q,2997
+sensospot_parser-0.9.1.dist-info/entry_points.txt,sha256=n9AwxeGGKW42YtSBS4DFeJLqULa3MjT8CPkqUUkdDJY,57
+sensospot_parser-0.9.1.dist-info/LICENSE,sha256=5I9lDXcbbyUiEzWo9iMvGOfd7vgPXAi0lnGNBOyZQ8g,428
+sensospot_parser-0.9.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+sensospot_parser-0.9.1.dist-info/METADATA,sha256=WtbM0zPT2858bFUdTPp2zD9OldhewxToDowRYnmsZd4,4364
+sensospot_parser-0.9.1.dist-info/RECORD,,
