@@ -1,0 +1,3 @@
+[console_scripts]
+async_receiver = async_receiver.entrypoint:main
+
