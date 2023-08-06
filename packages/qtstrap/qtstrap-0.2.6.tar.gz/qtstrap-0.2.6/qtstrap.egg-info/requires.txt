@@ -1,0 +1,7 @@
+QtPy
+click
+PyInquirer
+appdirs
+qtawesome
+pyinstaller
+pretty-errors
