@@ -1,0 +1,4 @@
+[console_scripts]
+LingxingChengzhang = LingxingChengzhang.__main__:main
+lingxing-chengzhang = LingxingChengzhang.__main__:main
+
