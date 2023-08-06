@@ -1,0 +1,167 @@
+# HiddenLayer
+
+    HiddenLayer's python tools and clients
+
+
+
+
+
+## Install
+
+    pip3 install hiddenlayer-python
+
+---
+
+### HiddenLayerClient
+
+    Client to interact with the HiddenLayer API
+
+#### Create client
+```python3
+from hiddenlayer.clients import HiddenLayerClient
+
+# token can also be set via HL_API_TOKEN environment variable
+client = HiddenLayerClient(token="<API-TOKEN>")
+
+print(client.health())
+{'title': 'HiddenLayer-API caml', 'version': '1', 'status': 'ok'}
+```
+
+#### Get event
+```python3
+from hiddenlayer.clients import HiddenLayerClient
+
+client = HiddenLayerClient(token="<API-TOKEN>")
+
+client.get_event("5f0609df-d2ff-4824-b369-352a274004c3")
+{
+    "customer_id": "866288c5-24b9-4145-b165-a17b700cdafe",
+    "sensor_id": "test_model_v1",
+    "requester_id": "username123",
+    "group_id": "c5f24918-9d6a-484a-8733-3bd965211aa1",
+    "event_id": "5f0609df-d2ff-4824-b369-352a274004c3",
+    "event_time": "2022-07-14T16:30:28.058374",
+    "input_layer": {
+        "sha256": "00796acfb687560058285c0aa484732d567000147ba091263054fb8b6efa8a1a",
+        "exponent_sha256": "3b11e10bc5a7cd051c8f077863254868a0963e313d18f1b04f3fde1366f751bc",
+        "byte_size": 9524,
+        "dtype": "float32",
+        "shape": [
+            2381
+        ]
+    },
+    "output_layer": {
+        "sha256": "98c6c916579862802298f3643e17ff7f00128810c74ca56b6c72f3e9c3eef110",
+        "byte_size": 8,
+        "dtype": "float64",
+        "shape": [
+            1
+        ]
+    },
+    "prediction": 2.4414690345275303e-05
+}
+```
+
+#### Get list of events
+
+These are the current filters that can be used when getting list of events
+
+    sensor_id: filter by sensor_id
+    requester_id: filter by requester_id
+    group_id: filter by group_id
+    input_layer_exponent_sha256: filter by the input_layer exponent sha256
+    input_layer_byte_size: filter by input_layer size in bytes
+    input_layer_dtype: filter by input_layer data type
+    output_layer_byte_size: filter by input_layer size in bytes
+    output_layer_dtype: filter by input_layer data type
+    event_start_time: start date for filtering by event_time
+    event_stop_time: stop date for filtering by event_time
+
+```python3
+from hiddenlayer.clients import HiddenLayerClient
+
+client = HiddenLayerClient(token="<API-TOKEN>")
+
+# filter by requester_id, event_id, event_start_time, and event_stop_time
+client.get_events(max_results=50) # default 1000 max results
+[{...}, {...}, {...}]
+```
+
+#### Get event count
+```python3
+client.get_event_count()
+```
+
+#### Get alert
+
+    Same functionality as retrieving an event
+
+
+#### Get list of alerts
+
+    Same functionality as retrieving a list of events
+
+These are the current filters that can be used when getting list of events and alerts
+
+    sensor_id: filter by sensor_id
+    requester_id: filter by requester_id
+    group_id: filter by group_id
+    category: category of alert
+    tactic: mitre tactic of alert
+    risk: risk of alert
+    event_start_time: start date for filtering by event_time
+    event_stop_time: stop date for filtering by event_time
+
+
+#### Get alert count
+```python3
+client.get_alert_count()
+```
+
+#### Get vector
+```python3
+from hiddenlayer.clients import HiddenLayerClient
+
+client = HiddenLayerClient(token="<API-TOKEN>")
+
+client.get_vector("583dbc41a4e0826e4b2dbede6760bc80fe58ddc682b66cfba1e985a6538bc19e")
+[0.3272676394984871,
+ -0.05370468579134668,
+ 0.6139997822625176,
+ 0.44721997994737894,
+ -0.40397475858578435,
+ 0.3085298917492199,
+ 0.3074662380624216,
+ 0.17759178808034304,
+ -0.928663757835657,
+ -1.5372852813486815,
+ 1.2085312691167172,
+ 0.8254611710240448,
+ 0.5828129933899114,
+ -0.4512473641489139,
+ 0.8993772725829033,
+ -0.6835656184552312,
+ -0.6372820530521444,
+ -0.6756563609649021,
+ 0.27037660324157103,
+ 0.3773093202476495]
+```
+
+#### Submit vectors and predictions for a model
+```python3
+from sklearn.datasets import make_classification
+
+from hiddenlayer.clients import HiddenLayerClient
+
+client = HiddenLayerClient(token="<API-TOKEN>")
+
+x, y = make_classification(2) # x is the vectors
+predictions = [0.7731156403121537, 0.3811970489679117] # OPTIONAL
+
+client.submit("test_model_v1", "username123", x, y, predictions)
+{'sensor_id': 'test_model_v1',
+ 'event_time': '2022-06-15T03:07:50.688627',
+ 'customer_id': '866288c4-24b9-4145-b165-a17b700cdafe',
+ 'event_id': '5119bcc9-18de-4115-a8e2-528f6b904108',
+ 'requester_id': 'username123'}
+```
