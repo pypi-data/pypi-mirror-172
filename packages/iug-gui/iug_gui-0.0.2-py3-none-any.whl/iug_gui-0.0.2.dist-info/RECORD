@@ -1,0 +1,8 @@
+iug-gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iug-gui/api.py,sha256=VgLc34bmqhkJe-IBlI3t3bGPCvJuyyQT2jDfy_5sSP0,3794
+iug-gui/middleware.py,sha256=3iycXXLOq9pt0tdryJ1vAa6dApi4MM2uNuOjiJWn8hw,673
+iug-gui/response.py,sha256=ltQ67B8dryPz5xiLhva87PViQd-NQQ2tvWjWrQ5gZNo,955
+iug_gui-0.0.2.dist-info/METADATA,sha256=zbtfSUKIGtkTZ5eXaFXNbDnv7HgYgltAUYQBFNshoS8,4045
+iug_gui-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+iug_gui-0.0.2.dist-info/top_level.txt,sha256=yYcGCn4oYsJ0SkikV1_pilPiuHWrkdaR4TmSSDvaJ8M,8
+iug_gui-0.0.2.dist-info/RECORD,,
