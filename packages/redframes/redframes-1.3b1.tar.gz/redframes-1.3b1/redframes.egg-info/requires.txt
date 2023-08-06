@@ -1,0 +1,17 @@
+pandas>=1.5
+
+[dev]
+black
+ipykernel
+isort
+lxml
+matplotlib
+mypy
+pandas-stubs
+pyright
+scikit-learn
+tabulate
+
+[test]
+matplotlib
+scikit-learn
