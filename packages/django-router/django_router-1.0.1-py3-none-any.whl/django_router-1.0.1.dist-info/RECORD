@@ -1,0 +1,12 @@
+django_router/__init__.py,sha256=EDCS55OOGKMprGUYkbpDTZH3YNUOYwaJ2RVdFGmOoYQ,2695
+django_router/apps.py,sha256=5CwlN7qUbvUIL4Vk64gw13_OZxvGwreS-5Pn6bIIdiU,230
+django_router/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_router/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_router/management/commands/router_list.py,sha256=lUONNOUMycXCs06ySFkecCKR2sssBkcP3aIMkifPtEg,694
+django_router/management/commands/router_urls.py,sha256=VwvEszP5axmvpmYKhes714x0zcjvb-q9kH-5pFslKrg,1338
+django_router/settings.py,sha256=_LEhJM6N15LawuVQqPd-zwgM5H_H3FeISLzZp-lrq0U,556
+django_router/utils.py,sha256=HkzBAj6vWdJX-BFtpGC357mOo3E0uOMaZ4Al9OED2FY,467
+django_router-1.0.1.dist-info/LICENSE,sha256=wNZh_fh36P6VLHlojpbYrPRpDAYn1fbdSaHHgZZ1udA,1525
+django_router-1.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+django_router-1.0.1.dist-info/METADATA,sha256=j4spXtAhm0JZ4mb583vct9HuiL8tqCvLMdPArPwXPlU,5729
+django_router-1.0.1.dist-info/RECORD,,
