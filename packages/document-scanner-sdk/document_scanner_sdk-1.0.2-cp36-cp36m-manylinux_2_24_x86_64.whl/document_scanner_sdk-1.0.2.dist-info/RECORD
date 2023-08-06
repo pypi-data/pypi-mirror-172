@@ -1,0 +1,13 @@
+document_scanner_sdk-1.0.2.dist-info/LICENSE,sha256=znpaQP7OM085nhEnvOfM-D3Z7S9zfZ54GC2r9M41e_I,1066
+document_scanner_sdk-1.0.2.dist-info/top_level.txt,sha256=Z3upk8YeHJkGPoDM6r_n844zcoLIWOw6anmHGq_gks8,11
+document_scanner_sdk-1.0.2.dist-info/entry_points.txt,sha256=Nq_WLhy-CpYP8or99bZLsiUOtX_RIgiEwnMhN6ttp5k,66
+document_scanner_sdk-1.0.2.dist-info/METADATA,sha256=9GF6vNU-zEvP9hB3O6Xhl102tbkWtHLU7M_TLeH68iU,12348
+document_scanner_sdk-1.0.2.dist-info/WHEEL,sha256=D0CgkkX3hVRnO-RroZTlystWrS9-Ls8ePwOaRSwvNN0,113
+document_scanner_sdk-1.0.2.dist-info/RECORD,,
+docscanner/libDynamsoftCore.so,sha256=Z_BvspWdWbmU_LI7AN6aRiAgF3JvCEVJdBprFCv52xI,5215920
+docscanner/libDynamsoftIntermediateResult.so,sha256=VasISWKS2TE6X7D5LSjcKMsKucVDaAW3gXiunuuWbAo,1700264
+docscanner/libDynamsoftImageProcessing.so,sha256=2iRs6VyXYPfqOEtihS50y0cXI1KoM9J84rxGUAhTH8w,9652688
+docscanner/docscanner.cpython-36m-x86_64-linux-gnu.so,sha256=c3oGiT0O7H9nLd_dEu8_Yv4OOLbVD-8DnZ7gAZcUtQI,333944
+docscanner/scripts.py,sha256=2oBH1bYjM5G6OkzZ_sQhlVMtSCW5-YcyrEQ_zTQpizQ,5509
+docscanner/libDynamsoftDocumentNormalizer.so,sha256=5EoKi2BnT3L-q5Fmdp0aUItuHUrgtLD-NW2-Lbb4sJc,2345832
+docscanner/__init__.py,sha256=lFkeAi88aU0u3LdX1GQpa1qXzebnDvitCUb_2VD1npU,3320
