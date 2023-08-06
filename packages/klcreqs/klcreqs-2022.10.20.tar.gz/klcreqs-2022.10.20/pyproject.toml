@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "klcreqs"
+version = "1.0.0"
+authors = [
+  { name="Thomas Nemechek", email="tommy.nemechek@gmail.com" },
+]
+description = "Library for streamlining api requests"
+readme = "README.md"
+requires_python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
