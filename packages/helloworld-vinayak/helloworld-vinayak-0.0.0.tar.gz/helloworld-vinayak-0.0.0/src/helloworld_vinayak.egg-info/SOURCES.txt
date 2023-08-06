@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/helloworld.py
+src/helloworld_vinayak.egg-info/PKG-INFO
+src/helloworld_vinayak.egg-info/SOURCES.txt
+src/helloworld_vinayak.egg-info/dependency_links.txt
+src/helloworld_vinayak.egg-info/requires.txt
+src/helloworld_vinayak.egg-info/top_level.txt
+test/test_helloworld.py
