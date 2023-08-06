@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/FIM/FIMAlgorithms.py
+src/FIM/__init__.py
+src/FIMProject.egg-info/PKG-INFO
+src/FIMProject.egg-info/SOURCES.txt
+src/FIMProject.egg-info/dependency_links.txt
+src/FIMProject.egg-info/top_level.txt
