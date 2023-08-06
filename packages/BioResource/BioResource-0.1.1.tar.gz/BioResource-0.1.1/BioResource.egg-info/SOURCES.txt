@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+BioResource.egg-info/PKG-INFO
+BioResource.egg-info/SOURCES.txt
+BioResource.egg-info/dependency_links.txt
+BioResource.egg-info/requires.txt
+BioResource.egg-info/top_level.txt
+bioresource/__init__.py
+bioresource/cli.py
+bioresource/config.py
+bioresource/lib.py
+bioresource/pipelines.py
+bioresource/versions.py
