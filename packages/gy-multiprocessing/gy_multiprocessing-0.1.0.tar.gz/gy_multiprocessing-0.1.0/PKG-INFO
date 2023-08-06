@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gy_multiprocessing
+Version: 0.1.0
+Summary: Run function in multiple processes
+Home-page: https://github.com/guangyu-he/gy-multiprocessing
+Author: Guangyu He
+Author-email: me@heguangyu.net
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+A basic library that run functions in parallel multiple processes
