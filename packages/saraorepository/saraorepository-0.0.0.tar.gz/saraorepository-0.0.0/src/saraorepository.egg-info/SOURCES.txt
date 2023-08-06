@@ -1,0 +1,8 @@
+README.md
+setup.py
+scripts/doi.py
+src/saraorepository.egg-info/PKG-INFO
+src/saraorepository.egg-info/SOURCES.txt
+src/saraorepository.egg-info/dependency_links.txt
+src/saraorepository.egg-info/not-zip-safe
+src/saraorepository.egg-info/top_level.txt

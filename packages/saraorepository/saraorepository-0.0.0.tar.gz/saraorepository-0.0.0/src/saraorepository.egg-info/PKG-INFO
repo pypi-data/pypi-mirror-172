@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: saraorepository
+Version: 0.0.0
+Summary: Package to generate DOIs,create a webpage and upload data
+Home-page: https://github.com/ska-sa/katsdparchive/
+Author: Sydil Kupa
+Author-email: skupa@ska.ac.za
+License: None
+Description: saraorepository
+        
+        This repository contains all the information needed  to generate DOIS from
+         datacite, create a webpage that shows all the data/reports being released and a
+         how to upload data to a public bucket to be accessible to the users.
+         
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
