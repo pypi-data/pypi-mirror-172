@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: speechlight
+Version: 1.7.3
+Summary: A lightweight Python library providing a common interface to multiple TTS and screen reader APIs.
+Home-page: https://github.com/nstockton/speechlight
+License: MPL-2.0
+Keywords: blind,braille,screen reader,tts,text to speech
+Author: Nick Stockton
+Author-email: nstockton@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: pyobjc (>=8.4,<9.0); sys_platform == "darwin"
+Requires-Dist: pywin32 (>=303,<304); sys_platform == "win32"
+Project-URL: Documentation, https://nstockton.github.io/speechlight
+Project-URL: Repository, https://github.com/nstockton/speechlight
+Description-Content-Type: text/markdown
+
+# Speechlight
+
+A lightweight [Python][] library providing a common interface to multiple [TTS][] and [screen reader][] APIs. See the [API reference][] for more information.
+
+
+## License And Credits
+
+Speechlight is licensed under the terms of the [Mozilla Public License, version 2.0.][License]
+Speechlight was originally created by [Nick Stockton.][Nick Stockton GitHub]
+macOS support by Jacob Schmude.
+
+
+## Installation
+
+```
+pip install --user speechlight
+```
+
+
+## Running From Source
+
+### Windows-specific Instructions
+
+Execute the following commands from the root directory of this repository to install the virtual environment and project dependencies.
+```
+py -3 -m venv .venv
+.venv\Scripts\activate.bat
+pip install --upgrade "poetry==1.1.13"
+poetry install --no-ansi
+pre-commit install -t pre-commit
+pre-commit install -t pre-push
+```
+
+### Linux-specific Instructions
+
+Execute the following commands from the root directory of this repository to install the virtual environment and project dependencies.
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade "poetry==1.1.13"
+poetry install --no-ansi
+pre-commit install -t pre-commit
+pre-commit install -t pre-push
+```
+
+
+## Example Usage
+
+```
+from speechlight import speech
+
+# Say something.
+speech.say("Hello world!")
+
+# Say something else, interrupting the currently speaking text.
+speech.say("I'm a rood computer!", interrupt=True)
+
+# Cancel the currently speaking message.
+speech.silence()
+
+# Braille something.
+speech.braille("Braille dots go bump in the night.")
+
+# Speak and braille text at the same time.
+speech.output("Read along with me.")
+
+# And to interrupt speech.
+speech.output("Rood!", interrupt=True)
+```
+
+
+[Python]: https://python.org (Python Main Page)
+[TTS]: https://en.wikipedia.org/wiki/Speech_synthesis (Speech Synthesis Wikipedia Page)
+[screen reader]: https://en.wikipedia.org/wiki/Screen_reader (Screen Reader Wikipedia Page)
+[API reference]: https://nstockton.github.io/speechlight/api (Speechlight API reference Page)
+[License]: https://nstockton.github.io/speechlight/license (License Page)
+[Nick Stockton GitHub]: https://github.com/nstockton (My Profile On GitHub)
+
