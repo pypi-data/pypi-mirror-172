@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+eoscdt.egg-info/PKG-INFO
+eoscdt.egg-info/SOURCES.txt
+eoscdt.egg-info/dependency_links.txt
+eoscdt.egg-info/entry_points.txt
+eoscdt.egg-info/top_level.txt
+pysrc/__init__.py
