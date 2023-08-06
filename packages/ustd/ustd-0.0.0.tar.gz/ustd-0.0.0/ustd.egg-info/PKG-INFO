@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: ustd
+Version: 0.0.0
+Summary: The ustd module
+Home-page: UNKNOWN
+Author: Jon Crall
+Author-email: erotemic@gmail.com
+License: Apache 2
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: all
+Provides-Extra: tests
+Provides-Extra: optional
+Provides-Extra: all-strict
+Provides-Extra: runtime-strict
+Provides-Extra: tests-strict
+Provides-Extra: optional-strict
+
+The ustd Module
+===============
+
+
+
+|Pypi| |PypiDownloads| |GithubActions| |Codecov|
+
+
+
+.. |Pypi| image:: https://img.shields.io/pypi/v/ustd.svg
+    :target: https://pypi.python.org/pypi/ustd
+
+.. |PypiDownloads| image:: https://img.shields.io/pypi/dm/ustd.svg
+    :target: https://pypistats.org/packages/ustd
+
+.. |GithubActions| image:: https://github.com/Erotemic/ustd/actions/workflows/tests.yml/badge.svg?branch=main
+    :target: https://github.com/Erotemic/ustd/actions?query=branch%3Amain
+
+.. |Codecov| image:: https://codecov.io/github/Erotemic/ustd/badge.svg?branch=main&service=github
+    :target: https://codecov.io/github/Erotemic/ustd?branch=main
+

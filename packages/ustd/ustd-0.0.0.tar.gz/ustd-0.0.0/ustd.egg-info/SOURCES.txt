@@ -1,0 +1,9 @@
+README.rst
+pyproject.toml
+setup.py
+ustd/__init__.py
+ustd.egg-info/PKG-INFO
+ustd.egg-info/SOURCES.txt
+ustd.egg-info/dependency_links.txt
+ustd.egg-info/requires.txt
+ustd.egg-info/top_level.txt
