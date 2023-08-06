@@ -1,0 +1,18 @@
+name: Test install
+on:
+  pull_request:
+  push:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+      - name: Start MySQL
+        run: sudo systemctl start mysql.service # user:root password:root
+      - name: Install requirements
+        run: pip install mypandas
+      - name: Test minimal example
+        run: python -c "from mypandas import MyPandas;print(MyPandas('mysql://root:root@localhost')('SELECT 1;', locals()));"

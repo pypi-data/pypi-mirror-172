@@ -1,0 +1,4 @@
+sqlalchemy==1.4.40
+pandas==1.4.1
+pytest==7.1.1
+mysqlclient==2.1.1
