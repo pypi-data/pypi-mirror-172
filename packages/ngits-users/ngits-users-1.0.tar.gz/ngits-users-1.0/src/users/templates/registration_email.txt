@@ -1,0 +1,1 @@
+Witaj! Aby zweryfikować konto kliknij w poniższy link: {{ url|safe }}

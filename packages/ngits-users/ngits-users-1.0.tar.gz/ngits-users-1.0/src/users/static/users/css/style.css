@@ -1,0 +1,135 @@
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#form-container, #main-container{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#container{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    font-size: 1.1em;
+    border-color: #fff;
+}
+
+#button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+#success-image{
+    width:60%;
+}
+
+#success-text{
+    margin-top:5%;
+    font-size: 2rem;
+}
+
+input{
+    width:100%;
+    font-size: 1.1em;
+    border: 1px solid #92E22C;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+@media only screen and (max-width: 980px) {
+
+    form-container{
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #title{
+        font-size: 5em;
+        margin-bottom: 30px;
+    }
+    
+    #container{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:90%;
+        font-size: 3em;
+        border-color: #fff;
+    }
+    
+    #button {
+        background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 0.9em;
+        padding:20px;
+      }
+
+    #success-image{
+        width:100%;
+    }
+
+    #success-text{
+        margin-top:5%;
+        font-size: 3.5em;
+        color: #000;
+    }
+    
+    input{
+        width:100%;
+        font-size: 1.1em;
+        border: 2px solid #92E22C;
+        border-radius: 50px;
+        padding:20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    
+    }
+
+    
+  }

@@ -1,0 +1,15 @@
+{% extends "info_site.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block page_title%}
+    {% translate "Bezcennik - account activation" %}
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'users/img/success.svg' %}" id="success-image" alt="My image">
+{% endblock %}
+
+{% block info_text%}
+    <span id="success-text">{% translate "Successfully verified!" %}</span>
+{% endblock %}

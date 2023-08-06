@@ -1,0 +1,170 @@
+django-users
+============
+
+Bazowa aplikacja ‘users’ dla projektów Django
+
+Instalacja
+----------
+
+1. Zainstaluj paczkę następującą komendą:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+       pip install <ścieżka_do_paczki>.tar.gz
+
+2. Dodaj następujące wartości do ustawień projektu Django:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+       import os
+
+       ...
+
+       INSTALLED_APPS = [
+           ...
+           "rest_framework",
+           "rest_framework.authtoken",
+           "users"
+       ]
+
+       ...
+
+       AUTH_USER_MODEL = "users.User"
+
+       CELERY_BROKER_URL = "<redis_url>"
+       CELERY_RESULT_BACKEND = "<redis_url>"
+
+       DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL", "<your_email>")
+
+       REST_FRAMEWORK = {
+           "DEFAULT_AUTHENTICATION_CLASSES": [
+               "rest_framework.authentication.TokenAuthentication",
+           ],
+           # Optional
+           "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+       }
+
+       REGISTRATION_EMAIL_SUBJECT = "<email subject>"
+       REMIND_EMAIL_SUBJECT = "<email subject>"
+
+       # debugging
+       EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+3. Dodaj ścieżki do ``urls.py``:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+       from django.urls import path, include
+
+       urlpatterns = [
+           ...
+           path("/", include("users.template_urls")),
+           path("api/", include("users.urls"))
+       ]
+
+4. Uruchom polecenie:
+~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+       py manage.py migrate
+
+5. Dodaj następujące wartości do zmiennych środowiskowych:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+      # smpt config
+      DEFAULT_FROM_EMAIL=no-reply@ngits.dev
+
+      EMAIL_HOST=
+      EMAIL_HOST_PASSWORD=
+      EMAIL_HOST_USER=
+      EMAIL_PORT=
+
+      # celery
+      CELERY_BROKER_URL=
+      CELERY_RESULT_BACKEND=
+
+6. Konfiguracja celery:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+``../<django_project>/<proj_name>/celery.py``
+
+::
+
+
+       import os
+
+       from celery import Celery
+
+       os.environ.setdefault("DJANGO_SETTINGS_MODULE", "<proj_name>.settings")
+
+       app = Celery("<proj_name>")
+       app.config_from_object("django.conf:settings", namespace="CELERY")
+       app.autodiscover_tasks()
+
+``../<django_project>/<proj_name>/__init__.py``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+      from .celery import app as celery_app
+
+      __all__ = ("celery_app",)
+
+7. Konfiguracja opcjonalna:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+       pip install drf-spectacular==0.23.*
+
+``settings.py``:
+
+::
+
+       INSTALLED_APPS = [
+           ...
+           "drf_spectacular"
+       ]
+
+       SPECTACULAR_SETTINGS = {
+           "TITLE": "<proj_name> API",
+           "VERSION": "1.0.0",
+       }
+
+       TEMPLATES = [
+           ...
+           'DIRS': [ BASE_DIR / "templates"],
+           ...
+       ]
+
+``../<django_project>/templates/redoc.html``:
+
+::
+
+       <!DOCTYPE html>
+       <html>
+           <head>
+               <title>ReDoc</title>
+               <!-- needed for adaptive design -->
+               <meta charset="utf-8"/>
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+               <!-- ReDoc doesn't change outer page styles -->
+               <style>
+                   body {
+                       margin: 0;
+                       padding: 0;
+                   }
+               </style>
+           </head>
+           <body>
+               <redoc spec-url='{% url schema_url %}'></redoc>
+               <script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"> </script>
+           </body>
+       </html>
