@@ -1,0 +1,25 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-09-30T16:18:56.391401",
+    "startedAt": "2022-09-30T16:18:56.046600",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 3,
+    "cpu_count": 20,
+    "cuda": null,
+    "args": [
+        "vanilla-nerf"
+    ],
+    "state": "running",
+    "program": "/home/tancik/miniconda3/envs/nerfactory/bin/ns-train",
+    "git": {
+        "remote": "git@github.com:plenoptix/pyrad.git",
+        "commit": "1f83ad03db695e2574dbbcc1907d353def044299"
+    },
+    "email": "tancik@berkeley.edu",
+    "root": "/projects/pyrad",
+    "host": "tracey",
+    "username": "tancik",
+    "executable": "/home/tancik/miniconda3/envs/nerfactory/bin/python"
+}
