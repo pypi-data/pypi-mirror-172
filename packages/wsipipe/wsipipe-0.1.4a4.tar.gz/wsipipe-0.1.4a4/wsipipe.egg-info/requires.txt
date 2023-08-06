@@ -1,0 +1,7 @@
+scipy
+scikit-image
+pandas
+numpy
+opencv-python-headless==4.5.5.64
+Pillow
+openslide-python
