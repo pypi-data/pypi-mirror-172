@@ -1,0 +1,6 @@
+__init__
+data
+gui
+suntranslator
+tests
+translator
