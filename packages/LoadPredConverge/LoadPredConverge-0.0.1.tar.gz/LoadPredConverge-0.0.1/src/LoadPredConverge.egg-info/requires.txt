@@ -1,0 +1,5 @@
+skforecast==0.4.2
+sklearn
+more_itertools
+multiprocess
+pyomo
