@@ -1,0 +1,3 @@
+[console_scripts]
+flow=sql_cli.__main__:app
+
