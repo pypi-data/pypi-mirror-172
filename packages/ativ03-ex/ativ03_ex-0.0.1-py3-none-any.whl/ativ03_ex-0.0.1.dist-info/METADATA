@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ativ03-ex
+Version: 0.0.1
+Summary: Pacote python criado para um exercicio
+Home-page: https://github.com/LeKeu/Gerador---Nomes-de-RPG
+Author: Leticia Keuffer Cavalleiro de Macedo
+Author-email: lekeuffer@gmail.com
+License: MIT License
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+*ativ03_ex*\
+ativ03_ex Ã© um simples pacote para armazenar e consultar dados de usuarios (nome, cpf e endereco) adquiridos, feitos para uma atividade.
+
+*Dependencias*\
+Python 3.6 ou posterior
+
+*Funcao*\
+Modulo interacao: inter(), retorna uma tupla contento as informacoes pedidas
+
+Modulo armazenamento: armazenar(), armazena as informacoes da tupla retornada da funcao inter do modulo interacao em um arquivo de texto chamado dados_usuario.txt
+
+Modulo consulta: consultar(), mostra os dados gravados no arquivo dados_usuario.txt
+
