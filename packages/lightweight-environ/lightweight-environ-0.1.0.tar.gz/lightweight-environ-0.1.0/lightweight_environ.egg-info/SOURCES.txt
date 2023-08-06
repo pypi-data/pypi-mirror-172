@@ -1,0 +1,8 @@
+LICENCE
+README.md
+lightweight_environ.py
+setup.py
+lightweight_environ.egg-info/PKG-INFO
+lightweight_environ.egg-info/SOURCES.txt
+lightweight_environ.egg-info/dependency_links.txt
+lightweight_environ.egg-info/top_level.txt
