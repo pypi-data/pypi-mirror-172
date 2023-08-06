@@ -1,0 +1,11 @@
+mavis_config/__init__.py,sha256=j5LgHGfbl_U4KxE_I5ZNfrinUB1httX_bBtUoflznJo,8040
+mavis_config/config.json,sha256=0fF5flmvzrdond5wduZIQi__yKQjY5GhLP7TYq-SS3c,33814
+mavis_config/constants.py,sha256=q5JYez8ln5peXxiHDqqaoSTUJFUzyKu21402FUbzvF4,2310
+mavis_config/overlay.json,sha256=htk3GDWNjgb9T7aDFfP0mFEee0jMAMw3mj2Imul_I-s,4925
+mavis_config-1.2.1.data/data/mavis_config/config.json,sha256=0fF5flmvzrdond5wduZIQi__yKQjY5GhLP7TYq-SS3c,33814
+mavis_config-1.2.1.data/data/mavis_config/overlay.json,sha256=htk3GDWNjgb9T7aDFfP0mFEee0jMAMw3mj2Imul_I-s,4925
+mavis_config-1.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mavis_config-1.2.1.dist-info/METADATA,sha256=7Xdto6d4AUo0UypFR5Pm4r4Yi8hOe0wrMm36O7ZoHVo,2923
+mavis_config-1.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mavis_config-1.2.1.dist-info/top_level.txt,sha256=6UtDBsgTluyi0f2maxBVDDV7MNOzPoaF9iY7FxBu7jc,13
+mavis_config-1.2.1.dist-info/RECORD,,
