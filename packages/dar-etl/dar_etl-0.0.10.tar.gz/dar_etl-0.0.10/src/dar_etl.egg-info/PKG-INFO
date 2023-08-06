@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dar-etl
+Version: 0.0.10
+Summary: DAR ETL
+Home-page: https://github.com/nymann/dar-etl
+Maintainer: Kristian Nymann Jakobsen
+Maintainer-email: kristian@nymann.dev
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: package
+License-File: LICENSE
+
+# ETL process for DAR
+
+<http://grunddatamodel.datafordeler.dk/>
+
+## Development
+
+For help getting started developing check [DEVELOPMENT.md](DEVELOPMENT.md)
