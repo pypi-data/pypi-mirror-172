@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: protectonce-native
+Version: 0.1.28b2
+Summary: python agent interface native package
+Home-page: https://github.com/ProtectOnce/agent_interface.git
+Author: protectonce
+Author-email: protectonce@protectonce.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Agent Native - Packaging
+## Requirements
+Build Mininmum Requirements:
+- Python3
+
+## Packaging
+Run `packaging.sh` 
+Check whether the core folder contain `core.js` and out folder contain `libagent.so` in root.
+if above files are not present in respective folders
+run `packaging.sh` again.
+
+After that run `setup.py`
+it will generate the `.whl` package
+
+
+
+

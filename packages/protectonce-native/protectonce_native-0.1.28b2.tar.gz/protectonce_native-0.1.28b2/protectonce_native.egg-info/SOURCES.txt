@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+protectonce_native/__init__.py
+protectonce_native.egg-info/PKG-INFO
+protectonce_native.egg-info/SOURCES.txt
+protectonce_native.egg-info/dependency_links.txt
+protectonce_native.egg-info/top_level.txt
+protectonce_native/core/core.js
+protectonce_native/out/libagent_core.so
+protectonce_native/runtimes/__init__.py
+protectonce_native/runtimes/python/__init__.py
+protectonce_native/runtimes/python/protect_once_py_interface.py
