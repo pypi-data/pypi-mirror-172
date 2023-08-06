@@ -1,0 +1,13 @@
+{
+    "git_url": "https://github.com/bertsky/alignalist",
+    "version": "0.0.1",
+    "tools": {
+        "ocrd-alignalist": {
+            "executable": "ocrd-alignalist",
+            "categories": ["Text recognition and optimization"],
+            "description": "...",
+            "parameters": {
+            }
+        }
+    }
+}
