@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+retico_core/__init__.py
+retico_core/abstract.py
+retico_core/audio.py
+retico_core/debug.py
+retico_core/dialogue.py
+retico_core/network.py
+retico_core/text.py
+retico_core/version.py
+retico_core.egg-info/PKG-INFO
+retico_core.egg-info/SOURCES.txt
+retico_core.egg-info/dependency_links.txt
+retico_core.egg-info/requires.txt
+retico_core.egg-info/top_level.txt
