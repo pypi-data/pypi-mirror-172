@@ -1,0 +1,3 @@
+[console_scripts]
+jess-tools=tecex_tools.cli:app
+
