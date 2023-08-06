@@ -1,0 +1,8 @@
+setup.py
+smartsense/__init__.py
+smartsense/smartsense.py
+smartsense.egg-info/PKG-INFO
+smartsense.egg-info/SOURCES.txt
+smartsense.egg-info/dependency_links.txt
+smartsense.egg-info/requires.txt
+smartsense.egg-info/top_level.txt
