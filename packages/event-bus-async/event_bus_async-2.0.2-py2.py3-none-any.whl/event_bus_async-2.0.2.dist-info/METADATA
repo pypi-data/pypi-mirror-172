@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: event-bus-async
+Version: 2.0.2
+Summary: A simple python event bus. extended to provide support for async functions
+Home-page: https://github.com/devzer01/event-bus
+Author: Nayana Hettiarachchi
+Author-email: gems@gnuzero.org
+License: MIT
+License-File: LICENSE
+
