@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/err-backend-mattermost/__init__.py
+src/err-backend-mattermost/err-backend-mattermost.plug
+src/err-backend-mattermost/err-backend-mattermost.py
+src/err-backend-mattermost/mattermostlib/mattermostPerson.py
+src/err-backend-mattermost/mattermostlib/mattermostRoom.py
+src/err-backend-mattermost/mattermostlib/mattermostRoomOccupant.py
+src/err_backend_mattermost.egg-info/PKG-INFO
+src/err_backend_mattermost.egg-info/SOURCES.txt
+src/err_backend_mattermost.egg-info/dependency_links.txt
+src/err_backend_mattermost.egg-info/requires.txt
+src/err_backend_mattermost.egg-info/top_level.txt
