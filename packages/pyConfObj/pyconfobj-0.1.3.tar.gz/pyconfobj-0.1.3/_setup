@@ -1,0 +1,29 @@
+import setuptools
+
+
+
+
+with open("readme.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="pyConfObj",
+    version= "0.1.2",
+    author="Otger Ballester",
+    author_email="otger@ifae.es",
+    description="A way to define configuration files through classes, save it and load configuration from json/yaml",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/otger/pyConfObject",
+    project_urls={
+        "Bug Tracker": "https://github.com/otger/pyConfObject/issues",
+    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3.6",
+)
