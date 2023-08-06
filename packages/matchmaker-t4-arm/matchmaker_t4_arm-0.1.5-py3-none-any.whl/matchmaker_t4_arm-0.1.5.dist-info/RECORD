@@ -1,0 +1,11 @@
+matchmaker/wsgi.py,sha256=AQ78AoUGVNmb2eCP3TVgNGRz51XrpfpOsp0Hs_8Suqs,122
+matchmaker/application/NextRoundMatchesTypes.py,sha256=s0A137WHuvNn1Cnfkb0FSC4KzKh_8AwXINRUVTmjT0g,567
+matchmaker/application/QueryContext.py,sha256=whpTa5fAz7AC9984HcRsNXU6MIEAX8YUka0zZtx3Y-w,2516
+matchmaker/application/__init__.py,sha256=abSTmMikqSiAwgchVpSI5CjM_X_1jiUt7xqqwQPjybs,945
+matchmaker/application/matchmaker.py,sha256=TRzrW6Ki6d7qoBq5rCN9vRPV7eyfJ_lj-lN-uS0IDuw,5558
+matchmaker/application/routes.py,sha256=38bvExFraOuIDhYLkwT9B7FQqqPGxfsTDk0D2aRl2Mk,963
+matchmaker_t4_arm-0.1.5.dist-info/LICENSE,sha256=-BeIbua7Ze0wmKeYex6XgWU9FccfhVic4NKvZjxm03M,34888
+matchmaker_t4_arm-0.1.5.dist-info/METADATA,sha256=nPNeVP4cv6YTlPFgfnLZZTZePGF2wzH-EcNXFivjbCE,529
+matchmaker_t4_arm-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+matchmaker_t4_arm-0.1.5.dist-info/top_level.txt,sha256=QritKzV3OBmhzMAlyoy1mjXH5l1DIvXJSaLrSNpIgos,11
+matchmaker_t4_arm-0.1.5.dist-info/RECORD,,
