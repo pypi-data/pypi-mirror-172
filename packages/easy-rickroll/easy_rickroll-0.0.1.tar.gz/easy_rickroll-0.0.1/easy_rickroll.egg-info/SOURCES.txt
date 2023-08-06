@@ -1,0 +1,8 @@
+README.md
+setup.py
+easy_rickroll/__init__.py
+easy_rickroll/rr.py
+easy_rickroll.egg-info/PKG-INFO
+easy_rickroll.egg-info/SOURCES.txt
+easy_rickroll.egg-info/dependency_links.txt
+easy_rickroll.egg-info/top_level.txt
