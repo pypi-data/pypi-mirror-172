@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: ewoksxrpd
+Version: 0.0.3a0
+Summary: Data processing workflows for High-Throughout X-ray Powder Diffraction
+Home-page: https://gitlab.esrf.fr/workflow/ewoksxrpd/
+Author: ESRF
+Author-email: wout.de_nolf@esrf.fr
+License: MIT
+Project-URL: Source, https://gitlab.esrf.fr/workflow/ewoksxrpd/
+Project-URL: Documentation, https://ewoksxrpd.readthedocs.io/
+Project-URL: Tracker, https://gitlab.esrf.fr/workflow/ewoksxrpd/issues/
+Keywords: orange3 add-on
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: doc
+License-File: LICENSE.md
+
+# ewoksxrpd
+
+Data processing workflows for High-Throughout X-ray Powder Diffraction
+
+## Getting started
+
+Run an example workflow
+
+```bash
+python examples/job.py
+```
+
+Run an example workflow with GUI
+
+```bash
+ewoks execute examples/xrpd_workflow.json --binding=orange --data-root-uri=/tmp --data-scheme nexus
+```
+
+or for an installation with the system python
+
+```bash
+python3 -m ewoks execute examples/xrpd_workflow.json --binding=orange --data-root-uri=/tmp --data-scheme nexus
+```
+
+Produce the example data
+
+```bash
+pytest --examples
+```
+
+## Documentation
+
+https://ewoksxrpd.readthedocs.io/
