@@ -1,0 +1,2 @@
+[console_scripts]
+levas = load_env_vars_at_startup.main:app

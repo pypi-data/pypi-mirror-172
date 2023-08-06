@@ -1,0 +1,11 @@
+load_env_vars_at_startup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+load_env_vars_at_startup/__main__.py,sha256=CwyUqlYb3A5NQxtM1uWq-LEe7KFhDKB3NyOulhhtycQ,124
+load_env_vars_at_startup/_codemod.py,sha256=TelbqIAj7HboZF2EIfwW2W8oTzpkTO_HqGhlpQQ_9H8,5307
+load_env_vars_at_startup/_templates.py,sha256=0L75xqPh4comDEqthUhjUCEREvrjvSUeEqbOhOG2MWg,255
+load_env_vars_at_startup/main.py,sha256=CzLAxKNpA8RfT0bflLeiB6SDjNPw4xIRDSXhlXSgIMs,2116
+load_env_vars_at_startup/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+load_env_vars_at_startup-0.1.0.dist-info/METADATA,sha256=Svjj504uk92EqSzOfUYegSzTsErvnxJm1F-kmWaqnjw,3730
+load_env_vars_at_startup-0.1.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+load_env_vars_at_startup-0.1.0.dist-info/entry_points.txt,sha256=7V1QT9rLCqbA1LYuRDf70o0OTXm55cL2V5dtoajTTSk,60
+load_env_vars_at_startup-0.1.0.dist-info/licenses/LICENSE,sha256=2skiIwuQvJYucCCAYR85MDANtka-ifzXBl-AH5Cj8Gc,1076
+load_env_vars_at_startup-0.1.0.dist-info/RECORD,,
