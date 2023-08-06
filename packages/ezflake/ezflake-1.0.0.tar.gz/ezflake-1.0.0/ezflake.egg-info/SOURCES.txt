@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ezflake.egg-info/PKG-INFO
+ezflake.egg-info/SOURCES.txt
+ezflake.egg-info/dependency_links.txt
+ezflake.egg-info/requires.txt
+ezflake.egg-info/top_level.txt
