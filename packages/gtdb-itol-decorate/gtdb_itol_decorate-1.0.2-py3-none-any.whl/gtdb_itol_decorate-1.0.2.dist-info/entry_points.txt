@@ -1,0 +1,2 @@
+[console_scripts]
+gtdb_itol_decorate = gtdb_itol_decorate.__main__:app

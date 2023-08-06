@@ -1,0 +1,13 @@
+gtdb_itol_decorate/__init__.py,sha256=mxR-25xadkN_m_OnssEgsV09Ad0z_8LdtLOtiJJ5WRg,499
+gtdb_itol_decorate/__main__.py,sha256=hJ1Z-JU4UDQ716yNG_y2kVIVxuTQy7k46dQvTI9Oku0,3071
+gtdb_itol_decorate/decorate.py,sha256=pTaaoHOnBLCK0AH-TXF4Aqfstp-qzawoVqlVfHN0t_M,1046
+gtdb_itol_decorate/gtdb.py,sha256=HMhvYdihh3_o3tJqXS37-2dx3O_XzqCzPhN2U7b-z34,1529
+gtdb_itol_decorate/itol.py,sha256=wVQnqmCJMNiPXdKa-XULadk4t2ZKYt8eN0xPuKnBozo,4977
+gtdb_itol_decorate/newick.py,sha256=eFlKwmomTTxVc36230HTvtFC-gTx4zIhmu-g1u2QHTE,4706
+gtdb_itol_decorate/util.py,sha256=TJ7dKJ1e2Ihsy2bNjGtfERAT9WZHtC36rbKOdrEDzws,1085
+gtdb_itol_decorate-1.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gtdb_itol_decorate-1.0.2.dist-info/METADATA,sha256=-A82oZ2ey4M0NJ3vu_nlfCsYBaZL1h6uUZ3tIrB61RY,1559
+gtdb_itol_decorate-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gtdb_itol_decorate-1.0.2.dist-info/entry_points.txt,sha256=xIIln3vGwIixMVd2b--_Rtjiif1xD84xIw4KVkSwJxw,71
+gtdb_itol_decorate-1.0.2.dist-info/top_level.txt,sha256=VxhRPKD27eJ2SHbHj2gknZ1CjD1TXSqFsbajzOqJ6fE,19
+gtdb_itol_decorate-1.0.2.dist-info/RECORD,,
