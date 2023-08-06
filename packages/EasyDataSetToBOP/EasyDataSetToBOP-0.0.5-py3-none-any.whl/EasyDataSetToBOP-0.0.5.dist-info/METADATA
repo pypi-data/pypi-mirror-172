@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: EasyDataSetToBOP
+Version: 0.0.5
+Summary: Convert Dataset from EasyDatasetGenerator to BOP Dataset
+Author: Lars Kaesberg
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pymeshlab
+Requires-Dist: imageio
+Requires-Dist: pypng
+Requires-Dist: opencv-python
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: json
+
+# EasyDatasetToBOP
+Convert Datasets from the EasyDatasetGenerator to BOP Dataset Format
+
+## Install
+```
+pip install easydatasettobop
+```
+
+## Usage
+```
+python -m easydatasettobop <path-to-easydataset-generator-root> -e <3d-file-format>
+```
+#### To visualize the dataset use:
+```
+python -m easydatasettobop <path-to-bop-train-set> -v
+```
+
+## Tips
+If you use another 3D model file for creating the bop dataset, it must have the same name as the gltf file for the EasyDatasetGenerator
+
