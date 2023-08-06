@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pytest_freezer"
+authors = [{name = "Wim Glenn", email = "hey@wimglenn.com"}]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Framework :: Pytest",
+]
+version = "0.4.2"
+dependencies = ["pytest >= 3.6", "freezegun"]
+readme = "README.rst"
+description = "Pytest plugin providing a fixture interface for spulec/freezegun"
+
+[project.urls]
+Homepage = "https://github.com/wimglenn/pytest-freezer"
+
+[project.entry-points.pytest11]
+freezer = "pytest_freezer"
