@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-cookiecut = napari_cookiecut:napari.yaml
