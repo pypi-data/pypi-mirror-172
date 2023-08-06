@@ -1,0 +1,62 @@
+{
+    "import": [
+        {
+            "name": "init",
+            "delta": 0.05
+        },
+        {
+            "name": "hash",
+            "delta": 0.35
+        },
+        {
+            "name": "metadatas",
+            "delta": 0.3
+        },
+        {
+            "name": "others",
+            "delta": 0.3
+        }
+    ],
+    "copy": [
+        {
+            "name": "init",
+            "delta": 0.05
+        },
+        {
+            "name": "read",
+            "delta": 0.35
+        },
+        {
+            "name": "change",
+            "delta": 0.2
+        },
+        {
+            "name": "new",
+            "delta": 0.4
+        }
+    ],
+    "export": [
+        {
+            "name": "others",
+            "delta": 1.0
+        }
+    ],
+    "filter": [
+        {
+            "name": "init",
+            "delta": 0.05
+        },
+        {
+            "name": "read",
+            "delta": 0.15
+        },
+        {
+            "name": "change",
+            "delta": 0.6
+        },
+        {
+            "name": "new",
+            "delta": 0.2
+        }
+    ]
+}
