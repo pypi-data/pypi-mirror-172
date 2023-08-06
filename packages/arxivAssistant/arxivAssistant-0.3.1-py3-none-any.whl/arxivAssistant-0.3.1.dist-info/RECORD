@@ -1,0 +1,12 @@
+arxivAssistant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arxivAssistant/app.py,sha256=5h0YfntPVp5ZMJlkRF6BtDNbi3p1R-F31Ncuov-ODV0,1580
+arxivAssistant/article.py,sha256=X3fMvFfKjmC0dOtxRS8Fhy3PT1-azLWwSTo3AmhSvWw,2349
+arxivAssistant/feed.py,sha256=txE7_GZDEBYf8K-t9OWs10hFCQDCyXNdr1fZzy1oyvE,407
+arxivAssistant/list.py,sha256=V8LGWUoxzFrMC7d_QhjHqZd3Gy8qlXUfPVRaAU3viE4,6351
+arxivAssistant/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arxivAssistant/scripts/today.py,sha256=hkm5YQfy2qRpRdMOEUkspARkajnCyGwpynCNCbfeY10,105
+arxivAssistant-0.3.1.dist-info/METADATA,sha256=ZzdddUjXjDzuLfKBPg79iN86VIoTjac4qpV2nlalQj4,987
+arxivAssistant-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+arxivAssistant-0.3.1.dist-info/entry_points.txt,sha256=uGwE-cabz4LZMGSzUu3NekHe0uCLDL25-F24gdNdVyY,66
+arxivAssistant-0.3.1.dist-info/top_level.txt,sha256=LqS3gej-08VGZn6uNfqEeUA-FE4JO4DJ_YDavcyauR8,15
+arxivAssistant-0.3.1.dist-info/RECORD,,
