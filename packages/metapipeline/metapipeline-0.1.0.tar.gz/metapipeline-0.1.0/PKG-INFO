@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: metapipeline
+Version: 0.1.0
+Summary: test multiple parameters for complexe pipeline
+License: MIT
+Author: ClementCaporal
+Author-email: caporal.clement@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: graphviz (>=0.19.1,<0.20.0)
+Requires-Dist: psutil (>=5.9.0,<6.0.0)
