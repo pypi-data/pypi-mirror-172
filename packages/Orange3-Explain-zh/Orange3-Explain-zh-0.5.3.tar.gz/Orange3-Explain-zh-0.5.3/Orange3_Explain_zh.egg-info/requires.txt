@@ -1,0 +1,15 @@
+Orange3-zh>=3.28.0
+AnyQt
+numpy
+pyqtgraph
+scipy
+shap==0.40.*
+
+[doc]
+sphinx
+recommonmark
+sphinx_rtd_theme
+
+[test]
+pytest
+coverage
