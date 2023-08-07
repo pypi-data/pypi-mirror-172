@@ -1,0 +1,6 @@
+django>=3.2
+structlog>=21.4.0
+django-ipware
+
+[celery]
+celery>=5.1
